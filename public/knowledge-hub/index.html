@@ -157,10 +157,6 @@
         <h1>Water Hydraulics <span>Knowledge Hub</span></h1>
         <p>The authority library for engineers, municipalities, and industrial buyers evaluating water as a hydraulic medium. Start with first principles, then move into materials, applications, design, economics, and field cases.</p>
       </div>
-      <aside class="stat-card">
-        <b>125</b>
-        <span>technical articles normalized and ready for clean URLs</span>
-      </aside>
     </div>
   </section>
 
@@ -242,7 +238,7 @@
 
   <div class="toolbar">
     <div class="wrap toolbar-inner">
-      <input class="search" id="hub-search" type="search" placeholder="Search all 125 articles..." />
+      <input class="search" id="hub-search" type="search" placeholder="Search all articles..." />
       <button class="pill active" data-filter="all">All</button>
       <button class="pill" data-filter="engineering-fundamentals">Engineering Fundamentals</button>
 <button class="pill" data-filter="materials-engineering">Materials Engineering</button>
@@ -267,7 +263,7 @@
           <div class="eyebrow">Full Library</div>
           <h2>All Knowledge Hub articles.</h2>
         </div>
-        <p id="result-count">Showing all 125 articles.</p>
+        <p id="result-count">Showing all articles.</p>
       </div>
       <div class="article-list" id="article-list"><a class="article-card" href="/knowledge-hub/what-are-water-hydraulic-systems/" data-category="engineering-fundamentals" data-search="what are water hydraulic systems? water hydraulic systems use purified water as the working fluid instead of petroleum oil. learn the engineering principles, key components, history, and industrial applications. waterquest solutions, vancouver bc. engineering fundamentals">
       <small>Article 1 · Engineering Fundamentals</small>
@@ -1038,7 +1034,7 @@ function update() {
     card.style.display = show ? '' : 'none';
     if (show) visible += 1;
   }
-  count.textContent = 'Showing ' + visible + ' articles.';
+  count.textContent = visible === cards.length ? 'Showing all articles.' : 'Showing ' + visible + ' articles.';
 }
 for (const button of buttons) {
   button.addEventListener('click', () => {
