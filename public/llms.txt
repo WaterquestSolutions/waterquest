@@ -1,0 +1,19 @@
+# WaterQuest Solutions
+
+WaterQuest Solutions designs oil-free water hydraulic systems using tap water or seawater as the hydraulic medium.
+
+Core sections:
+- Products: /products
+- Industries: /industries
+- Applications: /applications
+- Hydraulic Calculations: /calculations
+- Technical Glossary: /glossary
+- Technology: /technology
+- Knowledge Hub: /knowledge-hub
+- About: /about
+
+Important concepts:
+- Water as a hydraulic medium
+- Oil-free hydraulic systems
+- 316 stainless steel and carbon-reinforced PEEK materials
+- Pumps, motors, cylinders, valves, HPUs, fire pumps, desalination, marine, municipal, mining, food, fire suppression, wastewater, hydroelectric, and hydrogen applications

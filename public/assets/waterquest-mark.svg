@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">WaterQuest mark option A</title>
+  <desc id="desc">A minimal waterline accent mark.</desc>
+  <rect width="160" height="160" rx="18" fill="#071321"/>
+  <path d="M26 92h28c16 0 21-22 38-22s22 22 38 22h6" fill="none" stroke="#00c8d4" stroke-width="11" stroke-linecap="round"/>
+  <path d="M26 112h108" fill="none" stroke="#60798f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M34 50h92" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+</svg>

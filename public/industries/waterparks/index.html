@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Hydraulics for Water Parks & Wave Pools | WaterQuest Solutions</title>
+  <meta name="description" content="Zero oil contamination risk in every aquatic attraction. WaterQuest Solutions delivers clean, guest-safe water hydraulics for wave pools, waterslides, movable floors, and splash features." />
+  <meta name="keywords" content="water hydraulics water parks, wave pool hydraulics, waterslide actuation, aquatic facility hydraulics, oil-free pool hydraulics, safe hydraulics for guests, movable pool floor, surf park hydraulics" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy:         #0A1628;
+      --navy-mid:     #0D2044;
+      --navy-light:   #122954;
+      --aqua:         #00C8D4;
+      --aqua-dim:     #00A3AD;
+      --aqua-glow:    rgba(0,200,212,0.15);
+      /* Water parks accent , brighter cyan-teal with a hint of surf blue */
+      --wave:         #00D8E8;
+      --wave-mid:     #00B8C8;
+      --wave-glow:    rgba(0,216,232,0.18);
+      --surf:         #0090C8;
+      --surf-glow:    rgba(0,144,200,0.15);
+      --silver:       #FFFFFF;
+      --silver-light: #FFFFFF;
+      --white:        #FFFFFF;
+      --body-text:    #FFFFFF;
+      --muted:        #FFFFFF;
+      --border:       rgba(168,184,204,0.18);
+      --border-wave:  rgba(0,216,232,0.32);
+      --font-display: 'Avenir', 'Avenir Next', 'Nunito Sans', sans-serif;
+      --font-body:    'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+      --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px;
+      --shadow-card: 0 4px 32px rgba(0,0,0,0.35);
+      --shadow-wave:  0 0 40px rgba(0,216,232,0.22);
+      --max-width: 1240px; --section-pad: 100px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); background: var(--navy); color: var(--body-text); line-height: 1.7; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    .label { font-family: var(--font-display); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--wave); }
+    h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 900; line-height: 1.15; color: var(--white); }
+    h1 { font-size: clamp(2.4rem,5vw,4.2rem); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(1.9rem,3.5vw,3rem); letter-spacing: -0.02em; }
+    h3 { font-size: clamp(1.1rem,2vw,1.45rem); }
+    h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--wave); }
+    p  { color: var(--body-text); font-size: 1.02rem; }
+    .text-wave { color: var(--wave); }
+    .text-muted { color: var(--muted); }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
+    .section { padding: var(--section-pad) 0; }
+    .section-alt  { background: var(--navy-mid); }
+    .section-dark { background: var(--navy); }
+
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: var(--radius-sm); font-family: var(--font-display); font-weight: 700; font-size: 0.88rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border: none; transition: all 0.25s ease; }
+    .btn-primary { background: var(--wave); color: var(--navy); }
+    .btn-primary:hover { background: #00EEFF; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,216,232,0.45); }
+    .btn-outline { background: transparent; color: var(--wave); border: 1.5px solid var(--border-wave); }
+    .btn-outline:hover { background: var(--wave-glow); border-color: var(--wave); }
+
+    /* NAV */
+    #nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: background 0.3s, backdrop-filter 0.3s; }
+    #nav.scrolled { background: rgba(10,22,40,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .nav-logo .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.15rem; color: var(--white); letter-spacing: -0.01em; }
+    .nav-logo .logo-sub  { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--aqua); margin-top: 1px; display: block; }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { font-family: var(--font-display); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--silver); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--wave); }
+    .nav-cta { background: var(--aqua) !important; color: var(--navy) !important; padding: 9px 20px; border-radius: var(--radius-sm); }
+
+    /* BUBBLES */
+    .bubble-layer { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 1; }
+    .bubble { position: absolute; border-radius: 50%; background: radial-gradient(circle at 35% 35%, rgba(0,216,232,0.6), rgba(0,216,232,0.08) 60%, transparent 80%); border: 1px solid rgba(0,216,232,0.22); opacity: 0; animation: bubble-rise linear infinite; }
+    @keyframes bubble-rise { 0%{transform:translateY(0) translateX(0) scale(1);opacity:0} 8%{opacity:0.6} 50%{transform:translateY(-50vh) translateX(var(--drift)) scale(0.88);opacity:0.3} 92%{opacity:0.1} 100%{transform:translateY(-108vh) translateX(calc(var(--drift)*1.4)) scale(0.5);opacity:0} }
+
+    /* REVEAL */
+    .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-left  { opacity:0; transform:translateX(-28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-left.visible  { opacity:1; transform:translateX(0); }
+    .reveal-right { opacity:0; transform:translateX(28px);  transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-right.visible { opacity:1; transform:translateX(0); }
+
+    .section-header { margin-bottom: 60px; }
+    .section-header .label { margin-bottom: 14px; }
+    .section-header h2 { margin-bottom: 16px; }
+    .section-header p { max-width: 620px; font-size: 1.08rem; color: var(--silver-light); }
+    .section-header.center { text-align: center; }
+    .section-header.center p { margin: 0 auto; }
+
+    /* ================================================================
+       HERO
+    ================================================================ */
+    #hero {
+      position: relative; min-height: 82vh;
+      display: flex; align-items: center;
+      overflow: hidden; padding-top: 72px;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 100% 60% at 50% 100%, rgba(0,144,200,0.28) 0%, transparent 55%),
+        radial-gradient(ellipse 70% 50% at 75% 30%,  rgba(0,216,232,0.14) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 15% 60%,  rgba(0,100,160,0.18) 0%, transparent 55%),
+        linear-gradient(170deg, #050E1C 0%, #0A1628 45%, #0B2038 100%);
+    }
+    /* Animated wave mesh at base */
+    .hero-waves {
+      position: absolute; bottom: 0; left: 0; right: 0; height: 180px;
+      overflow: hidden; pointer-events: none;
+    }
+    .wave-svg { position: absolute; bottom: 0; left: -10%; width: 120%; }
+    .wave-1 { animation: wave-drift 9s ease-in-out infinite; opacity: 0.22; }
+    .wave-2 { animation: wave-drift 12s ease-in-out infinite reverse; opacity: 0.14; margin-bottom: 20px; }
+    .wave-3 { animation: wave-drift 7s ease-in-out infinite; opacity: 0.08; margin-bottom: 40px; }
+    @keyframes wave-drift { 0%,100%{transform:translateX(0)} 50%{transform:translateX(4%)} }
+
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: var(--max-width); margin: 0 auto; padding: 80px 32px;
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 72px;
+      align-items: center;
+    }
+    .hero-label { margin-bottom: 20px; }
+    .hero-text h1 { margin-bottom: 26px; }
+    .hero-text h1 span { color: var(--wave); }
+    .hero-lead { font-size: 1.14rem; color: var(--silver-light); max-width: 520px; line-height: 1.8; margin-bottom: 36px; }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+
+    /* Zero-risk badges */
+    .zero-strip {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 12px;
+    }
+    .zero-badge {
+      background: rgba(0,216,232,0.07);
+      border: 1px solid var(--border-wave);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      text-align: center;
+    }
+    .zero-badge .znum {
+      font-family: var(--font-display); font-size: 1.4rem; font-weight: 900;
+      color: var(--wave); line-height: 1; margin-bottom: 5px;
+    }
+    .zero-badge .zlbl { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; line-height: 1.4; }
+
+    /* Hero visual , wave machine diagram */
+    .hero-visual { display: flex; align-items: center; justify-content: center; }
+    .wave-diagram {
+      width: 100%; max-width: 420px;
+      filter: drop-shadow(0 0 40px rgba(0,216,232,0.3));
+      animation: diagram-breathe 6s ease-in-out infinite;
+    }
+    @keyframes diagram-breathe { 0%,100%{filter:drop-shadow(0 0 40px rgba(0,216,232,0.28))} 50%{filter:drop-shadow(0 0 70px rgba(0,216,232,0.52))} }
+
+    /* ================================================================
+       DANGER vs SAFE comparison
+    ================================================================ */
+    .compare-banner {
+      background: linear-gradient(135deg, rgba(255,60,60,0.04) 0%, var(--navy-mid) 50%, rgba(0,216,232,0.04) 100%);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: grid; grid-template-columns: 1fr auto 1fr;
+      align-items: stretch;
+    }
+    .cmp-col { padding: 44px 40px; }
+    .cmp-col.danger  { border-right: none; }
+    .cmp-col.safe    { border-left: none; }
+    .cmp-divider {
+      display: flex; align-items: center; justify-content: center;
+      background: var(--navy-light);
+      padding: 0 4px;
+      width: 60px;
+    }
+    .vs-pill {
+      writing-mode: vertical-lr;
+      font-family: var(--font-display); font-size: 0.7rem; font-weight: 900;
+      letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--muted); padding: 16px 0;
+    }
+    .cmp-col-head {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 28px; padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .cmp-col-head .icon { font-size: 1.4rem; }
+    .cmp-col-head h3 { font-size: 1rem; }
+    .cmp-list { display: flex; flex-direction: column; gap: 14px; }
+    .cmp-item { font-size: 0.93rem; color: var(--silver); line-height: 1.6; padding-left: 20px; position: relative; }
+    .cmp-item::before { content:''; position:absolute; left:0; top:8px; width:7px; height:7px; border-radius:50%; }
+    .danger  .cmp-item::before { background: rgba(255,90,90,0.7); }
+    .safe    .cmp-item::before { background: var(--wave); }
+    .cmp-footnote {
+      margin-top: 20px; padding: 14px 18px;
+      background: rgba(0,0,0,0.2); border-radius: var(--radius-sm);
+      font-size: 0.84rem; color: var(--muted); font-style: italic;
+    }
+    .safe .cmp-footnote { color: var(--wave); opacity: 0.8; }
+
+    /* ================================================================
+       SIX REASONS
+    ================================================================ */
+    .reasons-grid {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 24px;
+    }
+    .reason-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px 32px;
+      position: relative; overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+    .reason-card::after {
+      content: attr(data-num);
+      position: absolute; bottom: -12px; right: 16px;
+      font-size: 5.5rem; font-weight: 900; line-height: 1;
+      color: rgba(0,216,232,0.06); font-family: var(--font-display);
+      pointer-events: none;
+    }
+    .reason-card:hover { border-color: var(--border-wave); transform: translateY(-5px); box-shadow: var(--shadow-wave); }
+    .reason-card .r-icon { font-size: 1.8rem; margin-bottom: 16px; }
+    .reason-card h3 { font-size: 1.08rem; margin-bottom: 12px; }
+    .reason-card p  { font-size: 0.93rem; color: var(--muted); line-height: 1.7; }
+
+    /* ================================================================
+       COMPARISON TABLE
+    ================================================================ */
+    .table-wrap {
+      overflow-x: auto; border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+    }
+    table { width: 100%; border-collapse: collapse; }
+    thead tr { background: var(--navy-light); }
+    thead th { padding: 18px 24px; font-family: var(--font-display); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; text-align: left; color: var(--silver); border-bottom: 1px solid var(--border); }
+    thead th:first-child { color: var(--muted); }
+    thead th.hl { color: var(--wave) !important; }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background 0.2s; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: rgba(0,216,232,0.03); }
+    tbody td { padding: 16px 24px; font-size: 0.92rem; color: var(--silver); }
+    tbody td:first-child { color: var(--white); font-weight: 600; font-size: 0.88rem; }
+    .td-good  { color: var(--wave) !important; font-weight: 700; }
+    .td-bad   { color: rgba(255,100,100,0.75) !important; }
+    .td-mid   { color: var(--muted) !important; }
+    .hl-col   { background: rgba(0,216,232,0.04); }
+
+    /* ================================================================
+       APPLICATIONS
+    ================================================================ */
+    .apps-grid {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 24px;
+    }
+    .app-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .app-card:hover { border-color: var(--border-wave); box-shadow: var(--shadow-wave); }
+    .app-card-head {
+      padding: 24px 28px 18px;
+      background: linear-gradient(135deg, rgba(0,216,232,0.07) 0%, transparent 100%);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 12px;
+    }
+    .app-card-head .app-icon { font-size: 1.5rem; }
+    .app-card-head h3 { font-size: 1rem; }
+    .app-items { padding: 20px 28px 24px; display: flex; flex-direction: column; gap: 8px; }
+    .app-item { font-size: 0.88rem; color: var(--silver); display: flex; align-items: flex-start; gap: 10px; }
+    .app-item::before { content:'›'; color: var(--wave); font-weight: 900; font-size: 1rem; line-height: 1.3; min-width: 12px; }
+
+    /* ================================================================
+       PERFORMANCE BENEFITS
+    ================================================================ */
+    .benefits-list { display: flex; flex-direction: column; gap: 0; }
+    .benefit-row {
+      display: grid; grid-template-columns: 48px 1fr; gap: 24px;
+      align-items: start; padding: 32px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .benefit-row:last-child { border-bottom: none; }
+    .benefit-num {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: var(--wave-glow);
+      border: 1.5px solid var(--border-wave);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 0.9rem; font-weight: 900;
+      color: var(--wave); flex-shrink: 0;
+    }
+    .benefit-row h3 { font-size: 1.1rem; margin-bottom: 8px; }
+    .benefit-row p  { font-size: 0.94rem; color: var(--muted); line-height: 1.7; margin: 0; }
+
+    /* ================================================================
+       CTA
+    ================================================================ */
+    #cta {
+      position: relative; overflow: hidden;
+      background: linear-gradient(160deg, #060F1C 0%, #0A1E38 50%, #061018 100%);
+      padding: 110px 0;
+    }
+    #cta::before {
+      content: '';
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 800px; height: 450px; border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(0,216,232,0.1) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .cta-inner { position: relative; z-index: 2; max-width: 720px; margin: 0 auto; padding: 0 32px; text-align: center; }
+    .cta-inner .label { margin-bottom: 20px; }
+    .cta-inner h2 { margin-bottom: 22px; }
+    .cta-inner p { font-size: 1.06rem; color: var(--silver-light); margin-bottom: 40px; max-width: 580px; margin-left: auto; margin-right: auto; }
+    .cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 56px; }
+    .cta-ideal {
+      font-size: 0.82rem; color: var(--muted);
+      padding: 14px 24px; border: 1px solid var(--border);
+      border-radius: 100px; display: inline-block;
+    }
+    .cta-ideal strong { color: var(--silver); }
+    .cta-stats { display: flex; justify-content: center; gap: 56px; flex-wrap: wrap; margin-top: 48px; }
+    .cta-stat { text-align: center; }
+    .cta-stat .snum { font-size: 2.2rem; font-weight: 900; color: var(--wave); font-family: var(--font-display); line-height: 1; }
+    .cta-stat .slbl { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); margin-top: 5px; }
+
+    /* FOOTER */
+    footer { background: #06101E; border-top: 1px solid var(--border); padding: 64px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.2rem; color: var(--white); margin-bottom: 6px; }
+    .footer-brand .logo-sub { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--aqua); margin-bottom: 18px; display: block; }
+    .footer-brand p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
+    .footer-tagline { font-style: italic; color: var(--silver) !important; font-size: 0.88rem !important; }
+    .footer-col h5 { font-family: var(--font-display); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver); margin-bottom: 16px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul a { font-size: 0.88rem; color: var(--muted); transition: color 0.2s; }
+    .footer-col ul a:hover { color: var(--aqua); }
+    .footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-bottom p { font-size: 0.82rem; color: var(--muted); }
+    .footer-cert { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cert-badge { padding: 4px 12px; border: 1px solid var(--border); border-radius: 100px; font-size: 0.72rem; color: var(--silver); font-weight: 600; letter-spacing: 0.06em; }
+
+    @media (max-width:960px) {
+      :root { --section-pad:72px; }
+      .hero-content { grid-template-columns:1fr; gap:40px; }
+      .hero-visual { display:none; }
+      .compare-banner { grid-template-columns:1fr; }
+      .cmp-divider { display:none; }
+      .reasons-grid { grid-template-columns:repeat(2,1fr); }
+      .apps-grid { grid-template-columns:repeat(2,1fr); }
+      .footer-grid { grid-template-columns:1fr 1fr; }
+      .nav-links { display:none; }
+    }
+    @media (max-width:600px) {
+      :root { --section-pad:56px; }
+      .container { padding:0 20px; }
+      .zero-strip { grid-template-columns:1fr; }
+      .reasons-grid { grid-template-columns:1fr; }
+      .apps-grid { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr; }
+      .footer-bottom { flex-direction:column; gap:16px; text-align:center; }
+    }
+  </style><link rel="canonical" href="/industries/waterparks" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:title" content="Water Hydraulics for Water Parks &amp; Wave Pools | WaterQuest Solutions" />
+  <meta property="og:description" content="Zero oil contamination risk in every aquatic attraction. WaterQuest Solutions delivers clean, guest-safe water hydraulics for wave pools, waterslides, movable floors, and splash features." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/industries/waterparks" />
+  <meta property="og:image" content="/assets/waterquest-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Water Hydraulics for Water Parks &amp; Wave Pools | WaterQuest Solutions" />
+  <meta name="twitter:description" content="Zero oil contamination risk in every aquatic attraction. WaterQuest Solutions delivers clean, guest-safe water hydraulics for wave pools, waterslides, movable floors, and splash features." />
+  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
+  <link rel="alternate" hreflang="en-CA" href="/industries/waterparks" />
+  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
+  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"WebPage","@id":"/industries/waterparks#webpage","url":"/industries/waterparks","name":"Water Hydraulics for Water Parks & Wave Pools | WaterQuest Solutions","description":"Zero oil contamination risk in every aquatic attraction. WaterQuest Solutions delivers clean, guest-safe water hydraulics for wave pools, waterslides, movable floors, and splash features.","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"},{"@type":"ListItem","position":2,"name":"Industries","item":"/industries"},{"@type":"ListItem","position":3,"name":"Waterparks","item":"/industries/waterparks"}]}]}</script>
+  <style id="wq-global-shell-css">
+    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
+    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
+    body a{color:inherit}
+    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
+    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
+    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
+    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
+    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
+    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
+    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
+    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
+    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
+    main .btn.primary{color:var(--wq-navy)!important}
+    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
+    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
+    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
+    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
+    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
+    .wq-form-status.is-error{color:#ffb1b1!important}
+    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
+    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
+    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
+    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
+    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
+    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
+    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
+    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
+    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
+    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
+    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
+    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
+    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
+    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
+    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
+    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
+    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
+    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
+    .wq-hero-visual-text{padding:20px}
+    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
+    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
+    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
+    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
+    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
+    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
+    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
+    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
+    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
+    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
+    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
+    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
+    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
+    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
+    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
+    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
+    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
+    #wq-mobile-menu.open{display:block}
+    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
+    #wq-mobile-menu a:last-child{border-bottom:0}
+    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
+    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
+    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
+    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
+    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
+    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
+    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
+    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
+    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
+    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
+    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
+    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
+    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
+    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
+    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
+    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
+  </style>
+</head>
+<body class="wq-section-industries">
+<!-- WQ_GLOBAL_HEADER_START -->
+<div id="wq-global-bubbles" aria-hidden="true"></div>
+<nav id="wq-nav" role="navigation" aria-label="Main navigation">
+  <div class="wq-nav-inner">
+    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
+      <span class="wq-logo-main">WaterQuest Solutions</span>
+      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+    </a>
+    <ul class="wq-nav-links" role="list">
+      <li><a href="/products/">Products</a></li><li><a href="/industries/" class="active">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li>
+      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
+    </ul>
+    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
+  </div>
+</nav>
+<div id="wq-mobile-menu">
+  <a href="/products/">Products</a><a href="/industries/" class="active">Industries</a><a href="/technology/">Technology</a><a href="/knowledge-hub/">Knowledge Hub</a><a href="/about/">About</a>
+  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
+</div>
+<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
+<section class="wq-conversion-hero" aria-label="Page introduction">
+  <div class="wq-conversion-wrap">
+    <div>
+      <p class="wq-hero-eyebrow">Industry application</p>
+      <h1><span>Waterparks</span>: where oil has no place.</h1>
+      <p class="wq-hero-copy">See how water hydraulics changes the risk profile for equipment working near people, water, food, infrastructure, seawater, washdown, or regulated environments.</p>
+      <div class="wq-hero-actions">
+        <a class="wq-hero-cta" href="/applications/">See Related Applications</a>
+        <a class="wq-hero-secondary" href="/products/">Review Matching Products</a>
+      </div>
+    </div>
+    <a class="wq-hero-visual" href="/applications/">
+      <div class="wq-hero-picture" aria-hidden="true"></div>
+      <div class="wq-hero-visual-text">
+        <small>Field fit</small>
+        <strong>A cleaner hydraulic medium for demanding operating environments.</strong>
+        <span>Built to resonate with engineers, operators, and technical decision makers.</span>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- WQ_CONVERSION_HERO_END --><!-- NAV --><!-- HERO -->
+<!-- WQS_INDUSTRY_DATA_START -->
+<style>
+.wqs-industry-data{background:#eef8f6;border-top:1px solid #cae0db;border-bottom:1px solid #cae0db;color:#12312d;font-family:Nunito Sans,Arial,sans-serif;padding:54px 6vw}.wqs-industry-data__inner{margin:0 auto;max-width:1180px}.wqs-industry-data__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-industry-data h2{font-size:clamp(30px,4.5vw,56px);line-height:1.02;margin:8px 0 14px;max-width:960px}.wqs-industry-data p{color:#4a625d;font-size:18px;line-height:1.65;max-width:940px}.wqs-industry-data__stats{display:grid;gap:12px;grid-template-columns:repeat(4,minmax(0,1fr));margin:26px 0}.wqs-industry-data__stat{background:#fff;border:1px solid #cae0db;border-radius:8px;padding:16px}.wqs-industry-data__stat span{color:#08726f;display:block;font-size:12px;font-weight:900;text-transform:uppercase}.wqs-industry-data__stat strong{display:block;font-size:20px;margin-top:6px}.wqs-industry-data__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:22px}.wqs-industry-data__panel{background:#fff;border:1px solid #cae0db;border-radius:8px;padding:22px}.wqs-industry-data__panel h3{font-size:19px;margin:0 0 14px}.wqs-industry-data__panel ul{margin:0;padding-left:20px}.wqs-industry-data__panel li{line-height:1.55;margin:7px 0}.wqs-industry-data__cards{display:grid;gap:10px}.wqs-industry-data__card{background:#f9fdfc;border:1px solid #d7e8e4;border-radius:8px;color:#12312d;display:grid;gap:5px;padding:14px;text-decoration:none}.wqs-industry-data__card span{color:#5b726d;font-size:14px;line-height:1.45}@media(max-width:850px){.wqs-industry-data{padding:38px 18px}.wqs-industry-data__stats,.wqs-industry-data__grid{grid-template-columns:1fr}}
+</style>
+<section class="wqs-industry-data" aria-label="Industry data and matching details">
+  <div class="wqs-industry-data__inner">
+    <div class="wqs-industry-data__eyebrow">Industry data and matching details</div>
+    <h2>Water Parks &amp; Wave Pools: complete application detail</h2>
+    <p>Zero oil contamination risk in every aquatic attraction. WaterQuest Solutions delivers clean, guest-safe water hydraulics for wave pools, waterslides, movable floors, and splash features.</p>
+    <div class="wqs-industry-data__stats">
+      <div class="wqs-industry-data__stat"><span>Industry group</span><strong>Guest &amp; Facility Safety</strong></div>
+      <div class="wqs-industry-data__stat"><span>Best use</span><strong>Oil-free actuation</strong></div>
+      <div class="wqs-industry-data__stat"><span>Fluid medium</span><strong>Tap or sea water</strong></div>
+      <div class="wqs-industry-data__stat"><span>Materials</span><strong>316 SS + PEEK</strong></div>
+    </div>
+    <div class="wqs-industry-data__grid">
+      <div class="wqs-industry-data__panel"><h3>What this page should cover</h3><ul><li>Clean Hydraulics for Water Parks &amp; Wave Pools.</li><li>Zero oil contamination risk in every aquatic attraction. WaterQuest Solutions delivers clean, guest-safe water hydraulics for wave pools, waterslides, movable floors, and splash features.</li><li>Oil in Aquatic Attractions A Dangerous Contradiction</li><li>Why Water Hydraulics Fit Every Aquatic Facility</li><li>Water vs Oil vs Air Aquatic Facility Environments</li><li>Applications Across Water Parks &amp; Aquatic Facilities</li><li>How Water Hydraulics Improve Aquatic Facility Performance</li><li>The Only Hydraulic Fluid Safe in Every Aquatic Environment</li><li>Oil Hydraulics The Liability</li><li>Water Hydraulics, Safe by Design</li><li>Zero Pool Contamination Risk</li><li>Built for Chlorine, Salt, UV &amp; Humidity</li></ul></div>
+      <div class="wqs-industry-data__panel"><h3>Matching products and systems</h3><div class="wqs-industry-data__cards"><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-hose-burst/"><strong>Hose Burst</strong><span>WaterQuest Solutions Hose Burst Valve. 316 stainless steel, 0.1 to 200 bar, DN3 and DN6, allows free flow in both directions under normal conditions then immediately stops flow surge on hose burst. Internally spring adjusted. 1/4</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-4-2-3-2-directional/"><strong>4 2 3 2 Directional</strong><span>WaterQuest Solutions patented 4/2 and 3/2 directional flow control valves for water hydraulics. 160 bar max, 0 to 30 L/min, 316 stainless steel, 24V DC solenoid with manual override, stand alone, manifold mount, or Cetop 3. Actuation card required above 20 bar.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-4-3-manual/"><strong>4 3 Manual</strong><span>WaterQuest Solutions patented 4-position 3-port manual control valve for water hydraulics. 200 bar max inlet, 0 to 30 L/min, 316 stainless steel, spring return or detent, 4 turns full travel, stand alone, manifold, or Cetop 3 mount.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-check-valves/"><strong>Check Valves</strong><span>WaterQuest Solutions check valves. 316 stainless steel and high-grade polymer. DN6 to DN25 sizes, 0.1 to 200 bar, 30 to 200 L/min max flow. Consistent performance after lengthy periods of inactivity. Standard cracking pressure 0.6 bar, 0.1 to 3 bar available.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-dn16-directional/"><strong>Dn16 Directional</strong><span>WaterQuest Solutions DN16 Directional Valve. Large-flow pilot-actuated valve: 0 to 140 L/min, 0 to 100 bar, 3/4</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-flow-control/"><strong>Flow Control</strong><span>WaterQuest Solutions Flow Control Valve. 316 stainless steel, 0.1 to 200 bar, DN3 and DN6, manually adjusted thumbwheel with tamper-proof locking screw, helical port design for precise control, 4 turns full travel. Tool-free operator adjustment.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-motors/"><strong>Water Hydraulic Motors</strong><span>Water hydraulic motors in 316L stainless steel with carbon-reinforced PEEK wear surfaces. ~90% mechanical efficiency, tap or seawater operation, ATEX approved, ISO 9001 certified. Fixed and variable displacement. No oil contamination risk.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulics-hpu/"><strong>Water Hydraulics HPU</strong><span>Water hydraulic power units (HPUs) built entirely from 316L stainless steel with PEEK wear surfaces. 100% oil-free, tap or seawater operation. WaterQuest Solutions Pick a Pack system — configure your HPU in 5 steps. Compact skids to full custom builds.</span></a></div></div>
+      <div class="wqs-industry-data__panel"><h3>Related applications</h3><div class="wqs-industry-data__cards"><a class="wqs-industry-data__card" href="/applications/damper-control/"><strong>Damper Control</strong><span>Water hydraulic damper control for industrial ventilation, dust collection, fume extraction, and HVAC systems. Reliable damper actuation without air system contamination risk.</span></a><a class="wqs-industry-data__card" href="/applications/dust-suppression/"><strong>Dust Suppression</strong><span>Water hydraulic dust suppression systems for mining, bulk material handling, demolition, and construction. High-pressure misting without petroleum contamination risk.</span></a><a class="wqs-industry-data__card" href="/applications/fire-suppression/"><strong>Fire Suppression</strong><span>Water hydraulic actuation for fire suppression deluge valves, sprinkler zone valves, and fire water distribution. Absolute reliability without petroleum contamination risk in potable water lines.</span></a><a class="wqs-industry-data__card" href="/applications/nozzle-technology/"><strong>Nozzle Technology</strong><span>Engineering reference for high-pressure water nozzles across fire suppression, dust suppression, odour control, and industrial cleaning. Spray patterns, droplet physics, flow tables, and selection criteria from WaterQuest Solutions, Vancouver BC.</span></a><a class="wqs-industry-data__card" href="/applications/flood-control/"><strong>Flood Control</strong><span>Water hydraulic flood control systems for flood gates, storm surge barriers, tide gates, and stormwater infrastructure. Reliable emergency actuation without petroleum contamination in waterways.</span></a><a class="wqs-industry-data__card" href="/applications/flow-control/"><strong>Flow Control</strong><span>Water hydraulic flow control systems for process water, wastewater, slurry, and industrial cooling. Precise actuation and throttling without petroleum contamination.</span></a></div></div>
+      <div class="wqs-industry-data__panel"><h3>Related technical articles</h3><div class="wqs-industry-data__cards"><a class="wqs-industry-data__card" href="/knowledge-hub/aligning-with-esg-how-water-hydraulics-support-sustainability-targets"><strong>Aligning With ESG: How Water Hydraulics Support Sustainability Targets</strong><span>How water-driven hydraulic systems advance ESG goals across environmental protection, worker safety, and governance. Why procurement teams increasingly specify water hydraulics to strengthen ESG compliance, reduce operational risk, and support clean-technology adoption.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/avoiding-oil-contaminated-waterways-legal-and-financial-risks"><strong>Avoiding Oil-Contaminated Waterways: Legal and Financial Risks</strong><span>A complete review of the legal and financial consequences of oil hydraulic contamination events in Canada. Fisheries Act exposure, cleanup costs, marine liability, insurance implications, contractor liability, and how water hydraulics eliminate the contamination pathway entirely.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/fail-safe-performance-in-theme-park-ride-systems"><strong>Fail-Safe Performance in Theme Park Ride Systems</strong><span>A complete engineering analysis of water hydraulic actuation for ride safety, reliability, and environmental protection. How water hydraulics eliminate oil contamination, slip hazards, varnish-related failures, and fire load in public ride environments.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/fishing-without-fossil-fuels-the-musqueam-hydrogen-vessel-project"><strong>Fishing Without Fossil Fuels: The Musqueam Hydrogen Vessel Project</strong><span>How the combination of hydrogen fuel cell propulsion and water hydraulics creates a fully clean commercial fishing vessel that aligns with coastal Indigenous stewardship values and eliminates hydrocarbon spill risk in salmon-bearing waters.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/water-hydraulics-in-mining-lower-downtime-zero-contamination"><strong>Water Hydraulics in Mining: Lower Downtime, Zero Contamination</strong><span>A full engineering and procurement analysis of water hydraulic actuation in underground and surface mining operations. How 316 stainless and PEEK-based systems eliminate fire risk, contamination liability, and the failure modes that oil creates in mining environments.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/built-in-safety-fail-closed-and-manual-overrides-with-water"><strong>Built-In Safety: Fail-Closed and Manual Overrides with Water</strong><span>A complete engineering explanation of safety behaviour, fail-state logic, passive protections, and manual override design in water hydraulic systems. How geometry, spring return, drain-back, and clean internals create inherently safer fail-safe behaviour than oil-based equivalents.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/clean-operation-on-coastlines-a-marine-deployment-snapshot"><strong>Clean Operation on Coastlines: A Marine Deployment Snapshot</strong><span>A marine deployment case study: sluice gate actuation, dock barrier positioning, and tidal control mechanisms converted to water hydraulics. Corrosion testing, tidal cycle performance, leak simulation, and lifecycle observations from a coastal installation.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/common-maintenance-missteps-with-oil-that-don-t-happen-with-water"><strong>Common Maintenance Missteps with Oil That Don't Happen With Water</strong><span>A detailed breakdown of the oil hydraulic maintenance habits that do not apply to water hydraulics. Fluid changes, heat cycling, aggressive filtration, valve cleaning, control re-tuning, chemical monitoring, solvent cleaning, and rust inspection all disappear from the schedule.</span></a></div></div>
+    </div>
+  </div>
+</section>
+<!-- WQS_INDUSTRY_DATA_END -->
+<section id="hero" aria-label="Water Parks & Aquatic Facilities">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="bubble-layer" id="hero-bubbles" aria-hidden="true"></div>
+  <div class="hero-waves" aria-hidden="true">
+    <svg class="wave-svg wave-1" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 40 C180 10,360 70,540 40 C720 10,900 70,1080 40 C1260 10,1380 60,1440 40 L1440 80 L0 80 Z" fill="rgba(0,216,232,1)"/>
+    </svg>
+    <svg class="wave-svg wave-2" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="bottom:18px">
+      <path d="M0 50 C200 20,400 70,600 45 C800 20,1000 65,1200 45 C1340 30,1400 55,1440 50 L1440 80 L0 80 Z" fill="rgba(0,180,200,1)"/>
+    </svg>
+    <svg class="wave-svg wave-3" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="bottom:36px">
+      <path d="M0 55 C240 30,480 65,720 55 C960 45,1200 70,1440 55 L1440 80 L0 80 Z" fill="rgba(0,144,200,1)"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="label hero-label reveal">Industry; Water Parks &amp; Aquatic Attractions</p>
+      <h1 class="reveal" style="transition-delay:.1s">Clean Hydraulics for<br/><span>Water Parks</span><br/>&amp; Wave Pools.</h1>
+      <p class="hero-lead reveal" style="transition-delay:.2s">Strong, precise, contamination-free hydraulic actuation for every wave, ride, gate, and aquatic system with zero oil risk to pools, guests, or the environment.</p>
+      <div class="hero-ctas reveal" style="transition-delay:.3s">
+        <a href="#contact" class="btn btn-primary">Book Aquatic Systems Review <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/pilot/" class="btn btn-outline">Apply to Pilot</a>
+      </div>
+      <div class="zero-strip reveal" style="transition-delay:.4s">
+        <div class="zero-badge"><div class="znum">ZERO</div><div class="zlbl">Pool Contamination Risk</div></div>
+        <div class="zero-badge"><div class="znum">ZERO</div><div class="zlbl">Oil Fire / Slip Hazard</div></div>
+        <div class="zero-badge"><div class="znum">316 SS</div><div class="zlbl">&amp; PEEK in Chlorine &amp; Salt</div></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right">
+      <!-- Wave machine / actuation SVG illustration -->
+      <svg class="wave-diagram" viewBox="0 0 420 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <radialGradient id="wg1" cx="50%" cy="40%" r="55%">
+            <stop offset="0%" stop-color="#00D8E8" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#005888" stop-opacity="0.3"/>
+          </radialGradient>
+          <radialGradient id="wg2" cx="50%" cy="30%" r="50%">
+            <stop offset="0%" stop-color="#00D8E8" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#001833" stop-opacity="0.05"/>
+          </radialGradient>
+          <filter id="wglow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <filter id="wglow2"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <clipPath id="pool-clip"><rect x="30" y="220" width="360" height="140" rx="8"/></clipPath>
+        </defs>
+
+        <!-- Pool basin -->
+        <rect x="30" y="220" width="360" height="140" rx="8" fill="rgba(0,60,100,0.6)" stroke="rgba(0,216,232,0.3)" stroke-width="1.5"/>
+        <!-- Pool water surface waves -->
+        <g clip-path="url(#pool-clip)">
+          <rect x="30" y="220" width="360" height="140" fill="rgba(0,144,200,0.25)"/>
+          <path d="M30 245 C80 235,130 255,180 245 C230 235,280 255,330 245 C360 238,400 248,420 245" stroke="rgba(0,216,232,0.5)" stroke-width="1.5" fill="none">
+            <animate attributeName="d" dur="3s" repeatCount="indefinite"
+              values="M30 245 C80 235,130 255,180 245 C230 235,280 255,330 245 C360 238,400 248,420 245;
+                      M30 250 C80 242,130 260,180 248 C230 240,280 258,330 248 C360 243,400 253,420 250;
+                      M30 245 C80 235,130 255,180 245 C230 235,280 255,330 245 C360 238,400 248,420 245"/>
+          </path>
+          <path d="M30 258 C90 248,150 268,210 258 C270 248,330 268,390 258" stroke="rgba(0,216,232,0.3)" stroke-width="1" fill="none">
+            <animate attributeName="d" dur="4s" repeatCount="indefinite"
+              values="M30 258 C90 248,150 268,210 258 C270 248,330 268,390 258;
+                      M30 262 C90 254,150 274,210 262 C270 252,330 272,390 262;
+                      M30 258 C90 248,150 268,210 258 C270 248,330 268,390 258"/>
+          </path>
+        </g>
+        <!-- Pool tile detail -->
+        <line x1="30" y1="270" x2="390" y2="270" stroke="rgba(0,216,232,0.1)" stroke-width="0.5"/>
+        <line x1="30" y1="300" x2="390" y2="300" stroke="rgba(0,216,232,0.1)" stroke-width="0.5"/>
+
+        <!-- Wave chamber left -->
+        <rect x="40" y="140" width="80" height="80" rx="6" fill="rgba(0,40,80,0.8)" stroke="rgba(0,216,232,0.25)" stroke-width="1.5"/>
+        <text x="80" y="178" text-anchor="middle" font-family="Avenir,sans-serif" font-size="9" fill="rgba(0,216,232,0.6)" letter-spacing="0.1em">CHAMBER</text>
+        <text x="80" y="190" text-anchor="middle" font-family="Avenir,sans-serif" font-size="8" fill="rgba(168,184,204,0.5)" letter-spacing="0.1em">ACTUATOR</text>
+        <!-- Piston rod animated -->
+        <line x1="80" y1="218" x2="80" y2="230" stroke="rgba(0,216,232,0.6)" stroke-width="3" stroke-linecap="round">
+          <animate attributeName="y2" values="230;224;230" dur="3s" repeatCount="indefinite"/>
+        </line>
+        <rect x="66" y="205" width="28" height="14" rx="3" fill="url(#wg2)" stroke="rgba(0,216,232,0.5)" stroke-width="1">
+          <animate attributeName="y" values="205;199;205" dur="3s" repeatCount="indefinite"/>
+        </rect>
+
+        <!-- Wave chamber centre -->
+        <rect x="170" y="120" width="80" height="100" rx="6" fill="rgba(0,40,80,0.8)" stroke="rgba(0,216,232,0.35)" stroke-width="1.5"/>
+        <text x="210" y="158" text-anchor="middle" font-family="Avenir,sans-serif" font-size="9" fill="rgba(0,216,232,0.7)" letter-spacing="0.1em">WAVE GEN</text>
+        <text x="210" y="170" text-anchor="middle" font-family="Avenir,sans-serif" font-size="8" fill="rgba(168,184,204,0.5)" letter-spacing="0.1em">HYDRAULIC</text>
+        <line x1="210" y1="218" x2="210" y2="228" stroke="rgba(0,216,232,0.7)" stroke-width="3.5" stroke-linecap="round">
+          <animate attributeName="y2" values="228;218;228" dur="2.5s" repeatCount="indefinite"/>
+        </line>
+        <rect x="196" y="204" width="28" height="15" rx="3" fill="url(#wg1)" filter="url(#wglow)" stroke="rgba(0,216,232,0.6)" stroke-width="1.5">
+          <animate attributeName="y" values="204;194;204" dur="2.5s" repeatCount="indefinite"/>
+        </rect>
+
+        <!-- Wave chamber right -->
+        <rect x="300" y="140" width="80" height="80" rx="6" fill="rgba(0,40,80,0.8)" stroke="rgba(0,216,232,0.25)" stroke-width="1.5"/>
+        <text x="340" y="178" text-anchor="middle" font-family="Avenir,sans-serif" font-size="9" fill="rgba(0,216,232,0.6)" letter-spacing="0.1em">CHAMBER</text>
+        <text x="340" y="190" text-anchor="middle" font-family="Avenir,sans-serif" font-size="8" fill="rgba(168,184,204,0.5)" letter-spacing="0.1em">ACTUATOR</text>
+        <line x1="340" y1="218" x2="340" y2="230" stroke="rgba(0,216,232,0.6)" stroke-width="3" stroke-linecap="round">
+          <animate attributeName="y2" values="226;232;226" dur="3.5s" repeatCount="indefinite"/>
+        </line>
+        <rect x="326" y="205" width="28" height="14" rx="3" fill="url(#wg2)" stroke="rgba(0,216,232,0.4)" stroke-width="1">
+          <animate attributeName="y" values="201;207;201" dur="3.5s" repeatCount="indefinite"/>
+        </rect>
+
+        <!-- HPU at top -->
+        <rect x="155" y="28" width="110" height="70" rx="8" fill="rgba(12,32,60,0.9)" stroke="rgba(0,216,232,0.5)" stroke-width="1.5"/>
+        <text x="210" y="55" text-anchor="middle" font-family="Avenir,sans-serif" font-size="10" font-weight="700" fill="#00D8E8" letter-spacing="0.12em">HPU</text>
+        <text x="210" y="69" text-anchor="middle" font-family="Avenir,sans-serif" font-size="8" fill="rgba(0,216,232,0.55)" letter-spacing="0.12em">WATER ONLY</text>
+        <text x="210" y="82" text-anchor="middle" font-family="Avenir,sans-serif" font-size="7.5" fill="rgba(168,184,204,0.5)" letter-spacing="0.1em">316 SS · PEEK</text>
+
+        <!-- Pipes from HPU -->
+        <path d="M190 98 L190 120 L170 120" stroke="rgba(0,216,232,0.45)" stroke-width="2" fill="none" stroke-dasharray="3 4">
+          <animate attributeName="stroke-dashoffset" values="0;-14" dur="1.5s" repeatCount="indefinite"/>
+        </path>
+        <path d="M210 98 L210 118" stroke="rgba(0,216,232,0.6)" stroke-width="2.5" fill="none" stroke-dasharray="3 4">
+          <animate attributeName="stroke-dashoffset" values="0;-14" dur="1.2s" repeatCount="indefinite"/>
+        </path>
+        <path d="M230 98 L230 120 L300 120 L300 140" stroke="rgba(0,216,232,0.45)" stroke-width="2" fill="none" stroke-dasharray="3 4">
+          <animate attributeName="stroke-dashoffset" values="0;-14" dur="1.8s" repeatCount="indefinite"/>
+        </path>
+        <path d="M175 140 L80 140" stroke="rgba(0,216,232,0.35)" stroke-width="2" fill="none" stroke-dasharray="3 4">
+          <animate attributeName="stroke-dashoffset" values="0;-14" dur="2s" repeatCount="indefinite"/>
+        </path>
+
+        <!-- Flow dot on main pipe -->
+        <circle r="4" fill="#00D8E8" filter="url(#wglow)" opacity="0.9">
+          <animateMotion dur="3s" repeatCount="indefinite" path="M210 98 L210 118 L170 118 L80 118 L80 140"/>
+        </circle>
+
+        <!-- Label: H₂O only -->
+        <text x="210" y="395" text-anchor="middle" font-family="Avenir,sans-serif" font-size="10" font-weight="700" fill="rgba(0,216,232,0.4)" letter-spacing="0.2em">HYDRAULIC MEDIUM: H₂O</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- DANGER vs SAFE -->
+<section class="section section-alt" aria-labelledby="compare-heading">
+  <div class="bubble-layer" id="compare-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">The Core Risk</p>
+      <h2 id="compare-heading">Oil in Aquatic Attractions<br/><span class="text-wave">A Dangerous Contradiction</span></h2>
+    </div>
+    <div class="compare-banner reveal">
+      <div class="cmp-col danger">
+        <div class="cmp-col-head"><span class="icon">⚠️</span><h3>Oil Hydraulics The Liability</h3></div>
+        <div class="cmp-list">
+          <div class="cmp-item">Immediate pool and ride contamination requiring full closure</div>
+          <div class="cmp-item">Filter media replacement, sanitation cycles &amp; regulatory reporting</div>
+          <div class="cmp-item">Slip-and-fall hazard for guests and staff in high-traffic zones</div>
+          <div class="cmp-item">Fire risk in enclosed pump rooms, basements &amp; buried vaults</div>
+          <div class="cmp-item">Rapid fluid degradation from chlorine, UV &amp; chemical treatment</div>
+          <div class="cmp-item">Costly fluid changes, filtration management &amp; spill cleanup</div>
+        </div>
+        <div class="cmp-footnote">A single oil leak can shut down an entire attraction and contaminate pool water for thousands of guests.</div>
+      </div>
+
+      <div class="cmp-divider"><span class="vs-pill">VS</span></div>
+
+      <div class="cmp-col safe">
+        <div class="cmp-col-head"><span class="icon">💧</span><h3>Water Hydraulics, Safe by Design</h3></div>
+        <div class="cmp-list">
+          <div class="cmp-item">A leak releases only water safe for pools, filtration &amp; guests</div>
+          <div class="cmp-item">No attraction shutdowns, no sanitation events, no reporting required</div>
+          <div class="cmp-item">No slip hazards, no oily residue on walkways or splash zones</div>
+          <div class="cmp-item">Non-flammable, eliminates fire risk in all pump room environments</div>
+          <div class="cmp-item">316 SS &amp; PEEK withstand chlorine, saltwater, UV &amp; chemical vapour</div>
+          <div class="cmp-item">No fluid changes, no filtration systems, no hazardous disposal</div>
+        </div>
+        <div class="cmp-footnote">Water is already in the system, the hydraulic fluid belongs there too.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIX REASONS -->
+<section class="section section-dark" aria-labelledby="reasons-heading">
+  <div class="bubble-layer" id="reasons-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Six Reasons</p>
+      <h2 id="reasons-heading">Why Water Hydraulics Fit<br/><span class="text-wave">Every Aquatic Facility</span></h2>
+    </div>
+    <div class="reasons-grid">
+      <div class="reason-card reveal" data-num="01" style="transition-delay:.0s">
+        <div class="r-icon">🏊</div>
+        <h3>Zero Pool Contamination Risk</h3>
+        <p>A water hydraulics leak introduces only clean water, safe for pools, filters, and guests. No closures, no sanitation events, no filter media damage, no reporting required.</p>
+      </div>
+      <div class="reason-card reveal" data-num="02" style="transition-delay:.07s">
+        <div class="r-icon">⚗️</div>
+        <h3>Built for Chlorine, Salt, UV &amp; Humidity</h3>
+        <p>316 stainless and carbon-reinforced PEEK deliver strong chemical resistance and long service life in chlorinated pools, saltwater surf parks, misted ride zones, and outdoor seasonal environments.</p>
+      </div>
+      <div class="reason-card reveal" data-num="03" style="transition-delay:.14s">
+        <div class="r-icon">👥</div>
+        <h3>Safe Around the Public</h3>
+        <p>No oil residue on walkways, splash zones, or pump room floors. Non-flammable in enclosed spaces. No slip-and-fall liability. Safer for guests, staff, and maintenance crews at all times.</p>
+      </div>
+      <div class="reason-card reveal" data-num="04" style="transition-delay:.0s">
+        <div class="r-icon">🌊</div>
+        <h3>Precise, Strong Motion for Wave Systems</h3>
+        <p>Wave-making chambers, air-blast valves, movable floors, rapid fill/drain systems, and ride gates all require fast, repeatable, high-force actuation. Water hydraulics deliver it reliably.</p>
+      </div>
+      <div class="reason-card reveal" data-num="05" style="transition-delay:.07s">
+        <div class="r-icon">☀️</div>
+        <h3>Ideal for Outdoor &amp; Seasonal Facilities</h3>
+        <p>Water stays predictable across hot days, cold nights, direct sunlight, and seasonal shutdowns. Oil systems respond poorly to temperature swings, water reduces seasonal maintenance demands.</p>
+      </div>
+      <div class="reason-card reveal" data-num="06" style="transition-delay:.14s">
+        <div class="r-icon">📈</div>
+        <h3>Lower Maintenance &amp; Better Uptime</h3>
+        <p>No filter changes, no fluid swaps, no contamination checks, no heat management, no leak mitigation. More uptime, less maintenance labour, lower operating costs, longer component life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="section section-alt" aria-labelledby="table-heading">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Performance Comparison</p>
+      <h2 id="table-heading">Water vs Oil vs Air<br/><span class="text-wave">Aquatic Facility Environments</span></h2>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th class="hl">Water Hydraulics</th>
+            <th>Oil Hydraulics</th>
+            <th>Air Systems</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Pool Contamination Risk</td><td class="hl-col td-good">None</td><td class="td-bad">High</td><td class="td-mid">None</td></tr>
+          <tr><td>Chemical Resistance</td><td class="hl-col td-good">High</td><td class="td-bad">Low</td><td class="td-mid">Medium</td></tr>
+          <tr><td>Force Output</td><td class="hl-col td-good">High</td><td class="td-good">High</td><td class="td-bad">Low</td></tr>
+          <tr><td>Safety Around Guests</td><td class="hl-col td-good">High</td><td class="td-bad">Low</td><td class="td-good">High</td></tr>
+          <tr><td>Suitability for Wet Areas</td><td class="hl-col td-good">Excellent</td><td class="td-bad">Poor</td><td class="td-mid">Moderate</td></tr>
+          <tr><td>Maintenance Workload</td><td class="hl-col td-good">Low</td><td class="td-bad">High</td><td class="td-mid">Medium</td></tr>
+          <tr><td>Temperature Stability</td><td class="hl-col td-good">High</td><td class="td-bad">Low</td><td class="td-mid">Medium</td></tr>
+          <tr><td>Chlorine / UV Tolerance</td><td class="hl-col td-good">High</td><td class="td-bad">Low</td><td class="td-mid">Medium</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="section section-dark" aria-labelledby="apps-heading">
+  <div class="bubble-layer" id="apps-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Where We're Used</p>
+      <h2 id="apps-heading">Applications Across<br/><span class="text-wave">Water Parks &amp; Aquatic Facilities</span></h2>
+    </div>
+    <div class="apps-grid">
+      <div class="app-card reveal" style="transition-delay:.0s">
+        <div class="app-card-head"><span class="app-icon">🌊</span><h3>Wave &amp; Surf Attractions</h3></div>
+        <div class="app-items">
+          <div class="app-item">Wave-making chamber actuators</div>
+          <div class="app-item">Chamber gate &amp; fill/drain valves</div>
+          <div class="app-item">Surf-machine control systems</div>
+          <div class="app-item">Safety isolation valves</div>
+          <div class="app-item">Air-blast &amp; pressure sequence valves</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.07s">
+        <div class="app-card-head"><span class="app-icon">🎢</span><h3>Ride Control &amp; Launch Systems</h3></div>
+        <div class="app-items">
+          <div class="app-item">Slide entry gates</div>
+          <div class="app-item">Rapid-dispatch launch pads</div>
+          <div class="app-item">Conveyor and lift systems</div>
+          <div class="app-item">Lock gates for raft rides</div>
+          <div class="app-item">Brake mechanisms</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.14s">
+        <div class="app-card-head"><span class="app-icon">🏊</span><h3>Aquatic Infrastructure</h3></div>
+        <div class="app-items">
+          <div class="app-item">Pool isolation valves</div>
+          <div class="app-item">Filtration-yard valves</div>
+          <div class="app-item">Backwash actuators</div>
+          <div class="app-item">Pump room gate valves</div>
+          <div class="app-item">Adjustable weir gates</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.0s">
+        <div class="app-card-head"><span class="app-icon">🏗️</span><h3>Movable Floors &amp; Platforms</h3></div>
+        <div class="app-items">
+          <div class="app-item">Lifting &amp; depth-control actuators</div>
+          <div class="app-item">Position control mechanisms</div>
+          <div class="app-item">Safety isolation valves</div>
+          <div class="app-item">Diving platform adjusters</div>
+          <div class="app-item">Sequencing &amp; timing gates</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.07s">
+        <div class="app-card-head"><span class="app-icon">💦</span><h3>Water Play &amp; Splash Features</h3></div>
+        <div class="app-items">
+          <div class="app-item">Flow control for play zones</div>
+          <div class="app-item">Tipping buckets &amp; dumpers</div>
+          <div class="app-item">Splash feature actuators</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.14s">
+        <div class="app-card-head"><span class="app-icon">✅</span><h3>Why Aquatic Operators Choose Water</h3></div>
+        <div class="app-items">
+          <div class="app-item">No pool shutdown on any leak</div>
+          <div class="app-item">No guest contamination risk</div>
+          <div class="app-item">Chlorine &amp; salt resistant by design</div>
+          <div class="app-item">Safer pump rooms &amp; enclosed spaces</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERFORMANCE BENEFITS -->
+<section class="section section-alt" aria-labelledby="benefits-heading">
+  <div class="bubble-layer" id="benefits-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header reveal">
+      <p class="label">Performance Gains</p>
+      <h2 id="benefits-heading">How Water Hydraulics Improve<br/><span class="text-wave">Aquatic Facility Performance</span></h2>
+    </div>
+    <div class="benefits-list">
+      <div class="benefit-row reveal" style="transition-delay:.0s">
+        <div class="benefit-num">1</div>
+        <div><h3>Cleaner Systems with No Chemical Interference</h3><p>Chlorine, bromine, and pH-control agents damage oil systems over time. Water hydraulics eliminate fluid breakdown and chemical interaction entirely the hydraulic medium is fully compatible with the aquatic environment.</p></div>
+      </div>
+      <div class="benefit-row reveal" style="transition-delay:.07s">
+        <div class="benefit-num">2</div>
+        <div><h3>Higher Reliability in Pump Rooms, Tunnels &amp; Buried Vaults</h3><p>These spaces stay wet year-round from humidity, condensation, spray, and temperature variation. Water hydraulics perform reliably in all of these conditions without fluid degradation or seal failure from chemical attack.</p></div>
+      </div>
+      <div class="benefit-row reveal" style="transition-delay:.12s">
+        <div class="benefit-num">3</div>
+        <div><h3>Better Safety for Guests and Staff</h3><p>No oil means no slip hazards in guest-accessible areas, no hydrocarbon residue in pool basins, no fire risk in enclosed pump rooms, and safer maintenance environments for the service teams who access these systems daily.</p></div>
+      </div>
+      <div class="benefit-row reveal" style="transition-delay:.17s">
+        <div class="benefit-num">4</div>
+        <div><h3>Lower Operating Costs Across the Facility</h3><p>Savings accumulate from no oil filtration, no fluid disposal, fewer seal replacements, reduced downtime, and longer component life. Predictable maintenance schedules let operators plan better across seasons.</p></div>
+      </div>
+      <div class="benefit-row reveal" style="transition-delay:.22s">
+        <div class="benefit-num">5</div>
+        <div><h3>Fits Modern Environmental &amp; Safety Standards</h3><p>Municipalities and private operators need safer attractions, lower chemical load, reduced risk, sustainable operation, and fewer unplanned shutdowns. Water hydraulics support all of these goals without any performance trade-off.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" aria-label="Book Aquatic Systems Review">
+  <div id="cta">
+    <div class="bubble-layer" id="cta-bubbles" aria-hidden="true"></div>
+    <div class="cta-inner" style="position:relative;z-index:2;">
+      <p class="label reveal">The Only Safe Choice</p>
+      <h2 class="reveal" style="transition-delay:.1s">The Only Hydraulic Fluid Safe in<br/><span class="text-wave">Every Aquatic Environment</span></h2>
+      <p class="reveal" style="transition-delay:.2s">Water hydraulics are the only actuation solution that is fully aligned with the safety, cleanliness, and performance demands of modern water parks, wave pools, and aquatic attractions.</p>
+      <div class="cta-buttons reveal" style="transition-delay:.3s">
+        <a href="/contact/" class="btn btn-primary">Book an Aquatic Systems Review <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/pilot/" class="btn btn-outline">Explore Pilot Program</a>
+      </div>
+      <div class="cta-ideal reveal" style="transition-delay:.35s">
+        <strong>Ideal for:</strong> Wave Pools &nbsp;·&nbsp; Surf Parks &nbsp;·&nbsp; Waterslide Complexes &nbsp;·&nbsp; Aquatic Centres &nbsp;·&nbsp; Movable Floors &nbsp;·&nbsp; Splash Pads &nbsp;·&nbsp; Coastal Facilities
+      </div>
+      <div class="cta-stats reveal" style="transition-delay:.4s">
+        <div class="cta-stat"><div class="snum">ZERO</div><div class="slbl">Pool Contamination Risk</div></div>
+        <div class="cta-stat"><div class="snum">ZERO</div><div class="slbl">Oil Fire / Slip Hazard</div></div>
+        <div class="cta-stat"><div class="snum">ZERO</div><div class="slbl">Hydrocarbon in Pool Water</div></div>
+        <div class="cta-stat"><div class="snum">100%</div><div class="slbl">Water-Based Actuation</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER --><script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40), {passive:true});
+
+  (function globalBubbles() {
+    const c = document.getElementById('global-bubbles');
+    for (let i = 0; i < 30; i++) {
+      const b = document.createElement('div'); b.className = 'bubble';
+      const s = Math.random()*10+3, d = (Math.random()-.5)*80;
+      b.style.cssText = `width:${s}px;height:${s}px;left:${Math.random()*100}%;bottom:${Math.random()*12}%;--drift:${d}px;animation-duration:${Math.random()*18+10}s;animation-delay:${Math.random()*16}s;`;
+      c.appendChild(b);
+    }
+  })();
+
+  function seedBubbles(id, n) {
+    const c = document.getElementById(id); if (!c) return;
+    for (let i = 0; i < n; i++) {
+      const b = document.createElement('div'); b.className = 'bubble';
+      const s = Math.random()*8+2, d = (Math.random()-.5)*60;
+      b.style.cssText = `width:${s}px;height:${s}px;left:${Math.random()*100}%;bottom:${Math.random()*25}%;--drift:${d}px;animation-duration:${Math.random()*14+8}s;animation-delay:${Math.random()*10}s;`;
+      c.appendChild(b);
+    }
+  }
+  ['hero-bubbles','compare-bubbles','reasons-bubbles','apps-bubbles','benefits-bubbles','cta-bubbles'].forEach(id => seedBubbles(id, 12));
+
+  const obs = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);} }), {threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => obs.observe(el));
+</script>
+<!-- WQ_CONTEXT_APPS_START -->
+<section class="wq-context-apps" aria-label="Related application pages">
+  <div class="wq-context-wrap">
+    <div>
+      <h2>Related application pages</h2>
+      <p>Application pages connect this section to specific water hydraulic projects and operating problems.</p>
+    </div>
+    <div class="wq-app-links"><a href="/applications/flow-control/">Flow Control</a><a href="/applications/nozzle-technology/">Nozzle Technology</a><a href="/applications/fire-suppression/">Fire Suppression</a></div>
+  </div>
+</section>
+<!-- WQ_CONTEXT_APPS_END -->
+
+<!-- WQ_GLOBAL_FOOTER_START -->
+<footer class="wq-site-footer" role="contentinfo">
+  <div class="wq-footer-container">
+    <div class="wq-footer-grid">
+      <div class="wq-footer-brand">
+        <span class="wq-logo-main">WaterQuest Solutions</span>
+        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Industries</h5>
+        <ul><li><a href="/industries/municipal/">Municipal</a></li><li><a href="/industries/wastewater-treatment/">Wastewater Treatment</a></li><li><a href="/industries/hydro/">Hydro</a></li><li><a href="/industries/marine/">Marine</a></li><li><a href="/industries/desalination/">Desalination</a></li><li><a href="/industries/mining/">Mining</a></li><li><a href="/industries/forestry/">Forestry</a></li><li><a href="/industries/pulp-paper/">Pulp and Paper</a></li><li><a href="/industries/food-beverage/">Food and Beverage</a></li><li><a href="/industries/agriculture/">Agriculture</a></li><li><a href="/industries/hydrogen-production/">Hydrogen Production</a></li><li><a href="/industries/fire-suppression/">Fire Suppression</a></li><li><a href="/industries/dust-control/">Dust Control</a></li><li><a href="/industries/odor-control/">Odor Control</a></li><li><a href="/industries/waterparks/" class="active">Waterparks</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Core Pages</h5>
+        <ul><li><a href="/products/">Products</a></li><li><a href="/industries/" class="active">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
+          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
+          <li>558 East Kent Ave S</li>
+          <li>Vancouver, BC V5X 4V6</li>
+          <li>Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
+  </div>
+</footer>
+<!-- WQ_GLOBAL_FOOTER_END -->
+<script id="wq-global-shell-js">
+    (function(){
+      var nav=document.getElementById("wq-nav");
+      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
+      var menuButton=document.querySelector(".wq-menu-toggle");
+      var mobileMenu=document.getElementById("wq-mobile-menu");
+      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
+      var bubbles=document.getElementById("wq-global-bubbles");
+      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
+      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
+      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
+      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
+      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
+      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
+      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
+      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
+      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
+      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
+      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
+      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
+    })();
+  </script>
+
+</body>
+</html>

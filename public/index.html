@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WaterQuest Solutions | Water Hydraulic Systems Without Oil</title>
+  <meta name="description" content="WaterQuest Solutions designs complete water hydraulic systems and components that use tap water or seawater instead of oil. Explore products, industries, technology resources, and the water hydraulics knowledge hub." />
+
+<style>
+    :root {
+      --navy: #0A1628;
+      --mid: #0D2044;
+      --panel: #122954;
+      --panel-deep: #071321;
+      --aqua: #00C8D4;
+      --green: #20D3A7;
+      --white: #FFFFFF;
+      --line: rgba(255,255,255,0.18);
+      --aqua-line: rgba(0,200,212,0.32);
+      --max: 1240px;
+      --font: Avenir, "Avenir Next", "Nunito Sans", "Segoe UI", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--navy);
+      color: var(--white);
+      font-family: var(--font);
+      line-height: 1.68;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+
+    main { position: relative; z-index: 1; }
+    .hero {
+      position: relative;
+      min-height: calc(100svh - 78px);
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+      isolation: isolate;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(10,22,40,0.96) 0%, rgba(10,22,40,0.86) 43%, rgba(10,22,40,0.30) 76%, rgba(10,22,40,0.86) 100%),
+        linear-gradient(0deg, rgba(10,22,40,1), rgba(10,22,40,0.12) 46%),
+        url("/assets/waterquest-hero.png") center right / cover no-repeat;
+      z-index: -2;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,200,212,0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,200,212,0.08) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: linear-gradient(90deg, black, transparent 72%);
+      opacity: 0.58;
+      z-index: -1;
+    }
+    .hero-grid {
+      padding: 100px 0 56px;
+      display: grid;
+      grid-template-columns: minmax(0, 760px) minmax(300px, 420px);
+      gap: 48px;
+      align-items: end;
+    }
+    .eyebrow {
+      color: var(--aqua);
+      font-size: 0.76rem;
+      font-weight: 950;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    h1, h2, h3 { color: var(--white); margin: 0; line-height: 1.06; }
+    h1 {
+      max-width: 780px;
+      font-size: clamp(2.8rem, 7vw, 5.8rem);
+      font-weight: 950;
+      letter-spacing: -0.04em;
+    }
+    h1 span, h2 span, h3 span { color: var(--aqua); }
+    .lead {
+      max-width: 690px;
+      margin: 24px 0 32px;
+      color: var(--white);
+      font-size: clamp(1.08rem, 2vw, 1.28rem);
+      font-weight: 650;
+    }
+    .actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 20px;
+      border: 1px solid var(--aqua-line);
+      border-radius: 6px;
+      color: var(--aqua);
+      font-size: 0.82rem;
+      font-weight: 950;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .btn.primary { background: var(--aqua); border-color: var(--aqua); color: var(--navy); }
+    .btn:hover { transform: translateY(-1px); }
+
+    .proof-panel {
+      border: 1px solid var(--aqua-line);
+      border-radius: 8px;
+      background: rgba(7,19,33,0.78);
+      backdrop-filter: blur(14px);
+      overflow: hidden;
+    }
+    .proof-panel header {
+      padding: 20px;
+      border-bottom: 1px solid var(--aqua-line);
+    }
+    .proof-panel h2 {
+      font-size: 1.16rem;
+      line-height: 1.22;
+      letter-spacing: -0.01em;
+    }
+    .proof-grid { display: grid; grid-template-columns: 1fr 1fr; }
+    .proof {
+      padding: 18px;
+      border-right: 1px solid var(--aqua-line);
+      border-bottom: 1px solid var(--aqua-line);
+    }
+    .proof:nth-child(2n) { border-right: 0; }
+    .proof:nth-last-child(-n+2) { border-bottom: 0; }
+    .proof b { display: block; color: var(--aqua); font-size: 1.45rem; line-height: 1; }
+    .proof span { display: block; margin-top: 7px; font-size: 0.74rem; font-weight: 850; letter-spacing: 0.08em; text-transform: uppercase; }
+
+    section { padding: 86px 0; border-bottom: 1px solid var(--line); }
+    .section-alt { background: var(--mid); }
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.7fr);
+      gap: 52px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 950;
+      letter-spacing: -0.035em;
+    }
+    .section-head p, .section-copy {
+      margin: 0;
+      color: var(--white);
+      font-size: 1.05rem;
+      font-weight: 650;
+    }
+
+    .path-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+    .path-card, .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: linear-gradient(145deg, rgba(18,41,84,0.96), rgba(10,30,60,0.94));
+      padding: 24px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .path-card { min-height: 270px; display: flex; flex-direction: column; }
+    .path-card:hover, .panel:hover { border-color: var(--aqua-line); transform: translateY(-2px); }
+    .path-card small, .tag {
+      display: inline-flex;
+      width: fit-content;
+      color: var(--aqua);
+      font-size: 0.72rem;
+      font-weight: 950;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+    .path-card h3, .panel h3 {
+      margin: 18px 0 12px;
+      font-size: 1.22rem;
+      line-height: 1.18;
+      letter-spacing: -0.01em;
+    }
+    .path-card p, .panel p {
+      margin: 0;
+      color: var(--white);
+      font-weight: 620;
+    }
+    .path-card b {
+      margin-top: auto;
+      padding-top: 20px;
+      color: var(--aqua);
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .feature-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 18px; }
+    .product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 18px; }
+    .industry-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .tech-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .knowledge-grid { display: grid; grid-template-columns: 1.2fr 0.8fr 0.8fr; gap: 14px; }
+    .company-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .panel.tall { min-height: 330px; display: grid; align-content: space-between; }
+    .panel .link {
+      display: inline-block;
+      margin-top: 20px;
+      color: var(--aqua);
+      font-size: 0.78rem;
+      font-weight: 950;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .list-links { display: grid; gap: 10px; margin-top: 20px; }
+    .list-links a {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+      color: var(--white);
+      font-weight: 850;
+    }
+    .list-links a::after { content: "Open"; color: var(--aqua); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+
+    .compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .compare > div { padding: 30px; }
+    .compare .oil { background: rgba(232,112,64,0.08); }
+    .compare .water { background: rgba(0,200,212,0.08); border-left: 1px solid var(--aqua-line); }
+    .compare ul { list-style: none; display: grid; gap: 12px; padding: 0; margin: 20px 0 0; }
+    .compare li { font-weight: 650; }
+    .compare li::before { content: "•"; margin-right: 10px; color: var(--aqua); }
+
+    .cta {
+      background:
+        linear-gradient(135deg, rgba(0,200,212,0.13), rgba(10,22,40,0.2)),
+        var(--mid);
+    }
+    .cta-box {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 28px;
+      align-items: center;
+    }
+    .cta p { margin: 18px 0 0; max-width: 720px; font-weight: 650; }
+
+    @media (max-width: 1080px) {
+      .hero-grid, .section-head, .feature-grid, .cta-box { grid-template-columns: 1fr; }
+      .path-grid { grid-template-columns: repeat(2, 1fr); }
+      .product-grid, .industry-grid, .tech-grid, .knowledge-grid, .company-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 28px, var(--max)); }
+      .hero { min-height: auto; }
+      .hero-grid { padding: 72px 0 36px; }
+      section { padding: 64px 0; }
+      .path-grid, .product-grid, .industry-grid, .tech-grid, .knowledge-grid, .company-grid, .compare { grid-template-columns: 1fr; }
+      .compare .water { border-left: 0; border-top: 1px solid var(--aqua-line); }
+      .proof-grid { grid-template-columns: 1fr; }
+      .proof { border-right: 0; }
+      .proof:nth-last-child(2) { border-bottom: 1px solid var(--aqua-line); }
+      .path-card, .panel { min-height: auto; padding: 22px; }
+    }
+  </style><link rel="canonical" href="https://waterquestsolutions.com" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:title" content="WaterQuest Solutions | Water Hydraulic Systems Without Oil" />
+  <meta property="og:description" content="WaterQuest Solutions designs complete water hydraulic systems and components that use tap water or seawater instead of oil. Explore products, industries, technology resources, and the water hydraulics knowledge hub." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://waterquestsolutions.com" />
+  <meta property="og:image" content="/assets/waterquest-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WaterQuest Solutions | Water Hydraulic Systems Without Oil" />
+  <meta name="twitter:description" content="WaterQuest Solutions designs complete water hydraulic systems and components that use tap water or seawater instead of oil. Explore products, industries, technology resources, and the water hydraulics knowledge hub." />
+  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
+  <link rel="alternate" hreflang="en-CA" href="https://waterquestsolutions.com" />
+  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
+  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"WebSite","@id":"/#website","url":"https://waterquestsolutions.com","name":"WaterQuest Solutions","description":"Oil-free water hydraulic systems using tap water or seawater as the hydraulic medium.","publisher":{"@id":"/#organization"},"inLanguage":"en-CA"},{"@type":"WebSite","@id":"https://waterquestsolutions.com#webpage","url":"https://waterquestsolutions.com","name":"WaterQuest Solutions | Water Hydraulic Systems Without Oil","description":"WaterQuest Solutions designs complete water hydraulic systems and components that use tap water or seawater instead of oil. Explore products, industries, technology resources, and the water hydraulics knowledge hub.","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"}]}]}</script>
+  <style id="wq-global-shell-css">
+    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
+    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
+    body a{color:inherit}
+    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
+    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
+    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
+    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
+    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
+    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
+    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
+    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
+    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
+    main .btn.primary{color:var(--wq-navy)!important}
+    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
+    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
+    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
+    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
+    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
+    .wq-form-status.is-error{color:#ffb1b1!important}
+    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
+    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
+    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
+    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
+    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
+    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
+    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
+    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
+    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
+    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
+    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
+    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
+    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
+    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
+    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
+    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
+    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
+    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
+    .wq-hero-visual-text{padding:20px}
+    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
+    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
+    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
+    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
+    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
+    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
+    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
+    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
+    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
+    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
+    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
+    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
+    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
+    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
+    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
+    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
+    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
+    #wq-mobile-menu.open{display:block}
+    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
+    #wq-mobile-menu a:last-child{border-bottom:0}
+    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
+    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
+    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
+    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
+    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
+    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
+    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
+    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
+    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
+    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
+    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
+    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
+    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
+    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
+    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
+    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
+  </style>
+</head>
+<body class="wq-section-home">
+<!-- WQ_GLOBAL_HEADER_START -->
+<div id="wq-global-bubbles" aria-hidden="true"></div>
+<nav id="wq-nav" role="navigation" aria-label="Main navigation">
+  <div class="wq-nav-inner">
+    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
+      <span class="wq-logo-main">WaterQuest Solutions</span>
+      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+    </a>
+    <ul class="wq-nav-links" role="list">
+      <li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li>
+      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
+    </ul>
+    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
+  </div>
+</nav>
+<div id="wq-mobile-menu">
+  <a href="/products/">Products</a><a href="/industries/">Industries</a><a href="/technology/">Technology</a><a href="/knowledge-hub/">Knowledge Hub</a><a href="/about/">About</a>
+  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
+</div>
+<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
+<section class="wq-conversion-hero" aria-label="Page introduction">
+  <div class="wq-conversion-wrap">
+    <div>
+      <p class="wq-hero-eyebrow">Water as a hydraulic medium</p>
+      <h1>Hydraulic power <span>without oil</span> in the circuit.</h1>
+      <p class="wq-hero-copy">Start here if you are evaluating water hydraulics as a cleaner medium for industrial force, motion, control, and pressure generation.</p>
+      <div class="wq-hero-actions">
+        <a class="wq-hero-cta" href="/products/">Explore Water Hydraulic Products</a>
+        <a class="wq-hero-secondary" href="/technology/">Open Technology References</a>
+      </div>
+    </div>
+    <a class="wq-hero-visual" href="/products/">
+      <div class="wq-hero-picture" aria-hidden="true"></div>
+      <div class="wq-hero-visual-text">
+        <small>Start the system map</small>
+        <strong>Products, industries, technology, and technical authority in one clean path.</strong>
+        <span>Designed for engineers, industry buyers, and curious technical readers.</span>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- WQ_CONVERSION_HERO_END --><main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Water as a hydraulic medium</p>
+          <h1 id="hero-title">Stop leaking oil into the future.</h1>
+          <p class="lead">WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
+          <div class="actions">
+            <a class="btn primary" href="/products/">Explore Products</a>
+            <a class="btn" href="/technology/">Open Technology Resources</a>
+          </div>
+        </div>
+        <aside class="proof-panel" aria-label="WaterQuest site highlights"><div class="proof-grid">
+            <div class="proof"><b>0</b><span>hydraulic oil in the circuit</span></div>
+            <div class="proof"><b>316L</b><span>stainless wetted materials</span></div>
+            <div class="proof"><b>PEEK</b><span>water-compatible wear interfaces</span></div>
+            <div class="proof"><b>214</b><span>crawlable authority pages</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="site-map">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Start here</p>
+            <h2>Five core pathways, one authority site.</h2>
+          </div>
+          <p>Products, Industries, Technology, Knowledge Hub, and About now work together as the main structure. Each path answers a different buyer or engineer question and pushes visitors deeper into the site.</p>
+        </div>
+        <div class="path-grid">
+          <a class="path-card" href="/products/"><small>Products</small><h3>Find the component or system.</h3><p>Pumps, motors, cylinders, valves, HPUs, fire pumps, desalination packages, and stainless support products.</p><b>Browse products</b></a>
+          <a class="path-card" href="/industries/"><small>Industries</small><h3>Match water hydraulics to the operating environment.</h3><p>Municipal, marine, mining, food, hydro, fire suppression, wastewater, dust control, and more.</p><b>Browse industries</b></a>
+          <a class="path-card" href="/technology/"><small>Technology</small><h3>Use the engineering layer.</h3><p>Applications, calculations, glossary definitions, and nozzle reference pages are grouped here.</p><b>Open technology</b></a>
+          <a class="path-card" href="/knowledge-hub/"><small>Knowledge Hub</small><h3>Build topical authority.</h3><p>Technical articles explaining water hydraulics, materials, applications, compliance, conversions, and ROI.</p><b>Read the hub</b></a>
+          <a class="path-card" href="/about/"><small>About</small><h3>Understand the company and ecosystem.</h3><p>WaterQuest, the pilot program, and WQS Stainless connect the commercial story to the engineering offer.</p><b>Meet WaterQuest</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Products</p>
+            <h2>Components that make water hydraulics practical.</h2>
+          </div>
+          <p>The product section is the commercial backbone of the site. It gives engineers and buyers direct routes into the exact equipment families behind complete oil-free hydraulic systems.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="panel tall">
+            <div>
+              <span class="tag">Complete systems</span>
+              <h3>From single components to full water hydraulic packages.</h3>
+              <p>Use the product family pages to move from concept to component selection: pressure generation, motion, control, power units, and stainless support hardware.</p>
+            </div>
+            <a class="link" href="/products/">Open product overview</a>
+          </article>
+          <article class="panel">
+            <span class="tag">Product pathways</span>
+            <div class="list-links">
+              <a href="/products/axial-piston-pumps/">Axial piston pumps</a>
+              <a href="/products/water-hydraulic-motors/">Water hydraulic motors</a>
+              <a href="/products/water-hydraulic-cylinders/">Water hydraulic cylinders</a>
+              <a href="/products/water-hydraulic-valves/">Water hydraulic valves</a>
+              <a href="/products/water-hydraulics-hpu/">Water hydraulics HPUs</a>
+            </div>
+          </article>
+        </div>
+        <div class="product-grid">
+          <article class="panel"><h3>Fire pumps</h3><p>Clean high-pressure pumping for fire suppression use cases.</p><a class="link" href="/products/axial-piston-fire-pumps/">Open</a></article>
+          <article class="panel"><h3>Desalination</h3><p>Power Center packages for reverse-osmosis and water treatment systems.</p><a class="link" href="/products/power-center-reverse-osmosis/">Open</a></article>
+          <article class="panel"><h3>Bilge valve</h3><p>Marine water hydraulic control without oil contamination risk.</p><a class="link" href="/products/dn200-pn6-water-hydraulic-bilge-valve/">Open</a></article>
+          <article class="panel"><h3>WQS Stainless</h3><p>316 stainless fittings and adapters through the sister stainless supply site.</p><a class="link" href="/wqs-stainless/">Open</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Industries</p>
+            <h2>Where oil has no place.</h2>
+          </div>
+          <p>The industry section translates the same water hydraulic argument into real operating environments: waterways, vessels, treatment plants, mines, public infrastructure, food systems, fire protection, and process facilities.</p>
+        </div>
+        <div class="industry-grid">
+          <a class="panel" href="/industries/municipal/"><h3>Municipal</h3><p>Public infrastructure, gates, flood control, and civic water systems.</p></a>
+          <a class="panel" href="/industries/wastewater-treatment/"><h3>Wastewater</h3><p>Oil-free motion and pressure near treatment processes.</p></a>
+          <a class="panel" href="/industries/marine/"><h3>Marine</h3><p>Deck equipment, bilge systems, and coastal hydraulic work.</p></a>
+          <a class="panel" href="/industries/desalination/"><h3>Desalination</h3><p>Reverse-osmosis and water-treatment packages.</p></a>
+          <a class="panel" href="/industries/mining/"><h3>Mining</h3><p>Industrial force without petroleum fluid risk.</p></a>
+          <a class="panel" href="/industries/food-beverage/"><h3>Food and Beverage</h3><p>Hydraulic power near sensitive production environments.</p></a>
+          <a class="panel" href="/industries/fire-suppression/"><h3>Fire Suppression</h3><p>Water-based pressure delivery for safety systems.</p></a>
+          <a class="panel" href="/industries/hydro/"><h3>Hydro</h3><p>Gate actuation and water-adjacent infrastructure.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Technology</p>
+            <h2>The bridge between products and authority content.</h2>
+          </div>
+          <p>Technology is now the place for engineering tools and reference pages: application pages, hydraulic calculations, technical glossary entries, and nozzle reference material.</p>
+        </div>
+        <div class="tech-grid">
+          <a class="panel" href="/applications/"><span class="tag">Applications</span><h3>Use-case pages</h3><p>Gate actuation, flow control, fire suppression, dust suppression, flood control, nozzle technology, and marine bilge applications.</p></a>
+          <a class="panel" href="/calculations/"><span class="tag">Calculations</span><h3>Hydraulic sizing tools</h3><p>Pressure, force, flow, speed, pump power, motor torque, nozzle flow, and water system estimates.</p></a>
+          <a class="panel" href="/glossary/"><span class="tag">Glossary</span><h3>Technical definitions</h3><p>Hydraulic pressure, hydraulic power, PEEK, 316L stainless steel, back pressure, volumetric efficiency, and more.</p></a>
+          <a class="panel" href="/applications/nozzle-technology/"><span class="tag">Nozzles</span><h3>Nozzle reference</h3><p>Nozzle geometry and spray selection for fire suppression, dust control, odour control, and cleaning.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Knowledge Hub</p>
+            <h2>The authority engine for water as a hydraulic medium.</h2>
+          </div>
+          <p>The Knowledge Hub is built for search impressions and technical credibility. It supports engineers, municipalities, industrial buyers, and AI crawlers with structured explanations.</p>
+        </div>
+        <div class="knowledge-grid">
+          <article class="panel tall">
+            <div>
+              <span class="tag">Authority library</span>
+              <h3>Start with first principles, then move into applications.</h3>
+              <p>The hub connects materials, physics, system design, conversion questions, industry applications, maintenance, compliance, and ROI into one searchable technical resource.</p>
+            </div>
+            <a class="link" href="/knowledge-hub/">Open Knowledge Hub</a>
+          </article>
+          <article class="panel"><h3>Engineering fundamentals</h3><p>Explain pressure, flow, force, materials, and water hydraulic design principles.</p><a class="link" href="/knowledge-hub/?category=engineering-fundamentals">Open category</a></article>
+          <article class="panel"><h3>Industry applications</h3><p>Show how the same core technology applies across markets and operating conditions.</p><a class="link" href="/knowledge-hub/?category=industry-applications">Open category</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Why water</p>
+            <h2>Same hydraulic principles. Different medium. Better fit.</h2>
+          </div>
+          <p>The homepage now makes the central WaterQuest argument explicit before handing visitors to the deeper pages that prove it.</p>
+        </div>
+        <div class="compare">
+          <div class="oil">
+            <span class="tag">Oil hydraulics</span>
+            <h3>Power with contamination exposure</h3>
+            <ul>
+              <li>Spill response, containment, and cleanup planning</li>
+              <li>Fire and environmental liability in sensitive sites</li>
+              <li>Fluid procurement, filtration, replacement, and disposal</li>
+            </ul>
+          </div>
+          <div class="water">
+            <span class="tag">Water hydraulics</span>
+            <h3>Power with the working fluid already on site</h3>
+            <ul>
+              <li>Tap water or seawater as the hydraulic medium</li>
+              <li>316L stainless and carbon-reinforced PEEK material architecture</li>
+              <li>Cleaner fit for municipal, marine, process, and environmental infrastructure</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Company</p>
+            <h2>The pages that tie the story together.</h2>
+          </div>
+          <p>About, Pilot Program, and WQS Stainless connect the engineering offer to the company, adoption path, and stainless supply ecosystem.</p>
+        </div>
+        <div class="company-grid">
+          <a class="panel" href="/about/"><span class="tag">About</span><h3>WaterQuest Solutions</h3><p>Company story, purpose, and the clean hydraulic position behind the site.</p></a>
+          <a class="panel" href="/pilot/"><span class="tag">Pilot</span><h3>Prove it in the field</h3><p>A structured path for customers evaluating water hydraulic performance before broader adoption.</p></a>
+          <a class="panel" href="/wqs-stainless/"><span class="tag">Sister site</span><h3>WQS Stainless</h3><p>316 stainless fittings and adapters through www.316stainless.ca.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap cta-box">
+        <div>
+          <p class="eyebrow">Engineering Review</p>
+          <h2>Could your hydraulic circuit run on water?</h2>
+          <p>Bring a system, component, application, or retrofit candidate. WaterQuest can help assess whether oil-free hydraulic power makes engineering and business sense.</p>
+        </div>
+        <a class="btn primary" href="/contact/">Start Engineering Review</a>
+      </div>
+    </section>
+  </main><!-- WQ_REFERENCE_RAIL_START -->
+<aside class="wq-reference-rail" aria-label="Engineering references">
+  <a href="/calculations/"><small>Reference</small><strong>Engineering Calculators</strong></a>
+  <a href="/glossary/"><small>Reference</small><strong>Technical Glossary</strong></a>
+</aside>
+<!-- WQ_REFERENCE_RAIL_END -->
+
+<!-- WQS_ENRICHMENT_START -->
+<style>
+.wqs-enrichment{background:#f5fbf9;border-top:1px solid #d9e8e3;color:#15302c;font-family:Nunito Sans,Arial,sans-serif;padding:56px 6vw}.wqs-enrichment__inner{margin:0 auto;max-width:1120px}.wqs-enrichment__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-enrichment h2{font-size:clamp(28px,4vw,48px);line-height:1.05;margin:8px 0 16px}.wqs-enrichment p{color:#4b625d;font-size:18px;line-height:1.65;max-width:900px}.wqs-enrichment__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px}.wqs-enrichment__panel{background:#fff;border:1px solid #d9e8e3;border-radius:8px;padding:22px}.wqs-enrichment__panel h3{font-size:18px;margin:0 0 12px}.wqs-enrichment ul{margin:0;padding-left:20px}.wqs-enrichment li{line-height:1.55;margin:7px 0}.wqs-enrichment__links{display:grid;gap:10px}.wqs-enrichment__links a{background:#fff;border:1px solid #d9e8e3;border-radius:8px;color:#15302c;display:grid;gap:4px;padding:14px;text-decoration:none}.wqs-enrichment__links span{color:#5f746f;font-size:14px;line-height:1.45}@media(max-width:760px){.wqs-enrichment{padding:40px 18px}.wqs-enrichment__grid{grid-template-columns:1fr}}
+</style>
+<section class="wqs-enrichment" aria-label="Complete page details">
+  <div class="wqs-enrichment__inner">
+    <div class="wqs-enrichment__eyebrow">Complete archive details</div>
+    <h2>WaterQuest Solutions | Water Hydraulic Systems Without Oil</h2>
+    <p>WaterQuest Solutions designs complete water hydraulic systems and components that use tap water or seawater instead of oil. Explore products, industries, technology resources, and the water hydraulics knowledge hub.</p>
+    <div class="wqs-enrichment__grid">
+      
+      <div class="wqs-enrichment__panel"><h3>Primary page focus</h3><ul><li>Hydraulic power without oil in the circuit.</li><li>Stop leaking oil into the future.</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Full section outline</h3><ul><li>Five core pathways, one authority site.</li><li>Components that make water hydraulics practical.</li><li>Where oil has no place.</li><li>The bridge between products and authority content.</li><li>The authority engine for water as a hydraulic medium.</li><li>Same hydraulic principles. Different medium. Better fit.</li><li>The pages that tie the story together.</li><li>Could your hydraulic circuit run on water?</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Detailed topics</h3><ul><li>Find the component or system.</li><li>Match water hydraulics to the operating environment.</li><li>Use the engineering layer.</li><li>Build topical authority.</li><li>Understand the company and ecosystem.</li><li>From single components to full water hydraulic packages.</li><li>Fire pumps</li><li>Desalination</li><li>Bilge valve</li><li>WQS Stainless</li><li>Municipal</li><li>Wastewater</li><li>Marine</li><li>Mining</li></ul></div>
+    </div>
+    <div class="wqs-enrichment__panel" style="margin-top:18px"><h3>Related pages with more detail</h3><div class="wqs-enrichment__links"><a href="/applications/damper-control/"><strong>Damper Control</strong><span>Water hydraulic damper control for industrial ventilation, dust collection, fume extraction, and HVAC systems. Reliable damper actuation without air system contamination risk.</span></a><a href="/applications/dust-suppression/"><strong>Dust Suppression</strong><span>Water hydraulic dust suppression systems for mining, bulk material handling, demolition, and construction. High-pressure misting without petroleum contamination risk.</span></a><a href="/applications/fire-suppression/"><strong>Fire Suppression</strong><span>Water hydraulic actuation for fire suppression deluge valves, sprinkler zone valves, and fire water distribution. Absolute reliability without petroleum contamination risk in potable water lines.</span></a><a href="/applications/flood-control/"><strong>Flood Control</strong><span>Water hydraulic flood control systems for flood gates, storm surge barriers, tide gates, and stormwater infrastructure. Reliable emergency actuation without petroleum contamination in waterways.</span></a><a href="/applications/flow-control/"><strong>Flow Control</strong><span>Water hydraulic flow control systems for process water, wastewater, slurry, and industrial cooling. Precise actuation and throttling without petroleum contamination.</span></a><a href="/industries/agriculture/"><strong>Agriculture &amp; Irrigation</strong><span>Zero crop contamination. Soil-safe actuation. Built for food production. WaterQuest Solutions supplies oil-free water hydraulic systems for irrigation pumps, crop processing, greenhouse automation, and agricultural machinery.</span></a><a href="/industries/desalination/"><strong>Desalination &amp; Reverse Osmosis</strong><span>Zero brine contamination. Seawater-ready actuation. Built for high-pressure RO. WaterQuest Solutions supplies oil-free water hydraulic systems for desalination plants, reverse osmosis facilities, and brackish water treatment operations.</span></a><a href="/industries/dust-control/"><strong>Dust Control</strong><span>Eliminate oil-dust sludge and fire risk from dusty industrial environments. WaterQuest Solutions supplies non-flammable, sludge-proof water hydraulics for mining, aggregate, cement, sawmills, grain handling, and recycling facilities.</span></a><a href="/industries/fire-suppression/"><strong>Fire Suppression</strong><span>Eliminate oil from fire-critical environments. WaterQuest Solutions delivers non-flammable, water hydraulic actuation for deluge valves, monitors, turrets, and suppression systems zero ignition risk by design.</span></a><a href="/industries/food-beverage/"><strong>Food &amp; Beverage</strong><span>Eliminate oil contamination risk from food production environments. WaterQuest Solutions delivers non-toxic, washdown-ready water hydraulics for filling lines, packaging, conveyors, and CIP systems fully HACCP and GFSI aligned.</span></a></div></div>
+  </div>
+</section>
+<!-- WQS_ENRICHMENT_END -->
+<!-- WQ_GLOBAL_FOOTER_START -->
+<footer class="wq-site-footer" role="contentinfo">
+  <div class="wq-footer-container">
+    <div class="wq-footer-grid">
+      <div class="wq-footer-brand">
+        <span class="wq-logo-main">WaterQuest Solutions</span>
+        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Core Pages</h5>
+        <ul><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Core Pages</h5>
+        <ul><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
+          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
+          <li>558 East Kent Ave S</li>
+          <li>Vancouver, BC V5X 4V6</li>
+          <li>Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
+  </div>
+</footer>
+<!-- WQ_GLOBAL_FOOTER_END -->
+<script id="wq-global-shell-js">
+    (function(){
+      var nav=document.getElementById("wq-nav");
+      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
+      var menuButton=document.querySelector(".wq-menu-toggle");
+      var mobileMenu=document.getElementById("wq-mobile-menu");
+      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
+      var bubbles=document.getElementById("wq-global-bubbles");
+      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
+      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
+      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
+      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
+      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
+      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
+      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
+      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
+      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
+      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
+      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
+      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
+    })();
+  </script>
+
+</body>
+</html>

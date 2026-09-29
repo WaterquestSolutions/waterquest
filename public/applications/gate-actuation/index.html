@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hydraulic Gate Actuation Systems | Sluice, Penstock & Dam Gate Actuators | WaterQuest Solutions</title>
+  <meta name="description" content="Water hydraulic gate actuation systems for sluice gates, penstock gates, dam spillways, and flood control. Oil-free hydraulic actuators engineered for wastewater, hydroelectric, and stormwater infrastructure where petroleum contamination cannot occur." />
+  <meta name="keywords" content="hydraulic gate actuator, sluice gate actuator, penstock gate hydraulic, dam gate actuation, flood control gate hydraulic, water gate actuator, oil-free gate actuation" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0A1628; --navy-mid: #0D2044; --navy-light: #122954;
+      --aqua: #00C8D4; --aqua-dim: #00A3AD; --aqua-glow: rgba(0,200,212,0.15);
+      --silver: #FFFFFF; --silver-light: #FFFFFF; --white: #FFFFFF;
+      --off-white: #FFFFFF; --body-text: #FFFFFF; --muted: #FFFFFF;
+      --border: rgba(168,184,204,0.18); --border-aqua: rgba(0,200,212,0.3);
+      --font-display: 'Avenir', 'Avenir Next', 'Nunito Sans', sans-serif;
+      --font-body: 'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+      --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px;
+      --shadow-card: 0 4px 32px rgba(0,0,0,0.35);
+      --shadow-glow: 0 0 40px rgba(0,200,212,0.2);
+      --max-width: 1240px; --section-pad: 100px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); background: var(--navy); color: var(--body-text); line-height: 1.7; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ul { list-style: none; }
+    .label { font-family: var(--font-display); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--aqua); }
+    h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 900; line-height: 1.15; color: var(--white); }
+    h1 { font-size: clamp(2.4rem, 5vw, 4.2rem); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(1.9rem, 3.5vw, 3rem); letter-spacing: -0.02em; }
+    h3 { font-size: clamp(1.2rem, 2vw, 1.55rem); }
+    h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--aqua); }
+    p { color: var(--body-text); font-size: 1.02rem; }
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
+    .section { padding: var(--section-pad) 0; }
+    .section-alt { background: var(--navy-mid); }
+    .section-dark { background: var(--navy); }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 999; background: rgba(10,22,40,0.88); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); transition: all 0.3s cubic-bezier(0.4,0,0.2,1); }
+    nav.scrolled { background: rgba(10,22,40,0.96); box-shadow: 0 4px 24px rgba(0,0,0,0.3); }
+    .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; height: 76px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-family: var(--font-display); font-weight: 900; font-size: 1.28rem; color: var(--white); letter-spacing: -0.01em; }
+    .nav-links { display: flex; gap: 36px; align-items: center; }
+    .nav-links a { font-family: var(--font-display); font-size: 0.88rem; font-weight: 600; letter-spacing: 0.02em; color: var(--silver); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--aqua); }
+    .nav-cta { padding: 10px 24px; background: var(--aqua); color: var(--navy); border-radius: var(--radius-sm); font-weight: 700; font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; transition: all 0.2s; }
+    .nav-cta:hover { background: var(--white); transform: translateY(-2px); }
+    .breadcrumb { padding-top: 120px; padding-bottom: 24px; font-size: 0.88rem; color: var(--muted); }
+    .breadcrumb a { color: var(--aqua); transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--white); }
+    .hero { padding: 60px 0 80px; }
+    .hero-label { display: inline-block; margin-bottom: 16px; }
+    .hero h1 { margin-bottom: 28px; }
+    .hero-intro { font-size: 1.18rem; line-height: 1.8; color: var(--silver-light); max-width: 880px; }
+    .content-block { margin-bottom: 60px; }
+    .content-block h2 { margin-bottom: 24px; }
+    .content-block h3 { margin: 32px 0 16px; color: var(--aqua); }
+    .content-block p { margin-bottom: 20px; line-height: 1.8; }
+    .content-block ul { margin: 24px 0; }
+    .content-block li { padding: 12px 0 12px 32px; position: relative; border-bottom: 1px solid var(--border); }
+    .content-block li:before { content: "→"; position: absolute; left: 0; color: var(--aqua); font-weight: 700; }
+    .product-showcase { background: var(--navy-mid); padding: 60px 48px; border-radius: var(--radius-lg); border: 1px solid var(--border-aqua); margin: 80px 0; }
+    .product-showcase h2 { margin-bottom: 16px; text-align: center; }
+    .product-showcase > p { text-align: center; max-width: 720px; margin: 0 auto 48px; color: var(--silver); }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; }
+    .product-card { background: rgba(0,0,0,0.25); padding: 36px; border-radius: var(--radius-md); border: 1px solid var(--border); transition: all 0.3s ease; }
+    .product-card:hover { border-color: var(--aqua); transform: translateY(-4px); box-shadow: var(--shadow-glow); }
+    .product-card h3 { margin-bottom: 16px; font-size: 1.4rem; }
+    .product-card .label { display: block; margin-bottom: 12px; }
+    .product-card p { font-size: 0.98rem; line-height: 1.7; margin-bottom: 24px; }
+    .product-card a { display: inline-flex; align-items: center; gap: 8px; color: var(--aqua); font-weight: 700; font-size: 0.88rem; letter-spacing: 0.05em; text-transform: uppercase; transition: gap 0.2s; }
+    .product-card a:hover { gap: 12px; }
+    .knowledge-hub { background: rgba(0,200,212,0.05); padding: 60px 48px; border-radius: var(--radius-lg); border: 1px solid var(--border-aqua); margin: 80px 0; }
+    .knowledge-hub h2 { margin-bottom: 16px; }
+    .knowledge-hub > p { margin-bottom: 40px; max-width: 800px; color: var(--silver); }
+    .article-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+    .article-link { padding: 24px; background: rgba(0,0,0,0.3); border-radius: var(--radius-md); border: 1px solid var(--border); transition: all 0.3s ease; }
+    .article-link:hover { border-color: var(--aqua); background: rgba(0,200,212,0.08); }
+    .article-link .label { display: block; margin-bottom: 10px; font-size: 0.68rem; }
+    .article-link h4 { font-size: 0.98rem; font-weight: 700; color: var(--white); line-height: 1.4; text-transform: none; letter-spacing: normal; }
+    .cta-section { background: linear-gradient(135deg, var(--navy-light), var(--navy-mid)); padding: 80px 48px; border-radius: var(--radius-lg); text-align: center; margin: 80px 0; border: 1px solid var(--border-aqua); }
+    .cta-section h2 { margin-bottom: 20px; }
+    .cta-section p { font-size: 1.12rem; margin-bottom: 36px; color: var(--silver-light); max-width: 680px; margin-left: auto; margin-right: auto; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 16px 36px; border-radius: var(--radius-sm); font-family: var(--font-display); font-weight: 700; font-size: 0.88rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border: none; transition: all 0.25s ease; }
+    .btn-primary { background: var(--aqua); color: var(--navy); }
+    .btn-primary:hover { background: var(--white); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,200,212,0.3); }
+    footer { background: var(--navy-mid); border-top: 1px solid var(--border); padding: 70px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.5rem; color: var(--white); margin-bottom: 8px; }
+    .footer-brand .logo-sub { font-size: 0.88rem; color: var(--aqua); margin-bottom: 20px; font-weight: 600; }
+    .footer-brand p { font-size: 0.9rem; line-height: 1.7; color: var(--muted); margin-bottom: 16px; }
+    .footer-tagline { font-style: italic; color: var(--silver) !important; font-size: 0.95rem !important; }
+    .footer-col h5 { font-family: var(--font-display); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--silver); margin-bottom: 16px; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a { font-size: 0.88rem; color: var(--muted); transition: color 0.2s; }
+    .footer-col ul li a:hover { color: var(--aqua); }
+    .footer-bottom { padding-top: 32px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+    .footer-bottom p { font-size: 0.82rem; color: var(--muted); }
+    .footer-cert { display: flex; gap: 12px; }
+    .cert-badge { padding: 6px 14px; background: rgba(0,200,212,0.1); border: 1px solid var(--border-aqua); border-radius: 20px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; color: var(--aqua); text-transform: uppercase; }
+    @media (max-width: 1024px) { .grid-2 { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 768px) {
+      :root { --section-pad: 60px; }
+      .nav-links { display: none; }
+      .product-grid { grid-template-columns: 1fr; }
+      .article-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 20px; text-align: center; }
+      .footer-cert { flex-wrap: wrap; justify-content: center; }
+    }
+  </style>
+<style>
+    :root{--wq-navy:#060C18;--wq-mid:#091428;--wq-panel:#0E1E3C;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-line:rgba(255,255,255,.18);--wq-max:1240px;--wq-font:'Avenir','Avenir Next','Nunito Sans','Segoe UI',system-ui,sans-serif}
+    .wq-site-header,.wq-site-footer{font-family:var(--wq-font);color:var(--wq-white)}
+    .wq-site-header{position:sticky;top:0;z-index:2000;background:rgba(6,12,24,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-line)}
+    .wq-nav{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .wq-brand{color:var(--wq-white);text-decoration:none;font-weight:900;line-height:1.05;letter-spacing:-.01em}
+    .wq-brand span{display:block;color:var(--wq-aqua);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;margin-top:3px}
+    .wq-links{display:flex;align-items:center;gap:24px;font-size:.76rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+    .wq-links a{color:var(--wq-white);text-decoration:none;opacity:.92}.wq-links a:hover,.wq-links a[aria-current="page"]{color:var(--wq-aqua);opacity:1}
+    .wq-cta{background:var(--wq-aqua);color:var(--wq-navy)!important;padding:10px 15px;border-radius:6px}
+    .wq-site-footer{background:var(--wq-mid);border-top:1px solid var(--wq-line);padding:60px 0 32px}
+    .wq-footer-grid{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto 38px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+    .wq-footer-grid h3,.wq-footer-grid h4{color:var(--wq-white);font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;margin:0 0 14px}
+    .wq-footer-grid p{color:var(--wq-white);font-size:.92rem;line-height:1.7;margin:0 0 12px}.wq-footer-grid a{display:block;color:var(--wq-white);text-decoration:none;font-size:.9rem;margin:8px 0;opacity:.85}.wq-footer-grid a:hover{color:var(--wq-aqua);opacity:1}
+    .wq-footer-bottom{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;border-top:1px solid var(--wq-line);padding-top:24px;display:flex;justify-content:space-between;gap:18px;color:var(--wq-white);font-size:.82rem}
+    @media(max-width:900px){.wq-links{display:none}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-footer-bottom{flex-direction:column}}@media(max-width:640px){.wq-footer-grid{grid-template-columns:1fr}}
+  </style><link rel="canonical" href="/applications/gate-actuation" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:title" content="Hydraulic Gate Actuation Systems | Sluice, Penstock &amp; Dam Gate Actuators | WaterQuest Solutions" />
+  <meta property="og:description" content="Water hydraulic gate actuation systems for sluice gates, penstock gates, dam spillways, and flood control. Oil-free hydraulic actuators engineered for wastewater, hydroelectric, and stormwater infrastructure where petroleum contamination cannot occur." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/applications/gate-actuation" />
+  <meta property="og:image" content="/assets/waterquest-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hydraulic Gate Actuation Systems | Sluice, Penstock &amp; Dam Gate Actuators | WaterQuest Solutions" />
+  <meta name="twitter:description" content="Water hydraulic gate actuation systems for sluice gates, penstock gates, dam spillways, and flood control. Oil-free hydraulic actuators engineered for wastewater, hydroelectric, and stormwater infrastructure where petroleum contamination cannot occur." />
+  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
+  <link rel="alternate" hreflang="en-CA" href="/applications/gate-actuation" />
+  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
+  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"WebPage","@id":"/applications/gate-actuation#webpage","url":"/applications/gate-actuation","name":"Hydraulic Gate Actuation Systems | Sluice, Penstock & Dam Gate Actuators | WaterQuest Solutions","description":"Water hydraulic gate actuation systems for sluice gates, penstock gates, dam spillways, and flood control. Oil-free hydraulic actuators engineered for wastewater, hydroelectric, and stormwater infrastructure where petroleum contamination cannot occur.","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"},{"@type":"ListItem","position":2,"name":"Applications","item":"/applications"},{"@type":"ListItem","position":3,"name":"Gate Actuation","item":"/applications/gate-actuation"}]}]}</script>
+  <style id="wq-global-shell-css">
+    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
+    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
+    body a{color:inherit}
+    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
+    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
+    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
+    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
+    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
+    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
+    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
+    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
+    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
+    main .btn.primary{color:var(--wq-navy)!important}
+    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
+    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
+    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
+    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
+    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
+    .wq-form-status.is-error{color:#ffb1b1!important}
+    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
+    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
+    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
+    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
+    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
+    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
+    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
+    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
+    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
+    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
+    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
+    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
+    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
+    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
+    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
+    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
+    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
+    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
+    .wq-hero-visual-text{padding:20px}
+    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
+    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
+    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
+    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
+    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
+    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
+    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
+    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
+    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
+    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
+    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
+    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
+    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
+    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
+    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
+    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
+    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
+    #wq-mobile-menu.open{display:block}
+    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
+    #wq-mobile-menu a:last-child{border-bottom:0}
+    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
+    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
+    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
+    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
+    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
+    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
+    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
+    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
+    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
+    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
+    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
+    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
+    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
+    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
+    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
+    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
+  </style>
+</head>
+<body class="wq-section-technology">
+<!-- WQ_GLOBAL_HEADER_START -->
+<div id="wq-global-bubbles" aria-hidden="true"></div>
+<nav id="wq-nav" role="navigation" aria-label="Main navigation">
+  <div class="wq-nav-inner">
+    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
+      <span class="wq-logo-main">WaterQuest Solutions</span>
+      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+    </a>
+    <ul class="wq-nav-links" role="list">
+      <li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/" class="active">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li>
+      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
+    </ul>
+    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
+  </div>
+</nav>
+<div id="wq-mobile-menu">
+  <a href="/products/">Products</a><a href="/industries/">Industries</a><a href="/technology/" class="active">Technology</a><a href="/knowledge-hub/">Knowledge Hub</a><a href="/about/">About</a>
+  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
+</div>
+<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
+<section class="wq-conversion-hero" aria-label="Page introduction">
+  <div class="wq-conversion-wrap">
+    <div>
+      <p class="wq-hero-eyebrow">Project application</p>
+      <h1><span>Gate Actuation</span> with water hydraulic power.</h1>
+      <p class="wq-hero-copy">Turn a real operating problem into an oil-free hydraulic project: force, motion, pressure, flow, actuation, or spray performance without petroleum fluid in the circuit.</p>
+      <div class="wq-hero-actions">
+        <a class="wq-hero-cta" href="/contact/">Review This Application</a>
+        <a class="wq-hero-secondary" href="/calculations/">Estimate the Engineering</a>
+      </div>
+    </div>
+    <a class="wq-hero-visual" href="/contact/">
+      <div class="wq-hero-picture" aria-hidden="true"></div>
+      <div class="wq-hero-visual-text">
+        <small>Project pathway</small>
+        <strong>From application problem to practical water hydraulic design.</strong>
+        <span>Connect the use case to products, calculations, glossary terms, and engineering review.</span>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- WQ_CONVERSION_HERO_END --><div class="container">
+  <div class="breadcrumb">
+    <a href="/">Home</a> / <a href="/applications/">Applications</a> / Hydraulic Gate Actuation
+  </div>
+</div>
+
+<section class="hero">
+  <div class="container">
+    <span class="label hero-label">APPLICATION</span>
+    <h1>Hydraulic Gate Actuation Systems</h1>
+    <p class="hero-intro">
+      Water hydraulic gate actuation systems control sluice gates, penstock gates, dam spillways, and flood control infrastructure. These systems deliver high thrust force and precise positioning for wastewater treatment plants, hydroelectric dams, stormwater infrastructure, and municipal water systems where petroleum contamination cannot be tolerated.
+    </p>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    
+    <div class="content-block">
+      <h2>Gate Actuation Applications</h2>
+      <p>
+        Gate actuation systems must deliver high thrust force, precise positioning capability, and reliable holding force under varying hydraulic load conditions. Water hydraulic cylinders provide these operational characteristics while eliminating petroleum fluid contamination risk in applications where gate control interfaces directly with natural waterways, potable water supply systems, or wastewater treatment processes.
+      </p>
+      <p>
+        Hydraulic gate actuators operating in proximity to fish-bearing waters face strict regulatory constraints under the federal Fisheries Act, which prohibits the deposit of deleterious substances into waters frequented by fish. Water hydraulic systems eliminate this compliance concern entirely by using municipal tap water or seawater as the hydraulic medium. Seal failures or hydraulic line ruptures result in water discharge rather than petroleum contamination.
+      </p>
+
+      <div class="grid-2" style="margin-top: 48px;">
+        <div>
+          <h3>Common Gate Types</h3>
+          <ul>
+            <li>Sluice gates</li>
+            <li>Penstock gates</li>
+            <li>Dam spillway gates</li>
+            <li>Flood control gates</li>
+            <li>Water intake gates</li>
+            <li>Stop log gates</li>
+            <li>Radial gates</li>
+            <li>Slide gates</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Typical Installation Environments</h3>
+          <ul>
+            <li>Wastewater treatment plants</li>
+            <li>Hydroelectric dams</li>
+            <li>Stormwater infrastructure</li>
+            <li>Marine facilities</li>
+            <li>Industrial water systems</li>
+            <li>Irrigation control structures</li>
+            <li>Flood control infrastructure</li>
+            <li>Municipal water treatment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h2>System Design Considerations</h2>
+      
+      <h3>Force and Positioning Requirements</h3>
+      <p>
+        Gate actuation systems must overcome hydrostatic pressure differentials, friction loads at seal interfaces, and debris accumulation while maintaining precise position control. Water hydraulic cylinders deliver force output equivalent to oil hydraulic systems at the same operating pressure, with typical system pressures ranging from 5,000 to 15,000 psi depending on gate geometry and load conditions.
+      </p>
+      <p>
+        Position control is achieved through proportional directional valve regulation, allowing gate opening percentage to be continuously adjusted for flow control applications. Emergency gate closure applications benefit from accumulator-based fail-safe systems that maintain actuation capability during power interruption or pump failure.
+      </p>
+
+      <h3>Material Requirements for Water Hydraulic Service</h3>
+      <p>
+        All water hydraulic components require corrosion-resistant materials at internal contact surfaces. WaterQuest gate actuation cylinders use 316 stainless steel for cylinder barrels, piston rods, end caps, port connections, and mounting hardware. Internal sealing surfaces employ carbon-reinforced PEEK, which provides wear resistance and low friction characteristics without requiring petroleum-based lubrication additives.
+      </p>
+      <p>
+        Valve bodies, pump housings, and fitting assemblies are constructed from 316L stainless steel to accommodate direct water contact without corrosion protection coatings or chemical treatment. This material selection eliminates maintenance requirements associated with protective coating degradation in oil hydraulic systems.
+      </p>
+
+      <h3>Environmental Temperature Range</h3>
+      <p>
+        Gate actuation systems installed in outdoor environments must accommodate seasonal temperature variation. Water hydraulic systems operating in freezing climates require heated enclosures, insulated hydraulic lines, or glycol addition to prevent ice formation during winter shutdown periods. Northern Canadian installations typically incorporate electric trace heating on exposed hydraulic lines and thermally insulated valve manifolds to maintain operational capability during extreme cold weather events.
+      </p>
+
+      <h3>Emergency Operation and Fail-Safe Design</h3>
+      <p>
+        Flood control gates and emergency spillway gates require actuation capability during power outages or electrical system failure. Water hydraulic systems accommodate this requirement through bladder-type accumulator energy storage, which maintains gate actuation capability for multiple open-close cycles without external power input. Accumulator sizing is determined by gate mass, stroke length, operating pressure, and required number of emergency cycles.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="product-showcase">
+      <h2>Water Hydraulic Components for Gate Actuation</h2>
+      <p>
+        Complete system solutions engineered for reliable gate control without petroleum contamination risk.
+      </p>
+      
+      <div class="product-grid">
+        
+        <div class="product-card">
+          <span class="label">Actuation Power</span>
+          <h3>Tie Rod Cylinders</h3>
+          <p>
+            Water hydraulic tie rod cylinders deliver thrust force from 5,000 to 100,000 pounds for gate actuation applications. Available in bore sizes from 1.5 to 8 inches with working pressures to 15,000 psi. All wetted surfaces constructed from 316 stainless steel with carbon-reinforced PEEK rod seals, wear rings, and piston seals. Custom stroke lengths up to 240 inches for deep gate installations.
+          </p>
+          <a href="/products/water-hydraulic-cylinders/">
+            View Cylinder Range
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <span class="label">Hydraulic Power</span>
+          <h3>Axial Piston Pumps</h3>
+          <p>
+            Water hydraulic axial piston pumps provide flow rates from 1.5 to 180 litres per minute at pressures to 15,000 psi. Variable displacement swashplate designs allow flow modulation for gate positioning control and energy efficiency during holding periods. Pump assemblies feature 316 stainless steel housings, valve plates, and port blocks with carbon-reinforced PEEK piston assemblies and barrel interfaces.
+          </p>
+          <a href="/products/axial-piston-pumps/p30/">
+            Explore Pump Products
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <span class="label">Motion Control</span>
+          <h3>Directional Control Valves</h3>
+          <p>
+            Water hydraulic directional valves control gate motion patterns including extend-hold-retract operation through 4-way 3-position configurations. Proportional valve designs enable variable speed gate positioning and soft-start motion profiles. Valve spools and bodies manufactured from 316 stainless steel with zero petroleum lubrication requirements. Solenoid actuation or manual override operation available.
+          </p>
+          <a href="/products/water-hydraulic-valves/">
+            View Valve Specifications
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <span class="label">Emergency Power</span>
+          <h3>Hydraulic Accumulators</h3>
+          <p>
+            Bladder-type accumulators store hydraulic energy for emergency gate operation during power interruption or pump failure. Accumulator sizing determined by gate mass, stroke length, system pressure, and required number of emergency actuation cycles. All wetted surfaces constructed from 316 stainless steel for water hydraulic compatibility. Pre-charge pressures customised for specific installation requirements.
+          </p>
+          <a href="/products/">
+            System Components
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="knowledge-hub">
+      <h2>Related Technical Resources</h2>
+      <p>
+        Explore engineering articles, regulatory guidance, and technical documentation relevant to water hydraulic gate actuation systems.
+      </p>
+      
+      <div class="article-grid">
+        <a href="/knowledge-hub/" class="article-link">
+          <span class="label">Regulatory Compliance</span>
+          <h4>Why Municipal Procurement Needs to Rethink Oil</h4>
+        </a>
+        <a href="/knowledge-hub/" class="article-link">
+          <span class="label">Engineering Guide</span>
+          <h4>Choosing the Right Cylinder for Water Actuation</h4>
+        </a>
+        <a href="/knowledge-hub/" class="article-link">
+          <span class="label">Materials Science</span>
+          <h4>Material Compatibility: Why We Use 316 Stainless and Carbon-Reinforced PEEK</h4>
+        </a>
+        <a href="/knowledge-hub/" class="article-link">
+          <span class="label">Industry Application</span>
+          <h4>Municipal Infrastructure Without the Oil Hazards</h4>
+        </a>
+        <a href="/knowledge-hub/" class="article-link">
+          <span class="label">Cost Analysis</span>
+          <h4>Total Cost of Ownership: Where Water Wins Over Time</h4>
+        </a>
+        <a href="/knowledge-hub/" class="article-link">
+          <span class="label">Technical Guide</span>
+          <h4>Preventing Corrosion Without Coatings or Chemicals</h4>
+        </a>
+        <a href="/knowledge-hub/" class="article-link">
+          <span class="label">Regulatory</span>
+          <h4>Avoiding Oil-Contaminated Waterways: Legal and Financial Risks</h4>
+        </a>
+        <a href="/knowledge-hub/" class="article-link">
+          <span class="label">System Design</span>
+          <h4>Why Accumulators Are Rarely Needed in Water Systems</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="cta-section">
+      <h2>Discuss Your Gate Actuation Project</h2>
+      <p>
+        Contact WaterQuest's engineering team to review system requirements, cylinder sizing, valve selection, accumulator capacity, and application-specific design constraints.
+      </p>
+      <a href="/contact/" class="btn btn-primary">
+        Request Engineering Consultation
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section><script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+</script>
+
+<!-- WQS_ENRICHMENT_START -->
+<style>
+.wqs-enrichment{background:#f5fbf9;border-top:1px solid #d9e8e3;color:#15302c;font-family:Nunito Sans,Arial,sans-serif;padding:56px 6vw}.wqs-enrichment__inner{margin:0 auto;max-width:1120px}.wqs-enrichment__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-enrichment h2{font-size:clamp(28px,4vw,48px);line-height:1.05;margin:8px 0 16px}.wqs-enrichment p{color:#4b625d;font-size:18px;line-height:1.65;max-width:900px}.wqs-enrichment__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px}.wqs-enrichment__panel{background:#fff;border:1px solid #d9e8e3;border-radius:8px;padding:22px}.wqs-enrichment__panel h3{font-size:18px;margin:0 0 12px}.wqs-enrichment ul{margin:0;padding-left:20px}.wqs-enrichment li{line-height:1.55;margin:7px 0}.wqs-enrichment__links{display:grid;gap:10px}.wqs-enrichment__links a{background:#fff;border:1px solid #d9e8e3;border-radius:8px;color:#15302c;display:grid;gap:4px;padding:14px;text-decoration:none}.wqs-enrichment__links span{color:#5f746f;font-size:14px;line-height:1.45}@media(max-width:760px){.wqs-enrichment{padding:40px 18px}.wqs-enrichment__grid{grid-template-columns:1fr}}
+</style>
+<section class="wqs-enrichment" aria-label="Complete page details">
+  <div class="wqs-enrichment__inner">
+    <div class="wqs-enrichment__eyebrow">Complete archive details</div>
+    <h2>Hydraulic Gate Actuation Systems | Sluice, Penstock &amp; Dam Gate Actuators</h2>
+    <p>Water hydraulic gate actuation systems for sluice gates, penstock gates, dam spillways, and flood control. Oil-free hydraulic actuators engineered for wastewater, hydroelectric, and stormwater infrastructure where petroleum contamination cannot occur.</p>
+    <div class="wqs-enrichment__grid">
+      <div class="wqs-enrichment__panel"><h3>Recorded details</h3><ul><li>Source section: Application</li><li>Group: Actuation</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Primary page focus</h3><ul><li>Hydraulic Gate Actuation Systems</li><li>Gate Actuation with water hydraulic power.</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Full section outline</h3><ul><li>Gate Actuation Applications</li><li>System Design Considerations</li><li>Water Hydraulic Components for Gate Actuation</li><li>Related Technical Resources</li><li>Discuss Your Gate Actuation Project</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Detailed topics</h3><ul><li>Common Gate Types</li><li>Typical Installation Environments</li><li>Force and Positioning Requirements</li><li>Material Requirements for Water Hydraulic Service</li><li>Environmental Temperature Range</li><li>Emergency Operation and Fail-Safe Design</li><li>Tie Rod Cylinders</li><li>Axial Piston Pumps</li><li>Directional Control Valves</li><li>Hydraulic Accumulators</li></ul></div>
+    </div>
+    <div class="wqs-enrichment__panel" style="margin-top:18px"><h3>Related pages with more detail</h3><div class="wqs-enrichment__links"><a href="/applications/flood-control/"><strong>Flood Control</strong><span>Water hydraulic flood control systems for flood gates, storm surge barriers, tide gates, and stormwater infrastructure. Reliable emergency actuation without petroleum contamination in waterways.</span></a><a href="/knowledge-hub/clean-operation-on-coastlines-a-marine-deployment-snapshot"><strong>Clean Operation on Coastlines: A Marine Deployment Snapshot</strong><span>A marine deployment case study: sluice gate actuation, dock barrier positioning, and tidal control mechanisms converted to water hydraulics. Corrosion testing, tidal cycle performance, leak simulation, and lifecycle observations from a coastal installation.</span></a><a href="/knowledge-hub/hydropower-infrastructure-water-hydraulic-actuation"><strong>Hydropower Infrastructure Using Water Hydraulic Actuation</strong><span>Water hydraulic actuation for hydropower infrastructure: intake gates, penstock valves, turbine governors, spillway controls, draft tube gates, high-head pressure requirements, BC climate freeze protection, and the BC Hydro retrofit opportunity.</span></a><a href="/industries/hydro/"><strong>Hydroelectric Power</strong><span>Use water to control the power of water. WaterQuest Solutions delivers river-safe, oil-free hydraulic actuation for dam gates, turbine governors, and spillway controls, zero contamination risk, 29% lower 50-year TCO.</span></a><a href="/knowledge-hub/knife-gate-valves-and-water-hydraulics-a-natural-fit"><strong>Knife Gate Valves and Water Hydraulics: A Natural Fit</strong><span>Knife gate valves operate in the same wet, abrasive, corrosive environments where water is already present. Why water hydraulic actuation is the correct engineering choice for knife gate applications across mining, wastewater, and marine sectors.</span></a><a href="/industries/municipal/"><strong>Municipal Infrastructure</strong><span>Upgrade municipal water infrastructure with clean, reliable water-driven actuation for gates, valves, pump stations, and public works, zero oil contamination risk, 35% federal tax credit eligible, 40% lower annual operating costs.</span></a><a href="/knowledge-hub/oil-free-hydraulics-in-amusement-safety-a-pilot-case"><strong>Oil-Free Hydraulics in Amusement Safety: A Pilot Case</strong><span>A pilot case study evaluating water-based hydraulic actuation for ride restraint locking, positioning arms, and emergency gate actuation in a public amusement environment. Performance results, corrosion testing, leak simulation, and lessons from the pilot.</span></a><a href="/knowledge-hub/our-dss-partnership-putting-water-to-the-test-on-severe-service-valves"><strong>Our DSS Partnership: Putting Water to the Test on Severe Service Valves</strong><span>How WaterQuest Solutions validates water hydraulic actuation for severe service knife gate and isolation valves through the DSS partnership, covering thrust capacity, cycle testing, abrasive exposure, and seal performance under real operating conditions.</span></a><a href="/industries/wastewater-treatment/"><strong>Wastewater Treatment</strong><span>Water hydraulic systems engineered for wastewater treatment plants. Oil-free actuators for sluice gates, penstocks, clarifier mechanisms, knife gate valves, and municipal water infrastructure. 316 stainless steel, PEEK wear surfaces, zero petroleum contamination.</span></a><a href="/applications/damper-control/"><strong>Damper Control</strong><span>Water hydraulic damper control for industrial ventilation, dust collection, fume extraction, and HVAC systems. Reliable damper actuation without air system contamination risk.</span></a></div></div>
+  </div>
+</section>
+<!-- WQS_ENRICHMENT_END -->
+<!-- WQ_GLOBAL_FOOTER_START -->
+<footer class="wq-site-footer" role="contentinfo">
+  <div class="wq-footer-container">
+    <div class="wq-footer-grid">
+      <div class="wq-footer-brand">
+        <span class="wq-logo-main">WaterQuest Solutions</span>
+        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Technology</h5>
+        <ul><li><a href="/technology/">Technology Overview</a></li><li><a href="/applications/" class="active">Applications</a></li><li><a href="/calculations/">Hydraulic Calculations</a></li><li><a href="/glossary/">Technical Glossary</a></li><li><a href="/applications/nozzle-technology/">Nozzle Reference</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Core Pages</h5>
+        <ul><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
+          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
+          <li>558 East Kent Ave S</li>
+          <li>Vancouver, BC V5X 4V6</li>
+          <li>Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
+  </div>
+</footer>
+<!-- WQ_GLOBAL_FOOTER_END -->
+<script id="wq-global-shell-js">
+    (function(){
+      var nav=document.getElementById("wq-nav");
+      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
+      var menuButton=document.querySelector(".wq-menu-toggle");
+      var mobileMenu=document.getElementById("wq-mobile-menu");
+      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
+      var bubbles=document.getElementById("wq-global-bubbles");
+      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
+      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
+      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
+      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
+      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
+      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
+      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
+      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
+      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
+      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
+      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
+      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
+    })();
+  </script>
+
+</body>
+</html>

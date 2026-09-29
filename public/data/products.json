@@ -1,0 +1,1226 @@
+{
+  "generatedAt": "2026-06-29T13:50:36.341Z",
+  "sourceRoot": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0",
+  "pumpModelSourceRoot": "/Users/brucehickin/Documents/L1-Pumps/pumps",
+  "familyCount": 9,
+  "cylinderForcePageCount": 11,
+  "pumpModelPageCount": 7,
+  "motorModelPageCount": 6,
+  "valveProductPageCount": 11,
+  "specialtyProductPageCount": 1,
+  "families": [
+    {
+      "source": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/T1-products.html",
+      "fallbackSource": "dist/client/products/index.html",
+      "slug": "",
+      "label": "Products",
+      "canonical": "/products",
+      "type": "index",
+      "urlPath": "/products",
+      "title": "Products | Oil-Free Water Hydraulic Systems and Components | WaterQuest Solutions",
+      "description": "WaterQuest Solutions",
+      "h1": [
+        "Products Overview built for water service.",
+        "Every Component Engineered from First Principles"
+      ],
+      "h2": [
+        "Axial Piston Pumps",
+        "Axial Piston Pumps",
+        "Motors, Cylinders, and Valves",
+        "Pick a Pack HPU",
+        "Water Hydraulics HPUs",
+        "Fire Suppression Pumps and Desalination Power Centers",
+        "Why Every Material Choice Matters",
+        "WQS Stainless 316 Stainless Steel Fittings and Instrumentation",
+        "Ready to Specify Oil-Free?",
+        "Related application pages"
+      ],
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/T1-products.html"
+    },
+    {
+      "source": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-pumps.html",
+      "fallbackSource": "dist/client/products/axial-piston-pumps/index.html",
+      "slug": "axial-piston-pumps",
+      "label": "Axial Piston Pumps",
+      "canonical": "/products/axial-piston-pumps",
+      "type": "family",
+      "urlPath": "/products/axial-piston-pumps/",
+      "title": "WaterQuest Solutions Axial Piston Pumps | 160 Bar | 430 L/min | 7 Models | WaterQuest Solutions",
+      "description": "WaterQuest Solutions axial piston water hydraulic pumps. 100% oil-free, up to 160 bar continuous pressure, 430 l/min max flow. Seven models P1 to P180, 316 stainless steel, ATEX II 2GD certified. Tap water, seawater, technical water, and specialist fluids.",
+      "h1": [
+        "Axial Piston Pumps built for water service.",
+        "Axial Piston Pumps"
+      ],
+      "h2": [
+        "Four Features That Define the WaterQuest Solutions Pump",
+        "Seven Models P1 through P180",
+        "WaterQuest Solutions Pump Model Range Complete Technical Data",
+        "2.4 to 430 L/min. Scale to Any Application.",
+        "2-Port and 3-Port Inlet Conditions",
+        "Pump Ordering Code and Unit Types",
+        "Four Fluid Categories. Select on Order.",
+        "Where WaterQuest Solutions Pumps Are Specified",
+        "WaterQuest Solutions Pump Technical FAQ",
+        "Request a Quote for WaterQuest Solutions Axial Piston Pumps",
+        "Related application pages"
+      ],
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-pumps.html"
+    },
+    {
+      "source": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-motors.html",
+      "fallbackSource": "dist/client/products/water-hydraulic-motors/index.html",
+      "slug": "water-hydraulic-motors",
+      "label": "Water Hydraulic Motors",
+      "canonical": "/products/water-hydraulic-motors",
+      "type": "family",
+      "urlPath": "/products/water-hydraulic-motors/",
+      "title": "Water Hydraulic Motors | 316L Stainless Steel | ~90% Efficiency | WaterQuest Solutions",
+      "description": "Water hydraulic motors in 316L stainless steel with carbon-reinforced PEEK wear surfaces. ~90% mechanical efficiency, tap or seawater operation, ATEX approved, ISO 9001 certified. Fixed and variable displacement. No oil contamination risk.",
+      "h1": [
+        "Water Hydraulic Motors built for water service.",
+        "Water Hydraulic Motors"
+      ],
+      "h2": [
+        "Six Models M3 through M180",
+        "Motor Model Range Complete Technical Data",
+        "The Challenge. The Solution.",
+        "Key Features of WaterQuest Water Hydraulic Motors",
+        "Six Operational Benefits of Oil-Free Hydraulic Motors",
+        "2-Port and 3-Port Motor Configurations",
+        "Technical Requirements for Water Hydraulic Motors",
+        "Water Hydraulic Motor Applications by Industry",
+        "Water Hydraulic Motor Technical FAQ",
+        "Request a Quote for Water Hydraulic Motors",
+        "Related application pages"
+      ],
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-motors.html"
+    },
+    {
+      "source": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-cylinders main page.html",
+      "fallbackSource": "dist/client/products/water-hydraulic-cylinders/index.html",
+      "slug": "water-hydraulic-cylinders",
+      "label": "Water Hydraulic Cylinders",
+      "canonical": "/products/water-hydraulic-cylinders",
+      "type": "family",
+      "urlPath": "/products/water-hydraulic-cylinders/",
+      "title": "Water Hydraulic Cylinders | 316L Stainless | Up to 196 kN | WaterQuest Solutions",
+      "description": "Water hydraulic tie rod cylinders in 316L stainless steel with carbon-reinforced PEEK wear surfaces. Seven bore sizes from 32 mm to 125 mm, up to 196 kN force, 160 bar, 0.98 efficiency. No oil contamination. Single and double acting configurations.",
+      "h1": [
+        "Water Hydraulic Cylinders built for water service.",
+        "Water Hydraulic Cylinders"
+      ],
+      "h2": [
+        "Eleven Configurations. Complete Specifications.",
+        "Built for Water. Not Adapted from Oil.",
+        "What Sets These Cylinders Apart",
+        "Predictable Service Intervals. Plan Ahead.",
+        "Single and Double Acting. Custom Mounting.",
+        "Five Benefits for Your Operation",
+        "Four Reasons to Specify WaterQuest Cylinders",
+        "Water Hydraulic Cylinder Technical FAQ",
+        "Request a Specification Review",
+        "Related application pages"
+      ],
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-cylinders main page.html"
+    },
+    {
+      "source": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-valves.html",
+      "fallbackSource": "dist/client/products/water-hydraulic-valves/index.html",
+      "slug": "water-hydraulic-valves",
+      "label": "Water Hydraulic Valves",
+      "canonical": "/products/water-hydraulic-valves",
+      "type": "family",
+      "urlPath": "/products/water-hydraulic-valves/",
+      "title": "Water Hydraulic Valves | 316L Stainless | 200 Bar | 6 Valve Families | WaterQuest Solutions",
+      "description": "Water hydraulic valves in 316L stainless steel for systems up to 200 bar. Six valve families: directional, pressure control, flow control, check valves, zone and manifold, and electronic control. Patented face-valve technology. ATEX approved, ISO 9001.",
+      "h1": [
+        "Water Hydraulic Valves built for water service.",
+        "Water Hydraulic Valves"
+      ],
+      "h2": [
+        "Conventional Valves Fail in Water. These Do Not.",
+        "Complete Water Hydraulic Valve Product Range",
+        "Directional Control Valves for Water Hydraulics",
+        "Pressure and Flow Control Valves",
+        "Check Valves, Zone Valves and Manifold Assemblies",
+        "System and Material Specifications",
+        "Water Hydraulic Valve Applications by Industry",
+        "Water Hydraulic Valve Technical FAQ",
+        "Request a Quote for Water Hydraulic Valves",
+        "Related application pages"
+      ],
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-valves.html"
+    },
+    {
+      "source": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-hpu.html",
+      "fallbackSource": "dist/client/products/water-hydraulics-hpu/index.html",
+      "slug": "water-hydraulics-hpu",
+      "label": "Water Hydraulics HPU",
+      "canonical": "/products/water-hydraulics-hpu",
+      "type": "family",
+      "urlPath": "/products/water-hydraulics-hpu/",
+      "title": "Water Hydraulics HPUs | Hydraulic Power Units | Oil-Free | WaterQuest Solutions",
+      "description": "Water hydraulic power units (HPUs) built entirely from 316L stainless steel with PEEK wear surfaces. 100% oil-free, tap or seawater operation. WaterQuest Solutions Pick a Pack system — configure your HPU in 5 steps. Compact skids to full custom builds.",
+      "h1": [
+        "Water Hydraulics HPUs built for water service.",
+        "Hydraulic Power Units for Water"
+      ],
+      "h2": [
+        "The Problem with Oil-Driven Power Packs",
+        "Built for Water. Engineered for Performance.",
+        "Build Your Bespoke HPU in Five Steps",
+        "Six Benefits for Your Operation",
+        "Five Reasons to Choose a Water Hydraulics HPU",
+        "Water Hydraulics HPU Technical FAQ",
+        "Specify Your Water Hydraulics HPU",
+        "Related application pages"
+      ],
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-hpu.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/L1-Pumps/F1-fire-pump.html",
+      "fallbackSource": "dist/client/products/axial-piston-fire-pumps/index.html",
+      "slug": "axial-piston-fire-pumps",
+      "label": "Axial Piston Fire Pumps",
+      "canonical": "/products/axial-piston-fire-pumps",
+      "type": "family",
+      "urlPath": "/products/axial-piston-fire-pumps/",
+      "title": "WaterQuest Solutions Axial Piston Fire Pumps | 160 Bar | ATEX Certified | Oil-Free | WaterQuest Solutions",
+      "description": "WaterQuest Solutions axial piston fire pumps for high-pressure water mist fire suppression. 100% oil-free, up to 160 bar, 9-piston smooth flow, ATEX II 2GD certified. 316L stainless steel. Six models from 0.8 cc/rev to 180 cc/rev. No accumulators required.",
+      "h1": [
+        "Axial Piston Fire Pumps"
+      ],
+      "h2": [
+        "WaterQuest Solutions Oil-Free vs Traditional Oil Pump",
+        "WaterQuest Solutions Pump Key Specifications",
+        "Safe for Every Environment. Including Explosive Atmospheres.",
+        "Performance. Reliability. Sustainability.",
+        "Compact Powerpack Design. Fast to Install. Easy to Retrofit.",
+        "WaterQuest Solutions Pump Model Range P1 through P180",
+        "Where WaterQuest Solutions Pumps Are Specified",
+        "WaterQuest Solutions Fire Pump Technical FAQ",
+        "Request a Quote for WaterQuest Solutions Axial Piston Fire Pumps"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/L1-Pumps/F1-fire-pump.html"
+    },
+    {
+      "source": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-desal-power-center.html",
+      "fallbackSource": "dist/client/products/power-center-reverse-osmosis/index.html",
+      "slug": "power-center-reverse-osmosis",
+      "label": "Power Center for Reverse Osmosis",
+      "canonical": "/products/power-center-reverse-osmosis",
+      "type": "family",
+      "urlPath": "/products/power-center-reverse-osmosis/",
+      "title": "WaterQuest Solutions Power Center for Reverse Osmosis | 70% Energy Savings | WaterQuest Solutions",
+      "description": "The WaterQuest Solutions Power Center for reverse osmosis desalination integrates high-pressure pump, energy recovery device, booster pump, and motor into one unit. Up to 70% energy savings, 8 sizes from 3 to 1000 m3/day, 8000-hour service intervals, 100% oil-free.",
+      "h1": [
+        "Desalination Power Center built for water service.",
+        "Power Center for Reverse Osmosis"
+      ],
+      "h2": [
+        "Traditional RO Systems. Solved.",
+        "Four Components. One Unit. The Energy Recovery Loop.",
+        "Six Reasons Operators Choose the Power Center from WaterQuest Solutions",
+        "What the Power Center Eliminates",
+        "Capital and Operating Cost Reductions",
+        "Eight Sizes. 3 to 1,000 Cubic Metres per Day.",
+        "Optimum Engineering Design Details",
+        "Clean Desalination. Lower Carbon. Zero Oil.",
+        "WaterQuest Solutions Power Center Technical FAQ",
+        "Request a Quote for the WaterQuest Solutions Power Center",
+        "Related application pages"
+      ],
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-desal-power-center.html"
+    },
+    {
+      "source": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/F1-wqs-stainless.html",
+      "fallbackSource": "dist/client/products/wqs-stainless/index.html",
+      "slug": "wqs-stainless",
+      "label": "WQS Stainless",
+      "canonical": "/products/wqs-stainless",
+      "type": "family",
+      "urlPath": "/products/wqs-stainless/",
+      "title": "WQS Stainless | Premium 316 SS Hydraulic Fittings & Adapters | Vancouver, BC",
+      "description": "WQS Stainless supplies premium 316 stainless steel hydraulic fittings, adapters, instrumentation fittings, pipe fittings, twin ferrule, and flow measuring components. ISO, SAE, API, FDA certified. Strategic Dicsa partnership. Vancouver, BC.",
+      "h1": [
+        "WQS Stainless built for water service.",
+        "STRENGTH IN EVERY CONNECTION WaterQuest"
+      ],
+      "h2": [
+        "Six Categories. Complete Solutions.",
+        "Why 316 Stainless? Why It Matters.",
+        "316 Stainless Fittings & Adapters Built for Demanding Environments",
+        "Hydrogen and Natural Gas. Built for What's Next.",
+        "Six Reasons to Choose WQS Stainless.",
+        "Get the Inside Edge on Industrial Materials",
+        "What Our Clients Are Saying.",
+        "316 SS Fitting Technical FAQ",
+        "CONNECT WITH OUR SPECIALISTS",
+        "Related application pages"
+      ],
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/F1-wqs-stainless.html"
+    }
+  ],
+  "cylinderForcePages": [
+    {
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-Cylinder-Main-with-pressure-files.files/cylinder-32x16.html",
+      "slug": "cylinder-32x16",
+      "label": "32 mm Bore × 16 mm Rod",
+      "type": "cylinder-force-data",
+      "canonical": "/products/water-hydraulic-cylinders/cylinder-32x16",
+      "urlPath": "/products/water-hydraulic-cylinders/cylinder-32x16/",
+      "title": "32mm Bore × 16mm Rod Cylinder Force Data | WaterQuest Solutions",
+      "description": "Complete force output data for 32mm bore × 16mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 8.04 cm², ring area 6.03 cm², 0.98 efficiency.",
+      "h1": [
+        "Cylinder 32x16 built for water service.",
+        "Cylinder Force Data"
+      ],
+      "h2": [
+        "Related application pages"
+      ]
+    },
+    {
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-Cylinder-Main-with-pressure-files.files/cylinder-32x20.html",
+      "slug": "cylinder-32x20",
+      "label": "32 mm Bore × 20 mm Rod",
+      "type": "cylinder-force-data",
+      "canonical": "/products/water-hydraulic-cylinders/cylinder-32x20",
+      "urlPath": "/products/water-hydraulic-cylinders/cylinder-32x20/",
+      "title": "32mm Bore × 20mm Rod Cylinder Force Data | WaterQuest Solutions",
+      "description": "Complete force output data for 32mm bore × 20mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 8.04 cm², ring area 4.9 cm², 0.98 efficiency.",
+      "h1": [
+        "Cylinder 32x20 built for water service.",
+        "Cylinder Force Data"
+      ],
+      "h2": [
+        "Related application pages"
+      ]
+    },
+    {
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-Cylinder-Main-with-pressure-files.files/cylinder-40x25.html",
+      "slug": "cylinder-40x25",
+      "label": "40 mm Bore × 25 mm Rod",
+      "type": "cylinder-force-data",
+      "canonical": "/products/water-hydraulic-cylinders/cylinder-40x25",
+      "urlPath": "/products/water-hydraulic-cylinders/cylinder-40x25/",
+      "title": "40mm Bore × 25mm Rod Cylinder Force Data | WaterQuest Solutions",
+      "description": "Complete force output data for 40mm bore × 25mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 12.57 cm², ring area 7.66 cm², 0.98 efficiency.",
+      "h1": [
+        "Cylinder 40x25 built for water service.",
+        "Cylinder Force Data"
+      ],
+      "h2": [
+        "Related application pages"
+      ]
+    },
+    {
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-Cylinder-Main-with-pressure-files.files/cylinder-50x25.html",
+      "slug": "cylinder-50x25",
+      "label": "50 mm Bore × 25 mm Rod",
+      "type": "cylinder-force-data",
+      "canonical": "/products/water-hydraulic-cylinders/cylinder-50x25",
+      "urlPath": "/products/water-hydraulic-cylinders/cylinder-50x25/",
+      "title": "50mm Bore × 25mm Rod Cylinder Force Data | WaterQuest Solutions",
+      "description": "Complete force output data for 50mm bore × 25mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 19.63 cm², ring area 14.73 cm², 0.98 efficiency.",
+      "h1": [
+        "Cylinder 50x25 built for water service.",
+        "Cylinder Force Data"
+      ],
+      "h2": [
+        "Related application pages"
+      ]
+    },
+    {
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-Cylinder-Main-with-pressure-files.files/cylinder-50x30.html",
+      "slug": "cylinder-50x30",
+      "label": "50 mm Bore × 30 mm Rod",
+      "type": "cylinder-force-data",
+      "canonical": "/products/water-hydraulic-cylinders/cylinder-50x30",
+      "urlPath": "/products/water-hydraulic-cylinders/cylinder-50x30/",
+      "title": "50mm Bore × 30mm Rod Cylinder Force Data | WaterQuest Solutions",
+      "description": "Complete force output data for 50mm bore × 30mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 19.63 cm², ring area 12.57 cm², 0.98 efficiency.",
+      "h1": [
+        "Cylinder 50x30 built for water service.",
+        "Cylinder Force Data"
+      ],
+      "h2": [
+        "Related application pages"
+      ]
+    },
+    {
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-Cylinder-Main-with-pressure-files.files/cylinder-64x30.html",
+      "slug": "cylinder-64x30",
+      "label": "64 mm Bore × 30 mm Rod",
+      "type": "cylinder-force-data",
+      "canonical": "/products/water-hydraulic-cylinders/cylinder-64x30",
+      "urlPath": "/products/water-hydraulic-cylinders/cylinder-64x30/",
+      "title": "64mm Bore × 30mm Rod Cylinder Force Data | WaterQuest Solutions",
+      "description": "Complete force output data for 64mm bore × 30mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 32.17 cm², ring area 25.1 cm², 0.98 efficiency.",
+      "h1": [
+        "Cylinder 64x30 built for water service.",
+        "Cylinder Force Data"
+      ],
+      "h2": [
+        "Related application pages"
+      ]
+    },
+    {
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-Cylinder-Main-with-pressure-files.files/cylinder-64x40.html",
+      "slug": "cylinder-64x40",
+      "label": "64 mm Bore × 40 mm Rod",
+      "type": "cylinder-force-data",
+      "canonical": "/products/water-hydraulic-cylinders/cylinder-64x40",
+      "urlPath": "/products/water-hydraulic-cylinders/cylinder-64x40/",
+      "title": "64mm Bore × 40mm Rod Cylinder Force Data | WaterQuest Solutions",
+      "description": "Complete force output data for 64mm bore × 40mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 32.17 cm², ring area 19.6 cm², 0.98 efficiency.",
+      "h1": [
+        "Cylinder 64x40 built for water service.",
+        "Cylinder Force Data"
+      ],
+      "h2": [
+        "Related application pages"
+      ]
+    },
+    {
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-Cylinder-Main-with-pressure-files.files/cylinder-80x50.html",
+      "slug": "cylinder-80x50",
+      "label": "80 mm Bore × 50 mm Rod",
+      "type": "cylinder-force-data",
+      "canonical": "/products/water-hydraulic-cylinders/cylinder-80x50",
+      "urlPath": "/products/water-hydraulic-cylinders/cylinder-80x50/",
+      "title": "80mm Bore × 50mm Rod Cylinder Force Data | WaterQuest Solutions",
+      "description": "Complete force output data for 80mm bore × 50mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 50.27 cm², ring area 30.63 cm², 0.98 efficiency.",
+      "h1": [
+        "Cylinder 80x50 built for water service.",
+        "Cylinder Force Data"
+      ],
+      "h2": [
+        "Related application pages"
+      ]
+    },
+    {
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-Cylinder-Main-with-pressure-files.files/cylinder-100x60.html",
+      "slug": "cylinder-100x60",
+      "label": "100 mm Bore × 60 mm Rod",
+      "type": "cylinder-force-data",
+      "canonical": "/products/water-hydraulic-cylinders/cylinder-100x60",
+      "urlPath": "/products/water-hydraulic-cylinders/cylinder-100x60/",
+      "title": "100mm Bore × 60mm Rod Cylinder Force Data | WaterQuest Solutions",
+      "description": "Complete force output data for 100mm bore × 60mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 78.54 cm², ring area 50.27 cm², 0.98 efficiency.",
+      "h1": [
+        "Cylinder 100x60 built for water service.",
+        "Cylinder Force Data"
+      ],
+      "h2": [
+        "Related application pages"
+      ]
+    },
+    {
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-Cylinder-Main-with-pressure-files.files/cylinder-100x80.html",
+      "slug": "cylinder-100x80",
+      "label": "100 mm Bore × 80 mm Rod",
+      "type": "cylinder-force-data",
+      "canonical": "/products/water-hydraulic-cylinders/cylinder-100x80",
+      "urlPath": "/products/water-hydraulic-cylinders/cylinder-100x80/",
+      "title": "100mm Bore × 80mm Rod Cylinder Force Data | WaterQuest Solutions",
+      "description": "Complete force output data for 100mm bore × 80mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 78.54 cm², ring area 28.27 cm², 0.98 efficiency.",
+      "h1": [
+        "Cylinder 100x80 built for water service.",
+        "Cylinder Force Data"
+      ],
+      "h2": [
+        "Related application pages"
+      ]
+    },
+    {
+      "sourceFile": "/Users/brucehickin/Desktop/New Folder With Items 2 2/WaterQuest 2.0/product Pages/F1-Cylinder-Main-with-pressure-files.files/cylinder-125x80.html",
+      "slug": "cylinder-125x80",
+      "label": "125 mm Bore × 80 mm Rod",
+      "type": "cylinder-force-data",
+      "canonical": "/products/water-hydraulic-cylinders/cylinder-125x80",
+      "urlPath": "/products/water-hydraulic-cylinders/cylinder-125x80/",
+      "title": "125mm Bore × 80mm Rod Cylinder Force Data | WaterQuest Solutions",
+      "description": "Complete force output data for 125mm bore × 80mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 122.72 cm², ring area 72.45 cm², 0.98 efficiency.",
+      "h1": [
+        "Cylinder 125x80 built for water service.",
+        "Cylinder Force Data"
+      ],
+      "h2": [
+        "Related application pages"
+      ]
+    }
+  ],
+  "pumpModelPages": [
+    {
+      "source": "/Users/brucehickin/Documents/L1-Pumps/pumps/p1-pump.html",
+      "slug": "p1",
+      "label": "P1 Micro Water Hydraulic Pump",
+      "canonical": "/products/axial-piston-pumps/p1",
+      "type": "pump-model",
+      "urlPath": "/products/axial-piston-pumps/p1/",
+      "title": "P1 Micro Water Hydraulic Pump | WaterQuest Solutions",
+      "description": "The WaterQuest P1 is a compact, oil-free water hydraulic pump delivering up to 2.1 L/min at 160 bar. Ideal for precision hydraulic circuits, lab systems, and HPU integration.",
+      "h1": [
+        "P1 Micro Water Hydraulic Pump 0.8cc / 1.2cc Displacement"
+      ],
+      "h2": [
+        "Built From First Principles. Not Adapted From Oil.",
+        "P1 Pump Performance Curves",
+        "Where the P1 Excels",
+        "The P1 Inside a WaterQuest HPU",
+        "P1 Configuration and Ordering Options",
+        "P1 Technical Data",
+        "Need More Flow? Step Up the Pump Line.",
+        "Ready to Specify the P1?"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/L1-Pumps/pumps/p1-pump.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/L1-Pumps/pumps/T.p3-pump_5.html",
+      "slug": "p3",
+      "label": "P3 Axial Piston Water Hydraulic Pump",
+      "canonical": "/products/axial-piston-pumps/p3",
+      "type": "pump-model",
+      "urlPath": "/products/axial-piston-pumps/p3/",
+      "title": "P3 Axial Piston Water Hydraulic Pump | 160 Bar | 6.0 L/min | WaterQuest Solutions",
+      "description": "The WaterQuest P3 axial piston pump delivers up to 6.0 L/min at 160 bar. 3.0 cc/rev, unboosted and boosted, 316 SS, oil-free, ATEX II 2GD.",
+      "h1": [
+        "WaterQuest P3 Axial Piston Pump"
+      ],
+      "h2": [
+        "More Flow. Same Oil-Free Principle.",
+        "Unboosted or Boosted: Which P3 Do You Need?",
+        "P3 Dimensional Data",
+        "P3 Design and Construction",
+        "P3 Performance Curves",
+        "P3 Full Specification",
+        "P3 Ordering Code Structure",
+        "P3 in a WaterQuest Pick-a-Pack HPU",
+        "P3 Application Environments",
+        "Need More Flow? Step Up the Range.",
+        "P3 Pump Technical FAQ",
+        "Ready to Specify the P3?"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/L1-Pumps/pumps/T.p3-pump_5.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/L1-Pumps/pumps/T.p6-pump.html",
+      "slug": "p6",
+      "label": "P6 Axial Piston Water Hydraulic Pump",
+      "canonical": "/products/axial-piston-pumps/p6",
+      "type": "pump-model",
+      "urlPath": "/products/axial-piston-pumps/p6/",
+      "title": "P6 Axial Piston Water Hydraulic Pump | 160 Bar | 12 L/min | WaterQuest Solutions",
+      "description": "The WaterQuest P6 axial piston pump delivers up to 12 L/min at 160 bar. Two displacements: 4.6 and 6.0 cc/rev. Unboosted and boosted configurations, 316 stainless steel, oil-free, ATEX II 2GD certified.",
+      "h1": [
+        "WaterQuest P6 Axial Piston Pump"
+      ],
+      "h2": [
+        "Double the Displacement Range. Double the Flexibility.",
+        "4.6 cc/rev or 6.0 cc/rev: Which P6 Do You Need?",
+        "Unboosted or Boosted: P6 Inlet Requirements",
+        "P6 Dimensional Data",
+        "P6 Design and Construction",
+        "P6 Performance Curves",
+        "P6 Full Specification",
+        "P6 Ordering Code Structure",
+        "P6 in a WaterQuest Pick-a-Pack HPU",
+        "P6 Application Environments",
+        "Need More Flow? Step Up the Range.",
+        "P6 Pump Technical FAQ",
+        "Ready to Specify the P6?"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/L1-Pumps/pumps/T.p6-pump.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/L1-Pumps/pumps/TCheck.graph.4.p15-pump.html",
+      "slug": "p15",
+      "label": "P15 Axial Piston Water Hydraulic Pump",
+      "canonical": "/products/axial-piston-pumps/p15",
+      "type": "pump-model",
+      "urlPath": "/products/axial-piston-pumps/p15/",
+      "title": "P15 Axial Piston Water Hydraulic Pump | 160 Bar | 37.2 L/min | WaterQuest Solutions",
+      "description": "The WaterQuest P15 axial piston pump delivers up to 37.2 L/min at 160 bar. Three displacements: 12, 15, and 19 cc/rev. Unboosted and boosted configurations, 316 stainless steel, oil-free, ATEX II 2GD certified.",
+      "h1": [
+        "WaterQuest P15 Axial Piston Pump"
+      ],
+      "h2": [
+        "Three Displacements. One Industrial Body.",
+        "12, 15, or 19 cc/rev: Choosing the Right P15",
+        "Unboosted or Boosted: P15 Inlet Requirements",
+        "P15 Dimensional Data",
+        "P15 Design and Construction",
+        "P15 Performance Curves",
+        "P15 Full Specification",
+        "P15 Ordering Code Structure",
+        "P15 in a WaterQuest Pick-a-Pack HPU",
+        "P15 Application Environments",
+        "Need More Flow? Step Up the Range.",
+        "P15 Pump Technical FAQ",
+        "Ready to Specify the P15?"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/L1-Pumps/pumps/TCheck.graph.4.p15-pump.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/L1-Pumps/pumps/T.p30-pump.html",
+      "slug": "p30",
+      "label": "P30 Axial Piston Water Hydraulic Pump",
+      "canonical": "/products/axial-piston-pumps/p30",
+      "type": "pump-model",
+      "urlPath": "/products/axial-piston-pumps/p30/",
+      "title": "P30 Axial Piston Water Hydraulic Pump | 160 Bar | 66 L/min | WaterQuest Solutions",
+      "description": "The WaterQuest P30 axial piston pump delivers up to 66 L/min at 160 bar. Three displacements: 23, 30, and 35 cc/rev. Unboosted and boosted configurations, 316 stainless steel, oil-free, ATEX II 2GD certified.",
+      "h1": [
+        "WaterQuest P30 Axial Piston Pump"
+      ],
+      "h2": [
+        "High-Flow Industrial Power. Oil-Free, 316 Stainless.",
+        "23, 30, or 35 cc/rev: Choosing the Right P30",
+        "Unboosted, Boosted, or PPC: P30 Configuration Options",
+        "P30 Dimensional Data",
+        "P30 Design and Construction",
+        "P30 Performance Curves",
+        "P30 Full Specification",
+        "P30 Ordering Code Structure",
+        "P30 Application Environments",
+        "Need More Flow? Step Up the Range.",
+        "P30 Pump Technical FAQ",
+        "Ready to Specify the P30?"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/L1-Pumps/pumps/T.p30-pump.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/L1-Pumps/pumps/T.p60-pump_1.html",
+      "slug": "p60",
+      "label": "P60 Axial Piston Water Hydraulic Pump",
+      "canonical": "/products/axial-piston-pumps/p60",
+      "type": "pump-model",
+      "urlPath": "/products/axial-piston-pumps/p60/",
+      "title": "P60 Axial Piston Water Hydraulic Pump | 160 Bar | 146 L/min | WaterQuest Solutions",
+      "description": "The WaterQuest P60 axial piston pump delivers up to 146 L/min at 160 bar. Three displacements: 51, 63, and 70 cc/rev. Unboosted and boosted configurations, 316 stainless steel, oil-free, ATEX II 2GD certified.",
+      "h1": [
+        "WaterQuest P60 Axial Piston Pump"
+      ],
+      "h2": [
+        "Maximum Fixed-Displacement Flow. Highest Efficiency in the Range.",
+        "51, 63, or 70 cc/rev: Choosing the Right P60",
+        "Unboosted, Boosted, or PPC: P60 Configuration Options",
+        "P60 Dimensional Data",
+        "P60 Design and Construction",
+        "P60 Performance Curves",
+        "P60 Full Specification",
+        "P60 Ordering Code Structure",
+        "P60 Application Environments",
+        "Need More Flow? The P180 Awaits.",
+        "P60 Pump Technical FAQ",
+        "Ready to Specify the P60?"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/L1-Pumps/pumps/T.p60-pump_1.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/L1-Pumps/pumps/T.p180-pump.html",
+      "slug": "p180",
+      "label": "P180 Axial Piston Water Hydraulic Pump",
+      "canonical": "/products/axial-piston-pumps/p180",
+      "type": "pump-model",
+      "urlPath": "/products/axial-piston-pumps/p180/",
+      "title": "P180 Axial Piston Water Hydraulic Pump | 160 Bar | 430 L/min | WaterQuest Solutions",
+      "description": "The WaterQuest P180 axial piston pump delivers up to 430 L/min at 160 bar. Three displacements: 135, 180, 225 cc/rev. Boosted only, mechanical seal, spline drive, 2-inch SAE flange pressure ports. 316 stainless steel, oil-free, ATEX II 2GD.",
+      "h1": [
+        "WaterQuest P180 Axial Piston Pump"
+      ],
+      "h2": [
+        "430 L/min. The Top of the Range.",
+        "135, 180, or 225 cc/rev: Choosing the Right P180",
+        "Boosted Only. P180 Installation Requirements",
+        "P180 Dimensional Data",
+        "P180 Design and Construction",
+        "P180 Performance Curves",
+        "P180 Full Specification",
+        "P180 Ordering Code Structure",
+        "P180 Application Environments",
+        "The Full WaterQuest Axial Piston Pump Range",
+        "P180 Pump Technical FAQ",
+        "Ready to Specify the P180?"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/L1-Pumps/pumps/T.p180-pump.html"
+    }
+  ],
+  "motorModelPages": [
+    {
+      "source": "/Users/brucehickin/Documents/motors/F1-m3-motor.html",
+      "slug": "m3",
+      "label": "M3 Water Hydraulic Motor",
+      "canonical": "/products/water-hydraulic-motors/m3",
+      "type": "motor-model",
+      "urlPath": "/products/water-hydraulic-motors/m3/",
+      "title": "M3 Water Hydraulic Motor | 3cc | 160 Bar | 7.1 Nm Torque | WaterQuest Solutions",
+      "description": "The WaterQuest M3 water hydraulic motor delivers 7.1 Nm torque at 160 bar. 3cc displacement, 316 stainless steel, oil-free operation for food processing, marine, and industrial applications.",
+      "h1": [
+        "WaterQuest M3 Water Hydraulic Motor"
+      ],
+      "h2": [
+        "Compact Rotary Power. Zero Oil. Zero Risk.",
+        "M3 Performance Curves",
+        "M3 Technical Drawings",
+        "Ideal Use Cases",
+        "Engineer Your Clean Solution"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/motors/F1-m3-motor.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/motors/F1-m6-motor_2.html",
+      "slug": "m6",
+      "label": "M6 Water Hydraulic Motor",
+      "canonical": "/products/water-hydraulic-motors/m6",
+      "type": "motor-model",
+      "urlPath": "/products/water-hydraulic-motors/m6/",
+      "title": "M6 Water Hydraulic Motor | 6cc | 160 Bar | 14.2 Nm Torque | WaterQuest Solutions",
+      "description": "The WaterQuest M6 water hydraulic motor delivers 14.2 Nm torque at 160 bar. 6cc displacement, 316 stainless steel, oil-free operation for food processing, marine, and industrial applications.",
+      "h1": [
+        "WaterQuest M6 Water Hydraulic Motor"
+      ],
+      "h2": [
+        "Balanced Power Zero Oil. Higher Torque.",
+        "M6 Performance Curves",
+        "M6 Technical Drawings",
+        "Ideal Use Cases",
+        "Engineer Your Clean Solution"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/motors/F1-m6-motor_2.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/motors/2m15-motor.html",
+      "slug": "m15",
+      "label": "M15 Water Hydraulic Motor",
+      "canonical": "/products/water-hydraulic-motors/m15",
+      "type": "motor-model",
+      "urlPath": "/products/water-hydraulic-motors/m15/",
+      "title": "M15 Water Hydraulic Motor | 15cc & 19cc | 160 Bar | 45 Nm Torque | WaterQuest Solutions",
+      "description": "The WaterQuest M15 water hydraulic motor delivers up to 45 Nm torque at 160 bar. Available in 15cc and 19cc displacement, 316 stainless steel, oil-free operation for industrial, marine, and municipal applications.",
+      "h1": [
+        "M15 High-Torque Water Hydraulic Motor"
+      ],
+      "h2": [
+        "Performance Characteristics",
+        "Engineered for Contamination-Free Power",
+        "Dimensions and Mounting",
+        "Where M15 Motors Excel",
+        "Engineer Your Clean Solution"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/motors/2m15-motor.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/motors/m30-motor_1.html",
+      "slug": "m30",
+      "label": "M30 Water Hydraulic Motor",
+      "canonical": "/products/water-hydraulic-motors/m30",
+      "type": "motor-model",
+      "urlPath": "/products/water-hydraulic-motors/m30/",
+      "title": "M30 Water Hydraulic Motor | 30cc & 35cc | 160 Bar | 84 Nm Torque | WaterQuest Solutions",
+      "description": "The WaterQuest M30 water hydraulic motor delivers up to 84 Nm torque at 160 bar. Available in 30cc and 35cc displacement, 316 stainless steel, oil-free operation for heavy-duty industrial, mining, and offshore applications.",
+      "h1": [
+        "M30 Heavy-Duty Water Hydraulic Motor"
+      ],
+      "h2": [
+        "Heavy-Duty Performance Curves",
+        "Built for Extreme Industrial Service",
+        "Mounting and Connections",
+        "Proven in Heavy-Duty Service",
+        "Engineer Your Heavy-Duty Solution"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/motors/m30-motor_1.html"
+    },
+    {
+      "slug": "m60",
+      "label": "M60 Axial Piston Water Hydraulic Motor",
+      "canonical": "/products/water-hydraulic-motors/m60",
+      "title": "M60 Axial Piston Water Hydraulic Motor | 63cc & 70.3cc | 160 Bar | WaterQuest Solutions",
+      "description": "The WaterQuest M60 axial piston water hydraulic motor is designed for operation on tap water with 63.0 cc/rev and 70.3 cc/rev displacement options at 160 bar.",
+      "h1": [
+        "M60 Axial Piston Water Hydraulic Motor"
+      ],
+      "eyebrow": "M Series Water Hydraulic Motor",
+      "intro": "The M60 axial piston motor is designed for operation on tap water and is available in 63.0 cc/rev and 70.3 cc/rev displacement options. It gives designers a high-output, oil-free rotary actuator for industrial and marine systems where contamination risk has to be engineered out.",
+      "badgeLabel": "Operating Pressure",
+      "badgeValue": "160 bar / 2320 PSI",
+      "stats": [
+        [
+          "Displacement",
+          "63.0 / 70.3 cc/rev"
+        ],
+        [
+          "Operating Pressure",
+          "160 bar"
+        ],
+        [
+          "Motor Type",
+          "Axial piston"
+        ],
+        [
+          "Fluid Medium",
+          "Tap water"
+        ],
+        [
+          "Configuration",
+          "Un-boosted"
+        ],
+        [
+          "Model Reference",
+          "MA160-63W"
+        ]
+      ],
+      "features": [
+        [
+          "Tap-water operation",
+          "Designed around water as the hydraulic medium, not oil, so leakage does not create petroleum contamination in sensitive work areas."
+        ],
+        [
+          "Two displacement choices",
+          "63.0 cc/rev and 70.3 cc/rev options let engineers match torque and flow demand without changing the overall motor class."
+        ],
+        [
+          "High-pressure service",
+          "Rated around 160 bar / 2320 PSI for demanding rotary actuation where compact hydraulic power is still required."
+        ],
+        [
+          "Industrial integration",
+          "Suited to water hydraulic HPUs, deck equipment, process machinery, and other systems that need clean rotary motion."
+        ]
+      ],
+      "applications": [
+        "Marine deck equipment",
+        "Industrial conveyors",
+        "Water hydraulic HPUs",
+        "Process machinery",
+        "Municipal equipment",
+        "Clean-fluid test systems"
+      ],
+      "assets": {
+        "hero": "/Users/brucehickin/Documents/M60 Axial Piston Motor /imgi_2_PB160-80SMS-e1729170158766.jpeg",
+        "drawings": [
+          [
+            "MB160-63W dimensional drawing",
+            "/Users/brucehickin/Documents/M60 Axial Piston Motor /imgi_3_mb16063w.jpeg"
+          ],
+          [
+            "MC160-63W dimensional drawing",
+            "/Users/brucehickin/Documents/M60 Axial Piston Motor /imgi_4_mc16063w.jpeg"
+          ]
+        ],
+        "curves": [
+          [
+            "Output Power",
+            "/Users/brucehickin/Documents/M60 Axial Piston Motor /imgi_5_m60-output-power.jpeg"
+          ],
+          [
+            "Input Flow",
+            "/Users/brucehickin/Documents/M60 Axial Piston Motor /imgi_6_m60-input-flow.jpeg"
+          ],
+          [
+            "Output Torque",
+            "/Users/brucehickin/Documents/M60 Axial Piston Motor /imgi_7_m60-output-torque.jpeg"
+          ],
+          [
+            "Overall Efficiency",
+            "/Users/brucehickin/Documents/M60 Axial Piston Motor /imgi_8_m60-overall-eff.jpeg"
+          ]
+        ]
+      },
+      "type": "motor-model",
+      "urlPath": "/products/water-hydraulic-motors/m60/",
+      "h2": [
+        "Performance curves",
+        "Dimensional drawings",
+        "Engineering notes",
+        "Applications"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/M60 axial piston motor is designed for operation on tap….pages"
+    },
+    {
+      "slug": "m180",
+      "label": "M180 Axial Piston Water Hydraulic Motor",
+      "canonical": "/products/water-hydraulic-motors/m180",
+      "title": "M180 Axial Piston Water Hydraulic Motor | 135cc & 225cc | 160 Bar | WaterQuest Solutions",
+      "description": "The WaterQuest M180 axial piston water hydraulic motor is engineered for tap water operation with 135.0 cc/rev and 225 cc/rev displacement options at 160 bar.",
+      "h1": [
+        "M180 Axial Piston Water Hydraulic Motor"
+      ],
+      "eyebrow": "M Series Water Hydraulic Motor",
+      "intro": "The M180 axial piston motor is engineered for reliable operation using tap water, making it suited to high-output applications where oil contamination must be avoided. Displacement options include 135.0 cc/rev and 225 cc/rev for larger industrial and marine hydraulic systems.",
+      "badgeLabel": "Operating Pressure",
+      "badgeValue": "160 bar / 2320 PSI",
+      "stats": [
+        [
+          "Displacement",
+          "135.0 / 225 cc/rev"
+        ],
+        [
+          "Operating Pressure",
+          "160 bar"
+        ],
+        [
+          "Motor Type",
+          "Axial piston"
+        ],
+        [
+          "Fluid Medium",
+          "Tap water"
+        ],
+        [
+          "Configuration",
+          "Boosted"
+        ],
+        [
+          "Model Reference",
+          "MB160-180W"
+        ]
+      ],
+      "features": [
+        [
+          "Large-displacement output",
+          "135.0 cc/rev and 225 cc/rev options support high torque demand while staying inside a water hydraulic architecture."
+        ],
+        [
+          "Tap-water operation",
+          "Built for clean hydraulic systems where water is the working medium and petroleum leakage is unacceptable."
+        ],
+        [
+          "Boosted motor configuration",
+          "Designed for boosted inlet operation with mechanical seal construction for larger system integration."
+        ],
+        [
+          "Heavy industrial fit",
+          "Appropriate for high-load equipment in marine, infrastructure, desalination, and industrial environments."
+        ]
+      ],
+      "applications": [
+        "Offshore equipment",
+        "Large winches",
+        "Heavy conveyors",
+        "Desalination systems",
+        "Municipal infrastructure",
+        "Industrial drives"
+      ],
+      "assets": {
+        "hero": "/Users/brucehickin/Documents/M180 Axial Piston Motor/imgi_2_PB160-80SMS-e1729170158766.jpeg",
+        "drawings": [
+          [
+            "MB160-180W dimensional drawing",
+            "/Users/brucehickin/Documents/M180 Axial Piston Motor/imgi_9_mb160180w-1600x748.jpeg"
+          ]
+        ],
+        "curves": [
+          [
+            "Output Power",
+            "/Users/brucehickin/Documents/M180 Axial Piston Motor/imgi_4_m180-output-power.jpeg"
+          ],
+          [
+            "Input Flow",
+            "/Users/brucehickin/Documents/M180 Axial Piston Motor/imgi_5_m180-input-flow.jpeg"
+          ],
+          [
+            "Output Torque",
+            "/Users/brucehickin/Documents/M180 Axial Piston Motor/imgi_6_m180-output-torque.jpeg"
+          ],
+          [
+            "Overall Efficiency",
+            "/Users/brucehickin/Documents/M180 Axial Piston Motor/imgi_7_m180-overall-eff.jpeg"
+          ]
+        ]
+      },
+      "type": "motor-model",
+      "urlPath": "/products/water-hydraulic-motors/m180/",
+      "h2": [
+        "Performance curves",
+        "Dimensional drawings",
+        "Engineering notes",
+        "Applications"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/M180 axial piston motors are specifically engineered for….pages"
+    }
+  ],
+  "valveProductPages": [
+    {
+      "source": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-2-2-pilot.html",
+      "slug": "valve-2-2-pilot",
+      "label": "2 2 Pilot",
+      "canonical": "/products/water-hydraulic-valves/valve-2-2-pilot",
+      "type": "valve-product",
+      "urlPath": "/products/water-hydraulic-valves/valve-2-2-pilot/",
+      "title": "2/2 Pilot Valves | DN9 to DN25 | 0 to 120 L/min | WaterQuest Solutions",
+      "description": "WaterQuest Solutions 2/2 Pilot Valves. DN9 (0 to 60 L/min, 3/8",
+      "h1": [
+        "2/2 Pilot Valves"
+      ],
+      "h2": [
+        "Request a Quote",
+        "Full Specification: 2/2 Pilot Valves",
+        "Key Design Features",
+        "How to Order: 2/2 Pilot Valves",
+        "Where the 2/2 Pilot Valves is Used",
+        "2/2 Pilot Valves FM 87247",
+        "Other Valves in the Range"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-2-2-pilot.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-4-2-3-2-directional.html",
+      "slug": "valve-4-2-3-2-directional",
+      "label": "4 2 3 2 Directional",
+      "canonical": "/products/water-hydraulic-valves/valve-4-2-3-2-directional",
+      "type": "valve-product",
+      "urlPath": "/products/water-hydraulic-valves/valve-4-2-3-2-directional/",
+      "title": "4/2 and 3/2 Directional Flow Control Valve | 160 Bar | 30 L/min | WaterQuest Solutions",
+      "description": "WaterQuest Solutions patented 4/2 and 3/2 directional flow control valves for water hydraulics. 160 bar max, 0 to 30 L/min, 316 stainless steel, 24V DC solenoid with manual override, stand alone, manifold mount, or Cetop 3. Actuation card required above 20 bar.",
+      "h1": [
+        "4/2 and 3/2 Directional Flow Control Valve"
+      ],
+      "h2": [
+        "Request a Quote",
+        "Full Specification: 4/2 and 3/2 Directional Flow Control Valve",
+        "Key Design Features",
+        "How to Order: 4/2 and 3/2 Directional Flow Control Valve",
+        "Where the 4/2 and 3/2 Directional Flow Control Valve is Used",
+        "4/2 and 3/2 Directional Flow Control Valve FM 87247 V06.17",
+        "Other Valves in the Range"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-4-2-3-2-directional.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-4-3-manual.html",
+      "slug": "valve-4-3-manual",
+      "label": "4 3 Manual",
+      "canonical": "/products/water-hydraulic-valves/valve-4-3-manual",
+      "type": "valve-product",
+      "urlPath": "/products/water-hydraulic-valves/valve-4-3-manual/",
+      "title": "4 Position 3 Port Manual Control Valve | 200 Bar | Water Hydraulics | WaterQuest Solutions",
+      "description": "WaterQuest Solutions patented 4-position 3-port manual control valve for water hydraulics. 200 bar max inlet, 0 to 30 L/min, 316 stainless steel, spring return or detent, 4 turns full travel, stand alone, manifold, or Cetop 3 mount.",
+      "h1": [
+        "4 Position 3 Port Manual Control Valve"
+      ],
+      "h2": [
+        "Request a Quote",
+        "Full Specification: 4 Position 3 Port Manual Control Valve",
+        "Key Design Features",
+        "How to Order: 4 Position 3 Port Manual Control Valve",
+        "Where the 4 Position 3 Port Manual Control Valve is Used",
+        "4 Position 3 Port Manual Control Valve FM 87247 V05.17",
+        "Other Valves in the Range"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-4-3-manual.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-actuation-cards.html",
+      "slug": "valve-actuation-cards",
+      "label": "Actuation Cards",
+      "canonical": "/products/water-hydraulic-valves/valve-actuation-cards",
+      "type": "valve-product",
+      "urlPath": "/products/water-hydraulic-valves/valve-actuation-cards/",
+      "title": "Actuation Card and DIN Rail Mounting | PWM Solenoid Control | WaterQuest Solutions",
+      "description": "WaterQuest Solutions Actuation Card for directional control valves. PWM solenoid control card, part 004-010, required for direct solenoid actuation above 20 bar. 24V DC supply, 5 amp. Reduces coil temperature and power consumption. DIN rail mounting options available.",
+      "h1": [
+        "Actuation Card and Mounting"
+      ],
+      "h2": [
+        "Request a Quote",
+        "Full Specification: Actuation Card and Mounting",
+        "Key Design Features",
+        "How to Order: Actuation Card and Mounting",
+        "Where the Actuation Card and Mounting is Used",
+        "Actuation Card and Mounting FM 87247",
+        "Other Valves in the Range"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-actuation-cards.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-check-valves.html",
+      "slug": "valve-check-valves",
+      "label": "Check Valves",
+      "canonical": "/products/water-hydraulic-valves/valve-check-valves",
+      "type": "valve-product",
+      "urlPath": "/products/water-hydraulic-valves/valve-check-valves/",
+      "title": "Check Valves | DN6 to DN25 | 200 Bar | Water Hydraulics | WaterQuest Solutions",
+      "description": "WaterQuest Solutions check valves. 316 stainless steel and high-grade polymer. DN6 to DN25 sizes, 0.1 to 200 bar, 30 to 200 L/min max flow. Consistent performance after lengthy periods of inactivity. Standard cracking pressure 0.6 bar, 0.1 to 3 bar available.",
+      "h1": [
+        "Check Valves"
+      ],
+      "h2": [
+        "Request a Quote",
+        "Full Specification: Check Valves",
+        "Key Design Features",
+        "How to Order: Check Valves",
+        "Where the Check Valves is Used",
+        "Check Valves FM 87247",
+        "Other Valves in the Range"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-check-valves.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-dn12-po-check.html",
+      "slug": "valve-dn12-po-check",
+      "label": "Dn12 Po Check",
+      "canonical": "/products/water-hydraulic-valves/valve-dn12-po-check",
+      "type": "valve-product",
+      "urlPath": "/products/water-hydraulic-valves/valve-dn12-po-check/",
+      "title": "DN12 Pilot-Operated Check Valve | 160 Bar | Bubble Tight | WaterQuest Solutions",
+      "description": "WaterQuest Solutions DN12 Pilot-Operated Check Valve. 316 stainless steel, 160 bar max, 0 to 60 L/min, 2.3:1 pilot ratio, bubble tight 100% seal performance for load holding. Stand alone or manifold mounted. Double port check function available.",
+      "h1": [
+        "DN12 Pilot-Operated Check Valve"
+      ],
+      "h2": [
+        "Request a Quote",
+        "Full Specification: DN12 Pilot-Operated Check Valve",
+        "Key Design Features",
+        "How to Order: DN12 Pilot-Operated Check Valve",
+        "Where the DN12 Pilot-Operated Check Valve is Used",
+        "DN12 Pilot-Operated Check Valve FM 87247 V06.17",
+        "Other Valves in the Range"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-dn12-po-check.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-dn16-directional.html",
+      "slug": "valve-dn16-directional",
+      "label": "Dn16 Directional",
+      "canonical": "/products/water-hydraulic-valves/valve-dn16-directional",
+      "type": "valve-product",
+      "urlPath": "/products/water-hydraulic-valves/valve-dn16-directional/",
+      "title": "DN16 Directional Valve | 140 L/min | Pilot Actuated | Water Hydraulics | WaterQuest Solutions",
+      "description": "WaterQuest Solutions DN16 Directional Valve. Large-flow pilot-actuated valve: 0 to 140 L/min, 0 to 100 bar, 3/4",
+      "h1": [
+        "DN16 Directional Valve"
+      ],
+      "h2": [
+        "Request a Quote",
+        "Full Specification: DN16 Directional Valve",
+        "Key Design Features",
+        "How to Order: DN16 Directional Valve",
+        "Where the DN16 Directional Valve is Used",
+        "DN16 Directional Valve FM 87247 V06.17",
+        "Other Valves in the Range"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-dn16-directional.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-electronic-flow-control.html",
+      "slug": "valve-electronic-flow-control",
+      "label": "Electronic Flow Control",
+      "canonical": "/products/water-hydraulic-valves/valve-electronic-flow-control",
+      "type": "valve-product",
+      "urlPath": "/products/water-hydraulic-valves/valve-electronic-flow-control/",
+      "title": "Electronic Flow Control Valve | Stepper Motor | 200 Bar | WaterQuest Solutions",
+      "description": "WaterQuest Solutions Electronic Flow Control Valve. Stepper motor-driven proportional control, 200 bar max, 0 to 30 L/min, 316 stainless steel and ceramic, 48V DC, DN3 (1 to 10 L/min) and DN6 (3 to 30 L/min). Open or closed loop control with ST5 programmable controller.",
+      "h1": [
+        "Electronic Flow Control Valve"
+      ],
+      "h2": [
+        "Request a Quote",
+        "Full Specification: Electronic Flow Control Valve",
+        "Key Design Features",
+        "How to Order: Electronic Flow Control Valve",
+        "Where the Electronic Flow Control Valve is Used",
+        "Electronic Flow Control Valve FM 87247 V06.17",
+        "Other Valves in the Range"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-electronic-flow-control.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-electronic-pressure-control.html",
+      "slug": "valve-electronic-pressure-control",
+      "label": "Electronic Pressure Control",
+      "canonical": "/products/water-hydraulic-valves/valve-electronic-pressure-control",
+      "type": "valve-product",
+      "urlPath": "/products/water-hydraulic-valves/valve-electronic-pressure-control/",
+      "title": "Electronic Pressure Control Valve | Proportional | 200 Bar | WaterQuest Solutions",
+      "description": "WaterQuest Solutions Electronic Pressure Control Valve. Stepper motor-driven proportional pressure control, 200 bar max, DN6 (0 to 30 L/min) and DN12 (5 to 100 L/min), 48V DC, open or closed loop with ST5 controller and 0.5V pressure transducer input. Stand alone or manifold mounted.",
+      "h1": [
+        "Electronic Pressure Control Valve"
+      ],
+      "h2": [
+        "Request a Quote",
+        "Full Specification: Electronic Pressure Control Valve",
+        "Key Design Features",
+        "How to Order: Electronic Pressure Control Valve",
+        "Where the Electronic Pressure Control Valve is Used",
+        "Electronic Pressure Control Valve",
+        "Other Valves in the Range"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-electronic-pressure-control.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-flow-control.html",
+      "slug": "valve-flow-control",
+      "label": "Flow Control",
+      "canonical": "/products/water-hydraulic-valves/valve-flow-control",
+      "type": "valve-product",
+      "urlPath": "/products/water-hydraulic-valves/valve-flow-control/",
+      "title": "Flow Control Valve | Manual Thumbwheel | 200 Bar | Water Hydraulics | WaterQuest Solutions",
+      "description": "WaterQuest Solutions Flow Control Valve. 316 stainless steel, 0.1 to 200 bar, DN3 and DN6, manually adjusted thumbwheel with tamper-proof locking screw, helical port design for precise control, 4 turns full travel. Tool-free operator adjustment.",
+      "h1": [
+        "Flow Control Valve"
+      ],
+      "h2": [
+        "Request a Quote",
+        "Full Specification: Flow Control Valve",
+        "Key Design Features",
+        "How to Order: Flow Control Valve",
+        "Where the Flow Control Valve is Used",
+        "Flow Control Valve FM 87247",
+        "Other Valves in the Range"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-flow-control.html"
+    },
+    {
+      "source": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-hose-burst.html",
+      "slug": "valve-hose-burst",
+      "label": "Hose Burst",
+      "canonical": "/products/water-hydraulic-valves/valve-hose-burst",
+      "type": "valve-product",
+      "urlPath": "/products/water-hydraulic-valves/valve-hose-burst/",
+      "title": "Hose Burst Valve | Safety Protection | 200 Bar | Water Hydraulics | WaterQuest Solutions",
+      "description": "WaterQuest Solutions Hose Burst Valve. 316 stainless steel, 0.1 to 200 bar, DN3 and DN6, allows free flow in both directions under normal conditions then immediately stops flow surge on hose burst. Internally spring adjusted. 1/4",
+      "h1": [
+        "Hose Burst Valve"
+      ],
+      "h2": [
+        "Request a Quote",
+        "Full Specification: Hose Burst Valve",
+        "Key Design Features",
+        "How to Order: Hose Burst Valve",
+        "Where the Hose Burst Valve is Used",
+        "Hose Burst Valve FM 87247",
+        "Other Valves in the Range"
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/Products/L1-Valve pages - NEED TO FIX FONT AND UPLOAD IMAGE/valve-hose-burst.html"
+    }
+  ],
+  "specialtyProductPages": [
+    {
+      "source": "/Users/brucehickin/Documents/L1-Bilge Pump/L1-bilge pump.html",
+      "slug": "dn200-pn6-water-hydraulic-bilge-valve",
+      "label": "DN200 PN6 Water Hydraulic Actuated Bilge Valve",
+      "canonical": "/products/dn200-pn6-water-hydraulic-bilge-valve",
+      "type": "specialty-product",
+      "urlPath": "/products/dn200-pn6-water-hydraulic-bilge-valve/",
+      "title": "DN200 PN6 Water Hydraulic Actuated Bilge Valve | WaterQuest Solutions",
+      "description": "Engineering write-up for a DN200 PN6 water hydraulic actuated globe valve supplied by WaterQuest Solutions for submerged cruise ship bilge tank service.",
+      "h1": [
+        "DN200 PN6 Water Hydraulic Actuated Bilge Valve"
+      ],
+      "h2": [
+        "Oil removed from the actuation circuit",
+        "DN200 PN6 raised face water actuated stop valve",
+        "Hand pump to open. Spring to close.",
+        "Same hydraulic physics. Different consequence profile.",
+        "Marine material package for immersed service",
+        "Spring-close architecture gives a predictable default state",
+        "Designed for immersed operation inside the bilge tank",
+        "Seal leakage no longer means oil contamination",
+        "Risk reduction without loss of hydraulic function",
+        "Specify water hydraulics where oil leakage is unacceptable."
+      ],
+      "sourceFile": "/Users/brucehickin/Documents/L1-Bilge Pump/L1-bilge pump.html"
+    }
+  ]
+}

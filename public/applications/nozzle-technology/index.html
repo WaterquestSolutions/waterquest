@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>High-Pressure Water Nozzle Technology | Fire, Dust, Odour, Cleaning | WaterQuest Solutions</title>
+  <meta name="description" content="Engineering reference for high-pressure water nozzles across fire suppression, dust suppression, odour control, and industrial cleaning. Spray patterns, droplet physics, flow tables, and selection criteria from WaterQuest Solutions, Vancouver BC." />
+  <meta name="keywords" content="high pressure water nozzles, fire suppression nozzles, dust suppression nozzles, odour control atomizers, industrial cleaning nozzles, fog nozzles, water mist, hollow cone, full cone, flat fan, hydroblast, water hydraulics nozzle selection" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <style>
+    :root {
+      --navy:         #0A0F1A;
+      --navy-mid:     #0D1628;
+      --navy-light:   #121E38;
+      --aqua:         #00C8D4;
+      --aqua-deep:    #0098B0;
+      --aqua-glow:    rgba(0,200,212,0.15);
+      --fire:         #E84830;
+      --fire-amber:   #F08020;
+      --silver:       #FFFFFF;
+      --silver-light: #FFFFFF;
+      --white:        #FFFFFF;
+      --body-text:    #FFFFFF;
+      --muted:        #FFFFFF;
+      --border:       rgba(168,184,204,0.15);
+      --border-aqua:  rgba(0,200,212,0.28);
+      --font-display: 'Avenir', 'Avenir Next', 'Nunito Sans', sans-serif;
+      --font-body:    'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+      --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px;
+      --shadow-aqua:  0 0 48px rgba(0,200,212,0.2);
+      --max-width: 1240px; --section-pad: 100px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); background: var(--navy); color: var(--body-text); line-height: 1.7; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    .label { font-family: var(--font-display); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--aqua); }
+    h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 900; line-height: 1.15; color: var(--white); }
+    h1 { font-size: clamp(2.4rem,5vw,4.2rem); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(1.9rem,3.5vw,3rem); letter-spacing: -0.02em; }
+    h3 { font-size: clamp(1.1rem,2vw,1.45rem); }
+    h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--aqua); }
+    p  { color: var(--body-text); font-size: 1.02rem; }
+    .text-aqua  { color: var(--aqua); }
+    .text-amber { color: var(--fire-amber); }
+    .text-fire  { color: var(--fire); }
+    .text-muted { color: var(--muted); }
+    .text-white { color: var(--white); }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
+    .section { padding: var(--section-pad) 0; }
+    .section-alt  { background: var(--navy-mid); }
+    .section-dark { background: var(--navy); }
+
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: var(--radius-sm); font-family: var(--font-display); font-weight: 700; font-size: 0.88rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border: none; transition: all 0.25s ease; }
+    .btn-aqua    { background: var(--aqua); color: var(--navy); }
+    .btn-aqua:hover { background: #2AD8E4; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,200,212,0.35); }
+    .btn-outline { background: transparent; color: var(--aqua); border: 1.5px solid var(--border-aqua); }
+    .btn-outline:hover { background: var(--aqua-glow); border-color: var(--aqua); }
+
+    /* NAV */
+    #nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: background 0.3s, backdrop-filter 0.3s; }
+    #nav.scrolled { background: rgba(10,15,26,0.93); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .nav-logo .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.15rem; color: var(--white); letter-spacing: -0.01em; }
+    .nav-logo .logo-sub  { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--aqua); margin-top: 1px; display: block; }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { font-family: var(--font-display); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--silver); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--aqua); }
+    .nav-cta { background: var(--aqua) !important; color: var(--navy) !important; padding: 9px 20px; border-radius: var(--radius-sm); }
+
+    /* BUBBLES */
+    .bubble-layer { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 1; }
+    .bubble { position: absolute; border-radius: 50%; background: radial-gradient(circle at 35% 35%, rgba(0,200,212,0.55), rgba(0,180,200,0.08) 60%, transparent 80%); border: 1px solid rgba(0,200,212,0.2); opacity: 0; animation: bubble-rise linear infinite; }
+    @keyframes bubble-rise { 0%{transform:translateY(0) translateX(0) scale(1);opacity:0} 8%{opacity:0.5} 50%{transform:translateY(-50vh) translateX(var(--drift)) scale(0.88);opacity:0.25} 92%{opacity:0.08} 100%{transform:translateY(-108vh) translateX(calc(var(--drift)*1.4)) scale(0.45);opacity:0} }
+
+    /* REVEAL */
+    .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-left  { opacity:0; transform:translateX(-28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-left.visible  { opacity:1; transform:translateX(0); }
+    .reveal-right { opacity:0; transform:translateX(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-right.visible { opacity:1; transform:translateX(0); }
+
+    .section-header { margin-bottom: 60px; }
+    .section-header .label { margin-bottom: 14px; }
+    .section-header h2 { margin-bottom: 16px; }
+    .section-header p { max-width: 720px; font-size: 1.08rem; color: var(--silver-light); }
+    .section-header.center { text-align: center; }
+    .section-header.center p { margin: 0 auto; }
+
+    /* HERO */
+    #hero {
+      position: relative; min-height: 84vh;
+      display: flex; align-items: center;
+      overflow: hidden; padding-top: 72px;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 60% at 72% 45%,  rgba(0,150,180,0.22) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 40% at 85% 80%,  rgba(0,200,212,0.10) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 40% at 15% 30%,  rgba(0,80,120,0.18) 0%, transparent 55%),
+        linear-gradient(170deg, #060B14 0%, #0A0F1A 45%, #0D1020 100%);
+    }
+    .hero-grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(0,200,212,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,200,212,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 70% 70% at 70% 45%, black 20%, transparent 80%);
+    }
+
+    .hero-content { position: relative; z-index: 2; max-width: var(--max-width); margin: 0 auto; padding: 80px 32px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 72px; align-items: center; }
+    .hero-text .label { margin-bottom: 20px; }
+    .hero-text h1 { margin-bottom: 26px; }
+    .hero-text h1 .accent-aqua { color: var(--aqua); }
+    .hero-text h1 .accent-amber { color: var(--fire-amber); }
+    .hero-lead { font-size: 1.14rem; color: var(--silver-light); max-width: 540px; line-height: 1.8; margin-bottom: 36px; }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+
+    .stat-strip { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
+    .stat-badge { background: rgba(0,200,212,0.06); border: 1px solid var(--border-aqua); border-radius: var(--radius-md); padding: 14px 10px; text-align: center; }
+    .stat-badge .snum { font-family: var(--font-display); font-size: 1.25rem; font-weight: 900; color: var(--aqua); line-height: 1; margin-bottom: 5px; }
+    .stat-badge .slbl { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.09em; line-height: 1.4; }
+
+    .hero-visual { display: flex; align-items: center; justify-content: center; }
+    .nozzle-svg { width: 100%; max-width: 460px; filter: drop-shadow(0 0 48px rgba(0,200,212,0.22)); }
+
+    /* BREADCRUMB */
+    .breadcrumb { padding: 14px 0; border-bottom: 1px solid var(--border); background: var(--navy-mid); position: relative; z-index: 2; }
+    .breadcrumb-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; font-size: 0.82rem; color: var(--muted); }
+    .breadcrumb-inner a { color: var(--silver); transition: color 0.2s; }
+    .breadcrumb-inner a:hover { color: var(--aqua); }
+    .breadcrumb-inner .sep { margin: 0 10px; color: var(--muted); }
+    .breadcrumb-inner .current { color: var(--aqua); font-weight: 600; }
+
+    /* WHY HIGH PRESSURE */
+    .advantage-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    .advantage-card {
+      background: var(--navy-light); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 34px 30px;
+      position: relative; overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+    .advantage-card::after { content:attr(data-num); position:absolute; bottom:-14px; right:14px; font-size:5.5rem; font-weight:900; line-height:1; color:rgba(0,200,212,0.05); font-family:var(--font-display); pointer-events:none; }
+    .advantage-card:hover { border-color: var(--border-aqua); transform: translateY(-5px); box-shadow: 0 8px 36px rgba(0,200,212,0.12); }
+    .advantage-card .a-icon { font-size: 1.8rem; margin-bottom: 16px; }
+    .advantage-card h3 { font-size: 1.08rem; margin-bottom: 10px; }
+    .advantage-card p  { font-size: 0.93rem; color: var(--muted); line-height: 1.7; }
+
+    /* NOZZLE TYPES GRID */
+    .nozzle-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 28px; }
+    .nozzle-card {
+      background: var(--navy-light); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); overflow: hidden;
+      transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    }
+    .nozzle-card:hover { border-color: var(--border-aqua); box-shadow: 0 8px 36px rgba(0,200,212,0.10); transform: translateY(-4px); }
+    .nozzle-visual {
+      background: linear-gradient(135deg, rgba(0,200,212,0.04) 0%, rgba(18,30,56,0.6) 100%);
+      padding: 30px;
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      min-height: 240px;
+    }
+    .nozzle-visual svg { width: 100%; max-width: 360px; height: auto; }
+    .nozzle-info { padding: 28px 30px; }
+    .nozzle-info .ntag { display: inline-block; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--fire-amber); margin-bottom: 8px; font-weight: 700; }
+    .nozzle-info h3 { font-size: 1.18rem; margin-bottom: 12px; color: var(--white); }
+    .nozzle-info .ndesc { font-size: 0.93rem; color: var(--silver); line-height: 1.7; margin-bottom: 18px; }
+    .nozzle-info .nspec { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin-bottom: 16px; }
+    .nspec-item { background: rgba(0,200,212,0.04); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 14px; }
+    .nspec-item .sk { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; font-weight: 600; }
+    .nspec-item .sv { font-size: 0.88rem; color: var(--white); font-weight: 700; }
+    .napps { font-size: 0.82rem; color: var(--silver); padding-top: 14px; border-top: 1px solid var(--border); }
+    .napps strong { color: var(--aqua); font-weight: 700; }
+
+    /* APPLICATION SECTIONS */
+    .app-section-card {
+      background: var(--navy-light); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 50px;
+      margin-bottom: 32px;
+      position: relative; overflow: hidden;
+    }
+    .app-section-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, transparent, var(--aqua), transparent);
+    }
+    .app-section-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+    .app-section-card h3 { font-size: 1.6rem; margin-bottom: 18px; }
+    .app-section-card .app-label { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--fire-amber); margin-bottom: 12px; font-weight: 700; }
+    .app-section-card p { font-size: 0.97rem; color: var(--silver-light); line-height: 1.8; margin-bottom: 16px; }
+    .app-bullets { display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
+    .app-bullet { font-size: 0.92rem; color: var(--silver); padding-left: 22px; position: relative; line-height: 1.7; }
+    .app-bullet::before { content:'›'; position:absolute; left:0; top:0; color: var(--aqua); font-weight: 900; font-size: 1.1rem; }
+
+    .spec-box {
+      background: rgba(0,200,212,0.04); border: 1px solid var(--border-aqua);
+      border-radius: var(--radius-md); padding: 24px;
+      margin-top: 20px;
+    }
+    .spec-box h4 { margin-bottom: 14px; }
+    .spec-row { display: grid; grid-template-columns: 1fr auto; gap: 20px; padding: 8px 0; border-bottom: 1px dashed var(--border); }
+    .spec-row:last-child { border-bottom: none; }
+    .spec-row .sk { font-size: 0.85rem; color: var(--silver); }
+    .spec-row .sv { font-size: 0.88rem; color: var(--aqua); font-weight: 700; }
+
+    /* DROPLET CHART CONTAINER */
+    .chart-container {
+      background: var(--navy-light); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 36px;
+      margin-top: 32px;
+    }
+    .chart-container h3 { font-size: 1.2rem; margin-bottom: 8px; }
+    .chart-container .chart-sub { font-size: 0.88rem; color: var(--muted); margin-bottom: 24px; }
+    .chart-wrap { position: relative; height: 360px; }
+
+    /* TABLE STYLES */
+    .table-wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); margin-top: 32px; }
+    table { width: 100%; border-collapse: collapse; }
+    thead tr { background: var(--navy-light); }
+    thead th { padding: 18px 22px; font-family: var(--font-display); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; text-align: left; color: var(--silver); border-bottom: 1px solid var(--border); }
+    thead th.hl { color: var(--aqua) !important; }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background 0.2s; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: rgba(0,200,212,0.03); }
+    tbody td { padding: 14px 22px; font-size: 0.9rem; color: var(--silver); }
+    tbody td:first-child { color: var(--white); font-weight: 600; font-size: 0.88rem; }
+    .td-good { color: var(--aqua) !important; font-weight: 700; }
+    .td-mid  { color: var(--fire-amber) !important; }
+    .td-bad  { color: rgba(255,100,100,0.75) !important; }
+    .hl-col  { background: rgba(0,200,212,0.04); }
+
+    /* PRESSURE CLASSIFICATION */
+    .pressure-bar-wrap { background: var(--navy-light); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 36px; margin-top: 32px; }
+    .pressure-bar { display: grid; grid-template-columns: repeat(5,1fr); gap: 6px; margin-top: 20px; }
+    .pressure-tier { padding: 18px 16px; border-radius: var(--radius-md); text-align: center; }
+    .pressure-tier .pt-name { font-family: var(--font-display); font-size: 0.82rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
+    .pressure-tier .pt-range { font-size: 1.05rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .pressure-tier .pt-use { font-size: 0.74rem; color: var(--silver); line-height: 1.4; }
+    .pt-low    { background: rgba(0,200,212,0.06); border: 1px solid rgba(0,200,212,0.20); }
+    .pt-low .pt-name { color: #5BE0EC; }
+    .pt-med    { background: rgba(0,200,212,0.10); border: 1px solid rgba(0,200,212,0.30); }
+    .pt-med .pt-name { color: var(--aqua); }
+    .pt-high   { background: rgba(240,128,32,0.10); border: 1px solid rgba(240,128,32,0.30); }
+    .pt-high .pt-name { color: var(--fire-amber); }
+    .pt-uhp    { background: rgba(232,72,48,0.10); border: 1px solid rgba(232,72,48,0.30); }
+    .pt-uhp .pt-name { color: var(--fire); }
+    .pt-hyper  { background: rgba(180,40,20,0.14); border: 1px solid rgba(180,40,20,0.40); }
+    .pt-hyper .pt-name { color: #FF6650; }
+
+    /* SELECTION MATRIX */
+    .selection-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    .sel-card {
+      background: var(--navy-light); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 32px 28px;
+      transition: all 0.3s ease;
+    }
+    .sel-card:hover { border-color: var(--border-aqua); transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,200,212,0.10); }
+    .sel-card .sel-icon { font-size: 1.6rem; margin-bottom: 14px; }
+    .sel-card h4 { color: var(--aqua); margin-bottom: 14px; font-size: 0.85rem; }
+    .sel-card ul { display: flex; flex-direction: column; gap: 8px; }
+    .sel-card ul li { font-size: 0.88rem; color: var(--silver); padding-left: 18px; position: relative; line-height: 1.6; }
+    .sel-card ul li::before { content:'•'; position:absolute; left:0; top:0; color: var(--aqua); font-weight: 700; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 14px; max-width: 920px; margin: 0 auto; }
+    .faq-item {
+      background: var(--navy-light); border: 1px solid var(--border);
+      border-radius: var(--radius-md); overflow: hidden;
+      transition: border-color 0.3s;
+    }
+    .faq-item:hover { border-color: var(--border-aqua); }
+    .faq-q {
+      padding: 22px 28px; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--white);
+    }
+    .faq-q::after { content: '+'; color: var(--aqua); font-size: 1.4rem; font-weight: 300; transition: transform 0.3s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a { padding: 0 28px; max-height: 0; overflow: hidden; transition: all 0.4s ease; }
+    .faq-item.open .faq-a { max-height: 500px; padding: 0 28px 22px; }
+    .faq-a p { font-size: 0.92rem; color: var(--silver); line-height: 1.75; }
+
+    /* CTA */
+    #cta {
+      position: relative; overflow: hidden;
+      background: linear-gradient(170deg, #06080F 0%, #0A0F1A 50%, #060810 100%);
+      padding: 110px 0;
+    }
+    #cta::before {
+      content: '';
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 700px; height: 400px; border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(0,200,212,0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .cta-content { position: relative; z-index: 2; text-align: center; max-width: 760px; margin: 0 auto; }
+    .cta-content .label { margin-bottom: 16px; }
+    .cta-content h2 { margin-bottom: 22px; }
+    .cta-content p  { color: var(--silver-light); font-size: 1.08rem; margin-bottom: 38px; }
+    .cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* FOOTER */
+    footer { background: #05080E; border-top: 1px solid var(--border); padding: 64px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.2rem; color: var(--white); margin-bottom: 6px; }
+    .footer-brand .logo-sub { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--aqua); margin-bottom: 18px; display: block; }
+    .footer-brand p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
+    .footer-tagline { font-style: italic; color: var(--silver) !important; font-size: 0.88rem !important; }
+    .footer-col h5 { font-family: var(--font-display); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver); margin-bottom: 16px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul a { font-size: 0.88rem; color: var(--muted); transition: color 0.2s; }
+    .footer-col ul a:hover { color: var(--aqua); }
+    .footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-bottom p { font-size: 0.82rem; color: var(--muted); }
+    .footer-cert { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cert-badge { padding: 4px 12px; border: 1px solid var(--border); border-radius: 100px; font-size: 0.72rem; color: var(--silver); font-weight: 600; letter-spacing: 0.06em; }
+
+    /* RESPONSIVE */
+    @media (max-width: 980px) {
+      .hero-content { grid-template-columns: 1fr; gap: 40px; }
+      .hero-visual { order: -1; }
+      .stat-strip  { grid-template-columns: repeat(2,1fr); }
+      .advantage-grid, .selection-grid { grid-template-columns: 1fr 1fr; }
+      .nozzle-grid { grid-template-columns: 1fr; }
+      .app-section-grid { grid-template-columns: 1fr; gap: 32px; }
+      .pressure-bar { grid-template-columns: repeat(2,1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 640px) {
+      :root { --section-pad: 70px; }
+      .container { padding: 0 22px; }
+      .advantage-grid, .selection-grid { grid-template-columns: 1fr; }
+      .pressure-bar { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+      .app-section-card { padding: 32px 24px; }
+    }
+  </style>
+<style>
+    :root{--wq-navy:#060C18;--wq-mid:#091428;--wq-panel:#0E1E3C;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-line:rgba(255,255,255,.18);--wq-max:1240px;--wq-font:'Avenir','Avenir Next','Nunito Sans','Segoe UI',system-ui,sans-serif}
+    .wq-site-header,.wq-site-footer{font-family:var(--wq-font);color:var(--wq-white)}
+    .wq-site-header{position:sticky;top:0;z-index:2000;background:rgba(6,12,24,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-line)}
+    .wq-nav{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .wq-brand{color:var(--wq-white);text-decoration:none;font-weight:900;line-height:1.05;letter-spacing:-.01em}
+    .wq-brand span{display:block;color:var(--wq-aqua);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;margin-top:3px}
+    .wq-links{display:flex;align-items:center;gap:24px;font-size:.76rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+    .wq-links a{color:var(--wq-white);text-decoration:none;opacity:.92}.wq-links a:hover,.wq-links a[aria-current="page"]{color:var(--wq-aqua);opacity:1}
+    .wq-cta{background:var(--wq-aqua);color:var(--wq-navy)!important;padding:10px 15px;border-radius:6px}
+    .wq-site-footer{background:var(--wq-mid);border-top:1px solid var(--wq-line);padding:60px 0 32px}
+    .wq-footer-grid{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto 38px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+    .wq-footer-grid h3,.wq-footer-grid h4{color:var(--wq-white);font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;margin:0 0 14px}
+    .wq-footer-grid p{color:var(--wq-white);font-size:.92rem;line-height:1.7;margin:0 0 12px}.wq-footer-grid a{display:block;color:var(--wq-white);text-decoration:none;font-size:.9rem;margin:8px 0;opacity:.85}.wq-footer-grid a:hover{color:var(--wq-aqua);opacity:1}
+    .wq-footer-bottom{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;border-top:1px solid var(--wq-line);padding-top:24px;display:flex;justify-content:space-between;gap:18px;color:var(--wq-white);font-size:.82rem}
+    @media(max-width:900px){.wq-links{display:none}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-footer-bottom{flex-direction:column}}@media(max-width:640px){.wq-footer-grid{grid-template-columns:1fr}}
+  </style><link rel="canonical" href="/applications/nozzle-technology" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:title" content="High-Pressure Water Nozzle Technology | Fire, Dust, Odour, Cleaning | WaterQuest Solutions" />
+  <meta property="og:description" content="Engineering reference for high-pressure water nozzles across fire suppression, dust suppression, odour control, and industrial cleaning. Spray patterns, droplet physics, flow tables, and selection criteria from WaterQuest Solutions, Vancouver BC." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/applications/nozzle-technology" />
+  <meta property="og:image" content="/assets/waterquest-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="High-Pressure Water Nozzle Technology | Fire, Dust, Odour, Cleaning | WaterQuest Solutions" />
+  <meta name="twitter:description" content="Engineering reference for high-pressure water nozzles across fire suppression, dust suppression, odour control, and industrial cleaning. Spray patterns, droplet physics, flow tables, and selection criteria from WaterQuest Solutions, Vancouver BC." />
+  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
+  <link rel="alternate" hreflang="en-CA" href="/applications/nozzle-technology" />
+  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
+  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"WebPage","@id":"/applications/nozzle-technology#webpage","url":"/applications/nozzle-technology","name":"High-Pressure Water Nozzle Technology | Fire, Dust, Odour, Cleaning | WaterQuest Solutions","description":"Engineering reference for high-pressure water nozzles across fire suppression, dust suppression, odour control, and industrial cleaning. Spray patterns, droplet physics, flow tables, and selection criteria from WaterQuest Solutions, Vancouver BC.","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"},{"@type":"ListItem","position":2,"name":"Applications","item":"/applications"},{"@type":"ListItem","position":3,"name":"Nozzle Technology","item":"/applications/nozzle-technology"}]}]}</script>
+  <style id="wq-global-shell-css">
+    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
+    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
+    body a{color:inherit}
+    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
+    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
+    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
+    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
+    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
+    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
+    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
+    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
+    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
+    main .btn.primary{color:var(--wq-navy)!important}
+    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
+    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
+    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
+    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
+    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
+    .wq-form-status.is-error{color:#ffb1b1!important}
+    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
+    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
+    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
+    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
+    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
+    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
+    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
+    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
+    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
+    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
+    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
+    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
+    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
+    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
+    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
+    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
+    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
+    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
+    .wq-hero-visual-text{padding:20px}
+    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
+    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
+    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
+    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
+    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
+    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
+    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
+    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
+    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
+    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
+    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
+    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
+    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
+    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
+    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
+    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
+    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
+    #wq-mobile-menu.open{display:block}
+    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
+    #wq-mobile-menu a:last-child{border-bottom:0}
+    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
+    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
+    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
+    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
+    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
+    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
+    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
+    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
+    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
+    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
+    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
+    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
+    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
+    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
+    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
+    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
+  </style>
+</head>
+<body class="wq-section-technology">
+<!-- WQ_GLOBAL_HEADER_START -->
+<div id="wq-global-bubbles" aria-hidden="true"></div>
+<nav id="wq-nav" role="navigation" aria-label="Main navigation">
+  <div class="wq-nav-inner">
+    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
+      <span class="wq-logo-main">WaterQuest Solutions</span>
+      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+    </a>
+    <ul class="wq-nav-links" role="list">
+      <li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/" class="active">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li>
+      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
+    </ul>
+    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
+  </div>
+</nav>
+<div id="wq-mobile-menu">
+  <a href="/products/">Products</a><a href="/industries/">Industries</a><a href="/technology/" class="active">Technology</a><a href="/knowledge-hub/">Knowledge Hub</a><a href="/about/">About</a>
+  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
+</div>
+<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
+<section class="wq-conversion-hero" aria-label="Page introduction">
+  <div class="wq-conversion-wrap">
+    <div>
+      <p class="wq-hero-eyebrow">Project application</p>
+      <h1><span>Nozzle Technology</span> with water hydraulic power.</h1>
+      <p class="wq-hero-copy">Turn a real operating problem into an oil-free hydraulic project: force, motion, pressure, flow, actuation, or spray performance without petroleum fluid in the circuit.</p>
+      <div class="wq-hero-actions">
+        <a class="wq-hero-cta" href="/contact/">Review This Application</a>
+        <a class="wq-hero-secondary" href="/calculations/">Estimate the Engineering</a>
+      </div>
+    </div>
+    <a class="wq-hero-visual" href="/contact/">
+      <div class="wq-hero-picture" aria-hidden="true"></div>
+      <div class="wq-hero-visual-text">
+        <small>Project pathway</small>
+        <strong>From application problem to practical water hydraulic design.</strong>
+        <span>Connect the use case to products, calculations, glossary terms, and engineering review.</span>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- WQ_CONVERSION_HERO_END --><!-- AMBIENT BUBBLES --><!-- NAV --><!-- HERO -->
+<section id="hero" aria-labelledby="hero-heading">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="bubble-layer" id="hero-bubbles" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-text reveal-left">
+      <p class="label">Engineering Reference Nozzle Technology</p>
+      <h1 id="hero-heading">High-Pressure Water Nozzles for <span class="accent-aqua">Fire</span>, <span class="accent-amber">Dust</span>, Odour &amp; <span class="accent-aqua">Cleaning</span></h1>
+      <p class="hero-lead">A complete engineering reference for selecting, specifying, and applying high-pressure water nozzles across four critical industrial applications. Spray patterns, droplet physics, flow data, pressure ranges, and material requirements, written for procurement and design engineers.</p>
+
+      <div class="hero-ctas">
+        <a href="#nozzle-types" class="btn btn-aqua">Explore Nozzle Types</a>
+        <a href="#selection" class="btn btn-outline">Selection Matrix</a>
+      </div>
+
+      <div class="stat-strip">
+        <div class="stat-badge"><div class="snum">7</div><div class="slbl">Primary Pattern Types</div></div>
+        <div class="stat-badge"><div class="snum">5</div><div class="slbl">Pressure Tiers</div></div>
+        <div class="stat-badge"><div class="snum">316 SS</div><div class="slbl">Standard Wetted Material</div></div>
+        <div class="stat-badge"><div class="snum">PEEK</div><div class="slbl">Wear Components</div></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right">
+      <svg class="nozzle-svg" viewBox="0 0 460 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Atomizing nozzle producing fine spray">
+        <defs>
+          <radialGradient id="sprayGrad" cx="50%" cy="40%" r="55%">
+            <stop offset="0%" stop-color="#00C8D4" stop-opacity="0.95"/>
+            <stop offset="100%" stop-color="#0058A8" stop-opacity="0.15"/>
+          </radialGradient>
+          <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1A2840"/>
+            <stop offset="50%" stop-color="#2A3850"/>
+            <stop offset="100%" stop-color="#0A1020"/>
+          </linearGradient>
+          <linearGradient id="ssGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#C8D4E0"/>
+            <stop offset="50%" stop-color="#8898B0"/>
+            <stop offset="100%" stop-color="#4A5870"/>
+          </linearGradient>
+          <filter id="dropGlow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+
+        <!-- Pipe feeding nozzle -->
+        <rect x="200" y="30" width="60" height="90" fill="url(#ssGrad)" stroke="rgba(168,184,204,0.35)" stroke-width="1"/>
+        <rect x="195" y="28" width="70" height="6" rx="2" fill="url(#ssGrad)" stroke="rgba(168,184,204,0.45)" stroke-width="1"/>
+
+        <!-- Nozzle body -->
+        <polygon points="190,120 270,120 250,170 210,170" fill="url(#bodyGrad)" stroke="rgba(0,200,212,0.5)" stroke-width="1.5"/>
+        <!-- Hex flats -->
+        <line x1="195" y1="135" x2="265" y2="135" stroke="rgba(0,200,212,0.2)" stroke-width="0.8"/>
+        <line x1="200" y1="150" x2="260" y2="150" stroke="rgba(0,200,212,0.15)" stroke-width="0.8"/>
+
+        <!-- Tip orifice -->
+        <ellipse cx="230" cy="172" rx="20" ry="5" fill="#0A1020" stroke="rgba(0,200,212,0.6)" stroke-width="1.5"/>
+        <ellipse cx="230" cy="172" rx="6" ry="2" fill="#000"/>
+
+        <!-- Spray cone -->
+        <path d="M 220 175 L 130 380 L 330 380 L 240 175 Z" fill="url(#sprayGrad)" opacity="0.35"/>
+        <path d="M 222 175 L 165 380 L 295 380 L 238 175 Z" fill="url(#sprayGrad)" opacity="0.55"/>
+
+        <!-- Droplets -->
+        <g filter="url(#dropGlow)">
+          <circle cx="210" cy="220" r="2.5" fill="#00C8D4" opacity="0.9">
+            <animate attributeName="cy" values="190;380" dur="1.5s" repeatCount="indefinite"/>
+            <animate attributeName="cx" values="225;185" dur="1.5s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="1;0" dur="1.5s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="240" cy="240" r="2" fill="#00C8D4" opacity="0.85">
+            <animate attributeName="cy" values="190;380" dur="1.7s" repeatCount="indefinite" begin="0.3s"/>
+            <animate attributeName="cx" values="232;275" dur="1.7s" repeatCount="indefinite" begin="0.3s"/>
+            <animate attributeName="opacity" values="1;0" dur="1.7s" repeatCount="indefinite" begin="0.3s"/>
+          </circle>
+          <circle cx="225" cy="260" r="3" fill="#00C8D4" opacity="0.95">
+            <animate attributeName="cy" values="190;380" dur="1.3s" repeatCount="indefinite" begin="0.6s"/>
+            <animate attributeName="cx" values="228;215" dur="1.3s" repeatCount="indefinite" begin="0.6s"/>
+            <animate attributeName="opacity" values="1;0" dur="1.3s" repeatCount="indefinite" begin="0.6s"/>
+          </circle>
+          <circle cx="218" cy="290" r="2" fill="#00C8D4" opacity="0.9">
+            <animate attributeName="cy" values="190;380" dur="1.6s" repeatCount="indefinite" begin="0.9s"/>
+            <animate attributeName="cx" values="230;195" dur="1.6s" repeatCount="indefinite" begin="0.9s"/>
+            <animate attributeName="opacity" values="1;0" dur="1.6s" repeatCount="indefinite" begin="0.9s"/>
+          </circle>
+          <circle cx="248" cy="310" r="2.5" fill="#00C8D4" opacity="0.85">
+            <animate attributeName="cy" values="190;380" dur="1.8s" repeatCount="indefinite" begin="1.1s"/>
+            <animate attributeName="cx" values="232;285" dur="1.8s" repeatCount="indefinite" begin="1.1s"/>
+            <animate attributeName="opacity" values="1;0" dur="1.8s" repeatCount="indefinite" begin="1.1s"/>
+          </circle>
+          <circle cx="232" cy="335" r="2" fill="#00C8D4" opacity="0.9">
+            <animate attributeName="cy" values="190;380" dur="1.4s" repeatCount="indefinite" begin="0.4s"/>
+            <animate attributeName="cx" values="230;230" dur="1.4s" repeatCount="indefinite" begin="0.4s"/>
+            <animate attributeName="opacity" values="1;0" dur="1.4s" repeatCount="indefinite" begin="0.4s"/>
+          </circle>
+        </g>
+
+        <!-- Annotations -->
+        <text x="280" y="80" font-family="Avenir,sans-serif" font-size="9" fill="rgba(0,200,212,0.7)" letter-spacing="0.12em" font-weight="700">316 SS BODY</text>
+        <line x1="270" y1="75" x2="262" y2="68" stroke="rgba(0,200,212,0.4)" stroke-width="1"/>
+
+        <text x="275" y="148" font-family="Avenir,sans-serif" font-size="9" fill="rgba(240,128,32,0.75)" letter-spacing="0.12em" font-weight="700">PEEK INSERT</text>
+        <line x1="270" y1="148" x2="248" y2="158" stroke="rgba(240,128,32,0.4)" stroke-width="1"/>
+
+        <text x="125" y="200" font-family="Avenir,sans-serif" font-size="9" fill="rgba(0,200,212,0.75)" letter-spacing="0.12em" font-weight="700">ATOMIZED</text>
+        <text x="125" y="213" font-family="Avenir,sans-serif" font-size="9" fill="rgba(0,200,212,0.75)" letter-spacing="0.12em" font-weight="700">DROPLETS</text>
+        <line x1="160" y1="208" x2="195" y2="240" stroke="rgba(0,200,212,0.4)" stroke-width="1"/>
+
+        <!-- Bottom label -->
+        <text x="230" y="425" text-anchor="middle" font-family="Avenir,sans-serif" font-size="10" font-weight="700" fill="rgba(0,200,212,0.45)" letter-spacing="0.18em">PRESSURIZED WATER NOZZLE</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a><span class="sep">›</span><a href="/knowledge-hub/">Technology</a><span class="sep">›</span><span class="current">Nozzle Reference</span>
+    <span style="float:right">Related: <a href="/applications/fire-suppression/" style="color:var(--aqua)">Fire Suppression Industry Page →</a></span>
+  </div>
+</div>
+
+<!-- WHY HIGH PRESSURE WATER -->
+<section class="section section-alt" aria-labelledby="why-heading">
+  <div class="bubble-layer" id="why-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">The Physics Advantage</p>
+      <h2 id="why-heading">Why <span class="text-aqua">High-Pressure Water</span> Outperforms Low-Pressure Alternatives</h2>
+      <p>At elevated pressures, water transforms from a bulk fluid into engineered droplet populations. Surface area, momentum, and evaporative behaviour scale in ways that change what is possible across fire, dust, odour, and cleaning applications.</p>
+    </div>
+
+    <div class="advantage-grid">
+      <div class="advantage-card reveal" data-num="01">
+        <div class="a-icon">📊</div>
+        <h3 class="text-white">Massive Surface Area Gain</h3>
+        <p>Reducing droplet diameter from 1 mm to 100 microns multiplies the total water surface area by 10×. At 50 microns the multiplier is 20×. Fire absorption, dust capture, and odour neutralization all scale with surface area.</p>
+      </div>
+      <div class="advantage-card reveal" data-num="02">
+        <div class="a-icon">⚡</div>
+        <h3 class="text-white">Higher Droplet Momentum</h3>
+        <p>Pressure equates to exit velocity through Bernoulli's relationship. A 70 bar nozzle delivers droplets at roughly 110 m/s versus 14 m/s at 1 bar, allowing penetration into thermal plumes, dust clouds, and surface contamination.</p>
+      </div>
+      <div class="advantage-card reveal" data-num="03">
+        <div class="a-icon">💧</div>
+        <h3 class="text-white">Reduced Water Consumption</h3>
+        <p>Properly atomized water uses 50% to 90% less volume than deluge. A 1.0 mm spray broken down to 100 micron droplets delivers 10× the contact surface area per litre, and breaking the same volume down to 10 micron droplets delivers 100× the surface area, translating to lower runoff, smaller tanks, and reduced collateral damage.</p>
+      </div>
+      <div class="advantage-card reveal" data-num="04">
+        <div class="a-icon">🎯</div>
+        <h3 class="text-white">Engineered Coverage Patterns</h3>
+        <p>High-pressure nozzles deliver predictable, repeatable spray geometry: full cone, hollow cone, flat fan, fog, or solid stream. Coverage is calculable and verifiable rather than improvised.</p>
+      </div>
+      <div class="advantage-card reveal" data-num="05">
+        <div class="a-icon">🔋</div>
+        <h3 class="text-white">Energy Efficiency at the Tip</h3>
+        <p>Pressure energy converts to kinetic energy at the orifice with very low losses in well-designed nozzles. The same pump electrical input delivers far more useful work in fine atomization than in bulk flow.</p>
+      </div>
+      <div class="advantage-card reveal" data-num="06">
+        <div class="a-icon">🛡️</div>
+        <h3 class="text-white">Material Compatibility</h3>
+        <p>WaterQuest specifies 316 stainless steel bodies with carbon-reinforced PEEK wear inserts at the orifice. This pairing tolerates seawater, chlorinated municipal supply, and abrasive solids without oil or polymer additives.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESSURE TIERS -->
+<section class="section section-dark" aria-labelledby="pressure-heading">
+  <div class="container">
+    <div class="section-header center reveal">
+      <p class="label">Pressure Classification</p>
+      <h2 id="pressure-heading">The Five Tiers of <span class="text-aqua">Pressurized Water</span></h2>
+      <p>Pressure ranges define what work is possible. Each tier maps to characteristic nozzle types, flow rates, and target applications.</p>
+    </div>
+
+    <div class="pressure-bar-wrap reveal">
+      <h4 style="margin-bottom:8px;">Industry Pressure Ranges</h4>
+      <p style="font-size:0.88rem;color:var(--muted);margin-bottom:0;">The classifications below reflect typical industrial cleaning and waterjet conventions. Formal definitions vary between organizations such as WJTA (US) and WJA (UK); always confirm against the standard cited in your project specification. Above 2,000 bar, work shifts from cleaning to cutting.</p>
+      <div class="pressure-bar">
+        <div class="pressure-tier pt-low">
+          <div class="pt-name">Low</div>
+          <div class="pt-range">&lt; 35 bar</div>
+          <div class="pt-use">Garden hose, fire hose reel, deluge spray</div>
+        </div>
+        <div class="pressure-tier pt-med">
+          <div class="pt-name">Medium</div>
+          <div class="pt-range">35 to 175 bar</div>
+          <div class="pt-use">Pressure washing, wash-down, dust suppression</div>
+        </div>
+        <div class="pressure-tier pt-high">
+          <div class="pt-name">High</div>
+          <div class="pt-range">175 to 700 bar</div>
+          <div class="pt-use">Water mist suppression, fog atomization, descaling</div>
+        </div>
+        <div class="pressure-tier pt-uhp">
+          <div class="pt-name">Ultra-High</div>
+          <div class="pt-range">700 to 2,000 bar</div>
+          <div class="pt-use">Hydroblasting, paint stripping, surface prep</div>
+        </div>
+        <div class="pressure-tier pt-hyper">
+          <div class="pt-name">Hyper</div>
+          <div class="pt-range">2,000+ bar</div>
+          <div class="pt-use">Water jet cutting, concrete demolition</div>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:32px;font-size:0.92rem;color:var(--muted);max-width:920px;">WaterQuest Solutions designs water hydraulic power units (HPUs) that operate cleanly across the medium, high, and ultra-high pressure ranges using tap water or seawater with no additives. All wetted internal surfaces are 316 stainless steel paired with carbon-reinforced PEEK at sliding contact points.</p>
+  </div>
+</section>
+
+<!-- NOZZLE TYPES SECTION -->
+<section id="nozzle-types" class="section section-alt" aria-labelledby="types-heading">
+  <div class="bubble-layer" id="types-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Nozzle Geometry Library</p>
+      <h2 id="types-heading">Seven Primary <span class="text-aqua">Spray Pattern Types</span></h2>
+      <p>Each nozzle geometry produces a characteristic spray pattern, droplet size distribution, and coverage area. Selecting the correct type for the application is the single most important decision in pressurized water system design.</p>
+    </div>
+
+    <div class="nozzle-grid">
+      <!-- FULL CONE -->
+      <div class="nozzle-card reveal">
+        <div class="nozzle-visual">
+          <svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Full cone nozzle spray pattern">
+            <defs>
+              <linearGradient id="fc-body" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C8D4E0"/><stop offset="100%" stop-color="#5A6878"/>
+              </linearGradient>
+              <radialGradient id="fc-spray" cx="50%" cy="20%" r="80%">
+                <stop offset="0%" stop-color="#00C8D4" stop-opacity="0.8"/>
+                <stop offset="100%" stop-color="#00C8D4" stop-opacity="0.1"/>
+              </radialGradient>
+            </defs>
+            <!-- Pipe -->
+            <rect x="160" y="20" width="40" height="40" fill="url(#fc-body)" stroke="rgba(168,184,204,0.4)"/>
+            <!-- Nozzle -->
+            <polygon points="155,60 205,60 195,90 165,90" fill="url(#fc-body)" stroke="rgba(0,200,212,0.5)"/>
+            <ellipse cx="180" cy="92" rx="12" ry="3" fill="#0A1020"/>
+            <!-- Full cone fill -->
+            <path d="M 175 92 L 90 220 L 270 220 L 185 92 Z" fill="url(#fc-spray)"/>
+            <!-- Density dots showing uniform fill -->
+            <circle cx="120" cy="200" r="1.5" fill="#00C8D4" opacity="0.7"/>
+            <circle cx="150" cy="180" r="1.5" fill="#00C8D4" opacity="0.7"/>
+            <circle cx="180" cy="170" r="1.5" fill="#00C8D4" opacity="0.7"/>
+            <circle cx="210" cy="180" r="1.5" fill="#00C8D4" opacity="0.7"/>
+            <circle cx="240" cy="200" r="1.5" fill="#00C8D4" opacity="0.7"/>
+            <circle cx="135" cy="215" r="1.5" fill="#00C8D4" opacity="0.7"/>
+            <circle cx="165" cy="215" r="1.5" fill="#00C8D4" opacity="0.7"/>
+            <circle cx="195" cy="215" r="1.5" fill="#00C8D4" opacity="0.7"/>
+            <circle cx="225" cy="215" r="1.5" fill="#00C8D4" opacity="0.7"/>
+            <circle cx="180" cy="130" r="1.5" fill="#00C8D4" opacity="0.7"/>
+            <circle cx="160" cy="150" r="1.5" fill="#00C8D4" opacity="0.7"/>
+            <circle cx="200" cy="150" r="1.5" fill="#00C8D4" opacity="0.7"/>
+            <text x="180" y="232" text-anchor="middle" font-family="Avenir" font-size="8" fill="rgba(0,200,212,0.6)" letter-spacing="0.15em" font-weight="700">FULL CONE</text>
+          </svg>
+        </div>
+        <div class="nozzle-info">
+          <span class="ntag">Pattern Type 01</span>
+          <h3>Full Cone Nozzle</h3>
+          <p class="ndesc">Produces a solid, circular spray with uniform droplet distribution across the entire cone footprint. The internal vane swirls the water before it reaches the orifice, creating turbulence that fills the cone uniformly.</p>
+          <div class="nspec">
+            <div class="nspec-item"><div class="sk">Spray Angle</div><div class="sv">15° to 120°</div></div>
+            <div class="nspec-item"><div class="sk">Droplet Size</div><div class="sv">200 to 4,000 µm</div></div>
+            <div class="nspec-item"><div class="sk">Pressure Range</div><div class="sv">1.5 to 70 bar</div></div>
+            <div class="nspec-item"><div class="sk">Impact Force</div><div class="sv">Medium-High</div></div>
+          </div>
+          <div class="napps"><strong>Best for:</strong> Fire deluge, gas scrubbing, cooling towers, washing, foam generation, area saturation.</div>
+        </div>
+      </div>
+
+      <!-- HOLLOW CONE -->
+      <div class="nozzle-card reveal">
+        <div class="nozzle-visual">
+          <svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hollow cone nozzle spray pattern">
+            <defs>
+              <linearGradient id="hc-body" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C8D4E0"/><stop offset="100%" stop-color="#5A6878"/>
+              </linearGradient>
+            </defs>
+            <rect x="160" y="20" width="40" height="40" fill="url(#hc-body)" stroke="rgba(168,184,204,0.4)"/>
+            <polygon points="155,60 205,60 195,90 165,90" fill="url(#hc-body)" stroke="rgba(0,200,212,0.5)"/>
+            <ellipse cx="180" cy="92" rx="12" ry="3" fill="#0A1020"/>
+            <!-- Hollow cone , just the outer ring -->
+            <path d="M 175 92 L 90 220 L 105 220 L 185 92 Z" fill="rgba(0,200,212,0.45)"/>
+            <path d="M 185 92 L 270 220 L 255 220 L 175 92 Z" fill="rgba(0,200,212,0.45)"/>
+            <!-- Outline showing emptiness inside -->
+            <line x1="180" y1="92" x2="98" y2="220" stroke="rgba(0,200,212,0.65)" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <line x1="180" y1="92" x2="262" y2="220" stroke="rgba(0,200,212,0.65)" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <ellipse cx="180" cy="220" rx="80" ry="8" stroke="rgba(0,200,212,0.4)" stroke-width="1" fill="none" stroke-dasharray="2,2"/>
+            <text x="180" y="232" text-anchor="middle" font-family="Avenir" font-size="8" fill="rgba(0,200,212,0.6)" letter-spacing="0.15em" font-weight="700">HOLLOW CONE</text>
+          </svg>
+        </div>
+        <div class="nozzle-info">
+          <span class="ntag">Pattern Type 02</span>
+          <h3>Hollow Cone Nozzle</h3>
+          <p class="ndesc">Concentrates droplets along the outer perimeter of a cone, leaving the interior void of water. Internal swirl chambers spin the fluid into a thin, fast-moving sheet that disintegrates into uniformly fine droplets at the lip.</p>
+          <div class="nspec">
+            <div class="nspec-item"><div class="sk">Spray Angle</div><div class="sv">15° to 130°</div></div>
+            <div class="nspec-item"><div class="sk">Droplet Size</div><div class="sv">50 to 500 µm</div></div>
+            <div class="nspec-item"><div class="sk">Pressure Range</div><div class="sv">2 to 100 bar</div></div>
+            <div class="nspec-item"><div class="sk">Impact Force</div><div class="sv">Low-Medium</div></div>
+          </div>
+          <div class="napps"><strong>Best for:</strong> Gas cooling, evaporative humidification, pesticide spraying, coating, dust suppression with fine particle capture.</div>
+        </div>
+      </div>
+
+      <!-- FLAT FAN -->
+      <div class="nozzle-card reveal">
+        <div class="nozzle-visual">
+          <svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flat fan nozzle spray pattern">
+            <defs>
+              <linearGradient id="ff-body" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C8D4E0"/><stop offset="100%" stop-color="#5A6878"/>
+              </linearGradient>
+              <linearGradient id="ff-spray" x1="50%" y1="0%" x2="50%" y2="100%">
+                <stop offset="0%" stop-color="#00C8D4" stop-opacity="0.8"/>
+                <stop offset="100%" stop-color="#00C8D4" stop-opacity="0.15"/>
+              </linearGradient>
+            </defs>
+            <rect x="160" y="20" width="40" height="40" fill="url(#ff-body)" stroke="rgba(168,184,204,0.4)"/>
+            <polygon points="155,60 205,60 195,90 165,90" fill="url(#ff-body)" stroke="rgba(0,200,212,0.5)"/>
+            <!-- Slot orifice -->
+            <line x1="170" y1="92" x2="190" y2="92" stroke="#0A1020" stroke-width="3"/>
+            <!-- Flat fan , thin wide spray -->
+            <path d="M 178 93 L 70 220 L 80 220 L 180 95 Z" fill="url(#ff-spray)"/>
+            <path d="M 182 93 L 290 220 L 280 220 L 180 95 Z" fill="url(#ff-spray)"/>
+            <path d="M 178 95 L 80 220 L 280 220 L 182 95 Z" fill="rgba(0,200,212,0.20)"/>
+            <text x="180" y="232" text-anchor="middle" font-family="Avenir" font-size="8" fill="rgba(0,200,212,0.6)" letter-spacing="0.15em" font-weight="700">FLAT FAN</text>
+          </svg>
+        </div>
+        <div class="nozzle-info">
+          <span class="ntag">Pattern Type 03</span>
+          <h3>Flat Fan Nozzle</h3>
+          <p class="ndesc">Produces a thin, wide, sheet-like spray ideal for linear coverage. Elliptical or slot orifices generate flat patterns with controllable droplet distribution. Tapered-edge versions allow overlapping for uniform area coverage.</p>
+          <div class="nspec">
+            <div class="nspec-item"><div class="sk">Spray Angle</div><div class="sv">15° to 145°</div></div>
+            <div class="nspec-item"><div class="sk">Droplet Size</div><div class="sv">100 to 2,000 µm</div></div>
+            <div class="nspec-item"><div class="sk">Pressure Range</div><div class="sv">1 to 250 bar</div></div>
+            <div class="nspec-item"><div class="sk">Impact Force</div><div class="sv">Medium-High</div></div>
+          </div>
+          <div class="napps"><strong>Best for:</strong> Surface cleaning, conveyor washing, coating, descaling, agricultural spraying, pavement striping wash-off.</div>
+        </div>
+      </div>
+
+      <!-- SOLID STREAM -->
+      <div class="nozzle-card reveal">
+        <div class="nozzle-visual">
+          <svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Solid stream nozzle spray pattern">
+            <defs>
+              <linearGradient id="ss-body" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C8D4E0"/><stop offset="100%" stop-color="#5A6878"/>
+              </linearGradient>
+            </defs>
+            <rect x="160" y="20" width="40" height="40" fill="url(#ss-body)" stroke="rgba(168,184,204,0.4)"/>
+            <polygon points="160,60 200,60 192,100 168,100" fill="url(#ss-body)" stroke="rgba(0,200,212,0.5)"/>
+            <circle cx="180" cy="103" r="3" fill="#0A1020"/>
+            <!-- Solid focused stream -->
+            <rect x="178" y="105" width="4" height="115" fill="rgba(0,200,212,0.85)"/>
+            <rect x="176" y="105" width="8" height="115" fill="rgba(0,200,212,0.35)"/>
+            <!-- Mist at impact point -->
+            <ellipse cx="180" cy="222" rx="24" ry="5" fill="rgba(0,200,212,0.3)"/>
+            <text x="180" y="233" text-anchor="middle" font-family="Avenir" font-size="8" fill="rgba(0,200,212,0.6)" letter-spacing="0.15em" font-weight="700">SOLID STREAM</text>
+          </svg>
+        </div>
+        <div class="nozzle-info">
+          <span class="ntag">Pattern Type 04</span>
+          <h3>Solid Stream / Jet Nozzle</h3>
+          <p class="ndesc">Concentrates the entire flow into a single coherent jet for maximum range, penetration, and impact. The orifice is precision-machined to produce a non-divergent column of water capable of long throw distances.</p>
+          <div class="nspec">
+            <div class="nspec-item"><div class="sk">Spray Angle</div><div class="sv">0° (parallel)</div></div>
+            <div class="nspec-item"><div class="sk">Droplet Size</div><div class="sv">Coherent stream</div></div>
+            <div class="nspec-item"><div class="sk">Pressure Range</div><div class="sv">5 to 2,800 bar</div></div>
+            <div class="nspec-item"><div class="sk">Impact Force</div><div class="sv">Maximum</div></div>
+          </div>
+          <div class="napps"><strong>Best for:</strong> Fire monitors, hydroblasting, surface preparation, paint removal, concrete demolition, sewer jetting, water cutting.</div>
+        </div>
+      </div>
+
+      <!-- FOG / MIST -->
+      <div class="nozzle-card reveal">
+        <div class="nozzle-visual">
+          <svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fog mist nozzle spray pattern">
+            <defs>
+              <linearGradient id="fg-body" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C8D4E0"/><stop offset="100%" stop-color="#5A6878"/>
+              </linearGradient>
+              <radialGradient id="fg-spray" cx="50%" cy="0%" r="100%">
+                <stop offset="0%" stop-color="#00C8D4" stop-opacity="0.7"/>
+                <stop offset="100%" stop-color="#00C8D4" stop-opacity="0.05"/>
+              </radialGradient>
+            </defs>
+            <rect x="160" y="20" width="40" height="40" fill="url(#fg-body)" stroke="rgba(168,184,204,0.4)"/>
+            <polygon points="155,60 205,60 195,88 165,88" fill="url(#fg-body)" stroke="rgba(0,200,212,0.5)"/>
+            <ellipse cx="180" cy="90" rx="14" ry="3" fill="#0A1020"/>
+            <!-- Diffuse fog cloud -->
+            <ellipse cx="180" cy="160" rx="100" ry="45" fill="url(#fg-spray)"/>
+            <ellipse cx="180" cy="190" rx="120" ry="35" fill="url(#fg-spray)" opacity="0.7"/>
+            <!-- Many tiny dots -->
+            <g fill="#00C8D4" opacity="0.5">
+              <circle cx="120" cy="140" r="0.8"/><circle cx="135" cy="150" r="0.8"/><circle cx="150" cy="135" r="0.8"/>
+              <circle cx="170" cy="145" r="0.8"/><circle cx="190" cy="135" r="0.8"/><circle cx="210" cy="145" r="0.8"/>
+              <circle cx="225" cy="155" r="0.8"/><circle cx="245" cy="145" r="0.8"/><circle cx="100" cy="170" r="0.8"/>
+              <circle cx="125" cy="180" r="0.8"/><circle cx="155" cy="175" r="0.8"/><circle cx="185" cy="170" r="0.8"/>
+              <circle cx="215" cy="180" r="0.8"/><circle cx="245" cy="175" r="0.8"/><circle cx="265" cy="170" r="0.8"/>
+              <circle cx="80" cy="200" r="0.8"/><circle cx="115" cy="205" r="0.8"/><circle cx="155" cy="200" r="0.8"/>
+              <circle cx="195" cy="208" r="0.8"/><circle cx="235" cy="200" r="0.8"/><circle cx="275" cy="205" r="0.8"/>
+            </g>
+            <text x="180" y="232" text-anchor="middle" font-family="Avenir" font-size="8" fill="rgba(0,200,212,0.6)" letter-spacing="0.15em" font-weight="700">FOG / FINE MIST</text>
+          </svg>
+        </div>
+        <div class="nozzle-info">
+          <span class="ntag">Pattern Type 05</span>
+          <h3>Fog &amp; Fine Mist Nozzle</h3>
+          <p class="ndesc">Generates extremely small droplets through high-pressure atomization, often with internal pintle assemblies or impingement plates. Produces near-vapour spray that follows air currents and provides massive surface area exposure.</p>
+          <div class="nspec">
+            <div class="nspec-item"><div class="sk">Spray Angle</div><div class="sv">30° to 360°</div></div>
+            <div class="nspec-item"><div class="sk">Droplet Size</div><div class="sv">10 to 100 µm</div></div>
+            <div class="nspec-item"><div class="sk">Pressure Range</div><div class="sv">35 to 200 bar</div></div>
+            <div class="nspec-item"><div class="sk">Impact Force</div><div class="sv">Negligible</div></div>
+          </div>
+          <div class="napps"><strong>Best for:</strong> Water mist fire suppression, dust capture, odour control, evaporative cooling, humidification, gas conditioning.</div>
+        </div>
+      </div>
+
+      <!-- AIR ATOMIZING -->
+      <div class="nozzle-card reveal">
+        <div class="nozzle-visual">
+          <svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Air atomizing nozzle spray pattern">
+            <defs>
+              <linearGradient id="aa-body" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C8D4E0"/><stop offset="100%" stop-color="#5A6878"/>
+              </linearGradient>
+            </defs>
+            <!-- Two inputs -->
+            <rect x="135" y="20" width="30" height="40" fill="url(#aa-body)" stroke="rgba(168,184,204,0.4)"/>
+            <text x="150" y="38" text-anchor="middle" font-family="Avenir" font-size="7" fill="#00C8D4" font-weight="700">H₂O</text>
+            <rect x="195" y="20" width="30" height="40" fill="url(#aa-body)" stroke="rgba(168,184,204,0.4)"/>
+            <text x="210" y="38" text-anchor="middle" font-family="Avenir" font-size="7" fill="#F08020" font-weight="700">AIR</text>
+            <!-- Combined nozzle -->
+            <polygon points="130,60 230,60 210,100 150,100" fill="url(#aa-body)" stroke="rgba(0,200,212,0.5)"/>
+            <ellipse cx="180" cy="103" rx="18" ry="4" fill="#0A1020"/>
+            <!-- Very fine cloud -->
+            <ellipse cx="180" cy="170" rx="90" ry="40" fill="rgba(0,200,212,0.25)"/>
+            <ellipse cx="180" cy="200" rx="115" ry="30" fill="rgba(0,200,212,0.18)"/>
+            <g fill="#00C8D4" opacity="0.6">
+              <circle cx="115" cy="155" r="0.6"/><circle cx="135" cy="160" r="0.6"/><circle cx="155" cy="150" r="0.6"/>
+              <circle cx="180" cy="155" r="0.6"/><circle cx="205" cy="148" r="0.6"/><circle cx="225" cy="158" r="0.6"/>
+              <circle cx="245" cy="155" r="0.6"/><circle cx="100" cy="180" r="0.6"/><circle cx="130" cy="185" r="0.6"/>
+              <circle cx="160" cy="180" r="0.6"/><circle cx="195" cy="185" r="0.6"/><circle cx="225" cy="180" r="0.6"/>
+              <circle cx="260" cy="185" r="0.6"/><circle cx="80" cy="208" r="0.6"/><circle cx="120" cy="212" r="0.6"/>
+              <circle cx="160" cy="208" r="0.6"/><circle cx="200" cy="212" r="0.6"/><circle cx="240" cy="208" r="0.6"/>
+            </g>
+            <text x="180" y="232" text-anchor="middle" font-family="Avenir" font-size="8" fill="rgba(0,200,212,0.6)" letter-spacing="0.15em" font-weight="700">AIR ATOMIZING</text>
+          </svg>
+        </div>
+        <div class="nozzle-info">
+          <span class="ntag">Pattern Type 06</span>
+          <h3>Air Atomizing Nozzle</h3>
+          <p class="ndesc">Two-fluid nozzle using compressed air to shear water into ultra-fine droplets. Achieves the smallest droplet sizes available without requiring extreme water pressure. Ideal where water flow must be very low and droplet size very small.</p>
+          <div class="nspec">
+            <div class="nspec-item"><div class="sk">Spray Angle</div><div class="sv">15° to 80°</div></div>
+            <div class="nspec-item"><div class="sk">Droplet Size</div><div class="sv">5 to 50 µm</div></div>
+            <div class="nspec-item"><div class="sk">Water Pressure</div><div class="sv">0.5 to 7 bar</div></div>
+            <div class="nspec-item"><div class="sk">Air Pressure</div><div class="sv">2 to 7 bar</div></div>
+          </div>
+          <div class="napps"><strong>Best for:</strong> Odour neutralization, precision humidification, fine dust suppression, food coating, low-flow precision spraying.</div>
+        </div>
+      </div>
+
+      <!-- ROTATING / OSCILLATING -->
+      <div class="nozzle-card reveal">
+        <div class="nozzle-visual">
+          <svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rotating jet nozzle spray pattern">
+            <defs>
+              <linearGradient id="rj-body" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C8D4E0"/><stop offset="100%" stop-color="#5A6878"/>
+              </linearGradient>
+            </defs>
+            <rect x="160" y="20" width="40" height="40" fill="url(#rj-body)" stroke="rgba(168,184,204,0.4)"/>
+            <polygon points="155,60 205,60 195,90 165,90" fill="url(#rj-body)" stroke="rgba(0,200,212,0.5)"/>
+            <!-- Rotating head -->
+            <circle cx="180" cy="100" r="14" fill="url(#rj-body)" stroke="rgba(0,200,212,0.6)" stroke-width="1">
+              <animateTransform attributeName="transform" type="rotate" from="0 180 100" to="360 180 100" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <!-- Three rotating jets -->
+            <g>
+              <animateTransform attributeName="transform" type="rotate" from="0 180 100" to="360 180 100" dur="2s" repeatCount="indefinite"/>
+              <line x1="180" y1="100" x2="100" y2="220" stroke="rgba(0,200,212,0.8)" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="180" y1="100" x2="180" y2="220" stroke="rgba(0,200,212,0.8)" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="180" y1="100" x2="260" y2="220" stroke="rgba(0,200,212,0.8)" stroke-width="2.5" stroke-linecap="round"/>
+            </g>
+            <!-- Coverage circle -->
+            <ellipse cx="180" cy="220" rx="100" ry="6" stroke="rgba(0,200,212,0.4)" stroke-width="1" fill="none" stroke-dasharray="2,2"/>
+            <text x="180" y="233" text-anchor="middle" font-family="Avenir" font-size="8" fill="rgba(0,200,212,0.6)" letter-spacing="0.15em" font-weight="700">ROTATING JET</text>
+          </svg>
+        </div>
+        <div class="nozzle-info">
+          <span class="ntag">Pattern Type 07</span>
+          <h3>Rotating &amp; Oscillating Nozzles</h3>
+          <p class="ndesc">Combines the impact of solid stream jets with the coverage of cone patterns. Mechanically driven or self-rotating heads sweep multiple high-pressure jets in a controlled pattern, multiplying effective coverage from the same flow.</p>
+          <div class="nspec">
+            <div class="nspec-item"><div class="sk">Coverage</div><div class="sv">360° rotation</div></div>
+            <div class="nspec-item"><div class="sk">Droplet Size</div><div class="sv">Variable</div></div>
+            <div class="nspec-item"><div class="sk">Pressure Range</div><div class="sv">100 to 2,800 bar</div></div>
+            <div class="nspec-item"><div class="sk">Impact Force</div><div class="sv">High (pulsed)</div></div>
+          </div>
+          <div class="napps"><strong>Best for:</strong> Tank cleaning, vessel interior wash-down, sewer line jetting, heat exchanger tube cleaning, surface preparation over large areas.</div>
+        </div>
+      </div>
+
+      <!-- HIGH-IMPACT WATER MIST -->
+      <div class="nozzle-card reveal">
+        <div class="nozzle-visual">
+          <svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="High pressure water mist nozzle">
+            <defs>
+              <linearGradient id="wm-body" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C8D4E0"/><stop offset="100%" stop-color="#5A6878"/>
+              </linearGradient>
+              <radialGradient id="wm-spray" cx="50%" cy="20%" r="60%">
+                <stop offset="0%" stop-color="#00C8D4" stop-opacity="0.85"/>
+                <stop offset="100%" stop-color="#00C8D4" stop-opacity="0.1"/>
+              </radialGradient>
+            </defs>
+            <rect x="160" y="20" width="40" height="40" fill="url(#wm-body)" stroke="rgba(168,184,204,0.4)"/>
+            <!-- Multi-orifice cluster head -->
+            <polygon points="145,60 215,60 205,95 155,95" fill="url(#wm-body)" stroke="rgba(0,200,212,0.5)"/>
+            <!-- Multiple small orifices -->
+            <circle cx="165" cy="97" r="1.5" fill="#0A1020"/>
+            <circle cx="180" cy="97" r="1.5" fill="#0A1020"/>
+            <circle cx="195" cy="97" r="1.5" fill="#0A1020"/>
+            <circle cx="172" cy="93" r="1.5" fill="#0A1020"/>
+            <circle cx="188" cy="93" r="1.5" fill="#0A1020"/>
+            <!-- Multiple narrow cone sprays merging -->
+            <path d="M 165 98 L 130 220 L 145 220 L 168 99 Z" fill="url(#wm-spray)"/>
+            <path d="M 180 98 L 165 220 L 195 220 L 183 99 Z" fill="url(#wm-spray)"/>
+            <path d="M 195 98 L 215 220 L 230 220 L 197 99 Z" fill="url(#wm-spray)"/>
+            <path d="M 172 95 L 100 220 L 125 220 L 175 96 Z" fill="url(#wm-spray)" opacity="0.6"/>
+            <path d="M 188 95 L 235 220 L 260 220 L 185 96 Z" fill="url(#wm-spray)" opacity="0.6"/>
+            <!-- Many fine droplets -->
+            <g fill="#00C8D4" opacity="0.7">
+              <circle cx="125" cy="180" r="0.7"/><circle cx="145" cy="190" r="0.7"/><circle cx="165" cy="180" r="0.7"/>
+              <circle cx="180" cy="170" r="0.7"/><circle cx="195" cy="180" r="0.7"/><circle cx="215" cy="190" r="0.7"/>
+              <circle cx="235" cy="180" r="0.7"/><circle cx="115" cy="200" r="0.7"/><circle cx="155" cy="210" r="0.7"/>
+              <circle cx="195" cy="208" r="0.7"/><circle cx="235" cy="200" r="0.7"/><circle cx="170" cy="155" r="0.7"/>
+              <circle cx="190" cy="158" r="0.7"/>
+            </g>
+            <text x="180" y="232" text-anchor="middle" font-family="Avenir" font-size="8" fill="rgba(0,200,212,0.6)" letter-spacing="0.15em" font-weight="700">HP WATER MIST CLUSTER</text>
+          </svg>
+        </div>
+        <div class="nozzle-info">
+          <span class="ntag">Pattern Type 08</span>
+          <h3>HP Water Mist Cluster Nozzle</h3>
+          <p class="ndesc">Specialty nozzle used in IMO-rated marine and tunnel fire suppression systems. Multiple precision orifices in a single head produce a dense, high-momentum mist that combines fire-cooling, oxygen-displacing, and radiation-blocking effects in one device.</p>
+          <div class="nspec">
+            <div class="nspec-item"><div class="sk">Spray Angle</div><div class="sv">90° to 180°</div></div>
+            <div class="nspec-item"><div class="sk">Droplet Size</div><div class="sv">50 to 200 µm (D90)</div></div>
+            <div class="nspec-item"><div class="sk">Pressure Range</div><div class="sv">35 to 200 bar</div></div>
+            <div class="nspec-item"><div class="sk">Impact Force</div><div class="sv">High momentum</div></div>
+          </div>
+          <div class="napps"><strong>Best for:</strong> Water mist fire suppression, machinery space protection, tunnel ventilation interfaces, electrical cabinet protection, marine engine rooms.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DROPLET SIZE CHART -->
+<section class="section section-dark" aria-labelledby="droplet-heading">
+  <div class="container">
+    <div class="section-header center reveal">
+      <p class="label">Droplet Physics</p>
+      <h2 id="droplet-heading">Droplet Size <span class="text-aqua">Determines Application Performance</span></h2>
+      <p>The relationship between droplet diameter and total surface area is non-linear. Halving the droplet diameter doubles the surface area per unit volume, fundamentally changing how water interacts with fire, dust, odour molecules, and contaminated surfaces.</p>
+    </div>
+
+    <div class="chart-container reveal">
+      <h3>Surface Area Multiplier vs Droplet Diameter</h3>
+      <p class="chart-sub">Total surface area generated per litre of water as droplet diameter decreases. A 10 µm droplet generates 1,000× the surface area of a 10 mm bulk drop.</p>
+      <div class="chart-wrap">
+        <canvas id="surfaceChart"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-container reveal">
+      <h3>Droplet Size Class by Application</h3>
+      <p class="chart-sub">Optimal Volume Median Diameter (D<sub>v50</sub>) for each major pressurized water application. Smaller is not always better, larger droplets penetrate updrafts; smaller droplets evaporate faster and capture finer particles.</p>
+      <div class="chart-wrap">
+        <canvas id="appDropletChart"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION 1: FIRE SUPPRESSION -->
+<section class="section section-alt" id="fire-app" aria-labelledby="fire-app-heading">
+  <div class="bubble-layer" id="fire-app-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Application Domain 01</p>
+      <h2 id="fire-app-heading"><span class="text-aqua">Fire Suppression</span> Nozzles</h2>
+      <p>Fire suppression nozzles convert pressurized water into the most effective heat sink and oxygen-displacement medium available. Droplet size, momentum, and coverage geometry determine whether a fire is controlled, suppressed, or extinguished.</p>
+    </div>
+
+    <div class="app-section-card reveal">
+      <div class="app-section-grid">
+        <div>
+          <p class="app-label">How It Works</p>
+          <h3>Three Mechanisms in One Spray</h3>
+          <p>A correctly engineered water mist nozzle attacks fire through three simultaneous physical mechanisms. The relative weighting of each mechanism is set by droplet size and pressure.</p>
+          <div class="app-bullets">
+            <div class="app-bullet"><strong style="color:var(--aqua)">Heat absorption.</strong> Each litre of water absorbs 2.26 MJ when it converts from liquid to steam at 100°C. Small droplets reach this transition almost instantly.</div>
+            <div class="app-bullet"><strong style="color:var(--aqua)">Oxygen displacement.</strong> Steam expansion (1,700× volume increase) displaces ambient oxygen from the fire zone, breaking the combustion triangle without flooding the space.</div>
+            <div class="app-bullet"><strong style="color:var(--aqua)">Radiation blocking.</strong> Dense mist clouds attenuate radiative heat transfer to surrounding fuel, reducing pre-heating and preventing fire spread.</div>
+          </div>
+          <p style="margin-top:14px;">High-pressure systems (35 to 200 bar) achieve all three mechanisms with up to 90% less water than traditional sprinklers, eliminating water damage to electronics, machinery, and structures.</p>
+        </div>
+
+        <div>
+          <div class="spec-box">
+            <h4>Engineering Specifications</h4>
+            <div class="spec-row"><span class="sk">System Pressure (Low Pressure)</span><span class="sv">≤ 12.1 bar (175 psi)</span></div>
+            <div class="spec-row"><span class="sk">System Pressure (Intermediate)</span><span class="sv">12.1 to 34.5 bar</span></div>
+            <div class="spec-row"><span class="sk">System Pressure (High Pressure)</span><span class="sv">≥ 34.5 bar (typ. 70 to 200)</span></div>
+            <div class="spec-row"><span class="sk">Water Mist Definition</span><span class="sv">D<sub>v0.99</sub> &lt; 1,000 µm (NFPA 750)</span></div>
+            <div class="spec-row"><span class="sk">Class 1 Mist (Fine)</span><span class="sv">D<sub>v0.90</sub> ≤ 200 µm</span></div>
+            <div class="spec-row"><span class="sk">Class 2 Mist (Medium)</span><span class="sv">D<sub>v0.90</sub> 200 to 400 µm</span></div>
+            <div class="spec-row"><span class="sk">Class 3 Mist (Coarse)</span><span class="sv">D<sub>v0.90</sub> &gt; 400 µm</span></div>
+            <div class="spec-row"><span class="sk">Typical K-Factor (Mist)</span><span class="sv">0.5 to 6 metric</span></div>
+            <div class="spec-row"><span class="sk">Coverage per Nozzle</span><span class="sv">8 to 16 m²</span></div>
+            <div class="spec-row"><span class="sk">Water Flow per Nozzle</span><span class="sv">10 to 50 L/min</span></div>
+            <div class="spec-row"><span class="sk">Body Material</span><span class="sv">316 SS / 316L SS</span></div>
+            <div class="spec-row"><span class="sk">Internal Wear Insert</span><span class="sv">Carbon-Reinforced PEEK</span></div>
+            <div class="spec-row"><span class="sk">Listing Standards</span><span class="sv">FM 5560, UL 2167, NFPA 750</span></div>
+          </div>
+          <div style="margin-top:24px;padding:18px 22px;background:rgba(232,72,48,0.06);border:1px solid rgba(232,72,48,0.2);border-radius:var(--radius-md);">
+            <p style="font-size:0.86rem;color:var(--silver);margin:0;"><strong style="color:var(--fire-amber);">For complete fire suppression system engineering:</strong> See our dedicated <a href="/applications/fire-suppression/" style="color:var(--aqua);text-decoration:underline;">Fire Suppression Industry Page</a> covering deluge valves, monitors, marine applications, and oil-free actuation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Hazard Class</th>
+            <th>Recommended Nozzle</th>
+            <th>Pressure (bar)</th>
+            <th>D<sub>v90</sub> (µm)</th>
+            <th class="hl">Mechanism</th>
+            <th>Standard</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Class A (ordinary combustibles)</td>
+            <td>Standard sprinkler / hollow cone</td>
+            <td>0.7 to 12</td>
+            <td>400 to 1,000</td>
+            <td class="hl-col td-good">Cooling dominant</td>
+            <td>NFPA 13, UL 199</td>
+          </tr>
+          <tr>
+            <td>Class B (flammable liquids)</td>
+            <td>HP cluster mist</td>
+            <td>70 to 100</td>
+            <td>100 to 400</td>
+            <td class="hl-col td-good">Cooling + smothering</td>
+            <td>FM 5560, NFPA 750</td>
+          </tr>
+          <tr>
+            <td>Machinery space (Class B/C)</td>
+            <td>HP cluster, automatic</td>
+            <td>100 to 140</td>
+            <td>50 to 200</td>
+            <td class="hl-col td-good">Smothering + radiation block</td>
+            <td>IMO MSC.1/Circ.1165</td>
+          </tr>
+          <tr>
+            <td>Cable trays / Class C</td>
+            <td>HP fine mist, intermediate</td>
+            <td>35 to 80</td>
+            <td>100 to 300</td>
+            <td class="hl-col td-good">Cooling + radiation block</td>
+            <td>FM 5560, NFPA 750</td>
+          </tr>
+          <tr>
+            <td>Tunnel / road infrastructure</td>
+            <td>HP mist with deluge backup</td>
+            <td>50 to 100</td>
+            <td>150 to 400</td>
+            <td class="hl-col td-good">All three mechanisms</td>
+            <td>NFPA 502, PIARC</td>
+          </tr>
+          <tr>
+            <td>LPG / cryogenic vessel</td>
+            <td>Solid stream + flat fan combo</td>
+            <td>5 to 12</td>
+            <td>1,000 to 4,000</td>
+            <td class="hl-col td-good">Cooling, surface wetting</td>
+            <td>NFPA 15, API 2510</td>
+          </tr>
+          <tr>
+            <td>Electronics / data center</td>
+            <td>HP fine mist, ultra-low flow</td>
+            <td>70 to 140</td>
+            <td>50 to 150</td>
+            <td class="hl-col td-good">Cooling + smothering, no damage</td>
+            <td>FM 5560, NFPA 750</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION 2: DUST SUPPRESSION -->
+<section class="section section-dark" id="dust-app" aria-labelledby="dust-app-heading">
+  <div class="container">
+    <div class="section-header center reveal">
+      <p class="label">Application Domain 02</p>
+      <h2 id="dust-app-heading"><span class="text-aqua">Dust Suppression</span> Nozzles</h2>
+      <p>Airborne particulate matter is captured by water droplets through impaction, interception, and Brownian diffusion. Droplet size must match the dust particle size for capture to occur, this is the central rule of dust suppression engineering.</p>
+    </div>
+
+    <div class="app-section-card reveal">
+      <div class="app-section-grid">
+        <div>
+          <p class="app-label">The Particle Capture Problem</p>
+          <h3>Match Droplet Size to Particle Size</h3>
+          <p>If a water droplet is too large relative to the dust particle, the air carrying the dust simply flows around the droplet without colliding. If droplets are too small, they evaporate before reaching the dust cloud. Effective capture requires droplets within roughly 5× to 50× of the target particle diameter.</p>
+          <div class="app-bullets">
+            <div class="app-bullet"><strong style="color:var(--aqua)">PM10 (10 µm respirable dust):</strong> requires 50 to 200 µm droplets</div>
+            <div class="app-bullet"><strong style="color:var(--aqua)">PM2.5 (fine respirable):</strong> requires 20 to 80 µm droplets</div>
+            <div class="app-bullet"><strong style="color:var(--aqua)">Coal, ore, aggregate (50 to 500 µm):</strong> 200 to 1,000 µm droplets work effectively</div>
+            <div class="app-bullet"><strong style="color:var(--aqua)">Silica fines (sub-5 µm):</strong> requires fog-class &lt; 50 µm droplets, typically air-atomized</div>
+          </div>
+          <p style="margin-top:14px;">Compounds such as wetting agents (surfactants) or polymeric binders are sometimes added at low ppm concentrations to break dust hydrophobicity, but the primary engineering lever remains droplet size selection.</p>
+        </div>
+
+        <div>
+          <div class="spec-box">
+            <h4>Engineering Specifications</h4>
+            <div class="spec-row"><span class="sk">Standard System Pressure</span><span class="sv">3 to 70 bar</span></div>
+            <div class="spec-row"><span class="sk">Fog System Pressure</span><span class="sv">70 to 140 bar</span></div>
+            <div class="spec-row"><span class="sk">Air-Atomized System</span><span class="sv">2 to 7 bar (water)</span></div>
+            <div class="spec-row"><span class="sk">Typical Droplet Range</span><span class="sv">20 to 500 µm</span></div>
+            <div class="spec-row"><span class="sk">Water Use (vs deluge)</span><span class="sv">Reduction of 70 to 95%</span></div>
+            <div class="spec-row"><span class="sk">Capture Efficiency (PM10)</span><span class="sv">85 to 98%</span></div>
+            <div class="spec-row"><span class="sk">Body Material</span><span class="sv">316 SS (chloride exposure)</span></div>
+            <div class="spec-row"><span class="sk">Anti-Clog Insert</span><span class="sv">Carbon-Reinforced PEEK</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:32px;padding:24px 28px;background:rgba(0,200,212,0.04);border:1px solid var(--border-aqua);border-radius:var(--radius-md);">
+        <h4 style="margin-bottom:12px;">Common Dust Suppression Locations</h4>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
+          <div>
+            <p style="font-size:0.9rem;color:var(--silver);margin-bottom:8px;"><strong style="color:var(--aqua)">Mining &amp; Aggregate</strong></p>
+            <p style="font-size:0.84rem;color:var(--muted);line-height:1.7;margin:0;">Crusher discharge, conveyor transfer points, stockpile loading, haul road wetting, drill rig dust collection, primary screening decks.</p>
+          </div>
+          <div>
+            <p style="font-size:0.9rem;color:var(--silver);margin-bottom:8px;"><strong style="color:var(--aqua)">Industrial &amp; Manufacturing</strong></p>
+            <p style="font-size:0.84rem;color:var(--muted);line-height:1.7;margin:0;">Cement plants, foundries, demolition sites, lumber mills, food processing, recycling facilities, port loading operations.</p>
+          </div>
+          <div>
+            <p style="font-size:0.9rem;color:var(--silver);margin-bottom:8px;"><strong style="color:var(--aqua)">Construction &amp; Civil</strong></p>
+            <p style="font-size:0.84rem;color:var(--muted);line-height:1.7;margin:0;">Site perimeter fogging, concrete cutting, road grinding, tunnel boring, controlled blasting, demolition water curtains.</p>
+          </div>
+          <div>
+            <p style="font-size:0.9rem;color:var(--silver);margin-bottom:8px;"><strong style="color:var(--aqua)">Bulk Handling</strong></p>
+            <p style="font-size:0.84rem;color:var(--muted);line-height:1.7;margin:0;">Coal terminals, grain elevators, fertilizer loading, salt and potash handling, ship loading and unloading at port facilities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-container reveal">
+      <h3>Particle Capture Efficiency vs Droplet Size</h3>
+      <p class="chart-sub">Capture efficiency for three common dust particle sizes across the droplet spectrum. Efficiency falls off rapidly when droplets are too large (no impaction) or too small (evaporation losses).</p>
+      <div class="chart-wrap">
+        <canvas id="captureChart"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION 3: ODOUR CONTROL -->
+<section class="section section-alt" id="odour-app" aria-labelledby="odour-app-heading">
+  <div class="bubble-layer" id="odour-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Application Domain 03</p>
+      <h2 id="odour-app-heading"><span class="text-aqua">Odour Control</span> Atomization</h2>
+      <p>Odour molecules in industrial air streams are neutralized through chemical reaction, absorption, or masking by reagents delivered as ultra-fine droplets. The smaller the droplet, the higher the contact surface area per litre of solution, this is what determines neutralization efficiency.</p>
+    </div>
+
+    <div class="app-section-card reveal">
+      <div class="app-section-grid">
+        <div>
+          <p class="app-label">The Surface Area Argument</p>
+          <h3>Ultra-Fine Droplets for Maximum Reaction Surface</h3>
+          <p>Odour control reagents (typically water-soluble oxidizers, surfactants, or essential oils) must contact every odour molecule in the air stream to neutralize it. Since odour molecules are themselves gas-phase, only the surface area of the droplet population matters, not the volume.</p>
+          <div class="app-bullets">
+            <div class="app-bullet"><strong style="color:var(--aqua)">10 µm droplets:</strong> 600 m² of contact surface per litre of water</div>
+            <div class="app-bullet"><strong style="color:var(--aqua)">50 µm droplets:</strong> 120 m² per litre, 5× less efficient</div>
+            <div class="app-bullet"><strong style="color:var(--aqua)">200 µm droplets:</strong> only 30 m² per litre, droplet may fall before reacting</div>
+          </div>
+          <p style="margin-top:14px;">Air-atomized and ultra-high-pressure rotating heads dominate this application. Reagent dosing pumps inject neutralizing agents at parts-per-million concentrations into the water supply, ensuring continuous and metered delivery without forming wet floors or runoff.</p>
+        </div>
+
+        <div>
+          <div class="spec-box">
+            <h4>Engineering Specifications</h4>
+            <div class="spec-row"><span class="sk">Atomization Method</span><span class="sv">Air-atomized or HP fog</span></div>
+            <div class="spec-row"><span class="sk">Water Pressure (HP fog)</span><span class="sv">70 to 140 bar</span></div>
+            <div class="spec-row"><span class="sk">Air Pressure (atomized)</span><span class="sv">3 to 7 bar</span></div>
+            <div class="spec-row"><span class="sk">Target Droplet D<sub>v50</sub></span><span class="sv">5 to 30 µm</span></div>
+            <div class="spec-row"><span class="sk">Neutralizer Dose Rate</span><span class="sv">10 to 500 ppm</span></div>
+            <div class="spec-row"><span class="sk">Water per Linear Metre</span><span class="sv">0.05 to 0.5 L/min</span></div>
+            <div class="spec-row"><span class="sk">H₂S Removal Efficiency</span><span class="sv">90 to 99%</span></div>
+            <div class="spec-row"><span class="sk">Body Material</span><span class="sv">316 SS, PVDF lined</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:32px;padding:24px 28px;background:rgba(240,128,32,0.06);border:1px solid rgba(240,128,32,0.2);border-radius:var(--radius-md);">
+        <h4 style="color:var(--fire-amber);margin-bottom:12px;">Where Odour Atomization Is Specified</h4>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
+          <div>
+            <p style="font-size:0.9rem;color:var(--silver);margin-bottom:8px;"><strong style="color:var(--fire-amber)">Wastewater Treatment</strong></p>
+            <p style="font-size:0.84rem;color:var(--muted);line-height:1.7;margin:0;">Headworks, screen rooms, grit chambers, sludge dewatering, biosolids loadout, anaerobic digester vents, lift station ventilation.</p>
+          </div>
+          <div>
+            <p style="font-size:0.9rem;color:var(--silver);margin-bottom:8px;"><strong style="color:var(--fire-amber)">Solid Waste &amp; Composting</strong></p>
+            <p style="font-size:0.84rem;color:var(--muted);line-height:1.7;margin:0;">Landfill working face, transfer stations, MRF tipping floors, compost windrows, organic waste loading docks, leachate ponds.</p>
+          </div>
+          <div>
+            <p style="font-size:0.9rem;color:var(--silver);margin-bottom:8px;"><strong style="color:var(--fire-amber)">Food &amp; Agricultural Processing</strong></p>
+            <p style="font-size:0.84rem;color:var(--muted);line-height:1.7;margin:0;">Rendering plants, fish processing, hide curing, slaughterhouse loadout, livestock barns, manure storage, fertilizer manufacturing.</p>
+          </div>
+          <div>
+            <p style="font-size:0.9rem;color:var(--silver);margin-bottom:8px;"><strong style="color:var(--fire-amber)">Industrial Off-Gas</strong></p>
+            <p style="font-size:0.84rem;color:var(--muted);line-height:1.7;margin:0;">Pulp and paper kraft mills, petroleum refining tank vents, asphalt plants, chemical reactor vents, pharmaceutical manufacturing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Odour Source</th>
+            <th>Primary Compound</th>
+            <th>Recommended Reagent</th>
+            <th>Nozzle Type</th>
+            <th class="hl">Removal Efficiency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Wastewater (headworks)</td>
+            <td>H₂S, mercaptans, NH₃</td>
+            <td>NaOCl + surfactant</td>
+            <td>HP fog, 5 to 20 µm</td>
+            <td class="hl-col td-good">95 to 99%</td>
+          </tr>
+          <tr>
+            <td>Landfill working face</td>
+            <td>VOCs, NH₃, sulphides</td>
+            <td>Plant-extract neutralizer</td>
+            <td>Air-atomized perimeter</td>
+            <td class="hl-col td-good">85 to 95%</td>
+          </tr>
+          <tr>
+            <td>Composting facility</td>
+            <td>NH₃, organic acids</td>
+            <td>Acidic scrubber solution</td>
+            <td>HP fog or oscillating</td>
+            <td class="hl-col td-good">90 to 98%</td>
+          </tr>
+          <tr>
+            <td>Rendering plant exhaust</td>
+            <td>Aldehydes, organic acids</td>
+            <td>Oxidizer + surfactant</td>
+            <td>HP fog cluster</td>
+            <td class="hl-col td-good">85 to 95%</td>
+          </tr>
+          <tr>
+            <td>Petroleum tank vents</td>
+            <td>Hydrocarbons, H₂S</td>
+            <td>Specialty oxidizer</td>
+            <td>Air-atomized fine fog</td>
+            <td class="hl-col td-good">80 to 92%</td>
+          </tr>
+          <tr>
+            <td>Kraft pulp mill</td>
+            <td>TRS (total reduced sulphur)</td>
+            <td>Alkaline + oxidizer</td>
+            <td>HP atomizing</td>
+            <td class="hl-col td-good">90 to 98%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION 4: INDUSTRIAL CLEANING -->
+<section class="section section-dark" id="cleaning-app" aria-labelledby="cleaning-app-heading">
+  <div class="container">
+    <div class="section-header center reveal">
+      <p class="label">Application Domain 04</p>
+      <h2 id="cleaning-app-heading"><span class="text-aqua">Industrial Cleaning</span> &amp; Hydroblasting</h2>
+      <p>At the upper end of pressurized water work, energy concentrates from atomization back into coherent jets. Surface preparation, scale removal, and demolition rely on the kinetic energy of focused water at pressures from 700 to over 2,800 bar.</p>
+    </div>
+
+    <div class="app-section-card reveal">
+      <div class="app-section-grid">
+        <div>
+          <p class="app-label">Mechanical Energy at the Surface</p>
+          <h3>Pressure, Flow, and Stand-Off Distance</h3>
+          <p>The cleaning effectiveness of a high-pressure jet is governed by three variables: stagnation pressure at the surface, flow rate (volume of water delivered per second), and stand-off distance from nozzle tip to surface. Optimizing these parameters for the substrate is the work of a competent hydroblast contractor and equipment supplier.</p>
+          <div class="app-bullets">
+            <div class="app-bullet"><strong style="color:var(--aqua)">Pressure washing (35 to 350 bar):</strong> general wash-down, dirt and biological soil, vehicle and equipment cleaning</div>
+            <div class="app-bullet"><strong style="color:var(--aqua)">High-pressure cleaning (350 to 1,000 bar):</strong> coatings removal, light scale, food and chemical residue</div>
+            <div class="app-bullet"><strong style="color:var(--aqua)">Hydroblasting (1,000 to 2,800 bar):</strong> heavy scale, hard coatings, surface preparation to SP-WJ standards</div>
+            <div class="app-bullet"><strong style="color:var(--aqua)">Water jet cutting (2,800+ bar, often with abrasive):</strong> structural concrete, steel, composite cutting</div>
+          </div>
+          <p style="margin-top:14px;">All wetted components in pressurized cleaning equipment, pumps, valves, swivels, lances, and nozzle inserts, see severe service. WaterQuest specifies 316 stainless steel bodies with carbon-reinforced PEEK or sapphire orifice inserts where service life justifies the cost.</p>
+        </div>
+
+        <div>
+          <div class="spec-box">
+            <h4>Engineering Specifications</h4>
+            <div class="spec-row"><span class="sk">Pressure Washing</span><span class="sv">35 to 350 bar</span></div>
+            <div class="spec-row"><span class="sk">High-Pressure Cleaning</span><span class="sv">350 to 1,000 bar</span></div>
+            <div class="spec-row"><span class="sk">Hydroblasting (UHP)</span><span class="sv">1,000 to 2,800 bar</span></div>
+            <div class="spec-row"><span class="sk">Water Jet Cutting</span><span class="sv">2,800 to 6,000 bar</span></div>
+            <div class="spec-row"><span class="sk">Typical Flow (UHP)</span><span class="sv">15 to 80 L/min</span></div>
+            <div class="spec-row"><span class="sk">Stand-Off Distance</span><span class="sv">25 to 200 mm</span></div>
+            <div class="spec-row"><span class="sk">Nozzle Insert Material</span><span class="sv">CR-PEEK / Sapphire / Ceramic</span></div>
+            <div class="spec-row"><span class="sk">Body Material</span><span class="sv">316 SS, hardened</span></div>
+            <div class="spec-row"><span class="sk">Surface Prep Standard</span><span class="sv">SSPC SP-WJ-1 to SP-WJ-4</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Cleaning Application</th>
+            <th>Pressure (bar)</th>
+            <th>Flow (L/min)</th>
+            <th>Recommended Nozzle</th>
+            <th class="hl">Production Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vehicle/equipment wash</td>
+            <td>70 to 250</td>
+            <td>10 to 25</td>
+            <td>Flat fan, 25° to 40°</td>
+            <td class="hl-col td-good">Variable</td>
+          </tr>
+          <tr>
+            <td>Coatings removal (light)</td>
+            <td>700 to 1,400</td>
+            <td>15 to 40</td>
+            <td>Solid stream rotating</td>
+            <td class="hl-col td-good">5 to 25 m²/hr</td>
+          </tr>
+          <tr>
+            <td>Heavy industrial coatings</td>
+            <td>1,400 to 2,800</td>
+            <td>20 to 60</td>
+            <td>UHP rotating jet</td>
+            <td class="hl-col td-good">3 to 15 m²/hr</td>
+          </tr>
+          <tr>
+            <td>Heat exchanger tube cleaning</td>
+            <td>700 to 2,800</td>
+            <td>15 to 50</td>
+            <td>Rotating tube lance</td>
+            <td class="hl-col td-good">20 to 200 tubes/hr</td>
+          </tr>
+          <tr>
+            <td>Tank/vessel interior</td>
+            <td>140 to 700</td>
+            <td>25 to 200</td>
+            <td>Rotating tank wash head</td>
+            <td class="hl-col td-good">Per cycle time</td>
+          </tr>
+          <tr>
+            <td>Sewer/drain jetting</td>
+            <td>140 to 350</td>
+            <td>40 to 200</td>
+            <td>Reverse-thrust solid stream</td>
+            <td class="hl-col td-good">100 to 500 m/hr</td>
+          </tr>
+          <tr>
+            <td>Concrete hydrodemolition</td>
+            <td>1,400 to 2,800</td>
+            <td>100 to 400</td>
+            <td>UHP rotating, multi-orifice</td>
+            <td class="hl-col td-good">0.5 to 2 m³/hr</td>
+          </tr>
+          <tr>
+            <td>Surface prep (SSPC SP-WJ-2)</td>
+            <td>2,000 to 2,800</td>
+            <td>15 to 50</td>
+            <td>UHP rotating jet</td>
+            <td class="hl-col td-good">10 to 30 m²/hr</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTION MATRIX -->
+<section id="selection" class="section section-alt" aria-labelledby="select-heading">
+  <div class="bubble-layer" id="select-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Decision Framework</p>
+      <h2 id="select-heading">Nozzle <span class="text-aqua">Selection Matrix</span></h2>
+      <p>The decisions that drive nozzle selection in pressurized water systems. Walk through these criteria in order before specifying any model number.</p>
+    </div>
+
+    <div class="selection-grid">
+      <div class="sel-card reveal">
+        <div class="sel-icon">🎯</div>
+        <h4>01 Define the Target</h4>
+        <ul>
+          <li>What is being treated, fire, dust, gas, or surface?</li>
+          <li>What is the particle or droplet size of the target?</li>
+          <li>Is treatment area open or confined?</li>
+          <li>What temperature regime is involved?</li>
+        </ul>
+      </div>
+      <div class="sel-card reveal">
+        <div class="sel-icon">📐</div>
+        <h4>02 Define the Geometry</h4>
+        <ul>
+          <li>What is the coverage area or volume?</li>
+          <li>What is the throw distance required?</li>
+          <li>Is the spray vertical, horizontal, or omnidirectional?</li>
+          <li>How many nozzles are needed for overlap?</li>
+        </ul>
+      </div>
+      <div class="sel-card reveal">
+        <div class="sel-icon">💧</div>
+        <h4>03 Define the Droplet</h4>
+        <ul>
+          <li>What is the optimal D<sub>v50</sub> for the target?</li>
+          <li>What evaporation tolerance is acceptable?</li>
+          <li>Is air-atomization warranted for ultra-fine work?</li>
+          <li>What is the droplet velocity requirement?</li>
+        </ul>
+      </div>
+      <div class="sel-card reveal">
+        <div class="sel-icon">⚡</div>
+        <h4>04 Define the Hydraulics</h4>
+        <ul>
+          <li>What pressure tier matches the application?</li>
+          <li>What flow rate per nozzle is needed?</li>
+          <li>What pump capacity will the system require?</li>
+          <li>How does pressure drop scale across the line?</li>
+        </ul>
+      </div>
+      <div class="sel-card reveal">
+        <div class="sel-icon">🧱</div>
+        <h4>05 Define the Materials</h4>
+        <ul>
+          <li>Is the water source freshwater, brackish, or seawater?</li>
+          <li>What chemical reagents are dosed in the water?</li>
+          <li>What internal wear resistance is required?</li>
+          <li>What is the required service life?</li>
+        </ul>
+      </div>
+      <div class="sel-card reveal">
+        <div class="sel-icon">📋</div>
+        <h4>06 Define Compliance</h4>
+        <ul>
+          <li>FM, UL, NFPA listings for fire applications?</li>
+          <li>OH&amp;S exposure standards for dust/odour?</li>
+          <li>SSPC surface preparation grades for cleaning?</li>
+          <li>IMO or class society for marine applications?</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MASTER COMPARISON TABLE -->
+<section class="section section-dark" aria-labelledby="master-heading">
+  <div class="container">
+    <div class="section-header center reveal">
+      <p class="label">Master Reference</p>
+      <h2 id="master-heading">Cross-Application <span class="text-aqua">Nozzle Comparison</span></h2>
+      <p>A consolidated view of where each nozzle type fits across the four primary pressurized water application domains.</p>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Nozzle Type</th>
+            <th>Fire Suppression</th>
+            <th>Dust Suppression</th>
+            <th class="hl">Odour Control</th>
+            <th>Industrial Cleaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Full Cone</td>
+            <td class="td-good">✓ Deluge / sprinkler</td>
+            <td class="td-good">✓ Stockpile, area</td>
+            <td class="hl-col td-mid">~ Bulk dosing</td>
+            <td class="td-good">✓ General wash</td>
+          </tr>
+          <tr>
+            <td>Hollow Cone</td>
+            <td class="td-good">✓ Low-pressure mist</td>
+            <td class="td-good">✓ Conveyor, transfer</td>
+            <td class="hl-col td-good">✓ Standard scrubber</td>
+            <td class="td-mid">~ Light cleaning</td>
+          </tr>
+          <tr>
+            <td>Flat Fan</td>
+            <td class="td-mid">~ Specialty curtain</td>
+            <td class="td-good">✓ Conveyor edge spray</td>
+            <td class="hl-col td-mid">~ Linear loadout</td>
+            <td class="td-good">✓ Surface cleaning</td>
+          </tr>
+          <tr>
+            <td>Solid Stream</td>
+            <td class="td-good">✓ Monitor, turret</td>
+            <td class="td-bad">✗ Wrong geometry</td>
+            <td class="hl-col td-bad">✗ Insufficient surface area</td>
+            <td class="td-good">✓ Hydroblasting</td>
+          </tr>
+          <tr>
+            <td>Fog / Fine Mist</td>
+            <td class="td-good">✓ HP mist suppression</td>
+            <td class="td-good">✓ Fine dust capture</td>
+            <td class="hl-col td-good">✓ Optimal for odour</td>
+            <td class="td-bad">✗ No impact energy</td>
+          </tr>
+          <tr>
+            <td>Air Atomizing</td>
+            <td class="td-mid">~ Specialty only</td>
+            <td class="td-good">✓ Sub-PM2.5 dust</td>
+            <td class="hl-col td-good">✓ Best ultra-fine</td>
+            <td class="td-bad">✗ Insufficient flow</td>
+          </tr>
+          <tr>
+            <td>Rotating Jet</td>
+            <td class="td-mid">~ Specialty</td>
+            <td class="td-mid">~ Not typical</td>
+            <td class="hl-col td-mid">~ Tank odours only</td>
+            <td class="td-good">✓ Tank, sewer, tube</td>
+          </tr>
+          <tr>
+            <td>HP Mist Cluster</td>
+            <td class="td-good">✓ Marine, machinery</td>
+            <td class="td-good">✓ Fine dust HP</td>
+            <td class="hl-col td-good">✓ Industrial off-gas</td>
+            <td class="td-mid">~ Specialty</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:24px;font-size:0.85rem;color:var(--muted);text-align:center;">
+      <span class="td-good" style="font-weight:700;">✓</span> Recommended primary choice
+      <span style="margin:0 14px;">|</span>
+      <span class="td-mid" style="font-weight:700;">~</span> Acceptable in specific cases
+      <span style="margin:0 14px;">|</span>
+      <span class="td-bad" style="font-weight:700;">✗</span> Not recommended
+    </p>
+  </div>
+</section>
+
+<!-- WHY WATER QUEST -->
+<section class="section section-alt" aria-labelledby="wq-heading">
+  <div class="container">
+    <div class="section-header center reveal">
+      <p class="label">The WaterQuest Difference</p>
+      <h2 id="wq-heading">Engineered for <span class="text-aqua">Pressurized Water Service</span>, Not Hydraulic Oil</h2>
+      <p>Most "water" nozzles on the market were designed for low-pressure, low-duty wash-down service. WaterQuest works exclusively in genuine pressurized water hydraulics and specifies components that survive the duty cycle.</p>
+    </div>
+
+    <div class="advantage-grid">
+      <div class="advantage-card reveal" data-num="A">
+        <div class="a-icon">🔬</div>
+        <h3 class="text-white">316 Stainless Steel Bodies</h3>
+        <p>Resists pitting and crevice corrosion in seawater, chlorinated municipal supply, and chemically dosed reagent streams. No coatings to fail, no plating to spall, no internal degradation across decades of service.</p>
+      </div>
+      <div class="advantage-card reveal" data-num="B">
+        <div class="a-icon">⚙️</div>
+        <h3 class="text-white">Carbon-Reinforced PEEK Inserts</h3>
+        <p>Engineered polymer wear surfaces at orifice and seat locations. Self-lubricating in water service, dimensionally stable across temperature, and chemically inert to virtually all aqueous chemistries used in dust, odour, and cleaning work.</p>
+      </div>
+      <div class="advantage-card reveal" data-num="C">
+        <div class="a-icon">🌐</div>
+        <h3 class="text-white">No Oil Contamination Path</h3>
+        <p>Because WaterQuest pumps and HPUs operate on tap water or seawater with no additives, the working fluid that reaches the nozzle is the same medium that exits it. There is no mineral oil, hydraulic fluid, glycol, or flame-retardant additive in the loop.</p>
+      </div>
+      <div class="advantage-card reveal" data-num="D">
+        <div class="a-icon">🇨🇦</div>
+        <h3 class="text-white">Canadian Engineering Support</h3>
+        <p>Designed in Vancouver, BC for North American operating conditions: cold weather freeze protection, marine chloride exposure, mining abrasives, and municipal regulatory frameworks under the Fisheries Act and provincial environmental codes.</p>
+      </div>
+      <div class="advantage-card reveal" data-num="E">
+        <div class="a-icon">🛠️</div>
+        <h3 class="text-white">System Integration</h3>
+        <p>Nozzles are not selected in isolation. WaterQuest engineers the complete loop: HPU sizing, line losses, manifold design, control valving, and nozzle selection are integrated to deliver predictable, repeatable performance at the spray tip.</p>
+      </div>
+      <div class="advantage-card reveal" data-num="F">
+        <div class="a-icon">📜</div>
+        <h3 class="text-white">Compliance and Listing</h3>
+        <p>Where nozzles are part of fire protection systems, components are sourced to FM 5560, UL 2167, NFPA 750, and IMO listings as applicable. For dust and odour work, equipment is compatible with SSPC, OSHA/CSA, and provincial workplace exposure limits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-dark" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="section-header center reveal">
+      <p class="label">Engineering FAQ</p>
+      <h2 id="faq-heading">Procurement &amp; Design <span class="text-aqua">Questions</span></h2>
+      <p>The questions that come up most often during nozzle specification, system sizing, and procurement.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-q">What is the difference between low-pressure and high-pressure water mist for fire suppression?</div>
+        <div class="faq-a"><p>NFPA 750 classifies water mist systems by distribution piping pressure: low-pressure at 12.1 bar (175 psi) or less, intermediate-pressure between 12.1 and 34.5 bar (175 to 500 psi), and high-pressure at 34.5 bar (500 psi) or greater (typically operating between 70 and 200 bar). High-pressure systems generate finer droplets (Class 1 mist, Dv0.90 at or below 200 µm), require less water, and excel in machinery spaces, cabin protection, and electrical environments. Low-pressure systems produce coarser droplets (Class 3 mist, Dv0.90 above 400 µm), require more water, and behave more like traditional sprinklers.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-q">Why does droplet size matter so much in dust suppression?</div>
+        <div class="faq-a"><p>Particle capture follows three mechanisms: impaction (large droplets hit large particles head-on), interception (mid-sized particles brush past droplets), and Brownian diffusion (sub-micron particles random-walk into droplets). Each mechanism has an optimal droplet-to-particle size ratio. If droplets are far too large, the air carrying the dust simply parts around them and the dust passes by. If too small, droplets evaporate before contact. Match droplet diameter to roughly 5 to 50 times the target particle diameter.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-q">Are oil-free water hydraulic systems actually robust enough for industrial duty?</div>
+        <div class="faq-a"><p>Yes. WaterQuest pumps, valves, and nozzles use 316 stainless steel against carbon-reinforced PEEK at all sliding contact surfaces. This pairing is self-lubricating in water service, chemically resistant, and field-proven across pulp and paper, marine, mining, and municipal applications. The technology is not new, water hydraulics powered Victorian-era industry. What is new is the precision of modern materials, which has eliminated the wear problems that drove industry to oil-based systems in the early 20th century.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-q">What flow rate should I size my pump for?</div>
+        <div class="faq-a"><p>Total system flow equals the sum of nozzle flow rates at design pressure, plus a margin for line losses and future expansion. Each nozzle manufacturer publishes K-factor data: flow (L/min) = K × √pressure (bar). For a 20-nozzle dust suppression line at 6 L/min each, design flow is 120 L/min, plus typically 10 to 20% margin for losses. Ask WaterQuest engineering for assistance with manifold pressure drop calculations on larger systems.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-q">Can the same nozzle be used for fresh water and seawater?</div>
+        <div class="faq-a"><p>Only if the nozzle is fully 316 stainless steel construction with PEEK or ceramic inserts. Brass, aluminum, and chrome-plated steel nozzles will pit, corrode, or fail in chloride service within months. WaterQuest specifies 316 SS as the standard wetted material precisely so that the same nozzle catalogue serves freshwater, seawater, and chemically dosed applications without specification gymnastics.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-q">How do I prevent nozzle clogging in dirty water service?</div>
+        <div class="faq-a"><p>Three layers of protection: upstream Y-strainers or basket filters with mesh sized at one-third the smallest orifice diameter; PEEK or carbide nozzle inserts that resist abrasion if particles do pass; and periodic flushing cycles built into the control system. For applications with consistent particulate (recycled water, treated effluent), automatic self-cleaning filters are standard. WaterQuest can specify the complete filtration train as part of the package.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-q">What is the typical service life of a high-pressure water nozzle?</div>
+        <div class="faq-a"><p>Service life is set primarily by the orifice insert material and the abrasiveness of the water. With clean municipal water, 316 SS nozzles with PEEK inserts routinely deliver 10,000+ hours before orifice growth affects flow calibration. In abrasive service (mining, demolition, hydroblasting with fines), sapphire or tungsten carbide inserts are used and life ranges from 200 to 2,000 hours depending on duty. Always inspect K-factor against original spec at scheduled intervals.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-q">Does WaterQuest supply complete nozzle and HPU packages?</div>
+        <div class="faq-a"><p>Yes. WaterQuest designs and integrates the full water hydraulic system: HPU sizing, manifolds, control valving, line components, and nozzle selection. Customers can purchase the complete package or specify individual components depending on the project. Our standard system uses tap water or seawater with no additives and runs on 316 SS / carbon-reinforced PEEK throughout. Contact <a href="mailto:bruce@waterquestsolutions.com" style="color:var(--aqua);">bruce@waterquestsolutions.com</a> for engineering review.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="cta-content reveal">
+      <p class="label">Engineering Review</p>
+      <h2 id="cta-heading">Specify Once. <span class="text-aqua">Run Clean for Decades.</span></h2>
+      <p>Send us your application requirements, fire hazard class, dust source, odour profile, or cleaning specification, and we will return a complete nozzle and system recommendation backed by 316 SS / PEEK construction and the full WaterQuest oil-free water hydraulic platform.</p>
+      <div class="cta-actions">
+        <a href="mailto:bruce@waterquestsolutions.com?subject=Nozzle System Engineering Review" class="btn btn-aqua">Request Engineering Review</a>
+        <a href="/applications/fire-suppression/" class="btn btn-outline">Fire Suppression Page →</a>
+      </div>
+      <p style="margin-top:36px;font-size:0.86rem;color:var(--muted);font-style:italic;">"Stop Leaking Oil Into the Future."</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER --><script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40), {passive:true});
+
+  // Bubbles
+  (function globalBubbles() {
+    const layer = document.getElementById('global-bubbles');
+    const count = 14;
+    for (let i = 0; i < count; i++) {
+      const b = document.createElement('div');
+      b.className = 'bubble';
+      const size = 4 + Math.random() * 14;
+      b.style.width = size + 'px'; b.style.height = size + 'px';
+      b.style.left = Math.random() * 100 + '%';
+      b.style.top = (100 + Math.random() * 20) + '%';
+      b.style.setProperty('--drift', (Math.random() * 100 - 50) + 'px');
+      b.style.animationDuration = (12 + Math.random() * 18) + 's';
+      b.style.animationDelay = (-Math.random() * 20) + 's';
+      layer.appendChild(b);
+    }
+  })();
+
+  // Per-section bubble layers
+  document.querySelectorAll('.bubble-layer').forEach(layer => {
+    if (layer.id === 'global-bubbles') return;
+    const count = 6;
+    for (let i = 0; i < count; i++) {
+      const b = document.createElement('div');
+      b.className = 'bubble';
+      const size = 5 + Math.random() * 12;
+      b.style.width = size + 'px'; b.style.height = size + 'px';
+      b.style.left = Math.random() * 100 + '%';
+      b.style.top = (100 + Math.random() * 20) + '%';
+      b.style.setProperty('--drift', (Math.random() * 80 - 40) + 'px');
+      b.style.animationDuration = (14 + Math.random() * 16) + 's';
+      b.style.animationDelay = (-Math.random() * 22) + 's';
+      layer.appendChild(b);
+    }
+  });
+
+  // Reveal observer
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => io.observe(el));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => item.classList.toggle('open'));
+  });
+
+  // Charts
+  const chartFontFamily = "'Nunito Sans', sans-serif";
+  const aqua = '#00C8D4';
+  const amber = '#F08020';
+  const fire = '#E84830';
+  const silver = '#FFFFFF';
+  const grid = 'rgba(168,184,204,0.12)';
+
+  // Chart 1: Surface area vs droplet size
+  const ctx1 = document.getElementById('surfaceChart');
+  if (ctx1) new Chart(ctx1, {
+    type: 'line',
+    data: {
+      labels: ['10,000', '5,000', '2,000', '1,000', '500', '200', '100', '50', '20', '10'],
+      datasets: [{
+        label: 'Surface area multiplier (vs 10 mm bulk)',
+        data: [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000],
+        borderColor: aqua,
+        backgroundColor: 'rgba(0,200,212,0.15)',
+        borderWidth: 3,
+        fill: true,
+        tension: 0.3,
+        pointRadius: 5,
+        pointBackgroundColor: aqua,
+        pointBorderColor: '#FFFFFF',
+        pointBorderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: silver, font: { family: chartFontFamily, size: 12 } } },
+        tooltip: { backgroundColor: '#0A1628', titleColor: aqua, bodyColor: silver, borderColor: 'rgba(0,200,212,0.3)', borderWidth: 1 }
+      },
+      scales: {
+        y: { type: 'logarithmic', grid: { color: grid }, ticks: { color: silver, font: { family: chartFontFamily } }, title: { display: true, text: 'Surface Area Multiplier (log scale)', color: silver, font: { family: chartFontFamily, weight: 700 } } },
+        x: { grid: { color: grid }, ticks: { color: silver, font: { family: chartFontFamily } }, title: { display: true, text: 'Droplet Diameter (µm)', color: silver, font: { family: chartFontFamily, weight: 700 } } }
+      }
+    }
+  });
+
+  // Chart 2: Application droplet size
+  const ctx2 = document.getElementById('appDropletChart');
+  if (ctx2) new Chart(ctx2, {
+    type: 'bar',
+    data: {
+      labels: ['Odour Control', 'Sub-PM2.5 Dust', 'HP Fire Mist', 'PM10 Dust', 'LP Fire Mist', 'General Dust', 'Wash-Down', 'Deluge'],
+      datasets: [{
+        label: 'Optimal D₍v50₎ Range (µm)',
+        data: [20, 40, 100, 150, 400, 600, 1500, 3000],
+        backgroundColor: ['#00C8D4', '#00C8D4', '#00C8D4', '#3FCBA8', '#7ACC85', '#B8C865', '#E0B040', '#F08020'],
+        borderColor: 'rgba(0,200,212,0.6)',
+        borderWidth: 1,
+        borderRadius: 6
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: { backgroundColor: '#0A1628', titleColor: aqua, bodyColor: silver, borderColor: 'rgba(0,200,212,0.3)', borderWidth: 1, callbacks: { label: (ctx) => 'D₍v50₎: ~' + ctx.parsed.x + ' µm' } }
+      },
+      scales: {
+        x: { type: 'logarithmic', grid: { color: grid }, ticks: { color: silver, font: { family: chartFontFamily } }, title: { display: true, text: 'Volume Median Droplet Diameter (µm, log scale)', color: silver, font: { family: chartFontFamily, weight: 700 } } },
+        y: { grid: { color: grid }, ticks: { color: silver, font: { family: chartFontFamily } } }
+      }
+    }
+  });
+
+  // Chart 3: Capture efficiency vs droplet size
+  const ctx3 = document.getElementById('captureChart');
+  if (ctx3) new Chart(ctx3, {
+    type: 'line',
+    data: {
+      labels: ['10', '25', '50', '100', '200', '400', '800', '1500', '3000'],
+      datasets: [
+        { label: 'PM2.5 (~2.5 µm particle)', data: [40, 75, 92, 88, 70, 45, 22, 8, 2], borderColor: aqua, backgroundColor: 'rgba(0,200,212,0.10)', borderWidth: 3, tension: 0.4, fill: false, pointRadius: 4 },
+        { label: 'PM10 (~10 µm particle)', data: [15, 45, 75, 95, 92, 80, 60, 35, 12], borderColor: amber, backgroundColor: 'rgba(240,128,32,0.10)', borderWidth: 3, tension: 0.4, fill: false, pointRadius: 4 },
+        { label: 'Coarse (~100 µm particle)', data: [3, 8, 25, 55, 80, 92, 95, 88, 70], borderColor: fire, backgroundColor: 'rgba(232,72,48,0.10)', borderWidth: 3, tension: 0.4, fill: false, pointRadius: 4 }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: silver, font: { family: chartFontFamily, size: 12 } } },
+        tooltip: { backgroundColor: '#0A1628', titleColor: aqua, bodyColor: silver, borderColor: 'rgba(0,200,212,0.3)', borderWidth: 1, callbacks: { label: (ctx) => ctx.dataset.label + ': ' + ctx.parsed.y + '% capture' } }
+      },
+      scales: {
+        y: { grid: { color: grid }, ticks: { color: silver, font: { family: chartFontFamily }, callback: v => v + '%' }, title: { display: true, text: 'Capture Efficiency (%)', color: silver, font: { family: chartFontFamily, weight: 700 } }, min: 0, max: 100 },
+        x: { type: 'logarithmic', grid: { color: grid }, ticks: { color: silver, font: { family: chartFontFamily } }, title: { display: true, text: 'Water Droplet Diameter (µm, log scale)', color: silver, font: { family: chartFontFamily, weight: 700 } } }
+      }
+    }
+  });
+</script>
+
+<!-- WQS_ENRICHMENT_START -->
+<style>
+.wqs-enrichment{background:#f5fbf9;border-top:1px solid #d9e8e3;color:#15302c;font-family:Nunito Sans,Arial,sans-serif;padding:56px 6vw}.wqs-enrichment__inner{margin:0 auto;max-width:1120px}.wqs-enrichment__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-enrichment h2{font-size:clamp(28px,4vw,48px);line-height:1.05;margin:8px 0 16px}.wqs-enrichment p{color:#4b625d;font-size:18px;line-height:1.65;max-width:900px}.wqs-enrichment__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px}.wqs-enrichment__panel{background:#fff;border:1px solid #d9e8e3;border-radius:8px;padding:22px}.wqs-enrichment__panel h3{font-size:18px;margin:0 0 12px}.wqs-enrichment ul{margin:0;padding-left:20px}.wqs-enrichment li{line-height:1.55;margin:7px 0}.wqs-enrichment__links{display:grid;gap:10px}.wqs-enrichment__links a{background:#fff;border:1px solid #d9e8e3;border-radius:8px;color:#15302c;display:grid;gap:4px;padding:14px;text-decoration:none}.wqs-enrichment__links span{color:#5f746f;font-size:14px;line-height:1.45}@media(max-width:760px){.wqs-enrichment{padding:40px 18px}.wqs-enrichment__grid{grid-template-columns:1fr}}
+</style>
+<section class="wqs-enrichment" aria-label="Complete page details">
+  <div class="wqs-enrichment__inner">
+    <div class="wqs-enrichment__eyebrow">Complete archive details</div>
+    <h2>High-Pressure Water Nozzle Technology | Fire, Dust, Odour, Cleaning</h2>
+    <p>Engineering reference for high-pressure water nozzles across fire suppression, dust suppression, odour control, and industrial cleaning. Spray patterns, droplet physics, flow tables, and selection criteria from WaterQuest Solutions, Vancouver BC.</p>
+    <div class="wqs-enrichment__grid">
+      <div class="wqs-enrichment__panel"><h3>Recorded details</h3><ul><li>Source section: Application</li><li>Group: Technology</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Primary page focus</h3><ul><li>High-Pressure Water Nozzles for Fire , Dust , Odour &amp; Cleaning</li><li>Nozzle Technology with water hydraulic power.</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Full section outline</h3><ul><li>Why High-Pressure Water Outperforms Low-Pressure Alternatives</li><li>The Five Tiers of Pressurized Water</li><li>Seven Primary Spray Pattern Types</li><li>Droplet Size Determines Application Performance</li><li>Fire Suppression Nozzles</li><li>Dust Suppression Nozzles</li><li>Odour Control Atomization</li><li>Industrial Cleaning &amp; Hydroblasting</li><li>Nozzle Selection Matrix</li><li>Cross-Application Nozzle Comparison</li><li>Engineered for Pressurized Water Service , Not Hydraulic Oil</li><li>Procurement &amp; Design Questions</li><li>Specify Once. Run Clean for Decades.</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Detailed topics</h3><ul><li>Massive Surface Area Gain</li><li>Higher Droplet Momentum</li><li>Reduced Water Consumption</li><li>Engineered Coverage Patterns</li><li>Energy Efficiency at the Tip</li><li>Material Compatibility</li><li>Full Cone Nozzle</li><li>Hollow Cone Nozzle</li><li>Flat Fan Nozzle</li><li>Solid Stream / Jet Nozzle</li><li>Fog &amp; Fine Mist Nozzle</li><li>Air Atomizing Nozzle</li><li>Rotating &amp; Oscillating Nozzles</li><li>HP Water Mist Cluster Nozzle</li></ul></div>
+    </div>
+    <div class="wqs-enrichment__panel" style="margin-top:18px"><h3>Related pages with more detail</h3><div class="wqs-enrichment__links"><a href="/knowledge-hub/dust-suppression-systems-water-hydraulics"><strong>Dust Suppression Systems Using Water Hydraulics</strong><span>High-pressure water mist dust suppression as a water hydraulic application: droplet size physics, pressure-to-droplet-size relationship, mining and quarry applications, pump and nozzle specification, water supply, and integration with equipment actuation.</span></a><a href="/products/water-hydraulic-valves/"><strong>Water Hydraulic Valves</strong><span>Water hydraulic valves in 316L stainless steel for systems up to 200 bar. Six valve families: directional, pressure control, flow control, check valves, zone and manifold, and electronic control. Patented face-valve technology. ATEX approved, ISO 9001.</span></a><a href="/knowledge-hub/why-water-hydraulics-will-replace-oil-in-industrial-infrastructure"><strong>Why Water Hydraulics Will Replace Oil in Industrial Infrastructure</strong><span>Comprehensive analysis of why water hydraulics will replace oil in industrial infrastructure: regulatory drivers, technology maturation, economic factors, and implementation pathways.</span></a><a href="/knowledge-hub/aligning-with-esg-how-water-hydraulics-support-sustainability-targets"><strong>Aligning With ESG: How Water Hydraulics Support Sustainability Targets</strong><span>How water-driven hydraulic systems advance ESG goals across environmental protection, worker safety, and governance. Why procurement teams increasingly specify water hydraulics to strengthen ESG compliance, reduce operational risk, and support clean-technology adoption.</span></a><a href="/applications/dust-suppression/"><strong>Dust Suppression</strong><span>Water hydraulic dust suppression systems for mining, bulk material handling, demolition, and construction. High-pressure misting without petroleum contamination risk.</span></a><a href="/knowledge-hub/fire-suppression-evolved-why-water-mist-systems-outperform-traditional-sprinklers"><strong>Fire Suppression Evolved: Why Water Mist Systems Outperform Traditional Sprinklers</strong><span>A technical and procurement review of high-pressure water mist fire suppression systems and the engineering advantages of water hydraulic actuation over oil-driven alternatives.</span></a><a href="/knowledge-hub/how-the-2025-clean-technology-investment-tax-credit-applies-to-your-project"><strong>How the 2025 Clean Technology Investment Tax Credit Applies to Your Project</strong><span>A complete procurement guide to using the federal CTI-TC 30 percent refundable tax credit for water hydraulic system upgrades. What qualifies, what costs are includable, how to structure the project, and what payback timelines look like after the credit is applied.</span></a><a href="/knowledge-hub/oil-free-operation-and-compliance-with-federal-clean-energy-goals"><strong>Oil-Free Operation and Compliance With Federal Clean Energy Goals</strong><span>How water hydraulic systems support Canada's clean energy policies through elimination of hydrocarbon use, reduced energy demand, waste stream removal, and alignment with the Fisheries Act, CEPA, and federal clean technology funding frameworks.</span></a><a href="/products/axial-piston-fire-pumps/"><strong>Axial Piston Fire Pumps</strong><span>WaterQuest Solutions axial piston fire pumps for high-pressure water mist fire suppression. 100% oil-free, up to 160 bar, 9-piston smooth flow, ATEX II 2GD certified. 316L stainless steel. Six models from 0.8 cc/rev to 180 cc/rev. No accumulators required.</span></a><a href="/knowledge-hub/drought-ready-water-hydraulic-use-in-desalination-plants"><strong>Drought-Ready: Water Hydraulic Use in Desalination Plants</strong><span>A complete engineering and procurement review of water hydraulic actuation in modern desalination infrastructure. How 316 stainless and PEEK-based systems eliminate oil contamination risk, corrosion failure, and thermal breakdown in continuous high-pressure desalination service.</span></a></div></div>
+  </div>
+</section>
+<!-- WQS_ENRICHMENT_END -->
+<!-- WQ_GLOBAL_FOOTER_START -->
+<footer class="wq-site-footer" role="contentinfo">
+  <div class="wq-footer-container">
+    <div class="wq-footer-grid">
+      <div class="wq-footer-brand">
+        <span class="wq-logo-main">WaterQuest Solutions</span>
+        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Technology</h5>
+        <ul><li><a href="/technology/">Technology Overview</a></li><li><a href="/applications/" class="active">Applications</a></li><li><a href="/calculations/">Hydraulic Calculations</a></li><li><a href="/glossary/">Technical Glossary</a></li><li><a href="/applications/nozzle-technology/" class="active">Nozzle Reference</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Core Pages</h5>
+        <ul><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
+          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
+          <li>558 East Kent Ave S</li>
+          <li>Vancouver, BC V5X 4V6</li>
+          <li>Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
+  </div>
+</footer>
+<!-- WQ_GLOBAL_FOOTER_END -->
+<script id="wq-global-shell-js">
+    (function(){
+      var nav=document.getElementById("wq-nav");
+      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
+      var menuButton=document.querySelector(".wq-menu-toggle");
+      var mobileMenu=document.getElementById("wq-mobile-menu");
+      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
+      var bubbles=document.getElementById("wq-global-bubbles");
+      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
+      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
+      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
+      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
+      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
+      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
+      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
+      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
+      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
+      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
+      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
+      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
+    })();
+  </script>
+
+</body>
+</html>

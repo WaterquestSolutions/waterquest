@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Oil-Free Water Hydraulic Systems and Components | WaterQuest Solutions</title>
+  <meta name="description" content="WaterQuest Solutions' full product range: axial piston pumps, water hydraulic motors, 316L stainless cylinders, valves, HPUs, fire suppression pumps, and the Power Center for desalination. Built for water. Not adapted from oil." />
+  <meta name="keywords" content="water hydraulic products, oil-free hydraulic systems, axial piston pump, water hydraulic motor, 316 stainless cylinder, water hydraulic valve, water hydraulic HPU, fire suppression pump, desalination power center, water hydraulics Canada" />
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Products | WaterQuest Solutions",
+    "description": "WaterQuest Solutions' complete range of oil-free water hydraulic products: axial piston pumps, water hydraulic motors, 316L stainless steel cylinders, valves, HPUs, fire suppression pumps, and the Power Center for reverse osmosis desalination.",
+    "url": "/products",
+    "publisher": { "@type": "Organization", "name": "WaterQuest Solutions", "url": "https://waterquestsolutions.com" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://waterquestsolutions.com" },
+      { "@type": "ListItem", "position": 2, "name": "Products", "item": "/products" }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy:       #0A1628;
+      --navy-mid:   #0D2044;
+      --navy-light: #122954;
+      --aqua:       #00C8D4;
+      --aqua-dim:   rgba(0,200,212,0.12);
+      --aqua-glow:  rgba(0,200,212,0.22);
+      --silver:     #FFFFFF;
+      --silver-lt:  #FFFFFF;
+      --white:      #FFFFFF;
+      --body:       #FFFFFF;
+      --muted:      #FFFFFF;
+      --border:     rgba(168,184,204,0.15);
+      --border-aqua:rgba(0,200,212,0.25);
+      --fw:         1200px;
+      --font-d:     'Avenir','Avenir Next','Nunito Sans',sans-serif;
+      --font-b:     'Nunito Sans','Segoe UI',system-ui,sans-serif;
+      --mono:       'Nunito Sans','Segoe UI',sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-b); background: var(--navy); color: var(--body); line-height: 1.7; overflow-x: hidden; }
+    a { color: var(--aqua); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: #00E4F2; }
+
+    /* NAV */
+    #nav { position: fixed; top:0; left:0; right:0; z-index:100; transition: background 0.3s; }
+    #nav.scrolled { background: rgba(10,22,40,0.96); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width:var(--fw); margin:0 auto; padding:0 32px; display:flex; align-items:center; justify-content:space-between; height:68px; }
+    .nav-logo .logo-main { font-family:var(--font-d); font-weight:900; font-size:1.05rem; color:var(--white); }
+    .nav-logo .logo-sub  { font-size:0.6rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--aqua); display:block; }
+    .nav-links { display:flex; gap:28px; align-items:center; list-style:none; }
+    .nav-links a { font-family:var(--font-d); font-size:0.78rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--silver); }
+    .nav-links a:hover, .nav-links a.active { color:var(--aqua); }
+    .nav-cta { background:var(--aqua)!important; color:var(--navy)!important; padding:8px 20px; border-radius:4px; }
+
+    /* BREADCRUMB */
+    .breadcrumb-bar { padding-top:68px; background:var(--navy-mid); border-bottom:1px solid var(--border); }
+    .bc-inner { max-width:var(--fw); margin:0 auto; padding:13px 32px; display:flex; gap:8px; align-items:center; }
+    .bc-inner a { font-size:0.78rem; color:var(--muted); }
+    .bc-inner a:hover { color:var(--aqua); }
+    .bc-sep { font-size:0.72rem; color:var(--muted); opacity:0.45; }
+    .bc-current { font-size:0.78rem; color:var(--silver); }
+
+    /* PAGE HERO */
+    .page-hero {
+      background: linear-gradient(165deg, #050D1A 0%, var(--navy) 45%, #0C1E40 100%);
+      padding: 72px 32px 64px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; left: 50%; transform: translateX(-50%);
+      width: 900px; height: 600px;
+      background: radial-gradient(ellipse, rgba(0,200,212,0.09) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .page-hero-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 2; }
+    .page-hero-eyebrow { font-family:var(--font-d); font-size:0.72rem; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--aqua); margin-bottom:16px; }
+    .page-hero h1 { font-family:var(--font-d); font-weight:900; font-size:clamp(2.2rem,5vw,3.5rem); color:var(--white); line-height:1.15; letter-spacing:-0.025em; margin-bottom:22px; }
+    .page-hero h1 em { font-style:normal; color:var(--aqua); }
+    .page-hero p { font-size:1.1rem; color:var(--silver-lt); line-height:1.8; max-width:660px; margin:0 auto 40px; }
+    .hero-stat-row { display:flex; justify-content:center; gap:0; flex-wrap:wrap; border:1px solid var(--border-aqua); border-radius:12px; overflow:hidden; max-width:700px; margin:0 auto; }
+    .hero-stat { flex:1; min-width:120px; padding:18px 16px; border-right:1px solid var(--border-aqua); text-align:center; }
+    .hero-stat:last-child { border-right:none; }
+    .hs-num { font-family:var(--font-d); font-size:1.5rem; font-weight:900; color:var(--aqua); line-height:1; margin-bottom:5px; }
+    .hs-lbl { font-size:0.66rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); line-height:1.4; }
+
+    /* QUICK NAV */
+    .quick-nav { background: var(--navy-mid); border-bottom: 1px solid var(--border); position: sticky; top: 68px; z-index: 90; }
+    .qn-inner { max-width:var(--fw); margin:0 auto; padding:0 32px; display:flex; gap:0; overflow-x:auto; }
+    .qn-inner::-webkit-scrollbar { display:none; }
+    .qn-item { font-family:var(--font-d); font-size:0.76rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted); padding:16px 18px; white-space:nowrap; border-bottom:2px solid transparent; transition:all 0.2s; }
+    .qn-item:hover { color:var(--aqua); border-bottom-color:var(--aqua); }
+
+    /* SECTION */
+    .section { padding: 80px 32px; }
+    .section-dark { background: var(--navy); }
+    .section-mid  { background: var(--navy-mid); }
+    .section-inner { max-width: var(--fw); margin: 0 auto; }
+    .section-header { margin-bottom:56px; }
+    .section-header.center { text-align:center; }
+    .section-header.center .section-label { justify-content:center; }
+    .section-label { font-family:var(--font-d); font-size:0.7rem; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--aqua); margin-bottom:10px; display:flex; align-items:center; gap:10px; }
+    .section-label::after { content:''; display:block; height:1px; width:40px; background:var(--border-aqua); }
+    .section-header h2 { font-family:var(--font-d); font-weight:900; font-size:clamp(1.6rem,3vw,2.3rem); color:var(--white); letter-spacing:-0.02em; margin-bottom:12px; }
+    .section-header h2 em { font-style:normal; color:var(--aqua); }
+    .section-header p { font-size:0.97rem; color:var(--muted); max-width:640px; line-height:1.75; }
+
+    /* PRODUCT HERO CARD (full-width featured) */
+    .product-hero-card {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 0;
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 32px;
+      transition: border-color 0.3s;
+    }
+    .product-hero-card:hover { border-color: var(--border-aqua); }
+    .phc-body { padding: 40px 40px 36px; display: flex; flex-direction: column; }
+    .phc-eyebrow { display:flex; align-items:center; gap:10px; margin-bottom:18px; }
+    .phc-badge { font-family:var(--font-d); font-size:0.68rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; padding:5px 12px; border-radius:100px; border:1px solid var(--border-aqua); color:var(--aqua); background:rgba(0,200,212,0.08); }
+    .phc-num { font-family:var(--font-d); font-size:0.68rem; color:var(--muted); }
+    .phc-body h2 { font-family:var(--font-d); font-weight:900; font-size:clamp(1.5rem,2.5vw,2rem); color:var(--white); line-height:1.25; margin-bottom:14px; letter-spacing:-0.02em; }
+    .phc-body h2 em { font-style:normal; color:var(--aqua); }
+    .phc-body p { font-size:0.97rem; color:var(--muted); line-height:1.78; margin-bottom:24px; flex:1; }
+    .spec-chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px; }
+    .spec-chip { font-family:var(--font-b); font-size:0.79rem; font-weight:700; color:#00D4B4; background:rgba(0,212,180,0.08); border:1px solid rgba(0,212,180,0.2); padding:5px 12px; border-radius:5px; }
+    .phc-links { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+    .btn-view { background:var(--aqua); color:var(--navy); padding:11px 22px; border-radius:5px; font-family:var(--font-d); font-weight:700; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; transition:all 0.2s; display:inline-flex; align-items:center; gap:7px; }
+    .btn-view:hover { background:#00E4F2; color:var(--navy); transform:translateY(-1px); }
+    .btn-view svg { width:14px; height:14px; stroke:currentColor; fill:none; }
+    .btn-spec { background:transparent; border:1.5px solid var(--border-aqua); color:var(--aqua); padding:11px 22px; border-radius:5px; font-family:var(--font-d); font-weight:700; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; transition:all 0.2s; display:inline-flex; align-items:center; gap:7px; }
+    .btn-spec:hover { background:var(--aqua-dim); color:#00E4F2; }
+    .phc-visual { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; min-height:280px; }
+    .phc-visual::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at center, rgba(0,200,212,0.08) 0%, transparent 70%); }
+    .phc-icon-large { font-size:5rem; position:relative; z-index:2; filter:drop-shadow(0 0 24px rgba(0,200,212,0.3)); }
+    .phc-model-list { position:absolute; bottom:20px; left:20px; right:20px; display:flex; gap:6px; flex-wrap:wrap; justify-content:center; z-index:2; }
+    .model-pill { font-family:var(--font-b); font-size:0.74rem; font-weight:700; color:var(--aqua); background:rgba(0,200,212,0.1); border:1px solid rgba(0,200,212,0.22); padding:4px 10px; border-radius:4px; }
+
+    /* PRODUCT GRID (smaller cards) */
+    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .product-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.3s, transform 0.3s;
+      position: relative;
+    }
+    .product-card:hover { border-color: var(--border-aqua); transform: translateY(-3px); }
+    .pc-accent { height: 2px; }
+    .pc-body { padding: 26px 24px 20px; flex:1; }
+    .pc-icon { font-size:1.8rem; margin-bottom:12px; }
+    .pc-cat { font-family:var(--font-d); font-size:0.66rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--aqua); margin-bottom:6px; }
+    .pc-body h3 { font-family:var(--font-d); font-weight:900; font-size:1.1rem; color:var(--white); line-height:1.3; margin-bottom:10px; }
+    .pc-body p { font-size:0.88rem; color:var(--muted); line-height:1.72; margin-bottom:16px; }
+    .pc-specs { display:flex; flex-direction:column; gap:6px; margin-bottom:20px; }
+    .pc-spec { display:flex; justify-content:space-between; align-items:center; padding:7px 0; border-bottom:1px solid var(--border); }
+    .pc-spec:last-child { border-bottom:none; }
+    .pc-spec-label { font-size:0.78rem; color:var(--muted); }
+    .pc-spec-value { font-family:var(--font-b); font-size:0.84rem; color:#00D4B4; font-weight:700; }
+    .pc-footer { padding:16px 24px 20px; border-top:1px solid var(--border); }
+    .pc-link { font-family:var(--font-d); font-size:0.8rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--aqua); display:inline-flex; align-items:center; gap:7px; transition:gap 0.2s; }
+    .pc-link:hover { gap:12px; color:#00E4F2; }
+    .pc-link svg { width:13px; height:13px; stroke:currentColor; fill:none; }
+
+    /* MATERIALS CALLOUT */
+    .materials-strip {
+      background: linear-gradient(135deg, rgba(0,200,212,0.06) 0%, var(--navy-mid) 100%);
+      border-top: 1px solid var(--border-aqua);
+      border-bottom: 1px solid var(--border-aqua);
+      padding: 52px 32px;
+    }
+    .materials-inner { max-width: var(--fw); margin: 0 auto; }
+    .materials-grid { display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:0; border:1px solid var(--border-aqua); border-radius:12px; overflow:hidden; margin-top:36px; }
+    .mat-item { padding:26px 24px; border-right:1px solid var(--border-aqua); }
+    .mat-item:last-child { border-right:none; }
+    .mat-icon { font-size:1.4rem; margin-bottom:10px; }
+    .mat-item h4 { font-family:var(--font-d); font-weight:900; font-size:0.95rem; color:var(--white); margin-bottom:7px; }
+    .mat-item p { font-size:0.83rem; color:var(--muted); line-height:1.7; }
+    .mat-code { font-family:var(--font-b); font-size:0.79rem; font-weight:700; color:#00D4B4; background:rgba(0,212,180,0.08); border:1px solid rgba(0,212,180,0.18); padding:3px 10px; border-radius:4px; display:inline-block; margin-top:8px; }
+
+    /* CERTIFICATIONS */
+    .cert-row { display:flex; justify-content:center; gap:16px; flex-wrap:wrap; margin-top:40px; }
+    .cert-badge { background:var(--navy-light); border:1px solid var(--border); border-radius:8px; padding:14px 20px; text-align:center; min-width:110px; }
+    .cert-name { font-family:var(--font-d); font-size:0.8rem; font-weight:900; color:var(--white); margin-bottom:4px; }
+    .cert-desc { font-size:0.67rem; color:var(--muted); letter-spacing:0.06em; text-transform:uppercase; }
+
+    /* STAINLESS BANNER - WQS Stainless: black / red / brushed metal */
+    :root {
+      --wqs-black:      #0E0E0E;
+      --wqs-black-mid:  #1A1A1A;
+      --wqs-black-lt:   #242424;
+      --wqs-red:        #C8201A;
+      --wqs-red-bright: #E02820;
+      --wqs-red-dim:    rgba(200,32,26,0.12);
+      --wqs-red-border: rgba(200,32,26,0.28);
+      --wqs-metal:      #FFFFFF;   /* brushed aluminium highlight */
+      --wqs-metal-mid:  #FFFFFF;
+      --wqs-metal-dim:  rgba(184,196,204,0.10);
+      --wqs-metal-border: rgba(184,196,204,0.18);
+    }
+    .stainless-banner {
+      background:
+        linear-gradient(160deg, var(--wqs-black) 0%, var(--wqs-black-mid) 55%, #161C24 100%);
+      border-top: 1px solid var(--wqs-red-border);
+      border-bottom: 1px solid var(--wqs-red-border);
+      padding: 56px 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    /* Subtle brushed-metal texture overlay */
+    .stainless-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        92deg,
+        transparent 0px,
+        rgba(184,196,204,0.025) 1px,
+        transparent 2px,
+        transparent 6px
+      );
+      pointer-events: none;
+    }
+    /* Red accent glow in top-left corner */
+    .stainless-banner::after {
+      content: '';
+      position: absolute;
+      top: -80px; left: -80px;
+      width: 420px; height: 420px;
+      background: radial-gradient(ellipse, rgba(200,32,26,0.13) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .stainless-inner { max-width:var(--fw); margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; position:relative; z-index:1; }
+    .sb-text .sb-eyebrow { font-family:var(--font-d); font-size:0.7rem; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--wqs-red-bright); margin-bottom:12px; }
+    .sb-text h2 { font-family:var(--font-d); font-weight:900; font-size:clamp(1.5rem,2.5vw,2.1rem); color:var(--white); line-height:1.25; letter-spacing:-0.02em; margin-bottom:14px; }
+    .sb-text h2 span { color:var(--wqs-metal); }
+    .sb-text p { font-size:0.95rem; color:var(--wqs-metal-mid); line-height:1.78; margin-bottom:24px; }
+    .sb-btn { background:var(--wqs-red); color:var(--white); padding:12px 24px; border-radius:5px; font-family:var(--font-d); font-weight:700; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; transition:all 0.2s; display:inline-flex; align-items:center; gap:7px; }
+    .sb-btn:hover { background:var(--wqs-red-bright); color:var(--white); transform:translateY(-1px); box-shadow: 0 6px 20px rgba(200,32,26,0.35); }
+    .sb-btn svg { width:14px; height:14px; stroke:currentColor; fill:none; }
+    .sb-products { display:flex; flex-direction:column; gap:10px; }
+    .sb-prod-item {
+      background: var(--wqs-metal-dim);
+      border: 1px solid var(--wqs-metal-border);
+      border-left: 3px solid var(--wqs-red);
+      border-radius:8px;
+      padding:14px 18px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      transition: background 0.2s, border-left-color 0.2s;
+    }
+    .sb-prod-item:hover {
+      background: rgba(200,32,26,0.07);
+      border-left-color: var(--wqs-red-bright);
+    }
+    .sb-prod-name { font-family:var(--font-d); font-size:0.88rem; font-weight:700; color:var(--wqs-metal); }
+    .sb-prod-std { font-family:var(--font-b); font-size:0.78rem; font-weight:700; color:var(--wqs-red-bright); }
+
+    /* CTA */
+    .pilot-cta { background: linear-gradient(160deg, var(--navy-light) 0%, #0A1E3C 100%); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:72px 32px; text-align:center; }
+    .pilot-cta-inner { max-width:680px; margin:0 auto; }
+    .pilot-cta h2 { font-family:var(--font-d); font-weight:900; font-size:clamp(1.8rem,3.5vw,2.6rem); color:var(--white); letter-spacing:-0.02em; margin-bottom:16px; }
+    .pilot-cta h2 em { font-style:normal; color:var(--aqua); }
+    .pilot-cta p { font-size:1rem; color:var(--silver); line-height:1.8; margin-bottom:36px; }
+    .cta-btn-row { display:flex; justify-content:center; gap:16px; flex-wrap:wrap; }
+    .btn-primary { background:var(--aqua); color:var(--navy); padding:14px 32px; border-radius:6px; font-family:var(--font-d); font-weight:700; font-size:0.9rem; letter-spacing:0.06em; text-transform:uppercase; transition:all 0.2s; display:inline-flex; align-items:center; gap:8px; }
+    .btn-primary:hover { background:#00E4F2; color:var(--navy); transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,200,212,0.25); }
+    .btn-outline { background:transparent; border:1.5px solid var(--border-aqua); color:var(--aqua); padding:14px 32px; border-radius:6px; font-family:var(--font-d); font-weight:700; font-size:0.9rem; letter-spacing:0.06em; text-transform:uppercase; transition:all 0.2s; display:inline-flex; align-items:center; gap:8px; }
+    .btn-outline:hover { background:var(--aqua-dim); color:#00E4F2; transform:translateY(-2px); }
+    .btn svg { width:16px; height:16px; stroke:currentColor; fill:none; }
+
+    /* FOOTER */
+    footer { background:#06101E; border-top:1px solid var(--border); padding:56px 0 28px; }
+    .footer-inner { max-width:var(--fw); margin:0 auto; padding:0 32px; display:flex; justify-content:space-between; align-items:flex-start; gap:48px; flex-wrap:wrap; }
+    .footer-brand .logo-main { font-family:var(--font-d); font-weight:900; font-size:1.15rem; color:var(--white); }
+    .footer-brand .logo-sub { font-size:0.62rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--aqua); display:block; margin-bottom:14px; }
+    .footer-brand p { font-size:0.85rem; color:var(--muted); line-height:1.7; max-width:300px; }
+    .footer-brand .slogan { font-style:italic; color:var(--silver); margin-top:8px; }
+    .footer-col h5 { font-family:var(--font-d); font-size:0.7rem; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:var(--silver); margin-bottom:14px; }
+    .footer-col ul { list-style:none; padding:0; display:flex; flex-direction:column; gap:9px; }
+    .footer-col ul a { font-size:0.85rem; color:var(--muted); }
+    .footer-col ul a:hover { color:var(--aqua); }
+    .footer-bottom { max-width:var(--fw); margin:36px auto 0; padding:20px 32px 0; border-top:1px solid var(--border); font-size:0.78rem; color:var(--muted); display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+
+    /* REVEAL */
+    .reveal { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+
+    /* BUBBLES */
+    .bubble { position:fixed; border-radius:50%; background:radial-gradient(circle at 35% 35%,rgba(0,200,212,0.5),rgba(0,200,212,0.06) 60%,transparent 80%); border:1px solid rgba(0,200,212,0.14); opacity:0; pointer-events:none; z-index:0; animation:bubble-rise linear infinite; }
+    @keyframes bubble-rise { 0%{transform:translateY(0) translateX(0) scale(1);opacity:0} 8%{opacity:0.35} 50%{transform:translateY(-50vh) translateX(var(--drift)) scale(0.88);opacity:0.15} 92%{opacity:0.05} 100%{transform:translateY(-106vh) translateX(calc(var(--drift)*1.4)) scale(0.4);opacity:0} }
+
+    @media (max-width:1024px) {
+      .product-hero-card { grid-template-columns: 1fr; }
+      .phc-visual { min-height: 200px; }
+      .product-grid { grid-template-columns: 1fr 1fr; }
+      .materials-grid { grid-template-columns: 1fr 1fr; }
+      .mat-item:nth-child(2) { border-right:none; }
+      .mat-item:nth-child(1),.mat-item:nth-child(2) { border-bottom:1px solid var(--border-aqua); }
+      .stainless-inner { grid-template-columns: 1fr; gap:36px; }
+    }
+    @media (max-width:700px) {
+      .product-grid { grid-template-columns: 1fr; }
+      .materials-grid { grid-template-columns: 1fr; }
+      .mat-item { border-right:none!important; border-bottom:1px solid var(--border-aqua); }
+      .mat-item:last-child { border-bottom:none; }
+      .hero-stat-row { flex-direction:column; }
+      .hero-stat { border-right:none; border-bottom:1px solid var(--border-aqua); }
+      .hero-stat:last-child { border-bottom:none; }
+      .section { padding:56px 20px; }
+      .page-hero { padding:60px 20px 52px; }
+      .nav-links { display:none; }
+      .qn-inner { padding:0 16px; }
+    }
+  </style><link rel="canonical" href="/products" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:title" content="Products | Oil-Free Water Hydraulic Systems and Components | WaterQuest Solutions" />
+  <meta property="og:description" content="WaterQuest Solutions' full product range: axial piston pumps, water hydraulic motors, 316L stainless cylinders, valves, HPUs, fire suppression pumps, and the Power Center for desalination. Built for water. Not adapted from oil." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/products" />
+  <meta property="og:image" content="/assets/waterquest-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Products | Oil-Free Water Hydraulic Systems and Components | WaterQuest Solutions" />
+  <meta name="twitter:description" content="WaterQuest Solutions' full product range: axial piston pumps, water hydraulic motors, 316L stainless cylinders, valves, HPUs, fire suppression pumps, and the Power Center for desalination. Built for water. Not adapted from oil." />
+  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
+  <link rel="alternate" hreflang="en-CA" href="/products" />
+  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
+  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"WebPage","@id":"/products#webpage","url":"/products","name":"Products | Oil-Free Water Hydraulic Systems and Components | WaterQuest Solutions","description":"WaterQuest Solutions' full product range: axial piston pumps, water hydraulic motors, 316L stainless cylinders, valves, HPUs, fire suppression pumps, and the Power Center for desalination. Built for water. Not adapted from oil.","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"},{"@type":"ListItem","position":2,"name":"Products","item":"/products"}]}]}</script>
+  <style id="wq-global-shell-css">
+    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
+    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
+    body a{color:inherit}
+    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
+    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
+    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
+    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
+    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
+    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
+    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
+    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
+    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
+    main .btn.primary{color:var(--wq-navy)!important}
+    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
+    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
+    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
+    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
+    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
+    .wq-form-status.is-error{color:#ffb1b1!important}
+    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
+    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
+    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
+    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
+    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
+    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
+    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
+    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
+    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
+    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
+    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
+    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
+    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
+    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
+    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
+    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
+    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
+    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
+    .wq-hero-visual-text{padding:20px}
+    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
+    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
+    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
+    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
+    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
+    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
+    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
+    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
+    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
+    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
+    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
+    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
+    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
+    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
+    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
+    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
+    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
+    #wq-mobile-menu.open{display:block}
+    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
+    #wq-mobile-menu a:last-child{border-bottom:0}
+    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
+    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
+    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
+    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
+    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
+    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
+    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
+    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
+    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
+    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
+    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
+    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
+    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
+    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
+    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
+    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
+  </style>
+</head>
+<body class="wq-section-products">
+<!-- WQ_GLOBAL_HEADER_START -->
+<div id="wq-global-bubbles" aria-hidden="true"></div>
+<nav id="wq-nav" role="navigation" aria-label="Main navigation">
+  <div class="wq-nav-inner">
+    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
+      <span class="wq-logo-main">WaterQuest Solutions</span>
+      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+    </a>
+    <ul class="wq-nav-links" role="list">
+      <li><a href="/products/" class="active">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li>
+      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
+    </ul>
+    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
+  </div>
+</nav>
+<div id="wq-mobile-menu">
+  <a href="/products/" class="active">Products</a><a href="/industries/">Industries</a><a href="/technology/">Technology</a><a href="/knowledge-hub/">Knowledge Hub</a><a href="/about/">About</a>
+  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
+</div>
+<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
+<section class="wq-conversion-hero" aria-label="Page introduction">
+  <div class="wq-conversion-wrap">
+    <div>
+      <p class="wq-hero-eyebrow">Water hydraulic products</p>
+      <h1><span>Products Overview</span> built for water service.</h1>
+      <p class="wq-hero-copy">Review oil-free hydraulic components engineered around 316 stainless wetted materials, water-compatible wear interfaces, and real industrial pressure requirements.</p>
+      <div class="wq-hero-actions">
+        <a class="wq-hero-cta" href="/contact/">Ask If This Fits Your System</a>
+        <a class="wq-hero-secondary" href="/calculations/">Run Engineering Calculations</a>
+      </div>
+    </div>
+    <a class="wq-hero-visual" href="/contact/">
+      <div class="wq-hero-picture" aria-hidden="true"></div>
+      <div class="wq-hero-visual-text">
+        <small>Specification path</small>
+        <strong>Move from product interest to engineering fit.</strong>
+        <span>Use the product data, calculators, and applications to narrow the right water hydraulic package.</span>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- WQ_CONVERSION_HERO_END --><div class="breadcrumb-bar" role="navigation" aria-label="Breadcrumb">
+  <div class="bc-inner">
+    <a href="/">Home</a>
+    <span class="bc-sep">›</span>
+    <span class="bc-current">Products</span>
+  </div>
+</div>
+
+<section class="page-hero" aria-labelledby="hero-heading">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow reveal">Built for Water. Not Adapted from Oil.</div>
+    <h1 id="hero-heading" class="reveal">Every Component <em>Engineered from First Principles</em></h1>
+    <p class="reveal">WaterQuest Solutions supplies a complete range of water hydraulic products: pumps, motors, cylinders, valves, power units, fire suppression pumps, and desalination power centers, all designed from the ground up for water service. No oil. No compromise. No liability.</p>
+    <div class="hero-stat-row reveal">
+      <div class="hero-stat"><div class="hs-num">7</div><div class="hs-lbl">Product Lines</div></div>
+      <div class="hero-stat"><div class="hs-num">160 bar</div><div class="hs-lbl">Max Continuous Pressure</div></div>
+      <div class="hero-stat"><div class="hs-num">430 L/min</div><div class="hs-lbl">Max Flow Rate</div></div>
+      <div class="hero-stat"><div class="hs-num">ATEX</div><div class="hs-lbl">Zone 1 Certified</div></div>
+      <div class="hero-stat"><div class="hs-num">0 L</div><div class="hs-lbl">Hydraulic Oil Required</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK NAV -->
+<nav class="quick-nav" aria-label="Product categories">
+  <div class="qn-inner">
+    <a href="#pumps" class="qn-item">Pumps</a>
+    <a href="#motors" class="qn-item">Motors</a>
+    <a href="#cylinders" class="qn-item">Cylinders</a>
+    <a href="#valves" class="qn-item">Valves</a>
+    <a href="#hpu" class="qn-item">HPUs</a>
+    <a href="#fire-pump" class="qn-item">Fire Suppression Pumps</a>
+    <a href="#desal" class="qn-item">Desalination Power Center</a>
+    <a href="#stainless" class="qn-item">WQS Stainless</a>
+  </div>
+</nav>
+
+<!-- PUMPS -->
+<section id="pumps" class="section section-dark" aria-labelledby="pumps-heading">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">01 Pumps</div>
+      <h2 id="pumps-heading"><em>Axial Piston Pumps</em></h2>
+      <p>Seven models purpose-engineered for water hydraulic service. The most technically demanding component in any water hydraulic system, resolved in a complete range from compact pilot units to large-scale industrial drives.</p>
+    </div>
+
+    <div class="product-hero-card reveal">
+      <div class="phc-body">
+        <div class="phc-eyebrow">
+          <span class="phc-badge">Flagship Product</span>
+          <span class="phc-num">Seven Models · P1 to P180</span>
+        </div>
+        <h2><em>Axial Piston Pumps</em></h2>
+        <p>Totally oil-free. The pump range covers 2.4 L/min through 430 L/min at up to 160 bar continuous pressure. 316 stainless steel construction, ATEX II 2GD certified, minimal pulsation, and compatible with tap water, seawater, technical water, and specialist fluids. Tighter machining tolerances (1 to 3 microns) than oil pump equivalents compensate for water's low viscosity. Variable displacement available on P60 and P180. Nuclear-rated F4N variant available.</p>
+        <div class="spec-chips">
+          <span class="spec-chip">160 bar continuous</span>
+          <span class="spec-chip">430 L/min max flow</span>
+          <span class="spec-chip">316L stainless steel</span>
+          <span class="spec-chip">ATEX II 2GD</span>
+          <span class="spec-chip">PEEK tribology</span>
+          <span class="spec-chip">Seawater compatible</span>
+          <span class="spec-chip">Variable displacement P60/P180</span>
+          <span class="spec-chip">2 to 90°C (P1)</span>
+        </div>
+        <div class="phc-links">
+          <a href="/products/axial-piston-pumps/" class="btn-view">View Full Pump Range <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="/contact/" class="btn-spec">Request Specs</a>
+        </div>
+      </div>
+      <div class="phc-visual">
+        <div class="phc-icon-large">⚙️</div>
+        <div class="phc-model-list">
+          <span class="model-pill">P1</span><span class="model-pill">P3</span><span class="model-pill">P6</span>
+          <span class="model-pill">P15</span><span class="model-pill">P30</span><span class="model-pill">P60</span>
+          <span class="model-pill">P180</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MOTORS, CYLINDERS, VALVES -->
+<section class="section section-mid" aria-labelledby="core-products-heading">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">02 to 04 Core Components</div>
+      <h2 id="core-products-heading">Motors, Cylinders, <em>and Valves</em></h2>
+      <p>A complete set of actuators and control components, every one manufactured for water hydraulic service in 316L stainless steel with PEEK wear surfaces. Not adapted from oil. Engineered from the start for water.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <!-- MOTORS -->
+      <div id="motors" class="product-card reveal">
+        <div class="pc-accent" style="background:linear-gradient(90deg,var(--aqua),#0098B8)"></div>
+        <div class="pc-body">
+          <div class="pc-icon">🔄</div>
+          <div class="pc-cat">02 Motors</div>
+          <h3>Water Hydraulic Motors</h3>
+          <p>316L stainless steel hydraulic motors operating on tap water or seawater with no oil, no glycols, and no additives. Consistent torque output across the operating range with approximately 90% mechanical efficiency.</p>
+          <div class="pc-specs">
+            <div class="pc-spec"><span class="pc-spec-label">Mechanical Efficiency</span><span class="pc-spec-value">~90%</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Construction</span><span class="pc-spec-value">316L SS / PEEK</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Certification</span><span class="pc-spec-value">ATEX Approved</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Fluid Compatibility</span><span class="pc-spec-value">Tap / Seawater</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Port Configurations</span><span class="pc-spec-value">Multiple Available</span></div>
+          </div>
+        </div>
+        <div class="pc-footer">
+          <a href="/products/water-hydraulic-motors/" class="pc-link">View Motors <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <!-- CYLINDERS -->
+      <div id="cylinders" class="product-card reveal" style="transition-delay:.08s">
+        <div class="pc-accent" style="background:linear-gradient(90deg,#00D4B4,var(--aqua))"></div>
+        <div class="pc-body">
+          <div class="pc-icon">📏</div>
+          <div class="pc-cat">03 Cylinders</div>
+          <h3>Water Hydraulic Cylinders</h3>
+          <p>Tie rod cylinders engineered from the ground up for water hydraulics. Seven bore sizes generating up to 196 kN force at 160 bar. 316L stainless steel body, carbon-reinforced PEEK wear surfaces, 0.98 mechanical efficiency. Built for water, not adapted from oil.</p>
+          <div class="pc-specs">
+            <div class="pc-spec"><span class="pc-spec-label">Max Force</span><span class="pc-spec-value">196 kN at 160 bar</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Bore Sizes</span><span class="pc-spec-value">32 mm to 125 mm (7)</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Body Material</span><span class="pc-spec-value">316L SS</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Seals</span><span class="pc-spec-value">Carbon-PEEK</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Mechanical Efficiency</span><span class="pc-spec-value">0.98</span></div>
+          </div>
+        </div>
+        <div class="pc-footer">
+          <a href="/products/water-hydraulic-cylinders/" class="pc-link">View Cylinders <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <!-- VALVES -->
+      <div id="valves" class="product-card reveal" style="transition-delay:.16s">
+        <div class="pc-accent" style="background:linear-gradient(90deg,#5090F0,var(--aqua))"></div>
+        <div class="pc-body">
+          <div class="pc-icon">🔧</div>
+          <div class="pc-cat">04 Valves</div>
+          <h3>Water Hydraulic Valves</h3>
+          <p>Six valve families rated to 200 bar in 316L stainless steel, featuring patented hydrostatic face-valve technology with no pilot galleries to clog. ATEX approved. ISO 9001 certified. Precision flow and pressure control for water, seawater, and corrosive low-viscosity fluids.</p>
+          <div class="pc-specs">
+            <div class="pc-spec"><span class="pc-spec-label">Max Pressure</span><span class="pc-spec-value">200 bar</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Valve Families</span><span class="pc-spec-value">6 Types</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Construction</span><span class="pc-spec-value">316L SS</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Technology</span><span class="pc-spec-value">Patented Face-Valve</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Standard</span><span class="pc-spec-value">MSS SP-161</span></div>
+          </div>
+        </div>
+        <div class="pc-footer">
+          <a href="/products/water-hydraulic-valves/" class="pc-link">View Valves <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HPU -->
+<section id="hpu" class="section section-dark" aria-labelledby="hpu-heading">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">05 Hydraulic Power Units</div>
+      <h2 id="hpu-heading"><em>Pick a Pack HPU</em></h2>
+      <p>The heart of any water hydraulic system. Compact, stainless, and configurable in five steps from pump to accessories using the Pick a Pack configurator.</p>
+    </div>
+
+    <div class="product-hero-card reveal">
+      <div class="phc-body">
+        <div class="phc-eyebrow">
+          <span class="phc-badge">Complete Systems</span>
+          <span class="phc-num">Pick a Pack Configurator</span>
+        </div>
+        <h2>Water Hydraulics <em>HPUs</em></h2>
+        <p>Compact. Stainless. Built for clean power. 316L stainless steel, carbon-reinforced PEEK wear surfaces, 100% oil-free operation on tap or seawater. The Pick a Pack configurator walks you through five steps (pump model, motor, reservoir, filtration, and accessories) to produce a complete, fully specified HPU tailored to your application. All WaterQuest HPU designs are built from first principles for water service, not adapted from oil-based designs.</p>
+        <div class="spec-chips">
+          <span class="spec-chip">316L stainless construction</span>
+          <span class="spec-chip">100% oil-free</span>
+          <span class="spec-chip">Tap water or seawater</span>
+          <span class="spec-chip">Carbon-PEEK wear surfaces</span>
+          <span class="spec-chip">5-step Pick a Pack configurator</span>
+          <span class="spec-chip">Integrated filtration</span>
+        </div>
+        <div class="phc-links">
+          <a href="/products/water-hydraulics-hpu/" class="btn-view">Configure Your HPU <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="/contact/" class="btn-spec">Talk to an Engineer</a>
+        </div>
+      </div>
+      <div class="phc-visual">
+        <div class="phc-icon-large">🏭</div>
+        <div class="phc-model-list">
+          <span class="model-pill">Step 1: Pump</span>
+          <span class="model-pill">Step 2: Motor</span>
+          <span class="model-pill">Step 3: Reservoir</span>
+          <span class="model-pill">Step 4: Filtration</span>
+          <span class="model-pill">Step 5: Accessories</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FIRE PUMP + DESAL -->
+<section class="section section-mid" aria-labelledby="specialty-heading">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">06 to 07 Specialist Products</div>
+      <h2 id="specialty-heading">Fire Suppression Pumps <em>and Desalination</em> Power Centers</h2>
+      <p>Two purpose-designed systems for demanding specialist applications: high-pressure water mist fire suppression and integrated reverse osmosis desalination with energy recovery.</p>
+    </div>
+
+    <div class="product-grid" style="grid-template-columns:1fr 1fr">
+
+      <!-- FIRE PUMP -->
+      <div id="fire-pump" class="product-card reveal">
+        <div class="pc-accent" style="background:linear-gradient(90deg,#E84830,#C83020)"></div>
+        <div class="pc-body">
+          <div class="pc-icon">🔥</div>
+          <div class="pc-cat">06 Fire Suppression</div>
+          <h3>Axial Piston Fire Suppression Pumps</h3>
+          <p>100% oil-free high-pressure water mist fire suppression pumps. Nine-piston smooth flow design delivers ripple-free pressure to 160 bar from a single compact unit. ATEX certified for Zone 1 and Zone 21 hazardous environments. No accumulators required. Fourteen models from P1 to P180 covering the full range of suppression system demands.</p>
+          <div class="pc-specs">
+            <div class="pc-spec"><span class="pc-spec-label">Max Pressure</span><span class="pc-spec-value">160 bar</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Certification</span><span class="pc-spec-value">ATEX Zone 1 / Zone 21</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Models</span><span class="pc-spec-value">P1 to P180</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Accumulators Required</span><span class="pc-spec-value">None</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Fluid</span><span class="pc-spec-value">100% Oil-Free Water</span></div>
+          </div>
+        </div>
+        <div class="pc-footer">
+          <a href="/products/axial-piston-fire-pumps/" class="pc-link">View Fire Suppression Pumps <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <!-- DESAL -->
+      <div id="desal" class="product-card reveal" style="transition-delay:.1s">
+        <div class="pc-accent" style="background:linear-gradient(90deg,#0890C8,#00C8D4)"></div>
+        <div class="pc-body">
+          <div class="pc-icon">💧</div>
+          <div class="pc-cat">07 Desalination</div>
+          <h3>Power Center for Reverse Osmosis</h3>
+          <p>Integrated reverse osmosis power unit combining high-pressure axial piston pump, energy recovery device, booster pump, and electric motor in a single compact assembly. Up to 70% energy savings versus non-recovery systems. Eight sizes covering 3 to 1,000 m³/day capacity. 8,000-hour service intervals. 100% oil-free. Plug-and-desalt in hours.</p>
+          <div class="pc-specs">
+            <div class="pc-spec"><span class="pc-spec-label">Energy Savings</span><span class="pc-spec-value">Up to 70%</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Capacity Range</span><span class="pc-spec-value">3 to 1,000 m³/day</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Sizes Available</span><span class="pc-spec-value">8 Models</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Service Interval</span><span class="pc-spec-value">8,000 hours</span></div>
+            <div class="pc-spec"><span class="pc-spec-label">Design</span><span class="pc-spec-value">Plug-and-Desalt</span></div>
+          </div>
+        </div>
+        <div class="pc-footer">
+          <a href="/products/power-center-reverse-osmosis/" class="pc-link">View Desalination Power Center <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MATERIALS CALLOUT -->
+<div class="materials-strip" aria-label="Materials engineering">
+  <div class="materials-inner">
+    <div class="section-header center">
+      <div class="section-label" style="justify-content:center">Materials Engineering</div>
+      <h2>Why <em>Every Material Choice</em> Matters</h2>
+      <p>Oil hydraulic systems are engineered around oil's properties: carbon steel, rubber seals, aluminium castings. Every one of those materials fails in water service. WaterQuest uses the right materials from the start.</p>
+    </div>
+    <div class="materials-grid">
+      <div class="mat-item reveal">
+        <div class="mat-icon">🧱</div>
+        <h4>316L Stainless Steel</h4>
+        <p>Exceptional corrosion resistance in water, seawater, and chloride environments. Standard for all structural and wetted components throughout the WaterQuest range. The same alloy used in marine, pharmaceutical, and food processing infrastructure worldwide.</p>
+        <div class="mat-code">316L SS · EN 1.4404</div>
+      </div>
+      <div class="mat-item reveal" style="transition-delay:.06s">
+        <div class="mat-icon">⚗️</div>
+        <h4>Carbon-Reinforced PEEK</h4>
+        <p>Polyether ether ketone with carbon fibre reinforcement provides self-lubricating wear performance that water cannot deliver. Used for all bearing surfaces, piston seals, valve seats, and tribological contact points. Chemically inert to water, seawater, and most process fluids.</p>
+        <div class="mat-code">CF30-PEEK · Grade 450G</div>
+      </div>
+      <div class="mat-item reveal" style="transition-delay:.12s">
+        <div class="mat-icon">🔩</div>
+        <h4>Ceramic and Hard Chrome Coatings</h4>
+        <p>Piston rods in water hydraulic cylinders require hardness for seal wear resistance and corrosion protection that neither bare stainless nor chrome-plated carbon steel can reliably deliver. Ceramic and 17-4PH hard chrome coatings provide both in a single surface treatment.</p>
+        <div class="mat-code">Cr₂O₃ Ceramic · 17-4PH</div>
+      </div>
+      <div class="mat-item reveal" style="transition-delay:.18s">
+        <div class="mat-icon">🔬</div>
+        <h4>PTFE and UHMWPE</h4>
+        <p>Polytetrafluoroethylene and ultra-high molecular weight polyethylene complement PEEK in sealing applications where extreme chemical inertness or very low static friction is required. Used in cylinder seals, valve seats, and fittings throughout the WaterQuest range.</p>
+        <div class="mat-code">PTFE · UHMWPE</div>
+      </div>
+    </div>
+
+    <div class="cert-row reveal">
+      <div class="cert-badge"><div class="cert-name">ATEX II 2GD</div><div class="cert-desc">Zone 1 / Zone 21</div></div>
+      <div class="cert-badge"><div class="cert-name">ISO 9001</div><div class="cert-desc">Quality System</div></div>
+      <div class="cert-badge"><div class="cert-name">MSS SP-161</div><div class="cert-desc">Valve Standard</div></div>
+      <div class="cert-badge"><div class="cert-name">MARPOL</div><div class="cert-desc">Marine Compliance</div></div>
+      <div class="cert-badge"><div class="cert-name">TRL 9</div><div class="cert-desc">Proven Deployment</div></div>
+      <div class="cert-badge"><div class="cert-name">Transport Canada</div><div class="cert-desc">Vessel Accepted</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- WQS STAINLESS BANNER -->
+<div id="stainless" class="stainless-banner">
+  <div class="stainless-inner">
+    <div class="sb-text reveal">
+      <div class="sb-eyebrow">Sister Brand</div>
+      <h2><span style="color:#C8201A;font-size:1.4em;letter-spacing:-0.03em;display:block;line-height:1.1;margin-bottom:10px;">WQS Stainless</span><span>316 Stainless Steel</span> Fittings and Instrumentation</h2>
+      <p>WQS Stainless is the fittings and instrumentation division of the WaterQuest group. Premium 316 stainless steel fittings, adapters, pipe connections, flow measurement instruments, and Twin Ferrule TrAle LOK connections for hydrogen, natural gas, chemicals, bio-tech, food processing, and mining applications.</p>
+      <p>Every WaterQuest water hydraulic system specifies WQS Stainless fittings as standard, ensuring end-to-end material consistency and corrosion resistance.</p>
+      <a href="/products/wqs-stainless/" class="sb-btn">Visit WQS Stainless <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="sb-products reveal" style="transition-delay:.1s">
+      <div class="sb-prod-item"><span class="sb-prod-name">Fittings and Adapters</span><span class="sb-prod-std">316L SS</span></div>
+      <div class="sb-prod-item"><span class="sb-prod-name">Instrumentation and Gauges</span><span class="sb-prod-std">ISO / SAE</span></div>
+      <div class="sb-prod-item"><span class="sb-prod-name">TrAle LOK Twin Ferrule</span><span class="sb-prod-std">High-Pressure</span></div>
+      <div class="sb-prod-item"><span class="sb-prod-name">Flow Measurement</span><span class="sb-prod-std">API / ASME</span></div>
+      <div class="sb-prod-item"><span class="sb-prod-name">Pipe and Tubing Fittings</span><span class="sb-prod-std">FDA / NSF</span></div>
+      <div class="sb-prod-item"><span class="sb-prod-name">Accessories and Connectors</span><span class="sb-prod-std">USP / Dicsa</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="pilot-cta">
+  <div class="pilot-cta-inner">
+    <h2 class="reveal">Ready to Specify <em>Oil-Free?</em></h2>
+    <p class="reveal">Our engineering team can help you select the right products for your application, size your system, and navigate available funding under CleanBC, DMAF, ICIP, and Canada Budget 2025 clean technology incentives.</p>
+    <div class="cta-btn-row reveal">
+      <a href="/knowledge-hub/" class="btn-primary btn">View Pilot Program <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="/contact/" class="btn-outline btn">Talk to an Engineer</a>
+    </div>
+  </div>
+</div><script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 30), {passive: true});
+  (function(){
+    const c = document.getElementById('bubbles-root');
+    for(let i = 0; i < 16; i++){
+      const b = document.createElement('div');
+      b.className = 'bubble';
+      const s = Math.random() * 8 + 3, d = (Math.random() - .5) * 90;
+      b.style.cssText = `width:${s}px;height:${s}px;left:${Math.random()*100}%;bottom:${Math.random()*8}%;--drift:${d}px;animation-duration:${Math.random()*18+10}s;animation-delay:${Math.random()*16}s;`;
+      c.appendChild(b);
+    }
+  })();
+  const obs = new IntersectionObserver(entries => entries.forEach(e => {
+    if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); }
+  }), {threshold: 0.1});
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script><!-- WQ_REFERENCE_RAIL_START -->
+<aside class="wq-reference-rail" aria-label="Engineering references">
+  <a href="/calculations/"><small>Reference</small><strong>Engineering Calculators</strong></a>
+  <a href="/glossary/"><small>Reference</small><strong>Technical Glossary</strong></a>
+</aside>
+<!-- WQ_REFERENCE_RAIL_END -->
+<!-- WQ_CONTEXT_APPS_START -->
+<section class="wq-context-apps" aria-label="Related application pages">
+  <div class="wq-context-wrap">
+    <div>
+      <h2>Related application pages</h2>
+      <p>Application pages connect this section to specific water hydraulic projects and operating problems.</p>
+    </div>
+    <div class="wq-app-links"><a href="/applications/gate-actuation/">Gate Actuation</a><a href="/applications/flow-control/">Flow Control</a><a href="/applications/fire-suppression/">Fire Suppression</a><a href="/applications/dust-suppression/">Dust Suppression</a><a href="/applications/nozzle-technology/">Nozzle Technology</a><a href="/applications/bilge-valve/">Marine Bilge Valve</a></div>
+  </div>
+</section>
+<!-- WQ_CONTEXT_APPS_END -->
+<!-- WQS_ENRICHMENT_START -->
+<style>
+.wqs-enrichment{background:#f5fbf9;border-top:1px solid #d9e8e3;color:#15302c;font-family:Nunito Sans,Arial,sans-serif;padding:56px 6vw}.wqs-enrichment__inner{margin:0 auto;max-width:1120px}.wqs-enrichment__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-enrichment h2{font-size:clamp(28px,4vw,48px);line-height:1.05;margin:8px 0 16px}.wqs-enrichment p{color:#4b625d;font-size:18px;line-height:1.65;max-width:900px}.wqs-enrichment__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px}.wqs-enrichment__panel{background:#fff;border:1px solid #d9e8e3;border-radius:8px;padding:22px}.wqs-enrichment__panel h3{font-size:18px;margin:0 0 12px}.wqs-enrichment ul{margin:0;padding-left:20px}.wqs-enrichment li{line-height:1.55;margin:7px 0}.wqs-enrichment__links{display:grid;gap:10px}.wqs-enrichment__links a{background:#fff;border:1px solid #d9e8e3;border-radius:8px;color:#15302c;display:grid;gap:4px;padding:14px;text-decoration:none}.wqs-enrichment__links span{color:#5f746f;font-size:14px;line-height:1.45}@media(max-width:760px){.wqs-enrichment{padding:40px 18px}.wqs-enrichment__grid{grid-template-columns:1fr}}
+</style>
+<section class="wqs-enrichment" aria-label="Complete page details">
+  <div class="wqs-enrichment__inner">
+    <div class="wqs-enrichment__eyebrow">Complete archive details</div>
+    <h2>Products | Oil-Free Water Hydraulic Systems and Components</h2>
+    <p>WaterQuest Solutions</p>
+    <div class="wqs-enrichment__grid">
+      
+      <div class="wqs-enrichment__panel"><h3>Primary page focus</h3><ul><li>Products Overview built for water service.</li><li>Every Component Engineered from First Principles</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Full section outline</h3><ul><li>Axial Piston Pumps</li><li>Motors, Cylinders, and Valves</li><li>Pick a Pack HPU</li><li>Water Hydraulics HPUs</li><li>Fire Suppression Pumps and Desalination Power Centers</li><li>Why Every Material Choice Matters</li><li>WQS Stainless 316 Stainless Steel Fittings and Instrumentation</li><li>Ready to Specify Oil-Free?</li><li>Related application pages</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Detailed topics</h3><ul><li>Water Hydraulic Motors</li><li>Water Hydraulic Cylinders</li><li>Water Hydraulic Valves</li><li>Axial Piston Fire Suppression Pumps</li><li>Power Center for Reverse Osmosis</li></ul></div>
+    </div>
+    <div class="wqs-enrichment__panel" style="margin-top:18px"><h3>Related pages with more detail</h3><div class="wqs-enrichment__links"><a href="/products/axial-piston-pumps/p1/"><strong>P1 Micro Water Hydraulic Pump</strong><span>The WaterQuest P1 is a compact, oil-free water hydraulic pump delivering up to 2.1 L/min at 160 bar. Ideal for precision hydraulic circuits, lab systems, and HPU integration.</span></a><a href="/products/axial-piston-pumps/"><strong>Axial Piston Pumps</strong><span>WaterQuest Solutions axial piston water hydraulic pumps. 100% oil-free, up to 160 bar continuous pressure, 430 l/min max flow. Seven models P1 to P180, 316 stainless steel, ATEX II 2GD certified. Tap water, seawater, technical water, and specialist fluids.</span></a><a href="/products/water-hydraulic-valves/valve-flow-control/"><strong>Flow Control</strong><span>WaterQuest Solutions Flow Control Valve. 316 stainless steel, 0.1 to 200 bar, DN3 and DN6, manually adjusted thumbwheel with tamper-proof locking screw, helical port design for precise control, 4 turns full travel. Tool-free operator adjustment.</span></a><a href="/products/water-hydraulic-valves/valve-hose-burst/"><strong>Hose Burst</strong><span>WaterQuest Solutions Hose Burst Valve. 316 stainless steel, 0.1 to 200 bar, DN3 and DN6, allows free flow in both directions under normal conditions then immediately stops flow surge on hose burst. Internally spring adjusted. 1/4</span></a><a href="/products/water-hydraulic-motors/m15/"><strong>M15 Water Hydraulic Motor</strong><span>The WaterQuest M15 water hydraulic motor delivers up to 45 Nm torque at 160 bar. Available in 15cc and 19cc displacement, 316 stainless steel, oil-free operation for industrial, marine, and municipal applications.</span></a><a href="/products/water-hydraulic-motors/m3/"><strong>M3 Water Hydraulic Motor</strong><span>The WaterQuest M3 water hydraulic motor delivers 7.1 Nm torque at 160 bar. 3cc displacement, 316 stainless steel, oil-free operation for food processing, marine, and industrial applications.</span></a><a href="/products/water-hydraulic-motors/m30/"><strong>M30 Water Hydraulic Motor</strong><span>The WaterQuest M30 water hydraulic motor delivers up to 84 Nm torque at 160 bar. Available in 30cc and 35cc displacement, 316 stainless steel, oil-free operation for heavy-duty industrial, mining, and offshore applications.</span></a><a href="/products/water-hydraulic-motors/m6/"><strong>M6 Water Hydraulic Motor</strong><span>The WaterQuest M6 water hydraulic motor delivers 14.2 Nm torque at 160 bar. 6cc displacement, 316 stainless steel, oil-free operation for food processing, marine, and industrial applications.</span></a><a href="/products/axial-piston-pumps/p15/"><strong>P15 Axial Piston Water Hydraulic Pump</strong><span>The WaterQuest P15 axial piston pump delivers up to 37.2 L/min at 160 bar. Three displacements: 12, 15, and 19 cc/rev. Unboosted and boosted configurations, 316 stainless steel, oil-free, ATEX II 2GD certified.</span></a><a href="/products/axial-piston-pumps/p180/"><strong>P180 Axial Piston Water Hydraulic Pump</strong><span>The WaterQuest P180 axial piston pump delivers up to 430 L/min at 160 bar. Three displacements: 135, 180, 225 cc/rev. Boosted only, mechanical seal, spline drive, 2-inch SAE flange pressure ports. 316 stainless steel, oil-free, ATEX II 2GD.</span></a></div></div>
+  </div>
+</section>
+<!-- WQS_ENRICHMENT_END -->
+<!-- WQ_GLOBAL_FOOTER_START -->
+<footer class="wq-site-footer" role="contentinfo">
+  <div class="wq-footer-container">
+    <div class="wq-footer-grid">
+      <div class="wq-footer-brand">
+        <span class="wq-logo-main">WaterQuest Solutions</span>
+        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Products</h5>
+        <ul><li><a href="/products/" class="active">Products Overview</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/water-hydraulic-motors/">Water Hydraulic Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Water Hydraulic Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Water Hydraulic Valves</a></li><li><a href="/products/water-hydraulics-hpu/">Water Hydraulics HPUs</a></li><li><a href="/products/axial-piston-fire-pumps/">Fire Pumps</a></li><li><a href="/products/power-center-reverse-osmosis/">Desalination Power Center</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Core Pages</h5>
+        <ul><li><a href="/products/" class="active">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
+          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
+          <li>558 East Kent Ave S</li>
+          <li>Vancouver, BC V5X 4V6</li>
+          <li>Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
+  </div>
+</footer>
+<!-- WQ_GLOBAL_FOOTER_END -->
+<script id="wq-global-shell-js">
+    (function(){
+      var nav=document.getElementById("wq-nav");
+      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
+      var menuButton=document.querySelector(".wq-menu-toggle");
+      var mobileMenu=document.getElementById("wq-mobile-menu");
+      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
+      var bubbles=document.getElementById("wq-global-bubbles");
+      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
+      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
+      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
+      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
+      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
+      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
+      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
+      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
+      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
+      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
+      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
+      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
+    })();
+  </script>
+
+</body>
+</html>

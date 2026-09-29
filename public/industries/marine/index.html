@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Hydraulics for Marine & Coastal Applications | WaterQuest Solutions</title>
+  <meta name="description" content="Zero ocean discharge. Saltwater ready. Certified for vessel use. WaterQuest Solutions supplies oil-free water hydraulic systems for commercial vessels, fishing boats, ferries, offshore support, and coastal infrastructure." />
+  <meta name="keywords" content="marine water hydraulics, oil-free vessel hydraulics, zero ocean discharge, saltwater hydraulic system, fishing boat hydraulics, offshore hydraulics, Transport Canada hydraulics, ABS Lloyd's Register hydraulics, MARPOL compliant hydraulics" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy:         #070F1C;
+      --navy-mid:     #0A1830;
+      --navy-light:   #0F2248;
+      --aqua:         #00C8D4;
+      /* Marine accent , deeper steel-blue-cyan, cold ocean tones */
+      --ocean:        #0098B8;
+      --ocean-light:  #00B8D8;
+      --ocean-glow:   rgba(0,152,184,0.18);
+      --steel:        #FFFFFF;
+      --steel-light:  #FFFFFF;
+      --salt:         #C8DCE8;
+      --silver:       #FFFFFF;
+      --silver-light: #FFFFFF;
+      --white:        #FFFFFF;
+      --body-text:    #FFFFFF;
+      --muted:        #FFFFFF;
+      --border:       rgba(140,170,200,0.16);
+      --border-ocean: rgba(0,152,184,0.32);
+      --font-display: 'Avenir', 'Avenir Next', 'Nunito Sans', sans-serif;
+      --font-body:    'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+      --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px;
+      --shadow-ocean: 0 0 50px rgba(0,152,184,0.2);
+      --max-width: 1240px; --section-pad: 100px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); background: var(--navy); color: var(--body-text); line-height: 1.7; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    .label { font-family: var(--font-display); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ocean-light); }
+    h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 900; line-height: 1.15; color: var(--white); }
+    h1 { font-size: clamp(2.4rem,5vw,4.2rem); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(1.9rem,3.5vw,3rem); letter-spacing: -0.02em; }
+    h3 { font-size: clamp(1.1rem,2vw,1.45rem); }
+    h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ocean-light); }
+    p  { color: var(--body-text); font-size: 1.02rem; }
+    .text-ocean { color: var(--ocean-light); }
+    .text-muted { color: var(--muted); }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
+    .section { padding: var(--section-pad) 0; }
+    .section-alt  { background: var(--navy-mid); }
+    .section-dark { background: var(--navy); }
+
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: var(--radius-sm); font-family: var(--font-display); font-weight: 700; font-size: 0.88rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border: none; transition: all 0.25s ease; }
+    .btn-primary { background: var(--ocean-light); color: var(--navy); }
+    .btn-primary:hover { background: #00D8F8; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,152,184,0.5); }
+    .btn-outline { background: transparent; color: var(--ocean-light); border: 1.5px solid var(--border-ocean); }
+    .btn-outline:hover { background: var(--ocean-glow); border-color: var(--ocean-light); }
+
+    /* NAV */
+    #nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: background 0.3s, backdrop-filter 0.3s; }
+    #nav.scrolled { background: rgba(7,15,28,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .nav-logo .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.15rem; color: var(--white); letter-spacing: -0.01em; }
+    .nav-logo .logo-sub  { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--aqua); margin-top: 1px; display: block; }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { font-family: var(--font-display); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--silver); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--ocean-light); }
+    .nav-cta { background: var(--aqua) !important; color: var(--navy) !important; padding: 9px 20px; border-radius: var(--radius-sm); }
+
+    /* BUBBLES , marine style, slightly larger with more drift */
+    .bubble-layer { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 1; }
+    .bubble { position: absolute; border-radius: 50%; background: radial-gradient(circle at 35% 35%, rgba(0,152,184,0.55), rgba(0,100,140,0.1) 60%, transparent 80%); border: 1px solid rgba(0,152,184,0.2); opacity: 0; animation: bubble-rise linear infinite; }
+    @keyframes bubble-rise { 0%{transform:translateY(0) translateX(0) scale(1);opacity:0} 8%{opacity:0.5} 50%{transform:translateY(-55vh) translateX(var(--drift)) scale(0.85);opacity:0.25} 92%{opacity:0.08} 100%{transform:translateY(-110vh) translateX(calc(var(--drift)*1.6)) scale(0.4);opacity:0} }
+
+    /* REVEAL */
+    .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-left  { opacity:0; transform:translateX(-28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-left.visible  { opacity:1; transform:translateX(0); }
+    .reveal-right { opacity:0; transform:translateX(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-right.visible { opacity:1; transform:translateX(0); }
+
+    .section-header { margin-bottom: 60px; }
+    .section-header .label { margin-bottom: 14px; }
+    .section-header h2 { margin-bottom: 16px; }
+    .section-header p { max-width: 620px; font-size: 1.08rem; color: var(--silver-light); }
+    .section-header.center { text-align: center; }
+    .section-header.center p { margin: 0 auto; }
+
+    /* ================================================================
+       HERO , MARINE
+    ================================================================ */
+    #hero {
+      position: relative; min-height: 85vh;
+      display: flex; align-items: center;
+      overflow: hidden; padding-top: 72px;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 90% 70% at 65% 40%,  rgba(0,100,160,0.3) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 50% at 15% 70%,  rgba(0,60,100,0.25) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 40% at 85% 80%,  rgba(0,40,80,0.2) 0%, transparent 55%),
+        linear-gradient(175deg, #040B16 0%, #070F1C 45%, #0A1628 100%);
+    }
+    /* Deep ocean depth lines */
+    .depth-lines {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(0,152,184,0.03) 1px, transparent 1px);
+      background-size: 100% 48px;
+      mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    }
+    /* Animated sonar pulse */
+    .sonar-ring {
+      position: absolute; border-radius: 50%;
+      border: 1px solid rgba(0,152,184,0.15);
+      top: 50%; left: 62%; transform: translate(-50%,-50%);
+      animation: sonar-expand ease-out infinite;
+    }
+    .sonar-ring:nth-child(1) { width: 200px; height: 200px; animation-duration: 5s; animation-delay: 0s; }
+    .sonar-ring:nth-child(2) { width: 200px; height: 200px; animation-duration: 5s; animation-delay: 1.2s; }
+    .sonar-ring:nth-child(3) { width: 200px; height: 200px; animation-duration: 5s; animation-delay: 2.5s; }
+    @keyframes sonar-expand {
+      0%   { transform:translate(-50%,-50%) scale(0.5); opacity:0.4; }
+      100% { transform:translate(-50%,-50%) scale(5); opacity:0; }
+    }
+
+    .hero-content { position: relative; z-index: 2; max-width: var(--max-width); margin: 0 auto; padding: 80px 32px; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 72px; align-items: center; }
+    .hero-text .label { margin-bottom: 20px; }
+    .hero-text h1 { margin-bottom: 26px; }
+    .hero-text h1 span { color: var(--ocean-light); }
+    .hero-lead { font-size: 1.14rem; color: var(--silver-light); max-width: 520px; line-height: 1.8; margin-bottom: 36px; }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+
+    /* Cert strip */
+    .cert-strip {
+      display: flex; flex-wrap: wrap; gap: 10px;
+    }
+    .cert-pill {
+      padding: 8px 18px; border: 1px solid var(--border-ocean);
+      border-radius: 100px; font-size: 0.76rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--ocean-light); background: rgba(0,152,184,0.07);
+    }
+
+    /* Hero visual , vessel cross-section SVG */
+    .hero-visual { display: flex; align-items: center; justify-content: center; }
+    .vessel-svg { width: 100%; max-width: 430px; filter: drop-shadow(0 0 50px rgba(0,152,184,0.3)); animation: vessel-float 7s ease-in-out infinite; }
+    @keyframes vessel-float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+
+    /* Stat badges below hero on mobile */
+    .hero-kpi-strip { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-top: 36px; }
+    .hero-kpi { text-align: center; padding: 16px 8px; background: rgba(0,152,184,0.07); border: 1px solid var(--border-ocean); border-radius: var(--radius-md); }
+    .hero-kpi .knum { font-family: var(--font-display); font-size: 1.4rem; font-weight: 900; color: var(--ocean-light); line-height: 1; margin-bottom: 5px; }
+    .hero-kpi .klbl { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; line-height: 1.4; }
+
+    /* ================================================================
+       PROBLEM vs SOLUTION
+    ================================================================ */
+    .compare-banner {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg); overflow: hidden;
+      display: grid; grid-template-columns: 1fr auto 1fr;
+    }
+    .cmp-col { padding: 44px 40px; }
+    .cmp-divider { display: flex; align-items: center; justify-content: center; background: var(--navy-mid); padding: 0 4px; width: 56px; }
+    .vs-pill { writing-mode: vertical-lr; font-family: var(--font-display); font-size: 0.7rem; font-weight: 900; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); padding: 16px 0; }
+    .cmp-col-head { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    .cmp-col-head .icon { font-size: 1.4rem; }
+    .cmp-col-head h3 { font-size: 1rem; }
+    .cmp-list { display: flex; flex-direction: column; gap: 14px; }
+    .cmp-item { font-size: 0.93rem; color: var(--silver); line-height: 1.6; padding-left: 20px; position: relative; }
+    .cmp-item::before { content:''; position:absolute; left:0; top:8px; width:7px; height:7px; border-radius:50%; }
+    .danger .cmp-item::before  { background: rgba(255,90,90,0.7); }
+    .safe   .cmp-item::before  { background: var(--ocean-light); }
+    .cmp-footnote { margin-top:20px; padding:14px 18px; background:rgba(0,0,0,0.2); border-radius:var(--radius-sm); font-size:0.84rem; color:var(--muted); font-style:italic; }
+    .safe .cmp-footnote { color:var(--ocean-light); opacity:0.8; }
+
+    /* ================================================================
+       SIX REASONS
+    ================================================================ */
+    .reasons-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .reason-card {
+      background: var(--navy-light); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 36px 32px;
+      position: relative; overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+    .reason-card::after { content:attr(data-num); position:absolute; bottom:-12px; right:16px; font-size:5.5rem; font-weight:900; line-height:1; color:rgba(0,152,184,0.06); font-family:var(--font-display); pointer-events:none; }
+    .reason-card:hover { border-color: var(--border-ocean); transform: translateY(-5px); box-shadow: var(--shadow-ocean); }
+    .reason-card .r-icon { font-size: 1.8rem; margin-bottom: 16px; }
+    .reason-card h3 { font-size: 1.08rem; margin-bottom: 12px; }
+    .reason-card p  { font-size: 0.93rem; color: var(--muted); line-height: 1.7; }
+
+    /* ================================================================
+       REGULATORY / LEGAL RISK
+    ================================================================ */
+    #regulatory { position: relative; }
+    .reg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .reg-block { background: var(--navy-light); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 40px; }
+    .reg-block.danger-block { border-color: rgba(255,80,80,0.2); background: linear-gradient(135deg, rgba(255,40,40,0.04) 0%, var(--navy-light) 100%); }
+    .reg-block.safe-block   { border-color: var(--border-ocean); background: linear-gradient(135deg, rgba(0,152,184,0.05) 0%, var(--navy-light) 100%); }
+    .reg-block-head { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
+    .reg-block-head .icon { font-size: 1.4rem; }
+    .reg-block-head h3 { font-size: 1.05rem; }
+    .reg-items { display: flex; flex-direction: column; gap: 10px; }
+    .reg-item { font-size: 0.9rem; color: var(--silver); padding-left: 18px; position: relative; line-height: 1.6; }
+    .reg-item::before { content:''; position:absolute; left:0; top:8px; width:6px; height:6px; border-radius:50%; }
+    .danger-block .reg-item::before { background: rgba(255,100,100,0.65); }
+    .safe-block   .reg-item::before { background: var(--ocean-light); }
+    .reg-item strong { color: var(--silver-light); font-weight: 700; display: block; margin-bottom: 2px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.07em; }
+    .reg-item strong.sub { text-transform: none; letter-spacing: 0; font-size: 0.9rem; display: inline; }
+    .compat-strip {
+      grid-column: 1 / -1;
+      background: rgba(0,152,184,0.06);
+      border: 1px solid var(--border-ocean);
+      border-radius: var(--radius-md);
+      padding: 24px 32px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 20px;
+    }
+    .compat-strip p { color: var(--silver-light); font-size: 0.94rem; }
+    .compat-badges { display: flex; flex-wrap: wrap; gap: 10px; }
+    .compat-badge { padding: 7px 16px; border: 1px solid var(--border-ocean); border-radius: 100px; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ocean-light); }
+
+    /* ================================================================
+       COMPARISON TABLE
+    ================================================================ */
+    .table-wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; }
+    thead tr { background: var(--navy-light); }
+    thead th { padding: 18px 24px; font-family: var(--font-display); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; text-align: left; color: var(--silver); border-bottom: 1px solid var(--border); }
+    thead th.hl { color: var(--ocean-light) !important; }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background 0.2s; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: rgba(0,152,184,0.03); }
+    tbody td { padding: 16px 24px; font-size: 0.92rem; color: var(--silver); }
+    tbody td:first-child { color: var(--white); font-weight: 600; font-size: 0.88rem; }
+    .td-good { color: var(--ocean-light) !important; font-weight: 700; }
+    .td-bad  { color: rgba(255,100,100,0.75) !important; }
+    .td-mid  { color: var(--muted) !important; }
+    .hl-col  { background: rgba(0,152,184,0.04); }
+
+    /* ================================================================
+       APPLICATIONS , 6 categories
+    ================================================================ */
+    .apps-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .app-card { background: var(--navy-light); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: border-color 0.3s, box-shadow 0.3s; }
+    .app-card:hover { border-color: var(--border-ocean); box-shadow: var(--shadow-ocean); }
+    .app-card-head { padding: 24px 28px 18px; background: linear-gradient(135deg, rgba(0,152,184,0.07) 0%, transparent 100%); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px; }
+    .app-card-head .app-icon { font-size: 1.5rem; }
+    .app-card-head h3 { font-size: 1rem; }
+    .app-items { padding: 20px 28px 24px; display: flex; flex-direction: column; gap: 8px; }
+    .app-item { font-size: 0.88rem; color: var(--silver); display: flex; align-items: flex-start; gap: 10px; }
+    .app-item::before { content:'›'; color: var(--ocean-light); font-weight: 900; font-size: 1rem; line-height: 1.3; min-width: 12px; }
+
+    /* ================================================================
+       VESSEL RELIABILITY , 4 benefits with big layout
+    ================================================================ */
+    #reliability { position: relative; }
+    .reliability-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 28px; }
+    .reliability-card {
+      background: var(--navy-light); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 40px;
+      position: relative; overflow: hidden;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .reliability-card:hover { border-color: var(--border-ocean); box-shadow: var(--shadow-ocean); }
+    .reliability-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--ocean-light), transparent);
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .reliability-card:hover::before { opacity: 1; }
+    .r-step { font-family: var(--font-display); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; color: var(--ocean-light); opacity: 0.7; margin-bottom: 12px; text-transform: uppercase; }
+    .reliability-card h3 { font-size: 1.15rem; margin-bottom: 14px; }
+    .reliability-card p { font-size: 0.94rem; color: var(--muted); line-height: 1.75; margin: 0; }
+
+    /* ================================================================
+       CTA
+    ================================================================ */
+    #cta {
+      position: relative; overflow: hidden;
+      background: linear-gradient(175deg, #030A14 0%, #070F1E 45%, #040C18 100%);
+      padding: 110px 0;
+    }
+    #cta::before {
+      content: '';
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 700px; height: 400px; border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(0,152,184,0.12) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .cta-inner { position: relative; z-index: 2; max-width: 720px; margin: 0 auto; padding: 0 32px; text-align: center; }
+    .cta-inner .label { margin-bottom: 20px; }
+    .cta-inner h2 { margin-bottom: 22px; }
+    .cta-inner p { font-size: 1.06rem; color: var(--silver-light); margin-bottom: 40px; max-width: 580px; margin-left: auto; margin-right: auto; }
+    .cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
+    .cta-cert-row {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+      margin-bottom: 48px;
+    }
+    .cta-cert { padding: 8px 18px; border: 1px solid var(--border-ocean); border-radius: 100px; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ocean-light); background: rgba(0,152,184,0.07); }
+    .cta-stats { display: flex; justify-content: center; gap: 52px; flex-wrap: wrap; }
+    .cta-stat { text-align: center; }
+    .cta-stat .snum { font-size: 2.2rem; font-weight: 900; color: var(--ocean-light); font-family: var(--font-display); line-height: 1; }
+    .cta-stat .slbl { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); margin-top: 5px; }
+
+    /* FOOTER */
+    footer { background: #040810; border-top: 1px solid var(--border); padding: 64px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.2rem; color: var(--white); margin-bottom: 6px; }
+    .footer-brand .logo-sub { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--aqua); margin-bottom: 18px; display: block; }
+    .footer-brand p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
+    .footer-tagline { font-style: italic; color: var(--silver) !important; font-size: 0.88rem !important; }
+    .footer-col h5 { font-family: var(--font-display); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver); margin-bottom: 16px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul a { font-size: 0.88rem; color: var(--muted); transition: color 0.2s; }
+    .footer-col ul a:hover { color: var(--aqua); }
+    .footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-bottom p { font-size: 0.82rem; color: var(--muted); }
+    .footer-cert { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cert-badge { padding: 4px 12px; border: 1px solid var(--border); border-radius: 100px; font-size: 0.72rem; color: var(--silver); font-weight: 600; letter-spacing: 0.06em; }
+
+    @media (max-width:960px) {
+      :root { --section-pad:72px; }
+      .hero-content { grid-template-columns:1fr; gap:40px; }
+      .hero-visual { display:none; }
+      .hero-kpi-strip { grid-template-columns:repeat(2,1fr); }
+      .compare-banner { grid-template-columns:1fr; }
+      .cmp-divider { display:none; }
+      .reasons-grid { grid-template-columns:repeat(2,1fr); }
+      .reg-grid { grid-template-columns:1fr; }
+      .apps-grid { grid-template-columns:repeat(2,1fr); }
+      .reliability-grid { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr 1fr; }
+      .nav-links { display:none; }
+    }
+    @media (max-width:600px) {
+      :root { --section-pad:56px; }
+      .container { padding:0 20px; }
+      .cert-strip { gap:7px; }
+      .reasons-grid { grid-template-columns:1fr; }
+      .apps-grid { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr; }
+      .footer-bottom { flex-direction:column; gap:16px; text-align:center; }
+    }
+  </style><link rel="canonical" href="/industries/marine" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:title" content="Water Hydraulics for Marine &amp; Coastal Applications | WaterQuest Solutions" />
+  <meta property="og:description" content="Zero ocean discharge. Saltwater ready. Certified for vessel use. WaterQuest Solutions supplies oil-free water hydraulic systems for commercial vessels, fishing boats, ferries, offshore support, and coastal infrastructure." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/industries/marine" />
+  <meta property="og:image" content="/assets/waterquest-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Water Hydraulics for Marine &amp; Coastal Applications | WaterQuest Solutions" />
+  <meta name="twitter:description" content="Zero ocean discharge. Saltwater ready. Certified for vessel use. WaterQuest Solutions supplies oil-free water hydraulic systems for commercial vessels, fishing boats, ferries, offshore support, and coastal infrastructure." />
+  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
+  <link rel="alternate" hreflang="en-CA" href="/industries/marine" />
+  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
+  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"WebPage","@id":"/industries/marine#webpage","url":"/industries/marine","name":"Water Hydraulics for Marine & Coastal Applications | WaterQuest Solutions","description":"Zero ocean discharge. Saltwater ready. Certified for vessel use. WaterQuest Solutions supplies oil-free water hydraulic systems for commercial vessels, fishing boats, ferries, offshore support, and coastal infrastructure.","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"},{"@type":"ListItem","position":2,"name":"Industries","item":"/industries"},{"@type":"ListItem","position":3,"name":"Marine","item":"/industries/marine"}]}]}</script>
+  <style id="wq-global-shell-css">
+    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
+    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
+    body a{color:inherit}
+    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
+    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
+    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
+    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
+    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
+    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
+    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
+    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
+    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
+    main .btn.primary{color:var(--wq-navy)!important}
+    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
+    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
+    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
+    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
+    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
+    .wq-form-status.is-error{color:#ffb1b1!important}
+    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
+    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
+    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
+    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
+    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
+    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
+    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
+    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
+    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
+    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
+    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
+    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
+    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
+    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
+    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
+    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
+    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
+    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
+    .wq-hero-visual-text{padding:20px}
+    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
+    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
+    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
+    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
+    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
+    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
+    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
+    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
+    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
+    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
+    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
+    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
+    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
+    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
+    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
+    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
+    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
+    #wq-mobile-menu.open{display:block}
+    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
+    #wq-mobile-menu a:last-child{border-bottom:0}
+    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
+    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
+    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
+    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
+    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
+    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
+    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
+    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
+    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
+    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
+    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
+    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
+    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
+    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
+    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
+    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
+  </style>
+</head>
+<body class="wq-section-industries">
+<!-- WQ_GLOBAL_HEADER_START -->
+<div id="wq-global-bubbles" aria-hidden="true"></div>
+<nav id="wq-nav" role="navigation" aria-label="Main navigation">
+  <div class="wq-nav-inner">
+    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
+      <span class="wq-logo-main">WaterQuest Solutions</span>
+      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+    </a>
+    <ul class="wq-nav-links" role="list">
+      <li><a href="/products/">Products</a></li><li><a href="/industries/" class="active">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li>
+      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
+    </ul>
+    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
+  </div>
+</nav>
+<div id="wq-mobile-menu">
+  <a href="/products/">Products</a><a href="/industries/" class="active">Industries</a><a href="/technology/">Technology</a><a href="/knowledge-hub/">Knowledge Hub</a><a href="/about/">About</a>
+  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
+</div>
+<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
+<section class="wq-conversion-hero" aria-label="Page introduction">
+  <div class="wq-conversion-wrap">
+    <div>
+      <p class="wq-hero-eyebrow">Industry application</p>
+      <h1><span>Marine</span>: where oil has no place.</h1>
+      <p class="wq-hero-copy">See how water hydraulics changes the risk profile for equipment working near people, water, food, infrastructure, seawater, washdown, or regulated environments.</p>
+      <div class="wq-hero-actions">
+        <a class="wq-hero-cta" href="/applications/">See Related Applications</a>
+        <a class="wq-hero-secondary" href="/products/">Review Matching Products</a>
+      </div>
+    </div>
+    <a class="wq-hero-visual" href="/applications/">
+      <div class="wq-hero-picture" aria-hidden="true"></div>
+      <div class="wq-hero-visual-text">
+        <small>Field fit</small>
+        <strong>A cleaner hydraulic medium for demanding operating environments.</strong>
+        <span>Built to resonate with engineers, operators, and technical decision makers.</span>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- WQ_CONVERSION_HERO_END --><!-- NAV --><!-- HERO -->
+<!-- WQS_INDUSTRY_DATA_START -->
+<style>
+.wqs-industry-data{background:#eef8f6;border-top:1px solid #cae0db;border-bottom:1px solid #cae0db;color:#12312d;font-family:Nunito Sans,Arial,sans-serif;padding:54px 6vw}.wqs-industry-data__inner{margin:0 auto;max-width:1180px}.wqs-industry-data__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-industry-data h2{font-size:clamp(30px,4.5vw,56px);line-height:1.02;margin:8px 0 14px;max-width:960px}.wqs-industry-data p{color:#4a625d;font-size:18px;line-height:1.65;max-width:940px}.wqs-industry-data__stats{display:grid;gap:12px;grid-template-columns:repeat(4,minmax(0,1fr));margin:26px 0}.wqs-industry-data__stat{background:#fff;border:1px solid #cae0db;border-radius:8px;padding:16px}.wqs-industry-data__stat span{color:#08726f;display:block;font-size:12px;font-weight:900;text-transform:uppercase}.wqs-industry-data__stat strong{display:block;font-size:20px;margin-top:6px}.wqs-industry-data__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:22px}.wqs-industry-data__panel{background:#fff;border:1px solid #cae0db;border-radius:8px;padding:22px}.wqs-industry-data__panel h3{font-size:19px;margin:0 0 14px}.wqs-industry-data__panel ul{margin:0;padding-left:20px}.wqs-industry-data__panel li{line-height:1.55;margin:7px 0}.wqs-industry-data__cards{display:grid;gap:10px}.wqs-industry-data__card{background:#f9fdfc;border:1px solid #d7e8e4;border-radius:8px;color:#12312d;display:grid;gap:5px;padding:14px;text-decoration:none}.wqs-industry-data__card span{color:#5b726d;font-size:14px;line-height:1.45}@media(max-width:850px){.wqs-industry-data{padding:38px 18px}.wqs-industry-data__stats,.wqs-industry-data__grid{grid-template-columns:1fr}}
+</style>
+<section class="wqs-industry-data" aria-label="Industry data and matching details">
+  <div class="wqs-industry-data__inner">
+    <div class="wqs-industry-data__eyebrow">Industry data and matching details</div>
+    <h2>Marine &amp; Coastal: complete application detail</h2>
+    <p>Zero ocean discharge. Saltwater ready. Certified for vessel use. WaterQuest Solutions supplies oil-free water hydraulic systems for commercial vessels, fishing boats, ferries, offshore support, and coastal infrastructure.</p>
+    <div class="wqs-industry-data__stats">
+      <div class="wqs-industry-data__stat"><span>Industry group</span><strong>Marine &amp; Environment</strong></div>
+      <div class="wqs-industry-data__stat"><span>Best use</span><strong>Oil-free actuation</strong></div>
+      <div class="wqs-industry-data__stat"><span>Fluid medium</span><strong>Tap or sea water</strong></div>
+      <div class="wqs-industry-data__stat"><span>Materials</span><strong>316 SS + PEEK</strong></div>
+    </div>
+    <div class="wqs-industry-data__grid">
+      <div class="wqs-industry-data__panel"><h3>What this page should cover</h3><ul><li>Water Hydraulics for Marine &amp; Coastal.</li><li>Zero ocean discharge. Saltwater ready. Certified for vessel use. WaterQuest Solutions supplies oil-free water hydraulic systems for commercial vessels, fishing boats, ferries, offshore support, and coastal infrastructure.</li><li>Oil Hydraulics in Marine Environments A System That Fails at Sea</li><li>Why Water Hydraulics Fit Every Marine Application</li><li>Environmental &amp; Regulatory Risk Oil at Sea</li><li>Water vs Oil vs Air Marine Applications</li><li>Applications Across Vessel &amp; Coastal Systems</li><li>How Water Hydraulics Improve Vessel Reliability</li><li>The Only Contamination-Safe, Fire-Safe, Saltwater-Proof Hydraulic Solution.</li><li>Oil Systems Built Wrong for Marine</li><li>Water Hydraulics Made for the Sea</li><li>Zero Ocean Discharge</li></ul></div>
+      <div class="wqs-industry-data__panel"><h3>Matching products and systems</h3><div class="wqs-industry-data__cards"><a class="wqs-industry-data__card" href="/products/water-hydraulic-motors/m15/"><strong>M15 Water Hydraulic Motor</strong><span>The WaterQuest M15 water hydraulic motor delivers up to 45 Nm torque at 160 bar. Available in 15cc and 19cc displacement, 316 stainless steel, oil-free operation for industrial, marine, and municipal applications.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-motors/m3/"><strong>M3 Water Hydraulic Motor</strong><span>The WaterQuest M3 water hydraulic motor delivers 7.1 Nm torque at 160 bar. 3cc displacement, 316 stainless steel, oil-free operation for food processing, marine, and industrial applications.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-motors/m6/"><strong>M6 Water Hydraulic Motor</strong><span>The WaterQuest M6 water hydraulic motor delivers 14.2 Nm torque at 160 bar. 6cc displacement, 316 stainless steel, oil-free operation for food processing, marine, and industrial applications.</span></a><a class="wqs-industry-data__card" href="/products/axial-piston-fire-pumps/"><strong>Axial Piston Fire Pumps</strong><span>WaterQuest Solutions axial piston fire pumps for high-pressure water mist fire suppression. 100% oil-free, up to 160 bar, 9-piston smooth flow, ATEX II 2GD certified. 316L stainless steel. Six models from 0.8 cc/rev to 180 cc/rev. No accumulators required.</span></a><a class="wqs-industry-data__card" href="/products/axial-piston-pumps/"><strong>Axial Piston Pumps</strong><span>WaterQuest Solutions axial piston water hydraulic pumps. 100% oil-free, up to 160 bar continuous pressure, 430 l/min max flow. Seven models P1 to P180, 316 stainless steel, ATEX II 2GD certified. Tap water, seawater, technical water, and specialist fluids.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-flow-control/"><strong>Flow Control</strong><span>WaterQuest Solutions Flow Control Valve. 316 stainless steel, 0.1 to 200 bar, DN3 and DN6, manually adjusted thumbwheel with tamper-proof locking screw, helical port design for precise control, 4 turns full travel. Tool-free operator adjustment.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-hose-burst/"><strong>Hose Burst</strong><span>WaterQuest Solutions Hose Burst Valve. 316 stainless steel, 0.1 to 200 bar, DN3 and DN6, allows free flow in both directions under normal conditions then immediately stops flow surge on hose burst. Internally spring adjusted. 1/4</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-motors/m30/"><strong>M30 Water Hydraulic Motor</strong><span>The WaterQuest M30 water hydraulic motor delivers up to 84 Nm torque at 160 bar. Available in 30cc and 35cc displacement, 316 stainless steel, oil-free operation for heavy-duty industrial, mining, and offshore applications.</span></a></div></div>
+      <div class="wqs-industry-data__panel"><h3>Related applications</h3><div class="wqs-industry-data__cards"><a class="wqs-industry-data__card" href="/applications/bilge-valve/"><strong>Marine Bilge Valve</strong><span>Engineering write-up for a DN200 PN6 water hydraulic actuated globe valve supplied by WaterQuest Solutions for submerged cruise ship bilge tank service.</span></a><a class="wqs-industry-data__card" href="/applications/gate-actuation/"><strong>Gate Actuation</strong><span>Water hydraulic gate actuation systems for sluice gates, penstock gates, dam spillways, and flood control. Oil-free hydraulic actuators engineered for wastewater, hydroelectric, and stormwater infrastructure where petroleum contamination cannot occur.</span></a><a class="wqs-industry-data__card" href="/applications/flood-control/"><strong>Flood Control</strong><span>Water hydraulic flood control systems for flood gates, storm surge barriers, tide gates, and stormwater infrastructure. Reliable emergency actuation without petroleum contamination in waterways.</span></a></div></div>
+      <div class="wqs-industry-data__panel"><h3>Related technical articles</h3><div class="wqs-industry-data__cards"><a class="wqs-industry-data__card" href="/knowledge-hub/water-hydraulic-systems-marine-vessels"><strong>Water Hydraulic Systems for Marine Vessels</strong><span>Water hydraulics for marine vessels: deck machinery, hatch covers, steering systems, thruster control, seawater compatibility, vibration resistance, class society certification, fire safety, and BC coastal marine context.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/are-your-components-certified-for-marine-or-food-use"><strong>Are Your Components Certified for Marine or Food Use?</strong><span>A complete explanation of how WaterQuest water hydraulic components align with marine and food industry certification requirements. 316 stainless and PEEK material standards, zero hydrocarbon pathways, certification documentation, and why water hydraulics simplify compliance in regulated environments.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/clean-operation-on-coastlines-a-marine-deployment-snapshot"><strong>Clean Operation on Coastlines: A Marine Deployment Snapshot</strong><span>A marine deployment case study: sluice gate actuation, dock barrier positioning, and tidal control mechanisms converted to water hydraulics. Corrosion testing, tidal cycle performance, leak simulation, and lifecycle observations from a coastal installation.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/water-hydraulics-on-the-coast-marine-applications-that-work"><strong>Water Hydraulics on the Coast: Marine Applications That Work</strong><span>A technical and procurement guide for marine engineers, naval architects, and coastal operators. How water hydraulic systems eliminate spill risk, corrosion, and fire load in marine applications along Canada's Pacific coast.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/can-water-freeze-in-hydraulic-systems-engineering-around-temperature"><strong>Can Water Freeze in Hydraulic Systems? Engineering Around Temperature</strong><span>Water freezes at 0 degrees Celsius. That is a design parameter, not a barrier. A complete engineering guide to the four strategies that protect water hydraulic systems in cold Canadian climates, using the same approaches that already work throughout municipal, marine, and hydroelectric infrastructure.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/fishing-without-fossil-fuels-the-musqueam-hydrogen-vessel-project"><strong>Fishing Without Fossil Fuels: The Musqueam Hydrogen Vessel Project</strong><span>How the combination of hydrogen fuel cell propulsion and water hydraulics creates a fully clean commercial fishing vessel that aligns with coastal Indigenous stewardship values and eliminates hydrocarbon spill risk in salmon-bearing waters.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/industrial-equipment-never-use-oil-hydraulics"><strong>Industrial Equipment That Should Never Use Oil Hydraulics</strong><span>Six application categories where oil hydraulics should not be specified in new installations: water treatment facilities, fish-bearing waterways, food processing, underground mining, sensitive marine areas, and Indigenous territory water infrastructure. A seven-step decision framework.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/knife-gate-valves-and-water-hydraulics-a-natural-fit"><strong>Knife Gate Valves and Water Hydraulics: A Natural Fit</strong><span>Knife gate valves operate in the same wet, abrasive, corrosive environments where water is already present. Why water hydraulic actuation is the correct engineering choice for knife gate applications across mining, wastewater, and marine sectors.</span></a></div></div>
+    </div>
+  </div>
+</section>
+<!-- WQS_INDUSTRY_DATA_END -->
+<section id="hero" aria-label="Marine & Coastal Applications">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="depth-lines" aria-hidden="true"></div>
+  <div class="sonar-ring" aria-hidden="true"></div>
+  <div class="sonar-ring" aria-hidden="true"></div>
+  <div class="sonar-ring" aria-hidden="true"></div>
+  <div class="bubble-layer" id="hero-bubbles" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="label reveal">Industry Marine &amp; Coastal Applications</p>
+      <h1 class="reveal" style="transition-delay:.1s">
+        Water Hydraulics<br/>
+        <span>for Marine</span><br/>
+        &amp; Coastal.
+      </h1>
+      <p class="hero-lead reveal" style="transition-delay:.2s">Zero oil discharge. Saltwater ready. Certified for vessel use. The only hydraulic solution that is fully aligned with marine ecosystems, crew safety, and regulatory compliance.</p>
+      <div class="hero-ctas reveal" style="transition-delay:.3s">
+        <a href="#contact" class="btn btn-primary">Replace Oil on Your Vessel <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/pilot/" class="btn btn-outline">Pilot Program</a>
+      </div>
+      <div class="cert-strip reveal" style="transition-delay:.4s">
+        <span class="cert-pill">Zero Ocean Discharge</span>
+        <span class="cert-pill">ABS Compatible</span>
+        <span class="cert-pill">Lloyd's Register</span>
+        <span class="cert-pill">Transport Canada</span>
+        <span class="cert-pill">MARPOL Aligned</span>
+      </div>
+      <div class="hero-kpi-strip reveal" style="transition-delay:.48s">
+        <div class="hero-kpi"><div class="knum">ZERO</div><div class="klbl">Ocean Discharge Risk</div></div>
+        <div class="hero-kpi"><div class="knum">ZERO</div><div class="klbl">Oil Fire Hazard</div></div>
+        <div class="hero-kpi"><div class="knum">160 bar</div><div class="klbl">Operating Pressure</div></div>
+        <div class="hero-kpi"><div class="knum">100%</div><div class="klbl">Water Only</div></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right">
+      <!-- Vessel cross-section SVG -->
+      <svg class="vessel-svg" viewBox="0 0 430 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <radialGradient id="og1" cx="50%" cy="40%" r="55%">
+            <stop offset="0%" stop-color="#00B8D8" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#003860" stop-opacity="0.3"/>
+          </radialGradient>
+          <radialGradient id="og2" cx="50%" cy="35%" r="55%">
+            <stop offset="0%" stop-color="#0098B8" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#001828" stop-opacity="0.05"/>
+          </radialGradient>
+          <filter id="oglow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <filter id="oglow2"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <linearGradient id="hull-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#0F2A48"/>
+            <stop offset="100%" stop-color="#050E1E"/>
+          </linearGradient>
+          <linearGradient id="ocean-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(0,90,140,0.4)"/>
+            <stop offset="100%" stop-color="rgba(0,30,60,0.8)"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Ocean surface waves -->
+        <path d="M0 280 C50 272,100 288,150 280 C200 272,250 288,300 280 C350 272,400 285,430 280" stroke="rgba(0,152,184,0.4)" stroke-width="1.5" fill="none">
+          <animate attributeName="d" dur="4s" repeatCount="indefinite"
+            values="M0 280 C50 272,100 288,150 280 C200 272,250 288,300 280 C350 272,400 285,430 280;
+                    M0 284 C50 276,100 292,150 284 C200 276,250 292,300 284 C350 276,400 289,430 284;
+                    M0 280 C50 272,100 288,150 280 C200 272,250 288,300 280 C350 272,400 285,430 280"/>
+        </path>
+        <!-- Deep water gradient -->
+        <rect x="0" y="282" width="430" height="138" fill="url(#ocean-grad)"/>
+        <!-- Water depth lines -->
+        <line x1="0" y1="320" x2="430" y2="320" stroke="rgba(0,152,184,0.06)" stroke-width="1"/>
+        <line x1="0" y1="360" x2="430" y2="360" stroke="rgba(0,152,184,0.05)" stroke-width="1"/>
+
+        <!-- Hull silhouette -->
+        <path d="M40 280 L40 220 L390 220 L390 280 C340 295,90 295,40 280 Z" fill="url(#hull-grad)" stroke="rgba(0,152,184,0.35)" stroke-width="1.5"/>
+        <!-- Hull keel line -->
+        <path d="M90 290 Q215 302 340 290" stroke="rgba(0,152,184,0.25)" stroke-width="1.5" fill="none"/>
+
+        <!-- Superstructure / deck -->
+        <rect x="90" y="150" width="250" height="72" rx="4" fill="rgba(10,28,54,0.9)" stroke="rgba(0,152,184,0.3)" stroke-width="1.5"/>
+        <!-- Bridge windows -->
+        <rect x="150" y="162" width="22" height="14" rx="2" fill="rgba(0,152,184,0.25)" stroke="rgba(0,152,184,0.4)" stroke-width="1"/>
+        <rect x="182" y="162" width="22" height="14" rx="2" fill="rgba(0,152,184,0.3)" stroke="rgba(0,152,184,0.45)" stroke-width="1"/>
+        <rect x="214" y="162" width="22" height="14" rx="2" fill="rgba(0,152,184,0.22)" stroke="rgba(0,152,184,0.38)" stroke-width="1"/>
+        <rect x="246" y="162" width="22" height="14" rx="2" fill="rgba(0,152,184,0.28)" stroke="rgba(0,152,184,0.42)" stroke-width="1"/>
+
+        <!-- Mast -->
+        <line x1="215" y1="80" x2="215" y2="150" stroke="rgba(168,184,204,0.4)" stroke-width="2"/>
+        <line x1="185" y1="100" x2="245" y2="100" stroke="rgba(168,184,204,0.3)" stroke-width="1.5"/>
+        <!-- Radar -->
+        <circle cx="215" cy="80" r="5" fill="rgba(0,152,184,0.6)" stroke="rgba(0,184,216,0.7)" stroke-width="1"/>
+        <!-- Sonar sweep from mast -->
+        <line x1="215" y1="80" x2="215" y2="80" stroke="rgba(0,184,216,0.3)" stroke-width="1">
+          <animate attributeName="x2" values="215;270;215" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="80;108;80" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="stroke-opacity" values="0.5;0;0.5" dur="3s" repeatCount="indefinite"/>
+        </line>
+
+        <!-- HPU unit in engine room -->
+        <rect x="140" y="228" width="65" height="40" rx="4" fill="rgba(8,22,48,0.9)" stroke="rgba(0,152,184,0.5)" stroke-width="1.5"/>
+        <text x="172" y="244" text-anchor="middle" font-family="Avenir,sans-serif" font-size="8" font-weight="700" fill="#00B8D8" letter-spacing="0.12em">HPU</text>
+        <text x="172" y="256" text-anchor="middle" font-family="Avenir,sans-serif" font-size="6.5" fill="rgba(0,152,184,0.55)" letter-spacing="0.1em">WATER ONLY</text>
+        <text x="172" y="265" text-anchor="middle" font-family="Avenir,sans-serif" font-size="6" fill="rgba(140,170,200,0.4)" letter-spacing="0.08em">316SS · PEEK</text>
+
+        <!-- Winch deck -->
+        <rect x="58" y="210" width="44" height="20" rx="3" fill="rgba(12,30,58,0.8)" stroke="rgba(0,152,184,0.3)" stroke-width="1"/>
+        <circle cx="80" cy="220" r="7" fill="rgba(0,80,120,0.6)" stroke="rgba(0,152,184,0.45)" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="0 80 220" to="360 80 220" dur="6s" repeatCount="indefinite"/>
+        </circle>
+        <text x="80" y="236" text-anchor="middle" font-family="Avenir,sans-serif" font-size="6" fill="rgba(140,170,200,0.45)" letter-spacing="0.08em">WINCH</text>
+
+        <!-- Rudder actuator -->
+        <rect x="330" y="212" width="38" height="18" rx="3" fill="rgba(12,30,58,0.8)" stroke="rgba(0,152,184,0.3)" stroke-width="1"/>
+        <text x="349" y="225" text-anchor="middle" font-family="Avenir,sans-serif" font-size="6" fill="rgba(140,170,200,0.45)" letter-spacing="0.08em">RUDDER</text>
+
+        <!-- Hydraulic lines between HPU and components -->
+        <!-- To winch -->
+        <path d="M140 248 L120 248 L120 215 L102 215" stroke="rgba(0,152,184,0.5)" stroke-width="1.5" fill="none" stroke-dasharray="3 3">
+          <animate attributeName="stroke-dashoffset" values="0;-12" dur="1.5s" repeatCount="indefinite"/>
+        </path>
+        <!-- To rudder -->
+        <path d="M205 248 L250 248 L250 218 L330 218" stroke="rgba(0,152,184,0.45)" stroke-width="1.5" fill="none" stroke-dasharray="3 3">
+          <animate attributeName="stroke-dashoffset" values="0;-12" dur="1.8s" repeatCount="indefinite"/>
+        </path>
+
+        <!-- Flow dots -->
+        <circle r="3.5" fill="#00B8D8" filter="url(#oglow)" opacity="0.9">
+          <animateMotion dur="2.5s" repeatCount="indefinite" path="M172 240 L120 240 L120 215 L102 215"/>
+        </circle>
+        <circle r="3.5" fill="#0098B8" filter="url(#oglow)" opacity="0.85">
+          <animateMotion dur="3s" repeatCount="indefinite" path="M205 248 L250 248 L250 218 L330 218"/>
+        </circle>
+
+        <!-- Label -->
+        <text x="215" y="410" text-anchor="middle" font-family="Avenir,sans-serif" font-size="9.5" font-weight="700" fill="rgba(0,184,216,0.4)" letter-spacing="0.2em">HYDRAULIC MEDIUM: SEAWATER</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM vs SOLUTION -->
+<section class="section section-alt" aria-labelledby="compare-heading">
+  <div class="bubble-layer" id="compare-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">The Marine Reality</p>
+      <h2 id="compare-heading">Oil Hydraulics in Marine Environments<br/><span class="text-ocean">A System That Fails at Sea</span></h2>
+    </div>
+    <div class="compare-banner reveal">
+      <div class="cmp-col danger">
+        <div class="cmp-col-head"><span class="icon">⚠️</span><h3>Oil Systems Built Wrong for Marine</h3></div>
+        <div class="cmp-list">
+          <div class="cmp-item">Saltwater ingress ruins hydraulic oil on contact</div>
+          <div class="cmp-item">Seals swell, degrade, and corrode in marine exposure</div>
+          <div class="cmp-item">Oil leaks create ocean sheen an environmental offence</div>
+          <div class="cmp-item">Flammable vapour near engines &amp; fuel tanks</div>
+          <div class="cmp-item">Viscosity shifts in cold water or hot engine rooms</div>
+          <div class="cmp-item">Constant filtration &amp; fluid management onboard</div>
+        </div>
+        <div class="cmp-footnote">Even a slow leak triggers environmental reporting &amp; fines under MARPOL and the Fisheries Act.</div>
+      </div>
+      <div class="cmp-divider"><span class="vs-pill">VS</span></div>
+      <div class="cmp-col safe">
+        <div class="cmp-col-head"><span class="icon">⚓</span><h3>Water Hydraulics Made for the Sea</h3></div>
+        <div class="cmp-list">
+          <div class="cmp-item">No ocean contamination, water is the medium</div>
+          <div class="cmp-item">316 SS &amp; PEEK resist saltwater, spray &amp; full immersion</div>
+          <div class="cmp-item">Non-flammable, no vapour risk near fuel systems</div>
+          <div class="cmp-item">Stable across cold-water and hot engine room temperatures</div>
+          <div class="cmp-item">No filtration, fluid changes, or hazardous waste onboard</div>
+          <div class="cmp-item">Supports green vessel certification programs</div>
+        </div>
+        <div class="cmp-footnote">Compatible with ABS, Lloyd's Register, Transport Canada, and MARPOL standards.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIX REASONS -->
+<section class="section section-dark" aria-labelledby="reasons-heading">
+  <div class="bubble-layer" id="reasons-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Six Reasons</p>
+      <h2 id="reasons-heading">Why Water Hydraulics Fit<br/><span class="text-ocean">Every Marine Application</span></h2>
+    </div>
+    <div class="reasons-grid">
+      <div class="reason-card reveal" data-num="01" style="transition-delay:.0s"><div class="r-icon">🌊</div><h3>Zero Ocean Discharge</h3><p>No sheen, no spill cleanup, no environmental reporting. Water hydraulics protect marine ecosystems and support green vessel certification programs and ESG commitments.</p></div>
+      <div class="reason-card reveal" data-num="02" style="transition-delay:.07s"><div class="r-icon">🔥</div><h3>Fire-Safe Near Fuel &amp; Engines</h3><p>No flammable vapour, mist, or residue near engine rooms, fuel tanks, or confined machinery spaces. Water removes the ignition source entirely, the safest system for crew.</p></div>
+      <div class="reason-card reveal" data-num="03" style="transition-delay:.14s"><div class="r-icon">⚙️</div><h3>Built for Saltwater Exposure</h3><p>316 SS and PEEK resist chloride attack, crevice corrosion, galvanic reactions, spray, immersion, and vibration indefinitely. Designed for the most corrosive environments on earth.</p></div>
+      <div class="reason-card reveal" data-num="04" style="transition-delay:.0s"><div class="r-icon">🌡️</div><h3>Consistent in Cold &amp; Heat</h3><p>Water stays stable from arctic fishing grounds to hot engine rooms. No slow steering response, no pressure instability from viscosity swings. Reliable in every operating condition.</p></div>
+      <div class="reason-card reveal" data-num="05" style="transition-delay:.07s"><div class="r-icon">🔧</div><h3>Minimal Maintenance Onboard</h3><p>No fluid changes, filtration, flushing, varnish management, or hazardous waste. Vessels operate longer between service intervals, fewer crew hours spent on hydraulic upkeep.</p></div>
+      <div class="reason-card reveal" data-num="06" style="transition-delay:.14s"><div class="r-icon">💪</div><h3>High Power, No Oil Drawbacks</h3><p>160 bar output matches oil system performance, without thermal breakdown, explosive vapour, aeration, or viscosity change. Full force at every operating condition.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REGULATORY / LEGAL RISK -->
+<section id="regulatory" class="section section-alt" aria-labelledby="reg-heading">
+  <div class="bubble-layer" id="reg-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Regulatory Risk</p>
+      <h2 id="reg-heading">Environmental &amp; Regulatory Risk<br/><span class="text-ocean">Oil at Sea</span></h2>
+    </div>
+    <div class="reg-grid">
+      <div class="reg-block danger-block reveal-left">
+        <div class="reg-block-head"><span class="icon">⚖️</span><h3>Legal &amp; Financial Exposure</h3></div>
+        <div class="reg-items">
+          <div class="reg-item"><strong>Under the Fisheries Act and marine safety legislation, even minor oil leaks can classify as:</strong></div>
+          <div class="reg-item">Harmful alteration of aquatic conditions (HADD)</div>
+          <div class="reg-item">Release of deleterious substances</div>
+          <div class="reg-item">Improper industrial discharge</div>
+          <div class="reg-item"><strong style="margin-top:10px;">Consequences include:</strong></div>
+          <div class="reg-item">Heavy fines and mandated remediation</div>
+          <div class="reg-item">Long-term environmental monitoring requirements</div>
+          <div class="reg-item">Potential asset shutdown and port detention</div>
+          <div class="reg-item">Reputational and insurance consequences</div>
+        </div>
+      </div>
+      <div class="reg-block safe-block reveal-right">
+        <div class="reg-block-head"><span class="icon">✅</span><h3>Water Hydraulics Compliance Built In</h3></div>
+        <div class="reg-items">
+          <div class="reg-item"><strong>Water-based circuits eliminate oil contamination at the source:</strong></div>
+          <div class="reg-item">No hydrocarbons = no contamination pathway</div>
+          <div class="reg-item">No environmental reporting triggers for any leak</div>
+          <div class="reg-item">Supports green vessel &amp; ESG certification</div>
+          <div class="reg-item">Simplifies port inspections worldwide</div>
+          <div class="reg-item">Aligns with Fisheries Act and MARPOL requirements</div>
+        </div>
+      </div>
+      <div class="compat-strip reveal" style="transition-delay:.1s">
+        <p>Certified compatible with:</p>
+        <div class="compat-badges">
+          <span class="compat-badge">Transport Canada</span>
+          <span class="compat-badge">ABS</span>
+          <span class="compat-badge">Lloyd's Register</span>
+          <span class="compat-badge">MARPOL</span>
+          <span class="compat-badge">Port Authority Environmental Standards</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="section section-dark" aria-labelledby="table-heading">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Performance Comparison</p>
+      <h2 id="table-heading">Water vs Oil vs Air<br/><span class="text-ocean">Marine Applications</span></h2>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th class="hl">Water Hydraulics</th>
+            <th>Oil Hydraulics</th>
+            <th>Air Systems</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Ocean Contamination</td><td class="hl-col td-good">Impossible</td><td class="td-bad">Frequent</td><td class="td-mid">None</td></tr>
+          <tr><td>Fire / Ignition Risk</td><td class="hl-col td-good">None</td><td class="td-bad">High</td><td class="td-mid">None</td></tr>
+          <tr><td>Corrosion Resistance</td><td class="hl-col td-good">High</td><td class="td-bad">Low</td><td class="td-mid">Medium</td></tr>
+          <tr><td>Temperature Stability</td><td class="hl-col td-good">Excellent</td><td class="td-bad">Poor</td><td class="td-mid">Moderate</td></tr>
+          <tr><td>Power Output</td><td class="hl-col td-good">High</td><td class="td-good">High</td><td class="td-bad">Low</td></tr>
+          <tr><td>Maintenance Needs</td><td class="hl-col td-good">Low</td><td class="td-bad">High</td><td class="td-mid">Medium</td></tr>
+          <tr><td>Long-Stroke Reliability</td><td class="hl-col td-good">High</td><td class="td-mid">Medium</td><td class="td-bad">Low</td></tr>
+          <tr><td>Vibration Tolerance</td><td class="hl-col td-good">High</td><td class="td-mid">Medium</td><td class="td-mid">Medium</td></tr>
+          <tr><td>Safety for Crew</td><td class="hl-col td-good">High</td><td class="td-bad">Low</td><td class="td-mid">Medium</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="section section-alt" aria-labelledby="apps-heading">
+  <div class="bubble-layer" id="apps-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Vessel &amp; Coastal Systems</p>
+      <h2 id="apps-heading">Applications Across<br/><span class="text-ocean">Vessel &amp; Coastal Systems</span></h2>
+    </div>
+    <div class="apps-grid">
+      <div class="app-card reveal" style="transition-delay:.0s">
+        <div class="app-card-head"><span class="app-icon">⚓</span><h3>Deck Equipment</h3></div>
+        <div class="app-items">
+          <div class="app-item">Net &amp; pot haulers</div>
+          <div class="app-item">Capstans &amp; winches</div>
+          <div class="app-item">Deck cranes</div>
+          <div class="app-item">Hatch &amp; door actuators</div>
+          <div class="app-item">Ramp and loading systems</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.07s">
+        <div class="app-card-head"><span class="app-icon">⚙️</span><h3>Engine Room Systems</h3></div>
+        <div class="app-items">
+          <div class="app-item">Isolation valves</div>
+          <div class="app-item">Pump room actuators</div>
+          <div class="app-item">Seawater cooling valves</div>
+          <div class="app-item">Engine safety dampers</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.14s">
+        <div class="app-card-head"><span class="app-icon">🧭</span><h3>Navigation &amp; Control</h3></div>
+        <div class="app-items">
+          <div class="app-item">Steering actuators &amp; rudder valves</div>
+          <div class="app-item">Bow thruster auxiliaries</div>
+          <div class="app-item">Trim &amp; stabilizer systems</div>
+          <div class="app-item">Fish hold control valves</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.0s">
+        <div class="app-card-head"><span class="app-icon">🚨</span><h3>Safety &amp; Emergency</h3></div>
+        <div class="app-items">
+          <div class="app-item">Fire suppression valve actuation</div>
+          <div class="app-item">Emergency shutoff valves</div>
+          <div class="app-item">Lifeboat deployment mechanisms</div>
+          <div class="app-item">Flood &amp; ballast control</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.07s">
+        <div class="app-card-head"><span class="app-icon">📦</span><h3>Cargo &amp; Handling</h3></div>
+        <div class="app-items">
+          <div class="app-item">Lifting platforms &amp; deck elevators</div>
+          <div class="app-item">Cargo gates</div>
+          <div class="app-item">Mooring equipment</div>
+          <div class="app-item">Gangway mechanisms</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.14s">
+        <div class="app-card-head"><span class="app-icon">🌊</span><h3>Coastal Infrastructure</h3></div>
+        <div class="app-items">
+          <div class="app-item">Sluice gate actuation</div>
+          <div class="app-item">Dock barrier positioning</div>
+          <div class="app-item">Tidal control mechanisms</div>
+          <div class="app-item">Dredge gate actuation</div>
+          <div class="app-item">Desalination ancillary drives</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VESSEL RELIABILITY , 4 benefits -->
+<section id="reliability" class="section section-dark" aria-labelledby="reliability-heading">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">System Benefits</p>
+      <h2 id="reliability-heading">How Water Hydraulics Improve<br/><span class="text-ocean">Vessel Reliability</span></h2>
+    </div>
+    <div class="reliability-grid">
+      <div class="reliability-card reveal-left" style="transition-delay:.0s">
+        <div class="r-step">01 / Reliability</div>
+        <h3>Equipment Stays Operational in Harsh Marine Conditions</h3>
+        <p>Water hydraulics do not degrade from salt exposure or temperature swings. 316 SS and PEEK resist chloride attack, vibration, and long-term immersion, leading to better uptime and fewer unexpected failures at sea.</p>
+      </div>
+      <div class="reliability-card reveal-right" style="transition-delay:.08s">
+        <div class="r-step">02 / Environment</div>
+        <h3>Cleaner Decks, Engine Rooms &amp; Holds</h3>
+        <p>Oil leaks are eliminated entirely. No slick decks, no contamination on nets, gear, or storage hold surfaces, and no residue near fuel or engine heat sources. Cleaner vessels, safer crews, simpler inspections.</p>
+      </div>
+      <div class="reliability-card reveal-left" style="transition-delay:.14s">
+        <div class="r-step">03 / Compliance</div>
+        <h3>Stronger Environmental Compliance &amp; ESG Alignment</h3>
+        <p>Water hydraulics support green vessel initiatives, environmental certification, and reduced pollution reporting. Simplified port inspections and improved alignment with Transport Canada, ABS, Lloyd's Register, and MARPOL.</p>
+      </div>
+      <div class="reliability-card reveal-right" style="transition-delay:.2s">
+        <div class="r-step">04 / Economics</div>
+        <h3>Lower Lifecycle Cost, System Pays for Itself Quickly</h3>
+        <p>No oil purchasing, filtration, fluid disposal, frequent seal replacements, or spill remediation. Fewer failures and less downtime mean a water hydraulic system delivers rapid payback in marine operations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" aria-label="Replace oil hydraulics on your vessel">
+  <div id="cta">
+    <div class="bubble-layer" id="cta-bubbles" aria-hidden="true"></div>
+    <div class="cta-inner" style="position:relative;z-index:2;">
+      <p class="label reveal">The Sea Demands Better</p>
+      <h2 class="reveal" style="transition-delay:.1s">
+        The Only Contamination-Safe,<br/><span class="text-ocean">Fire-Safe, Saltwater-Proof</span><br/>Hydraulic Solution.
+      </h2>
+      <p class="reveal" style="transition-delay:.2s">Water hydraulics are the only actuation solution that is fully aligned with the demands of marine environments for crew safety, ecological compliance, and operational performance.</p>
+      <div class="cta-buttons reveal" style="transition-delay:.3s">
+        <a href="/contact/" class="btn btn-primary">Replace Oil on Your Vessel <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/pilot/" class="btn btn-outline">Explore Pilot Program</a>
+      </div>
+      <div class="cta-cert-row reveal" style="transition-delay:.35s">
+        <span class="cta-cert">Transport Canada</span>
+        <span class="cta-cert">ABS</span>
+        <span class="cta-cert">Lloyd's Register</span>
+        <span class="cta-cert">MARPOL</span>
+        <span class="cta-cert">Port Authority Standards</span>
+      </div>
+      <div class="cta-stats reveal" style="transition-delay:.4s">
+        <div class="cta-stat"><div class="snum">ZERO</div><div class="slbl">Ocean Discharge Risk</div></div>
+        <div class="cta-stat"><div class="snum">ZERO</div><div class="slbl">Oil Fire Hazard</div></div>
+        <div class="cta-stat"><div class="snum">160 bar</div><div class="slbl">Operating Pressure</div></div>
+        <div class="cta-stat"><div class="snum">100%</div><div class="slbl">Water-Based Actuation</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER --><script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40), {passive:true});
+
+  (function globalBubbles() {
+    const c = document.getElementById('global-bubbles');
+    for (let i = 0; i < 32; i++) {
+      const b = document.createElement('div'); b.className = 'bubble';
+      const s = Math.random()*12+3, d = (Math.random()-.5)*100;
+      b.style.cssText = `width:${s}px;height:${s}px;left:${Math.random()*100}%;bottom:${Math.random()*10}%;--drift:${d}px;animation-duration:${Math.random()*20+12}s;animation-delay:${Math.random()*18}s;`;
+      c.appendChild(b);
+    }
+  })();
+
+  function seedBubbles(id, n) {
+    const c = document.getElementById(id); if (!c) return;
+    for (let i = 0; i < n; i++) {
+      const b = document.createElement('div'); b.className = 'bubble';
+      const s = Math.random()*9+3, d = (Math.random()-.5)*70;
+      b.style.cssText = `width:${s}px;height:${s}px;left:${Math.random()*100}%;bottom:${Math.random()*25}%;--drift:${d}px;animation-duration:${Math.random()*16+10}s;animation-delay:${Math.random()*12}s;`;
+      c.appendChild(b);
+    }
+  }
+  ['hero-bubbles','compare-bubbles','reasons-bubbles','reg-bubbles','apps-bubbles','cta-bubbles'].forEach(id => seedBubbles(id, 14));
+
+  const obs = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);} }), {threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => obs.observe(el));
+</script>
+<!-- WQ_CONTEXT_APPS_START -->
+<section class="wq-context-apps" aria-label="Related application pages">
+  <div class="wq-context-wrap">
+    <div>
+      <h2>Related application pages</h2>
+      <p>Application pages connect this section to specific water hydraulic projects and operating problems.</p>
+    </div>
+    <div class="wq-app-links"><a href="/applications/bilge-valve/">Marine Bilge Valve</a><a href="/applications/flow-control/">Flow Control</a><a href="/applications/nozzle-technology/">Nozzle Technology</a></div>
+  </div>
+</section>
+<!-- WQ_CONTEXT_APPS_END -->
+
+<!-- WQ_GLOBAL_FOOTER_START -->
+<footer class="wq-site-footer" role="contentinfo">
+  <div class="wq-footer-container">
+    <div class="wq-footer-grid">
+      <div class="wq-footer-brand">
+        <span class="wq-logo-main">WaterQuest Solutions</span>
+        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Industries</h5>
+        <ul><li><a href="/industries/municipal/">Municipal</a></li><li><a href="/industries/wastewater-treatment/">Wastewater Treatment</a></li><li><a href="/industries/hydro/">Hydro</a></li><li><a href="/industries/marine/" class="active">Marine</a></li><li><a href="/industries/desalination/">Desalination</a></li><li><a href="/industries/mining/">Mining</a></li><li><a href="/industries/forestry/">Forestry</a></li><li><a href="/industries/pulp-paper/">Pulp and Paper</a></li><li><a href="/industries/food-beverage/">Food and Beverage</a></li><li><a href="/industries/agriculture/">Agriculture</a></li><li><a href="/industries/hydrogen-production/">Hydrogen Production</a></li><li><a href="/industries/fire-suppression/">Fire Suppression</a></li><li><a href="/industries/dust-control/">Dust Control</a></li><li><a href="/industries/odor-control/">Odor Control</a></li><li><a href="/industries/waterparks/">Waterparks</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Core Pages</h5>
+        <ul><li><a href="/products/">Products</a></li><li><a href="/industries/" class="active">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
+          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
+          <li>558 East Kent Ave S</li>
+          <li>Vancouver, BC V5X 4V6</li>
+          <li>Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
+  </div>
+</footer>
+<!-- WQ_GLOBAL_FOOTER_END -->
+<script id="wq-global-shell-js">
+    (function(){
+      var nav=document.getElementById("wq-nav");
+      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
+      var menuButton=document.querySelector(".wq-menu-toggle");
+      var mobileMenu=document.getElementById("wq-mobile-menu");
+      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
+      var bubbles=document.getElementById("wq-global-bubbles");
+      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
+      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
+      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
+      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
+      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
+      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
+      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
+      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
+      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
+      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
+      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
+      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
+    })();
+  </script>
+
+</body>
+</html>

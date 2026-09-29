@@ -22,7 +22,7 @@ Open `http://localhost:8080/`. Serve from the domain root because links and asse
 
 ## Hosting integration
 
-Use `public/` as the static output directory. No asset build step is required. This repository update does not activate hosting, change DNS or replace an existing deployment.
+Use `public/` as the static output directory. No asset build step is required. Existing GitHub-connected hosting projects may deploy commits automatically. This repository does not configure hosting or DNS.
 
 The inherited site contains `/api/zoho/intake` and `/api/zoho/event` integration calls. Their existing backend must be retained or connected by the hosting project; this static repository does not include credentials or provision those endpoints. The new valve option-enquiry links open an email draft.
 

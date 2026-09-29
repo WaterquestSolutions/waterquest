@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Hydraulics for Municipal Infrastructure | WaterQuest Solutions</title>
+  <meta name="description" content="Upgrade municipal water infrastructure with clean, reliable water-driven actuation for gates, valves, pump stations, and public works, zero oil contamination risk, 35% federal tax credit eligible, 40% lower annual operating costs." />
+  <meta name="keywords" content="municipal water hydraulics, water treatment hydraulics, wastewater hydraulic actuator, oil-free municipal infrastructure, sluice gate hydraulics, pump station hydraulics, flood control gate actuator, Canada Budget 2025 clean technology, WWTP hydraulics oil-free, stormwater gate hydraulics" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy:         #060C18;
+      --navy-mid:     #091428;
+      --navy-light:   #0E1E3C;
+      --aqua:         #00C8D4;
+      --aqua-glow:    rgba(0,200,212,0.15);
+      /* Municipal palette , civic authority blue, clean water teal */
+      --civic:        #1870C8;
+      --civic-light:  #3090E0;
+      --civic-glow:   rgba(48,144,224,0.15);
+      --clean-water:  #20B8D8;
+      --maple:        #C83020;
+      --maple-glow:   rgba(200,48,32,0.12);
+      --silver:       #FFFFFF;
+      --silver-light: #FFFFFF;
+      --white:        #EEF4FA;
+      --body-text:    #FFFFFF;
+      --muted:        #FFFFFF;
+      --border:       rgba(120,160,204,0.15);
+      --border-civic: rgba(48,144,224,0.3);
+      --border-aqua:  rgba(0,200,212,0.3);
+      --font-display: 'Avenir', 'Avenir Next', 'Nunito Sans', sans-serif;
+      --font-body:    'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+      --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px;
+      --shadow-civic: 0 0 48px rgba(48,144,224,0.2);
+      --max-width: 1240px; --section-pad: 100px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); background: var(--navy); color: var(--body-text); line-height: 1.7; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    .label { font-family: var(--font-display); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--aqua); }
+    h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 900; line-height: 1.15; color: var(--white); }
+    h1 { font-size: clamp(2.4rem,5vw,4.2rem); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(1.9rem,3.5vw,3rem); letter-spacing: -0.02em; }
+    h3 { font-size: clamp(1.1rem,2vw,1.42rem); }
+    h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--aqua); }
+    p  { color: var(--body-text); font-size: 1.02rem; }
+    .text-civic { color: var(--civic-light); }
+    .text-aqua  { color: var(--aqua); }
+    .text-maple { color: #E04030; }
+    .text-muted { color: var(--muted); }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
+    .section { padding: var(--section-pad) 0; }
+    .section-alt  { background: var(--navy-mid); }
+    .section-dark { background: var(--navy); }
+
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: var(--radius-sm); font-family: var(--font-display); font-weight: 700; font-size: 0.88rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border: none; transition: all 0.25s ease; }
+    .btn-civic   { background: var(--civic-light); color: var(--white); }
+    .btn-civic:hover { background: #50B0F8; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(48,144,224,0.5); }
+    .btn-outline { background: transparent; color: var(--aqua); border: 1.5px solid var(--border-aqua); }
+    .btn-outline:hover { background: var(--aqua-glow); border-color: var(--aqua); }
+
+    /* NAV */
+    #nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: background 0.3s, backdrop-filter 0.3s; }
+    #nav.scrolled { background: rgba(6,12,24,0.93); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .nav-logo .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.15rem; color: var(--white); letter-spacing: -0.01em; }
+    .nav-logo .logo-sub  { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--aqua); margin-top: 1px; display: block; }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { font-family: var(--font-display); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--silver); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--aqua); }
+    .nav-cta { background: var(--aqua) !important; color: var(--navy) !important; padding: 9px 20px; border-radius: var(--radius-sm); }
+
+    /* BUBBLES */
+    .bubble-layer { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 1; }
+    .bubble { position: absolute; border-radius: 50%; background: radial-gradient(circle at 35% 35%, rgba(0,200,212,0.55), rgba(0,160,200,0.08) 60%, transparent 80%); border: 1px solid rgba(0,200,212,0.2); opacity: 0; animation: bubble-rise linear infinite; }
+    @keyframes bubble-rise { 0%{transform:translateY(0) translateX(0) scale(1);opacity:0} 8%{opacity:0.55} 50%{transform:translateY(-50vh) translateX(var(--drift)) scale(0.88);opacity:0.28} 92%{opacity:0.08} 100%{transform:translateY(-108vh) translateX(calc(var(--drift)*1.4)) scale(0.45);opacity:0} }
+
+    /* REVEAL */
+    .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-left  { opacity:0; transform:translateX(-28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-left.visible  { opacity:1; transform:translateX(0); }
+    .reveal-right { opacity:0; transform:translateX(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-right.visible { opacity:1; transform:translateX(0); }
+
+    .section-header { margin-bottom: 60px; }
+    .section-header .label { margin-bottom: 14px; }
+    .section-header h2 { margin-bottom: 16px; }
+    .section-header p { max-width: 640px; font-size: 1.08rem; color: var(--silver-light); }
+    .section-header.center { text-align: center; }
+    .section-header.center p { margin: 0 auto; }
+
+    /* ================================================================
+       HERO
+    ================================================================ */
+    #hero { position: relative; min-height: 86vh; display: flex; align-items: center; overflow: hidden; padding-top: 72px; }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 68% 42%, rgba(0,80,160,0.32) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 50% at 15% 65%, rgba(0,100,140,0.22) 0%, transparent 55%),
+        radial-gradient(ellipse 35% 30% at 88% 20%, rgba(0,200,212,0.1) 0%, transparent 50%),
+        linear-gradient(175deg, #030810 0%, #060C18 45%, #081428 100%);
+    }
+    /* Infrastructure grid */
+    .infra-grid {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(0,200,212,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,200,212,0.04) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: radial-gradient(ellipse 70% 70% at 65% 45%, black 20%, transparent 78%);
+    }
+
+    .hero-content { position: relative; z-index: 2; max-width: var(--max-width); margin: 0 auto; padding: 80px 32px; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 72px; align-items: center; }
+    .hero-text .label { margin-bottom: 20px; }
+    .hero-text h1 { margin-bottom: 26px; }
+    .hero-text h1 .acc-civic { color: var(--aqua); }
+    .hero-text h1 .acc-w { color: var(--civic-light); }
+    .hero-lead { font-size: 1.14rem; color: var(--silver-light); max-width: 520px; line-height: 1.8; margin-bottom: 36px; }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+
+    .hero-kpi-strip { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
+    .hero-kpi { text-align: center; padding: 16px 8px; background: rgba(0,200,212,0.07); border: 1px solid var(--border-aqua); border-radius: var(--radius-md); }
+    .hero-kpi .knum { font-family: var(--font-display); font-size: 1.35rem; font-weight: 900; color: var(--aqua); line-height: 1; margin-bottom: 5px; }
+    .hero-kpi .klbl { font-size: 0.67rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; line-height: 1.4; }
+
+    /* Hero visual , municipal water system SVG */
+    .hero-visual { display: flex; align-items: center; justify-content: center; }
+    .muni-svg { width: 100%; max-width: 430px; filter: drop-shadow(0 0 50px rgba(0,200,212,0.28)); animation: muni-pulse 7s ease-in-out infinite; }
+    @keyframes muni-pulse { 0%,100%{filter:drop-shadow(0 0 50px rgba(0,200,212,0.24))} 50%{filter:drop-shadow(0 0 90px rgba(0,200,212,0.52))} }
+
+    /* ================================================================
+       IRONY CALLOUT , Opening statement
+    ================================================================ */
+    .irony-banner {
+      background: linear-gradient(135deg, rgba(0,200,212,0.06) 0%, rgba(9,20,40,0.95) 100%);
+      border: 1px solid var(--border-aqua);
+      border-radius: var(--radius-lg);
+      padding: 40px 52px;
+      position: relative; overflow: hidden;
+    }
+    .irony-banner::before {
+      content: '"';
+      position: absolute; top: -20px; left: 32px;
+      font-size: 10rem; font-family: Georgia, serif;
+      color: rgba(0,200,212,0.08); line-height: 1;
+      pointer-events: none;
+    }
+    .irony-text {
+      font-size: 1.18rem; color: var(--silver-light);
+      line-height: 1.75; font-style: italic;
+      max-width: 800px; position: relative; z-index: 1;
+    }
+    .irony-attr { margin-top: 16px; font-size: 0.82rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.14em; }
+
+    /* ================================================================
+       CONTRADICTION , Two columns
+    ================================================================ */
+    .contra-banner { display: grid; grid-template-columns: 1fr auto 1fr; background: var(--navy-light); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
+    .cmp-col { padding: 40px; }
+    .cmp-divider { display: flex; align-items: center; justify-content: center; background: var(--navy-mid); width: 56px; }
+    .vs-pill { writing-mode: vertical-lr; font-family: var(--font-display); font-size: 0.7rem; font-weight: 900; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); }
+    .cmp-head { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
+    .cmp-head h3 { font-size: 1.02rem; }
+    .cmp-items { display: flex; flex-direction: column; gap: 12px; }
+    .cmp-item { font-size: 0.92rem; color: var(--silver); padding-left: 20px; position: relative; line-height: 1.6; }
+    .cmp-item::before { content:''; position:absolute; left:0; top:9px; width:7px; height:7px; border-radius:50%; }
+    .danger .cmp-item::before { background: rgba(220,100,60,0.65); }
+    .safe   .cmp-item::before { background: var(--aqua); }
+
+    /* ================================================================
+       SIX REASONS
+    ================================================================ */
+    .reasons-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    .reason-card { background: var(--navy-light); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 34px 30px; position: relative; overflow: hidden; transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s; }
+    .reason-card::after { content:attr(data-num); position:absolute; bottom:-14px; right:14px; font-size:5.5rem; font-weight:900; line-height:1; color:rgba(0,200,212,0.05); font-family:var(--font-display); pointer-events:none; }
+    .reason-card:hover { border-color: var(--border-aqua); transform: translateY(-5px); box-shadow: 0 8px 36px rgba(0,200,212,0.14); }
+    .reason-card .r-icon { font-size: 1.8rem; margin-bottom: 16px; }
+    .reason-card h3 { font-size: 1.05rem; margin-bottom: 10px; }
+    .reason-card p  { font-size: 0.92rem; color: var(--muted); line-height: 1.7; }
+
+    /* ================================================================
+       ENGINEER'S RESPONSIBILITY , STANDOUT SECTION
+    ================================================================ */
+    #engineers { position: relative; overflow: hidden; }
+    #engineers::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(0,60,120,0.2) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .eng-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 36px; }
+    .eng-card { background: var(--navy-light); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 36px; transition: border-color 0.3s, box-shadow 0.3s; }
+    .eng-card:hover { border-color: var(--border-civic); box-shadow: var(--shadow-civic); }
+    .eng-card-icon { font-size: 1.6rem; margin-bottom: 14px; }
+    .eng-card h3 { font-size: 1.1rem; margin-bottom: 12px; }
+    .eng-card p  { font-size: 0.93rem; color: var(--muted); line-height: 1.75; }
+
+    /* Canada Budget 2025 Policy Banner */
+    .policy-banner {
+      background: linear-gradient(135deg, rgba(200,48,32,0.08) 0%, rgba(14,30,60,0.95) 50%, rgba(200,48,32,0.06) 100%);
+      border: 1px solid rgba(200,48,32,0.3);
+      border-radius: var(--radius-lg);
+      padding: 40px 48px;
+      position: relative; overflow: hidden;
+    }
+    .policy-banner::before {
+      content: '🍁';
+      position: absolute; top: 24px; right: 40px;
+      font-size: 5rem; opacity: 0.12; pointer-events: none;
+    }
+    .policy-banner .label { color: #E04030; margin-bottom: 16px; }
+    .policy-banner h3 { font-size: 1.2rem; margin-bottom: 16px; max-width: 700px; }
+    .policy-banner p { color: var(--silver-light); font-size: 0.97rem; line-height: 1.8; max-width: 780px; }
+    .policy-stats { display: flex; gap: 40px; flex-wrap: wrap; margin-top: 28px; }
+    .policy-stat { text-align: left; }
+    .policy-stat .ps-num { font-family: var(--font-display); font-size: 1.8rem; font-weight: 900; color: var(--aqua); line-height: 1; }
+    .policy-stat .ps-lbl { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-top: 4px; }
+    .policy-questions {
+      margin-top: 28px; padding: 20px 24px;
+      background: rgba(0,200,212,0.06); border: 1px solid var(--border-aqua);
+      border-radius: var(--radius-md);
+    }
+    .policy-questions p { font-size: 0.92rem; color: var(--silver-light); font-style: italic; line-height: 1.7; }
+    .policy-questions span { color: var(--aqua); font-style: normal; font-weight: 700; }
+
+    /* ================================================================
+       COMPARISON TABLE
+    ================================================================ */
+    .table-wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; }
+    thead tr { background: var(--navy-light); }
+    thead th { padding: 18px 24px; font-family: var(--font-display); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; text-align: left; color: var(--silver); border-bottom: 1px solid var(--border); }
+    thead th.hl { color: var(--aqua) !important; }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background 0.2s; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: rgba(0,200,212,0.02); }
+    tbody td { padding: 16px 24px; font-size: 0.92rem; color: var(--silver); }
+    tbody td:first-child { color: var(--white); font-weight: 600; font-size: 0.88rem; }
+    .td-good { color: var(--aqua) !important; font-weight: 700; }
+    .td-bad  { color: rgba(220,100,80,0.75) !important; }
+    .td-mid  { color: var(--muted) !important; }
+    .hl-col  { background: rgba(0,200,212,0.04); }
+
+    /* ================================================================
+       APPLICATIONS , 6 + "Why Municipalities" callout
+    ================================================================ */
+    .apps-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    .app-card { background: var(--navy-light); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: border-color 0.3s, box-shadow 0.3s; }
+    .app-card:hover { border-color: var(--border-aqua); box-shadow: 0 8px 32px rgba(0,200,212,0.1); }
+    .app-card.highlight { border-color: var(--border-civic); background: linear-gradient(135deg, rgba(48,144,224,0.07) 0%, var(--navy-light) 100%); }
+    .app-card-head { padding: 22px 26px 16px; background: linear-gradient(135deg, rgba(0,200,212,0.07) 0%, transparent 100%); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px; }
+    .app-card.highlight .app-card-head { background: linear-gradient(135deg, rgba(48,144,224,0.1) 0%, transparent 100%); }
+    .app-card-head h3 { font-size: 1rem; }
+    .app-items { padding: 18px 26px 22px; display: flex; flex-direction: column; gap: 7px; }
+    .app-item { font-size: 0.87rem; color: var(--silver); display: flex; align-items: flex-start; gap: 10px; }
+    .app-item::before { content:'›'; color: var(--aqua); font-weight: 900; font-size: 1rem; line-height: 1.3; min-width: 12px; }
+    .app-card.highlight .app-item::before { color: var(--civic-light); }
+
+    /* ================================================================
+       MISSION CTA , "The Medium Should Match the Mission"
+    ================================================================ */
+    #cta { position: relative; overflow: hidden; background: linear-gradient(175deg, #030810 0%, #060C18 50%, #04080E 100%); padding: 110px 0; }
+    #cta::before { content:''; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:750px; height:420px; border-radius:50%; background:radial-gradient(ellipse, rgba(0,100,180,0.12) 0%, transparent 65%); pointer-events:none; }
+    .cta-inner { position: relative; z-index: 2; max-width: 760px; margin: 0 auto; padding: 0 32px; text-align: center; }
+    .cta-mission-statement {
+      font-size: 1.3rem; font-family: var(--font-display); font-weight: 900;
+      color: var(--white); letter-spacing: 0.02em; line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .cta-mission-sub { font-size: 1rem; color: var(--aqua); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 40px; }
+    .cta-inner p { font-size: 1.02rem; color: var(--silver-light); margin-bottom: 40px; max-width: 620px; margin-left: auto; margin-right: auto; line-height: 1.8; }
+    .cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
+    .cta-stats { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; margin-bottom: 40px; }
+    .cta-stat .snum { font-size: 2rem; font-weight: 900; color: var(--aqua); font-family: var(--font-display); line-height: 1; }
+    .cta-stat .slbl { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); margin-top: 5px; }
+    .cta-closing-questions {
+      border-top: 1px solid var(--border);
+      padding-top: 32px;
+      font-size: 0.9rem; color: var(--muted);
+      font-style: italic; line-height: 2;
+    }
+    .cta-closing-questions span { color: var(--aqua); font-style: normal; font-weight: 600; }
+
+    footer { background: #040810; border-top: 1px solid var(--border); padding: 64px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.2rem; color: var(--white); margin-bottom: 6px; }
+    .footer-brand .logo-sub { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--aqua); margin-bottom: 18px; display: block; }
+    .footer-brand p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
+    .footer-tagline { font-style: italic; color: var(--silver) !important; font-size: 0.88rem !important; }
+    .footer-col h5 { font-family: var(--font-display); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver); margin-bottom: 16px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul a { font-size: 0.88rem; color: var(--muted); transition: color 0.2s; }
+    .footer-col ul a:hover { color: var(--aqua); }
+    .footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-bottom p { font-size: 0.82rem; color: var(--muted); }
+    .footer-cert { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cert-badge { padding: 4px 12px; border: 1px solid var(--border); border-radius: 100px; font-size: 0.72rem; color: var(--silver); font-weight: 600; letter-spacing: 0.06em; }
+
+    @media (max-width:960px) {
+      :root { --section-pad:72px; }
+      .hero-content { grid-template-columns:1fr; gap:40px; }
+      .hero-visual { display:none; }
+      .hero-kpi-strip { grid-template-columns:repeat(2,1fr); }
+      .contra-banner { grid-template-columns:1fr; }
+      .cmp-divider { display:none; }
+      .reasons-grid { grid-template-columns:repeat(2,1fr); }
+      .eng-grid { grid-template-columns:1fr; }
+      .apps-grid { grid-template-columns:repeat(2,1fr); }
+      .policy-stats { gap:24px; }
+      .footer-grid { grid-template-columns:1fr 1fr; }
+      .nav-links { display:none; }
+    }
+    @media (max-width:600px) {
+      :root { --section-pad:56px; }
+      .container { padding:0 20px; }
+      .irony-banner { padding:28px 24px; }
+      .reasons-grid { grid-template-columns:1fr; }
+      .apps-grid { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr; }
+      .footer-bottom { flex-direction:column; gap:16px; text-align:center; }
+    }
+  </style><link rel="canonical" href="/industries/municipal" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:title" content="Water Hydraulics for Municipal Infrastructure | WaterQuest Solutions" />
+  <meta property="og:description" content="Upgrade municipal water infrastructure with clean, reliable water-driven actuation for gates, valves, pump stations, and public works, zero oil contamination risk, 35% federal tax credit eligible, 40% lower annual operating costs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/industries/municipal" />
+  <meta property="og:image" content="/assets/waterquest-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Water Hydraulics for Municipal Infrastructure | WaterQuest Solutions" />
+  <meta name="twitter:description" content="Upgrade municipal water infrastructure with clean, reliable water-driven actuation for gates, valves, pump stations, and public works, zero oil contamination risk, 35% federal tax credit eligible, 40% lower annual operating costs." />
+  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
+  <link rel="alternate" hreflang="en-CA" href="/industries/municipal" />
+  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
+  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"WebPage","@id":"/industries/municipal#webpage","url":"/industries/municipal","name":"Water Hydraulics for Municipal Infrastructure | WaterQuest Solutions","description":"Upgrade municipal water infrastructure with clean, reliable water-driven actuation for gates, valves, pump stations, and public works, zero oil contamination risk, 35% federal tax credit eligible, 40% lower annual operating costs.","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"},{"@type":"ListItem","position":2,"name":"Industries","item":"/industries"},{"@type":"ListItem","position":3,"name":"Municipal","item":"/industries/municipal"}]}]}</script>
+  <style id="wq-global-shell-css">
+    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
+    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
+    body a{color:inherit}
+    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
+    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
+    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
+    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
+    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
+    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
+    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
+    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
+    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
+    main .btn.primary{color:var(--wq-navy)!important}
+    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
+    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
+    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
+    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
+    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
+    .wq-form-status.is-error{color:#ffb1b1!important}
+    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
+    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
+    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
+    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
+    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
+    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
+    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
+    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
+    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
+    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
+    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
+    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
+    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
+    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
+    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
+    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
+    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
+    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
+    .wq-hero-visual-text{padding:20px}
+    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
+    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
+    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
+    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
+    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
+    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
+    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
+    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
+    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
+    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
+    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
+    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
+    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
+    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
+    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
+    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
+    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
+    #wq-mobile-menu.open{display:block}
+    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
+    #wq-mobile-menu a:last-child{border-bottom:0}
+    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
+    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
+    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
+    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
+    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
+    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
+    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
+    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
+    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
+    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
+    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
+    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
+    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
+    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
+    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
+    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
+  </style>
+</head>
+<body class="wq-section-industries">
+<!-- WQ_GLOBAL_HEADER_START -->
+<div id="wq-global-bubbles" aria-hidden="true"></div>
+<nav id="wq-nav" role="navigation" aria-label="Main navigation">
+  <div class="wq-nav-inner">
+    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
+      <span class="wq-logo-main">WaterQuest Solutions</span>
+      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+    </a>
+    <ul class="wq-nav-links" role="list">
+      <li><a href="/products/">Products</a></li><li><a href="/industries/" class="active">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li>
+      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
+    </ul>
+    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
+  </div>
+</nav>
+<div id="wq-mobile-menu">
+  <a href="/products/">Products</a><a href="/industries/" class="active">Industries</a><a href="/technology/">Technology</a><a href="/knowledge-hub/">Knowledge Hub</a><a href="/about/">About</a>
+  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
+</div>
+<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
+<section class="wq-conversion-hero" aria-label="Page introduction">
+  <div class="wq-conversion-wrap">
+    <div>
+      <p class="wq-hero-eyebrow">Industry application</p>
+      <h1><span>Municipal</span>: where oil has no place.</h1>
+      <p class="wq-hero-copy">See how water hydraulics changes the risk profile for equipment working near people, water, food, infrastructure, seawater, washdown, or regulated environments.</p>
+      <div class="wq-hero-actions">
+        <a class="wq-hero-cta" href="/applications/">See Related Applications</a>
+        <a class="wq-hero-secondary" href="/products/">Review Matching Products</a>
+      </div>
+    </div>
+    <a class="wq-hero-visual" href="/applications/">
+      <div class="wq-hero-picture" aria-hidden="true"></div>
+      <div class="wq-hero-visual-text">
+        <small>Field fit</small>
+        <strong>A cleaner hydraulic medium for demanding operating environments.</strong>
+        <span>Built to resonate with engineers, operators, and technical decision makers.</span>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- WQ_CONVERSION_HERO_END --><!-- HERO -->
+<!-- WQS_INDUSTRY_DATA_START -->
+<style>
+.wqs-industry-data{background:#eef8f6;border-top:1px solid #cae0db;border-bottom:1px solid #cae0db;color:#12312d;font-family:Nunito Sans,Arial,sans-serif;padding:54px 6vw}.wqs-industry-data__inner{margin:0 auto;max-width:1180px}.wqs-industry-data__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-industry-data h2{font-size:clamp(30px,4.5vw,56px);line-height:1.02;margin:8px 0 14px;max-width:960px}.wqs-industry-data p{color:#4a625d;font-size:18px;line-height:1.65;max-width:940px}.wqs-industry-data__stats{display:grid;gap:12px;grid-template-columns:repeat(4,minmax(0,1fr));margin:26px 0}.wqs-industry-data__stat{background:#fff;border:1px solid #cae0db;border-radius:8px;padding:16px}.wqs-industry-data__stat span{color:#08726f;display:block;font-size:12px;font-weight:900;text-transform:uppercase}.wqs-industry-data__stat strong{display:block;font-size:20px;margin-top:6px}.wqs-industry-data__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:22px}.wqs-industry-data__panel{background:#fff;border:1px solid #cae0db;border-radius:8px;padding:22px}.wqs-industry-data__panel h3{font-size:19px;margin:0 0 14px}.wqs-industry-data__panel ul{margin:0;padding-left:20px}.wqs-industry-data__panel li{line-height:1.55;margin:7px 0}.wqs-industry-data__cards{display:grid;gap:10px}.wqs-industry-data__card{background:#f9fdfc;border:1px solid #d7e8e4;border-radius:8px;color:#12312d;display:grid;gap:5px;padding:14px;text-decoration:none}.wqs-industry-data__card span{color:#5b726d;font-size:14px;line-height:1.45}@media(max-width:850px){.wqs-industry-data{padding:38px 18px}.wqs-industry-data__stats,.wqs-industry-data__grid{grid-template-columns:1fr}}
+</style>
+<section class="wqs-industry-data" aria-label="Industry data and matching details">
+  <div class="wqs-industry-data__inner">
+    <div class="wqs-industry-data__eyebrow">Industry data and matching details</div>
+    <h2>Municipal Infrastructure: complete application detail</h2>
+    <p>Upgrade municipal water infrastructure with clean, reliable water-driven actuation for gates, valves, pump stations, and public works, zero oil contamination risk, 35% federal tax credit eligible, 40% lower annual operating costs.</p>
+    <div class="wqs-industry-data__stats">
+      <div class="wqs-industry-data__stat"><span>Industry group</span><strong>Public Infrastructure</strong></div>
+      <div class="wqs-industry-data__stat"><span>Best use</span><strong>Oil-free actuation</strong></div>
+      <div class="wqs-industry-data__stat"><span>Fluid medium</span><strong>Tap or sea water</strong></div>
+      <div class="wqs-industry-data__stat"><span>Materials</span><strong>316 SS + PEEK</strong></div>
+    </div>
+    <div class="wqs-industry-data__grid">
+      <div class="wqs-industry-data__panel"><h3>What this page should cover</h3><ul><li>Hydraulic Systems That Protect the Communities You Serve.</li><li>Upgrade municipal water infrastructure with clean, reliable water-driven actuation for gates, valves, pump stations, and public works, zero oil contamination risk, 35% federal tax credit eligible, 40% lower annual operating costs.</li><li>Why Water Hydraulics Fit Every Municipal Application</li><li>The Spec Is the Floor. Not the Ceiling.</li><li>Water vs Oil vs Air Municipal Infrastructure Environments</li><li>Applications Across Municipal Infrastructure</li><li>Oil Beside the Water It Protects</li><li>Water Aligned With the Mission</li><li>Zero Oil in Critical Water Systems</li><li>Reliability in Corrosive Moisture Environments</li><li>Much Lower Maintenance Requirements</li><li>Force &amp; Precision for Large Gates and Valves</li></ul></div>
+      <div class="wqs-industry-data__panel"><h3>Matching products and systems</h3><div class="wqs-industry-data__cards"><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-4-2-3-2-directional/"><strong>4 2 3 2 Directional</strong><span>WaterQuest Solutions patented 4/2 and 3/2 directional flow control valves for water hydraulics. 160 bar max, 0 to 30 L/min, 316 stainless steel, 24V DC solenoid with manual override, stand alone, manifold mount, or Cetop 3. Actuation card required above 20 bar.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-motors/m15/"><strong>M15 Water Hydraulic Motor</strong><span>The WaterQuest M15 water hydraulic motor delivers up to 45 Nm torque at 160 bar. Available in 15cc and 19cc displacement, 316 stainless steel, oil-free operation for industrial, marine, and municipal applications.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-motors/"><strong>Water Hydraulic Motors</strong><span>Water hydraulic motors in 316L stainless steel with carbon-reinforced PEEK wear surfaces. ~90% mechanical efficiency, tap or seawater operation, ATEX approved, ISO 9001 certified. Fixed and variable displacement. No oil contamination risk.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-actuation-cards/"><strong>Actuation Cards</strong><span>WaterQuest Solutions Actuation Card for directional control valves. PWM solenoid control card, part 004-010, required for direct solenoid actuation above 20 bar. 24V DC supply, 5 amp. Reduces coil temperature and power consumption. DIN rail mounting options available.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-electronic-flow-control/"><strong>Electronic Flow Control</strong><span>WaterQuest Solutions Electronic Flow Control Valve. Stepper motor-driven proportional control, 200 bar max, 0 to 30 L/min, 316 stainless steel and ceramic, 48V DC, DN3 (1 to 10 L/min) and DN6 (3 to 30 L/min). Open or closed loop control with ST5 programmable controller.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-electronic-pressure-control/"><strong>Electronic Pressure Control</strong><span>WaterQuest Solutions Electronic Pressure Control Valve. Stepper motor-driven proportional pressure control, 200 bar max, DN6 (0 to 30 L/min) and DN12 (5 to 100 L/min), 48V DC, open or closed loop with ST5 controller and 0.5V pressure transducer input. Stand alone or manifold mounted.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-cylinders/"><strong>Water Hydraulic Cylinders</strong><span>Water hydraulic tie rod cylinders in 316L stainless steel with carbon-reinforced PEEK wear surfaces. Seven bore sizes from 32 mm to 125 mm, up to 196 kN force, 160 bar, 0.98 efficiency. No oil contamination. Single and double acting configurations.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-2-2-pilot/"><strong>2 2 Pilot</strong><span>WaterQuest Solutions 2/2 Pilot Valves. DN9 (0 to 60 L/min, 3/8</span></a></div></div>
+      <div class="wqs-industry-data__panel"><h3>Related applications</h3><div class="wqs-industry-data__cards"><a class="wqs-industry-data__card" href="/applications/flood-control/"><strong>Flood Control</strong><span>Water hydraulic flood control systems for flood gates, storm surge barriers, tide gates, and stormwater infrastructure. Reliable emergency actuation without petroleum contamination in waterways.</span></a><a class="wqs-industry-data__card" href="/applications/gate-actuation/"><strong>Gate Actuation</strong><span>Water hydraulic gate actuation systems for sluice gates, penstock gates, dam spillways, and flood control. Oil-free hydraulic actuators engineered for wastewater, hydroelectric, and stormwater infrastructure where petroleum contamination cannot occur.</span></a><a class="wqs-industry-data__card" href="/applications/damper-control/"><strong>Damper Control</strong><span>Water hydraulic damper control for industrial ventilation, dust collection, fume extraction, and HVAC systems. Reliable damper actuation without air system contamination risk.</span></a><a class="wqs-industry-data__card" href="/applications/fire-suppression/"><strong>Fire Suppression</strong><span>Water hydraulic actuation for fire suppression deluge valves, sprinkler zone valves, and fire water distribution. Absolute reliability without petroleum contamination risk in potable water lines.</span></a><a class="wqs-industry-data__card" href="/applications/dust-suppression/"><strong>Dust Suppression</strong><span>Water hydraulic dust suppression systems for mining, bulk material handling, demolition, and construction. High-pressure misting without petroleum contamination risk.</span></a><a class="wqs-industry-data__card" href="/applications/flow-control/"><strong>Flow Control</strong><span>Water hydraulic flow control systems for process water, wastewater, slurry, and industrial cooling. Precise actuation and throttling without petroleum contamination.</span></a></div></div>
+      <div class="wqs-industry-data__panel"><h3>Related technical articles</h3><div class="wqs-industry-data__cards"><a class="wqs-industry-data__card" href="/knowledge-hub/hydraulic-gate-actuators-municipal-infrastructure"><strong>Hydraulic Gate Actuators for Municipal Infrastructure</strong><span>Water hydraulic gate actuators for municipal water infrastructure: treatment plant gates, pump station valves, reservoir controls, CSO gates, engineering specification requirements, lifecycle cost case, and federal funding alignment.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/why-municipal-procurement-needs-to-rethink-oil"><strong>Why Municipal Procurement Needs to Rethink Oil</strong><span>Municipal procurement specifications still default to oil hydraulics out of habit, not engineering necessity. A direct challenge to the frameworks that specify oil in water infrastructure, and a practical path toward specifications that eliminate contamination risk by design.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/municipal-infrastructure-without-the-oil-hazards"><strong>Municipal Infrastructure Without the Oil Hazards</strong><span>A full engineering and procurement analysis of water hydraulics in municipal wastewater, stormwater, potable water, and flood control systems. How 316 stainless and PEEK-based systems eliminate Fisheries Act exposure, corrosion failure, and contamination risk across Canadian municipal infrastructure.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/can-water-freeze-in-hydraulic-systems-engineering-around-temperature"><strong>Can Water Freeze in Hydraulic Systems? Engineering Around Temperature</strong><span>Water freezes at 0 degrees Celsius. That is a design parameter, not a barrier. A complete engineering guide to the four strategies that protect water hydraulic systems in cold Canadian climates, using the same approaches that already work throughout municipal, marine, and hydroelectric infrastructure.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/environmental-regulations-affecting-hydraulic-systems"><strong>Environmental Regulations Affecting Hydraulic Systems</strong><span>Why municipal water treatment, wastewater, and infrastructure systems should transition from hydraulic oil to water hydraulics: regulatory compliance, environmental protection, and risk mitigation.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/how-our-water-hpus-are-changing-the-industrial-landscape"><strong>How Our Water HPUs Are Changing the Industrial Landscape</strong><span>Water hydraulic power units engineered from the ground up around water's physical properties. How WaterQuest HPUs eliminate oil contamination risk, reduce cooling infrastructure, and deliver stable performance across industrial, marine, and municipal sectors.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/spec-writing-guide-for-water-hydraulic-equipment"><strong>Spec Writing Guide for Water Hydraulic Equipment</strong><span>Why municipal water treatment, wastewater, and infrastructure systems should transition from hydraulic oil to water hydraulics: regulatory compliance, environmental protection, and risk mitigation.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/the-future-of-oil-free-hydraulic-systems"><strong>The Future of Oil-Free Hydraulic Systems</strong><span>Why municipal water treatment, wastewater, and infrastructure systems should transition from hydraulic oil to water hydraulics: regulatory compliance, environmental protection, and risk mitigation.</span></a></div></div>
+    </div>
+  </div>
+</section>
+<!-- WQS_INDUSTRY_DATA_END -->
+<section id="hero" aria-label="Water Hydraulics for Municipal Infrastructure">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="infra-grid" aria-hidden="true"></div>
+  <div class="bubble-layer" id="hero-bubbles" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="label reveal">Industry Municipal Infrastructure</p>
+      <h1 class="reveal" style="transition-delay:.1s">
+        Hydraulic Systems That<br/>
+        <span class="acc-civic">Protect the Communities</span><br/>
+        <span class="acc-w">You Serve.</span>
+      </h1>
+      <p class="hero-lead reveal" style="transition-delay:.2s">Upgrade municipal infrastructure with clean, reliable water-driven actuation for gates, valves, pump stations, and public works facilities without the contamination risks of oil or the weak force of air.</p>
+      <div class="hero-ctas reveal" style="transition-delay:.3s">
+        <a href="#contact" class="btn btn-civic">Book a Municipal System Assessment <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/pilot/" class="btn btn-outline">Pilot Program</a>
+      </div>
+      <div class="hero-kpi-strip reveal" style="transition-delay:.4s">
+        <div class="hero-kpi"><div class="knum">ZERO</div><div class="klbl">Oil Contamination Risk</div></div>
+        <div class="hero-kpi"><div class="knum">35%</div><div class="klbl">Federal Tax Credit</div></div>
+        <div class="hero-kpi"><div class="knum">~40%</div><div class="klbl">Annual Operating Savings</div></div>
+        <div class="hero-kpi"><div class="knum">100%</div><div class="klbl">Water-Based Actuation</div></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right">
+      <!-- Municipal water infrastructure SVG -->
+      <svg class="muni-svg" viewBox="0 0 430 430" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <radialGradient id="wg1" cx="50%" cy="40%" r="55%">
+            <stop offset="0%" stop-color="#00C8D4" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#004060" stop-opacity="0.2"/>
+          </radialGradient>
+          <radialGradient id="cg1" cx="50%" cy="40%" r="55%">
+            <stop offset="0%" stop-color="#3090E0" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#001840" stop-opacity="0.1"/>
+          </radialGradient>
+          <filter id="wglow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <filter id="cglow2"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <linearGradient id="pipe-h" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="rgba(0,200,212,0.5)"/>
+            <stop offset="50%" stop-color="rgba(0,200,212,0.8)"/>
+            <stop offset="100%" stop-color="rgba(0,200,212,0.5)"/>
+          </linearGradient>
+          <linearGradient id="pipe-v" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(0,200,212,0.7)"/>
+            <stop offset="100%" stop-color="rgba(0,200,212,0.3)"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Ground level line -->
+        <line x1="20" y1="290" x2="410" y2="290" stroke="rgba(120,160,200,0.2)" stroke-width="1" stroke-dasharray="4 6"/>
+        <text x="210" y="302" text-anchor="middle" font-family="Avenir,sans-serif" font-size="7" fill="rgba(120,160,200,0.3)" letter-spacing="0.12em">GRADE</text>
+
+        <!-- Underground vault -->
+        <rect x="150" y="305" width="130" height="90" rx="6" fill="rgba(8,18,36,0.95)" stroke="rgba(0,200,212,0.3)" stroke-width="1.5"/>
+        <text x="215" y="328" text-anchor="middle" font-family="Avenir,sans-serif" font-size="7.5" fill="rgba(0,200,212,0.5)" letter-spacing="0.12em">UNDERGROUND</text>
+        <text x="215" y="340" text-anchor="middle" font-family="Avenir,sans-serif" font-size="7.5" fill="rgba(0,200,212,0.5)" letter-spacing="0.12em">VAULT</text>
+
+        <!-- Gate valve in vault , animated -->
+        <rect x="190" y="348" width="50" height="24" rx="4" fill="rgba(10,24,48,0.9)" stroke="rgba(0,200,212,0.5)" stroke-width="1.5"/>
+        <text x="215" y="364" text-anchor="middle" font-family="Avenir,sans-serif" font-size="8" font-weight="700" fill="#00C8D4" letter-spacing="0.1em">GATE</text>
+        <!-- Actuator stem -->
+        <rect x="208" y="320" width="14" height="28" rx="3" fill="rgba(0,200,212,0.2)" stroke="rgba(0,200,212,0.5)" stroke-width="1.5">
+          <animate attributeName="height" values="28;20;28" dur="5s" repeatCount="indefinite"/>
+          <animate attributeName="y" values="320;328;320" dur="5s" repeatCount="indefinite"/>
+        </rect>
+
+        <!-- Horizontal main pipe -->
+        <rect x="20" y="240" width="390" height="14" rx="5" fill="rgba(8,18,36,0.9)" stroke="rgba(0,200,212,0.3)" stroke-width="1.5"/>
+        <line x1="20" y1="247" x2="410" y2="247" stroke="url(#pipe-h)" stroke-width="2" stroke-dasharray="6 6">
+          <animate attributeName="stroke-dashoffset" values="0;-24" dur="2s" repeatCount="indefinite"/>
+        </line>
+        <!-- Pipe label -->
+        <text x="210" y="232" text-anchor="middle" font-family="Avenir,sans-serif" font-size="7" fill="rgba(0,200,212,0.4)" letter-spacing="0.1em">WATER MAIN / DISTRIBUTION PIPE 316 SS</text>
+
+        <!-- Branch down to vault -->
+        <rect x="208" y="254" width="14" height="52" rx="3" fill="rgba(8,18,36,0.9)" stroke="rgba(0,200,212,0.25)" stroke-width="1.5"/>
+        <line x1="215" y1="254" x2="215" y2="306" stroke="url(#pipe-v)" stroke-width="2" stroke-dasharray="3 4">
+          <animate attributeName="stroke-dashoffset" values="0;-14" dur="1.4s" repeatCount="indefinite"/>
+        </line>
+
+        <!-- WWTP clarifier left -->
+        <ellipse cx="80" cy="195" rx="55" ry="35" fill="rgba(8,18,36,0.85)" stroke="rgba(0,200,212,0.25)" stroke-width="1.5"/>
+        <!-- Clarifier water surface -->
+        <ellipse cx="80" cy="188" rx="48" ry="12" fill="rgba(0,144,200,0.2)"/>
+        <path d="M32 188 C50 184,66 192,80 188 C94 184,110 190,128 188" stroke="rgba(0,200,212,0.4)" stroke-width="1" fill="none">
+          <animate attributeName="d" dur="3s" repeatCount="indefinite"
+            values="M32 188 C50 184,66 192,80 188 C94 184,110 190,128 188;M32 190 C50 186,66 194,80 190 C94 186,110 192,128 190;M32 188 C50 184,66 192,80 188 C94 184,110 190,128 188"/>
+        </path>
+        <text x="80" y="208" text-anchor="middle" font-family="Avenir,sans-serif" font-size="7.5" fill="rgba(0,200,212,0.4)" letter-spacing="0.1em">CLARIFIER</text>
+        <!-- Arm connecting clarifier to main -->
+        <line x1="80" y1="230" x2="80" y2="244" stroke="rgba(0,200,212,0.35)" stroke-width="2.5" stroke-dasharray="3 4">
+          <animate attributeName="stroke-dashoffset" values="0;-14" dur="1.6s" repeatCount="indefinite"/>
+        </line>
+        <!-- Clarifier actuator node -->
+        <circle cx="80" cy="240" r="8" fill="rgba(8,18,36,0.9)" stroke="rgba(0,200,212,0.5)" stroke-width="1.5" filter="url(#wglow)"/>
+
+        <!-- Pump station right -->
+        <rect x="310" y="162" width="90" height="68" rx="8" fill="rgba(8,18,36,0.9)" stroke="rgba(48,144,224,0.35)" stroke-width="1.5"/>
+        <text x="355" y="184" text-anchor="middle" font-family="Avenir,sans-serif" font-size="7.5" font-weight="700" fill="rgba(48,144,224,0.7)" letter-spacing="0.1em">PUMP</text>
+        <text x="355" y="196" text-anchor="middle" font-family="Avenir,sans-serif" font-size="7.5" font-weight="700" fill="rgba(48,144,224,0.7)" letter-spacing="0.1em">STATION</text>
+        <!-- Pump impeller -->
+        <circle cx="355" cy="212" r="14" fill="rgba(10,24,48,0.9)" stroke="rgba(48,144,224,0.5)" stroke-width="1.5">
+          <animateTransform attributeName="transform" type="rotate" from="0 355 212" to="360 355 212" dur="4s" repeatCount="indefinite"/>
+        </circle>
+        <line x1="355" y1="198" x2="355" y2="226" stroke="rgba(48,144,224,0.6)" stroke-width="2.5" stroke-linecap="round">
+          <animateTransform attributeName="transform" type="rotate" from="0 355 212" to="360 355 212" dur="4s" repeatCount="indefinite"/>
+        </line>
+        <line x1="341" y1="212" x2="369" y2="212" stroke="rgba(48,144,224,0.6)" stroke-width="2.5" stroke-linecap="round">
+          <animateTransform attributeName="transform" type="rotate" from="0 355 212" to="360 355 212" dur="4s" repeatCount="indefinite"/>
+        </line>
+        <!-- Pump to main -->
+        <line x1="355" y1="230" x2="355" y2="244" stroke="rgba(48,144,224,0.4)" stroke-width="2.5" stroke-dasharray="3 4">
+          <animate attributeName="stroke-dashoffset" values="0;-14" dur="1.8s" repeatCount="indefinite"/>
+        </line>
+        <circle cx="355" cy="240" r="8" fill="rgba(8,18,36,0.9)" stroke="rgba(48,144,224,0.5)" stroke-width="1.5" filter="url(#wglow)"/>
+
+        <!-- HPU top centre -->
+        <rect x="170" y="88" width="90" height="58" rx="7" fill="rgba(6,14,28,0.98)" stroke="rgba(0,200,212,0.55)" stroke-width="1.5"/>
+        <text x="215" y="110" text-anchor="middle" font-family="Avenir,sans-serif" font-size="9" font-weight="700" fill="#00C8D4" letter-spacing="0.12em">HPU</text>
+        <text x="215" y="123" text-anchor="middle" font-family="Avenir,sans-serif" font-size="7" fill="rgba(0,200,212,0.55)" letter-spacing="0.1em">WATER ONLY</text>
+        <text x="215" y="136" text-anchor="middle" font-family="Avenir,sans-serif" font-size="6" fill="rgba(120,160,200,0.4)" letter-spacing="0.1em">316 SS · PEEK</text>
+        <!-- HPU feeds -->
+        <line x1="215" y1="146" x2="215" y2="180" stroke="rgba(0,200,212,0.5)" stroke-width="2" stroke-dasharray="3 4">
+          <animate attributeName="stroke-dashoffset" values="0;-14" dur="1.3s" repeatCount="indefinite"/>
+        </line>
+        <!-- Distribution bar -->
+        <rect x="80" y="178" width="270" height="10" rx="4" fill="rgba(8,18,36,0.9)" stroke="rgba(0,200,212,0.3)" stroke-width="1.5"/>
+        <line x1="80" y1="183" x2="350" y2="183" stroke="rgba(0,200,212,0.4)" stroke-width="1.5" stroke-dasharray="4 5">
+          <animate attributeName="stroke-dashoffset" values="0;-18" dur="1.8s" repeatCount="indefinite"/>
+        </line>
+        <!-- Feeds down from distribution bar -->
+        <line x1="80" y1="188" x2="80" y2="160" stroke="rgba(0,200,212,0.35)" stroke-width="2" stroke-dasharray="3 4">
+          <animate attributeName="stroke-dashoffset" values="0;-14" dur="1.5s" repeatCount="indefinite"/>
+        </line>
+        <line x1="350" y1="188" x2="350" y2="162" stroke="rgba(48,144,224,0.35)" stroke-width="2" stroke-dasharray="3 4">
+          <animate attributeName="stroke-dashoffset" values="0;-14" dur="1.7s" repeatCount="indefinite"/>
+        </line>
+
+        <!-- Flow dot on distribution bar -->
+        <circle r="4.5" fill="#00C8D4" filter="url(#wglow)" opacity="0.9">
+          <animateMotion dur="3.5s" repeatCount="indefinite" path="M215 146 L215 183 L80 183 L80 188"/>
+        </circle>
+
+        <!-- Community safe badge -->
+        <rect x="30" y="55" width="140" height="40" rx="7" fill="rgba(6,14,28,0.9)" stroke="rgba(0,200,212,0.4)" stroke-width="1.5"/>
+        <text x="100" y="73" text-anchor="middle" font-family="Avenir,sans-serif" font-size="8.5" font-weight="700" fill="#00C8D4" letter-spacing="0.1em">ZERO OIL</text>
+        <text x="100" y="86" text-anchor="middle" font-family="Avenir,sans-serif" font-size="7" fill="rgba(0,200,212,0.55)" letter-spacing="0.12em">COMMUNITY SAFE</text>
+
+        <!-- Zero oil label bottom -->
+        <text x="215" y="415" text-anchor="middle" font-family="Avenir,sans-serif" font-size="9.5" font-weight="700" fill="rgba(0,200,212,0.35)" letter-spacing="0.18em">HYDRAULIC MEDIUM: H₂O</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- IRONY CALLOUT -->
+<section class="section section-alt" aria-label="The Oil Contradiction">
+  <div class="bubble-layer" id="irony-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="irony-banner reveal">
+      <p class="irony-text">"Petrochemical circuits in sludge gate operations. Glycol-flushed actuators above wet wells. Diesel-driven hydraulic packs beside stormwater diversions. Hydrocarbon in places built to protect water. The irony is staggering."</p>
+      <p class="irony-attr"> WaterQuest Solutions | The Case Against Oil in Municipal Water Infrastructure</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <div class="contra-banner reveal" style="transition-delay:.1s">
+        <div class="cmp-col danger">
+          <div class="cmp-head"><span style="font-size:1.4rem">⚠️</span><h3>Oil Beside the Water It Protects</h3></div>
+          <div class="cmp-items">
+            <div class="cmp-item">Contamination incidents, permit violations &amp; environmental penalties</div>
+            <div class="cmp-item">Oil sheen in clarifiers, channels &amp; stormwater conveyances</div>
+            <div class="cmp-item">Rapid corrosion from H₂S, chlorine &amp; high-humidity vaults</div>
+            <div class="cmp-item">Fire risk in confined pump stations and generator rooms</div>
+            <div class="cmp-item">Cold-weather viscosity swings slow gates, pressure spikes</div>
+          </div>
+        </div>
+        <div class="cmp-divider"><span class="vs-pill">VS</span></div>
+        <div class="cmp-col safe">
+          <div class="cmp-head"><span style="font-size:1.4rem">💧</span><h3>Water Aligned With the Mission</h3></div>
+          <div class="cmp-items">
+            <div class="cmp-item">No hydrocarbon leaks, zero contamination risk near waterways</div>
+            <div class="cmp-item">No oil sheen, no spill kits, no cleanup costs, no reporting burden</div>
+            <div class="cmp-item">316 SS &amp; PEEK withstand H₂S, chlorine, humidity &amp; buried vaults</div>
+            <div class="cmp-item">Non-flammable, no fire risk in pump stations or generator rooms</div>
+            <div class="cmp-item">Temperature-stable consistent force from -40°C to summer heat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIX REASONS -->
+<section class="section section-dark" aria-labelledby="reasons-heading">
+  <div class="bubble-layer" id="reasons-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Six Reasons</p>
+      <h2 id="reasons-heading">Why Water Hydraulics Fit<br/><span class="text-aqua">Every Municipal Application</span></h2>
+    </div>
+    <div class="reasons-grid">
+      <div class="reason-card reveal" data-num="01" style="transition-delay:.0s"><div class="r-icon">🌊</div><h3>Zero Oil in Critical Water Systems</h3><p>No hydrocarbon leaks, no oil sheen, no cleanup costs, no containment systems. Water hydraulics remove contamination risk entirely from the facilities built to protect water quality.</p></div>
+      <div class="reason-card reveal" data-num="02" style="transition-delay:.07s"><div class="r-icon">⚙️</div><h3>Reliability in Corrosive Moisture Environments</h3><p>316 SS and PEEK resist H₂S, chlorine, humidity, buried vaults, and standing water. These environments destroy oil systems, they're what water hydraulics are engineered for.</p></div>
+      <div class="reason-card reveal" data-num="03" style="transition-delay:.14s"><div class="r-icon">🔧</div><h3>Much Lower Maintenance Requirements</h3><p>No oil changes, filter replacements, fluid sampling, hazardous disposal, or spill traceback. Lean municipal crews stay focused on critical infrastructure tasks, not oil management.</p></div>
+      <div class="reason-card reveal" data-num="04" style="transition-delay:.0s"><div class="r-icon">💪</div><h3>Force &amp; Precision for Large Gates and Valves</h3><p>Multi-ton gates, large-diameter valves, and long-stroke movement all need consistent high-pressure force. Water delivers it where air can't, and oil falters in cold weather.</p></div>
+      <div class="reason-card reveal" data-num="05" style="transition-delay:.07s"><div class="r-icon">🔥</div><h3>No Fire or Ignition Risk in Confined Spaces</h3><p>Pump stations, electrical rooms, generator halls, and underground vaults carry real ignition risk with oil. Water removes it entirely, no vapours, no flash point, no fuel source.</p></div>
+      <div class="reason-card reveal" data-num="06" style="transition-delay:.14s"><div class="r-icon">🌡️</div><h3>Natural Temperature Stability Year-Round</h3><p>Oil changes viscosity in cold Canadian winters causing slow gates, pressure spikes, and pump strain. Water stays stable across freeze-thaw cycles, providing predictable year-round performance.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ENGINEER'S RESPONSIBILITY + CANADA BUDGET 2025 -->
+<section id="engineers" class="section section-alt" aria-labelledby="eng-heading">
+  <div class="bubble-layer" id="eng-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header reveal">
+      <p class="label">The Engineer's Responsibility</p>
+      <h2 id="eng-heading">The Spec Is the Floor.<br/><span class="text-aqua">Not the Ceiling.</span></h2>
+      <p>Oil spills don't happen because of careless engineers, they happen because of complacent design. Every time oil is specified in a facility designed to protect water, that contradiction is locked into place by a stamp on a drawing.</p>
+    </div>
+
+    <div class="eng-grid">
+      <div class="eng-card reveal-left" style="transition-delay:.0s">
+        <div class="eng-card-icon">🔒</div>
+        <h3>Habit Is Not Justification</h3>
+        <p>Oil spills don't happen because of careless engineers, they happen because of complacent design. Every time oil is specified in a facility designed to protect water, that contradiction is locked into place. The spec reflects a choice. Choose differently.</p>
+      </div>
+      <div class="eng-card reveal-right" style="transition-delay:.08s">
+        <div class="eng-card-icon">📐</div>
+        <h3>The Spec Is the Floor, Not the Ceiling</h3>
+        <p>You write the spec. You shape it. You enforce it. Suppliers offer water hydraulics when tenders require it. Markets follow stamped documents. "It's not in the spec" means a signature put oil there, and a signature can remove it.</p>
+      </div>
+      <div class="eng-card reveal-left" style="transition-delay:.14s">
+        <div class="eng-card-icon">⚡</div>
+        <h3>Emergency Reliability No Warm-Up, No Lag</h3>
+        <p>Storm events, sewer backups, and pump failures demand instant response. Water hydraulics perform consistently at -40°C with no thickening, no pressure drop from heat, and no performance lag when communities need it most.</p>
+      </div>
+      <div class="eng-card reveal-right" style="transition-delay:.2s">
+        <div class="eng-card-icon">🌱</div>
+        <h3>Longer Life in the Harshest Municipal Environments</h3>
+        <p>316 SS and PEEK eliminate corrosion from H₂S, chlorine, humidity, and standing water. No oil to degrade, no filters to change, systems last longer and require fewer replacements, supporting sustainable long-term infrastructure.</p>
+      </div>
+    </div>
+
+    <!-- Canada Budget 2025 -->
+    <div class="policy-banner reveal" style="transition-delay:.1s">
+      <p class="label">Canada Budget 2025</p>
+      <h3>Policy Is Aligning With Water Hydraulics</h3>
+      <p>Immediate expensing of clean-economy infrastructure and a 35% federal tax credit now apply to zero-emission technologies like WaterQuest systems. When you specify oil in municipal water infrastructure today, you're at odds with responsible fiscal management, environmental logic, and federal policy direction.</p>
+      <div class="policy-stats">
+        <div class="policy-stat"><div class="ps-num">35%</div><div class="ps-lbl">Federal Tax Credit on Qualifying Systems</div></div>
+        <div class="policy-stat"><div class="ps-num">~15%</div><div class="ps-lbl">Lower Energy Use vs Oil</div></div>
+        <div class="policy-stat"><div class="ps-num">~40%</div><div class="ps-lbl">Lower Annual Operating Costs</div></div>
+      </div>
+      <div class="policy-questions">
+        <p>The questions every municipal engineer should ask at design review:<br/>
+        <span>Could this run on water?</span> &nbsp;&nbsp;|&nbsp;&nbsp;
+        <span>Could I eliminate oil here entirely?</span> &nbsp;&nbsp;|&nbsp;&nbsp;
+        <span>Am I leaving a cleaner system for the next generation?</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="section section-dark" aria-labelledby="table-heading">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Performance Comparison</p>
+      <h2 id="table-heading">Water vs Oil vs Air <br/><span class="text-aqua">Municipal Infrastructure Environments</span></h2>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Category</th><th class="hl">Water Hydraulics</th><th>Oil Hydraulics</th><th>Air Systems</th></tr></thead>
+        <tbody>
+          <tr><td>Contamination Risk</td><td class="hl-col td-good">None</td><td class="td-bad">Severe</td><td class="td-mid">None</td></tr>
+          <tr><td>Suitability for Wet Areas</td><td class="hl-col td-good">Excellent</td><td class="td-bad">High Risk</td><td class="td-mid">None</td></tr>
+          <tr><td>Chemical Resistance</td><td class="hl-col td-good">High</td><td class="td-bad">Poor</td><td class="td-mid">Good</td></tr>
+          <tr><td>Force Output</td><td class="hl-col td-good">High</td><td class="td-good">High</td><td class="td-bad">Low</td></tr>
+          <tr><td>Cold / Heat Stability</td><td class="hl-col td-good">High</td><td class="td-bad">Low</td><td class="td-mid">Medium</td></tr>
+          <tr><td>Maintenance Requirement</td><td class="hl-col td-good">Low</td><td class="td-bad">High</td><td class="td-mid">Medium</td></tr>
+          <tr><td>Operator Safety</td><td class="hl-col td-good">High</td><td class="td-bad">Poor</td><td class="td-mid">Medium</td></tr>
+          <tr><td>Suitability for Buried Vaults</td><td class="hl-col td-good">Excellent</td><td class="td-bad">Low</td><td class="td-mid">Medium</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="section section-alt" aria-labelledby="apps-heading">
+  <div class="bubble-layer" id="apps-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Where We're Deployed</p>
+      <h2 id="apps-heading">Applications Across<br/><span class="text-aqua">Municipal Infrastructure</span></h2>
+    </div>
+    <div class="apps-grid">
+      <div class="app-card reveal" style="transition-delay:.0s">
+        <div class="app-card-head"><span style="font-size:1.4rem">🌧️</span><h3>Stormwater &amp; Flood Control</h3></div>
+        <div class="app-items">
+          <div class="app-item">Sluice &amp; diversion gates</div>
+          <div class="app-item">Storm channel isolation valves</div>
+          <div class="app-item">Overflow weir actuators</div>
+          <div class="app-item">Emergency bypass valves</div>
+          <div class="app-item">Flood control structure gates</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.07s">
+        <div class="app-card-head"><span style="font-size:1.4rem">🏗️</span><h3>Water Treatment &amp; Distribution</h3></div>
+        <div class="app-items">
+          <div class="app-item">Intake &amp; reservoir isolation gates</div>
+          <div class="app-item">High-lift pump discharge valves</div>
+          <div class="app-item">Pressure zone isolation valves</div>
+          <div class="app-item">Raw water control actuators</div>
+          <div class="app-item">Backflow prevention actuation</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.14s">
+        <div class="app-card-head"><span style="font-size:1.4rem">🔩</span><h3>Lift Stations &amp; Pump Facilities</h3></div>
+        <div class="app-items">
+          <div class="app-item">Wet well isolation valves</div>
+          <div class="app-item">Gate &amp; damper controls</div>
+          <div class="app-item">Emergency shutoff valves</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.0s">
+        <div class="app-card-head"><span style="font-size:1.4rem">💧</span><h3>Wastewater Treatment</h3></div>
+        <div class="app-items">
+          <div class="app-item">Headworks gate actuators</div>
+          <div class="app-item">Bar screen controls</div>
+          <div class="app-item">Clarifier mechanisms</div>
+          <div class="app-item">Sludge handling &amp; aeration valves</div>
+          <div class="app-item">Effluent discharge controls</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.07s">
+        <div class="app-card-head"><span style="font-size:1.4rem">🍏</span><h3>Dams &amp; Retention Structures</h3></div>
+        <div class="app-items">
+          <div class="app-item">Outlet control gates</div>
+          <div class="app-item">Spillway actuation</div>
+          <div class="app-item">Low-level outlet valves</div>
+          <div class="app-item">Emergency release systems</div>
+        </div>
+      </div>
+      <div class="app-card highlight reveal" style="transition-delay:.14s">
+        <div class="app-card-head"><span style="font-size:1.4rem">✅</span><h3>Why Municipalities Choose Water</h3></div>
+        <div class="app-items">
+          <div class="app-item" style="color:var(--aqua)">Zero contamination on any leak</div>
+          <div class="app-item" style="color:var(--aqua)">Non-flammable in confined spaces</div>
+          <div class="app-item" style="color:var(--aqua)">35% federal tax credit eligible</div>
+          <div class="app-item" style="color:var(--aqua)">Phased retrofit, minimal disruption</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA , THE MEDIUM SHOULD MATCH THE MISSION -->
+<section id="contact" aria-label="Book a municipal system assessment">
+  <div id="cta">
+    <div class="bubble-layer" id="cta-bubbles" aria-hidden="true"></div>
+    <div class="cta-inner" style="position:relative;z-index:2;">
+      <p class="label reveal">The Medium Should Match the Mission</p>
+      <div class="cta-mission-statement reveal" style="transition-delay:.1s">In water infrastructure, the mission is water.</div>
+      <div class="cta-mission-sub reveal" style="transition-delay:.15s">No spill kits. No containment trays. No oil sheen on clarifiers.</div>
+      <p class="reveal" style="transition-delay:.2s">Systems that can fail without environmental consequence that's what accountable municipal engineering looks like. Book a system assessment to discover your path to zero-oil infrastructure.</p>
+      <div class="cta-buttons reveal" style="transition-delay:.3s">
+        <a href="/contact/" class="btn btn-civic">Book a Municipal System Assessment <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/pilot/" class="btn btn-outline">Explore Pilot Program</a>
+      </div>
+      <div class="cta-stats reveal" style="transition-delay:.35s">
+        <div class="cta-stat"><div class="snum">ZERO</div><div class="slbl">Oil Contamination Risk</div></div>
+        <div class="cta-stat"><div class="snum">35%</div><div class="slbl">Federal Tax Credit</div></div>
+        <div class="cta-stat"><div class="snum">~40%</div><div class="slbl">Annual Operating Savings</div></div>
+        <div class="cta-stat"><div class="snum">100%</div><div class="slbl">Water-Based Actuation</div></div>
+      </div>
+      <div class="cta-closing-questions reveal" style="transition-delay:.4s">
+        Protecting Communities Through Cleaner Municipal Infrastructure.<br/>
+        <span>WaterQuest Solutions</span> &nbsp;|&nbsp; Vancouver, BC, Canada
+      </div>
+    </div>
+  </div>
+</section><script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40), {passive:true});
+  (function globalBubbles() {
+    const c = document.getElementById('global-bubbles');
+    for (let i = 0; i < 32; i++) {
+      const b = document.createElement('div'); b.className = 'bubble';
+      const s = Math.random()*11+3, d = (Math.random()-.5)*90;
+      b.style.cssText = `width:${s}px;height:${s}px;left:${Math.random()*100}%;bottom:${Math.random()*10}%;--drift:${d}px;animation-duration:${Math.random()*20+12}s;animation-delay:${Math.random()*16}s;`;
+      c.appendChild(b);
+    }
+  })();
+  function seedBubbles(id,n){const c=document.getElementById(id);if(!c)return;for(let i=0;i<n;i++){const b=document.createElement('div');b.className='bubble';const s=Math.random()*8+2,d=(Math.random()-.5)*65;b.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;bottom:${Math.random()*25}%;--drift:${d}px;animation-duration:${Math.random()*15+9}s;animation-delay:${Math.random()*11}s;`;c.appendChild(b);}}
+  ['hero-bubbles','irony-bubbles','reasons-bubbles','eng-bubbles','apps-bubbles','cta-bubbles'].forEach(id=>seedBubbles(id,12));
+  const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}}),{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>obs.observe(el));
+</script>
+<!-- WQ_CONTEXT_APPS_START -->
+<section class="wq-context-apps" aria-label="Related application pages">
+  <div class="wq-context-wrap">
+    <div>
+      <h2>Related application pages</h2>
+      <p>Application pages connect this section to specific water hydraulic projects and operating problems.</p>
+    </div>
+    <div class="wq-app-links"><a href="/applications/gate-actuation/">Gate Actuation</a><a href="/applications/flood-control/">Flood Control</a><a href="/applications/flow-control/">Flow Control</a></div>
+  </div>
+</section>
+<!-- WQ_CONTEXT_APPS_END -->
+
+<!-- WQ_GLOBAL_FOOTER_START -->
+<footer class="wq-site-footer" role="contentinfo">
+  <div class="wq-footer-container">
+    <div class="wq-footer-grid">
+      <div class="wq-footer-brand">
+        <span class="wq-logo-main">WaterQuest Solutions</span>
+        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Industries</h5>
+        <ul><li><a href="/industries/municipal/" class="active">Municipal</a></li><li><a href="/industries/wastewater-treatment/">Wastewater Treatment</a></li><li><a href="/industries/hydro/">Hydro</a></li><li><a href="/industries/marine/">Marine</a></li><li><a href="/industries/desalination/">Desalination</a></li><li><a href="/industries/mining/">Mining</a></li><li><a href="/industries/forestry/">Forestry</a></li><li><a href="/industries/pulp-paper/">Pulp and Paper</a></li><li><a href="/industries/food-beverage/">Food and Beverage</a></li><li><a href="/industries/agriculture/">Agriculture</a></li><li><a href="/industries/hydrogen-production/">Hydrogen Production</a></li><li><a href="/industries/fire-suppression/">Fire Suppression</a></li><li><a href="/industries/dust-control/">Dust Control</a></li><li><a href="/industries/odor-control/">Odor Control</a></li><li><a href="/industries/waterparks/">Waterparks</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Core Pages</h5>
+        <ul><li><a href="/products/">Products</a></li><li><a href="/industries/" class="active">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
+          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
+          <li>558 East Kent Ave S</li>
+          <li>Vancouver, BC V5X 4V6</li>
+          <li>Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
+  </div>
+</footer>
+<!-- WQ_GLOBAL_FOOTER_END -->
+<script id="wq-global-shell-js">
+    (function(){
+      var nav=document.getElementById("wq-nav");
+      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
+      var menuButton=document.querySelector(".wq-menu-toggle");
+      var mobileMenu=document.getElementById("wq-mobile-menu");
+      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
+      var bubbles=document.getElementById("wq-global-bubbles");
+      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
+      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
+      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
+      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
+      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
+      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
+      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
+      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
+      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
+      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
+      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
+      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
+    })();
+  </script>
+
+</body>
+</html>

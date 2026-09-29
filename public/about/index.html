@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About WaterQuest Solutions | Pioneers in Water Hydraulics | Vancouver, BC</title>
+  <meta name="description" content="WaterQuest Solutions is a Vancouver-based cleantech manufacturer specializing in oil-free water hydraulic systems. Founded by engineers and environmental advocates committed to zero-contamination hydraulic power." />
+  <meta name="keywords" content="WaterQuest Solutions, water hydraulics company, oil-free hydraulic manufacturer, Vancouver hydraulics, cleantech Canada, 316 stainless steel hydraulics" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ================================================================
+       DESIGN SYSTEM , matches waterquestsolutions_1home_page.html
+    ================================================================ */
+    :root {
+      --navy:         #0A1628;
+      --navy-mid:     #0D2044;
+      --navy-light:   #122954;
+      --aqua:         #00C8D4;
+      --aqua-dim:     #00A3AD;
+      --aqua-glow:    rgba(0,200,212,0.15);
+      --silver:       #FFFFFF;
+      --silver-light: #FFFFFF;
+      --white:        #FFFFFF;
+      --off-white:    #F0F5FB;
+      --body-text:    #FFFFFF;
+      --muted:        #FFFFFF;
+      --border:       rgba(168,184,204,0.18);
+      --border-aqua:  rgba(0,200,212,0.3);
+
+      --font-display: 'Avenir', 'Avenir Next', 'Nunito Sans', sans-serif;
+      --font-body:    'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+
+      --radius-sm:  6px;
+      --radius-md:  12px;
+      --radius-lg:  20px;
+
+      --shadow-card: 0 4px 32px rgba(0,0,0,0.35);
+      --shadow-glow: 0 0 40px rgba(0,200,212,0.2);
+
+      --max-width:    1240px;
+      --section-pad:  100px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      background: var(--navy);
+      color: var(--body-text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ul { list-style: none; }
+
+    /* ── Typography ─────────────────────────────────────────────── */
+    .label {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--aqua);
+    }
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-weight: 900;
+      line-height: 1.15;
+      color: var(--white);
+    }
+    h1 { font-size: clamp(2.4rem, 5vw, 4.2rem); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(1.9rem, 3.5vw, 3rem); letter-spacing: -0.02em; }
+    h3 { font-size: clamp(1.2rem, 2vw, 1.55rem); }
+    h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--aqua); }
+    p  { color: var(--body-text); font-size: 1.02rem; }
+
+    .text-aqua  { color: var(--aqua); }
+    .text-muted { color: var(--muted); font-size: 0.9rem; }
+    .text-white { color: var(--white); }
+
+    /* ── Layout ─────────────────────────────────────────────────── */
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
+    .section { padding: var(--section-pad) 0; }
+    .section-alt  { background: var(--navy-mid); }
+    .section-dark { background: var(--navy); }
+
+    /* ── Buttons ─────────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 32px; border-radius: var(--radius-sm);
+      font-family: var(--font-display); font-weight: 700;
+      font-size: 0.88rem; letter-spacing: 0.1em; text-transform: uppercase;
+      cursor: pointer; border: none; transition: all 0.25s ease;
+    }
+    .btn-primary { background: var(--aqua); color: var(--navy); }
+    .btn-primary:hover { background: #00E4F2; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,200,212,0.4); }
+    .btn-outline { background: transparent; color: var(--aqua); border: 1.5px solid var(--border-aqua); }
+    .btn-outline:hover { background: var(--aqua-glow); border-color: var(--aqua); }
+
+    /* ── Nav ───────────────────────────────────────────────────────── */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      transition: background 0.3s ease, backdrop-filter 0.3s ease;
+    }
+    #nav.scrolled {
+      background: rgba(10,22,40,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: var(--max-width); margin: 0 auto; padding: 0 32px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 72px;
+    }
+    .nav-logo { display: flex; flex-direction: column; }
+    .nav-logo .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.15rem; color: var(--white); letter-spacing: -0.01em; }
+    .nav-logo .logo-sub  { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--aqua); margin-top: 1px; }
+    .nav-links { display: flex; align-items: center; gap: 36px; }
+    .nav-links a { font-family: var(--font-display); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--silver); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--aqua); }
+    .nav-cta {
+      background: var(--aqua) !important; color: var(--navy) !important;
+      padding: 9px 20px; border-radius: var(--radius-sm);
+    }
+    .nav-cta:hover { background: #00E4F2 !important; }
+
+    /* ── Floating bubbles (global , same as homepage) ─────────────── */
+    .bubble-layer {
+      position: absolute; inset: 0;
+      overflow: hidden; pointer-events: none; z-index: 1;
+    }
+    .bubble {
+      position: absolute; border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, rgba(0,200,212,0.55), rgba(0,200,212,0.08) 60%, transparent 80%);
+      border: 1px solid rgba(0,200,212,0.2);
+      opacity: 0;
+      animation: bubble-rise linear infinite;
+    }
+    @keyframes bubble-rise {
+      0%   { transform: translateY(0) translateX(0) scale(1); opacity: 0; }
+      8%   { opacity: 0.55; }
+      50%  { transform: translateY(-50vh) translateX(var(--drift)) scale(0.9); opacity: 0.3; }
+      92%  { opacity: 0.12; }
+      100% { transform: translateY(-105vh) translateX(calc(var(--drift)*1.4)) scale(0.5); opacity: 0; }
+    }
+
+    /* ── Scroll reveal ───────────────────────────────────────────── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left  { opacity: 0; transform: translateX(-28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-left.visible  { opacity: 1; transform: translateX(0); }
+    .reveal-right { opacity: 0; transform: translateX(28px);  transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+    /* ── Section header ──────────────────────────────────────────── */
+    .section-header { margin-bottom: 60px; }
+    .section-header .label { margin-bottom: 14px; }
+    .section-header h2 { margin-bottom: 16px; }
+    .section-header p { max-width: 620px; font-size: 1.08rem; color: var(--silver-light); }
+    .section-header.center { text-align: center; }
+    .section-header.center p { margin: 0 auto; }
+
+    /* ================================================================
+       PAGE HERO , ABOUT
+    ================================================================ */
+    #hero-about {
+      position: relative;
+      min-height: 72vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding-top: 72px;
+    }
+    .hero-about-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 90% 70% at 30% 50%, rgba(0,120,160,0.3) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 60% at 80% 20%, rgba(0,200,212,0.1) 0%, transparent 55%),
+        linear-gradient(160deg, #060F1E 0%, #0A1628 45%, #0D2044 100%);
+    }
+    .hero-about-grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(0,200,212,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,200,212,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 70% 80% at 30% 50%, black 20%, transparent 75%);
+    }
+    .hero-about-content {
+      position: relative; z-index: 2;
+      max-width: var(--max-width); margin: 0 auto; padding: 80px 32px;
+      display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 80px;
+      align-items: center;
+    }
+    .hero-about-text .label { margin-bottom: 20px; }
+    .hero-about-text h1 { margin-bottom: 28px; }
+    .hero-about-text h1 span { color: var(--aqua); }
+    .hero-about-text .hero-lead {
+      font-size: 1.18rem; color: var(--silver-light);
+      max-width: 530px; line-height: 1.8; margin-bottom: 40px;
+    }
+    .hero-badges {
+      display: flex; flex-wrap: wrap; gap: 10px;
+    }
+    .hero-badge {
+      padding: 7px 16px; border: 1px solid var(--border-aqua);
+      border-radius: 100px; font-size: 0.78rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--aqua); background: rgba(0,200,212,0.07);
+    }
+
+    /* DNA molecule illustration */
+    .hero-about-visual {
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+    }
+    .molecule-svg {
+      width: 100%; max-width: 420px;
+      filter: drop-shadow(0 0 40px rgba(0,200,212,0.3));
+      animation: molecule-pulse 6s ease-in-out infinite;
+    }
+    @keyframes molecule-pulse {
+      0%,100% { filter: drop-shadow(0 0 40px rgba(0,200,212,0.28)); }
+      50%      { filter: drop-shadow(0 0 70px rgba(0,200,212,0.52)); }
+    }
+
+    /* ================================================================
+       FOUNDING STORY SECTION
+    ================================================================ */
+    #mission { position: relative; }
+    .mission-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+      align-items: center;
+    }
+    .mission-text .label { margin-bottom: 16px; }
+    .mission-text h2 { margin-bottom: 24px; }
+    .mission-text p { margin-bottom: 18px; color: var(--silver-light); font-size: 1.05rem; line-height: 1.8; }
+    .mission-quote {
+      border-left: 3px solid var(--aqua);
+      padding: 20px 28px;
+      background: var(--aqua-glow);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 32px 0;
+    }
+    .mission-quote blockquote {
+      font-size: 1.12rem; font-style: italic;
+      color: var(--silver-light); line-height: 1.7;
+    }
+    .mission-pillars {
+      display: flex; flex-direction: column; gap: 20px;
+    }
+    .pillar-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 28px 32px;
+      display: flex; gap: 20px; align-items: flex-start;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .pillar-card:hover { border-color: var(--border-aqua); transform: translateX(6px); }
+    .pillar-icon {
+      width: 48px; height: 48px; min-width: 48px;
+      border-radius: 50%; background: var(--aqua-glow);
+      border: 1px solid var(--border-aqua);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+    }
+    .pillar-card h4 { font-size: 0.82rem; margin-bottom: 6px; }
+    .pillar-card p { font-size: 0.94rem; color: var(--muted); margin: 0; }
+
+    /* ================================================================
+       SERVICES SECTION
+    ================================================================ */
+    #services { position: relative; overflow: hidden; }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+    }
+    .service-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      position: relative; overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--aqua), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .service-card:hover { border-color: var(--border-aqua); transform: translateY(-4px); box-shadow: var(--shadow-glow); }
+    .service-card:hover::before { opacity: 1; }
+    .service-num {
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--aqua);
+      margin-bottom: 14px; opacity: 0.7;
+    }
+    .service-icon { font-size: 2rem; margin-bottom: 16px; }
+    .service-card h3 { font-size: 1.25rem; margin-bottom: 12px; color: var(--white); }
+    .service-card p { font-size: 0.94rem; color: var(--muted); margin-bottom: 20px; line-height: 1.7; }
+    .service-list { display: flex; flex-direction: column; gap: 6px; }
+    .service-list li {
+      font-size: 0.88rem; color: var(--silver);
+      padding-left: 16px; position: relative;
+    }
+    .service-list li::before {
+      content: ''; position: absolute; left: 0; top: 50%;
+      transform: translateY(-50%);
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--aqua); opacity: 0.6;
+    }
+
+    /* ================================================================
+       WHY CHOOSE US , Five Reasons
+    ================================================================ */
+    #why-us { position: relative; overflow: hidden; }
+    .why-us-grid {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px;
+    }
+    .reason-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      text-align: center;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .reason-card:hover { border-color: var(--border-aqua); transform: translateY(-6px); }
+    .reason-num {
+      font-size: 2.8rem; font-weight: 900; color: var(--aqua);
+      opacity: 0.18; line-height: 1; margin-bottom: 4px;
+      font-family: var(--font-display);
+    }
+    .reason-icon { font-size: 1.8rem; margin-bottom: 14px; }
+    .reason-card h4 { font-size: 0.78rem; margin-bottom: 12px; }
+    .reason-card p { font-size: 0.87rem; color: var(--muted); line-height: 1.65; }
+
+    /* ================================================================
+       ENGINEERING EXCELLENCE , Materials Deep Dive
+    ================================================================ */
+    #materials { position: relative; }
+    .materials-split {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 32px;
+      margin-top: 20px;
+    }
+    .material-block {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 44px 40px;
+      position: relative; overflow: hidden;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .material-block:hover { border-color: var(--border-aqua); box-shadow: var(--shadow-glow); }
+    .material-block::after {
+      content: '';
+      position: absolute; bottom: 0; right: 0;
+      width: 140px; height: 140px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,200,212,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .material-symbol {
+      font-size: 3.5rem; font-weight: 900; color: var(--aqua);
+      opacity: 0.15; line-height: 1; margin-bottom: 8px;
+      font-family: var(--font-display);
+    }
+    .material-label { margin-bottom: 8px; }
+    .material-block h3 { margin-bottom: 20px; }
+    .material-traits { display: flex; flex-direction: column; gap: 10px; }
+    .trait {
+      display: flex; align-items: flex-start; gap: 12px;
+      font-size: 0.92rem; color: var(--silver);
+    }
+    .trait::before {
+      content: '✓'; color: var(--aqua); font-weight: 700;
+      min-width: 16px; margin-top: 1px;
+    }
+    .material-design-principle {
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, rgba(0,200,212,0.08) 0%, rgba(18,41,84,0.9) 100%);
+      border: 1px solid var(--border-aqua);
+      border-radius: var(--radius-md);
+      padding: 32px 40px;
+      text-align: center;
+    }
+    .material-design-principle p {
+      font-size: 1.1rem; color: var(--silver-light);
+      font-style: italic; max-width: 700px; margin: 0 auto;
+    }
+    .material-design-principle p strong { color: var(--aqua); font-style: normal; }
+
+    /* ================================================================
+       TRACK RECORD , Sectors
+    ================================================================ */
+    #track-record { position: relative; overflow: hidden; }
+    .sectors-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px;
+    }
+    .sector-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      display: grid; grid-template-columns: auto 1fr; gap: 20px;
+      align-items: start;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .sector-card:hover { border-color: var(--border-aqua); transform: translateY(-3px); }
+    .sector-icon-wrap {
+      width: 56px; height: 56px;
+      border-radius: var(--radius-md);
+      background: var(--aqua-glow);
+      border: 1px solid var(--border-aqua);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+    }
+    .sector-card h3 { font-size: 1.1rem; margin-bottom: 12px; color: var(--white); }
+    .sector-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .sector-tag {
+      background: rgba(0,200,212,0.08);
+      border: 1px solid var(--border-aqua);
+      border-radius: 100px;
+      padding: 4px 12px;
+      font-size: 0.78rem; color: var(--aqua);
+      font-weight: 600;
+    }
+
+    /* ================================================================
+       CTA SECTION
+    ================================================================ */
+    #cta-about {
+      position: relative; overflow: hidden;
+      background: linear-gradient(135deg, #071120 0%, #0D2044 50%, #071120 100%);
+      padding: 100px 0;
+    }
+    #cta-about::before {
+      content: '';
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 700px; height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(0,200,212,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-about-inner {
+      position: relative; z-index: 2;
+      max-width: 700px; margin: 0 auto; padding: 0 32px;
+      text-align: center;
+    }
+    .cta-about-inner .label { margin-bottom: 20px; }
+    .cta-about-inner h2 { margin-bottom: 22px; }
+    .cta-about-inner p { font-size: 1.08rem; color: var(--silver-light); margin-bottom: 40px; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .cta-about-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    /* ================================================================
+       FOOTER
+    ================================================================ */
+    footer {
+      background: #06101E;
+      border-top: 1px solid var(--border);
+      padding: 64px 0 32px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-brand .logo-main {
+      font-family: var(--font-display); font-weight: 900; font-size: 1.2rem;
+      color: var(--white); margin-bottom: 6px;
+    }
+    .footer-brand .logo-sub {
+      font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--aqua); margin-bottom: 18px;
+    }
+    .footer-brand p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
+    .footer-tagline { font-style: italic; color: var(--silver) !important; font-size: 0.88rem !important; }
+    .footer-col h5 {
+      font-family: var(--font-display); font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--silver); margin-bottom: 16px;
+    }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul a { font-size: 0.88rem; color: var(--muted); transition: color 0.2s; }
+    .footer-col ul a:hover { color: var(--aqua); }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .footer-bottom p { font-size: 0.82rem; color: var(--muted); }
+    .footer-cert { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cert-badge {
+      padding: 4px 12px; border: 1px solid var(--border);
+      border-radius: 100px; font-size: 0.72rem; color: var(--silver);
+      font-weight: 600; letter-spacing: 0.06em;
+    }
+
+    /* ── Responsive ─────────────────────────────────────────────── */
+    @media (max-width: 960px) {
+      :root { --section-pad: 72px; }
+      .hero-about-content { grid-template-columns: 1fr; gap: 40px; }
+      .hero-about-visual { display: none; }
+      .mission-grid { grid-template-columns: 1fr; gap: 48px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .why-us-grid { grid-template-columns: repeat(2, 1fr); }
+      .materials-split { grid-template-columns: 1fr; }
+      .sectors-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 600px) {
+      :root { --section-pad: 56px; }
+      .container { padding: 0 20px; }
+      .why-us-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+      .hero-about-content { padding: 60px 20px; }
+    }
+  </style><link rel="canonical" href="/about" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:title" content="About WaterQuest Solutions | Pioneers in Water Hydraulics | Vancouver, BC" />
+  <meta property="og:description" content="WaterQuest Solutions is a Vancouver-based cleantech manufacturer specializing in oil-free water hydraulic systems. Founded by engineers and environmental advocates committed to zero-contamination hydraulic power." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/about" />
+  <meta property="og:image" content="/assets/waterquest-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About WaterQuest Solutions | Pioneers in Water Hydraulics | Vancouver, BC" />
+  <meta name="twitter:description" content="WaterQuest Solutions is a Vancouver-based cleantech manufacturer specializing in oil-free water hydraulic systems. Founded by engineers and environmental advocates committed to zero-contamination hydraulic power." />
+  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
+  <link rel="alternate" hreflang="en-CA" href="/about" />
+  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
+  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"WebPage","@id":"/about#webpage","url":"/about","name":"About WaterQuest Solutions | Pioneers in Water Hydraulics | Vancouver, BC","description":"WaterQuest Solutions is a Vancouver-based cleantech manufacturer specializing in oil-free water hydraulic systems. Founded by engineers and environmental advocates committed to zero-contamination hydraulic power.","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"},{"@type":"ListItem","position":2,"name":"About","item":"/about"}]}]}</script>
+  <style id="wq-global-shell-css">
+    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
+    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
+    body a{color:inherit}
+    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
+    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
+    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
+    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
+    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
+    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
+    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
+    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
+    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
+    main .btn.primary{color:var(--wq-navy)!important}
+    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
+    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
+    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
+    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
+    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
+    .wq-form-status.is-error{color:#ffb1b1!important}
+    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
+    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
+    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
+    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
+    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
+    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
+    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
+    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
+    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
+    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
+    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
+    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
+    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
+    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
+    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
+    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
+    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
+    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
+    .wq-hero-visual-text{padding:20px}
+    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
+    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
+    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
+    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
+    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
+    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
+    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
+    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
+    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
+    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
+    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
+    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
+    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
+    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
+    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
+    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
+    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
+    #wq-mobile-menu.open{display:block}
+    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
+    #wq-mobile-menu a:last-child{border-bottom:0}
+    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
+    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
+    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
+    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
+    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
+    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
+    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
+    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
+    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
+    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
+    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
+    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
+    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
+    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
+    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
+    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
+  </style>
+</head>
+<body class="wq-section-company">
+<!-- WQ_GLOBAL_HEADER_START -->
+<div id="wq-global-bubbles" aria-hidden="true"></div>
+<nav id="wq-nav" role="navigation" aria-label="Main navigation">
+  <div class="wq-nav-inner">
+    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
+      <span class="wq-logo-main">WaterQuest Solutions</span>
+      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+    </a>
+    <ul class="wq-nav-links" role="list">
+      <li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/" class="active">About</a></li>
+      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
+    </ul>
+    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
+  </div>
+</nav>
+<div id="wq-mobile-menu">
+  <a href="/products/">Products</a><a href="/industries/">Industries</a><a href="/technology/">Technology</a><a href="/knowledge-hub/">Knowledge Hub</a><a href="/about/" class="active">About</a>
+  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
+</div>
+<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
+<section class="wq-conversion-hero" aria-label="Page introduction">
+  <div class="wq-conversion-wrap">
+    <div>
+      <p class="wq-hero-eyebrow">WaterQuest Solutions</p>
+      <h1>Explore <span>water hydraulics</span> without the oil.</h1>
+      <p class="wq-hero-copy">Move from interest to engineering fit through WaterQuest products, industries, technology references, and project review.</p>
+      <div class="wq-hero-actions">
+        <a class="wq-hero-cta" href="/contact/">Start Engineering Review</a>
+        <a class="wq-hero-secondary" href="/technology/">Open Technology</a>
+      </div>
+    </div>
+    <a class="wq-hero-visual" href="/contact/">
+      <div class="wq-hero-picture" aria-hidden="true"></div>
+      <div class="wq-hero-visual-text">
+        <small>Next step</small>
+        <strong>A clean path from question to water hydraulic system.</strong>
+        <span>Built for engineers, industry teams, and curious technical readers.</span>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- WQ_CONVERSION_HERO_END --><!-- Global bubble canvas , persists across page scroll --><!-- ================================================================
+     NAVIGATION
+================================================================ --><!-- ================================================================
+     HERO , ABOUT
+================================================================ -->
+<section id="hero-about" aria-label="About WaterQuest Solutions">
+  <div class="hero-about-bg" aria-hidden="true"></div>
+  <div class="hero-about-grid" aria-hidden="true"></div>
+  <div class="bubble-layer" id="hero-bubbles" aria-hidden="true"></div>
+
+  <div class="hero-about-content">
+    <div class="hero-about-text">
+      <p class="label reveal">WaterQuest Solutions , Vancouver, BC, Canada</p>
+      <h1 class="reveal" style="animation-delay:0.1s">
+        Founded on Conviction.<br/>
+        <span>Built on Engineering.</span>
+      </h1>
+      <p class="hero-lead reveal" style="animation-delay:0.2s">
+        We are engineers and environmental advocates who refused to accept oil in hydraulic circuits as inevitable. WaterQuest Solutions exists to prove that clean hydraulic power and industrial performance are not a trade-off.
+      </p>
+      <div class="hero-badges reveal" style="animation-delay:0.3s">
+        <span class="hero-badge">Oil-Free Since Day One</span>
+        <span class="hero-badge">316L Stainless &amp; PEEK</span>
+        <span class="hero-badge">Made in Canada</span>
+        <span class="hero-badge">MSS SP-161 Certified</span>
+      </div>
+    </div>
+
+    <div class="hero-about-visual reveal-right">
+      <!-- Animated molecule / gear SVG -->
+      <svg class="molecule-svg" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <filter id="glow-a">
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="glow-b">
+            <feGaussianBlur stdDeviation="8" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <radialGradient id="rg1" cx="50%" cy="35%" r="50%">
+            <stop offset="0%" stop-color="#00C8D4" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#0058A8" stop-opacity="0.3"/>
+          </radialGradient>
+          <radialGradient id="rg2" cx="50%" cy="35%" r="50%">
+            <stop offset="0%" stop-color="#00C8D4" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#002255" stop-opacity="0.1"/>
+          </radialGradient>
+          <!-- Spinning ring animation -->
+          <animateTransform id="spin1"/>
+        </defs>
+
+        <!-- Outer orbit rings -->
+        <circle cx="210" cy="210" r="175" stroke="rgba(0,200,212,0.1)" stroke-width="1" stroke-dasharray="4 8"/>
+        <circle cx="210" cy="210" r="140" stroke="rgba(0,200,212,0.15)" stroke-width="1" stroke-dasharray="2 6"/>
+        <circle cx="210" cy="210" r="100" stroke="rgba(0,200,212,0.2)" stroke-width="1.5"/>
+
+        <!-- Rotating connector lines group -->
+        <g id="arms" style="transform-origin:210px 210px; animation: arms-spin 18s linear infinite;">
+          <line x1="210" y1="110" x2="210" y2="70" stroke="rgba(0,200,212,0.4)" stroke-width="1.5"/>
+          <line x1="210" y1="310" x2="210" y2="350" stroke="rgba(0,200,212,0.4)" stroke-width="1.5"/>
+          <line x1="110" y1="210" x2="70" y2="210" stroke="rgba(0,200,212,0.4)" stroke-width="1.5"/>
+          <line x1="310" y1="210" x2="350" y2="210" stroke="rgba(0,200,212,0.4)" stroke-width="1.5"/>
+          <!-- Diagonal arms -->
+          <line x1="139" y1="139" x2="110" y2="110" stroke="rgba(0,200,212,0.25)" stroke-width="1"/>
+          <line x1="281" y1="139" x2="310" y2="110" stroke="rgba(0,200,212,0.25)" stroke-width="1"/>
+          <line x1="139" y1="281" x2="110" y2="310" stroke="rgba(0,200,212,0.25)" stroke-width="1"/>
+          <line x1="281" y1="281" x2="310" y2="310" stroke="rgba(0,200,212,0.25)" stroke-width="1"/>
+        </g>
+
+        <!-- Counter-rotating ring -->
+        <g style="transform-origin:210px 210px; animation: arms-spin 28s linear infinite reverse;">
+          <circle cx="210" cy="210" r="120" stroke="rgba(0,200,212,0.08)" stroke-width="1" stroke-dasharray="6 14"/>
+          <!-- Orbital dots -->
+          <circle cx="210" cy="90" r="5" fill="url(#rg1)" filter="url(#glow-a)"/>
+          <circle cx="330" cy="210" r="5" fill="url(#rg1)" filter="url(#glow-a)"/>
+          <circle cx="210" cy="330" r="5" fill="url(#rg1)" filter="url(#glow-a)"/>
+          <circle cx="90"  cy="210" r="5" fill="url(#rg1)" filter="url(#glow-a)"/>
+        </g>
+
+        <!-- Cardinal atom nodes , outer -->
+        <g style="transform-origin:210px 210px; animation: arms-spin 18s linear infinite;">
+          <circle cx="210" cy="70" r="12" fill="url(#rg2)" stroke="rgba(0,200,212,0.6)" stroke-width="1.5"/>
+          <circle cx="350" cy="210" r="12" fill="url(#rg2)" stroke="rgba(0,200,212,0.6)" stroke-width="1.5"/>
+          <circle cx="210" cy="350" r="12" fill="url(#rg2)" stroke="rgba(0,200,212,0.6)" stroke-width="1.5"/>
+          <circle cx="70"  cy="210" r="12" fill="url(#rg2)" stroke="rgba(0,200,212,0.6)" stroke-width="1.5"/>
+          <!-- Corner nodes -->
+          <circle cx="110" cy="110" r="8" fill="rgba(0,200,212,0.2)" stroke="rgba(0,200,212,0.4)" stroke-width="1"/>
+          <circle cx="310" cy="110" r="8" fill="rgba(0,200,212,0.2)" stroke="rgba(0,200,212,0.4)" stroke-width="1"/>
+          <circle cx="110" cy="310" r="8" fill="rgba(0,200,212,0.2)" stroke="rgba(0,200,212,0.4)" stroke-width="1"/>
+          <circle cx="310" cy="310" r="8" fill="rgba(0,200,212,0.2)" stroke="rgba(0,200,212,0.4)" stroke-width="1"/>
+        </g>
+
+        <!-- Inner hexagon structure -->
+        <polygon points="210,148 260,179 260,241 210,272 160,241 160,179" stroke="rgba(0,200,212,0.35)" stroke-width="1.5" fill="rgba(0,200,212,0.04)"/>
+        <polygon points="210,162 248,184 248,236 210,258 172,236 172,184" stroke="rgba(0,200,212,0.2)" stroke-width="1" fill="none" style="transform-origin:210px 210px; animation: arms-spin 12s linear infinite reverse;"/>
+
+        <!-- Centre sphere -->
+        <circle cx="210" cy="210" r="44" fill="url(#rg1)" filter="url(#glow-b)" opacity="0.8"/>
+        <circle cx="210" cy="210" r="36" fill="#091928"/>
+        <circle cx="210" cy="210" r="28" fill="none" stroke="rgba(0,200,212,0.5)" stroke-width="2"/>
+        <!-- H₂O text in centre -->
+        <text x="210" y="204" text-anchor="middle" font-family="Avenir, sans-serif" font-size="11" font-weight="900" fill="#00C8D4" letter-spacing="0.1em">H₂O</text>
+        <text x="210" y="222" text-anchor="middle" font-family="Avenir, sans-serif" font-size="7" font-weight="700" fill="rgba(0,200,212,0.6)" letter-spacing="0.2em">HYDRAULIC</text>
+
+        <!-- Animated flow dot on outer ring -->
+        <circle r="5" fill="#00C8D4" filter="url(#glow-a)" opacity="0.9">
+          <animateMotion dur="6s" repeatCount="indefinite">
+            <mpath href="#flow-path"/>
+          </animateMotion>
+        </circle>
+        <path id="flow-path" d="M 210 110 A 100 100 0 1 1 209.9 110" fill="none"/>
+
+        <style>
+          @keyframes arms-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        </style>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     FOUNDING STORY / MISSION
+================================================================ -->
+<section id="mission" class="section section-alt" aria-labelledby="mission-heading">
+  <div class="bubble-layer" id="mission-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="mission-grid">
+      <div class="mission-text reveal-left">
+        <p class="label">Our Story</p>
+        <h2 id="mission-heading">Why WaterQuest<br/><span class="text-aqua">Exists</span></h2>
+        <p>WaterQuest Solutions was founded by a team of visionary engineers and environmental advocates with a single conviction: that clean hydraulic power should not come at the cost of environmental integrity.</p>
+        <p>We specialize in hydraulic systems that operate on tap water or seawater , without additives, without petroleum, and without compromise. Every system we deliver is built around <strong style="color:var(--silver-light)">316 stainless steel</strong> and <strong style="color:var(--silver-light)">carbon-reinforced PEEK</strong> , materials selected not just for their individual properties, but for how they work together to resist corrosion, eliminate galling, and thrive in the harshest industrial environments.</p>
+        <p>From municipal wastewater gates to offshore marine systems, our work is guided by one principle: water is the most sustainable hydraulic medium on the planet, and industry deserves to use it.</p>
+        <div class="mission-quote">
+          <blockquote>"We don't just create products , we engineer solutions that contribute to a greener planet and a more sustainable industrial future."</blockquote>
+        </div>
+      </div>
+
+      <div class="mission-pillars reveal-right">
+        <div class="pillar-card">
+          <div class="pillar-icon">🌊</div>
+          <div>
+            <h4>Our Mission</h4>
+            <p>Sustainable, oil-free hydraulic solutions delivered at industrial scale , eliminating contamination risk from every circuit we touch.</p>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">🔬</div>
+          <div>
+            <h4>Our Specialization</h4>
+            <p>Water as the hydraulic medium , tap water or seawater, no additives. Designed from first principles for the fluid, not adapted from oil.</p>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">🏭</div>
+          <div>
+            <h4>Our Materials</h4>
+            <p>316 Stainless Steel and Carbon-Reinforced PEEK , the tribological pair that makes oil-free hydraulics durable, reliable, and field-proven.</p>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">🍁</div>
+          <div>
+            <h4>Our Home</h4>
+            <p>Proudly headquartered in Vancouver, BC. Building clean Canadian industrial infrastructure, one oil-free circuit at a time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     SERVICES
+================================================================ -->
+<section id="services" class="section section-dark" aria-labelledby="services-heading">
+  <div class="bubble-layer" id="services-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">What We Do</p>
+      <h2 id="services-heading">End-to-End Hydraulic<br/><span class="text-aqua">Partnership</span></h2>
+      <p>From concept to commissioning and beyond , we are your technical partner for the full system lifecycle.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal" style="transition-delay:0.0s">
+        <div class="service-num">01</div>
+        <div class="service-icon">📐</div>
+        <h3>Consultation &amp; Design</h3>
+        <p>System needs assessment and oil-free hydraulic circuit design from first principles, with full material stack-up specification.</p>
+        <ul class="service-list">
+          <li>Oil-free hydraulic circuit design from first principles</li>
+          <li>Material specification: 316 SS and PEEK stack-up</li>
+          <li>Pressure, flow, and force calculations</li>
+          <li>Environmental compliance and regulatory guidance</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal" style="transition-delay:0.1s">
+        <div class="service-num">02</div>
+        <div class="service-icon">🔧</div>
+        <h3>Supply &amp; Installation</h3>
+        <p>Full product supply from pumps to valves to HPUs, with site installation and commissioning by trained technicians.</p>
+        <ul class="service-list">
+          <li>Full product supply: pumps, motors, valves, cylinders, HPUs</li>
+          <li>316L fittings, adapters, and manifold fabrication</li>
+          <li>Site installation and commissioning</li>
+          <li>Phased retrofit of existing oil-hydraulic infrastructure</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal" style="transition-delay:0.15s">
+        <div class="service-num">03</div>
+        <div class="service-icon">🖥️</div>
+        <h3>AutoCAD Drawings &amp; 3D Modelling</h3>
+        <p>Complete documentation packages including full hydraulic circuit schematics, P&amp;IDs, and 3D component assembly models.</p>
+        <ul class="service-list">
+          <li>Full hydraulic circuit schematics and P&amp;IDs</li>
+          <li>3D component and assembly modelling</li>
+          <li>As-built documentation packages</li>
+          <li>Integration drawings for retrofit and new-build projects</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal" style="transition-delay:0.2s">
+        <div class="service-num">04</div>
+        <div class="service-icon">🛠️</div>
+        <h3>Maintenance &amp; Long-Term Support</h3>
+        <p>Scheduled preventive maintenance, rapid-response technical support, and remote diagnostics to keep your system at peak performance.</p>
+        <ul class="service-list">
+          <li>Scheduled preventive maintenance programs</li>
+          <li>Rapid response technical support</li>
+          <li>Seal and component inspection and replacement</li>
+          <li>Remote diagnostic support and troubleshooting</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     WHY CHOOSE US , Five Reasons
+================================================================ -->
+<section id="why-us" class="section section-alt" aria-labelledby="why-heading">
+  <div class="bubble-layer" id="why-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Why WaterQuest</p>
+      <h2 id="why-heading">Five Reasons Discerning<br/><span class="text-aqua">Clients Choose Us</span></h2>
+    </div>
+
+    <div class="why-us-grid">
+      <div class="reason-card reveal" style="transition-delay:0.0s">
+        <div class="reason-num">01</div>
+        <div class="reason-icon">🧠</div>
+        <h4>Expertise &amp; Innovation</h4>
+        <p>We fuse cutting-edge materials science with time-tested hydraulic principles to consistently outperform oil-based alternatives in reliability and longevity.</p>
+      </div>
+      <div class="reason-card reveal" style="transition-delay:0.08s">
+        <div class="reason-num">02</div>
+        <div class="reason-icon">🎯</div>
+        <h4>Custom-Engineered Solutions</h4>
+        <p>Our team collaborates from initial assessment through commissioning, crafting tailored systems that precisely address each client's application and environment.</p>
+      </div>
+      <div class="reason-card reveal" style="transition-delay:0.16s">
+        <div class="reason-num">03</div>
+        <div class="reason-icon">🌱</div>
+        <h4>Sustainability at Every Level</h4>
+        <p>Sustainability is engineered into every component , eliminating petroleum, reducing contamination liability, and qualifying for federal clean-technology incentives.</p>
+      </div>
+      <div class="reason-card reveal" style="transition-delay:0.24s">
+        <div class="reason-num">04</div>
+        <div class="reason-icon">🤝</div>
+        <h4>End-to-End Support</h4>
+        <p>From AutoCAD design to supply, installation, and long-term maintenance , our clients gain a committed technical partner for the system's full service life.</p>
+      </div>
+      <div class="reason-card reveal" style="transition-delay:0.32s">
+        <div class="reason-num">05</div>
+        <div class="reason-icon">📊</div>
+        <h4>Proven Results</h4>
+        <p>Our systems operate reliably in municipal wastewater, flood control, mining, marine, and industrial actuation , zero-contamination performance across diverse sectors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     ENGINEERING EXCELLENCE , Materials
+================================================================ -->
+<section id="materials" class="section section-dark" aria-labelledby="materials-heading">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header reveal">
+      <p class="label">Engineering Excellence</p>
+      <h2 id="materials-heading">Materials Made<br/><span class="text-aqua">for Water</span></h2>
+      <p>Two materials, engineered to work together. The pair that makes oil-free hydraulics not just possible , but superior.</p>
+    </div>
+
+    <div class="materials-split">
+      <div class="material-block reveal-left">
+        <div class="material-symbol">316</div>
+        <p class="label material-label">Metal Component</p>
+        <h3>316 Stainless Steel</h3>
+        <div class="material-traits">
+          <div class="trait">Wetted metal surfaces throughout all components</div>
+          <div class="trait">Exceptional resistance to chlorides, H₂S, and saltwater</div>
+          <div class="trait">No dissimilar-metal traps , eliminating galvanic corrosion risk</div>
+          <div class="trait">Long service life in buried vaults, marine, and wastewater environments</div>
+          <div class="trait">Structural integrity maintained under high-pressure continuous duty</div>
+        </div>
+      </div>
+
+      <div class="material-block reveal-right">
+        <div class="material-symbol">PEEK</div>
+        <p class="label material-label">Tribological Interface</p>
+        <h3>Carbon-Reinforced PEEK</h3>
+        <div class="material-traits">
+          <div class="trait">Deployed at every sliding and contact interface</div>
+          <div class="trait">Paired tribologically with 316 SS , PEEK on one surface, stainless on the other</div>
+          <div class="trait">Eliminates galling without oil lubrication</div>
+          <div class="trait">High compressive strength; resists deformation under load</div>
+          <div class="trait">Chemically inert to chlorine, bromine, acids, and solvents</div>
+        </div>
+      </div>
+
+      <div class="material-design-principle reveal">
+        <p>The design principle: <strong>water provides fluid power</strong> , <strong>stainless and PEEK carry the tribology</strong>.<br/>No oil. No additives. No compromise.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     TRACK RECORD
+================================================================ -->
+<section id="track-record" class="section section-alt" aria-labelledby="track-heading">
+  <div class="bubble-layer" id="track-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Track Record</p>
+      <h2 id="track-heading">Proven Performance.<br/><span class="text-aqua">Diverse Industries.</span></h2>
+      <p>Our oil-free systems have earned trust across some of the most demanding environments in Canada and beyond.</p>
+    </div>
+
+    <div class="sectors-grid">
+      <div class="sector-card reveal" style="transition-delay:0.0s">
+        <div class="sector-icon-wrap">🏛️</div>
+        <div>
+          <h3>Municipal Infrastructure</h3>
+          <div class="sector-tags">
+            <span class="sector-tag">Sluice &amp; flood gates</span>
+            <span class="sector-tag">Underground vault systems</span>
+            <span class="sector-tag">Headworks actuation</span>
+            <span class="sector-tag">Effluent discharge controls</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sector-card reveal" style="transition-delay:0.08s">
+        <div class="sector-icon-wrap">💧</div>
+        <div>
+          <h3>Water &amp; Wastewater</h3>
+          <div class="sector-tags">
+            <span class="sector-tag">Wet well isolation valves</span>
+            <span class="sector-tag">Clarifier mechanisms</span>
+            <span class="sector-tag">Bar screen controls</span>
+            <span class="sector-tag">Sludge handling valves</span>
+            <span class="sector-tag">Aeration basin valves</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sector-card reveal" style="transition-delay:0.12s">
+        <div class="sector-icon-wrap">⚓</div>
+        <div>
+          <h3>Marine &amp; Offshore</h3>
+          <div class="sector-tags">
+            <span class="sector-tag">Bilge &amp; ballast systems</span>
+            <span class="sector-tag">Shipboard gate valves</span>
+            <span class="sector-tag">Offshore drilling platforms</span>
+            <span class="sector-tag">Tidal &amp; coastal installations</span>
+            <span class="sector-tag">Propulsion control systems</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sector-card reveal" style="transition-delay:0.18s">
+        <div class="sector-icon-wrap">⛏️</div>
+        <div>
+          <h3>Mining &amp; Industrial</h3>
+          <div class="sector-tags">
+            <span class="sector-tag">High-pressure actuation</span>
+            <span class="sector-tag">Slurry isolation valves</span>
+            <span class="sector-tag">Conveyor &amp; lift systems</span>
+            <span class="sector-tag">Fire suppression circuits</span>
+            <span class="sector-tag">Dust suppression controls</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     CTA
+================================================================ -->
+<section id="cta-about" aria-label="Contact WaterQuest Solutions">
+  <div class="bubble-layer" id="cta-bubbles" aria-hidden="true"></div>
+  <div class="cta-about-inner" style="position:relative;z-index:2;">
+    <p class="label reveal">Join the Revolution</p>
+    <h2 class="reveal" style="transition-delay:0.1s">
+      Ready to Explore<br/><span class="text-aqua">Water-Driven Hydraulics?</span>
+    </h2>
+    <p class="reveal" style="transition-delay:0.2s">
+      Connect with us to learn how WaterQuest Solutions can elevate your hydraulic operations with the power of water. Embrace a cleaner, more sustainable future , and leave oil beside the water where it doesn't belong.
+    </p>
+    <div class="cta-about-buttons reveal" style="transition-delay:0.3s">
+      <a href="mailto:bruce@waterquestsolutions.com?subject=Engineering Review Request" class="btn btn-primary">
+        Book Engineering Review
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="/pilot/" class="btn btn-outline">Explore the Pilot Program</a>
+    </div>
+
+    <!-- Mini stats -->
+    <div style="display:flex;justify-content:center;gap:48px;margin-top:56px;flex-wrap:wrap;" class="reveal" style="transition-delay:0.4s">
+      <div style="text-align:center">
+        <div style="font-size:2rem;font-weight:900;color:var(--aqua);font-family:var(--font-display)">ZERO</div>
+        <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted);margin-top:4px">Oil Contamination Risk</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-size:2rem;font-weight:900;color:var(--aqua);font-family:var(--font-display)">35%</div>
+        <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted);margin-top:4px">Federal Tax Credit</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-size:2rem;font-weight:900;color:var(--aqua);font-family:var(--font-display)">~40%</div>
+        <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted);margin-top:4px">Operating Cost Savings</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-size:2rem;font-weight:900;color:var(--aqua);font-family:var(--font-display)">TRL 9</div>
+        <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted);margin-top:4px">Technology Readiness</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     FOOTER
+================================================================ --><!-- ================================================================
+     JAVASCRIPT
+================================================================ -->
+<script>
+  // ── Nav scroll ───────────────────────────────────────────────
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  // ── Global persistent bubbles ────────────────────────────────
+  (function createGlobalBubbles() {
+    const container = document.getElementById('global-bubbles');
+    if (!container) return;
+    const count = 28;
+    for (let i = 0; i < count; i++) {
+      const b = document.createElement('div');
+      b.className = 'bubble';
+      const size = Math.random() * 10 + 3;
+      const drift = (Math.random() - 0.5) * 80;
+      b.style.cssText = `
+        width:${size}px; height:${size}px;
+        left:${Math.random() * 100}%;
+        bottom:${Math.random() * 15}%;
+        --drift:${drift}px;
+        animation-duration:${Math.random() * 18 + 10}s;
+        animation-delay:${Math.random() * 14}s;
+      `;
+      container.appendChild(b);
+    }
+  })();
+
+  // ── Section bubble layers ────────────────────────────────────
+  function seedBubbles(containerId, count) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    for (let i = 0; i < count; i++) {
+      const b = document.createElement('div');
+      b.className = 'bubble';
+      const size = Math.random() * 8 + 2;
+      const drift = (Math.random() - 0.5) * 60;
+      b.style.cssText = `
+        width:${size}px; height:${size}px;
+        left:${Math.random() * 100}%;
+        bottom:${Math.random() * 25}%;
+        --drift:${drift}px;
+        animation-duration:${Math.random() * 14 + 8}s;
+        animation-delay:${Math.random() * 10}s;
+      `;
+      container.appendChild(b);
+    }
+  }
+
+  seedBubbles('hero-bubbles', 18);
+  seedBubbles('mission-bubbles', 10);
+  seedBubbles('services-bubbles', 10);
+  seedBubbles('why-bubbles', 10);
+  seedBubbles('track-bubbles', 10);
+  seedBubbles('cta-bubbles', 14);
+
+  // ── Scroll reveal ────────────────────────────────────────────
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => revealObs.observe(el));
+</script>
+
+<!-- WQS_ENRICHMENT_START -->
+<style>
+.wqs-enrichment{background:#f5fbf9;border-top:1px solid #d9e8e3;color:#15302c;font-family:Nunito Sans,Arial,sans-serif;padding:56px 6vw}.wqs-enrichment__inner{margin:0 auto;max-width:1120px}.wqs-enrichment__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-enrichment h2{font-size:clamp(28px,4vw,48px);line-height:1.05;margin:8px 0 16px}.wqs-enrichment p{color:#4b625d;font-size:18px;line-height:1.65;max-width:900px}.wqs-enrichment__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px}.wqs-enrichment__panel{background:#fff;border:1px solid #d9e8e3;border-radius:8px;padding:22px}.wqs-enrichment__panel h3{font-size:18px;margin:0 0 12px}.wqs-enrichment ul{margin:0;padding-left:20px}.wqs-enrichment li{line-height:1.55;margin:7px 0}.wqs-enrichment__links{display:grid;gap:10px}.wqs-enrichment__links a{background:#fff;border:1px solid #d9e8e3;border-radius:8px;color:#15302c;display:grid;gap:4px;padding:14px;text-decoration:none}.wqs-enrichment__links span{color:#5f746f;font-size:14px;line-height:1.45}@media(max-width:760px){.wqs-enrichment{padding:40px 18px}.wqs-enrichment__grid{grid-template-columns:1fr}}
+</style>
+<section class="wqs-enrichment" aria-label="Complete page details">
+  <div class="wqs-enrichment__inner">
+    <div class="wqs-enrichment__eyebrow">Complete archive details</div>
+    <h2>About WaterQuest Solutions | Pioneers in Water Hydraulics | Vancouver, BC</h2>
+    <p>WaterQuest Solutions is a Vancouver-based cleantech manufacturer specializing in oil-free water hydraulic systems. Founded by engineers and environmental advocates committed to zero-contamination hydraulic power.</p>
+    <div class="wqs-enrichment__grid">
+      
+      <div class="wqs-enrichment__panel"><h3>Primary page focus</h3><ul><li>Explore water hydraulics without the oil.</li><li>Founded on Conviction. Built on Engineering.</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Full section outline</h3><ul><li>Why WaterQuest Exists</li><li>End-to-End Hydraulic Partnership</li><li>Five Reasons Discerning Clients Choose Us</li><li>Materials Made for Water</li><li>Proven Performance. Diverse Industries.</li><li>Ready to Explore Water-Driven Hydraulics?</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Detailed topics</h3><ul><li>Consultation &amp; Design</li><li>Supply &amp; Installation</li><li>AutoCAD Drawings &amp; 3D Modelling</li><li>Maintenance &amp; Long-Term Support</li><li>316 Stainless Steel</li><li>Carbon-Reinforced PEEK</li><li>Municipal Infrastructure</li><li>Water &amp; Wastewater</li><li>Marine &amp; Offshore</li><li>Mining &amp; Industrial</li></ul></div>
+    </div>
+    <div class="wqs-enrichment__panel" style="margin-top:18px"><h3>Related pages with more detail</h3><div class="wqs-enrichment__links"><a href="/knowledge-hub/10-questions-engineers-ask-about-water-hydraulics"><strong>10 Questions Engineers Ask About Water Hydraulics</strong><span>The ten most common technical questions engineers ask when evaluating water hydraulics, answered directly. Lubrication, corrosion, pressure capability, cavitation, freezing, seals, efficiency, retrofit, maintenance, and why oil is still the default.</span></a><a href="/products/water-hydraulic-valves/valve-4-2-3-2-directional/"><strong>4 2 3 2 Directional</strong><span>WaterQuest Solutions patented 4/2 and 3/2 directional flow control valves for water hydraulics. 160 bar max, 0 to 30 L/min, 316 stainless steel, 24V DC solenoid with manual override, stand alone, manifold mount, or Cetop 3. Actuation card required above 20 bar.</span></a><a href="/products/water-hydraulic-valves/valve-4-3-manual/"><strong>4 3 Manual</strong><span>WaterQuest Solutions patented 4-position 3-port manual control valve for water hydraulics. 200 bar max inlet, 0 to 30 L/min, 316 stainless steel, spring return or detent, 4 turns full travel, stand alone, manifold, or Cetop 3 mount.</span></a><a href="/industries/agriculture/"><strong>Agriculture &amp; Irrigation</strong><span>Zero crop contamination. Soil-safe actuation. Built for food production. WaterQuest Solutions supplies oil-free water hydraulic systems for irrigation pumps, crop processing, greenhouse automation, and agricultural machinery.</span></a><a href="/products/water-hydraulic-valves/valve-check-valves/"><strong>Check Valves</strong><span>WaterQuest Solutions check valves. 316 stainless steel and high-grade polymer. DN6 to DN25 sizes, 0.1 to 200 bar, 30 to 200 L/min max flow. Consistent performance after lengthy periods of inactivity. Standard cracking pressure 0.6 bar, 0.1 to 3 bar available.</span></a><a href="/industries/desalination/"><strong>Desalination &amp; Reverse Osmosis</strong><span>Zero brine contamination. Seawater-ready actuation. Built for high-pressure RO. WaterQuest Solutions supplies oil-free water hydraulic systems for desalination plants, reverse osmosis facilities, and brackish water treatment operations.</span></a><a href="/products/water-hydraulic-valves/valve-dn16-directional/"><strong>Dn16 Directional</strong><span>WaterQuest Solutions DN16 Directional Valve. Large-flow pilot-actuated valve: 0 to 140 L/min, 0 to 100 bar, 3/4</span></a><a href="/industries/dust-control/"><strong>Dust Control</strong><span>Eliminate oil-dust sludge and fire risk from dusty industrial environments. WaterQuest Solutions supplies non-flammable, sludge-proof water hydraulics for mining, aggregate, cement, sawmills, grain handling, and recycling facilities.</span></a><a href="/industries/fire-suppression/"><strong>Fire Suppression</strong><span>Eliminate oil from fire-critical environments. WaterQuest Solutions delivers non-flammable, water hydraulic actuation for deluge valves, monitors, turrets, and suppression systems zero ignition risk by design.</span></a><a href="/products/water-hydraulic-valves/valve-flow-control/"><strong>Flow Control</strong><span>WaterQuest Solutions Flow Control Valve. 316 stainless steel, 0.1 to 200 bar, DN3 and DN6, manually adjusted thumbwheel with tamper-proof locking screw, helical port design for precise control, 4 turns full travel. Tool-free operator adjustment.</span></a></div></div>
+  </div>
+</section>
+<!-- WQS_ENRICHMENT_END -->
+<!-- WQ_GLOBAL_FOOTER_START -->
+<footer class="wq-site-footer" role="contentinfo">
+  <div class="wq-footer-container">
+    <div class="wq-footer-grid">
+      <div class="wq-footer-brand">
+        <span class="wq-logo-main">WaterQuest Solutions</span>
+        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Company</h5>
+        <ul><li><a href="/about/" class="active">About WaterQuest</a></li><li><a href="/pilot/">Pilot Program</a></li><li><a href="/wqs-stainless/">WQS Stainless</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Core Pages</h5>
+        <ul><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/" class="active">About</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
+          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
+          <li>558 East Kent Ave S</li>
+          <li>Vancouver, BC V5X 4V6</li>
+          <li>Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
+  </div>
+</footer>
+<!-- WQ_GLOBAL_FOOTER_END -->
+<script id="wq-global-shell-js">
+    (function(){
+      var nav=document.getElementById("wq-nav");
+      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
+      var menuButton=document.querySelector(".wq-menu-toggle");
+      var mobileMenu=document.getElementById("wq-mobile-menu");
+      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
+      var bubbles=document.getElementById("wq-global-bubbles");
+      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
+      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
+      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
+      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
+      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
+      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
+      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
+      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
+      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
+      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
+      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
+      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
+    })();
+  </script>
+
+</body>
+</html>

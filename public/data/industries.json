@@ -1,0 +1,165 @@
+{
+  "generatedAt": "2026-06-29T13:50:36.204Z",
+  "pages": [
+    {
+      "file": "R2-municipal.html",
+      "slug": "municipal",
+      "label": "Municipal Infrastructure",
+      "group": "Public Infrastructure",
+      "urlPath": "/industries/municipal/",
+      "title": "Water Hydraulics for Municipal Infrastructure | WaterQuest Solutions",
+      "description": "Upgrade municipal water infrastructure with clean, reliable water-driven actuation for gates, valves, pump stations, and public works, zero oil contamination risk, 35% federal tax credit eligible, 40% lower annual operating costs.",
+      "h1": "Hydraulic Systems That Protect the Communities You Serve."
+    },
+    {
+      "file": "R2-wastewater-treatment.html",
+      "slug": "wastewater-treatment",
+      "label": "Wastewater Treatment",
+      "group": "Public Infrastructure",
+      "urlPath": "/industries/wastewater-treatment/",
+      "title": "Water Hydraulic Systems for Wastewater Treatment Plants | Oil-Free Hydraulic Actuators | WaterQuest Solutions",
+      "description": "Water hydraulic systems engineered for wastewater treatment plants. Oil-free actuators for sluice gates, penstocks, clarifier mechanisms, knife gate valves, and municipal water infrastructure. 316 stainless steel, PEEK wear surfaces, zero petroleum contamination.",
+      "h1": "Oil-Free Hydraulics for Wastewater Treatment Plants and Municipal Water Facilities"
+    },
+    {
+      "file": "R2-hydro.html",
+      "slug": "hydro",
+      "label": "Hydroelectric Power",
+      "group": "Public Infrastructure",
+      "urlPath": "/industries/hydro/",
+      "title": "Water Hydraulics for Hydroelectric Power | WaterQuest Solutions",
+      "description": "Use water to control the power of water. WaterQuest Solutions delivers river-safe, oil-free hydraulic actuation for dam gates, turbine governors, and spillway controls, zero contamination risk, 29% lower 50-year TCO.",
+      "h1": "Use Water to Control the Power of Water."
+    },
+    {
+      "file": "R2-marine.html",
+      "slug": "marine",
+      "label": "Marine & Coastal",
+      "group": "Marine & Environment",
+      "urlPath": "/industries/marine/",
+      "title": "Water Hydraulics for Marine & Coastal Applications | WaterQuest Solutions",
+      "description": "Zero ocean discharge. Saltwater ready. Certified for vessel use. WaterQuest Solutions supplies oil-free water hydraulic systems for commercial vessels, fishing boats, ferries, offshore support, and coastal infrastructure.",
+      "h1": "Water Hydraulics for Marine & Coastal."
+    },
+    {
+      "file": "R2-desalination.html",
+      "slug": "desalination",
+      "label": "Desalination & Reverse Osmosis",
+      "group": "Marine & Environment",
+      "urlPath": "/industries/desalination/",
+      "title": "Water Hydraulics for Desalination & Reverse Osmosis Systems | WaterQuest Solutions",
+      "description": "Zero brine contamination. Seawater-ready actuation. Built for high-pressure RO. WaterQuest Solutions supplies oil-free water hydraulic systems for desalination plants, reverse osmosis facilities, and brackish water treatment operations.",
+      "h1": "High-Pressure. Seawater-Ready. Zero Brine Contamination."
+    },
+    {
+      "file": "R2-modular-desalination-packages.html",
+      "slug": "modular-desalination-packages",
+      "label": "Modular Desalination Packages",
+      "group": "Marine & Environment",
+      "urlPath": "/industries/modular-desalination-packages/",
+      "title": "Modular Desalination Packages | Seawater & Brackish RO Systems | WaterQuest Solutions",
+      "description": "Complete turnkey desalination packages from 6 to 1,147 m3/day. Seawater and brackish water reverse osmosis systems with integrated Power Center energy recovery options. Oil-free operation, modular design, 70% energy savings, parallel scalability.",
+      "h1": "Modular Desalination Packages"
+    },
+    {
+      "file": "R2-mining.html",
+      "slug": "mining",
+      "label": "Mining Operations",
+      "group": "Heavy Industry",
+      "urlPath": "/industries/mining/",
+      "title": "Water Hydraulics for Mining Operations | WaterQuest Solutions",
+      "description": "Eliminate oil risk in the world's harshest industrial environments. WaterQuest Solutions supplies non-flammable, contamination-free water hydraulic systems for underground mining, open-pit, coal, mineral processing, and mill operations.",
+      "h1": "Eliminating Oil Risk in the World's Harshest Environments."
+    },
+    {
+      "file": "R2-forestry.html",
+      "slug": "forestry",
+      "label": "Forestry & Logging",
+      "group": "Heavy Industry",
+      "urlPath": "/industries/forestry/",
+      "title": "Water Hydraulics for Forestry & Logging Operations | WaterQuest Solutions",
+      "description": "Zero forest contamination. Fire-safe actuation. Built for harsh terrain. WaterQuest Solutions supplies oil-free water hydraulic systems for logging equipment, sawmills, timber processing, and forest management operations.",
+      "h1": "Fire-Safe. Forest-Safe. Zero Contamination Actuation."
+    },
+    {
+      "file": "R2-pulp-paper.html",
+      "slug": "pulp-paper",
+      "label": "Pulp & Paper Mills",
+      "group": "Heavy Industry",
+      "urlPath": "/industries/pulp-paper/",
+      "title": "Water Hydraulic Systems for Pulp and Paper Mills | Oil-Free Actuators | WaterQuest Solutions",
+      "description": "Water hydraulic systems engineered for pulp and paper mills. Oil-free actuators for pulp processing equipment, conveyors, valves, and mill infrastructure. 316 stainless steel, PEEK wear surfaces, zero contamination risk.",
+      "h1": "Oil-Free Hydraulics for Pulp and Paper Mills"
+    },
+    {
+      "file": "R2-food-beverage.html",
+      "slug": "food-beverage",
+      "label": "Food & Beverage",
+      "group": "Clean Process",
+      "urlPath": "/industries/food-beverage/",
+      "title": "Water Hydraulics for Food & Beverage Manufacturing | WaterQuest Solutions",
+      "description": "Eliminate oil contamination risk from food production environments. WaterQuest Solutions delivers non-toxic, washdown-ready water hydraulics for filling lines, packaging, conveyors, and CIP systems fully HACCP and GFSI aligned.",
+      "h1": "Clean. Safe. Precise. Oil-Free Hydraulics for Food Plants."
+    },
+    {
+      "file": "R2-agriculture.html",
+      "slug": "agriculture",
+      "label": "Agriculture & Irrigation",
+      "group": "Clean Process",
+      "urlPath": "/industries/agriculture/",
+      "title": "Water Hydraulics for Agriculture & Irrigation Systems | WaterQuest Solutions",
+      "description": "Zero crop contamination. Soil-safe actuation. Built for food production. WaterQuest Solutions supplies oil-free water hydraulic systems for irrigation pumps, crop processing, greenhouse automation, and agricultural machinery.",
+      "h1": "Food-Safe. Soil-Safe. Zero Contamination Actuation."
+    },
+    {
+      "file": "R2-hydrogen-production_1.html",
+      "slug": "hydrogen-production",
+      "label": "Hydrogen Production",
+      "group": "Clean Process",
+      "urlPath": "/industries/hydrogen-production/",
+      "title": "Water Hydraulic Systems for Hydrogen Production | Oil-Free Actuators | WaterQuest Solutions",
+      "description": "Water hydraulic systems engineered for hydrogen production facilities. Oil-free actuators for electrolysis systems, isolation valves, emergency shutdown systems, and hydrogen infrastructure. 316 stainless steel, PEEK wear surfaces, zero flammable hydraulic fluid.",
+      "h1": "Oil-Free Hydraulics for Hydrogen Production Infrastructure"
+    },
+    {
+      "file": "R2-fire-suppression-updated.html",
+      "slug": "fire-suppression",
+      "label": "Fire Suppression",
+      "group": "Safety-Critical",
+      "urlPath": "/industries/fire-suppression/",
+      "title": "Water Hydraulics for Fire Suppression Systems | WaterQuest Solutions",
+      "description": "Eliminate oil from fire-critical environments. WaterQuest Solutions delivers non-flammable, water hydraulic actuation for deluge valves, monitors, turrets, and suppression systems zero ignition risk by design.",
+      "h1": "Eliminating Oil from Fire-Critical Environments."
+    },
+    {
+      "file": "R2-dust-control.html",
+      "slug": "dust-control",
+      "label": "Dust Control",
+      "group": "Safety-Critical",
+      "urlPath": "/industries/dust-control/",
+      "title": "Water Hydraulics for Dust Control Systems | WaterQuest Solutions",
+      "description": "Eliminate oil-dust sludge and fire risk from dusty industrial environments. WaterQuest Solutions supplies non-flammable, sludge-proof water hydraulics for mining, aggregate, cement, sawmills, grain handling, and recycling facilities.",
+      "h1": "Eliminating Oil-Dust Sludge. Reducing Fire Risk. Cleaner Operations."
+    },
+    {
+      "file": "R2-odor-control.html",
+      "slug": "odor-control",
+      "label": "Odor Control & Ventilation",
+      "group": "Safety-Critical",
+      "urlPath": "/industries/odor-control/",
+      "title": "Water Hydraulics for Odor Control & Ventilation Systems | WaterQuest Solutions",
+      "description": "Clean, corrosion-resistant hydraulic actuation for odor control units, dampers, scrubbers, and biofilters. WaterQuest Solutions delivers oil-free water hydraulics that support not undermine your air quality mission.",
+      "h1": "Clean Hydraulics for Clean Air Infrastructure."
+    },
+    {
+      "file": "R2-waterparks.html",
+      "slug": "waterparks",
+      "label": "Water Parks & Wave Pools",
+      "group": "Guest & Facility Safety",
+      "urlPath": "/industries/waterparks/",
+      "title": "Water Hydraulics for Water Parks & Wave Pools | WaterQuest Solutions",
+      "description": "Zero oil contamination risk in every aquatic attraction. WaterQuest Solutions delivers clean, guest-safe water hydraulics for wave pools, waterslides, movable floors, and splash features.",
+      "h1": "Clean Hydraulics for Water Parks & Wave Pools."
+    }
+  ]
+}

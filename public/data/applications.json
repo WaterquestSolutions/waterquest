@@ -1,0 +1,93 @@
+{
+  "generatedAt": "2026-06-29T13:50:36.634Z",
+  "pages": [
+    {
+      "source": "/Volumes/bhickin/Desktop/New Folder With Items 2/WQS-Applications needs reworking/application-gate-actuation-final.html",
+      "slug": "gate-actuation",
+      "label": "Gate Actuation",
+      "group": "Actuation",
+      "fallbackDescription": "Water hydraulic gate actuation systems for sluice gates, penstock gates, dam spillways, and flood control infrastructure.",
+      "urlPath": "/applications/gate-actuation/",
+      "title": "Hydraulic Gate Actuation Systems | Sluice, Penstock & Dam Gate Actuators | WaterQuest Solutions",
+      "h1": "Hydraulic Gate Actuation Systems",
+      "description": "Water hydraulic gate actuation systems for sluice gates, penstock gates, dam spillways, and flood control. Oil-free hydraulic actuators engineered for wastewater, hydroelectric, and stormwater infrastructure where petroleum contamination cannot occur."
+    },
+    {
+      "source": "/Users/brucehickin/Downloads/New Folder With Items 2/WQS-Applications needs reworking/application-flow-control.html",
+      "slug": "flow-control",
+      "label": "Flow Control",
+      "group": "Actuation",
+      "fallbackDescription": "Water hydraulic flow control systems for process water, wastewater, slurry, and industrial cooling applications.",
+      "urlPath": "/applications/flow-control/",
+      "title": "Hydraulic Flow Control Systems | Process Water & Slurry Flow Regulation | WaterQuest Solutions",
+      "h1": "Hydraulic Flow Control Systems",
+      "description": "Water hydraulic flow control systems for process water, wastewater, slurry, and industrial cooling. Precise actuation and throttling without petroleum contamination."
+    },
+    {
+      "source": "/Volumes/bhickin/Desktop/New Folder With Items 2/WQS-Applications needs reworking/application-damper-control.html",
+      "slug": "damper-control",
+      "label": "Damper Control",
+      "group": "Actuation",
+      "fallbackDescription": "Water hydraulic damper control for industrial ventilation, dust collection, fume extraction, and HVAC systems.",
+      "urlPath": "/applications/damper-control/",
+      "title": "Hydraulic Damper Control Systems | Industrial Ventilation & HVAC Damper Actuators | WaterQuest Solutions",
+      "h1": "Hydraulic Damper Control Systems",
+      "description": "Water hydraulic damper control for industrial ventilation, dust collection, fume extraction, and HVAC systems. Reliable damper actuation without air system contamination risk."
+    },
+    {
+      "source": "/Users/brucehickin/Desktop/WQS-Applications needs reworking/2files.applications/application-fire-suppression.html",
+      "slug": "fire-suppression",
+      "label": "Fire Suppression",
+      "group": "Suppression",
+      "fallbackDescription": "Water hydraulic actuation for deluge valves, sprinkler zone valves, and fire water distribution systems.",
+      "urlPath": "/applications/fire-suppression/",
+      "title": "Fire Suppression Valve Systems | Deluge & Sprinkler Zone Control | WaterQuest Solutions",
+      "h1": "Fire Suppression Valve Systems",
+      "description": "Water hydraulic actuation for fire suppression deluge valves, sprinkler zone valves, and fire water distribution. Absolute reliability without petroleum contamination risk in potable water lines."
+    },
+    {
+      "source": "/Users/brucehickin/Downloads/needs to be sorted 2.0/WQS-Applications needs reworking/application-dust-suppression.html",
+      "slug": "dust-suppression",
+      "label": "Dust Suppression",
+      "group": "Suppression",
+      "fallbackDescription": "High-pressure water hydraulic misting and dust suppression systems for mining, bulk material handling, demolition, and construction.",
+      "urlPath": "/applications/dust-suppression/",
+      "title": "Dust Suppression Systems | High-Pressure Misting for Mining & Bulk Material | WaterQuest Solutions",
+      "h1": "Dust Suppression Systems",
+      "description": "Water hydraulic dust suppression systems for mining, bulk material handling, demolition, and construction. High-pressure misting without petroleum contamination risk."
+    },
+    {
+      "source": "/Volumes/bhickin/Desktop/New Folder With Items 2/WQS-Applications needs reworking/application-flood-control.html",
+      "slug": "flood-control",
+      "label": "Flood Control",
+      "group": "Infrastructure",
+      "fallbackDescription": "Water hydraulic flood control systems for flood gates, storm surge barriers, tide gates, and stormwater infrastructure.",
+      "urlPath": "/applications/flood-control/",
+      "title": "Flood Control Infrastructure | Storm Surge Barriers & Tide Gate Actuation | WaterQuest Solutions",
+      "h1": "Flood Control Infrastructure",
+      "description": "Water hydraulic flood control systems for flood gates, storm surge barriers, tide gates, and stormwater infrastructure. Reliable emergency actuation without petroleum contamination in waterways."
+    },
+    {
+      "source": "/Users/brucehickin/Downloads/New Folder With Items 2/nozzle-technology_2.html",
+      "slug": "nozzle-technology",
+      "label": "Nozzle Technology",
+      "group": "Technology",
+      "fallbackDescription": "High-pressure water nozzle technology for fire suppression, dust suppression, odour control, and industrial cleaning.",
+      "urlPath": "/applications/nozzle-technology/",
+      "title": "High-Pressure Water Nozzle Technology | Fire, Dust, Odour, Cleaning | WaterQuest Solutions",
+      "h1": "High-Pressure Water Nozzles for Fire , Dust , Odour & Cleaning",
+      "description": "Engineering reference for high-pressure water nozzles across fire suppression, dust suppression, odour control, and industrial cleaning. Spray patterns, droplet physics, flow tables, and selection criteria from WaterQuest Solutions, Vancouver BC."
+    },
+    {
+      "source": "/Users/brucehickin/Downloads/needs to be sorted 2.0/bilge pump.html",
+      "slug": "bilge-valve",
+      "label": "Marine Bilge Valve",
+      "group": "Marine",
+      "fallbackDescription": "DN200 PN6 water hydraulic actuated bilge valve engineering write-up for submerged cruise ship bilge tank service.",
+      "urlPath": "/applications/bilge-valve/",
+      "title": "DN200 PN6 Water Hydraulic Actuated Bilge Valve | WaterQuest Solutions",
+      "h1": "DN200 PN6 Water Hydraulic Actuated Bilge Valve",
+      "description": "Engineering write-up for a DN200 PN6 water hydraulic actuated globe valve supplied by WaterQuest Solutions for submerged cruise ship bilge tank service."
+    }
+  ]
+}

@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Selecting Pumps for Water Hydraulic Systems | WaterQuest Solutions</title>
+  <meta name="description" content="Complete pump selection guide for water hydraulic systems: pump type selection, flow and pressure sizing, material requirements, and system integration." />
+
+<style>
+:root{--navy:#071321;--blue:#0b2138;--panel:#102b45;--panel2:#163954;--aqua:#00c8d4;--aqua2:#30f1df;--green:#20d3a7;--silver:#FFFFFF;--muted:#FFFFFF;--white:#fff;--line:rgba(184,199,212,.18);--aqua-line:rgba(0,200,212,.32);--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--silver);font-family:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif;line-height:1.72}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}.site-header{position:sticky;top:0;z-index:10;background:rgba(7,19,33,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.site-nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:inline-flex;align-items:center;gap:11px;color:var(--white);font-weight:900;line-height:1.08}.brand-mark{width:40px;height:40px}.brand small{display:block;color:var(--aqua);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase}.nav-links{display:flex;align-items:center;gap:24px;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800}.nav-links a{color:var(--silver)}.nav-links a:hover,.nav-links a.active{color:var(--aqua2)}.nav-cta{background:var(--aqua);color:var(--navy)!important;padding:10px 15px;border-radius:6px}.eyebrow{color:var(--aqua);font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.22em;margin-bottom:14px}h1,h2,h3{color:var(--white);line-height:1.1;margin:0}p{margin:0;color:var(--silver)}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 18px;border-radius:6px;border:1px solid var(--aqua-line);color:var(--aqua2);font-size:.8rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.btn.primary{background:var(--aqua);border-color:var(--aqua);color:var(--navy)}.hero{padding:86px 0 54px;background:radial-gradient(ellipse at 70% 20%,rgba(0,200,212,.13),transparent 45%),linear-gradient(160deg,#06101d,var(--navy) 55%,var(--blue));border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:46px;align-items:end}.hero h1{font-size:clamp(2.4rem,5.5vw,5rem);letter-spacing:-.04em}.hero h1 span{color:var(--aqua2)}.hero p{font-size:1.14rem;max-width:720px;color:#FFFFFF;margin-top:22px}.stat-card{border:1px solid var(--aqua-line);background:rgba(16,43,69,.7);border-radius:8px;padding:24px}.stat-card b{display:block;color:var(--aqua2);font-size:2.8rem;line-height:1}.stat-card span{display:block;color:var(--muted);font-size:.76rem;text-transform:uppercase;letter-spacing:.11em;font-weight:800;margin-top:8px}.section{padding:72px 0;border-bottom:1px solid var(--line)}.section.alt{background:var(--blue)}.section-head{display:grid;grid-template-columns:1fr minmax(260px,.55fr);gap:36px;align-items:end;margin-bottom:30px}.section h2{font-size:clamp(1.8rem,3.4vw,3rem);letter-spacing:-.03em}.toolbar{position:sticky;top:72px;z-index:9;background:rgba(7,19,33,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(12px);padding:12px 0}.toolbar-inner{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.search{flex:1;min-width:240px;background:var(--panel);border:1px solid var(--aqua-line);border-radius:6px;padding:12px 13px;color:var(--white);font:inherit}.pill{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:8px 12px;font-size:.73rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;cursor:pointer}.pill.active{border-color:var(--aqua);color:var(--aqua);background:rgba(0,200,212,.08)}.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.category-card,.article-card,.panel{background:linear-gradient(145deg,rgba(16,43,69,.96),rgba(13,34,56,.94));border:1px solid var(--line);border-radius:8px;padding:22px}.category-card:hover,.article-card:hover{border-color:var(--aqua-line)}.category-card b{display:block;color:var(--white);font-size:1rem;margin-bottom:4px}.category-card span{color:var(--aqua);font-weight:900}.article-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.article-card{display:grid;gap:10px}.article-card small{color:var(--aqua);font-weight:900;letter-spacing:.12em;text-transform:uppercase;font-size:.68rem}.article-card h3{font-size:1.05rem;line-height:1.35}.article-card p{color:var(--muted);font-size:.9rem}.article-meta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:.78rem}.breadcrumb{padding:18px 0;background:var(--blue);border-bottom:1px solid var(--line);font-size:.82rem;color:var(--muted)}.article-hero{padding:58px 0 46px;background:linear-gradient(160deg,#06101d,var(--blue));border-bottom:1px solid var(--line)}.article-hero h1{font-size:clamp(2rem,4.6vw,3.6rem);letter-spacing:-.035em;max-width:860px}.article-hero p{font-size:1.12rem;max-width:760px;margin-top:18px;color:#FFFFFF}.article-shell{display:grid;grid-template-columns:minmax(0,820px) 280px;gap:54px;align-items:start;padding:56px 0 78px}.article-body{min-width:0}.article-body h2{font-size:1.55rem;margin:44px 0 15px;padding-top:8px;border-top:1px solid var(--line)}.article-body h2:first-child{margin-top:0;border-top:0}.article-body h3{font-size:1.14rem;margin:28px 0 10px;color:#FFFFFF}.article-body p,.article-body li{font-size:1.01rem;color:var(--silver);line-height:1.85}.article-body p{margin-bottom:18px}.article-body ul,.article-body ol{padding-left:1.35em;margin:12px 0 20px}.article-body li::marker{color:var(--aqua)}.callout,.takeaways,.formula-block{border:1px solid var(--aqua-line);background:rgba(0,200,212,.07);border-radius:8px;padding:20px;margin:26px 0}.callout-label,.formula-label,.takeaways h4{color:var(--aqua);font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.16em;margin-bottom:8px}.comparison-table-wrap{overflow-x:auto;margin:26px 0;border:1px solid var(--aqua-line);border-radius:8px}.comparison-table{width:100%;border-collapse:collapse;min-width:520px}.comparison-table th,.comparison-table td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left}.comparison-table th{color:var(--aqua);font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}.sidebar{position:sticky;top:96px;display:grid;gap:16px}.sidebar .panel h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--silver);margin-bottom:10px}.sidebar a{display:block;color:var(--muted);font-size:.9rem;margin:7px 0}.sidebar a:hover{color:var(--aqua)}footer{background:#04101d;border-top:1px solid var(--line);padding:46px 0}.footer-grid{display:grid;grid-template-columns:1fr auto auto;gap:50px}.footer-grid a{display:block;color:var(--muted);font-size:.9rem;margin:6px 0}footer h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--silver)}@media(max-width:960px){.nav-links{display:none}.hero-grid,.section-head,.article-shell,.footer-grid{grid-template-columns:1fr}.category-grid,.article-list{grid-template-columns:1fr 1fr}.sidebar{position:static}}@media(max-width:640px){.wrap{width:min(100% - 28px,var(--max))}.category-grid,.article-list{grid-template-columns:1fr}.hero{padding-top:58px}.toolbar{top:72px}.article-shell{padding-top:36px}}
+</style><link rel="canonical" href="/knowledge-hub/selecting-pumps-for-water-hydraulic-systems" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:title" content="Selecting Pumps for Water Hydraulic Systems | WaterQuest Solutions" />
+  <meta property="og:description" content="Complete pump selection guide for water hydraulic systems: pump type selection, flow and pressure sizing, material requirements, and system integration." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="/knowledge-hub/selecting-pumps-for-water-hydraulic-systems" />
+  <meta property="og:image" content="/assets/waterquest-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Selecting Pumps for Water Hydraulic Systems | WaterQuest Solutions" />
+  <meta name="twitter:description" content="Complete pump selection guide for water hydraulic systems: pump type selection, flow and pressure sizing, material requirements, and system integration." />
+  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
+  <link rel="alternate" hreflang="en-CA" href="/knowledge-hub/selecting-pumps-for-water-hydraulic-systems" />
+  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
+  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"Article","@id":"/knowledge-hub/selecting-pumps-for-water-hydraulic-systems#webpage","url":"/knowledge-hub/selecting-pumps-for-water-hydraulic-systems","name":"Selecting Pumps for Water Hydraulic Systems | WaterQuest Solutions","description":"Complete pump selection guide for water hydraulic systems: pump type selection, flow and pressure sizing, material requirements, and system integration.","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA","headline":"Build the engineering case for water as a hydraulic medium.","image":"/assets/waterquest-hero.png","author":{"@id":"/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"},{"@type":"ListItem","position":2,"name":"Knowledge Hub","item":"/knowledge-hub"},{"@type":"ListItem","position":3,"name":"Selecting Pumps For Water Hydraulic Systems","item":"/knowledge-hub/selecting-pumps-for-water-hydraulic-systems"}]}]}</script>
+  <style id="wq-global-shell-css">
+    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
+    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
+    body a{color:inherit}
+    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
+    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
+    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
+    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
+    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
+    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
+    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
+    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
+    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
+    main .btn.primary{color:var(--wq-navy)!important}
+    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
+    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
+    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
+    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
+    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
+    .wq-form-status.is-error{color:#ffb1b1!important}
+    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
+    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
+    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
+    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
+    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
+    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
+    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
+    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
+    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
+    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
+    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
+    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
+    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
+    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
+    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
+    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
+    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
+    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
+    .wq-hero-visual-text{padding:20px}
+    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
+    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
+    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
+    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
+    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
+    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
+    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
+    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
+    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
+    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
+    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
+    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
+    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
+    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
+    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
+    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
+    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
+    #wq-mobile-menu.open{display:block}
+    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
+    #wq-mobile-menu a:last-child{border-bottom:0}
+    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
+    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
+    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
+    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
+    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
+    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
+    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
+    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
+    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
+    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
+    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
+    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
+    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
+    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
+    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
+    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
+  </style>
+</head>
+<body class="wq-section-knowledge">
+<!-- WQ_GLOBAL_HEADER_START -->
+<div id="wq-global-bubbles" aria-hidden="true"></div>
+<nav id="wq-nav" role="navigation" aria-label="Main navigation">
+  <div class="wq-nav-inner">
+    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
+      <span class="wq-logo-main">WaterQuest Solutions</span>
+      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+    </a>
+    <ul class="wq-nav-links" role="list">
+      <li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/" class="active">Knowledge Hub</a></li><li><a href="/about/">About</a></li>
+      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
+    </ul>
+    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
+  </div>
+</nav>
+<div id="wq-mobile-menu">
+  <a href="/products/">Products</a><a href="/industries/">Industries</a><a href="/technology/">Technology</a><a href="/knowledge-hub/" class="active">Knowledge Hub</a><a href="/about/">About</a>
+  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
+</div>
+<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
+<section class="wq-conversion-hero" aria-label="Page introduction">
+  <div class="wq-conversion-wrap">
+    <div>
+      <p class="wq-hero-eyebrow">Knowledge Hub</p>
+      <h1>Build the <span>engineering case</span> for water as a hydraulic medium.</h1>
+      <p class="wq-hero-copy">Explore the articles that support WaterQuest's authority position: fundamentals, materials, applications, comparisons, compliance, maintenance, and field adoption.</p>
+      <div class="wq-hero-actions">
+        <a class="wq-hero-cta" href="/technology/">Open Technology References</a>
+        <a class="wq-hero-secondary" href="/glossary/">Use the Glossary</a>
+      </div>
+    </div>
+    <a class="wq-hero-visual" href="/technology/">
+      <div class="wq-hero-picture" aria-hidden="true"></div>
+      <div class="wq-hero-visual-text">
+        <small>Authority path</small>
+        <strong>From question to technical confidence.</strong>
+        <span>Content built for practical decision makers and deep technical research.</span>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- WQ_CONVERSION_HERO_END --><div class="breadcrumb"><div class="wrap"><a href="/">Home</a> / <a href="/knowledge-hub/">Knowledge Hub</a> / Design &amp; Specification</div></div>
+<main>
+  <section class="article-hero">
+    <div class="wrap">
+      <div class="eyebrow">Article 39 · Design &amp; Specification</div>
+      <h1>Selecting Pumps for Water Hydraulic Systems</h1>
+      <p>Complete pump selection guide for water hydraulic systems: pump type selection, flow and pressure sizing, material requirements, and system integration.</p>
+    </div>
+  </section>
+  <div class="wrap article-shell">
+    <article class="article-body"><a href="/" class="logo">WaterQuest Solutions</a>
+            <nav>
+                <a href="/products/">Products</a>
+                <a href="/knowledge-hub/">Knowledge Hub</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="/">Home</a>
+            <span>/</span>
+            <a href="/knowledge-hub/">Knowledge Hub</a>
+            <span>/</span>
+            <a href="/knowledge-hub/?category=design-specification">Practical Engineering Guides</a>
+            <span>/</span>
+            <span>Selecting Pumps for Water Hydraulic Systems</span>
+        </div>
+        
+        <h1>Selecting Pumps for Water Hydraulic Systems</h1>
+        
+        <div class="meta">
+            Article 39  · Practical Engineering Guides · WaterQuest Solutions
+        </div>
+        
+        <div class="content">
+            <p class="intro">Pump selection is the most consequential single component decision in a water hydraulic system design. An appropriately selected pump delivers the required flow and pressure at acceptable efficiency, while an inappropriate selection results in excessive energy consumption, shortened component life, or outright system failure. Unlike mineral oil systems where pump technology has converged around well-established designs, water hydraulic systems demand careful attention to material compatibility, cavitation resistance, and the unique tribological challenges of water as a working fluid.</p>
+            
+            <p>This article provides a complete pump selection guide for water hydraulic systems: pump type selection based on pressure and flow requirements, displacement and speed sizing, material requirements for water service, and system integration considerations including inlet conditions, speed control, and load sensing.</p>
+            
+            <h2>Pump Type Selection: The First Decision</h2>
+            
+            <p>The appropriate pump type for a water hydraulic system depends primarily on the operating pressure range, with secondary considerations including flow requirements, efficiency targets, and whether variable displacement is required.</p>
+            
+            <h3>Axial Piston Pumps: The High-Pressure Standard</h3>
+            
+            <p>Axial piston pumps are the workhorse of industrial water hydraulics above 100 bar. In this design, a cylinder block containing multiple pistons rotates around a drive shaft. The pistons reciprocate as they follow a swashplate or bent axis, drawing water in during the extending stroke and discharging under pressure during the retracting stroke. The number of pistons (typically 7 or 9 in water hydraulic designs) and their displacement determine flow rate at a given rotational speed.</p>
+            
+            <p>The axial piston design achieves high pressure capability (up to 350 bar in purpose-built water hydraulic units) through distributed loading across multiple pistons and precision-machined contact surfaces. The tribological challenge in water service is addressed through hard-faced materials: carbon-reinforced PEEK pistons running against 316 stainless steel cylinder blocks, with ceramic or carbide valve plates. These material combinations provide the wear resistance and corrosion immunity necessary for reliable water hydraulic operation.</p>
+            
+            <ul>
+                <li>Pressure range: 100 to 350 bar continuous, 400 bar intermittent</li>
+                <li>Flow range: 5 to 500+ L/min depending on displacement and speed</li>
+                <li>Volumetric efficiency: 92 to 96% at rated conditions</li>
+                <li>Displacement types: Fixed or variable (load-sensing, pressure-compensated)</li>
+                <li>Best for: All industrial and municipal applications above 100 bar</li>
+            </ul>
+            
+            <h3>Gear Pumps: The Low-Pressure Option</h3>
+            
+            <p>External gear pumps, consisting of two meshing gears rotating within a close-tolerance housing, are the simplest positive displacement design. Water enters at the inlet side, is carried around the housing periphery in the spaces between gear teeth, and discharged at the outlet as the teeth mesh again. The design provides fixed displacement with flow proportional to rotational speed.</p>
+            
+            <p>Water hydraulic gear pumps are appropriate for low-pressure applications, including dust suppression systems, wash-down circuits, and auxiliary flows in industrial equipment. The pressure limitation (typically 100 bar maximum continuous) arises from the side loading on gear shafts and the difficulty of maintaining close running clearances as pressure increases. Material selection is critical: 316 stainless steel gears and housing with ceramic or carbide bushings for the gear shafts.</p>
+            
+            <ul>
+                <li>Pressure range: Up to 100 bar continuous</li>
+                <li>Flow range: 1 to 200 L/min</li>
+                <li>Volumetric efficiency: 80 to 90% at rated conditions</li>
+                <li>Best for: Low-pressure services, dust suppression circuits, auxiliary flows</li>
+            </ul>
+            
+            <h3>Radial Piston Pumps: The Specialist Option</h3>
+            
+            <p>Radial piston pumps, in which pistons are arranged radially around a central drive shaft and reciprocate against an eccentric cam, represent a specialist pump type for water hydraulics. The design provides very high pressure capability (up to 700 bar in specialist water hydraulic configurations) through superior piston load distribution, but at lower flow rates than comparable axial piston units.</p>
+            
+            <ul>
+                <li>Pressure range: Up to 700 bar (specialist designs)</li>
+                <li>Flow range: 0.1 to 50 L/min (typically lower flow than axial piston)</li>
+                <li>Best for: High-pressure specialist applications, precision servo, low-flow high-pressure services</li>
+            </ul>
+            
+            <h2>Sizing the Pump: Flow and Pressure Requirements</h2>
+            
+            <h3>Step 1: Calculate Peak Flow Demand</h3>
+            
+            <p>The pump must deliver the peak simultaneous flow required by all actuators that operate concurrently. For a hydraulic cylinder extending at velocity v with piston area A, the required flow is:</p>
+            
+            <div class="spec-box">
+                <p>CYLINDER FLOW</p>
+                <p>Q_cyl (L/min) = A_bore (cm²) × v_piston (m/s) × 600 / 1000</p>
+                <p>Example: 100mm bore (A = 78.54 cm²) extending at 0.1 m/s requires 4.7 L/min</p>
+            </div>
+            
+            <p>Sum all simultaneously operating cylinder flows to get system peak demand. Add 15% margin for pump inefficiency and minor circuit flows.</p>
+            
+            <h3>Step 2: Verify Pressure Capability</h3>
+            
+            <p>The pump outlet pressure must overcome the maximum actuator load pressure plus all circuit losses from valves, fittings, and piping. For a cylinder pushing force F against piston area A:</p>
+            
+            <div class="spec-box">
+                <p>SYSTEM PRESSURE</p>
+                <p>P_pump = P_load_max + ΔP_circuit</p>
+                <p>Circuit losses (well-designed system): 10 to 25 bar</p>
+                <p>Circuit losses (poorly designed system): 50+ bar</p>
+            </div>
+            
+            <p>Select a pump whose continuous pressure rating exceeds the required pump outlet pressure by at least 15%. This margin accommodates transient pressure spikes during rapid directional changes or load impact.</p>
+            
+            <h3>Step 3: Determine Displacement and Speed</h3>
+            
+            <p>Once flow requirement Q and maximum speed n are established, calculate the required pump displacement:</p>
+            
+            <div class="spec-box">
+                <p>DISPLACEMENT SIZING</p>
+                <p>V_disp (cc/rev) = Q (L/min) × 1000 / n (rpm)</p>
+                <p>Example: 50 L/min at 1500 rpm requires 33 cc/rev displacement</p>
+            </div>
+            
+            <p>Water hydraulic pumps typically operate between 1000 and 1800 rpm, with higher speeds increasing wear rates and cavitation risk. Where possible, select a larger displacement pump running at lower speed rather than a smaller displacement unit at maximum speed.</p>
+            
+            <h2>Material Requirements for Water Service</h2>
+            
+            <p>Water's corrosive nature and poor lubricity demand materials fundamentally different from those used in mineral oil hydraulic pumps. All wetted surfaces must resist corrosion in the operating environment (tap water, seawater, or other aqueous media), while sliding contact surfaces must provide wear resistance without the boundary lubrication provided by oil.</p>
+            
+            <h3>Corrosion-Resistant Structural Materials</h3>
+            
+            <p>Pump housings, ports, manifolds, and structural components must be fabricated from corrosion-resistant alloys. The minimum acceptable material is 316 stainless steel, providing adequate corrosion resistance in fresh water and municipal supply applications. For seawater service or aggressive aqueous solutions, super-austenitic stainless steels (254 SMO, AL-6XN) or nickel alloys (Hastelloy C-276) may be required.</p>
+            
+            <p>Carbon steel or ductile iron housings are unacceptable in water hydraulic service, even with protective coatings. Coating failure leads to rapid corrosion and contamination of the hydraulic circuit with iron oxide particles.</p>
+            
+            <h3>Tribological Contact Materials</h3>
+            
+            <p>Sliding contact surfaces, where pump components move relative to one another under pressure, represent the most challenging material selection decision. The absence of oil's boundary lubrication film means these surfaces must provide inherent wear resistance and low friction through material properties alone.</p>
+            
+            <p>The proven material combination for water hydraulic pump internals is carbon-reinforced PEEK (polyetheretherketone) running against hardened 316 stainless steel. PEEK provides low friction, good wear resistance, and excellent chemical resistance, while carbon reinforcement improves mechanical properties and reduces thermal expansion. The stainless steel counterface is hardened (typically to HRC 58 to 62) through nitriding or similar surface treatment.</p>
+            
+            <p>Alternative materials include:</p>
+            
+            <ul>
+                <li>Silicon carbide (valve plates and wear surfaces): Excellent wear resistance but brittle</li>
+                <li>Tungsten carbide (high-pressure contact areas): Superior hardness but expensive</li>
+                <li>Ceramic materials (specialist high-pressure applications): Very hard but sensitive to impact</li>
+            </ul>
+            
+            <h2>Inlet Conditions and Cavitation Prevention</h2>
+            
+            <p>Cavitation, the formation and collapse of vapour bubbles in the working fluid, is the most common cause of premature pump failure in water hydraulic systems. Water's high vapour pressure (compared to mineral oil) makes water hydraulic pumps inherently more susceptible to cavitation damage. Preventing cavitation requires careful attention to inlet conditions.</p>
+            
+            <h3>Net Positive Inlet Pressure (NPIP)</h3>
+            
+            <p>The pump inlet must maintain sufficient pressure above water's vapour pressure to prevent bubble formation. This requirement is expressed as Net Positive Inlet Pressure:</p>
+            
+            <div class="spec-box">
+                <p>NPIP REQUIREMENT</p>
+                <p>NPIP = P_inlet - P_vapour > NPIP_required</p>
+                <p>Where P_vapour ≈ 0.02 bar at 20°C (increases with temperature)</p>
+                <p>Typical pump NPIP requirement: 0.5 to 2.0 bar above vapour pressure</p>
+            </div>
+            
+            <p>The pump manufacturer specifies the required NPIP for a given pump model at rated speed and flow. The system designer must ensure this NPIP is available under all operating conditions, including maximum fluid temperature (which increases vapour pressure) and minimum reservoir level (which reduces hydrostatic head at the pump inlet).</p>
+            
+            <h3>Reservoir Pressurization</h3>
+            
+            <p>Where gravity head alone cannot provide adequate NPIP, reservoir pressurization becomes necessary. A low-pressure charge pump or compressed air maintains 1 to 3 bar gauge pressure on the reservoir free surface, ensuring positive pressure at the main pump inlet even under worst-case conditions. The pressurization system must include pressure relief protection to prevent reservoir overpressure.</p>
+            
+            <h3>Inlet Line Sizing</h3>
+            
+            <p>Inlet line pressure drop directly reduces available NPIP. Size inlet lines for maximum velocity of 1.0 m/s, well below the 2.0 m/s typical in oil hydraulic systems. The larger line size reduces friction loss and turbulence, improving inlet conditions and pump service life.</p>
+            
+            <h2>Variable Displacement and Load Sensing</h2>
+            
+            <p>Variable displacement pumps adjust output flow by changing the swashplate angle (in axial piston designs), delivering only the flow required by the system rather than maximum displacement at all times. This capability provides substantial energy savings in applications with varying flow demand.</p>
+            
+            <h3>Pressure-Compensated Control</h3>
+            
+            <p>The simplest variable displacement control maintains constant outlet pressure by reducing displacement as system pressure approaches the set point. When system pressure reaches the compensator setting, the pump destrokes to minimum displacement, delivering only enough flow to maintain pressure against system leakage. This control mode suits systems with frequent idle periods between work cycles.</p>
+            
+            <h3>Load-Sensing Control</h3>
+            
+            <p>Load-sensing control adjusts pump displacement to maintain a constant pressure margin (typically 15 to 25 bar) above the highest load pressure in the system. A pilot line connects the pump controller to the load-sensing port on system valves, communicating the current load pressure. The pump delivers exactly the flow demanded by the system at a pressure just sufficient to operate the loads, minimizing energy consumption across all operating conditions.</p>
+            
+            <p>Load sensing provides the highest efficiency in systems with varying loads and flow requirements, but adds complexity and requires compatible valves with load-sensing ports.</p>
+            
+            <h2>System Integration Considerations</h2>
+            
+            <h3>Drive Speed and Control</h3>
+            
+            <p>Fixed-speed AC motors are the standard drive for industrial water hydraulic pumps, with variable frequency drives (VFDs) providing speed control where flow demand varies. VFD control allows the pump to operate at the minimum speed necessary to meet current flow requirements, reducing energy consumption and extending pump life through reduced wear rates.</p>
+            
+            <p>For mobile or off-grid applications, diesel or petrol engines provide pump drive power. Engine speed governors maintain constant pump speed under varying loads.</p>
+            
+            <h3>Filtration Requirements</h3>
+            
+            <p>Water hydraulic pumps require clean inlet water to prevent abrasive wear of close-tolerance surfaces. Install a suction strainer (40 to 100 mesh) at the reservoir outlet to catch large particles, and a 10 to 25 micron absolute filter in the pump inlet line. High-pressure filters (3 to 10 micron) on the pump discharge protect downstream components from wear particles generated during pump operation.</p>
+            
+            <h3>Starting and Shutdown Procedures</h3>
+            
+            <p>Unlike oil hydraulic pumps that can be started under pressure, water hydraulic pumps should be started against an unloaded circuit. Open all system valves to tank before energizing the pump drive motor, allowing the pump to accelerate to full speed with minimal outlet pressure. This practice reduces starting torque and prevents pressure surges that could damage pump internals.</p>
+            
+            <p>At shutdown, close all system valves before stopping the pump to prevent reverse flow through the pump as pressure decays. In systems with vertical actuators or other gravity loads, install pilot-operated check valves to hold loads during pump shutdown.</p></article>
+    <aside class="sidebar">
+      <div class="panel">
+        <h3>Diagnostic Offer</h3>
+        <p>Tell us your application, operating pressure, and environment. We will identify whether water hydraulics can replace your current system.</p>
+        <p style="margin-top:14px"><a class="btn primary" href="/contact/">Get System Diagnostic</a></p>
+      </div>
+      <div class="panel">
+        <h3>Related Reading</h3>
+        <a href="/knowledge-hub/designing-a-water-hydraulic-power-unit/">Article 38: Designing a Water Hydraulic Power Unit</a><a href="/knowledge-hub/sizing-cylinders-for-water-hydraulic-applications/">Article 40: Sizing Cylinders for Water Hydraulic Applications</a><a href="/knowledge-hub/designing-control-valves-for-water-hydraulics/">Article 41: Designing Control Valves for Water Hydraulics</a><a href="/knowledge-hub/water-hydraulic-filtration-requirements/">Article 42: Water Hydraulic Filtration Requirements</a><a href="/knowledge-hub/water-hydraulic-system-maintenance/">Article 43: Water Hydraulic System Maintenance</a>
+      </div>
+      <div class="panel">
+        <h3>Back to Library</h3>
+        <a href="/knowledge-hub/">Browse all Knowledge Hub articles</a>
+      </div>
+    </aside>
+  </div>
+</main><!-- WQ_REFERENCE_RAIL_START -->
+<aside class="wq-reference-rail" aria-label="Engineering references">
+  <a href="/calculations/"><small>Reference</small><strong>Engineering Calculators</strong></a>
+  <a href="/glossary/"><small>Reference</small><strong>Technical Glossary</strong></a>
+</aside>
+<!-- WQ_REFERENCE_RAIL_END -->
+
+<!-- WQS_ENRICHMENT_START -->
+<style>
+.wqs-enrichment{background:#f5fbf9;border-top:1px solid #d9e8e3;color:#15302c;font-family:Nunito Sans,Arial,sans-serif;padding:56px 6vw}.wqs-enrichment__inner{margin:0 auto;max-width:1120px}.wqs-enrichment__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-enrichment h2{font-size:clamp(28px,4vw,48px);line-height:1.05;margin:8px 0 16px}.wqs-enrichment p{color:#4b625d;font-size:18px;line-height:1.65;max-width:900px}.wqs-enrichment__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px}.wqs-enrichment__panel{background:#fff;border:1px solid #d9e8e3;border-radius:8px;padding:22px}.wqs-enrichment__panel h3{font-size:18px;margin:0 0 12px}.wqs-enrichment ul{margin:0;padding-left:20px}.wqs-enrichment li{line-height:1.55;margin:7px 0}.wqs-enrichment__links{display:grid;gap:10px}.wqs-enrichment__links a{background:#fff;border:1px solid #d9e8e3;border-radius:8px;color:#15302c;display:grid;gap:4px;padding:14px;text-decoration:none}.wqs-enrichment__links span{color:#5f746f;font-size:14px;line-height:1.45}@media(max-width:760px){.wqs-enrichment{padding:40px 18px}.wqs-enrichment__grid{grid-template-columns:1fr}}
+</style>
+<section class="wqs-enrichment" aria-label="Complete page details">
+  <div class="wqs-enrichment__inner">
+    <div class="wqs-enrichment__eyebrow">Complete archive details</div>
+    <h2>Selecting Pumps for Water Hydraulic Systems</h2>
+    <p>Complete pump selection guide for water hydraulic systems: pump type selection, flow and pressure sizing, material requirements, and system integration.</p>
+    <div class="wqs-enrichment__grid">
+      
+      <div class="wqs-enrichment__panel"><h3>Primary page focus</h3><ul><li>Build the engineering case for water as a hydraulic medium.</li><li>Selecting Pumps for Water Hydraulic Systems</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Full section outline</h3><ul><li>Pump Type Selection: The First Decision</li><li>Sizing the Pump: Flow and Pressure Requirements</li><li>Material Requirements for Water Service</li><li>Inlet Conditions and Cavitation Prevention</li><li>Variable Displacement and Load Sensing</li><li>System Integration Considerations</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Detailed topics</h3><ul><li>Axial Piston Pumps: The High-Pressure Standard</li><li>Gear Pumps: The Low-Pressure Option</li><li>Radial Piston Pumps: The Specialist Option</li><li>Step 1: Calculate Peak Flow Demand</li><li>Step 2: Verify Pressure Capability</li><li>Step 3: Determine Displacement and Speed</li><li>Corrosion-Resistant Structural Materials</li><li>Tribological Contact Materials</li><li>Net Positive Inlet Pressure (NPIP)</li><li>Reservoir Pressurization</li><li>Inlet Line Sizing</li><li>Pressure-Compensated Control</li><li>Load-Sensing Control</li><li>Drive Speed and Control</li></ul></div>
+    </div>
+    <div class="wqs-enrichment__panel" style="margin-top:18px"><h3>Related pages with more detail</h3><div class="wqs-enrichment__links"><a href="/knowledge-hub/selecting-pumps-for-water-hydraulic-systems"><strong>Selecting Pumps for Water Hydraulic Systems</strong><span>Complete pump selection guide for water hydraulic systems: pump type selection, flow and pressure sizing, material requirements, and system integration.</span></a><a href="/industries/agriculture/"><strong>Agriculture &amp; Irrigation</strong><span>Zero crop contamination. Soil-safe actuation. Built for food production. WaterQuest Solutions supplies oil-free water hydraulic systems for irrigation pumps, crop processing, greenhouse automation, and agricultural machinery.</span></a><a href="/knowledge-hub/160-bar-performance-debunking-the-limitations-of-water-hydraulics"><strong>160 Bar Performance: Debunking the Limitations of Water Hydraulics</strong><span>Modern water hydraulic pumps, cylinders, and motors operate reliably at 160 bar. A direct engineering challenge to the assumption that pressure capability depends on the fluid rather than the hardware.</span></a><a href="/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results"><strong>Air Systems vs Water Hydraulic Systems: Which Delivers Better Results?</strong><span>Engineering comparison of pneumatic air systems and water hydraulic systems: power density, control precision, energy efficiency, environmental impact, and application selection criteria.</span></a><a href="/knowledge-hub/aligning-with-esg-how-water-hydraulics-support-sustainability-targets"><strong>Aligning With ESG: How Water Hydraulics Support Sustainability Targets</strong><span>How water-driven hydraulic systems advance ESG goals across environmental protection, worker safety, and governance. Why procurement teams increasingly specify water hydraulics to strengthen ESG compliance, reduce operational risk, and support clean-technology adoption.</span></a><a href="/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation"><strong>Beyond Oil: Engineering Principles of Water Hydraulic Actuation</strong><span>A technical look at how force transmission works when the fluid is water, not petroleum, and why engineers should stop treating water systems as special cases.</span></a><a href="/knowledge-hub/breaking-down-the-roi-investing-in-water-hydraulics"><strong>Breaking Down the ROI: Investing in Water Hydraulics</strong><span>A complete return on investment analysis for water hydraulic systems across fluid lifecycle cost, environmental risk, insurance, maintenance, component longevity, and downtime economics over 20-year infrastructure horizons.</span></a><a href="/knowledge-hub/built-in-safety-fail-closed-and-manual-overrides-with-water"><strong>Built-In Safety: Fail-Closed and Manual Overrides with Water</strong><span>A complete engineering explanation of safety behaviour, fail-state logic, passive protections, and manual override design in water hydraulic systems. How geometry, spring return, drain-back, and clean internals create inherently safer fail-safe behaviour than oil-based equivalents.</span></a><a href="/knowledge-hub/can-i-retrofit-my-existing-system-to-use-water"><strong>Can I Retrofit My Existing System to Use Water?</strong><span>A complete engineering guide to retrofitting oil hydraulic systems for water service. What can be reused, what must be replaced, when retrofit works and when replacement is better, and how the hydraulic core and infrastructure divide in a water hydraulic conversion.</span></a><a href="/knowledge-hub/can-water-freeze-in-hydraulic-systems-engineering-around-temperature"><strong>Can Water Freeze in Hydraulic Systems? Engineering Around Temperature</strong><span>Water freezes at 0 degrees Celsius. That is a design parameter, not a barrier. A complete engineering guide to the four strategies that protect water hydraulic systems in cold Canadian climates, using the same approaches that already work throughout municipal, marine, and hydroelectric infrastructure.</span></a></div></div>
+  </div>
+</section>
+<!-- WQS_ENRICHMENT_END -->
+<!-- WQ_GLOBAL_FOOTER_START -->
+<footer class="wq-site-footer" role="contentinfo">
+  <div class="wq-footer-container">
+    <div class="wq-footer-grid">
+      <div class="wq-footer-brand">
+        <span class="wq-logo-main">WaterQuest Solutions</span>
+        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Knowledge Hub</h5>
+        <ul><li><a href="/knowledge-hub/" class="active">Knowledge Hub</a></li><li><a href="/knowledge-hub/?category=engineering-fundamentals" class="active">Engineering Fundamentals</a></li><li><a href="/knowledge-hub/?category=industry-applications" class="active">Industry Applications</a></li><li><a href="/knowledge-hub/?category=materials-and-compatibility" class="active">Materials and Compatibility</a></li><li><a href="/knowledge-hub/?category=comparison-guides" class="active">Comparison Guides</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Core Pages</h5>
+        <ul><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/" class="active">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
+          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
+          <li>558 East Kent Ave S</li>
+          <li>Vancouver, BC V5X 4V6</li>
+          <li>Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
+  </div>
+</footer>
+<!-- WQ_GLOBAL_FOOTER_END -->
+<script id="wq-global-shell-js">
+    (function(){
+      var nav=document.getElementById("wq-nav");
+      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
+      var menuButton=document.querySelector(".wq-menu-toggle");
+      var mobileMenu=document.getElementById("wq-mobile-menu");
+      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
+      var bubbles=document.getElementById("wq-global-bubbles");
+      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
+      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
+      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
+      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
+      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
+      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
+      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
+      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
+      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
+      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
+      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
+      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
+    })();
+  </script>
+
+</body>
+</html>

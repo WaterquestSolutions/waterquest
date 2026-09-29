@@ -1,0 +1,3436 @@
+{
+  "generatedAt": "2026-06-25T19:31:38.401Z",
+  "purpose": "Normalized Knowledge Hub source inventory for WaterQuest's water hydraulics authority library.",
+  "canonicalBasePath": "/knowledge-hub",
+  "sourceCount": 126,
+  "articleCount": 125,
+  "missingNumbers": [],
+  "duplicateSlugs": [],
+  "categories": [
+    {
+      "id": "engineering-fundamentals",
+      "label": "Engineering Fundamentals",
+      "count": 8
+    },
+    {
+      "id": "materials-engineering",
+      "label": "Materials Engineering",
+      "count": 6
+    },
+    {
+      "id": "performance-efficiency",
+      "label": "Performance & Efficiency",
+      "count": 5
+    },
+    {
+      "id": "industry-applications",
+      "label": "Industry Applications",
+      "count": 18
+    },
+    {
+      "id": "environmental-regulatory",
+      "label": "Environmental & Regulatory",
+      "count": 6
+    },
+    {
+      "id": "comparison-guides",
+      "label": "Comparison Guides",
+      "count": 14
+    },
+    {
+      "id": "design-specification",
+      "label": "Design & Specification",
+      "count": 6
+    },
+    {
+      "id": "adoption-economics-policy",
+      "label": "Adoption, Economics & Policy",
+      "count": 17
+    },
+    {
+      "id": "technical-deep-dives",
+      "label": "Technical Deep Dives",
+      "count": 10
+    },
+    {
+      "id": "product-components",
+      "label": "Products & Components",
+      "count": 10
+    },
+    {
+      "id": "case-studies-pilots",
+      "label": "Case Studies & Pilots",
+      "count": 5
+    },
+    {
+      "id": "faq-objections",
+      "label": "Engineer FAQ & Objections",
+      "count": 10
+    },
+    {
+      "id": "maintenance-operations",
+      "label": "Maintenance & Operations",
+      "count": 10
+    }
+  ],
+  "articles": [
+    {
+      "number": 1,
+      "title": "What Are Water Hydraulic Systems?",
+      "slug": "what-are-water-hydraulic-systems",
+      "urlPath": "/knowledge-hub/what-are-water-hydraulic-systems",
+      "canonicalUrl": "/knowledge-hub/what-are-water-hydraulic-systems",
+      "categoryId": "engineering-fundamentals",
+      "categoryLabel": "Engineering Fundamentals",
+      "sourceSection": "Engineering Fundamentals",
+      "description": "Water hydraulic systems use purified water as the working fluid instead of petroleum oil. Learn the engineering principles, key components, history, and industrial applications. WaterQuest Solutions, Vancouver BC.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-1-what-are-water-hydraulic-systems.html",
+      "sourceFilename": "article-1-what-are-water-hydraulic-systems.html",
+      "originalCanonical": "/knowledge-hub/what-are-water-hydraulic-systems",
+      "h2Count": 6,
+      "h2Sample": [
+        "The Basic Principle: Pressure Through Fluid",
+        "A Brief History: Water Hydraulics Are Not New",
+        "Key Components of a Water Hydraulic System",
+        "Where Water Hydraulic Systems Operate Today",
+        "The Central Technical Argument for Water"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Water Hydraulics vs Oil Hydraulics",
+      "slug": "water-hydraulics-vs-oil-hydraulics",
+      "urlPath": "/knowledge-hub/water-hydraulics-vs-oil-hydraulics",
+      "canonicalUrl": "/knowledge-hub/water-hydraulics-vs-oil-hydraulics",
+      "categoryId": "engineering-fundamentals",
+      "categoryLabel": "Engineering Fundamentals",
+      "sourceSection": "Engineering Fundamentals",
+      "description": "A direct engineering comparison of water hydraulics vs oil hydraulics. Fluid properties, viscosity, fire safety, environmental impact, system design, and total cost of ownership. WaterQuest Solutions.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-2-water-hydraulics-vs-oil-hydraulics.html",
+      "sourceFilename": "article-2-water-hydraulics-vs-oil-hydraulics.html",
+      "originalCanonical": "/knowledge-hub/water-hydraulics-vs-oil-hydraulics",
+      "h2Count": 7,
+      "h2Sample": [
+        "The Fluids: A Property Comparison",
+        "Viscosity: The Central Engineering Difference",
+        "Fire Safety: No Comparison",
+        "Environmental Impact: Oil's Fundamental Problem",
+        "System Design Differences"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Engineering Principles of Water Hydraulic Actuation | Force, Pressure, Cylinders | WaterQuest",
+      "slug": "engineering-principles-water-hydraulic-actuation",
+      "urlPath": "/knowledge-hub/engineering-principles-water-hydraulic-actuation",
+      "canonicalUrl": "/knowledge-hub/engineering-principles-water-hydraulic-actuation",
+      "categoryId": "engineering-fundamentals",
+      "categoryLabel": "Engineering Fundamentals",
+      "sourceSection": "Engineering Fundamentals",
+      "description": "The engineering fundamentals of water hydraulic actuation. Pascal's Law, force calculations, cylinder sizing, speed control, efficiency, material specifications for 316L stainless and PEEK seals.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-3-engineering-principles-water-hydraulic-actuation.html",
+      "sourceFilename": "article-3-engineering-principles-water-hydraulic-actuation.html",
+      "originalCanonical": "/knowledge-hub/engineering-principles-water-hydraulic-actuation",
+      "h2Count": 8,
+      "h2Sample": [
+        "Pascal's Law and Force Generation",
+        "Pressure Ratings in Water Hydraulic Systems",
+        "Cylinder Speed: Flow Rate and Velocity",
+        "Cylinder Construction for Water Service",
+        "Efficiency in Water Hydraulic Actuators"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Why Water Can Replace Hydraulic Oil in Industrial Systems",
+      "slug": "why-water-can-replace-hydraulic-oil",
+      "urlPath": "/knowledge-hub/why-water-can-replace-hydraulic-oil",
+      "canonicalUrl": "/knowledge-hub/why-water-can-replace-hydraulic-oil",
+      "categoryId": "engineering-fundamentals",
+      "categoryLabel": "Engineering Fundamentals",
+      "sourceSection": "Engineering Fundamentals",
+      "description": "The engineering case for replacing hydraulic oil with water in industrial systems. Addresses five core technical objections, conversion process, applications, and total cost of ownership. WaterQuest Solutions, Vancouver BC.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-4-why-water-can-replace-hydraulic-oil.html",
+      "sourceFilename": "article-4-why-water-can-replace-hydraulic-oil.html",
+      "originalCanonical": "/knowledge-hub/why-water-can-replace-hydraulic-oil",
+      "h2Count": 4,
+      "h2Sample": [
+        "The Core Technical Objections and the Answers",
+        "Applications Where Water Can Replace Oil Directly",
+        "The Conversion Process: What It Involves",
+        "The Question of When, Not Whether"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "The Physics Behind Water Hydraulic Pressure Systems",
+      "slug": "physics-water-hydraulic-pressure-systems",
+      "urlPath": "/knowledge-hub/physics-water-hydraulic-pressure-systems",
+      "canonicalUrl": "/knowledge-hub/physics-water-hydraulic-pressure-systems",
+      "categoryId": "engineering-fundamentals",
+      "categoryLabel": "Engineering Fundamentals",
+      "sourceSection": "Engineering Fundamentals",
+      "description": "The physics governing water hydraulic pressure systems. Pascal's Law, Bernoulli's principle, bulk modulus, cavitation, Reynolds number, Darcy-Weisbach equation, and system efficiency. Engineering deep-dive.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-5-physics-water-hydraulic-pressure-systems.html",
+      "sourceFilename": "article-5-physics-water-hydraulic-pressure-systems.html",
+      "originalCanonical": "/knowledge-hub/physics-water-hydraulic-pressure-systems",
+      "h2Count": 8,
+      "h2Sample": [
+        "Pascal's Law: The Foundation of Hydraulics",
+        "Fluid Statics: Pressure in a Static Water Column",
+        "Bernoulli's Principle: Energy in Moving Fluid",
+        "Fluid Compressibility and Bulk Modulus",
+        "Cavitation: Vapour Formation and Collapse"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 6,
+      "title": "How Force Is Generated in Water Hydraulic Cylinders",
+      "slug": "how-force-generated-water-hydraulic-cylinders",
+      "urlPath": "/knowledge-hub/how-force-generated-water-hydraulic-cylinders",
+      "canonicalUrl": "/knowledge-hub/how-force-generated-water-hydraulic-cylinders",
+      "categoryId": "engineering-fundamentals",
+      "categoryLabel": "Engineering Fundamentals",
+      "sourceSection": "Engineering Fundamentals",
+      "description": "How water hydraulic cylinders generate force using F=P×A. Complete engineering guide: sizing tables, 316L stainless construction, PEEK seals, extend vs retract force, and a full wastewater gate actuator worked example.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-6-how-force-generated-water-hydraulic-cylinders.html",
+      "sourceFilename": "article-6-how-force-generated-water-hydraulic-cylinders.html",
+      "originalCanonical": "/knowledge-hub/how-force-generated-water-hydraulic-cylinders",
+      "h2Count": 6,
+      "h2Sample": [
+        "The Force Equation: Starting from First Principles",
+        "Double-Acting Cylinders: Extend vs Retract Force",
+        "Construction of Water Hydraulic Cylinders",
+        "Mounting Configurations",
+        "Cylinder Sizing: A Complete Worked Example"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Designing Hydraulic Circuits Using Water as the Medium",
+      "slug": "designing-circuits-water-hydraulic",
+      "urlPath": "/knowledge-hub/designing-circuits-water-hydraulic",
+      "canonicalUrl": "/knowledge-hub/designing-circuits-water-hydraulic",
+      "categoryId": "engineering-fundamentals",
+      "categoryLabel": "Engineering Fundamentals",
+      "sourceSection": "Engineering Fundamentals",
+      "description": "A systematic engineering framework for water hydraulic circuit design. Topology selection, HPU design, piping velocity limits, valve specification for water service, filtration, and chemical conditioning.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-7-designing-circuits-water-hydraulic.html",
+      "sourceFilename": "article-7-designing-circuits-water-hydraulic.html",
+      "originalCanonical": "/knowledge-hub/designing-circuits-water-hydraulic",
+      "h2Count": 6,
+      "h2Sample": [
+        "Circuit Topology: The Same Choices Apply",
+        "The Power Unit: Design Requirements for Water",
+        "Piping and Manifold Design",
+        "Control Valve Selection and Specification",
+        "Filtration and Water Conditioning"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Fluid Properties of Water vs Hydraulic Oil",
+      "slug": "fluid-properties-water-vs-hydraulic-oil",
+      "urlPath": "/knowledge-hub/fluid-properties-water-vs-hydraulic-oil",
+      "canonicalUrl": "/knowledge-hub/fluid-properties-water-vs-hydraulic-oil",
+      "categoryId": "engineering-fundamentals",
+      "categoryLabel": "Engineering Fundamentals",
+      "sourceSection": "Engineering Fundamentals",
+      "description": "A thorough property-by-property comparison of water and hydraulic oil: viscosity, density, bulk modulus, lubricity, vapour pressure, thermal properties, chemical stability, and environmental risk.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-8-fluid-properties-water-vs-hydraulic-oil.html",
+      "sourceFilename": "article-8-fluid-properties-water-vs-hydraulic-oil.html",
+      "originalCanonical": "/knowledge-hub/fluid-properties-water-vs-hydraulic-oil",
+      "h2Count": 8,
+      "h2Sample": [
+        "1. Viscosity",
+        "2. Density",
+        "3. Bulk Modulus (Compressibility)",
+        "4. Lubricity",
+        "5. Thermal Properties"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Why 316 Stainless Steel Is Essential for Water Hydraulic Systems",
+      "slug": "why-316-stainless-essential-water-hydraulics",
+      "urlPath": "/knowledge-hub/why-316-stainless-essential-water-hydraulics",
+      "canonicalUrl": "/knowledge-hub/why-316-stainless-essential-water-hydraulics",
+      "categoryId": "materials-engineering",
+      "categoryLabel": "Materials Engineering",
+      "sourceSection": "Materials Engineering",
+      "description": "The metallurgy, corrosion mechanisms, mechanical properties, and specification requirements of 316 stainless steel as the structural backbone of water hydraulic systems.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-9-why-316-stainless-essential-water-hydraulics.html",
+      "sourceFilename": "article-9-why-316-stainless-essential-water-hydraulics.html",
+      "originalCanonical": "/knowledge-hub/why-316-stainless-essential-water-hydraulics",
+      "h2Count": 7,
+      "h2Sample": [
+        "What Makes Stainless Steel 'Stainless'",
+        "The 316 Composition and Its Engineering Significance",
+        "316 vs 316L: The Sensitization Issue",
+        "Mechanical Properties: Is 316 Strong Enough?",
+        "Galling: The Hidden Risk in Stainless-on-Stainless Assemblies"
+      ],
+      "issues": []
+    },
+    {
+      "number": 10,
+      "title": "Carbon-Reinforced PEEK in Hydraulic Equipment",
+      "slug": "carbon-reinforced-peek-hydraulic-equipment",
+      "urlPath": "/knowledge-hub/carbon-reinforced-peek-hydraulic-equipment",
+      "canonicalUrl": "/knowledge-hub/carbon-reinforced-peek-hydraulic-equipment",
+      "categoryId": "materials-engineering",
+      "categoryLabel": "Materials Engineering",
+      "sourceSection": "Materials Engineering",
+      "description": "The materials science of PEEK and CF30-PEEK for water hydraulic seals and bearings: tribological properties, composite grades, machining requirements, and a definitive comparison with PTFE.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-10-carbon-reinforced-peek-hydraulic-equipment.html",
+      "sourceFilename": "article-10-carbon-reinforced-peek-hydraulic-equipment.html",
+      "originalCanonical": "/knowledge-hub/carbon-reinforced-peek-hydraulic-equipment",
+      "h2Count": 5,
+      "h2Sample": [
+        "What Is PEEK? Structure and Base Properties",
+        "Carbon Fibre Reinforcement: Transforming PEEK for Tribological Service",
+        "PEEK Composite Grades: Selecting the Right Formulation",
+        "Machining PEEK: Getting It Right",
+        "PEEK vs PTFE: Choosing Between the Two Principal Seal Materials"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Preventing Corrosion in Water Hydraulic Systems",
+      "slug": "preventing-corrosion-water-hydraulic-systems",
+      "urlPath": "/knowledge-hub/preventing-corrosion-water-hydraulic-systems",
+      "canonicalUrl": "/knowledge-hub/preventing-corrosion-water-hydraulic-systems",
+      "categoryId": "materials-engineering",
+      "categoryLabel": "Materials Engineering",
+      "sourceSection": "Materials Engineering",
+      "description": "The five corrosion mechanisms in water hydraulic systems, engineering controls for each, and the water quality monitoring programme that maintains system integrity over 20+ year operational life.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-11-preventing-corrosion-water-hydraulic-systems.html",
+      "sourceFilename": "article-11-preventing-corrosion-water-hydraulic-systems.html",
+      "originalCanonical": "/knowledge-hub/preventing-corrosion-water-hydraulic-systems",
+      "h2Count": 7,
+      "h2Sample": [
+        "1. General (Uniform) Corrosion",
+        "2. Pitting Corrosion",
+        "3. Crevice Corrosion",
+        "4. Galvanic Corrosion",
+        "5. Microbiologically Influenced Corrosion (MIC)"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Material Pairing for Water Hydraulic Tribology",
+      "slug": "material-pairing-water-hydraulic-tribology",
+      "urlPath": "/knowledge-hub/material-pairing-water-hydraulic-tribology",
+      "canonicalUrl": "/knowledge-hub/material-pairing-water-hydraulic-tribology",
+      "categoryId": "materials-engineering",
+      "categoryLabel": "Materials Engineering",
+      "sourceSection": "Materials Engineering",
+      "description": "Validated material pairings for water hydraulic cylinder seals, valve spools, and pump bearings. Four wear mechanisms, surface finish specifications, and CF30-PEEK vs 316L stainless tribological data.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-12-material-pairing-water-hydraulic-tribology.html",
+      "sourceFilename": "article-12-material-pairing-water-hydraulic-tribology.html",
+      "originalCanonical": "/knowledge-hub/material-pairing-water-hydraulic-tribology",
+      "h2Count": 7,
+      "h2Sample": [
+        "Tribology Without Oil: The Engineering Problem Stated",
+        "The Four Wear Mechanisms to Design Against",
+        "Cylinder Piston Seal vs Barrel Bore",
+        "Piston Rod Seal vs Rod Surface",
+        "Valve Spool vs Bore"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Why Traditional Hydraulic Materials Fail in Water Systems",
+      "slug": "why-traditional-hydraulic-materials-fail-water",
+      "urlPath": "/knowledge-hub/why-traditional-hydraulic-materials-fail-water",
+      "canonicalUrl": "/knowledge-hub/why-traditional-hydraulic-materials-fail-water",
+      "categoryId": "materials-engineering",
+      "categoryLabel": "Materials Engineering",
+      "sourceSection": "Materials Engineering",
+      "description": "Why carbon steel, cast iron, aluminium, NBR seals, polyurethane seals, and standard hydraulic hose all fail in water service , and why a clean-sheet material specification is the only correct response.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-13-why-traditional-hydraulic-materials-fail-water.html",
+      "sourceFilename": "article-13-why-traditional-hydraulic-materials-fail-water.html",
+      "originalCanonical": "/knowledge-hub/why-traditional-hydraulic-materials-fail-water",
+      "h2Count": 8,
+      "h2Sample": [
+        "Carbon Steel: Fast, Aggressive Corrosion",
+        "Chrome Plating on Carbon Steel",
+        "Cast Iron: Even More Vulnerable",
+        "Aluminium: Galvanic and Chemical Attack",
+        "Nitrile Rubber (NBR) Seals"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Engineering Seal Systems for Water Hydraulics",
+      "slug": "engineering-seal-systems-water-hydraulics",
+      "urlPath": "/knowledge-hub/engineering-seal-systems-water-hydraulics",
+      "canonicalUrl": "/knowledge-hub/engineering-seal-systems-water-hydraulics",
+      "categoryId": "materials-engineering",
+      "categoryLabel": "Materials Engineering",
+      "sourceSection": "Materials Engineering",
+      "description": "Complete engineering guide to water hydraulic seal systems: geometry types, CF30-PEEK vs PTFE selection, groove design, counterface surface finish, break-in procedure, and failure mode diagnosis.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-14-engineering-seal-systems-water-hydraulics.html",
+      "sourceFilename": "article-14-engineering-seal-systems-water-hydraulics.html",
+      "originalCanonical": "/knowledge-hub/engineering-seal-systems-water-hydraulics",
+      "h2Count": 11,
+      "h2Sample": [
+        "The Seal's Four Functions",
+        "O-Ring",
+        "U-Cup Seal (Lip Seal)",
+        "Step Seal (Compact Seal)",
+        "Spring-Energised PTFE Seal"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Efficiency of Water Hydraulic Pumps Compared to Oil Pumps",
+      "slug": "efficiency-water-hydraulic-pumps-vs-oil",
+      "urlPath": "/knowledge-hub/efficiency-water-hydraulic-pumps-vs-oil",
+      "canonicalUrl": "/knowledge-hub/efficiency-water-hydraulic-pumps-vs-oil",
+      "categoryId": "performance-efficiency",
+      "categoryLabel": "Performance & Efficiency",
+      "sourceSection": "Performance & Efficiency",
+      "description": "Water hydraulic pump efficiency versus oil pumps: volumetric, mechanical, and overall efficiency data, where the losses occur, energy cost of the gap, load-sensing benefits, and practical pump selection guidance.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-15-efficiency-water-hydraulic-pumps-vs-oil.html",
+      "sourceFilename": "article-15-efficiency-water-hydraulic-pumps-vs-oil.html",
+      "originalCanonical": "/knowledge-hub/efficiency-water-hydraulic-pumps-vs-oil",
+      "h2Count": 7,
+      "h2Sample": [
+        "Volumetric Efficiency",
+        "Mechanical Efficiency",
+        "Overall Efficiency Comparison",
+        "Where Water Pumps Lose Efficiency , And How Designers Respond",
+        "Thermal Efficiency: Where Water Has a Genuine Advantage"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Energy Consumption of Water Hydraulic Systems",
+      "slug": "energy-consumption-water-hydraulic-systems",
+      "urlPath": "/knowledge-hub/energy-consumption-water-hydraulic-systems",
+      "canonicalUrl": "/knowledge-hub/energy-consumption-water-hydraulic-systems",
+      "categoryId": "performance-efficiency",
+      "categoryLabel": "Performance & Efficiency",
+      "sourceSection": "Performance & Efficiency",
+      "description": "A quantitative analysis of energy consumption in water hydraulic systems: where the energy goes, water vs oil comparison across the full energy balance, a 20-year TCO worked example, and efficiency improvement strategies.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-16-energy-consumption-water-hydraulic-systems.html",
+      "sourceFilename": "article-16-energy-consumption-water-hydraulic-systems.html",
+      "originalCanonical": "/knowledge-hub/energy-consumption-water-hydraulic-systems",
+      "h2Count": 5,
+      "h2Sample": [
+        "The Hydraulic System Energy Balance",
+        "Where Water Hydraulic Systems Consume More Energy",
+        "Where Water Hydraulic Systems Consume Less Energy",
+        "The Energy Cost Over 20 Years: A Complete Worked Example",
+        "Energy Efficiency Improvement Strategies"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 17,
+      "title": "Hydraulic Power Transmission Using Water",
+      "slug": "hydraulic-power-transmission-using-water",
+      "urlPath": "/knowledge-hub/hydraulic-power-transmission-using-water",
+      "canonicalUrl": "/knowledge-hub/hydraulic-power-transmission-using-water",
+      "categoryId": "performance-efficiency",
+      "categoryLabel": "Performance & Efficiency",
+      "sourceSection": "Performance & Efficiency",
+      "description": "Water as a hydraulic power transmission medium: power density, transmission distance, dynamic response, bulk modulus advantage, control precision, multi-actuator systems, and green hydrogen applications.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-17-hydraulic-power-transmission-using-water.html",
+      "sourceFilename": "article-17-hydraulic-power-transmission-using-water.html",
+      "originalCanonical": "/knowledge-hub/hydraulic-power-transmission-using-water",
+      "h2Count": 7,
+      "h2Sample": [
+        "Hydraulic Power: The Fundamental Relationship",
+        "Power Density: Compact Force from Small Cylinders",
+        "Transmission Distance and Line Losses",
+        "Dynamic Response: Water's Stiffness Advantage",
+        "Control Precision in Water Hydraulic Systems"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Pressure Limits of Water Hydraulic Equipment",
+      "slug": "pressure-limits-water-hydraulic-equipment",
+      "urlPath": "/knowledge-hub/pressure-limits-water-hydraulic-equipment",
+      "canonicalUrl": "/knowledge-hub/pressure-limits-water-hydraulic-equipment",
+      "categoryId": "performance-efficiency",
+      "categoryLabel": "Performance & Efficiency",
+      "sourceSection": "Performance & Efficiency",
+      "description": "The engineering basis of pressure limits in water hydraulic systems: material yield strength, seal extrusion limits, pump pressure capability, commercial equipment ratings, high-pressure specialist applications, and pressure testing.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-18-pressure-limits-water-hydraulic-equipment.html",
+      "sourceFilename": "article-18-pressure-limits-water-hydraulic-equipment.html",
+      "originalCanonical": "/knowledge-hub/pressure-limits-water-hydraulic-equipment",
+      "h2Count": 8,
+      "h2Sample": [
+        "Material Yield Strength: The First Constraint",
+        "Seal Extrusion Limit",
+        "Pump Pressure Limits",
+        "Valve Pressure Limits",
+        "Current State of the Art: What Is Commercially Available"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 19,
+      "title": "Thermal Performance of Water vs Hydraulic Oil",
+      "slug": "thermal-performance-water-vs-hydraulic-oil",
+      "urlPath": "/knowledge-hub/thermal-performance-water-vs-hydraulic-oil",
+      "canonicalUrl": "/knowledge-hub/thermal-performance-water-vs-hydraulic-oil",
+      "categoryId": "performance-efficiency",
+      "categoryLabel": "Performance & Efficiency",
+      "sourceSection": "Performance & Efficiency",
+      "description": "A quantitative comparison of water versus hydraulic oil thermal performance: specific heat, thermal conductivity, heat exchanger sizing, the 60°C operating limit, cold climate freeze protection, and green hydrogen thermal integration.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-19-thermal-performance-water-vs-hydraulic-oil.html",
+      "sourceFilename": "article-19-thermal-performance-water-vs-hydraulic-oil.html",
+      "originalCanonical": "/knowledge-hub/thermal-performance-water-vs-hydraulic-oil",
+      "h2Count": 8,
+      "h2Sample": [
+        "The Thermal Properties in Comparison",
+        "The Heat Generation Equation: What Creates Thermal Load",
+        "Thermal Equilibrium: Calculating System Operating Temperature",
+        "The 60°C Operating Temperature Limit: Understanding and Managing It",
+        "Thermal Management Options"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 20,
+      "title": "Water Hydraulics in Wastewater Treatment Plants",
+      "slug": "water-hydraulics-wastewater-treatment-plants",
+      "urlPath": "/knowledge-hub/water-hydraulics-wastewater-treatment-plants",
+      "canonicalUrl": "/knowledge-hub/water-hydraulics-wastewater-treatment-plants",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": "Industrial Applications",
+      "description": "Water hydraulics in wastewater treatment plants: specific applications, process contamination risk elimination, Canada's Fisheries Act compliance, component specifications, the Metro Vancouver opportunity, and retrofit vs new build strategy.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-20-water-hydraulics-wastewater-treatment-plants.html",
+      "sourceFilename": "article-20-water-hydraulics-wastewater-treatment-plants.html",
+      "originalCanonical": "/knowledge-hub/water-hydraulics-wastewater-treatment-plants",
+      "h2Count": 5,
+      "h2Sample": [
+        "The Hydraulic Applications Inside a Wastewater Treatment Plant",
+        "Why Water Hydraulics Are the Correct Specification",
+        "Specific Component Specifications for Wastewater Applications",
+        "The Metro Vancouver Opportunity: A Case Study in Scale",
+        "Retrofit vs New Build: Engineering Considerations"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 21,
+      "title": "Water Hydraulic Systems for Marine Vessels",
+      "slug": "water-hydraulic-systems-marine-vessels",
+      "urlPath": "/knowledge-hub/water-hydraulic-systems-marine-vessels",
+      "canonicalUrl": "/knowledge-hub/water-hydraulic-systems-marine-vessels",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": "Industrial Applications",
+      "description": "Water hydraulics for marine vessels: deck machinery, hatch covers, steering systems, thruster control, seawater compatibility, vibration resistance, class society certification, fire safety, and BC coastal marine context.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-21-water-hydraulic-systems-marine-vessels.html",
+      "sourceFilename": "article-21-water-hydraulic-systems-marine-vessels.html",
+      "originalCanonical": "/knowledge-hub/water-hydraulic-systems-marine-vessels",
+      "h2Count": 5,
+      "h2Sample": [
+        "Marine Applications for Water Hydraulic Systems",
+        "Marine-Specific Engineering Requirements",
+        "Fire Safety: The Original Driver of Marine Water Hydraulics",
+        "Canadian Marine Context: BC Coastal Waters",
+        "Retrofit Considerations for Existing Vessels"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 22,
+      "title": "Mining Equipment Using Water Hydraulic Systems",
+      "slug": "mining-equipment-water-hydraulic-systems",
+      "urlPath": "/knowledge-hub/mining-equipment-water-hydraulic-systems",
+      "canonicalUrl": "/knowledge-hub/mining-equipment-water-hydraulic-systems",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": "Industrial Applications",
+      "description": "Water hydraulics in mining: underground fire safety regulations, Canadian regulatory context, roof supports, drilling equipment, longwall mining, dust suppression integration, and the mining business case.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-22-mining-equipment-water-hydraulic-systems.html",
+      "sourceFilename": "article-22-mining-equipment-water-hydraulic-systems.html",
+      "originalCanonical": "/knowledge-hub/mining-equipment-water-hydraulic-systems",
+      "h2Count": 5,
+      "h2Sample": [
+        "Underground Mining: The Fire Safety Imperative",
+        "Mining Applications for Water Hydraulics",
+        "Surface Mining: Dust Suppression and Water Hydraulic Integration",
+        "Mining-Specific Engineering Requirements",
+        "The Business Case for Mining Operators"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 23,
+      "title": "Water Hydraulics for Flood Control Infrastructure",
+      "slug": "water-hydraulics-flood-control-infrastructure",
+      "urlPath": "/knowledge-hub/water-hydraulics-flood-control-infrastructure",
+      "canonicalUrl": "/knowledge-hub/water-hydraulics-flood-control-infrastructure",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": "Industrial Applications",
+      "description": "Water hydraulics for flood control infrastructure: tidal and river flood gates, urban stormwater control, idle-period reliability, remote operation requirements, BC climate context, DMAF/ICIP funding alignment, and Indigenous consultation.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-23-water-hydraulics-flood-control-infrastructure.html",
+      "sourceFilename": "article-23-water-hydraulics-flood-control-infrastructure.html",
+      "originalCanonical": "/knowledge-hub/water-hydraulics-flood-control-infrastructure",
+      "h2Count": 6,
+      "h2Sample": [
+        "Flood Control Infrastructure: What Requires Actuation",
+        "The Critical Failure Mode: Why Reliability Matters Above All",
+        "Remote Operation and Monitoring Requirements",
+        "The BC Climate Context: Increasing Flood Risk and Federal Investment",
+        "Indigenous Rights and Environmental Stewardship"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 24,
+      "title": "Desalination Plant Hydraulic Systems",
+      "slug": "desalination-plant-hydraulic-systems",
+      "urlPath": "/knowledge-hub/desalination-plant-hydraulic-systems",
+      "canonicalUrl": "/knowledge-hub/desalination-plant-hydraulic-systems",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": "Industrial Applications",
+      "description": "Water hydraulics in desalination plants: SWRO feed pump integration, energy recovery devices, auxiliary actuation, seawater material requirements, product water as hydraulic fluid, and Canadian desalination context.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-24-desalination-plant-hydraulic-systems.html",
+      "sourceFilename": "article-24-desalination-plant-hydraulic-systems.html",
+      "originalCanonical": "/knowledge-hub/desalination-plant-hydraulic-systems",
+      "h2Count": 7,
+      "h2Sample": [
+        "Seawater Reverse Osmosis: The Pressure Requirement",
+        "Energy Recovery: Hydraulic Power Reuse",
+        "Auxiliary Hydraulic Systems",
+        "Material Requirements: The Seawater Environment Challenge",
+        "Hydraulic Fluid: Treated Freshwater, Not Seawater"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 25,
+      "title": "Hydropower Infrastructure Using Water Hydraulic Actuation",
+      "slug": "hydropower-infrastructure-water-hydraulic-actuation",
+      "urlPath": "/knowledge-hub/hydropower-infrastructure-water-hydraulic-actuation",
+      "canonicalUrl": "/knowledge-hub/hydropower-infrastructure-water-hydraulic-actuation",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": "Industrial Applications",
+      "description": "Water hydraulic actuation for hydropower infrastructure: intake gates, penstock valves, turbine governors, spillway controls, draft tube gates, high-head pressure requirements, BC climate freeze protection, and the BC Hydro retrofit opportunity.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-25-hydropower-infrastructure-water-hydraulic-actuation.html",
+      "sourceFilename": "article-25-hydropower-infrastructure-water-hydraulic-actuation.html",
+      "originalCanonical": "/knowledge-hub/hydropower-infrastructure-water-hydraulic-actuation",
+      "h2Count": 7,
+      "h2Sample": [
+        "Intake Gates and Trash Racks",
+        "Penstock Isolation Valves",
+        "Turbine Governor Actuators",
+        "Spillway and Flood Control Gates",
+        "Draft Tube Gates and Turbine Access"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 26,
+      "title": "Dust Suppression Systems Using Water Hydraulics",
+      "slug": "dust-suppression-systems-water-hydraulics",
+      "urlPath": "/knowledge-hub/dust-suppression-systems-water-hydraulics",
+      "canonicalUrl": "/knowledge-hub/dust-suppression-systems-water-hydraulics",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": "Industrial Applications",
+      "description": "High-pressure water mist dust suppression as a water hydraulic application: droplet size physics, pressure-to-droplet-size relationship, mining and quarry applications, pump and nozzle specification, water supply, and integration with equipment actuation.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-26-dust-suppression-systems-water-hydraulics.html",
+      "sourceFilename": "article-26-dust-suppression-systems-water-hydraulics.html",
+      "originalCanonical": "/knowledge-hub/dust-suppression-systems-water-hydraulics",
+      "h2Count": 4,
+      "h2Sample": [
+        "How High-Pressure Water Mist Suppresses Dust",
+        "Mining and Quarry Suppression Applications",
+        "System Design Principles for Industrial Dust Suppression",
+        "Integration with Equipment Actuation"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 27,
+      "title": "Hydraulic Gate Actuators for Municipal Infrastructure",
+      "slug": "hydraulic-gate-actuators-municipal-infrastructure",
+      "urlPath": "/knowledge-hub/hydraulic-gate-actuators-municipal-infrastructure",
+      "canonicalUrl": "/knowledge-hub/hydraulic-gate-actuators-municipal-infrastructure",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": "Industrial Applications",
+      "description": "Water hydraulic gate actuators for municipal water infrastructure: treatment plant gates, pump station valves, reservoir controls, CSO gates, engineering specification requirements, lifecycle cost case, and federal funding alignment.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-27-hydraulic-gate-actuators-municipal-infrastructure.html",
+      "sourceFilename": "article-27-hydraulic-gate-actuators-municipal-infrastructure.html",
+      "originalCanonical": "/knowledge-hub/hydraulic-gate-actuators-municipal-infrastructure",
+      "h2Count": 6,
+      "h2Sample": [
+        "Water Treatment Plant Process Gates",
+        "Pump Station Suction and Discharge Valves",
+        "Reservoir and Storage Control",
+        "Stormwater and Combined Sewer Overflow (CSO) Control Gates",
+        "Engineering Specification for Municipal Gate Actuators"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 28,
+      "title": "How Water Hydraulics Eliminate Hydraulic Oil Spills",
+      "slug": "water-hydraulics-eliminate-hydraulic-oil-spills",
+      "urlPath": "/knowledge-hub/water-hydraulics-eliminate-hydraulic-oil-spills",
+      "canonicalUrl": "/knowledge-hub/water-hydraulics-eliminate-hydraulic-oil-spills",
+      "categoryId": "environmental-regulatory",
+      "categoryLabel": "Environmental & Regulatory",
+      "sourceSection": "Environmental Topics",
+      "description": "How water hydraulic systems structurally eliminate hydraulic oil spill risk: release mechanisms, Canadian legal framework, Fisheries Act penalties, secondary containment cost savings, environmental insurance reduction, and the moral case.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-28-water-hydraulics-eliminate-hydraulic-oil-spills.html",
+      "sourceFilename": "article-28-water-hydraulics-eliminate-hydraulic-oil-spills.html",
+      "originalCanonical": "/knowledge-hub/water-hydraulics-eliminate-hydraulic-oil-spills",
+      "h2Count": 6,
+      "h2Sample": [
+        "The Scale of the Hydraulic Oil Spill Problem",
+        "The Legal Consequences of a Hydraulic Oil Spill",
+        "How Water Hydraulics Structurally Eliminate the Risk",
+        "The Secondary Containment Question",
+        "Environmental Insurance"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 29,
+      "title": "Environmental Risks of Hydraulic Oil in Water Infrastructure",
+      "slug": "environmental-risks-hydraulic-oil-water-infrastructure",
+      "urlPath": "/knowledge-hub/environmental-risks-hydraulic-oil-water-infrastructure",
+      "canonicalUrl": "/knowledge-hub/environmental-risks-hydraulic-oil-water-infrastructure",
+      "categoryId": "environmental-regulatory",
+      "categoryLabel": "Environmental & Regulatory",
+      "sourceSection": "Environmental Topics",
+      "description": "The environmental risks of hydraulic oil in water infrastructure: chemical toxicity of hydraulic oil components, contamination pathways, acute and chronic aquatic ecosystem impacts, regulatory tightening, and the specification responsibility.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-29-environmental-risks-hydraulic-oil-water-infrastructure.html",
+      "sourceFilename": "article-29-environmental-risks-hydraulic-oil-water-infrastructure.html",
+      "originalCanonical": "/knowledge-hub/environmental-risks-hydraulic-oil-water-infrastructure",
+      "h2Count": 5,
+      "h2Sample": [
+        "What Hydraulic Oil Is, Chemically",
+        "Contamination Pathways in Water Infrastructure",
+        "Ecosystem Impacts: What Oil Does to Aquatic Environments",
+        "The Regulatory Response: Tightening Standards",
+        "The Specification Responsibility"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 30,
+      "title": "Industrial Equipment That Should Never Use Oil Hydraulics",
+      "slug": "industrial-equipment-never-use-oil-hydraulics",
+      "urlPath": "/knowledge-hub/industrial-equipment-never-use-oil-hydraulics",
+      "canonicalUrl": "/knowledge-hub/industrial-equipment-never-use-oil-hydraulics",
+      "categoryId": "environmental-regulatory",
+      "categoryLabel": "Environmental & Regulatory",
+      "sourceSection": "Environmental Topics",
+      "description": "Six application categories where oil hydraulics should not be specified in new installations: water treatment facilities, fish-bearing waterways, food processing, underground mining, sensitive marine areas, and Indigenous territory water infrastructure. A seven-step decision framework.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-30-industrial-equipment-never-use-oil-hydraulics.html",
+      "sourceFilename": "article-30-industrial-equipment-never-use-oil-hydraulics.html",
+      "originalCanonical": "/knowledge-hub/industrial-equipment-never-use-oil-hydraulics",
+      "h2Count": 7,
+      "h2Sample": [
+        "Category 1: Water Treatment Infrastructure",
+        "Category 2: Hydraulically Actuated Equipment Over Fish-Bearing Waterways",
+        "Category 3: Food Processing and Agricultural Product Contact Zones",
+        "Category 4: Underground Mining",
+        "Category 5: Marine Vessels in Environmentally Sensitive Waters"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 31,
+      "title": "How Oil Contamination Affects Wastewater Treatment Plants",
+      "slug": "oil-contamination-wastewater-treatment-plants",
+      "urlPath": "/knowledge-hub/oil-contamination-wastewater-treatment-plants",
+      "canonicalUrl": "/knowledge-hub/oil-contamination-wastewater-treatment-plants",
+      "categoryId": "environmental-regulatory",
+      "categoryLabel": "Environmental & Regulatory",
+      "sourceSection": "Environmental Topics",
+      "description": "The mechanism-by-mechanism impact of hydraulic oil contamination on wastewater treatment: inlet works, primary settlement, biological treatment oxygen transfer and nitrification inhibition, sludge settleability, anaerobic digestion, biosolids quality, and effluent permit compliance.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-31-oil-contamination-wastewater-treatment-plants.html",
+      "sourceFilename": "article-31-oil-contamination-wastewater-treatment-plants.html",
+      "originalCanonical": "/knowledge-hub/oil-contamination-wastewater-treatment-plants",
+      "h2Count": 6,
+      "h2Sample": [
+        "Stage 1: Inlet Works and Preliminary Treatment",
+        "Stage 2: Primary Settlement",
+        "Stage 3: Biological Treatment",
+        "Stage 4: Sludge Management Complications",
+        "Stage 5: Effluent Quality and Discharge Permit Compliance"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 32,
+      "title": "Environmental Compliance and Hydraulic Systems",
+      "slug": "environmental-compliance-hydraulic-systems",
+      "urlPath": "/knowledge-hub/environmental-compliance-hydraulic-systems",
+      "canonicalUrl": "/knowledge-hub/environmental-compliance-hydraulic-systems",
+      "categoryId": "environmental-regulatory",
+      "categoryLabel": "Environmental & Regulatory",
+      "sourceSection": "Environmental Topics",
+      "description": "The Canadian environmental compliance landscape for hydraulic systems: Fisheries Act, CEPA, TDG, BC EMA, Water Sustainability Act, compliance obligation comparison between oil and water hydraulics, ESG reporting, and water hydraulics as a forward compliance strategy.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-32-environmental-compliance-hydraulic-systems.html",
+      "sourceFilename": "article-32-environmental-compliance-hydraulic-systems.html",
+      "originalCanonical": "/knowledge-hub/environmental-compliance-hydraulic-systems",
+      "h2Count": 5,
+      "h2Sample": [
+        "Federal Environmental Legislation Affecting Hydraulic Systems",
+        "British Columbia Provincial Environmental Legislation",
+        "Compliance Obligations: Oil vs Water Hydraulic Systems",
+        "ESG Reporting and Hydraulic Fluid Choice",
+        "Water Hydraulics as a Compliance Strategy"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 33,
+      "title": "How Engineers Can Specify Oil-Free Hydraulic Systems",
+      "slug": "engineers-specify-oil-free-hydraulic-systems",
+      "urlPath": "/knowledge-hub/engineers-specify-oil-free-hydraulic-systems",
+      "canonicalUrl": "/knowledge-hub/engineers-specify-oil-free-hydraulic-systems",
+      "categoryId": "environmental-regulatory",
+      "categoryLabel": "Environmental & Regulatory",
+      "sourceSection": "Environmental Topics",
+      "description": "A complete practical guide for engineers specifying water hydraulic systems: operating pressure selection, fluid supply and quality, material non-negotiables, HPU and cylinder component specifications, documentation requirements, and structured commissioning procedure.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-33-engineers-specify-oil-free-hydraulic-systems.html",
+      "sourceFilename": "article-33-engineers-specify-oil-free-hydraulic-systems.html",
+      "originalCanonical": "/knowledge-hub/engineers-specify-oil-free-hydraulic-systems",
+      "h2Count": 5,
+      "h2Sample": [
+        "Step 1: Define the System Boundary and Performance Requirements",
+        "Step 2: Specify Materials",
+        "Step 3: Component-Level Specifications",
+        "Step 4: Testing and Certification Requirements",
+        "Step 5: Commissioning Requirements"
+      ],
+      "issues": [
+        "long meta description"
+      ]
+    },
+    {
+      "number": 34,
+      "title": "Oil Hydraulics vs Water Hydraulics: The Complete Engineering Comparison",
+      "slug": "oil-hydraulics-vs-water-hydraulics-the-complete-engineering-comparison",
+      "urlPath": "/knowledge-hub/oil-hydraulics-vs-water-hydraulics-the-complete-engineering-comparison",
+      "canonicalUrl": "/knowledge-hub/oil-hydraulics-vs-water-hydraulics-the-complete-engineering-comparison",
+      "categoryId": "comparison-guides",
+      "categoryLabel": "Comparison Guides",
+      "sourceSection": null,
+      "description": "Comprehensive engineering comparison of oil hydraulics and water hydraulics: power density, efficiency, environmental impact, safety, cost analysis, and application suitability.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-34-oil-vs-water-hydraulics.html",
+      "sourceFilename": "article-34-oil-vs-water-hydraulics.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Fluid Properties: The Foundation of All Differences",
+        "Power Density and Efficiency",
+        "Component Availability and System Cost",
+        "Environmental Impact and Regulatory Drivers",
+        "Safety Considerations"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 35,
+      "title": "Air Systems vs Water Hydraulic Systems: Which Delivers Better Results?",
+      "slug": "air-systems-vs-water-hydraulic-systems-which-delivers-better-results",
+      "urlPath": "/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results",
+      "canonicalUrl": "/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results",
+      "categoryId": "comparison-guides",
+      "categoryLabel": "Comparison Guides",
+      "sourceSection": null,
+      "description": "Engineering comparison of pneumatic air systems and water hydraulic systems: power density, control precision, energy efficiency, environmental impact, and application selection criteria.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-35-air-vs-water-hydraulic-systems.html",
+      "sourceFilename": "article-35-air-vs-water-hydraulic-systems.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Fundamental Fluid Property Differences",
+        "Power Density and Force Capability",
+        "Control Precision and System Stiffness",
+        "Energy Efficiency: The Fundamental Economic Difference",
+        "System Complexity, Installation, and Maintenance"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 36,
+      "title": "Electric Actuators vs Hydraulic Actuators: The Real Engineering Trade-Offs",
+      "slug": "electric-actuators-vs-hydraulic-actuators-the-real-engineering-trade-offs",
+      "urlPath": "/knowledge-hub/electric-actuators-vs-hydraulic-actuators-the-real-engineering-trade-offs",
+      "canonicalUrl": "/knowledge-hub/electric-actuators-vs-hydraulic-actuators-the-real-engineering-trade-offs",
+      "categoryId": "comparison-guides",
+      "categoryLabel": "Comparison Guides",
+      "sourceSection": null,
+      "description": "Engineering comparison of electric and hydraulic actuators: force capability, precision, energy efficiency, cost analysis",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-36-electric-vs-hydraulic-actuators.html",
+      "sourceFilename": "article-36-electric-vs-hydraulic-actuators.html",
+      "originalCanonical": null,
+      "h2Count": 5,
+      "h2Sample": [
+        "How Electric Linear Actuators Work",
+        "Force and Speed Comparison",
+        "Where Electric Actuators Win",
+        "Where Water Hydraulics Wins",
+        "Application Selection Guidance"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section"
+      ]
+    },
+    {
+      "number": 37,
+      "title": "How to Convert an Oil Hydraulic System to Water Hydraulics",
+      "slug": "how-to-convert-an-oil-hydraulic-system-to-water-hydraulics",
+      "urlPath": "/knowledge-hub/how-to-convert-an-oil-hydraulic-system-to-water-hydraulics",
+      "canonicalUrl": "/knowledge-hub/how-to-convert-an-oil-hydraulic-system-to-water-hydraulics",
+      "categoryId": "comparison-guides",
+      "categoryLabel": "Comparison Guides",
+      "sourceSection": null,
+      "description": "Complete pump selection guide for water hydraulic systems: pump type selection, flow and pressure sizing, material requirements, and system integration.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-37-converting-oil-to-water-hydraulics.html",
+      "sourceFilename": "article-37-converting-oil-to-water-hydraulics.html",
+      "originalCanonical": null,
+      "h2Count": 1,
+      "h2Sample": [
+        "Feasibility Assessment: Which Systems Should Convert"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section"
+      ]
+    },
+    {
+      "number": 38,
+      "title": "Designing a Water Hydraulic Power Unit",
+      "slug": "designing-a-water-hydraulic-power-unit",
+      "urlPath": "/knowledge-hub/designing-a-water-hydraulic-power-unit",
+      "canonicalUrl": "/knowledge-hub/designing-a-water-hydraulic-power-unit",
+      "categoryId": "design-specification",
+      "categoryLabel": "Design & Specification",
+      "sourceSection": null,
+      "description": "Complete pump selection guide for water hydraulic systems: pump type selection, flow and pressure sizing, material requirements, and system integration.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-38-designing-water-hydraulic-power-unit.html",
+      "sourceFilename": "article-38-designing-water-hydraulic-power-unit.html",
+      "originalCanonical": null,
+      "h2Count": 1,
+      "h2Sample": [
+        "Feasibility Assessment: Which Systems Should Convert"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section"
+      ]
+    },
+    {
+      "number": 39,
+      "title": "Selecting Pumps for Water Hydraulic Systems",
+      "slug": "selecting-pumps-for-water-hydraulic-systems",
+      "urlPath": "/knowledge-hub/selecting-pumps-for-water-hydraulic-systems",
+      "canonicalUrl": "/knowledge-hub/selecting-pumps-for-water-hydraulic-systems",
+      "categoryId": "design-specification",
+      "categoryLabel": "Design & Specification",
+      "sourceSection": null,
+      "description": "Complete pump selection guide for water hydraulic systems: pump type selection, flow and pressure sizing, material requirements, and system integration.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-39-selecting-pumps-for-water-hydraulic-systems.html",
+      "sourceFilename": "article-39-selecting-pumps-for-water-hydraulic-systems.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "Pump Type Selection: The First Decision",
+        "Sizing the Pump: Flow and Pressure Requirements",
+        "Material Requirements for Water Service",
+        "Inlet Conditions and Cavitation Prevention",
+        "Variable Displacement and Load Sensing"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section"
+      ]
+    },
+    {
+      "number": 40,
+      "title": "Sizing Cylinders for Water Hydraulic Applications",
+      "slug": "sizing-cylinders-for-water-hydraulic-applications",
+      "urlPath": "/knowledge-hub/sizing-cylinders-for-water-hydraulic-applications",
+      "canonicalUrl": "/knowledge-hub/sizing-cylinders-for-water-hydraulic-applications",
+      "categoryId": "design-specification",
+      "categoryLabel": "Design & Specification",
+      "sourceSection": null,
+      "description": "Complete cylinder sizing guide for water hydraulic systems: force calculations, speed requirements, buckling analysis, mounting considerations, and material selection.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-40-sizing-cylinders-for-water-hydraulic-applications.html",
+      "sourceFilename": "article-40-sizing-cylinders-for-water-hydraulic-applications.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "The Fundamental Force Equation",
+        "Sizing Bore Diameter for Required Force",
+        "Sizing Rod Diameter for Buckling Resistance",
+        "Determining Stroke and Speed",
+        "Mounting Styles and Load Conditions"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section"
+      ]
+    },
+    {
+      "number": 41,
+      "title": "Designing Control Valves for Water Hydraulics",
+      "slug": "designing-control-valves-for-water-hydraulics",
+      "urlPath": "/knowledge-hub/designing-control-valves-for-water-hydraulics",
+      "canonicalUrl": "/knowledge-hub/designing-control-valves-for-water-hydraulics",
+      "categoryId": "design-specification",
+      "categoryLabel": "Design & Specification",
+      "sourceSection": null,
+      "description": "Complete control valve design guide for water hydraulic systems: valve type selection, flow coefficient sizing, pressure drop analysis, material requirements, and pilot control integration.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-41-designing-control-valves-for-water-hydraulics.html",
+      "sourceFilename": "article-41-designing-control-valves-for-water-hydraulics.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "Valve Type Selection: Matching Function to Design",
+        "Flow Coefficient Sizing and Pressure Drop",
+        "Spool and Seat Geometry for Water Service",
+        "Material Requirements for Water Hydraulic Valves",
+        "Solenoid and Pilot Actuation"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 42,
+      "title": "Water Hydraulic Filtration Requirements",
+      "slug": "water-hydraulic-filtration-requirements",
+      "urlPath": "/knowledge-hub/water-hydraulic-filtration-requirements",
+      "canonicalUrl": "/knowledge-hub/water-hydraulic-filtration-requirements",
+      "categoryId": "design-specification",
+      "categoryLabel": "Design & Specification",
+      "sourceSection": null,
+      "description": "Complete filtration guide for water hydraulic systems: filter types and selection, micron rating requirements, filter location strategy, differential pressure monitoring, and maintenance intervals.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-42-water-hydraulic-filtration-requirements.html",
+      "sourceFilename": "article-42-water-hydraulic-filtration-requirements.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Why Water Hydraulics Demands Superior Filtration",
+        "Filter Types and Applications",
+        "Micron Rating Selection",
+        "Filter Location Strategy",
+        "Filter Sizing for Flow and Dirt Holding"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 43,
+      "title": "Water Hydraulic System Maintenance",
+      "slug": "water-hydraulic-system-maintenance",
+      "urlPath": "/knowledge-hub/water-hydraulic-system-maintenance",
+      "canonicalUrl": "/knowledge-hub/water-hydraulic-system-maintenance",
+      "categoryId": "design-specification",
+      "categoryLabel": "Design & Specification",
+      "sourceSection": null,
+      "description": "Complete maintenance guide for water hydraulic systems: preventive maintenance schedules, fluid sampling and analysis, component inspection procedures, seal replacement, and troubleshooting common issues.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-43-water-hydraulic-system-maintenance.html",
+      "sourceFilename": "article-43-water-hydraulic-system-maintenance.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Preventive Maintenance Philosophy",
+        "Maintenance Schedule by Interval",
+        "Fluid Sampling and Analysis",
+        "Component-Specific Inspection Procedures",
+        "Seal Replacement"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 44,
+      "title": "Why Municipal Infrastructure Should Eliminate Hydraulic Oil",
+      "slug": "why-municipal-infrastructure-should-eliminate-hydraulic-oil",
+      "urlPath": "/knowledge-hub/why-municipal-infrastructure-should-eliminate-hydraulic-oil",
+      "canonicalUrl": "/knowledge-hub/why-municipal-infrastructure-should-eliminate-hydraulic-oil",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "Why municipal water treatment, wastewater, and infrastructure systems should transition from hydraulic oil to water hydraulics: regulatory compliance, environmental protection, and risk mitigation.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-44-municipal-infrastructure-eliminate-hydraulic-oil.html",
+      "sourceFilename": "article-44-municipal-infrastructure-eliminate-hydraulic-oil.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "The Fisheries Act: Municipal Liability for Hydraulic Oil Releases",
+        "Municipal Water Treatment: Drinking Water Contamination Risk",
+        "Wastewater Treatment: Biological Process Protection",
+        "Infrastructure Modernization: The Transition Opportunity",
+        "Implementation Pathway for Canadian Municipalities"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 45,
+      "title": "Water Hydraulics for Government Infrastructure Projects",
+      "slug": "water-hydraulics-for-government-infrastructure-projects",
+      "urlPath": "/knowledge-hub/water-hydraulics-for-government-infrastructure-projects",
+      "canonicalUrl": "/knowledge-hub/water-hydraulics-for-government-infrastructure-projects",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "Why municipal water treatment, wastewater, and infrastructure systems should transition from hydraulic oil to water hydraulics: regulatory compliance, environmental protection, and risk mitigation.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-45-water-hydraulics-government-infrastructure.html",
+      "sourceFilename": "article-45-water-hydraulics-government-infrastructure.html",
+      "originalCanonical": null,
+      "h2Count": 4,
+      "h2Sample": [
+        "Regulatory Drivers for Government Adoption",
+        "Procurement Specification Requirements",
+        "Funding Programme Alignment",
+        "Implementation for Public Works"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 46,
+      "title": "Environmental Regulations Affecting Hydraulic Systems",
+      "slug": "environmental-regulations-affecting-hydraulic-systems",
+      "urlPath": "/knowledge-hub/environmental-regulations-affecting-hydraulic-systems",
+      "canonicalUrl": "/knowledge-hub/environmental-regulations-affecting-hydraulic-systems",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "Why municipal water treatment, wastewater, and infrastructure systems should transition from hydraulic oil to water hydraulics: regulatory compliance, environmental protection, and risk mitigation.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-46-environmental-regulations-hydraulic-systems.html",
+      "sourceFilename": "article-46-environmental-regulations-hydraulic-systems.html",
+      "originalCanonical": null,
+      "h2Count": 5,
+      "h2Sample": [
+        "The Fisheries Act: Federal Prohibition on Deleterious Substances",
+        "Provincial Environmental Protection Legislation",
+        "Municipal Discharge and Stormwater Regulations",
+        "Industry-Specific Regulatory Frameworks",
+        "Liability Framework and Risk Transfer Limitations"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 47,
+      "title": "Spec Writing Guide for Water Hydraulic Equipment",
+      "slug": "spec-writing-guide-for-water-hydraulic-equipment",
+      "urlPath": "/knowledge-hub/spec-writing-guide-for-water-hydraulic-equipment",
+      "canonicalUrl": "/knowledge-hub/spec-writing-guide-for-water-hydraulic-equipment",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "Why municipal water treatment, wastewater, and infrastructure systems should transition from hydraulic oil to water hydraulics: regulatory compliance, environmental protection, and risk mitigation.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-47-spec-writing-water-hydraulic-equipment.html",
+      "sourceFilename": "article-47-spec-writing-water-hydraulic-equipment.html",
+      "originalCanonical": null,
+      "h2Count": 5,
+      "h2Sample": [
+        "General Specification Requirements",
+        "Material Specifications for Water Service",
+        "Pump Specifications",
+        "Valve and Cylinder Specifications",
+        "Testing and Acceptance Criteria"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 48,
+      "title": "The Future of Oil-Free Hydraulic Systems",
+      "slug": "the-future-of-oil-free-hydraulic-systems",
+      "urlPath": "/knowledge-hub/the-future-of-oil-free-hydraulic-systems",
+      "canonicalUrl": "/knowledge-hub/the-future-of-oil-free-hydraulic-systems",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "Why municipal water treatment, wastewater, and infrastructure systems should transition from hydraulic oil to water hydraulics: regulatory compliance, environmental protection, and risk mitigation.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-48-future-oil-free-hydraulic-systems.html",
+      "sourceFilename": "article-48-future-oil-free-hydraulic-systems.html",
+      "originalCanonical": null,
+      "h2Count": 3,
+      "h2Sample": [
+        "Regulatory Pressure: The Primary Driver",
+        "Technology Maturation",
+        "Market Dynamics and Corporate Sustainability"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 49,
+      "title": "Why Water Hydraulics May Replace Oil in Industrial Infrastructure",
+      "slug": "why-water-hydraulics-may-replace-oil-in-industrial-infrastructure",
+      "urlPath": "/knowledge-hub/why-water-hydraulics-may-replace-oil-in-industrial-infrastructure",
+      "canonicalUrl": "/knowledge-hub/why-water-hydraulics-may-replace-oil-in-industrial-infrastructure",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "Why municipal water treatment, wastewater, and infrastructure systems should transition from hydraulic oil to water hydraulics: regulatory compliance, environmental protection, and risk mitigation.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-49-water-hydraulics-replace-oil-industrial.html",
+      "sourceFilename": "article-49-water-hydraulics-replace-oil-industrial.html",
+      "originalCanonical": null,
+      "h2Count": 3,
+      "h2Sample": [
+        "Municipal Water and Wastewater Infrastructure",
+        "Food and Beverage Processing",
+        "Marine and Offshore Applications"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 50,
+      "title": "Why Water Hydraulics Will Replace Oil in Industrial Infrastructure",
+      "slug": "why-water-hydraulics-will-replace-oil-in-industrial-infrastructure",
+      "urlPath": "/knowledge-hub/why-water-hydraulics-will-replace-oil-in-industrial-infrastructure",
+      "canonicalUrl": "/knowledge-hub/why-water-hydraulics-will-replace-oil-in-industrial-infrastructure",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "Comprehensive analysis of why water hydraulics will replace oil in industrial infrastructure: regulatory drivers, technology maturation, economic factors, and implementation pathways.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 1-50 html 2/article-50-water-hydraulics-will-replace-oil.html",
+      "sourceFilename": "article-50-water-hydraulics-will-replace-oil.html",
+      "originalCanonical": null,
+      "h2Count": 9,
+      "h2Sample": [
+        "The Regulatory Forcing Function",
+        "Municipal Infrastructure: The First Complete Sector Transition",
+        "Food and Beverage Processing: Contamination Risk Intolerance",
+        "Technology Maturation: From Specialist to Mainstream",
+        "The Economic Shift: Total Cost of Ownership"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 51,
+      "title": "Why Tap or Sea Water Belongs in Your Hydraulic System",
+      "slug": "why-tap-or-sea-water-belongs-in-your-hydraulic-system",
+      "urlPath": "/knowledge-hub/why-tap-or-sea-water-belongs-in-your-hydraulic-system",
+      "canonicalUrl": "/knowledge-hub/why-tap-or-sea-water-belongs-in-your-hydraulic-system",
+      "categoryId": "technical-deep-dives",
+      "categoryLabel": "Technical Deep Dives",
+      "sourceSection": null,
+      "description": "A full engineering comparison of oil-based and water-driven hydraulic systems covering performance, materials, reliability, maintenance, cost, and environmental impact.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-51. Why Tap or Sea Water Belongs in Your Hydraulic System.html",
+      "sourceFilename": "article-51. Why Tap or Sea Water Belongs in Your Hydraulic System.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Fundamental Differences Between the Two Mediums",
+        "Material Requirements",
+        "System Architecture Differences",
+        "Performance and Efficiency",
+        "Reliability Comparison"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename"
+      ]
+    },
+    {
+      "number": 52,
+      "title": "Beyond Oil: Engineering Principles of Water Hydraulic Actuation",
+      "slug": "beyond-oil-engineering-principles-of-water-hydraulic-actuation",
+      "urlPath": "/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation",
+      "canonicalUrl": "/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation",
+      "categoryId": "technical-deep-dives",
+      "categoryLabel": "Technical Deep Dives",
+      "sourceSection": null,
+      "description": "A technical look at how force transmission works when the fluid is water, not petroleum, and why engineers should stop treating water systems as special cases.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-52. Beyond Oil- Engineering Principles of Water Hydraulic Actuation.html",
+      "sourceFilename": "article-52. Beyond Oil- Engineering Principles of Water Hydraulic Actuation.html",
+      "originalCanonical": null,
+      "h2Count": 9,
+      "h2Sample": [
+        "1. Lubrication Dynamics",
+        "2. Compressibility and Control",
+        "3. Temperature Stability",
+        "4. Velocity and Component Loading",
+        "5. Cavitation Behaviour"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename"
+      ]
+    },
+    {
+      "number": 53,
+      "title": "Material Compatibility: Why We Use 316 Stainless and Carbon-Reinforced PEEK",
+      "slug": "material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek",
+      "urlPath": "/knowledge-hub/material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek",
+      "canonicalUrl": "/knowledge-hub/material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek",
+      "categoryId": "technical-deep-dives",
+      "categoryLabel": "Technical Deep Dives",
+      "sourceSection": null,
+      "description": "Material selection is the foundation of water hydraulics. A full engineering explanation of why 316 stainless steel and carbon-reinforced PEEK are the only correct pairing for water-driven systems.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-53. Material Compatibility- Why We Use 316 Stainless and Carbon-Reinforced PEEK.html",
+      "sourceFilename": "article-53. Material Compatibility- Why We Use 316 Stainless and Carbon-Reinforced PEEK.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "What Makes Water Demanding on Materials",
+        "Why 316 Stainless Steel",
+        "Why Carbon-Reinforced PEEK",
+        "The Interface That Makes It Work",
+        "Why Not Brass, Bronze, or Duplex"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 54,
+      "title": "Cavitation in Water Hydraulics: Myths, Truths, and Design Solutions",
+      "slug": "cavitation-in-water-hydraulics-myths-truths-and-design-solutions",
+      "urlPath": "/knowledge-hub/cavitation-in-water-hydraulics-myths-truths-and-design-solutions",
+      "canonicalUrl": "/knowledge-hub/cavitation-in-water-hydraulics-myths-truths-and-design-solutions",
+      "categoryId": "technical-deep-dives",
+      "categoryLabel": "Technical Deep Dives",
+      "sourceSection": null,
+      "description": "Cavitation is a design condition, not a fluid flaw. A full engineering breakdown of cavitation in water hydraulic systems with proven design solutions.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-54. Cavitation in Water Hydraulics- Myths, Truths, and Design Solutions.html",
+      "sourceFilename": "article-54. Cavitation in Water Hydraulics- Myths, Truths, and Design Solutions.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "What Cavitation Actually Is",
+        "Water vs Oil: The Accurate Comparison",
+        "Where Cavitation Actually Occurs",
+        "Three Myths Addressed",
+        "Engineering Design Solutions"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename"
+      ]
+    },
+    {
+      "number": 55,
+      "title": "How Water Maintains Hydraulic Efficiency Without Additives",
+      "slug": "how-water-maintains-hydraulic-efficiency-without-additives",
+      "urlPath": "/knowledge-hub/how-water-maintains-hydraulic-efficiency-without-additives",
+      "canonicalUrl": "/knowledge-hub/how-water-maintains-hydraulic-efficiency-without-additives",
+      "categoryId": "technical-deep-dives",
+      "categoryLabel": "Technical Deep Dives",
+      "sourceSection": null,
+      "description": "Efficiency in hydraulics depends on engineering, not oil. How water-driven systems achieve 90 percent efficiency through design rather than fluid additives.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-55. How Water Maintains Hydraulic Efficiency Without Additives.html",
+      "sourceFilename": "article-55. How Water Maintains Hydraulic Efficiency Without Additives.html",
+      "originalCanonical": null,
+      "h2Count": 8,
+      "h2Sample": [
+        "What Hydraulic Efficiency Actually Depends On",
+        "Water's Advantage: Low Viscosity",
+        "Addressing the Lubrication Question",
+        "Controlling Internal Leakage",
+        "Pump and Motor Design"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename"
+      ]
+    },
+    {
+      "number": 56,
+      "title": "160 Bar Performance: Debunking the Limitations of Water Hydraulics",
+      "slug": "160-bar-performance-debunking-the-limitations-of-water-hydraulics",
+      "urlPath": "/knowledge-hub/160-bar-performance-debunking-the-limitations-of-water-hydraulics",
+      "canonicalUrl": "/knowledge-hub/160-bar-performance-debunking-the-limitations-of-water-hydraulics",
+      "categoryId": "technical-deep-dives",
+      "categoryLabel": "Technical Deep Dives",
+      "sourceSection": null,
+      "description": "Modern water hydraulic pumps, cylinders, and motors operate reliably at 160 bar. A direct engineering challenge to the assumption that pressure capability depends on the fluid rather than the hardware.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-56. 160 Bar Performance- Debunking the Limitations of Water Hydraulics.html",
+      "sourceFilename": "article-56. 160 Bar Performance- Debunking the Limitations of Water Hydraulics.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Pressure Is a Structural Issue, Not a Fluid Issue",
+        "Why 160 Bar Works So Well with Water",
+        "Actuator Force Output",
+        "Four Misinterpretations Addressed",
+        "Pump Design Makes the Difference"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 57,
+      "title": "What If the Water Freezes? Engineering Freeze Protection for Water Hydraulic Systems",
+      "slug": "what-if-the-water-freezes-engineering-freeze-protection-for-water-hydraulic-systems",
+      "urlPath": "/knowledge-hub/what-if-the-water-freezes-engineering-freeze-protection-for-water-hydraulic-systems",
+      "canonicalUrl": "/knowledge-hub/what-if-the-water-freezes-engineering-freeze-protection-for-water-hydraulic-systems",
+      "categoryId": "technical-deep-dives",
+      "categoryLabel": "Technical Deep Dives",
+      "sourceSection": null,
+      "description": "A full engineering explanation of freeze behaviour, system protection strategies, and mechanical design considerations for water hydraulic systems operating in Canadian northern, marine, and outdoor environments.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-57. What If the Water Freezes?.html",
+      "sourceFilename": "article-57. What If the Water Freezes?.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Understanding Freeze Expansion in Mechanical Systems",
+        "Why Water Hydraulics Can Operate in Northern and Marine Climates",
+        "Control Logic Prevents Trapped Volumes From Freezing",
+        "Using Motion to Keep Water Above Freezing",
+        "Freeze Protection in Standby or Idle Conditions"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 58,
+      "title": "Why Accumulators Are Rarely Needed in Water Hydraulic Systems",
+      "slug": "why-accumulators-are-rarely-needed-in-water-hydraulic-systems",
+      "urlPath": "/knowledge-hub/why-accumulators-are-rarely-needed-in-water-hydraulic-systems",
+      "canonicalUrl": "/knowledge-hub/why-accumulators-are-rarely-needed-in-water-hydraulic-systems",
+      "categoryId": "technical-deep-dives",
+      "categoryLabel": "Technical Deep Dives",
+      "sourceSection": null,
+      "description": "Water's physical properties eliminate the reasons oil systems depend on accumulators. A technical explanation for engineers who include accumulators by default without re-evaluating the medium.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-58. Why Accumulators Are Rarely Needed in Water Systems.html",
+      "sourceFilename": "article-58. Why Accumulators Are Rarely Needed in Water Systems.html",
+      "originalCanonical": null,
+      "h2Count": 5,
+      "h2Sample": [
+        "Understanding Why Oil Needs Accumulators",
+        "Water's Properties Remove the Need",
+        "Where Oil Designers Use Accumulators Out of Habit",
+        "When Accumulators Are Appropriate in Water Hydraulics",
+        "Why This Matters for System Reliability"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 59,
+      "title": "Managing Seal Life in Water Hydraulic Environments",
+      "slug": "managing-seal-life-in-water-hydraulic-environments",
+      "urlPath": "/knowledge-hub/managing-seal-life-in-water-hydraulic-environments",
+      "canonicalUrl": "/knowledge-hub/managing-seal-life-in-water-hydraulic-environments",
+      "categoryId": "technical-deep-dives",
+      "categoryLabel": "Technical Deep Dives",
+      "sourceSection": null,
+      "description": "Seal failures in water hydraulics are caused by wrong material choices and design assumptions, not by the fluid. A technical explanation for engineers working with water-driven cylinder and actuator systems.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-59. Managing Seal Life in Water Environments.html",
+      "sourceFilename": "article-59. Managing Seal Life in Water Environments.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "Why Oil-Centric Seal Assumptions Do Not Apply",
+        "What Seals Must Deliver in a Water System",
+        "Water Improves Seal Life in Several Ways",
+        "Seal Geometry Matters More in Water Systems",
+        "The Role of 316 Stainless Steel"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 60,
+      "title": "Isothermal Behaviour of Water vs Thermal Expansion in Oil",
+      "slug": "isothermal-behaviour-of-water-vs-thermal-expansion-in-oil",
+      "urlPath": "/knowledge-hub/isothermal-behaviour-of-water-vs-thermal-expansion-in-oil",
+      "canonicalUrl": "/knowledge-hub/isothermal-behaviour-of-water-vs-thermal-expansion-in-oil",
+      "categoryId": "technical-deep-dives",
+      "categoryLabel": "Technical Deep Dives",
+      "sourceSection": null,
+      "description": "Most hydraulic problems attributed to wear trace back to temperature instability in oil. Water's near-isothermal behaviour eliminates these problems entirely. A direct engineering challenge to engineers who underestimate thermal instability.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-60. Isothermal Behavior of Water vs Thermal Expansion in Oil.html",
+      "sourceFilename": "article-60. Isothermal Behavior of Water vs Thermal Expansion in Oil.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Oil: A Fluid That Constantly Changes Character",
+        "Water: A Medium That Refuses to Drift",
+        "Impact on Pump and Motor Performance",
+        "Impact on Valves and Actuators",
+        "Control System Advantages"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 61,
+      "title": "How Our Water HPUs Are Changing the Industrial Landscape",
+      "slug": "how-our-water-hpus-are-changing-the-industrial-landscape",
+      "urlPath": "/knowledge-hub/how-our-water-hpus-are-changing-the-industrial-landscape",
+      "canonicalUrl": "/knowledge-hub/how-our-water-hpus-are-changing-the-industrial-landscape",
+      "categoryId": "product-components",
+      "categoryLabel": "Products & Components",
+      "sourceSection": null,
+      "description": "Water hydraulic power units engineered from the ground up around water's physical properties. How WaterQuest HPUs eliminate oil contamination risk, reduce cooling infrastructure, and deliver stable performance across industrial, marine, and municipal sectors.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-61. How Our Water HPUs Are Changing the Industrial Landscape.html",
+      "sourceFilename": "article-61. How Our Water HPUs Are Changing the Industrial Landscape.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Rethinking the Role of the HPU",
+        "Structural Material Discipline",
+        "Compact Architecture",
+        "Environmental Shift",
+        "Fire Risk Elimination"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 62,
+      "title": "Knife Gate Valves and Water Hydraulics: A Natural Fit",
+      "slug": "knife-gate-valves-and-water-hydraulics-a-natural-fit",
+      "urlPath": "/knowledge-hub/knife-gate-valves-and-water-hydraulics-a-natural-fit",
+      "canonicalUrl": "/knowledge-hub/knife-gate-valves-and-water-hydraulics-a-natural-fit",
+      "categoryId": "product-components",
+      "categoryLabel": "Products & Components",
+      "sourceSection": null,
+      "description": "Knife gate valves operate in the same wet, abrasive, corrosive environments where water is already present. Why water hydraulic actuation is the correct engineering choice for knife gate applications across mining, wastewater, and marine sectors.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-62. Knife Gate Valves and Water Hydraulics- A Natural Fit    .html",
+      "sourceFilename": "article-62. Knife Gate Valves and Water Hydraulics- A Natural Fit    .html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "High Thrust Demands Under Load",
+        "Abrasion and Slurry Exposure",
+        "Corrosion and Material Discipline",
+        "Wastewater and Municipal Context",
+        "Marine Applications"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 63,
+      "title": "Choosing the Right Cylinder for Water Actuation",
+      "slug": "choosing-the-right-cylinder-for-water-actuation",
+      "urlPath": "/knowledge-hub/choosing-the-right-cylinder-for-water-actuation",
+      "canonicalUrl": "/knowledge-hub/choosing-the-right-cylinder-for-water-actuation",
+      "categoryId": "product-components",
+      "categoryLabel": "Products & Components",
+      "sourceSection": null,
+      "description": "Purpose-built cylinder engineering for water hydraulic systems. A full technical guide to bore selection, barrel and rod materials, seal system design, cushioning, and integration with water hydraulic control systems.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-63. Choosing the Right Cylinder for Water Actuation.html",
+      "sourceFilename": "article-63. Choosing the Right Cylinder for Water Actuation.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Force and Bore Calculation",
+        "Barrel and Rod Material",
+        "Seal System Engineering",
+        "End-of-Stroke Cushioning",
+        "Mounting and Alignment"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 64,
+      "title": "Understanding Valve Selection in Water Hydraulic Systems",
+      "slug": "understanding-valve-selection-in-water-hydraulic-systems",
+      "urlPath": "/knowledge-hub/understanding-valve-selection-in-water-hydraulic-systems",
+      "canonicalUrl": "/knowledge-hub/understanding-valve-selection-in-water-hydraulic-systems",
+      "categoryId": "product-components",
+      "categoryLabel": "Products & Components",
+      "sourceSection": null,
+      "description": "Valve selection determines whether a water hydraulic system behaves predictably or becomes unstable. A complete engineering guide to directional, proportional, relief, and flow control valve specification for water service.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-64. Understanding Valve Selection in Water Hydraulic Systems.html",
+      "sourceFilename": "article-64. Understanding Valve Selection in Water Hydraulic Systems.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "Directional Control Valves",
+        "Proportional and Modulating Valves",
+        "Pressure Relief Valves",
+        "Flow Control Valves",
+        "Load-Holding and Check Valves"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 65,
+      "title": "Our DSS Partnership: Putting Water to the Test on Severe Service Valves",
+      "slug": "our-dss-partnership-putting-water-to-the-test-on-severe-service-valves",
+      "urlPath": "/knowledge-hub/our-dss-partnership-putting-water-to-the-test-on-severe-service-valves",
+      "canonicalUrl": "/knowledge-hub/our-dss-partnership-putting-water-to-the-test-on-severe-service-valves",
+      "categoryId": "product-components",
+      "categoryLabel": "Products & Components",
+      "sourceSection": null,
+      "description": "How WaterQuest Solutions validates water hydraulic actuation for severe service knife gate and isolation valves through the DSS partnership, covering thrust capacity, cycle testing, abrasive exposure, and seal performance under real operating conditions.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-65. Our DSS Partnership- Putting Water to the Test on Severe Service Valves .html",
+      "sourceFilename": "article-65. Our DSS Partnership- Putting Water to the Test on Severe Service Valves .html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Understanding Severe Service Demands",
+        "Why the Actuation Medium Matters in Harsh Environments",
+        "Thrust Capacity Under Differential Load",
+        "Dynamic Response and Cycle Testing",
+        "Abrasive and Marine Exposure"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 66,
+      "title": "Why Our 316 Stainless Fittings Outperform Brass in Marine Settings",
+      "slug": "why-our-316-stainless-fittings-outperform-brass-in-marine-settings",
+      "urlPath": "/knowledge-hub/why-our-316-stainless-fittings-outperform-brass-in-marine-settings",
+      "canonicalUrl": "/knowledge-hub/why-our-316-stainless-fittings-outperform-brass-in-marine-settings",
+      "categoryId": "product-components",
+      "categoryLabel": "Products & Components",
+      "sourceSection": null,
+      "description": "A direct engineering comparison of 316 stainless steel and brass hydraulic fittings in marine seawater environments, covering dezincification, galvanic corrosion, vibration fatigue, and long-term pressure integrity.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-66. Why Our 316 Stainless Fittings Outperform Brass in Marine Settings.html",
+      "sourceFilename": "article-66. Why Our 316 Stainless Fittings Outperform Brass in Marine Settings.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "The Electrochemical Reality of Saltwater",
+        "Dezincification: The Hidden Failure Mechanism",
+        "Vibration and Fatigue in Marine Systems",
+        "Why 316 Stainless Performs Differently",
+        "Galvanic Compatibility Matters"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 67,
+      "title": "The Hidden Weakness of Duplex in Saltwater: Why We Stick with 316",
+      "slug": "the-hidden-weakness-of-duplex-in-saltwater-why-we-stick-with-316",
+      "urlPath": "/knowledge-hub/the-hidden-weakness-of-duplex-in-saltwater-why-we-stick-with-316",
+      "canonicalUrl": "/knowledge-hub/the-hidden-weakness-of-duplex-in-saltwater-why-we-stick-with-316",
+      "categoryId": "product-components",
+      "categoryLabel": "Products & Components",
+      "sourceSection": null,
+      "description": "Duplex stainless appears stronger on paper. In real marine hydraulic geometries with crevice conditions, variable fabrication, and cyclic loading, 316 stainless provides more consistent and predictable performance. Here is the engineering case for standardizing on 316.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-67. The Hidden Weakness of Duplex in Saltwater- Why We Stick with 316.html",
+      "sourceFilename": "article-67. The Hidden Weakness of Duplex in Saltwater- Why We Stick with 316.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "What Duplex Stainless Actually Is",
+        "Fabrication Sensitivity in Hydraulic Components",
+        "Crevice Geometry and Hydraulic Systems",
+        "Yield Strength vs Application Demands",
+        "Chloride Stress Corrosion Cracking Reality"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 68,
+      "title": "High Flow or High Precision? Matching Pumps to Application",
+      "slug": "high-flow-or-high-precision-matching-pumps-to-application",
+      "urlPath": "/knowledge-hub/high-flow-or-high-precision-matching-pumps-to-application",
+      "canonicalUrl": "/knowledge-hub/high-flow-or-high-precision-matching-pumps-to-application",
+      "categoryId": "product-components",
+      "categoryLabel": "Products & Components",
+      "sourceSection": null,
+      "description": "Pump selection is one of the most critical engineering decisions in a water hydraulic system. A complete guide to matching pump architecture to high-flow and high-precision water hydraulic applications.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-68. High Flow or High Precision? Matching Pumps to Application.html",
+      "sourceFilename": "article-68. High Flow or High Precision? Matching Pumps to Application.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Understanding High Flow Applications",
+        "Pump Design for High Flow",
+        "Understanding High Precision Applications",
+        "Axial Piston Architecture for Precision",
+        "Pulsation and Control Stability"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 69,
+      "title": "What Makes Our Control Valves Unique in a Water System",
+      "slug": "what-makes-our-control-valves-unique-in-a-water-system",
+      "urlPath": "/knowledge-hub/what-makes-our-control-valves-unique-in-a-water-system",
+      "canonicalUrl": "/knowledge-hub/what-makes-our-control-valves-unique-in-a-water-system",
+      "categoryId": "product-components",
+      "categoryLabel": "Products & Components",
+      "sourceSection": null,
+      "description": "WaterQuest control valves are designed from the ground up for water's physical properties, not adapted from oil designs. A complete engineering explanation of spool geometry, material pairing, seal selection, and proportional control in water hydraulic valve design.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-69. What Makes Our Control Valves Unique in a Water System.html",
+      "sourceFilename": "article-69. What Makes Our Control Valves Unique in a Water System.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Water Changes Internal Flow Behaviour",
+        "Internal Material Architecture",
+        "Spool and Sleeve Design",
+        "Pressure Stability and Modulation",
+        "Seal Engineering for Water"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 70,
+      "title": "Component Spotlight: Armak Air Motors and Water Hydraulic Integration",
+      "slug": "component-spotlight-armak-air-motors-and-water-hydraulic-integration",
+      "urlPath": "/knowledge-hub/component-spotlight-armak-air-motors-and-water-hydraulic-integration",
+      "canonicalUrl": "/knowledge-hub/component-spotlight-armak-air-motors-and-water-hydraulic-integration",
+      "categoryId": "product-components",
+      "categoryLabel": "Products & Components",
+      "sourceSection": null,
+      "description": "How Armak air motors integrated with WaterQuest water hydraulic pumps create a fully oil-free actuation chain for marine, mining, and hazardous environments where electrical ignition sources and combustible fluids must be eliminated.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-70. Component Spotlight- Armak Air Motors and Water Hydraulic Integration    .html",
+      "sourceFilename": "article-70. Component Spotlight- Armak Air Motors and Water Hydraulic Integration    .html",
+      "originalCanonical": null,
+      "h2Count": 8,
+      "h2Sample": [
+        "Why Air Motors Still Matter in Modern Industry",
+        "Integration With Water Hydraulic Pumps",
+        "Torque and Speed Characteristics",
+        "Offshore and Marine Installations",
+        "Mining and Dust-Enriched Environments"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 71,
+      "title": "Water Hydraulics on the Coast: Marine Applications That Work",
+      "slug": "water-hydraulics-on-the-coast-marine-applications-that-work",
+      "urlPath": "/knowledge-hub/water-hydraulics-on-the-coast-marine-applications-that-work",
+      "canonicalUrl": "/knowledge-hub/water-hydraulics-on-the-coast-marine-applications-that-work",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": null,
+      "description": "A technical and procurement guide for marine engineers, naval architects, and coastal operators. How water hydraulic systems eliminate spill risk, corrosion, and fire load in marine applications along Canada's Pacific coast.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-71. Water Hydraulics on the Coast- Marine Applications That Work.html",
+      "sourceFilename": "article-71. Water Hydraulics on the Coast- Marine Applications That Work.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "Where Water Hydraulics Fit in Marine Work",
+        "Engineering Behaviour in Marine Conditions",
+        "System-Level Advantages for Marine Engineers",
+        "Marine Risk Comparison",
+        "Lifecycle Cost Analysis"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 72,
+      "title": "From Steel Mills to Sawmills: Industrial Applications of Pressurized Water",
+      "slug": "from-steel-mills-to-sawmills-industrial-applications-of-pressurized-water",
+      "urlPath": "/knowledge-hub/from-steel-mills-to-sawmills-industrial-applications-of-pressurized-water",
+      "canonicalUrl": "/knowledge-hub/from-steel-mills-to-sawmills-industrial-applications-of-pressurized-water",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": null,
+      "description": "How high-pressure water actuation solves chronic reliability issues in heavy industry. A complete engineering and procurement analysis of water hydraulics in steel mills, sawmills, pulp plants, and material-handling environments across Canada.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-72. From Steel Mills to Sawmills- Industrial Applications of Pressurized Water.html",
+      "sourceFilename": "article-72. From Steel Mills to Sawmills- Industrial Applications of Pressurized Water.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Why Water Hydraulics Fit Industrial Duty Cycles",
+        "Engineering Performance in Heavy Industry",
+        "Steel Mill Applications",
+        "Sawmills and Pulp Mills",
+        "Aggregate and Material Handling"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 73,
+      "title": "Water Hydraulics in Mining: Lower Downtime, Zero Contamination",
+      "slug": "water-hydraulics-in-mining-lower-downtime-zero-contamination",
+      "urlPath": "/knowledge-hub/water-hydraulics-in-mining-lower-downtime-zero-contamination",
+      "canonicalUrl": "/knowledge-hub/water-hydraulics-in-mining-lower-downtime-zero-contamination",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": null,
+      "description": "A full engineering and procurement analysis of water hydraulic actuation in underground and surface mining operations. How 316 stainless and PEEK-based systems eliminate fire risk, contamination liability, and the failure modes that oil creates in mining environments.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-73. Water Hydraulics in Mining- Lower Downtime, Zero Contamination.html",
+      "sourceFilename": "article-73. Water Hydraulics in Mining- Lower Downtime, Zero Contamination.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "Why Water Hydraulics Fit Mining Environments",
+        "Underground Performance",
+        "Surface Mining and Tailings Applications",
+        "Zero Contamination in Sensitive Mining Environments",
+        "Maintenance in Difficult Access Locations"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 74,
+      "title": "Fire Suppression Evolved: Why Water Mist Systems Outperform Traditional Sprinklers",
+      "slug": "fire-suppression-evolved-why-water-mist-systems-outperform-traditional-sprinklers",
+      "urlPath": "/knowledge-hub/fire-suppression-evolved-why-water-mist-systems-outperform-traditional-sprinklers",
+      "canonicalUrl": "/knowledge-hub/fire-suppression-evolved-why-water-mist-systems-outperform-traditional-sprinklers",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": null,
+      "description": "A technical and procurement review of high-pressure water mist fire suppression systems and the engineering advantages of water hydraulic actuation over oil-driven alternatives.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-74. Fire Suppression Evolved- Why Water Mist Systems Outperform Traditional Sprinklers.html",
+      "sourceFilename": "article-74. Fire Suppression Evolved- Why Water Mist Systems Outperform Traditional Sprinklers.html",
+      "originalCanonical": null,
+      "h2Count": 5,
+      "h2Sample": [
+        "How High-Pressure Water Mist Actually Works",
+        "Engineering Benefits Over Traditional Sprinklers",
+        "Why Water Hydraulics Are the Right Actuation Method",
+        "Ideal Applications for Water Mist",
+        "Procurement and Specification"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 75,
+      "title": "Drought-Ready: Water Hydraulic Use in Desalination Plants",
+      "slug": "drought-ready-water-hydraulic-use-in-desalination-plants",
+      "urlPath": "/knowledge-hub/drought-ready-water-hydraulic-use-in-desalination-plants",
+      "canonicalUrl": "/knowledge-hub/drought-ready-water-hydraulic-use-in-desalination-plants",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": null,
+      "description": "A complete engineering and procurement review of water hydraulic actuation in modern desalination infrastructure. How 316 stainless and PEEK-based systems eliminate oil contamination risk, corrosion failure, and thermal breakdown in continuous high-pressure desalination service.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-75. Drought-Ready- Water Hydraulic Use in Desalination Plants.html",
+      "sourceFilename": "article-75. Drought-Ready- Water Hydraulic Use in Desalination Plants.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "Why Desalination Plants Are Ideal for Water Hydraulics",
+        "Corrosion Resistance in High-Chloride Environments",
+        "Thermodynamic Stability",
+        "Zero Contamination of Potable Water",
+        "High-Pressure Applications and Energy Recovery Integration"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 76,
+      "title": "Fishing Without Fossil Fuels: The Musqueam Hydrogen Vessel Project",
+      "slug": "fishing-without-fossil-fuels-the-musqueam-hydrogen-vessel-project",
+      "urlPath": "/knowledge-hub/fishing-without-fossil-fuels-the-musqueam-hydrogen-vessel-project",
+      "canonicalUrl": "/knowledge-hub/fishing-without-fossil-fuels-the-musqueam-hydrogen-vessel-project",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": null,
+      "description": "How the combination of hydrogen fuel cell propulsion and water hydraulics creates a fully clean commercial fishing vessel that aligns with coastal Indigenous stewardship values and eliminates hydrocarbon spill risk in salmon-bearing waters.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-76. Fishing Without Fossil Fuels- The Musqueam Hydrogen Vessel Project.html",
+      "sourceFilename": "article-76. Fishing Without Fossil Fuels- The Musqueam Hydrogen Vessel Project.html",
+      "originalCanonical": null,
+      "h2Count": 5,
+      "h2Sample": [
+        "Why Hydrogen and Water Hydraulics Fit Indigenous Marine Priorities",
+        "Engineering Role of Water Hydraulics on the Hydrogen Vessel",
+        "Integration With Hydrogen Propulsion Architecture",
+        "Marine Stewardship and Salmon-Bearing Waters",
+        "Clean Technology Funding Pathways"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 77,
+      "title": "Water-Driven Power on Offshore Platforms",
+      "slug": "water-driven-power-on-offshore-platforms",
+      "urlPath": "/knowledge-hub/water-driven-power-on-offshore-platforms",
+      "canonicalUrl": "/knowledge-hub/water-driven-power-on-offshore-platforms",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": null,
+      "description": "A full engineering and procurement analysis of water hydraulic actuation on offshore oil, gas, wind, and tidal energy platforms. How 316 stainless and PEEK-based systems eliminate spill risk, fire load, and corrosion failure in the most demanding marine environments.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-77. Water-Based Power on Offshore Platforms.html",
+      "sourceFilename": "article-77. Water-Based Power on Offshore Platforms.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "Offshore Conditions That Challenge Oil Hydraulics",
+        "Key Offshore Systems Suited for Water Hydraulics",
+        "Engineering Advantages in Offshore Environments",
+        "BOP and Critical Safety Systems",
+        "Offshore Wind and Tidal Energy Applications"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 78,
+      "title": "Lifting and Hauling Without Oil: Forestry Applications Using Water",
+      "slug": "lifting-and-hauling-without-oil-forestry-applications-using-water",
+      "urlPath": "/knowledge-hub/lifting-and-hauling-without-oil-forestry-applications-using-water",
+      "canonicalUrl": "/knowledge-hub/lifting-and-hauling-without-oil-forestry-applications-using-water",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": null,
+      "description": "A technical and procurement analysis of water hydraulic systems in sawmills, logging operations, and fibre-handling facilities. How 316 stainless and PEEK-based systems eliminate resin adhesion, varnish, fire load, and thermal instability in forestry environments.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-78. Lifting and Hauling Without Oil- Forestry Applications Using Water.html",
+      "sourceFilename": "article-78. Lifting and Hauling Without Oil- Forestry Applications Using Water.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Forestry Conditions That Challenge Oil Hydraulics",
+        "Resin and Fibre Resistance",
+        "Corrosion Resistance in Mill Environments",
+        "Thermal Stability in Variable Conditions",
+        "Fire Safety in Dry Wood Facilities"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 79,
+      "title": "Fail-Safe Performance in Theme Park Ride Systems",
+      "slug": "fail-safe-performance-in-theme-park-ride-systems",
+      "urlPath": "/knowledge-hub/fail-safe-performance-in-theme-park-ride-systems",
+      "canonicalUrl": "/knowledge-hub/fail-safe-performance-in-theme-park-ride-systems",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": null,
+      "description": "A complete engineering analysis of water hydraulic actuation for ride safety, reliability, and environmental protection. How water hydraulics eliminate oil contamination, slip hazards, varnish-related failures, and fire load in public ride environments.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-79. Fail-Safe Performance in Theme Park Ride Systems.html",
+      "sourceFilename": "article-79. Fail-Safe Performance in Theme Park Ride Systems.html",
+      "originalCanonical": null,
+      "h2Count": 5,
+      "h2Sample": [
+        "Unique Mechanical Demands of Ride Operations",
+        "Engineering Role of Water Hydraulics in Ride Systems",
+        "Safety Engineering Benefits",
+        "Water Ride and Outdoor Environments",
+        "Maintenance and Downtime Reduction"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 80,
+      "title": "Municipal Infrastructure Without the Oil Hazards",
+      "slug": "municipal-infrastructure-without-the-oil-hazards",
+      "urlPath": "/knowledge-hub/municipal-infrastructure-without-the-oil-hazards",
+      "canonicalUrl": "/knowledge-hub/municipal-infrastructure-without-the-oil-hazards",
+      "categoryId": "industry-applications",
+      "categoryLabel": "Industry Applications",
+      "sourceSection": null,
+      "description": "A full engineering and procurement analysis of water hydraulics in municipal wastewater, stormwater, potable water, and flood control systems. How 316 stainless and PEEK-based systems eliminate Fisheries Act exposure, corrosion failure, and contamination risk across Canadian municipal infrastructure.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-80. Municipal Infrastructure Without the Oil Hazards.html",
+      "sourceFilename": "article-80. Municipal Infrastructure Without the Oil Hazards.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "Municipal Systems That Benefit From Water Hydraulics",
+        "Engineering Conditions Unique to Municipal Infrastructure",
+        "Regulatory Context: Fisheries Act and Environmental Compliance",
+        "Freeze Protection in Northern and Canadian Climates",
+        "Metro Vancouver and Municipal Procurement"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 81,
+      "title": "Oil vs Water Hydraulics: A Complete System Comparison",
+      "slug": "oil-vs-water-hydraulics-a-complete-system-comparison",
+      "urlPath": "/knowledge-hub/oil-vs-water-hydraulics-a-complete-system-comparison",
+      "canonicalUrl": "/knowledge-hub/oil-vs-water-hydraulics-a-complete-system-comparison",
+      "categoryId": "comparison-guides",
+      "categoryLabel": "Comparison Guides",
+      "sourceSection": null,
+      "description": "A full engineering comparison of oil and water hydraulic systems across fluid properties, pressure capability, thermal behaviour, environmental consequence, maintenance, and lifecycle cost.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-81. Oil vs Water Hydraulics- A Complete System Comparison.html",
+      "sourceFilename": "article-81. Oil vs Water Hydraulics- A Complete System Comparison.html",
+      "originalCanonical": null,
+      "h2Count": 10,
+      "h2Sample": [
+        "Fluid Properties and Physical Behaviour",
+        "Pressure and Force Capability",
+        "Thermal Behaviour",
+        "Environmental Consequence",
+        "Fire Risk"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 82,
+      "title": "Five Reasons Your Next Valve Should Be Water Actuated",
+      "slug": "five-reasons-your-next-valve-should-be-water-actuated",
+      "urlPath": "/knowledge-hub/five-reasons-your-next-valve-should-be-water-actuated",
+      "canonicalUrl": "/knowledge-hub/five-reasons-your-next-valve-should-be-water-actuated",
+      "categoryId": "comparison-guides",
+      "categoryLabel": "Comparison Guides",
+      "sourceSection": null,
+      "description": "Five engineering-based reasons to specify water actuation for your next valve. Environmental risk reduction, fire load elimination, thermal stability, material discipline, and lifecycle liability all shift decisively in favour of water.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-82. Five Reasons Your Next Valve Should Be Water Actuated.html",
+      "sourceFilename": "article-82. Five Reasons Your Next Valve Should Be Water Actuated.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "1. Environmental Risk Is Reduced at the Source",
+        "2. Fire Load Is Eliminated",
+        "3. Thermal Stability Improves Control Consistency",
+        "4. Material Discipline Replaces Chemical Dependency",
+        "5. Lifecycle Liability Is Lower"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 83,
+      "title": "How Hydraulic Fluids Behave: Thermal Expansion, Viscosity, and Stability",
+      "slug": "how-hydraulic-fluids-behave-thermal-expansion-viscosity-and-stability",
+      "urlPath": "/knowledge-hub/how-hydraulic-fluids-behave-thermal-expansion-viscosity-and-stability",
+      "canonicalUrl": "/knowledge-hub/how-hydraulic-fluids-behave-thermal-expansion-viscosity-and-stability",
+      "categoryId": "comparison-guides",
+      "categoryLabel": "Comparison Guides",
+      "sourceSection": null,
+      "description": "A technical explanation of how oil and water behave differently across thermal expansion, viscosity variation, chemical stability, and compressibility, and what these differences mean for system design and maintenance.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-83. How Hydraulic Fluids Behave- Thermal Expansion, Viscosity, and Stability.html",
+      "sourceFilename": "article-83. How Hydraulic Fluids Behave- Thermal Expansion, Viscosity, and Stability.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Thermal Expansion",
+        "Viscosity Behaviour",
+        "Compressibility and Force Transmission",
+        "Chemical Stability",
+        "Foaming and Aeration"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 84,
+      "title": "10 Questions Engineers Ask About Water Hydraulics",
+      "slug": "10-questions-engineers-ask-about-water-hydraulics",
+      "urlPath": "/knowledge-hub/10-questions-engineers-ask-about-water-hydraulics",
+      "canonicalUrl": "/knowledge-hub/10-questions-engineers-ask-about-water-hydraulics",
+      "categoryId": "comparison-guides",
+      "categoryLabel": "Comparison Guides",
+      "sourceSection": null,
+      "description": "The ten most common technical questions engineers ask when evaluating water hydraulics, answered directly. Lubrication, corrosion, pressure capability, cavitation, freezing, seals, efficiency, retrofit, maintenance, and why oil is still the default.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-84. 10 Questions Engineers Ask About Water Hydraulics.html",
+      "sourceFilename": "article-84. 10 Questions Engineers Ask About Water Hydraulics.html",
+      "originalCanonical": null,
+      "h2Count": 10,
+      "h2Sample": [
+        "1. Does Water Provide Enough Lubrication?",
+        "2. What About Corrosion?",
+        "3. Can Water Systems Reach the Same Pressure as Oil?",
+        "4. Is Cavitation a Limiting Factor?",
+        "5. What About Freezing in Cold Climates?"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 85,
+      "title": "No Oil, No Spill: Environmental Advantages Explained",
+      "slug": "no-oil-no-spill-environmental-advantages-explained",
+      "urlPath": "/knowledge-hub/no-oil-no-spill-environmental-advantages-explained",
+      "canonicalUrl": "/knowledge-hub/no-oil-no-spill-environmental-advantages-explained",
+      "categoryId": "comparison-guides",
+      "categoryLabel": "Comparison Guides",
+      "sourceSection": null,
+      "description": "A direct explanation of the environmental advantages of water hydraulics over oil. How the consequence of hydraulic failure changes from an environmental incident to a mechanical repair when water replaces oil as the hydraulic medium.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-85. No Oil, No Spill- Environmental Advantages Explained.html",
+      "sourceFilename": "article-85. No Oil, No Spill- Environmental Advantages Explained.html",
+      "originalCanonical": null,
+      "h2Count": 9,
+      "h2Sample": [
+        "Understanding Spill Consequence",
+        "Oil in Sensitive Environments",
+        "Mechanical Failure vs Environmental Incident",
+        "Spill Response Burden",
+        "Marine Ecosystem Protection"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 86,
+      "title": "How Water Systems Eliminate Cross-Contamination Risk",
+      "slug": "how-water-systems-eliminate-cross-contamination-risk",
+      "urlPath": "/knowledge-hub/how-water-systems-eliminate-cross-contamination-risk",
+      "canonicalUrl": "/knowledge-hub/how-water-systems-eliminate-cross-contamination-risk",
+      "categoryId": "comparison-guides",
+      "categoryLabel": "Comparison Guides",
+      "sourceSection": null,
+      "description": "In infrastructure that manages water, cross-contamination from oil hydraulics is regulated, audited, and costly. Water hydraulic systems eliminate the contamination pathway by replacing oil with a fluid that is compatible with the surrounding environment.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-86. How Water Systems Eliminate Cross-Contamination Risk.html",
+      "sourceFilename": "article-86. How Water Systems Eliminate Cross-Contamination Risk.html",
+      "originalCanonical": null,
+      "h2Count": 9,
+      "h2Sample": [
+        "What Cross-Contamination Means in Hydraulic Context",
+        "Oil and Process Interference",
+        "Marine and Coastal Systems",
+        "Flood Control Infrastructure",
+        "Drinking Water Facilities"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 87,
+      "title": "Lifecycle Cost Breakdown: Oil vs Water",
+      "slug": "lifecycle-cost-breakdown-oil-vs-water",
+      "urlPath": "/knowledge-hub/lifecycle-cost-breakdown-oil-vs-water",
+      "canonicalUrl": "/knowledge-hub/lifecycle-cost-breakdown-oil-vs-water",
+      "categoryId": "comparison-guides",
+      "categoryLabel": "Comparison Guides",
+      "sourceSection": null,
+      "description": "A complete lifecycle cost analysis of oil hydraulics versus water hydraulics across fluid acquisition, disposal, maintenance labour, spill risk, fire insurance, component longevity, downtime, and regulatory overhead.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-87. Lifecycle Cost Breakdown- Oil vs Water    .html",
+      "sourceFilename": "article-87. Lifecycle Cost Breakdown- Oil vs Water    .html",
+      "originalCanonical": null,
+      "h2Count": 10,
+      "h2Sample": [
+        "1. Fluid Acquisition and Replacement",
+        "2. Disposal and Environmental Handling",
+        "3. Maintenance Labour",
+        "4. Spill Risk and Cleanup",
+        "5. Fire and Insurance Exposure"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 88,
+      "title": "What Does \"No Additives\" Actually Mean?",
+      "slug": "what-does-no-additives-actually-mean",
+      "urlPath": "/knowledge-hub/what-does-no-additives-actually-mean",
+      "canonicalUrl": "/knowledge-hub/what-does-no-additives-actually-mean",
+      "categoryId": "comparison-guides",
+      "categoryLabel": "Comparison Guides",
+      "sourceSection": null,
+      "description": "No additives is not a simplification. It is a shift from chemical dependency to structural engineering. An explanation of what oil additives do, why they deplete, and how water hydraulic systems achieve the same performance outcomes through material science instead of fluid chemistry.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-88. What Does “No Additives” Actually Mean?.html",
+      "sourceFilename": "article-88. What Does “No Additives” Actually Mean?.html",
+      "originalCanonical": null,
+      "h2Count": 9,
+      "h2Sample": [
+        "Why Oil Requires Additives",
+        "Additive Depletion and Aging",
+        "What \"No Additives\" Means in Water Hydraulics",
+        "Lubricity Without Chemical Enhancement",
+        "Corrosion Prevention Without Inhibitors"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 89,
+      "title": "Preventing Corrosion Without Coatings or Chemicals",
+      "slug": "preventing-corrosion-without-coatings-or-chemicals",
+      "urlPath": "/knowledge-hub/preventing-corrosion-without-coatings-or-chemicals",
+      "canonicalUrl": "/knowledge-hub/preventing-corrosion-without-coatings-or-chemicals",
+      "categoryId": "comparison-guides",
+      "categoryLabel": "Comparison Guides",
+      "sourceSection": null,
+      "description": "How water hydraulic systems prevent corrosion through structural material selection rather than coatings or chemical inhibitors. Why 316 stainless steel, material uniformity, surface finish, and geometry provide more durable and predictable corrosion protection than chemical approaches.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-89. Preventing Corrosion Without Coatings or Chemicals.html",
+      "sourceFilename": "article-89. Preventing Corrosion Without Coatings or Chemicals.html",
+      "originalCanonical": null,
+      "h2Count": 8,
+      "h2Sample": [
+        "The Structural Approach to Corrosion Control",
+        "Why 316 Stainless Steel",
+        "Eliminating Dissimilar Metal Pairing",
+        "Sliding Interfaces Without Metal-on-Metal Contact",
+        "Surface Finish and Geometry"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 90,
+      "title": "Can Water Freeze in Hydraulic Systems? Engineering Around Temperature",
+      "slug": "can-water-freeze-in-hydraulic-systems-engineering-around-temperature",
+      "urlPath": "/knowledge-hub/can-water-freeze-in-hydraulic-systems-engineering-around-temperature",
+      "canonicalUrl": "/knowledge-hub/can-water-freeze-in-hydraulic-systems-engineering-around-temperature",
+      "categoryId": "comparison-guides",
+      "categoryLabel": "Comparison Guides",
+      "sourceSection": null,
+      "description": "Water freezes at 0 degrees Celsius. That is a design parameter, not a barrier. A complete engineering guide to the four strategies that protect water hydraulic systems in cold Canadian climates, using the same approaches that already work throughout municipal, marine, and hydroelectric infrastructure.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-90. Can Water Freeze in Hydraulic Systems? Engineering Around Temperature.html",
+      "sourceFilename": "article-90. Can Water Freeze in Hydraulic Systems? Engineering Around Temperature.html",
+      "originalCanonical": null,
+      "h2Count": 10,
+      "h2Sample": [
+        "Understanding Freeze Risk",
+        "Design Strategy 1: Controlled Enclosure",
+        "Design Strategy 2: Heat Tracing",
+        "Design Strategy 3: Circulation and Movement",
+        "Design Strategy 4: Drain-Down for Seasonal Systems"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 91,
+      "title": "Breaking Down the ROI: Investing in Water Hydraulics",
+      "slug": "breaking-down-the-roi-investing-in-water-hydraulics",
+      "urlPath": "/knowledge-hub/breaking-down-the-roi-investing-in-water-hydraulics",
+      "canonicalUrl": "/knowledge-hub/breaking-down-the-roi-investing-in-water-hydraulics",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "A complete return on investment analysis for water hydraulic systems across fluid lifecycle cost, environmental risk, insurance, maintenance, component longevity, and downtime economics over 20-year infrastructure horizons.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-91. Breaking Down the ROI- Investing in Water Hydraulics.html",
+      "sourceFilename": "article-91. Breaking Down the ROI- Investing in Water Hydraulics.html",
+      "originalCanonical": null,
+      "h2Count": 8,
+      "h2Sample": [
+        "Capital Cost vs Total Cost of Ownership",
+        "Eliminating Fluid Lifecycle Cost",
+        "Environmental Risk as a Financial Variable",
+        "Insurance and Compliance Implications",
+        "Maintenance Simplification"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 92,
+      "title": "Funding Water-Driven Innovation: A Guide to Clean Tech Grants",
+      "slug": "funding-water-driven-innovation-a-guide-to-clean-tech-grants",
+      "urlPath": "/knowledge-hub/funding-water-driven-innovation-a-guide-to-clean-tech-grants",
+      "canonicalUrl": "/knowledge-hub/funding-water-driven-innovation-a-guide-to-clean-tech-grants",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "A complete procurement guide to Canadian federal and provincial funding programs for water hydraulic systems. CTI-TC, SR&ED, CleanBC, Infrastructure Canada, marine grants, and Indigenous clean energy funding explained for engineers and procurement teams.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-92. Funding Water-Driven Innovation- A Guide to Clean Tech Grants.html",
+      "sourceFilename": "article-92. Funding Water-Driven Innovation- A Guide to Clean Tech Grants.html",
+      "originalCanonical": null,
+      "h2Count": 8,
+      "h2Sample": [
+        "Clean Technology Investment Tax Credit (CTI-TC)",
+        "SR&ED Incentives for Mechanical Redesign",
+        "CleanBC Industry Fund and Provincial Programs",
+        "Federal Marine and Coastal Environmental Grants",
+        "Infrastructure Canada Grants for Municipal Upgrades"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 93,
+      "title": "Aligning With ESG: How Water Hydraulics Support Sustainability Targets",
+      "slug": "aligning-with-esg-how-water-hydraulics-support-sustainability-targets",
+      "urlPath": "/knowledge-hub/aligning-with-esg-how-water-hydraulics-support-sustainability-targets",
+      "canonicalUrl": "/knowledge-hub/aligning-with-esg-how-water-hydraulics-support-sustainability-targets",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "How water-driven hydraulic systems advance ESG goals across environmental protection, worker safety, and governance. Why procurement teams increasingly specify water hydraulics to strengthen ESG compliance, reduce operational risk, and support clean-technology adoption.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-93. Aligning with ESG- How Water Hydraulics Supports Sustainability Targets.html",
+      "sourceFilename": "article-93. Aligning with ESG- How Water Hydraulics Supports Sustainability Targets.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Environmental Impact (E in ESG)",
+        "Worker and Community Safety (S in ESG)",
+        "Governance, Compliance, and Risk Management (G in ESG)",
+        "Alignment With Corporate ESG Targets",
+        "How Procurement Teams Integrate ESG Requirements"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 94,
+      "title": "How the 2025 Clean Technology Investment Tax Credit Applies to Your Project",
+      "slug": "how-the-2025-clean-technology-investment-tax-credit-applies-to-your-project",
+      "urlPath": "/knowledge-hub/how-the-2025-clean-technology-investment-tax-credit-applies-to-your-project",
+      "canonicalUrl": "/knowledge-hub/how-the-2025-clean-technology-investment-tax-credit-applies-to-your-project",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "A complete procurement guide to using the federal CTI-TC 30 percent refundable tax credit for water hydraulic system upgrades. What qualifies, what costs are includable, how to structure the project, and what payback timelines look like after the credit is applied.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-94. How the 2025 Clean Technology Investment Tax Credit Applies to Your Project.html",
+      "sourceFilename": "article-94. How the 2025 Clean Technology Investment Tax Credit Applies to Your Project.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "What the CTI-TC Covers",
+        "Why Water Hydraulics Meet the Eligibility Threshold",
+        "What Project Costs Can Be Included",
+        "How CTI-TC Impacts ROI",
+        "How to Structure a Project to Maximize the Credit"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 95,
+      "title": "Oil-Free Operation and Compliance With Federal Clean Energy Goals",
+      "slug": "oil-free-operation-and-compliance-with-federal-clean-energy-goals",
+      "urlPath": "/knowledge-hub/oil-free-operation-and-compliance-with-federal-clean-energy-goals",
+      "canonicalUrl": "/knowledge-hub/oil-free-operation-and-compliance-with-federal-clean-energy-goals",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "How water hydraulic systems support Canada's clean energy policies through elimination of hydrocarbon use, reduced energy demand, waste stream removal, and alignment with the Fisheries Act, CEPA, and federal clean technology funding frameworks.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-95. Oil-Free Operation and Compliance with Federal Clean Energy Goals.html",
+      "sourceFilename": "article-95. Oil-Free Operation and Compliance with Federal Clean Energy Goals.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "How Water Hydraulics Fit Canada's Clean Energy Priorities",
+        "Alignment With Federal Environmental Protection Frameworks",
+        "How Water Hydraulics Support Emissions Reduction Goals",
+        "Removal of Waste Streams and Hazardous Fluids",
+        "Why Procurement Teams Choose Water for Compliance"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 96,
+      "title": "Why Municipal Procurement Needs to Rethink Oil",
+      "slug": "why-municipal-procurement-needs-to-rethink-oil",
+      "urlPath": "/knowledge-hub/why-municipal-procurement-needs-to-rethink-oil",
+      "canonicalUrl": "/knowledge-hub/why-municipal-procurement-needs-to-rethink-oil",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "Municipal procurement specifications still default to oil hydraulics out of habit, not engineering necessity. A direct challenge to the frameworks that specify oil in water infrastructure, and a practical path toward specifications that eliminate contamination risk by design.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-96. Why Municipal Procurement Needs to Rethink Oil.html",
+      "sourceFilename": "article-96. Why Municipal Procurement Needs to Rethink Oil.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Oil in Water Infrastructure: A Design Contradiction",
+        "Procurement Has Not Kept Pace with Engineering",
+        "What Modern Water Hydraulics Change",
+        "Risk, Liability, and Lifecycle Cost",
+        "Municipal Responsibility and Engineering Ethics"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 97,
+      "title": "Total Cost of Ownership: Where Water Wins Over Time",
+      "slug": "total-cost-of-ownership-where-water-wins-over-time",
+      "urlPath": "/knowledge-hub/total-cost-of-ownership-where-water-wins-over-time",
+      "canonicalUrl": "/knowledge-hub/total-cost-of-ownership-where-water-wins-over-time",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "A full engineering and financial review of long-term cost behaviour in water hydraulic systems compared with oil hydraulics. TCO analysis across fluid costs, downtime, energy, component life, compliance costs, and maintenance predictability.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-97. Total Cost of Ownership- Where Water Wins Over Time.html",
+      "sourceFilename": "article-97. Total Cost of Ownership- Where Water Wins Over Time.html",
+      "originalCanonical": null,
+      "h2Count": 8,
+      "h2Sample": [
+        "1. Removing Continuous Fluid Costs",
+        "2. Eliminating Varnish, Sludge, and Chemical Breakdown",
+        "3. Reducing Unplanned Downtime",
+        "4. Lower Electrical Energy Demand",
+        "5. Longer Equipment Life Through Materials Selection"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 98,
+      "title": "Should You Specify Water in Your Next Tender?",
+      "slug": "should-you-specify-water-in-your-next-tender",
+      "urlPath": "/knowledge-hub/should-you-specify-water-in-your-next-tender",
+      "canonicalUrl": "/knowledge-hub/should-you-specify-water-in-your-next-tender",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "A complete procurement guide for writing tenders that require water hydraulics. Exact specification language, environmental and safety criteria, funding eligibility requirements, and a procurement checklist for engineers and procurement officers.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-98. Should You Specify Water in Your Next Tender?.html",
+      "sourceFilename": "article-98. Should You Specify Water in Your Next Tender?.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "The Tender Stage Determines Long-Term Cost and Risk",
+        "How to Phrase the Hydraulic Requirement Clearly",
+        "Environmental and Safety Criteria That Support Water Hydraulics",
+        "Funding Programs Require Oil-Free Technology",
+        "Reducing Future Regulatory Exposure"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 99,
+      "title": "Avoiding Oil-Contaminated Waterways: Legal and Financial Risks",
+      "slug": "avoiding-oil-contaminated-waterways-legal-and-financial-risks",
+      "urlPath": "/knowledge-hub/avoiding-oil-contaminated-waterways-legal-and-financial-risks",
+      "canonicalUrl": "/knowledge-hub/avoiding-oil-contaminated-waterways-legal-and-financial-risks",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "A complete review of the legal and financial consequences of oil hydraulic contamination events in Canada. Fisheries Act exposure, cleanup costs, marine liability, insurance implications, contractor liability, and how water hydraulics eliminate the contamination pathway entirely.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-99. Avoiding Oil-Contaminated Waterways- Legal and Financial Risks.html",
+      "sourceFilename": "article-99. Avoiding Oil-Contaminated Waterways- Legal and Financial Risks.html",
+      "originalCanonical": null,
+      "h2Count": 8,
+      "h2Sample": [
+        "Regulatory Exposure From Hydrocarbon Spills",
+        "Financial Consequences of Cleanup and Remediation",
+        "Impacts on Wastewater and Stormwater Systems",
+        "Marine and Coastal Liability",
+        "Insurance and Risk Management Considerations"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 100,
+      "title": "How WaterQuest Systems Align With CleanBC, SIF, and SR&ED",
+      "slug": "how-waterquest-systems-align-with-cleanbc-sif-and-sr-and-ed",
+      "urlPath": "/knowledge-hub/how-waterquest-systems-align-with-cleanbc-sif-and-sr-and-ed",
+      "canonicalUrl": "/knowledge-hub/how-waterquest-systems-align-with-cleanbc-sif-and-sr-and-ed",
+      "categoryId": "adoption-economics-policy",
+      "categoryLabel": "Adoption, Economics & Policy",
+      "sourceSection": null,
+      "description": "A detailed analysis of how WaterQuest water hydraulic systems qualify for CleanBC, the Strategic Innovation Fund, and SR&ED tax credits. Program criteria, combined funding synergy, procurement documentation requirements, and sector-specific eligibility across municipal, marine, industrial, forestry, and mining applications.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-100. How WaterQuest Systems Align With CleanBC, SIF, and SR&ED.html",
+      "sourceFilename": "article-100. How WaterQuest Systems Align With CleanBC, SIF, and SR&ED.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "CleanBC: Provincial Support for Spill-Free, Low-Energy Equipment",
+        "SIF: Support for Scalable Clean Technologies",
+        "SR&ED: Engineering and R&D Incentives for Mechanical Innovation",
+        "Combined Program Synergy",
+        "Procurement Requirements for Funding Eligibility"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 101,
+      "title": "Replacing Oil Systems in Algoma Steel: A Modern Retrofit",
+      "slug": "replacing-oil-systems-in-algoma-steel-a-modern-retrofit",
+      "urlPath": "/knowledge-hub/replacing-oil-systems-in-algoma-steel-a-modern-retrofit",
+      "canonicalUrl": "/knowledge-hub/replacing-oil-systems-in-algoma-steel-a-modern-retrofit",
+      "categoryId": "case-studies-pilots",
+      "categoryLabel": "Case Studies & Pilots",
+      "sourceSection": null,
+      "description": "A complete engineering analysis of retrofitting legacy oil hydraulic systems in steel mills. How water hydraulics eliminate fire risk, environmental liability, and energy inefficiency in heavy industrial environments using 316 stainless and carbon-reinforced PEEK.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-101. Replacing Oil Systems in Algoma Steel- A Modern Retrofit.html",
+      "sourceFilename": "article-101. Replacing Oil Systems in Algoma Steel- A Modern Retrofit.html",
+      "originalCanonical": null,
+      "h2Count": 8,
+      "h2Sample": [
+        "The Legacy Oil-Based Architecture",
+        "Identifying Retrofit Drivers",
+        "The Modern Retrofit Concept",
+        "Material Discipline in a Steel Mill Environment",
+        "Downsizing and Energy Optimization"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 102,
+      "title": "WaterQuest vs Traditional HPU: Test Results in Desalination",
+      "slug": "waterquest-vs-traditional-hpu-test-results-in-desalination",
+      "urlPath": "/knowledge-hub/waterquest-vs-traditional-hpu-test-results-in-desalination",
+      "canonicalUrl": "/knowledge-hub/waterquest-vs-traditional-hpu-test-results-in-desalination",
+      "categoryId": "case-studies-pilots",
+      "categoryLabel": "Case Studies & Pilots",
+      "sourceSection": null,
+      "description": "Controlled test results comparing WaterQuest water hydraulic HPUs against traditional oil-based HPUs in desalination service conditions. Pressure stability, thermal performance, corrosion resistance, cycle durability, and environmental risk profile compared.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-102. WaterQuest vs Traditional HPU- Test Results in Desalination.html",
+      "sourceFilename": "article-102. WaterQuest vs Traditional HPU- Test Results in Desalination.html",
+      "originalCanonical": null,
+      "h2Count": 9,
+      "h2Sample": [
+        "The Desalination Operating Environment",
+        "Test Objective and Parameters",
+        "Pressure Stability Results",
+        "Thermal Performance",
+        "Corrosion Exposure Testing"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 103,
+      "title": "Retrofitting a Fire Pump Station with Zero Oil",
+      "slug": "retrofitting-a-fire-pump-station-with-zero-oil",
+      "urlPath": "/knowledge-hub/retrofitting-a-fire-pump-station-with-zero-oil",
+      "canonicalUrl": "/knowledge-hub/retrofitting-a-fire-pump-station-with-zero-oil",
+      "categoryId": "case-studies-pilots",
+      "categoryLabel": "Case Studies & Pilots",
+      "sourceSection": null,
+      "description": "How to retrofit a fire pump station to eliminate oil hydraulics entirely. Strategy, materials, phasing, standby stability, and the fundamental contradiction of combustible hydraulic fluid in fire protection infrastructure.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-103. Retrofitting a Fire Pump Station with Zero Oil.html",
+      "sourceFilename": "article-103. Retrofitting a Fire Pump Station with Zero Oil.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "The Contradiction of Oil in Fire Protection",
+        "The Retrofit Strategy",
+        "Material and Corrosion Discipline",
+        "Pressure and Performance Capability",
+        "Thermal and Standby Stability"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 104,
+      "title": "Oil-Free Hydraulics in Amusement Safety: A Pilot Case",
+      "slug": "oil-free-hydraulics-in-amusement-safety-a-pilot-case",
+      "urlPath": "/knowledge-hub/oil-free-hydraulics-in-amusement-safety-a-pilot-case",
+      "canonicalUrl": "/knowledge-hub/oil-free-hydraulics-in-amusement-safety-a-pilot-case",
+      "categoryId": "case-studies-pilots",
+      "categoryLabel": "Case Studies & Pilots",
+      "sourceSection": null,
+      "description": "A pilot case study evaluating water-based hydraulic actuation for ride restraint locking, positioning arms, and emergency gate actuation in a public amusement environment. Performance results, corrosion testing, leak simulation, and lessons from the pilot.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-104. Oil-Free Hydraulics in Amusement Safety- A Pilot Case.html",
+      "sourceFilename": "article-104. Oil-Free Hydraulics in Amusement Safety- A Pilot Case.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "The Amusement Safety Context",
+        "Pilot System Scope",
+        "Performance Under Cyclic Load",
+        "Corrosion and Outdoor Exposure",
+        "Leak Simulation and Public Safety"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 105,
+      "title": "Clean Operation on Coastlines: A Marine Deployment Snapshot",
+      "slug": "clean-operation-on-coastlines-a-marine-deployment-snapshot",
+      "urlPath": "/knowledge-hub/clean-operation-on-coastlines-a-marine-deployment-snapshot",
+      "canonicalUrl": "/knowledge-hub/clean-operation-on-coastlines-a-marine-deployment-snapshot",
+      "categoryId": "case-studies-pilots",
+      "categoryLabel": "Case Studies & Pilots",
+      "sourceSection": null,
+      "description": "A marine deployment case study: sluice gate actuation, dock barrier positioning, and tidal control mechanisms converted to water hydraulics. Corrosion testing, tidal cycle performance, leak simulation, and lifecycle observations from a coastal installation.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-105. Clean Operation on Coastlines- A Marine Deployment Snapshot.html",
+      "sourceFilename": "article-105. Clean Operation on Coastlines- A Marine Deployment Snapshot.html",
+      "originalCanonical": null,
+      "h2Count": 8,
+      "h2Sample": [
+        "The Marine Environment Challenge",
+        "Deployment Overview",
+        "Corrosion Control Through Material Discipline",
+        "Performance Under Tidal Cycles",
+        "Leak Simulation in a Coastal Context"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 106,
+      "title": "Will Water Rust My System?",
+      "slug": "will-water-rust-my-system",
+      "urlPath": "/knowledge-hub/will-water-rust-my-system",
+      "canonicalUrl": "/knowledge-hub/will-water-rust-my-system",
+      "categoryId": "faq-objections",
+      "categoryLabel": "Engineer FAQ & Objections",
+      "sourceSection": null,
+      "description": "A complete engineering explanation of why water hydraulic systems do not corrode when designed with 316 stainless steel and carbon-reinforced PEEK. How material selection eliminates every corrosion pathway that makes water dangerous to conventional hydraulic components.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-106. Will Water Rust My System?.html",
+      "sourceFilename": "article-106. Will Water Rust My System?.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "Rust Only Occurs When the Wrong Materials Are Used",
+        "Why 316 Stainless Steel Works in Water Hydraulics",
+        "Why Coatings and Platings Fail in Water Hydraulics",
+        "PEEK Eliminates Metal-on-Metal Wear That Would Accelerate Corrosion",
+        "Tap and Sea Water Are Not a Corrosion Threat in a Properly Designed System"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 107,
+      "title": "Designing for Pressure: Closed-Loop Water Hydraulic Circuitry",
+      "slug": "designing-for-pressure-closed-loop-water-hydraulic-circuitry",
+      "urlPath": "/knowledge-hub/designing-for-pressure-closed-loop-water-hydraulic-circuitry",
+      "canonicalUrl": "/knowledge-hub/designing-for-pressure-closed-loop-water-hydraulic-circuitry",
+      "categoryId": "faq-objections",
+      "categoryLabel": "Engineer FAQ & Objections",
+      "sourceSection": null,
+      "description": "Why closed-loop water hydraulic circuits outperform oil equivalents in control precision, temperature stability, and long-term valve performance. Pump and motor architecture, spool behaviour, actuator dynamics, and system-level design considerations for closed-loop water circuits.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-107. Designing for Pressure- Closed-Loop Water Hydraulic Circuitry.html",
+      "sourceFilename": "article-107. Designing for Pressure- Closed-Loop Water Hydraulic Circuitry.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "High System Stiffness",
+        "Predictable Temperature Behaviour",
+        "Clean Internal Environment",
+        "Pump and Motor Architecture for Closed-Loop Water Systems",
+        "Valve Behaviour in Closed-Loop Water Circuits"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 108,
+      "title": "Can Water Handle Heavy Loads Like Oil?",
+      "slug": "can-water-handle-heavy-loads-like-oil",
+      "urlPath": "/knowledge-hub/can-water-handle-heavy-loads-like-oil",
+      "canonicalUrl": "/knowledge-hub/can-water-handle-heavy-loads-like-oil",
+      "categoryId": "faq-objections",
+      "categoryLabel": "Engineer FAQ & Objections",
+      "sourceSection": null,
+      "description": "A complete engineering explanation of force, pressure, and mechanical output in water hydraulic systems. Why hydraulic force comes from pressure not fluid thickness, how water's bulk modulus supports heavy load control, and where WaterQuest systems already operate under full industrial loads.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-108. Can Water Handle Heavy Loads Like Oil?.html",
+      "sourceFilename": "article-108. Can Water Handle Heavy Loads Like Oil?.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "Hydraulic Force Comes from Pressure, Not Fluid Thickness",
+        "Water's Bulk Modulus Supports Strong, Controlled Motion",
+        "Stable Viscosity Improves Efficiency Under Heavy Loads",
+        "WaterQuest Pumps and Cylinders Are Built for Full Load Performance",
+        "Water Offers Strong Torque Output in Hydraulic Motors"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 109,
+      "title": "Is Water Too Thin to Work in High-Pressure Applications?",
+      "slug": "is-water-too-thin-to-work-in-high-pressure-applications",
+      "urlPath": "/knowledge-hub/is-water-too-thin-to-work-in-high-pressure-applications",
+      "canonicalUrl": "/knowledge-hub/is-water-too-thin-to-work-in-high-pressure-applications",
+      "categoryId": "faq-objections",
+      "categoryLabel": "Engineer FAQ & Objections",
+      "sourceSection": null,
+      "description": "A complete engineering explanation of why viscosity does not determine pressure capability in hydraulic systems. How water hydraulics achieve leakage control through geometry rather than fluid thickness, and why water operates reliably at 80 to 160 bar in industrial applications.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-109. Isn’t Water Too Thin to Work in High-Pressure Applications?.html",
+      "sourceFilename": "article-109. Isn’t Water Too Thin to Work in High-Pressure Applications?.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "Viscosity Does Not Determine Pressure Capability",
+        "Internal Leakage Is Controlled by Geometry, Not Fluid Thickness",
+        "Water's Bulk Modulus Supports High Pressure Transmission",
+        "Temperature Stability Supports Reliable High-Pressure Operation",
+        "Material Selection Prevents Wear That Could Increase Leakage"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 110,
+      "title": "Do I Need Filters or Additives for Tap Water?",
+      "slug": "do-i-need-filters-or-additives-for-tap-water",
+      "urlPath": "/knowledge-hub/do-i-need-filters-or-additives-for-tap-water",
+      "canonicalUrl": "/knowledge-hub/do-i-need-filters-or-additives-for-tap-water",
+      "categoryId": "faq-objections",
+      "categoryLabel": "Engineer FAQ & Objections",
+      "sourceSection": null,
+      "description": "A complete engineering guide to filtration and additive requirements for water hydraulic systems. Why no chemical additives are needed, why filtration is simpler than oil systems, and what tap water and sea water contain that does and does not affect hydraulic performance.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-110. Do I Need Filters or Additives for Tap Water?.html",
+      "sourceFilename": "article-110. Do I Need Filters or Additives for Tap Water?.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Water Hydraulics Do Not Use Chemical Additives",
+        "Filtration Requirements Are Simpler Than Oil Systems",
+        "Tap Water and Sea Water Are Both Suitable Hydraulic Media",
+        "Reverse Osmosis or Deionized Water Is Not Required",
+        "No Anti-Freeze Chemicals Are Used for Winter Operation"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 111,
+      "title": "Why Doesn't Everyone Use This Already?",
+      "slug": "why-doesn-t-everyone-use-this-already",
+      "urlPath": "/knowledge-hub/why-doesn-t-everyone-use-this-already",
+      "canonicalUrl": "/knowledge-hub/why-doesn-t-everyone-use-this-already",
+      "categoryId": "faq-objections",
+      "categoryLabel": "Engineer FAQ & Objections",
+      "sourceSection": null,
+      "description": "A complete explanation of why water hydraulics have not been widely adopted despite their advantages. Historical material failures, industry inertia, education gaps, installed base lock-in, and why Canadian environmental regulations are finally accelerating the shift.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-111. Why Doesn’t Everyone Use This Already?.html",
+      "sourceFilename": "article-111. Why Doesn’t Everyone Use This Already?.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Legacy Components Were Designed for Oil, Not Water",
+        "The Hydraulic Industry Grew Around Oil and Stayed There",
+        "Early Water Hydraulics Failed Because the Materials Were Wrong",
+        "Most Engineers Have Never Been Taught Water Hydraulic Design",
+        "The Large Installed Base Creates Inertia"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 112,
+      "title": "Is Water More Expensive Long-Term?",
+      "slug": "is-water-more-expensive-long-term",
+      "urlPath": "/knowledge-hub/is-water-more-expensive-long-term",
+      "canonicalUrl": "/knowledge-hub/is-water-more-expensive-long-term",
+      "categoryId": "faq-objections",
+      "categoryLabel": "Engineer FAQ & Objections",
+      "sourceSection": null,
+      "description": "A complete financial examination of total cost of ownership in water hydraulic systems compared to oil. Fluid purchases, disposal, internal cleaning, maintenance frequency, environmental incidents, component longevity, and energy consumption all tell the same story.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-112. Is Water More Expensive Long-Term?.html",
+      "sourceFilename": "article-112. Is Water More Expensive Long-Term?.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Water Eliminates Ongoing Fluid Purchases and Disposal",
+        "Oil Breaks Down and Creates Internal Cleaning Costs",
+        "Water Hydraulics Reduce Maintenance Frequency",
+        "Water Prevents Costly Environmental Incidents",
+        "High-Quality Materials Extend Equipment Lifespan"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 113,
+      "title": "Can I Retrofit My Existing System to Use Water?",
+      "slug": "can-i-retrofit-my-existing-system-to-use-water",
+      "urlPath": "/knowledge-hub/can-i-retrofit-my-existing-system-to-use-water",
+      "canonicalUrl": "/knowledge-hub/can-i-retrofit-my-existing-system-to-use-water",
+      "categoryId": "faq-objections",
+      "categoryLabel": "Engineer FAQ & Objections",
+      "sourceSection": null,
+      "description": "A complete engineering guide to retrofitting oil hydraulic systems for water service. What can be reused, what must be replaced, when retrofit works and when replacement is better, and how the hydraulic core and infrastructure divide in a water hydraulic conversion.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-113. Can I Retrofit My Existing System to Use Water?.html",
+      "sourceFilename": "article-113. Can I Retrofit My Existing System to Use Water?.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Oil Hydraulic Components Cannot Be Converted Internally",
+        "Structural and Mechanical Infrastructure Usually Can Be Reused",
+        "Pumps, Valves, Cylinders, and Motors Must Be Water-Specific",
+        "Controls and Automation Can Often Be Retrofitted Easily",
+        "Actuators Must Be Rebuilt or Replaced"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 114,
+      "title": "Are Your Components Certified for Marine or Food Use?",
+      "slug": "are-your-components-certified-for-marine-or-food-use",
+      "urlPath": "/knowledge-hub/are-your-components-certified-for-marine-or-food-use",
+      "canonicalUrl": "/knowledge-hub/are-your-components-certified-for-marine-or-food-use",
+      "categoryId": "faq-objections",
+      "categoryLabel": "Engineer FAQ & Objections",
+      "sourceSection": null,
+      "description": "A complete explanation of how WaterQuest water hydraulic components align with marine and food industry certification requirements. 316 stainless and PEEK material standards, zero hydrocarbon pathways, certification documentation, and why water hydraulics simplify compliance in regulated environments.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-114. Are Your Components Certified for Marine or Food Use?.html",
+      "sourceFilename": "article-114. Are Your Components Certified for Marine or Food Use?.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "Marine Certification Compatibility",
+        "Food and Beverage Facility Compatibility",
+        "Zero Hydrocarbon Pathways Simplify Compliance",
+        "Material Selection Aligns with Regulated Environment Standards",
+        "Water Medium Removes Cross-Contamination Risk"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 115,
+      "title": "What Happens in a Fire? Will the Water System Shut Down?",
+      "slug": "what-happens-in-a-fire-will-the-water-system-shut-down",
+      "urlPath": "/knowledge-hub/what-happens-in-a-fire-will-the-water-system-shut-down",
+      "canonicalUrl": "/knowledge-hub/what-happens-in-a-fire-will-the-water-system-shut-down",
+      "categoryId": "faq-objections",
+      "categoryLabel": "Engineer FAQ & Objections",
+      "sourceSection": null,
+      "description": "A complete engineering explanation of water hydraulic system behaviour in fire conditions. Fire load, structural integrity under heat, PEEK performance, fail-safe modes, thermal buffering, vapour pressure behaviour, and emergency operation logic.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-115. What Happens in a Fire? Will the Water System Shut Down?.html",
+      "sourceFilename": "article-115. What Happens in a Fire? Will the Water System Shut Down?.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Water Does Not Ignite or Contribute to Fire Load",
+        "316 Stainless Steel Maintains Structural Integrity Under Heat",
+        "Carbon-Reinforced PEEK Performs Predictably in High-Heat Exposure",
+        "Fail-Safe Modes Keep Equipment in a Safe Position",
+        "Water in the Circuit Helps Absorb Local Heat"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 116,
+      "title": "What Maintenance Looks Like in a Water Hydraulic System",
+      "slug": "what-maintenance-looks-like-in-a-water-hydraulic-system",
+      "urlPath": "/knowledge-hub/what-maintenance-looks-like-in-a-water-hydraulic-system",
+      "canonicalUrl": "/knowledge-hub/what-maintenance-looks-like-in-a-water-hydraulic-system",
+      "categoryId": "maintenance-operations",
+      "categoryLabel": "Maintenance & Operations",
+      "sourceSection": null,
+      "description": "A complete guide to maintenance in water hydraulic systems. What tasks disappear when oil is removed, what inspection-based maintenance remains, typical intervals, comparison to oil system maintenance burden, and what first service visits look like.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-116. What Maintenance Looks Like in a Water System.html",
+      "sourceFilename": "article-116. What Maintenance Looks Like in a Water System.html",
+      "originalCanonical": null,
+      "h2Count": 8,
+      "h2Sample": [
+        "What Disappears When You Switch to Water",
+        "What Maintenance Actually Involves",
+        "Seal Inspection and Replacement",
+        "316 Stainless Component Inspection",
+        "Hose and Fitting Maintenance"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 117,
+      "title": "Servicing a Water Hydraulic HPU On-Site in Under 1 Day",
+      "slug": "servicing-a-water-hydraulic-hpu-on-site-in-under-1-day",
+      "urlPath": "/knowledge-hub/servicing-a-water-hydraulic-hpu-on-site-in-under-1-day",
+      "canonicalUrl": "/knowledge-hub/servicing-a-water-hydraulic-hpu-on-site-in-under-1-day",
+      "categoryId": "maintenance-operations",
+      "categoryLabel": "Maintenance & Operations",
+      "sourceSection": null,
+      "description": "A detailed guide to field service procedures for water hydraulic HPUs. Why one-day service is achievable, what the inspection sequence covers, and how the absence of oil eliminates the most time-consuming tasks that make oil HPU service multi-day operations.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-117. Servicing a Water Hydraulic HPU On-Site in Under 1 Day.html",
+      "sourceFilename": "article-117. Servicing a Water Hydraulic HPU On-Site in Under 1 Day.html",
+      "originalCanonical": null,
+      "h2Count": 6,
+      "h2Sample": [
+        "No Fluid Drain, No Replacement, No Filtration Cycle",
+        "Visual Inspection of Stainless Components Is Fast and Straightforward",
+        "Pumps and Motors Require Minimal Disassembly",
+        "Valve Blocks Stay Clean Without Varnish or Sludge",
+        "Hoses, Fittings, and External Hardware Are the Main Service Items"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 118,
+      "title": "Flushing and Start-Up Tips for First-Time Water Users",
+      "slug": "flushing-and-start-up-tips-for-first-time-water-users",
+      "urlPath": "/knowledge-hub/flushing-and-start-up-tips-for-first-time-water-users",
+      "canonicalUrl": "/knowledge-hub/flushing-and-start-up-tips-for-first-time-water-users",
+      "categoryId": "maintenance-operations",
+      "categoryLabel": "Maintenance & Operations",
+      "sourceSection": null,
+      "description": "A complete commissioning guide for water hydraulic systems. Initial flush, drain-back verification, air bleeding, pressure stability checks, and baseline documentation for technicians commissioning their first water hydraulic installation.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-118. Flushing and Start-Up Tips for First-Time Water Users.html",
+      "sourceFilename": "article-118. Flushing and Start-Up Tips for First-Time Water Users.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "Start With a Clean Water Source",
+        "Do Not Use Additives, Conditioners, or Glycol",
+        "Perform an Initial Flush Using Clean Tap Water",
+        "Verify Drain-Back Function and Idle Position Logic",
+        "Bleed Air From the System Gradually"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 119,
+      "title": "How to Winterize Your Water Hydraulic System",
+      "slug": "how-to-winterize-your-water-hydraulic-system",
+      "urlPath": "/knowledge-hub/how-to-winterize-your-water-hydraulic-system",
+      "canonicalUrl": "/knowledge-hub/how-to-winterize-your-water-hydraulic-system",
+      "categoryId": "maintenance-operations",
+      "categoryLabel": "Maintenance & Operations",
+      "sourceSection": null,
+      "description": "A complete engineering guide to freeze prevention in water hydraulic systems. Drain-back geometry, idle-state positioning, heat tracing for exposed lines, why antifreeze must never be used, periodic cycling, and a seasonal pre-winter checklist.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-119. How to Winterize Your Water Hydraulic System.html",
+      "sourceFilename": "article-119. How to Winterize Your Water Hydraulic System.html",
+      "originalCanonical": null,
+      "h2Count": 7,
+      "h2Sample": [
+        "The Foundation: Drain-Back Geometry",
+        "Confirm Idle-State Positions Before Cold Weather",
+        "Insulation or Heat Tracing for Exposed Lines Only",
+        "Never Use Chemical Antifreeze or Glycol",
+        "Cycle the System Periodically During Prolonged Cold"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 120,
+      "title": "Diagnosing Pressure Drop in Water-Driven Cylinders",
+      "slug": "diagnosing-pressure-drop-in-water-driven-cylinders",
+      "urlPath": "/knowledge-hub/diagnosing-pressure-drop-in-water-driven-cylinders",
+      "canonicalUrl": "/knowledge-hub/diagnosing-pressure-drop-in-water-driven-cylinders",
+      "categoryId": "maintenance-operations",
+      "categoryLabel": "Maintenance & Operations",
+      "sourceSection": null,
+      "description": "A step-by-step diagnostic guide for pressure drop in water hydraulic cylinders. Mechanical load checks, external leakage inspection, internal bypass testing, valve position verification, upstream restrictions, return-side behaviour, air entrainment, and baseline comparison.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-120. Diagnosing Pressure Drop in Water-Driven Cylinders.html",
+      "sourceFilename": "article-120. Diagnosing Pressure Drop in Water-Driven Cylinders.html",
+      "originalCanonical": null,
+      "h2Count": 9,
+      "h2Sample": [
+        "How Water Behaves Inside a Cylinder",
+        "Check for Mechanical Load Changes First",
+        "Inspect External Leakage Points",
+        "Check for Internal Bypass in the Cylinder",
+        "Verify Valve Position and Flow Control Behaviour"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 121,
+      "title": "Preventing Scaling or Fouling Without Additives",
+      "slug": "preventing-scaling-or-fouling-without-additives",
+      "urlPath": "/knowledge-hub/preventing-scaling-or-fouling-without-additives",
+      "canonicalUrl": "/knowledge-hub/preventing-scaling-or-fouling-without-additives",
+      "categoryId": "maintenance-operations",
+      "categoryLabel": "Maintenance & Operations",
+      "sourceSection": null,
+      "description": "A complete engineering explanation of why scaling is extremely rare in water hydraulic circuits and how design prevents it without chemical treatment. Heat requirements for scale formation, 316 stainless surface properties, PEEK non-stick characteristics, and the role of continuous flow.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-121. Preventing Scaling or Fouling Without Additives.html",
+      "sourceFilename": "article-121. Preventing Scaling or Fouling Without Additives.html",
+      "originalCanonical": null,
+      "h2Count": 9,
+      "h2Sample": [
+        "No High Heat Zones Means No Mineral Precipitation",
+        "316 Stainless Steel Resists Mineral Bonding",
+        "Carbon-Reinforced PEEK Prevents Adhesion on Sliding Components",
+        "Continuous Flow Prevents Stagnation",
+        "Intake Screens Capture External Debris"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 122,
+      "title": "Seal and Hose Life Expectations with Tap Water",
+      "slug": "seal-and-hose-life-expectations-with-tap-water",
+      "urlPath": "/knowledge-hub/seal-and-hose-life-expectations-with-tap-water",
+      "canonicalUrl": "/knowledge-hub/seal-and-hose-life-expectations-with-tap-water",
+      "categoryId": "maintenance-operations",
+      "categoryLabel": "Maintenance & Operations",
+      "sourceSection": null,
+      "description": "A complete engineering guide to how seals and hoses behave in water hydraulic service. Why water extends elastomer life compared to oil, the role of thermal stability and clean surfaces, correct elastomer selection, and what mechanical factors still govern hose life.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-122. Seal and Hose Life Expectations With Tap Water.html",
+      "sourceFilename": "article-122. Seal and Hose Life Expectations With Tap Water.html",
+      "originalCanonical": null,
+      "h2Count": 8,
+      "h2Sample": [
+        "Water Does Not Attack Elastomers the Way Oil Does",
+        "Thermal Stability Extends Seal Longevity",
+        "No Varnish or Sludge to Damage Sealing Surfaces",
+        "Stainless and PEEK Surfaces Protect Seal Interfaces",
+        "Hose Life Improves Because Water Does Not Heat, Harden, or Attack Hose Liners"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 123,
+      "title": "Common Maintenance Missteps with Oil That Don't Happen With Water",
+      "slug": "common-maintenance-missteps-with-oil-that-don-t-happen-with-water",
+      "urlPath": "/knowledge-hub/common-maintenance-missteps-with-oil-that-don-t-happen-with-water",
+      "canonicalUrl": "/knowledge-hub/common-maintenance-missteps-with-oil-that-don-t-happen-with-water",
+      "categoryId": "maintenance-operations",
+      "categoryLabel": "Maintenance & Operations",
+      "sourceSection": null,
+      "description": "A detailed breakdown of the oil hydraulic maintenance habits that do not apply to water hydraulics. Fluid changes, heat cycling, aggressive filtration, valve cleaning, control re-tuning, chemical monitoring, solvent cleaning, and rust inspection all disappear from the schedule.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-123. Common Maintenance Missteps with Oil That Don’t Happen With Water.html",
+      "sourceFilename": "article-123. Common Maintenance Missteps with Oil That Don’t Happen With Water.html",
+      "originalCanonical": null,
+      "h2Count": 9,
+      "h2Sample": [
+        "Fluid Changes on a Strict Schedule",
+        "Running Heat Cycles to Stabilize Fluid Properties",
+        "Aggressive Filtration to Control Varnish and Sludge",
+        "Checking for Thermal Degradation of Hoses",
+        "Cleaning Varnish and Sludge From Valves"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 124,
+      "title": "Smart Monitoring Options for Water HPUs",
+      "slug": "smart-monitoring-options-for-water-hpus",
+      "urlPath": "/knowledge-hub/smart-monitoring-options-for-water-hpus",
+      "canonicalUrl": "/knowledge-hub/smart-monitoring-options-for-water-hpus",
+      "categoryId": "maintenance-operations",
+      "categoryLabel": "Maintenance & Operations",
+      "sourceSection": null,
+      "description": "A complete engineering guide to smart monitoring for water hydraulic power units. Pressure, flow, reservoir level, temperature, electrical load, valve position, vibration, leak detection, and data logging: what each reveals and how water's stability makes monitoring more effective.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-124. Smart Monitoring Options for Water HPUs.html",
+      "sourceFilename": "article-124. Smart Monitoring Options for Water HPUs.html",
+      "originalCanonical": null,
+      "h2Count": 9,
+      "h2Sample": [
+        "Pressure Monitoring at Critical Points",
+        "Flow Monitoring for Cylinder and Motor Performance",
+        "Reservoir Level Sensors for Drain-Back Verification",
+        "Temperature Monitoring in Context",
+        "Electrical Load Monitoring for Predictive Maintenance"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    },
+    {
+      "number": 125,
+      "title": "Built-In Safety: Fail-Closed and Manual Overrides with Water",
+      "slug": "built-in-safety-fail-closed-and-manual-overrides-with-water",
+      "urlPath": "/knowledge-hub/built-in-safety-fail-closed-and-manual-overrides-with-water",
+      "canonicalUrl": "/knowledge-hub/built-in-safety-fail-closed-and-manual-overrides-with-water",
+      "categoryId": "maintenance-operations",
+      "categoryLabel": "Maintenance & Operations",
+      "sourceSection": null,
+      "description": "A complete engineering explanation of safety behaviour, fail-state logic, passive protections, and manual override design in water hydraulic systems. How geometry, spring return, drain-back, and clean internals create inherently safer fail-safe behaviour than oil-based equivalents.",
+      "sourceFile": "/Users/brucehickin/Desktop/knowledge Hub/blogs 51-125 html 2/article-125. Built-In Safety- Fail-Closed and Manual Overrides with Water.html",
+      "sourceFilename": "article-125. Built-In Safety- Fail-Closed and Manual Overrides with Water.html",
+      "originalCanonical": null,
+      "h2Count": 8,
+      "h2Sample": [
+        "Fail-Closed, Fail-Open, or Fail-Fixed: Determined by Valve Geometry",
+        "Passive Energy Storage Minimizes Complexity",
+        "Low Compressibility Allows Rapid and Predictable Fail-State Transition",
+        "Manual Overrides Are Simpler Because the Circuit Is Clean",
+        "Stainless and PEEK Internals Maintain Sealing During Emergencies"
+      ],
+      "issues": [
+        "missing canonical",
+        "missing structured article section",
+        "unsafe source filename",
+        "long meta description"
+      ]
+    }
+  ]
+}

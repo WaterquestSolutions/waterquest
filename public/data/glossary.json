@@ -1,0 +1,212 @@
+{
+  "generatedAt": "2026-06-29T13:50:36.673Z",
+  "terms": [
+    {
+      "term": "Hydraulic pressure",
+      "slug": "hydraulic-pressure",
+      "category": "Fundamentals",
+      "definition": "Hydraulic pressure is the force applied by a fluid over a unit area, usually expressed in PSI or bar.",
+      "waterHydraulics": "In water hydraulic systems, pressure is what allows tap water or seawater to transmit useful force through pumps, valves, cylinders, and motors without using petroleum oil.",
+      "example": "A 4 inch bore cylinder operating at 2,320 PSI can produce roughly 29,000 lbf of extend force before losses.",
+      "formula": "Pressure = Force / Area",
+      "links": [
+        [
+          "Hydraulic calculations",
+          "/calculations"
+        ],
+        [
+          "Water hydraulic cylinders",
+          "/products/water-hydraulic-cylinders/"
+        ],
+        [
+          "Physics of water hydraulic pressure systems",
+          "/knowledge-hub/physics-water-hydraulic-pressure-systems"
+        ]
+      ]
+    },
+    {
+      "term": "Hydraulic power",
+      "slug": "hydraulic-power",
+      "category": "Fundamentals",
+      "definition": "Hydraulic power is the rate at which hydraulic energy is delivered by a fluid under pressure and flow.",
+      "waterHydraulics": "Water hydraulic power is produced the same way oil hydraulic power is produced: by combining pressure and flow. The difference is the working medium is water, so leakage does not create petroleum contamination.",
+      "example": "A pump delivering 30 L/min at 160 bar produces about 8 kW of hydraulic power before efficiency losses.",
+      "formula": "Hydraulic power (kW) = pressure (bar) x flow (L/min) / 600",
+      "links": [
+        [
+          "Hydraulic calculations",
+          "/calculations"
+        ],
+        [
+          "Water hydraulic HPUs",
+          "/products/water-hydraulics-hpu/"
+        ],
+        [
+          "Hydraulic power transmission using water",
+          "/knowledge-hub/hydraulic-power-transmission-using-water"
+        ]
+      ]
+    },
+    {
+      "term": "Axial piston pump",
+      "slug": "axial-piston-pump",
+      "category": "Components",
+      "definition": "An axial piston pump is a positive displacement pump that uses pistons arranged parallel to the drive shaft to generate hydraulic flow.",
+      "waterHydraulics": "In WaterQuest systems, axial piston pump architecture is adapted for water by using corrosion-resistant wetted materials, tight clearances, and water-compatible sliding interfaces.",
+      "example": "Axial piston pumps are used where compact high-pressure flow is needed for cylinders, motors, fire pumps, and clean hydraulic power units.",
+      "formula": "Flow is driven by displacement per revolution multiplied by shaft speed, adjusted for volumetric efficiency.",
+      "links": [
+        [
+          "Axial piston pumps",
+          "/products/axial-piston-pumps/"
+        ],
+        [
+          "P30 pump",
+          "/products/axial-piston-pumps/p30/"
+        ],
+        [
+          "Selecting pumps for water hydraulic systems",
+          "/knowledge-hub/selecting-pumps-for-water-hydraulic-systems"
+        ]
+      ]
+    },
+    {
+      "term": "Hydraulic actuator",
+      "slug": "hydraulic-actuator",
+      "category": "Components",
+      "definition": "A hydraulic actuator converts hydraulic pressure and flow into mechanical motion.",
+      "waterHydraulics": "A water hydraulic actuator performs the same mechanical job as an oil hydraulic actuator, but it uses water as the pressure medium so leaks do not introduce hydrocarbons into the surrounding environment.",
+      "example": "Water hydraulic cylinders can open sluice gates, position dampers, actuate process valves, and operate flood-control infrastructure.",
+      "formula": "Linear actuator force = pressure x piston area.",
+      "links": [
+        [
+          "Gate actuation",
+          "/applications/gate-actuation/"
+        ],
+        [
+          "Water hydraulic cylinders",
+          "/products/water-hydraulic-cylinders/"
+        ],
+        [
+          "Hydraulic gate actuators",
+          "/knowledge-hub/hydraulic-gate-actuators-municipal-infrastructure"
+        ]
+      ]
+    },
+    {
+      "term": "Fluid power",
+      "slug": "fluid-power",
+      "category": "Fundamentals",
+      "definition": "Fluid power is the use of pressurized fluids to transmit energy and control mechanical motion.",
+      "waterHydraulics": "Water hydraulics is a branch of fluid power. It keeps the same pressure, flow, force, and motion-control principles while replacing petroleum hydraulic oil with water.",
+      "example": "A fluid power circuit may include a pump, relief valve, directional valve, cylinder, return line, sensors, and controls.",
+      "formula": "Useful fluid power depends on pressure, flow, and system efficiency.",
+      "links": [
+        [
+          "What are water hydraulic systems?",
+          "/knowledge-hub/what-are-water-hydraulic-systems"
+        ],
+        [
+          "Products",
+          "/products"
+        ],
+        [
+          "Applications",
+          "/applications"
+        ]
+      ]
+    },
+    {
+      "term": "PEEK (polyether ether ketone)",
+      "slug": "peek-polyether-ether-ketone",
+      "category": "Materials",
+      "definition": "PEEK is a high-performance engineering thermoplastic used for wear surfaces, seals, bearings, and sliding interfaces.",
+      "waterHydraulics": "Carbon-reinforced PEEK is important in water hydraulics because water does not provide the same lubricating film as oil. PEEK paired against stainless steel helps control friction, wear, and galling.",
+      "example": "WaterQuest uses carbon-reinforced PEEK wear surfaces in water hydraulic pumps, motors, cylinders, and valves.",
+      "formula": "Material selection replaces oil-film dependency with stable tribological pairing.",
+      "links": [
+        [
+          "Carbon-reinforced PEEK article",
+          "/knowledge-hub/carbon-reinforced-peek-hydraulic-equipment"
+        ],
+        [
+          "Material compatibility",
+          "/knowledge-hub/material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek"
+        ],
+        [
+          "About WaterQuest",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "term": "316L stainless steel",
+      "slug": "316l-stainless-steel",
+      "category": "Materials",
+      "definition": "316L stainless steel is a low-carbon molybdenum-bearing stainless steel used where corrosion resistance is required.",
+      "waterHydraulics": "316L stainless steel is central to water hydraulic design because wetted components must resist tap water, seawater, chlorides, humidity, and industrial washdown environments without protective oil films.",
+      "example": "Cylinders, valve bodies, pump housings, fittings, and wetted hardware can use 316L stainless steel to support long-term water service.",
+      "formula": "Material compatibility is a design requirement, not an accessory, when water is the hydraulic medium.",
+      "links": [
+        [
+          "Why 316 stainless is essential",
+          "/knowledge-hub/why-316-stainless-essential-water-hydraulics"
+        ],
+        [
+          "WQS Stainless",
+          "/wqs-stainless"
+        ],
+        [
+          "Water hydraulic valves",
+          "/products/water-hydraulic-valves/"
+        ]
+      ]
+    },
+    {
+      "term": "Volumetric efficiency",
+      "slug": "volumetric-efficiency",
+      "category": "Performance",
+      "definition": "Volumetric efficiency compares actual pump or motor flow to theoretical displacement flow.",
+      "waterHydraulics": "Because water has low viscosity, volumetric efficiency depends heavily on precision clearances, stable materials, and well-controlled leakage paths.",
+      "example": "A pump with 30 L/min theoretical flow and 27 L/min actual output has 90 percent volumetric efficiency.",
+      "formula": "Volumetric efficiency = actual flow / theoretical flow",
+      "links": [
+        [
+          "Efficiency: water hydraulic pumps vs oil",
+          "/knowledge-hub/efficiency-water-hydraulic-pumps-vs-oil"
+        ],
+        [
+          "Hydraulic calculations",
+          "/calculations"
+        ],
+        [
+          "Water hydraulic motors",
+          "/products/water-hydraulic-motors/"
+        ]
+      ]
+    },
+    {
+      "term": "Back pressure",
+      "slug": "back-pressure",
+      "category": "Performance",
+      "definition": "Back pressure is pressure that exists downstream of a component and resists flow leaving that component.",
+      "waterHydraulics": "Back pressure matters in water hydraulic systems because it changes actuator force, motor torque, valve pressure drop, heat generation, and overall system efficiency.",
+      "example": "A cylinder retracting against high return-line back pressure will have less effective net force than the pressure gauge on the supply side suggests.",
+      "formula": "Net pressure = supply pressure - back pressure",
+      "links": [
+        [
+          "Hydraulic calculations",
+          "/calculations"
+        ],
+        [
+          "Flow control application",
+          "/applications/flow-control/"
+        ],
+        [
+          "Designing control valves for water hydraulics",
+          "/knowledge-hub/designing-control-valves-for-water-hydraulics"
+        ]
+      ]
+    }
+  ]
+}

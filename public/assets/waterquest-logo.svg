@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 170" role="img" aria-labelledby="title desc">
+  <title id="title">WaterQuest Solutions logo option A</title>
+  <desc id="desc">A restrained industrial wordmark with a waterline accent.</desc>
+  <defs>
+    <linearGradient id="aqua" x1="42" y1="128" x2="718" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#20d3a7"/>
+      <stop offset=".48" stop-color="#00c8d4"/>
+      <stop offset="1" stop-color="#30f1df"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="170" fill="#071321"/>
+  <g font-family="Avenir Next, Avenir, Segoe UI, sans-serif">
+    <text x="42" y="84" fill="#f7fbff" font-size="54" font-weight="800" letter-spacing="-2.2">WaterQuest</text>
+    <text x="47" y="119" fill="#FFFFFF" font-size="18" font-weight="800" letter-spacing="7.2">SOLUTIONS</text>
+  </g>
+  <path d="M44 138h148c21 0 28-20 48-20s27 20 48 20h430" fill="none" stroke="url(#aqua)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M44 151h674" fill="none" stroke="#27445b" stroke-width="2"/>
+</svg>

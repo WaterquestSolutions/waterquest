@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M30 Water Hydraulic Motor | 30cc & 35cc | 160 Bar | 84 Nm Torque | WaterQuest Solutions</title>
+<meta name="description" content="The WaterQuest M30 water hydraulic motor delivers up to 84 Nm torque at 160 bar. Available in 30cc and 35cc displacement, 316 stainless steel, oil-free operation for heavy-duty industrial, mining, and offshore applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+:root{--navy:#0A1628;--navy-mid:#0D2044;--navy-light:#122954;--aqua:#00C8D4;--aqua-glow:rgba(0,200,212,0.15);--motor:#D85C00;--motor-light:#FF7420;--silver:#FFFFFF;--silver-light:#FFFFFF;--white:#FFFFFF;--body-text:#FFFFFF;--muted:#FFFFFF;--border:rgba(168,184,204,0.18);--border-aqua:rgba(0,200,212,0.3);--border-motor:rgba(255,116,32,0.3);--font-display:'Avenir','Avenir Next','Nunito Sans',sans-serif;--font-body:'Nunito Sans','Segoe UI',system-ui,sans-serif;--radius-sm:6px;--radius-md:12px;--radius-lg:20px;--shadow-motor:0 0 40px rgba(255,116,32,0.2);--max-width:1240px;--section-pad:96px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{font-family:var(--font-body);background:var(--navy);color:var(--body-text);line-height:1.7;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}ul{list-style:none;}
+.label{font-family:var(--font-display);font-size:0.72rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--aqua);}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:900;line-height:1.15;color:var(--white);}
+h1{font-size:clamp(2.2rem,4.5vw,3.8rem);letter-spacing:-0.02em;}
+h2{font-size:clamp(1.8rem,3.2vw,2.8rem);letter-spacing:-0.02em;}
+h3{font-size:clamp(1.05rem,1.8vw,1.35rem);}
+p{color:var(--body-text);font-size:1.02rem;}
+.text-aqua{color:var(--aqua);}.text-motor{color:var(--motor-light);}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 32px;}
+.section{padding:var(--section-pad) 0;}.section-alt{background:var(--navy-mid);}.section-dark{background:var(--navy);}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:var(--radius-sm);font-family:var(--font-display);font-weight:700;font-size:0.88rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border:none;transition:all 0.25s ease;}
+.btn-motor{background:var(--motor-light);color:var(--white);}.btn-motor:hover{background:#FF8840;transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,116,32,0.45);}
+.btn-outline{background:transparent;color:var(--aqua);border:1.5px solid var(--border-aqua);}.btn-outline:hover{background:var(--aqua-glow);border-color:var(--aqua);}
+#nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background 0.3s,backdrop-filter 0.3s;}
+#nav.scrolled{background:rgba(10,22,40,0.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
+.nav-inner{max-width:var(--max-width);margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:72px;}
+.nav-logo .logo-main{font-family:var(--font-display);font-weight:900;font-size:1.15rem;color:var(--white);}
+.nav-logo .logo-sub{font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--aqua);display:block;margin-top:1px;}
+.nav-links{display:flex;align-items:center;gap:32px;}
+.nav-links a{font-family:var(--font-display);font-size:0.82rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--silver);transition:color 0.2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--aqua);}
+.nav-cta{background:var(--aqua)!important;color:var(--navy)!important;padding:9px 20px;border-radius:var(--radius-sm);}
+.breadcrumb{padding:88px 0 0;}.breadcrumb-inner{max-width:var(--max-width);margin:0 auto;padding:16px 32px;display:flex;align-items:center;gap:8px;}
+.breadcrumb-inner a{font-size:0.82rem;color:var(--muted);transition:color 0.2s;}.breadcrumb-inner a:hover{color:var(--aqua);}
+.breadcrumb-sep{font-size:0.75rem;color:var(--muted);opacity:0.5;}.breadcrumb-current{font-size:0.82rem;color:var(--silver);}
+.bubble-layer{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1;}
+.bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,0.55),rgba(0,200,212,0.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,0.2);opacity:0;animation:bubble-rise linear infinite;}
+@keyframes bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:0.5}50%{transform:translateY(-50vh) translateX(var(--drift)) scale(0.88);opacity:0.25}92%{opacity:0.08}100%{transform:translateY(-108vh) translateX(calc(var(--drift)*1.4)) scale(0.45);opacity:0}}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease,transform 0.7s ease;}.reveal.visible{opacity:1;transform:translateY(0);}
+.reveal-left{opacity:0;transform:translateX(-24px);transition:opacity 0.7s ease,transform 0.7s ease;}.reveal-left.visible{opacity:1;transform:translateX(0);}
+.reveal-right{opacity:0;transform:translateX(24px);transition:opacity 0.7s ease,transform 0.7s ease;}.reveal-right.visible{opacity:1;transform:translateX(0);}
+.section-header{margin-bottom:56px;}.section-header .label{margin-bottom:14px;}.section-header h2{margin-bottom:16px;}
+.section-header p{max-width:640px;font-size:1.06rem;color:var(--silver-light);}
+.section-header.center{text-align:center;}.section-header.center p{margin:0 auto;}
+#product-hero{position:relative;overflow:hidden;padding:40px 0 80px;background:linear-gradient(170deg,#060F1E 0%,#0A1628 45%,#0D2044 100%);}
+.hero-bg-mesh{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(0,200,212,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,0.035) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 80% 70% at 65% 50%,black 20%,transparent 80%);}
+.product-hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding-top:20px;}
+.product-family{font-family:var(--font-display);font-size:0.78rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--motor-light);margin-bottom:10px;}
+.product-hero-text h1{margin-bottom:22px;}.product-hero-text h1 span{color:var(--aqua);}
+.hero-desc{font-size:1.12rem;color:var(--silver-light);line-height:1.8;margin-bottom:36px;max-width:520px;}
+.product-hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px;}
+.spec-pill-row{display:flex;flex-wrap:wrap;gap:10px;}
+.spec-pill{display:flex;align-items:center;gap:8px;padding:8px 16px;border:1px solid var(--border-aqua);border-radius:100px;background:rgba(0,200,212,0.07);font-size:0.82rem;font-weight:700;color:var(--aqua);font-family:var(--font-display);letter-spacing:0.06em;}
+.product-hero-visual{display:flex;align-items:center;justify-content:center;}
+.motor-img-wrap{width:100%;max-width:460px;position:relative;}
+.motor-img-wrap img{width:100%;max-height:380px;object-fit:contain;object-position:center;display:block;filter:drop-shadow(0 0 48px rgba(255,116,32,0.35));animation:motor-glow 6s ease-in-out infinite;}
+@keyframes motor-glow{0%,100%{filter:drop-shadow(0 0 48px rgba(255,116,32,0.26))}50%{filter:drop-shadow(0 0 80px rgba(255,116,32,0.55))}}
+.motor-img-badge{position:absolute;bottom:18px;left:18px;background:rgba(10,22,40,0.88);backdrop-filter:blur(8px);border:1px solid var(--border-motor);border-radius:var(--radius-sm);padding:10px 16px;}
+.motor-img-badge span{display:block;font-family:var(--font-display);font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--motor-light);}
+.motor-img-badge strong{display:block;font-family:var(--font-display);font-size:1.1rem;font-weight:900;color:var(--white);}
+.specs-strip{background:var(--navy-mid);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.specs-strip-inner{display:grid;grid-template-columns:repeat(6,1fr);}
+.spec-item{text-align:center;padding:28px 20px;border-right:1px solid var(--border);}.spec-item:last-child{border-right:none;}
+.spec-item span{display:block;font-family:var(--font-display);font-size:0.68rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+.spec-item strong{display:block;font-family:var(--font-display);font-size:1.35rem;font-weight:900;color:var(--white);}
+.perf-section{background:var(--navy);padding:80px 0;}
+.perf-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
+.perf-card{background:var(--navy-mid);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px;}
+.perf-card h3{margin-bottom:20px;color:var(--silver-light);font-size:1.08rem;}
+.chart-wrap{position:relative;width:100%;height:280px;}
+.chart-note{font-size:0.76rem;color:var(--muted);margin-top:12px;line-height:1.5;}
+.features-section{background:var(--navy-mid);padding:88px 0;}
+.features-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px;}
+.feature-box{background:var(--navy);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px;transition:border-color 0.3s;}
+.feature-box:hover{border-color:var(--border-aqua);}
+.feature-icon{width:48px;height:48px;background:var(--aqua-glow);border:1px solid var(--border-aqua);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+.feature-icon svg{width:24px;height:24px;stroke:var(--aqua);fill:none;stroke-width:2;}
+.feature-box h4{margin-bottom:12px;font-size:1.15rem;}
+.feature-box p{color:var(--silver);line-height:1.7;font-size:0.96rem;}
+.dimensions-section{background:var(--navy);padding:88px 0;}
+.dims-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:start;}
+.dims-image{width:100%;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--border);}
+.dims-image img{width:100%;display:block;}
+.dims-table{background:var(--navy-mid);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;}
+.dims-table table{width:100%;border-collapse:collapse;}
+.dims-table th,.dims-table td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--border);}
+.dims-table th{background:rgba(0,200,212,0.08);font-family:var(--font-display);font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--aqua);}
+.dims-table td{font-family:var(--font-display);font-size:0.92rem;color:var(--silver-light);}
+.dims-table tbody tr:last-child td{border-bottom:none;}
+.dims-table tr:hover td{background:rgba(0,200,212,0.04);}
+.apps-section{background:var(--navy-mid);padding:88px 0;}
+.apps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
+.app-card{background:var(--navy);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;text-align:center;transition:all 0.3s;}
+.app-card:hover{border-color:var(--border-motor);transform:translateY(-4px);box-shadow:0 8px 28px rgba(255,116,32,0.18);}
+.app-card h4{margin-bottom:10px;font-size:1.05rem;color:var(--white);}
+.app-card p{font-size:0.88rem;color:var(--muted);line-height:1.6;}
+#product-cta{position:relative;overflow:hidden;background:linear-gradient(160deg,#0D2044 0%,#0A1628 60%);padding:96px 0;}
+.cta-inner{text-align:center;position:relative;z-index:2;}
+.cta-inner .label{margin-bottom:14px;}
+.cta-inner h2{margin-bottom:18px;max-width:680px;margin-left:auto;margin-right:auto;}
+.cta-inner>p{margin-bottom:36px;max-width:560px;margin-left:auto;margin-right:auto;font-size:1.08rem;color:var(--silver-light);}
+.cta-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;}
+footer{background:var(--navy-mid);border-top:1px solid var(--border);padding:64px 0 32px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;}
+.footer-brand .logo-main{font-family:var(--font-display);font-weight:900;font-size:1.18rem;color:var(--white);margin-bottom:4px;}
+.footer-brand .logo-sub{font-family:var(--font-display);font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--aqua);display:block;margin-bottom:16px;}
+.footer-brand p{font-size:0.88rem;color:var(--muted);line-height:1.7;margin-bottom:12px;}
+.footer-slogan{font-size:0.78rem!important;color:var(--aqua)!important;font-weight:700!important;letter-spacing:0.06em;}
+.footer-col h5{font-family:var(--font-display);font-size:0.82rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--silver-light);margin-bottom:16px;}
+.footer-col ul{display:flex;flex-direction:column;gap:10px;}
+.footer-col a{font-size:0.88rem;color:var(--muted);transition:color 0.2s;}.footer-col a:hover{color:var(--aqua);}
+.footer-bottom{border-top:1px solid var(--border);padding-top:28px;display:flex;justify-content:space-between;align-items:center;}
+.footer-bottom p{font-size:0.82rem;color:var(--muted);}
+.footer-cert{display:flex;gap:10px;}
+.cert-badge{font-family:var(--font-display);font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--aqua);padding:6px 12px;border:1px solid var(--border-aqua);border-radius:4px;background:rgba(0,200,212,0.06);}
+@media(max-width:1024px){.product-hero-grid,.perf-grid,.dims-grid{grid-template-columns:1fr;}.features-grid{grid-template-columns:1fr;}.apps-grid{grid-template-columns:repeat(2,1fr);}.specs-strip-inner{grid-template-columns:repeat(3,1fr);}.spec-item{border-right:none;border-bottom:1px solid var(--border);}.spec-item:last-child{border-bottom:none;}.footer-grid{grid-template-columns:1fr 1fr;gap:32px;}}
+@media(max-width:640px){.apps-grid{grid-template-columns:1fr;}.specs-strip-inner{grid-template-columns:1fr;}.footer-grid{grid-template-columns:1fr;}.footer-bottom{flex-direction:column;gap:16px;text-align:center;}.nav-links{display:none;}}
+</style><link rel="canonical" href="/products/water-hydraulic-motors/m30" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:title" content="M30 Water Hydraulic Motor | 30cc &amp; 35cc | 160 Bar | 84 Nm Torque | WaterQuest Solutions" />
+  <meta property="og:description" content="The WaterQuest M30 water hydraulic motor delivers up to 84 Nm torque at 160 bar. Available in 30cc and 35cc displacement, 316 stainless steel, oil-free operation for heavy-duty industrial, mining, and offshore applications." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/products/water-hydraulic-motors/m30" />
+  <meta property="og:image" content="/assets/waterquest-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="M30 Water Hydraulic Motor | 30cc &amp; 35cc | 160 Bar | 84 Nm Torque | WaterQuest Solutions" />
+  <meta name="twitter:description" content="The WaterQuest M30 water hydraulic motor delivers up to 84 Nm torque at 160 bar. Available in 30cc and 35cc displacement, 316 stainless steel, oil-free operation for heavy-duty industrial, mining, and offshore applications." />
+  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
+  <link rel="alternate" hreflang="en-CA" href="/products/water-hydraulic-motors/m30" />
+  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
+  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"Product","@id":"/products/water-hydraulic-motors/m30#webpage","url":"/products/water-hydraulic-motors/m30","name":"M30 Water Hydraulic Motor | 30cc & 35cc | 160 Bar | 84 Nm Torque | WaterQuest Solutions","description":"The WaterQuest M30 water hydraulic motor delivers up to 84 Nm torque at 160 bar. Available in 30cc and 35cc displacement, 316 stainless steel, oil-free operation for heavy-duty industrial, mining, and offshore applications.","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA","brand":{"@type":"Brand","name":"WaterQuest Solutions"},"category":"Water hydraulic equipment"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"},{"@type":"ListItem","position":2,"name":"Products","item":"/products"},{"@type":"ListItem","position":3,"name":"Water Hydraulic Motors","item":"/products/water-hydraulic-motors"},{"@type":"ListItem","position":4,"name":"M30","item":"/products/water-hydraulic-motors/m30"}]}]}</script>
+  <style id="wq-global-shell-css">
+    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
+    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
+    body a{color:inherit}
+    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
+    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
+    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
+    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
+    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
+    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
+    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
+    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
+    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
+    main .btn.primary{color:var(--wq-navy)!important}
+    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
+    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
+    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
+    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
+    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
+    .wq-form-status.is-error{color:#ffb1b1!important}
+    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
+    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
+    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
+    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
+    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
+    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
+    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
+    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
+    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
+    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
+    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
+    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
+    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
+    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
+    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
+    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
+    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
+    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
+    .wq-hero-visual-text{padding:20px}
+    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
+    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
+    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
+    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
+    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
+    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
+    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
+    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
+    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
+    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
+    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
+    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
+    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
+    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
+    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
+    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
+    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
+    #wq-mobile-menu.open{display:block}
+    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
+    #wq-mobile-menu a:last-child{border-bottom:0}
+    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
+    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
+    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
+    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
+    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
+    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
+    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
+    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
+    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
+    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
+    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
+    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
+    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
+    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
+    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
+    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
+  </style>
+</head>
+<body class="wq-section-products">
+<!-- WQ_GLOBAL_HEADER_START -->
+<div id="wq-global-bubbles" aria-hidden="true"></div>
+<nav id="wq-nav" role="navigation" aria-label="Main navigation">
+  <div class="wq-nav-inner">
+    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
+      <span class="wq-logo-main">WaterQuest Solutions</span>
+      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+    </a>
+    <ul class="wq-nav-links" role="list">
+      <li><a href="/products/" class="active">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li>
+      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
+    </ul>
+    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
+  </div>
+</nav>
+<div id="wq-mobile-menu">
+  <a href="/products/" class="active">Products</a><a href="/industries/">Industries</a><a href="/technology/">Technology</a><a href="/knowledge-hub/">Knowledge Hub</a><a href="/about/">About</a>
+  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
+</div>
+<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
+<section class="wq-conversion-hero" aria-label="Page introduction">
+  <div class="wq-conversion-wrap">
+    <div>
+      <p class="wq-hero-eyebrow">Water hydraulic products</p>
+      <h1><span>M30</span> built for water service.</h1>
+      <p class="wq-hero-copy">Review oil-free hydraulic components engineered around 316 stainless wetted materials, water-compatible wear interfaces, and real industrial pressure requirements.</p>
+      <div class="wq-hero-actions">
+        <a class="wq-hero-cta" href="/contact/">Ask If This Fits Your System</a>
+        <a class="wq-hero-secondary" href="/calculations/">Run Engineering Calculations</a>
+      </div>
+    </div>
+    <a class="wq-hero-visual" href="/contact/">
+      <div class="wq-hero-picture" aria-hidden="true"></div>
+      <div class="wq-hero-visual-text">
+        <small>Specification path</small>
+        <strong>Move from product interest to engineering fit.</strong>
+        <span>Use the product data, calculators, and applications to narrow the right water hydraulic package.</span>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- WQ_CONVERSION_HERO_END --><div class="bubble-layer" id="global-bubbles" aria-hidden="true"></div><div class="breadcrumb" aria-label="Breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a>
+    <span class="breadcrumb-sep">›</span>
+    <a href="/products/">Products</a>
+    <span class="breadcrumb-sep">›</span>
+    <a href="/products/water-hydraulic-motors/">Hydraulic Motors</a>
+    <span class="breadcrumb-sep">›</span>
+    <span class="breadcrumb-current">M30 Motor</span>
+  </div>
+</div>
+
+<section id="product-hero" aria-labelledby="hero-heading">
+  <div class="hero-bg-mesh" aria-hidden="true"></div>
+  <div class="bubble-layer" id="hero-bubbles" aria-hidden="true"></div>
+  <div class="container">
+    <div class="product-hero-grid">
+      <div class="product-hero-text">
+        <p class="product-family reveal">M Series Water Hydraulic Motor</p>
+        <h1 id="hero-heading" class="reveal" style="transition-delay:.04s">M30 Heavy-Duty <span>Water Hydraulic Motor</span></h1>
+        <p class="hero-desc reveal" style="transition-delay:.08s">Industrial-grade axial piston motor engineered for extreme-duty applications. Delivers up to 84 Nm continuous torque at 160 bar with 30cc and 35cc displacement options. Built for mining conveyance, offshore winches, and heavy industrial automation where oil contamination is unacceptable.</p>
+        <div class="product-hero-ctas reveal" style="transition-delay:.12s">
+          <a href="/contact/" class="btn btn-motor">Request Engineering Specification</a>
+          <a href="/products/water-hydraulic-motors/" class="btn btn-outline">Compare Motor Series</a>
+        </div>
+        <div class="spec-pill-row reveal" style="transition-delay:.16s">
+          <div class="spec-pill">⚙️ 30cc & 35cc Displacement</div>
+          <div class="spec-pill">💪 Up to 84 Nm Torque</div>
+          <div class="spec-pill">🔥 Heavy-Duty Rated</div>
+          <div class="spec-pill">🌊 Seawater Compatible</div>
+        </div>
+      </div>
+      <div class="product-hero-visual reveal-right" style="transition-delay:.12s">
+        <div class="motor-img-wrap">
+          <img src="../m60/imgi_2_PB160-80SMS-e1729170158766.jpeg" alt="Water hydraulic motor family illustration" loading="lazy">
+          <div class="motor-img-badge">
+            <span>Max Torque</span>
+            <strong>84 Nm @ 160 bar</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="specs-strip">
+  <div class="container">
+    <div class="specs-strip-inner">
+      <div class="spec-item reveal" style="transition-delay:.02s">
+        <span>Displacement</span>
+        <strong>30cc / 35cc</strong>
+      </div>
+      <div class="spec-item reveal" style="transition-delay:.06s">
+        <span>Max Pressure</span>
+        <strong>160 bar</strong>
+      </div>
+      <div class="spec-item reveal" style="transition-delay:.1s">
+        <span>Peak Torque</span>
+        <strong>84 Nm</strong>
+      </div>
+      <div class="spec-item reveal" style="transition-delay:.14s">
+        <span>Max Power</span>
+        <strong>25 kW</strong>
+      </div>
+      <div class="spec-item reveal" style="transition-delay:.18s">
+        <span>Peak Efficiency</span>
+        <strong>85.5%</strong>
+      </div>
+      <div class="spec-item reveal" style="transition-delay:.22s">
+        <span>Speed Range</span>
+        <strong>1000-3000 rpm</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="perf-section" aria-labelledby="perf-heading">
+  <div class="container">
+    <div class="section-header center">
+      <p class="label reveal">Performance Validation</p>
+      <h2 id="perf-heading" class="reveal" style="transition-delay:.04s">Heavy-Duty Performance Curves</h2>
+      <p class="reveal" style="transition-delay:.08s">Factory-tested performance data for 30cc and 35cc displacement variants under full-load continuous operation. All measurements conducted with tap water at 20°C ambient temperature.</p>
+    </div>
+    <div class="perf-grid">
+      <div class="perf-card reveal-left" style="transition-delay:.04s">
+        <h3>Output Power (kW)</h3>
+        <div class="chart-wrap">
+          <canvas id="chartPower" role="img" aria-label="Output power vs pressure chart for M30 motor"></canvas>
+        </div>
+        <p class="chart-note">Peak power output of 25 kW achieved with 35cc displacement at 160 bar and 3000 rpm. Power delivery scales linearly with pressure across full operating envelope.</p>
+      </div>
+      <div class="perf-card reveal-right" style="transition-delay:.08s">
+        <h3>Overall Efficiency (%)</h3>
+        <div class="chart-wrap">
+          <canvas id="chartEff" role="img" aria-label="Overall efficiency vs pressure chart for M30 motor"></canvas>
+        </div>
+        <p class="chart-note">Maximum overall efficiency of 85.5% at 80 bar operating pressure. 35cc variant maintains above 82% efficiency from 60-120 bar at 1500 rpm.</p>
+      </div>
+      <div class="perf-card reveal-left" style="transition-delay:.12s">
+        <h3>Output Torque (Nm)</h3>
+        <div class="chart-wrap">
+          <canvas id="chartTorque" role="img" aria-label="Output torque vs pressure chart for M30 motor"></canvas>
+        </div>
+        <p class="chart-note">Torque output proportional to displacement and system pressure. 35cc delivers 84 Nm at 160 bar, 30cc delivers 71 Nm. Ideal for variable-load applications.</p>
+      </div>
+      <div class="perf-card reveal-right" style="transition-delay:.16s">
+        <h3>Input Flow (L/min)</h3>
+        <div class="chart-wrap">
+          <canvas id="chartFlow" role="img" aria-label="Input flow vs pressure chart for M30 motor"></canvas>
+        </div>
+        <p class="chart-note">Flow demand increases slightly with pressure due to internal leakage. 35cc at 3000 rpm requires approximately 112 L/min at rated pressure. Match pump displacement accordingly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features-section" aria-labelledby="features-heading">
+  <div class="container">
+    <div class="section-header center">
+      <p class="label reveal">Engineering Features</p>
+      <h2 id="features-heading" class="reveal" style="transition-delay:.04s">Built for Extreme Industrial Service</h2>
+      <p class="reveal" style="transition-delay:.08s">Advanced materials engineering and precision manufacturing for continuous-duty operation in the harshest environments.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-box reveal" style="transition-delay:.04s">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h4>Heavy-Duty Stainless Construction</h4>
+        <p>316L stainless steel housing and internal components resist corrosion in seawater, acidic mine water, and industrial process fluids. Carbon-reinforced PEEK sliding surfaces handle high contact pressures without galling.</p>
+      </div>
+      <div class="feature-box reveal" style="transition-delay:.08s">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h4>Reinforced Shaft Seal System</h4>
+        <p>Dual-stage mechanical seal with silicon carbide faces prevents external leakage under continuous operation. Suitable for submerged installations and splash-zone mounting. No shaft seal maintenance required for first 10,000 hours.</p>
+      </div>
+      <div class="feature-box reveal" style="transition-delay:.12s">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6M1 12h6m6 0h6"/></svg>
+        </div>
+        <h4>Industrial Bearing Package</h4>
+        <p>Oversized ceramic hybrid angular contact bearings handle combined radial and thrust loads. Bearing preload optimized for continuous-duty cycle at rated torque. L10 bearing life exceeds 12,000 hours under maximum radial load.</p>
+      </div>
+      <div class="feature-box reveal" style="transition-delay:.16s">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+        </div>
+        <h4>Integrated Pressure Relief</h4>
+        <p>Internal cross-port relief valve protects motor from pressure spikes during rapid deceleration or external shock loads. Factory-set to 180 bar (12.5% above rated pressure). Field-adjustable with calibrated shim stack.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dimensions-section" aria-labelledby="dims-heading">
+  <div class="container">
+    <div class="section-header">
+      <p class="label reveal">Mechanical Interface</p>
+      <h2 id="dims-heading" class="reveal" style="transition-delay:.04s">Mounting and Connections</h2>
+      <p class="reveal" style="transition-delay:.08s">SAE four-bolt flange with reinforced mounting lugs. Available in MB (integrated brake), MC (coupling flange), and MA (plain shaft) configurations for direct equipment integration.</p>
+    </div>
+    <div class="dims-grid">
+      <div class="dims-image reveal-left" style="transition-delay:.04s">
+        <p class="drawing-request">Contact WaterQuest Solutions for the current M30 dimensional drawing.</p>
+      </div>
+      <div class="dims-table reveal-right" style="transition-delay:.08s">
+        <table>
+          <thead>
+            <tr>
+              <th>Parameter</th>
+              <th>Dimension</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Flange Diameter</td><td>Ø144 mm</td></tr>
+            <tr><td>Bolt Circle</td><td>Ø101.55 - 101.60 mm</td></tr>
+            <tr><td>Mounting Bolts</td><td>4× M10 (KEY 8×7)</td></tr>
+            <tr><td>Shaft Diameter</td><td>Ø23.98 - 23.993 mm</td></tr>
+            <tr><td>Overall Length</td><td>156 mm</td></tr>
+            <tr><td>Height</td><td>110 mm</td></tr>
+            <tr><td>Pressure Ports</td><td>3/4" BSPP</td></tr>
+            <tr><td>Tank Port (MB/MC)</td><td>1/2" BSPP</td></tr>
+            <tr><td>Dry Weight</td><td>~14.5 kg</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="apps-section" aria-labelledby="apps-heading">
+  <div class="container">
+    <div class="section-header center">
+      <p class="label reveal">Industrial Applications</p>
+      <h2 id="apps-heading" class="reveal" style="transition-delay:.04s">Proven in Heavy-Duty Service</h2>
+      <p class="reveal" style="transition-delay:.08s">Field-tested in extreme environments where oil hydraulics create environmental liability, maintenance burden, or process contamination.</p>
+    </div>
+    <div class="apps-grid">
+      <div class="app-card reveal" style="transition-delay:.04s">
+        <h4>Offshore Crane Systems</h4>
+        <p>Winch and slew drives for platform cranes where oil leakage creates environmental penalties and deck contamination hazards.</p>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.08s">
+        <h4>Underground Mining Conveyors</h4>
+        <p>Belt drive motors in wet underground environments where oil contamination affects ore processing and creates slip hazards.</p>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.12s">
+        <h4>Wastewater Screening Equipment</h4>
+        <p>Drive motors for bar screens, drum screens, and screw compactors in primary treatment where oil contamination violates discharge permits.</p>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.16s">
+        <h4>Desalination RO Trains</h4>
+        <p>High-pressure pump drives and energy recovery turbines in reverse osmosis plants requiring absolute oil-free operation.</p>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.2s">
+        <h4>Steel Mill Roll Tables</h4>
+        <p>Conveyor drives in hot rolling mills and continuous casting where oil creates fire hazards and product surface defects.</p>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.24s">
+        <h4>Subsea ROV Thrusters</h4>
+        <p>Propulsion motors for remotely operated vehicles operating at depth where oil leakage creates buoyancy control issues.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="product-cta" aria-labelledby="cta-heading">
+  <div class="bubble-layer" id="cta-bubbles" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cta-inner">
+      <p class="label reveal">Specify Industrial-Grade Power</p>
+      <h2 id="cta-heading" class="reveal" style="transition-delay:.06s">Engineer Your Heavy-Duty Solution</h2>
+      <p class="reveal" style="transition-delay:.12s">Specify the M30 water hydraulic motor for extreme-duty applications where oil contamination is an operational, environmental, or regulatory liability.</p>
+      <div class="cta-btns reveal" style="transition-delay:.2s">
+        <a href="/contact/" class="btn btn-motor">Request Engineering Package</a>
+        <a href="/products/water-hydraulic-motors/" class="btn btn-outline">View All Motors</a>
+      </div>
+    </div>
+  </div>
+</section><script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40),{passive:true});
+(function(){const c=document.getElementById('global-bubbles');for(let i=0;i<28;i++){const b=document.createElement('div');b.className='bubble';const s=Math.random()*9+3,d=(Math.random()-.5)*80;b.style.cssText='width:'+s+'px;height:'+s+'px;left:'+(Math.random()*100)+'%;bottom:'+(Math.random()*10)+'%;--drift:'+d+'px;animation-duration:'+(Math.random()*18+10)+'s;animation-delay:'+(Math.random()*14)+'s;';c.appendChild(b);}})();
+function seedBubbles(id,n){const c=document.getElementById(id);if(!c)return;for(let i=0;i<n;i++){const b=document.createElement('div');b.className='bubble';const s=Math.random()*7+2,d=(Math.random()-.5)*60;b.style.cssText='width:'+s+'px;height:'+s+'px;left:'+(Math.random()*100)+'%;bottom:'+(Math.random()*25)+'%;--drift:'+d+'px;animation-duration:'+(Math.random()*14+8)+'s;animation-delay:'+(Math.random()*10)+'s;';c.appendChild(b);}}
+['hero-bubbles','cta-bubbles'].forEach(id=>seedBubbles(id,10));
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}}),{threshold:0.08,rootMargin:'0px 0px -32px 0px'});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>obs.observe(el));
+Chart.defaults.color='#FFFFFF';Chart.defaults.font.family="'Nunito Sans',sans-serif";Chart.defaults.font.size=11;
+const gc='rgba(168,184,204,0.09)';
+const pl=[20,40,60,80,100,120,140,160];
+function ax(yl,mn,mx,st){return{x:{grid:{color:gc,drawBorder:false},ticks:{color:'#FFFFFF'},title:{display:true,text:'Pressure (bar)',color:'#FFFFFF',font:{weight:'700',size:11}}},y:{min:mn,max:mx,grid:{color:gc,drawBorder:false},ticks:{color:'#FFFFFF',stepSize:st},title:{display:true,text:yl,color:'#FFFFFF',font:{weight:'700',size:11}}}};}
+
+new Chart(document.getElementById('chartEff'),{type:'line',data:{labels:pl,datasets:[
+{label:'35cc 1000rpm',data:[72,73.5,80.5,84.2,85.5,85.5,85.2,83.5],borderColor:'#c0392b',backgroundColor:'transparent',tension:0.3,pointRadius:3.5,borderWidth:2.5},
+{label:'35cc 1500rpm',data:[72,80,82,82.8,82.2,81.5,80.2,78.8],borderColor:'#e74c3c',backgroundColor:'transparent',tension:0.3,pointRadius:3.5,borderWidth:2.5,borderDash:[4,3]}
+]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:ax('Efficiency (%)',68,90,4)}});
+
+new Chart(document.getElementById('chartFlow'),{type:'line',data:{labels:pl,datasets:[
+{label:'35cc 1000rpm',data:[35.2,35.8,36.5,37.2,38.0,38.8,39.6,40.4],borderColor:'#c0392b',backgroundColor:'transparent',tension:0.15,pointRadius:2.5,borderWidth:2},
+{label:'35cc 1500rpm',data:[53.0,54.0,55.0,56.2,57.5,58.8,60.2,61.5],borderColor:'#7d3c98',backgroundColor:'transparent',tension:0.15,pointRadius:2.5,borderWidth:2},
+{label:'35cc 2000rpm',data:[71.0,72.5,74.0,75.5,77.2,79.0,80.8,82.6],borderColor:'#1a7a4a',backgroundColor:'transparent',tension:0.15,pointRadius:2.5,borderWidth:2},
+{label:'35cc 2500rpm',data:[80.0,81.5,83.0,84.5,86.2,88.0,89.8,91.6],borderColor:'#d68910',backgroundColor:'transparent',tension:0.15,pointRadius:2.5,borderWidth:2},
+{label:'35cc 3000rpm',data:[105.5,107.2,108.8,110.5,112.2,114.0,115.8,117.6],borderColor:'#196F3D',backgroundColor:'transparent',tension:0.15,pointRadius:2.5,borderWidth:2},
+{label:'30cc 1000rpm',data:[30.5,31.0,31.6,32.2,32.9,33.6,34.4,35.2],borderColor:'#2E86AB',backgroundColor:'transparent',tension:0.15,pointRadius:2.5,borderWidth:2},
+{label:'30cc 1500rpm',data:[46.0,47.0,48.0,49.0,50.2,51.4,52.6,53.8],borderColor:'#A23B72',backgroundColor:'transparent',tension:0.15,pointRadius:2.5,borderWidth:2},
+{label:'30cc 2000rpm',data:[62.0,63.2,64.5,65.8,67.2,68.6,70.2,71.8],borderColor:'#F18F01',backgroundColor:'transparent',tension:0.15,pointRadius:2.5,borderWidth:2},
+{label:'30cc 2500rpm',data:[66.0,67.5,69.0,70.5,72.2,73.9,75.6,77.4],borderColor:'#C73E1D',backgroundColor:'transparent',tension:0.15,pointRadius:2.5,borderWidth:2},
+{label:'30cc 3000rpm',data:[92.0,93.5,95.0,96.5,98.2,99.9,101.6,103.4],borderColor:'#6A994E',backgroundColor:'transparent',tension:0.15,pointRadius:2.5,borderWidth:2}
+]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:ax('Flow (L/min)',20,120,15)}});
+
+new Chart(document.getElementById('chartPower'),{type:'line',data:{labels:pl,datasets:[
+{label:'35cc 1000rpm',data:[1.5,3.0,4.8,6.8,9.0,11.2,13.2,13.0],borderColor:'#c0392b',backgroundColor:'transparent',tension:0.3,pointRadius:2.5,borderWidth:2},
+{label:'35cc 1500rpm',data:[2.2,4.5,7.2,10.2,13.5,16.8,19.8,21.5],borderColor:'#7d3c98',backgroundColor:'transparent',tension:0.3,pointRadius:2.5,borderWidth:2},
+{label:'35cc 2000rpm',data:[3.0,6.0,9.5,13.5,17.8,22.0,21.8,17.5],borderColor:'#1a7a4a',backgroundColor:'transparent',tension:0.3,pointRadius:2.5,borderWidth:2},
+{label:'35cc 2500rpm',data:[3.8,7.5,11.8,16.5,19.5,22.5,25.0,25.5],borderColor:'#d68910',backgroundColor:'transparent',tension:0.3,pointRadius:2.5,borderWidth:2},
+{label:'35cc 3000rpm',data:[4.5,9.0,14.0,19.0,18.8,15.5,17.0,17.2],borderColor:'#196F3D',backgroundColor:'transparent',tension:0.3,pointRadius:2.5,borderWidth:2},
+{label:'30cc 1000rpm',data:[1.3,2.6,4.2,5.8,7.6,9.5,11.2,11.0],borderColor:'#2E86AB',backgroundColor:'transparent',tension:0.3,pointRadius:2.5,borderWidth:2},
+{label:'30cc 1500rpm',data:[1.9,3.8,6.2,8.8,11.5,14.2,16.8,18.2],borderColor:'#A23B72',backgroundColor:'transparent',tension:0.3,pointRadius:2.5,borderWidth:2},
+{label:'30cc 2000rpm',data:[2.5,5.0,8.2,11.5,15.0,18.5,18.5,14.8],borderColor:'#F18F01',backgroundColor:'transparent',tension:0.3,pointRadius:2.5,borderWidth:2},
+{label:'30cc 2500rpm',data:[3.2,6.3,10.0,14.0,16.5,19.0,21.2,21.5],borderColor:'#C73E1D',backgroundColor:'transparent',tension:0.3,pointRadius:2.5,borderWidth:2},
+{label:'30cc 3000rpm',data:[3.8,7.6,11.8,16.0,15.8,13.0,14.5,14.8],borderColor:'#6A994E',backgroundColor:'transparent',tension:0.3,pointRadius:2.5,borderWidth:2}
+]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:ax('Output Power (kW)',0,28,5)}});
+
+new Chart(document.getElementById('chartTorque'),{type:'line',data:{labels:pl,datasets:[
+{label:'35cc 1500rpm',data:[7.0,17.5,29.0,40.0,51.5,63.0,73.5,84.0],borderColor:'#c0392b',backgroundColor:'transparent',tension:0.3,pointRadius:3.5,borderWidth:2.5},
+{label:'30cc 1500rpm',data:[6.0,15.0,25.0,34.5,44.0,54.0,63.0,71.0],borderColor:'#2E86AB',backgroundColor:'transparent',tension:0.3,pointRadius:3.5,borderWidth:2.5}
+]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:ax('Torque (Nm)',0,90,15)}});
+</script><!-- WQ_REFERENCE_RAIL_START -->
+<aside class="wq-reference-rail" aria-label="Engineering references">
+  <a href="/calculations/"><small>Reference</small><strong>Engineering Calculators</strong></a>
+  <a href="/glossary/"><small>Reference</small><strong>Technical Glossary</strong></a>
+</aside>
+<!-- WQ_REFERENCE_RAIL_END -->
+<!-- WQ_CONTEXT_APPS_START -->
+<section class="wq-context-apps" aria-label="Related application pages">
+  <div class="wq-context-wrap">
+    <div>
+      <h2>Related application pages</h2>
+      <p>Application pages connect this section to specific water hydraulic projects and operating problems.</p>
+    </div>
+    <div class="wq-app-links"><a href="/applications/gate-actuation/">Gate Actuation</a><a href="/applications/flow-control/">Flow Control</a><a href="/applications/damper-control/">Damper Control</a></div>
+  </div>
+</section>
+<!-- WQ_CONTEXT_APPS_END -->
+<!-- WQS_ENRICHMENT_START -->
+<style>
+.wqs-enrichment{background:#f5fbf9;border-top:1px solid #d9e8e3;color:#15302c;font-family:Nunito Sans,Arial,sans-serif;padding:56px 6vw}.wqs-enrichment__inner{margin:0 auto;max-width:1120px}.wqs-enrichment__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-enrichment h2{font-size:clamp(28px,4vw,48px);line-height:1.05;margin:8px 0 16px}.wqs-enrichment p{color:#4b625d;font-size:18px;line-height:1.65;max-width:900px}.wqs-enrichment__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px}.wqs-enrichment__panel{background:#fff;border:1px solid #d9e8e3;border-radius:8px;padding:22px}.wqs-enrichment__panel h3{font-size:18px;margin:0 0 12px}.wqs-enrichment ul{margin:0;padding-left:20px}.wqs-enrichment li{line-height:1.55;margin:7px 0}.wqs-enrichment__links{display:grid;gap:10px}.wqs-enrichment__links a{background:#fff;border:1px solid #d9e8e3;border-radius:8px;color:#15302c;display:grid;gap:4px;padding:14px;text-decoration:none}.wqs-enrichment__links span{color:#5f746f;font-size:14px;line-height:1.45}@media(max-width:760px){.wqs-enrichment{padding:40px 18px}.wqs-enrichment__grid{grid-template-columns:1fr}}
+</style>
+<section class="wqs-enrichment" aria-label="Complete page details">
+  <div class="wqs-enrichment__inner">
+    <div class="wqs-enrichment__eyebrow">Complete archive details</div>
+    <h2>M30 Water Hydraulic Motor | 30cc &amp; 35cc | 160 Bar | 84 Nm Torque</h2>
+    <p>The WaterQuest M30 water hydraulic motor delivers up to 84 Nm torque at 160 bar. Available in 30cc and 35cc displacement, 316 stainless steel, oil-free operation for heavy-duty industrial, mining, and offshore applications.</p>
+    <div class="wqs-enrichment__grid">
+      <div class="wqs-enrichment__panel"><h3>Recorded details</h3><ul><li>Source section: Motor model specification</li><li>Page type: motor-model</li><li>Canonical: /products/water-hydraulic-motors/m30</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Primary page focus</h3><ul><li>M30 Heavy-Duty Water Hydraulic Motor</li><li>M30 built for water service.</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Full section outline</h3><ul><li>Heavy-Duty Performance Curves</li><li>Built for Extreme Industrial Service</li><li>Mounting and Connections</li><li>Proven in Heavy-Duty Service</li><li>Engineer Your Heavy-Duty Solution</li><li>Related application pages</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Detailed topics</h3><ul><li>Output Power (kW)</li><li>Overall Efficiency (%)</li><li>Output Torque (Nm)</li><li>Input Flow (L/min)</li></ul></div>
+    </div>
+    <div class="wqs-enrichment__panel" style="margin-top:18px"><h3>Related pages with more detail</h3><div class="wqs-enrichment__links"><a href="/products/water-hydraulic-motors/m15/"><strong>M15 Water Hydraulic Motor</strong><span>The WaterQuest M15 water hydraulic motor delivers up to 45 Nm torque at 160 bar. Available in 15cc and 19cc displacement, 316 stainless steel, oil-free operation for industrial, marine, and municipal applications.</span></a><a href="/products/water-hydraulic-motors/m180/"><strong>M180 Axial Piston Water Hydraulic Motor</strong><span>The WaterQuest M180 axial piston water hydraulic motor is engineered for tap water operation with 135.0 cc/rev and 225 cc/rev displacement options at 160 bar.</span></a><a href="/products/water-hydraulic-motors/m3/"><strong>M3 Water Hydraulic Motor</strong><span>The WaterQuest M3 water hydraulic motor delivers 7.1 Nm torque at 160 bar. 3cc displacement, 316 stainless steel, oil-free operation for food processing, marine, and industrial applications.</span></a><a href="/products/water-hydraulic-motors/m6/"><strong>M6 Water Hydraulic Motor</strong><span>The WaterQuest M6 water hydraulic motor delivers 14.2 Nm torque at 160 bar. 6cc displacement, 316 stainless steel, oil-free operation for food processing, marine, and industrial applications.</span></a><a href="/products/water-hydraulic-motors/m60/"><strong>M60 Axial Piston Water Hydraulic Motor</strong><span>The WaterQuest M60 axial piston water hydraulic motor is designed for operation on tap water with 63.0 cc/rev and 70.3 cc/rev displacement options at 160 bar.</span></a><a href="/products/water-hydraulic-motors/"><strong>Water Hydraulic Motors</strong><span>Water hydraulic motors in 316L stainless steel with carbon-reinforced PEEK wear surfaces. ~90% mechanical efficiency, tap or seawater operation, ATEX approved, ISO 9001 certified. Fixed and variable displacement. No oil contamination risk.</span></a><a href="/knowledge-hub/160-bar-performance-debunking-the-limitations-of-water-hydraulics"><strong>160 Bar Performance: Debunking the Limitations of Water Hydraulics</strong><span>Modern water hydraulic pumps, cylinders, and motors operate reliably at 160 bar. A direct engineering challenge to the assumption that pressure capability depends on the fluid rather than the hardware.</span></a><a href="/knowledge-hub/component-spotlight-armak-air-motors-and-water-hydraulic-integration"><strong>Component Spotlight: Armak Air Motors and Water Hydraulic Integration</strong><span>How Armak air motors integrated with WaterQuest water hydraulic pumps create a fully oil-free actuation chain for marine, mining, and hazardous environments where electrical ignition sources and combustible fluids must be eliminated.</span></a><a href="/knowledge-hub/designing-for-pressure-closed-loop-water-hydraulic-circuitry"><strong>Designing for Pressure: Closed-Loop Water Hydraulic Circuitry</strong><span>Why closed-loop water hydraulic circuits outperform oil equivalents in control precision, temperature stability, and long-term valve performance. Pump and motor architecture, spool behaviour, actuator dynamics, and system-level design considerations for closed-loop water circuits.</span></a><a href="/products/water-hydraulic-cylinders/cylinder-100x60/"><strong>100 mm Bore × 60 mm Rod</strong><span>Complete force output data for 100mm bore × 60mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 78.54 cm², ring area 50.27 cm², 0.98 efficiency.</span></a></div></div>
+  </div>
+</section>
+<!-- WQS_ENRICHMENT_END -->
+<!-- WQ_GLOBAL_FOOTER_START -->
+<footer class="wq-site-footer" role="contentinfo">
+  <div class="wq-footer-container">
+    <div class="wq-footer-grid">
+      <div class="wq-footer-brand">
+        <span class="wq-logo-main">WaterQuest Solutions</span>
+        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Products</h5>
+        <ul><li><a href="/products/" class="active">Products Overview</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/water-hydraulic-motors/" class="active">Water Hydraulic Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Water Hydraulic Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Water Hydraulic Valves</a></li><li><a href="/products/water-hydraulics-hpu/">Water Hydraulics HPUs</a></li><li><a href="/products/axial-piston-fire-pumps/">Fire Pumps</a></li><li><a href="/products/power-center-reverse-osmosis/">Desalination Power Center</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Core Pages</h5>
+        <ul><li><a href="/products/" class="active">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
+          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
+          <li>558 East Kent Ave S</li>
+          <li>Vancouver, BC V5X 4V6</li>
+          <li>Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
+  </div>
+</footer>
+<!-- WQ_GLOBAL_FOOTER_END -->
+<script id="wq-global-shell-js">
+    (function(){
+      var nav=document.getElementById("wq-nav");
+      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
+      var menuButton=document.querySelector(".wq-menu-toggle");
+      var mobileMenu=document.getElementById("wq-mobile-menu");
+      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
+      var bubbles=document.getElementById("wq-global-bubbles");
+      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
+      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
+      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
+      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
+      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
+      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
+      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
+      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
+      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
+      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
+      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
+      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
+    })();
+  </script>
+
+</body>
+</html>

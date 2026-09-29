@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P1 Micro Water Hydraulic Pump | WaterQuest Solutions</title>
+<meta name="description" content="The WaterQuest P1 is a compact, oil-free water hydraulic pump delivering up to 2.1 L/min at 160 bar. Ideal for precision hydraulic circuits, lab systems, and HPU integration.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0A1628;
+    --navy-mid: #0D1F3C;
+    --navy-light: #132544;
+    --aqua: #00C8D4;
+    --aqua-dark: #009aa4;
+    --aqua-glow: rgba(0,200,212,0.15);
+    --aqua-glow-strong: rgba(0,200,212,0.3);
+    --white: #ffffff;
+    --off-white: #e8f4f8;
+    --text-muted: #8daabf;
+    --border: rgba(0,200,212,0.2);
+    --red-line: #c0392b;
+    --purple-line: #7d3c98;
+    --chart-grid: rgba(0,200,212,0.12);
+    --font: 'Nunito Sans', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--navy);
+    color: var(--white);
+    font-family: var(--font);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* BUBBLES */
+  .bubble-layer {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .bubble {
+    position: absolute;
+    bottom: -80px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(0,200,212,0.18), rgba(0,200,212,0.04));
+    border: 1px solid rgba(0,200,212,0.15);
+    animation: floatUp linear infinite;
+  }
+  @keyframes floatUp {
+    0% { transform: translateY(0) translateX(0); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 0.4; }
+    100% { transform: translateY(-110vh) translateX(30px); opacity: 0; }
+  }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10,22,40,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+  .nav-logo-mark {
+    width: 36px;
+    height: 36px;
+  }
+  .nav-logo-text {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: 0.5px;
+  }
+  .nav-logo-text span { color: var(--aqua); }
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--aqua); }
+  .nav-cta {
+    background: var(--aqua);
+    color: var(--navy) !important;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: 800 !important;
+  }
+  .nav-cta:hover { background: #00e0ed !important; color: var(--navy) !important; }
+
+  /* BREADCRUMB */
+  .breadcrumb {
+    position: relative;
+    z-index: 1;
+    padding: 16px 60px;
+    font-size: 12px;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    background: rgba(13,31,60,0.5);
+  }
+  .breadcrumb a { color: var(--aqua); text-decoration: none; }
+  .breadcrumb span { margin: 0 8px; }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    z-index: 1;
+    padding: 80px 60px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--aqua-glow);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--aqua);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .hero-badge::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--aqua);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+  .hero h1 {
+    font-size: clamp(42px, 5vw, 68px);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+  }
+  .hero h1 .model {
+    color: var(--aqua);
+    display: block;
+  }
+  .hero h1 .subtitle-line {
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    display: block;
+    margin-top: 8px;
+  }
+  .hero-description {
+    font-size: 17px;
+    color: var(--off-white);
+    line-height: 1.8;
+    margin: 28px 0 36px;
+    max-width: 520px;
+  }
+  .hero-slogan {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--aqua);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-left: 3px solid var(--aqua);
+    padding-left: 14px;
+    margin-bottom: 36px;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    background: var(--aqua);
+    color: var(--navy);
+    padding: 14px 32px;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-primary:hover { background: #00e0ed; transform: translateY(-1px); }
+  .btn-secondary {
+    border: 1px solid var(--border);
+    color: var(--aqua);
+    padding: 14px 32px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-secondary:hover { background: var(--aqua-glow); border-color: var(--aqua); }
+
+  /* HERO VISUAL */
+  .hero-visual {
+    position: relative;
+  }
+  .pump-diagram {
+    background: linear-gradient(135deg, var(--navy-mid) 0%, var(--navy-light) 100%);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 60px rgba(0,200,212,0.08);
+  }
+  .pump-diagram::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0,200,212,0.06) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .pump-svg-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 280px;
+  }
+
+  /* KEY SPECS STRIP */
+  .specs-strip {
+    position: relative;
+    z-index: 1;
+    background: var(--navy-mid);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .specs-strip-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .spec-cell {
+    padding: 32px 24px;
+    border-right: 1px solid var(--border);
+    transition: background 0.2s;
+  }
+  .spec-cell:last-child { border-right: none; }
+  .spec-cell:hover { background: var(--aqua-glow); }
+  .spec-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .spec-value {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--aqua);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .spec-unit {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+
+  /* SECTION WRAPPER */
+  .section {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 60px;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--aqua);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .section-divider {
+    width: 48px;
+    height: 3px;
+    background: var(--aqua);
+    margin-bottom: 32px;
+    border-radius: 2px;
+  }
+  .section-body {
+    font-size: 16px;
+    color: var(--off-white);
+    line-height: 1.8;
+    max-width: 720px;
+  }
+
+  /* DESIGN SECTION */
+  .design-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 48px;
+    align-items: start;
+  }
+  .feature-card {
+    background: var(--navy-mid);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .feature-card:hover {
+    border-color: var(--aqua);
+    box-shadow: 0 0 30px rgba(0,200,212,0.08);
+  }
+  .feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--aqua);
+  }
+  .feature-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--aqua-glow);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--aqua);
+  }
+  .feature-card h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+  .feature-card p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+  .features-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* CHARTS SECTION */
+  .charts-section {
+    position: relative;
+    z-index: 1;
+    background: var(--navy-mid);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .charts-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 60px;
+  }
+  .charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .chart-card {
+    background: var(--navy);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 32px 28px 24px;
+    position: relative;
+  }
+  .chart-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--aqua);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .chart-subtitle {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+  }
+  .chart-wrap {
+    width: 100%;
+    height: 280px;
+    position: relative;
+  }
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .chart-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+  .legend-dot {
+    width: 10px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  .legend-dot.square::after {
+    content: '';
+    display: inline-block;
+  }
+
+  /* USE CASES */
+  .use-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .use-case-card {
+    background: var(--navy-mid);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 28px;
+    transition: all 0.2s;
+    cursor: default;
+  }
+  .use-case-card:hover {
+    border-color: var(--aqua);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0,200,212,0.1);
+  }
+  .use-case-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .use-case-card h3 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  .use-case-card p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* ORDER OPTIONS */
+  .order-section {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(180deg, var(--navy) 0%, var(--navy-mid) 100%);
+    border-top: 1px solid var(--border);
+  }
+  .order-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 60px;
+  }
+  .config-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  .config-table thead tr {
+    background: rgba(0,200,212,0.1);
+    border-bottom: 2px solid var(--aqua);
+  }
+  .config-table th {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--aqua);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .config-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(0,200,212,0.08);
+    color: var(--off-white);
+    vertical-align: top;
+  }
+  .config-table tbody tr:hover {
+    background: var(--aqua-glow);
+  }
+  .tag {
+    display: inline-block;
+    background: var(--aqua-glow);
+    border: 1px solid var(--border);
+    color: var(--aqua);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .tag.rec { background: rgba(0,200,212,0.2); border-color: var(--aqua); }
+
+  /* HPU SECTION */
+  .hpu-section {
+    position: relative;
+    z-index: 1;
+    background: var(--navy-mid);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .hpu-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .hpu-callout {
+    background: linear-gradient(135deg, rgba(0,200,212,0.08), rgba(0,200,212,0.02));
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px;
+  }
+  .hpu-callout h3 {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 16px;
+    color: var(--aqua);
+  }
+  .hpu-callout p {
+    font-size: 15px;
+    color: var(--off-white);
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+  .hpu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .hpu-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--off-white);
+  }
+  .hpu-list li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--aqua);
+    border-radius: 50%;
+    margin-top: 8px;
+    flex-shrink: 0;
+  }
+
+  /* FULL SPECS TABLE */
+  .spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .spec-table tr {
+    border-bottom: 1px solid rgba(0,200,212,0.08);
+  }
+  .spec-table tr:last-child { border-bottom: none; }
+  .spec-table td {
+    padding: 14px 20px;
+  }
+  .spec-table td:first-child {
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    width: 45%;
+  }
+  .spec-table td:last-child {
+    color: var(--white);
+    font-weight: 700;
+  }
+  .spec-table tr:nth-child(even) {
+    background: rgba(0,200,212,0.03);
+  }
+
+  /* CTA BANNER */
+  .cta-banner {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(135deg, var(--aqua-dark) 0%, var(--aqua) 100%);
+    padding: 60px;
+    text-align: center;
+  }
+  .cta-banner h2 {
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 900;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .cta-banner p {
+    font-size: 16px;
+    color: rgba(10,22,40,0.8);
+    margin-bottom: 32px;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .btn-navy {
+    background: var(--navy);
+    color: var(--aqua);
+    padding: 14px 32px;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .btn-navy:hover { background: var(--navy-mid); }
+  .btn-outline-navy {
+    border: 2px solid var(--navy);
+    color: var(--navy);
+    padding: 12px 32px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .btn-outline-navy:hover { background: rgba(10,22,40,0.1); }
+
+  /* FOOTER */
+  footer {
+    position: relative;
+    z-index: 1;
+    background: #060e1a;
+    border-top: 1px solid var(--border);
+    padding: 48px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-slogan {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--aqua);
+    letter-spacing: 1px;
+  }
+  .footer-copy {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .footer-links {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-links a {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-decoration: none;
+  }
+  .footer-links a:hover { color: var(--aqua); }
+
+  /* SCROLL REVEAL */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  @media (max-width: 900px) {
+    .hero, .design-grid, .charts-grid, .hpu-inner { grid-template-columns: 1fr; }
+    .use-cases-grid { grid-template-columns: 1fr 1fr; }
+    .specs-strip-inner { grid-template-columns: repeat(3, 1fr); }
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    .hero, .section, .charts-inner, .order-inner, .hpu-inner, .cta-banner, footer { padding-left: 24px; padding-right: 24px; }
+    .breadcrumb { padding-left: 24px; padding-right: 24px; }
+  }
+</style><link rel="canonical" href="/products/axial-piston-pumps/p1" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:title" content="P1 Micro Water Hydraulic Pump | WaterQuest Solutions" />
+  <meta property="og:description" content="The WaterQuest P1 is a compact, oil-free water hydraulic pump delivering up to 2.1 L/min at 160 bar. Ideal for precision hydraulic circuits, lab systems, and HPU integration." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/products/axial-piston-pumps/p1" />
+  <meta property="og:image" content="/assets/waterquest-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="P1 Micro Water Hydraulic Pump | WaterQuest Solutions" />
+  <meta name="twitter:description" content="The WaterQuest P1 is a compact, oil-free water hydraulic pump delivering up to 2.1 L/min at 160 bar. Ideal for precision hydraulic circuits, lab systems, and HPU integration." />
+  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
+  <link rel="alternate" hreflang="en-CA" href="/products/axial-piston-pumps/p1" />
+  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
+  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"Product","@id":"/products/axial-piston-pumps/p1#webpage","url":"/products/axial-piston-pumps/p1","name":"P1 Micro Water Hydraulic Pump | WaterQuest Solutions","description":"The WaterQuest P1 is a compact, oil-free water hydraulic pump delivering up to 2.1 L/min at 160 bar. Ideal for precision hydraulic circuits, lab systems, and HPU integration.","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA","brand":{"@type":"Brand","name":"WaterQuest Solutions"},"category":"Water hydraulic equipment"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"},{"@type":"ListItem","position":2,"name":"Products","item":"/products"},{"@type":"ListItem","position":3,"name":"Axial Piston Pumps","item":"/products/axial-piston-pumps"},{"@type":"ListItem","position":4,"name":"P1","item":"/products/axial-piston-pumps/p1"}]}]}</script>
+  <style id="wq-global-shell-css">
+    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
+    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
+    body a{color:inherit}
+    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
+    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
+    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
+    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
+    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
+    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
+    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
+    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
+    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
+    main .btn.primary{color:var(--wq-navy)!important}
+    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
+    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
+    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
+    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
+    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
+    .wq-form-status.is-error{color:#ffb1b1!important}
+    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
+    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
+    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
+    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
+    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
+    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
+    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
+    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
+    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
+    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
+    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
+    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
+    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
+    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
+    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
+    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
+    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
+    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
+    .wq-hero-visual-text{padding:20px}
+    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
+    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
+    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
+    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
+    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
+    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
+    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
+    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
+    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
+    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
+    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
+    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
+    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
+    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
+    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
+    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
+    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
+    #wq-mobile-menu.open{display:block}
+    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
+    #wq-mobile-menu a:last-child{border-bottom:0}
+    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
+    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
+    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
+    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
+    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
+    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
+    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
+    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
+    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
+    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
+    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
+    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
+    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
+    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
+    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
+    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
+  </style>
+</head>
+<body class="wq-section-products">
+<!-- WQ_GLOBAL_HEADER_START -->
+<div id="wq-global-bubbles" aria-hidden="true"></div>
+<nav id="wq-nav" role="navigation" aria-label="Main navigation">
+  <div class="wq-nav-inner">
+    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
+      <span class="wq-logo-main">WaterQuest Solutions</span>
+      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+    </a>
+    <ul class="wq-nav-links" role="list">
+      <li><a href="/products/" class="active">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li>
+      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
+    </ul>
+    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
+  </div>
+</nav>
+<div id="wq-mobile-menu">
+  <a href="/products/" class="active">Products</a><a href="/industries/">Industries</a><a href="/technology/">Technology</a><a href="/knowledge-hub/">Knowledge Hub</a><a href="/about/">About</a>
+  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
+</div>
+<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
+<section class="wq-conversion-hero" aria-label="Page introduction">
+  <div class="wq-conversion-wrap">
+    <div>
+      <p class="wq-hero-eyebrow">Water hydraulic products</p>
+      <h1><span>P1</span> built for water service.</h1>
+      <p class="wq-hero-copy">Review oil-free hydraulic components engineered around 316 stainless wetted materials, water-compatible wear interfaces, and real industrial pressure requirements.</p>
+      <div class="wq-hero-actions">
+        <a class="wq-hero-cta" href="/contact/">Ask If This Fits Your System</a>
+        <a class="wq-hero-secondary" href="/calculations/">Run Engineering Calculations</a>
+      </div>
+    </div>
+    <a class="wq-hero-visual" href="/contact/">
+      <div class="wq-hero-picture" aria-hidden="true"></div>
+      <div class="wq-hero-visual-text">
+        <small>Specification path</small>
+        <strong>Move from product interest to engineering fit.</strong>
+        <span>Use the product data, calculators, and applications to narrow the right water hydraulic package.</span>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- WQ_CONVERSION_HERO_END --><!-- BUBBLES -->
+<div class="bubble-layer" id="bubbles"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">
+    <svg class="nav-logo-mark" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="18" cy="18" r="17" stroke="#00C8D4" stroke-width="1.5" fill="none" opacity="0.3"/>
+      <path d="M18 4C18 4 10 12 10 19a8 8 0 0016 0c0-7-8-15-8-15z" fill="#00C8D4" opacity="0.9"/>
+      <circle cx="18" cy="19" r="4" fill="#0A1628"/>
+      <path d="M14 22l2-8 4 4 2-4" stroke="#0A1628" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    </svg>
+    <span class="nav-logo-text">Water<span>Quest</span> Solutions</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/products/" class="active">Products</a></li>
+    <li><a href="/industries/">Industries</a></li>
+      <li><a href="/applications/">Applications</a></li>
+      <li><a href="/glossary/">Glossary</a></li>
+    <li><a href="/knowledge-hub/">Knowledge Hub</a></li>
+    <li><a href="/wqs-stainless/">Store</a></li>
+    <li><a href="/contact/" class="nav-cta">Get a Quote</a></li>
+  </ul>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="/">Home</a>
+  <span>/</span>
+  <a href="/products/">Products</a>
+  <span>/</span>
+  <a href="/products/axial-piston-pumps/">Water Hydraulic Pumps</a>
+  <span>/</span>
+  P1 Micro Pump
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Water Hydraulic Pump</div>
+    <h1>
+      <span class="model">P1</span>
+      Micro Water Hydraulic Pump
+      <span class="subtitle-line">0.8cc / 1.2cc Displacement</span>
+    </h1>
+    <p class="hero-description">
+      The P1 is WaterQuest's entry-level precision pump, engineered for compact hydraulic circuits where oil contamination is simply not an option. Built entirely from 316L stainless steel and CF30-PEEK internals, it runs on tap water or seawater as the working fluid and delivers up to 2.1 L/min at pressures up to 160 bar.
+    </p>
+    <div class="hero-slogan">Stop Leaking Oil Into the Future.</div>
+    <div class="hero-actions">
+      <a href="/contact/" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+        Request a Quote
+      </a>
+      <a href="#specs" class="btn-secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        Full Specifications
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO PUMP ILLUSTRATION -->
+  <div class="hero-visual reveal reveal-delay-2">
+    <div class="pump-diagram">
+      <div class="pump-svg-wrap">
+        <svg viewBox="0 0 360 300" width="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background glow -->
+          <ellipse cx="180" cy="150" rx="120" ry="90" fill="rgba(0,200,212,0.04)"/>
+
+          <!-- Main pump body -->
+          <rect x="80" y="90" width="200" height="130" rx="10" fill="#0D1F3C" stroke="#00C8D4" stroke-width="1.5" stroke-opacity="0.5"/>
+          <!-- Body detail lines -->
+          <rect x="80" y="110" width="200" height="4" fill="rgba(0,200,212,0.08)"/>
+          <rect x="80" y="200" width="200" height="4" fill="rgba(0,200,212,0.08)"/>
+
+          <!-- Pump housing end caps -->
+          <rect x="62" y="100" width="22" height="112" rx="6" fill="#132544" stroke="#00C8D4" stroke-width="1" stroke-opacity="0.4"/>
+          <rect x="276" y="100" width="22" height="112" rx="6" fill="#132544" stroke="#00C8D4" stroke-width="1" stroke-opacity="0.4"/>
+
+          <!-- Gear/rotor representation -->
+          <circle cx="160" cy="156" r="38" fill="#0A1628" stroke="#00C8D4" stroke-width="1" stroke-opacity="0.3"/>
+          <circle cx="160" cy="156" r="26" fill="none" stroke="#00C8D4" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="4 3"/>
+          <circle cx="160" cy="156" r="12" fill="rgba(0,200,212,0.1)" stroke="#00C8D4" stroke-width="1.5"/>
+          <!-- Gear teeth suggestion -->
+          <circle cx="160" cy="118" r="3" fill="#00C8D4" opacity="0.6"/>
+          <circle cx="160" cy="194" r="3" fill="#00C8D4" opacity="0.6"/>
+          <circle cx="122" cy="156" r="3" fill="#00C8D4" opacity="0.6"/>
+          <circle cx="198" cy="156" r="3" fill="#00C8D4" opacity="0.6"/>
+          <circle cx="133" cy="129" r="2.5" fill="#00C8D4" opacity="0.4"/>
+          <circle cx="187" cy="129" r="2.5" fill="#00C8D4" opacity="0.4"/>
+          <circle cx="133" cy="183" r="2.5" fill="#00C8D4" opacity="0.4"/>
+          <circle cx="187" cy="183" r="2.5" fill="#00C8D4" opacity="0.4"/>
+
+          <!-- Second gear -->
+          <circle cx="210" cy="156" r="28" fill="#0A1628" stroke="#00C8D4" stroke-width="1" stroke-opacity="0.25"/>
+          <circle cx="210" cy="156" r="12" fill="rgba(0,200,212,0.06)" stroke="#00C8D4" stroke-width="1" stroke-opacity="0.4"/>
+
+          <!-- Port connections -->
+          <!-- Inlet -->
+          <rect x="108" y="62" width="24" height="32" rx="4" fill="#132544" stroke="#00C8D4" stroke-width="1.5" stroke-opacity="0.6"/>
+          <text x="120" y="52" text-anchor="middle" fill="#00C8D4" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700" opacity="0.8">IN</text>
+          <line x1="120" y1="62" x2="120" y2="90" stroke="#00C8D4" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="3 2"/>
+
+          <!-- Outlet -->
+          <rect x="228" y="62" width="24" height="32" rx="4" fill="#132544" stroke="#00C8D4" stroke-width="1.5" stroke-opacity="0.6"/>
+          <text x="240" y="52" text-anchor="middle" fill="#00C8D4" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700" opacity="0.8">OUT</text>
+          <line x1="240" y1="62" x2="240" y2="90" stroke="#00C8D4" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="3 2"/>
+
+          <!-- Drive shaft indicator -->
+          <rect x="278" y="146" width="50" height="22" rx="4" fill="rgba(0,200,212,0.08)" stroke="#00C8D4" stroke-width="1" stroke-opacity="0.5"/>
+          <text x="303" y="161" text-anchor="middle" fill="#00C8D4" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="600" opacity="0.8">SHAFT</text>
+
+          <!-- Spec callouts -->
+          <text x="180" y="258" text-anchor="middle" fill="#8daabf" font-family="Nunito Sans, sans-serif" font-size="10" font-weight="600">316L Stainless + CF30-PEEK Internals</text>
+          <text x="180" y="273" text-anchor="middle" fill="#8daabf" font-family="Nunito Sans, sans-serif" font-size="10">Water or Seawater Working Fluid</text>
+
+          <!-- Floating labels -->
+          <line x1="62" y1="88" x2="30" y2="70" stroke="#00C8D4" stroke-width="0.8" opacity="0.4"/>
+          <text x="26" y="66" text-anchor="end" fill="#00C8D4" font-family="Nunito Sans, sans-serif" font-size="9" font-weight="700">0.8 / 1.2 cc</text>
+
+          <!-- Aqua accent glow at center -->
+          <circle cx="160" cy="156" r="6" fill="#00C8D4" opacity="0.7"/>
+          <circle cx="160" cy="156" r="3" fill="#ffffff" opacity="0.9"/>
+        </svg>
+      </div>
+      <!-- Quick stats inside diagram -->
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:rgba(0,200,212,0.1);border-top:1px solid rgba(0,200,212,0.15);margin:-50px -50px -50px;padding:0;border-radius:0 0 12px 12px;overflow:hidden;">
+        <div style="background:var(--navy-mid);padding:16px;text-align:center;">
+          <div style="font-size:11px;color:var(--text-muted);font-weight:600;letter-spacing:1px;text-transform:uppercase;">Max Flow</div>
+          <div style="font-size:20px;font-weight:900;color:var(--aqua);">2.1 <span style="font-size:12px;font-weight:600;">L/min</span></div>
+        </div>
+        <div style="background:var(--navy-mid);padding:16px;text-align:center;border-left:1px solid rgba(0,200,212,0.1);border-right:1px solid rgba(0,200,212,0.1);">
+          <div style="font-size:11px;color:var(--text-muted);font-weight:600;letter-spacing:1px;text-transform:uppercase;">Max Pressure</div>
+          <div style="font-size:20px;font-weight:900;color:var(--aqua);">160 <span style="font-size:12px;font-weight:600;">bar</span></div>
+        </div>
+        <div style="background:var(--navy-mid);padding:16px;text-align:center;">
+          <div style="font-size:11px;color:var(--text-muted);font-weight:600;letter-spacing:1px;text-transform:uppercase;">Efficiency</div>
+          <div style="font-size:20px;font-weight:900;color:var(--aqua);">77 <span style="font-size:12px;font-weight:600;">% pk.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEY SPECS STRIP -->
+<div class="specs-strip reveal">
+  <div class="specs-strip-inner">
+    <div class="spec-cell">
+      <div class="spec-label">Displacement</div>
+      <div class="spec-value">0.8 / 1.2</div>
+      <div class="spec-unit">cc/rev</div>
+    </div>
+    <div class="spec-cell">
+      <div class="spec-label">Max Pressure</div>
+      <div class="spec-value">160</div>
+      <div class="spec-unit">bar</div>
+    </div>
+    <div class="spec-cell">
+      <div class="spec-label">Max Flow</div>
+      <div class="spec-value">2.1</div>
+      <div class="spec-unit">L/min</div>
+    </div>
+    <div class="spec-cell">
+      <div class="spec-label">Speed Range</div>
+      <div class="spec-value">500-1750</div>
+      <div class="spec-unit">rpm</div>
+    </div>
+    <div class="spec-cell">
+      <div class="spec-label">Working Fluid</div>
+      <div class="spec-value" style="font-size:18px;">Tap / Sea</div>
+      <div class="spec-unit">Water</div>
+    </div>
+  </div>
+</div>
+
+<!-- DESIGN SECTION -->
+<section class="section">
+  <div class="section-label reveal">Engineering Design</div>
+  <h2 class="section-title reveal reveal-delay-1">Built From First Principles.<br>Not Adapted From Oil.</h2>
+  <div class="section-divider reveal reveal-delay-2"></div>
+  <p class="section-body reveal reveal-delay-2">
+    The P1 is not an oil hydraulic pump with water bolted on. Every internal is purpose-built for water as the working fluid. CF30-PEEK (carbon fibre reinforced PEEK) components resist corrosion and wear in fresh or salt water environments without the lubrication oil-based systems depend on. The result is a pump that is genuinely oil-free from drive shaft to port face.
+  </p>
+
+  <div class="design-grid">
+    <div class="features-list">
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <h3>316L Stainless Steel Housing</h3>
+        <p>Full 316L stainless construction handles fresh water, sea water, brackish water, and light chemical solutions without corrosion or surface degradation. Meets food-grade and marine specifications out of the box.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>CF30-PEEK Internal Components</h3>
+        <p>Carbon fibre reinforced PEEK provides exceptional wear resistance and dimensional stability without oil lubrication. Self-lubricating behaviour in water eliminates the need for any external fluid additives or scheduled re-greasing intervals.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Zero Contamination Risk</h3>
+        <p>No oil in the system means no risk of hydraulic fluid entering the process, the environment, or the water table. Fully compliant with Fisheries Act requirements and CleanBC objectives for industrial hydraulic circuits near waterways.</p>
+      </div>
+    </div>
+    <div class="features-list">
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Compact Footprint</h3>
+        <p>Miniature gear pump geometry in a package small enough for embedded HPU installations and tight enclosures. The P1 fits where larger pump lines simply cannot, making it ideal for mobile, subsea, and lab-scale systems.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+        </div>
+        <h3>Two Displacement Options</h3>
+        <p>Choose 0.8 cc/rev for precision low-flow work or 1.2 cc/rev where higher throughput is required. Both share identical mounting geometry, allowing in-field displacement changes without repiping. Speed ranges from 500 to 1750 rpm.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Low Maintenance Lifecycle</h3>
+        <p>Water hydraulics eliminate scheduled oil changes, filter replacements, and oil disposal costs that add up over the life of a system. The P1 is designed for long-interval service in demanding industrial environments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERFORMANCE CHARTS -->
+<div class="charts-section">
+  <div class="charts-inner">
+    <div class="section-label reveal">Performance Data</div>
+    <h2 class="section-title reveal reveal-delay-1">P1 Pump Performance Curves</h2>
+    <div class="section-divider reveal reveal-delay-2"></div>
+    <p class="section-body reveal reveal-delay-2">
+      All curves measured at rated speed with clean tap water (15 degrees C) as the working fluid. Data shown for both 0.8 cc and 1.2 cc displacement variants across the full rated pressure range of 20 to 160 bar.
+    </p>
+
+    <div class="charts-grid">
+      <!-- Output Flow Chart -->
+      <div class="chart-card reveal reveal-delay-1">
+        <div class="chart-title">Output Flow</div>
+        <div class="chart-subtitle">Flow (L/min) vs. Pressure (bar)</div>
+        <div class="chart-wrap">
+          <canvas id="chartFlow"></canvas>
+        </div>
+        <div class="chart-legend">
+          <div class="legend-item"><div class="legend-dot" style="background:#c0392b;height:2px;width:16px;"></div> 1.2cc 1750rpm</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#e74c3c;height:2px;width:16px;"></div> 1.2cc 1500rpm</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#f1948a;height:2px;width:16px;"></div> 1.2cc 1000rpm</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#7d3c98;height:2px;width:16px;"></div> 0.8cc 1750rpm</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#9b59b6;height:2px;width:16px;"></div> 0.8cc 1500rpm</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#bb8fce;height:2px;width:16px;"></div> 0.8cc 1000rpm</div>
+        </div>
+      </div>
+
+      <!-- Input Torque Chart -->
+      <div class="chart-card reveal reveal-delay-2">
+        <div class="chart-title">Input Torque</div>
+        <div class="chart-subtitle">Torque (Nm) vs. Pressure (bar)</div>
+        <div class="chart-wrap">
+          <canvas id="chartTorque"></canvas>
+        </div>
+        <div class="chart-legend">
+          <div class="legend-item"><div class="legend-dot" style="background:#c0392b;height:2px;width:16px;"></div> 1.2cc 1500rpm</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#7d3c98;height:2px;width:16px;"></div> 0.8cc 1500rpm</div>
+        </div>
+      </div>
+
+      <!-- Input Power Chart -->
+      <div class="chart-card reveal reveal-delay-3">
+        <div class="chart-title">Input Power</div>
+        <div class="chart-subtitle">Power (kW) vs. Pressure (bar)</div>
+        <div class="chart-wrap">
+          <canvas id="chartPower"></canvas>
+        </div>
+        <div class="chart-legend">
+          <div class="legend-item"><div class="legend-dot" style="background:#c0392b;height:2px;width:16px;"></div> 1.2cc 1750rpm</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#e74c3c;height:2px;width:16px;"></div> 1.2cc 1500rpm</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#f1948a;height:2px;width:16px;"></div> 1.2cc 1000rpm</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#7d3c98;height:2px;width:16px;"></div> 0.8cc 1750rpm</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#9b59b6;height:2px;width:16px;"></div> 0.8cc 1500rpm</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#bb8fce;height:2px;width:16px;"></div> 0.8cc 1000rpm</div>
+        </div>
+      </div>
+
+      <!-- Overall Efficiency Chart -->
+      <div class="chart-card reveal reveal-delay-4">
+        <div class="chart-title">Overall Efficiency</div>
+        <div class="chart-subtitle">Efficiency (%) vs. Pressure (bar)</div>
+        <div class="chart-wrap">
+          <canvas id="chartEfficiency"></canvas>
+        </div>
+        <div class="chart-legend">
+          <div class="legend-item"><div class="legend-dot" style="background:#e74c3c;height:2px;width:16px;"></div> 1.2cc 1500rpm</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#c0392b;height:2px;width:16px;"></div> 1.2cc 1000rpm</div>
+        </div>
+        <p style="font-size:11px;color:var(--text-muted);margin-top:8px;">Note: 0.8cc efficiency data not available for all speeds in this range.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- USE CASES -->
+<section class="section">
+  <div class="section-label reveal">Applications</div>
+  <h2 class="section-title reveal reveal-delay-1">Where the P1 Excels</h2>
+  <div class="section-divider reveal reveal-delay-2"></div>
+  <p class="section-body reveal reveal-delay-2">
+    The P1 is sized for applications where compact form factor, zero oil contamination, and reliable low-flow delivery matter more than raw volume output. Anywhere traditional oil hydraulics creates a contamination or environmental liability, the P1 is the engineering answer.
+  </p>
+
+  <div class="use-cases-grid">
+    <div class="use-case-card reveal reveal-delay-1">
+      <div class="use-case-icon">🔬</div>
+      <h3>Laboratory and Research Systems</h3>
+      <p>Ideal for bench-scale hydraulic test rigs and R&D circuits where clean operation and repeatable performance are critical. Zero contamination from hydraulic fluid ensures test data accuracy.</p>
+    </div>
+    <div class="use-case-card reveal reveal-delay-2">
+      <div class="use-case-icon">🌊</div>
+      <h3>Marine and Subsea Applications</h3>
+      <p>316L stainless and PEEK construction tolerates full seawater exposure. Eliminates the catastrophic environmental and regulatory risk of oil leaks on vessels and offshore platforms.</p>
+    </div>
+    <div class="use-case-card reveal reveal-delay-3">
+      <div class="use-case-icon">💧</div>
+      <h3>Water Treatment Infrastructure</h3>
+      <p>Used in actuator circuits, valve pilots, and positioning systems at wastewater treatment plants where oil ingress into process streams is a permit and Fisheries Act violation risk.</p>
+    </div>
+    <div class="use-case-card reveal reveal-delay-1">
+      <div class="use-case-icon">🏭</div>
+      <h3>Food and Beverage Processing</h3>
+      <p>Food-safe 316L stainless construction and a water working fluid make the P1 compliant for use in food handling, brewing, and pharmaceutical manufacturing environments.</p>
+    </div>
+    <div class="use-case-card reveal reveal-delay-2">
+      <div class="use-case-icon">⚡</div>
+      <h3>Green Hydrogen and Electrolysis</h3>
+      <p>Supports water management and pressure control circuits in hydrogen electrolyser plants where any oil contamination would damage the membrane stack and void warranties.</p>
+    </div>
+    <div class="use-case-card reveal reveal-delay-3">
+      <div class="use-case-icon">🔧</div>
+      <h3>OEM HPU Integration</h3>
+      <p>The P1 pairs directly into WaterQuest HPU packages. Compact dimensions allow embedded installation inside skid-mounted power units for full plug-and-play deployment on any job site.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HPU INTEGRATION -->
+<div class="hpu-section">
+  <div class="hpu-inner">
+    <div>
+      <div class="section-label reveal">HPU Integration</div>
+      <h2 class="section-title reveal reveal-delay-1">The P1 Inside a WaterQuest HPU</h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+      <p class="section-body reveal reveal-delay-2">
+        The P1 is the heart of WaterQuest's compact HPU offerings. Paired with an electric motor, reservoir, filtration block, and manifold, it ships as a complete hydraulic power unit ready for connection. This is the starting point for customers who want a full turnkey water hydraulic system without engineering a custom circuit from scratch.
+      </p>
+      <p class="section-body reveal reveal-delay-3" style="margin-top:16px;">
+        For larger applications requiring more flow or redundancy, multiple P1 units can be run in parallel within a single HPU enclosure. This modularity also provides graceful degradation; if one pump requires service, the circuit stays operational.
+      </p>
+      <a href="/products/water-hydraulics-hpu/" class="btn-secondary" style="display:inline-flex;margin-top:28px;" class="reveal reveal-delay-4">
+        Explore WaterQuest HPU Packages
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:6px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="hpu-callout reveal reveal-delay-2">
+      <h3>P1 HPU Configuration Options</h3>
+      <p>The following configurations are available when ordering the P1 as part of a WaterQuest HPU package. All units use tap water or softened seawater as the working fluid with no additives required.</p>
+      <ul class="hpu-list">
+        <li>Single P1 with TEFC motor, 1 litre reservoir and bypass relief valve</li>
+        <li>Dual P1 parallel configuration for 4.2 L/min maximum throughput</li>
+        <li>Integrated pressure transducer and 4-20mA output for SCADA connection</li>
+        <li>Variable frequency drive (VFD) coupling for proportional flow control</li>
+        <li>316L stainless manifold block with up to 4 work ports</li>
+        <li>Optional inline filtration to 5 micron for high-pressure circuits</li>
+        <li>NEMA 4X or IP67 enclosure for outdoor and marine environments</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ORDER / CONFIGURATION -->
+<div class="order-section" id="order">
+  <div class="order-inner">
+    <div class="section-label reveal">How to Order</div>
+    <h2 class="section-title reveal reveal-delay-1">P1 Configuration and Ordering Options</h2>
+    <div class="section-divider reveal reveal-delay-2"></div>
+    <p class="section-body reveal reveal-delay-2">
+      The P1 is available as a bare pump or as part of a WaterQuest HPU package. Configure your displacement, port standard, shaft type, and fluid specification at the time of order. All units are built to your configuration and inspected before shipment from Vancouver, BC.
+    </p>
+
+    <table class="config-table reveal">
+      <thead>
+        <tr>
+          <th>Parameter</th>
+          <th>Options</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Displacement</td>
+          <td>
+            <span class="tag">0.8 cc/rev</span>
+            <span class="tag rec">1.2 cc/rev</span>
+          </td>
+          <td>1.2cc recommended for most HPU and actuator applications</td>
+        </tr>
+        <tr>
+          <td>Working Fluid</td>
+          <td>
+            <span class="tag rec">Tap Water</span>
+            <span class="tag">Seawater</span>
+            <span class="tag">Treated Process Water</span>
+          </td>
+          <td>Specify fluid chemistry for seal and port material selection</td>
+        </tr>
+        <tr>
+          <td>Port Standard</td>
+          <td>
+            <span class="tag rec">BSPP (G)</span>
+            <span class="tag">NPT</span>
+            <span class="tag">Metric</span>
+          </td>
+          <td>BSPP standard; specify NPT or metric for North American OEM integration</td>
+        </tr>
+        <tr>
+          <td>Shaft Configuration</td>
+          <td>
+            <span class="tag rec">Keyed Shaft</span>
+            <span class="tag">Splined</span>
+            <span class="tag">Flange Mount</span>
+          </td>
+          <td>Keyed shaft fits standard IEC motor couplings direct</td>
+        </tr>
+        <tr>
+          <td>Pressure Rating</td>
+          <td>
+            <span class="tag">Up to 160 bar</span>
+          </td>
+          <td>Single rated range; specify operating point for system sizing support</td>
+        </tr>
+        <tr>
+          <td>Supply as</td>
+          <td>
+            <span class="tag">Bare Pump</span>
+            <span class="tag rec">HPU Package</span>
+            <span class="tag">Integrated Assembly</span>
+          </td>
+          <td>HPU package includes motor, reservoir, filter, manifold and pressure gauge</td>
+        </tr>
+        <tr>
+          <td>Certifications</td>
+          <td>
+            <span class="tag">CE</span>
+            <span class="tag">RoHS</span>
+            <span class="tag">Material Test Reports</span>
+          </td>
+          <td>316L MTRs available on request for compliance documentation</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top:36px;padding:24px 28px;background:var(--aqua-glow);border:1px solid var(--border);border-radius:8px;" class="reveal">
+      <p style="font-size:14px;color:var(--off-white);line-height:1.7;">
+        <strong style="color:var(--aqua);">Need help specifying?</strong> WaterQuest provides no-charge application engineering support for all pump selections. Send your system pressure, flow, and duty cycle requirements and we will confirm the correct P1 configuration or recommend a larger pump from the P3, P6, or P15 lines.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- FULL SPECS TABLE -->
+<section class="section" id="specs">
+  <div class="section-label reveal">Full Specifications</div>
+  <h2 class="section-title reveal reveal-delay-1">P1 Technical Data</h2>
+  <div class="section-divider reveal reveal-delay-2"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:32px;" class="reveal">
+    <div style="background:var(--navy-mid);border:1px solid var(--border);border-radius:8px;overflow:hidden;">
+      <div style="padding:16px 20px;background:rgba(0,200,212,0.08);border-bottom:1px solid var(--border);">
+        <span style="font-size:12px;font-weight:700;color:var(--aqua);letter-spacing:1px;text-transform:uppercase;">Performance</span>
+      </div>
+      <table class="spec-table">
+        <tr><td>Displacement</td><td>0.8 cc/rev / 1.2 cc/rev</td></tr>
+        <tr><td>Max Operating Pressure</td><td>160 bar (2,320 psi)</td></tr>
+        <tr><td>Max Flow at 1750 rpm</td><td>1.4 L/min (0.8cc) / 2.1 L/min (1.2cc)</td></tr>
+        <tr><td>Speed Range</td><td>500 to 1,750 rpm</td></tr>
+        <tr><td>Peak Overall Efficiency</td><td>77% at 40 bar, 1500 rpm (1.2cc)</td></tr>
+        <tr><td>Max Input Torque (1.2cc)</td><td>3.2 Nm at 160 bar</td></tr>
+        <tr><td>Max Input Power (1.2cc)</td><td>0.59 kW at 160 bar, 1750 rpm</td></tr>
+      </table>
+    </div>
+    <div style="background:var(--navy-mid);border:1px solid var(--border);border-radius:8px;overflow:hidden;">
+      <div style="padding:16px 20px;background:rgba(0,200,212,0.08);border-bottom:1px solid var(--border);">
+        <span style="font-size:12px;font-weight:700;color:var(--aqua);letter-spacing:1px;text-transform:uppercase;">Construction</span>
+      </div>
+      <table class="spec-table">
+        <tr><td>Pump Type</td><td>External Gear Pump</td></tr>
+        <tr><td>Housing Material</td><td>316L Stainless Steel</td></tr>
+        <tr><td>Internal Components</td><td>CF30-PEEK (Carbon-Reinforced PEEK)</td></tr>
+        <tr><td>Seals</td><td>EPDM / PTFE (water-compatible)</td></tr>
+        <tr><td>Working Fluid</td><td>Tap water, seawater, process water</td></tr>
+        <tr><td>Fluid Temperature</td><td>5 to 60 degrees C</td></tr>
+        <tr><td>Filtration Requirement</td><td>10 micron absolute (inlet)</td></tr>
+      </table>
+    </div>
+    <div style="background:var(--navy-mid);border:1px solid var(--border);border-radius:8px;overflow:hidden;">
+      <div style="padding:16px 20px;background:rgba(0,200,212,0.08);border-bottom:1px solid var(--border);">
+        <span style="font-size:12px;font-weight:700;color:var(--aqua);letter-spacing:1px;text-transform:uppercase;">Connections and Mounting</span>
+      </div>
+      <table class="spec-table">
+        <tr><td>Port Standard</td><td>BSPP / NPT / Metric (specify)</td></tr>
+        <tr><td>Inlet Port Size</td><td>G1/4" (standard)</td></tr>
+        <tr><td>Outlet Port Size</td><td>G1/4" (standard)</td></tr>
+        <tr><td>Shaft Type</td><td>Keyed / Splined / Flange (specify)</td></tr>
+        <tr><td>Rotation Direction</td><td>Clockwise (standard) / CCW (specify)</td></tr>
+        <tr><td>Mounting Pattern</td><td>SAE A 2-bolt (standard)</td></tr>
+      </table>
+    </div>
+    <div style="background:var(--navy-mid);border:1px solid var(--border);border-radius:8px;overflow:hidden;">
+      <div style="padding:16px 20px;background:rgba(0,200,212,0.08);border-bottom:1px solid var(--border);">
+        <span style="font-size:12px;font-weight:700;color:var(--aqua);letter-spacing:1px;text-transform:uppercase;">Compliance and Approvals</span>
+      </div>
+      <table class="spec-table">
+        <tr><td>Certifications</td><td>CE marked, RoHS compliant</td></tr>
+        <tr><td>Material Reports</td><td>316L MTRs available on request</td></tr>
+        <tr><td>Environmental</td><td>No hydraulic oil; Fisheries Act compatible</td></tr>
+        <tr><td>Origin</td><td>Designed and assembled in Canada</td></tr>
+        <tr><td>Warranty</td><td>12 months from commissioning</td></tr>
+        <tr><td>Lead Time</td><td>Contact WaterQuest for current availability</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED PRODUCTS STRIP -->
+<div style="position:relative;z-index:1;background:var(--navy-mid);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:60px;">
+  <div style="max-width:1400px;margin:0 auto;">
+    <div class="section-label reveal">Product Family</div>
+    <h2 class="section-title reveal reveal-delay-1">Need More Flow? Step Up the Pump Line.</h2>
+    <div class="section-divider reveal reveal-delay-2"></div>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:32px;" class="reveal">
+      <a href="/products/axial-piston-pumps/p1/" style="display:block;background:rgba(0,200,212,0.12);border:1px solid var(--aqua);border-radius:8px;padding:20px;text-align:center;text-decoration:none;">
+        <div style="font-size:22px;font-weight:900;color:var(--aqua);">P1</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:4px;">Up to 2.1 L/min</div>
+        <div style="font-size:10px;font-weight:700;color:var(--aqua);margin-top:8px;letter-spacing:1px;">CURRENT</div>
+      </a>
+      <a href="/products/axial-piston-pumps/p3/" style="display:block;background:var(--navy);border:1px solid var(--border);border-radius:8px;padding:20px;text-align:center;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.borderColor='#00C8D4'" onmouseout="this.style.borderColor='rgba(0,200,212,0.2)'">
+        <div style="font-size:22px;font-weight:900;color:var(--white);">P3</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:4px;">Up to 5.5 L/min</div>
+      </a>
+      <a href="/products/axial-piston-pumps/p6/" style="display:block;background:var(--navy);border:1px solid var(--border);border-radius:8px;padding:20px;text-align:center;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.borderColor='#00C8D4'" onmouseout="this.style.borderColor='rgba(0,200,212,0.2)'">
+        <div style="font-size:22px;font-weight:900;color:var(--white);">P6</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:4px;">Up to 11 L/min</div>
+      </a>
+      <a href="/products/axial-piston-pumps/p15/" style="display:block;background:var(--navy);border:1px solid var(--border);border-radius:8px;padding:20px;text-align:center;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.borderColor='#00C8D4'" onmouseout="this.style.borderColor='rgba(0,200,212,0.2)'">
+        <div style="font-size:22px;font-weight:900;color:var(--white);">P15</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:4px;">Up to 27 L/min</div>
+      </a>
+      <a href="/products/axial-piston-pumps/p30/" style="display:block;background:var(--navy);border:1px solid var(--border);border-radius:8px;padding:20px;text-align:center;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.borderColor='#00C8D4'" onmouseout="this.style.borderColor='rgba(0,200,212,0.2)'">
+        <div style="font-size:22px;font-weight:900;color:var(--white);">P30</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:4px;">Up to 55 L/min</div>
+      </a>
+      <a href="/products/axial-piston-pumps/p60/" style="display:block;background:var(--navy);border:1px solid var(--border);border-radius:8px;padding:20px;text-align:center;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.borderColor='#00C8D4'" onmouseout="this.style.borderColor='rgba(0,200,212,0.2)'">
+        <div style="font-size:22px;font-weight:900;color:var(--white);">P60</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:4px;">Up to 110 L/min</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>Ready to Specify the P1?</h2>
+  <p>Tell us your operating pressure, flow requirement, and duty cycle. WaterQuest will confirm the right configuration and quote a delivery date.</p>
+  <div class="cta-actions">
+    <a href="/contact/" class="btn-navy">Request a Quote</a>
+    <a href="/products/axial-piston-pumps/" class="btn-outline-navy">View All Pumps</a>
+  </div>
+</div>
+
+<!-- FOOTER --><script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+  // BUBBLES
+  (function() {
+    const layer = document.getElementById('bubbles');
+    const sizes = [14,20,28,18,36,12,24,16,30];
+    const delays = [0,4,8,12,2,6,10,14,3];
+    const durations = [18,24,20,30,22,28,16,26,32];
+    for(let i = 0; i < 9; i++) {
+      const b = document.createElement('div');
+      b.className = 'bubble';
+      const sz = sizes[i];
+      b.style.width = sz + 'px';
+      b.style.height = sz + 'px';
+      b.style.left = (8 + i * 10) + '%';
+      b.style.animationDelay = delays[i] + 's';
+      b.style.animationDuration = durations[i] + 's';
+      layer.appendChild(b);
+    }
+  })();
+
+  // SCROLL REVEAL
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // CHART DEFAULTS
+  Chart.defaults.color = '#8daabf';
+  Chart.defaults.font.family = "'Nunito Sans', sans-serif";
+  Chart.defaults.font.size = 11;
+
+  const gridColor = 'rgba(0,200,212,0.10)';
+  const tickColor = '#8daabf';
+
+  function makeAxes(yLabel, yMin, yMax, yStep) {
+    return {
+      x: {
+        grid: { color: gridColor, drawBorder: false },
+        ticks: { color: tickColor },
+        title: { display: true, text: 'Pressure (bar)', color: '#8daabf', font: { weight: '700', size: 11 } }
+      },
+      y: {
+        min: yMin, max: yMax,
+        grid: { color: gridColor, drawBorder: false },
+        ticks: { color: tickColor, stepSize: yStep },
+        title: { display: true, text: yLabel, color: '#8daabf', font: { weight: '700', size: 11 } }
+      }
+    };
+  }
+
+  const pressureLabels = [20, 40, 60, 80, 100, 120, 140, 160];
+
+  // --- OUTPUT FLOW ---
+  new Chart(document.getElementById('chartFlow'), {
+    type: 'line',
+    data: {
+      labels: pressureLabels,
+      datasets: [
+        { label:'1.2cc 1750rpm', data:[2.10,1.93,1.77,1.63,1.49,1.33,1.19,1.05], borderColor:'#c0392b', backgroundColor:'transparent', tension:0.3, pointRadius:3, pointBackgroundColor:'#c0392b', borderWidth:2 },
+        { label:'1.2cc 1500rpm', data:[1.72,1.57,1.43,1.28,1.14,0.98,0.83,0.69], borderColor:'#e74c3c', backgroundColor:'transparent', tension:0.3, pointRadius:3, pointBackgroundColor:'#e74c3c', borderWidth:2, borderDash:[4,2] },
+        { label:'1.2cc 1000rpm', data:[1.17,1.06,0.87,0.73,0.59,null,null,null], borderColor:'#f1948a', backgroundColor:'transparent', tension:0.3, pointRadius:3, pointBackgroundColor:'#f1948a', borderWidth:2, borderDash:[2,3] },
+        { label:'0.8cc 1750rpm', data:[1.38,1.24,1.10,0.95,0.78,0.65,0.50,0.34], borderColor:'#7d3c98', backgroundColor:'transparent', tension:0.3, pointRadius:3, pointBackgroundColor:'#7d3c98', borderWidth:2 },
+        { label:'0.8cc 1500rpm', data:[1.19,1.06,0.87,0.73,0.58,0.45,0.30,0.14], borderColor:'#9b59b6', backgroundColor:'transparent', tension:0.3, pointRadius:3, pointBackgroundColor:'#9b59b6', borderWidth:2, borderDash:[4,2] },
+        { label:'0.8cc 1000rpm', data:[0.78,0.65,0.50,0.33,0.06,null,null,null], borderColor:'#bb8fce', backgroundColor:'transparent', tension:0.3, pointRadius:3, pointBackgroundColor:'#bb8fce', borderWidth:2, borderDash:[2,3] }
+      ]
+    },
+    options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{display:false} }, scales: makeAxes('Flow (L/min)', 0, 2.2, 0.5) }
+  });
+
+  // --- INPUT TORQUE ---
+  new Chart(document.getElementById('chartTorque'), {
+    type: 'line',
+    data: {
+      labels: pressureLabels,
+      datasets: [
+        { label:'1.2cc 1500rpm', data:[0.48,0.90,1.28,1.65,2.05,2.42,2.83,3.22], borderColor:'#c0392b', backgroundColor:'transparent', tension:0.3, pointRadius:3, pointBackgroundColor:'#c0392b', borderWidth:2 },
+        { label:'0.8cc 1500rpm', data:[0.31,0.57,0.87,1.13,1.45,1.70,1.97,2.22], borderColor:'#7d3c98', backgroundColor:'transparent', tension:0.3, pointRadius:3, pointBackgroundColor:'#7d3c98', borderWidth:2 }
+      ]
+    },
+    options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{display:false} }, scales: makeAxes('Torque (Nm)', 0, 4.0, 0.5) }
+  });
+
+  // --- INPUT POWER ---
+  new Chart(document.getElementById('chartPower'), {
+    type: 'line',
+    data: {
+      labels: pressureLabels,
+      datasets: [
+        { label:'1.2cc 1750rpm', data:[0.09,0.16,0.23,0.30,0.38,0.45,0.51,0.59], borderColor:'#c0392b', backgroundColor:'transparent', tension:0.3, pointRadius:3, pointBackgroundColor:'#c0392b', borderWidth:2 },
+        { label:'1.2cc 1500rpm', data:[0.08,0.14,0.20,0.26,0.32,0.38,0.44,0.50], borderColor:'#e74c3c', backgroundColor:'transparent', tension:0.3, pointRadius:3, pointBackgroundColor:'#e74c3c', borderWidth:2, borderDash:[4,2] },
+        { label:'1.2cc 1000rpm', data:[0.05,0.10,0.13,0.17,0.22,0.25,0.31,0.34], borderColor:'#f1948a', backgroundColor:'transparent', tension:0.3, pointRadius:3, pointBackgroundColor:'#f1948a', borderWidth:2, borderDash:[2,3] },
+        { label:'0.8cc 1750rpm', data:[0.06,0.10,0.16,0.22,0.27,0.31,0.36,0.41], borderColor:'#7d3c98', backgroundColor:'transparent', tension:0.3, pointRadius:3, pointBackgroundColor:'#7d3c98', borderWidth:2 },
+        { label:'0.8cc 1500rpm', data:[0.05,0.09,0.13,0.18,0.22,0.27,0.30,0.35], borderColor:'#9b59b6', backgroundColor:'transparent', tension:0.3, pointRadius:3, pointBackgroundColor:'#9b59b6', borderWidth:2, borderDash:[4,2] },
+        { label:'0.8cc 1000rpm', data:[0.03,0.06,0.09,0.11,0.14,0.17,0.20,0.23], borderColor:'#bb8fce', backgroundColor:'transparent', tension:0.3, pointRadius:3, pointBackgroundColor:'#bb8fce', borderWidth:2, borderDash:[2,3] }
+      ]
+    },
+    options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{display:false} }, scales: makeAxes('Input Power (kW)', 0, 0.70, 0.10) }
+  });
+
+  // --- OVERALL EFFICIENCY ---
+  new Chart(document.getElementById('chartEfficiency'), {
+    type: 'line',
+    data: {
+      labels: [20,40,60,80,100,120],
+      datasets: [
+        { label:'1.2cc 1500rpm', data:[76,77,74.5,69,62,null], borderColor:'#e74c3c', backgroundColor:'transparent', tension:0.3, pointRadius:4, pointBackgroundColor:'#e74c3c', borderWidth:2.5 },
+        { label:'1.2cc 1000rpm', data:[76,73.5,67,57.5,null,null], borderColor:'#c0392b', backgroundColor:'transparent', tension:0.3, pointRadius:4, pointBackgroundColor:'#c0392b', borderWidth:2.5, borderDash:[4,3] }
+      ]
+    },
+    options: {
+      responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false} },
+      scales: {
+        x: { grid:{ color:gridColor, drawBorder:false }, ticks:{ color:tickColor }, title:{ display:true, text:'Pressure (bar)', color:'#8daabf', font:{ weight:'700', size:11 } } },
+        y: { min:55, max:80, grid:{ color:gridColor, drawBorder:false }, ticks:{ color:tickColor, stepSize:5 }, title:{ display:true, text:'Efficiency (%)', color:'#8daabf', font:{ weight:'700', size:11 } } }
+      }
+    }
+  });
+</script><!-- WQ_REFERENCE_RAIL_START -->
+<aside class="wq-reference-rail" aria-label="Engineering references">
+  <a href="/calculations/"><small>Reference</small><strong>Engineering Calculators</strong></a>
+  <a href="/glossary/"><small>Reference</small><strong>Technical Glossary</strong></a>
+</aside>
+<!-- WQ_REFERENCE_RAIL_END -->
+<!-- WQ_CONTEXT_APPS_START -->
+<section class="wq-context-apps" aria-label="Related application pages">
+  <div class="wq-context-wrap">
+    <div>
+      <h2>Related application pages</h2>
+      <p>Application pages connect this section to specific water hydraulic projects and operating problems.</p>
+    </div>
+    <div class="wq-app-links"><a href="/applications/gate-actuation/">Gate Actuation</a><a href="/applications/flow-control/">Flow Control</a><a href="/applications/fire-suppression/">Fire Suppression</a><a href="/applications/dust-suppression/">Dust Suppression</a></div>
+  </div>
+</section>
+<!-- WQ_CONTEXT_APPS_END -->
+<!-- WQS_ENRICHMENT_START -->
+<style>
+.wqs-enrichment{background:#f5fbf9;border-top:1px solid #d9e8e3;color:#15302c;font-family:Nunito Sans,Arial,sans-serif;padding:56px 6vw}.wqs-enrichment__inner{margin:0 auto;max-width:1120px}.wqs-enrichment__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-enrichment h2{font-size:clamp(28px,4vw,48px);line-height:1.05;margin:8px 0 16px}.wqs-enrichment p{color:#4b625d;font-size:18px;line-height:1.65;max-width:900px}.wqs-enrichment__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px}.wqs-enrichment__panel{background:#fff;border:1px solid #d9e8e3;border-radius:8px;padding:22px}.wqs-enrichment__panel h3{font-size:18px;margin:0 0 12px}.wqs-enrichment ul{margin:0;padding-left:20px}.wqs-enrichment li{line-height:1.55;margin:7px 0}.wqs-enrichment__links{display:grid;gap:10px}.wqs-enrichment__links a{background:#fff;border:1px solid #d9e8e3;border-radius:8px;color:#15302c;display:grid;gap:4px;padding:14px;text-decoration:none}.wqs-enrichment__links span{color:#5f746f;font-size:14px;line-height:1.45}@media(max-width:760px){.wqs-enrichment{padding:40px 18px}.wqs-enrichment__grid{grid-template-columns:1fr}}
+</style>
+<section class="wqs-enrichment" aria-label="Complete page details">
+  <div class="wqs-enrichment__inner">
+    <div class="wqs-enrichment__eyebrow">Complete archive details</div>
+    <h2>P1 Micro Water Hydraulic Pump</h2>
+    <p>The WaterQuest P1 is a compact, oil-free water hydraulic pump delivering up to 2.1 L/min at 160 bar. Ideal for precision hydraulic circuits, lab systems, and HPU integration.</p>
+    <div class="wqs-enrichment__grid">
+      <div class="wqs-enrichment__panel"><h3>Recorded details</h3><ul><li>Source section: Pump model specification</li><li>Page type: pump-model</li><li>Canonical: /products/axial-piston-pumps/p1</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Primary page focus</h3><ul><li>P1 Micro Water Hydraulic Pump 0.8cc / 1.2cc Displacement</li><li>P1 built for water service.</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Full section outline</h3><ul><li>Built From First Principles. Not Adapted From Oil.</li><li>P1 Pump Performance Curves</li><li>Where the P1 Excels</li><li>The P1 Inside a WaterQuest HPU</li><li>P1 Configuration and Ordering Options</li><li>P1 Technical Data</li><li>Need More Flow? Step Up the Pump Line.</li><li>Ready to Specify the P1?</li><li>Related application pages</li></ul></div>
+      <div class="wqs-enrichment__panel"><h3>Detailed topics</h3><ul><li>316L Stainless Steel Housing</li><li>CF30-PEEK Internal Components</li><li>Zero Contamination Risk</li><li>Compact Footprint</li><li>Two Displacement Options</li><li>Low Maintenance Lifecycle</li><li>Laboratory and Research Systems</li><li>Marine and Subsea Applications</li><li>Water Treatment Infrastructure</li><li>Food and Beverage Processing</li><li>Green Hydrogen and Electrolysis</li><li>OEM HPU Integration</li><li>P1 HPU Configuration Options</li></ul></div>
+    </div>
+    <div class="wqs-enrichment__panel" style="margin-top:18px"><h3>Related pages with more detail</h3><div class="wqs-enrichment__links"><a href="/products/axial-piston-pumps/"><strong>Axial Piston Pumps</strong><span>WaterQuest Solutions axial piston water hydraulic pumps. 100% oil-free, up to 160 bar continuous pressure, 430 l/min max flow. Seven models P1 to P180, 316 stainless steel, ATEX II 2GD certified. Tap water, seawater, technical water, and specialist fluids.</span></a><a href="/products/axial-piston-pumps/p15/"><strong>P15 Axial Piston Water Hydraulic Pump</strong><span>The WaterQuest P15 axial piston pump delivers up to 37.2 L/min at 160 bar. Three displacements: 12, 15, and 19 cc/rev. Unboosted and boosted configurations, 316 stainless steel, oil-free, ATEX II 2GD certified.</span></a><a href="/products/axial-piston-pumps/p180/"><strong>P180 Axial Piston Water Hydraulic Pump</strong><span>The WaterQuest P180 axial piston pump delivers up to 430 L/min at 160 bar. Three displacements: 135, 180, 225 cc/rev. Boosted only, mechanical seal, spline drive, 2-inch SAE flange pressure ports. 316 stainless steel, oil-free, ATEX II 2GD.</span></a><a href="/products/axial-piston-pumps/p3/"><strong>P3 Axial Piston Water Hydraulic Pump</strong><span>The WaterQuest P3 axial piston pump delivers up to 6.0 L/min at 160 bar. 3.0 cc/rev, unboosted and boosted, 316 SS, oil-free, ATEX II 2GD.</span></a><a href="/products/axial-piston-pumps/p30/"><strong>P30 Axial Piston Water Hydraulic Pump</strong><span>The WaterQuest P30 axial piston pump delivers up to 66 L/min at 160 bar. Three displacements: 23, 30, and 35 cc/rev. Unboosted and boosted configurations, 316 stainless steel, oil-free, ATEX II 2GD certified.</span></a><a href="/products/axial-piston-pumps/p6/"><strong>P6 Axial Piston Water Hydraulic Pump</strong><span>The WaterQuest P6 axial piston pump delivers up to 12 L/min at 160 bar. Two displacements: 4.6 and 6.0 cc/rev. Unboosted and boosted configurations, 316 stainless steel, oil-free, ATEX II 2GD certified.</span></a><a href="/products/axial-piston-pumps/p60/"><strong>P60 Axial Piston Water Hydraulic Pump</strong><span>The WaterQuest P60 axial piston pump delivers up to 146 L/min at 160 bar. Three displacements: 51, 63, and 70 cc/rev. Unboosted and boosted configurations, 316 stainless steel, oil-free, ATEX II 2GD certified.</span></a><a href="/products/water-hydraulic-cylinders/cylinder-100x60/"><strong>100 mm Bore × 60 mm Rod</strong><span>Complete force output data for 100mm bore × 60mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 78.54 cm², ring area 50.27 cm², 0.98 efficiency.</span></a><a href="/products/water-hydraulic-cylinders/cylinder-100x80/"><strong>100 mm Bore × 80 mm Rod</strong><span>Complete force output data for 100mm bore × 80mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 78.54 cm², ring area 28.27 cm², 0.98 efficiency.</span></a><a href="/products/water-hydraulic-cylinders/cylinder-125x80/"><strong>125 mm Bore × 80 mm Rod</strong><span>Complete force output data for 125mm bore × 80mm rod water hydraulic cylinder. Extending and retracting forces from 0 to 160 bar. Piston area 122.72 cm², ring area 72.45 cm², 0.98 efficiency.</span></a></div></div>
+  </div>
+</section>
+<!-- WQS_ENRICHMENT_END -->
+<!-- WQ_GLOBAL_FOOTER_START -->
+<footer class="wq-site-footer" role="contentinfo">
+  <div class="wq-footer-container">
+    <div class="wq-footer-grid">
+      <div class="wq-footer-brand">
+        <span class="wq-logo-main">WaterQuest Solutions</span>
+        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Products</h5>
+        <ul><li><a href="/products/" class="active">Products Overview</a></li><li><a href="/products/axial-piston-pumps/" class="active">Axial Piston Pumps</a></li><li><a href="/products/water-hydraulic-motors/">Water Hydraulic Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Water Hydraulic Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Water Hydraulic Valves</a></li><li><a href="/products/water-hydraulics-hpu/">Water Hydraulics HPUs</a></li><li><a href="/products/axial-piston-fire-pumps/">Fire Pumps</a></li><li><a href="/products/power-center-reverse-osmosis/">Desalination Power Center</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Core Pages</h5>
+        <ul><li><a href="/products/" class="active">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
+          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
+          <li>558 East Kent Ave S</li>
+          <li>Vancouver, BC V5X 4V6</li>
+          <li>Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
+  </div>
+</footer>
+<!-- WQ_GLOBAL_FOOTER_END -->
+<script id="wq-global-shell-js">
+    (function(){
+      var nav=document.getElementById("wq-nav");
+      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
+      var menuButton=document.querySelector(".wq-menu-toggle");
+      var mobileMenu=document.getElementById("wq-mobile-menu");
+      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
+      var bubbles=document.getElementById("wq-global-bubbles");
+      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
+      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
+      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
+      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
+      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
+      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
+      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
+      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
+      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
+      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
+      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
+      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
+    })();
+  </script>
+
+</body>
+</html>

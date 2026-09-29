@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Hydraulics for Fire Suppression Systems | WaterQuest Solutions</title>
+  <meta name="description" content="Eliminate oil from fire-critical environments. WaterQuest Solutions delivers non-flammable, water hydraulic actuation for deluge valves, monitors, turrets, and suppression systems zero ignition risk by design." />
+  <meta name="keywords" content="water hydraulics fire suppression, non-flammable hydraulic system, fire system actuation, deluge valve hydraulics, oil-free fire suppression, fire loop hydraulics, tunnel fire suppression hydraulics, offshore fire system" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy:         #0A0F1A;
+      --navy-mid:     #0D1628;
+      --navy-light:   #121E38;
+      --aqua:         #00C8D4;
+      /* Fire accent , controlled ember red/orange, not garish */
+      --fire:         #E84830;
+      --fire-mid:     #C83820;
+      --fire-amber:   #F08020;
+      --fire-glow:    rgba(232,72,48,0.15);
+      --fire-amber-glow: rgba(240,128,32,0.12);
+      --silver:       #FFFFFF;
+      --silver-light: #FFFFFF;
+      --white:        #FFFFFF;
+      --body-text:    #FFFFFF;
+      --muted:        #FFFFFF;
+      --border:       rgba(168,184,204,0.15);
+      --border-fire:  rgba(232,72,48,0.28);
+      --border-amber: rgba(240,128,32,0.28);
+      --font-display: 'Avenir', 'Avenir Next', 'Nunito Sans', sans-serif;
+      --font-body:    'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+      --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px;
+      --shadow-fire:  0 0 48px rgba(232,72,48,0.2);
+      --max-width: 1240px; --section-pad: 100px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); background: var(--navy); color: var(--body-text); line-height: 1.7; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    .label { font-family: var(--font-display); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--fire-amber); }
+    h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 900; line-height: 1.15; color: var(--white); }
+    h1 { font-size: clamp(2.4rem,5vw,4.2rem); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(1.9rem,3.5vw,3rem); letter-spacing: -0.02em; }
+    h3 { font-size: clamp(1.1rem,2vw,1.45rem); }
+    h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--fire-amber); }
+    p  { color: var(--body-text); font-size: 1.02rem; }
+    .text-fire  { color: var(--fire); }
+    .text-amber { color: var(--fire-amber); }
+    .text-aqua  { color: var(--aqua); }
+    .text-muted { color: var(--muted); }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
+    .section { padding: var(--section-pad) 0; }
+    .section-alt  { background: var(--navy-mid); }
+    .section-dark { background: var(--navy); }
+
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: var(--radius-sm); font-family: var(--font-display); font-weight: 700; font-size: 0.88rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border: none; transition: all 0.25s ease; }
+    .btn-fire    { background: var(--fire); color: var(--white); }
+    .btn-fire:hover { background: #FF5A40; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(232,72,48,0.45); }
+    .btn-outline { background: transparent; color: var(--fire-amber); border: 1.5px solid var(--border-amber); }
+    .btn-outline:hover { background: var(--fire-amber-glow); border-color: var(--fire-amber); }
+
+    /* NAV */
+    #nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: background 0.3s, backdrop-filter 0.3s; }
+    #nav.scrolled { background: rgba(10,15,26,0.93); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .nav-logo .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.15rem; color: var(--white); letter-spacing: -0.01em; }
+    .nav-logo .logo-sub  { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--aqua); margin-top: 1px; display: block; }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { font-family: var(--font-display); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--silver); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--fire-amber); }
+    .nav-cta { background: var(--aqua) !important; color: var(--navy) !important; padding: 9px 20px; border-radius: var(--radius-sm); }
+
+    /* BUBBLES , aqua, small, represent water droplets */
+    .bubble-layer { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 1; }
+    .bubble { position: absolute; border-radius: 50%; background: radial-gradient(circle at 35% 35%, rgba(0,200,212,0.55), rgba(0,180,200,0.08) 60%, transparent 80%); border: 1px solid rgba(0,200,212,0.2); opacity: 0; animation: bubble-rise linear infinite; }
+    @keyframes bubble-rise { 0%{transform:translateY(0) translateX(0) scale(1);opacity:0} 8%{opacity:0.5} 50%{transform:translateY(-50vh) translateX(var(--drift)) scale(0.88);opacity:0.25} 92%{opacity:0.08} 100%{transform:translateY(-108vh) translateX(calc(var(--drift)*1.4)) scale(0.45);opacity:0} }
+
+    /* REVEAL */
+    .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-left  { opacity:0; transform:translateX(-28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-left.visible  { opacity:1; transform:translateX(0); }
+    .reveal-right { opacity:0; transform:translateX(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-right.visible { opacity:1; transform:translateX(0); }
+
+    .section-header { margin-bottom: 60px; }
+    .section-header .label { margin-bottom: 14px; }
+    .section-header h2 { margin-bottom: 16px; }
+    .section-header p { max-width: 620px; font-size: 1.08rem; color: var(--silver-light); }
+    .section-header.center { text-align: center; }
+    .section-header.center p { margin: 0 auto; }
+
+    /* ================================================================
+       HERO
+    ================================================================ */
+    #hero {
+      position: relative; min-height: 84vh;
+      display: flex; align-items: center;
+      overflow: hidden; padding-top: 72px;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 60% at 72% 45%,  rgba(160,30,10,0.28) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 40% at 85% 80%,  rgba(200,80,20,0.14) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 40% at 15% 30%,  rgba(0,80,120,0.18) 0%, transparent 55%),
+        linear-gradient(170deg, #060B14 0%, #0A0F1A 45%, #0D1020 100%);
+    }
+    /* Heat shimmer grid */
+    .hero-grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(232,72,48,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(232,72,48,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 70% 70% at 70% 45%, black 20%, transparent 80%);
+    }
+    /* Ember particles */
+    .ember { position: absolute; border-radius: 50%; opacity: 0; animation: ember-rise linear infinite; }
+    @keyframes ember-rise {
+      0%   { transform: translateY(0) translateX(0) scale(1); opacity: 0; }
+      10%  { opacity: 0.8; }
+      80%  { opacity: 0.2; }
+      100% { transform: translateY(-70vh) translateX(var(--edrift)) scale(0.2); opacity: 0; }
+    }
+
+    .hero-content { position: relative; z-index: 2; max-width: var(--max-width); margin: 0 auto; padding: 80px 32px; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 72px; align-items: center; }
+    .hero-text .label { margin-bottom: 20px; }
+    .hero-text h1 { margin-bottom: 26px; }
+    .hero-text h1 .accent-fire  { color: var(--fire); }
+    .hero-text h1 .accent-water { color: var(--aqua); }
+    .hero-lead { font-size: 1.14rem; color: var(--silver-light); max-width: 520px; line-height: 1.8; margin-bottom: 36px; }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+
+    .zero-strip { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
+    .zero-badge { background: rgba(232,72,48,0.07); border: 1px solid var(--border-fire); border-radius: var(--radius-md); padding: 14px 10px; text-align: center; }
+    .zero-badge .znum { font-family: var(--font-display); font-size: 1.25rem; font-weight: 900; color: var(--fire-amber); line-height: 1; margin-bottom: 5px; }
+    .zero-badge .zlbl { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.09em; line-height: 1.4; }
+
+    /* Hero visual , fire + water suppression SVG */
+    .hero-visual { display: flex; align-items: center; justify-content: center; }
+    .fire-svg { width: 100%; max-width: 420px; filter: drop-shadow(0 0 48px rgba(232,72,48,0.25)); animation: breathe 5s ease-in-out infinite; }
+    @keyframes breathe { 0%,100%{filter:drop-shadow(0 0 48px rgba(232,72,48,0.22))} 50%{filter:drop-shadow(0 0 80px rgba(232,72,48,0.45))} }
+
+    /* ================================================================
+       CONTRADICTION , The Core Problem
+    ================================================================ */
+    .contradiction-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .contra-block { border-radius: var(--radius-lg); overflow: hidden; }
+    .contra-block-head { padding: 28px 36px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 14px; }
+    .contra-block-head .icon { font-size: 1.5rem; }
+    .contra-block-head h3 { font-size: 1.05rem; }
+    .contra-body { padding: 28px 36px; display: flex; flex-direction: column; gap: 12px; }
+    .contra-block.problem { background: var(--navy-light); border: 1px solid rgba(255,80,80,0.18); }
+    .contra-block.solution { background: var(--navy-light); border: 1px solid rgba(0,200,212,0.25); }
+    .contra-item { font-size: 0.93rem; color: var(--silver); padding-left: 20px; position: relative; line-height: 1.6; }
+    .contra-item::before { content:''; position:absolute; left:0; top:9px; width:7px; height:7px; border-radius:50%; }
+    .problem  .contra-item::before { background: rgba(255,90,90,0.65); }
+    .solution .contra-item::before { background: var(--aqua); }
+    .contra-vs {
+      display: flex; align-items: center; justify-content: center;
+      padding: 0;
+    }
+    .vs-circle {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: var(--navy-light); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-weight: 900; font-size: 0.9rem;
+      letter-spacing: 0.12em; color: var(--muted);
+    }
+    .key-insight {
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, rgba(0,200,212,0.06) 0%, rgba(18,30,56,0.9) 100%);
+      border: 1px solid rgba(0,200,212,0.22);
+      border-radius: var(--radius-md);
+      padding: 28px 36px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+    }
+    .key-insight p { font-size: 0.97rem; color: var(--silver-light); font-style: italic; line-height: 1.7; }
+
+    /* ================================================================
+       SIX REASONS CARDS
+    ================================================================ */
+    .reasons-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    .reason-card {
+      background: var(--navy-light); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 34px 30px;
+      position: relative; overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+    .reason-card::after { content:attr(data-num); position:absolute; bottom:-14px; right:14px; font-size:5.5rem; font-weight:900; line-height:1; color:rgba(240,128,32,0.05); font-family:var(--font-display); pointer-events:none; }
+    .reason-card:hover { border-color: var(--border-amber); transform: translateY(-5px); box-shadow: 0 8px 36px rgba(240,128,32,0.12); }
+    .reason-card .r-icon { font-size: 1.8rem; margin-bottom: 16px; }
+    .reason-card h3 { font-size: 1.08rem; margin-bottom: 10px; }
+    .reason-card p  { font-size: 0.93rem; color: var(--muted); line-height: 1.7; }
+
+    /* ================================================================
+       COMPARISON TABLE
+    ================================================================ */
+    .table-wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; }
+    thead tr { background: var(--navy-light); }
+    thead th { padding: 18px 24px; font-family: var(--font-display); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; text-align: left; color: var(--silver); border-bottom: 1px solid var(--border); }
+    thead th.hl { color: var(--aqua) !important; }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background 0.2s; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: rgba(0,200,212,0.02); }
+    tbody td { padding: 16px 24px; font-size: 0.92rem; color: var(--silver); }
+    tbody td:first-child { color: var(--white); font-weight: 600; font-size: 0.88rem; }
+    .td-good { color: var(--aqua) !important; font-weight: 700; }
+    .td-bad  { color: rgba(255,100,100,0.75) !important; }
+    .td-mid  { color: var(--muted) !important; }
+    .hl-col  { background: rgba(0,200,212,0.04); }
+
+    /* ================================================================
+       APPLICATIONS , 5 sectors
+    ================================================================ */
+    .apps-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    .apps-grid.row2 { grid-template-columns: repeat(2,1fr); max-width: 840px; margin: 22px auto 0; }
+    .app-card { background: var(--navy-light); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: border-color 0.3s, box-shadow 0.3s; }
+    .app-card:hover { border-color: var(--border-amber); box-shadow: 0 8px 32px rgba(240,128,32,0.1); }
+    .app-card-head { padding: 22px 26px 16px; background: linear-gradient(135deg, rgba(232,72,48,0.06) 0%, transparent 100%); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px; }
+    .app-card-head .app-icon { font-size: 1.4rem; }
+    .app-card-head h3 { font-size: 1rem; }
+    .app-items { padding: 18px 26px 22px; display: flex; flex-direction: column; gap: 7px; }
+    .app-item { font-size: 0.87rem; color: var(--silver); display: flex; align-items: flex-start; gap: 10px; }
+    .app-item::before { content:'›'; color: var(--fire-amber); font-weight: 900; font-size: 1rem; line-height: 1.3; min-width: 12px; }
+
+    /* ================================================================
+       THREE RELIABILITY PILLARS
+    ================================================================ */
+    .pillars-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .pillar-card {
+      background: var(--navy-light); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 36px 32px;
+      position: relative; overflow: hidden;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .pillar-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, transparent, var(--fire-amber), transparent);
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .pillar-card:hover { border-color: var(--border-amber); box-shadow: 0 8px 36px rgba(240,128,32,0.1); }
+    .pillar-card:hover::before { opacity: 1; }
+    .pillar-num { font-family: var(--font-display); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.22em; color: var(--fire-amber); opacity: 0.7; margin-bottom: 14px; text-transform: uppercase; }
+    .pillar-card h3 { font-size: 1.1rem; margin-bottom: 12px; }
+    .pillar-card p  { font-size: 0.94rem; color: var(--muted); line-height: 1.75; margin: 0; }
+
+    /* ================================================================
+       CTA
+    ================================================================ */
+    #cta {
+      position: relative; overflow: hidden;
+      background: linear-gradient(170deg, #06080F 0%, #0A0F1A 50%, #060810 100%);
+      padding: 110px 0;
+    }
+    #cta::before {
+      content: '';
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 700px; height: 400px; border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(200,60,20,0.1) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    #cta::after {
+      content: '';
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 400px; height: 220px; border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(0,200,212,0.06) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .cta-inner { position: relative; z-index: 2; max-width: 700px; margin: 0 auto; padding: 0 32px; text-align: center; }
+    .cta-inner .label { margin-bottom: 20px; }
+    .cta-inner h2 { margin-bottom: 22px; }
+    .cta-inner p { font-size: 1.05rem; color: var(--silver-light); margin-bottom: 40px; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
+    .cta-specs {
+      font-size: 0.84rem; color: var(--muted); margin-bottom: 48px;
+      padding: 14px 24px; border: 1px solid var(--border);
+      border-radius: var(--radius-md); display: inline-block; line-height: 1.7;
+    }
+    .cta-specs strong { color: var(--silver); }
+    .cta-stats { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+    .cta-stat .snum { font-size: 2rem; font-weight: 900; color: var(--fire-amber); font-family: var(--font-display); line-height: 1; }
+    .cta-stat .slbl { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); margin-top: 5px; }
+
+    /* FOOTER */
+    footer { background: #05080E; border-top: 1px solid var(--border); padding: 64px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.2rem; color: var(--white); margin-bottom: 6px; }
+    .footer-brand .logo-sub { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--aqua); margin-bottom: 18px; display: block; }
+    .footer-brand p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
+    .footer-tagline { font-style: italic; color: var(--silver) !important; font-size: 0.88rem !important; }
+    .footer-col h5 { font-family: var(--font-display); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver); margin-bottom: 16px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul a { font-size: 0.88rem; color: var(--muted); transition: color 0.2s; }
+    .footer-col ul a:hover { color: var(--aqua); }
+    .footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-bottom p { font-size: 0.82rem; color: var(--muted); }
+    .footer-cert { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cert-badge { padding: 4px 12px; border: 1px solid var(--border); border-radius: 100px; font-size: 0.72rem; color: var(--silver); font-weight: 600; letter-spacing: 0.06em; }
+
+    @media (max-width:960px) {
+      :root { --section-pad:72px; }
+      .hero-content { grid-template-columns:1fr; gap:40px; }
+      .hero-visual { display:none; }
+      .zero-strip { grid-template-columns:repeat(2,1fr); }
+      .contradiction-grid { grid-template-columns:1fr; }
+      .contra-vs { display:none; }
+      .key-insight { grid-template-columns:1fr; }
+      .reasons-grid { grid-template-columns:repeat(2,1fr); }
+      .apps-grid { grid-template-columns:repeat(2,1fr); }
+      .apps-grid.row2 { grid-template-columns:1fr; max-width:100%; }
+      .pillars-grid { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr 1fr; }
+      .nav-links { display:none; }
+    }
+    @media (max-width:600px) {
+      :root { --section-pad:56px; }
+      .container { padding:0 20px; }
+      .zero-strip { grid-template-columns:repeat(2,1fr); }
+      .reasons-grid { grid-template-columns:1fr; }
+      .apps-grid { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr; }
+      .footer-bottom { flex-direction:column; gap:16px; text-align:center; }
+    }
+  </style><link rel="canonical" href="/industries/fire-suppression" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:title" content="Water Hydraulics for Fire Suppression Systems | WaterQuest Solutions" />
+  <meta property="og:description" content="Eliminate oil from fire-critical environments. WaterQuest Solutions delivers non-flammable, water hydraulic actuation for deluge valves, monitors, turrets, and suppression systems zero ignition risk by design." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/industries/fire-suppression" />
+  <meta property="og:image" content="/assets/waterquest-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Water Hydraulics for Fire Suppression Systems | WaterQuest Solutions" />
+  <meta name="twitter:description" content="Eliminate oil from fire-critical environments. WaterQuest Solutions delivers non-flammable, water hydraulic actuation for deluge valves, monitors, turrets, and suppression systems zero ignition risk by design." />
+  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
+  <link rel="alternate" hreflang="en-CA" href="/industries/fire-suppression" />
+  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
+  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"WebPage","@id":"/industries/fire-suppression#webpage","url":"/industries/fire-suppression","name":"Water Hydraulics for Fire Suppression Systems | WaterQuest Solutions","description":"Eliminate oil from fire-critical environments. WaterQuest Solutions delivers non-flammable, water hydraulic actuation for deluge valves, monitors, turrets, and suppression systems zero ignition risk by design.","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"},{"@type":"ListItem","position":2,"name":"Industries","item":"/industries"},{"@type":"ListItem","position":3,"name":"Fire Suppression","item":"/industries/fire-suppression"}]}]}</script>
+  <style id="wq-global-shell-css">
+    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
+    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
+    body a{color:inherit}
+    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
+    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
+    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
+    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
+    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
+    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
+    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
+    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
+    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
+    main .btn.primary{color:var(--wq-navy)!important}
+    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
+    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
+    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
+    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
+    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
+    .wq-form-status.is-error{color:#ffb1b1!important}
+    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
+    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
+    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
+    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
+    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
+    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
+    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
+    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
+    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
+    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
+    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
+    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
+    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
+    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
+    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
+    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
+    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
+    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
+    .wq-hero-visual-text{padding:20px}
+    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
+    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
+    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
+    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
+    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
+    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
+    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
+    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
+    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
+    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
+    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
+    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
+    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
+    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
+    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
+    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
+    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
+    #wq-mobile-menu.open{display:block}
+    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
+    #wq-mobile-menu a:last-child{border-bottom:0}
+    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
+    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
+    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
+    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
+    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
+    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
+    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
+    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
+    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
+    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
+    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
+    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
+    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
+    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
+    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
+    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
+  </style>
+</head>
+<body class="wq-section-industries">
+<!-- WQ_GLOBAL_HEADER_START -->
+<div id="wq-global-bubbles" aria-hidden="true"></div>
+<nav id="wq-nav" role="navigation" aria-label="Main navigation">
+  <div class="wq-nav-inner">
+    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
+      <span class="wq-logo-main">WaterQuest Solutions</span>
+      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+    </a>
+    <ul class="wq-nav-links" role="list">
+      <li><a href="/products/">Products</a></li><li><a href="/industries/" class="active">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li>
+      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
+    </ul>
+    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
+  </div>
+</nav>
+<div id="wq-mobile-menu">
+  <a href="/products/">Products</a><a href="/industries/" class="active">Industries</a><a href="/technology/">Technology</a><a href="/knowledge-hub/">Knowledge Hub</a><a href="/about/">About</a>
+  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
+</div>
+<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
+<section class="wq-conversion-hero" aria-label="Page introduction">
+  <div class="wq-conversion-wrap">
+    <div>
+      <p class="wq-hero-eyebrow">Industry application</p>
+      <h1><span>Fire Suppression</span>: where oil has no place.</h1>
+      <p class="wq-hero-copy">See how water hydraulics changes the risk profile for equipment working near people, water, food, infrastructure, seawater, washdown, or regulated environments.</p>
+      <div class="wq-hero-actions">
+        <a class="wq-hero-cta" href="/applications/">See Related Applications</a>
+        <a class="wq-hero-secondary" href="/products/">Review Matching Products</a>
+      </div>
+    </div>
+    <a class="wq-hero-visual" href="/applications/">
+      <div class="wq-hero-picture" aria-hidden="true"></div>
+      <div class="wq-hero-visual-text">
+        <small>Field fit</small>
+        <strong>A cleaner hydraulic medium for demanding operating environments.</strong>
+        <span>Built to resonate with engineers, operators, and technical decision makers.</span>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- WQ_CONVERSION_HERO_END --><div id="ember-layer" aria-hidden="true" style="position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;"></div>
+
+<!-- NAV --><!-- HERO -->
+<!-- WQS_INDUSTRY_DATA_START -->
+<style>
+.wqs-industry-data{background:#eef8f6;border-top:1px solid #cae0db;border-bottom:1px solid #cae0db;color:#12312d;font-family:Nunito Sans,Arial,sans-serif;padding:54px 6vw}.wqs-industry-data__inner{margin:0 auto;max-width:1180px}.wqs-industry-data__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-industry-data h2{font-size:clamp(30px,4.5vw,56px);line-height:1.02;margin:8px 0 14px;max-width:960px}.wqs-industry-data p{color:#4a625d;font-size:18px;line-height:1.65;max-width:940px}.wqs-industry-data__stats{display:grid;gap:12px;grid-template-columns:repeat(4,minmax(0,1fr));margin:26px 0}.wqs-industry-data__stat{background:#fff;border:1px solid #cae0db;border-radius:8px;padding:16px}.wqs-industry-data__stat span{color:#08726f;display:block;font-size:12px;font-weight:900;text-transform:uppercase}.wqs-industry-data__stat strong{display:block;font-size:20px;margin-top:6px}.wqs-industry-data__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:22px}.wqs-industry-data__panel{background:#fff;border:1px solid #cae0db;border-radius:8px;padding:22px}.wqs-industry-data__panel h3{font-size:19px;margin:0 0 14px}.wqs-industry-data__panel ul{margin:0;padding-left:20px}.wqs-industry-data__panel li{line-height:1.55;margin:7px 0}.wqs-industry-data__cards{display:grid;gap:10px}.wqs-industry-data__card{background:#f9fdfc;border:1px solid #d7e8e4;border-radius:8px;color:#12312d;display:grid;gap:5px;padding:14px;text-decoration:none}.wqs-industry-data__card span{color:#5b726d;font-size:14px;line-height:1.45}@media(max-width:850px){.wqs-industry-data{padding:38px 18px}.wqs-industry-data__stats,.wqs-industry-data__grid{grid-template-columns:1fr}}
+</style>
+<section class="wqs-industry-data" aria-label="Industry data and matching details">
+  <div class="wqs-industry-data__inner">
+    <div class="wqs-industry-data__eyebrow">Industry data and matching details</div>
+    <h2>Fire Suppression: complete application detail</h2>
+    <p>Eliminate oil from fire-critical environments. WaterQuest Solutions delivers non-flammable, water hydraulic actuation for deluge valves, monitors, turrets, and suppression systems zero ignition risk by design.</p>
+    <div class="wqs-industry-data__stats">
+      <div class="wqs-industry-data__stat"><span>Industry group</span><strong>Safety-Critical</strong></div>
+      <div class="wqs-industry-data__stat"><span>Best use</span><strong>Oil-free actuation</strong></div>
+      <div class="wqs-industry-data__stat"><span>Fluid medium</span><strong>Tap or sea water</strong></div>
+      <div class="wqs-industry-data__stat"><span>Materials</span><strong>316 SS + PEEK</strong></div>
+    </div>
+    <div class="wqs-industry-data__grid">
+      <div class="wqs-industry-data__panel"><h3>What this page should cover</h3><ul><li>Eliminating Oil from Fire-Critical Environments.</li><li>Eliminate oil from fire-critical environments. WaterQuest Solutions delivers non-flammable, water hydraulic actuation for deluge valves, monitors, turrets, and suppression systems zero ignition risk by design.</li><li>Oil in a Fire System Is Not a Design Choice, It's a Risk.</li><li>How Water Atomization Disrupts the Fire Triangle .</li><li>Why Water Hydraulics Fit Every Fire Suppression Application</li><li>Water vs Oil vs Air Head-to-Head</li><li>Applications in Fire Suppression</li><li>How Water Hydraulics Improve Fire System Reliability</li><li>Water Hydraulics Are the Only Logical Choice for Fire Suppression.</li><li>Traditional Fire Systems The Oil Problem</li><li>Water Hydraulics The Logical Answer</li><li>The Fire Triangle and Water's Multi-Point Attack</li></ul></div>
+      <div class="wqs-industry-data__panel"><h3>Matching products and systems</h3><div class="wqs-industry-data__cards"><a class="wqs-industry-data__card" href="/products/axial-piston-fire-pumps/"><strong>Axial Piston Fire Pumps</strong><span>WaterQuest Solutions axial piston fire pumps for high-pressure water mist fire suppression. 100% oil-free, up to 160 bar, 9-piston smooth flow, ATEX II 2GD certified. 316L stainless steel. Six models from 0.8 cc/rev to 180 cc/rev. No accumulators required.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-4-2-3-2-directional/"><strong>4 2 3 2 Directional</strong><span>WaterQuest Solutions patented 4/2 and 3/2 directional flow control valves for water hydraulics. 160 bar max, 0 to 30 L/min, 316 stainless steel, 24V DC solenoid with manual override, stand alone, manifold mount, or Cetop 3. Actuation card required above 20 bar.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-actuation-cards/"><strong>Actuation Cards</strong><span>WaterQuest Solutions Actuation Card for directional control valves. PWM solenoid control card, part 004-010, required for direct solenoid actuation above 20 bar. 24V DC supply, 5 amp. Reduces coil temperature and power consumption. DIN rail mounting options available.</span></a><a class="wqs-industry-data__card" href="/products/power-center-reverse-osmosis/"><strong>Power Center for Reverse Osmosis</strong><span>The WaterQuest Solutions Power Center for reverse osmosis desalination integrates high-pressure pump, energy recovery device, booster pump, and motor into one unit. Up to 70% energy savings, 8 sizes from 3 to 1000 m3/day, 8000-hour service intervals, 100% oil-free.</span></a><a class="wqs-industry-data__card" href="/products"><strong>Products</strong><span>WaterQuest Solutions</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-cylinders/"><strong>Water Hydraulic Cylinders</strong><span>Water hydraulic tie rod cylinders in 316L stainless steel with carbon-reinforced PEEK wear surfaces. Seven bore sizes from 32 mm to 125 mm, up to 196 kN force, 160 bar, 0.98 efficiency. No oil contamination. Single and double acting configurations.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulics-hpu/"><strong>Water Hydraulics HPU</strong><span>Water hydraulic power units (HPUs) built entirely from 316L stainless steel with PEEK wear surfaces. 100% oil-free, tap or seawater operation. WaterQuest Solutions Pick a Pack system — configure your HPU in 5 steps. Compact skids to full custom builds.</span></a><a class="wqs-industry-data__card" href="/products/water-hydraulic-valves/valve-2-2-pilot/"><strong>2 2 Pilot</strong><span>WaterQuest Solutions 2/2 Pilot Valves. DN9 (0 to 60 L/min, 3/8</span></a></div></div>
+      <div class="wqs-industry-data__panel"><h3>Related applications</h3><div class="wqs-industry-data__cards"><a class="wqs-industry-data__card" href="/applications/fire-suppression/"><strong>Fire Suppression</strong><span>Water hydraulic actuation for fire suppression deluge valves, sprinkler zone valves, and fire water distribution. Absolute reliability without petroleum contamination risk in potable water lines.</span></a><a class="wqs-industry-data__card" href="/applications/nozzle-technology/"><strong>Nozzle Technology</strong><span>Engineering reference for high-pressure water nozzles across fire suppression, dust suppression, odour control, and industrial cleaning. Spray patterns, droplet physics, flow tables, and selection criteria from WaterQuest Solutions, Vancouver BC.</span></a><a class="wqs-industry-data__card" href="/applications/dust-suppression/"><strong>Dust Suppression</strong><span>Water hydraulic dust suppression systems for mining, bulk material handling, demolition, and construction. High-pressure misting without petroleum contamination risk.</span></a><a class="wqs-industry-data__card" href="/applications/damper-control/"><strong>Damper Control</strong><span>Water hydraulic damper control for industrial ventilation, dust collection, fume extraction, and HVAC systems. Reliable damper actuation without air system contamination risk.</span></a><a class="wqs-industry-data__card" href="/applications/flood-control/"><strong>Flood Control</strong><span>Water hydraulic flood control systems for flood gates, storm surge barriers, tide gates, and stormwater infrastructure. Reliable emergency actuation without petroleum contamination in waterways.</span></a><a class="wqs-industry-data__card" href="/applications/flow-control/"><strong>Flow Control</strong><span>Water hydraulic flow control systems for process water, wastewater, slurry, and industrial cooling. Precise actuation and throttling without petroleum contamination.</span></a></div></div>
+      <div class="wqs-industry-data__panel"><h3>Related technical articles</h3><div class="wqs-industry-data__cards"><a class="wqs-industry-data__card" href="/knowledge-hub/water-hydraulics-in-mining-lower-downtime-zero-contamination"><strong>Water Hydraulics in Mining: Lower Downtime, Zero Contamination</strong><span>A full engineering and procurement analysis of water hydraulic actuation in underground and surface mining operations. How 316 stainless and PEEK-based systems eliminate fire risk, contamination liability, and the failure modes that oil creates in mining environments.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/fail-safe-performance-in-theme-park-ride-systems"><strong>Fail-Safe Performance in Theme Park Ride Systems</strong><span>A complete engineering analysis of water hydraulic actuation for ride safety, reliability, and environmental protection. How water hydraulics eliminate oil contamination, slip hazards, varnish-related failures, and fire load in public ride environments.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/water-driven-power-on-offshore-platforms"><strong>Water-Driven Power on Offshore Platforms</strong><span>A full engineering and procurement analysis of water hydraulic actuation on offshore oil, gas, wind, and tidal energy platforms. How 316 stainless and PEEK-based systems eliminate spill risk, fire load, and corrosion failure in the most demanding marine environments.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/fire-suppression-evolved-why-water-mist-systems-outperform-traditional-sprinklers"><strong>Fire Suppression Evolved: Why Water Mist Systems Outperform Traditional Sprinklers</strong><span>A technical and procurement review of high-pressure water mist fire suppression systems and the engineering advantages of water hydraulic actuation over oil-driven alternatives.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/mining-equipment-water-hydraulic-systems"><strong>Mining Equipment Using Water Hydraulic Systems</strong><span>Water hydraulics in mining: underground fire safety regulations, Canadian regulatory context, roof supports, drilling equipment, longwall mining, dust suppression integration, and the mining business case.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/replacing-oil-systems-in-algoma-steel-a-modern-retrofit"><strong>Replacing Oil Systems in Algoma Steel: A Modern Retrofit</strong><span>A complete engineering analysis of retrofitting legacy oil hydraulic systems in steel mills. How water hydraulics eliminate fire risk, environmental liability, and energy inefficiency in heavy industrial environments using 316 stainless and carbon-reinforced PEEK.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/lifting-and-hauling-without-oil-forestry-applications-using-water"><strong>Lifting and Hauling Without Oil: Forestry Applications Using Water</strong><span>A technical and procurement analysis of water hydraulic systems in sawmills, logging operations, and fibre-handling facilities. How 316 stainless and PEEK-based systems eliminate resin adhesion, varnish, fire load, and thermal instability in forestry environments.</span></a><a class="wqs-industry-data__card" href="/knowledge-hub/five-reasons-your-next-valve-should-be-water-actuated"><strong>Five Reasons Your Next Valve Should Be Water Actuated</strong><span>Five engineering-based reasons to specify water actuation for your next valve. Environmental risk reduction, fire load elimination, thermal stability, material discipline, and lifecycle liability all shift decisively in favour of water.</span></a></div></div>
+    </div>
+  </div>
+</section>
+<!-- WQS_INDUSTRY_DATA_END -->
+<section id="hero" aria-label="Water Hydraulics for Fire Suppression">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="bubble-layer" id="hero-bubbles" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="label reveal">Industry Fire Suppression Systems</p>
+      <h1 class="reveal" style="transition-delay:.1s">
+        Eliminating <span class="accent-fire">Oil</span><br/>
+        from <span class="accent-water">Fire-Critical</span><br/>
+        Environments.
+      </h1>
+      <p class="hero-lead reveal" style="transition-delay:.2s">Oil is a burnable fluid a contamination risk and maintenance burden inside every fire-critical space. Water hydraulics use the same medium as your suppression system: clean, non-flammable, always ready.</p>
+      <div class="hero-ctas reveal" style="transition-delay:.3s">
+        <a href="#contact" class="btn btn-fire">Replace Oil in Your Fire System <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/pilot/" class="btn btn-outline">Pilot Program</a>
+      </div>
+      <div class="zero-strip reveal" style="transition-delay:.4s">
+        <div class="zero-badge"><div class="znum">ZERO</div><div class="zlbl">Ignition Risk</div></div>
+        <div class="zero-badge"><div class="znum">ZERO</div><div class="zlbl">Oil Contamination</div></div>
+        <div class="zero-badge"><div class="znum">ZERO</div><div class="zlbl">Hazmat Overhead</div></div>
+        <div class="zero-badge"><div class="znum">100%</div><div class="zlbl">Water-Based</div></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right">
+      <!-- Fire + suppression SVG -->
+      <svg class="fire-svg" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <radialGradient id="fg1" cx="50%" cy="70%" r="55%">
+            <stop offset="0%" stop-color="#E84830" stop-opacity="0.9"/>
+            <stop offset="60%" stop-color="#F08020" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#E84830" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="fg2" cx="50%" cy="65%" r="50%">
+            <stop offset="0%" stop-color="#F0A030" stop-opacity="0.7"/>
+            <stop offset="100%" stop-color="#E84830" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="wg1" cx="50%" cy="40%" r="55%">
+            <stop offset="0%" stop-color="#00C8D4" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#0058A8" stop-opacity="0.2"/>
+          </radialGradient>
+          <filter id="fglow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <filter id="wglow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <filter id="wglow2"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+
+        <!-- Fire glow at base -->
+        <ellipse cx="210" cy="340" rx="120" ry="50" fill="url(#fg1)" opacity="0.6">
+          <animate attributeName="rx" values="120;130;118;125;120" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.6;0.8;0.5;0.7;0.6" dur="2.5s" repeatCount="indefinite"/>
+        </ellipse>
+
+        <!-- Flame shapes -->
+        <path d="M210 300 C190 270,170 240,185 200 C195 170,205 155,210 130 C215 155,225 170,235 200 C250 240,230 270,210 300 Z" fill="url(#fg1)" filter="url(#fglow)">
+          <animate attributeName="d" dur="2s" repeatCount="indefinite"
+            values="M210 300 C190 270,170 240,185 200 C195 170,205 155,210 130 C215 155,225 170,235 200 C250 240,230 270,210 300 Z;
+                    M210 305 C188 272,168 238,184 196 C194 166,206 150,210 125 C214 150,226 166,236 196 C252 238,232 272,210 305 Z;
+                    M210 300 C190 270,170 240,185 200 C195 170,205 155,210 130 C215 155,225 170,235 200 C250 240,230 270,210 300 Z"/>
+        </path>
+        <path d="M210 290 C200 268,188 248,196 225 C202 208,208 198,210 180 C212 198,218 208,224 225 C232 248,220 268,210 290 Z" fill="url(#fg2)" filter="url(#fglow)" opacity="0.85">
+          <animate attributeName="d" dur="1.5s" repeatCount="indefinite"
+            values="M210 290 C200 268,188 248,196 225 C202 208,208 198,210 180 C212 198,218 208,224 225 C232 248,220 268,210 290 Z;
+                    M210 288 C198 264,185 245,194 222 C200 204,207 194,210 175 C213 194,220 204,226 222 C235 245,222 264,210 288 Z;
+                    M210 290 C200 268,188 248,196 225 C202 208,208 198,210 180 C212 198,218 208,224 225 C232 248,220 268,210 290 Z"/>
+        </path>
+
+        <!-- Water suppression pipe , horizontal header -->
+        <rect x="50" y="85" width="320" height="14" rx="7" fill="rgba(8,24,50,0.9)" stroke="rgba(0,200,212,0.5)" stroke-width="1.5"/>
+        <!-- HPU box top -->
+        <rect x="170" y="35" width="80" height="52" rx="6" fill="rgba(8,22,44,0.95)" stroke="rgba(0,200,212,0.55)" stroke-width="1.5"/>
+        <text x="210" y="57" text-anchor="middle" font-family="Avenir,sans-serif" font-size="9" font-weight="700" fill="#00C8D4" letter-spacing="0.12em">HPU</text>
+        <text x="210" y="70" text-anchor="middle" font-family="Avenir,sans-serif" font-size="7" fill="rgba(0,200,212,0.55)" letter-spacing="0.1em">WATER-BASED</text>
+        <text x="210" y="81" text-anchor="middle" font-family="Avenir,sans-serif" font-size="6.5" fill="rgba(140,170,200,0.4)" letter-spacing="0.1em">316 SS · PEEK</text>
+        <!-- Feed from HPU to header -->
+        <line x1="210" y1="87" x2="210" y2="99" stroke="rgba(0,200,212,0.6)" stroke-width="3" stroke-linecap="round"/>
+
+        <!-- Nozzle drops , water suppression downward -->
+        <!-- Nozzle 1 -->
+        <line x1="100" y1="99" x2="100" y2="118" stroke="rgba(0,200,212,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+        <polygon points="92,118 108,118 100,130" fill="rgba(0,180,212,0.8)" stroke="rgba(0,200,212,0.6)" stroke-width="1"/>
+        <!-- Water drops from nozzle 1 -->
+        <circle cx="96" cy="148" r="3" fill="url(#wg1)" filter="url(#wglow)" opacity="0.9">
+          <animate attributeName="cy" values="138;220" dur="1.8s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.9;0" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="104" cy="165" r="2.5" fill="url(#wg1)" filter="url(#wglow)" opacity="0.8">
+          <animate attributeName="cy" values="148;230" dur="2.1s" repeatCount="indefinite" begin="0.4s"/>
+          <animate attributeName="opacity" values="0.8;0" dur="2.1s" repeatCount="indefinite" begin="0.4s"/>
+        </circle>
+        <circle cx="100" cy="155" r="2" fill="#00C8D4" opacity="0.7">
+          <animate attributeName="cy" values="155;240" dur="1.6s" repeatCount="indefinite" begin="0.9s"/>
+          <animate attributeName="opacity" values="0.7;0" dur="1.6s" repeatCount="indefinite" begin="0.9s"/>
+        </circle>
+
+        <!-- Nozzle 2 (centre-left) -->
+        <line x1="165" y1="99" x2="165" y2="118" stroke="rgba(0,200,212,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+        <polygon points="157,118 173,118 165,130" fill="rgba(0,180,212,0.8)" stroke="rgba(0,200,212,0.6)" stroke-width="1"/>
+        <circle cx="162" cy="150" r="3" fill="url(#wg1)" filter="url(#wglow)">
+          <animate attributeName="cy" values="140;215" dur="2s" repeatCount="indefinite" begin="0.3s"/>
+          <animate attributeName="opacity" values="1;0" dur="2s" repeatCount="indefinite" begin="0.3s"/>
+        </circle>
+        <circle cx="168" cy="168" r="2.5" fill="#00C8D4">
+          <animate attributeName="cy" values="158;230" dur="1.9s" repeatCount="indefinite" begin="0.7s"/>
+          <animate attributeName="opacity" values="0.85;0" dur="1.9s" repeatCount="indefinite" begin="0.7s"/>
+        </circle>
+
+        <!-- Nozzle 3 (centre-right) -->
+        <line x1="255" y1="99" x2="255" y2="118" stroke="rgba(0,200,212,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+        <polygon points="247,118 263,118 255,130" fill="rgba(0,180,212,0.8)" stroke="rgba(0,200,212,0.6)" stroke-width="1"/>
+        <circle cx="252" cy="148" r="3" fill="url(#wg1)" filter="url(#wglow)">
+          <animate attributeName="cy" values="138;220" dur="1.7s" repeatCount="indefinite" begin="0.5s"/>
+          <animate attributeName="opacity" values="1;0" dur="1.7s" repeatCount="indefinite" begin="0.5s"/>
+        </circle>
+        <circle cx="258" cy="170" r="2.5" fill="#00C8D4">
+          <animate attributeName="cy" values="160;235" dur="2.2s" repeatCount="indefinite" begin="0.2s"/>
+          <animate attributeName="opacity" values="0.8;0" dur="2.2s" repeatCount="indefinite" begin="0.2s"/>
+        </circle>
+
+        <!-- Nozzle 4 -->
+        <line x1="320" y1="99" x2="320" y2="118" stroke="rgba(0,200,212,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+        <polygon points="312,118 328,118 320,130" fill="rgba(0,180,212,0.8)" stroke="rgba(0,200,212,0.6)" stroke-width="1"/>
+        <circle cx="317" cy="145" r="3" fill="url(#wg1)" filter="url(#wglow)">
+          <animate attributeName="cy" values="140;218" dur="1.9s" repeatCount="indefinite" begin="0.8s"/>
+          <animate attributeName="opacity" values="1;0" dur="1.9s" repeatCount="indefinite" begin="0.8s"/>
+        </circle>
+        <circle cx="323" cy="168" r="2.5" fill="#00C8D4">
+          <animate attributeName="cy" values="162;232" dur="2s" repeatCount="indefinite" begin="0.1s"/>
+          <animate attributeName="opacity" values="0.8;0" dur="2s" repeatCount="indefinite" begin="0.1s"/>
+        </circle>
+
+        <!-- Flow dot along header pipe -->
+        <circle r="4" fill="#00C8D4" filter="url(#wglow)" opacity="0.95">
+          <animateMotion dur="2.5s" repeatCount="indefinite" path="M50 92 L370 92"/>
+        </circle>
+
+        <!-- Label -->
+        <text x="210" y="405" text-anchor="middle" font-family="Avenir,sans-serif" font-size="9.5" font-weight="700" fill="rgba(0,200,212,0.38)" letter-spacing="0.18em">WATER-POWERED SUPPRESSION</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- THE CONTRADICTION -->
+<section class="section section-alt" aria-labelledby="contra-heading">
+  <div class="bubble-layer" id="contra-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">The Core Contradiction</p>
+      <h2 id="contra-heading">Oil in a Fire System Is<br/><span class="text-fire">Not a Design Choice, It's a Risk.</span></h2>
+    </div>
+    <div class="contradiction-grid">
+      <div class="contra-block problem reveal-left">
+        <div class="contra-block-head"><span class="icon">⚠️</span><h3>Traditional Fire Systems The Oil Problem</h3></div>
+        <div class="contra-body">
+          <p style="font-size:.9rem;color:var(--muted);margin-bottom:10px;">Traditional fire suppression systems use oil-filled hydraulics to operate:</p>
+          <div class="contra-item">Deluge valves and isolation gates</div>
+          <div class="contra-item">Monitors, turrets, and suppression equipment</div>
+          <div class="contra-item" style="margin-top:8px;font-weight:700;color:var(--silver)">Oil creates these hazards in fire-critical spaces:</div>
+          <div class="contra-item">Flammable fluid stored alongside fire systems</div>
+          <div class="contra-item">Contamination risk to nozzles, water pathways, and equipment</div>
+          <div class="contra-item">Ongoing maintenance burden, filtration, fluid testing, disposal</div>
+          <div class="contra-item">Violation of environmental and municipal codes in many jurisdictions</div>
+        </div>
+      </div>
+
+      <div class="contra-block solution reveal-right">
+        <div class="contra-block-head"><span class="icon">💧</span><h3>Water Hydraulics  The Logical Answer</h3></div>
+        <div class="contra-body">
+          <p style="font-size:.9rem;color:var(--muted);margin-bottom:10px;">Water hydraulics use the same medium as your suppression system:</p>
+          <div class="contra-item">Non-flammable zero ignition risk in any environment</div>
+          <div class="contra-item">Zero contamination of nozzles, water pathways, or municipal codes</div>
+          <div class="contra-item">Clean, non-toxic operation no hazmat documentation required</div>
+          <div class="contra-item">316 SS &amp; PEEK internals for long service life in heat, humidity, and corrosive environments</div>
+          <div class="contra-item">No oil storage, no spill containment, no hazardous waste disposal</div>
+          <div class="contra-item">Removes an entire hazard category from every safety audit</div>
+        </div>
+      </div>
+
+      <div class="key-insight reveal">
+        <p>"Oil is a burnable fluid a contamination risk and maintenance burden inside every fire-critical space. Using it to operate a fire suppression system is the one contradiction no engineer should accept."</p>
+        <p>"Water is already the suppression medium. Using it as the hydraulic medium too is not just logical, it is the only responsible engineering choice."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WATER ATOMIZATION SECTION -->
+<section class="section section-alt" aria-label="Water atomization fire suppression technology" id="atomization">
+  <div class="container">
+    <div class="section-header">
+      <p class="label reveal">Suppression Science</p>
+      <h2 class="reveal" style="transition-delay:.05s">How Water Atomization<br/><span class="text-aqua">Disrupts the Fire Triangle</span>.</h2>
+      <p class="reveal" style="transition-delay:.1s">High-pressure water mist systems deliver superior fire suppression by atomizing water into micron-scale droplets that simultaneously attack all three elements of combustion.</p>
+    </div>
+
+    <div style="margin-bottom:72px" class="reveal">
+      <h3 style="margin-bottom:24px;color:var(--fire-amber)">The Fire Triangle and Water's Multi-Point Attack</h3>
+      <p style="margin-bottom:20px">Every fire requires three elements to sustain combustion: heat, oxygen, and fuel. Water mist systems engineered with specialized nozzles disrupt all three simultaneously through precise droplet control.</p>
+      
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;margin-top:48px">
+        <div style="background:var(--navy);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px">
+          <div style="width:48px;height:48px;border-radius:50%;background:var(--fire-glow);border:2px solid var(--fire);display:flex;align-items:center;justify-content:center;margin-bottom:20px">
+            <span style="font-size:1.5rem;color:var(--fire)">🔥</span>
+          </div>
+          <h4 style="margin-bottom:12px;color:var(--white)">Heat Removal</h4>
+          <p style="font-size:0.95rem;line-height:1.65">Evaporative cooling absorbs latent heat at 2,257 kJ/kg. Smaller droplets maximize surface area per unit volume, accelerating heat transfer and reducing flame temperature below ignition thresholds.</p>
+        </div>
+
+        <div style="background:var(--navy);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px">
+          <div style="width:48px;height:48px;border-radius:50%;background:rgba(0,200,212,0.15);border:2px solid var(--aqua);display:flex;align-items:center;justify-content:center;margin-bottom:20px">
+            <span style="font-size:1.5rem;color:var(--aqua)">💨</span>
+          </div>
+          <h4 style="margin-bottom:12px;color:var(--white)">Oxygen Displacement</h4>
+          <p style="font-size:0.95rem;line-height:1.65">Steam expansion at 1,600:1 volume ratio displaces combustion air. Fine mist creates a vapour barrier that blocks oxygen diffusion to the fuel surface, starving the reaction zone.</p>
+        </div>
+
+        <div style="background:var(--navy);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px">
+          <div style="width:48px;height:48px;border-radius:50%;background:rgba(168,184,204,0.12);border:2px solid var(--silver);display:flex;align-items:center;justify-content:center;margin-bottom:20px">
+            <span style="font-size:1.5rem;color:var(--silver)">🛢️</span>
+          </div>
+          <h4 style="margin-bottom:12px;color:var(--white)">Fuel Surface Cooling</h4>
+          <p style="font-size:0.95rem;line-height:1.65">Wetting action cools fuel surfaces below pyrolysis temperature. Controlled droplet size ensures penetration without excessive runoff, preventing re-ignition of solid fuels and smothering liquid fuel fires.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-bottom:72px" class="reveal">
+      <h3 style="margin-bottom:24px;color:var(--fire-amber)">Droplet Size Engineering: The Critical Parameter</h3>
+      <p style="margin-bottom:20px">Fire suppression effectiveness is directly controlled by water droplet diameter. Specialized nozzles atomize water to precise size ranges, each optimized for different suppression mechanisms and fire classifications.</p>
+
+      <div style="background:var(--navy);border:1px solid var(--border-fire);border-radius:var(--radius-md);padding:40px;margin-top:32px">
+        <table style="width:100%;border-collapse:collapse;color:var(--body-text)">
+          <thead>
+            <tr style="border-bottom:2px solid var(--border)">
+              <th style="text-align:left;padding:16px 12px;font-family:var(--font-display);font-size:0.82rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--fire-amber)">Droplet Class</th>
+              <th style="text-align:left;padding:16px 12px;font-family:var(--font-display);font-size:0.82rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--fire-amber)">Diameter Range</th>
+              <th style="text-align:left;padding:16px 12px;font-family:var(--font-display);font-size:0.82rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--fire-amber)">Primary Mechanism</th>
+              <th style="text-align:left;padding:16px 12px;font-family:var(--font-display);font-size:0.82rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--fire-amber)">Typical Application</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--border)">
+              <td style="padding:18px 12px;font-weight:600;color:var(--white)">Ultra-Fine Mist</td>
+              <td style="padding:18px 12px;font-family:var(--font-display);color:var(--aqua)">10–50 µm</td>
+              <td style="padding:18px 12px">Rapid evaporative cooling, oxygen displacement, complete vaporization in flame zone</td>
+              <td style="padding:18px 12px">Enclosed machinery spaces, electrical rooms, server facilities</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border)">
+              <td style="padding:18px 12px;font-weight:600;color:var(--white)">Fine Mist</td>
+              <td style="padding:18px 12px;font-family:var(--font-display);color:var(--aqua)">50–200 µm</td>
+              <td style="padding:18px 12px">Balanced cooling and oxygen blocking, minimal water damage, extended hang time</td>
+              <td style="padding:18px 12px">Gas turbine enclosures, offshore modules, industrial kitchens</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border)">
+              <td style="padding:18px 12px;font-weight:600;color:var(--white)">Medium Droplet</td>
+              <td style="padding:18px 12px;font-family:var(--font-display);color:var(--aqua)">200–400 µm</td>
+              <td style="padding:18px 12px">Direct fuel cooling, surface wetting, moderate penetration through fire plume</td>
+              <td style="padding:18px 12px">Warehouse rack storage, manufacturing floors, vehicle bays</td>
+            </tr>
+            <tr>
+              <td style="padding:18px 12px;font-weight:600;color:var(--white)">Spray Droplet</td>
+              <td style="padding:18px 12px;font-family:var(--font-display);color:var(--aqua)">400–1000 µm</td>
+              <td style="padding:18px 12px">High momentum fuel wetting, deep-seated fire penetration, Class A combustibles</td>
+              <td style="padding:18px 12px">Timber yards, paper mills, solid fuel storage areas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div style="margin-bottom:72px" class="reveal">
+      <h3 style="margin-bottom:24px;color:var(--fire-amber)">Atomization Physics: Pressure, Orifice, and Flow Regime</h3>
+      <p style="margin-bottom:20px">High-pressure water mist nozzles operate at 50–200 bar (725–2,900 psi) to achieve controlled atomization. Nozzle geometry and operating pressure determine droplet size distribution through hydraulic shear and turbulent breakup mechanisms.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:32px">
+        <div style="background:var(--navy);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px">
+          <h4 style="margin-bottom:16px;color:var(--aqua);text-transform:none;letter-spacing:0">Nozzle Operating Parameters</h4>
+          <ul style="list-style:none;padding:0">
+            <li style="padding:10px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between">
+              <span style="color:var(--silver)">Operating Pressure:</span>
+              <span style="font-family:var(--font-display);font-weight:700;color:var(--white)">50–200 bar</span>
+            </li>
+            <li style="padding:10px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between">
+              <span style="color:var(--silver)">Orifice Diameter:</span>
+              <span style="font-family:var(--font-display);font-weight:700;color:var(--white)">0.3–2.0 mm</span>
+            </li>
+            <li style="padding:10px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between">
+              <span style="color:var(--silver)">Flow Rate (typical):</span>
+              <span style="font-family:var(--font-display);font-weight:700;color:var(--white)">10–100 L/min</span>
+            </li>
+            <li style="padding:10px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between">
+              <span style="color:var(--silver)">Spray Cone Angle:</span>
+              <span style="font-family:var(--font-display);font-weight:700;color:var(--white)">60°–120°</span>
+            </li>
+            <li style="padding:10px 0;display:flex;justify-content:space-between">
+              <span style="color:var(--silver)">Droplet Velocity:</span>
+              <span style="font-family:var(--font-display);font-weight:700;color:var(--white)">20–80 m/s</span>
+            </li>
+          </ul>
+        </div>
+
+        <div style="background:var(--navy);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px">
+          <h4 style="margin-bottom:16px;color:var(--aqua);text-transform:none;letter-spacing:0">Suppression Performance Metrics</h4>
+          <ul style="list-style:none;padding:0">
+            <li style="padding:10px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between">
+              <span style="color:var(--silver)">Surface Area per Litre:</span>
+              <span style="font-family:var(--font-display);font-weight:700;color:var(--white)">60–600 m²</span>
+            </li>
+            <li style="padding:10px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between">
+              <span style="color:var(--silver)">Evaporation Rate:</span>
+              <span style="font-family:var(--font-display);font-weight:700;color:var(--white)">70–95%</span>
+            </li>
+            <li style="padding:10px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between">
+              <span style="color:var(--silver)">Heat Absorption:</span>
+              <span style="font-family:var(--font-display);font-weight:700;color:var(--white)">2.26 MJ/kg</span>
+            </li>
+            <li style="padding:10px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between">
+              <span style="color:var(--silver)">Steam Expansion:</span>
+              <span style="font-family:var(--font-display);font-weight:700;color:var(--white)">1,600:1</span>
+            </li>
+            <li style="padding:10px 0;display:flex;justify-content:space-between">
+              <span style="color:var(--silver)">Knockdown Time:</span>
+              <span style="font-family:var(--font-display);font-weight:700;color:var(--white)">30–120 sec</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <h3 style="margin-bottom:24px;color:var(--fire-amber)">Hydraulic System Requirements for High-Pressure Mist</h3>
+      <p style="margin-bottom:20px">Achieving effective atomization demands precision hydraulic control. Water hydraulic actuation systems control deluge valve timing, nozzle pressure regulation, and zone sequencing without introducing flammable hydraulic oil into fire-critical infrastructure.</p>
+
+      <div style="background:linear-gradient(135deg,var(--navy-light) 0%,var(--navy-mid) 100%);border:1px solid var(--border-aqua,var(--border));border-radius:var(--radius-md);padding:48px;margin-top:32px">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px">
+          <div>
+            <div style="font-family:var(--font-display);font-size:2.8rem;font-weight:900;color:var(--aqua);line-height:1;margin-bottom:8px">100–200</div>
+            <div style="font-size:0.82rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--silver);margin-bottom:12px">Bar System Pressure</div>
+            <p style="font-size:0.92rem;line-height:1.5">Water hydraulic HPUs deliver sustained pressure for nozzle atomization without oil contamination risk.</p>
+          </div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:2.8rem;font-weight:900;color:var(--aqua);line-height:1;margin-bottom:8px">&lt;0.5</div>
+            <div style="font-size:0.82rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--silver);margin-bottom:12px">Second Valve Response</div>
+            <p style="font-size:0.92rem;line-height:1.5">Water hydraulic actuators provide rapid deluge activation with no oil-related sluggishness or thermal degradation.</p>
+          </div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:2.8rem;font-weight:900;color:var(--aqua);line-height:1;margin-bottom:8px">316L</div>
+            <div style="font-size:0.82rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--silver);margin-bottom:12px">Stainless Steel + PEEK</div>
+            <p style="font-size:0.92rem;line-height:1.5">Corrosion-resistant internals tolerate high-humidity, high-salinity environments typical of fire suppression installations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SIX REASONS -->
+<section class="section section-dark" aria-labelledby="reasons-heading">
+  <div class="bubble-layer" id="reasons-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Six Reasons</p>
+      <h2 id="reasons-heading">Why Water Hydraulics Fit<br/><span class="text-amber">Every Fire Suppression Application</span></h2>
+    </div>
+    <div class="reasons-grid">
+      <div class="reason-card reveal" data-num="01" style="transition-delay:.0s"><div class="r-icon">🔥</div><h3>No Ignition Risk</h3><p>Non-flammable. No vapour ignition. No flash or combustion risk. Safe for enclosed spaces, tunnels, offshore platforms, and any environment where ignition sources must be minimized.</p></div>
+      <div class="reason-card reveal" data-num="02" style="transition-delay:.07s"><div class="r-icon">✅</div><h3>Clean &amp; Non-Toxic</h3><p>Water avoids oil contamination of nozzles, water pathways, equipment, and surrounding areas. No conflict with municipal environmental codes or food-grade facility requirements.</p></div>
+      <div class="reason-card reveal" data-num="03" style="transition-delay:.14s"><div class="r-icon">🌡️</div><h3>Stable Under Heat</h3><p>No viscosity fade. Predictable motion. Consistent pressure during temperature spikes and rapid cycling. The system performs exactly when and how it must, in the worst conditions.</p></div>
+      <div class="reason-card reveal" data-num="04" style="transition-delay:.0s"><div class="r-icon">⚙️</div><h3>Corrosion Resistant</h3><p>316 stainless steel and carbon-reinforced PEEK handle moisture, chemicals, marine environments, and offshore exposure indefinitely,. no seal degradation, no rust, no failure from environment.</p></div>
+      <div class="reason-card reveal" data-num="05" style="transition-delay:.07s"><div class="r-icon">🔧</div><h3>Low Maintenance</h3><p>No oil filtration, fluid testing, disposal, sludge removal, or routine swaps. Systems stay ready 24/7 for decades. No hazmat documentation. Fewer inspections. Simpler compliance.</p></div>
+      <div class="reason-card reveal" data-num="06" style="transition-delay:.14s"><div class="r-icon">📉</div><h3>Lower Lifecycle Cost</h3><p>Fewer components, no fluid management program, longer-lasting materials. Total cost of ownership drops substantially over the service life and the liability savings dwarf the hardware cost.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="section section-alt" aria-labelledby="table-heading">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Performance Comparison</p>
+      <h2 id="table-heading">Water vs Oil vs Air<br/><span class="text-amber">Head-to-Head</span></h2>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th class="hl">Water Hydraulics</th>
+            <th>Oil Hydraulics</th>
+            <th>Air Systems</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Fire Hazard</td><td class="hl-col td-good">None</td><td class="td-bad">High</td><td class="td-mid">None</td></tr>
+          <tr><td>Emergency Reliability</td><td class="hl-col td-good">Excellent</td><td class="td-bad">Varies with heat</td><td class="td-mid">Moderate</td></tr>
+          <tr><td>Medium Toxicity</td><td class="hl-col td-good">None</td><td class="td-bad">High</td><td class="td-mid">None</td></tr>
+          <tr><td>Response Latency</td><td class="hl-col td-good">Fast</td><td class="td-bad">Medium (viscosity-sensitive)</td><td class="td-mid">Slow</td></tr>
+          <tr><td>Corrosion Resistance</td><td class="hl-col td-good">High</td><td class="td-bad">Low</td><td class="td-mid">Medium</td></tr>
+          <tr><td>Maintenance Demand</td><td class="hl-col td-good">Low</td><td class="td-bad">High</td><td class="td-mid">Low</td></tr>
+          <tr><td>Harsh Environments</td><td class="hl-col td-good">Excellent</td><td class="td-bad">Poor</td><td class="td-mid">Good</td></tr>
+          <tr><td>Force Output</td><td class="hl-col td-good">High</td><td class="td-good">High</td><td class="td-bad">Low</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="section section-dark" aria-labelledby="apps-heading">
+  <div class="bubble-layer" id="apps-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Where We're Deployed</p>
+      <h2 id="apps-heading">Applications in<br/><span class="text-amber">Fire Suppression</span></h2>
+    </div>
+    <div class="apps-grid">
+      <div class="app-card reveal" style="transition-delay:.0s">
+        <div class="app-card-head"><span class="app-icon">🏭</span><h3>Industrial Fire Protection</h3></div>
+        <div class="app-items">
+          <div class="app-item">Storage tank outlet valves</div>
+          <div class="app-item">Refinery suppression systems</div>
+          <div class="app-item">Petrochemical plant fire loops</div>
+          <div class="app-item">LNG facility isolation valves</div>
+          <div class="app-item">Gate valves in supply tunnels</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.07s">
+        <div class="app-card-head"><span class="app-icon">⚓</span><h3>Marine &amp; Offshore</h3></div>
+        <div class="app-items">
+          <div class="app-item">Offshore platform monitors &amp; turrets</div>
+          <div class="app-item">Shipboard deluge valves</div>
+          <div class="app-item">Engine room fire loops</div>
+          <div class="app-item">Deck hydrant controls</div>
+          <div class="app-item">Offshore ESD valves</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.14s">
+        <div class="app-card-head"><span class="app-icon">🔥</span><h3>Firefighting Infrastructure</h3></div>
+        <div class="app-items">
+          <div class="app-item">Deluge valve actuation</div>
+          <div class="app-item">Monitor &amp; turret control</div>
+          <div class="app-item">Foam system valves</div>
+          <div class="app-item">Fire pump discharge valves</div>
+          <div class="app-item">Hazardous-area equipment</div>
+        </div>
+      </div>
+    </div>
+    <div class="apps-grid row2" style="margin-top:22px;">
+      <div class="app-card reveal" style="transition-delay:.0s">
+        <div class="app-card-head"><span class="app-icon">🏢</span><h3>Municipal &amp; Building</h3></div>
+        <div class="app-items">
+          <div class="app-item">High-rise fire riser valves</div>
+          <div class="app-item">Building isolation valves</div>
+          <div class="app-item">Fire zone control valves</div>
+          <div class="app-item">Mechanical room loops</div>
+        </div>
+      </div>
+      <div class="app-card reveal" style="transition-delay:.07s">
+        <div class="app-card-head"><span class="app-icon">🚇</span><h3>Transport &amp; Tunnel</h3></div>
+        <div class="app-items">
+          <div class="app-item">Tunnel deluge &amp; sprinkler control</div>
+          <div class="app-item">Subway fire suppression</div>
+          <div class="app-item">Train depot fire lines</div>
+          <div class="app-item">Airport fire systems</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THREE PILLARS OF RELIABILITY -->
+<section class="section section-alt" aria-labelledby="pillars-heading">
+  <div class="bubble-layer" id="pillars-bubbles" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header center reveal">
+      <p class="label">Reliability Pillars</p>
+      <h2 id="pillars-heading">How Water Hydraulics Improve<br/><span class="text-amber">Fire System Reliability</span></h2>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card reveal" style="transition-delay:.0s">
+        <div class="pillar-num">01 / Actuation</div>
+        <h3>Immediate Actuation Under All Conditions</h3>
+        <p>No viscosity to stabilize. No preheating. No thickening in cold. No evaporation in heat. The system works instantly when lives depend on it delivering full force the moment it's called.</p>
+      </div>
+      <div class="pillar-card reveal" style="transition-delay:.1s">
+        <div class="pillar-num">02 / Integration</div>
+        <h3>Seamless Retrofit into Existing Systems</h3>
+        <p>Retrofit into existing sprinkler lines, deluge systems, foam suppression, and fire loop mains. Replace the hydraulic power unit and actuators no fundamental piping changes required.</p>
+      </div>
+      <div class="pillar-card reveal" style="transition-delay:.2s">
+        <div class="pillar-num">03 / Compliance</div>
+        <h3>Peace of Mind for Safety Audits</h3>
+        <p>No oil storage, no spill containment, no hazmat documentation, no hazardous waste disposal. Removes an entire hazard category from regulatory inspections and annual safety audits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" aria-label="Replace oil hydraulics in your fire system">
+  <div id="cta">
+    <div class="bubble-layer" id="cta-bubbles" aria-hidden="true"></div>
+    <div class="cta-inner" style="position:relative;z-index:2;">
+      <p class="label reveal">The Case Is Clear</p>
+      <h2 class="reveal" style="transition-delay:.1s">Water Hydraulics Are the Only<br/><span class="text-amber">Logical Choice</span> for Fire Suppression.</h2>
+      <p class="reveal" style="transition-delay:.2s">Contact WaterQuest Solutions to replace oil hydraulics in your fire suppression system. Eliminate the contradiction and the liability that comes with it.</p>
+      <div class="cta-buttons reveal" style="transition-delay:.3s">
+        <a href="/contact/" class="btn btn-fire">Replace Oil in Your Fire System <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/pilot/" class="btn btn-outline">Explore Pilot Program</a>
+      </div>
+      <div class="cta-specs reveal" style="transition-delay:.35s">
+        <strong>316 Stainless Steel &amp; Carbon-Reinforced PEEK</strong> internals delivering long life in corrosive,<br/>high-humidity, and high-temperature environments.
+      </div>
+      <div class="cta-stats reveal" style="transition-delay:.4s">
+        <div class="cta-stat"><div class="snum">ZERO</div><div class="slbl">Ignition Risk</div></div>
+        <div class="cta-stat"><div class="snum">ZERO</div><div class="slbl">Oil Contamination</div></div>
+        <div class="cta-stat"><div class="snum">ZERO</div><div class="slbl">Hazmat Overhead</div></div>
+        <div class="cta-stat"><div class="snum">100%</div><div class="slbl">Water-Based</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER --><script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40), {passive:true});
+
+  // Water droplet bubbles (aqua , extinguishing)
+  (function globalBubbles() {
+    const c = document.getElementById('global-bubbles');
+    for (let i = 0; i < 26; i++) {
+      const b = document.createElement('div'); b.className = 'bubble';
+      const s = Math.random()*9+3, d = (Math.random()-.5)*80;
+      b.style.cssText = `width:${s}px;height:${s}px;left:${Math.random()*100}%;bottom:${Math.random()*10}%;--drift:${d}px;animation-duration:${Math.random()*16+10}s;animation-delay:${Math.random()*14}s;`;
+      c.appendChild(b);
+    }
+  })();
+
+  // Ember particles (fire side)
+  (function embers() {
+    const c = document.getElementById('ember-layer');
+    for (let i = 0; i < 18; i++) {
+      const e = document.createElement('div'); e.className = 'ember';
+      const s = Math.random()*4+1.5;
+      const hue = Math.random() > 0.5 ? 'rgba(232,72,48,' : 'rgba(240,128,32,';
+      const drift = (Math.random()-.5)*100;
+      e.style.cssText = `
+        width:${s}px;height:${s}px;
+        left:${50+Math.random()*40}%;
+        bottom:${Math.random()*15}%;
+        background:${hue}0.85);
+        box-shadow:0 0 ${s*2}px ${hue}0.6);
+        --edrift:${drift}px;
+        animation-duration:${Math.random()*6+4}s;
+        animation-delay:${Math.random()*8}s;
+      `;
+      c.appendChild(e);
+    }
+  })();
+
+  function seedBubbles(id, n) {
+    const c = document.getElementById(id); if (!c) return;
+    for (let i = 0; i < n; i++) {
+      const b = document.createElement('div'); b.className = 'bubble';
+      const s = Math.random()*7+2, d = (Math.random()-.5)*60;
+      b.style.cssText = `width:${s}px;height:${s}px;left:${Math.random()*100}%;bottom:${Math.random()*25}%;--drift:${d}px;animation-duration:${Math.random()*14+8}s;animation-delay:${Math.random()*10}s;`;
+      c.appendChild(b);
+    }
+  }
+  ['hero-bubbles','contra-bubbles','reasons-bubbles','apps-bubbles','pillars-bubbles','cta-bubbles'].forEach(id => seedBubbles(id, 10));
+
+  const obs = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);} }), {threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => obs.observe(el));
+</script>
+<!-- WQ_CONTEXT_APPS_START -->
+<section class="wq-context-apps" aria-label="Related application pages">
+  <div class="wq-context-wrap">
+    <div>
+      <h2>Related application pages</h2>
+      <p>Application pages connect this section to specific water hydraulic projects and operating problems.</p>
+    </div>
+    <div class="wq-app-links"><a href="/applications/fire-suppression/">Fire Suppression</a><a href="/applications/nozzle-technology/">Nozzle Technology</a><a href="/applications/flow-control/">Flow Control</a></div>
+  </div>
+</section>
+<!-- WQ_CONTEXT_APPS_END -->
+
+<!-- WQ_GLOBAL_FOOTER_START -->
+<footer class="wq-site-footer" role="contentinfo">
+  <div class="wq-footer-container">
+    <div class="wq-footer-grid">
+      <div class="wq-footer-brand">
+        <span class="wq-logo-main">WaterQuest Solutions</span>
+        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
+        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Industries</h5>
+        <ul><li><a href="/industries/municipal/">Municipal</a></li><li><a href="/industries/wastewater-treatment/">Wastewater Treatment</a></li><li><a href="/industries/hydro/">Hydro</a></li><li><a href="/industries/marine/">Marine</a></li><li><a href="/industries/desalination/">Desalination</a></li><li><a href="/industries/mining/">Mining</a></li><li><a href="/industries/forestry/">Forestry</a></li><li><a href="/industries/pulp-paper/">Pulp and Paper</a></li><li><a href="/industries/food-beverage/">Food and Beverage</a></li><li><a href="/industries/agriculture/">Agriculture</a></li><li><a href="/industries/hydrogen-production/">Hydrogen Production</a></li><li><a href="/industries/fire-suppression/" class="active">Fire Suppression</a></li><li><a href="/industries/dust-control/">Dust Control</a></li><li><a href="/industries/odor-control/">Odor Control</a></li><li><a href="/industries/waterparks/">Waterparks</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Core Pages</h5>
+        <ul><li><a href="/products/">Products</a></li><li><a href="/industries/" class="active">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
+      </div>
+      <div class="wq-footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
+          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
+          <li>558 East Kent Ave S</li>
+          <li>Vancouver, BC V5X 4V6</li>
+          <li>Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
+  </div>
+</footer>
+<!-- WQ_GLOBAL_FOOTER_END -->
+<script id="wq-global-shell-js">
+    (function(){
+      var nav=document.getElementById("wq-nav");
+      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
+      var menuButton=document.querySelector(".wq-menu-toggle");
+      var mobileMenu=document.getElementById("wq-mobile-menu");
+      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
+      var bubbles=document.getElementById("wq-global-bubbles");
+      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
+      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
+      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
+      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
+      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
+      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
+      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
+      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
+      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
+      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
+      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
+      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
+    })();
+  </script>
+
+</body>
+</html>
