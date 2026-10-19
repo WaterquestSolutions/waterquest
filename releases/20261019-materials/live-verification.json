@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/products/",
+    "status": 200,
+    "exactMatch": true,
+    "sha256": "72e5e27218ab31909319757c1afb237ad67368a4fa552fed2d105887e40b7ca5"
+  },
+  {
+    "path": "/",
+    "status": 200,
+    "exactMatch": true,
+    "sha256": "ec298fa7465fb6866822cf615afafb496132f822beb9bf56961eec58c756b70a"
+  }
+]

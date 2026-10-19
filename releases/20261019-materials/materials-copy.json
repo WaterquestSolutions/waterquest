@@ -1,0 +1,11 @@
+{
+  "before": "3c8a134a14d45813a5796eccb5df56445b02a6d0a681f22018357ae2836c2e5e",
+  "after": "72e5e27218ab31909319757c1afb237ad67368a4fa552fed2d105887e40b7ca5",
+  "replacements": {
+    "Design every connection for water.": "Oil and water play by different rules. Good engineering respects the difference.",
+    "Purpose-built water hydraulics uses materials, wear surfaces and seals selected for water. Apply the same attention to the small connections as to the pump and actuator.": "Oil and water can both transmit hydraulic power, but a system designed for oil cannot simply be expected to run reliably on water. Water demands a different approach to lubrication, wear and, especially, material compatibility.",
+    "Carry the material review through valves, fittings and connections. Select each alloy and polymer for its role, the working water and the other materials it contacts.": "That is why material selection must extend through the entire water circuit. A carefully engineered pump is only part of the solution: the valves, fittings and connections must also be compatible with the water and with one another. Our approach centres on 316 stainless steel and carbon-reinforced PEEK, with materials selected for their role and operating conditions.",
+    "WQS Stainless supports that approach with stainless fittings and connection hardware for a coordinated equipment scope.": "That principle is why we created WQS Stainless: to supply the 316 stainless steel components that help carry sound engineering through every part of a water hydraulic system. Because reliable water hydraulics begins with designing for water from the start.",
+    "Bring the hydraulic equipment and connection requirements to one discussion. We’ll help define a coordinated supply package with clear materials, interfaces and responsibilities.": "Our WQS Stainless division makes it possible to offer complete turnkey water hydraulic systems from a single manufacturer. From the hydraulic equipment to the stainless steel fittings and connections, you benefit from a coordinated package, consistent material selection and one point of contact for the complete system."
+  }
+}
