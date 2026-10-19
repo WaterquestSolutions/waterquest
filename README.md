@@ -29,3 +29,7 @@ The inherited site contains `/api/zoho/intake` and `/api/zoho/event` integration
 ## Validation
 
 `docs/site-validation.json` records structural checks. The new Power Centre and valve pages were also reviewed in a local browser. Product configuration details marked “Confirm” require engineering review before final selection.
+
+## Current Knowledge Hub release
+
+The [19 October guide release](releases/20261019-knowledge-hub/README.md) records the current 129-guide upgrade, reciprocal product links, generated pages and verification evidence. Read its deployment notes before publishing: the root snapshot predates the live Vercel base/overlay arrangement.
