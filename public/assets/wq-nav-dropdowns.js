@@ -189,7 +189,7 @@ if(!record){
  if(!category&&/\/products\/.*(?:m3|m6|m15|m30|m60|m180)/i.test(path))category='motor';
  if(category){const model=(path.match(/(?:p|m)(?:3|6|15|30|60|180)/i)||[])[0]?.toUpperCase()||'selected';record={hero:[category==='pump'?'Considering the '+model+' pump for your equipment?':'Is the '+model+' motor right for your drive application?',category==='pump'?'Send us your required operating pressure, flow, drive speed and duty cycle. We can help confirm the pump selection and supporting equipment.':'Share your required speed, torque, operating pressure and available flow. We can help review the motor selection and associated supply requirements.','Review Product Details','Request a '+category+' Quotation'],cta:['Ready to specify the '+model+' '+category+'?','Send your operating requirements for an application-specific selection and quotation.','Request a '+category+' quotation']};}
 }
-if(!record)return;
+if(!record){if(path==='/contact/'){const q=new URLSearchParams(location.search);const interest=q.get('interest'),from=q.get('from');if(interest){const fill=()=>{const msg=document.querySelector('#er-message');if(msg&&!msg.value){msg.value='Enquiry: '+interest+(from?' | From: '+from:'')+'\n\nOperating requirements: ';msg.dispatchEvent(new Event('input',{bubbles:true}));}};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fill,{once:true});else fill();}}return;}
 function makeContact(label,area){return '/contact/?source='+encodeURIComponent(area)+'&interest='+encodeURIComponent(label)+'&from='+encodeURIComponent(path)}
 function makeLink(text,href,cls){const a=document.createElement('a');a.href=href;a.textContent=text;a.className=cls;return a}
 function install(){const main=document.querySelector('main');if(!main)return;
@@ -205,7 +205,7 @@ if(h&&record.hero[0]){
  if(controls){let links=[...controls.querySelectorAll('a')].slice(0,2);if(links[0]){links[0].textContent=record.hero[2];links[0].href=path==='/'?'/products/': '#wqs-page-content';}
  if(links[1]){links[1].textContent=record.hero[3];links[1].href=makeContact(record.hero[3],'hero');}
  }
- const second=Array.from(main.children).find(el=>el.contains(h))?.nextElementSibling||host?.nextElementSibling;if(second&&!document.getElementById('wqs-page-content'))second.id='wqs-page-content';
+ const second=Array.from(main.children).find(el=>el.contains(h))?.nextElementSibling||host?.nextElementSibling;if(!document.getElementById('wqs-page-content')){if(second)second.id='wqs-page-content';else {const anchor=document.createElement('span');anchor.id='wqs-page-content';host?.after(anchor);}}
  }
  const foot=document.querySelector('footer');if(!foot||document.getElementById('wqs-approved-footer-cta'))return;
  const previous=foot.previousElementSibling;
