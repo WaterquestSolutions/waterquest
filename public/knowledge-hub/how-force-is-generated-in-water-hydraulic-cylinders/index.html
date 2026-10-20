@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html id="waterquest-site" lang="en-CA">
+<head><style id="wqs-experience-layer">@layer wqs-experience;</style><link rel="stylesheet" href="/assets/newsletter-popup.css?v=20261016">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>How Force Is Generated in Water Hydraulic Cylinders | WaterQuest Solutions</title>
+
+
+<style>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<meta content="Cylinder force comes from pressure acting over an area. Learn why push and pull forces differ, how pressure on the return side changes the result and how to use the calculation when choosing a water hydraulic cylinder." name="description"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="How Force Is Generated in Water Hydraulic Cylinders, water hydraulics, water hydraulic systems, oil-free hydraulics, water as a hydraulic medium, tap water hydraulics, seawater hydraulics, WaterQuest Solutions, water hydraulics engineering guide, hydraulic oil alternative, industrial water hydraulics, 316 stainless steel hydraulics" name="keywords"/>
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/how-force-is-generated-in-water-hydraulic-cylinders/" rel="canonical"/>
+<meta content="WaterQuest Solutions" property="og:site_name"/>
+<meta content="How Force Is Generated in Water Hydraulic Cylinders" property="og:title"/>
+<meta content="Cylinder force comes from pressure acting over an area. Learn why push and pull forces differ, how pressure on the return side changes the result and how to use the calculation when choosing a water hydraulic cylinder." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/how-force-is-generated-in-water-hydraulic-cylinders/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="How Force Is Generated in Water Hydraulic Cylinders" name="twitter:title"/>
+<meta content="Cylinder force comes from pressure acting over an area. Learn why push and pull forces differ, how pressure on the return side changes the result and how to use the calculation when choosing a water hydraulic cylinder." name="twitter:description"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/how-force-is-generated-in-water-hydraulic-cylinders/#primary","mainEntityOfPage":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/how-force-is-generated-in-water-hydraulic-cylinders/","name":"How Force Is Generated in Water Hydraulic Cylinders","headline":"How Force Is Generated in Water Hydraulic Cylinders","description":"Cylinder force comes from pressure acting over an area. Learn why push and pull forces differ, how pressure on the return side changes the result and how to use the calculation when choosing a water hydraulic cylinder.","url":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/how-force-is-generated-in-water-hydraulic-cylinders/","inLanguage":"en-CA","isPartOf":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"},"publisher":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"},"author":{"@type":"Organization","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization","name":"WaterQuest Solutions"},"about":[{"@type":"Thing","name":"How Force Is Generated in Water Hydraulic Cylinders"}],"articleSection":"Start Here","dateModified":"2026-10-19","datePublished":"2026-09-02","wordCount":1644,"timeRequired":"PT9M","citation":["https://openstax.org/books/university-physics-volume-1/pages/14-3-pascals-principle-and-hydraulics","https://www.iso.org/standard/44781.html","https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/"],"hasPart":[{"@type":"WebPageElement","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/how-force-is-generated-in-water-hydraulic-cylinders/#guide-application","name":"Calculate net force at the chambers"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/"},{"@type":"ListItem","position":2,"name":"Knowledge Hub","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"},{"@type":"ListItem","position":3,"name":"How Force Is Generated in Water Hydraulic Cylinders","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/how-force-is-generated-in-water-hydraulic-cylinders/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"/><link rel="stylesheet" href="/assets/wq-brand-standards.css?v=20261015-brand"/><script type="module" src="/assets/wq-speed-insights.js" id="wq-speed-insights"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style></head>
+<body class="wq-audited wq-consistent" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img class="wq-brand-mark" src="/assets/waterquest-logo-square.png" alt="" width="54" height="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero">
+<div class="container">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › Article 6</div>
+<p class="eyebrow">Start Here</p>
+<h1 data-editorial="hero">How Force Is Generated in Water Hydraulic Cylinders</h1>
+<p class="ed-question">Calculate the cylinder force available to do useful work.</p><p class="lead" data-editorial="lead">Cylinder force comes from pressure acting over an area. Learn why push and pull forces differ, how pressure on the return side changes the result and how to use the calculation when choosing a water hydraulic cylinder.</p>
+<div class="article-meta"><span class="pill">Article 006</span><span class="pill">Start Here</span><span class="pill">10 min read</span><span class="pill">Updated 19 October 2026</span></div>
+</div>
+</section>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><span aria-hidden="true" class="ed-legacy-anchor" id="construction-of-water-hydraulic-cylinders"></span><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="double-acting-cylinders-extend-vs-retract-force"></span><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><span aria-hidden="true" class="ed-legacy-anchor" id="mounting-configurations"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><span aria-hidden="true" class="ed-legacy-anchor" id="service-life-and-maintenance"></span><span aria-hidden="true" class="ed-legacy-anchor" id="the-force-equation-starting-from-first-principles"></span><h2 id="learn-force-comes-from-pressure-acting-over-area">Use piston area to turn water pressure into force</h2><p>A water hydraulic cylinder converts pressure acting over its effective piston area into a push or pull. Increasing that area provides more ideal force at the same pressure difference. Check both cylinder chambers, return pressure and friction to understand the force available at the rod, then connect it to the load through the mounting and mechanism.</p><p>The pump supplies the circuit with flow and the ability to operate within a pressure range; it does not assign an arbitrary force to the rod. The load, valve arrangement and pressures on both sides of the piston determine the hydraulic force available. Mechanical friction and other effects then influence the force transmitted to the driven mechanism. OpenStax's discussion of hydraulic pressure provides a useful introduction to the underlying relationship. <a aria-label="Source 1: OpenStax: Pascal’s principle and hydraulics" class="kh-citation" href="#source-physics">[1]</a></p><p>For a buyer, this means that the cylinder bore, rod diameter and operating pressures belong together in the selection. A catalogue's maximum pressure alone cannot tell you whether a gate will open, a clamp will hold or a mechanism will move through its complete travel. Begin with the required function and use the calculation to connect it to a supported assembly.</p><h2 id="learn-identify-the-two-effective-piston-areas">Identify the two effective piston areas</h2><p>On the cap end of a typical single-rod cylinder, pressure acts over the full piston area. On the rod end, the rod occupies part of that area, leaving an annular working area. If the bore diameter is D and the rod diameter is d, the full area is πD²/4 and the annular area is π(D² − d²)/4. Use consistent units before multiplying either area by pressure.</p><p>The difference is not a minor detail. At the same chamber pressure, the smaller annular area produces a smaller force contribution. It also requires less fluid volume for the same length of movement. A double-acting cylinder can therefore have different extension and retraction behaviour even when the pump and command remain unchanged.</p><p>Draw the piston with the two chambers labelled before calculating. Show the desired direction and the pressures acting on the corresponding areas. This simple sketch makes the signs clear and reduces the chance of calculating a full-area force while overlooking pressure on the opposite side. For an unfamiliar actuator design, confirm its actual internal arrangement rather than assuming that every product follows the same single-rod geometry.</p><figure aria-labelledby="visual-6" class="kh-diagram kh-illustration"><figcaption class="kh-diagram-title" id="visual-6">The two pressure contributions act in opposition</figcaption><div class="kh-force-illustration"><svg aria-label="Cylinder schematic showing cap-end and rod-end regions" role="img" viewbox="0 0 220 130"><path d="M20 28h150v74H20Z" fill="#18c7d8" opacity=".15" stroke="#b5dce3" stroke-width="4"></path><path d="M103 31v68m0-35h110" stroke="#b5dce3" stroke-width="9"></path><path d="M37 64h48m-11-9 11 9-11 9" fill="none" stroke="#18c7d8" stroke-width="4"></path><path d="M158 84h-36m9-8-9 8 9 8" fill="none" stroke="#f0b86d" stroke-width="4"></path></svg><div class="kh-force-terms"><p><strong>Cap end: +15.71 kN (3,532 lbf)</strong><span>80 bar (1,160 psi) acting over the full 50 mm (1.97 in) bore area</span></p><p><strong>Rod end: −1.26 kN (-283 lbf)</strong><span>10 bar (145 psi) acting over the annular area, excluding the 30 mm (1.18 in) rod</span></p><p><strong>Ideal net extension: 14.45 kN (3,248 lbf)</strong><span>Friction and design allowances are not included</span></p></div></div><figcaption>Illustrative dimensions and pressures from the worked example. The sketch is conceptual and is not a cylinder construction drawing.</figcaption></figure><span aria-hidden="true" class="ed-legacy-anchor" id="cylinder-sizing-a-complete-worked-example"></span><h2 id="learn-calculate-a-net-force-with-pressure-on-both-sides">Calculate a net force with pressure on both sides</h2><p>Take an illustrative cylinder with a 50 millimetre bore and a 30 millimetre rod. Its full piston area is approximately 0.0019635 square metres; its annular area is approximately 0.0012566 square metres. Suppose the cap-end pressure is 80 bar (1,160 psi) and the rod-end pressure is 10 bar (145 psi) during extension. The ideal cap-end contribution is about 15.71 kilonewtons, while the opposing contribution is about 1.26 kilonewtons.</p><p>Subtracting those contributions gives an ideal net extension force of approximately 14.45 kilonewtons. This is the hydraulic result before friction and design allowances. If the calculation had ignored the rod-end pressure, it would have overstated the available force. A return connection is not necessarily at zero pressure, especially when the circuit includes line losses or a load-control function.</p><p>Now reverse the pressure assignment for retraction: 80 bar (1,160 psi) on the annular side and 10 bar (145 psi) on the full-area side. The corresponding ideal net retracting force is approximately 8.09 kilonewtons. The same physical cylinder and high-side pressure give a different result because the active areas have changed. These numbers are teaching values, not a recommended component or a certified working load.</p><h2 id="learn-translate-cylinder-force-into-the-force-at-the-machine">Translate cylinder force into the force at the machine</h2><p>The actuator may push a lever, rotate a gate or move a linkage rather than act directly along the final load direction. In those arrangements, geometry changes the relationship between cylinder force and useful output. The perpendicular distance from a pivot to the cylinder's line of action determines the turning moment contributed by the actuator. That distance can change during travel.</p><p>For example, an ideal turning moment of 4,000 newton metres with a perpendicular arm of 0.16 metres (0.525 ft) requires 25,000 newtons of cylinder force. If the mechanism reduces that arm near an endpoint, the required force increases for the same resisting moment. A selection based only on the most favourable position can therefore fail to complete the movement despite appearing adequate at mid-stroke.</p><p>Include the process load as well as geometry. A gate may see a changing pressure difference across its face, seal contact or accumulated deposits. A lifting linkage may change its moment arm as it moves. Provide a load-versus-position description where possible and identify uncertain regions. The hydraulic calculation becomes useful when it is connected to the actual mechanism, not when it is applied to an isolated nominal load.</p><h2 id="learn-account-for-the-movement-conditions-that-change-demand">Account for the movement conditions that change demand</h2><p>Starting, accelerating, running and stopping are distinct parts of a motion. Breakaway resistance can differ from resistance after movement has begun. Acceleration requires a force contribution associated with the moving mass, while a load that drives the actuator can require controlled restraint rather than additional pushing force. A single static number cannot describe all of these conditions.</p><p>The specification should explain which parts of the sequence matter most. A process valve may need a reliable first movement after a long dwell. A production mechanism may require repeatable acceleration and settling. A descending load may need controlled speed and stopping under changing resistance. These requirements influence the circuit and control design as well as the nominal cylinder size.</p><p>Avoid hiding every uncertainty inside one unexplained multiplier. State what the allowance is intended to cover and which requirements need measurement or a representative test. This allows the mechanical designer, hydraulic supplier and owner to review the same assumptions. It also helps prevent excessive sizing that creates a new problem with speed, installation space or energy use.</p><h2 id="learn-understand-what-a-larger-bore-changes">Understand what a larger bore changes</h2><p>At a given pressure, increasing the bore increases the full piston area and therefore the ideal force contribution. Because area depends on diameter squared, doubling a bore diameter gives four times the full area. The change also increases the volume needed for a given stroke. More force at the same pressure does not arrive without consequences for flow and component size.</p><p>With a fixed supply flow, the larger area moves more slowly. If the process requires the original movement time, the circuit needs correspondingly more flow, subject to the complete design. That can affect pump selection, valves, lines and input power. Comparing cylinders only by force can therefore conceal the system changes required to preserve the intended production sequence.</p><p>The same reasoning helps procurement assess alternatives. A lower-pressure proposal with a larger actuator may be technically sensible, but its dimensions, flow requirements and mounting loads need review. A smaller high-pressure proposal has different constraints. Neither arrangement can be selected from a force number alone; compare complete configurations against the same motion and installation requirements.</p><h2 id="learn-connect-force-with-stroke-volume-and-travel-time">Connect force with stroke volume and travel time</h2><p>Using the illustrative 50 millimetre bore, a 400 millimetre extension displaces approximately 0.785 litres (0.207 US gal) into the cap-end chamber. An ideal supply flow of six litres per minute would fill that volume in about 7.85 seconds. On the annular side, the same stroke corresponds to approximately 0.503 litres (0.133 US gal), giving an ideal retraction time of about 5.03 seconds at the same chamber supply flow.</p><p>These volume calculations are separate from the net-force calculation, but the two must be satisfied at the same operating point. A pump that delivers the required flow only at a lower pressure may not achieve the calculated movement under load. Conversely, sufficient pressure with inadequate useful flow can move the load too slowly. Ask for the supported simultaneous pressure and delivery conditions.</p><p>Return flow also follows the chamber geometry. During retraction, the full-area chamber can discharge more volume per second than enters the smaller annular chamber. The return path must be assessed for its actual flow rather than assumed equal to pump delivery in every direction. That is one reason a complete circuit review is necessary even when the cylinder calculations themselves are straightforward.</p><h2 id="learn-check-the-mechanical-structure-and-failure-behaviour">Check the mechanical structure and failure behaviour</h2><p>Hydraulic force capability is only one limit on the assembly. The rod, piston connection, mountings, pins and supporting structure must withstand the relevant loads. A rod under compression may require a buckling assessment based on its unsupported length and end conditions. Side loading and alignment can affect guidance and sealing behaviour. These checks belong to the mechanical design, not to the pump's pressure rating.</p><p>The circuit must also deliver the required response after an interruption or failure. Removing power does not necessarily secure a load or remove stored energy. Holding, lowering, isolating and recovering the mechanism require an architecture appropriate to the process. ISO 4413 addresses hydraulic systems as a safety subject; the public scope is a starting reference, while an actual design needs the applicable requirements and equipment-specific information. <a aria-label="Source 2: ISO 4413: hydraulic fluid power systems" class="kh-citation" href="#source-iso">[2]</a></p><p>Acceptance should therefore include the complete operating sequence and the relevant controlled failure-state demonstrations. A successful extension against a test load is useful, but it does not establish safe holding, stopping or maintenance access. Make each required function explicit so that the supplier and owner agree what evidence will demonstrate it.</p><h2 id="learn-use-the-calculation-to-make-a-better-enquiry">Use the calculation to make a better enquiry</h2><p>Provide the required travel, load behaviour, movement time, mounting arrangement and operating schedule. Include the water source and environmental conditions so that the supplier can connect mechanical requirements to an appropriate water-service configuration. Product documentation such as the Water Hydraulics Company's pump information demonstrates why operating limits and fluid conditions remain part of selection even after the ideal cylinder arithmetic is complete. <a aria-label="Source 3: The Water Hydraulics Company: P3 axial piston pump" class="kh-citation" href="#source-p3">[3]</a></p><p>Water hydraulics become a compelling option where the supported assembly can meet these requirements while removing hydraulic oil from a sensitive part of the process. WaterQuest can help turn the duty description into a component and system discussion. The force calculation is valuable because it makes that conversation testable: the owner can see what must be delivered, which assumptions remain open and how the installed equipment will be accepted.</p><section class="wq-guide-application" id="guide-application" aria-labelledby="guide-application-title"><p class="wq-guide-kicker">From understanding to equipment selection</p><h2 id="guide-application-title">Calculate net force at the chambers</h2><p>For a double-acting cylinder, account for supply pressure acting on one effective area and return pressure acting on the opposing area. Check extension and retraction independently before applying the project&#x27;s load and mechanical allowances.</p><h3>Calculate the relevant duty</h3><p>Use the <a href="/knowledge-hub/engineering-calculators/cylinder-force-calculator/">cylinder force calculator</a> to compare extension and retraction with opposing pressure and the required load. Use the <a href="/knowledge-hub/engineering-calculators/pressure-drop-calculator/">system pressure-drop calculator</a> to combine component losses, elevation and a design allowance.</p><h3>Connect the calculation to equipment</h3><p>Review bore, rod, stroke and mounting options together with the valve and return path. Request a configuration that covers the loaded motion in both directions.</p><p>Explore <a href="/products/water-hydraulic-cylinders/">water hydraulic cylinders</a> and <a href="/products/water-hydraulic-valves/">water hydraulic control valves</a>.</p><details><summary>How should the cylinder selection shape the maintenance plan?</summary><p>Measure both chamber pressures when investigating weak motion. Pump outlet pressure alone can hide an obstructed return or a loss between the power unit and cylinder.</p></details><p class="wq-guide-boundary">The force tool does not verify rod buckling, structural mountings or machine safety.</p><p><a href="/contact/">Discuss your duty with WaterQuest</a> — bring your calculation inputs, water conditions and required operating sequence.</p></section><section class="kh-sources" id="sources"><h2>Sources and further reading</h2><ol><li id="source-physics"><a href="https://openstax.org/books/university-physics-volume-1/pages/14-3-pascals-principle-and-hydraulics">OpenStax: Pascal’s principle and hydraulics</a><span class="kh-source-kind">Educational reference</span><span class="kh-source-note">Pressure and force relationships; article examples are independently calculated.</span></li><li id="source-iso"><a href="https://www.iso.org/standard/44781.html">ISO 4413: hydraulic fluid power systems</a><span class="kh-source-kind">Standard scope</span><span class="kh-source-note">Public abstract only; this article does not reproduce the standard or establish compliance.</span></li><li id="source-p3"><a href="https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/">The Water Hydraulics Company: P3 axial piston pump</a><span class="kh-source-kind">Manufacturer information</span><span class="kh-source-note">An example of purpose-designed water equipment; use current configuration-specific instructions.</span></li></ol><p class="kh-reviewed">Sources reviewed 7 October 2026. Linked guidance may be updated; use current documentation for a project decision.</p></section><div class="related-block">
+<h3>Continue reading</h3>
+<div class="related-grid">
+<a class="related-card" href="/knowledge-hub/the-physics-behind-water-hydraulic-pressure-systems/"><div class="rc-cat">Start Here · Article 5</div><h4>The Physics Behind Water Hydraulic Pressure Systems</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/designing-hydraulic-circuits-using-water-as-the-medium/"><div class="rc-cat">Specification &amp; Design · Article 7</div><h4>Designing Hydraulic Circuits Using Water as the Medium</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/fluid-properties-of-water-vs-hydraulic-oil/"><div class="rc-cat">Performance Comparisons · Article 8</div><h4>Fluid Properties of Water vs Hydraulic Oil</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/why-316-stainless-steel-is-essential-for-water-hydraulic-systems/"><div class="rc-cat">Components &amp; Materials · Article 9</div><h4>Selecting Stainless Steel for Water Hydraulic Systems</h4><div class="rc-read">9 min read</div></a>
+</div>
+</div>
+</article>
+<aside aria-label="Article index" class="toc card"><h3>In this article</h3><a href="#learn-force-comes-from-pressure-acting-over-area">Use piston area to turn water pressure into force</a><a href="#learn-identify-the-two-effective-piston-areas">Identify the two effective piston areas</a><a href="#learn-calculate-a-net-force-with-pressure-on-both-sides">Calculate a net force with pressure on both sides</a><a href="#learn-translate-cylinder-force-into-the-force-at-the-machine">Translate cylinder force into the force at the machine</a><a href="#learn-account-for-the-movement-conditions-that-change-demand">Account for the movement conditions that change demand</a><a href="#learn-understand-what-a-larger-bore-changes">Understand what a larger bore changes</a><a href="#learn-connect-force-with-stroke-volume-and-travel-time">Connect force with stroke volume and travel time</a><a href="#learn-check-the-mechanical-structure-and-failure-behaviour">Check the mechanical structure and failure behaviour</a><a href="#learn-use-the-calculation-to-make-a-better-enquiry">Use the calculation to make a better enquiry</a><a href="#guide-application">Calculate, select and maintain</a><a href="#sources">Sources and further reading</a><a href="/knowledge-hub/#library">All articles →</a></aside>
+</div>
+<div class="container">
+<div class="pager">
+<a href="/knowledge-hub/the-physics-behind-water-hydraulic-pressure-systems/"><span>Previous</span>The Physics Behind Water Hydraulic Pressure Systems</a>
+<a href="/knowledge-hub/designing-hydraulic-circuits-using-water-as-the-medium/"><span>Next</span>Designing Hydraulic Circuits Using Water as the Medium</a>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container card" style="padding:42px;">
+<p class="eyebrow">Apply the Knowledge</p>
+<h2>Put this knowledge to work.</h2>
+<p class="lead">Send the required push and pull forces, available pressure and proposed bore and rod sizes. We’ll help review the calculation against the intended movement.</p>
+<div class="btn-row"><a class="btn primary" href="/contact/">Start Engineering Review →</a><a class="btn" href="/industries/">View Industries →</a></div>
+</div>
+</section>
+</main>
+<script defer="" src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer="" src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/wqs-stainless/">WQS Stainless</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li></ul></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>316 SS / PEEK · Oil-Free · Canadian Support</p></div></div></footer><script defer="" src="/assets/wq-nav-dropdowns.js?v=20261015-brand"></script><script defer="" src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/newsletter-popup.js?v=20261016"></script></body>
+</html>

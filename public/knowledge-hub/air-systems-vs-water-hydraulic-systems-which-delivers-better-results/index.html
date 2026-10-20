@@ -1,471 +1,265 @@
-<!doctype html>
-<html lang="en-CA">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Air Systems vs Water Hydraulic Systems: Which Delivers Better Results? | WaterQuest Solutions</title>
-  <meta name="description" content="Engineering comparison of pneumatic air systems and water hydraulic systems: power density, control precision, energy efficiency, environmental impact,..." />
+<!DOCTYPE html>
+
+<html id="waterquest-site" lang="en-CA">
+<head><style id="wqs-experience-layer">@layer wqs-experience;</style><link rel="stylesheet" href="/assets/newsletter-popup.css?v=20261016">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Air or Water Hydraulics: Choosing for the Duty | WaterQuest Solutions</title>
+
 
 <style>
-:root{--navy:#071321;--blue:#0b2138;--panel:#102b45;--panel2:#163954;--aqua:#00c8d4;--aqua2:#30f1df;--green:#20d3a7;--silver:#FFFFFF;--muted:#FFFFFF;--white:#fff;--line:rgba(184,199,212,.18);--aqua-line:rgba(0,200,212,.32);--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--silver);font-family:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif;line-height:1.72}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}.site-header{position:sticky;top:0;z-index:10;background:rgba(7,19,33,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.site-nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:inline-flex;align-items:center;gap:11px;color:var(--white);font-weight:900;line-height:1.08}.brand-mark{width:40px;height:40px}.brand small{display:block;color:var(--aqua);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase}.nav-links{display:flex;align-items:center;gap:24px;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800}.nav-links a{color:var(--silver)}.nav-links a:hover,.nav-links a.active{color:var(--aqua2)}.nav-cta{background:var(--aqua);color:var(--navy)!important;padding:10px 15px;border-radius:6px}.eyebrow{color:var(--aqua);font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.22em;margin-bottom:14px}h1,h2,h3{color:var(--white);line-height:1.1;margin:0}p{margin:0;color:var(--silver)}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 18px;border-radius:6px;border:1px solid var(--aqua-line);color:var(--aqua2);font-size:.8rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.btn.primary{background:var(--aqua);border-color:var(--aqua);color:var(--navy)}.hero{padding:86px 0 54px;background:radial-gradient(ellipse at 70% 20%,rgba(0,200,212,.13),transparent 45%),linear-gradient(160deg,#06101d,var(--navy) 55%,var(--blue));border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:46px;align-items:end}.hero h1{font-size:clamp(2.4rem,5.5vw,5rem);letter-spacing:-.04em}.hero h1 span{color:var(--aqua2)}.hero p{font-size:1.14rem;max-width:720px;color:#FFFFFF;margin-top:22px}.stat-card{border:1px solid var(--aqua-line);background:rgba(16,43,69,.7);border-radius:8px;padding:24px}.stat-card b{display:block;color:var(--aqua2);font-size:2.8rem;line-height:1}.stat-card span{display:block;color:var(--muted);font-size:.76rem;text-transform:uppercase;letter-spacing:.11em;font-weight:800;margin-top:8px}.section{padding:72px 0;border-bottom:1px solid var(--line)}.section.alt{background:var(--blue)}.section-head{display:grid;grid-template-columns:1fr minmax(260px,.55fr);gap:36px;align-items:end;margin-bottom:30px}.section h2{font-size:clamp(1.8rem,3.4vw,3rem);letter-spacing:-.03em}.toolbar{position:sticky;top:72px;z-index:9;background:rgba(7,19,33,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(12px);padding:12px 0}.toolbar-inner{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.search{flex:1;min-width:240px;background:var(--panel);border:1px solid var(--aqua-line);border-radius:6px;padding:12px 13px;color:var(--white);font:inherit}.pill{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:8px 12px;font-size:.73rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;cursor:pointer}.pill.active{border-color:var(--aqua);color:var(--aqua);background:rgba(0,200,212,.08)}.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.category-card,.article-card,.panel{background:linear-gradient(145deg,rgba(16,43,69,.96),rgba(13,34,56,.94));border:1px solid var(--line);border-radius:8px;padding:22px}.category-card:hover,.article-card:hover{border-color:var(--aqua-line)}.category-card b{display:block;color:var(--white);font-size:1rem;margin-bottom:4px}.category-card span{color:var(--aqua);font-weight:900}.article-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.article-card{display:grid;gap:10px}.article-card small{color:var(--aqua);font-weight:900;letter-spacing:.12em;text-transform:uppercase;font-size:.68rem}.article-card h3{font-size:1.05rem;line-height:1.35}.article-card p{color:var(--muted);font-size:.9rem}.article-meta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:.78rem}.breadcrumb{padding:18px 0;background:var(--blue);border-bottom:1px solid var(--line);font-size:.82rem;color:var(--muted)}.article-hero{padding:58px 0 46px;background:linear-gradient(160deg,#06101d,var(--blue));border-bottom:1px solid var(--line)}.article-hero h1{font-size:clamp(2rem,4.6vw,3.6rem);letter-spacing:-.035em;max-width:860px}.article-hero p{font-size:1.12rem;max-width:760px;margin-top:18px;color:#FFFFFF}.article-shell{display:grid;grid-template-columns:minmax(0,820px) 280px;gap:54px;align-items:start;padding:56px 0 78px}.article-body{min-width:0}.article-body h2{font-size:1.55rem;margin:44px 0 15px;padding-top:8px;border-top:1px solid var(--line)}.article-body h2:first-child{margin-top:0;border-top:0}.article-body h3{font-size:1.14rem;margin:28px 0 10px;color:#FFFFFF}.article-body p,.article-body li{font-size:1.01rem;color:var(--silver);line-height:1.85}.article-body p{margin-bottom:18px}.article-body ul,.article-body ol{padding-left:1.35em;margin:12px 0 20px}.article-body li::marker{color:var(--aqua)}.callout,.takeaways,.formula-block{border:1px solid var(--aqua-line);background:rgba(0,200,212,.07);border-radius:8px;padding:20px;margin:26px 0}.callout-label,.formula-label,.takeaways h4{color:var(--aqua);font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.16em;margin-bottom:8px}.comparison-table-wrap{overflow-x:auto;margin:26px 0;border:1px solid var(--aqua-line);border-radius:8px}.comparison-table{width:100%;border-collapse:collapse;min-width:520px}.comparison-table th,.comparison-table td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left}.comparison-table th{color:var(--aqua);font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}.sidebar{position:sticky;top:96px;display:grid;gap:16px}.sidebar .panel h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--silver);margin-bottom:10px}.sidebar a{display:block;color:var(--muted);font-size:.9rem;margin:7px 0}.sidebar a:hover{color:var(--aqua)}footer{background:#04101d;border-top:1px solid var(--line);padding:46px 0}.footer-grid{display:grid;grid-template-columns:1fr auto auto;gap:50px}.footer-grid a{display:block;color:var(--muted);font-size:.9rem;margin:6px 0}footer h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--silver)}@media(max-width:960px){.nav-links{display:none}.hero-grid,.section-head,.article-shell,.footer-grid{grid-template-columns:1fr}.category-grid,.article-list{grid-template-columns:1fr 1fr}.sidebar{position:static}}@media(max-width:640px){.wrap{width:min(100% - 28px,var(--max))}.category-grid,.article-list{grid-template-columns:1fr}.hero{padding-top:58px}.toolbar{top:72px}.article-shell{padding-top:36px}}
-</style><link rel="canonical" href="/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta property="og:title" content="Air Systems vs Water Hydraulic Systems: Which Delivers Better Results? | WaterQuest Solutions" />
-  <meta property="og:description" content="Engineering comparison of pneumatic air systems and water hydraulic systems: power density, control precision, energy efficiency, environmental impact,..." />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results" />
-  <meta property="og:image" content="/assets/waterquest-hero.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Air Systems vs Water Hydraulic Systems: Which Delivers Better Results? | WaterQuest Solutions" />
-  <meta name="twitter:description" content="Engineering comparison of pneumatic air systems and water hydraulic systems: power density, control precision, energy efficiency, environmental impact,..." />
-  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
-  <link rel="alternate" hreflang="en-CA" href="/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results" />
-  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
-  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"Article","@id":"/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results#webpage","url":"/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results","name":"Air Systems vs Water Hydraulic Systems: Which Delivers Better Results? | WaterQuest Solutions","description":"Engineering comparison of pneumatic air systems and water hydraulic systems: power density, control precision, energy efficiency, environmental impact,...","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA","headline":"Build the engineering case for water as a hydraulic medium.","image":"/assets/waterquest-hero.png","author":{"@id":"/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"},{"@type":"ListItem","position":2,"name":"Knowledge Hub","item":"/knowledge-hub"},{"@type":"ListItem","position":3,"name":"Air Systems Vs Water Hydraulic Systems Which Delivers Better Results","item":"/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results"}]}]}</script>
-  <style id="wq-global-shell-css">
-    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
-    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
-    body a{color:inherit}
-    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
-    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
-    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
-    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
-    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
-    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
-    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
-    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
-    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
-    main .btn.primary{color:var(--wq-navy)!important}
-    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
-    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
-    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
-    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
-    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
-    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
-    .wq-form-status.is-error{color:#ffb1b1!important}
-    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
-    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
-    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
-    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
-    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
-    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
-    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
-    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
-    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
-    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
-    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
-    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
-    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
-    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
-    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
-    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
-    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
-    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
-    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
-    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
-    .wq-hero-visual-text{padding:20px}
-    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
-    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
-    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
-    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
-    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
-    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
-    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
-    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
-    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
-    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
-    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
-    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
-    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
-    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
-    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
-    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
-    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
-    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
-    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
-    #wq-mobile-menu.open{display:block}
-    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
-    #wq-mobile-menu a:last-child{border-bottom:0}
-    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
-    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
-    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
-    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
-    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
-    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
-    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
-    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
-    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
-    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
-    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
-    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
-    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
-    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
-    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
-    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
-    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
-  </style>
-</head>
-<body class="wq-section-knowledge">
-<!-- WQ_GLOBAL_HEADER_START -->
-<div id="wq-global-bubbles" aria-hidden="true"></div>
-<nav id="wq-nav" role="navigation" aria-label="Main navigation">
-  <div class="wq-nav-inner">
-    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
-      <span class="wq-logo-main">WaterQuest Solutions</span>
-      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
-    </a>
-    <ul class="wq-nav-links" role="list">
-      <li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/" class="active">Knowledge Hub</a></li><li><a href="/about/">About</a></li>
-      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
-    </ul>
-    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
-  </div>
-</nav>
-<div id="wq-mobile-menu">
-  <a href="/products/">Products</a><a href="/industries/">Industries</a><a href="/technology/">Technology</a><a href="/knowledge-hub/" class="active">Knowledge Hub</a><a href="/about/">About</a>
-  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
-</div>
-<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
-<section class="wq-conversion-hero" aria-label="Page introduction">
-  <div class="wq-conversion-wrap">
-    <div>
-      <p class="wq-hero-eyebrow">Knowledge Hub</p>
-      <h1>Build the <span>engineering case</span> for water as a hydraulic medium.</h1>
-      <p class="wq-hero-copy">Explore the articles that support WaterQuest's authority position: fundamentals, materials, applications, comparisons, compliance, maintenance, and field adoption.</p>
-      <div class="wq-hero-actions">
-        <a class="wq-hero-cta" href="/technology/">Open Technology References</a>
-        <a class="wq-hero-secondary" href="/glossary/">Use the Glossary</a>
-      </div>
-    </div>
-    <a class="wq-hero-visual" href="/technology/">
-      <div class="wq-hero-picture" aria-hidden="true"></div>
-      <div class="wq-hero-visual-text">
-        <small>Authority path</small>
-        <strong>From question to technical confidence.</strong>
-        <span>Content built for practical decision makers and deep technical research.</span>
-      </div>
-    </a>
-  </div>
-</section>
-<!-- WQ_CONVERSION_HERO_END --><div class="breadcrumb"><div class="wrap"><a href="/">Home</a> / <a href="/knowledge-hub/">Knowledge Hub</a> / Comparison Guides</div></div>
-<main>
-  <section class="article-hero">
-    <div class="wrap">
-      <div class="eyebrow">Article 35 · Comparison Guides</div>
-      <h1>Air Systems vs Water Hydraulic Systems: Which Delivers Better Results?</h1>
-      <p>Engineering comparison of pneumatic air systems and water hydraulic systems: power density, control precision, energy efficiency, environmental impact, and application selection criteria.</p>
-    </div>
-  </section>
-  <div class="wrap article-shell">
-    <article class="article-body"><a href="/" class="logo">WaterQuest Solutions</a>
-            <nav>
-                <a href="/products/">Products</a>
-                <a href="/knowledge-hub/">Knowledge Hub</a>
-                <a href="/contact/">Contact</a>
-            </nav>
-        </div>
-    </header>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
     
-    <div class="container">
-        <div class="breadcrumb">
-            <a href="/">Home</a>
-            <span>/</span>
-            <a href="/knowledge-hub/">Knowledge Hub</a>
-            <span>/</span>
-            <a href="/knowledge-hub/?category=comparison-guides">Technology Comparisons</a>
-            <span>/</span>
-            <span>Air Systems vs Water Hydraulic Systems</span>
-        </div>
-        
-        <h1>Air Systems vs Water Hydraulic Systems: Which Delivers Better Results?</h1>
-        
-        <div class="meta">
-            Article 35  · Technology Comparisons · WaterQuest Solutions
-        </div>
-        
-        <div class="content">
-            <p class="intro">Compressed air and water hydraulics both transmit power through pressurized fluids, yet their engineering characteristics differ so profoundly that they rarely compete for the same applications. Air's compressibility makes it unsuitable for applications requiring precise position control or constant force under varying loads. Water's incompressibility provides the stiffness and control precision air cannot match. The choice between pneumatic and water hydraulic systems is not primarily about capability equivalence but about matching technology strengths to application requirements while considering energy efficiency, safety, cleanliness, and lifecycle cost.</p>
-            
-            <p>This article compares pneumatic air systems and water hydraulic systems across engineering-relevant dimensions: fundamental fluid properties and their consequences, power density and force capability, control characteristics and precision, energy efficiency, system complexity and cost, safety and environmental considerations, and application-specific selection guidance.</p>
-            
-            <h2>Fundamental Fluid Property Differences</h2>
-            
-            <p>The single most consequential difference between air and water as power transmission media is compressibility. Air is highly compressible: its volume changes significantly with pressure according to the ideal gas law. Water is essentially incompressible: its volume remains constant regardless of pressure over the range relevant to industrial systems.</p>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>Property</th>
-                        <th>Compressed Air (7 bar)</th>
-                        <th>Water</th>
-                        <th>Consequence</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Compressibility</td>
-                        <td>Highly compressible</td>
-                        <td>Essentially incompressible</td>
-                        <td>Air cannot hold loads rigid; water provides stiff positioning</td>
-                    </tr>
-                    <tr>
-                        <td>Bulk modulus</td>
-                        <td>0.14 GPa at 7 bar</td>
-                        <td>2.2 GPa</td>
-                        <td>Water is 15× stiffer than compressed air</td>
-                    </tr>
-                    <tr>
-                        <td>Density</td>
-                        <td>8.4 kg/m³ at 7 bar</td>
-                        <td>1000 kg/m³</td>
-                        <td>Air is 120× less dense, requiring larger volumes for equivalent force</td>
-                    </tr>
-                    <tr>
-                        <td>Typical operating pressure</td>
-                        <td>6 to 8 bar</td>
-                        <td>100 to 280 bar</td>
-                        <td>Water systems develop far higher forces from smaller actuators</td>
-                    </tr>
-                    <tr>
-                        <td>Exhaust handling</td>
-                        <td>Vented to atmosphere</td>
-                        <td>Returned to reservoir</td>
-                        <td>Air systems simpler but noisier; water systems closed-loop</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <p>These property differences dictate where each technology excels. Pneumatic systems suit applications requiring fast motion, simple on-off control, and moderate forces where precise positioning is not required. Water hydraulic systems suit applications demanding high forces, precise position control, or ability to hold loads rigidly against external disturbances.</p>
-            
-            <h2>Power Density and Force Capability</h2>
-            
-            <p>Water hydraulic systems deliver far superior power density compared to pneumatic systems, particularly for high-force applications. The combination of water's incompressibility and ability to operate at pressures 20 to 40 times higher than typical compressed air systems means water hydraulic actuators produce much greater force from a given envelope size.</p>
-            
-            <p>Comparison for a 50 kN actuator force requirement:</p>
-            
-            <ul>
-                <li><strong>Pneumatic system:</strong> 6 bar operating pressure requires 265 mm bore cylinder, weighs approximately 18 kg</li>
-                <li><strong>Water hydraulic system:</strong> 200 bar operating pressure requires 50 mm bore cylinder, weighs approximately 3 kg</li>
-            </ul>
-            
-            <p>The water hydraulic cylinder is one-sixth the weight and occupies one-twenty-eighth the volume of the pneumatic cylinder producing equivalent force. This power density advantage becomes overwhelming in applications requiring forces above 20 to 30 kN, where pneumatic cylinders become impractically large and heavy.</p>
-            
-            <p>For lower force requirements (under 5 kN), pneumatic systems remain competitive and may be preferred due to simplicity and lower system cost.</p>
-            
-            <h2>Control Precision and System Stiffness</h2>
-            
-            <p>The compressibility difference between air and water creates profound control characteristic differences. Compressed air acts as a spring: when an external force acts on a pneumatic cylinder under pressure, the air volume compresses and the cylinder retracts. Water's incompressibility means a water hydraulic cylinder under pressure holds position rigidly even under significant external load variation.</p>
-            
-            <h3>Position Control Precision</h3>
-            
-            <p>Achieving precise position control with pneumatic actuators requires sophisticated servo control with position feedback. Even with closed-loop control, air cylinder positioning precision is typically limited to ±1 to 2 mm due to air compressibility and stick-slip behaviour at low speeds. Open-loop pneumatic position control is impractical except for simple end-of-stroke positioning with mechanical stops.</p>
-            
-            <p>Water hydraulic actuators with servo control routinely achieve ±0.1 mm positioning precision. Even simple open-loop flow control provides acceptable positioning for many applications because water's incompressibility means actuator speed is directly proportional to flow rate regardless of load variations.</p>
-            
-            <h3>Force Control and Compliance</h3>
-            
-            <p>Pneumatic systems excel in applications where controlled compliance is desirable. The air spring effect provides inherent shock absorption and force limiting. A pneumatic gripper applies force proportional to supply pressure but yields if resistance exceeds the set force, preventing damage to delicate parts.</p>
-            
-            <p>Water hydraulic systems provide stiff force application. Once a water hydraulic cylinder contacts a hard stop, force continues building with minimal displacement until pressure relief occurs. This characteristic suits applications requiring rigid clamping or precise force application.</p>
-            
-            <h2>Energy Efficiency: The Fundamental Economic Difference</h2>
-            
-            <p>Energy efficiency is pneumatic systems' Achilles heel. Compressed air generation, distribution, and utilization suffer from thermodynamic losses that make pneumatic power transmission one of the least efficient industrial technologies.</p>
-            
-            <h3>Compression Efficiency Losses</h3>
-            
-            <p>Compressing air from atmospheric pressure to 7 bar requires approximately 7 kW of electrical input per 100 litres per minute of free air delivery. This compressed air, when expanded through a pneumatic motor to recover mechanical work, returns only 1.5 to 2.5 kW. The overall electrical-to-mechanical efficiency is 20 to 35%, with most energy lost as heat during compression.</p>
-            
-            <p>Water hydraulic pumps convert electrical energy to hydraulic power at 80 to 90% efficiency. Hydraulic motors and cylinders convert hydraulic power to mechanical output at 85 to 95% efficiency. Overall system efficiency from electrical input to mechanical output ranges from 70 to 85% for well-designed systems.</p>
-            
-            <h3>Energy Cost Comparison</h3>
-            
-            <p>Operating cost for systems requiring continuous or frequent actuation heavily favours water hydraulics. Consider a manufacturing cell requiring 5 kW average mechanical power output during production:</p>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>System Type</th>
-                        <th>System Efficiency</th>
-                        <th>Electrical Input Required</th>
-                        <th>Annual Energy Cost</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Pneumatic</td>
-                        <td>25%</td>
-                        <td>20 kW</td>
-                        <td>$17,500 (4000 hr/year at $0.22/kWh)</td>
-                    </tr>
-                    <tr>
-                        <td>Water hydraulic</td>
-                        <td>75%</td>
-                        <td>6.7 kW</td>
-                        <td>$5,900 (4000 hr/year at $0.22/kWh)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Annual cost difference</strong></td>
-                        <td></td>
-                        <td></td>
-                        <td><strong>$11,600 favouring water hydraulics</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <p>The energy cost difference pays back any capital cost premium for water hydraulic systems within 2 to 3 years in continuous-operation applications. For intermittent low-duty-cycle applications, energy cost differences matter less and pneumatic simplicity may favour air.</p>
-            
-            <h2>System Complexity, Installation, and Maintenance</h2>
-            
-            <h3>System Complexity</h3>
-            
-            <p>Pneumatic systems are simpler than hydraulic systems in several respects. Air is freely available from the atmosphere and requires no reservoir or return piping. Pneumatic actuators exhaust to atmosphere through simple silencers, eliminating the return plumbing required in hydraulic systems. Compressed air systems tolerate significant leakage without functional consequence beyond wasted energy.</p>
-            
-            <p>Water hydraulic systems require a reservoir, supply and return piping to all actuators, filtration to protect components from wear, and leak-free connections to prevent fluid loss. System complexity and installation labour are higher than pneumatic equivalents.</p>
-            
-            <h3>Maintenance Requirements</h3>
-            
-            <p>Pneumatic systems require minimal maintenance beyond occasional filter changes and lubrication where specified. Component wear rates are low due to low operating pressures. Service intervals are measured in years.</p>
-            
-            <p>Water hydraulic systems demand more rigorous maintenance, particularly filter changes and seal replacement. The lack of boundary lubrication and higher pressures result in higher seal wear rates. Annual maintenance costs are typically 2 to 3 times higher than equivalent pneumatic systems.</p>
-            
-            <h2>Safety and Environmental Considerations</h2>
-            
-            <h3>Safety</h3>
-            
-            <p>Both technologies are generally safe when properly designed and maintained. Pneumatic systems present noise hazards from air exhaust and stored energy hazards from pressurized vessels. Water hydraulic systems present high-pressure fluid injection hazards and potential steam formation if hot water leaks occur.</p>
-            
-            <p>Water hydraulic systems eliminate the fire hazard associated with oil hydraulics while retaining hydraulic power density advantages. In environments where flammable hydraulic fluids are prohibited, water hydraulics provides capabilities pneumatic systems cannot match.</p>
-            
-            <h3>Environmental Impact</h3>
-            
-            <p>Pneumatic systems are environmentally clean with no fluid contamination risk. Air exhausted from pneumatic systems is the same air drawn in during compression. Water hydraulic systems using tap water or clean process water present no contamination hazard from leakage or exhaust.</p>
-            
-            <h2>Application Selection Guidance</h2>
-            
-            <p><strong>Choose pneumatic systems when:</strong></p>
-            
-            <ul>
-                <li>Required forces are below 10 kN and actuator size is not constrained</li>
-                <li>Compressed air infrastructure already exists in the facility</li>
-                <li>Simple binary (extend/retract) control without position feedback is adequate</li>
-                <li>Duty cycle is low and energy cost is not a primary concern</li>
-                <li>Fast actuation speeds (> 1 m/s) are required</li>
-                <li>Controlled compliance or soft landing is desirable</li>
-                <li>Absolute minimum system cost is the selection driver</li>
-            </ul>
-            
-            <p><strong>Choose water hydraulic systems when:</strong></p>
-            
-            <ul>
-                <li>High forces (> 20 kN) are required from compact actuators</li>
-                <li>Precise position control or force control is essential</li>
-                <li>Rigid load holding against external disturbances is required</li>
-                <li>System operates continuously or frequently (> 2000 hours annually)</li>
-                <li>Energy efficiency is a significant lifecycle cost factor</li>
-                <li>Environmental regulations prohibit oil-based hydraulics</li>
-                <li>Compact actuator envelopes are required due to space constraints</li>
-            </ul>
-            
-            <p>Many applications in the 5 to 20 kN force range could use either technology. In these cases, evaluate total lifecycle cost including capital equipment, installation labour, energy consumption, and maintenance over the expected service life. For continuous-operation applications, water hydraulics' energy efficiency typically dominates the economic analysis despite higher capital cost.</p></article>
-    <aside class="sidebar">
-      <div class="panel">
-        <h3>Diagnostic Offer</h3>
-        <p>Tell us your application, operating pressure, and environment. We will identify whether water hydraulics can replace your current system.</p>
-        <p style="margin-top:14px"><a class="btn primary" href="/contact/">Get System Diagnostic</a></p>
-      </div>
-      <div class="panel">
-        <h3>Related Reading</h3>
-        <a href="/knowledge-hub/oil-hydraulics-vs-water-hydraulics-the-complete-engineering-comparison/">Article 34: Oil Hydraulics vs Water Hydraulics: The Complete Engineering Comparison</a><a href="/knowledge-hub/electric-actuators-vs-hydraulic-actuators-the-real-engineering-trade-offs/">Article 36: Electric Actuators vs Hydraulic Actuators: The Real Engineering Trade-Offs</a><a href="/knowledge-hub/how-to-convert-an-oil-hydraulic-system-to-water-hydraulics/">Article 37: How to Convert an Oil Hydraulic System to Water Hydraulics</a><a href="/knowledge-hub/oil-vs-water-hydraulics-a-complete-system-comparison/">Article 81: Oil vs Water Hydraulics: A Complete System Comparison</a><a href="/knowledge-hub/five-reasons-your-next-valve-should-be-water-actuated/">Article 82: Five Reasons Your Next Valve Should Be Water Actuated</a>
-      </div>
-      <div class="panel">
-        <h3>Back to Library</h3>
-        <a href="/knowledge-hub/">Browse all Knowledge Hub articles</a>
-      </div>
-    </aside>
-  </div>
-</main><!-- WQ_REFERENCE_RAIL_START -->
-<aside class="wq-reference-rail" aria-label="Engineering references">
-  <a href="/calculations/"><small>Reference</small><strong>Engineering Calculators</strong></a>
-  <a href="/glossary/"><small>Reference</small><strong>Technical Glossary</strong></a>
-</aside>
-<!-- WQ_REFERENCE_RAIL_END -->
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
 
-<!-- WQS_ENRICHMENT_START -->
-<style>
-.wqs-enrichment{background:#f5fbf9;border-top:1px solid #d9e8e3;color:#15302c;font-family:Nunito Sans,Arial,sans-serif;padding:56px 6vw}.wqs-enrichment__inner{margin:0 auto;max-width:1120px}.wqs-enrichment__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-enrichment h2{font-size:clamp(28px,4vw,48px);line-height:1.05;margin:8px 0 16px}.wqs-enrichment p{color:#4b625d;font-size:18px;line-height:1.65;max-width:900px}.wqs-enrichment__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px}.wqs-enrichment__panel{background:#fff;border:1px solid #d9e8e3;border-radius:8px;padding:22px}.wqs-enrichment__panel h3{font-size:18px;margin:0 0 12px}.wqs-enrichment ul{margin:0;padding-left:20px}.wqs-enrichment li{line-height:1.55;margin:7px 0}.wqs-enrichment__links{display:grid;gap:10px}.wqs-enrichment__links a{background:#fff;border:1px solid #d9e8e3;border-radius:8px;color:#15302c;display:grid;gap:4px;padding:14px;text-decoration:none}.wqs-enrichment__links span{color:#5f746f;font-size:14px;line-height:1.45}@media(max-width:760px){.wqs-enrichment{padding:40px 18px}.wqs-enrichment__grid{grid-template-columns:1fr}}
-</style>
-<section class="wqs-enrichment" aria-label="Complete page details">
-  <div class="wqs-enrichment__inner">
-    <div class="wqs-enrichment__eyebrow">Complete archive details</div>
-    <h2>Air Systems vs Water Hydraulic Systems: Which Delivers Better Results?</h2>
-    <p>Engineering comparison of pneumatic air systems and water hydraulic systems: power density, control precision, energy efficiency, environmental impact,...</p>
-    <div class="wqs-enrichment__grid">
-      
-      <div class="wqs-enrichment__panel"><h3>Primary page focus</h3><ul><li>Build the engineering case for water as a hydraulic medium.</li><li>Air Systems vs Water Hydraulic Systems: Which Delivers Better Results?</li></ul></div>
-      <div class="wqs-enrichment__panel"><h3>Full section outline</h3><ul><li>Fundamental Fluid Property Differences</li><li>Power Density and Force Capability</li><li>Control Precision and System Stiffness</li><li>Energy Efficiency: The Fundamental Economic Difference</li><li>System Complexity, Installation, and Maintenance</li><li>Safety and Environmental Considerations</li><li>Application Selection Guidance</li></ul></div>
-      <div class="wqs-enrichment__panel"><h3>Detailed topics</h3><ul><li>Position Control Precision</li><li>Force Control and Compliance</li><li>Compression Efficiency Losses</li><li>Energy Cost Comparison</li><li>System Complexity</li><li>Maintenance Requirements</li><li>Safety</li><li>Environmental Impact</li><li>Diagnostic Offer</li><li>Related Reading</li><li>Back to Library</li></ul></div>
-    </div>
-    <div class="wqs-enrichment__panel" style="margin-top:18px"><h3>Related pages with more detail</h3><div class="wqs-enrichment__links"><a href="/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results"><strong>Air Systems vs Water Hydraulic Systems: Which Delivers Better Results?</strong><span>Engineering comparison of pneumatic air systems and water hydraulic systems: power density, control precision, energy efficiency, environmental impact, and application selection criteria.</span></a><a href="/knowledge-hub/can-i-retrofit-my-existing-system-to-use-water"><strong>Can I Retrofit My Existing System to Use Water?</strong><span>A complete engineering guide to retrofitting oil hydraulic systems for water service. What can be reused, what must be replaced, when retrofit works and when replacement is better, and how the hydraulic core and infrastructure divide in a water hydraulic conversion.</span></a><a href="/industries/fire-suppression/"><strong>Fire Suppression</strong><span>Eliminate oil from fire-critical environments. WaterQuest Solutions delivers non-flammable, water hydraulic actuation for deluge valves, monitors, turrets, and suppression systems zero ignition risk by design.</span></a><a href="/industries/food-beverage/"><strong>Food &amp; Beverage</strong><span>Eliminate oil contamination risk from food production environments. WaterQuest Solutions delivers non-toxic, washdown-ready water hydraulics for filling lines, packaging, conveyors, and CIP systems fully HACCP and GFSI aligned.</span></a><a href="/industries/odor-control/"><strong>Odor Control &amp; Ventilation</strong><span>Clean, corrosion-resistant hydraulic actuation for odor control units, dampers, scrubbers, and biofilters. WaterQuest Solutions delivers oil-free water hydraulics that support not undermine your air quality mission.</span></a><a href="/knowledge-hub/aligning-with-esg-how-water-hydraulics-support-sustainability-targets"><strong>Aligning With ESG: How Water Hydraulics Support Sustainability Targets</strong><span>How water-driven hydraulic systems advance ESG goals across environmental protection, worker safety, and governance. Why procurement teams increasingly specify water hydraulics to strengthen ESG compliance, reduce operational risk, and support clean-technology adoption.</span></a><a href="/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation"><strong>Beyond Oil: Engineering Principles of Water Hydraulic Actuation</strong><span>A technical look at how force transmission works when the fluid is water, not petroleum, and why engineers should stop treating water systems as special cases.</span></a><a href="/knowledge-hub/breaking-down-the-roi-investing-in-water-hydraulics"><strong>Breaking Down the ROI: Investing in Water Hydraulics</strong><span>A complete return on investment analysis for water hydraulic systems across fluid lifecycle cost, environmental risk, insurance, maintenance, component longevity, and downtime economics over 20-year infrastructure horizons.</span></a><a href="/knowledge-hub/built-in-safety-fail-closed-and-manual-overrides-with-water"><strong>Built-In Safety: Fail-Closed and Manual Overrides with Water</strong><span>A complete engineering explanation of safety behaviour, fail-state logic, passive protections, and manual override design in water hydraulic systems. How geometry, spring return, drain-back, and clean internals create inherently safer fail-safe behaviour than oil-based equivalents.</span></a><a href="/knowledge-hub/can-water-freeze-in-hydraulic-systems-engineering-around-temperature"><strong>Can Water Freeze in Hydraulic Systems? Engineering Around Temperature</strong><span>Water freezes at 0 degrees Celsius. That is a design parameter, not a barrier. A complete engineering guide to the four strategies that protect water hydraulic systems in cold Canadian climates, using the same approaches that already work throughout municipal, marine, and hydroelectric infrastructure.</span></a></div></div>
-  </div>
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<meta content="Choosing between air and water power starts with the movement. Compare force, speed, positioning, energy use and the services already available at your site to find an actuation approach that fits the job." name="description"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="Air Systems vs Water Hydraulic Systems: Which Delivers Better Results?, water hydraulics, water hydraulic systems, oil-free hydraulics, water as a hydraulic medium, tap water hydraulics, seawater hydraulics, WaterQuest Solutions, water hydraulics engineering guide, hydraulic oil alternative, industrial water hydraulics" name="keywords"/>
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results/" rel="canonical"/>
+<meta content="WaterQuest Solutions" property="og:site_name"/>
+<meta content="Air or Water Hydraulics: Choosing for the Duty" property="og:title"/>
+<meta content="Choosing between air and water power starts with the movement. Compare force, speed, positioning, energy use and the services already available at your site to find an actuation approach that fits the job." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Air or Water Hydraulics: Choosing for the Duty" name="twitter:title"/>
+<meta content="Choosing between air and water power starts with the movement. Compare force, speed, positioning, energy use and the services already available at your site to find an actuation approach that fits the job." name="twitter:description"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results/#primary","mainEntityOfPage":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results/","name":"Air or Water Hydraulics: Choosing for the Duty","headline":"Air or Water Hydraulics: Choosing for the Duty","description":"Choosing between air and water power starts with the movement. Compare force, speed, positioning, energy use and the services already available at your site to find an actuation approach that fits the job.","url":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results/","inLanguage":"en-CA","isPartOf":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"},"publisher":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"},"author":{"@type":"Organization","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization","name":"WaterQuest Solutions"},"about":[{"@type":"Thing","name":"Air or Water Hydraulics: Choosing for the Duty"}],"articleSection":"Performance Comparisons","dateModified":"2026-10-19","datePublished":"2026-09-02","wordCount":1584,"timeRequired":"PT8M","citation":["https://www.energy.gov/sites/prod/files/2015/01/f19/UMPChapter22-compressed-air-evaluation.pdf","https://www.energy.gov/sites/default/files/2014/05/f16/pump.pdf","https://openstax.org/books/university-physics-volume-1/pages/14-3-pascals-principle-and-hydraulics","https://www.iso.org/standard/44781.html"],"hasPart":[{"@type":"WebPageElement","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results/#guide-application","name":"Compare the same completed movement"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/"},{"@type":"ListItem","position":2,"name":"Knowledge Hub","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"},{"@type":"ListItem","position":3,"name":"Air or Water Hydraulics: Choosing for the Duty","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"/><link rel="stylesheet" href="/assets/wq-brand-standards.css?v=20261015-brand"/><script type="module" src="/assets/wq-speed-insights.js" id="wq-speed-insights"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style></head>
+<body class="wq-audited wq-consistent" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img class="wq-brand-mark" src="/assets/waterquest-logo-square.png" alt="" width="54" height="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero">
+<div class="container">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › Article 35</div>
+<p class="eyebrow">Performance Comparisons</p>
+<h1 data-editorial="hero">Air or Water Hydraulics: Choosing for the Duty</h1>
+<p class="ed-question">Choose the actuation system that fits the movement.</p><p class="lead" data-editorial="lead">Choosing between air and water power starts with the movement. Compare force, speed, positioning, energy use and the services already available at your site to find an actuation approach that fits the job.</p>
+<div class="article-meta"><span class="pill">Article 035</span><span class="pill">Performance Comparisons</span><span class="pill">9 min read</span><span class="pill">Updated 19 October 2026</span></div>
+</div>
 </section>
-<!-- WQS_ENRICHMENT_END -->
-<!-- WQ_GLOBAL_FOOTER_START -->
-<footer class="wq-site-footer" role="contentinfo">
-  <div class="wq-footer-container">
-    <div class="wq-footer-grid">
-      <div class="wq-footer-brand">
-        <span class="wq-logo-main">WaterQuest Solutions</span>
-        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
-        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
-      </div>
-      <div class="wq-footer-col">
-        <h5>Knowledge Hub</h5>
-        <ul><li><a href="/knowledge-hub/" class="active">Knowledge Hub</a></li><li><a href="/knowledge-hub/?category=engineering-fundamentals" class="active">Engineering Fundamentals</a></li><li><a href="/knowledge-hub/?category=industry-applications" class="active">Industry Applications</a></li><li><a href="/knowledge-hub/?category=materials-and-compatibility" class="active">Materials and Compatibility</a></li><li><a href="/knowledge-hub/?category=comparison-guides" class="active">Comparison Guides</a></li></ul>
-      </div>
-      <div class="wq-footer-col">
-        <h5>Core Pages</h5>
-        <ul><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/" class="active">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
-      </div>
-      <div class="wq-footer-col">
-        <h5>Contact</h5>
-        <ul>
-          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
-          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
-          <li>558 East Kent Ave S</li>
-          <li>Vancouver, BC V5X 4V6</li>
-          <li>Canada</li>
-        </ul>
-      </div>
-    </div>
-    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
-  </div>
-</footer>
-<!-- WQ_GLOBAL_FOOTER_END -->
-<script id="wq-global-shell-js">
-    (function(){
-      var nav=document.getElementById("wq-nav");
-      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
-      var menuButton=document.querySelector(".wq-menu-toggle");
-      var mobileMenu=document.getElementById("wq-mobile-menu");
-      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
-      var bubbles=document.getElementById("wq-global-bubbles");
-      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
-      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
-      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
-      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
-      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
-      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
-      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
-      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
-      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
-      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
-      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
-      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
-    })();
-  </script>
-
-</body>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><span aria-hidden="true" class="ed-legacy-anchor" id="application-selection-guidance"></span><span aria-hidden="true" class="ed-legacy-anchor" id="control-precision-and-system-stiffness"></span><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><span aria-hidden="true" class="ed-legacy-anchor" id="fundamental-fluid-property-differences"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><span aria-hidden="true" class="ed-legacy-anchor" id="safety-and-environmental-considerations"></span><h2 id="learn-begin-with-the-required-result-rather-than-the-nearest-utility">Choose the supply that serves the movement</h2><p>A simple end-to-end movement may suit an existing compressed-air supply. When you need hydraulic force and controlled movement near a sensitive process, a water circuit offers another route without an oil-filled working loop. Compare the same load, stroke, speed and holding requirement, then include the equipment needed to supply and control each option.</p><p>Existing utilities are a legitimate factor, but they should not hide the engineering requirements. A nearby air line may lack the flow or stable pressure needed during simultaneous demand. A water circuit may require a new pump, reservoir and controls. Conversely, several suitable hydraulic consumers may share a supply. The comparison should show these architectural choices and their consequences. The owner needs to understand not only which actuator moves the load, but what infrastructure and maintenance make that movement dependable over time.</p><span aria-hidden="true" class="ed-legacy-anchor" id="power-density-and-force-capability"></span><h2 id="learn-pressure-and-area-explain-the-force-comparison">Pressure and area explain the force comparison</h2><p>The ideal force on a piston follows pressure difference and effective area. The same basic relationship applies to pneumatic and hydraulic cylinders, although the actual supported pressures and dynamic behaviour differ. <a aria-label="Source 3: OpenStax: Pascal’s principle and hydraulics" class="kh-citation" href="#source-physics">[3]</a> A higher operating pressure can provide a required force with a smaller effective area, but it also imposes different component and protective requirements. Compare the available pressure at the actuator during the duty rather than the maximum rating of a remote compressor or pump.</p><p>For a teaching example, a 60 millimetre bore has an area of about 0.002827 square metres. With negligible opposing pressure and friction, 6 bar (87 psi) produces approximately 1.70 kilonewtons, while 80 bar (1,160 psi) produces approximately 22.6 kilonewtons. These are assumed pressures used to illustrate geometry, not ratings for a proposed pneumatic or water product. The complete selection must include the rod side, losses, mounting and load. The example shows why force requirements can influence actuator size without declaring either technology suitable from force alone.</p><figure aria-labelledby="visual-35" class="kh-diagram"><figcaption class="kh-diagram-title" id="visual-35">Compare from the utility source to the same completed movement</figcaption><div class="kh-property-map"><div><strong>Compressed-air path</strong><p>Compressor → treatment and distribution → valve and actuator → exhaust.</p></div><div><strong>Water-hydraulic path</strong><p>Pump and fluid management → control valve → actuator → defined return.</p></div><div><strong>Common result</strong><p>Same load, travel, timing, holding and recovery requirement.</p></div></div><figcaption>Conceptual energy boundaries. Existing plant utilities still have operating costs; point-of-use measurements alone may not be comparable.</figcaption></figure><h2 id="learn-compressibility-changes-the-response-to-a-disturbance">Compressibility changes the response to a disturbance</h2><p>Air stores substantial energy through compression and can act like a spring as load and pressure change. A liquid circuit is generally stiffer, although liquid compressibility, hoses, trapped gas and structures still contribute compliance. These differences can affect motion under changing load and the response when a valve changes state. They do not mean every pneumatic system is inaccurate or every water system is precise. The complete control arrangement determines whether the required behaviour is achieved.</p><p>A simple end-to-end pneumatic duty may not need intermediate positioning at all. The mechanism can travel to a defined stop and provide the required process function. A duty that needs smooth slow movement or a stable intermediate position may require more elaborate control in either technology. Specify the observable requirement rather than an abstract preference for stiffness. This allows suppliers to propose an appropriate design and prevents the comparison from rewarding an unnecessary feature while overlooking the actual production task.</p><h2 id="learn-trace-supply-and-exhaust-or-return-paths">Trace supply and exhaust or return paths</h2><p>A pneumatic actuator receives compressed air and usually exhausts it after use. The exhaust path can affect speed, noise and local conditions. A hydraulic actuator typically returns liquid through a defined path, although the exact architecture can differ. Return pressure influences force and flow demand. Both supply and discharge arrangements belong in the selection. A valve or line that looks adequate from the inlet alone may create a restriction on the opposite path during one direction of movement.</p><p>Cylinder geometry also matters. A single-rod actuator has different effective areas in its two directions, changing ideal speed and volume requirements. The relevant gas or liquid conditions must be used consistently when comparing consumption. An air-flow quantity expressed at a reference condition is not directly comparable with a liquid volume at the cylinder. State the basis of pneumatic consumption and distinguish it from compressed volume in the actuator. This avoids apparently simple volume comparisons that ignore the energy and physical state represented by the air measurement.</p><h2 id="learn-include-the-compressor-behind-the-air-connection">Include the compressor behind the air connection</h2><p>Compressed air requires generation and distribution. Compressor controls, treatment, pressure losses and leakage influence the energy attributable to a useful task. The DOE and NREL compressed-air evaluation guidance treats the supply, distribution and demand system together. <a aria-label="Source 1: US Department of Energy / NREL: compressed air evaluation protocol" class="kh-citation" href="#source-doeair">[1]</a> A local actuator's air requirement is only one input. Existing plant air is not free simply because its cost is recorded elsewhere or because the compressor was purchased before the actuator project.</p><p>The marginal energy effect of a new demand can depend on how the compressor system responds. A brief small load and a continuous load may influence operation differently. Use appropriate measurements or a documented assessment rather than applying an unsupported universal efficiency to every plant. Include the required air quality and exhaust management. A pneumatic option may still be commercially attractive because its infrastructure is available and its duty modest. That advantage should be stated as a site-specific ownership benefit, not confused with a claim that the upstream energy has no consequence.</p><h2 id="learn-include-the-complete-water-supply-arrangement">Include the complete water supply arrangement</h2><p>A water-hydraulic option needs a compatible pump, controls, actuator and fluid-management arrangement. Depending on the duty, it may also need treatment, boosting, cooling or winter protection. Compare those supporting functions on the same basis as the compressed-air infrastructure. A recirculating circuit reuses its fluid but still has make-up and maintenance requirements. A once-through arrangement has a different consumption and discharge profile. The chosen architecture must be explicit before resource use can be compared meaningfully.</p><p>The DOE's pumping guidance supports assessing the whole system and operating schedule rather than one component efficiency. <a aria-label="Source 2: US Department of Energy: improving pumping system performance" class="kh-citation" href="#source-doepump">[2]</a> Identify active, holding, idle and shutdown states. An efficient loaded movement can coexist with unnecessary standby consumption if the controls are poorly matched to demand. Conversely, a properly selected intermittent arrangement may have a different profile. The energy question is which complete system performs the required work with what total input, including necessary auxiliaries, under the site's actual operating pattern.</p><h2 id="learn-compare-holding-and-failure-response-explicitly">Compare holding and failure response explicitly</h2><p>A mechanism may need to hold position, move to a defined state or permit supervised recovery when normal supply is lost. Neither pneumatic nor hydraulic actuation provides every such function automatically. Gas compressibility, liquid leakage, valve states, springs and mechanical loads can influence the response. The safe state is application-specific. Define it before choosing the technology so that both alternatives include the equipment and control sequence needed to achieve it.</p><p>Stored energy can remain after the primary supply is isolated in either system. A pressure indication at one point does not necessarily describe every trapped region. Maintenance and protective arrangements need the complete circuit and mechanical load assessment. ISO 4413 provides context for hydraulic systems, while the project must also establish the applicable requirements for the pneumatic alternative. <a aria-label="Source 4: ISO 4413: hydraulic fluid power systems" class="kh-citation" href="#source-iso">[4]</a> The comparison should include verification of the required response under an approved plan rather than treating a normal powered stroke as proof of behaviour during an interruption.</p><span aria-hidden="true" class="ed-legacy-anchor" id="system-complexity-installation-and-maintenance"></span><h2 id="learn-evaluate-the-local-environment-and-maintenance-work">Evaluate the local environment and maintenance work</h2><p>Pneumatic equipment may involve air preparation, exhaust noise and moisture management. Water equipment introduces water-quality, compatibility and freeze-protection questions where relevant. External dust, washdown, salt or process contamination can affect either actuator's moving surfaces and controls. Identify the actual environment rather than assume one medium makes the complete assembly immune to it. The maintenance tasks should be based on the selected configuration and operating conditions, not a general reputation for simplicity.</p><p>Consider the skills, tools and spare parts already available at the site. Familiarity can reduce the effort of adopting one option, while standardising a new application family can improve support over time. Ask how an actuator or valve is removed and how the system is restored after service. A compact component may be difficult to access, and a familiar utility may still have troublesome local connections. Ownership value depends on the installed arrangement that technicians must maintain, not only the apparent simplicity of the component on a bench.</p><span aria-hidden="true" class="ed-legacy-anchor" id="energy-efficiency-the-fundamental-economic-difference"></span><h2 id="learn-test-motion-and-energy-at-the-same-useful-duty">Test motion and energy at the same useful duty</h2><p>A comparative trial should use the same load, travel, movement time and relevant environmental conditions. Measure the required result directly. Pressure alone does not establish successful movement, and a controller command does not establish position. For precise duties, observe the driven mechanism and relevant feedback. For end-to-end duties, verify completed travel and timing under representative load. Include restart and the operating states that could reveal a mismatch between the selected equipment and the process.</p><p>Energy measurements need a stated boundary. A pneumatic point-of-use measurement and a water package electrical measurement are not automatically equivalent. Explain how upstream shared equipment is included or allocated. Report uncertainty and distinguish predictions from measured results. A difference smaller than the uncertainty should not be presented as a definitive advantage. This disciplined comparison gives the owner useful evidence about the actual installation rather than a demonstration designed to make one technology look favourable by excluding its supporting system.</p><h2 id="learn-choose-the-fit-that-the-owner-can-support">Choose the fit that the owner can support</h2><p>A plant with an effective air network and modest intermittent force requirements may reasonably choose pneumatic actuation. A duty needing compact high force or a particular liquid-power response may justify a water-hydraulic arrangement. An electric alternative may also belong in the assessment. The decision should identify which criteria govern the result and what evidence supports the selected configuration. No universal ranking is required to make a strong application case.</p><p>WaterQuest's opportunity is to explain where a supported water circuit solves a specific motion or exposure problem better for the owner. Engineers need the complete operating envelope, procurement needs comparable infrastructure scope and operators need maintainable service. When those elements are clear, the choice can be defended without dismissing compressed air's practical uses or overstating water's advantages. The best result is the arrangement that reliably performs the intended task at an understood cost and consequence, rather than the technology attached to the most convenient slogan.</p><section class="wq-guide-application" id="guide-application" aria-labelledby="guide-application-title"><p class="wq-guide-kicker">From understanding to equipment selection</p><h2 id="guide-application-title">Compare the same completed movement</h2><p>Compare air and water on the same actuator duty, including holding time and control accuracy. Assess electrical input at the supply equipment, not only actuator output; unloaded operation, leakage and standby can change the annual result.</p><h3>Calculate the relevant duty</h3><p>Use the <a href="/knowledge-hub/engineering-calculators/power-calculator/">hydraulic power calculator</a> to translate pressure and flow into hydraulic output and estimated electrical input. Use the <a href="/knowledge-hub/engineering-calculators/pressure-drop-calculator/">system pressure-drop calculator</a> to combine component losses, elevation and a design allowance.</p><h3>Connect the calculation to equipment</h3><p>Compare the power-unit arrangement with the actuator duty and control sequence. Send the load, motion and water specification together so the components can be assessed as one circuit.</p><p>Explore <a href="/products/water-hydraulics-hpu/">water hydraulic power units</a> and <a href="/products/water-hydraulic-cylinders/">water hydraulic cylinders</a>.</p><details><summary>Which operating measurements make future troubleshooting easier?</summary><p>Include inspection of distribution leaks and the cost of maintaining the shared utility. Allocate only the portion attributable to the proposed machine when comparing lifecycle costs.</p></details><p class="wq-guide-boundary">Use the calculated duty as an enquiry input; efficiency assumptions are not verified equipment ratings.</p><p><a href="/contact/">Discuss your duty with WaterQuest</a> — bring your calculation inputs, water conditions and required operating sequence.</p></section><section class="kh-sources" id="sources"><h2>Sources and further reading</h2><ol><li id="source-doeair"><a href="https://www.energy.gov/sites/prod/files/2015/01/f19/UMPChapter22-compressed-air-evaluation.pdf">US Department of Energy / NREL: compressed air evaluation protocol</a><span class="kh-source-kind">Technical guidance</span><span class="kh-source-note">System boundaries, compressor controls, leakage and measurement of energy savings.</span></li><li id="source-doepump"><a href="https://www.energy.gov/sites/default/files/2014/05/f16/pump.pdf">US Department of Energy: improving pumping system performance</a><span class="kh-source-kind">Technical guidance</span><span class="kh-source-note">System-level energy assessment; not a test of WaterQuest equipment.</span></li><li id="source-physics"><a href="https://openstax.org/books/university-physics-volume-1/pages/14-3-pascals-principle-and-hydraulics">OpenStax: Pascal’s principle and hydraulics</a><span class="kh-source-kind">Educational reference</span><span class="kh-source-note">Pressure and force relationships; article examples are independently calculated.</span></li><li id="source-iso"><a href="https://www.iso.org/standard/44781.html">ISO 4413: hydraulic fluid power systems</a><span class="kh-source-kind">Standard scope</span><span class="kh-source-note">Public abstract only; this article does not reproduce the standard or establish compliance.</span></li></ol><p class="kh-reviewed">Sources reviewed 7 October 2026. Linked guidance may be updated; use current documentation for a project decision.</p></section></article>
+<aside aria-label="Article index" class="toc card"><h3>In this article</h3><a href="#learn-begin-with-the-required-result-rather-than-the-nearest-utility">Choose the supply that serves the movement</a><a href="#learn-pressure-and-area-explain-the-force-comparison">Pressure and area explain the force comparison</a><a href="#learn-compressibility-changes-the-response-to-a-disturbance">Compressibility changes the response to a disturbance</a><a href="#learn-trace-supply-and-exhaust-or-return-paths">Trace supply and exhaust or return paths</a><a href="#learn-include-the-compressor-behind-the-air-connection">Include the compressor behind the air connection</a><a href="#learn-include-the-complete-water-supply-arrangement">Include the complete water supply arrangement</a><a href="#learn-compare-holding-and-failure-response-explicitly">Compare holding and failure response explicitly</a><a href="#learn-evaluate-the-local-environment-and-maintenance-work">Evaluate the local environment and maintenance work</a><a href="#learn-test-motion-and-energy-at-the-same-useful-duty">Test motion and energy at the same useful duty</a><a href="#learn-choose-the-fit-that-the-owner-can-support">Choose the fit that the owner can support</a><a href="#guide-application">Calculate, select and maintain</a><a href="#sources">Sources and further reading</a><a href="/knowledge-hub/#library">All articles →</a></aside>
+</div>
+<div class="container">
+<div class="pager">
+<a href="/knowledge-hub/oil-hydraulics-vs-water-hydraulics-the-complete-engineering-comparison/"><span>Previous</span>Oil Hydraulics vs Water Hydraulics: The Complete Engineering Comparison</a>
+<a href="/knowledge-hub/electric-actuators-vs-hydraulic-actuators-the-real-engineering-trade-offs/"><span>Next</span>Electric Actuators vs Hydraulic Actuators: The Real Engineering Trade-Offs</a>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container card" style="padding:42px;">
+<p class="eyebrow">Apply the Knowledge</p>
+<h2>Put this knowledge to work.</h2>
+<p class="lead">Tell us what must move, how accurately and how often. Include the air, water and electrical services available so we can help frame a useful comparison.</p>
+<div class="btn-row"><a class="btn primary" href="/contact/">Start Engineering Review →</a><a class="btn" href="/industries/">View Industries →</a></div>
+</div>
+</section>
+</main>
+<script defer="" src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer="" src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/wqs-stainless/">WQS Stainless</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li></ul></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>316 SS / PEEK · Oil-Free · Canadian Support</p></div></div></footer><script defer="" src="/assets/wq-nav-dropdowns.js?v=20261015-brand"></script><script defer="" src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/newsletter-popup.js?v=20261016"></script></body>
 </html>

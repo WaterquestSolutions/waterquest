@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">WaterGate sluice gate general arrangement</title>
+  <desc id="desc">Engineering general arrangement drawing showing gate frame, gate leaf, double acting cylinder, hydraulic power unit, stainless tube routing, isolation valves, drain line, position feedback, local panel, and service envelope.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0C1A36"/><stop offset="1" stop-color="#050A18"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0l10 5-10 5z" fill="#20B8C8"/></marker>
+  </defs>
+  <rect width="1200" height="780" rx="18" fill="url(#bg)"/>
+  <g opacity=".2" stroke="#20B8C8" stroke-width="1">
+    <path d="M40 100h1120M40 160h1120M40 220h1120M40 280h1120M40 340h1120M40 400h1120M40 460h1120M40 520h1120M40 580h1120M40 640h1120"/>
+    <path d="M100 50v640M160 50v640M220 50v640M280 50v640M340 50v640M400 50v640M460 50v640M520 50v640M580 50v640M640 50v640M700 50v640M760 50v640M820 50v640M880 50v640M940 50v640M1000 50v640M1060 50v640M1120 50v640"/>
+  </g>
+  <text x="42" y="52" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="24" font-weight="800">WaterGate Sluice Gate General Arrangement - Oil-Free Hydraulic Actuation</text>
+  <text x="42" y="80" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="14">Arrangement view showing physical layout, service envelope, tubing route, controls, and maintenance isolation.</text>
+
+  <!-- Civil channel and gate -->
+  <g transform="translate(86 150)" fill="none" stroke="#AFC0D0" stroke-width="3">
+    <rect x="0" y="0" width="430" height="438" rx="8"/>
+    <rect x="74" y="64" width="282" height="306" fill="#081020" stroke="#20B8C8"/>
+    <rect x="126" y="112" width="178" height="216" fill="#122449" stroke="#20B8C8" stroke-width="4"/>
+    <path d="M74 64h282M74 370h282M74 64v306M356 64v306"/>
+    <path d="M44 400h342" stroke="#0B5C73" stroke-width="12"/>
+    <text x="215" y="418" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" text-anchor="middle">concrete channel / wall opening</text>
+  </g>
+
+  <!-- Cylinder and rod -->
+  <g transform="translate(226 80)" stroke="#20B8C8" stroke-width="4" fill="none">
+    <rect x="0" y="0" width="150" height="54" rx="7" fill="#081020"/>
+    <line x1="75" y1="54" x2="75" y2="182" stroke-width="8"/>
+    <rect x="48" y="182" width="54" height="238" rx="10" fill="#0898A8" stroke="#20B8C8"/>
+    <line x1="75" y1="420" x2="75" y2="480" stroke-width="8"/>
+    <text x="75" y="-18" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="14" font-weight="800" text-anchor="middle">CYL-101 DOUBLE ACTING CYLINDER</text>
+  </g>
+
+  <!-- HPU -->
+  <g transform="translate(774 162)" stroke="#20B8C8" stroke-width="3" fill="none">
+    <rect x="0" y="0" width="274" height="184" rx="12" fill="#081020"/>
+    <circle cx="66" cy="88" r="34" stroke="#00D4B4"/>
+    <rect x="132" y="50" width="84" height="76" rx="8" stroke="#00D4B4"/>
+    <line x1="40" y1="88" x2="92" y2="88"/>
+    <line x1="132" y1="88" x2="216" y2="88"/>
+    <text x="137" y="220" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="17" font-weight="800" text-anchor="middle">HPU-101 WATER HYDRAULIC POWER UNIT</text>
+    <text x="137" y="244" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" text-anchor="middle">pump, reservoir, filtration, relief, instruments</text>
+  </g>
+
+  <!-- Local control panel -->
+  <g transform="translate(820 472)" stroke="#00D4B4" stroke-width="3" fill="none">
+    <rect x="0" y="0" width="190" height="112" rx="10" fill="#081020"/>
+    <circle cx="46" cy="48" r="12"/>
+    <circle cx="86" cy="48" r="12"/>
+    <rect x="122" y="30" width="42" height="36" rx="4"/>
+    <text x="95" y="142" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="14" font-weight="800" text-anchor="middle">LOCAL PANEL / PLC I-O</text>
+  </g>
+
+  <!-- Tubing -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M774 222H624c-52 0-74 74-150 74h-98" stroke="#20B8C8" stroke-width="7" marker-end="url(#arrow)"/>
+    <path d="M774 286H616c-52 0-90 196-196 196h-118" stroke="#20B8C8" stroke-width="7" marker-end="url(#arrow)"/>
+    <path d="M914 346v126" stroke="#00D4B4" stroke-width="4" stroke-dasharray="10 8"/>
+    <path d="M848 346v216H516" stroke="#00D4B4" stroke-width="4" stroke-dasharray="10 8"/>
+  </g>
+
+  <!-- Valves and service tags -->
+  <g font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="12" font-weight="800">
+    <g transform="translate(618 204)"><rect width="86" height="32" rx="5" fill="#081020" stroke="#20B8C8" stroke-width="2"/><text x="43" y="21" fill="#00EEFF" text-anchor="middle">ISO-101</text></g>
+    <g transform="translate(584 442)"><rect width="86" height="32" rx="5" fill="#081020" stroke="#20B8C8" stroke-width="2"/><text x="43" y="21" fill="#00EEFF" text-anchor="middle">ISO-102</text></g>
+    <g transform="translate(812 608)"><rect width="118" height="32" rx="5" fill="#081020" stroke="#00D4B4" stroke-width="2"/><text x="59" y="21" fill="#00EEFF" text-anchor="middle">POSITION</text></g>
+  </g>
+
+  <!-- Callouts -->
+  <g font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" fill="#EEF4FA">
+    <text x="536" y="194" fill="#FFFFFF">316 SS pressure line</text>
+    <text x="516" y="434" fill="#FFFFFF">316 SS return line</text>
+    <text x="498" y="586" fill="#FFFFFF">dashed: position, drain, or control signals</text>
+    <text x="82" y="632" fill="#FFFFFF">Service envelope: access to rod, seals, tube clamps, isolation valves, filter bowl, pressure gauges, and drain/flush points.</text>
+  </g>
+
+  <!-- Title block -->
+  <g transform="translate(770 650)">
+    <rect width="374" height="82" rx="8" fill="#081020" stroke="#20B8C8" stroke-width="2"/>
+    <text x="18" y="28" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="14" font-weight="800">DRAWING: WQ-WG-GA-001</text>
+    <text x="18" y="50" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="12">WaterQuest WaterGate application arrangement</text>
+    <text x="18" y="68" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="12">Oil-free actuation, stainless fluid path, service-ready layout.</text>
+  </g>
+</svg>

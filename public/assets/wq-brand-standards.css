@@ -1,0 +1,163 @@
+/* Site-wide heading family requested 11 October 2026.
+   Keep existing responsive sizes, colours, spacing and body typography.
+   Arial Black is a system font; Arial/sans-serif is the fallback where unavailable. */
+@layer waterquest-heading-family {
+ html#waterquest-site body :is(h1,h2,h3,h4,h5,h6,[role="heading"],.wq-hero-title,.chart-title,.wq-motor-plot-title,.faq-q,.faq-question,.ind-faq summary,.faq-list summary,[class*="faq"] summary,.wqg-detail>summary),
+ html#waterquest-site body :is(h1,h2,h3,h4,h5,h6,[role="heading"],.wq-hero-title,.chart-title,.wq-motor-plot-title,.faq-q,.faq-question,.ind-faq summary,.faq-list summary,[class*="faq"] summary,.wqg-detail>summary) :is(span,em,strong,b,a,small) {
+  font-family:"Arial Black",Arial,sans-serif!important;
+  font-weight:900!important;
+ }
+}
+/* Button colour contract: highlighted controls are exactly #00EEFF.
+   This layer is first in this shared stylesheet so its important declarations
+   take precedence over the legacy callout layer. Keep outline controls dark at rest. */
+@layer waterquest-button-colour {
+ html#waterquest-site body :is(.btn:not(.btn-outline):not(.btn-ghost):not(.btn-secondary):not(.btn-outline-navy), .primary, .btn-primary, .nav-cta, .wq-mobile-cta, .wq-hero-cta, .wqg-primary, .ed-button, .ind-button, .p-button:not(.p-outline), .pc-button:not(.pc-button-outline), .v-button, input[type="submit"], .wq-site-header .wq-nav-links > li:last-child > a),
+ html#waterquest-site body :is(.wq-model-links a[aria-current], .wq-section-back[aria-current], button.active, a.model-pill.active, button.selected, [role="tab"][aria-selected="true"], button[aria-pressed="true"], [role="button"][aria-pressed="true"]),
+ html#waterquest-site body :is(button:not(.faq-q):not([class*="faq"]), [role="button"], [role="tab"], input[type="submit"], .btn, .button, .ed-button, .ind-button, .p-button, .pc-button, .v-button, .wqg-button, .wq-section-back, .wq-model-links a, .model-pill, .nav-cta, .wq-hero-cta, .wq-mobile-cta):is(:hover,:focus-visible,:active) {
+  background:#00EEFF!important;background-image:none!important;
+  border-color:#00EEFF!important;color:#FFFFFF!important;
+  box-shadow:none!important;opacity:1!important;filter:none!important;
+ }
+ html#waterquest-site body :is(.btn:not(.btn-outline):not(.btn-ghost):not(.btn-secondary):not(.btn-outline-navy), .primary, .btn-primary, .nav-cta, .wq-mobile-cta, .wq-hero-cta, .wqg-primary, .ed-button, .ind-button, .p-button:not(.p-outline), .pc-button:not(.pc-button-outline), .v-button, input[type="submit"], .wq-site-header .wq-nav-links > li:last-child > a) :is(span,strong,svg),
+ html#waterquest-site body :is(.wq-model-links a[aria-current], .wq-section-back[aria-current], button.active, a.model-pill.active, button.selected, [role="tab"][aria-selected="true"], button[aria-pressed="true"], [role="button"][aria-pressed="true"]) :is(span,strong,svg),
+ html#waterquest-site body :is(button:not(.faq-q):not([class*="faq"]), [role="button"], [role="tab"], input[type="submit"], .btn, .button, .ed-button, .ind-button, .p-button, .pc-button, .v-button, .wqg-button, .wq-section-back, .wq-model-links a, .model-pill, .nav-cta, .wq-hero-cta, .wq-mobile-cta):is(:hover,:focus-visible,:active) :is(span,strong,svg) {color:#FFFFFF!important;}
+ html#waterquest-site body :is(button:not(.faq-q):not([class*="faq"]), [role="button"], [role="tab"], input[type="submit"], .btn, .button, .ed-button, .ind-button, .p-button, .pc-button, .v-button, .wqg-button, .wq-section-back, .wq-model-links a, .model-pill, .nav-cta, .wq-hero-cta, .wq-mobile-cta):focus-visible {outline:2px solid #00EEFF!important;outline-offset:3px;}
+ html#waterquest-site body :is(.faq-q,summary):is(:hover,:focus-visible,:active),
+ html#waterquest-site body :is(.faq-q[aria-expanded="true"],.faq-item.open .faq-q,details[open]>summary),
+ html#waterquest-site body :is(.faq-q,summary):is(:hover,:focus-visible,:active) :is(h3,span),
+ html#waterquest-site body :is(.faq-q[aria-expanded="true"],.faq-item.open .faq-q,details[open]>summary) :is(h3,span) {color:#00EEFF!important;}
+}
+/* Typography restored from the user's saved homepage reference, 9 October 2026.
+   Original responsive sizes, compact navigation and Avenir-first font stack
+   are provided by gateway.css and the shared component/audit stylesheets.
+   The supplied lighter Avenir Next Bold is the cross-platform fallback. */
+@import url('./fonts/nunito-reference.css');
+@font-face{font-family:'Avenir Next';font-style:normal;font-weight:700;font-display:swap;src:url('./fonts/avenir-next-bold.woff2') format('woff2');}
+html#waterquest-site body{--font-body:'Nunito Sans','Segoe UI',system-ui,sans-serif;--font-display:Avenir,'Avenir Next','Nunito Sans',sans-serif;--font-d:Avenir,'Avenir Next','Nunito Sans',sans-serif;--font-b:'Nunito Sans','Segoe UI',system-ui,sans-serif;--wq-font-display:Avenir,'Avenir Next','Nunito Sans',sans-serif;--wq-font-body:'Nunito Sans','Segoe UI',system-ui,sans-serif;}
+.wq-unit-equivalent{font-size:1em;white-space:normal}
+/* Grey replaces the shared tinted callout fill, 9 October 2026. */
+html#waterquest-site,html#waterquest-site body{--aqua-glow:#778FA8!important;--force-glow:#778FA8!important;--hydro-glow:#778FA8!important;--forest-glow:#778FA8!important;}
+@layer waterquest-grey-surfaces {
+ html#waterquest-site :is(#waterquest-main .wqg-outline:hover,
+ #waterquest-main .wqg-panel-note,
+ #waterquest-main .wqg-result,
+ #waterquest-main .wqg-takeaway,
+ #wq-site-footer .cert-badge,
+ .app-icon,
+ .app-icon-wrap,
+ .benefit-num,
+ .btn-aqua-outline:hover,
+ .btn-outline:hover,
+ .btn-secondary:hover,
+ .cert-badge,
+ .config-table tbody tr:hover,
+ .eligibility-note,
+ .faq-item.open .faq-arrow,
+ .feature-icon,
+ .hero-badge,
+ .material-spec,
+ .mission-quote,
+ .pillar-icon,
+ .reg-icon,
+ .sector-icon-wrap,
+ .sol-check,
+ .spec-cell:hover,
+ .step-num,
+ .tag,
+ .value-icon),
+ html#waterquest-site :is(#waterquest-main .wqg-outline:hover,
+ #waterquest-main .wqg-panel-note,
+ #waterquest-main .wqg-result,
+ #waterquest-main .wqg-takeaway,
+ #wq-site-footer .cert-badge,
+ .app-icon,
+ .app-icon-wrap,
+ .benefit-num,
+ .btn-aqua-outline:hover,
+ .btn-outline:hover,
+ .btn-secondary:hover,
+ .cert-badge,
+ .config-table tbody tr:hover,
+ .eligibility-note,
+ .faq-item.open .faq-arrow,
+ .feature-icon,
+ .hero-badge,
+ .material-spec,
+ .mission-quote,
+ .pillar-icon,
+ .reg-icon,
+ .sector-icon-wrap,
+ .sol-check,
+ .spec-cell:hover,
+ .step-num,
+ .tag,
+ .value-icon) :is(h1,h2,h3,h4,h5,h6,p,a,strong,span,small,svg,li,dt,dd){color:#FFFFFF!important}
+}
+
+/* Pump chart labels: explicit white/bold exception requested 9 October. */
+@layer waterquest-typography {
+ html#waterquest-site body #flow-chart :is(.flow-model,.flow-bar span,.flow-kw){color:#FFFFFF!important;font-weight:800!important;text-shadow:0 1px 2px rgba(0,0,0,.8)}
+}
+
+
+/* Regular copy follows the supplied homepage, while labels and emphasis keep their roles. */
+@layer waterquest-reference-copy {
+ html#waterquest-site body{font-weight:400;}
+ html#waterquest-site body :is(p,li,td,dd,dt,blockquote,figcaption):not(.label):not(.eyebrow):not(.section-label):not(.wqg-kicker):not(.wq-hero-eyebrow):not(.ind-kicker):not(.p-label){font-weight:400!important;}
+ html#waterquest-site body :is(strong,b){font-weight:800!important;}
+}
+
+/* Carry the saved homepage's mobile title scale into legacy calculator pages. */
+@layer waterquest-reference-copy {
+ @media(max-width:767px){html#waterquest-site body h1{font-size:clamp(30px,7.8vw,42px)!important;line-height:1.16!important;letter-spacing:-.02em!important;}}
+}
+
+/* Site-wide text palette, 11 October 2026: white copy, aqua accents. */
+html#waterquest-site body {color:#FFFFFF;}
+html#waterquest-site :is(input,textarea)::placeholder {color:#FFFFFF!important;opacity:1!important;}
+html#waterquest-site :is(button:disabled,[aria-disabled="true"]){opacity:1!important;}
+html#waterquest-site :is(button:disabled,[aria-disabled="true"]){cursor:not-allowed;border-style:dashed;}
+html#waterquest-site form[aria-busy="true"]{opacity:1!important;}
+html#waterquest-site :is(.kh-reviewed,.text-muted,.muted){opacity:1!important;}
+
+html#waterquest-site body .wq-site-header .wq-nav-links > li:last-child > a{background:#00EEFF!important;color:#FFFFFF!important;}
+
+html#waterquest-site svg :is(text,tspan){fill:#FFFFFF!important;}
+html#waterquest-site svg :is(text,tspan)[fill="#00EEFF"]{fill:#00EEFF!important;}
+
+#nav .wq-brand {
+ display:flex!important;
+ align-items:center;
+ gap:12px;
+ flex-shrink:0;
+}
+#nav .wq-brand-mark {
+ display:block;
+ width:54px;
+ height:54px;
+ object-fit:contain;
+ flex:0 0 54px;
+}
+#nav .wq-brand-nameplate {display:block;}
+#nav .wq-brand-line {font-family:var(--font-body,'Nunito Sans',sans-serif)!important;}
+@media(min-width:981px) and (max-width:1100px) {
+ html#waterquest-site body #nav .wq-header-inner {gap:16px!important;}
+ html#waterquest-site body #nav .wq-nav-links {gap:10px!important;flex-wrap:nowrap!important;}
+ html#waterquest-site body #nav .wq-nav-links > li > a {font-size:11px!important;}
+}
+@media(max-width:600px) {
+ #nav .wq-brand {gap:9px;}
+ #nav .wq-brand-mark {width:44px;height:44px;flex-basis:44px;}
+}
+@media(max-width:767px) {
+ html#waterquest-site body #nav .wq-header-inner {gap:12px!important;}
+ html#waterquest-site body #nav .wq-brand-line {font-size:9px!important;letter-spacing:.11em!important;}
+ #nav .wq-nav-toggle {flex-shrink:0;}
+}
+@media(max-width:360px) {
+ html#waterquest-site body #nav .wq-brand-line {
+  font-size:8px!important;
+  letter-spacing:.08em!important;
+ }
+}

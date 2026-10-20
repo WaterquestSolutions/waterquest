@@ -1,0 +1,39 @@
+/* Local editorial review: extends the existing WaterQuest type, colour and navigation system. */
+html#waterquest-site body.wq-consistent .ed-wrap{width:min(1120px,calc(100% - 48px));margin-inline:auto}
+html#waterquest-site body.wq-consistent .ed-main{background:#0E284A;color:#FFFFFF;padding-top:72px}
+html#waterquest-site body.wq-consistent{overflow-x:clip!important}
+html#waterquest-site #global-bubbles,html#waterquest-site #bubbles-root{overflow:hidden!important;max-width:100vw!important;contain:paint}
+html#waterquest-site body.wq-consistent:has(.article-body) main{padding-top:72px}
+html#waterquest-site body.wq-consistent .ed-hero{padding:clamp(64px,8vw,112px) 0 64px;background:#0E284A;color:#FFFFFF}
+html#waterquest-site body.wq-consistent .ed-hero h1{font-size:clamp(32px,4.5vw,62px)!important;line-height:1.08!important;max-width:1000px;margin:16px 0 24px;color:#FFFFFF!important;letter-spacing:-.025em}
+html#waterquest-site body.wq-consistent .ed-eyebrow{font-size:13px!important;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:#00EEFF!important}
+html#waterquest-site body.wq-consistent .ed-hero .ed-eyebrow{color:#00EEFF!important}
+html#waterquest-site body.wq-consistent .ed-lead{font-size:20px!important;line-height:1.6!important;max-width:900px}
+html#waterquest-site body.wq-consistent .ed-hero .ed-lead{color:#FFFFFF!important}
+html#waterquest-site body.wq-consistent .ed-question{font-size:21px!important;line-height:1.4!important;font-weight:650;color:inherit;margin:16px 0}
+html#waterquest-site body.wq-consistent .ed-section{padding:46px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+html#waterquest-site body.wq-consistent .ed-section:nth-of-type(odd){background:#102346}
+html#waterquest-site body.wq-consistent .ed-section h2,html#waterquest-site body.wq-consistent .ed-cta h2{font-size:clamp(25px,3vw,36px)!important;line-height:1.22!important;margin:0 0 18px;color:#FFFFFF!important;max-width:940px}
+html#waterquest-site body.wq-consistent .ed-section p,html#waterquest-site body.wq-consistent .ed-cta p{font-size:17px!important;line-height:1.75!important;max-width:940px;color:#FFFFFF!important}
+html#waterquest-site body.wq-consistent .ed-actions{display:flex;flex-wrap:wrap;gap:22px;align-items:center;margin:28px 0 6px}
+html#waterquest-site body.wq-consistent .ed-actions a{font-weight:650;color:#00EEFF}
+html#waterquest-site body.wq-consistent .ed-hero .ed-actions a{color:#00EEFF}
+html#waterquest-site body.wq-consistent a.ed-button{display:inline-block;background:#00616B;color:#FFFFFF!important;padding:14px 22px;border-radius:7px;font-size:16px!important;text-decoration:none!important;font-weight:700}
+html#waterquest-site body.wq-consistent a.ed-button:hover{background:#00616B}
+html#waterquest-site body.wq-consistent .ed-cta{padding:60px 0;background:#07111f}
+html#waterquest-site body.wq-consistent .ed-checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 32px;padding-left:20px;margin:24px 0}
+html#waterquest-site body.wq-consistent .ed-checks li{font-size:17px!important;line-height:1.5;color:#FFFFFF}
+html#waterquest-site body.wq-consistent .ed-figure{margin:40px 0 0}
+html#waterquest-site body.wq-consistent .ed-figure img{display:block;width:100%;height:auto;max-height:560px;object-fit:cover;border-radius:10px}
+html#waterquest-site body.wq-consistent .ed-figure figcaption{font-size:13px!important;line-height:1.5;margin:10px 0;color:#FFFFFF}
+html#waterquest-site body.wq-consistent .ed-hero .ed-figure figcaption{color:#FFFFFF}
+html#waterquest-site body.wq-consistent .ed-scene-row{padding-bottom:40px}
+html#waterquest-site body.wq-consistent .ed-legacy-anchor{display:block!important;height:0!important;min-height:0!important;padding:0!important;margin:0!important;overflow:hidden!important;background:none!important;scroll-margin-top:200px}
+html#waterquest-site body.wq-consistent .ed-equation{border-left:3px solid #00EEFF;padding:18px 22px;margin:26px 0;background:#142b43;color:#FFFFFF}
+html#waterquest-site body.wq-consistent .ed-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+html#waterquest-site body.wq-consistent .ed-card{display:block;border:1px solid rgba(255,255,255,.14);border-radius:10px;background:#102346;padding:28px;text-decoration:none;color:#FFFFFF}
+html#waterquest-site body.wq-consistent .ed-card h2{font-size:25px!important}
+html#waterquest-site body.wq-consistent .ed-card span{font-weight:700;color:#00EEFF}
+@media(max-width:700px){html#waterquest-site body.wq-consistent .ed-card-grid{grid-template-columns:1fr}}
+html#waterquest-site body.wq-consistent .ed-section,html#waterquest-site body.wq-consistent .article-body h2{scroll-margin-top:150px}
+@media(max-width:600px){html#waterquest-site body.wq-consistent .ed-wrap{width:calc(100% - 32px)}html#waterquest-site body.wq-consistent .ed-checks{grid-template-columns:1fr}html#waterquest-site body.wq-consistent .ed-hero{padding-top:54px}html#waterquest-site body.wq-consistent .ed-lead{font-size:18px!important}html#waterquest-site body.wq-consistent .ed-actions{gap:16px}html#waterquest-site body.wq-consistent .ed-figure{margin-top:28px}}

@@ -1,0 +1,11 @@
+@layer wqs-experience {
+ html body.wqs-stainless {--aqua:#E53238!important;--navy:#000!important;--navy-mid:#0a0a0a!important;--navy-light:#161616!important;--aqua-glow:#222!important;background:#000!important;color:#fff!important;}
+ html body.wqs-stainless :is(.ed-main,.ed-hero,.ed-section,.ed-cta,.section,.section-alt,.top-utility,.wq-site-header,.wq-site-footer,.wq-dropdown-panel,.wq-nav-links) {background:#000!important;background-image:none!important;color:#fff!important;border-color:#333!important;}
+ html body.wqs-stainless :is(.ed-card,input,select,textarea) {background:#141414!important;background-image:none!important;border-color:#555!important;color:#fff!important;}
+ html body.wqs-stainless :is(.label,.text-red,.text-aqua,.ed-eyebrow,.wq-brand-line,.ed-actions>a:not(.ed-button),a:hover,a:focus-visible,.active) {color:#E53238!important;}
+ html body.wqs-stainless :is(button,.btn,.ed-button,.nav-cta,.wq-site-header .wq-nav-links>li:last-child>a) {background:#C81F22!important;background-image:none!important;border-color:#C81F22!important;color:#fff!important;box-shadow:none!important;}
+ html body.wqs-stainless :is(button,.btn,.ed-button,.nav-cta,.wq-site-header .wq-nav-links>li:last-child>a):is(:hover,:focus-visible) {background:#E53238!important;border-color:#E53238!important;color:#fff!important;}
+ html body.wqs-stainless .wq-nav-toggle {background:transparent!important;}
+ html body.wqs-stainless :is(a,button,input):focus-visible {outline-color:#E53238!important;}
+ html body.wqs-stainless .wq-footer-brand>span {color:#E53238!important;}
+}

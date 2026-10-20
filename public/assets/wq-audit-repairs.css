@@ -1,0 +1,53 @@
+/* Shared typography and responsive repairs, 2026-09-28.
+   Homepage display/body families are the reference. Formula faces remain monospace. */
+html#waterquest-site { font-size:16px; }
+html#waterquest-site body.wq-audited:not(.wq-home) {
+ --font-body:'Nunito Sans','Segoe UI',system-ui,sans-serif;
+ --font-display:'Avenir','Avenir Next','Nunito Sans',sans-serif;
+ --wq-font-display:'Avenir','Avenir Next','Nunito Sans',sans-serif;
+ font-family:var(--font-body)!important; font-size:16px!important; font-weight:400;
+}
+html#waterquest-site body.wq-audited:not(.wq-home) :is(p,li,td,th,dd,dt,blockquote,figcaption,label,small,summary,address,input,select,textarea) {
+ font-family:var(--font-body)!important;
+}
+html#waterquest-site body.wq-audited:not(.wq-home) :is(p,li,td,th,dd,dt,blockquote,figcaption,label,summary,address):not(.label):not(.eyebrow):not(.section-label):not(.wqg-kicker):not(.wq-hero-eyebrow) {
+ font-size:16px!important; line-height:1.75!important;
+}
+html#waterquest-site body.wq-audited:not(.wq-home) p:not(.label):not(.eyebrow):not(.section-label):not(.wqg-kicker):not(.wq-hero-eyebrow) {font-weight:400!important;}
+html#waterquest-site body.wq-audited:not(.wq-home) :is(h1,h2,h3,h4,h5,h6,.btn,button,.wq-nav-links a) {font-family:var(--font-display)!important;}
+html#waterquest-site body.wq-audited:not(.wq-home) h1 {font-size:clamp(46px,5.2vw,72px)!important;line-height:1.08!important;letter-spacing:-.035em!important;font-weight:900!important;overflow-wrap:break-word;}
+html#waterquest-site body.wq-audited:not(.wq-home) h2 {font-size:clamp(30px,3.3vw,45px)!important;line-height:1.2!important;letter-spacing:-.025em!important;font-weight:900!important;}
+html#waterquest-site body.wq-audited:not(.wq-home) h3 {font-size:23px!important;line-height:1.3!important;letter-spacing:-.015em!important;font-weight:800!important;}
+html#waterquest-site body.wq-audited:not(.wq-home) :is(.card:not(.article-card),.toc,.summary-panel,.wqg-start-panel,.calculator-card) > h2 {font-size:22px!important;line-height:1.3!important;}
+html#waterquest-site body.wq-audited:not(.wq-home) .related h2 {font-size:13px!important;line-height:1.4!important;letter-spacing:.14em!important;color:#00EEFF!important;}
+html#waterquest-site body.wq-audited:not(.wq-home) .wq-nav-links :is(a,li) {font-size:12px!important;line-height:1.3!important;}
+/* A grid item may shrink without forcing its text or table outside the viewport. */
+html#waterquest-site body.wq-audited :is(main,section,article,aside,div,figure) {min-width:0;}
+html#waterquest-site body.wq-audited :is(img,svg,video,canvas) {max-width:100%;}
+html#waterquest-site body.wq-audited .wq-table-scroll {max-width:100%;min-width:0;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;}
+html#waterquest-site body.wq-audited .wq-table-scroll:focus-visible {outline:2px solid #00EEFF;outline-offset:3px;}
+html#waterquest-site body.wq-audited :is(pre,.formula,.formula-box,.formula-panel) {max-width:100%;overflow-x:auto;}
+@media(max-width:700px) {
+ html#waterquest-site body.wq-audited :is(.article-shell,.grid-2,.grid-3,.materials-grid,.specs-grid,.product-hero-grid) {grid-template-columns:minmax(0,1fr)!important;}
+ html#waterquest-site body.wq-audited :is(p,li,h1,h2,h3,h4,a,td,th) {overflow-wrap:anywhere;}
+ html#waterquest-site body.wq-audited :is(.btn,.button) {max-width:100%;white-space:normal;}
+ html#waterquest-site body.wq-audited :is(.reveal-left,.reveal-right) {transform:translateY(20px);}
+ html#waterquest-site body.wq-audited :is(.reveal-left,.reveal-right).visible {transform:none;}
+ html#waterquest-site body.wq-audited :is(.article-card,.article-body,.materials-list,.specs-table-wrap) {max-width:100%;}
+}
+
+@media(max-width:700px){html#waterquest-site body .wq-model-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}html#waterquest-site body .wq-newsletter-form{flex-direction:column;}html#waterquest-site body .wq-newsletter-form input{min-width:0;width:100%;}}
+
+html#waterquest-site body.wq-audited:not(.wq-home) footer h2{font-size:12px!important;line-height:1.4!important;letter-spacing:.14em!important;}
+html#waterquest-site body.wq-section-applications .btn-ww{background:#00616B;color:#FFFFFF!important;}
+@media(max-width:700px){html#waterquest-site body.wq-audited .wq-table-scroll table:has(tr > :nth-child(3)){min-width:560px;}}
+/* Legacy calculator navigation must obey the same menu state as other pages. */
+@media(max-width:980px){
+ html#waterquest-site body .wq-site-header .wq-nav-links{display:none!important;}
+ html#waterquest-site body .wq-site-header.wq-menu-open .wq-nav-links{display:flex!important;}
+}
+
+/* Confirmed delivery states retain the site typography. */
+html#waterquest-site body .wq-form-status {flex-basis:100%;white-space:normal;overflow-wrap:anywhere;margin-top:16px;text-align:left;}
+html#waterquest-site body .wq-newsletter-consent input[type=checkbox] {width:18px!important;min-width:18px!important;}
+html#waterquest-site body button:disabled {cursor:wait;opacity:.7;}

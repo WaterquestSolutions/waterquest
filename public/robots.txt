@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: /sitemap.xml
+Sitemap: https://temporary-turbo-nickel-8xnl9g7.vercel.app/sitemap.xml

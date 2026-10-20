@@ -1,0 +1,118 @@
+/* Industry-specific application guides. Extend the published WaterQuest visual system. */
+html#waterquest-site body.wq-consistent #industry-main{--ink:#f4f8fd;--teal:#00bdd0;background:#060e1b;color:#FFFFFF;padding-top:72px;font-family:'Nunito Sans','Segoe UI',sans-serif;line-height:1.75}
+#industry-main *{box-sizing:border-box}
+html#waterquest-site body.wq-consistent #industry-main .ind-wrap{width:min(1120px,calc(100% - 48px));margin-inline:auto}
+html#waterquest-site body.wq-consistent #industry-main :is(h1,h2,h3,p,figure){margin:0}
+html#waterquest-site body.wq-consistent #industry-main :is(h1,h2,h3){font-family:'Nunito Sans','Segoe UI',sans-serif;color:#FFFFFF!important;letter-spacing:-.025em;line-height:1.2!important;text-transform:none!important}
+html#waterquest-site body.wq-consistent #industry-main h1{font-size:clamp(34px,4.8vw,62px)!important;max-width:1040px;margin:16px 0 26px}
+html#waterquest-site body.wq-consistent #industry-main h2{font-size:clamp(27px,3vw,38px)!important;max-width:940px;margin:10px 0 25px}
+html#waterquest-site body.wq-consistent #industry-main h3{font-size:23px!important;margin:12px 0 16px}
+html#waterquest-site body.wq-consistent #industry-main :is(p,li){font-size:16px!important;line-height:1.8!important;color:#FFFFFF!important}
+html#waterquest-site body.wq-consistent #industry-main p+p{margin-top:20px}
+html#waterquest-site body.wq-consistent #industry-main a{color:#00EEFF;text-decoration:underline;text-underline-offset:4px;font-size:16px;line-height:1.6}
+html#waterquest-site body.wq-consistent #industry-main a:hover{color:#00EEFF}
+html#waterquest-site body.wq-consistent #industry-main :is(a,summary):focus-visible{outline:3px solid #00c4d2;outline-offset:5px}
+html#waterquest-site body.wq-consistent #industry-main .ind-eyebrow{font-size:14px!important;letter-spacing:.1em;text-transform:uppercase;font-weight:800;color:#00EEFF!important;line-height:1.5!important}
+html#waterquest-site body.wq-consistent #industry-main .ind-hero{background:#081a2d;padding:66px 0 46px;min-height:0}
+html#waterquest-site body.wq-consistent #industry-main .ind-hero :is(h1,p,a){color:#FFFFFF!important}
+html#waterquest-site body.wq-consistent #industry-main .ind-hero .ind-eyebrow{color:#00EEFF!important}
+html#waterquest-site body.wq-consistent #industry-main .ind-lead{font-size:21px!important;line-height:1.7!important;max-width:980px}
+html#waterquest-site body.wq-consistent #industry-main .ind-actions{display:flex;flex-wrap:wrap;gap:24px;align-items:center;margin:28px 0 8px}
+html#waterquest-site body.wq-consistent #industry-main .ind-button{display:inline-flex;align-items:center;min-height:48px;padding:13px 23px;border-radius:6px;background:#00616B;color:#FFFFFF!important;text-decoration:none;font-weight:800}
+html#waterquest-site body.wq-consistent #industry-main .ind-button:hover{background:#08626b}
+html#waterquest-site body.wq-consistent #industry-main .ind-scene{margin-top:38px}
+html#waterquest-site body.wq-consistent #industry-main .ind-scene img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:cover;border-radius:10px}
+html#waterquest-site body.wq-consistent #industry-main figcaption{font-size:14px!important;line-height:1.6!important;color:#FFFFFF;padding-top:13px;max-width:1020px}
+html#waterquest-site body.wq-consistent #industry-main .ind-scene figcaption{color:#FFFFFF!important}
+html#waterquest-site body.wq-consistent #industry-main .ind-toc{background:#0c1d30;border-bottom:1px solid #294458;padding:17px 0;position:static}
+html#waterquest-site body.wq-consistent #industry-main .ind-toc .ind-wrap{display:flex;flex-wrap:wrap;gap:8px 25px}
+html#waterquest-site body.wq-consistent #industry-main .ind-toc a{font-size:15px;min-height:32px;display:inline-flex;align-items:center;font-weight:750}
+html#waterquest-site body.wq-consistent #industry-main .ind-section{padding:60px 0;border-bottom:1px solid #263c51}
+html#waterquest-site body.wq-consistent #industry-main .ind-section:nth-of-type(2n){background:#0b192b}
+html#waterquest-site body.wq-consistent #industry-main .ind-section>.ind-wrap>p{max-width:980px}
+html#waterquest-site body.wq-consistent #industry-main .ind-intro{font-size:20px!important}
+html#waterquest-site body.wq-consistent #industry-main .ind-two{display:grid;grid-template-columns:1fr 1fr;gap:46px;margin-top:30px}
+html#waterquest-site body.wq-consistent #industry-main .ind-number{font-weight:800;font-size:17px;color:#00EEFF}
+html#waterquest-site body.wq-consistent #industry-main .ind-diagram img{display:block;width:100%;height:auto;max-width:100%}
+html#waterquest-site body.wq-consistent #industry-main .ind-cases{display:grid;gap:30px;margin-top:32px}
+html#waterquest-site body.wq-consistent #industry-main .ind-case{display:grid;grid-template-columns:240px 1fr;border-top:2px solid #31546a;padding:26px 0 10px;gap:35px}
+html#waterquest-site body.wq-consistent #industry-main .ind-case-body p{margin:0 0 18px}
+html#waterquest-site body.wq-consistent #industry-main .ind-case-body strong{display:block;color:#FFFFFF;margin-bottom:4px}
+html#waterquest-site body.wq-consistent #industry-main .ind-proof{background:#102c3c;padding:18px 23px;border-left:3px solid #00c4d2;border-radius:0 8px 8px 0}
+html#waterquest-site body.wq-consistent #industry-main .ind-example{display:grid;grid-template-columns:1.4fr 1fr;gap:38px;margin-top:26px}
+html#waterquest-site body.wq-consistent #industry-main .ind-example aside{border-left:1px solid #31546a;padding-left:28px}
+html#waterquest-site body.wq-consistent #industry-main .ind-example aside h3{margin-top:0}
+html#waterquest-site body.wq-consistent #industry-main .ind-formula{padding:20px 24px;border-left:4px solid #00bdd0;background:#102c3c;font-weight:800;color:#FFFFFF!important;font-size:18px!important;margin-top:25px}
+html#waterquest-site body.wq-consistent #industry-main .ind-example aside a{display:inline-block;margin-top:20px}
+html#waterquest-site body.wq-consistent #industry-main .ind-inputs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:30px}
+html#waterquest-site body.wq-consistent #industry-main .ind-inputs article{padding:25px 28px;border:1px solid #294458;border-radius:8px;background:#0b192b}
+html#waterquest-site body.wq-consistent #industry-main .ind-inputs h3{font-size:21px!important;margin-top:0}
+html#waterquest-site body.wq-consistent #industry-main .ind-trial{padding-left:24px;margin:26px 0 0;display:grid;gap:16px;max-width:950px}
+html#waterquest-site body.wq-consistent #industry-main .ind-trial li{padding-left:8px}
+html#waterquest-site body.wq-consistent #industry-main .ind-faq details{border-bottom:1px solid #294458;padding:21px 0}
+html#waterquest-site body.wq-consistent #industry-main .ind-faq summary{font-size:20px;font-weight:750;color:#FFFFFF;cursor:pointer;line-height:1.5;min-height:44px}
+html#waterquest-site body.wq-consistent #industry-main .ind-faq details p{margin:16px 0 8px;max-width:940px}
+html#waterquest-site body.wq-consistent #industry-main .ind-related{display:flex;flex-wrap:wrap;gap:16px 30px;margin:25px 0}
+html#waterquest-site body.wq-consistent #industry-main .ind-related a{display:inline-flex;align-items:center;min-height:44px;font-size:18px;font-weight:750}
+html#waterquest-site body.wq-consistent #industry-main .ind-small{font-size:14px!important;line-height:1.7!important}
+html#waterquest-site body.wq-consistent #industry-main .ind-sources{list-style:none;padding:0;margin:22px 0;display:grid;gap:20px}
+html#waterquest-site body.wq-consistent #industry-main .ind-sources span{display:block;font-size:15px;margin-top:5px;line-height:1.6}
+html#waterquest-site body.wq-consistent #industry-main .ind-sources a{font-weight:800}
+html#waterquest-site body.wq-consistent #industry-main .ind-cta{background:#0c263b!important}
+html#waterquest-site body.wq-consistent #industry-main .ind-legacy{display:block;height:0;overflow:hidden}
+html#waterquest-site body.wq-consistent #industry-main .ind-directory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin:26px 0 40px}
+html#waterquest-site body.wq-consistent #industry-main .ind-directory-card{display:block;border:1px solid #294458;border-radius:10px;overflow:hidden;background:#0b192b;text-decoration:none;transition:box-shadow .2s}
+html#waterquest-site body.wq-consistent #industry-main .ind-directory-card:hover{box-shadow:0 8px 28px #153f541c}
+html#waterquest-site body.wq-consistent #industry-main .ind-directory-card img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:cover}
+html#waterquest-site body.wq-consistent #industry-main .ind-directory-card>div{padding:24px 28px 28px}
+html#waterquest-site body.wq-consistent #industry-main .ind-directory-card h2{font-size:25px!important;margin:0 0 12px}
+html#waterquest-site body.wq-consistent #industry-main .ind-directory-card span{display:block;margin-top:18px;font-size:16px;font-weight:800;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:700px){
+ html#waterquest-site body.wq-consistent #industry-main .ind-wrap{width:calc(100% - 32px)}
+ html#waterquest-site body.wq-consistent #industry-main .ind-hero{padding:40px 0 32px}
+ html#waterquest-site body.wq-consistent #industry-main .ind-lead{font-size:18px!important}
+ html#waterquest-site body.wq-consistent #industry-main .ind-section{padding:40px 0}
+ html#waterquest-site body.wq-consistent #industry-main :is(.ind-two,.ind-example,.ind-inputs,.ind-directory,.ind-case){grid-template-columns:1fr;gap:22px}
+ html#waterquest-site body.wq-consistent #industry-main .ind-case{gap:0}
+ html#waterquest-site body.wq-consistent #industry-main .ind-example aside{border-left:0;border-top:1px solid #31546a;padding:22px 0 0}
+ html#waterquest-site body.wq-consistent #industry-main .ind-inputs article{padding:22px}
+ html#waterquest-site body.wq-consistent #industry-main .ind-toc a{min-height:44px}
+ html#waterquest-site body.wq-consistent #industry-main .ind-actions{gap:20px}
+ html#waterquest-site body.wq-consistent #industry-main .ind-directory-card>div{padding:22px}
+}
+@media(prefers-reduced-motion:reduce){#industry-main *{scroll-behavior:auto!important;transition:none!important}}
+html#waterquest-site body.wq-consistent:is([data-industry="modular"],[data-industry="directory"]) #industry-main{padding-top:0}
+
+/* Dark application catalogue: historical presentation + current engineering guides. */
+html#waterquest-site body.wq-consistent #industry-main .ind-button{color:#FFFFFF!important;background:#00616B;border:1px solid #00c4d2}
+html#waterquest-site body.wq-consistent #industry-main .ind-button:hover{background:#00616B}
+html#waterquest-site body.wq-consistent #industry-main .ind-hero .ind-button{color:#FFFFFF!important}
+#industry-main .ind-hero{position:relative;isolation:isolate;overflow:hidden;background-image:radial-gradient(ellipse at 85% 20%,#123a50 0,transparent 65%)}
+#industry-main .ind-hero>.ind-wrap{position:relative;z-index:1}
+#industry-main .ind-bubbles{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+#industry-main .ind-bubbles i{position:absolute;left:var(--x);bottom:-30px;width:var(--size);height:var(--size);border-radius:50%;border:1px solid #00c4d255;background:radial-gradient(circle at 35% 30%,#3edbe455,transparent 65%);animation:ind-bubble var(--time) var(--delay) linear infinite}
+@keyframes ind-bubble{from{transform:translateY(0);opacity:.15}25%{opacity:.7}to{transform:translateY(-1100px);opacity:0}}
+#industry-main .ind-application-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:32px 0}
+#industry-main .ind-application-grid article,#industry-main .ind-option-grid article{padding:26px;border:1px solid #294458;border-radius:12px;background:linear-gradient(135deg,#10283d,#0b192b)}
+#industry-main .ind-application-grid ul{padding-left:20px;margin:0;display:grid;gap:8px}
+#industry-main .ind-application-grid li::marker{color:#00EEFF}
+#industry-main .ind-option-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:30px 0}
+#industry-main .ind-option-grid .ind-proof{margin-top:20px}
+#industry-main .ind-suite{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}
+#industry-main .ind-suite a{display:flex;align-items:center;min-height:64px;padding:18px 22px;border:1px solid #31546a;border-radius:8px;background:#10283d}
+#industry-main .ind-feature{background:radial-gradient(ellipse at top right,#123950,#081728)!important}
+#industry-main .ind-diagram img{border-radius:12px}
+#industry-main .ind-application-grid article,#industry-main .ind-option-grid article,#industry-main .ind-two>*{min-width:0}
+html#waterquest-site body.wq-consistent #industry-main :is(section,[id]){scroll-margin-top:0!important}
+html#waterquest-site body.wq-consistent #industry-main .ind-directory-card:hover{border-color:#00c4d2;box-shadow:0 8px 28px #0004}
+@media(min-width:1000px){
+ #industry-main .ind-hero>.ind-wrap:has(.ind-scene){display:grid;grid-template-columns:1.04fr 1fr;column-gap:46px;align-items:start}
+ #industry-main .ind-hero>.ind-wrap>*:not(.ind-scene){grid-column:1}
+ html#waterquest-site body.wq-consistent #industry-main .ind-hero h1{font-size:clamp(34px,3.6vw,49px)!important}
+ html#waterquest-site body.wq-consistent #industry-main .ind-hero .ind-lead{font-size:18px!important}
+ html#waterquest-site body.wq-consistent #industry-main .ind-scene{grid-column:2;grid-row:1/span 4;margin-top:12px;align-self:center}
+ #industry-main .ind-scene img{min-height:370px}
+}
+@media(max-width:950px){#industry-main .ind-application-grid,#industry-main .ind-suite{grid-template-columns:repeat(2,minmax(0,1fr))}#industry-main .ind-option-grid{grid-template-columns:1fr}}
+@media(max-width:600px){#industry-main .ind-application-grid,#industry-main .ind-suite{grid-template-columns:1fr}#industry-main .ind-application-grid article,#industry-main .ind-option-grid article{padding:22px}}
+@media(prefers-reduced-motion:reduce){#industry-main .ind-bubbles i{animation:none;bottom:calc(var(--x) / 2);opacity:.4}}

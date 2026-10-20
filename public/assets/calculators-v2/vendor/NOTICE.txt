@@ -1,0 +1,6 @@
+Self-hosted PDF dependencies
+
+pdf-lib 1.17.1 — MIT; see pdf-lib-LICENSE.md. Source: https://github.com/Hopding/pdf-lib
+@pdf-lib/fontkit 1.1.1 — MIT; author Andrew Dillon; fork of fontkit by Devon Govett. Source: https://github.com/Hopding/fontkit (package metadata and README included).
+DejaVu Sans — see DejaVu-LICENSE. Source: https://dejavu-fonts.github.io/
+No runtime third-party network calls are needed to create reports.

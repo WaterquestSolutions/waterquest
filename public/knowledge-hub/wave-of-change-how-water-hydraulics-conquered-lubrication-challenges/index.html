@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html id="waterquest-site" lang="en-CA">
+<head><style id="wqs-experience-layer">@layer wqs-experience;</style><link rel="stylesheet" href="/assets/newsletter-popup.css?v=20261016">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wave of Change: How Water Hydraulics Address Lubrication Challenges | WaterQuest Solutions</title>
+
+
+<style>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h2[id] { scroll-margin-top: 100px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; max-height: calc(100dvh - 118px); overflow-y: auto; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; max-height: none; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<meta content="Water’s low viscosity makes sliding surfaces and clearances especially important. Learn how purpose-designed material pairs and component geometry address lubrication and wear so water can serve as the hydraulic working medium." name="description"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="Wave of Change: How Water Hydraulics Conquered Lubrication Challenges, water hydraulics, water hydraulic systems, oil-free hydraulics, water as a hydraulic medium, tap water hydraulics, seawater hydraulics, WaterQuest Solutions, water hydraulics engineering guide, hydraulic oil alternative, industrial water hydraulics" name="keywords"/>
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/wave-of-change-how-water-hydraulics-conquered-lubrication-challenges/" rel="canonical"/>
+<meta content="WaterQuest Solutions" property="og:site_name"/>
+<meta content="Wave of Change: How Water Hydraulics Address Lubrication Challenges" property="og:title"/>
+<meta content="Water’s low viscosity makes sliding surfaces and clearances especially important. Learn how purpose-designed material pairs and component geometry address lubrication and wear so water can serve as the hydraulic working medium." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/wave-of-change-how-water-hydraulics-conquered-lubrication-challenges/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Wave of Change: How Water Hydraulics Address Lubrication Challenges" name="twitter:title"/>
+<meta content="Water’s low viscosity makes sliding surfaces and clearances especially important. Learn how purpose-designed material pairs and component geometry address lubrication and wear so water can serve as the hydraulic working medium." name="twitter:description"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/wave-of-change-how-water-hydraulics-conquered-lubrication-challenges/#primary","mainEntityOfPage":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/wave-of-change-how-water-hydraulics-conquered-lubrication-challenges/","name":"Wave of Change: How Water Hydraulics Address Lubrication Challenges","headline":"Wave of Change: How Water Hydraulics Address Lubrication Challenges","description":"Water’s low viscosity makes sliding surfaces and clearances especially important. Learn how purpose-designed material pairs and component geometry address lubrication and wear so water can serve as the hydraulic working medium.","url":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/wave-of-change-how-water-hydraulics-conquered-lubrication-challenges/","inLanguage":"en-CA","isPartOf":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"},"publisher":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"},"author":{"@type":"Organization","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization","name":"WaterQuest Solutions"},"about":[{"@type":"Thing","name":"Wave of Change: How Water Hydraulics Address Lubrication Challenges"}],"articleSection":"Components & Materials","dateModified":"2026-10-19","datePublished":"2026-09-30","wordCount":1597,"timeRequired":"PT8M","citation":["https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/","https://cdn.victrex.com/en/blog/2021/the-science-of-friction","https://www.victrex.com/-/media/downloads/technical-guides/victrex-product-guide-victrex-peek-properties-en-09-2018.pdf","https://www.iapws.org/relguide/LiquidWater.pdf","https://evolution.skf.com/wp-content/uploads/sites/5/2020/08/pump-and-compressor-performance-under-thin-film-and-oil-free-conditions-1.pdf"],"hasPart":[{"@type":"WebPageElement","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/wave-of-change-how-water-hydraulics-conquered-lubrication-challenges/#guide-application","name":"Turn lubrication challenges into interface requirements"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/"},{"@type":"ListItem","position":2,"name":"Knowledge Hub","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"},{"@type":"ListItem","position":3,"name":"Wave of Change: How Water Hydraulics Address Lubrication Challenges","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/wave-of-change-how-water-hydraulics-conquered-lubrication-challenges/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"/><link rel="stylesheet" href="/assets/wq-brand-standards.css?v=20261015-brand"/><script type="module" src="/assets/wq-speed-insights.js" id="wq-speed-insights"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style></head>
+<body class="wq-audited wq-consistent" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img class="wq-brand-mark" src="/assets/waterquest-logo-square.png" alt="" width="54" height="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero">
+<div class="container">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › Article 127</div>
+<p class="eyebrow">Components &amp; Materials</p>
+<h1 data-editorial="hero">Wave of Change: How Water Hydraulics Address Lubrication Challenges</h1>
+<p class="ed-question">See how material pairs and geometry address water-service wear.</p><p class="lead" data-editorial="lead">Water’s low viscosity makes sliding surfaces and clearances especially important. Learn how purpose-designed material pairs and component geometry address lubrication and wear so water can serve as the hydraulic working medium.</p>
+<div class="article-meta"><span class="pill">Article 127</span><span class="pill">Components &amp; Materials</span><span class="pill">10 min read</span><span class="pill">Updated 19 October 2026</span></div>
+</div>
+</section>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><span aria-hidden="true" class="ed-legacy-anchor" id="peek"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-selection"></span><span aria-hidden="true" class="ed-legacy-anchor" id="seals-and-clearances"></span><span aria-hidden="true" class="ed-legacy-anchor" id="stainless-steel"></span><span aria-hidden="true" class="ed-legacy-anchor" id="tribology"></span><span aria-hidden="true" class="ed-legacy-anchor" id="water-and-filtration"></span><span aria-hidden="true" class="ed-legacy-anchor" id="why-viscosity-matters"></span><h2 id="learn-the-achievement-is-a-working-interface">Design the moving contacts to work with water</h2><p>Purpose-built water hydraulics uses materials, surfaces and clearances selected for water’s lubrication behaviour. Low viscosity changes fluid films and leakage, so the component design addresses those conditions directly. That is the route to useful hydraulic work without oil in the working circuit: equipment engineered for the medium and the duty together.</p><p>This distinction makes the story more compelling for an informed audience. It explains why practical water-powered machinery can exist without suggesting that friction, wear or maintenance have been abolished. Materials, geometry, surface condition and operating control work together to make the contact perform its required job.</p><p>For WaterQuest, that achievement creates an opportunity to remove hydraulic oil where its presence causes a meaningful burden. The benefit depends on using appropriate components rather than assuming that any existing pump or cylinder becomes suitable once filled with water. Understanding the interface is the key to understanding both the opportunity and its limits.</p><h2 id="learn-pressure-transmission-and-lubrication-are-different-functions">Pressure transmission and lubrication are different functions</h2><p>A fluid can transmit pressure while presenting a difficult lubrication problem at a particular contact. Hydraulic force depends on pressure and effective area. Component durability depends on what happens where surfaces support load and move relative to one another. Combining those questions can lead to either unwarranted rejection or unsafe optimism.</p><p>Water's physical properties provide part of the explanation. IAPWS offers a reference basis for liquid-water properties within stated conditions. <a aria-label="Source 4: IAPWS: liquid water properties" class="kh-citation" href="#source-iapws">[4]</a> Those properties inform analysis, but they do not independently predict the life of a bearing, seal or pump assembly.</p><p>A design therefore needs both a hydraulic assessment and an interface assessment. The first establishes the required pressure, flow and useful work. The second considers load distribution, motion, materials and the condition of the fluid between surfaces. A product succeeds when those assessments meet in a component that can be manufactured, operated and maintained consistently.</p><figure aria-label="Water lubrication interface design" class="kh-diagram"><figcaption class="kh-diagram-title">The solution is the complete contact</figcaption><ol class="kh-flow"><li><strong>Material pair</strong><span>Specific grade and compatible counterface</span></li><li><strong>Geometry and finish</strong><span>Clearance, alignment and controlled surfaces</span></li><li><strong>Operating history</strong><span>Load, speed, stops, reversals and temperature</span></li><li><strong>Condition control</strong><span>Cleanliness and supported working fluid</span></li></ol><figcaption>Conceptual interface map. Low friction, low wear and low leakage are separate performance questions.</figcaption></figure><h2 id="learn-think-in-terms-of-two-surfaces-and-their-motion">Think in terms of two surfaces and their motion</h2><p>Tribology concerns interacting surfaces in relative motion, including friction, wear and lubrication. The unit of interest is the contact pair, not a material considered alone. A polymer element can behave differently against two metal counterfaces with different finish, hardness or condition.</p><p>Motion also matters. Rotation, reciprocation and oscillation create different histories at a contact. A continuously moving surface may establish a different fluid condition from one that repeatedly stops and reverses. The design must account for the actual motion rather than relying only on a convenient steady-speed test.</p><p>Victrex's friction discussion provides material-development context for this interface view. <a aria-label="Source 2: Victrex: the science of friction" class="kh-citation" href="#source-victrex">[2]</a> It should not be interpreted as a universal endorsement of any polymer in any hydraulic contact. The useful lesson is that a component's behaviour emerges from the pair, geometry and duty. That is why an apparently small counterface or alignment change can matter to reliability.</p><h2 id="learn-understand-what-a-fluid-film-contributes">Understand what a fluid film contributes</h2><p>A fluid film can separate surfaces and carry part or much of the contact load under suitable conditions. Where separation is less complete, the materials and surface condition take a more direct role. A real component can experience different contact conditions during different parts of its cycle.</p><p>Lower-viscosity media make film behaviour a particular design concern. SKF's research on mixed-media and media-lubricated bearings shows that low-viscosity operation requires coordinated materials, surface specifications and application design. <a aria-label="Source 5: SKF: rolling bearing solutions for mixed-media and thin-film conditions" class="kh-citation" href="#source-skfmedia">[5]</a> The paper concerns identified bearing applications; it is contextual evidence, not a qualification of a WaterQuest hydraulic assembly.</p><p>For a water component, the practical question is how the intended surfaces behave during the least favourable relevant parts of the duty. A successful high-speed operating point may not describe start-up or low-speed movement. The validation should therefore include the states that challenge the interface, rather than selecting only the condition that produces the most stable film.</p><h2 id="learn-choose-polymer-grades-for-the-function-they-perform">Choose polymer grades for the function they perform</h2><p>PEEK and other engineered polymers can provide useful properties in selected water-service designs. However, a generic polymer name does not identify reinforcement, fillers, processing or the finished component's behaviour. Different formulations are developed for different combinations of stiffness, strength, friction and wear.</p><p>Victrex's product-property information distinguishes grades and test conditions. <a aria-label="Source 3: Victrex: PEEK product properties guide" class="kh-citation" href="#source-victrexdata">[3]</a> Use those data to understand candidate materials and ask informed questions. Do not turn a short-term material test value into a complete component pressure rating or a promised operating life.</p><p>The component designer must connect the grade to its shape, support and counterface. A polymer carrying a contact load may experience local conditions very different from the system's fluid pressure. This is why a statement such as the circuit runs at a certain pressure does not fully describe the stress or wear duty of every internal element.</p><h2 id="learn-balance-clearance-against-leakage-and-contact-behaviour">Balance clearance against leakage and contact behaviour</h2><p>Clearance influences both leakage and the ability of moving parts to operate without undesirable contact. Reducing a gap can limit one leakage path, but it also changes tolerance to alignment, temperature and manufacturing variation. There is no universal rule that the tightest possible fit produces the best water component.</p><p>The design must account for the geometry under real operating conditions. Materials can respond differently to temperature and load, and the assembled component may not retain its nominal room-temperature dimensions everywhere. The relevant clearances belong to the complete operating arrangement.</p><p>Manufacturing consistency then becomes part of the lubrication solution. A carefully selected material pair cannot compensate for uncontrolled geometry or an unsuitable surface finish. Buyers do not need every proprietary detail, but they should seek evidence that the supplied component is an established controlled configuration rather than an improvised substitution based only on an attractive material description.</p><span aria-hidden="true" class="ed-legacy-anchor" id="testing"></span><h2 id="learn-distinguish-friction-wear-and-leakage-in-testing">Distinguish friction, wear and leakage in testing</h2><p>Low friction is not the same as low wear, and neither automatically establishes low internal leakage. A contact may move with little resistance while gradually losing material. Another may retain geometry but create more frictional loss. The performance measures should remain distinct so a favourable result in one does not conceal a problem in another.</p><p>Useful testing records the quantities relevant to the component's function and examines condition over an appropriate duty. For a pump, delivered flow and input power provide one view, while inspection and endurance evidence address another. For an actuator, movement quality, holding and external leakage may require separate observations.</p><p>Define unacceptable behaviour before the evaluation. A test that only reports the absence of catastrophic failure can overlook progressive deterioration that matters to the owner. The objective is to show that the interface continues to perform its required function within the accepted conditions, not merely that the assembly survived a short demonstration.</p><h2 id="learn-cleanliness-protects-an-engineered-contact">Cleanliness protects an engineered contact</h2><p>A particle can disrupt a carefully designed interface or damage a surface that a replacement element must later run against. Contamination control therefore belongs to the lubrication strategy, not only to general housekeeping. The relevant cleanliness and filtration requirements should come from the selected component design.</p><p>Clean assembly and service are part of that control. A suitable filter cannot justify introducing debris through an open connection during maintenance. Likewise, an accepted original supply does not establish that the circuit remains suitable after an unreviewed treatment or fluid change.</p><p>The practical ownership question is whether the site can preserve the conditions the interface needs. This includes appropriate replacement parts and attention to damaged counterfaces. Replacing a worn polymer element while leaving the cause of surface damage in place can lead to repeated failure and an incorrect conclusion that the material concept itself is ineffective.</p><h2 id="learn-validate-representative-starts-stops-and-operating-conditions">Validate representative starts, stops and operating conditions</h2><p>A meaningful duty description includes the movement states the application will actually experience. Starts, reversals, long holds and intermittent service can affect the contact differently from continuous steady operation. The temperature and working-water condition also belong in the test basis.</p><p>A short material coupon test can help screen a formulation, but it does not represent the complete pump or actuator. Component testing adds geometry, assembly and supporting fluid conditions. Installed verification adds the real controls, connections and mechanism. Each level answers a different question and should be described accordingly.</p><p>The Water Hydraulics Company's published pump information demonstrates commercial water-service equipment with defined operating requirements. <a aria-label="Source 1: The Water Hydraulics Company: P3 axial piston pump" class="kh-citation" href="#source-p3">[1]</a> That is evidence of engineered feasibility. The owner still needs the current information for the selected configuration and a realistic understanding of what its operating evidence supports in the proposed application.</p><h2 id="learn-describe-progress-without-claiming-that-limits-vanished">Describe progress without claiming that limits vanished</h2><p>The most useful account of water-hydraulic development is that designers have created interfaces that make water practical for supported duties. That progress can remove an oil inventory while retaining valuable hydraulic characteristics. It deserves explanation in terms engineers can inspect: materials, geometry, contact conditions and operating evidence.</p><p>Avoid implying that one material breakthrough made every machine suitable or eliminated wear. A component still has a duty and maintenance basis. A failure should be investigated through its actual conditions rather than used to declare all water hydraulics impossible or dismissed because the technology is supposed to have solved lubrication permanently.</p><p>WaterQuest's opportunity is to bring that engineering into applications where removing oil matters. The concept sells itself more effectively when the reader understands how the challenge is managed and what evidence to request. A supported, maintainable interface is a stronger achievement than a slogan claiming that the physical problem no longer exists.</p><p>Consider an illustrative reciprocating component that performs well during long strokes but deteriorates during frequent short reversals. That result would direct attention to the local contact history and test representativeness. It would not establish a universal weakness of water or of a particular polymer family. The next design decision should follow the observed mechanism.</p><p>For procurement, request operating evidence that resembles the intended duty and identifies its limits. Ask whether the data concern a material specimen, a component or the complete package. This one distinction can prevent a polished materials presentation from being mistaken for proof of installed service life, while preserving the genuine value of the research behind the product.</p><section class="wq-guide-application" id="guide-application" aria-labelledby="guide-application-title"><p class="wq-guide-kicker">From understanding to equipment selection</p><h2 id="guide-application-title">Turn lubrication challenges into interface requirements</h2><p>Identify the loaded sliding contacts and specify their material pairing, geometry, finish and water condition. Water-service design relies on those choices; it does not make every conventional oil-lubricated contact suitable for conversion.</p><h3>Calculate the relevant duty</h3><p>Use the <a href="/knowledge-hub/engineering-calculators/surface-finish-calculator/">surface-finish calculator</a> to convert finish units and examine an explicitly assumed Ra-to-Rz relationship. Use the <a href="/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/">lifecycle cost calculator</a> to compare capital, recurring service, replacement and residual costs over the same study period.</p><h3>Connect the calculation to equipment</h3><p>Review the offered wetted materials and sliding interfaces on the pump or cylinder configuration, then provide the actual water chemistry and external exposure.</p><p>Explore <a href="/products/axial-piston-pumps/">water hydraulic pumps</a> and <a href="/products/water-hydraulic-cylinders/">water hydraulic cylinders</a>.</p><details><summary>What should inspection reveal about the selected material pairing?</summary><p>Inspect wear surfaces and retain debris observations during service. Changes in roughness, contamination or alignment can alter performance even when the nominal materials remain unchanged.</p></details><p class="wq-guide-boundary">The finish tool converts units and applies an assumed correlation; it does not select an alloy, validate tribology or predict wear life.</p><p><a href="/contact/">Discuss your duty with WaterQuest</a> — bring your calculation inputs, water conditions and required operating sequence.</p></section><section class="kh-sources" id="sources"><h2>Sources and further reading</h2><ol><li id="source-p3"><a href="https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/">The Water Hydraulics Company: P3 axial piston pump</a><span class="kh-source-kind">Manufacturer information</span><span class="kh-source-note">An example of purpose-designed water equipment; use current configuration-specific instructions.</span></li><li id="source-victrex"><a href="https://cdn.victrex.com/en/blog/2021/the-science-of-friction">Victrex: the science of friction</a><span class="kh-source-kind">Material manufacturer guidance</span><span class="kh-source-note">Tribology and formulation considerations; not proof of installed component life.</span></li><li id="source-victrexdata"><a href="https://www.victrex.com/-/media/downloads/technical-guides/victrex-product-guide-victrex-peek-properties-en-09-2018.pdf">Victrex: PEEK product properties guide</a><span class="kh-source-kind">Material manufacturer data</span><span class="kh-source-note">Grade-specific data must be read with the relevant test conditions.</span></li><li id="source-iapws"><a href="https://www.iapws.org/relguide/LiquidWater.pdf">IAPWS: liquid water properties</a><span class="kh-source-kind">Scientific reference</span><span class="kh-source-note">Property formulations and their stated temperature and pressure ranges.</span></li><li id="source-skfmedia"><a href="https://evolution.skf.com/wp-content/uploads/sites/5/2020/08/pump-and-compressor-performance-under-thin-film-and-oil-free-conditions-1.pdf">SKF: rolling bearing solutions for mixed-media and thin-film conditions</a><span class="kh-source-kind">Bearing manufacturer technical paper</span><span class="kh-source-note">Contact, lubrication and material-selection principles; not approval of a WaterQuest component.</span></li></ol><p class="kh-reviewed">Sources reviewed 7 October 2026. Linked guidance may be updated; use current documentation for a project decision.</p></section><div class="related-block"><h3>Continue reading</h3><div class="related-grid"><a class="related-card" href="/knowledge-hub/how-much-are-your-hydraulics-costing-you/"><div class="rc-cat">Economics &amp; Funding · Article 126</div><h4>How Much Are Your Hydraulics Costing You? The Hidden Cost of Oil Hydraulics</h4><div class="rc-read">8 min read</div></a><a class="related-card" href="/knowledge-hub/why-water-hydraulics-are-the-future-of-sustainable-industry/"><div class="rc-cat">Start Here · Article 128</div><h4>Why Water Hydraulics Are the Future of Sustainable Industry</h4><div class="rc-read">8 min read</div></a><a class="related-card" href="/knowledge-hub/where-is-the-conscience-of-the-municipal-engineer/"><div class="rc-cat">Safety &amp; Compliance · Article 129</div><h4>Where Is the Conscience of the Municipal Engineer?</h4><div class="rc-read">9 min read</div></a><a class="related-card" href="/knowledge-hub/what-are-water-hydraulic-systems/"><div class="rc-cat">Start Here · Article 1</div><h4>What Are Water Hydraulic Systems?</h4><div class="rc-read">9 min read</div></a></div></div>
+</article>
+<aside aria-label="Article index" class="toc card"><h3>In this article</h3><a href="#learn-the-achievement-is-a-working-interface">Design the moving contacts to work with water</a><a href="#learn-pressure-transmission-and-lubrication-are-different-functions">Pressure transmission and lubrication are different functions</a><a href="#learn-think-in-terms-of-two-surfaces-and-their-motion">Think in terms of two surfaces and their motion</a><a href="#learn-understand-what-a-fluid-film-contributes">Understand what a fluid film contributes</a><a href="#learn-choose-polymer-grades-for-the-function-they-perform">Choose polymer grades for the function they perform</a><a href="#learn-balance-clearance-against-leakage-and-contact-behaviour">Balance clearance against leakage and contact behaviour</a><a href="#learn-distinguish-friction-wear-and-leakage-in-testing">Distinguish friction, wear and leakage in testing</a><a href="#learn-cleanliness-protects-an-engineered-contact">Cleanliness protects an engineered contact</a><a href="#learn-validate-representative-starts-stops-and-operating-conditions">Validate representative starts, stops and operating conditions</a><a href="#learn-describe-progress-without-claiming-that-limits-vanished">Describe progress without claiming that limits vanished</a><a href="#guide-application">Calculate, select and maintain</a><a href="#sources">Sources and further reading</a><a href="/knowledge-hub/#library">All articles →</a></aside>
+</div>
+<div class="container">
+<div class="pager"><a href="/knowledge-hub/how-much-are-your-hydraulics-costing-you/"><span>Previous</span>How Much Are Your Hydraulics Costing You? The Hidden Cost of Oil Hydraulics</a><a href="/knowledge-hub/why-water-hydraulics-are-the-future-of-sustainable-industry/"><span>Next</span>Why Water Hydraulics Are the Future of Sustainable Industry</a></div>
+</div>
+</section>
+<section class="section">
+<div class="container card" style="padding:42px;">
+<p class="eyebrow">Apply the Knowledge</p>
+<h2>Put this knowledge to work.</h2>
+<p class="lead">Share the component, operating conditions and friction or wear concern. We’ll help identify the interface information needed for a technical review.</p>
+<div class="btn-row"><a class="btn primary" href="/contact/">Start Engineering Review →</a><a class="btn" href="/industries/">View Industries →</a></div>
+</div>
+</section>
+</main>
+<script defer="" src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer="" src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/wqs-stainless/">WQS Stainless</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li></ul></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>316 SS / PEEK · Oil-Free · Canadian Support</p></div></div></footer><script defer="" src="/assets/wq-nav-dropdowns.js?v=20261015-brand"></script><script defer="" src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/newsletter-popup.js?v=20261016"></script></body>
+</html>

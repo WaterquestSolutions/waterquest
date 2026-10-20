@@ -1,0 +1,51 @@
+/* One typography system, including calculator controls and engineering diagrams. */
+html#waterquest-site body.wq-consistent { --font-body: "Nunito Sans", "Segoe UI", system-ui, sans-serif; --font-display: Avenir, "Avenir Next", "Nunito Sans", sans-serif; --font-mono: "Nunito Sans", "Segoe UI", system-ui, sans-serif; --font-d: Avenir, "Avenir Next", "Nunito Sans", sans-serif; }
+html#waterquest-site body.wq-consistent, html#waterquest-site body.wq-consistent :is(p,li,td,th,dt,dd,label,input,select,textarea,button,code,pre,.formula,.formula-body,.formula-box,.result,.calc-result,.metric-value) { font-family: "Nunito Sans", "Segoe UI", system-ui, sans-serif !important; }
+html#waterquest-site body.wq-consistent :is(h1,h2,h3,h4,h5,h6), html#waterquest-site body.wq-consistent svg text { font-family: Avenir, "Avenir Next", "Nunito Sans", sans-serif !important; }
+html#waterquest-site body.wq-consistent .wq-site-header :is(a,span,button), html#waterquest-site body.wq-consistent .wq-site-footer :is(strong,h2) { font-family: Avenir, "Avenir Next", "Nunito Sans", sans-serif !important; }
+html#waterquest-site body.wq-consistent .wq-site-header .wq-brand-name { font-size: 17px !important; }
+html#waterquest-site body.wq-consistent .wq-site-header .wq-brand-line { font-size: 9.76px !important; }
+html#waterquest-site body.wq-consistent .wq-site-header .wq-nav-links > li > a { font-size: 12.16px !important; }
+html#waterquest-site body.wq-consistent .wq-site-footer h2 { font-size: 12.16px !important; }
+html#waterquest-site body.wq-consistent .wq-site-footer a { font-size: 14.08px !important; }
+html#waterquest-site body.wq-consistent .wq-site-footer p { font-size: 14.4px !important; }
+html#waterquest-site body.wq-consistent .wq-site-footer .wq-footer-bottom p { font-size: 12.48px !important; }
+.wq-pressure-note { padding: 18px 22px; margin: 24px 0; border-left: 3px solid #00EEFF; background: #122954; color:#FFFFFF; border-radius: 0 12px 12px 0; }
+.wq-chart { display:block; width:100%; height:auto; background:#0E284A; border:1px solid rgba(0,200,212,.25); border-radius:16px; }
+.wq-distributor { padding: 64px 24px; background:#0d2044; }
+.wq-distributor .container { max-width:1200px; margin:auto; }
+.wq-distributor p { max-width:850px; }
+
+html#waterquest-site body.wq-consistent * { font-family: "Nunito Sans", "Segoe UI", system-ui, sans-serif !important; }
+html#waterquest-site body.wq-consistent :is(h1,h2,h3,h4,h5,h6), html#waterquest-site body.wq-consistent :is(h1,h2,h3,h4,h5,h6) *, html#waterquest-site body.wq-consistent svg text { font-family: Avenir, "Avenir Next", "Nunito Sans", sans-serif !important; }
+html#waterquest-site body.wq-consistent .wq-site-header :is(a,span,button) { font-family: Avenir, "Avenir Next", "Nunito Sans", sans-serif !important; }
+#performance figure:has(.wq-chart) { background: transparent !important; border: 0 !important; padding: 0 !important; align-self: start; }
+
+.wq-motor-plot { position:relative; background:#fff; border-radius:12px; overflow:hidden; }
+.wq-motor-plot img { display:block; width:100%; height:auto; margin:0 !important; border-radius:0 !important; }
+.wq-motor-plot-title { position:absolute; top:0; left:0; right:0; height:9%; display:flex; align-items:center; justify-content:center; background:white; color:#FFFFFF; font-weight:800; font-size:clamp(14px,2vw,22px); }
+
+/* Q&A: highlight the question on hover and for the full expanded state. */
+html#waterquest-site body .faq-q:is(:hover,:focus-visible,[aria-expanded="true"]),
+html#waterquest-site body .faq-q:is(:hover,:focus-visible,[aria-expanded="true"]) :is(h2,h3,h4,span),
+html#waterquest-site body .wqg-faq-list summary:is(:hover,:focus-visible),
+html#waterquest-site body .wqg-faq-list details[open] > summary {
+  color:#00EEFF!important;
+}
+
+/* Standing WaterQuest Q&A rule. The important layer keeps question states
+   above page-specific heading colours without changing answer text. */
+@layer waterquest-question-interaction {
+ /* Questions start white; interaction states below turn them aqua. */
+ html#waterquest-site body :is(.faq-q,details > summary),
+ html#waterquest-site body :is(.faq-q,details > summary) * {color:#FFFFFF!important;}
+
+ html#waterquest-site body :is(.faq-q,details > summary):is(:hover,:focus-visible,:active,[aria-expanded="true"]),
+ html#waterquest-site body :is(.faq-q,details > summary):is(:hover,:focus-visible,:active,[aria-expanded="true"]) *,
+ html#waterquest-site body details[open] > summary,
+ html#waterquest-site body details[open] > summary *,
+ html#waterquest-site body .faq-item:is(.open,.active) > .faq-q,
+ html#waterquest-site body .faq-item:is(.open,.active) > .faq-q * {
+  color:#00EEFF!important;
+ }
+}

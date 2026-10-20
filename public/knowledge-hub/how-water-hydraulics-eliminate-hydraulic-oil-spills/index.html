@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html id="waterquest-site" lang="en-CA">
+<head><style id="wqs-experience-layer">@layer wqs-experience;</style><link rel="stylesheet" href="/assets/newsletter-popup.css?v=20261016">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Removing Hydraulic-Oil Spill Sources from Selected Circuits | WaterQuest Solutions</title>
+
+
+<style>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<meta content="Remove hydraulic oil from a selected circuit and you remove that circuit’s working-oil spill source. Learn how to choose the location, define the conversion boundary and document the benefit clearly." name="description"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="How Water Hydraulics Eliminate Hydraulic Oil Spills, water hydraulics, water hydraulic systems, oil-free hydraulics, water as a hydraulic medium, tap water hydraulics, seawater hydraulics, WaterQuest Solutions, water hydraulics engineering guide, hydraulic oil alternative, industrial water hydraulics" name="keywords"/>
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/how-water-hydraulics-eliminate-hydraulic-oil-spills/" rel="canonical"/>
+<meta content="WaterQuest Solutions" property="og:site_name"/>
+<meta content="Removing Hydraulic-Oil Spill Sources from Selected Circuits" property="og:title"/>
+<meta content="Remove hydraulic oil from a selected circuit and you remove that circuit’s working-oil spill source. Learn how to choose the location, define the conversion boundary and document the benefit clearly." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/how-water-hydraulics-eliminate-hydraulic-oil-spills/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Removing Hydraulic-Oil Spill Sources from Selected Circuits" name="twitter:title"/>
+<meta content="Remove hydraulic oil from a selected circuit and you remove that circuit’s working-oil spill source. Learn how to choose the location, define the conversion boundary and document the benefit clearly." name="twitter:description"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/how-water-hydraulics-eliminate-hydraulic-oil-spills/#primary","mainEntityOfPage":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/how-water-hydraulics-eliminate-hydraulic-oil-spills/","name":"Removing Hydraulic-Oil Spill Sources from Selected Circuits","headline":"Removing Hydraulic-Oil Spill Sources from Selected Circuits","description":"Remove hydraulic oil from a selected circuit and you remove that circuit’s working-oil spill source. Learn how to choose the location, define the conversion boundary and document the benefit clearly.","url":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/how-water-hydraulics-eliminate-hydraulic-oil-spills/","inLanguage":"en-CA","isPartOf":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"},"publisher":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"},"author":{"@type":"Organization","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization","name":"WaterQuest Solutions"},"about":[{"@type":"Thing","name":"Removing Hydraulic-Oil Spill Sources from Selected Circuits"}],"articleSection":"Safety & Compliance","dateModified":"2026-10-19","datePublished":"2026-09-02","wordCount":1595,"timeRequired":"PT8M","citation":["https://www.canada.ca/en/environment-climate-change/corporate/transparency/acts-regulations/fisheries-act-registry/frequently-asked-questions.html","https://competition-bureau.canada.ca/en/deceptive-marketing-practices/greenwashing-guidance-businesses","https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/","https://www.ccohs.ca/oshanswers/hsprograms/hazardous_energy.html"],"hasPart":[{"@type":"WebPageElement","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/how-water-hydraulics-eliminate-hydraulic-oil-spills/#guide-application","name":"Define the oil source removed by the conversion"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/"},{"@type":"ListItem","position":2,"name":"Knowledge Hub","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"},{"@type":"ListItem","position":3,"name":"Removing Hydraulic-Oil Spill Sources from Selected Circuits","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/how-water-hydraulics-eliminate-hydraulic-oil-spills/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"/><link rel="stylesheet" href="/assets/wq-brand-standards.css?v=20261015-brand"/><script type="module" src="/assets/wq-speed-insights.js" id="wq-speed-insights"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style></head>
+<body class="wq-audited wq-consistent" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img class="wq-brand-mark" src="/assets/waterquest-logo-square.png" alt="" width="54" height="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero">
+<div class="container">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › Article 28</div>
+<p class="eyebrow">Safety &amp; Compliance</p>
+<h1 data-editorial="hero">Removing Hydraulic-Oil Spill Sources from Selected Circuits</h1>
+<p class="ed-question">Remove the hydraulic-oil inventory from the circuit you convert.</p><p class="lead" data-editorial="lead">Remove hydraulic oil from a selected circuit and you remove that circuit’s working-oil spill source. Learn how to choose the location, define the conversion boundary and document the benefit clearly.</p>
+<div class="article-meta"><span class="pill">Article 028</span><span class="pill">Safety &amp; Compliance</span><span class="pill">10 min read</span><span class="pill">Updated 19 October 2026</span></div>
+</div>
+</section>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="ema"></span><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><span aria-hidden="true" class="ed-legacy-anchor" id="environmental-insurance"></span><span aria-hidden="true" class="ed-legacy-anchor" id="fisheries-act"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><span aria-hidden="true" class="ed-legacy-anchor" id="the-narrative-beyond-the-numbers"></span><span aria-hidden="true" class="ed-legacy-anchor" id="the-secondary-containment-question"></span><h2 id="learn-define-what-is-being-removed">Remove the oil at its source</h2><p>Replacing a selected oil hydraulic circuit with water removes the hydraulic oil from that working-fluid path. The benefit is direct: that inventory is no longer available to leak from its hoses, fittings or actuator. Define the converted boundary clearly, including any separate lubricated drives or adjacent oil circuits, so the documented improvement matches the equipment supplied.</p><p>Draw the selected circuit from its supply through pumps, valves, lines, actuators and return arrangements. Mark connections to shared equipment and any points where another fluid could enter. This drawing is the basis for both engineering and environmental claims. Without it, different readers may interpret oil-free as anything from a single water-wetted pump to a completely lubricant-free facility.</p><p>The physical argument is straightforward: a circuit cannot release a hydraulic-oil inventory it no longer contains. The engineering work lies in ensuring that the replacement actually delivers the duty with compatible components, that remaining oil sources are understood and that new water-related responsibilities are managed. That is a stronger case than treating removal of one substance as removal of every possible consequence.</p><h2 id="learn-inventory-the-fluid-rather-than-estimating-from-equipment-size">Inventory the fluid rather than estimating from equipment size</h2><p>Document the oil contained in the existing boundary. Include the reservoir's relevant operating volume, lines, actuators, manifolds and other connected spaces. A large-looking power unit does not establish its fluid inventory, and a reservoir label alone may omit a significant distribution volume. Use drawings, supplier information and site records where available, with uncertain values clearly identified.</p><p>For an illustrative inventory, a reservoir containing 10 litres (2.64 US gal), lines containing 2 litres (0.528 US gal) and actuators containing 1 litre (0.264 US gal) represent 13 litres (3.43 US gal) within the chosen boundary. That is not a prediction that 13 litres (3.43 US gal) would be released in a fault. The releasable amount depends on location, isolation, replenishment, operating state and response. Distinguish inventory from credible event volume so the risk comparison remains technically meaningful.</p><p>Also distinguish initial inventory from annual consumption. Filling a system once is not the same as buying that quantity every year. Maintenance replacements, leakage and disposal records determine recurring oil use. Treating the complete inventory as an annual avoided cost without evidence can inflate the financial case and undermine a sound source-removal argument.</p><figure aria-labelledby="visual-28" class="kh-diagram kh-illustration"><figcaption class="kh-diagram-title" id="visual-28">Inventory, release and consequence are different quantities</figcaption><ol class="kh-flow"><li><strong>Inventory</strong><span>Oil physically inside the selected boundary</span></li><li><strong>Event volume</strong><span>What can leave under a defined failure and response</span></li><li><strong>Pathway</strong><span>Where the released fluid can travel</span></li><li><strong>Consequence</strong><span>What is affected at the receiving location</span></li></ol><figcaption>Source removal changes the selected inventory. It does not mean every other lubricant source or water-related consequence disappears.</figcaption></figure><span aria-hidden="true" class="ed-legacy-anchor" id="release-mechanisms"></span><h2 id="learn-trace-normal-handling-and-abnormal-release-paths">Trace normal handling and abnormal release paths</h2><p>Oil can leave a circuit through more than a dramatic hose failure. Servicing a filter, disconnecting a component or transporting used fluid creates handling tasks. These may already be well controlled, and the baseline should recognize that. Identify which tasks disappear, which become water-handling tasks and which remain because other lubricated equipment is still present.</p><p>For abnormal events, follow the route from the failed component to a receptor. A leak inside effective containment differs from a leak over an open process channel. Floor drains, cable penetrations, sloped surfaces and outdoor runoff can connect a distant component to a sensitive location. Site drawings should be checked against the actual installation because drainage arrangements often change over an asset's life.</p><p>Detection and isolation influence consequence. A monitored reservoir and accessible isolation can limit an event differently from an unattended remote circuit. Do not erase those existing protections from the comparison. A fair assessment asks how much source removal improves the specific remaining exposure after current controls are considered, rather than comparing a carefully designed proposal with an unrealistically uncontrolled baseline.</p><h2 id="learn-replace-the-fluid-supporting-functions-as-well-as-the-fluid">Replace the fluid-supporting functions as well as the fluid</h2><p>Hydraulic oil often contributes lubrication and other functions within machinery designed for it. Water has different properties, so a successful change requires compatible pumps, valves, seals, materials and operating conditions. Draining an oil circuit and refilling it with water is not an acceptable general conversion method. The retained equipment needs configuration-specific support for the proposed service.</p><p>Purpose-designed water equipment demonstrates that those functions can be addressed through engineering. Manufacturer information for the Janus P3 is one example of a water-service pump, rather than evidence that all pumps are interchangeable. <a aria-label="Source 3: The Water Hydraulics Company: P3 axial piston pump" class="kh-citation" href="#source-p3">[3]</a> During a conversion review, classify each retained assembly as supported, requiring replacement or unresolved. Keep unknown compatibility visible until evidence resolves it.</p><p>The complete mechanism still needs its original useful duty. Compare force, movement time, holding, control response and environmental conditions. A source-removal benefit should be achieved while preserving the required service, with any changed capabilities disclosed. This gives operators a practical reason to support the project and gives procurement a basis for comparing alternatives that actually do the same job.</p><span aria-hidden="true" class="ed-legacy-anchor" id="the-legal-consequences-of-a-hydraulic-oil-spill"></span><span aria-hidden="true" class="ed-legacy-anchor" id="the-scale-of-the-hydraulic-oil-spill-problem"></span><h2 id="learn-account-for-residual-oil-during-transition">Account for residual oil during transition</h2><p>The proposed final state and the transition state are different. Retained equipment can contain residual oil, deposits or other contamination even after bulk fluid is removed. The conversion plan should identify which parts are replaced, which are retained and what approved cleaning or preparation is required. Do not describe the final circuit as oil-free before the relevant transition evidence supports that statement.</p><p>Collection and disposal of removed oil and contaminated materials remain part of the project. Assign responsibility and provide an appropriate destination through the site's established arrangements. Cleaning fluids and flushing water can have different characteristics from normal working water, so they should not automatically follow the same drainage route. Treat these as defined waste streams rather than incidental installation details.</p><p>Keep the acceptance statement proportionate to the evidence. A visual observation of clear water does not prove the absence of all residual hydrocarbons or establish a particular analytical limit. Where a process requirement demands a measurable cleanliness criterion, agree the test method and acceptance basis with the responsible specialists before work begins.</p><h2 id="learn-understand-the-consequences-that-remain-with-water">Understand the consequences that remain with water</h2><p>Water can create damage and hazards despite the absence of mineral hydraulic oil. A release can wet electrical equipment, reduce traction, carry contamination or cause process disruption. High-pressure injection and unintended mechanical movement remain serious concerns. A source-removal project needs to assess these consequences rather than imply that water makes an uncontrolled leak harmless.</p><p>The destination of used water matters. Temperature, particles, dissolved constituents and service contamination can affect its suitability for discharge. Canadian Fisheries Act guidance addresses substances and pathways to fish-bearing waters; the name of the working medium does not itself settle the legal or environmental question. <a aria-label="Source 1: Environment and Climate Change Canada: Fisheries Act pollution prevention FAQ" class="kh-citation" href="#source-fisheries">[1]</a> A defined collection or drainage arrangement is part of the system design.</p><p>CCOHS hazardous-energy guidance also remains relevant because stored hydraulic pressure and external loads can persist when a motor stops. <a aria-label="Source 4: CCOHS: hazardous energy control programmes" class="kh-citation" href="#source-ccohs">[4]</a> The site needs appropriate energy-control arrangements for the installed machinery. Oil removal is an environmental and operational change within that wider safety assessment, not a replacement for it.</p><span aria-hidden="true" class="ed-legacy-anchor" id="how-water-hydraulics-structurally-eliminate-the-risk"></span><h2 id="learn-compare-source-removal-with-other-risk-reduction-options">Compare source removal with other risk-reduction options</h2><p>Water actuation is one way to change the exposure, but it should be evaluated alongside realistic alternatives. Renewing worn components, rerouting lines, improving containment, changing the actuation architecture or using another suitable fluid may address part of the problem. Their effectiveness and ownership consequences depend on the site. The comparison should explain why the preferred option fits the defined duty and release pathway.</p><p>Source removal has a particular strength: it can eliminate reliance on containment for the removed oil inventory. Yet it introduces the need to support a different working circuit. The owner should compare those responsibilities explicitly. A compatible water system with practical service support may be attractive where oil exposure is consequential; a poorly supported conversion can create an avoidable availability problem.</p><p>Avoid assigning invented failure probabilities merely to produce a precise payback. Where event frequency is uncertain, compare credible scenarios and identify the conditions that would change the decision. Keep predictable annual costs separate from potential incident consequences. Decision-makers can then understand the trade-off without mistaking a speculative risk estimate for a measured saving.</p><h2 id="learn-write-claims-that-an-engineer-can-verify">Write claims that an engineer can verify</h2><p>A useful project statement might say that mineral hydraulic oil was removed from a named gate-actuation circuit, including its reservoir and connecting lines. It should identify the final equipment configuration and any remaining lubricant boundaries relevant to the reader. That claim can be checked against drawings, bills of materials and commissioning records. Broad terms such as zero pollution ask the evidence to support far more.</p><p>The Competition Bureau's environmental-claims guidance reinforces the importance of appropriate evidence and clear representation. <a aria-label="Source 2: Competition Bureau Canada: environmental claims guidance" class="kh-citation" href="#source-claims">[2]</a> For technical communication, distinguish a design fact from an expected outcome. Removing a fluid inventory can be documented at handover; reductions in annual maintenance cost or actual incident frequency may need operating evidence over time. Keep the tense and scope of the wording consistent with what is known.</p><p>This approach strengthens the commercial argument. Engineers can see the mechanism, procurement can identify the supplied boundary and executives can explain the change without relying on an absolute promise. Precision is not a retreat from the benefit; it is how the benefit becomes credible enough to survive detailed review.</p><h2 id="learn-preserve-the-result-through-future-maintenance">Preserve the result through future maintenance</h2><p>A completed project needs controls against unintentionally reintroducing incompatible components or fluids. Update labels, drawings, component schedules and service instructions to match the final circuit. Identify approved replacements and the process for reviewing substitutions. A future maintainer should not have to infer the correct fluid from the equipment's appearance or from an old purchasing description.</p><p>Monitor the responsibilities that remain: water condition, leakage, filters, material condition and operational performance. The maintenance programme changes with the circuit; it does not disappear. Retain a record of the removed boundary and any outstanding interfaces so later extensions do not broaden the environmental claim beyond what was actually evaluated.</p><p>Water hydraulics can deliver a compelling source-removal outcome where the working circuit is purpose-designed and the duty remains dependable. The finished argument should show the oil inventory removed, the release pathways affected, the supported replacement and the evidence of completion. That gives an owner a concrete improvement to operate and explain, rather than a slogan that becomes difficult to defend when someone asks where the system boundary ends.</p><section class="wq-guide-application" id="guide-application" aria-labelledby="guide-application-title"><p class="wq-guide-kicker">From understanding to equipment selection</p><h2 id="guide-application-title">Define the oil source removed by the conversion</h2><p>A water working circuit removes its own hydraulic-oil inventory; gearboxes or other lubricated mechanisms may still exist nearby. Mark the scope on the equipment drawing so the environmental benefit is precise and auditable.</p><h3>Calculate the relevant duty</h3><p>Use the <a href="/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/">lifecycle cost calculator</a> to compare capital, recurring service, replacement and residual costs over the same study period. Use the <a href="/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/">oil-spill cost scenario calculator</a> to explore event-cost assumptions separately from routine operating costs.</p><h3>Connect the calculation to equipment</h3><p>Use a defined power-unit and actuator scope to price the oil inventory being removed. Compare installation and service requirements against the alternative at the same useful output.</p><p>Explore <a href="/products/water-hydraulics-hpu/">water hydraulic power units</a>.</p><details><summary>What evidence should be retained after an environmental retrofit?</summary><p>Inspect remaining lubricated equipment and manage water releases appropriately. Keep the service comparison focused on the tasks actually changed by the conversion.</p></details><p class="wq-guide-boundary">Event probability and response costs are user assumptions, not a prediction of a spill or a legal assessment.</p><p><a href="/contact/">Discuss your duty with WaterQuest</a> — bring your calculation inputs, water conditions and required operating sequence.</p></section><section class="kh-sources" id="sources"><h2>Sources and further reading</h2><ol><li id="source-fisheries"><a href="https://www.canada.ca/en/environment-climate-change/corporate/transparency/acts-regulations/fisheries-act-registry/frequently-asked-questions.html">Environment and Climate Change Canada: Fisheries Act pollution prevention FAQ</a><span class="kh-source-kind">Government guidance</span><span class="kh-source-note">Pollution-prevention context; not project-specific legal advice or discharge approval.</span></li><li id="source-claims"><a href="https://competition-bureau.canada.ca/en/deceptive-marketing-practices/greenwashing-guidance-businesses">Competition Bureau Canada: environmental claims guidance</a><span class="kh-source-kind">Government guidance</span><span class="kh-source-note">Support environmental statements with appropriate evidence and a clear boundary.</span></li><li id="source-p3"><a href="https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/">The Water Hydraulics Company: P3 axial piston pump</a><span class="kh-source-kind">Manufacturer information</span><span class="kh-source-note">An example of purpose-designed water equipment; use current configuration-specific instructions.</span></li><li id="source-ccohs"><a href="https://www.ccohs.ca/oshanswers/hsprograms/hazardous_energy.html">CCOHS: hazardous energy control programmes</a><span class="kh-source-kind">Occupational safety guidance</span><span class="kh-source-note">Stored and residual energy; equipment-specific authorised procedures remain essential.</span></li></ol><p class="kh-reviewed">Sources reviewed 7 October 2026. Linked guidance may be updated; use current documentation for a project decision.</p></section><div class="related-block">
+<h3>Continue reading</h3>
+<div class="related-grid">
+<a class="related-card" href="/knowledge-hub/environmental-risks-of-hydraulic-oil-in-water-infrastructure/"><div class="rc-cat">Safety &amp; Compliance · Article 29</div><h4>Environmental Risks of Hydraulic Oil in Water Infrastructure</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/industrial-equipment-that-should-never-use-oil-hydraulics/"><div class="rc-cat">Testing &amp; Adoption · Article 30</div><h4>Where Removing Hydraulic Oil Deserves Priority</h4><div class="rc-read">8 min read</div></a>
+<a class="related-card" href="/knowledge-hub/environmental-compliance-and-hydraulic-systems/"><div class="rc-cat">Safety &amp; Compliance · Article 32</div><h4>Environmental Compliance and Hydraulic Systems</h4><div class="rc-read">8 min read</div></a>
+<a class="related-card" href="/knowledge-hub/hydraulic-gate-actuators-for-municipal-infrastructure/"><div class="rc-cat">Industry Applications · Article 27</div><h4>Hydraulic Gate Actuators for Municipal Infrastructure</h4><div class="rc-read">8 min read</div></a>
+</div>
+</div>
+</article>
+<aside aria-label="Article index" class="toc card"><h3>In this article</h3><a href="#learn-define-what-is-being-removed">Remove the oil at its source</a><a href="#learn-inventory-the-fluid-rather-than-estimating-from-equipment-size">Inventory the fluid rather than estimating from equipment size</a><a href="#learn-trace-normal-handling-and-abnormal-release-paths">Trace normal handling and abnormal release paths</a><a href="#learn-replace-the-fluid-supporting-functions-as-well-as-the-fluid">Replace the fluid-supporting functions as well as the fluid</a><a href="#learn-account-for-residual-oil-during-transition">Account for residual oil during transition</a><a href="#learn-understand-the-consequences-that-remain-with-water">Understand the consequences that remain with water</a><a href="#learn-compare-source-removal-with-other-risk-reduction-options">Compare source removal with other risk-reduction options</a><a href="#learn-write-claims-that-an-engineer-can-verify">Write claims that an engineer can verify</a><a href="#learn-preserve-the-result-through-future-maintenance">Preserve the result through future maintenance</a><a href="#guide-application">Calculate, select and maintain</a><a href="#sources">Sources and further reading</a><a href="/knowledge-hub/#library">All articles →</a></aside>
+</div>
+<div class="container">
+<div class="pager">
+<a href="/knowledge-hub/hydraulic-gate-actuators-for-municipal-infrastructure/"><span>Previous</span>Hydraulic Gate Actuators for Municipal Infrastructure</a>
+<a href="/knowledge-hub/environmental-risks-of-hydraulic-oil-in-water-infrastructure/"><span>Next</span>Environmental Risks of Hydraulic Oil in Water Infrastructure</a>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container card" style="padding:42px;">
+<p class="eyebrow">Apply the Knowledge</p>
+<h2>Put this knowledge to work.</h2>
+<p class="lead">Send the circuit schematic, oil quantity and nearby sensitive areas. We’ll help identify a focused conversion scope and the operating requirements it must meet.</p>
+<div class="btn-row"><a class="btn primary" href="/contact/">Start Engineering Review →</a><a class="btn" href="/industries/">View Industries →</a></div>
+</div>
+</section>
+</main>
+<script defer="" src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer="" src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/wqs-stainless/">WQS Stainless</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li></ul></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>316 SS / PEEK · Oil-Free · Canadian Support</p></div></div></footer><script defer="" src="/assets/wq-nav-dropdowns.js?v=20261015-brand"></script><script defer="" src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/newsletter-popup.js?v=20261016"></script></body>
+</html>

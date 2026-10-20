@@ -1,0 +1,1 @@
+const industryHeader=document.getElementById('nav');if(industryHeader){const updateIndustryHeader=()=>industryHeader.classList.toggle('scrolled',window.scrollY>40);addEventListener('scroll',updateIndustryHeader,{passive:true});updateIndustryHeader();}

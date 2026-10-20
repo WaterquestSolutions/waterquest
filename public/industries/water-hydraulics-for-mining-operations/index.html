@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<html id="waterquest-site" lang="en-CA">
+<head><style id="wqs-experience-layer">@layer wqs-experience;</style><link rel="stylesheet" href="/assets/newsletter-popup.css?v=20261016">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mining: water hydraulic solutions and use cases | WaterQuest Solutions</title>
+
+
+<style>
+    :root {
+      --navy:         #0C0E0A;
+      --navy-mid:     #111409;
+      --navy-light:   #1A1E12;
+      --aqua:         #00EEFF;
+      /* Mining accent , ore amber-gold / industrial green */
+      --ore:          #C8940A;
+      --ore-light:    #E0A820;
+      --ore-glow:     rgba(200,148,10,0.15);
+      --slate:        #4A5840;
+      --slate-light:  #6A7858;
+      --rock:         #8A9888;
+      --silver:       #A8B0A0;
+      --silver-light: #C8D0C0;
+      --white:        #F0EEE8;
+      --body-text:    #B0B8A8;
+      --muted:        #ffffff;
+      --border:       rgba(140,150,120,0.16);
+      --border-ore:   rgba(200,148,10,0.30);
+      --border-slate: rgba(106,120,88,0.28);
+      --font-display: 'Avenir', 'Avenir Next', 'Nunito Sans', sans-serif;
+      --font-body:    'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+      --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px;
+      --shadow-ore:   0 0 48px rgba(200,148,10,0.18);
+      --max-width: 1240px; --section-pad: 100px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); background: var(--navy); color:#FFFFFF; line-height: 1.7; overflow-x: hidden; }
+    a { color:inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    .label { font-family: var(--font-display); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color:#00EEFF; }
+    h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 900; line-height: 1.15; color:#FFFFFF; }
+    h1 { font-size: clamp(2.4rem,5vw,4.2rem); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(1.9rem,3.5vw,3rem); letter-spacing: -0.02em; }
+    h3 { font-size: clamp(1.1rem,2vw,1.45rem); }
+    h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color:#00EEFF; }
+    p  { color:#FFFFFF; font-size: 1.02rem; }
+    .text-ore   { color:#00EEFF; }
+    .text-aqua  { color:#00EEFF; }
+    .text-muted { color:#FFFFFF; }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
+    .section { padding: var(--section-pad) 0; }
+    .section-alt  { background: var(--navy-mid); }
+    .section-dark { background: var(--navy); }
+
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: var(--radius-sm); font-family: var(--font-display); font-weight: 700; font-size: 0.88rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border: none; transition: all 0.25s ease; }
+    .btn-ore     { background: var(--ore-light); color:#FFFFFF; }
+    .btn-ore:hover { background:#00616B; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(200,148,10,0.5); }
+    .btn-outline { background: transparent; color:#00EEFF; border: 1.5px solid var(--border-ore); }
+    .btn-outline:hover { background: var(--ore-glow); border-color: var(--ore-light); }
+    .btn-aqua    { background:#00616B; color:#FFFFFF; }
+    .btn-aqua:hover { background:#00616B; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,200,212,0.4); }
+
+    /* NAV */
+    #nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: background 0.3s, backdrop-filter 0.3s; }
+    #nav.scrolled { background: rgba(12,14,10,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .nav-logo .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.15rem; color:#FFFFFF; letter-spacing: -0.01em; }
+    .nav-logo .logo-sub  { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color:#00EEFF; margin-top: 1px; display: block; }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { font-family: var(--font-display); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color:#FFFFFF; transition: color 0.2s; }
+    .nav-links a:hover { color:#00EEFF; }
+    .nav-cta { background:#00616B!important; color:#FFFFFF!important; padding: 9px 20px; border-radius: var(--radius-sm); }
+
+    /* BUBBLES , aqua on dark earth background */
+    .bubble-layer { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 1; }
+    .bubble { position: absolute; border-radius: 50%; background: radial-gradient(circle at 35% 35%, rgba(0,200,212,0.5), rgba(0,180,200,0.08) 60%, transparent 80%); border: 1px solid rgba(0,200,212,0.18); opacity: 0; animation: bubble-rise linear infinite; }
+    @keyframes bubble-rise { 0%{transform:translateY(0) translateX(0) scale(1);opacity:0} 8%{opacity:0.45} 50%{transform:translateY(-50vh) translateX(var(--drift)) scale(0.85);opacity:0.22} 92%{opacity:0.07} 100%{transform:translateY(-108vh) translateX(calc(var(--drift)*1.4)) scale(0.45);opacity:0} }
+
+    /* REVEAL */
+    .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-left  { opacity:0; transform:translateX(-28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-left.visible  { opacity:1; transform:translateX(0); }
+    .reveal-right { opacity:0; transform:translateX(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-right.visible { opacity:1; transform:translateX(0); }
+
+    .section-header { margin-bottom: 60px; }
+    .section-header .label { margin-bottom: 14px; }
+    .section-header h2 { margin-bottom: 16px; }
+    .section-header p { max-width: 620px; font-size: 1.08rem; color:#FFFFFF; }
+    .section-header.center { text-align: center; }
+    .section-header.center p { margin: 0 auto; }
+
+    /* ================================================================
+       HERO
+    ================================================================ */
+    #hero {
+      position: relative; min-height: 84vh;
+      display: flex; align-items: center;
+      overflow: hidden; padding-top: 72px;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 68% 40%, rgba(100,80,10,0.3) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 50% at 20% 70%, rgba(60,70,40,0.25) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 40% at 85% 85%, rgba(40,50,20,0.2) 0%, transparent 55%),
+        linear-gradient(175deg, #080A06 0%, #0C0E0A 45%, #101209 100%);
+    }
+    /* Rock strata lines */
+    .strata {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(200,148,10,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(100,120,80,0.02) 1px, transparent 1px);
+      background-size: 100% 38px, 80px 100%;
+    }
+    /* Dust particle layer */
+    .dust { position: absolute; border-radius: 50%; opacity: 0; animation: dust-drift linear infinite; }
+    @keyframes dust-drift { 0%{transform:translateY(0) translateX(0);opacity:0} 15%{opacity:0.35} 80%{opacity:0.12} 100%{transform:translateY(-40vh) translateX(var(--ddrift));opacity:0} }
+
+    .hero-content { position: relative; z-index: 2; max-width: var(--max-width); margin: 0 auto; padding: 80px 32px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 72px; align-items: center; }
+    .hero-text .label { margin-bottom: 20px; }
+    .hero-text h1 { margin-bottom: 26px; }
+    .hero-text h1 .accent-ore   { color:#00EEFF; }
+    .hero-text h1 .accent-water { color:#00EEFF; }
+    .hero-lead { font-size: 1.14rem; color:#FFFFFF; max-width: 520px; line-height: 1.8; margin-bottom: 36px; }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+
+    .zero-strip { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+    .zero-badge { background: rgba(200,148,10,0.07); border: 1px solid var(--border-ore); border-radius: var(--radius-md); padding: 16px 12px; text-align: center; }
+    .zero-badge .znum { font-family: var(--font-display); font-size: 1.35rem; font-weight: 900; color:#00EEFF; line-height: 1; margin-bottom: 5px; }
+    .zero-badge .zlbl { font-size: 0.7rem; color:#FFFFFF; text-transform: uppercase; letter-spacing: 0.09em; line-height: 1.4; }
+
+    /* Hero visual , mine shaft / actuator diagram */
+    .hero-visual { display: flex; align-items: center; justify-content: center; }
+    .mine-svg { width: 100%; max-width: 420px; filter: drop-shadow(0 0 40px rgba(200,148,10,0.22)); animation: mine-breathe 6s ease-in-out infinite; }
+    @keyframes mine-breathe { 0%,100%{filter:drop-shadow(0 0 40px rgba(200,148,10,0.2))} 50%{filter:drop-shadow(0 0 70px rgba(200,148,10,0.42))} }
+
+    /* ================================================================
+       CHALLENGE , Oil vs Water
+    ================================================================ */
+    .challenge-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .chal-block { border-radius: var(--radius-lg); overflow: hidden; }
+    .chal-head { padding: 26px 34px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 14px; }
+    .chal-head .icon { font-size: 1.4rem; }
+    .chal-head h3 { font-size: 1.05rem; }
+    .chal-body { padding: 26px 34px; display: flex; flex-direction: column; gap: 11px; }
+    .chal-block.problem  { background: var(--navy-light); border: 1px solid rgba(180,60,20,0.2); }
+    .chal-block.solution { background: var(--navy-light); border: 1px solid var(--border-ore); }
+    .chal-item { font-size: 0.93rem; color:#FFFFFF; font-weight: 600; padding-left: 20px; position: relative; line-height: 1.6; }
+    .chal-item::before { content:''; position:absolute; left:0; top:9px; width:7px; height:7px; border-radius:50%; }
+    .problem  .chal-item::before { background: rgba(255,90,50,0.65); }
+    .solution .chal-item::before { background: var(--aqua); }
+    .chal-footer {
+      grid-column: 1 / -1;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    }
+    .chal-footer-block {
+      background: linear-gradient(135deg, rgba(200,148,10,0.06) 0%, var(--navy-light) 100%);
+      border: 1px solid var(--border-ore);
+      border-radius: var(--radius-md);
+      padding: 22px 28px;
+    }
+    .chal-footer-block p { font-size: 0.95rem; color:#FFFFFF; font-weight: 600; font-style: italic; line-height: 1.65; }
+
+    /* ================================================================
+       SIX REASONS
+    ================================================================ */
+    .reasons-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    .reason-card {
+      background: var(--navy-light); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 34px 30px;
+      position: relative; overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+    .reason-card::after { content:attr(data-num); position:absolute; bottom:-14px; right:14px; font-size:5.5rem; font-weight:900; line-height:1; color:#FFFFFF; font-family:var(--font-display); pointer-events:none; }
+    .reason-card:hover { border-color: var(--border-ore); transform: translateY(-5px); box-shadow: var(--shadow-ore); }
+    .reason-card .r-icon { font-size: 1.8rem; margin-bottom: 16px; }
+    .reason-card h3 { font-size: 1.08rem; margin-bottom: 10px; color:#00EEFF; }
+    .reason-card p  { font-size: 0.93rem; color:#FFFFFF; font-weight: 600; line-height: 1.7; }
+
+    /* ================================================================
+       COMPARISON TABLE
+    ================================================================ */
+    .table-wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; }
+    thead tr { background: var(--navy-light); }
+    thead th { padding: 18px 24px; font-family: var(--font-display); font-size: 0.88rem; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; text-align: left; color:#FFFFFF; border-bottom: 1px solid var(--border); }
+    thead th.hl { color:#00EEFF!important; }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background 0.2s; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: rgba(200,148,10,0.02); }
+    tbody td { padding: 16px 24px; font-size: 1.02rem; color:#FFFFFF; font-weight: 800; }
+    tbody td:first-child { color:#FFFFFF; font-weight: 900; font-size: 1rem; }
+    .td-good { color:#00EEFF!important; font-weight: 700; }
+    .td-bad  { color:#FFFFFF!important; }
+    .td-mid  { color:#FFFFFF!important; }
+    .hl-col  { background: rgba(0,200,212,0.04); }
+
+    /* ================================================================
+       APPLICATIONS , 6 categories in 2 rows
+    ================================================================ */
+    .apps-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    .app-card { background: var(--navy-light); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: border-color 0.3s, box-shadow 0.3s; }
+    .app-card:hover { border-color: var(--border-ore); box-shadow: 0 8px 32px rgba(200,148,10,0.1); }
+    .app-card-head { padding: 22px 26px 16px; background: linear-gradient(135deg, rgba(200,148,10,0.07) 0%, transparent 100%); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px; }
+    .app-card-head .app-icon { font-size: 1.4rem; }
+    .app-card-head h3 { font-size: 1rem; color:#00EEFF; }
+    .app-items { padding: 18px 26px 22px; display: flex; flex-direction: column; gap: 7px; }
+    .app-item { font-size: 0.87rem; color:#FFFFFF; font-weight: 600; display: flex; align-items: flex-start; gap: 10px; }
+    .app-item::before { content:'›'; color:#00EEFF; font-weight: 900; font-size: 1rem; line-height: 1.3; min-width: 12px; }
+
+    /* ================================================================
+       FOUR EFFICIENCY GAINS , 2×2 bold layout
+    ================================================================ */
+    #efficiency { position: relative; }
+    .efficiency-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 26px; }
+    .eff-card {
+      background: var(--navy-light); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 40px;
+      position: relative; overflow: hidden;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .eff-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; bottom: 0; width: 3px;
+      background: linear-gradient(to bottom, var(--ore-light), transparent);
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .eff-card:hover { border-color: var(--border-ore); box-shadow: var(--shadow-ore); }
+    .eff-card:hover::before { opacity: 1; }
+    .eff-step { font-family: var(--font-display); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.22em; color:#00EEFF; opacity: 0.7; margin-bottom: 14px; text-transform: uppercase; }
+    .eff-card h3 { font-size: 1.15rem; margin-bottom: 14px; }
+    .eff-card p  { font-size: 0.94rem; color:#FFFFFF; font-weight: 600; line-height: 1.78; margin: 0; }
+
+    /* ================================================================
+       IDEAL FOR STRIP
+    ================================================================ */
+    .ideal-strip {
+      background: var(--navy-light);
+      border: 1px solid var(--border-ore);
+      border-radius: var(--radius-md);
+      padding: 24px 36px;
+      display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+      margin-top: 48px;
+    }
+    .ideal-strip .ideal-label { font-family: var(--font-display); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color:#00EEFF; white-space: nowrap; }
+    .ideal-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .ideal-tag { padding: 6px 14px; border: 1px solid var(--border-ore); border-radius: 100px; font-size: 0.78rem; font-weight: 600; color:#00EEFF; background: rgba(200,148,10,0.07); }
+
+    /* ================================================================
+       CTA
+    ================================================================ */
+    #cta {
+      position: relative; overflow: hidden;
+      background: linear-gradient(175deg, #080A06 0%, #0C0E0A 50%, #080A05 100%);
+      padding: 110px 0;
+    }
+    #cta::before {
+      content: '';
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 700px; height: 400px; border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(160,110,10,0.1) 0%, transparent 62%);
+      pointer-events: none;
+    }
+    .cta-inner { position: relative; z-index: 2; max-width: 700px; margin: 0 auto; padding: 0 32px; text-align: center; }
+    .cta-inner .label { margin-bottom: 20px; }
+    .cta-inner h2 { margin-bottom: 22px; }
+    .cta-inner p { font-size: 1.05rem; color:#FFFFFF; margin-bottom: 40px; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
+    .cta-ideal-row { font-size: 1rem; color:#FFFFFF; font-weight: 700; padding: 14px 24px; border: 1px solid var(--border); border-radius: 100px; display: inline-block; margin-bottom: 48px; }
+    .cta-ideal-row strong { color:#FFFFFF; font-weight: 900; }
+    .cta-stats { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+    .cta-stat .snum { font-size: 2rem; font-weight: 900; color:#00EEFF; font-family: var(--font-display); line-height: 1; }
+    .cta-stat .slbl { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color:#FFFFFF; font-weight: 700; margin-top: 5px; }
+
+    /* FOOTER */
+    footer { background: #070906; border-top: 1px solid var(--border); padding: 64px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.2rem; color:#FFFFFF; margin-bottom: 6px; }
+    .footer-brand .logo-sub { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color:#00EEFF; margin-bottom: 18px; display: block; }
+    .footer-brand p { font-size: 1rem; color:#FFFFFF; font-weight: 600; line-height: 1.7; margin-bottom: 14px; }
+    .footer-tagline { font-style: italic; color:#00EEFF!important; font-size: 1rem !important; font-weight: 800; }
+    .footer-col h5 { font-family: var(--font-display); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color:#FFFFFF; margin-bottom: 16px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul a { font-size: 0.88rem; color:#FFFFFF; transition: color 0.2s; }
+    .footer-col ul a:hover { color:#00EEFF; }
+    .footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-bottom p { font-size: 0.82rem; color:#FFFFFF; font-weight: 600; }
+    .footer-cert { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cert-badge { padding: 4px 12px; border: 1px solid var(--border); border-radius: 100px; font-size: 0.72rem; color:#FFFFFF; font-weight: 600; letter-spacing: 0.06em; }
+
+    @media (max-width:960px) {
+      :root { --section-pad:72px; }
+      .hero-content { grid-template-columns:1fr; gap:40px; }
+      .hero-visual { display:none; }
+      .challenge-grid { grid-template-columns:1fr; }
+      .chal-footer { grid-template-columns:1fr; }
+      .reasons-grid { grid-template-columns:repeat(2,1fr); }
+      .apps-grid { grid-template-columns:repeat(2,1fr); }
+      .efficiency-grid { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr 1fr; }
+      .nav-links { display:none; }
+    }
+    @media (max-width:600px) {
+      :root { --section-pad:56px; }
+      .container { padding:0 20px; }
+      .zero-strip { grid-template-columns:1fr; }
+      .reasons-grid { grid-template-columns:1fr; }
+      .apps-grid { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr; }
+      .footer-bottom { flex-direction:column; gap:16px; text-align:center; }
+    }
+
+    /* WQS PUBLIC INDUSTRY POLISH */
+    .label,
+    .section-header .label,
+    .section-label,
+    .footer-col h5 { color:#00EEFF!important; }
+
+    .hero-kpi .klbl,
+    .zero-badge .zlbl,
+    .cta-stat .slbl,
+    .policy-stat .ps-lbl,
+    .hero-kpi .klbl,
+    .slbl { color:#FFFFFF!important; font-weight: 700; }
+
+    .risk-item,
+    .chal-item,
+    .cmp-item,
+    .app-item,
+    .reason-card p,
+    .benefit-card p,
+    .eff-card p,
+    .eng-card p,
+    .reliability-card p,
+    .reg-item,
+    .reg-items,
+    .app-items,
+    .cta-inner p,
+    .footer-brand p { color:#FFFFFF!important; font-weight: 600; }
+
+    .reason-card h3,
+    .benefit-card h3,
+    .eff-card h3,
+    .eng-card h3,
+    .app-card-head h3,
+    .reg-block-head h3,
+    .material-card .label,
+    .article-card .label { color:#00EEFF!important; }
+
+    .cmp-footnote,
+    .compat-strip p,
+    .chal-footer-block p,
+    .verdict-pill p,
+    .compat-strip,
+    .cert-banner-text p { color:#FFFFFF!important; font-weight: 700; }
+
+    thead th { color:#FFFFFF!important; font-size: 0.88rem !important; font-weight: 900 !important; }
+    tbody td { color:#FFFFFF!important; font-size: 1.02rem !important; font-weight: 800 !important; }
+    tbody td:first-child { color:#FFFFFF!important; font-size: 1rem !important; font-weight: 900 !important; }
+    .td-good,
+    thead th.hl,
+    .hl-col.td-good { color:#00EEFF!important; font-weight: 900 !important; }
+    .td-bad { color:#FFFFFF!important; font-size: 1.05rem !important; font-weight: 900 !important; }
+    .td-mid { color:#FFFFFF!important; font-weight: 800 !important; }
+
+    .r-step,
+    .benefit-step,
+    .eff-step,
+    .step { color:#00EEFF!important; opacity: 1 !important; font-size: 0.9rem !important; font-weight: 900 !important; }
+
+    .footer-tagline { color:#00EEFF!important; font-size: 1rem !important; font-weight: 800 !important; }
+    .footer-bottom p { color:#FFFFFF!important; font-weight: 600 !important; }
+
+      /* WQS FINAL SHARED INDUSTRY TUNING */
+    .benefits-list .benefit-row h3,
+    .benefit-row h3 {
+      color:#00EEFF!important;
+      font-weight: 900 !important;
+    }
+
+    .benefits-list .benefit-row p,
+    .benefit-row p {
+      color:#FFFFFF!important;
+      font-weight: 700 !important;
+      font-size: 1.02rem !important;
+      line-height: 1.75 !important;
+    }
+
+    .benefits-list .benefit-row p strong,
+    .benefit-row p strong {
+      color:#00EEFF!important;
+      font-weight: 900 !important;
+    }
+
+    .cmp-col.danger .cmp-footnote,
+    .compare-banner .danger .cmp-footnote,
+    .problem .cmp-footnote,
+    .danger-block .cmp-footnote {
+      color:#00EEFF!important;
+      font-size: 1rem !important;
+      font-weight: 900 !important;
+      line-height: 1.65 !important;
+      opacity: 1 !important;
+    }
+
+    .cmp-col.safe .cmp-footnote,
+    .compare-banner .safe .cmp-footnote,
+    .solution .cmp-footnote,
+    .safe-block .cmp-footnote {
+      color:#00EEFF!important;
+      font-size: 1rem !important;
+      font-weight: 900 !important;
+      line-height: 1.65 !important;
+      opacity: 1 !important;
+    }
+
+    .cta-ideal,
+    .cta-ideal strong,
+    .cta-ideal-row,
+    .cta-ideal-row strong {
+      color:#00EEFF!important;
+      font-size: 1.08rem !important;
+      font-weight: 900 !important;
+      line-height: 1.6 !important;
+    }
+
+    /* END WQS FINAL SHARED INDUSTRY TUNING */
+
+
+
+    /* WQS SITE-WIDE NO GREY TEXT RULE */
+    :root {
+      --body-text: #FFFFFF !important;
+      --muted: #ffffff !important;
+      --silver: #FFFFFF !important;
+      --silver-light: #FFFFFF !important;
+      --text-muted: #ffffff !important;
+      --light-text: #FFFFFF !important;
+      --secondary-text: #ffffff !important;
+      --copy: #FFFFFF !important;
+      --soft: #FFFFFF !important;
+      --subtle: #FFFFFF !important;
+      --wheat: #FFFFFF !important;
+      --gray: #ffffff !important;
+      --grey: #ffffff !important;
+    }
+
+</style>
+<meta content="Keep gates and fixtures moving, and put spray water where production needs it. WaterQuest supports these distinct mining duties with water hydraulic actuation and high-pressure water pumping. Select the right package for each job, removing working oil from suitable circuits near the process." name="description"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="Mining, water hydraulics, engineering applications, use cases" name="keywords"/>
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/industries/water-hydraulics-for-mining-operations/" rel="canonical"/>
+<meta content="WaterQuest Solutions" property="og:site_name"/>
+<meta content="Hydraulic motion and water pumping for demanding mine duties." property="og:title"/>
+<meta content="Keep gates and fixtures moving, and put spray water where production needs it. WaterQuest supports these distinct mining duties with water hydraulic actuation and high-pressure water pumping. Select the right package for each job, removing working oil from suitable circuits near the process." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/industries/water-hydraulics-for-mining-operations/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Hydraulic motion and water pumping for demanding mine duties." name="twitter:title"/>
+<meta content="Keep gates and fixtures moving, and put spray water where production needs it. WaterQuest supports these distinct mining duties with water hydraulic actuation and high-pressure water pumping. Select the right package for each job, removing working oil from suitable circuits near the process." name="twitter:description"/>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-product-model-nav.css?v=20261011-buttons-00c2d7" rel="stylesheet"/><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/industries-20261008/industry-guides.css?v=20261011-white-aqua" rel="stylesheet"/><link rel="stylesheet" href="/assets/wq-brand-standards.css?v=20261015-brand"/><script type="module" src="/assets/wq-speed-insights.js" id="wq-speed-insights"></script>
+<style id="industry-layout-polish">
+html#waterquest-site body.wq-consistent #industry-main #application-map .ind-application-grid ul{list-style:none!important;padding-left:0!important}
+html#waterquest-site body.wq-consistent #industry-main #application-map .ind-application-grid li{position:relative;padding-left:18px}
+html#waterquest-site body.wq-consistent #industry-main #application-map .ind-application-grid li::before{content:"";position:absolute;left:0;top:.65em;width:6px;height:6px;border-radius:50%;background:#00EEFF}
+@media(min-width:701px){
+html#waterquest-site body.wq-consistent #industry-main #principles .ind-two{align-items:stretch;row-gap:0}
+html#waterquest-site body.wq-consistent #industry-main #principles .ind-two>article{display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:0;align-content:start}
+html#waterquest-site body.wq-consistent #industry-main #principles .ind-two>article>h3{margin-top:14px;margin-bottom:18px}
+html#waterquest-site body.wq-consistent #industry-main #principles .ind-two>article>p{margin-top:0;align-self:start}
+}
+@media(min-width:801px){
+html#waterquest-site body.wq-consistent #industry-main #compare-options .ind-option-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;row-gap:0}
+html#waterquest-site body.wq-consistent #industry-main #compare-options .ind-option-grid>article{display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:0}
+html#waterquest-site body.wq-consistent #industry-main #compare-options .ind-option-grid>article>h3{margin-top:0;margin-bottom:18px}
+html#waterquest-site body.wq-consistent #industry-main #compare-options .ind-option-grid>article>p{margin-top:0;margin-bottom:0;align-self:start}
+html#waterquest-site body.wq-consistent #industry-main #compare-options .ind-option-grid>article>.ind-proof{margin-top:20px}
+}
+</style><style id="wq-medium-comparison-style">
+#compare-options.wq-medium-comparison{padding:72px 0;background:#071423;color:#FFFFFF;scroll-margin-top:230px}
+.wq-medium-inner{width:min(1280px,calc(100% - 48px));margin:0 auto}
+#compare-options .wq-medium-eyebrow{color:#00C2D7!important;font-weight:700;letter-spacing:.13em;text-transform:uppercase;margin:0 0 14px}
+#compare-options h2{margin:0 0 24px;color:#FFFFFF!important}
+#compare-options .wq-medium-intro{max-width:1000px;margin:0 0 24px;color:#FFFFFF!important}
+#compare-options .wq-medium-scroll{overflow-x:auto;border:1px solid #00C2D7;border-radius:14px;max-width:100%;overscroll-behavior-x:contain}
+#compare-options .wq-medium-scroll:focus-visible{outline:3px solid #00C2D7;outline-offset:5px}
+#compare-options .wq-medium-table{width:100%;min-width:760px;border-collapse:collapse;table-layout:fixed;margin:0;background:#0b1c32;font-family:Verdana,sans-serif;font-size:16px;line-height:1.65}
+#compare-options .wq-medium-table caption{text-align:left;padding:20px 24px;background:#102746;font-weight:700;color:#FFFFFF!important;caption-side:top}
+#compare-options .wq-medium-table th,#compare-options .wq-medium-table td{padding:22px 20px;text-align:left;vertical-align:top;border:0;border-bottom:1px solid #24455a;white-space:normal;color:#FFFFFF!important;overflow-wrap:break-word}
+#compare-options .wq-medium-table thead th{background:#102746;font-size:18px;line-height:1.4}
+#compare-options .wq-medium-table tr>:first-child{width:19%;font-weight:700}
+#compare-options .wq-medium-table .wq-medium-water{background:#093340;border-left:2px solid #00C2D7;border-right:2px solid #00C2D7}
+#compare-options .wq-medium-table thead .wq-medium-water{background:#006072;border-top:4px solid #00C2D7}
+#compare-options .wq-medium-water strong{display:block;color:#00C2D7!important;margin-bottom:8px}
+#compare-options .wq-medium-table th span{display:block;font-family:Verdana,sans-serif;font-size:14px;font-weight:400;margin-top:8px;color:#FFFFFF!important}
+#compare-options .wq-medium-table tbody tr:last-child>*{border-bottom:0}
+#compare-options .wq-medium-hint{margin:14px 0 24px;color:#FFFFFF!important;font-size:14px}
+#compare-options .wq-medium-next{margin:24px 0 0;color:#FFFFFF!important}
+#compare-options .wq-medium-next a{color:#00C2D7!important;font-weight:700;text-decoration:underline;text-underline-offset:5px}
+@media(max-width:600px){#compare-options.wq-medium-comparison{padding:48px 0}.wq-medium-inner{width:calc(100% - 32px)}#compare-options .wq-medium-table{min-width:760px}#compare-options .wq-medium-table th,#compare-options .wq-medium-table td{padding:18px 16px}}
+</style>
+</head>
+<body class="wq-audited wq-consistent has-industry-nav" data-editorial-review="2026-10-06" data-industry="mining" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img class="wq-brand-mark" src="/assets/waterquest-logo-square.png" alt="" width="54" height="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/?industry=mining">Engineering Review</a></li></ul></div></nav><nav class="wq-model-nav wq-industry-nav" aria-label="Industries"  data-many-links="true"><div class="wq-model-nav-inner"><a class="wq-section-back" href="/industries/"><span aria-hidden="true">←</span> All Industries</a><span class="wq-model-label">Industries</span><button aria-label="Scroll industries left" class="wq-model-prev" hidden="" type="button">‹</button><div aria-label="Industry links" class="wq-model-links" role="group" tabindex="0"><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine &amp; Coastal</a><a aria-current="page" href="/industries/water-hydraulics-for-mining-operations/">Mining</a><a href="/industries/water-hydraulics-for-food-and-beverage-manufacturing/">Food &amp; Beverage</a><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a><a href="/industries/water-hydraulics-for-hydroelectric-power/">Hydroelectric Power</a><a href="/industries/water-hydraulics-for-water-parks-and-wave-pools/">Water Parks</a><a href="/industries/water-hydraulics-for-dust-control-systems/">Dust Control</a><a href="/industries/water-hydraulics-for-odor-control-and-ventilation-systems/">Odour Control</a><a href="/industries/water-hydraulics-for-agriculture-and-irrigation-systems/">Agriculture &amp; Irrigation</a><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination &amp; RO</a><a href="/industries/water-hydraulic-systems-for-hydrogen-production/">Hydrogen Production</a><a href="/industries/water-hydraulics-for-forestry-and-logging-operations/">Forestry &amp; Logging</a><a href="/industries/water-hydraulic-systems-for-wastewater-treatment-plants/">Wastewater Treatment</a><a href="/industries/water-hydraulic-systems-for-pulp-and-paper-mills/">Pulp &amp; Paper</a><a href="/r2-modular-desalination-packages/">Modular Desalination</a></div><button aria-label="Scroll industries right" class="wq-model-next" hidden="" type="button">›</button></div></nav><div aria-hidden="true" class="wq-model-nav-spacer"></div><div aria-hidden="true" id="global-bubbles" style="position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;"></div>
+<div aria-hidden="true" id="dust-layer" style="position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;"></div>
+<!-- NAV -->
+<!-- HERO -->
+<main class="industry-main" id="industry-main"><section class="ind-hero" id="hero"><div aria-hidden="true" class="ind-bubbles"><i style="--x:13%;--size:6px;--delay:-0s;--time:22s"></i><i style="--x:60%;--size:13px;--delay:-2s;--time:25s"></i><i style="--x:7%;--size:20px;--delay:-4s;--time:28s"></i><i style="--x:54%;--size:10px;--delay:-6s;--time:31s"></i><i style="--x:1%;--size:17px;--delay:-8s;--time:34s"></i><i style="--x:48%;--size:7px;--delay:-10s;--time:37s"></i><i style="--x:95%;--size:14px;--delay:-12s;--time:40s"></i><i style="--x:42%;--size:21px;--delay:-14s;--time:24s"></i><i style="--x:89%;--size:11px;--delay:-16s;--time:27s"></i><i style="--x:36%;--size:18px;--delay:-18s;--time:30s"></i><i style="--x:83%;--size:8px;--delay:-20s;--time:33s"></i><i style="--x:30%;--size:15px;--delay:-22s;--time:36s"></i><i style="--x:77%;--size:22px;--delay:-24s;--time:39s"></i><i style="--x:24%;--size:12px;--delay:-26s;--time:23s"></i><i style="--x:71%;--size:19px;--delay:-28s;--time:26s"></i><i style="--x:18%;--size:9px;--delay:-30s;--time:29s"></i></div><div class="ind-wrap"><p class="ind-eyebrow">Industry guide · Mining</p><h1>Put water to work in the mine: hydraulic power and controlled spray.</h1><p class="ind-lead">Keep gates and fixtures moving, and put spray water where production needs it. WaterQuest supports these distinct mining duties with water hydraulic actuation and high-pressure water pumping. Select the right package for each job, removing working oil from suitable circuits near the process.</p><div class="ind-actions"><a class="ind-button" href="#use-cases">See the applications</a><a href="#system">How the system works</a></div><figure class="ind-scene"><img alt="Illustrative conveyor transfer dust concept for mining" fetchpriority="high" height="941" src="/assets/industries-20261008/mining-concept.webp" width="1672"/></figure></div></section><nav aria-label="On this page" class="ind-toc"><div class="ind-wrap"><a href="#application-map">Applications</a><a href="#application">The opportunity</a><a href="#principles">How it works</a><a href="#system">System diagram</a><a href="#use-cases">Use cases</a><a href="#sizing">Worked example</a><a href="#specification">Design inputs</a><a href="#questions">Questions</a><a href="#compare-options">Compare options</a></div></nav><section class="ind-section" id="application"><div class="ind-wrap"><p class="ind-eyebrow">The customer benefit</p><h2>Tackle oil exposure and dust at their source.</h2><p class="ind-intro">A leaking actuator beside a wet process creates a different problem from dust escaping a conveyor transfer. Water can serve both duties, but each needs the right equipment. Use a conditioned water hydraulic circuit to move a gate or clamp without hydraulic oil. Use a separately designed pumping and nozzle system to deliver water where dust control needs it. This gives each system a clear job and makes performance easier to measure and maintain.</p></div></section><section class="ind-section" id="principles"><div class="ind-wrap"><p class="ind-eyebrow">How water does the work</p><h2>See how water does the work.</h2><p class="ind-intro">In an actuator circuit, water under pressure pushes a piston to move the mechanism; valves control direction and speed. In a spray circuit, the pump supplies the flow and pressure needed at the nozzles. WaterQuest helps select pumps and controls around either duty, with filtration and materials chosen for the working water rather than assuming raw mine water is suitable.</p><div class="ind-two"><article><span class="ind-number">01</span><h3>Capture depends on contact, not pressure alone.</h3><p>Droplet size, droplet velocity, nozzle location and air movement influence whether spray contacts dust. Fine droplets can follow airflow or evaporate before reaching the target; coarser droplets may wet bulk material more effectively. Select the spray for source wetting or airborne capture and validate it under operating conditions.</p></article><article><span class="ind-number">02</span><h3>Abrasive mine water is not automatically hydraulic fluid.</h3><p>Solids can damage close-clearance pumps and control valves. Specify treatment and filtration for each circuit and monitor inlet conditions. For cylinders and clamps, protect rods and seals from external grit and arrange hydraulic lines so material handling cannot strike them.</p></article></div></div></section><section class="ind-section ind-applications" id="application-map"><div class="ind-wrap"><p class="ind-eyebrow">Where to use water hydraulics</p><h2>Find the duty that matches your equipment.</h2><p>Find a mechanism or pumping duty that matches your site. Use its load, operating sequence and water conditions to start the equipment selection.</p><div class="ind-application-grid"><article><span class="ind-number">01</span><h3>Material Handling Systems</h3><ul><li>Chute gates &amp; crusher feed gates</li><li>Conveyor tensioners</li><li>Transfer point actuators</li><li>Car pushers</li><li>Stackers and reclaimers</li></ul></article><article><span class="ind-number">02</span><h3>Underground Mining</h3><ul><li>Ventilation door control</li><li>Emergency egress gate actuation</li><li>Rail haulage control</li><li>Pump station valves</li><li>Underground water management</li></ul></article><article><span class="ind-number">03</span><h3>Gate &amp; Valve Actuation</h3><ul><li>Slurry isolation valves</li><li>Knife gate valves</li><li>Tailings line valves</li><li>Thickener discharge valves</li><li>Mill circuit &amp; pump isolation valves</li></ul></article><article><span class="ind-number">04</span><h3>Processing &amp; Mill Equipment</h3><ul><li>Ore bin gates</li><li>Flotation cell actuators</li><li>Screening equipment control</li><li>Thickener rake drives</li><li>Water diversion gates</li></ul></article><article><span class="ind-number">05</span><h3>Safety &amp; Emergency Systems</h3><ul><li>Water hydraulic actuation for fire-system valves</li><li>Flood control gates</li><li>Emergency bypass valves</li></ul></article></div><p class="ind-small">Bring the mechanism or process requirement to WaterQuest. We’ll help connect it to the pump, actuator, valves and controls, with service access and the required response to a fault included in the design.</p></div></section><section class="ind-section" id="system"><div class="ind-wrap"><p class="ind-eyebrow">See how the package connects</p><h2>Conveyor transfer dust: how the system connects.</h2><figure class="ind-diagram"><picture><source media="(max-width:700px)" srcset="/assets/industries-20261008/mining-system-mobile.svg"/><img alt="Assessed water source → Filtration + pump → Zoned spray manifold → Enclosed transfer. Conveyor status enables the zone; water pressure and flow reveal supply faults. Ventilation and exposure measurements verify dust-control performance." height="405" loading="lazy" src="/assets/industries-20261008/mining-system.svg" width="1120"/></picture><figcaption>Conveyor status enables the zone; water pressure and flow reveal supply faults. Ventilation and exposure measurements verify dust-control performance. Diagram shows functional relationships; pressure protection, isolation, instrumentation and detailed piping must be designed for the actual installation.</figcaption></figure></div></section><section class="ind-section" id="use-cases"><div class="ind-wrap"><p class="ind-eyebrow">Practical applications</p><h2>Practical water-powered duties around the mine.</h2><p>Use these examples to connect an operating problem with a possible water-based arrangement. Bring the closest match to your enquiry, along with the site conditions that will shape the design.</p><div class="ind-cases"><article class="ind-case"><div class="ind-case-heading"><span class="ind-number">01</span><h3>Conveyor transfer dust</h3></div><div class="ind-case-body"><p><strong>The customer’s need</strong>Falling ore entrains air and creates a dust source at a conveyor transfer.</p><p><strong>The water-based approach</strong>Enclose the transfer where practical and position sprays for the material and airflow. Enable water only with material movement and provide a drainable, serviceable manifold outside the falling stream.</p><p class="ind-proof"><strong>Confirm the result</strong>Compare exposure measurements at representative production rates, together with water use, material moisture and nozzle fouling.</p></div></article><article class="ind-case"><div class="ind-case-heading"><span class="ind-number">02</span><h3>Chute-gate positioning</h3></div><div class="ind-case-body"><p><strong>The customer’s need</strong>A chute gate needs repeatable positioning near a wet or environmentally sensitive process.</p><p><strong>The water-based approach</strong>Select a purpose-designed water hydraulic actuator against the breakaway force of a loaded gate. Protect the cylinder from abrasion and define how a blockage is isolated before intervention.</p><p class="ind-proof"><strong>Confirm the result</strong>Demonstrate loaded opening and closing, position feedback and pressure-limited fault response without relying on an operator to clear a live blockage.</p></div></article><article class="ind-case"><div class="ind-case-heading"><span class="ind-number">03</span><h3>Washdown-zone fixture</h3></div><div class="ind-case-body"><p><strong>The customer’s need</strong>A maintenance fixture works in a regularly washed area where oil leakage would complicate housekeeping.</p><p><strong>The water-based approach</strong>Use a separate conditioned-water actuation loop, accessible isolation and a mechanical support for maintenance. Confirm that washing chemicals are compatible with external seals and finishes.</p><p class="ind-proof"><strong>Confirm the result</strong>Check holding drift, hose protection and isolation with pressure removed; document water quality and filter condition during the trial.</p></div></article></div></div></section><section class="ind-section" id="sizing"><div class="ind-wrap"><p class="ind-eyebrow">An illustrative calculation</p><h2>Make water use visible</h2><div class="ind-example"><div><p>Eight illustrative nozzles at 0.6 L/min (0.159 US gpm) use 4.8 L/min (1.27 US gpm) while enabled. At a 40% duty cycle over an eight-hour shift, they use about 922 L (244 US gal). The same manifold running continuously uses 2,304 L (609 US gal).</p><p class="ind-formula">Water volume = total nozzle flow × enabled time</p></div><aside><h3>Take the calculation into equipment selection.</h3><p>This compares operating time only. It does not predict dust reduction; nozzle flow must come from the selected nozzle at its operating pressure.</p><a href="/knowledge-hub/engineering-calculators/">Explore the engineering calculators</a></aside></div></div></section><section class="ind-section" id="specification"><div class="ind-wrap"><p class="ind-eyebrow">Build your equipment enquiry</p><h2>Give us the duty. We’ll help select the equipment.</h2><p>A drawing, operating sequence or photograph is a useful starting point. Add the loads and water conditions you know; the points below help us develop the equipment brief with you.</p><div class="ind-inputs"><article><h3>Dust duty</h3><p>Particle and material properties, throughput, drop height, airflow, exposure baseline and moisture allowance.</p></article><article><h3>Motion duty</h3><p>Loaded-gate force, stroke, cycles, jam loads, holding requirements and guarded access.</p></article><article><h3>Water supply</h3><p>Suspended solids, dissolved salts, available inlet pressure, treatment capacity and cold-weather strategy.</p></article><article><h3>Verification</h3><p>Exposure sampling, nozzle flow checks, blocked-line detection, loaded strokes and maintenance access.</p></article></div></div></section><section id="compare-options" class="wq-medium-comparison" aria-labelledby="wq-medium-title"><div class="wq-medium-inner">
+<p class="wq-medium-eyebrow">Compare the working media</p><h2 id="wq-medium-title">Hydraulic power. A cleaner working medium.</h2>
+<p class="wq-medium-intro">Water hydraulics combines hydraulic force and controlled movement with a working circuit free of hydraulic oil. Compare water, oil and compressed air for mining operations to see where water can strengthen your equipment design.</p>
+<p class="wq-medium-hint">On smaller screens, scroll the table sideways to compare all three media.</p>
+<div class="wq-medium-scroll" role="region" tabindex="0" aria-label="Comparison of water, oil and compressed air"><table class="wq-medium-table"><caption>Three working media compared for mining operations</caption><thead><tr><th scope="col">What matters</th><th scope="col" class="wq-medium-water">Water hydraulics<span>Working medium: water</span></th><th scope="col">Oil hydraulics<span>Working medium: hydraulic oil</span></th><th scope="col">Pneumatics<span>Working medium: compressed air</span></th></tr></thead><tbody><tr><th scope="row">Remove an oil source from the work area</th><td class="wq-medium-water"><strong>Water’s advantage for this application.</strong>Deliver hydraulic force for selected equipment without adding hydraulic oil beside process water, sumps or sensitive ground.</td><td>Provides established high-force actuation, with oil containment and spill-response needs.</td><td>Useful for suitable tools and actuators; check pressure, air capacity and required force at the point of use.</td></tr><tr><th scope="row">Working medium</th><td class="wq-medium-water"><strong>Water carries the power.</strong>Water in components designed for its chemistry, lubrication and sealing requirements.</td><td>Hydraulic oil selected for the pump, valves, seals and operating temperature.</td><td>Compressed air supplied through suitable filtration, moisture removal and pressure regulation.</td></tr><tr><th scope="row">Force and motion</th><td class="wq-medium-water"><strong>Keep hydraulic force and control.</strong>Low liquid compressibility supports controlled movement. Pressure and actuator area determine force; flow sets speed.</td><td>Also provides hydraulic force and controlled motion through pressure, flow and suitable valves.</td><td>Compressible air gives a more compliant response. Precision movement is possible with suitable feedback and control.</td></tr><tr><th scope="row">Leaks and contamination</th><td class="wq-medium-water"><strong>No hydraulic-oil film from this circuit.</strong>Removing hydraulic oil eliminates that source of oily residue. Water leaks still need detection, drainage and repair.</td><td>A leak can leave oily residue and require containment, cleaning or contaminated-material handling.</td><td>Escaping air wastes supply energy. Oil carryover depends on compressor design, air treatment and actuator lubrication.</td></tr><tr><th scope="row">Fire behaviour</th><td class="wq-medium-water"><strong>The water working medium does not burn.</strong>Remove combustible hydraulic oil from the selected circuit, an advantage around heat or fire-sensitive processes.</td><td>Mineral hydraulic oil is combustible. Fire-resistant fluids have different properties and compatibility requirements.</td><td>Air does not burn, but it contains oxygen. Air-powered equipment still needs assessment for its operating environment.</td></tr><tr><th scope="row">Routine maintenance</th><td class="wq-medium-water"><strong>Remove hydraulic-oil servicing from this circuit.</strong>Maintain water quality, filters, seals and wetted materials; provide freeze protection where needed.</td><td>Maintain oil condition, filters and seals; manage oil changes, storage and used-fluid handling.</td><td>Maintain compressors, filters, dryers and condensate drains; inspect distribution piping and repair air leaks.</td></tr><tr><th scope="row">Selecting the equipment</th><td class="wq-medium-water"><strong>Choose a complete water-compatible system.</strong>Match water-service pumps, valves and actuators to the load and water quality, with corrosion control and filtration designed together.</td><td>Match pumps, valves, actuators and seals to the oil, temperature and duty; include leak containment where required.</td><td>Match compressor capacity, air preparation and actuators to force, cycling, positioning and the response to lost air supply.</td></tr></tbody></table></div>
+<p class="wq-medium-hint">Process-water pumping and hydraulic actuation have different duties; select each circuit for its own water quality, flow and pressure.</p>
+<p class="wq-medium-next"><strong>Put water’s advantages to work.</strong> Bring us the movement, load, operating cycle and water supply. We’ll help identify the water hydraulic pumps, valves, actuators and power unit your application needs. <a href="/contact/">Request an engineering review →</a></p>
+</div></section><section class="ind-section" id="business-case"><div class="ind-wrap"><p class="ind-eyebrow">Build the commercial case</p><h2>Make the oil-free option a practical investment.</h2><p>Select a duty with a clear production problem: actuator leakage, unreliable gate travel or poorly controlled spray delivery. Compare operating performance, maintenance, fluid handling and downtime at representative production rates.</p><ol class="ind-trial"><li><strong>Define the improvement.</strong> Record the present duty, service effort and operating problem. Agree the movement, output or availability the new equipment must deliver.</li><li><strong>Specify and demonstrate the package.</strong> Match components to the actual water, load and operating range. Use agreed commissioning checks or a focused trial to confirm the result.</li><li><strong>Compare the complete ownership cost.</strong> Include equipment, installation, utilities, fluid management, servicing and downtime. Use measured results where available and identify estimates clearly.</li></ol></div></section><section class="ind-section" id="questions"><div class="ind-wrap"><p class="ind-eyebrow">Questions customers ask</p><h2>Make an informed equipment choice.</h2><div class="ind-faq"><details><summary>Can water hydraulics provide the force this equipment needs?</summary><p>Yes, when the equipment is sized for the duty. Cylinder force comes from pressure acting over the effective piston area; controlled flow sets movement speed. WaterQuest helps match the cylinder, pump and valves to the load, stroke and operating sequence, using components designed for water.</p></details><details><summary>Is more pressure always better for dust control?</summary><p>No. It changes the spray pattern, droplet behaviour and flow. Choose the operating point that works with the enclosure, airflow and material, then measure the result.</p></details><details><summary>Can mine water supply the cylinder circuit?</summary><p>Not without a water-quality assessment and component acceptance. The dust-spray supply and hydraulic working fluid may need different treatment.</p></details></div></div></section><section class="ind-section" id="related"><div class="ind-wrap"><p class="ind-eyebrow">Components and complete packages</p><h2>Connect your application to WaterQuest equipment.</h2><div class="ind-related"><a href="/products/axial-piston-pumps/">Water pumping components</a><a href="/products/water-hydraulic-valves/">Valves and controls</a><a href="/knowledge-hub/">Engineering reference library</a></div><p class="ind-small">Choose a water hydraulic pump, power unit, cylinder or control valve for your equipment, or develop a coordinated pumping package for spray zones. We’ll help connect the load or nozzle demand to water conditioning, controls and practical maintenance access.</p></div></section><section class="ind-section" id="references"><div class="ind-wrap"><p class="ind-eyebrow">Technical context</p><h2>Sources and further reading.</h2><ul class="ind-sources"><li><a href="https://www.cdc.gov/niosh/docs/mining/UserFiles/works/pdfs/2019-124.pdf">NIOSH · Dust Control Handbook for Industrial Minerals</a><span>Source-control, spray-selection and dust-measurement context.</span></li><li><a href="https://stacks.cdc.gov/view/cdc/8521">NIOSH · Airborne dust capture and spray-nozzle research</a><span>Research on droplet behaviour, dust capture and induced airflow.</span></li></ul><p class="ind-small">Source context reviewed 8 October 2026. Worked examples use the assumptions stated on this page. Proposed use cases are engineering concepts for discussion.</p></div></section><section class="ind-section ind-cta" id="editorial-next-step"><div class="ind-wrap"><p class="ind-eyebrow">Talk to WaterQuest</p><h2>Bring us the mine duty you want to improve.</h2><p>Send the gate load and travel time, or the spray-zone demand and nozzle requirements, together with your water analysis. We’ll help identify the water hydraulic components and package scope that fit the job.</p><div class="ind-actions"><a class="ind-button" href="/contact/?industry=mining">Discuss your equipment requirements</a><a href="/project-brief.pdf" type="application/pdf">Download the project brief</a></div></div></section><span aria-hidden="true" class="ind-legacy" id="apps-bubbles"></span><span aria-hidden="true" class="ind-legacy" id="apps-heading"></span><span aria-hidden="true" class="ind-legacy" id="challenge-bubbles"></span><span aria-hidden="true" class="ind-legacy" id="challenge-heading"></span><span aria-hidden="true" class="ind-legacy" id="contact"></span><span aria-hidden="true" class="ind-legacy" id="cta"></span><span aria-hidden="true" class="ind-legacy" id="cta-bubbles"></span><span aria-hidden="true" class="ind-legacy" id="eff-bubbles"></span><span aria-hidden="true" class="ind-legacy" id="eff-heading"></span><span aria-hidden="true" class="ind-legacy" id="efficiency"></span><span aria-hidden="true" class="ind-legacy" id="environment"></span><span aria-hidden="true" class="ind-legacy" id="gglow"></span><span aria-hidden="true" class="ind-legacy" id="hero-bubbles"></span><span aria-hidden="true" class="ind-legacy" id="oglow"></span><span aria-hidden="true" class="ind-legacy" id="ore-grad"></span><span aria-hidden="true" class="ind-legacy" id="reasons-bubbles"></span><span aria-hidden="true" class="ind-legacy" id="reasons-heading"></span><span aria-hidden="true" class="ind-legacy" id="reliability"></span><span aria-hidden="true" class="ind-legacy" id="rock-grad"></span><span aria-hidden="true" class="ind-legacy" id="table-heading"></span><span aria-hidden="true" class="ind-legacy" id="wg1"></span></main><!-- THE CHALLENGE -->
+<!-- SIX REASONS -->
+<!-- COMPARISON TABLE -->
+<!-- APPLICATIONS -->
+<!-- FOUR EFFICIENCY GAINS -->
+<!-- CTA -->
+<!-- FOOTER -->
+<script defer="" src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer="" src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/?industry=mining">Engineering Review</a></li><li><a href="/wqs-stainless/">WQS Stainless</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li></ul></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>316 SS / PEEK · Oil-Free · Canadian Support</p></div></div></footer><script defer="" src="/assets/wq-nav-dropdowns.js?v=20261015-brand"></script><script defer="" src="/assets/wq-product-model-nav.js?v=20261011-white-aqua"></script><script defer="" src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer="" src="/assets/industries-20261008/industry-guides.js?v=20261011-white-aqua"></script><script defer src="/assets/newsletter-popup.js?v=20261016"></script></body>
+</html>
