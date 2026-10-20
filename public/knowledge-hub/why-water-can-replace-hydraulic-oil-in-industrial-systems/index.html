@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html id="waterquest-site" lang="en-CA">
+<head><style id="wqs-experience-layer">@layer wqs-experience;</style><link rel="stylesheet" href="/assets/newsletter-popup.css?v=20261016">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Why Water Can Replace Hydraulic Oil in Industrial Systems | WaterQuest Solutions</title>
+
+
+<style>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<meta content="Water can transmit the pressure needed for industrial movement while removing hydraulic oil from the selected circuit. Learn what makes the approach practical and how materials, controls and water quality support the required duty." name="description"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="Why Water Can Replace Hydraulic Oil in Industrial Systems, water hydraulics, water hydraulic systems, oil-free hydraulics, water as a hydraulic medium, tap water hydraulics, seawater hydraulics, WaterQuest Solutions, water hydraulics engineering guide, hydraulic oil alternative, industrial water hydraulics" name="keywords"/>
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/why-water-can-replace-hydraulic-oil-in-industrial-systems/" rel="canonical"/>
+<meta content="WaterQuest Solutions" property="og:site_name"/>
+<meta content="Why Water Can Replace Hydraulic Oil in Industrial Systems" property="og:title"/>
+<meta content="Water can transmit the pressure needed for industrial movement while removing hydraulic oil from the selected circuit. Learn what makes the approach practical and how materials, controls and water quality support the required duty." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/why-water-can-replace-hydraulic-oil-in-industrial-systems/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Why Water Can Replace Hydraulic Oil in Industrial Systems" name="twitter:title"/>
+<meta content="Water can transmit the pressure needed for industrial movement while removing hydraulic oil from the selected circuit. Learn what makes the approach practical and how materials, controls and water quality support the required duty." name="twitter:description"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/why-water-can-replace-hydraulic-oil-in-industrial-systems/#primary","mainEntityOfPage":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/why-water-can-replace-hydraulic-oil-in-industrial-systems/","name":"Why Water Can Replace Hydraulic Oil in Industrial Systems","headline":"Why Water Can Replace Hydraulic Oil in Industrial Systems","description":"Water can transmit the pressure needed for industrial movement while removing hydraulic oil from the selected circuit. Learn what makes the approach practical and how materials, controls and water quality support the required duty.","url":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/why-water-can-replace-hydraulic-oil-in-industrial-systems/","inLanguage":"en-CA","isPartOf":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"},"publisher":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"},"author":{"@type":"Organization","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization","name":"WaterQuest Solutions"},"about":[{"@type":"Thing","name":"Why Water Can Replace Hydraulic Oil in Industrial Systems"}],"articleSection":"Start Here","dateModified":"2026-10-19","datePublished":"2026-09-02","wordCount":1631,"timeRequired":"PT9M","citation":["https://openstax.org/books/university-physics-volume-1/pages/14-3-pascals-principle-and-hydraulics","https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/","https://cdn.victrex.com/en/blog/2021/the-science-of-friction","https://www.outokumpu.com/en/expertise/stainless-basics/corrosion-resistance","https://www.energy.gov/sites/default/files/2014/05/f16/pump.pdf"],"hasPart":[{"@type":"WebPageElement","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/why-water-can-replace-hydraulic-oil-in-industrial-systems/#guide-application","name":"Preserve the required work while changing the medium"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/"},{"@type":"ListItem","position":2,"name":"Knowledge Hub","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"},{"@type":"ListItem","position":3,"name":"Why Water Can Replace Hydraulic Oil in Industrial Systems","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/why-water-can-replace-hydraulic-oil-in-industrial-systems/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"/><link rel="stylesheet" href="/assets/wq-brand-standards.css?v=20261015-brand"/><script type="module" src="/assets/wq-speed-insights.js" id="wq-speed-insights"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style></head>
+<body class="wq-audited wq-consistent" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img class="wq-brand-mark" src="/assets/waterquest-logo-square.png" alt="" width="54" height="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero">
+<div class="container">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › Article 4</div>
+<p class="eyebrow">Start Here</p>
+<h1 data-editorial="hero">Why Water Can Replace Hydraulic Oil in Industrial Systems</h1>
+<p class="ed-question">Retain the hydraulic function. Reconsider the working fluid.</p><p class="lead" data-editorial="lead">Water can transmit the pressure needed for industrial movement while removing hydraulic oil from the selected circuit. Learn what makes the approach practical and how materials, controls and water quality support the required duty.</p>
+<div class="article-meta"><span class="pill">Article 004</span><span class="pill">Start Here</span><span class="pill">10 min read</span><span class="pill">Updated 19 October 2026</span></div>
+</div>
+</section>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><span aria-hidden="true" class="ed-legacy-anchor" id="applications-where-water-can-replace-oil-directly"></span><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><span aria-hidden="true" class="ed-legacy-anchor" id="the-core-technical-objections-and-the-answers"></span><h2 id="learn-ask-which-jobs-the-hydraulic-oil-currently-performs">Replace oil’s functions with a purpose-built water design</h2><p>A water hydraulic system still needs to transmit pressure, manage moving contacts and carry heat away from losses. Purpose-built components provide those functions with materials, surfaces and controls selected for water. That makes oil removal a practical equipment choice, allowing the working circuit to deliver the required movement with a different fluid and service routine.</p><p>Water can transmit hydraulic pressure, so the basic force-generation principle is not the obstacle. The demanding work is at the component interfaces and in the operating arrangements. Suitable water-service pumps, valves and actuators manage those requirements through their construction and specified limits. This is different from pouring water into equipment that was approved only for an oil duty.</p><p>For an industrial owner, the decision begins with the process problem. An actuator near a product stream, a treatment channel or a sensitive receiving environment may carry an unwanted oil inventory. If suitable water equipment can provide the required function, that inventory can be removed from the selected circuit. The benefit is specific and understandable, while the remaining engineering duties stay visible.</p><h2 id="learn-retain-the-force-relationship-while-redesigning-the-interfaces">Retain the force relationship while redesigning the interfaces</h2><p>A cylinder produces force because pressure acts over an effective area. Flow into the working chamber is related to the area and movement speed. These relationships remain applicable when the medium is water. They provide a stable starting point for the mechanical duty, even though losses and component behaviour can differ between the old and new equipment. <a aria-label="Source 1: OpenStax: Pascal’s principle and hydraulics" class="kh-citation" href="#source-physics">[1]</a></p><p>Suppose an industrial mechanism needs a particular force at a particular attachment point. The designer must account for the linkage geometry, travel and varying process resistance before selecting an actuator. Water does not remove that mechanical analysis. It changes the available system options for delivering the result. A larger bore, a different pressure or another mounting arrangement may be considered, but each choice has consequences for flow, structure and installation space.</p><p>This distinction helps keep a conversion discussion productive. The owner need not abandon hydraulic motion merely because the existing medium creates a problem. Equally, the supplier should not promise an exact drop-in replacement before checking the duty and interfaces. The transferable idea is the required function; the components that deliver it may need to change.</p><figure aria-labelledby="visual-4" class="kh-diagram kh-illustration"><figcaption class="kh-diagram-title" id="visual-4">Replace the fluid by redesigning its supporting functions</figcaption><div class="kh-compare-fluid"><div><svg aria-label="Water as the pressure-transmitting medium" role="img" viewbox="0 0 220 130"><path d="M110 20C90 45 78 60 78 78a32 32 0 0 0 64 0c0-18-12-33-32-58Z" fill="#18c7d8" opacity=".6"></path></svg><strong>Transmit force</strong><p>Keep the required mechanical duty.</p></div><div><svg aria-label="Two surfaces forming a designed contact" role="img" viewbox="0 0 220 130"><path d="M30 28h160v29H30Z" fill="#b5dce3" opacity=".7"></path><path d="M30 74h160v29H30Z" fill="#18c7d8" opacity=".4"></path><path d="M45 65h130" stroke="#f0b86d" stroke-dasharray="5 5" stroke-width="3"></path></svg><strong>Support moving contacts</strong><p>Select a compatible material pair and geometry.</p></div><div><svg aria-label="Cylinder rod passing through a seal boundary" role="img" viewbox="0 0 220 130"><path d="M30 30h130v70H30Z" fill="none" stroke="#b5dce3" stroke-width="4"></path><path d="M90 35v60m0-30h120" stroke="#18c7d8" stroke-width="8"></path><path d="M154 49h12v32h-12Z" fill="none" stroke="#f0b86d" stroke-width="4"></path></svg><strong>Retain the working fluid</strong><p>Match seals, guidance and counterfaces.</p></div><div><svg aria-label="Acceptance evidence checked against the requirement" role="img" viewbox="0 0 220 130"><path d="M68 28h85v83H68Z" fill="none" stroke="#b5dce3" stroke-width="3"></path><path d="m81 67 16 15 30-37" fill="none" stroke="#18c7d8" stroke-width="6"></path></svg><strong>Prove the installed result</strong><p>Test the agreed operating sequence.</p></div></div><figcaption>Conceptual design responsibilities. The symbols do not represent an approved circuit or a universal material specification.</figcaption></figure><h2 id="learn-move-lubrication-requirements-into-a-supported-contact-design">Move lubrication requirements into a supported contact design</h2><p>The absence of conventional hydraulic oil does not mean moving contacts are ignored. A water-service design must provide suitable behaviour at bearings, sliding elements and seals under the intended load and motion. Material pairing, geometry, surface condition and the fluid supply all contribute. A successful arrangement can use different design strategies at different locations within the same component.</p><p>Engineered polymers are one possible part of that strategy. Victrex's tribology information explains why friction and wear need to be considered at the interface rather than inferred from a material name. A polymer's role must be assessed with its counterface and operating conditions. The evidence for one grade or one contact cannot establish that every polymer-labelled water component will behave the same way. <a aria-label="Source 3: Victrex: the science of friction" class="kh-citation" href="#source-victrex">[3]</a></p><p>For a buyer, the practical response is to select supported assemblies and retain their approved service parts. Ask the supplier to identify the intended fluid and duty, the relevant operating limits and the maintenance provisions. These are more useful than a broad promise that the equipment needs no lubrication-related attention. Removing oil changes how the contact requirements are met; it does not abolish friction or wear.</p><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><span aria-hidden="true" class="ed-legacy-anchor" id="the-question-of-when-not-whether"></span><h2 id="learn-treat-material-compatibility-as-a-complete-wetted-path-question">Treat material compatibility as a complete wetted-path question</h2><p>A compatible main housing does not establish compatibility of the complete circuit. Water can contact springs, plugs, instrument connections, valve internals and other parts that may not be prominent in a sales description. Follow the wetted path and determine how each assembly is approved for the proposed medium. The review should include connections between purchased packages, where assumptions can otherwise fall between suppliers.</p><p>Stainless materials can be valuable, but they are not immune to every water environment. The actual grade, local geometry, fabrication condition and exposure affect performance. Corrosion guidance from material manufacturers is useful for recognising the relevant mechanisms; it should not be simplified into a claim that one grade eliminates all corrosion concerns. <a aria-label="Source 4: Outokumpu: stainless steel corrosion resistance" class="kh-citation" href="#source-outokumpu">[4]</a></p><p>Separate internal fluid exposure from the exterior environment. A freshwater actuator installed near the coast may have an external salt-exposure problem even when its internal fluid is controlled. A washdown process can introduce a different external chemical exposure. Resolving these boundaries early avoids designing a satisfactory internal circuit while overlooking the surfaces that operators inspect and service most often.</p><h2 id="learn-design-heat-management-around-losses-and-operating-time">Design heat management around losses and operating time</h2><p>Any real power-transmission system has losses. Some of the input energy becomes heat in the drive, pump, valves and fluid. The resulting temperature depends on where those losses occur, how long the duty continues and how heat leaves the installation. Water's thermal properties are relevant, but they do not make a cooling assessment unnecessary.</p><p>Consider two machines with the same peak movement requirement. One operates briefly and then rests; the other repeats the movement throughout a shift. Their average heat loads can differ substantially. A reservoir size or cooling arrangement suitable for one duty should not be copied to the other solely because the actuator and peak pressure look similar. Include standby and auxiliary operation in the heat balance where relevant.</p><p>A useful proposal states the operating assumptions behind its temperature limits and thermal arrangement. Measurements during acceptance should represent the demanding supported duty, rather than only a few unloaded strokes. System-level pumping guidance reinforces the value of examining the complete requirement and losses. The aim is to deliver the process function with an appropriate power unit, not to attribute every efficiency improvement to the medium. <a aria-label="Source 5: US Department of Energy: improving pumping system performance" class="kh-citation" href="#source-doepump">[5]</a></p><h2 id="learn-decide-how-working-water-will-be-supplied-and-managed">Decide how working water will be supplied and managed</h2><p>A recirculating water-hydraulic circuit reuses its working fluid, but it still needs a defined make-up and maintenance arrangement. Incoming water, particles introduced during service and changes during operation can affect the circulating condition. A once-through design presents a different water balance and discharge question. The architecture determines which requirements the owner must plan for.</p><p>Start with the selected equipment's fluid specification. The Water Hydraulics Company's P3 documentation demonstrates the importance of specifying the intended water and operating configuration. It should not be used as a blanket approval for any process water or for an arbitrary mixture introduced during maintenance. Obtain the current instructions for the purchased assembly and resolve uncertain supply conditions before commissioning. <a aria-label="Source 2: The Water Hydraulics Company: P3 axial piston pump" class="kh-citation" href="#source-p3">[2]</a></p><p>Then make the routine tasks practical. Provide access for approved filters and inspections, identify sample locations where required and explain what happens during extended shutdown. In climates where retained water can freeze, consider the whole retained volume and the supported preservation method. A clear operating plan makes the new medium manageable for the site's existing team instead of transferring hidden duties to them after installation.</p><span aria-hidden="true" class="ed-legacy-anchor" id="the-conversion-process-what-it-involves"></span><h2 id="learn-choose-a-conversion-boundary-that-the-site-can-support">Choose a conversion boundary that the site can support</h2><p>An industrial facility does not need to change every hydraulic circuit at once. A self-contained actuator or machine function can provide a useful boundary for evaluating water service. Select a duty where the oil exposure matters and where the mechanical and control interfaces can be defined clearly. A bounded project can reveal practical installation and maintenance issues before a wider programme is considered.</p><p>List what remains and what changes. The support structure, electrical supply or operator interface may be retained if suitable, while the hydraulic assemblies need replacement. Reuse should follow evidence about each function rather than a target percentage of old equipment. An apparently inexpensive conversion can become costly when an unsupported retained item prevents reliable commissioning.</p><p>Plan the outage and recovery arrangement with operations. Identify what the process will do while the equipment is isolated and how any unresolved commissioning issue will be handled. This is not a prediction that the new system will fail; it is ordinary integration planning for equipment on which the site depends. It makes the proposed improvement easier to approve because the transition has been considered alongside the finished design.</p><h2 id="learn-measure-the-benefits-on-the-same-service-boundary">Measure the benefits on the same service boundary</h2><p>Define the result before the pilot begins. The required motion, holding behaviour, availability and operating limits should be clear. Record a representative baseline where the existing system is being compared. A new machine that performs a different task, omits an auxiliary function or runs on a different schedule cannot provide a straightforward efficiency comparison without explaining those differences.</p><p>Separate routine savings from uncertain scenarios. Oil purchasing and waste handling may be visible in site records. The consequences of a rare release may be strategically important but should not automatically be counted as a certain annual saving. Use transparent assumptions and show which conclusions depend on them. This allows procurement and management to understand both the predictable operating effect and the value of removing a particular exposure.</p><p>Include new duties in the comparison: water management, supported service parts, training and any changed inspection needs. A strong case can survive a complete account of costs. Omitting inconvenient items only makes the decision harder to defend when the owner encounters them later. The objective is a better-supported installation, not a narrowly favourable spreadsheet line.</p><h2 id="learn-make-the-argument-specific-enough-to-test">Make the argument specific enough to test</h2><p>Water can replace hydraulic oil in suitable industrial systems because the required force and motion can be delivered through purpose-designed water equipment. The decision becomes compelling where that function is combined with a meaningful reduction in oil-related exposure. The case becomes weaker when it relies on universal efficiency, maintenance or environmental claims that the proposed duty has not demonstrated.</p><p>A useful enquiry to WaterQuest describes the process, the load and movement, the existing interfaces and the reason the working medium deserves reconsideration. From there, the discussion can identify compatible equipment, outstanding data and a practical acceptance plan. That gives engineers something concrete to evaluate and gives business leaders a decision tied to their own operation. The question is not whether every hydraulic machine should change; it is whether this particular machine can meet its duty while removing a problem the owner currently has to manage.</p><section class="wq-guide-application" id="guide-application" aria-labelledby="guide-application-title"><p class="wq-guide-kicker">From understanding to equipment selection</p><h2 id="guide-application-title">Preserve the required work while changing the medium</h2><p>Translate the existing machine&#x27;s force, torque, speed and holding requirements into a water-specific circuit. Check component compatibility and losses across the operating range so the replacement delivers the same useful function.</p><h3>Calculate the relevant duty</h3><p>Use the <a href="/knowledge-hub/engineering-calculators/power-calculator/">hydraulic power calculator</a> to translate pressure and flow into hydraulic output and estimated electrical input. Use the <a href="/knowledge-hub/engineering-calculators/pressure-drop-calculator/">system pressure-drop calculator</a> to combine component losses, elevation and a design allowance.</p><h3>Connect the calculation to equipment</h3><p>Compare the power-unit arrangement with the actuator duty and control sequence. Send the load, motion and water specification together so the components can be assessed as one circuit.</p><p>Explore <a href="/products/water-hydraulics-hpu/">water hydraulic power units</a> and <a href="/products/water-hydraulic-cylinders/">water hydraulic cylinders</a>.</p><details><summary>Which operating measurements make future troubleshooting easier?</summary><p>Establish new service procedures and operating baselines at commissioning. Compare energy and labour over representative use before extending performance claims beyond that installation.</p></details><p class="wq-guide-boundary">Use the calculated duty as an enquiry input; efficiency assumptions are not verified equipment ratings.</p><p><a href="/contact/">Discuss your duty with WaterQuest</a> — bring your calculation inputs, water conditions and required operating sequence.</p></section><section class="kh-sources" id="sources"><h2>Sources and further reading</h2><ol><li id="source-physics"><a href="https://openstax.org/books/university-physics-volume-1/pages/14-3-pascals-principle-and-hydraulics">OpenStax: Pascal’s principle and hydraulics</a><span class="kh-source-kind">Educational reference</span><span class="kh-source-note">Pressure and force relationships; article examples are independently calculated.</span></li><li id="source-p3"><a href="https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/">The Water Hydraulics Company: P3 axial piston pump</a><span class="kh-source-kind">Manufacturer information</span><span class="kh-source-note">An example of purpose-designed water equipment; use current configuration-specific instructions.</span></li><li id="source-victrex"><a href="https://cdn.victrex.com/en/blog/2021/the-science-of-friction">Victrex: the science of friction</a><span class="kh-source-kind">Material manufacturer guidance</span><span class="kh-source-note">Tribology and formulation considerations; not proof of installed component life.</span></li><li id="source-outokumpu"><a href="https://www.outokumpu.com/en/expertise/stainless-basics/corrosion-resistance">Outokumpu: stainless steel corrosion resistance</a><span class="kh-source-kind">Material manufacturer guidance</span><span class="kh-source-note">Corrosion mechanisms and environmental factors in stainless selection.</span></li><li id="source-doepump"><a href="https://www.energy.gov/sites/default/files/2014/05/f16/pump.pdf">US Department of Energy: improving pumping system performance</a><span class="kh-source-kind">Technical guidance</span><span class="kh-source-note">System-level energy assessment; not a test of WaterQuest equipment.</span></li></ol><p class="kh-reviewed">Sources reviewed 7 October 2026. Linked guidance may be updated; use current documentation for a project decision.</p></section><div class="related-block">
+<h3>Continue reading</h3>
+<div class="related-grid">
+<a class="related-card" href="/knowledge-hub/what-are-water-hydraulic-systems/"><div class="rc-cat">Start Here · Article 1</div><h4>What Are Water Hydraulic Systems?</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/how-water-hydraulics-work-compared-to-oil-hydraulics/"><div class="rc-cat">Performance Comparisons · Article 2</div><h4>How Water Hydraulics Work Compared to Oil Hydraulics</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/engineering-principles-of-water-hydraulic-actuation/"><div class="rc-cat">Specification &amp; Design · Article 3</div><h4>Engineering Principles of Water Hydraulic Actuation</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/the-physics-behind-water-hydraulic-pressure-systems/"><div class="rc-cat">Start Here · Article 5</div><h4>The Physics Behind Water Hydraulic Pressure Systems</h4><div class="rc-read">9 min read</div></a>
+</div>
+</div>
+</article>
+<aside aria-label="Article index" class="toc card"><h3>In this article</h3><a href="#learn-ask-which-jobs-the-hydraulic-oil-currently-performs">Replace oil’s functions with a purpose-built water design</a><a href="#learn-retain-the-force-relationship-while-redesigning-the-interfaces">Retain the force relationship while redesigning the interfaces</a><a href="#learn-move-lubrication-requirements-into-a-supported-contact-design">Move lubrication requirements into a supported contact design</a><a href="#learn-treat-material-compatibility-as-a-complete-wetted-path-question">Treat material compatibility as a complete wetted-path question</a><a href="#learn-design-heat-management-around-losses-and-operating-time">Design heat management around losses and operating time</a><a href="#learn-decide-how-working-water-will-be-supplied-and-managed">Decide how working water will be supplied and managed</a><a href="#learn-choose-a-conversion-boundary-that-the-site-can-support">Choose a conversion boundary that the site can support</a><a href="#learn-measure-the-benefits-on-the-same-service-boundary">Measure the benefits on the same service boundary</a><a href="#learn-make-the-argument-specific-enough-to-test">Make the argument specific enough to test</a><a href="#guide-application">Calculate, select and maintain</a><a href="#sources">Sources and further reading</a><a href="/knowledge-hub/#library">All articles →</a></aside>
+</div>
+<div class="container">
+<div class="pager">
+<a href="/knowledge-hub/engineering-principles-of-water-hydraulic-actuation/"><span>Previous</span>Engineering Principles of Water Hydraulic Actuation</a>
+<a href="/knowledge-hub/the-physics-behind-water-hydraulic-pressure-systems/"><span>Next</span>The Physics Behind Water Hydraulic Pressure Systems</a>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container card" style="padding:42px;">
+<p class="eyebrow">Apply the Knowledge</p>
+<h2>Put this knowledge to work.</h2>
+<p class="lead">Share the machine function, load cycle and oil-related concern. We’ll help assess whether a water hydraulic option deserves a detailed engineering review.</p>
+<div class="btn-row"><a class="btn primary" href="/contact/">Start Engineering Review →</a><a class="btn" href="/industries/">View Industries →</a></div>
+</div>
+</section>
+</main>
+<script defer="" src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer="" src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/wqs-stainless/">WQS Stainless</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li></ul></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>316 SS / PEEK · Oil-Free · Canadian Support</p></div></div></footer><script defer="" src="/assets/wq-nav-dropdowns.js?v=20261015-brand"></script><script defer="" src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/newsletter-popup.js?v=20261016"></script></body>
+</html>

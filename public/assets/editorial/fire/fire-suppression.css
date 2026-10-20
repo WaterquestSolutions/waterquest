@@ -1,0 +1,36 @@
+html#waterquest-site body.wq-consistent .fire-image{margin:0;overflow:hidden;border-radius:10px;background:#102a3d}
+html#waterquest-site body.wq-consistent .fire-image img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+html#waterquest-site body.wq-consistent .fire-image figcaption{display:grid;gap:8px;padding:22px 24px;color:#FFFFFF!important;font-size:16px!important;line-height:1.55}
+html#waterquest-site body.wq-consistent .fire-image figcaption strong{color:#00EEFF!important;font-size:17px!important}
+html#waterquest-site body.wq-consistent .fire-normal{margin-top:36px}
+html#waterquest-site body.wq-consistent .fire-normal img{max-height:510px}
+html#waterquest-site body.wq-consistent .fire-image-note{font-size:13px!important;line-height:1.5!important;color:#FFFFFF!important;max-width:940px;margin:16px 0 0}
+html#waterquest-site body.wq-consistent .fire-story-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:28px 0}
+html#waterquest-site body.wq-consistent .fire-zone-diagram{padding:28px;border:1px solid #b8d6de;border-radius:10px;background:#0E284A;margin:28px 0}
+html#waterquest-site body.wq-consistent .fire-supply{width:fit-content;margin:0 auto 28px;background:#0f344b;color:#FFFFFF!important;padding:16px 24px;border-radius:7px;text-align:center;font-weight:700}
+html#waterquest-site body.wq-consistent .fire-zones{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;border-top:3px solid #8aaab9;padding-top:24px}
+html#waterquest-site body.wq-consistent .fire-zone{position:relative;display:grid;gap:10px;align-content:start;background:#102346;border:1px solid #b9cdd6;border-radius:8px;padding:22px;text-align:center;color:#FFFFFF}
+html#waterquest-site body.wq-consistent .fire-zone:before{content:"";position:absolute;width:3px;height:25px;background:#8aaab9;top:-25px;left:50%}
+html#waterquest-site body.wq-consistent .fire-zone strong{font-size:15px!important;letter-spacing:.1em;color:#00EEFF!important}
+html#waterquest-site body.wq-consistent .fire-zone span{font-size:14px!important;color:#FFFFFF!important}
+html#waterquest-site body.wq-consistent .fire-zone b{font-size:21px!important;color:#FFFFFF!important}
+html#waterquest-site body.wq-consistent .fire-zone p{font-size:14px!important;line-height:1.5!important;margin:0}
+html#waterquest-site body.wq-consistent .fire-zone-active{border:2px solid #09868c;background:#142b43}
+html#waterquest-site body.wq-consistent .fire-zone-active b{color:#00EEFF!important}
+html#waterquest-site body.wq-consistent .fire-small{font-size:14px!important;line-height:1.65!important;margin-top:22px}
+html#waterquest-site body.wq-consistent .fire-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 40px;padding-left:24px;margin:32px 0}
+html#waterquest-site body.wq-consistent .fire-steps li{padding-left:5px;font-size:16px!important;line-height:1.7!important;color:#FFFFFF!important}
+html#waterquest-site body.wq-consistent .fire-steps strong{color:#FFFFFF!important}
+html#waterquest-site body.wq-consistent .fire-savings-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:32px;margin-top:30px;align-items:start}
+html#waterquest-site body.wq-consistent .fire-stat{display:grid;gap:16px;padding:30px;background:#0d344a;border-radius:10px;color:#FFFFFF}
+html#waterquest-site body.wq-consistent .fire-stat>span{font-size:13px!important;text-transform:uppercase;letter-spacing:.1em;color:#FFFFFF!important}
+html#waterquest-site body.wq-consistent .fire-stat>strong{font-size:clamp(40px,5vw,62px)!important;line-height:1.1!important;color:#00EEFF!important}
+html#waterquest-site body.wq-consistent .fire-stat>b{font-size:19px!important;line-height:1.5;color:#FFFFFF!important}
+html#waterquest-site body.wq-consistent .ed-section .fire-stat p{font-size:15px!important;line-height:1.65!important;color:#FFFFFF!important;margin:0}
+html#waterquest-site body.wq-consistent .fire-stat a{color:#00EEFF!important}
+html#waterquest-site body.wq-consistent .fire-water-example h3,html#waterquest-site body.wq-consistent #damage-reduction h3{font-size:23px!important;line-height:1.3!important;color:#FFFFFF!important;margin:0 0 16px}
+html#waterquest-site body.wq-consistent .fire-water-example .ed-equation{font-size:16px!important;line-height:1.8}
+html#waterquest-site body.wq-consistent:has(.fire-hero) .ed-section{scroll-margin-top:210px}
+@media(max-width:760px){html#waterquest-site body.wq-consistent .fire-story-grid,html#waterquest-site body.wq-consistent .fire-savings-grid,html#waterquest-site body.wq-consistent .fire-steps{grid-template-columns:1fr}html#waterquest-site body.wq-consistent .fire-zones{grid-template-columns:1fr;border-top:0;border-left:3px solid #8aaab9;padding-top:0;padding-left:22px}html#waterquest-site body.wq-consistent .fire-zone:before{width:24px;height:3px;top:30px;left:-25px}html#waterquest-site body.wq-consistent .fire-zone-diagram{padding:20px}html#waterquest-site body.wq-consistent .fire-image figcaption{padding:18px}}
+
+html#waterquest-site body.wq-consistent:has(.fire-hero){overflow-x:clip}

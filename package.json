@@ -1,0 +1,11 @@
+{
+  "name": "waterquest-solutions",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 scripts/build-download-archive.py && node scripts/verify-site.mjs",
+    "test": "node --test tests/*.test.mjs && node scripts/verify-site.mjs",
+    "verify:baseline": "node scripts/verify-baseline.mjs"
+  }
+}

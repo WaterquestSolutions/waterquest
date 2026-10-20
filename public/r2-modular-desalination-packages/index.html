@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+
+<html id="waterquest-site" lang="en-CA">
+<head><style id="wqs-experience-layer">@layer wqs-experience;</style><link rel="stylesheet" href="/assets/newsletter-popup.css?v=20261016">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Modular desalination: water hydraulic solutions and use cases | WaterQuest Solutions</title>
+
+
+<style>
+    :root {
+      --navy:         #0E284A;
+      --navy-mid:     #0D2044;
+      --navy-light:   #122954;
+      --aqua:         #00EEFF;
+      --aqua-glow:    #778FA8;
+      --desal:        #0890C8;
+      --desal-light:  #20B0E0;
+      --desal-glow:   rgba(32,176,224,0.15);
+      --energy:       #00E0C8;
+      --energy-glow:  rgba(0,224,200,0.12);
+      --silver:       #A8B8CC;
+      --silver-light: #D4E0EC;
+      --white:        #FFFFFF;
+      --body-text:    #C8D8E8;
+      --muted:        #ffffff;
+      --border:       rgba(168,184,204,0.18);
+      --border-aqua:  rgba(0,200,212,0.3);
+      --border-desal: rgba(32,176,224,0.3);
+      --font-display: 'Avenir', 'Avenir Next', 'Nunito Sans', sans-serif;
+      --font-body:    'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+      --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px;
+      --shadow-desal: 0 0 40px rgba(32,176,224,0.2);
+      --max-width: 1240px; --section-pad: 96px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); background: var(--navy); color:#FFFFFF; line-height: 1.7; overflow-x: hidden; }
+    a { color:inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    .label { font-family: var(--font-display); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color:#00EEFF; }
+    h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 900; line-height: 1.15; color:#FFFFFF; }
+    h1 { font-size: clamp(2.2rem,4.5vw,3.8rem); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(1.8rem,3.2vw,2.8rem); letter-spacing: -0.02em; }
+    h3 { font-size: clamp(1.05rem,1.8vw,1.35rem); }
+    h4 { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.12em; color:#00EEFF; }
+    p  { color:#FFFFFF; font-size: 1.02rem; }
+    .text-aqua  { color:#00EEFF; }
+    .text-desal { color:#00EEFF; }
+    .text-energy { color:#00EEFF; }
+    .text-muted { color:#FFFFFF; }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
+    .section { padding: var(--section-pad) 0; }
+    .section-alt  { background: var(--navy-mid); }
+    .section-dark { background: var(--navy); }
+
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: var(--radius-sm); font-family: var(--font-display); font-weight: 700; font-size: 0.88rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border: none; transition: all 0.25s ease; }
+    .btn-primary { background:#00616B; color:#FFFFFF; }
+    .btn-primary:hover { background:#00616B; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,200,212,0.4); }
+    .btn-desal { background: var(--desal-light); color:#FFFFFF; }
+    .btn-desal:hover { background:#00616B; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(32,176,224,0.45); }
+    .btn-outline { background: transparent; color:#00EEFF; border: 1.5px solid var(--border-aqua); }
+    .btn-outline:hover { background:#00616B; border-color: var(--aqua); }
+
+    /* NAV */
+    #nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: background 0.3s, backdrop-filter 0.3s; }
+    #nav.scrolled { background: rgba(10,22,40,0.93); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .nav-logo .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.15rem; color:#FFFFFF; }
+    .nav-logo .logo-sub  { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color:#00EEFF; display: block; margin-top: 1px; }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { font-family: var(--font-display); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color:#FFFFFF; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color:#00EEFF; }
+    .nav-cta { background:#00616B!important; color:#FFFFFF!important; padding: 9px 20px; border-radius: var(--radius-sm); }
+
+    /* BREADCRUMB */
+    .breadcrumb { padding: 88px 0 0; }
+    .breadcrumb-inner { max-width: var(--max-width); margin: 0 auto; padding: 16px 32px; display: flex; align-items: center; gap: 8px; }
+    .breadcrumb-inner a { font-size: 0.82rem; color:#FFFFFF; transition: color 0.2s; }
+    .breadcrumb-inner a:hover { color:#00EEFF; }
+    .breadcrumb-sep { font-size: 0.75rem; color:#FFFFFF; opacity: 0.5; }
+    .breadcrumb-current { font-size: 0.82rem; color:#FFFFFF; }
+
+    /* BUBBLES */
+    #global-bubbles { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+    .bubble-layer { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 1; }
+    .bubble { position: absolute; border-radius: 50%; background: radial-gradient(circle at 35% 35%, rgba(0,200,212,0.55), rgba(0,200,212,0.08) 60%, transparent 80%); border: 1px solid rgba(0,200,212,0.2); opacity: 0; animation: bubble-rise linear infinite; }
+    @keyframes bubble-rise { 0%{transform:translateY(0) translateX(0) scale(1);opacity:0} 8%{opacity:0.5} 50%{transform:translateY(-50vh) translateX(var(--drift)) scale(0.88);opacity:0.25} 92%{opacity:0.08} 100%{transform:translateY(-108vh) translateX(calc(var(--drift)*1.4)) scale(0.45);opacity:0} }
+
+    /* REVEAL */
+    .reveal { opacity:0; transform:translateY(24px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-left  { opacity:0; transform:translateX(-24px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-left.visible  { opacity:1; transform:translateX(0); }
+    .reveal-right { opacity:0; transform:translateX(24px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-right.visible { opacity:1; transform:translateX(0); }
+
+    .section-header { margin-bottom: 56px; }
+    .section-header .label { margin-bottom: 14px; }
+    .section-header h2 { margin-bottom: 16px; }
+    .section-header p { max-width: 720px; font-size: 1.06rem; color:#FFFFFF; line-height: 1.8; }
+    .section-header.center { text-align: center; }
+    .section-header.center p { margin: 0 auto; }
+
+    /* HERO */
+    #product-hero { position: relative; overflow: hidden; padding: 40px 0 80px; background: linear-gradient(170deg, #040E1C 0%, #0E284A 45%, #0D2040 100%); }
+    .hero-bg-mesh { position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(rgba(0,200,212,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(0,200,212,0.035) 1px, transparent 1px); background-size: 56px 56px; mask-image: radial-gradient(ellipse 80% 70% at 65% 50%, black 20%, transparent 80%); }
+    .product-hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; padding-top: 20px; }
+    .product-hero-text .label { margin-bottom: 12px; }
+    .product-hero-text .product-family { font-family: var(--font-display); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color:#00EEFF; margin-bottom: 10px; }
+    .product-hero-text h1 { margin-bottom: 22px; }
+    .product-hero-text h1 span { color:#00EEFF; }
+    .product-hero-text .hero-desc { font-size: 1.12rem; color:#FFFFFF; line-height: 1.8; margin-bottom: 36px; max-width: 720px; }
+    .product-hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; }
+    .spec-pill-row { display: flex; flex-wrap: wrap; gap: 10px; }
+    .spec-pill { display: flex; align-items: center; gap: 8px; padding: 8px 16px; border: 1px solid var(--border-aqua); border-radius: 100px; background: rgba(0,200,212,0.07); font-size: 0.82rem; font-weight: 700; color:#00EEFF; font-family: var(--font-display); letter-spacing: 0.06em; }
+    .spec-pill.energy-pill { border-color: rgba(0,224,200,0.3); color:#00EEFF; background: rgba(0,224,200,0.07); }
+
+    .hero-stats-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 48px; }
+    .hero-stat { background: var(--navy-light); border: 1px solid var(--border-desal); border-radius: var(--radius-lg); padding: 28px 24px; text-align: center; }
+    .hero-stat .hs-num { font-family: var(--font-display); font-size: 2.2rem; font-weight: 900; color:#00EEFF; line-height: 1; margin-bottom: 6px; }
+    .hero-stat .hs-label { font-size: 0.8rem; color:#FFFFFF; text-transform: uppercase; letter-spacing: 0.12em; line-height: 1.4; }
+
+    /* Package type toggle */
+    .config-toggle-section { background: var(--navy-mid); padding: 48px 0; }
+    .toggle-wrapper { display: flex; justify-content: center; gap: 0; margin-bottom: 32px; }
+    .toggle-btn { padding: 14px 32px; font-family: var(--font-display); font-size: 0.88rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; border: 1px solid var(--border-aqua); background: transparent; color:#FFFFFF; cursor: pointer; transition: all 0.25s; }
+    .toggle-btn:first-child { border-radius: 6px 0 0 6px; }
+    .toggle-btn:last-child { border-radius: 0 6px 6px 0; }
+    .toggle-btn.active { background:#00616B; color:#FFFFFF; border-color: var(--aqua); }
+    .toggle-btn:not(.active):hover { border-color: var(--aqua); color:#00EEFF; }
+
+    .config-info { max-width: 900px; margin: 0 auto; padding: 24px 32px; border-left: 3px solid var(--aqua); background: rgba(0,200,212,0.05); display: none; }
+    .config-info.active { display: block; }
+    .config-info h3 { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color:#00EEFF; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 12px; }
+    .config-info p { font-size: 0.94rem; color:#FFFFFF; line-height: 1.8; }
+
+    /* Package cards */
+    .packages-section { background: var(--navy); padding: var(--section-pad) 0; }
+    .package-grid { display: grid; gap: 48px; }
+
+    .package-card { background: var(--navy-light); border: 1px solid var(--border-desal); border-radius: var(--radius-lg); overflow: hidden; transition: border-color 0.3s, transform 0.3s; display: none; }
+    .package-card.active { display: block; }
+    .package-card:hover { border-color: var(--energy); transform: translateY(-4px); }
+
+    .card-header { background: linear-gradient(135deg, var(--navy-light) 0%, var(--navy-mid) 100%); border-bottom: 1px solid var(--border-desal); padding: 32px; display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center; }
+    .card-capacity-badge { background: rgba(0,200,212,0.1); border: 1px solid var(--aqua); border-radius: var(--radius-md); padding: 20px 24px; text-align: center; min-width: 140px; }
+    .card-capacity-badge .value { display: block; font-family: var(--font-display); font-size: 2.4rem; font-weight: 900; color:#00EEFF; line-height: 1; margin-bottom: 6px; }
+    .card-capacity-badge .unit { display: block; font-size: 0.7rem; font-weight: 600; color:#FFFFFF; text-transform: uppercase; letter-spacing: 0.1em; }
+
+    .card-title-block h2 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 800; color:#FFFFFF; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.02em; }
+    .card-title-block p { font-size: 0.9rem; color:#FFFFFF; }
+
+    .card-pump-tag { font-family: var(--font-display); font-size: 0.85rem; font-weight: 700; color:#00EEFF; text-transform: uppercase; letter-spacing: 0.12em; padding: 10px 20px; border: 1px solid var(--border-desal); border-radius: 100px; background: rgba(32,176,224,0.08); white-space: nowrap; }
+
+    .card-body { padding: 36px; }
+    .card-section { margin-bottom: 32px; }
+    .card-section:last-child { margin-bottom: 0; }
+
+    .section-label { font-family: var(--font-display); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color:#00EEFF; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border-desal); }
+
+    .spec-row { display: flex; justify-content: space-between; align-items: baseline; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .spec-row:last-child { border-bottom: none; }
+    .spec-label { font-size: 0.9rem; color:#FFFFFF; }
+    .spec-value { font-weight: 700; font-size: 0.94rem; color:#FFFFFF; text-align: right; }
+    .spec-value.highlight { color:#00EEFF; }
+    .spec-value.gold { color:#FFFFFF; }
+    .spec-value.energy { color:#00EEFF; }
+
+    .scenario-value { display: none; }
+    .scenario-value.scenario-active { display: inline; }
+
+    .membrane-tag { display: none; font-size: 0.82rem; color:#FFFFFF; background: rgba(255,255,255,0.06); padding: 8px 14px; border-radius: var(--radius-sm); margin-top: 12px; }
+    .membrane-tag.scenario-active { display: inline-block; }
+    .membrane-sw { border-left: 3px solid #0057A8; }
+    .membrane-bw { border-left: 3px solid #007A8C; }
+
+    .application-bar { margin-top: 16px; padding: 16px; background: rgba(0,200,212,0.05); border-left: 3px solid var(--aqua); font-size: 0.9rem; color:#FFFFFF; line-height: 1.7; }
+    .application-bar strong { color:#00EEFF; font-weight: 700; }
+
+    .power-center-upgrade { background: linear-gradient(135deg, rgba(0,224,200,0.08) 0%, rgba(0,224,200,0.02) 100%); border: 1px solid rgba(0,224,200,0.25); border-radius: var(--radius-md); padding: 20px; margin-top: 24px; }
+    .power-center-upgrade h4 { font-family: var(--font-display); font-size: 0.85rem; font-weight: 700; color:#00EEFF; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 12px; }
+    .power-center-upgrade p { font-size: 0.88rem; color:#FFFFFF; line-height: 1.7; margin-bottom: 12px; }
+    .power-center-upgrade ul { list-style: none; padding-left: 0; }
+    .power-center-upgrade li { font-size: 0.86rem; color:#FFFFFF; padding: 6px 0; padding-left: 24px; position: relative; }
+    .power-center-upgrade li::before { content: "✓"; position: absolute; left: 0; color:#00EEFF; font-weight: 700; }
+
+    /* Parallel operation section */
+    .parallel-section { background: var(--navy-mid); padding: var(--section-pad) 0; }
+    .parallel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+    .parallel-benefits { background: var(--navy-light); border: 1px solid var(--border-desal); border-radius: var(--radius-lg); padding: 36px; }
+    .parallel-benefit-item { margin-bottom: 28px; }
+    .parallel-benefit-item:last-child { margin-bottom: 0; }
+    .parallel-benefit-item h4 { font-size: 1.05rem; color:#00EEFF; margin-bottom: 8px; }
+    .parallel-benefit-item p { font-size: 0.92rem; color:#FFFFFF; line-height: 1.7; }
+
+    .parallel-example { background: var(--navy-light); border: 1px solid var(--border-aqua); border-radius: var(--radius-lg); padding: 36px; }
+    .parallel-example h3 { font-size: 1.15rem; margin-bottom: 16px; color:#00EEFF; }
+    .parallel-example p { font-size: 0.92rem; color:#FFFFFF; line-height: 1.7; margin-bottom: 20px; }
+    .parallel-config { background: rgba(0,200,212,0.05); border: 1px solid var(--border-aqua); border-radius: var(--radius-md); padding: 20px; margin-bottom: 16px; }
+    .parallel-config h5 { font-family: var(--font-display); font-size: 0.8rem; font-weight: 700; color:#00EEFF; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 12px; }
+    .parallel-config ul { list-style: none; padding: 0; }
+    .parallel-config li { font-size: 0.88rem; color:#FFFFFF; padding: 4px 0; padding-left: 20px; position: relative; }
+    .parallel-config li::before { content: "•"; position: absolute; left: 0; color:#00EEFF; font-weight: 700; }
+
+    /* Engineering notes */
+    .notes-section { background: var(--navy); padding: var(--section-pad) 0; }
+    .note-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .note-item { font-size: 0.9rem; color:#FFFFFF; line-height: 1.7; }
+    .note-item strong { display: block; color:#FFFFFF; font-weight: 700; margin-bottom: 6px; }
+
+    /* CTA Section */
+    .cta-section { background: var(--navy-light); border-top: 1px solid var(--border); padding: 72px 0; }
+    .cta-inner { text-align: center; }
+    .cta-inner h2 { margin-bottom: 16px; }
+    .cta-inner p { max-width: 640px; margin: 0 auto 32px; font-size: 1.08rem; color:#FFFFFF; }
+    .cta-certs { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .cta-cert { padding:6px 14px; border:1px solid var(--border); border-radius:100px; font-size:0.72rem; color:#FFFFFF; font-weight:600; letter-spacing:0.06em; }
+
+    /* FOOTER */
+    footer { background:#06101E; border-top:1px solid var(--border); padding:64px 0 32px; }
+    .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:48px; margin-bottom:48px; }
+    .footer-brand .logo-main { font-family:var(--font-display); font-weight:900; font-size:1.2rem; color:#FFFFFF; margin-bottom:6px; }
+    .footer-brand .logo-sub { font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:#00EEFF; margin-bottom:18px; display:block; }
+    .footer-brand p { font-size:0.9rem; color:#FFFFFF; line-height:1.7; margin-bottom:14px; }
+    .footer-tagline { font-style:italic; color:#FFFFFF!important; font-size:0.88rem !important; }
+    .footer-col h5 { font-family:var(--font-display); font-size:0.75rem; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#FFFFFF; margin-bottom:16px; }
+    .footer-col ul { display:flex; flex-direction:column; gap:10px; }
+    .footer-col ul a { font-size:0.88rem; color:#FFFFFF; transition:color 0.2s; }
+    .footer-col ul a:hover { color:#00EEFF; }
+    .footer-bottom { border-top:1px solid var(--border); padding-top:24px; display:flex; justify-content:space-between; align-items:center; }
+    .footer-bottom p { font-size:0.82rem; color:#FFFFFF; }
+    .footer-cert { display:flex; gap:10px; flex-wrap:wrap; }
+    .cert-badge { padding:4px 12px; border:1px solid var(--border); border-radius:100px; font-size:0.72rem; color:#FFFFFF; font-weight:600; letter-spacing:0.06em; }
+
+    @media (max-width:960px) {
+      :root { --section-pad:72px; }
+      .hero-stats-row { grid-template-columns:1fr; }
+      .card-header { grid-template-columns:1fr; text-align:center; gap:16px; }
+      .card-pump-tag { justify-self:center; }
+      .parallel-grid { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr 1fr; }
+      .nav-links { display:none; }
+    }
+    @media (max-width:600px) {
+      :root { --section-pad:56px; }
+      .container { padding:0 20px; }
+      .hero-stats-row { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr; }
+      .footer-bottom { flex-direction:column; gap:16px; text-align:center; }
+    }
+  
+
+    /* WQS SITE-WIDE NO GREY TEXT RULE */
+    :root {
+      --body-text: #FFFFFF !important;
+      --muted: #ffffff !important;
+      --silver: #FFFFFF !important;
+      --silver-light: #FFFFFF !important;
+      --text-muted: #ffffff !important;
+      --light-text: #FFFFFF !important;
+      --secondary-text: #ffffff !important;
+      --copy: #FFFFFF !important;
+      --soft: #FFFFFF !important;
+      --subtle: #FFFFFF !important;
+      --wheat: #FFFFFF !important;
+      --gray: #ffffff !important;
+      --grey: #ffffff !important;
+    }
+
+</style>
+<meta content="Build the water supply your community, resort or industrial site needs. Modular desalination brings water-lubricated pumping, treatment and controls into serviceable production trains. WaterQuest helps connect today’s output, planned maintenance and future capacity in one project brief." name="description"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="Modular desalination, water hydraulics, engineering applications, use cases" name="keywords"/>
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/r2-modular-desalination-packages/" rel="canonical"/>
+<meta content="WaterQuest Solutions" property="og:site_name"/>
+<meta content="Modular desalination built around your water demand." property="og:title"/>
+<meta content="Build the water supply your community, resort or industrial site needs. Modular desalination brings water-lubricated pumping, treatment and controls into serviceable production trains. WaterQuest helps connect today’s output, planned maintenance and future capacity in one project brief." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/r2-modular-desalination-packages/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Modular desalination built around your water demand." name="twitter:title"/>
+<meta content="Build the water supply your community, resort or industrial site needs. Modular desalination brings water-lubricated pumping, treatment and controls into serviceable production trains. WaterQuest helps connect today’s output, planned maintenance and future capacity in one project brief." name="twitter:description"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/r2-modular-desalination-packages/#primary","mainEntityOfPage":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/r2-modular-desalination-packages/","name":"Modular desalination begins with a complete water balance.","headline":"Modular desalination begins with a complete water balance.","description":"Build the water supply your community, resort or industrial site needs. Modular desalination brings water-lubricated pumping, treatment and controls into serviceable production trains. WaterQuest helps connect today’s output, planned maintenance and future capacity in one project brief.","url":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/r2-modular-desalination-packages/","inLanguage":"en-CA","isPartOf":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"},"publisher":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"},"author":{"@type":"Organization","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization","name":"WaterQuest Solutions"},"about":[{"@type":"Thing","name":"Water hydraulics"},{"@type":"Thing","name":"Water as a hydraulic medium"},{"@type":"Thing","name":"Oil-free hydraulic systems"}],"mentions":[{"@type":"Thing","name":"316 stainless steel"},{"@type":"Thing","name":"Carbon-reinforced PEEK"},{"@type":"Thing","name":"Tap water and seawater hydraulic systems"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/"},{"@type":"ListItem","position":2,"name":"Modular Desalination Packages","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/r2-modular-desalination-packages/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-product-model-nav.css?v=20261011-buttons-00c2d7" rel="stylesheet"/><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/industries-20261008/industry-guides.css?v=20261011-white-aqua" rel="stylesheet"/><link rel="stylesheet" href="/assets/wq-brand-standards.css?v=20261015-brand"/><script type="module" src="/assets/wq-speed-insights.js" id="wq-speed-insights"></script>
+<style id="wqs-compact-product-heroes">
+html#waterquest-site body #product-hero{padding-top:24px!important;padding-bottom:24px!important;min-height:0!important;height:auto!important}
+html#waterquest-site body #product-hero .product-hero-grid{padding-top:0!important;min-height:0!important}
+html#waterquest-site body #product-hero .product-hero-ctas{margin-bottom:0!important}
+html#waterquest-site body :is(.v-hero,.pc-hero,.hero,.page-hero,.seawater-hero,.wq-conversion-hero){padding-bottom:24px!important;min-height:0!important}
+html#waterquest-site body :is(#product-hero,.v-hero,.pc-hero,.hero,.page-hero,.seawater-hero,.wq-conversion-hero)+:is(section,.v-section,.pc-section,.section){padding-top:24px!important;margin-top:0!important}
+html#waterquest-site body .wqs-literature{padding-top:12px!important;padding-bottom:12px!important;margin-top:12px!important;margin-bottom:12px!important}
+@media(max-width:700px){html#waterquest-site body #product-hero{padding-top:20px!important;padding-bottom:20px!important}html#waterquest-site body #product-hero .product-hero-grid{row-gap:24px!important}}
+@media(min-width:961px){
+html#waterquest-site body :is(.config-compare,.displ-compare){grid-template-rows:auto auto auto;align-items:stretch;row-gap:0}
+html#waterquest-site body :is(.config-compare>.config-card,.displ-compare>.displ-card){display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:0;min-width:0}
+html#waterquest-site body :is(.config-card-body,.displ-body){display:contents}
+html#waterquest-site body .config-card-body>.config-rules{padding:24px 32px 20px}
+html#waterquest-site body .displ-body>.displ-rules{padding:22px 28px 18px}
+html#waterquest-site body .config-card-body>.config-dims{margin:0 32px 24px}
+html#waterquest-site body .displ-body>.displ-dims{margin:0 28px 22px}
+}
+</style><style id="industry-layout-polish">
+html#waterquest-site body.wq-consistent #industry-main #application-map .ind-application-grid ul{list-style:none!important;padding-left:0!important}
+html#waterquest-site body.wq-consistent #industry-main #application-map .ind-application-grid li{position:relative;padding-left:18px}
+html#waterquest-site body.wq-consistent #industry-main #application-map .ind-application-grid li::before{content:"";position:absolute;left:0;top:.65em;width:6px;height:6px;border-radius:50%;background:#00EEFF}
+@media(min-width:701px){
+html#waterquest-site body.wq-consistent #industry-main #principles .ind-two{align-items:stretch;row-gap:0}
+html#waterquest-site body.wq-consistent #industry-main #principles .ind-two>article{display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:0;align-content:start}
+html#waterquest-site body.wq-consistent #industry-main #principles .ind-two>article>h3{margin-top:14px;margin-bottom:18px}
+html#waterquest-site body.wq-consistent #industry-main #principles .ind-two>article>p{margin-top:0;align-self:start}
+}
+@media(min-width:801px){
+html#waterquest-site body.wq-consistent #industry-main #compare-options .ind-option-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;row-gap:0}
+html#waterquest-site body.wq-consistent #industry-main #compare-options .ind-option-grid>article{display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:0}
+html#waterquest-site body.wq-consistent #industry-main #compare-options .ind-option-grid>article>h3{margin-top:0;margin-bottom:18px}
+html#waterquest-site body.wq-consistent #industry-main #compare-options .ind-option-grid>article>p{margin-top:0;margin-bottom:0;align-self:start}
+html#waterquest-site body.wq-consistent #industry-main #compare-options .ind-option-grid>article>.ind-proof{margin-top:20px}
+}
+</style><style id="wq-medium-comparison-style">
+#compare-options.wq-medium-comparison{padding:72px 0;background:#071423;color:#FFFFFF;scroll-margin-top:230px}
+.wq-medium-inner{width:min(1280px,calc(100% - 48px));margin:0 auto}
+#compare-options .wq-medium-eyebrow{color:#00C2D7!important;font-weight:700;letter-spacing:.13em;text-transform:uppercase;margin:0 0 14px}
+#compare-options h2{margin:0 0 24px;color:#FFFFFF!important}
+#compare-options .wq-medium-intro{max-width:1000px;margin:0 0 24px;color:#FFFFFF!important}
+#compare-options .wq-medium-scroll{overflow-x:auto;border:1px solid #00C2D7;border-radius:14px;max-width:100%;overscroll-behavior-x:contain}
+#compare-options .wq-medium-scroll:focus-visible{outline:3px solid #00C2D7;outline-offset:5px}
+#compare-options .wq-medium-table{width:100%;min-width:760px;border-collapse:collapse;table-layout:fixed;margin:0;background:#0b1c32;font-family:Verdana,sans-serif;font-size:16px;line-height:1.65}
+#compare-options .wq-medium-table caption{text-align:left;padding:20px 24px;background:#102746;font-weight:700;color:#FFFFFF!important;caption-side:top}
+#compare-options .wq-medium-table th,#compare-options .wq-medium-table td{padding:22px 20px;text-align:left;vertical-align:top;border:0;border-bottom:1px solid #24455a;white-space:normal;color:#FFFFFF!important;overflow-wrap:break-word}
+#compare-options .wq-medium-table thead th{background:#102746;font-size:18px;line-height:1.4}
+#compare-options .wq-medium-table tr>:first-child{width:19%;font-weight:700}
+#compare-options .wq-medium-table .wq-medium-water{background:#093340;border-left:2px solid #00C2D7;border-right:2px solid #00C2D7}
+#compare-options .wq-medium-table thead .wq-medium-water{background:#006072;border-top:4px solid #00C2D7}
+#compare-options .wq-medium-water strong{display:block;color:#00C2D7!important;margin-bottom:8px}
+#compare-options .wq-medium-table th span{display:block;font-family:Verdana,sans-serif;font-size:14px;font-weight:400;margin-top:8px;color:#FFFFFF!important}
+#compare-options .wq-medium-table tbody tr:last-child>*{border-bottom:0}
+#compare-options .wq-medium-hint{margin:14px 0 24px;color:#FFFFFF!important;font-size:14px}
+#compare-options .wq-medium-next{margin:24px 0 0;color:#FFFFFF!important}
+#compare-options .wq-medium-next a{color:#00C2D7!important;font-weight:700;text-decoration:underline;text-underline-offset:5px}
+@media(max-width:600px){#compare-options.wq-medium-comparison{padding:48px 0}.wq-medium-inner{width:calc(100% - 32px)}#compare-options .wq-medium-table{min-width:760px}#compare-options .wq-medium-table th,#compare-options .wq-medium-table td{padding:18px 16px}}
+</style>
+</head>
+<body class="wq-audited wq-consistent has-industry-nav" data-editorial-review="2026-10-06" data-industry="modular" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img class="wq-brand-mark" src="/assets/waterquest-logo-square.png" alt="" width="54" height="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><nav class="wq-model-nav wq-industry-nav" aria-label="Industries"  data-many-links="true"><div class="wq-model-nav-inner"><a class="wq-section-back" href="/industries/"><span aria-hidden="true">←</span> All Industries</a><span class="wq-model-label">Industries</span><button aria-label="Scroll industries left" class="wq-model-prev" hidden="" type="button">‹</button><div aria-label="Industry links" class="wq-model-links" role="group" tabindex="0"><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine &amp; Coastal</a><a href="/industries/water-hydraulics-for-mining-operations/">Mining</a><a href="/industries/water-hydraulics-for-food-and-beverage-manufacturing/">Food &amp; Beverage</a><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a><a href="/industries/water-hydraulics-for-hydroelectric-power/">Hydroelectric Power</a><a href="/industries/water-hydraulics-for-water-parks-and-wave-pools/">Water Parks</a><a href="/industries/water-hydraulics-for-dust-control-systems/">Dust Control</a><a href="/industries/water-hydraulics-for-odor-control-and-ventilation-systems/">Odour Control</a><a href="/industries/water-hydraulics-for-agriculture-and-irrigation-systems/">Agriculture &amp; Irrigation</a><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination &amp; RO</a><a href="/industries/water-hydraulic-systems-for-hydrogen-production/">Hydrogen Production</a><a href="/industries/water-hydraulics-for-forestry-and-logging-operations/">Forestry &amp; Logging</a><a href="/industries/water-hydraulic-systems-for-wastewater-treatment-plants/">Wastewater Treatment</a><a href="/industries/water-hydraulic-systems-for-pulp-and-paper-mills/">Pulp &amp; Paper</a><a aria-current="page" href="/r2-modular-desalination-packages/">Modular Desalination</a></div><button aria-label="Scroll industries right" class="wq-model-next" hidden="" type="button">›</button></div></nav><div aria-hidden="true" class="wq-model-nav-spacer"></div><div id="global-bubbles"></div>
+<!-- NAV -->
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+<div class="breadcrumb-inner">
+<a href="/">Home</a>
+<span class="breadcrumb-sep">›</span>
+<a href="/products/">Products</a>
+<span class="breadcrumb-sep">›</span>
+<span class="breadcrumb-current">Modular Desalination Packages</span>
+</div>
+</div>
+<main class="industry-main" id="industry-main"><section class="wqs-literature" aria-label="Product literature" style="max-width:1200px;margin:24px auto;padding:20px 24px;background:#0E284A;border-top:2px solid #00EEFF;color:white"><a href="/downloads/product-literature/WQS-r2-modular-desalination-packages.pdf" style="display:inline-flex;align-items:center;gap:8px;background:#00EEFF;color:#0E284A;font-weight:700;padding:13px 22px;border-radius:6px;text-decoration:none">Download product literature (PDF)</a><span style="margin-left:18px;display:inline-block;padding:8px 0">2 pages</span><a href="/downloads/product-literature/" style="margin-left:20px;color:#fff">All product literature</a></section><section class="ind-hero" id="hero"><div aria-hidden="true" class="ind-bubbles"><i style="--x:13%;--size:6px;--delay:-0s;--time:22s"></i><i style="--x:60%;--size:13px;--delay:-2s;--time:25s"></i><i style="--x:7%;--size:20px;--delay:-4s;--time:28s"></i><i style="--x:54%;--size:10px;--delay:-6s;--time:31s"></i><i style="--x:1%;--size:17px;--delay:-8s;--time:34s"></i><i style="--x:48%;--size:7px;--delay:-10s;--time:37s"></i><i style="--x:95%;--size:14px;--delay:-12s;--time:40s"></i><i style="--x:42%;--size:21px;--delay:-14s;--time:24s"></i><i style="--x:89%;--size:11px;--delay:-16s;--time:27s"></i><i style="--x:36%;--size:18px;--delay:-18s;--time:30s"></i><i style="--x:83%;--size:8px;--delay:-20s;--time:33s"></i><i style="--x:30%;--size:15px;--delay:-22s;--time:36s"></i><i style="--x:77%;--size:22px;--delay:-24s;--time:39s"></i><i style="--x:24%;--size:12px;--delay:-26s;--time:23s"></i><i style="--x:71%;--size:19px;--delay:-28s;--time:26s"></i><i style="--x:18%;--size:9px;--delay:-30s;--time:29s"></i></div><div class="ind-wrap"><p class="ind-eyebrow">Industry guide · Modular desalination</p><h1>Build dependable water production around a serviceable modular plant.</h1><p class="ind-lead">Build the water supply your community, resort or industrial site needs. Modular desalination brings water-lubricated pumping, treatment and controls into serviceable production trains. WaterQuest helps connect today’s output, planned maintenance and future capacity in one project brief.</p><div class="ind-actions"><a class="ind-button" href="#use-cases">See the applications</a><a href="#system">How the system works</a></div><figure class="ind-scene"><img alt="Illustrative small coastal community concept for modular desalination" fetchpriority="high" height="941" src="/assets/industries-20261008/modular-concept.webp" width="1672"/></figure></div></section><nav aria-label="On this page" class="ind-toc"><div class="ind-wrap"><a href="#application">The opportunity</a><a href="#principles">How it works</a><a href="#system">System diagram</a><a href="#use-cases">Use cases</a><a href="#sizing">Worked example</a><a href="#specification">Design inputs</a><a href="#questions">Questions</a><a href="#packages">Package catalogue</a></div></nav><section class="ind-section" id="application"><div class="ind-wrap"><p class="ind-eyebrow">The customer benefit</p><h2>Turn the daily water requirement into a plant that can be operated and maintained.</h2><p class="ind-intro">A nameplate capacity tells only part of the story. The plant must deliver usable water through changing demand, filter changes and scheduled servicing. A modular arrangement makes the production trains and their service boundaries clear. Water-lubricated high-pressure pumps keep oil lubrication out of the pumping circuit, while the complete package connects feed treatment, membrane operation, flushing and controls to the site’s supply plan.</p></div></section><section class="ind-section" id="principles"><div class="ind-wrap"><p class="ind-eyebrow">How water does the work</p><h2>See how water does the work.</h2><p class="ind-intro">Each RO train uses a high-pressure pump to feed its membranes. A purpose-designed water-lubricated pump uses the pumped water to lubricate its internal working surfaces. Trains can be arranged to suit staged capacity and maintenance needs; shared pretreatment, electrical supply and controls are included when assessing how much water remains available during an outage.</p><div class="ind-two"><article><span class="ind-number">01</span><h3>Daily output is not the same as instantaneous flow.</h3><p>A package may operate fewer than 24 hours per day because of maintenance, electricity scheduling or storage operation. Convert net daily delivery into running permeate flow, then use the selected recovery to establish feed and concentrate flow. Include flushing and pretreatment losses outside the simple membrane balance.</p></article><article><span class="ind-number">02</span><h3>Isolation makes modularity useful.</h3><p>Each train needs service access, safe depressurisation and controls that allow a planned outage. Shared headers, check valves, instrumentation and flushing connections should be designed so taking one module offline does not cause an unintended flow path through another. Define standby preservation and restart routines.</p></article></div></div></section><section class="ind-section" id="system"><div class="ind-wrap"><p class="ind-eyebrow">See how the package connects</p><h2>Small coastal community: how the system connects.</h2><figure class="ind-diagram"><picture><source media="(max-width:700px)" srcset="/assets/industries-20261008/modular-system-mobile.svg"/><img alt="Shared pretreatment → Parallel RO trains → Quality acceptance → Conditioned-water storage. Each train has defined isolation and monitoring. Concentrate follows the approved handling route; shared intake, power and treatment remain potential common dependencies." height="405" loading="lazy" src="/assets/industries-20261008/modular-system.svg" width="1120"/></picture><figcaption>Each train has defined isolation and monitoring. Concentrate follows the approved handling route; shared intake, power and treatment remain potential common dependencies. Diagram shows functional relationships; pressure protection, isolation, instrumentation and detailed piping must be designed for the actual installation.</figcaption></figure></div></section><section class="ind-section" id="use-cases"><div class="ind-wrap"><p class="ind-eyebrow">Practical applications</p><h2>Modular water production for sites with different operating needs.</h2><p>Use these examples to connect an operating problem with a possible water-based arrangement. Bring the closest match to your enquiry, along with the site conditions that will shape the design.</p><div class="ind-cases"><article class="ind-case"><div class="ind-case-heading"><span class="ind-number">01</span><h3>Small coastal community</h3></div><div class="ind-case-body"><p><strong>The customer’s need</strong>Daily demand is moderate, with seasonal peaks and limited operator availability.</p><p><strong>The water-based approach</strong>Combine multiple serviceable trains with storage sized for the agreed demand and outage scenarios. Assess feed variability, concentrate disposal and operator access before choosing package sizes.</p><p class="ind-proof"><strong>Confirm the result</strong>Demonstrate net delivery with a train unavailable and verify storage recovery, product quality and the planned maintenance routine.</p></div></article><article class="ind-case"><div class="ind-case-heading"><span class="ind-number">02</span><h3>Seasonal resort</h3></div><div class="ind-case-body"><p><strong>The customer’s need</strong>Occupancy varies significantly over the year.</p><p><strong>The water-based approach</strong>Stage operation across trains within their acceptable operating envelopes rather than forcing every pump to run far below its design duty. Provide a documented preservation plan for idle membranes.</p><p class="ind-proof"><strong>Confirm the result</strong>Record energy per cubic metre and quality at each intended operating stage. Test restart after the agreed idle period.</p></div></article><article class="ind-case"><div class="ind-case-heading"><span class="ind-number">03</span><h3>Industrial process supply</h3></div><div class="ind-case-body"><p><strong>The customer’s need</strong>A production process depends on predictable water quality and downtime windows.</p><p><strong>The water-based approach</strong>Separate critical demand from discretionary demand and agree the required outage coverage. Check whether shared power, pretreatment or post-treatment limits the claimed availability.</p><p class="ind-proof"><strong>Confirm the result</strong>Test isolation and controlled restart of one train while the remaining system serves the specified load. Verify alarms and off-specification-water diversion.</p></div></article></div></div></section><section class="ind-section" id="sizing"><div class="ind-wrap"><p class="ind-eyebrow">An illustrative calculation</p><h2>Test the one-train-out case</h2><div class="ind-example"><div><p>Three illustrative trains producing 1 m³/h (4.4 US gpm) of permeate each for 20 hours per day deliver 60 m³/day (15,850 US gal/day). With one train unavailable, remaining output is 40 m³/day (10,567 US gal/day) before other losses.</p><p class="ind-formula">Available daily output = available trains × permeate flow/train × run hours</p></div><aside><h3>Use the assumptions carefully.</h3><p>Calling this N+1 is only meaningful if the required net demand fits the remaining capacity and the shared systems remain available.</p><a href="/knowledge-hub/engineering-calculators/">Explore the engineering calculators</a></aside></div></div></section><section class="ind-section" id="specification"><div class="ind-wrap"><p class="ind-eyebrow">Build your equipment enquiry</p><h2>Give us the duty. We’ll help select the equipment.</h2><p>A drawing, operating sequence or photograph is a useful starting point. Add the loads and water conditions you know; the points below help us develop the equipment brief with you.</p><div class="ind-inputs"><article><h3>Demand</h3><p>Net daily volume, hourly peaks, storage, operating hours and critical versus discretionary demand.</p></article><article><h3>Feed</h3><p>Seasonal analysis, temperature, salinity, pretreatment losses and membrane design basis.</p></article><article><h3>Redundancy</h3><p>Defined unavailable component, remaining net capacity, common dependencies and restoration time.</p></article><article><h3>Integration</h3><p>Footprint, lifting access, electrical supply, drainage, concentrate route and operator capability.</p></article></div></div></section><section id="compare-options" class="wq-medium-comparison" aria-labelledby="wq-medium-title"><div class="wq-medium-inner">
+<p class="wq-medium-eyebrow">Compare the working media</p><h2 id="wq-medium-title">Hydraulic power. A cleaner working medium.</h2>
+<p class="wq-medium-intro">Water hydraulics combines hydraulic force and controlled movement with a working circuit free of hydraulic oil. Compare water, oil and compressed air for modular desalination packages to see where water can strengthen your equipment design.</p>
+<p class="wq-medium-hint">On smaller screens, scroll the table sideways to compare all three media.</p>
+<div class="wq-medium-scroll" role="region" tabindex="0" aria-label="Comparison of water, oil and compressed air"><table class="wq-medium-table"><caption>Three working media compared for modular desalination packages</caption><thead><tr><th scope="col">What matters</th><th scope="col" class="wq-medium-water">Water hydraulics<span>Working medium: water</span></th><th scope="col">Oil hydraulics<span>Working medium: hydraulic oil</span></th><th scope="col">Pneumatics<span>Working medium: compressed air</span></th></tr></thead><tbody><tr><th scope="row">Build around water-service pumping</th><td class="wq-medium-water"><strong>Water’s advantage for this application.</strong>Use water-lubricated pumping within a modular plant, keeping hydraulic oil out of the wetted high-pressure water circuit.</td><td>Can power auxiliary equipment; membrane feed still requires a separate water-service pumping circuit.</td><td>Can operate suitable valves and controls; it does not replace the membrane-feed water pump.</td></tr><tr><th scope="row">Working medium</th><td class="wq-medium-water"><strong>Water carries the power.</strong>Water in components designed for its chemistry, lubrication and sealing requirements.</td><td>Hydraulic oil selected for the pump, valves, seals and operating temperature.</td><td>Compressed air supplied through suitable filtration, moisture removal and pressure regulation.</td></tr><tr><th scope="row">Force and motion</th><td class="wq-medium-water"><strong>Keep hydraulic force and control.</strong>Low liquid compressibility supports controlled movement. Pressure and actuator area determine force; flow sets speed.</td><td>Also provides hydraulic force and controlled motion through pressure, flow and suitable valves.</td><td>Compressible air gives a more compliant response. Precision movement is possible with suitable feedback and control.</td></tr><tr><th scope="row">Leaks and contamination</th><td class="wq-medium-water"><strong>No hydraulic-oil film from this circuit.</strong>Removing hydraulic oil eliminates that source of oily residue. Water leaks still need detection, drainage and repair.</td><td>A leak can leave oily residue and require containment, cleaning or contaminated-material handling.</td><td>Escaping air wastes supply energy. Oil carryover depends on compressor design, air treatment and actuator lubrication.</td></tr><tr><th scope="row">Fire behaviour</th><td class="wq-medium-water"><strong>The water working medium does not burn.</strong>Remove combustible hydraulic oil from the selected circuit, an advantage around heat or fire-sensitive processes.</td><td>Mineral hydraulic oil is combustible. Fire-resistant fluids have different properties and compatibility requirements.</td><td>Air does not burn, but it contains oxygen. Air-powered equipment still needs assessment for its operating environment.</td></tr><tr><th scope="row">Routine maintenance</th><td class="wq-medium-water"><strong>Remove hydraulic-oil servicing from this circuit.</strong>Maintain water quality, filters, seals and wetted materials; provide freeze protection where needed.</td><td>Maintain oil condition, filters and seals; manage oil changes, storage and used-fluid handling.</td><td>Maintain compressors, filters, dryers and condensate drains; inspect distribution piping and repair air leaks.</td></tr><tr><th scope="row">Selecting the equipment</th><td class="wq-medium-water"><strong>Choose a complete water-compatible system.</strong>Match water-service pumps, valves and actuators to the load and water quality, with corrosion control and filtration designed together.</td><td>Match pumps, valves, actuators and seals to the oil, temperature and duty; include leak containment where required.</td><td>Match compressor capacity, air preparation and actuators to force, cycling, positioning and the response to lost air supply.</td></tr></tbody></table></div>
+<p class="wq-medium-hint">Process-water pumping and hydraulic actuation have different duties; select each circuit for its own water quality, flow and pressure.</p>
+<p class="wq-medium-next"><strong>Put water’s advantages to work.</strong> Bring us the movement, load, operating cycle and water supply. We’ll help identify the water hydraulic pumps, valves, actuators and power unit your application needs. <a href="/contact/">Request an engineering review →</a></p>
+</div></section>
+<section class="ind-section" id="business-case"><div class="ind-wrap"><p class="ind-eyebrow">Build the commercial case</p><h2>Connect the equipment choice to the operating result.</h2><p>Compare net usable output and service availability, rather than nominal capacity alone. Include shared equipment, storage, utilities, operator time, consumables and planned maintenance in the cost of supplying the site.</p><ol class="ind-trial"><li><strong>Define the improvement.</strong> Record the present duty, service effort and operating problem. Agree the movement, output or availability the new equipment must deliver.</li><li><strong>Specify and demonstrate the package.</strong> Match components to the actual water, load and operating range. Use agreed commissioning checks or a focused trial to confirm the result.</li><li><strong>Compare the complete ownership cost.</strong> Include equipment, installation, utilities, fluid management, servicing and downtime. Use measured results where available and identify estimates clearly.</li></ol></div></section><section class="ind-section" id="questions"><div class="ind-wrap"><p class="ind-eyebrow">Questions customers ask</p><h2>Make an informed equipment choice.</h2><div class="ind-faq"><details><summary>What is the benefit of water-lubricated pumping?</summary><p>A purpose-designed water-lubricated pump uses the pumped water to lubricate its internal working surfaces, keeping oil lubrication out of that pumping circuit. The right model depends on water chemistry, flow, pressure and inlet conditions. WaterQuest helps match those requirements to the equipment.</p></details><details><summary>Does adding a spare pump create full redundancy?</summary><p>Only for the failure covered by that spare. Intake, pretreatment, electrical supply, controls and post-treatment can still interrupt all trains.</p></details><details><summary>Can more modules be added later?</summary><p>Only if shared services, headers, space, electrical capacity, intake and discharge arrangements allow expansion. Reserve that capacity explicitly during the first design.</p></details></div></div></section><section class="ind-section" id="related"><div class="ind-wrap"><p class="ind-eyebrow">Components and complete packages</p><h2>Connect your application to WaterQuest equipment.</h2><div class="ind-related"><a href="/products/axial-piston-pumps/">Pumps and confirmed specifications</a><a href="/products/duplex-seawater-pumps/">Duplex seawater pumps</a><a href="/products/power-centre-reverse-osmosis/">Power Centre RO packages</a></div><p class="ind-small">WaterQuest helps develop the modular package from the required water output and feed analysis. We’ll connect pumping, membrane trains, controls, flushing and service access to the operator’s resources and the planned expansion.</p></div></section><section class="ind-section" id="references"><div class="ind-wrap"><p class="ind-eyebrow">Technical context</p><h2>Sources and further reading.</h2><ul class="ind-sources"><li><a href="https://www.dupont.com/content/dam/dupont/amer/us/en/water-solutions/public/documents/en/RO-NF-FilmTec-Manual-45-D01504-en.pdf">DuPont · FilmTec RO/NF technical manual</a><span>Membrane design, pretreatment and operating context; use the selected membrane’s current specification.</span></li><li><a href="https://www.danfoss.com/en-us/products/hpp/pumps/high-pressure-pumps-for-reverse-osmosis-applications/">Danfoss · High-pressure pumps for reverse osmosis</a><span>Water-lubricated RO pumping context. Manufacturer performance claims are not WaterQuest ratings.</span></li></ul><p class="ind-small">Source context reviewed 8 October 2026. Worked examples use the assumptions stated on this page. Proposed use cases are engineering concepts for discussion.</p></div></section><section class="ind-section ind-cta" id="editorial-next-step"><div class="ind-wrap"><p class="ind-eyebrow">Talk to WaterQuest</p><h2>Plan the water plant your site can grow with.</h2><p>Share your daily demand, peak demand, feedwater analysis, available footprint and operating resources. We’ll help define a modular desalination package and the production and service assumptions behind it.</p><div class="ind-actions"><a class="ind-button" href="/contact/?industry=desalination">Discuss your equipment requirements</a><a href="/project-brief.pdf" type="application/pdf">Download the project brief</a></div></div></section><section class="ind-section" id="package-guide"><div class="ind-wrap"><h2>Explore the existing package configurations.</h2><p>The catalogue below retains its existing model options and scenario controls. Values require confirmation at the project feed conditions and supplied scope.</p><a href="#packages">View package tiers and scenario controls</a></div></section></main><!-- CONFIGURATION TOGGLE -->
+<section class="config-toggle-section" id="packages">
+<div class="container">
+<div class="toggle-wrapper">
+<button aria-pressed="true" class="toggle-btn active" onclick="setPackageType('standard')">Standard Pump Packages</button>
+<button aria-pressed="false" class="toggle-btn" onclick="setPackageType('powercenter')">Power Centre Packages</button>
+</div>
+<div class="config-info active" id="info-standard">
+<h3>Standard Pump Packages</h3>
+<p>Parallel packages can increase capacity or provide redundancy when spare capacity and common utilities are designed accordingly. Size the remaining duty with one unit unavailable if that is the requirement, and check shared power, pretreatment, controls and discharge constraints.</p>
+</div>
+<div class="config-info" id="info-powercenter">
+<h3>Integrated Power Centre Packages</h3>
+<p>Power Centre packages combine feed pumping and energy recovery within a selected configuration. Assess feed flow, recovery, motor input and any booster requirement as one system. Confirm installation scope, commissioning procedures and the service interval for the proposed package.</p>
+</div>
+<div class="toggle-wrapper" style="margin-top:32px">
+<button aria-pressed="true" class="toggle-btn active" onclick="setScenario('sw')">Seawater RO (55 bar (798 psi))</button>
+<button aria-pressed="false" class="toggle-btn" onclick="setScenario('bw')">Brackish Water RO (20 bar (290 psi))</button>
+</div>
+</div>
+</section>
+<!-- PACKAGES -->
+<section class="packages-section">
+<div class="container">
+<div class="package-grid">
+<!-- TIER 1: MICRO (Standard only) -->
+<div class="package-card active standard-pkg reveal" id="card-1">
+<div class="card-header">
+<div class="card-capacity-badge">
+<span class="value">
+<span class="scenario-value scenario-active" data-scenario="sw">6</span>
+<span class="scenario-value" data-scenario="bw">13</span>
+</span>
+<span class="unit">m³/day</span>
+</div>
+<div class="card-title-block">
+<h2>Micro System</h2>
+<p>Remote communities, emergency response, off-grid camps</p>
+</div>
+<div class="card-pump-tag">P6</div>
+</div>
+<div class="card-body">
+<div class="card-section">
+<div class="section-label">Pump Specification</div>
+<div class="spec-row"><span class="spec-label">Model</span><span class="spec-value highlight">P6 PB80</span></div>
+<div class="spec-row"><span class="spec-label">Displacement</span><span class="spec-value">6.0 cc/rev (0.366 in³/rev)</span></div>
+<div class="spec-row"><span class="spec-label">Operating speed</span><span class="spec-value">1,000 rpm</span></div>
+<div class="spec-row"><span class="spec-label">Operating pressure</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">55 bar (798 psi)</span>
+<span class="scenario-value" data-scenario="bw">20 bar (290 psi)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Pump weight</span><span class="spec-value">2.2 kg (4.85 lb)</span></div>
+<div class="spec-row"><span class="spec-label">Build options</span><span class="spec-value">Duplex / Hybrid</span></div>
+</div>
+<div class="card-section">
+<div class="section-label">Power &amp; Energy</div>
+<div class="spec-row"><span class="spec-label">Motor required</span>
+<span class="spec-value gold">
+<span class="scenario-value scenario-active" data-scenario="sw">1.1 kW (1.48 hp)</span>
+<span class="scenario-value" data-scenario="bw">0.55 kW (0.738 hp)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Product flow</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">0.25 m3/hr (1.1 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">0.56 m3/hr (2.47 US gpm)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Specific energy</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">~3.6 kWh/m3</span>
+<span class="scenario-value" data-scenario="bw">~0.7 kWh/m3</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Recovery rate</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">38%</span>
+<span class="scenario-value" data-scenario="bw">75%</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Feed flow required</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">0.66 m3/hr (2.91 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">0.75 m3/hr (3.3 US gpm)</span>
+</span>
+</div>
+</div>
+<div class="card-section">
+<div class="section-label">Membrane &amp; Arrangement</div>
+<div class="spec-row"><span class="spec-label">Element type</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">2.5 in (63.5 mm) x 40 in (1016.0 mm) SWRO</span>
+<span class="scenario-value" data-scenario="bw">2.5 in (63.5 mm) x 40 in (1016.0 mm) BWRO</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Vessel arrangement</span><span class="spec-value">1 pressure vessel</span></div>
+<div class="spec-row"><span class="spec-label">Skid footprint</span><span class="spec-value">~0.3 m2 (3.23 ft²)</span></div>
+<div>
+<span class="membrane-tag scenario-active membrane-sw" data-scenario="sw">SW: DOW SW30-2540</span>
+<span class="membrane-tag membrane-bw" data-scenario="bw">BW: DOW BW30-2540</span>
+</div>
+<div class="application-bar">
+<strong>Ideal for:</strong> Remote communities, emergency response, off-grid camps, portable disaster relief systems, containerised mobile units
+            </div>
+</div>
+</div>
+</div>
+<!-- TIER 2: SMALL COMMUNITY (Standard only) -->
+<div class="package-card active standard-pkg reveal" id="card-2">
+<div class="card-header">
+<div class="card-capacity-badge">
+<span class="value">
+<span class="scenario-value scenario-active" data-scenario="sw">20</span>
+<span class="scenario-value" data-scenario="bw">46</span>
+</span>
+<span class="unit">m³/day</span>
+</div>
+<div class="card-title-block">
+<h2>Small Community System</h2>
+<p>First Nations water treatment, industrial camps</p>
+</div>
+<div class="card-pump-tag">P15</div>
+</div>
+<div class="card-body">
+<div class="card-section">
+<div class="section-label">Pump Specification</div>
+<div class="spec-row"><span class="spec-label">Model</span><span class="spec-value highlight">P15 PB80</span></div>
+<div class="spec-row"><span class="spec-label">Displacement</span><span class="spec-value">15 cc/rev (0.915 in³/rev)</span></div>
+<div class="spec-row"><span class="spec-label">Operating speed</span><span class="spec-value">1,000 rpm</span></div>
+<div class="spec-row"><span class="spec-label">Operating pressure</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">55 bar (798 psi)</span>
+<span class="scenario-value" data-scenario="bw">20 bar (290 psi)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Pump weight</span><span class="spec-value">6 kg (13.2 lb)</span></div>
+<div class="spec-row"><span class="spec-label">Build options</span><span class="spec-value">Duplex / Hybrid</span></div>
+</div>
+<div class="card-section">
+<div class="section-label">Power &amp; Energy</div>
+<div class="spec-row"><span class="spec-label">Motor required</span>
+<span class="spec-value gold">
+<span class="scenario-value scenario-active" data-scenario="sw">4.0 kW (5.36 hp)</span>
+<span class="scenario-value" data-scenario="bw">1.5 kW (2.01 hp)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Product flow</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">0.85 m3/hr (3.74 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">1.90 m3/hr (8.37 US gpm)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Specific energy</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">~3.5 kWh/m3</span>
+<span class="scenario-value" data-scenario="bw">~0.6 kWh/m3</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Recovery rate</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">38%</span>
+<span class="scenario-value" data-scenario="bw">75%</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Feed flow required</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">2.24 m3/hr (9.86 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">2.53 m3/hr (11.1 US gpm)</span>
+</span>
+</div>
+</div>
+<div class="card-section">
+<div class="section-label">Membrane &amp; Arrangement</div>
+<div class="spec-row"><span class="spec-label">Element type</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">4 in (101.6 mm) x 40 in (1016.0 mm) SWRO</span>
+<span class="scenario-value" data-scenario="bw">4 in (101.6 mm) x 40 in (1016.0 mm) BWRO</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Vessel arrangement</span><span class="spec-value">1 pressure vessel</span></div>
+<div class="spec-row"><span class="spec-label">Skid footprint</span><span class="spec-value">~0.6 m2 (6.46 ft²)</span></div>
+<div>
+<span class="membrane-tag scenario-active membrane-sw" data-scenario="sw">SW: DOW SW30-4040</span>
+<span class="membrane-tag membrane-bw" data-scenario="bw">BW: Hydranautics ESPA2-4040</span>
+</div>
+<div class="application-bar">
+<strong>Ideal for:</strong> First Nations water treatment, industrial camps, small aquaculture operations, remote mine sites
+            </div>
+</div>
+</div>
+</div>
+<!-- TIER 3: LIGHT MUNICIPAL (Standard only) -->
+<div class="package-card active standard-pkg reveal" id="card-3">
+<div class="card-header">
+<div class="card-capacity-badge">
+<span class="value">
+<span class="scenario-value scenario-active" data-scenario="sw">36</span>
+<span class="scenario-value" data-scenario="bw">82</span>
+</span>
+<span class="unit">m³/day</span>
+</div>
+<div class="card-title-block">
+<h2>Light Municipal System</h2>
+<p>Small BC coastal municipalities, mining camps</p>
+</div>
+<div class="card-pump-tag">P30</div>
+</div>
+<div class="card-body">
+<div class="card-section">
+<div class="section-label">Pump Specification</div>
+<div class="spec-row"><span class="spec-label">Model</span><span class="spec-value highlight">P30 PB80</span></div>
+<div class="spec-row"><span class="spec-label">Displacement</span><span class="spec-value">30 cc/rev (1.83 in³/rev)</span></div>
+<div class="spec-row"><span class="spec-label">Operating speed</span><span class="spec-value">1,000 rpm</span></div>
+<div class="spec-row"><span class="spec-label">Operating pressure</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">55 bar (798 psi)</span>
+<span class="scenario-value" data-scenario="bw">20 bar (290 psi)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Pump weight</span><span class="spec-value">10 kg (22 lb)</span></div>
+<div class="spec-row"><span class="spec-label">Build options</span><span class="spec-value">Duplex / Hybrid</span></div>
+</div>
+<div class="card-section">
+<div class="section-label">Power &amp; Energy</div>
+<div class="spec-row"><span class="spec-label">Motor required</span>
+<span class="spec-value gold">
+<span class="scenario-value scenario-active" data-scenario="sw">7.5 kW (10.1 hp)</span>
+<span class="scenario-value" data-scenario="bw">2.2 kW (2.95 hp)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Product flow</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">1.50 m3/hr (6.6 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">3.40 m3/hr (15 US gpm)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Specific energy</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">~3.7 kWh/m3</span>
+<span class="scenario-value" data-scenario="bw">~0.6 kWh/m3</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Recovery rate</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">38%</span>
+<span class="scenario-value" data-scenario="bw">75%</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Feed flow required</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">3.90 m3/hr (17.2 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">4.53 m3/hr (19.9 US gpm)</span>
+</span>
+</div>
+</div>
+<div class="card-section">
+<div class="section-label">Membrane &amp; Arrangement</div>
+<div class="spec-row"><span class="spec-label">Element type</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">4 in (101.6 mm) x 40 in (1016.0 mm) SWRO</span>
+<span class="scenario-value" data-scenario="bw">4 in (101.6 mm) x 40 in (1016.0 mm) BWRO</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Vessel arrangement</span><span class="spec-value">1 to 2 pressure vessels</span></div>
+<div class="spec-row"><span class="spec-label">Skid footprint</span><span class="spec-value">~0.9 m2 (9.69 ft²)</span></div>
+<div>
+<span class="membrane-tag scenario-active membrane-sw" data-scenario="sw">SW: Toray TM820-400</span>
+<span class="membrane-tag membrane-bw" data-scenario="bw">BW: Toray TMG20-400</span>
+</div>
+<div class="application-bar">
+<strong>Ideal for:</strong> Small BC coastal municipalities, mining camps, offshore support vessels, remote industrial facilities
+            </div>
+</div>
+</div>
+</div>
+<!-- TIER 4: COMMUNITY MUNICIPAL (Standard) -->
+<div class="package-card active standard-pkg reveal" id="card-4">
+<div class="card-header">
+<div class="card-capacity-badge">
+<span class="value">
+<span class="scenario-value scenario-active" data-scenario="sw">79</span>
+<span class="scenario-value" data-scenario="bw">178</span>
+</span>
+<span class="unit">m³/day</span>
+</div>
+<div class="card-title-block">
+<h2>Community Municipal System</h2>
+<p>Water authorities, aquaculture, offshore platforms</p>
+</div>
+<div class="card-pump-tag">P60</div>
+</div>
+<div class="card-body">
+<div class="card-section">
+<div class="section-label">Pump Specification</div>
+<div class="spec-row"><span class="spec-label">Model</span><span class="spec-value highlight">P60 PB80</span></div>
+<div class="spec-row"><span class="spec-label">Displacement</span><span class="spec-value">63 cc/rev (3.84 in³/rev)</span></div>
+<div class="spec-row"><span class="spec-label">Operating speed</span><span class="spec-value">1,000 rpm</span></div>
+<div class="spec-row"><span class="spec-label">Operating pressure</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">55 bar (798 psi)</span>
+<span class="scenario-value" data-scenario="bw">20 bar (290 psi)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Pump weight</span><span class="spec-value">19 kg (41.9 lb)</span></div>
+<div class="spec-row"><span class="spec-label">Build options</span><span class="spec-value">Duplex / Hybrid</span></div>
+</div>
+<div class="card-section">
+<div class="section-label">Power &amp; Energy</div>
+<div class="spec-row"><span class="spec-label">Motor required</span>
+<span class="spec-value gold">
+<span class="scenario-value scenario-active" data-scenario="sw">18.5 kW (24.8 hp)</span>
+<span class="scenario-value" data-scenario="bw">7.5 kW (10.1 hp)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Product flow</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">3.30 m3/hr (14.5 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">7.40 m3/hr (32.6 US gpm)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Specific energy</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">~4.5 kWh/m3</span>
+<span class="scenario-value" data-scenario="bw">~0.7 kWh/m3</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Recovery rate</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">38%</span>
+<span class="scenario-value" data-scenario="bw">75%</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Feed flow required</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">8.70 m3/hr (38.3 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">9.87 m3/hr (43.5 US gpm)</span>
+</span>
+</div>
+</div>
+<div class="card-section">
+<div class="section-label">Membrane &amp; Arrangement</div>
+<div class="spec-row"><span class="spec-label">Element type</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">8 in (203.2 mm) x 40 in (1016.0 mm) SWRO</span>
+<span class="scenario-value" data-scenario="bw">8 in (203.2 mm) x 40 in (1016.0 mm) BWRO</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Vessel arrangement</span><span class="spec-value">1 to 2 pressure vessels</span></div>
+<div class="spec-row"><span class="spec-label">Skid footprint</span><span class="spec-value">~1.5 m2 (16.1 ft²)</span></div>
+<div>
+<span class="membrane-tag scenario-active membrane-sw" data-scenario="sw">SW: DOW SW30HRLE-400i</span>
+<span class="membrane-tag membrane-bw" data-scenario="bw">BW: DOW BW30-400</span>
+</div>
+<div class="application-bar">
+<strong>Ideal for:</strong> Water authorities, aquaculture operations, offshore platforms, large industrial users, containerised modular systems
+            </div>
+</div>
+<div class="power-center-upgrade">
+<h4>Power Centre Upgrade Available</h4>
+<p>This production tier is available with the integrated Power Centre configuration. See Power Centre Packages toggle above for full specifications.</p>
+<ul>
+<li>Evaluate energy recovery at the project duty</li>
+<li>Motor requirement reduced from 18.5 kW (24.8 hp) to ~6 kW (8.05 hp) (seawater)</li>
+<li>Confirm the complete booster and energy-recovery arrangement</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- TIER 5: INDUSTRIAL (Standard) -->
+<div class="package-card active standard-pkg reveal" id="card-5">
+<div class="card-header">
+<div class="card-capacity-badge">
+<span class="value">
+<span class="scenario-value scenario-active" data-scenario="sw">235</span>
+<span class="scenario-value" data-scenario="bw">528</span>
+</span>
+<span class="unit">m³/day</span>
+</div>
+<div class="card-title-block">
+<h2>Industrial System</h2>
+<p>Regional water authorities, First Nations treaty infrastructure</p>
+</div>
+<div class="card-pump-tag">P180</div>
+</div>
+<div class="card-body">
+<div class="card-section">
+<div class="section-label">Pump Specification</div>
+<div class="spec-row"><span class="spec-label">Model</span><span class="spec-value highlight">P180 PB80</span></div>
+<div class="spec-row"><span class="spec-label">Displacement</span><span class="spec-value">180 cc/rev (11 in³/rev)</span></div>
+<div class="spec-row"><span class="spec-label">Operating speed</span><span class="spec-value">1,000 rpm</span></div>
+<div class="spec-row"><span class="spec-label">Operating pressure</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">55 bar (798 psi)</span>
+<span class="scenario-value" data-scenario="bw">20 bar (290 psi)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Pump weight</span><span class="spec-value">82 kg (181 lb)</span></div>
+<div class="spec-row"><span class="spec-label">Build options</span><span class="spec-value">Duplex / Hybrid</span></div>
+</div>
+<div class="card-section">
+<div class="section-label">Power &amp; Energy</div>
+<div class="spec-row"><span class="spec-label">Motor required</span>
+<span class="spec-value gold">
+<span class="scenario-value scenario-active" data-scenario="sw">55 kW (73.8 hp)</span>
+<span class="scenario-value" data-scenario="bw">18.5 kW (24.8 hp)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Product flow</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">9.80 m3/hr (43.1 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">22.0 m3/hr (96.9 US gpm)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Specific energy</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">~4.6 kWh/m3</span>
+<span class="scenario-value" data-scenario="bw">~0.7 kWh/m3</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Recovery rate</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">38%</span>
+<span class="scenario-value" data-scenario="bw">75%</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Feed flow required</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">25.8 m3/hr (114 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">29.3 m3/hr (129 US gpm)</span>
+</span>
+</div>
+</div>
+<div class="card-section">
+<div class="section-label">Membrane &amp; Arrangement</div>
+<div class="spec-row"><span class="spec-label">Element type</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">8 in (203.2 mm) x 40 in (1016.0 mm) SWRO</span>
+<span class="scenario-value" data-scenario="bw">8 in (203.2 mm) x 40 in (1016.0 mm) BWRO</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Vessel arrangement</span><span class="spec-value">2 to 3 pressure vessels</span></div>
+<div class="spec-row"><span class="spec-label">Skid footprint</span><span class="spec-value">~4 m2 (43.1 ft²)</span></div>
+<div>
+<span class="membrane-tag scenario-active membrane-sw" data-scenario="sw">SW: Toray TM820C-400</span>
+<span class="membrane-tag membrane-bw" data-scenario="bw">BW: Toray TMG20D-400</span>
+</div>
+<div class="application-bar">
+<strong>Ideal for:</strong> Regional water authorities, large industrial users, First Nations treaty water infrastructure, parallel operation candidates
+            </div>
+</div>
+<div class="power-center-upgrade">
+<h4>Power Centre Upgrade Available</h4>
+<ul>
+<li>Evaluate energy recovery at the project duty</li>
+<li>Motor requirement reduced from 55 kW (73.8 hp) to ~17 kW (22.8 hp) (seawater)</li>
+<li>Confirm the complete booster and energy-recovery arrangement</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- TIER 6: UTILITY SCALE (Standard) -->
+<div class="package-card active standard-pkg reveal" id="card-6">
+<div class="card-header">
+<div class="card-capacity-badge">
+<span class="value">
+<span class="scenario-value scenario-active" data-scenario="sw">511</span>
+<span class="scenario-value" data-scenario="bw">1,147</span>
+</span>
+<span class="unit">m³/day</span>
+</div>
+<div class="card-title-block">
+<h2>Utility Scale System</h2>
+<p>BC coastal municipalities, industrial process water</p>
+</div>
+<div class="card-pump-tag">P600</div>
+</div>
+<div class="card-body">
+<div class="card-section">
+<div class="section-label">Pump Specification</div>
+<div class="spec-row"><span class="spec-label">Model</span><span class="spec-value highlight">P600 PB80</span></div>
+<div class="spec-row"><span class="spec-label">Displacement</span><span class="spec-value">625 cc/rev (38.1 in³/rev)</span></div>
+<div class="spec-row"><span class="spec-label">Operating speed</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">1,000 rpm</span>
+<span class="scenario-value" data-scenario="bw">500 rpm</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Operating pressure</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">55 bar (798 psi)</span>
+<span class="scenario-value" data-scenario="bw">20 bar (290 psi)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Pump weight</span><span class="spec-value">120 kg (265 lb)</span></div>
+<div class="spec-row"><span class="spec-label">Build options</span><span class="spec-value">Duplex / Hybrid</span></div>
+</div>
+<div class="card-section">
+<div class="section-label">Power &amp; Energy</div>
+<div class="spec-row"><span class="spec-label">Motor required</span>
+<span class="spec-value gold">
+<span class="scenario-value scenario-active" data-scenario="sw">132 kW (177 hp)</span>
+<span class="scenario-value" data-scenario="bw">45 kW (60.3 hp)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Product flow</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">21.3 m3/hr (93.8 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">47.8 m3/hr (210 US gpm)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Specific energy</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">~5.2 kWh/m3</span>
+<span class="scenario-value" data-scenario="bw">~0.8 kWh/m3</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Recovery rate</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">38%</span>
+<span class="scenario-value" data-scenario="bw">75%</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Feed flow required</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">56.0 m3/hr (247 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">63.7 m3/hr (280 US gpm)</span>
+</span>
+</div>
+</div>
+<div class="card-section">
+<div class="section-label">Membrane &amp; Arrangement</div>
+<div class="spec-row"><span class="spec-label">Element type</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">8 in (203.2 mm) x 40 in (1016.0 mm) SWRO</span>
+<span class="scenario-value" data-scenario="bw">8 in (203.2 mm) x 40 in (1016.0 mm) BWRO</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Vessel arrangement</span><span class="spec-value">4 to 6 pressure vessels</span></div>
+<div class="spec-row"><span class="spec-label">Skid footprint</span><span class="spec-value">~10 to 14 m2 (108 to 151 ft²)</span></div>
+<div>
+<span class="membrane-tag scenario-active membrane-sw" data-scenario="sw">SW: DOW SW30HRLE-400i</span>
+<span class="membrane-tag membrane-bw" data-scenario="bw">BW: DOW BW30-400</span>
+</div>
+<div class="application-bar">
+<strong>Ideal for:</strong> BC coastal municipalities (Metro Vancouver supplemental), large industrial process water, desalination plant expansion, parallel operation base units
+            </div>
+</div>
+<div class="power-center-upgrade">
+<h4>Power Centre Upgrade Available</h4>
+<ul>
+<li>Evaluate energy recovery at the project duty</li>
+<li>Motor requirement reduced from 132 kW (177 hp) to ~40 kW (53.6 hp) (seawater)</li>
+<li>Confirm the complete booster and energy-recovery arrangement</li>
+<li>Parallel operation with AC drive on one unit only</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- TIER 4: POWER CENTRE -->
+<div class="package-card powercenter-pkg reveal" id="card-pc-4">
+<div class="card-header">
+<div class="card-capacity-badge">
+<span class="value">
+<span class="scenario-value scenario-active" data-scenario="sw">79</span>
+<span class="scenario-value" data-scenario="bw">178</span>
+</span>
+<span class="unit">m³/day</span>
+</div>
+<div class="card-title-block">
+<h2>Community Municipal Power Centre</h2>
+<p>Integrated energy recovery for maximum efficiency</p>
+</div>
+<div class="card-pump-tag">P60 Power Centre</div>
+</div>
+<div class="card-body">
+<div class="card-section">
+<div class="section-label">Integrated Power Centre Specification</div>
+<div class="spec-row"><span class="spec-label">Model</span><span class="spec-value highlight">P60 Power Centre</span></div>
+<div class="spec-row"><span class="spec-label">Displacement</span><span class="spec-value">63 cc/rev (3.84 in³/rev)</span></div>
+<div class="spec-row"><span class="spec-label">Operating speed</span><span class="spec-value">1,000 rpm</span></div>
+<div class="spec-row"><span class="spec-label">Operating pressure</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">55 bar (798 psi)</span>
+<span class="scenario-value" data-scenario="bw">20 bar (290 psi)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Service interval</span><span class="spec-value energy">8,000 hours</span></div>
+<div class="spec-row"><span class="spec-label">Configuration</span><span class="spec-value">4-in-1 integrated assembly</span></div>
+</div>
+<div class="card-section">
+<div class="section-label">Power &amp; Energy</div>
+<div class="spec-row"><span class="spec-label">Motor required</span>
+<span class="spec-value gold">
+<span class="scenario-value scenario-active" data-scenario="sw">~6 kW (8.05 hp)</span>
+<span class="scenario-value" data-scenario="bw">~2 kW (2.68 hp)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Energy savings</span><span class="spec-value energy">Evaluate energy recovery at the project duty</span></div>
+<div class="spec-row"><span class="spec-label">Product flow</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">3.30 m3/hr (14.5 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">7.40 m3/hr (32.6 US gpm)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Specific energy</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">~1.4 kWh/m3</span>
+<span class="scenario-value" data-scenario="bw">~0.2 kWh/m3</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Recovery rate</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">38%</span>
+<span class="scenario-value" data-scenario="bw">75%</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Feed flow required</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">8.70 m3/hr (38.3 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">9.87 m3/hr (43.5 US gpm)</span>
+</span>
+</div>
+</div>
+<div class="card-section">
+<div class="section-label">System Integration &amp; Footprint</div>
+<div class="spec-row"><span class="spec-label">Element type</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">8 in (203.2 mm) x 40 in (1016.0 mm) SWRO</span>
+<span class="scenario-value" data-scenario="bw">8 in (203.2 mm) x 40 in (1016.0 mm) BWRO</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Vessel arrangement</span><span class="spec-value">1 to 2 pressure vessels</span></div>
+<div class="spec-row"><span class="spec-label">Skid footprint</span><span class="spec-value energy">~1.2 m2 (12.9 ft²) (20% reduction)</span></div>
+<div class="spec-row"><span class="spec-label">Hose connections</span><span class="spec-value">4 total (no HP fittings)</span></div>
+<div class="spec-row"><span class="spec-label">Installation time</span><span class="spec-value energy">Hours (vs. days)</span></div>
+<div>
+<span class="membrane-tag scenario-active membrane-sw" data-scenario="sw">SW: DOW SW30HRLE-400i</span>
+<span class="membrane-tag membrane-bw" data-scenario="bw">BW: DOW BW30-400</span>
+</div>
+<div class="application-bar">
+<strong>Ideal for:</strong> Energy-conscious water authorities, offshore platforms with space constraints, modular skid applications, fast-track projects
+            </div>
+</div>
+<div class="card-section">
+<div class="section-label">Power Centre Advantages</div>
+<ul style="list-style: none; padding: 0;">
+<li style="padding: 6px 0; padding-left: 24px; position: relative; font-size: 0.9rem; color:#FFFFFF;">
+<span style="position: absolute; left: 0; color:#00EEFF; font-weight: 700;">✓</span>
+                Eliminates standalone ERD motor and booster pump
+              </li>
+<li style="padding: 6px 0; padding-left: 24px; position: relative; font-size: 0.9rem; color:#FFFFFF;">
+<span style="position: absolute; left: 0; color:#00EEFF; font-weight: 700;">✓</span>
+                No inverter drive required for energy recovery
+              </li>
+<li style="padding: 6px 0; padding-left: 24px; position: relative; font-size: 0.9rem; color:#FFFFFF;">
+<span style="position: absolute; left: 0; color:#00EEFF; font-weight: 700;">✓</span>
+                Eliminates high-pressure check valves and bypass valves
+              </li>
+<li style="padding: 6px 0; padding-left: 24px; position: relative; font-size: 0.9rem; color:#FFFFFF;">
+<span style="position: absolute; left: 0; color:#00EEFF; font-weight: 700;">✓</span>
+                No pulsation dampers required (9-piston design)
+              </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- TIER 5: POWER CENTRE -->
+<div class="package-card powercenter-pkg reveal" id="card-pc-5">
+<div class="card-header">
+<div class="card-capacity-badge">
+<span class="value">
+<span class="scenario-value scenario-active" data-scenario="sw">235</span>
+<span class="scenario-value" data-scenario="bw">528</span>
+</span>
+<span class="unit">m³/day</span>
+</div>
+<div class="card-title-block">
+<h2>Industrial Power Centre</h2>
+<p>High-throughput integrated energy recovery</p>
+</div>
+<div class="card-pump-tag">P180 Power Centre</div>
+</div>
+<div class="card-body">
+<div class="card-section">
+<div class="section-label">Integrated Power Centre Specification</div>
+<div class="spec-row"><span class="spec-label">Model</span><span class="spec-value highlight">P180 Power Centre</span></div>
+<div class="spec-row"><span class="spec-label">Displacement</span><span class="spec-value">180 cc/rev (11 in³/rev)</span></div>
+<div class="spec-row"><span class="spec-label">Operating speed</span><span class="spec-value">1,000 rpm</span></div>
+<div class="spec-row"><span class="spec-label">Operating pressure</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">55 bar (798 psi)</span>
+<span class="scenario-value" data-scenario="bw">20 bar (290 psi)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Service interval</span><span class="spec-value energy">8,000 hours</span></div>
+<div class="spec-row"><span class="spec-label">Configuration</span><span class="spec-value">4-in-1 integrated assembly</span></div>
+</div>
+<div class="card-section">
+<div class="section-label">Power &amp; Energy</div>
+<div class="spec-row"><span class="spec-label">Motor required</span>
+<span class="spec-value gold">
+<span class="scenario-value scenario-active" data-scenario="sw">~17 kW (22.8 hp)</span>
+<span class="scenario-value" data-scenario="bw">~6 kW (8.05 hp)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Energy savings</span><span class="spec-value energy">Evaluate energy recovery at the project duty</span></div>
+<div class="spec-row"><span class="spec-label">Product flow</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">9.80 m3/hr (43.1 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">22.0 m3/hr (96.9 US gpm)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Specific energy</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">~1.4 kWh/m3</span>
+<span class="scenario-value" data-scenario="bw">~0.2 kWh/m3</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Recovery rate</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">38%</span>
+<span class="scenario-value" data-scenario="bw">75%</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Feed flow required</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">25.8 m3/hr (114 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">29.3 m3/hr (129 US gpm)</span>
+</span>
+</div>
+</div>
+<div class="card-section">
+<div class="section-label">System Integration &amp; Footprint</div>
+<div class="spec-row"><span class="spec-label">Element type</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">8 in (203.2 mm) x 40 in (1016.0 mm) SWRO</span>
+<span class="scenario-value" data-scenario="bw">8 in (203.2 mm) x 40 in (1016.0 mm) BWRO</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Vessel arrangement</span><span class="spec-value">2 to 3 pressure vessels</span></div>
+<div class="spec-row"><span class="spec-label">Skid footprint</span><span class="spec-value energy">~3.2 m2 (34.4 ft²) (20% reduction)</span></div>
+<div class="spec-row"><span class="spec-label">Hose connections</span><span class="spec-value">4 total (no HP fittings)</span></div>
+<div class="spec-row"><span class="spec-label">Installation time</span><span class="spec-value energy">Hours (vs. days)</span></div>
+<div>
+<span class="membrane-tag scenario-active membrane-sw" data-scenario="sw">SW: Toray TM820C-400</span>
+<span class="membrane-tag membrane-bw" data-scenario="bw">BW: Toray TMG20D-400</span>
+</div>
+<div class="application-bar">
+<strong>Ideal for:</strong> Regional authorities seeking maximum efficiency, containerised systems, marine applications, retrofit projects, modular expansion candidates
+            </div>
+</div>
+<div class="card-section">
+<div class="section-label">Power Centre Advantages</div>
+<ul style="list-style: none; padding: 0;">
+<li style="padding: 6px 0; padding-left: 24px; position: relative; font-size: 0.9rem; color:#FFFFFF;">
+<span style="position: absolute; left: 0; color:#00EEFF; font-weight: 700;">✓</span>
+                Eliminates standalone ERD motor and booster pump
+              </li>
+<li style="padding: 6px 0; padding-left: 24px; position: relative; font-size: 0.9rem; color:#FFFFFF;">
+<span style="position: absolute; left: 0; color:#00EEFF; font-weight: 700;">✓</span>
+                No inverter drive required for energy recovery
+              </li>
+<li style="padding: 6px 0; padding-left: 24px; position: relative; font-size: 0.9rem; color:#FFFFFF;">
+<span style="position: absolute; left: 0; color:#00EEFF; font-weight: 700;">✓</span>
+                Eliminates high-pressure check valves and bypass valves
+              </li>
+<li style="padding: 6px 0; padding-left: 24px; position: relative; font-size: 0.9rem; color:#FFFFFF;">
+<span style="position: absolute; left: 0; color:#00EEFF; font-weight: 700;">✓</span>
+                No pulsation dampers required (9-piston design)
+              </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- TIER 6: POWER CENTRE -->
+<div class="package-card powercenter-pkg reveal" id="card-pc-6">
+<div class="card-header">
+<div class="card-capacity-badge">
+<span class="value">
+<span class="scenario-value scenario-active" data-scenario="sw">511</span>
+<span class="scenario-value" data-scenario="bw">1,147</span>
+</span>
+<span class="unit">m³/day</span>
+</div>
+<div class="card-title-block">
+<h2>Utility Scale Power Centre</h2>
+<p>Maximum capacity with integrated energy recovery</p>
+</div>
+<div class="card-pump-tag">P600 Power Centre</div>
+</div>
+<div class="card-body">
+<div class="card-section">
+<div class="section-label">Integrated Power Centre Specification</div>
+<div class="spec-row"><span class="spec-label">Model</span><span class="spec-value highlight">P600 Power Centre</span></div>
+<div class="spec-row"><span class="spec-label">Displacement</span><span class="spec-value">625 cc/rev (38.1 in³/rev)</span></div>
+<div class="spec-row"><span class="spec-label">Operating speed</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">1,000 rpm</span>
+<span class="scenario-value" data-scenario="bw">500 rpm</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Operating pressure</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">55 bar (798 psi)</span>
+<span class="scenario-value" data-scenario="bw">20 bar (290 psi)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Service interval</span><span class="spec-value energy">8,000 hours</span></div>
+<div class="spec-row"><span class="spec-label">Configuration</span><span class="spec-value">4-in-1 integrated assembly</span></div>
+</div>
+<div class="card-section">
+<div class="section-label">Power &amp; Energy</div>
+<div class="spec-row"><span class="spec-label">Motor required</span>
+<span class="spec-value gold">
+<span class="scenario-value scenario-active" data-scenario="sw">~40 kW (53.6 hp)</span>
+<span class="scenario-value" data-scenario="bw">~14 kW (18.8 hp)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Energy savings</span><span class="spec-value energy">Evaluate energy recovery at the project duty</span></div>
+<div class="spec-row"><span class="spec-label">Product flow</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">21.3 m3/hr (93.8 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">47.8 m3/hr (210 US gpm)</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Specific energy</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">~1.5 kWh/m3</span>
+<span class="scenario-value" data-scenario="bw">~0.2 kWh/m3</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Recovery rate</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">38%</span>
+<span class="scenario-value" data-scenario="bw">75%</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Feed flow required</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">56.0 m3/hr (247 US gpm)</span>
+<span class="scenario-value" data-scenario="bw">63.7 m3/hr (280 US gpm)</span>
+</span>
+</div>
+</div>
+<div class="card-section">
+<div class="section-label">System Integration &amp; Footprint</div>
+<div class="spec-row"><span class="spec-label">Element type</span>
+<span class="spec-value">
+<span class="scenario-value scenario-active" data-scenario="sw">8 in (203.2 mm) x 40 in (1016.0 mm) SWRO</span>
+<span class="scenario-value" data-scenario="bw">8 in (203.2 mm) x 40 in (1016.0 mm) BWRO</span>
+</span>
+</div>
+<div class="spec-row"><span class="spec-label">Vessel arrangement</span><span class="spec-value">4 to 6 pressure vessels</span></div>
+<div class="spec-row"><span class="spec-label">Skid footprint</span><span class="spec-value energy">~8 to 11 m2 (86.1 to 118 ft²) (20% reduction)</span></div>
+<div class="spec-row"><span class="spec-label">Hose connections</span><span class="spec-value">4 total (no HP fittings)</span></div>
+<div class="spec-row"><span class="spec-label">Installation time</span><span class="spec-value energy">Hours (vs. days)</span></div>
+<div class="spec-row"><span class="spec-label">Modular expansion</span><span class="spec-value energy">Parallel operation supported</span></div>
+<div>
+<span class="membrane-tag scenario-active membrane-sw" data-scenario="sw">SW: DOW SW30HRLE-400i</span>
+<span class="membrane-tag membrane-bw" data-scenario="bw">BW: DOW BW30-400</span>
+</div>
+<div class="application-bar">
+<strong>Ideal for:</strong> Municipal water authorities (Metro Vancouver supplemental, BC coastal), large industrial process water, plant expansion, modular scalability base units
+            </div>
+</div>
+<div class="card-section">
+<div class="section-label">Power Centre Advantages &amp; Modular Operation</div>
+<ul style="list-style: none; padding: 0;">
+<li style="padding: 6px 0; padding-left: 24px; position: relative; font-size: 0.9rem; color:#FFFFFF;">
+<span style="position: absolute; left: 0; color:#00EEFF; font-weight: 700;">✓</span>
+                Parallel operation with AC drive on one unit only
+              </li>
+<li style="padding: 6px 0; padding-left: 24px; position: relative; font-size: 0.9rem; color:#FFFFFF;">
+<span style="position: absolute; left: 0; color:#00EEFF; font-weight: 700;">✓</span>
+                Continuous capacity adjustment per demand
+              </li>
+<li style="padding: 6px 0; padding-left: 24px; position: relative; font-size: 0.9rem; color:#FFFFFF;">
+<span style="position: absolute; left: 0; color:#00EEFF; font-weight: 700;">✓</span>
+                No pulsation dampers required (9-piston design)
+              </li>
+</ul>
+</div>
+</div>
+</div>
+</div><!-- end package-grid -->
+</div>
+</section>
+<!-- PARALLEL OPERATION -->
+<section class="parallel-section" id="parallel">
+<div class="bubble-layer" id="parallel-bubbles"></div>
+<div class="container">
+<div class="section-header center reveal">
+<div class="label">Modular Scalability</div>
+<h2>Parallel operation with a defined redundancy margin</h2>
+<p>The trend towards modularity in mid-size and large SWRO plants fuels the uptake of parallel-coupled trains of positive displacement pumps with energy recovery and AC drive. This flexible architecture supports continuous capacity adjustment, redundant operation, and cost-effective expansion without replacing the entire system.</p>
+</div>
+<div class="parallel-grid">
+<div class="parallel-benefits reveal-left">
+<div class="parallel-benefit-item">
+<h4>Continuous Capacity Adjustment</h4>
+<p>The capacity of the system can be adjusted continuously according to the need for water at any given time to save energy. Variable demand is addressed without oversizing a single pump or running at inefficient partial load. Each unit operates at its design point while the number of running units changes to meet production requirements.</p>
+</div>
+<div class="parallel-benefit-item">
+<h4>Maintenance Redundancy</h4>
+</div>
+<div class="parallel-benefit-item">
+<h4>Independent Flow Control</h4>
+<p>The flow on a single pump can be adjusted without affecting the other pumps. This means that the AC drive can be sized for one pump only, while the rest of the pumps run directly online. The simple configuration with parallel-coupled positive displacement pumps saves money on the AC drive and returns significant energy savings during operation.</p>
+</div>
+<div class="parallel-benefit-item">
+<h4>Modular Expansion</h4>
+<p>Additional units can be installed in parallel to expand capacity without redesigning the system architecture. A plant can start with a single unit and grow incrementally as demand increases. Each new unit plugs into the existing manifold. Capital expenditure is staged to match actual growth rather than forecast, reducing financial risk and improving return on investment.</p>
+</div>
+</div>
+<div class="parallel-example reveal-right">
+<h3>Example Configuration: 1,500 m³/day (396,258 US gal/day) Seawater RO Plant</h3>
+<p>A regional water authority requires 1,500 m³/day (396,258 US gal/day) of potable water from seawater. The plant is designed using three P600 Power Centre units operating in parallel.</p>
+<div class="parallel-config">
+<h5>Base Configuration</h5>
+<ul>
+<li>3 × P600 Power Centre units</li>
+<li>Each unit: 21.3 m3/hr (93.8 US gpm) × 24 hr = 511 m³/day (134,992 US gal/day)</li>
+<li>Total capacity: 1,533 m³/day (3% overdesign margin)</li>
+<li>Operating pressure: 55 bar (798 psi) continuous</li>
+</ul>
+</div>
+<div class="parallel-config">
+<h5>Drive &amp; Control Strategy</h5>
+<ul>
+<li>Unit 1: Variable frequency drive (VFD) for flow control</li>
+<li>Units 2 &amp; 3: Direct online start (no VFD required)</li>
+<li>Total VFD cost: One 40 kW (53.6 hp) drive vs. three 40 kW (53.6 hp) drives</li>
+<li>Capital savings: ~60% on drive infrastructure</li>
+<li>All three units share common feed and brine manifolds</li>
+</ul>
+</div>
+<div class="parallel-config">
+<h5>Operating Scenarios</h5>
+<ul>
+<li><strong>Peak demand (100%):</strong> All three units run at full speed = 1,533 m³/day (404,976 US gal/day)</li>
+<li><strong>Standard demand (67%):</strong> Two units at full speed, Unit 1 at variable speed = 1,022 m³/day (269,984 US gal/day)</li>
+<li><strong>Low demand (33%):</strong> One unit at variable speed = 511 m³/day (134,992 US gal/day) (or lower)</li>
+<li><strong>Maintenance mode:</strong> Two units maintain 1,022 m³/day (269,984 US gal/day) while one undergoes service</li>
+</ul>
+</div>
+<div class="parallel-config">
+<h5>Energy &amp; Cost Benefits</h5>
+<ul>
+<li>Specific energy: ~1.5 kWh/m3 per unit (with integrated energy recovery)</li>
+<li>Total system power at full load: ~120 kW (vs. ~400 kW (536 hp) without energy recovery)</li>
+<li>No pulsation dampers required (9-piston design inherently smooth)</li>
+<li>No high-pressure booster pump or standalone ERD motors</li>
+<li>System can be commissioned in hours per unit, not days</li>
+</ul>
+</div>
+<p style="margin-top:24px; font-size:0.92rem; color:#FFFFFF;">Parallel treatment trains can support staged capacity and maintenance flexibility. Compare standard pumps and Power Centre configurations at the same production duty, including energy recovery, auxiliary loads and installation scope.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ENGINEERING NOTES -->
+<section class="notes-section">
+<div class="container">
+<div class="section-header reveal">
+<div class="label">Technical Reference</div>
+<h2>Engineering Notes</h2>
+</div>
+<div class="note-grid">
+<div class="note-item reveal">
+<strong>Inlet conditions</strong>
+        All PB (boosted) pumps require a minimum positive inlet pressure of 2.5 bar (36.3 psi) at the pump port. External boost pump or pressurized water main required. Feed water must be pre-filtered to 5 micron (197 µin) nominal (beta 10 = 75 or better). Pressure protection switch mandatory at inlet.
+      </div>
+<div class="note-item reveal">
+<strong>Materials of construction</strong>
+        Duplex build: bar stock Duplex 2205 throughout all water-contacting parts. Suited to high-salinity seawater. Hybrid build: 316L stainless steel body with Duplex 2205 bearing surfaces. Suitable for brackish water and moderate salinity. Contact WaterQuest Solutions for material selection guidance.
+      </div>
+<div class="note-item reveal">
+<strong>Drive coupling</strong>
+        Pumps must not carry induced axial or radial shaft loads. 3-part gear coupling required unless drive shaft concentricity is within 0.05 mm. B5 electric motor flange standard on P6 to P60. SAE 4-bolt flange standard on P180 and P600.
+      </div>
+<div class="note-item reveal">
+<strong>Energy figures</strong>
+        Specific energy values are indicative at stated pressures and speeds. Actual consumption depends on system efficiency, pre-treatment, and energy recovery device integration. Power Centre packages achieve up to 70% energy savings versus non-recovery systems through integrated brine energy recovery.
+      </div>
+<div class="note-item reveal">
+<strong>Temperature range</strong>
+        Full rated performance from 2 C to 50 C. Higher temperature operation is possible with reduced volumetric efficiency. Consult WaterQuest Solutions for elevated temperature duty specifications.
+      </div>
+<div class="note-item reveal">
+<strong>Flushing protocol</strong>
+        Routine fresh water flushing is mandatory. During any period of non-operation, the system must be flushed with permeate to displace seawater from wetted surfaces. Weekly fresh water flushing is recommended as a minimum regardless of build specification. Failure to flush will cause accelerated corrosion even on Duplex builds.
+      </div>
+<div class="note-item reveal">
+<strong>Membrane selection</strong>
+        Membrane model numbers are representative examples. Final selection must be confirmed with qualified membrane supplier based on site-specific feedwater analysis and target permeate quality. All systems require complete balance of plant including intake strainer, media filtration, cartridge filtration, instrumentation, pressure vessels, and brine disposal.
+      </div>
+<div class="note-item reveal">
+<strong>Power Centre commissioning</strong>
+        Power Centre packages feature plug-and-desalt installation with only four flexible hose connections and no high-pressure welded pipework. System commissioning can be completed in hours rather than days. Recovery percentage is set at design stage and delivered to system designer specification. Flow is proportional to shaft speed, removing the need for flow instrumentation.
+      </div>
+<div class="note-item reveal">
+<strong>Parallel operation</strong>
+        Multiple units can operate in parallel with common feed and brine manifolds. AC drive required on one unit only for variable capacity control. Remaining units run directly online. Supports unlimited capacity scaling, maintenance redundancy, and continuous capacity adjustment to match demand profiles.
+      </div>
+<div class="note-item reveal">
+<strong>ATEX compliance</strong>
+        All pumps rated II 2GD ck T6 T85 C; compliant with Directive 94/9/EC. ISO 9001 Quality Management (FM 87247). Suitable for Zone 1 and Zone 21 atmospheres. Safe for use in potentially explosive environments.
+      </div>
+<div class="note-item reveal">
+<strong>Service intervals</strong>
+        Standard pump packages: Routine inspection at 4,000 hours, full service at 8,000 hours. Power Centre packages: 8,000-hour service intervals with no oil changes. Axial piston design uses water-based lubrication throughout. Service exchange units available for zero-downtime maintenance.
+      </div>
+<div class="note-item reveal">
+<strong>Application engineering support</strong>
+        WaterQuest Solutions provides no-charge application engineering review for qualified projects. Contact us to discuss system configuration, parallel operation design, ATEX compliance, First Nations funding eligibility (DMAF, ICIP, Canada Infrastructure Bank), or integration with existing infrastructure.
+      </div>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="cta-section">
+<div class="bubble-layer" id="cta-bubbles"></div>
+<div class="container">
+<div class="cta-inner reveal">
+<h2>Ready to Size a Package for Your Project?</h2>
+<p>WaterQuest Solutions provides application engineering support at no charge. Contact us to discuss system configuration, parallel operation design, energy recovery options, and funding pathways for municipal and First Nations projects.</p>
+<a class="btn btn-primary" href="/contact/">Request Engineering Review</a>
+<div class="cta-certs">
+<span class="cta-cert">6 Production Tiers</span>
+<span class="cta-cert">Evaluate energy recovery at the project duty</span>
+<span class="cta-cert">Parallel Scalability</span>
+<span class="cta-cert">8,000 hr Service Intervals</span>
+<span class="cta-cert">No hydraulic oil in this circuit</span>
+<span class="cta-cert">Duplex Stainless Steel</span>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40), {passive:true});
+
+  (function globalBubbles() {
+    const c = document.getElementById('global-bubbles');
+    for(let i=0;i<28;i++){const b=document.createElement('div');b.className='bubble';const s=Math.random()*9+3,d=(Math.random()-.5)*80;b.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;bottom:${Math.random()*10}%;--drift:${d}px;animation-duration:${Math.random()*18+10}s;animation-delay:${Math.random()*14}s;`;c.appendChild(b);}
+  })();
+
+  function seedBubbles(id,n){const c=document.getElementById(id);if(!c)return;for(let i=0;i<n;i++){const b=document.createElement('div');b.className='bubble';const s=Math.random()*7+2,d=(Math.random()-.5)*60;b.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;bottom:${Math.random()*25}%;--drift:${d}px;animation-duration:${Math.random()*14+8}s;animation-delay:${Math.random()*10}s;`;c.appendChild(b);}}
+  ['hero-bubbles','parallel-bubbles','cta-bubbles'].forEach(id=>seedBubbles(id,10));
+
+  const obs = new IntersectionObserver(entries => entries.forEach(e => {
+    if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+  }), {threshold:0.1, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => obs.observe(el));
+
+  // State management
+  let currentScenario = 'sw';
+  let currentPackageType = 'standard';
+
+  // Scenario toggle (SW / BW)
+  function setScenario(scenario) {
+    currentScenario = scenario;
+    document.querySelectorAll('button[onclick^="setScenario"]').forEach(button => {
+      const selected = button.getAttribute('onclick') === "setScenario('" + scenario + "')";
+      button.classList.toggle('active', selected);
+      button.setAttribute('aria-pressed', String(selected));
+    });
+
+    // Toggle all scenario-specific elements
+    document.querySelectorAll('[data-scenario]').forEach(el => {
+      el.classList.toggle('scenario-active', el.dataset.scenario === scenario);
+    });
+  }
+
+  // Package type toggle (Standard / Power Centre)
+  function setPackageType(type) {
+    currentPackageType = type;
+    document.querySelectorAll('button[onclick^="setPackageType"]').forEach(button => {
+      button.setAttribute('aria-pressed', String(button.getAttribute('onclick') === "setPackageType('" + type + "')"));
+    });
+
+    // Update toggle buttons in config section
+    const configButtons = document.querySelector('.config-toggle-section .toggle-wrapper').children;
+    for(let i=0; i<configButtons.length; i++) {
+      if(type === 'standard' && i === 0) configButtons[i].classList.add('active');
+      else if(type === 'powercenter' && i === 1) configButtons[i].classList.add('active');
+      else configButtons[i].classList.remove('active');
+    }
+
+    // Update info boxes
+    document.getElementById('info-standard').classList.toggle('active', type === 'standard');
+    document.getElementById('info-powercenter').classList.toggle('active', type === 'powercenter');
+
+    // Show/hide cards
+    document.querySelectorAll('.standard-pkg').forEach(card => {
+      card.classList.toggle('active', type === 'standard');
+    });
+    document.querySelectorAll('.powercenter-pkg').forEach(card => {
+      card.classList.toggle('active', type === 'powercenter');
+    });
+  }
+</script>
+<script defer="" src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer="" src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/wqs-stainless/">WQS Stainless</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li></ul></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>316 SS / PEEK · Oil-Free · Canadian Support</p></div></div></footer><script defer="" src="/assets/wq-nav-dropdowns.js?v=20261015-brand"></script><script defer="" src="/assets/wq-product-model-nav.js?v=20261011-white-aqua"></script><script defer="" src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer="" src="/assets/industries-20261008/industry-guides.js?v=20261011-white-aqua"></script><script defer src="/assets/newsletter-popup.js?v=20261016"></script></body>
+</html>

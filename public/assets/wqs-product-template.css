@@ -1,0 +1,292 @@
+/* WQS product template typography
+   Shared presentation defaults for product/specification pages. */
+
+:root {
+  --desal: var(--aqua) !important;
+  --desal-light: var(--aqua) !important;
+  --energy: var(--aqua) !important;
+  --fire-red: var(--aqua) !important;
+  --fire-amber: var(--aqua) !important;
+}
+
+.label,
+.section-header .label,
+.product-hero-text .label,
+.cta-inner .label,
+.section-label,
+.pc-cat,
+.cert-name,
+.text-aqua,
+.text-desal,
+.text-energy,
+.text-fire,
+.product-family,
+.spec-value.highlight,
+.spec-value.energy,
+.spec-value.gold,
+.size-label,
+.card-pump-tag,
+.component-num,
+.fn-label,
+.sc-label,
+.hero-stat .hs-num,
+.sc-big-num,
+.cost-badge h4,
+.ei-x,
+[style*="color:#00EEFF{
+  color:#00EEFF!important;
+}
+
+:is(.spec-card, .atex-card, .app-card, .install-card, .component-card, .benefit-card, .eng-card, .env-card, .size-feature, .mat-item, .feat-card) h3,
+.atex-cert-box h3,
+.cost-table-head h3,
+.challenge-head h3,
+.energy-loop h3,
+.parallel-benefit-item h4,
+.power-center-upgrade h4,
+.parallel-config h5,
+.conn-fact h4,
+.note-item strong,
+.mat-item h4 {
+  color:#00EEFF!important;
+}
+
+:is(.spec-card, .atex-card, .atex-cert-box, .install-card, .app-card, .component-card, .benefit-card, .eng-card, .env-card, .size-feature, .challenge-block, .parallel-example, .power-center-upgrade, .answer-block) p,
+:is(.vs-item, .adv-item, .step-row p, .model-table td.use-case, .model-note, .application-bar, .challenge-item, .elim-item, .cost-row-item, .parallel-benefit-item p, .parallel-config li, .note-item, .config-info p, .conn-fact p, .flow-node p, .cost-badge p, .sc-note, .spec-label, .spec-value, .card-title-block p, .pc-body p, .mat-item p, .cert-desc, .phc-body p) {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color:#FFFFFF;
+}
+
+.cta-inner > p:not(.label) {
+  font-size: 1.16rem;
+}
+
+.pilot-cta p {
+  font-size: 1.16rem;
+}
+
+.answer-block p {
+  font-size: 1.06rem !important;
+  line-height: 1.75 !important;
+}
+
+.adv-card p {
+  font-size: 0.98rem !important;
+  line-height: 1.76 !important;
+}
+
+.app-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+}
+
+.app-card {
+  min-height: 100% !important;
+}
+
+.suite-overview-card {
+  grid-column: 1 / -1 !important;
+  background: linear-gradient(135deg, rgba(0, 200, 212, 0.12), rgba(12, 26, 54, 0.94)) !important;
+  border-color: var(--border-aqua, rgba(0, 200, 212, 0.32)) !important;
+}
+
+.suite-overview-card .app-items {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px 22px !important;
+}
+
+.atex-cert,
+.cta-cert,
+.cert-badge {
+  color:#00EEFF!important;
+  font-size: 0.84rem !important;
+  font-weight: 800 !important;
+}
+
+.btn-desal,
+.btn-primary,
+.nav-cta {
+  background:#00616B!important;
+  color:#FFFFFF!important;
+}
+
+.btn-outline {
+  color:#00EEFF!important;
+  border-color: var(--aqua) !important;
+}
+
+.notes-section .note-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+  gap: 24px !important;
+}
+
+.notes-section .note-item {
+  min-height: 100% !important;
+  padding: 18px 20px !important;
+  border: 1px solid var(--border-aqua) !important;
+  border-radius: var(--radius-md) !important;
+  background: rgba(0, 200, 212, 0.035) !important;
+  font-size: 0.88rem !important;
+  font-weight: 650 !important;
+  line-height: 1.62 !important;
+  color:#FFFFFF!important;
+}
+
+.notes-section .note-item strong {
+  display: block !important;
+  color:#00EEFF!important;
+  margin-bottom: 8px !important;
+  font-weight: 900 !important;
+}
+
+@media (max-width: 960px) {
+  .notes-section .note-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .notes-section .note-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .app-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .suite-overview-card .app-items {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.wq-simple-footer {
+  margin-top: 48px;
+  padding: 24px 20px;
+  border-top: 1px solid var(--border, rgba(168, 184, 204, 0.18));
+  color:#FFFFFF;
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.vs-tick,
+.adv-item::before,
+.cost-row-item::before,
+.power-center-upgrade li::before,
+.parallel-config li::before,
+.challenge-item::before {
+  color:#00EEFF!important;
+}
+
+/* Shared header dropdowns */
+.nav-links,
+.wq-nav-links,
+.links {
+  overflow: visible !important;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-toggle {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-dropdown-toggle::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 18px);
+  left: 50%;
+  z-index: 200;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(190px, 1fr));
+  gap: 4px;
+  min-width: 430px;
+  padding: 14px;
+  margin: 0;
+  list-style: none;
+  background: rgba(6, 16, 30, 0.98);
+  border: 1px solid var(--border-aqua, rgba(0, 200, 212, 0.32));
+  border-radius: 8px;
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.36);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 8px);
+  transition: opacity 0.16s ease, transform 0.16s ease;
+}
+
+.nav-dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0;
+  right: 0;
+  height: 18px;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+.nav-dropdown-menu a {
+  display: block !important;
+  padding: 10px 11px !important;
+  border-radius: 6px;
+  color:#FFFFFF!important;
+  font-size: 0.72rem !important;
+  font-weight: 850 !important;
+  letter-spacing: 0.055em !important;
+  line-height: 1.25 !important;
+  text-transform: uppercase !important;
+  white-space: normal !important;
+}
+
+.nav-dropdown-menu a:hover,
+.nav-dropdown-menu a:focus-visible {
+  color:#FFFFFF!important;
+  background: var(--aqua) !important;
+  outline: none;
+}
+
+.nav-dropdown-menu[data-menu="industries"] {
+  min-width: 620px;
+  grid-template-columns: repeat(3, minmax(175px, 1fr));
+}
+
+@media (max-width: 980px) {
+  .nav-dropdown-menu {
+    position: static;
+    display: none;
+    min-width: 0;
+    grid-template-columns: 1fr;
+    padding: 8px 0 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+  }
+
+  .nav-dropdown:focus-within .nav-dropdown-menu,
+  .nav-dropdown:hover .nav-dropdown-menu {
+    display: grid;
+  }
+}

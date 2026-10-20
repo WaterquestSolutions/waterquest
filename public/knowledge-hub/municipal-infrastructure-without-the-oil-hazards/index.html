@@ -1,284 +1,266 @@
-<!doctype html>
-<html lang="en-CA">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Municipal Infrastructure Without the Oil Hazards | WaterQuest Solutions</title>
-  <meta name="description" content="A full engineering and procurement analysis of water hydraulics in municipal wastewater, stormwater, potable water, and flood control systems. How 316..." />
+<!DOCTYPE html>
+
+<html id="waterquest-site" lang="en-CA">
+<head><style id="wqs-experience-layer">@layer wqs-experience;</style><link rel="stylesheet" href="/assets/newsletter-popup.css?v=20261016">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reducing Hydraulic-Oil Exposure in Municipal Infrastructure | WaterQuest Solutions</title>
+
 
 <style>
-:root{--navy:#071321;--blue:#0b2138;--panel:#102b45;--panel2:#163954;--aqua:#00c8d4;--aqua2:#30f1df;--green:#20d3a7;--silver:#FFFFFF;--muted:#FFFFFF;--white:#fff;--line:rgba(184,199,212,.18);--aqua-line:rgba(0,200,212,.32);--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--silver);font-family:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif;line-height:1.72}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}.site-header{position:sticky;top:0;z-index:10;background:rgba(7,19,33,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.site-nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:inline-flex;align-items:center;gap:11px;color:var(--white);font-weight:900;line-height:1.08}.brand-mark{width:40px;height:40px}.brand small{display:block;color:var(--aqua);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase}.nav-links{display:flex;align-items:center;gap:24px;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800}.nav-links a{color:var(--silver)}.nav-links a:hover,.nav-links a.active{color:var(--aqua2)}.nav-cta{background:var(--aqua);color:var(--navy)!important;padding:10px 15px;border-radius:6px}.eyebrow{color:var(--aqua);font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.22em;margin-bottom:14px}h1,h2,h3{color:var(--white);line-height:1.1;margin:0}p{margin:0;color:var(--silver)}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 18px;border-radius:6px;border:1px solid var(--aqua-line);color:var(--aqua2);font-size:.8rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.btn.primary{background:var(--aqua);border-color:var(--aqua);color:var(--navy)}.hero{padding:86px 0 54px;background:radial-gradient(ellipse at 70% 20%,rgba(0,200,212,.13),transparent 45%),linear-gradient(160deg,#06101d,var(--navy) 55%,var(--blue));border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:46px;align-items:end}.hero h1{font-size:clamp(2.4rem,5.5vw,5rem);letter-spacing:-.04em}.hero h1 span{color:var(--aqua2)}.hero p{font-size:1.14rem;max-width:720px;color:#FFFFFF;margin-top:22px}.stat-card{border:1px solid var(--aqua-line);background:rgba(16,43,69,.7);border-radius:8px;padding:24px}.stat-card b{display:block;color:var(--aqua2);font-size:2.8rem;line-height:1}.stat-card span{display:block;color:var(--muted);font-size:.76rem;text-transform:uppercase;letter-spacing:.11em;font-weight:800;margin-top:8px}.section{padding:72px 0;border-bottom:1px solid var(--line)}.section.alt{background:var(--blue)}.section-head{display:grid;grid-template-columns:1fr minmax(260px,.55fr);gap:36px;align-items:end;margin-bottom:30px}.section h2{font-size:clamp(1.8rem,3.4vw,3rem);letter-spacing:-.03em}.toolbar{position:sticky;top:72px;z-index:9;background:rgba(7,19,33,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(12px);padding:12px 0}.toolbar-inner{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.search{flex:1;min-width:240px;background:var(--panel);border:1px solid var(--aqua-line);border-radius:6px;padding:12px 13px;color:var(--white);font:inherit}.pill{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:8px 12px;font-size:.73rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;cursor:pointer}.pill.active{border-color:var(--aqua);color:var(--aqua);background:rgba(0,200,212,.08)}.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.category-card,.article-card,.panel{background:linear-gradient(145deg,rgba(16,43,69,.96),rgba(13,34,56,.94));border:1px solid var(--line);border-radius:8px;padding:22px}.category-card:hover,.article-card:hover{border-color:var(--aqua-line)}.category-card b{display:block;color:var(--white);font-size:1rem;margin-bottom:4px}.category-card span{color:var(--aqua);font-weight:900}.article-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.article-card{display:grid;gap:10px}.article-card small{color:var(--aqua);font-weight:900;letter-spacing:.12em;text-transform:uppercase;font-size:.68rem}.article-card h3{font-size:1.05rem;line-height:1.35}.article-card p{color:var(--muted);font-size:.9rem}.article-meta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:.78rem}.breadcrumb{padding:18px 0;background:var(--blue);border-bottom:1px solid var(--line);font-size:.82rem;color:var(--muted)}.article-hero{padding:58px 0 46px;background:linear-gradient(160deg,#06101d,var(--blue));border-bottom:1px solid var(--line)}.article-hero h1{font-size:clamp(2rem,4.6vw,3.6rem);letter-spacing:-.035em;max-width:860px}.article-hero p{font-size:1.12rem;max-width:760px;margin-top:18px;color:#FFFFFF}.article-shell{display:grid;grid-template-columns:minmax(0,820px) 280px;gap:54px;align-items:start;padding:56px 0 78px}.article-body{min-width:0}.article-body h2{font-size:1.55rem;margin:44px 0 15px;padding-top:8px;border-top:1px solid var(--line)}.article-body h2:first-child{margin-top:0;border-top:0}.article-body h3{font-size:1.14rem;margin:28px 0 10px;color:#FFFFFF}.article-body p,.article-body li{font-size:1.01rem;color:var(--silver);line-height:1.85}.article-body p{margin-bottom:18px}.article-body ul,.article-body ol{padding-left:1.35em;margin:12px 0 20px}.article-body li::marker{color:var(--aqua)}.callout,.takeaways,.formula-block{border:1px solid var(--aqua-line);background:rgba(0,200,212,.07);border-radius:8px;padding:20px;margin:26px 0}.callout-label,.formula-label,.takeaways h4{color:var(--aqua);font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.16em;margin-bottom:8px}.comparison-table-wrap{overflow-x:auto;margin:26px 0;border:1px solid var(--aqua-line);border-radius:8px}.comparison-table{width:100%;border-collapse:collapse;min-width:520px}.comparison-table th,.comparison-table td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left}.comparison-table th{color:var(--aqua);font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}.sidebar{position:sticky;top:96px;display:grid;gap:16px}.sidebar .panel h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--silver);margin-bottom:10px}.sidebar a{display:block;color:var(--muted);font-size:.9rem;margin:7px 0}.sidebar a:hover{color:var(--aqua)}footer{background:#04101d;border-top:1px solid var(--line);padding:46px 0}.footer-grid{display:grid;grid-template-columns:1fr auto auto;gap:50px}.footer-grid a{display:block;color:var(--muted);font-size:.9rem;margin:6px 0}footer h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--silver)}@media(max-width:960px){.nav-links{display:none}.hero-grid,.section-head,.article-shell,.footer-grid{grid-template-columns:1fr}.category-grid,.article-list{grid-template-columns:1fr 1fr}.sidebar{position:static}}@media(max-width:640px){.wrap{width:min(100% - 28px,var(--max))}.category-grid,.article-list{grid-template-columns:1fr}.hero{padding-top:58px}.toolbar{top:72px}.article-shell{padding-top:36px}}
-</style><link rel="canonical" href="/knowledge-hub/municipal-infrastructure-without-the-oil-hazards" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta property="og:title" content="Municipal Infrastructure Without the Oil Hazards | WaterQuest Solutions" />
-  <meta property="og:description" content="A full engineering and procurement analysis of water hydraulics in municipal wastewater, stormwater, potable water, and flood control systems. How 316..." />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="/knowledge-hub/municipal-infrastructure-without-the-oil-hazards" />
-  <meta property="og:image" content="/assets/waterquest-hero.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Municipal Infrastructure Without the Oil Hazards | WaterQuest Solutions" />
-  <meta name="twitter:description" content="A full engineering and procurement analysis of water hydraulics in municipal wastewater, stormwater, potable water, and flood control systems. How 316..." />
-  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
-  <link rel="alternate" hreflang="en-CA" href="/knowledge-hub/municipal-infrastructure-without-the-oil-hazards" />
-  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
-  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"Article","@id":"/knowledge-hub/municipal-infrastructure-without-the-oil-hazards#webpage","url":"/knowledge-hub/municipal-infrastructure-without-the-oil-hazards","name":"Municipal Infrastructure Without the Oil Hazards | WaterQuest Solutions","description":"A full engineering and procurement analysis of water hydraulics in municipal wastewater, stormwater, potable water, and flood control systems. How 316...","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA","headline":"Build the engineering case for water as a hydraulic medium.","image":"/assets/waterquest-hero.png","author":{"@id":"/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"},{"@type":"ListItem","position":2,"name":"Knowledge Hub","item":"/knowledge-hub"},{"@type":"ListItem","position":3,"name":"Municipal Infrastructure Without The Oil Hazards","item":"/knowledge-hub/municipal-infrastructure-without-the-oil-hazards"}]}]}</script>
-  <style id="wq-global-shell-css">
-    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
-    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
-    body a{color:inherit}
-    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
-    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
-    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
-    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
-    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
-    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
-    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
-    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
-    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
-    main .btn.primary{color:var(--wq-navy)!important}
-    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
-    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
-    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
-    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
-    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
-    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
-    .wq-form-status.is-error{color:#ffb1b1!important}
-    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
-    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
-    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
-    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
-    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
-    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
-    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
-    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
-    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
-    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
-    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
-    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
-    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
-    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
-    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
-    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
-    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
-    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
-    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
-    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
-    .wq-hero-visual-text{padding:20px}
-    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
-    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
-    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
-    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
-    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
-    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
-    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
-    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
-    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
-    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
-    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
-    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
-    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
-    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
-    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
-    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
-    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
-    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
-    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
-    #wq-mobile-menu.open{display:block}
-    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
-    #wq-mobile-menu a:last-child{border-bottom:0}
-    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
-    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
-    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
-    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
-    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
-    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
-    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
-    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
-    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
-    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
-    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
-    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
-    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
-    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
-    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
-    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
-    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
   </style>
-</head>
-<body class="wq-section-knowledge">
-<!-- WQ_GLOBAL_HEADER_START -->
-<div id="wq-global-bubbles" aria-hidden="true"></div>
-<nav id="wq-nav" role="navigation" aria-label="Main navigation">
-  <div class="wq-nav-inner">
-    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
-      <span class="wq-logo-main">WaterQuest Solutions</span>
-      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
-    </a>
-    <ul class="wq-nav-links" role="list">
-      <li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/" class="active">Knowledge Hub</a></li><li><a href="/about/">About</a></li>
-      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
-    </ul>
-    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
-  </div>
-</nav>
-<div id="wq-mobile-menu">
-  <a href="/products/">Products</a><a href="/industries/">Industries</a><a href="/technology/">Technology</a><a href="/knowledge-hub/" class="active">Knowledge Hub</a><a href="/about/">About</a>
-  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
+<meta content="Keep gates and valves dependable while reducing oil exposure beside public water assets. Learn how water hydraulic proposals connect the environmental benefit to the movement, standby readiness and service support municipalities need." name="description"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="Municipal Infrastructure Without the Oil Hazards, water hydraulics, water hydraulic systems, oil-free hydraulics, water as a hydraulic medium, tap water hydraulics, seawater hydraulics, WaterQuest Solutions, water hydraulics engineering guide, hydraulic oil alternative, industrial water hydraulics, industrial contamination prevention" name="keywords"/>
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/municipal-infrastructure-without-the-oil-hazards/" rel="canonical"/>
+<meta content="WaterQuest Solutions" property="og:site_name"/>
+<meta content="Reducing Hydraulic-Oil Exposure in Municipal Infrastructure" property="og:title"/>
+<meta content="Keep gates and valves dependable while reducing oil exposure beside public water assets. Learn how water hydraulic proposals connect the environmental benefit to the movement, standby readiness and service support municipalities need." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/municipal-infrastructure-without-the-oil-hazards/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Reducing Hydraulic-Oil Exposure in Municipal Infrastructure" name="twitter:title"/>
+<meta content="Keep gates and valves dependable while reducing oil exposure beside public water assets. Learn how water hydraulic proposals connect the environmental benefit to the movement, standby readiness and service support municipalities need." name="twitter:description"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/municipal-infrastructure-without-the-oil-hazards/#primary","mainEntityOfPage":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/municipal-infrastructure-without-the-oil-hazards/","name":"Reducing Hydraulic-Oil Exposure in Municipal Infrastructure","headline":"Reducing Hydraulic-Oil Exposure in Municipal Infrastructure","description":"Keep gates and valves dependable while reducing oil exposure beside public water assets. Learn how water hydraulic proposals connect the environmental benefit to the movement, standby readiness and service support municipalities need.","url":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/municipal-infrastructure-without-the-oil-hazards/","inLanguage":"en-CA","isPartOf":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"},"publisher":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"},"author":{"@type":"Organization","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization","name":"WaterQuest Solutions"},"about":[{"@type":"Thing","name":"Reducing Hydraulic-Oil Exposure in Municipal Infrastructure"}],"articleSection":"Industry Applications","dateModified":"2026-10-19","datePublished":"2026-09-02","wordCount":1577,"timeRequired":"PT8M","citation":["https://www.canada.ca/en/environment-climate-change/corporate/transparency/acts-regulations/fisheries-act-registry/frequently-asked-questions.html","https://www.iso.org/standard/44781.html","https://www.egbc.ca/Registrants/Registrant-Programs/Climate-Sustainability","https://www.saj.usace.army.mil/Portals/44/docs/Engineering/CERPStandardDesignManual.pdf","https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/"],"hasPart":[{"@type":"WebPageElement","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/municipal-infrastructure-without-the-oil-hazards/#guide-application","name":"Turn the municipal objective into an asset plan"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/"},{"@type":"ListItem","position":2,"name":"Knowledge Hub","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"},{"@type":"ListItem","position":3,"name":"Reducing Hydraulic-Oil Exposure in Municipal Infrastructure","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/municipal-infrastructure-without-the-oil-hazards/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"/><link rel="stylesheet" href="/assets/wq-brand-standards.css?v=20261015-brand"/><script type="module" src="/assets/wq-speed-insights.js" id="wq-speed-insights"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style></head>
+<body class="wq-audited wq-consistent" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img class="wq-brand-mark" src="/assets/waterquest-logo-square.png" alt="" width="54" height="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero">
+<div class="container">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › Article 80</div>
+<p class="eyebrow">Industry Applications</p>
+<h1 data-editorial="hero">Reducing Hydraulic-Oil Exposure in Municipal Infrastructure</h1>
+<p class="ed-question">Keep the public service moving while removing an oil release source.</p><p class="lead" data-editorial="lead">Keep gates and valves dependable while reducing oil exposure beside public water assets. Learn how water hydraulic proposals connect the environmental benefit to the movement, standby readiness and service support municipalities need.</p>
+<div class="article-meta"><span class="pill">Article 080</span><span class="pill">Industry Applications</span><span class="pill">10 min read</span><span class="pill">Updated 19 October 2026</span></div>
 </div>
-<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
-<section class="wq-conversion-hero" aria-label="Page introduction">
-  <div class="wq-conversion-wrap">
-    <div>
-      <p class="wq-hero-eyebrow">Knowledge Hub</p>
-      <h1>Build the <span>engineering case</span> for water as a hydraulic medium.</h1>
-      <p class="wq-hero-copy">Explore the articles that support WaterQuest's authority position: fundamentals, materials, applications, comparisons, compliance, maintenance, and field adoption.</p>
-      <div class="wq-hero-actions">
-        <a class="wq-hero-cta" href="/technology/">Open Technology References</a>
-        <a class="wq-hero-secondary" href="/glossary/">Use the Glossary</a>
-      </div>
-    </div>
-    <a class="wq-hero-visual" href="/technology/">
-      <div class="wq-hero-picture" aria-hidden="true"></div>
-      <div class="wq-hero-visual-text">
-        <small>Authority path</small>
-        <strong>From question to technical confidence.</strong>
-        <span>Content built for practical decision makers and deep technical research.</span>
-      </div>
-    </a>
-  </div>
 </section>
-<!-- WQ_CONVERSION_HERO_END --><div class="breadcrumb"><div class="wrap"><a href="/">Home</a> / <a href="/knowledge-hub/">Knowledge Hub</a> / Industry Applications</div></div>
-<main>
-  <section class="article-hero">
-    <div class="wrap">
-      <div class="eyebrow">Article 80 · Industry Applications</div>
-      <h1>Municipal Infrastructure Without the Oil Hazards</h1>
-      <p>A full engineering and procurement analysis of water hydraulics in municipal wastewater, stormwater, potable water, and flood control systems. How 316 stainless and PEEK-based systems eliminate Fisheries Act exposure, corrosion failure, and contamination risk across Canadian municipal infrastructure.</p>
-    </div>
-  </section>
-  <div class="wrap article-shell">
-    <article class="article-body"><p>Municipal infrastructure depends on actuators, valves, gates, and hydraulic drives that must operate reliably under long service cycles, wide temperature variation, confined vault spaces, corrosive environments, and strict environmental regulations. Oil hydraulics have traditionally been used in these systems, but municipalities across Canada are now moving away from oil for one key reason: the environmental and financial cost of hydrocarbon failures in water infrastructure is no longer acceptable.</p>
-<p>WaterQuest water hydraulic systems remove all oil pathways, using tap or sea water as the hydraulic medium. Every wetted component is made from 316 stainless steel, and all sliding contact surfaces pair carbon-reinforced PEEK against stainless steel. This combination withstands harsh municipal conditions, improves serviceability, and removes risks that have historically burdened wastewater facilities, water treatment plants, and stormwater infrastructure.</p>
-
-<h2 id="municipal-systems">Municipal Systems That Benefit From Water Hydraulics</h2>
-<p>Municipal departments operate a wide network of mechanical assets including sluice gates, outfall control valves, headworks screens and rakes, clarifier mechanisms, stormwater diversion gates, flood control structures, potable water isolation valves, wastewater plant actuator banks, chemical dosing control valves, grit removal systems, and backflow prevention equipment. Failures in any of these areas can cause untreated discharge, sewer backups, flooding, mandated shutdowns, contamination events, and substantial regulatory fines. Oil hydraulics introduce leak pathways that conflict with environmental mandates throughout this asset portfolio.</p>
-
-<h2 id="municipal-conditions">Engineering Conditions Unique to Municipal Infrastructure</h2>
-<p>Municipal equipment faces hydrogen sulfide exposure in wastewater environments, continuous moisture, corrosive wastewater chemistry, temperature swings from freezing to high summer heat, sediment and grit, biofilm buildup, confined vaults with poor ventilation, inaccessible mechanical rooms, and 24/7 duty cycles. Oil hydraulics do not behave consistently under these conditions because oil breaks down, forms varnish, leaks through fittings, and absorbs water. Water hydraulics avoid all these behaviours because the medium is water and cannot degrade in the way oil does.</p>
-<h3>Corrosion Resistance</h3>
-<p>316 stainless steel offers the required stability in <a href="/industries/wastewater-treatment/">wastewater environments</a>, resisting sulfide attack, chloride exposure, low pH conditions, and biofilm-induced corrosion. Carbon-reinforced PEEK sliding interfaces resist abrasion from grit and debris and do not swell when wet. The material pairing provides stable performance in conditions that cause rapid degradation of conventional actuator assemblies.</p>
-
-<h2 id="fisheries-act">Regulatory Context: Fisheries Act and Environmental Compliance</h2>
-<p>Municipal hydraulic systems operating near waterways, stormwater outfalls, and combined sewer overflows are subject to the Canadian Fisheries Act, which prohibits discharge of deleterious substances including hydrocarbons into fish-bearing waters. An oil hydraulic failure at a stormwater gate actuator, flood control structure, or near-shore outfall valve is not just a maintenance event. It is a potential Fisheries Act violation with prosecution exposure. Water hydraulic actuators in those locations eliminate the hydrocarbon discharge pathway entirely. The Fisheries Act implications of this choice are direct and significant for municipal infrastructure planners.</p>
-
-<h2 id="freeze-municipal">Freeze Protection in Northern and Canadian Climates</h2>
-<p>Municipal infrastructure across Canada operates in climates ranging from the temperate Pacific coast to sub-Arctic northern communities. Water hydraulic systems designed for Canadian conditions incorporate drain-back pathways, open-return valve positions, freeze-safe idle logic, and optional low-power heating for extreme cold sites. These engineering controls prevent freeze damage without chemical additives, preserving the purity of tap water as the hydraulic medium throughout the seasonal cycle.</p>
-
-<h2 id="metro-vancouver-context">Metro Vancouver and Municipal Procurement</h2>
-<p>Metro Vancouver has been engaged as a key partner in the evaluation of water hydraulic actuation for wastewater infrastructure and green hydrogen production systems. For municipalities evaluating upgrades to sluice gate actuators, penstock drives, and outfall control valves, the case for water hydraulics aligns with federal DMAF and ICIP funding program requirements that reward reduced environmental risk and clean technology adoption. Provincial CleanBC program criteria similarly favour the elimination of hydrocarbon risk in municipal water infrastructure.</p>
-
-<h2 id="lifecycle-municipal">Lifecycle Cost for Municipal Operations</h2>
-<p>Municipal budgets operate on long asset lifecycles, often 20 to 40 years for gate and valve actuators. Over these timeframes, oil hydraulic systems accumulate fluid disposal costs, cooler and filter maintenance, varnish-related valve replacement, leak remediation events, and environmental reporting costs that do not appear in initial procurement comparisons. Water hydraulic systems replace all of these ongoing costs with a predictable inspection-based maintenance schedule. Long-term total cost of ownership for water hydraulic actuators in municipal service is substantially lower than oil-based equivalents across any realistic Canadian municipal lifecycle.</p>
-
-<div class="takeaways"><h4>Key Takeaways</h4><ul><li>Oil hydraulic leaks in municipal wastewater and stormwater infrastructure are potential Fisheries Act violations, not just maintenance events. Water hydraulics eliminate this legal exposure by design.</li><li>316 stainless resists hydrogen sulfide, chloride, low pH, and biofilm-induced corrosion in wastewater vaults where conventional actuator materials fail within years</li><li>Metro Vancouver and federal DMAF and ICIP funding programs favour the reduced environmental risk and clean technology alignment that water hydraulic municipal systems provide</li><li>Canadian Fisheries Act compliance in salmon-bearing municipal waterways requires that hydraulic actuator failures not discharge deleterious substances. Water hydraulic actuators satisfy this requirement by default.</li><li>Over a 20 to 40 year municipal asset lifecycle, water hydraulic systems eliminate fluid disposal, cooler maintenance, varnish valve replacement, and leak remediation costs that accumulate significantly in oil-based equivalents</li></ul></div></article>
-    <aside class="sidebar">
-      <div class="panel">
-        <h3>Diagnostic Offer</h3>
-        <p>Tell us your application, operating pressure, and environment. We will identify whether water hydraulics can replace your current system.</p>
-        <p style="margin-top:14px"><a class="btn primary" href="/contact/">Get System Diagnostic</a></p>
-      </div>
-      <div class="panel">
-        <h3>Related Reading</h3>
-        <a href="/knowledge-hub/water-hydraulics-wastewater-treatment-plants/">Article 20: Water Hydraulics in Wastewater Treatment Plants</a><a href="/knowledge-hub/water-hydraulic-systems-marine-vessels/">Article 21: Water Hydraulic Systems for Marine Vessels</a><a href="/knowledge-hub/mining-equipment-water-hydraulic-systems/">Article 22: Mining Equipment Using Water Hydraulic Systems</a><a href="/knowledge-hub/water-hydraulics-flood-control-infrastructure/">Article 23: Water Hydraulics for Flood Control Infrastructure</a><a href="/knowledge-hub/desalination-plant-hydraulic-systems/">Article 24: Desalination Plant Hydraulic Systems</a>
-      </div>
-      <div class="panel">
-        <h3>Back to Library</h3>
-        <a href="/knowledge-hub/">Browse all Knowledge Hub articles</a>
-      </div>
-    </aside>
-  </div>
-</main><!-- WQ_REFERENCE_RAIL_START -->
-<aside class="wq-reference-rail" aria-label="Engineering references">
-  <a href="/calculations/"><small>Reference</small><strong>Engineering Calculators</strong></a>
-  <a href="/glossary/"><small>Reference</small><strong>Technical Glossary</strong></a>
-</aside>
-<!-- WQ_REFERENCE_RAIL_END -->
-
-<!-- WQS_ENRICHMENT_START -->
-<style>
-.wqs-enrichment{background:#f5fbf9;border-top:1px solid #d9e8e3;color:#15302c;font-family:Nunito Sans,Arial,sans-serif;padding:56px 6vw}.wqs-enrichment__inner{margin:0 auto;max-width:1120px}.wqs-enrichment__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-enrichment h2{font-size:clamp(28px,4vw,48px);line-height:1.05;margin:8px 0 16px}.wqs-enrichment p{color:#4b625d;font-size:18px;line-height:1.65;max-width:900px}.wqs-enrichment__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px}.wqs-enrichment__panel{background:#fff;border:1px solid #d9e8e3;border-radius:8px;padding:22px}.wqs-enrichment__panel h3{font-size:18px;margin:0 0 12px}.wqs-enrichment ul{margin:0;padding-left:20px}.wqs-enrichment li{line-height:1.55;margin:7px 0}.wqs-enrichment__links{display:grid;gap:10px}.wqs-enrichment__links a{background:#fff;border:1px solid #d9e8e3;border-radius:8px;color:#15302c;display:grid;gap:4px;padding:14px;text-decoration:none}.wqs-enrichment__links span{color:#5f746f;font-size:14px;line-height:1.45}@media(max-width:760px){.wqs-enrichment{padding:40px 18px}.wqs-enrichment__grid{grid-template-columns:1fr}}
-</style>
-<section class="wqs-enrichment" aria-label="Complete page details">
-  <div class="wqs-enrichment__inner">
-    <div class="wqs-enrichment__eyebrow">Complete archive details</div>
-    <h2>Municipal Infrastructure Without the Oil Hazards</h2>
-    <p>A full engineering and procurement analysis of water hydraulics in municipal wastewater, stormwater, potable water, and flood control systems. How 316...</p>
-    <div class="wqs-enrichment__grid">
-      
-      <div class="wqs-enrichment__panel"><h3>Primary page focus</h3><ul><li>Build the engineering case for water as a hydraulic medium.</li><li>Municipal Infrastructure Without the Oil Hazards</li></ul></div>
-      <div class="wqs-enrichment__panel"><h3>Full section outline</h3><ul><li>Municipal Systems That Benefit From Water Hydraulics</li><li>Engineering Conditions Unique to Municipal Infrastructure</li><li>Regulatory Context: Fisheries Act and Environmental Compliance</li><li>Freeze Protection in Northern and Canadian Climates</li><li>Metro Vancouver and Municipal Procurement</li><li>Lifecycle Cost for Municipal Operations</li></ul></div>
-      <div class="wqs-enrichment__panel"><h3>Detailed topics</h3><ul><li>Corrosion Resistance</li><li>Diagnostic Offer</li><li>Related Reading</li><li>Back to Library</li></ul></div>
-    </div>
-    <div class="wqs-enrichment__panel" style="margin-top:18px"><h3>Related pages with more detail</h3><div class="wqs-enrichment__links"><a href="/knowledge-hub/municipal-infrastructure-without-the-oil-hazards"><strong>Municipal Infrastructure Without the Oil Hazards</strong><span>A full engineering and procurement analysis of water hydraulics in municipal wastewater, stormwater, potable water, and flood control systems. How 316 stainless and PEEK-based systems eliminate Fisheries Act exposure, corrosion failure, and contamination risk across Canadian municipal infrastructure.</span></a><a href="/knowledge-hub/can-water-freeze-in-hydraulic-systems-engineering-around-temperature"><strong>Can Water Freeze in Hydraulic Systems? Engineering Around Temperature</strong><span>Water freezes at 0 degrees Celsius. That is a design parameter, not a barrier. A complete engineering guide to the four strategies that protect water hydraulic systems in cold Canadian climates, using the same approaches that already work throughout municipal, marine, and hydroelectric infrastructure.</span></a><a href="/knowledge-hub/environmental-regulations-affecting-hydraulic-systems"><strong>Environmental Regulations Affecting Hydraulic Systems</strong><span>Why municipal water treatment, wastewater, and infrastructure systems should transition from hydraulic oil to water hydraulics: regulatory compliance, environmental protection, and risk mitigation.</span></a><a href="/knowledge-hub/how-our-water-hpus-are-changing-the-industrial-landscape"><strong>How Our Water HPUs Are Changing the Industrial Landscape</strong><span>Water hydraulic power units engineered from the ground up around water's physical properties. How WaterQuest HPUs eliminate oil contamination risk, reduce cooling infrastructure, and deliver stable performance across industrial, marine, and municipal sectors.</span></a><a href="/knowledge-hub/hydraulic-gate-actuators-municipal-infrastructure"><strong>Hydraulic Gate Actuators for Municipal Infrastructure</strong><span>Water hydraulic gate actuators for municipal water infrastructure: treatment plant gates, pump station valves, reservoir controls, CSO gates, engineering specification requirements, lifecycle cost case, and federal funding alignment.</span></a><a href="/knowledge-hub/spec-writing-guide-for-water-hydraulic-equipment"><strong>Spec Writing Guide for Water Hydraulic Equipment</strong><span>Why municipal water treatment, wastewater, and infrastructure systems should transition from hydraulic oil to water hydraulics: regulatory compliance, environmental protection, and risk mitigation.</span></a><a href="/knowledge-hub/the-future-of-oil-free-hydraulic-systems"><strong>The Future of Oil-Free Hydraulic Systems</strong><span>Why municipal water treatment, wastewater, and infrastructure systems should transition from hydraulic oil to water hydraulics: regulatory compliance, environmental protection, and risk mitigation.</span></a><a href="/knowledge-hub/water-hydraulics-for-government-infrastructure-projects"><strong>Water Hydraulics for Government Infrastructure Projects</strong><span>Why municipal water treatment, wastewater, and infrastructure systems should transition from hydraulic oil to water hydraulics: regulatory compliance, environmental protection, and risk mitigation.</span></a><a href="/knowledge-hub/why-municipal-infrastructure-should-eliminate-hydraulic-oil"><strong>Why Municipal Infrastructure Should Eliminate Hydraulic Oil</strong><span>Why municipal water treatment, wastewater, and infrastructure systems should transition from hydraulic oil to water hydraulics: regulatory compliance, environmental protection, and risk mitigation.</span></a><a href="/knowledge-hub/why-municipal-procurement-needs-to-rethink-oil"><strong>Why Municipal Procurement Needs to Rethink Oil</strong><span>Municipal procurement specifications still default to oil hydraulics out of habit, not engineering necessity. A direct challenge to the frameworks that specify oil in water infrastructure, and a practical path toward specifications that eliminate contamination risk by design.</span></a></div></div>
-  </div>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-conditions-unique-to-municipal-infrastructure"></span><span aria-hidden="true" class="ed-legacy-anchor" id="metro-vancouver-and-municipal-procurement"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><h2 id="learn-public-infrastructure-exists-to-deliver-a-service">Improve the actuator while protecting the public service</h2><p>A gate or valve may control water levels, treatment capacity or access for maintenance. Its replacement must support that service first. Water hydraulics can add a direct benefit by removing oil from the actuation circuit near the water. Review the movement, availability and service arrangements together to build an upgrade the operating team can rely on.</p><p>Water hydraulics can be a useful option where hydraulic force is appropriate and removing hydraulic oil addresses a meaningful exposure. A gate above an open channel, for example, presents a different contamination pathway from equipment located in a contained room. The purpose of the assessment is to identify such differences and preserve dependable service. It is not to replace one blanket preference with another that assumes all municipal machinery should use the same technology.</p><h2 id="learn-find-the-mechanism-whose-renewal-deserves-attention">Find the mechanism whose renewal deserves attention</h2><p>An asset inventory helps identify candidates by condition, criticality and planned renewal timing. A circuit with repeated leakage, difficult containment or obsolete equipment may justify closer review. So may a mechanism that already requires a major overhaul for unrelated reasons. Combining improvements during a planned renewal can avoid disturbing the asset twice and can make the full installed scope easier to compare.</p><p>Start with actual records rather than a general impression that the existing system is old. Review maintenance work, operating difficulties and the condition of the surrounding structure. Some problems may be caused by a binding gate, damaged guides or an unsuitable control sequence rather than the hydraulic medium. Identifying the cause prevents a fluid change from being credited with solving a mechanical problem it does not address.</p><figure aria-labelledby="visual-80" class="kh-diagram kh-illustration"><figcaption class="kh-diagram-title" id="visual-80">Connect a municipal renewal to its public purpose</figcaption><ol class="kh-process-path"><li><span class="kh-process-index">1</span><div><strong>Service</strong><span>Define the water-control function and consequence of unavailability.</span></div></li><li><span class="kh-process-index">2</span><div><strong>Exposure</strong><span>Map the actual oil inventory and route of a credible release.</span></div></li><li><span class="kh-process-index">3</span><div><strong>Alternatives</strong><span>Compare complete packages against the same duty and recovery needs.</span></div></li><li><span class="kh-process-index">4</span><div><strong>Handover</strong><span>Verify performance, train operators and preserve configuration records.</span></div></li></ol><figcaption>Conceptual renewal framework. Project-specific structural, hydraulic, environmental and operating requirements still govern.</figcaption></figure><h2 id="learn-define-what-the-gate-or-valve-must-do">Define what the gate or valve must do</h2><p>The duty includes more than maximum thrust. Establish travel, speed, operating frequency, holding requirements and the loads encountered at different positions. A rarely operated isolation gate needs readiness after standby, while a modulating valve may accumulate many small movements. Differential water pressure, debris and mechanical condition can influence the required actuation. The relevant structure and mechanism must be assessed together.</p><p>Engineering references such as the US Army Corps of Engineers design manual provide background on coordinating water-control structures and mechanisms. <a aria-label="Source 4: US Army Corps of Engineers: CERP standard design manual" class="kh-citation" href="#source-usace">[4]</a> They do not replace the criteria for a particular Canadian municipal project. The owner should supply the available drawings and operating history, while the responsible designer determines the required load cases. This gives suppliers a common duty against which to propose equipment and reduces ambiguity during acceptance.</p><span aria-hidden="true" class="ed-legacy-anchor" id="municipal-systems-that-benefit-from-water-hydraulics"></span><span aria-hidden="true" class="ed-legacy-anchor" id="regulatory-context-fisheries-act-and-environmental-compliance"></span><h2 id="learn-locate-the-environmental-benefit-precisely">Locate the environmental benefit precisely</h2><p>Map the fluid inventory and potential routes of leakage. Consider normal seepage, a damaged hose, maintenance drainage and the location of fill or service points. A small circuit directly above sensitive water can deserve different attention from a larger circuit with effective separation and containment. The benefit of removing oil is strongest when the relevant pathway is understood rather than merely assumed.</p><p>Canadian Fisheries Act pollution-prevention guidance explains why the nature and destination of a release matter. <a aria-label="Source 1: Environment and Climate Change Canada: Fisheries Act pollution prevention FAQ" class="kh-citation" href="#source-fisheries">[1]</a> Replacing hydraulic oil does not establish permission to discharge working water, which may contain debris or other contaminants. The project should describe the change as removal of a defined hydraulic-oil inventory and retain appropriate controls for remaining releases. That statement is concrete enough for engineers, operators and public decision-makers to review.</p><h2 id="learn-compare-alternatives-against-the-same-public-function">Compare alternatives against the same public function</h2><p>Water hydraulics, electric actuation and an improved conventional hydraulic arrangement may each be credible alternatives. The comparison should use the same load, travel, response and availability requirements. Include the supporting equipment needed at the site, such as power supplies, controls, pipework, environmental protection and access. Comparing only the actuator can hide substantial differences in installation and service scope.</p><p>A technology should not receive credit for functions that are excluded from its price. Likewise, an established option should not be assumed superior simply because municipal staff already know it. Familiarity has real training and service value, but that value can be described and costed. A fair comparison makes both the benefits of continuity and the opportunity for improvement visible before the owner selects an approach.</p><h2 id="learn-standby-readiness-needs-deliberate-design">Standby readiness needs deliberate design</h2><p>Some municipal mechanisms remain stationary for long periods and then become important during an unusual event. Their duty is therefore not well represented by a short demonstration immediately after installation. The design and maintenance plan should address the condition of the mechanism, working fluid and controls during standby, including how readiness will be checked without compromising the process.</p><p>The appropriate checks depend on the asset. Exercise movements, inspections and monitoring may provide different types of evidence, and none should be prescribed generically without understanding the service. A water-hydraulic package also needs a defined response to unsuitable inlet conditions, loss of power and temperature exposure. Readiness is a property of the complete maintained installation, not a feature that follows automatically from using water as the working medium.</p><span aria-hidden="true" class="ed-legacy-anchor" id="freeze-protection-in-northern-and-canadian-climates"></span><h2 id="learn-freeze-protection-includes-the-entire-exposure">Freeze protection includes the entire exposure</h2><p>Canadian municipal equipment may experience unheated spaces, outdoor pipework or cold air entering through access openings. A warm reservoir does not prove that remote tubing, valve cavities or instruments remain protected. The review should include normal operation, extended shutdown, power failure and maintenance isolation. Small trapped volumes can be important even when the main equipment is inside a building.</p><p>The proposed protection method must suit the selected components and operating plan. Heating requires a reliable supply and a response when it becomes unavailable. Drainability depends on geometry and the absence of retained pockets. Any alternative fluid formulation requires explicit equipment support. These details should be resolved before tender award, because leaving them to an operator after installation can create a service burden that the comparison never priced.</p><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><h2 id="learn-water-compatibility-is-a-complete-equipment-question">Water compatibility is a complete equipment question</h2><p>Purpose-designed water-hydraulic machinery differs from an oil-service package that has simply been refilled. Pumps, valves, seals, instruments and ancillary items need support for the specified fluid and duty. Manufacturer information from the Water Hydraulics Company provides an example of configuration-dependent requirements. <a aria-label="Source 5: The Water Hydraulics Company: P3 axial piston pump" class="kh-citation" href="#source-p3">[5]</a> The municipal enquiry should identify the actual supply and any expected variability rather than relying on the word water alone.</p><p>Maintenance substitutions deserve equal attention. Municipal assets can remain in service through several staff and contractor changes, so records must identify the selected construction and acceptable replacements. A visually similar valve or seal kit may not preserve the original compatibility. Clear part identification and accessible instructions help the operating organisation maintain the intended system without needing to reconstruct its engineering history whenever a component is replaced.</p><h2 id="learn-recovery-after-a-fault-is-part-of-service-continuity">Recovery after a fault is part of service continuity</h2><p>The owner should define what happens if the actuator cannot complete its movement. Can the process continue temporarily? Is another route available? Does the mechanism need to remain in place, move to a designated position or be operated through a separate authorised method? These questions connect hydraulic design to the facility's broader operating strategy.</p><p>A backup provision should be assessed for actual usability. Access, required labour, equipment availability and the conditions under which staff would use it all matter. A manual operation described on a drawing may be impractical during flooding or when a space is inaccessible. Reviewing recovery with operators before procurement can reveal such problems early and help distinguish a genuine resilience feature from an option that adds cost without providing useful capability.</p><h2 id="learn-acceptance-should-demonstrate-the-agreed-duty">Acceptance should demonstrate the agreed duty</h2><p>Factory testing can verify components and package functions, while site testing confirms installation and process interfaces. The project should define which requirements are demonstrated at each stage. Record the actual loads or representative conditions, operating sequence and relevant measurements. Agree how seasonal water levels or unavailable design conditions will be handled, so that deferred verification has a named owner and a clear completion requirement. A simple statement that the actuator opened and closed does not necessarily establish performance at the design condition.</p><p>Acceptance should also include the information needed to operate the asset: drawings, settings, maintenance instructions, spare-parts identification and training. The public scope of ISO 4413 is a useful hydraulic-system reference, but it is not evidence that a particular installation complies with all applicable requirements. <a aria-label="Source 2: ISO 4413: hydraulic fluid power systems" class="kh-citation" href="#source-iso">[2]</a> The responsible professionals must establish the project criteria and the documentation needed to demonstrate that the delivered system meets them.</p><span aria-hidden="true" class="ed-legacy-anchor" id="lifecycle-cost-for-municipal-operations"></span><h2 id="learn-make-lifecycle-cost-understandable-to-the-public-owner">Make lifecycle cost understandable to the public owner</h2><p>The cost comparison should include installed equipment, energy, inspection, consumables, planned replacements and service access. Identify tasks that disappear and tasks that are introduced. Removing one circuit may not eliminate an entire facility's oil storage or waste-handling contract, so only genuinely avoidable costs should be counted as savings. Uncertain failure costs should be presented as scenarios rather than guaranteed annual expenditure.</p><p>Environmental and operational benefits can be important even when they do not produce the lowest purchase price. The decision record should explain how those benefits were considered and what evidence supports them. Professional sustainability guidance can help frame that broader responsibility without prescribing a particular hydraulic technology. <a aria-label="Source 3: Engineers and Geoscientists BC: climate and sustainability" class="kh-citation" href="#source-egbc">[3]</a> A transparent comparison allows elected officials and finance staff to understand the engineering recommendation without reducing it to a slogan.</p><h2 id="learn-renew-the-function-and-the-operating-knowledge-together">Renew the function and the operating knowledge together</h2><p>A successful renewal leaves the municipality with dependable machinery and a clearer understanding of how to keep it dependable. It should improve records, service access and responsibility for future changes as well as replacing worn equipment. Water hydraulics can contribute where their supported operating envelope matches the duty and the removal of oil addresses a real exposure.</p><p>WaterQuest's municipal proposition is strongest when it connects those two outcomes: the public function remains central, and an inherited contamination pathway is reconsidered using evidence. That gives operators a maintainable asset, engineers a verifiable design and procurement a complete scope. The question is not whether water is inherently the right answer for every municipality. It is whether a particular renewal can deliver the required service with a better understood and more appropriate hydraulic arrangement.</p><section class="wq-guide-application" id="guide-application" aria-labelledby="guide-application-title"><p class="wq-guide-kicker">From understanding to equipment selection</p><h2 id="guide-application-title">Turn the municipal objective into an asset plan</h2><p>Choose a gate or valve with a defined oil-exposure pathway, then document its thrust, travel, frequency and fault response. This gives procurement a complete water-actuation scope that can be compared with maintaining the existing installation.</p><h3>Calculate the relevant duty</h3><p>Use the <a href="/knowledge-hub/engineering-calculators/cylinder-force-calculator/">cylinder force calculator</a> to compare extension and retraction with opposing pressure and the required load. Use the <a href="/knowledge-hub/engineering-calculators/pressure-drop-calculator/">system pressure-drop calculator</a> to combine component losses, elevation and a design allowance.</p><h3>Connect the calculation to equipment</h3><p>Compare the gate arrangement with the cylinder, mounting and available hydraulic supply. Request the governing gate-load data and a supported actuator configuration.</p><p>Explore <a href="/sluice-gates/">sluice-gate equipment</a> and <a href="/products/water-hydraulic-cylinders/">water hydraulic cylinders</a>.</p><details><summary>What should the gate inspection and functional-check plan include?</summary><p>Include inspection access, spares and staff training in the ownership plan. Review performance after the first representative operating season before extending the approach to other assets.</p></details><p class="wq-guide-boundary">Cylinder force and circuit loss tools do not calculate hydrostatic gate loads, structural capacity or the complete emergency response.</p><p><a href="/contact/">Discuss your duty with WaterQuest</a> — bring your calculation inputs, water conditions and required operating sequence.</p></section><section class="kh-sources" id="sources"><h2>Sources and further reading</h2><ol><li id="source-fisheries"><a href="https://www.canada.ca/en/environment-climate-change/corporate/transparency/acts-regulations/fisheries-act-registry/frequently-asked-questions.html">Environment and Climate Change Canada: Fisheries Act pollution prevention FAQ</a><span class="kh-source-kind">Government guidance</span><span class="kh-source-note">Pollution-prevention context; not project-specific legal advice or discharge approval.</span></li><li id="source-iso"><a href="https://www.iso.org/standard/44781.html">ISO 4413: hydraulic fluid power systems</a><span class="kh-source-kind">Standard scope</span><span class="kh-source-note">Public abstract only; this article does not reproduce the standard or establish compliance.</span></li><li id="source-egbc"><a href="https://www.egbc.ca/Registrants/Registrant-Programs/Climate-Sustainability">Engineers and Geoscientists BC: climate and sustainability</a><span class="kh-source-kind">Professional guidance</span><span class="kh-source-note">Sustainability in professional practice; does not prescribe a hydraulic technology.</span></li><li id="source-usace"><a href="https://www.saj.usace.army.mil/Portals/44/docs/Engineering/CERPStandardDesignManual.pdf">US Army Corps of Engineers: CERP standard design manual</a><span class="kh-source-kind">Engineering reference</span><span class="kh-source-note">Background on gate mechanisms and structure coordination; project-specific criteria govern.</span></li><li id="source-p3"><a href="https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/">The Water Hydraulics Company: P3 axial piston pump</a><span class="kh-source-kind">Manufacturer information</span><span class="kh-source-note">An example of purpose-designed water equipment; use current configuration-specific instructions.</span></li></ol><p class="kh-reviewed">Sources reviewed 7 October 2026. Linked guidance may be updated; use current documentation for a project decision.</p></section><div class="related-block"><h3>Continue reading</h3><div class="related-grid"><a class="related-card" href="/knowledge-hub/water-hydraulics-on-the-coast-marine-applications-that-work/"><div class="rc-cat">Industry Applications · Article 71</div><h4>Evaluating Coastal Water Hydraulic Applications</h4><div class="rc-read">9 min read</div></a><a class="related-card" href="/knowledge-hub/water-hydraulics-in-mining-lower-downtime-zero-contamination/"><div class="rc-cat">Industry Applications · Article 73</div><h4>Mining Water Hydraulics: Availability, Service and Oil Exposure</h4><div class="rc-read">8 min read</div></a><a class="related-card" href="/knowledge-hub/what-if-the-water-freezes/"><div class="rc-cat">Specification &amp; Design · Article 57</div><h4>What If the Water Freezes?</h4><div class="rc-read">8 min read</div></a><a class="related-card" href="/knowledge-hub/why-tap-or-sea-water-belongs-in-your-hydraulic-system/"><div class="rc-cat">Specification &amp; Design · Article 51</div><h4>Choosing Tap Water or Seawater for a Hydraulic Circuit</h4><div class="rc-read">9 min read</div></a></div></div>
+</article>
+<aside aria-label="Article index" class="toc card"><h3>In this article</h3><a href="#learn-public-infrastructure-exists-to-deliver-a-service">Improve the actuator while protecting the public service</a><a href="#learn-find-the-mechanism-whose-renewal-deserves-attention">Find the mechanism whose renewal deserves attention</a><a href="#learn-define-what-the-gate-or-valve-must-do">Define what the gate or valve must do</a><a href="#learn-locate-the-environmental-benefit-precisely">Locate the environmental benefit precisely</a><a href="#learn-compare-alternatives-against-the-same-public-function">Compare alternatives against the same public function</a><a href="#learn-standby-readiness-needs-deliberate-design">Standby readiness needs deliberate design</a><a href="#learn-freeze-protection-includes-the-entire-exposure">Freeze protection includes the entire exposure</a><a href="#learn-water-compatibility-is-a-complete-equipment-question">Water compatibility is a complete equipment question</a><a href="#learn-recovery-after-a-fault-is-part-of-service-continuity">Recovery after a fault is part of service continuity</a><a href="#learn-acceptance-should-demonstrate-the-agreed-duty">Acceptance should demonstrate the agreed duty</a><a href="#learn-make-lifecycle-cost-understandable-to-the-public-owner">Make lifecycle cost understandable to the public owner</a><a href="#learn-renew-the-function-and-the-operating-knowledge-together">Renew the function and the operating knowledge together</a><a href="#guide-application">Calculate, select and maintain</a><a href="#sources">Sources and further reading</a><a href="/knowledge-hub/#library">All articles →</a></aside>
+</div>
+<div class="container">
+<div class="pager">
+<a href="/knowledge-hub/fail-safe-performance-in-theme-park-ride-systems/"><span>Previous</span>Safety Functions in Water-Actuated Attraction Equipment</a>
+<a href="/knowledge-hub/oil-vs-water-hydraulics-a-complete-system-comparison/"><span>Next</span>Oil vs Water Hydraulics: A Complete System Comparison</a>
+</div>
+</div>
 </section>
-<!-- WQS_ENRICHMENT_END -->
-<!-- WQ_GLOBAL_FOOTER_START -->
-<footer class="wq-site-footer" role="contentinfo">
-  <div class="wq-footer-container">
-    <div class="wq-footer-grid">
-      <div class="wq-footer-brand">
-        <span class="wq-logo-main">WaterQuest Solutions</span>
-        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
-        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
-      </div>
-      <div class="wq-footer-col">
-        <h5>Knowledge Hub</h5>
-        <ul><li><a href="/knowledge-hub/" class="active">Knowledge Hub</a></li><li><a href="/knowledge-hub/?category=engineering-fundamentals" class="active">Engineering Fundamentals</a></li><li><a href="/knowledge-hub/?category=industry-applications" class="active">Industry Applications</a></li><li><a href="/knowledge-hub/?category=materials-and-compatibility" class="active">Materials and Compatibility</a></li><li><a href="/knowledge-hub/?category=comparison-guides" class="active">Comparison Guides</a></li></ul>
-      </div>
-      <div class="wq-footer-col">
-        <h5>Core Pages</h5>
-        <ul><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/" class="active">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
-      </div>
-      <div class="wq-footer-col">
-        <h5>Contact</h5>
-        <ul>
-          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
-          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
-          <li>558 East Kent Ave S</li>
-          <li>Vancouver, BC V5X 4V6</li>
-          <li>Canada</li>
-        </ul>
-      </div>
-    </div>
-    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
-  </div>
-</footer>
-<!-- WQ_GLOBAL_FOOTER_END -->
-<script id="wq-global-shell-js">
-    (function(){
-      var nav=document.getElementById("wq-nav");
-      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
-      var menuButton=document.querySelector(".wq-menu-toggle");
-      var mobileMenu=document.getElementById("wq-mobile-menu");
-      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
-      var bubbles=document.getElementById("wq-global-bubbles");
-      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
-      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
-      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
-      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
-      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
-      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
-      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
-      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
-      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
-      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
-      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
-      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
-    })();
-  </script>
-
-</body>
+<section class="section">
+<div class="container card" style="padding:42px;">
+<p class="eyebrow">Apply the Knowledge</p>
+<h2>Put this knowledge to work.</h2>
+<p class="lead">Share the asset, required movement and consequences of a failure. We’ll help define a water hydraulic option around the public service it must protect.</p>
+<div class="btn-row"><a class="btn primary" href="/contact/">Start Engineering Review →</a><a class="btn" href="/industries/">View Industries →</a></div>
+</div>
+</section>
+</main>
+<script defer="" src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer="" src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/wqs-stainless/">WQS Stainless</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li></ul></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>316 SS / PEEK · Oil-Free · Canadian Support</p></div></div></footer><script defer="" src="/assets/wq-nav-dropdowns.js?v=20261015-brand"></script><script defer="" src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/newsletter-popup.js?v=20261016"></script></body>
 </html>

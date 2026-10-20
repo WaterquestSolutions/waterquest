@@ -1,0 +1,104 @@
+/* WaterQuest responsive finish. Loaded last, shared by every content page. */
+html#waterquest-site {scroll-padding-top:calc(var(--wq-section-header-height,72px) + var(--wq-section-nav-height,0px) + 20px)}
+html#waterquest-site body.wq-consistent :is(h1,h2,h3,h4){text-wrap:balance;overflow-wrap:break-word}
+html#waterquest-site body.wq-consistent :is(p,li,figcaption){text-wrap:pretty;orphans:3;widows:3}
+html#waterquest-site body.wq-consistent :is(img,video){max-width:100%}
+html#waterquest-site body.wq-consistent :is(input,select,textarea){max-width:100%;min-width:0}
+html#waterquest-site body.wq-consistent :is([class*="grid"],[class*="layout"],.article-shell,.product-hero-grid)>*{min-width:0}
+html#waterquest-site body.wq-consistent :is(.cert-pill,.cert-badge,.spec-pill,.pill,.model-pill){white-space:normal;max-width:100%;overflow-wrap:anywhere;line-height:1.5}
+html#waterquest-site body.wq-consistent :is(.wq-table-scroll,.table-wrap,.v-table-wrap,.spec-table-wrap,.mobile-table-scroll){max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+.mobile-table-scroll{margin-block:24px;border-radius:8px}
+.mobile-table-scroll:focus-visible{outline:2px solid #00a9b5;outline-offset:4px}
+.wq-mobile-family{display:none}
+@media(min-width:768px){html#waterquest-site body.wq-consistent #waterquest-main .wqg-hero h1{font-size:clamp(48px,5vw,64px)!important;line-height:1.1!important;text-wrap:wrap!important}}
+html#waterquest-site body.wq-consistent .ed-legacy-anchor::before,html#waterquest-site body.wq-consistent .ed-legacy-anchor::after{display:none!important;content:none!important}
+html#waterquest-site body.wq-consistent .ed-legacy-anchor>*{display:none!important}
+html#waterquest-site body.wq-consistent :is(.ed-main,#global-bubbles,#bubbles-root,.bubble-layer){overflow-x:clip;max-width:100%}
+html#waterquest-site body.wq-consistent .atex-cert{white-space:normal!important;max-width:100%;overflow-wrap:anywhere}
+html#waterquest-site body.wq-consistent :is(a,button,input,select,textarea,summary):focus-visible{outline:2px solid #00a9b5;outline-offset:4px}
+@media(max-width:980px){
+ html#waterquest-site body.wq-consistent .wq-site-header .wq-nav-links{max-height:calc(100dvh - 72px);overflow-y:auto;overscroll-behavior:contain}
+ html#waterquest-site body.wq-consistent .wq-site-header .wq-nav-links>li>a{min-height:44px;display:flex!important;align-items:center;font-size:14px!important;line-height:1.5!important;white-space:normal!important}
+ html#waterquest-site body.wq-consistent .wq-site-header .wq-nav-toggle{width:44px!important;height:44px!important;flex-shrink:0}
+}
+@media(max-width:767px){
+ html#waterquest-site body.wq-consistent .ed-hero{min-height:0!important;height:auto!important;display:block!important}
+ html#waterquest-site body.wq-consistent .product-grid{grid-template-columns:minmax(0,1fr)!important;gap:24px!important}
+ html#waterquest-site body.wq-consistent .mat-item{flex-direction:column;align-items:flex-start;gap:12px}
+ html#waterquest-site body.wq-consistent{--mobile-gutter:20px;overflow-x:clip!important}
+ html#waterquest-site body.wq-consistent :is(main,section,article,aside,figure,form){min-width:0}
+ html#waterquest-site body.wq-consistent :is(.container,.wrap,.ed-wrap,.v-wrap,.pc-wrap,.wq-conversion-wrap,.wq-context-wrap){width:calc(100% - 40px)!important;max-width:1120px!important;margin-inline:auto!important;padding-inline:0!important}
+ html#waterquest-site body.wq-consistent :is(.container,.wrap,.ed-wrap,.v-wrap,.pc-wrap) :is(.container,.wrap,.ed-wrap,.v-wrap,.pc-wrap){width:100%!important}
+ html#waterquest-site body.wq-consistent #waterquest-main .wqg-wrap{padding-inline:20px!important}
+ html#waterquest-site body.wq-consistent :is(h1,.ed-hero h1,#waterquest-main .wqg-hero h1){font-size:clamp(30px,7.8vw,42px)!important;line-height:1.16!important;letter-spacing:-.02em!important;max-width:100%!important;margin-block:14px 22px!important}
+ html#waterquest-site body.wq-consistent :is(main,body>section) h2{font-size:clamp(25px,6vw,31px)!important;line-height:1.25!important;letter-spacing:-.012em!important}
+ html#waterquest-site body.wq-consistent :is(main,body>section) h3{font-size:21px!important;line-height:1.35!important}
+ html#waterquest-site body.wq-consistent :is(.hero-desc,.hero-lead,.ed-lead,.wq-hero-copy,.page-hero p,.product-hero-text>p,.v-hero-copy>p,.pc-hero-copy>p){font-size:18px!important;line-height:1.65!important}
+ html#waterquest-site body.wq-consistent :is(.article-body p,.article-body li){font-size:17px!important;line-height:1.75!important;font-weight:400!important}
+ html#waterquest-site body.wq-consistent :is(.article-body strong,.article-body b){font-weight:800!important}
+ html#waterquest-site body.wq-consistent :is(.eyebrow,.ed-eyebrow,.v-eyebrow,.pc-eyebrow,.wq-hero-eyebrow){font-size:12px!important;line-height:1.6!important;letter-spacing:.09em!important;white-space:normal!important}
+ html#waterquest-site body.wq-consistent :is(.ed-section,.ed-cta,.section,.v-section,.pc-section,.seawater-section,.wq-context-apps){padding-block:40px!important}
+ html#waterquest-site body.wq-consistent .ed-hero{padding-block:40px!important}
+ html#waterquest-site body.wq-consistent :is(.section-head,.section-header){margin-bottom:26px!important}
+ html#waterquest-site body.wq-consistent :is(.article-shell,.hero-grid,.product-hero-grid,.v-hero-grid,.pc-hero-grid,.grid-2,.features-grid,.design-grid,.charts-grid,.drawing-grid,.p1-chart-grid,.input-grid,.form-row,.related-grid,.pager,.ed-card-grid,.ed-checks,.fire-story-grid,.fire-savings-grid,.fire-steps){grid-template-columns:minmax(0,1fr)!important;gap:24px!important}
+ html#waterquest-site body.wq-consistent :is(.hero-content,.hero-text,.product-hero-text,.v-hero-copy,.pc-hero-copy){max-width:100%!important}
+ html#waterquest-site body.wq-consistent :is(.article-card,.toc,.ed-card,.calc-card,.spec-table-card){padding:24px 20px!important}
+ html#waterquest-site body.wq-consistent .article-card>:first-child{margin-top:0!important}
+ html#waterquest-site body.wq-consistent .article-body h2{margin-top:32px!important}
+ html#waterquest-site body.wq-consistent .article-body :is(blockquote,.ed-equation){margin-inline:0;padding:18px!important}
+ html#waterquest-site body.wq-consistent :is(.toc,.article-sidebar){position:static!important;max-height:none!important}
+ html#waterquest-site body.wq-consistent :is(.hero-ctas,.hero-actions,.product-hero-ctas,.ed-actions,.btn-row,.cta-btns,.cta-btn-row,.wq-hero-actions){display:flex!important;flex-wrap:wrap!important;gap:12px!important;align-items:stretch!important}
+ html#waterquest-site body.wq-consistent :is(.hero-ctas,.hero-actions,.product-hero-ctas,.ed-actions,.btn-row,.cta-btns,.cta-btn-row,.wq-hero-actions)>a{min-height:48px;display:flex;align-items:center;justify-content:center;text-align:center;max-width:100%;white-space:normal;line-height:1.45!important}
+ html#waterquest-site body.wq-consistent :is(.btn,.ed-button,.btn-pump,.btn-motor,.btn-aqua,.btn-outline,.wq-hero-cta){font-size:16px!important;line-height:1.45!important;white-space:normal!important;min-height:48px;box-sizing:border-box;max-width:100%}
+ html#waterquest-site body.wq-consistent :is(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),select,textarea){font-size:16px!important;line-height:1.5!important;min-height:48px}
+ html#waterquest-site body.wq-consistent textarea{min-height:130px}
+ html#waterquest-site body.wq-consistent :is(label,.input-label){line-height:1.5!important}
+ html#waterquest-site body.wq-consistent :is(.formula,.calc-formula,.formula-body,.formula-box,.code-row,pre){max-width:100%;overflow-x:auto;white-space:normal;overflow-wrap:anywhere}
+ html#waterquest-site body.wq-consistent :is(.mobile-table-scroll,.wq-table-scroll,.table-wrap,.v-table-wrap,.spec-table-wrap) table{min-width:540px}
+ html#waterquest-site body.wq-consistent :is(th,td){padding:13px 15px!important;font-size:15px!important;line-height:1.55!important;vertical-align:top}
+ html#waterquest-site body.wq-consistent .wq-mobile-family{display:block;flex:1;min-width:0;background:#102b43;color:#FFFFFF;border:1px solid #44758a;border-radius:6px;padding:8px 28px 8px 10px;font-size:14px!important;min-height:46px}
+ html#waterquest-site body.wq-consistent .wq-model-nav:has(.wq-mobile-family) :is(.wq-model-links,.wq-model-label,button){display:none!important}
+ html#waterquest-site body.wq-consistent .wq-model-nav-inner{width:calc(100% - 32px);gap:10px;padding-block:9px}
+ html#waterquest-site body.wq-consistent .wq-section-back{max-width:104px;min-height:46px;font-size:12px!important;line-height:1.4}
+ html#waterquest-site body.wq-consistent :is(.v-nav,.pc-section-nav){position:static!important}
+ html#waterquest-site body.wq-consistent :is(.v-nav,.pc-section-nav) :is(.v-wrap,.pc-wrap){display:flex;overflow-x:auto;gap:16px;flex-wrap:nowrap;padding-block:12px!important}
+ html#waterquest-site body.wq-consistent :is(.v-nav,.pc-section-nav) a{min-height:44px;display:flex;align-items:center;flex-shrink:0}
+ html#waterquest-site body.wq-consistent .wq-site-header .wq-header-inner{gap:12px!important}
+ html#waterquest-site body.wq-consistent .wq-site-header .wq-brand-line{font-size:9px!important;letter-spacing:.11em!important}
+ html#waterquest-site body.wq-consistent footer.wq-site-footer{padding:40px 20px 24px!important}
+ html#waterquest-site body.wq-consistent footer.wq-site-footer .wq-footer-grid{grid-template-columns:1fr!important;gap:28px!important}
+ html#waterquest-site body.wq-consistent footer.wq-site-footer a{display:inline-flex;align-items:center;min-height:44px;line-height:1.5!important;overflow-wrap:anywhere}
+ html#waterquest-site body.wq-consistent footer.wq-site-footer ul{gap:2px!important}
+ html#waterquest-site body.wq-consistent footer.wq-site-footer h2{margin-bottom:10px!important}
+ html#waterquest-site body.wq-consistent footer.wq-site-footer .wq-footer-bottom{flex-direction:column!important;gap:12px!important}
+ html#waterquest-site body.wq-consistent :is(.modal,.modal-content,.modal-panel){max-width:calc(100vw - 32px);max-height:calc(100dvh - 32px);overflow-y:auto}
+ html#waterquest-site body.wq-consistent #waterquest-main :is(.wqg-component-grid,.wqg-glossary-grid,.wqg-field-grid){grid-template-columns:1fr!important}
+ html#waterquest-site body.wq-consistent #waterquest-main .wqg-page-nav{position:static!important}
+ html#waterquest-site body.wq-consistent #waterquest-main #hero{padding-top:110px!important}
+ html#waterquest-site body.wq-consistent #waterquest-main .wqg-section{padding-block:44px!important}
+ html#waterquest-site body.wq-consistent :is(.reveal,.fade-in){opacity:1!important;transform:none!important}
+ html#waterquest-site body.wq-consistent :is(#global-bubbles,#bubbles-root,.hero-bg-mesh,.hero-grid-bg){overflow:hidden;contain:paint;pointer-events:none}
+ html#waterquest-site body.wq-consistent .bubble{animation:none!important}
+}
+@media(max-width:900px){
+ html#waterquest-site body.wq-consistent .energy-loop{padding:24px 20px!important}
+ html#waterquest-site body.wq-consistent .energy-loop .flow-row{display:flex!important;flex-direction:column!important;gap:12px!important;align-items:stretch!important}
+ html#waterquest-site body.wq-consistent .energy-loop .flow-node{width:100%;min-width:0;flex:auto}
+ html#waterquest-site body.wq-consistent .energy-loop .flow-arrow{align-self:center;transform:rotate(90deg);margin:0;line-height:1}
+}
+@media(max-width:380px){
+ html#waterquest-site body.wq-consistent :is(.hero-ctas,.hero-actions,.product-hero-ctas,.ed-actions,.btn-row,.cta-btns,.cta-btn-row,.wq-hero-actions)>a{width:100%}
+ html#waterquest-site body.wq-consistent :is(.spec-grid,.v-stats,.v-spec-grid,.pc-stat-grid){grid-template-columns:minmax(0,1fr)!important}
+ html#waterquest-site body.wq-consistent .article-card{padding-inline:18px!important}
+}
+@media(max-width:767px){
+ html#waterquest-site body.wq-consistent .calc-card{padding:0!important}
+ html#waterquest-site body.wq-consistent :is(.calc-header,.calc-body){padding:22px 20px!important}
+ html#waterquest-site body.wq-consistent .calc-section{padding-block:40px!important}
+ html#waterquest-site body.wq-consistent .result-multi{display:grid;grid-template-columns:1fr!important;gap:14px}
+ html#waterquest-site body.wq-consistent .field-label{gap:8px;flex-wrap:wrap;font-size:13px!important;letter-spacing:.04em!important;line-height:1.5}
+ html#waterquest-site body.wq-consistent :is(.units-toggle button,.formula-toggle){min-height:44px}
+ html#waterquest-site body.wq-consistent .field-range input[type="range"]{min-height:28px}
+ html#waterquest-site body.wq-consistent #waterquest-main .wqg-kicker{font-size:12px!important;line-height:1.7!important;letter-spacing:.1em!important}
+}
+@media(prefers-reduced-motion:reduce){html#waterquest-site{scroll-behavior:auto!important}html#waterquest-site body.wq-consistent :is(.bubble,.reveal,.fade-in){animation:none!important;transition:none!important;opacity:1!important;transform:none!important}}

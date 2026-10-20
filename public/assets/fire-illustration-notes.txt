@@ -1,0 +1,18 @@
+WaterQuest fire-suppression illustrations
+Created 26 September 2026 using the built-in image-generation tool.
+
+Assets: fire-triangle.png; droplet-size-guide.png
+The diagram bands match the existing page and are illustrative, not standardised approval classes.
+
+References:
+https://www.osha.gov/etools/evacuation-plans-procedures/emergency-standards/portable-extinguishers/about
+https://www.nist.gov/publications/fire-fighting-properties-nistir-6191
+https://www.nist.gov/document/r0000240pdf
+
+Final prompts:
+
+fire-triangle
+Use case: scientific-educational. Asset type: finished illustration for the WaterQuest Solutions water-hydraulics educational website. Create a clean, polished fire triangle infographic on a solid deep navy #0D1628 background, square composition. Match a restrained engineering website with aqua #00EEFF linework, white lettering, and a small ember-orange #E84830 flame accent. One large equilateral triangle with three clearly connected vertices. Top vertex: HEAT with a small thermometer/heat-wave icon. Bottom-left vertex: FUEL with a simple solid-fuel/log icon. Bottom-right vertex: OXYGEN with a simple O2 molecule icon. A beautiful stylised orange flame inside the triangle. Small aqua water droplets near the HEAT side are a visual reference only. Readable geometric sans-serif lettering similar to Avenir/Nunito Sans. Exact visible text only: 'THE FIRE TRIANGLE', 'HEAT', 'FUEL', 'OXYGEN'. Large type, generous space around labels, impeccable spelling. Educational, refined, flat vector-like technical illustration with subtle luminous accents; no photorealistic scene, no gradients that obscure labels, no tiny text, no watermarks, no logo. No extra labels, no false claim that water removes fuel or works on every fire. All three labels must sit well inside the canvas with generous margins.
+
+droplet-size-guide
+Use case: scientific-educational. Asset type: companion diagram beside a droplet-size table on WaterQuest Solutions website. Create a polished tall portrait infographic, roughly 2:3 aspect ratio, solid deep navy #0A0F1A background, aqua #00EEFF and white. Four generously spaced horizontal rows with subtle aqua separators. Each row shows ONE spherical water droplet on the left, stylised luminous aqua sphere, progressively larger from top to bottom (illustrative sizing, not to scale), and large legible white text on right. Rows exact text: 'ULTRA-FINE MIST' with '10–50 µm'; 'FINE MIST' with '50–200 µm'; 'MEDIUM DROPLET' with '200–400 µm'; 'SPRAY DROPLET' with '400–1000 µm'. Main title exactly 'DROPLET SIZE'. Under title exactly 'Illustrative size bands'. Under rows show two concise educational notes with subtle directional arrow symbols: 'Smaller droplets' then 'More surface area per water volume'; 'Larger droplets' then 'More momentum at the same speed'. Bottom small but readable text exactly 'Not to scale'. Fonts geometric sans-serif closely resembling Avenir and Nunito Sans. Need exceptionally clear type when image displayed at about 340 pixels wide; use large lettering and good line breaks, minimal clutter. No application claims, no universal fire approval classes, no pressure values, no extra text, no logo, no watermark. This is a scientific teaching graphic, not a graph or chart claiming exact measured scaling.

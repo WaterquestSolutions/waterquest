@@ -1,31 +1,19 @@
-# WaterQuest Solutions website
+# WaterQuest Solutions
 
-Complete static website files, including the Power Centre models and water hydraulic valve range added in September 2026.
+This repository contains the current WaterQuest Solutions website. Edit the HTML, styles, images and calculator modules in `public/`. The homepage, navy/aqua branding, 129 Knowledge Hub guides and Materials Engineering section match the verified live release of 19 October 2026.
 
-## Website files
+## Build and validation
 
-The web root is `public/`. It contains 238 HTML pages and their assets.
+Use Node.js 22 or newer and Python 3. Run `npm ci --ignore-scripts` and `npm run build`. The build checks local page and asset references, reciprocal guide/product links and gated document availability. Run `npm run verify:baseline` to compare all 308 captured route destinations with the recovered live release; deliberate future page changes will require updating that release baseline.
 
-- Valve range: `/products/water-hydraulic-valves/` — searchable index and 20 detail pages.
-- Power Centre overview: `/products/power-center-reverse-osmosis/`.
-- New models: `/products/power-centre-reverse-osmosis/pc250/`, `/pc300/`, `/pc500/` and `/pc1000/` beneath the same model parent path.
+## Deployment
 
-The existing overview links to all four new models. The sitemap includes every HTML page.
+The connected Vercel project is `temporary-turbo-nickel-8xnl9g7` in the `watequest-solutions` team. Its production branch is `main`, repository root is the project root, and `vercel.json` sets the output directory to `public`.
 
-## Local preview
+The repository is a complete static source tree with its existing Vercel functions in `api/`. It does not need a separate palette deployment or an archived release folder to produce its current pages. Redirects and the product-download rewrites are included in `vercel.json`.
 
-```sh
-python3 -m http.server 8080 --directory public
-```
+Product PDFs are versioned and the catalogue ZIP is rebuilt from them; both are stored in `private-downloads/` and served through the existing email-gated function. Never copy these documents into `public/downloads/`. Enquiry and CRM functions are preserved; credentials belong in Vercel environment variables. CRM receipt has not been verified by this repository recovery.
 
-Open `http://localhost:8080/`. Serve from the domain root because links and assets use root-relative paths.
+## Recovery provenance
 
-## Hosting integration
-
-Use `public/` as the static output directory. No asset build step is required. Existing GitHub-connected hosting projects may deploy commits automatically. This repository does not configure hosting or DNS.
-
-The inherited site contains `/api/zoho/intake` and `/api/zoho/event` integration calls. Their existing backend must be retained or connected by the hosting project; this static repository does not include credentials or provision those endpoints. The new valve option-enquiry links open an email draft.
-
-## Validation
-
-`docs/site-validation.json` records structural checks. The new Power Centre and valve pages were also reviewed in a local browser. Product configuration details marked “Confirm” require engineering review before final selection.
+The original base and palette deployment sources were recovered through authenticated Vercel access and all 892 original source hashes were checked. Their builds were combined into this directly editable source tree. Five existing public route overrides were retained exactly. See `docs/source-recovery.json` and `scripts/deployed-baseline.json` for the deployment identifiers and release comparison.

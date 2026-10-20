@@ -1,0 +1,16 @@
+{
+  "baseDeployment": "dpl_6AiE5jBLD1yheM7M8nrzoUuQU9h6",
+  "overlayDeployment": "dpl_GUKzwSA3WthARo4nMYpaisAcRWFN",
+  "recoveredFiles": 892,
+  "sourceHashesVerified": true,
+  "routesCompared": 308,
+  "failures": [],
+  "preservedPublicRouteOverrides": [
+    "pilot/index.html",
+    "sluice-gates/marine-tidal-gate-water-hydraulics/index.html",
+    "sluice-gates/municipal-outfall-sluice-gate/index.html",
+    "sluice-gates/sluice-gate-project-examples/index.html",
+    "sluice-gates/wastewater-channel-sluice-gate/index.html"
+  ],
+  "calculatorLegacyRedirects": 20
+}

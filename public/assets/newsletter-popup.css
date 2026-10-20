@@ -1,0 +1,24 @@
+@layer wqs-experience {
+ html body #wq-newsletter-popup {box-sizing:border-box!important;width:min(650px,calc(100% - 32px))!important;max-height:calc(100dvh - 32px)!important;margin:auto!important;padding:36px!important;overflow:auto!important;background:#0a0a0a!important;color:#fff!important;border:1px solid #C81F22!important;border-radius:12px!important;box-shadow:0 24px 80px #0009!important;font-family:Arial,Helvetica,sans-serif!important;}
+ html body #wq-newsletter-popup::backdrop {background:#000b!important;}
+ html body #wq-newsletter-popup * {box-sizing:border-box!important;}
+ html body #wq-newsletter-popup h2 {font-size:clamp(25px,4vw,34px)!important;line-height:1.15!important;margin:10px 0 18px!important;color:#fff!important;}
+ html body #wq-newsletter-popup p {font-size:16px!important;line-height:1.6!important;color:#fff!important;margin:12px 0!important;}
+ html body #wq-newsletter-popup :is(h2 span,a,.wq-newsletter-eyebrow) {color:#E53238!important;}
+ html body #wq-newsletter-popup .wq-newsletter-eyebrow {text-transform:uppercase!important;font-size:12px!important;font-weight:700!important;letter-spacing:.18em!important;}
+ html body #wq-newsletter-popup .wq-popup-form {display:grid!important;gap:12px!important;margin:24px 0 12px!important;}
+ html body #wq-newsletter-popup input[type=email] {width:100%!important;min-height:48px!important;background:#161616!important;border:1px solid #777!important;border-radius:5px!important;color:#fff!important;padding:12px!important;font-size:16px!important;}
+ html body #wq-newsletter-popup .wq-popup-consent {display:flex!important;gap:10px!important;align-items:flex-start!important;font-size:14px!important;line-height:1.5!important;}
+ html body #wq-newsletter-popup input[type=checkbox] {flex:0 0 18px!important;width:18px!important;height:18px!important;margin:2px 0 0!important;accent-color:#C81F22!important;}
+ html body #wq-newsletter-popup button {background:#C81F22!important;color:#fff!important;border:1px solid #C81F22!important;border-radius:5px!important;padding:12px 18px!important;min-height:44px!important;font-size:15px!important;cursor:pointer!important;}
+ html body #wq-newsletter-popup button:hover {background:#E53238!important;}
+ html body #wq-newsletter-popup button:disabled {opacity:.6!important;cursor:wait!important;}
+ html body #wq-newsletter-popup :focus-visible {outline:2px solid #fff!important;outline-offset:3px!important;}
+ html body #wq-newsletter-popup .wq-newsletter-close {position:absolute!important;right:8px!important;top:8px!important;font-size:24px!important;background:transparent!important;border:0!important;padding:2px 12px!important;}
+ html body #wq-newsletter-popup .wq-newsletter-dismiss {background:transparent!important;border:1px solid #777!important;width:100%!important;}
+ html body #wq-newsletter-popup .wq-newsletter-privacy {font-size:12px!important;line-height:1.5!important;color:#ccc!important;}
+ html body #wq-newsletter-popup [hidden],html body section[aria-labelledby="newsletter-heading"][hidden] {display:none!important;}
+ html body #wq-newsletter-popup .wq-popup-status:empty {display:none!important;}
+ @media(max-width:500px) {html body #wq-newsletter-popup {padding:30px 20px 20px!important;}}
+ @media print {html body #wq-newsletter-popup {display:none!important;}}
+}

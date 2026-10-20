@@ -1,0 +1,472 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "installCommand": "npm ci --ignore-scripts",
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/knowledge-hub/engineering-calculators/motor-speed-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/motor-speed-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/pipe-velocity-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/pipe-velocity-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/reynolds-number-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/reynolds-number-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/power-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/power-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/pressure-loss-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/pressure-loss-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/accumulator-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/accumulator-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/pump-sizing-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/pump-sizing-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/energy-savings-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/energy-savings-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/carbon-savings-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/carbon-savings-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/pressure-drop-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/pressure-drop-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/seal-compression-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/seal-compression-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/surface-finish-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/surface-finish-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/orifice-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/orifice-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/hydraulic-efficiency-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/hydraulic-efficiency-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/flow-rate-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/flow-rate-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/roi-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/roi-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/cylinder-force-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/cylinder-force-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/water-hammer-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/water-hammer-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator.html",
+      "destination": "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/project-brief.txt",
+      "destination": "/project-brief.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/wastewater-solutions/watergate/",
+      "destination": "/sluice-gates/",
+      "permanent": true
+    },
+    {
+      "source": "/wastewater-solutions/watergate/:path*/",
+      "destination": "/sluice-gates/",
+      "permanent": true
+    },
+    {
+      "source": "/calculations/",
+      "destination": "/knowledge-hub/engineering-calculators/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/hydraulic-force-calculator/",
+      "destination": "/knowledge-hub/engineering-calculators/cylinder-force-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/cylinder-sizing-calculator/",
+      "destination": "/knowledge-hub/engineering-calculators/cylinder-force-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/hydraulic-power-calculator/",
+      "destination": "/knowledge-hub/engineering-calculators/power-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/pump-flow-calculator/",
+      "destination": "/knowledge-hub/engineering-calculators/flow-rate-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/pipe-pressure-drop-calculator/",
+      "destination": "/knowledge-hub/engineering-calculators/pressure-drop-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-hub/engineering-calculators/reference/",
+      "destination": "/knowledge-hub/engineering-calculators/",
+      "permanent": true
+    },
+    {
+      "source": "/tier-one-product-pages-f1-cylinder-main-with-pressure-files-files-f1-cylinders-main-page/",
+      "destination": "/products/water-hydraulic-cylinders/",
+      "permanent": true
+    },
+    {
+      "source": "/products/janus-power-center-reverse-osmosis/",
+      "destination": "/products/power-centre-reverse-osmosis/",
+      "permanent": true
+    },
+    {
+      "source": "/products/power-center-reverse-osmosis/",
+      "destination": "/products/power-centre-reverse-osmosis/",
+      "permanent": true
+    },
+    {
+      "source": "/products/janus-axial-piston-fire-pumps/",
+      "destination": "/products/axial-piston-fire-pumps/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-motors/m6/",
+      "destination": "/products/water-hydraulic-motors/m6-water-hydraulic-motor/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-motors/m30/",
+      "destination": "/products/water-hydraulic-motors/m30-water-hydraulic-motor/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-motors/m15/",
+      "destination": "/products/water-hydraulic-motors/m15-water-hydraulic-motor/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-motors/m60/",
+      "destination": "/products/water-hydraulic-motors/m60-axial-piston-water-hydraulic-motor/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-motors/m3/",
+      "destination": "/products/water-hydraulic-motors/m3-water-hydraulic-motor/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-motors/m180/",
+      "destination": "/products/water-hydraulic-motors/m180-axial-piston-water-hydraulic-motor/",
+      "permanent": true
+    },
+    {
+      "source": "/f1-desal-power-center/",
+      "destination": "/products/power-centre-reverse-osmosis/",
+      "permanent": true
+    },
+    {
+      "source": "/t-p3-pump-4/",
+      "destination": "/products/axial-piston-pumps/p3/",
+      "permanent": true
+    },
+    {
+      "source": "/t-p30-pump/",
+      "destination": "/products/axial-piston-pumps/p30/",
+      "permanent": true
+    },
+    {
+      "source": "/t-p180-pump/",
+      "destination": "/products/axial-piston-pumps/p180/",
+      "permanent": true
+    },
+    {
+      "source": "/t-p60-pump-1/",
+      "destination": "/products/axial-piston-pumps/p60/",
+      "permanent": true
+    },
+    {
+      "source": "/tcheck-graph-4-p15-pump/",
+      "destination": "/products/axial-piston-pumps/p15/",
+      "permanent": true
+    },
+    {
+      "source": "/glossary/glossary%20copy/",
+      "destination": "/glossary/",
+      "permanent": true
+    },
+    {
+      "source": "/assets/seawater-graphs/P6-flow-power.png",
+      "destination": "/assets/seawater-graphs/P6-flow-power.svg",
+      "permanent": true
+    },
+    {
+      "source": "/assets/seawater-graphs/P6-torque-efficiency.png",
+      "destination": "/assets/seawater-graphs/P6-torque-efficiency.svg",
+      "permanent": true
+    },
+    {
+      "source": "/assets/seawater-graphs/P15-flow-power.png",
+      "destination": "/assets/seawater-graphs/P15-flow-power.svg",
+      "permanent": true
+    },
+    {
+      "source": "/assets/seawater-graphs/P15-torque-efficiency.png",
+      "destination": "/assets/seawater-graphs/P15-torque-efficiency.svg",
+      "permanent": true
+    },
+    {
+      "source": "/assets/seawater-graphs/P30-flow-power.png",
+      "destination": "/assets/seawater-graphs/P30-flow-power.svg",
+      "permanent": true
+    },
+    {
+      "source": "/assets/seawater-graphs/P30-torque-efficiency.png",
+      "destination": "/assets/seawater-graphs/P30-torque-efficiency.svg",
+      "permanent": true
+    },
+    {
+      "source": "/assets/seawater-graphs/P60-flow-power.png",
+      "destination": "/assets/seawater-graphs/P60-flow-power.svg",
+      "permanent": true
+    },
+    {
+      "source": "/assets/seawater-graphs/P60-torque-efficiency.png",
+      "destination": "/assets/seawater-graphs/P60-torque-efficiency.svg",
+      "permanent": true
+    },
+    {
+      "source": "/assets/seawater-graphs/P180-flow-power.png",
+      "destination": "/assets/seawater-graphs/P180-flow-power.svg",
+      "permanent": true
+    },
+    {
+      "source": "/assets/seawater-graphs/P180-torque-efficiency.png",
+      "destination": "/assets/seawater-graphs/P180-torque-efficiency.svg",
+      "permanent": true
+    },
+    {
+      "source": "/assets/seawater-graphs/P300-flow-power.png",
+      "destination": "/assets/seawater-graphs/P300-flow-power.svg",
+      "permanent": true
+    },
+    {
+      "source": "/assets/seawater-graphs/P300-torque-efficiency.png",
+      "destination": "/assets/seawater-graphs/P300-torque-efficiency.svg",
+      "permanent": true
+    },
+    {
+      "source": "/assets/seawater-graphs/P600-flow-power.png",
+      "destination": "/assets/seawater-graphs/P600-flow-power.svg",
+      "permanent": true
+    },
+    {
+      "source": "/assets/seawater-graphs/P600-torque-efficiency.png",
+      "destination": "/assets/seawater-graphs/P600-torque-efficiency.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/duplex-seawater-pumps/graphs/P6-flow-power.png",
+      "destination": "/assets/seawater-graphs/P6-flow-power.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/duplex-seawater-pumps/graphs/P6-torque-efficiency.png",
+      "destination": "/assets/seawater-graphs/P6-torque-efficiency.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/duplex-seawater-pumps/graphs/P15-flow-power.png",
+      "destination": "/assets/seawater-graphs/P15-flow-power.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/duplex-seawater-pumps/graphs/P15-torque-efficiency.png",
+      "destination": "/assets/seawater-graphs/P15-torque-efficiency.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/duplex-seawater-pumps/graphs/P30-flow-power.png",
+      "destination": "/assets/seawater-graphs/P30-flow-power.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/duplex-seawater-pumps/graphs/P30-torque-efficiency.png",
+      "destination": "/assets/seawater-graphs/P30-torque-efficiency.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/duplex-seawater-pumps/graphs/P60-flow-power.png",
+      "destination": "/assets/seawater-graphs/P60-flow-power.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/duplex-seawater-pumps/graphs/P60-torque-efficiency.png",
+      "destination": "/assets/seawater-graphs/P60-torque-efficiency.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/duplex-seawater-pumps/graphs/P180-flow-power.png",
+      "destination": "/assets/seawater-graphs/P180-flow-power.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/duplex-seawater-pumps/graphs/P180-torque-efficiency.png",
+      "destination": "/assets/seawater-graphs/P180-torque-efficiency.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/duplex-seawater-pumps/graphs/P300-flow-power.png",
+      "destination": "/assets/seawater-graphs/P300-flow-power.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/duplex-seawater-pumps/graphs/P300-torque-efficiency.png",
+      "destination": "/assets/seawater-graphs/P300-torque-efficiency.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/duplex-seawater-pumps/graphs/P600-flow-power.png",
+      "destination": "/assets/seawater-graphs/P600-flow-power.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/duplex-seawater-pumps/graphs/P600-torque-efficiency.png",
+      "destination": "/assets/seawater-graphs/P600-torque-efficiency.svg",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-valves/valve-dn12-po-check/",
+      "destination": "/products/water-hydraulic-valves/po-check-valve-dn12/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-valves/valve-dn16-directional/",
+      "destination": "/products/water-hydraulic-valves/dn16-directional-valves/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-valves/valve-4-3-manual/",
+      "destination": "/products/water-hydraulic-valves/4-3-directional-control-valves/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-valves/valve-electronic-flow-control/",
+      "destination": "/products/water-hydraulic-valves/electronic-flow-control-valves/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-valves/valve-electronic-pressure-control/",
+      "destination": "/products/water-hydraulic-valves/electronic-pressure-control-valve/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-valves/valve-hose-burst/",
+      "destination": "/products/water-hydraulic-valves/hose-burst-valve/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-valves/valve-4-2-3-2-directional/",
+      "destination": "/products/water-hydraulic-valves/4-2-3-2-directional-control-valves/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-valves/valve-2-2-pilot/",
+      "destination": "/products/water-hydraulic-valves/2-2-pilot-valves/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-valves/valve-flow-control/",
+      "destination": "/products/water-hydraulic-valves/flow-control-valve/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-valves/valve-check-valves/",
+      "destination": "/products/water-hydraulic-valves/check-valves/",
+      "permanent": true
+    },
+    {
+      "source": "/products/water-hydraulic-valves/valve-actuation-cards/",
+      "destination": "/products/water-hydraulic-valves/actuation-cards/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/project-brief.pdf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"WaterQuest-Project-Brief.pdf\""
+        }
+      ]
+    }
+  ],
+  "functions": {
+    "api/product-download.js": {
+      "includeFiles": "private-downloads/**",
+      "maxDuration": 60
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/downloads/:file(.*\\.pdf)",
+      "destination": "/api/product-download?file=:file"
+    },
+    {
+      "source": "/downloads/:file(.*\\.zip)",
+      "destination": "/api/product-download?file=:file"
+    }
+  ]
+}

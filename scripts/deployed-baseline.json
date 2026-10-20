@@ -1,0 +1,1542 @@
+[
+  {
+    "route": "/about/",
+    "file": "about/index.html",
+    "sha256": "bfda004496cc5f35ae4fd206359e5092311e7c1bc86d220a6076e71c2ddf83b3"
+  },
+  {
+    "route": "/bilge-pump/",
+    "file": "bilge-pump/index.html",
+    "sha256": "2e1ee71dba8b9481faaa8fad808cb4be65ae1d2b3a0762e249dad2ed67987786"
+  },
+  {
+    "route": "/contact/",
+    "file": "contact/index.html",
+    "sha256": "ff613997d46f70f2cbe009fde05c326124962ff726298641339af37045e222b7"
+  },
+  {
+    "route": "/downloads/product-literature/",
+    "file": "downloads/product-literature/index.html",
+    "sha256": "762ad21b8ed559a9694d03b5a372ca81c0e901d098f6c7113be230ceb59f31e1"
+  },
+  {
+    "route": "/f1-desal-power-center/",
+    "file": "products/power-centre-reverse-osmosis/index.html",
+    "sha256": "9563d71891447254a45189ce6699c398c0a87ed97b78d86568d9de47777a1ea5"
+  },
+  {
+    "route": "/glossary/316l-stainless-steel/",
+    "file": "glossary/316l-stainless-steel/index.html",
+    "sha256": "c693ad439d87d8ec6c193fb9cee79a85aa5845edf29ce69dc73a3102af15ac0c"
+  },
+  {
+    "route": "/glossary/axial-piston-pump/",
+    "file": "glossary/axial-piston-pump/index.html",
+    "sha256": "63319cc950bd10ce61d533e2ed957fdb34e0e6eed4ea1f56564f915f89e3a5f6"
+  },
+  {
+    "route": "/glossary/back-pressure/",
+    "file": "glossary/back-pressure/index.html",
+    "sha256": "5d4fd39b68515046eca0fa9d368fb301833ee572f942f109277998f8b8f7a115"
+  },
+  {
+    "route": "/glossary/fluid-power/",
+    "file": "glossary/fluid-power/index.html",
+    "sha256": "40ffa0f616352e8a8fe03b4d11748561b3f4f0ab7994182a1ecd0e48053e79d3"
+  },
+  {
+    "route": "/glossary/glossary copy/",
+    "file": "glossary/index.html",
+    "sha256": "39632a0bc0cc00269cbc9666cfd57987745c9b91e7a045cd00e9c5b8f94ff52b"
+  },
+  {
+    "route": "/glossary/hydraulic-actuator/",
+    "file": "glossary/hydraulic-actuator/index.html",
+    "sha256": "af6fa057b278562463c0dfd3137e54d48b35903c12a708183804cae1b19a6845"
+  },
+  {
+    "route": "/glossary/hydraulic-power/",
+    "file": "glossary/hydraulic-power/index.html",
+    "sha256": "307b0b15b7e78a50578db73f7e84c7c2c6072082e58f3dd48b3529ef0d9c9d87"
+  },
+  {
+    "route": "/glossary/hydraulic-pressure/",
+    "file": "glossary/hydraulic-pressure/index.html",
+    "sha256": "eef30165c666feb5d996b0a7128fefe4fadfd47f46593d453961995233bd496a"
+  },
+  {
+    "route": "/glossary/",
+    "file": "glossary/index.html",
+    "sha256": "39632a0bc0cc00269cbc9666cfd57987745c9b91e7a045cd00e9c5b8f94ff52b"
+  },
+  {
+    "route": "/glossary/peek-polyether-ether-ketone/",
+    "file": "glossary/peek-polyether-ether-ketone/index.html",
+    "sha256": "0df16812796240c1b116236877308c2b4f6cce0326d8fd9dcf4224b8c97c89e1"
+  },
+  {
+    "route": "/glossary/volumetric-efficiency/",
+    "file": "glossary/volumetric-efficiency/index.html",
+    "sha256": "2b86ec4c5f15dd1288a39684c3ceb09ecfb75be5a13c06d2511467831c6a6879"
+  },
+  {
+    "route": "/",
+    "file": "index.html",
+    "sha256": "ec298fa7465fb6866822cf615afafb496132f822beb9bf56961eec58c756b70a"
+  },
+  {
+    "route": "/industries/",
+    "file": "industries/index.html",
+    "sha256": "abd686d9fbd89191187e11d30b0c2da3dc317911024456e7a1a290562c9c9fed"
+  },
+  {
+    "route": "/industries/water-hydraulic-systems-for-hydrogen-production/",
+    "file": "industries/water-hydraulic-systems-for-hydrogen-production/index.html",
+    "sha256": "31a24110e2f35ac364e64767a1122d824693e6f4c390f522f47e7b3430d26b24"
+  },
+  {
+    "route": "/industries/water-hydraulic-systems-for-pulp-and-paper-mills/",
+    "file": "industries/water-hydraulic-systems-for-pulp-and-paper-mills/index.html",
+    "sha256": "2a6cdb71e121eb6d4c82782c0f2f2a82f54235e759b659c86db2b770110cfeab"
+  },
+  {
+    "route": "/industries/water-hydraulic-systems-for-wastewater-treatment-plants/",
+    "file": "industries/water-hydraulic-systems-for-wastewater-treatment-plants/index.html",
+    "sha256": "945fc64c378ff57cbf25dced80d9c8855e18b230746ddd7fbd183ca35aea79ab"
+  },
+  {
+    "route": "/industries/water-hydraulics-for-agriculture-and-irrigation-systems/",
+    "file": "industries/water-hydraulics-for-agriculture-and-irrigation-systems/index.html",
+    "sha256": "ed4f40ce40777ee55aa992e18f098d7d2ffcc7067425031d6470fe96be884aff"
+  },
+  {
+    "route": "/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/",
+    "file": "industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/index.html",
+    "sha256": "61869c525618b233222fc859e03f82f92969e69c2a4dc194688f2a9a94963509"
+  },
+  {
+    "route": "/industries/water-hydraulics-for-dust-control-systems/",
+    "file": "industries/water-hydraulics-for-dust-control-systems/index.html",
+    "sha256": "6b4edbaa7e89255fa5f97a38e65ed3c89348bb01eb13b9f9f2d34140d15f4130"
+  },
+  {
+    "route": "/industries/water-hydraulics-for-fire-suppression-systems/data-centre-use-case/",
+    "file": "industries/water-hydraulics-for-fire-suppression-systems/data-centre-use-case/index.html",
+    "sha256": "50ab8fb4693ad6b9e0a46e44638ba24a3054e945763f816560d8af59b62058d6"
+  },
+  {
+    "route": "/industries/water-hydraulics-for-fire-suppression-systems/",
+    "file": "industries/water-hydraulics-for-fire-suppression-systems/index.html",
+    "sha256": "14bb839513d047d5fff570a898cfa3f0faa4f3dc60995ca44f8adcbeea7d902a"
+  },
+  {
+    "route": "/industries/water-hydraulics-for-food-and-beverage-manufacturing/",
+    "file": "industries/water-hydraulics-for-food-and-beverage-manufacturing/index.html",
+    "sha256": "0b29e3965f592f47c9f13628955c75a92b6abb714c502fc7745cb676ebfd696e"
+  },
+  {
+    "route": "/industries/water-hydraulics-for-forestry-and-logging-operations/",
+    "file": "industries/water-hydraulics-for-forestry-and-logging-operations/index.html",
+    "sha256": "b6dea7056d9ffab96fd4ada45dd2c9d4c45752ea71df71b543712e58d7e1ada3"
+  },
+  {
+    "route": "/industries/water-hydraulics-for-hydroelectric-power/",
+    "file": "industries/water-hydraulics-for-hydroelectric-power/index.html",
+    "sha256": "bc740e10d05ac249fce8b128fb2a4dbbab5d3000fe489ab0fdf26b7f96f88b59"
+  },
+  {
+    "route": "/industries/water-hydraulics-for-marine-and-coastal-applications/",
+    "file": "industries/water-hydraulics-for-marine-and-coastal-applications/index.html",
+    "sha256": "46b8f1b32f38e357de7eb57cbcc9804f8b80ce0366a3ea5936186ba652208c84"
+  },
+  {
+    "route": "/industries/water-hydraulics-for-mining-operations/",
+    "file": "industries/water-hydraulics-for-mining-operations/index.html",
+    "sha256": "cd177b7431e1279c8bba64140ec45ed5e2e025dcbd9244240850e83371e5ff2b"
+  },
+  {
+    "route": "/industries/water-hydraulics-for-municipal-infrastructure/",
+    "file": "industries/water-hydraulics-for-municipal-infrastructure/index.html",
+    "sha256": "f45011cd4795da6a0446b478be5a501898ee061d89febc8d14224db0ac32a360"
+  },
+  {
+    "route": "/industries/water-hydraulics-for-odor-control-and-ventilation-systems/",
+    "file": "industries/water-hydraulics-for-odor-control-and-ventilation-systems/index.html",
+    "sha256": "0d2320b377df428d16ce80bfffbffd72fdbbddbd2f19798a92691a7d950c424f"
+  },
+  {
+    "route": "/industries/water-hydraulics-for-water-parks-and-wave-pools/",
+    "file": "industries/water-hydraulics-for-water-parks-and-wave-pools/index.html",
+    "sha256": "712cb2ca62e8cdfc8c704061097b882358a59d63f4fb434845a0c78e64a5c23b"
+  },
+  {
+    "route": "/knowledge-hub/10-questions-engineers-ask-about-water-hydraulics/",
+    "file": "knowledge-hub/10-questions-engineers-ask-about-water-hydraulics/index.html",
+    "sha256": "92461b348936b55911fa9e63db4b2824e5d5e68517443a0e2954c361bc3a19f5"
+  },
+  {
+    "route": "/knowledge-hub/160-bar-performance-debunking-the-limitations-of-water-hydraulics/",
+    "file": "knowledge-hub/160-bar-performance-debunking-the-limitations-of-water-hydraulics/index.html",
+    "sha256": "900926152bb2c5922545822644bcb39b04fae254d5cfe3cd3a3f7189e9c7f721"
+  },
+  {
+    "route": "/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results/",
+    "file": "knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results/index.html",
+    "sha256": "06099c091f1c7792b719f68be2242a2be8b14a450abbd141c38823ebf44d66c9"
+  },
+  {
+    "route": "/knowledge-hub/aligning-with-esg-how-water-hydraulics-support-sustainability-targets/",
+    "file": "knowledge-hub/aligning-with-esg-how-water-hydraulics-support-sustainability-targets/index.html",
+    "sha256": "1237b1b9a18269b07b695bf68456eef4c67bbc41951baca169247e89a4737692"
+  },
+  {
+    "route": "/knowledge-hub/are-your-components-certified-for-marine-or-food-use/",
+    "file": "knowledge-hub/are-your-components-certified-for-marine-or-food-use/index.html",
+    "sha256": "156b95cb0c8f86e769bc6c72d8de329fc0a7e247b4ea1cab484bffd64b65d4bf"
+  },
+  {
+    "route": "/knowledge-hub/avoiding-oil-contaminated-waterways-legal-and-financial-risks/",
+    "file": "knowledge-hub/avoiding-oil-contaminated-waterways-legal-and-financial-risks/index.html",
+    "sha256": "c73bbe48e06809155418b32d78757997abcb997a09ae8affbd9ac10945d2aca2"
+  },
+  {
+    "route": "/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation/",
+    "file": "knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation/index.html",
+    "sha256": "bc67db3f4207006366999f522d1b63c4931cd8dfb8052991c308d235f2e2126a"
+  },
+  {
+    "route": "/knowledge-hub/breaking-down-the-roi-investing-in-water-hydraulics/",
+    "file": "knowledge-hub/breaking-down-the-roi-investing-in-water-hydraulics/index.html",
+    "sha256": "72d740e3a3c642c461dee662615060ccfe7f180dfea47850f3e547f5dd11ec6e"
+  },
+  {
+    "route": "/knowledge-hub/built-in-safety-fail-closed-and-manual-overrides-with-water/",
+    "file": "knowledge-hub/built-in-safety-fail-closed-and-manual-overrides-with-water/index.html",
+    "sha256": "e53fe984e7f37c2947ad7f0ab39d27b46fbce86dff5dd7b2c3bce35f866f2251"
+  },
+  {
+    "route": "/knowledge-hub/can-i-retrofit-my-existing-system-to-use-water/",
+    "file": "knowledge-hub/can-i-retrofit-my-existing-system-to-use-water/index.html",
+    "sha256": "99e6ae4406151ca8baf556c16595496b61116dd901e789ff8c60b25d2f6fe0c9"
+  },
+  {
+    "route": "/knowledge-hub/can-water-freeze-in-hydraulic-systems-engineering-around-temperature/",
+    "file": "knowledge-hub/can-water-freeze-in-hydraulic-systems-engineering-around-temperature/index.html",
+    "sha256": "167455ec70843a8441043120c1854d132559668a4a7c53f162b7ba002d9f570e"
+  },
+  {
+    "route": "/knowledge-hub/can-water-handle-heavy-loads-like-oil/",
+    "file": "knowledge-hub/can-water-handle-heavy-loads-like-oil/index.html",
+    "sha256": "8acf1cc472f5920027e2bf42065f327533429757edd477dab0f7aa1f0b7a4b90"
+  },
+  {
+    "route": "/knowledge-hub/carbon-reinforced-peek-in-hydraulic-equipment/",
+    "file": "knowledge-hub/carbon-reinforced-peek-in-hydraulic-equipment/index.html",
+    "sha256": "8eb02dc16efb95e6ef3aa869fdca0f2f5027e918e4ffba6239c8b729b28aeaa5"
+  },
+  {
+    "route": "/knowledge-hub/cavitation-in-water-hydraulics-myths-truths-and-design-solutions/",
+    "file": "knowledge-hub/cavitation-in-water-hydraulics-myths-truths-and-design-solutions/index.html",
+    "sha256": "c9013b98cf2d2cb550bc3215c44119de33c53f5682fb485ee1319f6d30896f86"
+  },
+  {
+    "route": "/knowledge-hub/choosing-the-right-cylinder-for-water-actuation/",
+    "file": "knowledge-hub/choosing-the-right-cylinder-for-water-actuation/index.html",
+    "sha256": "038d46671b6b67d664904b255c01ef0d1809207f11d66a23b5bf4a030550826c"
+  },
+  {
+    "route": "/knowledge-hub/clean-operation-on-coastlines-a-marine-deployment-snapshot/",
+    "file": "knowledge-hub/clean-operation-on-coastlines-a-marine-deployment-snapshot/index.html",
+    "sha256": "d58fec6583cb4e6b8eee28e87e895836ad96661980cdedb49b3970c1c3c79a20"
+  },
+  {
+    "route": "/knowledge-hub/common-maintenance-missteps-with-oil-that-don-t-happen-with-water/",
+    "file": "knowledge-hub/common-maintenance-missteps-with-oil-that-don-t-happen-with-water/index.html",
+    "sha256": "1fd1aca977046edbb7415768377862297fe75dfd2285d8f91f2d52b52494dfdf"
+  },
+  {
+    "route": "/knowledge-hub/component-spotlight-armak-air-motors-and-water-hydraulic-integration/",
+    "file": "knowledge-hub/component-spotlight-armak-air-motors-and-water-hydraulic-integration/index.html",
+    "sha256": "d552204d1fe232c8c186ae2150613707b8be40d7fb81672df388874301957824"
+  },
+  {
+    "route": "/knowledge-hub/desalination-plant-hydraulic-systems/",
+    "file": "knowledge-hub/desalination-plant-hydraulic-systems/index.html",
+    "sha256": "343453319174c369ad245a4263a9bc35d933e88c486dd487d6de3053428c0e8d"
+  },
+  {
+    "route": "/knowledge-hub/designing-a-water-hydraulic-power-unit/",
+    "file": "knowledge-hub/designing-a-water-hydraulic-power-unit/index.html",
+    "sha256": "d686c8183b07fa323f904c83a68028cb2deef18babddeaf7c2a88b9216ab834a"
+  },
+  {
+    "route": "/knowledge-hub/designing-control-valves-for-water-hydraulics/",
+    "file": "knowledge-hub/designing-control-valves-for-water-hydraulics/index.html",
+    "sha256": "d9136e5614819baf9e4adc843f91368bd329b95aa3ce062abe36257d9cfffdb4"
+  },
+  {
+    "route": "/knowledge-hub/designing-for-pressure-closed-loop-water-hydraulic-circuitry/",
+    "file": "knowledge-hub/designing-for-pressure-closed-loop-water-hydraulic-circuitry/index.html",
+    "sha256": "d9ce3e0c31289033ce2bf854a872776ddcbb9a2cfc9c6043468bd9a1a1ddbe03"
+  },
+  {
+    "route": "/knowledge-hub/designing-hydraulic-circuits-using-water-as-the-medium/",
+    "file": "knowledge-hub/designing-hydraulic-circuits-using-water-as-the-medium/index.html",
+    "sha256": "3f0bffa7061c6e52b6a4d4e786435fce4e28f1a916bd282a3a5ad12039d38054"
+  },
+  {
+    "route": "/knowledge-hub/diagnosing-pressure-drop-in-water-driven-cylinders/",
+    "file": "knowledge-hub/diagnosing-pressure-drop-in-water-driven-cylinders/index.html",
+    "sha256": "40774a70f426ea55117b4057872dec4f29b3c9e1e6df06ed71548793ef8c45a9"
+  },
+  {
+    "route": "/knowledge-hub/do-i-need-filters-or-additives-for-tap-water/",
+    "file": "knowledge-hub/do-i-need-filters-or-additives-for-tap-water/index.html",
+    "sha256": "2595ed15ab954291b46d61a9e82a84cae33436b5c7fcda91f31bcc15633b4ca4"
+  },
+  {
+    "route": "/knowledge-hub/drought-ready-water-hydraulic-use-in-desalination-plants/",
+    "file": "knowledge-hub/drought-ready-water-hydraulic-use-in-desalination-plants/index.html",
+    "sha256": "b460e2f7fdcf0e0891ff083ff80052ec2e8bc8bd50517197b3d1d5178a2a2d7b"
+  },
+  {
+    "route": "/knowledge-hub/dust-suppression-systems-using-water-hydraulics/",
+    "file": "knowledge-hub/dust-suppression-systems-using-water-hydraulics/index.html",
+    "sha256": "2081462db9119ff2d9825504657c2beab7aa75d9b5220424687433868b30d4fe"
+  },
+  {
+    "route": "/knowledge-hub/efficiency-of-water-hydraulic-pumps-compared-to-oil-pumps/",
+    "file": "knowledge-hub/efficiency-of-water-hydraulic-pumps-compared-to-oil-pumps/index.html",
+    "sha256": "1d517c0224936231816a0a1122f0c3d1bcf1f0b5aa9d5a4acdb6efd70b81982f"
+  },
+  {
+    "route": "/knowledge-hub/electric-actuators-vs-hydraulic-actuators-the-real-engineering-trade-offs/",
+    "file": "knowledge-hub/electric-actuators-vs-hydraulic-actuators-the-real-engineering-trade-offs/index.html",
+    "sha256": "1e874e0b9f78c089aee8bd001e106a8c96cf5a01b96a03109d3b5e279abb7471"
+  },
+  {
+    "route": "/knowledge-hub/energy-consumption-of-water-hydraulic-systems/",
+    "file": "knowledge-hub/energy-consumption-of-water-hydraulic-systems/index.html",
+    "sha256": "c379e075d8e5686f7b1f694fd048bc8d83e5c9f8c76218d693a446f716a92ba4"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/accumulator-calculator/",
+    "file": "knowledge-hub/engineering-calculators/accumulator-calculator/index.html",
+    "sha256": "07ae18e6cb3ee7e16d69bcb7e65d02732f0c6fe0e664e049d14323c6e3ac0e18"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/accumulator-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/accumulator-calculator/index.html",
+    "sha256": "07ae18e6cb3ee7e16d69bcb7e65d02732f0c6fe0e664e049d14323c6e3ac0e18"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/carbon-savings-calculator/",
+    "file": "knowledge-hub/engineering-calculators/carbon-savings-calculator/index.html",
+    "sha256": "e9f6f0dc2d682bfb9dc0cfd186afcd74a14613b15703e5b0665691f7c1a1c35c"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/carbon-savings-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/carbon-savings-calculator/index.html",
+    "sha256": "e9f6f0dc2d682bfb9dc0cfd186afcd74a14613b15703e5b0665691f7c1a1c35c"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/cylinder-force-calculator/",
+    "file": "knowledge-hub/engineering-calculators/cylinder-force-calculator/index.html",
+    "sha256": "a63457364761039b2762e5a98f632db153e61147ab8ff8f1fb487eb300d4dc34"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/cylinder-force-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/cylinder-force-calculator/index.html",
+    "sha256": "a63457364761039b2762e5a98f632db153e61147ab8ff8f1fb487eb300d4dc34"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/energy-savings-calculator/",
+    "file": "knowledge-hub/engineering-calculators/energy-savings-calculator/index.html",
+    "sha256": "7e526ecfc6ff1d81ebe2ab9d861d1cf8369e8a00cd7184c2c1a46d73a124fafb"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/energy-savings-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/energy-savings-calculator/index.html",
+    "sha256": "7e526ecfc6ff1d81ebe2ab9d861d1cf8369e8a00cd7184c2c1a46d73a124fafb"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/flow-rate-calculator/",
+    "file": "knowledge-hub/engineering-calculators/flow-rate-calculator/index.html",
+    "sha256": "267888dce079cc724c44d5b6e764f753f26c243ec8524eb2246382ca63c7745b"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/flow-rate-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/flow-rate-calculator/index.html",
+    "sha256": "267888dce079cc724c44d5b6e764f753f26c243ec8524eb2246382ca63c7745b"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/hydraulic-efficiency-calculator/",
+    "file": "knowledge-hub/engineering-calculators/hydraulic-efficiency-calculator/index.html",
+    "sha256": "537bc9e1d8a608ed1fc72bbdc1f9a82a7c6da257f1285cf01dbbda6fdf0e4227"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/hydraulic-efficiency-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/hydraulic-efficiency-calculator/index.html",
+    "sha256": "537bc9e1d8a608ed1fc72bbdc1f9a82a7c6da257f1285cf01dbbda6fdf0e4227"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/",
+    "file": "knowledge-hub/engineering-calculators/index.html",
+    "sha256": "67bf1d412f1f54b35e51a9b68b0bbe73c44a7c60cf9f6435679ed12dc3a68dbc"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/",
+    "file": "knowledge-hub/engineering-calculators/life-cycle-cost-calculator/index.html",
+    "sha256": "e9876259016ee95f2f4ce4fe8d1887d6fbd4b590db1b12a19b1824ddc5771368"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/life-cycle-cost-calculator/index.html",
+    "sha256": "e9876259016ee95f2f4ce4fe8d1887d6fbd4b590db1b12a19b1824ddc5771368"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/motor-speed-calculator/",
+    "file": "knowledge-hub/engineering-calculators/motor-speed-calculator/index.html",
+    "sha256": "5ca0cfd674923eb684d61f031c07e0f4f59f7acf42dd7c3587638974b1429fc7"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/motor-speed-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/motor-speed-calculator/index.html",
+    "sha256": "5ca0cfd674923eb684d61f031c07e0f4f59f7acf42dd7c3587638974b1429fc7"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/",
+    "file": "knowledge-hub/engineering-calculators/oil-spill-cost-calculator/index.html",
+    "sha256": "22a5ab8ca10f3de5884c2665b195c1ff267c26f52b5ae75e8f0142736357c5be"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/oil-spill-cost-calculator/index.html",
+    "sha256": "22a5ab8ca10f3de5884c2665b195c1ff267c26f52b5ae75e8f0142736357c5be"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/orifice-calculator/",
+    "file": "knowledge-hub/engineering-calculators/orifice-calculator/index.html",
+    "sha256": "a5ce5be4ece076204bcc085860a51f3183e699b50af949a0e055389bad2376bd"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/orifice-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/orifice-calculator/index.html",
+    "sha256": "a5ce5be4ece076204bcc085860a51f3183e699b50af949a0e055389bad2376bd"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/pipe-velocity-calculator/",
+    "file": "knowledge-hub/engineering-calculators/pipe-velocity-calculator/index.html",
+    "sha256": "672a7a8d4e6ed630b6282c300bd72818cfd07fcc19c3046e0bbae9042442ea3e"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/pipe-velocity-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/pipe-velocity-calculator/index.html",
+    "sha256": "672a7a8d4e6ed630b6282c300bd72818cfd07fcc19c3046e0bbae9042442ea3e"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/power-calculator/",
+    "file": "knowledge-hub/engineering-calculators/power-calculator/index.html",
+    "sha256": "6e281f955400660d1e0b9e8a6967150d47067e5ac1ddb5b48ce34bedd8ac0b12"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/power-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/power-calculator/index.html",
+    "sha256": "6e281f955400660d1e0b9e8a6967150d47067e5ac1ddb5b48ce34bedd8ac0b12"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/pressure-drop-calculator/",
+    "file": "knowledge-hub/engineering-calculators/pressure-drop-calculator/index.html",
+    "sha256": "b0050ad4b9bbcfbaad7ebb7609403aa8725a7384d664b5ce1d490e7812c67341"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/pressure-drop-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/pressure-drop-calculator/index.html",
+    "sha256": "b0050ad4b9bbcfbaad7ebb7609403aa8725a7384d664b5ce1d490e7812c67341"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/pressure-loss-calculator/",
+    "file": "knowledge-hub/engineering-calculators/pressure-loss-calculator/index.html",
+    "sha256": "72ce044609921122b92fab21722aab235aa1f292d0596d5b54fe546cad475e35"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/pressure-loss-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/pressure-loss-calculator/index.html",
+    "sha256": "72ce044609921122b92fab21722aab235aa1f292d0596d5b54fe546cad475e35"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/pump-sizing-calculator/",
+    "file": "knowledge-hub/engineering-calculators/pump-sizing-calculator/index.html",
+    "sha256": "fa9c2983840d334e554e0aca0194ae9652f9232eb869cd818c4374d8c56e3749"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/pump-sizing-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/pump-sizing-calculator/index.html",
+    "sha256": "fa9c2983840d334e554e0aca0194ae9652f9232eb869cd818c4374d8c56e3749"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/reynolds-number-calculator/",
+    "file": "knowledge-hub/engineering-calculators/reynolds-number-calculator/index.html",
+    "sha256": "f001ab39b942632058327d921331cfb5950ece2df84845dd0a73a6395c3578df"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/reynolds-number-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/reynolds-number-calculator/index.html",
+    "sha256": "f001ab39b942632058327d921331cfb5950ece2df84845dd0a73a6395c3578df"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/roi-calculator/",
+    "file": "knowledge-hub/engineering-calculators/roi-calculator/index.html",
+    "sha256": "08fb86a8c43dd9b726294bc83d0d7e8e77dee292ec39178bde61544a418e7eae"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/roi-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/roi-calculator/index.html",
+    "sha256": "08fb86a8c43dd9b726294bc83d0d7e8e77dee292ec39178bde61544a418e7eae"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/seal-compression-calculator/",
+    "file": "knowledge-hub/engineering-calculators/seal-compression-calculator/index.html",
+    "sha256": "986bf4e5df52e03c049707dccb28478714dce5f1f6b68bc6f93905532cdae4be"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/seal-compression-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/seal-compression-calculator/index.html",
+    "sha256": "986bf4e5df52e03c049707dccb28478714dce5f1f6b68bc6f93905532cdae4be"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/surface-finish-calculator/",
+    "file": "knowledge-hub/engineering-calculators/surface-finish-calculator/index.html",
+    "sha256": "b9198424e12b0fc681afe51d93ffb142e9c947421016346e7f5605ecbe1032f6"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/surface-finish-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/surface-finish-calculator/index.html",
+    "sha256": "b9198424e12b0fc681afe51d93ffb142e9c947421016346e7f5605ecbe1032f6"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/water-hammer-calculator/",
+    "file": "knowledge-hub/engineering-calculators/water-hammer-calculator/index.html",
+    "sha256": "d44cea85f17ce7716cc4468e47fa6f7b51377941e0f978a0e31308f10e0be1af"
+  },
+  {
+    "route": "/knowledge-hub/engineering-calculators/water-hammer-calculator.html",
+    "file": "knowledge-hub/engineering-calculators/water-hammer-calculator/index.html",
+    "sha256": "d44cea85f17ce7716cc4468e47fa6f7b51377941e0f978a0e31308f10e0be1af"
+  },
+  {
+    "route": "/knowledge-hub/engineering-principles-of-water-hydraulic-actuation/",
+    "file": "knowledge-hub/engineering-principles-of-water-hydraulic-actuation/index.html",
+    "sha256": "bb4ecd469b1b9bfc32a73770bae33114ad837e1f05c8a50bb03c38a0e6cf3f25"
+  },
+  {
+    "route": "/knowledge-hub/engineering-seal-systems-for-water-hydraulics/",
+    "file": "knowledge-hub/engineering-seal-systems-for-water-hydraulics/index.html",
+    "sha256": "d76045508e2d1b676e1e85151ecb25ae7960361f0970f68e268fa3368ca7d1d0"
+  },
+  {
+    "route": "/knowledge-hub/environmental-compliance-and-hydraulic-systems/",
+    "file": "knowledge-hub/environmental-compliance-and-hydraulic-systems/index.html",
+    "sha256": "a3ff18d8d881167eef8d5d2128a3da7138b7fd636c72d6bab6f6fc7ee7e12b0e"
+  },
+  {
+    "route": "/knowledge-hub/environmental-regulations-affecting-hydraulic-systems/",
+    "file": "knowledge-hub/environmental-regulations-affecting-hydraulic-systems/index.html",
+    "sha256": "84e7ebb64a4b3c0bf9fc35b88ae9b9aa85d18c77c21eb0e308204bfefd42d22c"
+  },
+  {
+    "route": "/knowledge-hub/environmental-risks-of-hydraulic-oil-in-water-infrastructure/",
+    "file": "knowledge-hub/environmental-risks-of-hydraulic-oil-in-water-infrastructure/index.html",
+    "sha256": "c33bb8fac020fe2f0f98e5c4250aef2858e901ca91a08071bfa725159c050ef6"
+  },
+  {
+    "route": "/knowledge-hub/fail-safe-performance-in-theme-park-ride-systems/",
+    "file": "knowledge-hub/fail-safe-performance-in-theme-park-ride-systems/index.html",
+    "sha256": "1e9c4da057a22c312408e66dc5dd2fd6bf9da2e26d6f632281fd4ba1ed3a0efb"
+  },
+  {
+    "route": "/knowledge-hub/fire-suppression-evolved-why-water-mist-systems-outperform-traditional-sprinklers/",
+    "file": "knowledge-hub/fire-suppression-evolved-why-water-mist-systems-outperform-traditional-sprinklers/index.html",
+    "sha256": "c7037e63122572bdd3a8171b83840f5a0d65f911b6bfc1d6e34c724a1a6e28fe"
+  },
+  {
+    "route": "/knowledge-hub/fishing-without-fossil-fuels-the-musqueam-hydrogen-vessel-project/",
+    "file": "knowledge-hub/fishing-without-fossil-fuels-the-musqueam-hydrogen-vessel-project/index.html",
+    "sha256": "15cb1c6298b7cfcc82fca0d439359b4a8b6935e02e7cc0a8723b6911c67105af"
+  },
+  {
+    "route": "/knowledge-hub/five-reasons-your-next-valve-should-be-water-actuated/",
+    "file": "knowledge-hub/five-reasons-your-next-valve-should-be-water-actuated/index.html",
+    "sha256": "a59d92cbbf82787f72473080c185d3b32ed5f2014ca1ab375192f2f519a9dce1"
+  },
+  {
+    "route": "/knowledge-hub/fluid-properties-of-water-vs-hydraulic-oil/",
+    "file": "knowledge-hub/fluid-properties-of-water-vs-hydraulic-oil/index.html",
+    "sha256": "ce7a13684abd080b60bc704d5f1fbe0ad1aa6cd4ab31eddc54c8d818ad60227e"
+  },
+  {
+    "route": "/knowledge-hub/flushing-and-start-up-tips-for-first-time-water-users/",
+    "file": "knowledge-hub/flushing-and-start-up-tips-for-first-time-water-users/index.html",
+    "sha256": "07eec24e2a257f42c3d733c71bd53d3140d27ecbd4a75ff887a58f914eec2461"
+  },
+  {
+    "route": "/knowledge-hub/from-steel-mills-to-sawmills-industrial-applications-of-pressurized-water/",
+    "file": "knowledge-hub/from-steel-mills-to-sawmills-industrial-applications-of-pressurized-water/index.html",
+    "sha256": "8cb7334c15f161f95e9be72d4496404ea458bfb5b9de322ecc3bc418a4be379c"
+  },
+  {
+    "route": "/knowledge-hub/funding-water-driven-innovation-a-guide-to-clean-tech-grants/",
+    "file": "knowledge-hub/funding-water-driven-innovation-a-guide-to-clean-tech-grants/index.html",
+    "sha256": "465e90c1f1f9a9fd48ab0e4bc29128cbeb0c72365d70e40fcf17b4af5b39a6b7"
+  },
+  {
+    "route": "/knowledge-hub/high-flow-or-high-precision-matching-pumps-to-application/",
+    "file": "knowledge-hub/high-flow-or-high-precision-matching-pumps-to-application/index.html",
+    "sha256": "fe1597db6b02fa1b8cde4eb1968b24f8dc40216fe199e2845d76b00c158e78c2"
+  },
+  {
+    "route": "/knowledge-hub/how-engineers-can-specify-oil-free-hydraulic-systems/",
+    "file": "knowledge-hub/how-engineers-can-specify-oil-free-hydraulic-systems/index.html",
+    "sha256": "a54b9d6114d2e42b8fa657ea03bccdeb4f21f23b03f634e1bcfd73fcbf58a584"
+  },
+  {
+    "route": "/knowledge-hub/how-force-is-generated-in-water-hydraulic-cylinders/",
+    "file": "knowledge-hub/how-force-is-generated-in-water-hydraulic-cylinders/index.html",
+    "sha256": "84efc024c512bcd7dbd8cb10d6b6efa6f6d785108df67e43d7a380a2e9f555dc"
+  },
+  {
+    "route": "/knowledge-hub/how-hydraulic-fluids-behave-thermal-expansion-viscosity-and-stability/",
+    "file": "knowledge-hub/how-hydraulic-fluids-behave-thermal-expansion-viscosity-and-stability/index.html",
+    "sha256": "57143a1d3ab5e9e785ec23fc307a31217f09ea6701e95f245fbda0936c8d51fc"
+  },
+  {
+    "route": "/knowledge-hub/how-much-are-your-hydraulics-costing-you/",
+    "file": "knowledge-hub/how-much-are-your-hydraulics-costing-you/index.html",
+    "sha256": "6b705be55572b4a135466571ea1f002ace5a1d805b08f7a7a2072e91f4862474"
+  },
+  {
+    "route": "/knowledge-hub/how-oil-contamination-affects-wastewater-treatment-plants/",
+    "file": "knowledge-hub/how-oil-contamination-affects-wastewater-treatment-plants/index.html",
+    "sha256": "1b465d12c8080b62af58c638e329ae58be0d532303d7fd92bf0ef9d96da14321"
+  },
+  {
+    "route": "/knowledge-hub/how-our-water-hpus-are-changing-the-industrial-landscape/",
+    "file": "knowledge-hub/how-our-water-hpus-are-changing-the-industrial-landscape/index.html",
+    "sha256": "464890240dea8e84cc0b58e47d055ef76d2ee6e1c4ea524121d4bfaa74e5d2a2"
+  },
+  {
+    "route": "/knowledge-hub/how-the-2025-clean-technology-investment-tax-credit-applies-to-your-project/",
+    "file": "knowledge-hub/how-the-2025-clean-technology-investment-tax-credit-applies-to-your-project/index.html",
+    "sha256": "a0a127e4f4a34e545c6d805a5e8800a7a4651430b599c38651bc7312e11b3784"
+  },
+  {
+    "route": "/knowledge-hub/how-to-convert-an-oil-hydraulic-system-to-water-hydraulics/",
+    "file": "knowledge-hub/how-to-convert-an-oil-hydraulic-system-to-water-hydraulics/index.html",
+    "sha256": "1eea2df9839de146e399c5842d61eea098a9a1cba6be774e5c4950de24154474"
+  },
+  {
+    "route": "/knowledge-hub/how-to-winterize-your-water-hydraulic-system/",
+    "file": "knowledge-hub/how-to-winterize-your-water-hydraulic-system/index.html",
+    "sha256": "56797d1af239c9992f4516b59ea289c229633cd19fb586fdd1de02877469a1f3"
+  },
+  {
+    "route": "/knowledge-hub/how-water-hydraulics-eliminate-hydraulic-oil-spills/",
+    "file": "knowledge-hub/how-water-hydraulics-eliminate-hydraulic-oil-spills/index.html",
+    "sha256": "1ef3a388f452b07c985873a8e17ffc069b1e84ad282aefa73d7cd79d9f64b8cc"
+  },
+  {
+    "route": "/knowledge-hub/how-water-hydraulics-work-compared-to-oil-hydraulics/",
+    "file": "knowledge-hub/how-water-hydraulics-work-compared-to-oil-hydraulics/index.html",
+    "sha256": "0683ea587541e5e90a2c05746171dd154afcb30c3e312297c2b55c5632191132"
+  },
+  {
+    "route": "/knowledge-hub/how-water-maintains-hydraulic-efficiency-without-additives/",
+    "file": "knowledge-hub/how-water-maintains-hydraulic-efficiency-without-additives/index.html",
+    "sha256": "feefd013a2ebd31d97502484ca5b5e649ed9317f3a6c8f278e7fc4282a9a36bd"
+  },
+  {
+    "route": "/knowledge-hub/how-water-systems-eliminate-cross-contamination-risk/",
+    "file": "knowledge-hub/how-water-systems-eliminate-cross-contamination-risk/index.html",
+    "sha256": "9ac8c65cbc1fd34a5cca80146eb2f4e104a6a2b6695ae4a075612d9eb8f53e39"
+  },
+  {
+    "route": "/knowledge-hub/how-waterquest-systems-align-with-cleanbc-sif-and-sr-and-ed/",
+    "file": "knowledge-hub/how-waterquest-systems-align-with-cleanbc-sif-and-sr-and-ed/index.html",
+    "sha256": "6caee44e10fa8d32ef31130da31315e33e9e5dd99c38caea64a8bceb5aea1be5"
+  },
+  {
+    "route": "/knowledge-hub/hydraulic-gate-actuators-for-municipal-infrastructure/",
+    "file": "knowledge-hub/hydraulic-gate-actuators-for-municipal-infrastructure/index.html",
+    "sha256": "0d10948b750430d6a9ab814820b2ef719cd9a9ae547365c82056a98d253e14a8"
+  },
+  {
+    "route": "/knowledge-hub/hydraulic-power-transmission-using-water/",
+    "file": "knowledge-hub/hydraulic-power-transmission-using-water/index.html",
+    "sha256": "0d60a1a7c2a21ef1a1f592fab2e9d2d01cb10268d4c2fca28df369d68024ac1a"
+  },
+  {
+    "route": "/knowledge-hub/hydropower-infrastructure-using-water-hydraulic-actuation/",
+    "file": "knowledge-hub/hydropower-infrastructure-using-water-hydraulic-actuation/index.html",
+    "sha256": "aa4c0f92ae672cafea8187922830959f0669fc72132aaf4b7d510dc4b1e432b1"
+  },
+  {
+    "route": "/knowledge-hub/",
+    "file": "knowledge-hub/index.html",
+    "sha256": "22878109c759e3f6648314c19d03fdbfa3d1d221231720eae2750f4ae44f1c71"
+  },
+  {
+    "route": "/knowledge-hub/industrial-equipment-that-should-never-use-oil-hydraulics/",
+    "file": "knowledge-hub/industrial-equipment-that-should-never-use-oil-hydraulics/index.html",
+    "sha256": "3d4c5c71f7c9092c67fc383774a1fc5b5dfc9f3b76f73287fd62a03f81be09d8"
+  },
+  {
+    "route": "/knowledge-hub/is-water-more-expensive-long-term/",
+    "file": "knowledge-hub/is-water-more-expensive-long-term/index.html",
+    "sha256": "e5981370cd1f67f337be77b25542e764b72c22b90ba306266d97107cbbf138e7"
+  },
+  {
+    "route": "/knowledge-hub/is-water-too-thin-to-work-in-high-pressure-applications/",
+    "file": "knowledge-hub/is-water-too-thin-to-work-in-high-pressure-applications/index.html",
+    "sha256": "cca9d932fd58685408d2047ba6eb3bc58386ac86ee54afff1dda15a81ebc5dcc"
+  },
+  {
+    "route": "/knowledge-hub/isothermal-behaviour-of-water-vs-thermal-expansion-in-oil/",
+    "file": "knowledge-hub/isothermal-behaviour-of-water-vs-thermal-expansion-in-oil/index.html",
+    "sha256": "5f1f206ef20f0bddb41f1e25740bb18648dabb1f1dbe0d4c6a2ccac18ac1c39c"
+  },
+  {
+    "route": "/knowledge-hub/knife-gate-valves-and-water-hydraulics-a-natural-fit/",
+    "file": "knowledge-hub/knife-gate-valves-and-water-hydraulics-a-natural-fit/index.html",
+    "sha256": "bbd237311d2099eec0ce8328eeb200d1216fefb3fcfff53a8a7cf30146faa979"
+  },
+  {
+    "route": "/knowledge-hub/lifecycle-cost-breakdown-oil-vs-water/",
+    "file": "knowledge-hub/lifecycle-cost-breakdown-oil-vs-water/index.html",
+    "sha256": "9e27f0da1ceaa2ee125b5905915b7a24b4f5fbe2bf8d82020a4ef831c1d1ee01"
+  },
+  {
+    "route": "/knowledge-hub/lifting-and-hauling-without-oil-forestry-applications-using-water/",
+    "file": "knowledge-hub/lifting-and-hauling-without-oil-forestry-applications-using-water/index.html",
+    "sha256": "8b8bc94060b6a7a27d3580c4f476b5573b43a385df1378de89683fafec951504"
+  },
+  {
+    "route": "/knowledge-hub/managing-seal-life-in-water-hydraulic-environments/",
+    "file": "knowledge-hub/managing-seal-life-in-water-hydraulic-environments/index.html",
+    "sha256": "9612d7168f8fed42b7cd2830b6bd97a2c3af69af1c229cdec29bb99e067c61ad"
+  },
+  {
+    "route": "/knowledge-hub/material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek/",
+    "file": "knowledge-hub/material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek/index.html",
+    "sha256": "12c9fdd3754d0a403695d2a7d5c013dcd4066a29a8067b70b5a9f6ca352a8462"
+  },
+  {
+    "route": "/knowledge-hub/material-pairing-for-water-hydraulic-tribology/",
+    "file": "knowledge-hub/material-pairing-for-water-hydraulic-tribology/index.html",
+    "sha256": "53072511cb4db69e06b3380c15affcd5f92551a39db6a1e9693cad1a02d9d669"
+  },
+  {
+    "route": "/knowledge-hub/mining-equipment-using-water-hydraulic-systems/",
+    "file": "knowledge-hub/mining-equipment-using-water-hydraulic-systems/index.html",
+    "sha256": "3fa8e71e33e6881fe09bc3951b4ac30fc014fb826d0cf1bfe524b629d3ab9107"
+  },
+  {
+    "route": "/knowledge-hub/municipal-infrastructure-without-the-oil-hazards/",
+    "file": "knowledge-hub/municipal-infrastructure-without-the-oil-hazards/index.html",
+    "sha256": "689a72078cacd45e171542d81accd9c97637124979386264d93077f72d5f6474"
+  },
+  {
+    "route": "/knowledge-hub/no-oil-no-spill-environmental-advantages-explained/",
+    "file": "knowledge-hub/no-oil-no-spill-environmental-advantages-explained/index.html",
+    "sha256": "b35c687e398378763df055375d1c35aef2d3fdcb0bc1e8a57f31e6d3ac10ff92"
+  },
+  {
+    "route": "/knowledge-hub/oil-free-hydraulics-in-amusement-safety-a-pilot-case/",
+    "file": "knowledge-hub/oil-free-hydraulics-in-amusement-safety-a-pilot-case/index.html",
+    "sha256": "75444fc4e806f7f2945a42eea35ce78d1ab050ee509d9fc0d93776ac1ddfb067"
+  },
+  {
+    "route": "/knowledge-hub/oil-free-operation-and-compliance-with-federal-clean-energy-goals/",
+    "file": "knowledge-hub/oil-free-operation-and-compliance-with-federal-clean-energy-goals/index.html",
+    "sha256": "cbbf22e4f0440a4fec226e7b7d18df047f11156f662b2e240a9756c854dacd14"
+  },
+  {
+    "route": "/knowledge-hub/oil-hydraulics-vs-water-hydraulics-the-complete-engineering-comparison/",
+    "file": "knowledge-hub/oil-hydraulics-vs-water-hydraulics-the-complete-engineering-comparison/index.html",
+    "sha256": "96902f6689f7bb175749a45785a7d5851317d087fc6120e9123367baddb6de8b"
+  },
+  {
+    "route": "/knowledge-hub/oil-vs-water-hydraulics-a-complete-system-comparison/",
+    "file": "knowledge-hub/oil-vs-water-hydraulics-a-complete-system-comparison/index.html",
+    "sha256": "6eff70fe490891b2d29b357207e3e861f9d82bf19df47aed4165c48429e422f0"
+  },
+  {
+    "route": "/knowledge-hub/our-dss-partnership-putting-water-to-the-test-on-severe-service-valves/",
+    "file": "knowledge-hub/our-dss-partnership-putting-water-to-the-test-on-severe-service-valves/index.html",
+    "sha256": "154f980669af09828bcc0a08523c7fe105e9c4f7a4e89613fc07e5758eb17bf3"
+  },
+  {
+    "route": "/knowledge-hub/pressure-limits-of-water-hydraulic-equipment/",
+    "file": "knowledge-hub/pressure-limits-of-water-hydraulic-equipment/index.html",
+    "sha256": "4e873bd197d6ca6fb1b0fa43f215ab67fd4fa6e67cc803fe9632fc1c98640f74"
+  },
+  {
+    "route": "/knowledge-hub/preventing-corrosion-in-water-hydraulic-systems/",
+    "file": "knowledge-hub/preventing-corrosion-in-water-hydraulic-systems/index.html",
+    "sha256": "d3c290ab45865844a25d7b99fd584d25c4f50d58ec76f88afb33f582e41789d9"
+  },
+  {
+    "route": "/knowledge-hub/preventing-corrosion-without-coatings-or-chemicals/",
+    "file": "knowledge-hub/preventing-corrosion-without-coatings-or-chemicals/index.html",
+    "sha256": "949200e65269a75d93aea4f9e6edd485e045db6e33441d25ae2ebcb896afb3a4"
+  },
+  {
+    "route": "/knowledge-hub/preventing-scaling-or-fouling-without-additives/",
+    "file": "knowledge-hub/preventing-scaling-or-fouling-without-additives/index.html",
+    "sha256": "2b0f043d0004293a39d56496404cc6c85419c7071714b40251afda243ce66e30"
+  },
+  {
+    "route": "/knowledge-hub/replacing-oil-systems-in-algoma-steel-a-modern-retrofit/",
+    "file": "knowledge-hub/replacing-oil-systems-in-algoma-steel-a-modern-retrofit/index.html",
+    "sha256": "b789aefad9907bd129373dddc0d930e602f1504dd365d463c56e9285ac000418"
+  },
+  {
+    "route": "/knowledge-hub/retrofitting-a-fire-pump-station-with-zero-oil/",
+    "file": "knowledge-hub/retrofitting-a-fire-pump-station-with-zero-oil/index.html",
+    "sha256": "aca32285dc79ded17e41f71f8f7a2f7ee3ddfbf0ce2a3b42d2477aef6aa9ed4b"
+  },
+  {
+    "route": "/knowledge-hub/seal-and-hose-life-expectations-with-tap-water/",
+    "file": "knowledge-hub/seal-and-hose-life-expectations-with-tap-water/index.html",
+    "sha256": "11913d7a0e37dab98630b6ce4e780549c4c1c4122f1e64a29809a644cfcb46c8"
+  },
+  {
+    "route": "/knowledge-hub/selecting-pumps-for-water-hydraulic-systems/",
+    "file": "knowledge-hub/selecting-pumps-for-water-hydraulic-systems/index.html",
+    "sha256": "620a307e061aa64c9a2c0fbf55d31f949c5c18d3c30bbf687b7998c3bce029ce"
+  },
+  {
+    "route": "/knowledge-hub/servicing-a-water-hydraulic-hpu-on-site-in-under-1-day/",
+    "file": "knowledge-hub/servicing-a-water-hydraulic-hpu-on-site-in-under-1-day/index.html",
+    "sha256": "0b3734902291c5432ca8310960aa151ebe52bc063b9b7e7be76c1ef67ef2c24e"
+  },
+  {
+    "route": "/knowledge-hub/should-you-specify-water-in-your-next-tender/",
+    "file": "knowledge-hub/should-you-specify-water-in-your-next-tender/index.html",
+    "sha256": "e1aa0f0e5bc53b2faddd36f2746d8108382905bc4b47a5f9cde51160a1a5d34b"
+  },
+  {
+    "route": "/knowledge-hub/sizing-cylinders-for-water-hydraulic-applications/",
+    "file": "knowledge-hub/sizing-cylinders-for-water-hydraulic-applications/index.html",
+    "sha256": "b81bd0fd8db3b1a5e0b24da4027a24ee957f1a4b29f85311262a0dbea6c2ddb5"
+  },
+  {
+    "route": "/knowledge-hub/smart-monitoring-options-for-water-hpus/",
+    "file": "knowledge-hub/smart-monitoring-options-for-water-hpus/index.html",
+    "sha256": "7c56769b6d6f60cf94c44ba023e06a4f9c965c1ba3d461af67e1d072c45a98cd"
+  },
+  {
+    "route": "/knowledge-hub/spec-writing-guide-for-water-hydraulic-equipment/",
+    "file": "knowledge-hub/spec-writing-guide-for-water-hydraulic-equipment/index.html",
+    "sha256": "d476004d5baf207a3eb61474580383f849c4d36431fcdfd3e15d7721e408eb75"
+  },
+  {
+    "route": "/knowledge-hub/the-future-of-oil-free-hydraulic-systems/",
+    "file": "knowledge-hub/the-future-of-oil-free-hydraulic-systems/index.html",
+    "sha256": "3672beb2c05a1e79dd39df55b8fe6398f161b870ec83440c655de08087c95ef7"
+  },
+  {
+    "route": "/knowledge-hub/the-hidden-weakness-of-duplex-in-saltwater-why-we-stick-with-316/",
+    "file": "knowledge-hub/the-hidden-weakness-of-duplex-in-saltwater-why-we-stick-with-316/index.html",
+    "sha256": "cb9ba1fb64f31872277f5e20a75015721f61e0aebe1609459b40b499640c748e"
+  },
+  {
+    "route": "/knowledge-hub/the-physics-behind-water-hydraulic-pressure-systems/",
+    "file": "knowledge-hub/the-physics-behind-water-hydraulic-pressure-systems/index.html",
+    "sha256": "1cc3d7679cc6e67b9b8c59d0ee5ac81f3d6be95a182b57ebb7018750f20987e5"
+  },
+  {
+    "route": "/knowledge-hub/thermal-performance-of-water-vs-hydraulic-oil/",
+    "file": "knowledge-hub/thermal-performance-of-water-vs-hydraulic-oil/index.html",
+    "sha256": "72aaf057bce8d2527d13afe94c4043eb6854fcbdcfb7f503744ecf46e92f9f13"
+  },
+  {
+    "route": "/knowledge-hub/total-cost-of-ownership-where-water-wins-over-time/",
+    "file": "knowledge-hub/total-cost-of-ownership-where-water-wins-over-time/index.html",
+    "sha256": "394c6bdbdb5dcba4f01b1122b1d198282fd1e4a5432c287b56d291945e5fdb4e"
+  },
+  {
+    "route": "/knowledge-hub/understanding-valve-selection-in-water-hydraulic-systems/",
+    "file": "knowledge-hub/understanding-valve-selection-in-water-hydraulic-systems/index.html",
+    "sha256": "7fd6484e9ed55533566793e2a9bc74bf25b5fe7820ae562ec6ab7a200559ac9d"
+  },
+  {
+    "route": "/knowledge-hub/water-driven-power-on-offshore-platforms/",
+    "file": "knowledge-hub/water-driven-power-on-offshore-platforms/index.html",
+    "sha256": "eeef13286198cb06f1ebe3d9f1d95f87ce0ee363397a9f5ea6bf2d9ab3ce6159"
+  },
+  {
+    "route": "/knowledge-hub/water-hydraulic-filtration-requirements/",
+    "file": "knowledge-hub/water-hydraulic-filtration-requirements/index.html",
+    "sha256": "336f2be0635685ce4b555835afc93f8c745bce01ea1c50542fafa9072da62ba7"
+  },
+  {
+    "route": "/knowledge-hub/water-hydraulic-system-maintenance/",
+    "file": "knowledge-hub/water-hydraulic-system-maintenance/index.html",
+    "sha256": "b34d0a031b3dc95590e704825a51e9d2721fde46e8a3cd12fbb7c0160ad53037"
+  },
+  {
+    "route": "/knowledge-hub/water-hydraulic-systems-for-marine-vessels/",
+    "file": "knowledge-hub/water-hydraulic-systems-for-marine-vessels/index.html",
+    "sha256": "e5e2514d4a368fe1aba950f0b00fd40529c3d577492e9c833bf542723fe5f1c1"
+  },
+  {
+    "route": "/knowledge-hub/water-hydraulics-for-flood-control-infrastructure/",
+    "file": "knowledge-hub/water-hydraulics-for-flood-control-infrastructure/index.html",
+    "sha256": "ee6e360d92d2bd6e1413b68da7c0570892beaa6db2a42d00aff4b9e49a6fac61"
+  },
+  {
+    "route": "/knowledge-hub/water-hydraulics-for-government-infrastructure-projects/",
+    "file": "knowledge-hub/water-hydraulics-for-government-infrastructure-projects/index.html",
+    "sha256": "316102ac44f7c06b8eccf48a0b8bd30d4dc589b9d4749c6f65c69095c36a7210"
+  },
+  {
+    "route": "/knowledge-hub/water-hydraulics-in-mining-lower-downtime-zero-contamination/",
+    "file": "knowledge-hub/water-hydraulics-in-mining-lower-downtime-zero-contamination/index.html",
+    "sha256": "a8607718aa95030a6a5d66231c1d532c04b6fd5418b6814dbeb27eda7192038d"
+  },
+  {
+    "route": "/knowledge-hub/water-hydraulics-in-wastewater-treatment-plants/",
+    "file": "knowledge-hub/water-hydraulics-in-wastewater-treatment-plants/index.html",
+    "sha256": "2f7788f9e3907b209a437591856a5a5a54e6503612e710b9ebe8af8da518f2d4"
+  },
+  {
+    "route": "/knowledge-hub/water-hydraulics-on-the-coast-marine-applications-that-work/",
+    "file": "knowledge-hub/water-hydraulics-on-the-coast-marine-applications-that-work/index.html",
+    "sha256": "1fa3548157db379c8b1ee4846fb73cf3354f0c8014ff86c102d1c179298cb88e"
+  },
+  {
+    "route": "/knowledge-hub/waterquest-vs-traditional-hpu-test-results-in-desalination/",
+    "file": "knowledge-hub/waterquest-vs-traditional-hpu-test-results-in-desalination/index.html",
+    "sha256": "53199f2c5248e979445fb116181f1a19a4132994fe3536e8218bfc0284f6f998"
+  },
+  {
+    "route": "/knowledge-hub/wave-of-change-how-water-hydraulics-conquered-lubrication-challenges/",
+    "file": "knowledge-hub/wave-of-change-how-water-hydraulics-conquered-lubrication-challenges/index.html",
+    "sha256": "e97bd7e6700ee879e7cc4ed3203bb06b9d47213940621dc012ef3ae5d3634090"
+  },
+  {
+    "route": "/knowledge-hub/what-are-water-hydraulic-systems/",
+    "file": "knowledge-hub/what-are-water-hydraulic-systems/index.html",
+    "sha256": "fd7aff03dc81166f25d3b3de1889b2821f93a869a64dd000bea93f8c2cfdb35d"
+  },
+  {
+    "route": "/knowledge-hub/what-does-no-additives-actually-mean/",
+    "file": "knowledge-hub/what-does-no-additives-actually-mean/index.html",
+    "sha256": "7723e129ad9365fab38e18cd150bb5b2df153ddc04b2782030d9cc0f99b37dd9"
+  },
+  {
+    "route": "/knowledge-hub/what-happens-in-a-fire-will-the-water-system-shut-down/",
+    "file": "knowledge-hub/what-happens-in-a-fire-will-the-water-system-shut-down/index.html",
+    "sha256": "d3a9d4cce6da36b2bf9c94fce5616577bc4af0296a7a621d55feaf35ee7c69b4"
+  },
+  {
+    "route": "/knowledge-hub/what-if-the-water-freezes/",
+    "file": "knowledge-hub/what-if-the-water-freezes/index.html",
+    "sha256": "411838172edd3673e80ae8952722f6e47f3d413d69f9a7bf98459c7bb388d8c7"
+  },
+  {
+    "route": "/knowledge-hub/what-maintenance-looks-like-in-a-water-hydraulic-system/",
+    "file": "knowledge-hub/what-maintenance-looks-like-in-a-water-hydraulic-system/index.html",
+    "sha256": "5fda333bc5237c8c2fa89bfab61815d4ff38f31a96473e48aaaddfbf6c959708"
+  },
+  {
+    "route": "/knowledge-hub/what-makes-our-control-valves-unique-in-a-water-system/",
+    "file": "knowledge-hub/what-makes-our-control-valves-unique-in-a-water-system/index.html",
+    "sha256": "c544e93faab18e3211fccca610a6b7281d162c39dab3185655234c91cfd68b3e"
+  },
+  {
+    "route": "/knowledge-hub/where-is-the-conscience-of-the-municipal-engineer/",
+    "file": "knowledge-hub/where-is-the-conscience-of-the-municipal-engineer/index.html",
+    "sha256": "3ed395fb091f98e9bd0e55d2bd24157a0cb9b21cbcfbea494361d350fe7575a6"
+  },
+  {
+    "route": "/knowledge-hub/why-316-stainless-steel-is-essential-for-water-hydraulic-systems/",
+    "file": "knowledge-hub/why-316-stainless-steel-is-essential-for-water-hydraulic-systems/index.html",
+    "sha256": "7a9b55c60e1ee44e1bf71fb3641d441e18a77b90ae7ad370604c15ce3deef31c"
+  },
+  {
+    "route": "/knowledge-hub/why-accumulators-are-rarely-needed-in-water-systems/",
+    "file": "knowledge-hub/why-accumulators-are-rarely-needed-in-water-systems/index.html",
+    "sha256": "abf20b3b18cf0efd8e781b841195fe4d296f3e3ecae009ed9db65d80a90ea966"
+  },
+  {
+    "route": "/knowledge-hub/why-doesn-t-everyone-use-this-already/",
+    "file": "knowledge-hub/why-doesn-t-everyone-use-this-already/index.html",
+    "sha256": "561265f45e5c8397089c80052f6c9051a84c0041c6dd1aea1da72048a0d7672d"
+  },
+  {
+    "route": "/knowledge-hub/why-municipal-infrastructure-should-eliminate-hydraulic-oil/",
+    "file": "knowledge-hub/why-municipal-infrastructure-should-eliminate-hydraulic-oil/index.html",
+    "sha256": "68ef174f2fe608f0929ba9e9dbef336a9da72a3f2130dc6f9e07f51f01127924"
+  },
+  {
+    "route": "/knowledge-hub/why-municipal-procurement-needs-to-rethink-oil/",
+    "file": "knowledge-hub/why-municipal-procurement-needs-to-rethink-oil/index.html",
+    "sha256": "308c798158b502b9d4f5065ce3d376ac810c92afc8a863f625be40feef4605b9"
+  },
+  {
+    "route": "/knowledge-hub/why-our-316-stainless-fittings-outperform-brass-in-marine-settings/",
+    "file": "knowledge-hub/why-our-316-stainless-fittings-outperform-brass-in-marine-settings/index.html",
+    "sha256": "f8710f008881cf4b49c12e38c35098ec93e0f063b35400792c4cea043590fcdf"
+  },
+  {
+    "route": "/knowledge-hub/why-tap-or-sea-water-belongs-in-your-hydraulic-system/",
+    "file": "knowledge-hub/why-tap-or-sea-water-belongs-in-your-hydraulic-system/index.html",
+    "sha256": "513b3fade6ce989e439c9a110665cf0d7d9458171c77c5694967616cc7e7c693"
+  },
+  {
+    "route": "/knowledge-hub/why-traditional-hydraulic-materials-fail-in-water-systems/",
+    "file": "knowledge-hub/why-traditional-hydraulic-materials-fail-in-water-systems/index.html",
+    "sha256": "1b38293dd22355defb169b554539154c6aa6fb9eac8de43f1cdabb282e3b7c2c"
+  },
+  {
+    "route": "/knowledge-hub/why-water-can-replace-hydraulic-oil-in-industrial-systems/",
+    "file": "knowledge-hub/why-water-can-replace-hydraulic-oil-in-industrial-systems/index.html",
+    "sha256": "a5b3bae04cad53db7c75b4ca4553827f98094a9121d6f836ad8159e13e9a3faf"
+  },
+  {
+    "route": "/knowledge-hub/why-water-hydraulics-are-the-future-of-sustainable-industry/",
+    "file": "knowledge-hub/why-water-hydraulics-are-the-future-of-sustainable-industry/index.html",
+    "sha256": "92d031c76011753caa8924116f116678bc07dc6a5a62cf120d2aa828c3105d69"
+  },
+  {
+    "route": "/knowledge-hub/why-water-hydraulics-may-replace-oil-in-industrial-infrastructure/",
+    "file": "knowledge-hub/why-water-hydraulics-may-replace-oil-in-industrial-infrastructure/index.html",
+    "sha256": "8fae7aecc07ec90e5b74e4b4a705a56e3d8d377ebf494aacf70916ed54c2d3ff"
+  },
+  {
+    "route": "/knowledge-hub/why-water-hydraulics-will-replace-oil-in-industrial-infrastructure/",
+    "file": "knowledge-hub/why-water-hydraulics-will-replace-oil-in-industrial-infrastructure/index.html",
+    "sha256": "84c4dbc009649392a0d01dbae994374c6394d201eec7a8ed7df82bea1ca37b46"
+  },
+  {
+    "route": "/knowledge-hub/will-water-rust-my-system-the-engineering-answer/",
+    "file": "knowledge-hub/will-water-rust-my-system-the-engineering-answer/index.html",
+    "sha256": "a66cadddd8555ec454a2cd5c1ee110710f25c6f4af8d16dccd24298d61e9c7ac"
+  },
+  {
+    "route": "/p1-pump/",
+    "file": "p1-pump/index.html",
+    "sha256": "0accd525610c016335342ed1085901e9c0e98b1befd6761fc10a08d4577cbeaf"
+  },
+  {
+    "route": "/pilot/",
+    "file": "pilot/index.html",
+    "sha256": "3df03123539145cd480d51e934001a051680b7998dc4cb81d2eda51fa0050727"
+  },
+  {
+    "route": "/products/axial-piston-fire-pumps/",
+    "file": "products/axial-piston-fire-pumps/index.html",
+    "sha256": "233db9d1f445ce80d1957d4b97363a922569d86d8003c4970c3b5c07c61fd858"
+  },
+  {
+    "route": "/products/axial-piston-pumps/",
+    "file": "products/axial-piston-pumps/index.html",
+    "sha256": "2ea84167474d92c996023983efcf2595c84341e692a942d47f55e5f6aa3439a0"
+  },
+  {
+    "route": "/products/axial-piston-pumps/p15/",
+    "file": "products/axial-piston-pumps/p15/index.html",
+    "sha256": "f45475574863cc382f768ef6997729d54b500e2c432ccbaacbaa2577879b2653"
+  },
+  {
+    "route": "/products/axial-piston-pumps/p180/",
+    "file": "products/axial-piston-pumps/p180/index.html",
+    "sha256": "0db5be9a894cdf03d638378122603dc14146574fa152d52778593f0b7d3a19a3"
+  },
+  {
+    "route": "/products/axial-piston-pumps/p3/",
+    "file": "products/axial-piston-pumps/p3/index.html",
+    "sha256": "1c913bac05e86d5e64ec35a053f1f2346108aaa60357d98c6dee0ae9b169dfae"
+  },
+  {
+    "route": "/products/axial-piston-pumps/p30/",
+    "file": "products/axial-piston-pumps/p30/index.html",
+    "sha256": "84392f3ce419057852221ed36cc1fdc0b80c8f205fab55c3705e8e8abc9ce7d7"
+  },
+  {
+    "route": "/products/axial-piston-pumps/p6/",
+    "file": "products/axial-piston-pumps/p6/index.html",
+    "sha256": "2f00b9092d8e6b532b3eb4e7f040c1ba37e602dfa3ca01ecaf2ef66e138aa5df"
+  },
+  {
+    "route": "/products/axial-piston-pumps/p60/",
+    "file": "products/axial-piston-pumps/p60/index.html",
+    "sha256": "ef1fc57dcdd0f72a846afe16bc085236d13029e7390368acbdbb29e8126bfb0e"
+  },
+  {
+    "route": "/products/duplex-seawater-pumps/",
+    "file": "products/duplex-seawater-pumps/index.html",
+    "sha256": "b784dac315561fed7b208c7de6d5a8867f901912c1e2397d99f053a6326f9c36"
+  },
+  {
+    "route": "/products/",
+    "file": "products/index.html",
+    "sha256": "72e5e27218ab31909319757c1afb237ad67368a4fa552fed2d105887e40b7ca5"
+  },
+  {
+    "route": "/products/janus-axial-piston-fire-pumps/",
+    "file": "products/axial-piston-fire-pumps/index.html",
+    "sha256": "233db9d1f445ce80d1957d4b97363a922569d86d8003c4970c3b5c07c61fd858"
+  },
+  {
+    "route": "/products/janus-power-center-reverse-osmosis/",
+    "file": "products/power-centre-reverse-osmosis/index.html",
+    "sha256": "9563d71891447254a45189ce6699c398c0a87ed97b78d86568d9de47777a1ea5"
+  },
+  {
+    "route": "/products/power-center-reverse-osmosis/",
+    "file": "products/power-centre-reverse-osmosis/index.html",
+    "sha256": "9563d71891447254a45189ce6699c398c0a87ed97b78d86568d9de47777a1ea5"
+  },
+  {
+    "route": "/products/power-centre-reverse-osmosis/",
+    "file": "products/power-centre-reverse-osmosis/index.html",
+    "sha256": "9563d71891447254a45189ce6699c398c0a87ed97b78d86568d9de47777a1ea5"
+  },
+  {
+    "route": "/products/power-centre-reverse-osmosis/pc1000/",
+    "file": "products/power-centre-reverse-osmosis/pc1000/index.html",
+    "sha256": "4cfb1501895ed0bc9cc3900ff4c4463c2d90f856142382ecdbc2a561909db594"
+  },
+  {
+    "route": "/products/power-centre-reverse-osmosis/pc250/",
+    "file": "products/power-centre-reverse-osmosis/pc250/index.html",
+    "sha256": "d4f356967b030cd54813bdca1ed7e762684349102d73916add00df710c10d9f5"
+  },
+  {
+    "route": "/products/power-centre-reverse-osmosis/pc300/",
+    "file": "products/power-centre-reverse-osmosis/pc300/index.html",
+    "sha256": "7ce6860dcf2054caabda30f0edc48d0a0bf5f9df48f37c79cc628c5f7bdef784"
+  },
+  {
+    "route": "/products/power-centre-reverse-osmosis/pc500/",
+    "file": "products/power-centre-reverse-osmosis/pc500/index.html",
+    "sha256": "4192c9dc3c2a6b0c5316384fe5147b6bd5d851588b24757ca6f84e88901e3db2"
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-100x60/",
+    "file": "products/water-hydraulic-cylinders/cylinder-100x60/index.html",
+    "sha256": "267d4861df67cfa98dcdffa75b5099a01237bfa940fc67544428505359686dbd"
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-100x80/",
+    "file": "products/water-hydraulic-cylinders/cylinder-100x80/index.html",
+    "sha256": "2e21ef6880897feda9b8377e5f4bf0a5428d77123bb0a9459632b53452b5b1c1"
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-125x80/",
+    "file": "products/water-hydraulic-cylinders/cylinder-125x80/index.html",
+    "sha256": "c06920ca3e165ac52c4bde5b6584e8d8e2af01ae214bc890d54b7199b14375ff"
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-32x16/",
+    "file": "products/water-hydraulic-cylinders/cylinder-32x16/index.html",
+    "sha256": "e8f32ce6e2c1e236045fd8c33d4db46bbf173fffbd2a8439d2a3e2c5b16e826c"
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-32x20/",
+    "file": "products/water-hydraulic-cylinders/cylinder-32x20/index.html",
+    "sha256": "ee2615f95414cae7986d0350ffcc868d1341a81b29dfa12c1593cbc64e7a3d1c"
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-40x25/",
+    "file": "products/water-hydraulic-cylinders/cylinder-40x25/index.html",
+    "sha256": "dcd2ecf6819419ddf5d5e89e99a5c81be9f9b0c6bed2eb4f473858c372cd1c6c"
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-50x25/",
+    "file": "products/water-hydraulic-cylinders/cylinder-50x25/index.html",
+    "sha256": "3e3495960322b24144b10e5d3a88247a294d813da635f99c9ff1964b981e8766"
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-50x30/",
+    "file": "products/water-hydraulic-cylinders/cylinder-50x30/index.html",
+    "sha256": "696a218d4e23eb9c9c6b1bf54a764d00ac7ac397009f835af985d2d1fd48066f"
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-64x30/",
+    "file": "products/water-hydraulic-cylinders/cylinder-64x30/index.html",
+    "sha256": "f689a7358705f2c6b195ebc37738de11d8c052c7450960025d9bf59ef188a7a3"
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-64x40/",
+    "file": "products/water-hydraulic-cylinders/cylinder-64x40/index.html",
+    "sha256": "e69d2948ebb636e7e8667e4b512aad8cfa8e80cfb3e8ba47cc0203e9712ff9bc"
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-80x50/",
+    "file": "products/water-hydraulic-cylinders/cylinder-80x50/index.html",
+    "sha256": "deaa70a8b4ed92f74aef2c3a45d94b114cc4b2d4df6cee13ee57e24062f01103"
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/",
+    "file": "products/water-hydraulic-cylinders/index.html",
+    "sha256": "8de6b75ea9c75b9dc1369ca1c43ec2658cbba7e8fd26ec7446cdbafcb833b9e1"
+  },
+  {
+    "route": "/products/water-hydraulic-motors/",
+    "file": "products/water-hydraulic-motors/index.html",
+    "sha256": "05eddd8709e16c73a4e4b04c919c4a965cf7e58c9c857696d6b1b9821b6fae3c"
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m15/",
+    "file": "products/water-hydraulic-motors/m15-water-hydraulic-motor/index.html",
+    "sha256": "e082a423cb6cf13c46f161a1666449b24ad55a13591ce146362ff27a672f3f1a"
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m15-water-hydraulic-motor/",
+    "file": "products/water-hydraulic-motors/m15-water-hydraulic-motor/index.html",
+    "sha256": "e082a423cb6cf13c46f161a1666449b24ad55a13591ce146362ff27a672f3f1a"
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m180/",
+    "file": "products/water-hydraulic-motors/m180-axial-piston-water-hydraulic-motor/index.html",
+    "sha256": "bb420b3f1d4670684b7b605bf0ce518bd287160c06fbb13abc77ecabdfd06c86"
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m180-axial-piston-water-hydraulic-motor/",
+    "file": "products/water-hydraulic-motors/m180-axial-piston-water-hydraulic-motor/index.html",
+    "sha256": "bb420b3f1d4670684b7b605bf0ce518bd287160c06fbb13abc77ecabdfd06c86"
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m3/",
+    "file": "products/water-hydraulic-motors/m3-water-hydraulic-motor/index.html",
+    "sha256": "6842dd1bbad7343a6fd3bfcb1965effe28310582db8fb0ce967d90a5a28737ca"
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m3-water-hydraulic-motor/",
+    "file": "products/water-hydraulic-motors/m3-water-hydraulic-motor/index.html",
+    "sha256": "6842dd1bbad7343a6fd3bfcb1965effe28310582db8fb0ce967d90a5a28737ca"
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m30/",
+    "file": "products/water-hydraulic-motors/m30-water-hydraulic-motor/index.html",
+    "sha256": "20b2de2f0e54ba84a2d383ab3b2acaebf8cfa408b0c35d6c02b25835f89c4d41"
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m30-water-hydraulic-motor/",
+    "file": "products/water-hydraulic-motors/m30-water-hydraulic-motor/index.html",
+    "sha256": "20b2de2f0e54ba84a2d383ab3b2acaebf8cfa408b0c35d6c02b25835f89c4d41"
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m6/",
+    "file": "products/water-hydraulic-motors/m6-water-hydraulic-motor/index.html",
+    "sha256": "e5f592f02e3991db9d3c49a3f6d66ccbc47dae0baf446b000f4681e57c4d2543"
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m6-water-hydraulic-motor/",
+    "file": "products/water-hydraulic-motors/m6-water-hydraulic-motor/index.html",
+    "sha256": "e5f592f02e3991db9d3c49a3f6d66ccbc47dae0baf446b000f4681e57c4d2543"
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m60/",
+    "file": "products/water-hydraulic-motors/m60-axial-piston-water-hydraulic-motor/index.html",
+    "sha256": "8efd3014cff44513bdf8693deb80a03d6aa6b0972498872a22b7193e9ab482dd"
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m60-axial-piston-water-hydraulic-motor/",
+    "file": "products/water-hydraulic-motors/m60-axial-piston-water-hydraulic-motor/index.html",
+    "sha256": "8efd3014cff44513bdf8693deb80a03d6aa6b0972498872a22b7193e9ab482dd"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/2-2-directional-valve/",
+    "file": "products/water-hydraulic-valves/2-2-directional-valve/index.html",
+    "sha256": "a4a3095ace9fe129b0e9331a069d50aaaa43d4f5b57635a51c999a691279258a"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/2-2-pilot-valves/",
+    "file": "products/water-hydraulic-valves/2-2-pilot-valves/index.html",
+    "sha256": "cf690322d8dc8ee3e2e31f36d686d2972b1713c392fb3827eb5b374903d5a1af"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/4-2-3-2-directional-control-valves/",
+    "file": "products/water-hydraulic-valves/4-2-3-2-directional-control-valves/index.html",
+    "sha256": "ea600856bdeac50b2d31eac1958557a8679c5db385a2c120c2a5eacafa53a8a6"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/4-3-directional-control-valves/",
+    "file": "products/water-hydraulic-valves/4-3-directional-control-valves/index.html",
+    "sha256": "64e8630e011b583d9e77fc29a88ba9614932ec641dae13b54cd4093d2f324c77"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/actuation-cards/",
+    "file": "products/water-hydraulic-valves/actuation-cards/index.html",
+    "sha256": "2cd19f8e86404f66523d58ce34c7a404dfccab05555e7e2b6ab2028bda0bd0f4"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/check-valves/",
+    "file": "products/water-hydraulic-valves/check-valves/index.html",
+    "sha256": "5fb9c5f4a2705fae2a5a1f418ed61f6592bfc113d3171585ea8f208217d40f6d"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/dc-microstep-drive-with-q-programming-st5-q-nn/",
+    "file": "products/water-hydraulic-valves/dc-microstep-drive-with-q-programming-st5-q-nn/index.html",
+    "sha256": "9414318928ab33ae9a15f7d90db0c2f928947681a42fb0881f387ba9f01f0ab5"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/dn16-directional-valves/",
+    "file": "products/water-hydraulic-valves/dn16-directional-valves/index.html",
+    "sha256": "9f9a2809334e4cf3447e458be35438b2d1e2195e2da2a15172de7d7c2850ba6a"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/electronic-flow-control-valves/",
+    "file": "products/water-hydraulic-valves/electronic-flow-control-valves/index.html",
+    "sha256": "6f3229e39095ca4aa5021d6179bbaca414a97e507b28b24be58dafe237f7739d"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/electronic-pressure-control-valve/",
+    "file": "products/water-hydraulic-valves/electronic-pressure-control-valve/index.html",
+    "sha256": "323e384afe86b4aa081777b85b6ef95ec9e6d5636ce4849f87370cc13d4ed8ff"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/flow-control-valve/",
+    "file": "products/water-hydraulic-valves/flow-control-valve/index.html",
+    "sha256": "ed7159b8d27cb2c21b503a649ea9bd89b5b3c328ab62cad82e41c568cb2f10c3"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/hose-burst-valve/",
+    "file": "products/water-hydraulic-valves/hose-burst-valve/index.html",
+    "sha256": "d70e0ade3f0084f2b57f439363aa02be879ae8727f4b38789a4fd64782ec0896"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/",
+    "file": "products/water-hydraulic-valves/index.html",
+    "sha256": "9cd4afcf5594325e6bdecea5f2757f54d635c1c54da82186dfac996bb242b61b"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/manifolds/",
+    "file": "products/water-hydraulic-valves/manifolds/index.html",
+    "sha256": "e57b4300565352cd4f92f36ea544805b558362e49d8be288fcac8446d2089a39"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/po-check-valve-dn12/",
+    "file": "products/water-hydraulic-valves/po-check-valve-dn12/index.html",
+    "sha256": "7e5854d10d7f264088db01b39ce4b2d3de277522dfe43f4848ce0e04dd06f392"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/po-check-valve-dn6/",
+    "file": "products/water-hydraulic-valves/po-check-valve-dn6/index.html",
+    "sha256": "405110a0e7354d387171e8579a2a4036f03dcc10db4118e3be7d08471415acf1"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/pressure-compensating-flow-control-valve/",
+    "file": "products/water-hydraulic-valves/pressure-compensating-flow-control-valve/index.html",
+    "sha256": "63a697aec97f1b3f555f5cbc38ba8e3b6ac137fb24a9f49073ea934b79472cf2"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/pressure-reducing-valves/",
+    "file": "products/water-hydraulic-valves/pressure-reducing-valves/index.html",
+    "sha256": "34b1bfbd784f83dc62ec41d29eb9de71ffef9ec5f77ea403032e3e7bfdd015e4"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/relief-valves/",
+    "file": "products/water-hydraulic-valves/relief-valves/index.html",
+    "sha256": "b6571ee3ffeb0285113f737fd32de6831f2977421501ff9447d589f9bced9460"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-2-2-pilot/",
+    "file": "products/water-hydraulic-valves/2-2-pilot-valves/index.html",
+    "sha256": "cf690322d8dc8ee3e2e31f36d686d2972b1713c392fb3827eb5b374903d5a1af"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-4-2-3-2-directional/",
+    "file": "products/water-hydraulic-valves/4-2-3-2-directional-control-valves/index.html",
+    "sha256": "ea600856bdeac50b2d31eac1958557a8679c5db385a2c120c2a5eacafa53a8a6"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-4-3-manual/",
+    "file": "products/water-hydraulic-valves/4-3-directional-control-valves/index.html",
+    "sha256": "64e8630e011b583d9e77fc29a88ba9614932ec641dae13b54cd4093d2f324c77"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-actuation-cards/",
+    "file": "products/water-hydraulic-valves/actuation-cards/index.html",
+    "sha256": "2cd19f8e86404f66523d58ce34c7a404dfccab05555e7e2b6ab2028bda0bd0f4"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-check-valves/",
+    "file": "products/water-hydraulic-valves/check-valves/index.html",
+    "sha256": "5fb9c5f4a2705fae2a5a1f418ed61f6592bfc113d3171585ea8f208217d40f6d"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-dn12-po-check/",
+    "file": "products/water-hydraulic-valves/po-check-valve-dn12/index.html",
+    "sha256": "7e5854d10d7f264088db01b39ce4b2d3de277522dfe43f4848ce0e04dd06f392"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-dn16-directional/",
+    "file": "products/water-hydraulic-valves/dn16-directional-valves/index.html",
+    "sha256": "9f9a2809334e4cf3447e458be35438b2d1e2195e2da2a15172de7d7c2850ba6a"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-electronic-flow-control/",
+    "file": "products/water-hydraulic-valves/electronic-flow-control-valves/index.html",
+    "sha256": "6f3229e39095ca4aa5021d6179bbaca414a97e507b28b24be58dafe237f7739d"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-electronic-pressure-control/",
+    "file": "products/water-hydraulic-valves/electronic-pressure-control-valve/index.html",
+    "sha256": "323e384afe86b4aa081777b85b6ef95ec9e6d5636ce4849f87370cc13d4ed8ff"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-flow-control/",
+    "file": "products/water-hydraulic-valves/flow-control-valve/index.html",
+    "sha256": "ed7159b8d27cb2c21b503a649ea9bd89b5b3c328ab62cad82e41c568cb2f10c3"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-hose-burst/",
+    "file": "products/water-hydraulic-valves/hose-burst-valve/index.html",
+    "sha256": "d70e0ade3f0084f2b57f439363aa02be879ae8727f4b38789a4fd64782ec0896"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-ordering-code/",
+    "file": "products/water-hydraulic-valves/valve-ordering-code/index.html",
+    "sha256": "457417f53dcc91431cbb1da11a347da3ceb90683e487c2bc74d7fb9367b5864b"
+  },
+  {
+    "route": "/products/water-hydraulic-valves/zone-valves/",
+    "file": "products/water-hydraulic-valves/zone-valves/index.html",
+    "sha256": "5d6ed17dcaf785f07159fcfcd129e3477ec1b65a5880aad01fab34a09b3d7c89"
+  },
+  {
+    "route": "/products/water-hydraulics-hpu/",
+    "file": "products/water-hydraulics-hpu/index.html",
+    "sha256": "86ff5c5742745e83da9d00a0f083e1007cb026d199bc4bb14f658dcde62a782d"
+  },
+  {
+    "route": "/r2-modular-desalination-packages/",
+    "file": "r2-modular-desalination-packages/index.html",
+    "sha256": "1df5ed4720c8a93d2f7b99d9468333af67e0212ebaa089b787a1b45d8a9355af"
+  },
+  {
+    "route": "/sluice-gates/",
+    "file": "sluice-gates/index.html",
+    "sha256": "cd401c7441a6ad894a7b0be95d3d286b34820a8079e8913cdaa848e6e59d8e3f"
+  },
+  {
+    "route": "/sluice-gates/marine-tidal-gate-water-hydraulics/",
+    "file": "sluice-gates/marine-tidal-gate-water-hydraulics/index.html",
+    "sha256": "6ea3479e1cb375a444cbf2e39ee83cc7c599ea9be0d919dbedbfbe43c17bebfe"
+  },
+  {
+    "route": "/sluice-gates/municipal-outfall-sluice-gate/",
+    "file": "sluice-gates/municipal-outfall-sluice-gate/index.html",
+    "sha256": "f0df2231f8c52ff68e91093b53b3a34529a8fafff6206a5484df2b812eb4cfc6"
+  },
+  {
+    "route": "/sluice-gates/sluice-gate-project-examples/",
+    "file": "sluice-gates/sluice-gate-project-examples/index.html",
+    "sha256": "3e29f0cad4f3f3fb0b545ee464422fd86f9af0b7d317436f0d4f3393c08e2a20"
+  },
+  {
+    "route": "/sluice-gates/wastewater-channel-sluice-gate/",
+    "file": "sluice-gates/wastewater-channel-sluice-gate/index.html",
+    "sha256": "28b3045ac9a58459cdb9d7125176716b484befb5b9e81e32af1784d0b5853d0f"
+  },
+  {
+    "route": "/t-p180-pump/",
+    "file": "products/axial-piston-pumps/p180/index.html",
+    "sha256": "0db5be9a894cdf03d638378122603dc14146574fa152d52778593f0b7d3a19a3"
+  },
+  {
+    "route": "/t-p3-pump-4/",
+    "file": "products/axial-piston-pumps/p3/index.html",
+    "sha256": "1c913bac05e86d5e64ec35a053f1f2346108aaa60357d98c6dee0ae9b169dfae"
+  },
+  {
+    "route": "/t-p30-pump/",
+    "file": "products/axial-piston-pumps/p30/index.html",
+    "sha256": "84392f3ce419057852221ed36cc1fdc0b80c8f205fab55c3705e8e8abc9ce7d7"
+  },
+  {
+    "route": "/t-p60-pump-1/",
+    "file": "products/axial-piston-pumps/p60/index.html",
+    "sha256": "ef1fc57dcdd0f72a846afe16bc085236d13029e7390368acbdbb29e8126bfb0e"
+  },
+  {
+    "route": "/tcheck-graph-4-p15-pump/",
+    "file": "products/axial-piston-pumps/p15/index.html",
+    "sha256": "f45475574863cc382f768ef6997729d54b500e2c432ccbaacbaa2577879b2653"
+  },
+  {
+    "route": "/technology/",
+    "file": "technology/index.html",
+    "sha256": "9c9846bc45196e1e169acc4e8460269bfcfd3f3da860e08f3e91a2e2c7bc3e25"
+  },
+  {
+    "route": "/tier-one-product-pages-f1-cylinder-main-with-pressure-files-files-f1-cylinders-main-page/",
+    "file": "products/water-hydraulic-cylinders/index.html",
+    "sha256": "8de6b75ea9c75b9dc1369ca1c43ec2658cbba7e8fd26ec7446cdbafcb833b9e1"
+  },
+  {
+    "route": "/wastewater-solutions/",
+    "file": "wastewater-solutions/index.html",
+    "sha256": "49419d5797572d9560b0c86c2cb78d5f71e4497329b47f9b99d163a8ce0923d5"
+  },
+  {
+    "route": "/wastewater-solutions/waterbio/",
+    "file": "wastewater-solutions/waterbio/index.html",
+    "sha256": "ec6a2dd5e8156b1ad3fb43628eb09651dc744eca0bfc5ae692814b16b33a4a8c"
+  },
+  {
+    "route": "/wastewater-solutions/waterclarify/",
+    "file": "wastewater-solutions/waterclarify/index.html",
+    "sha256": "02b5adf571e20145e77dd231ef65d6e957f7dc2f18a05c0817346a810d6e485e"
+  },
+  {
+    "route": "/wastewater-solutions/watercloud/",
+    "file": "wastewater-solutions/watercloud/index.html",
+    "sha256": "e065363ab300f889d25e48b46b8a0c91cdb2dca49fbdc30380de282eb4591e72"
+  },
+  {
+    "route": "/wastewater-solutions/watercore/",
+    "file": "wastewater-solutions/watercore/index.html",
+    "sha256": "b7ec196e48417af39966bbe81fb655a154717781e48494e5ca0685ad2e67f239"
+  },
+  {
+    "route": "/wastewater-solutions/waterfilter/",
+    "file": "wastewater-solutions/waterfilter/index.html",
+    "sha256": "4e2566d7cca1d62243103dcc9b53cadaae61255ab60e9da6fabde5f5ba8046e0"
+  },
+  {
+    "route": "/wastewater-solutions/watergate/",
+    "file": "sluice-gates/index.html",
+    "sha256": "cd401c7441a6ad894a7b0be95d3d286b34820a8079e8913cdaa848e6e59d8e3f"
+  },
+  {
+    "route": "/wastewater-solutions/wateriq/",
+    "file": "wastewater-solutions/wateriq/index.html",
+    "sha256": "c862a1f82aa0951441c689028b7d2b31c1bd401eb651608aa728c0fa2291fc8b"
+  },
+  {
+    "route": "/wastewater-solutions/waterlift/",
+    "file": "wastewater-solutions/waterlift/index.html",
+    "sha256": "4fdb07dde56d98d3eddc03506299ece3d2cc1cfbcef9eb2a9c0c5416d7d2fedc"
+  },
+  {
+    "route": "/wastewater-solutions/watersense/",
+    "file": "wastewater-solutions/watersense/index.html",
+    "sha256": "e3600ab57e6de8e3fde07c9b2454630c93082c9e920aaf2ce6be5cbc40b4e0eb"
+  },
+  {
+    "route": "/wastewater-solutions/watertwin/",
+    "file": "wastewater-solutions/watertwin/index.html",
+    "sha256": "59f1b5a48f1d87b24983ead885343296350ca596967300f7a3d7150ba144c9f6"
+  },
+  {
+    "route": "/wqs-stainless/",
+    "file": "wqs-stainless/index.html",
+    "sha256": "f2a97c794569082968ef082607386de311c17ca8ac0d46bdbaf4fb6f03517c10"
+  }
+]

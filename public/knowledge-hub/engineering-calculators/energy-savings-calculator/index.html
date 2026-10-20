@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html id="waterquest-site" lang="en-CA"><head><style id="wqs-experience-layer">@layer wqs-experience;</style><link rel="stylesheet" href="/assets/newsletter-popup.css?v=20261016"><style id="wqc-print-layer">@layer waterquest-report-print;</style><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><title>Energy Use Comparison Calculator | WaterQuest Solutions</title><meta content="See where a change in power demand could affect your electricity bill. Compare two operating scenarios using your hours, energy rates and demand charges, with each assumption visible for review." name="description"/><meta content="water hydraulics engineering calculator, energy savings calculator" name="keywords"/><link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/engineering-calculators/energy-savings-calculator/" rel="canonical"/><meta content="WaterQuest Solutions" property="og:site_name"/><meta content="Energy Use Comparison Calculator | WaterQuest Solutions" property="og:title"/><meta content="See where a change in power demand could affect your electricity bill. Compare two operating scenarios using your hours, energy rates and demand charges, with each assumption visible for review." property="og:description"/><meta content="website" property="og:type"/><meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/engineering-calculators/energy-savings-calculator.html" property="og:url"/><meta content="summary_large_image" name="twitter:card"/><meta content="Energy Use Comparison Calculator | WaterQuest Solutions" name="twitter:title"/><meta content="See where a change in power demand could affect your electricity bill. Compare two operating scenarios using your hours, energy rates and demand charges, with each assumption visible for review." name="twitter:description"/><style>
+
+    :root {
+      --navy:         #060C18;
+      --navy-mid:     #091428;
+      --navy-light:   #0E1E3C;
+      --aqua:         #00EEFF;
+      --aqua-glow:    #778FA8;
+      --silver:       #FFFFFF;
+      --silver-light: #FFFFFF;
+      --white:        #FFFFFF;
+      --body-text:    #FFFFFF;
+      --muted:        #FFFFFF;
+      --border:       rgba(120,160,204,0.15);
+      --border-aqua:  rgba(0,200,212,0.3);
+      --font-display: 'Verdana', 'Lato', sans-serif;
+      --font-body:    'Lato', 'Segoe UI', system-ui, sans-serif;
+      --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px;
+      --max-width: 1240px; --section-pad: 100px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); background: var(--navy); color:#FFFFFF; line-height: 1.7; overflow-x: hidden; }
+    a { color:inherit; text-decoration: none; }
+    ul { list-style: none; }
+    .label { font-family: var(--font-display); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color:#00EEFF; }
+    h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 900; line-height: 1.15; color:#FFFFFF; }
+    h1 { font-size: clamp(2.4rem,5vw,4.2rem); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(1.9rem,3.5vw,3rem); letter-spacing: -0.02em; }
+    h3 { font-size: clamp(1.1rem,2vw,1.42rem); }
+    h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color:#00EEFF; }
+    p  { color:#FFFFFF; font-size: 1.02rem; }
+    .text-aqua  { color:#00EEFF; }
+    .text-muted { color:#FFFFFF; }
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
+    .section { padding: var(--section-pad) 0; }
+    .section-alt  { background: var(--navy-mid); }
+    .section-dark { background: var(--navy); }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: var(--radius-sm); font-family: var(--font-display); font-weight: 700; font-size: 0.88rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border: none; transition: all 0.25s ease; }
+    .btn-primary { background:#00616B; color:#FFFFFF; }
+    .btn-primary:hover { background:#00616B; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,200,212,0.45); }
+    .btn-outline { background: transparent; color:#00EEFF; border: 1.5px solid var(--border-aqua); }
+    .btn-outline:hover { background:#00616B; border-color: var(--aqua); }
+    .bubble { position: absolute; border-radius: 50%; background: radial-gradient(circle at 35% 35%, rgba(0,200,212,0.55), rgba(0,160,200,0.08) 60%, transparent 80%); border: 1px solid rgba(0,200,212,0.2); opacity: 0; animation: bubble-rise linear infinite; }
+    @keyframes bubble-rise { 0%{transform:translateY(0) translateX(0) scale(1);opacity:0} 8%{opacity:0.55} 50%{transform:translateY(-50vh) translateX(var(--drift)) scale(0.88);opacity:0.28} 92%{opacity:0.08} 100%{transform:translateY(-108vh) translateX(calc(var(--drift)*1.4)) scale(0.45);opacity:0} }
+    .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-left  { opacity:0; transform:translateX(-28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-left.visible  { opacity:1; transform:translateX(0); }
+    .reveal-right { opacity:0; transform:translateX(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal-right.visible { opacity:1; transform:translateX(0); }
+    /* NAV */
+    #nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: background 0.3s, backdrop-filter 0.3s; }
+    #nav.scrolled { background: rgba(6,12,24,0.93); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .nav-logo .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.15rem; color:#FFFFFF; letter-spacing: -0.01em; }
+    .nav-logo .logo-sub  { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color:#00EEFF; margin-top: 1px; display: block; }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { font-family: var(--font-display); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color:#FFFFFF; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color:#00EEFF; }
+    .nav-cta { background:#00616B!important; color:#FFFFFF!important; padding: 9px 20px; border-radius: var(--radius-sm); }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--silver); border-radius: 2px; transition: all 0.3s; }
+    /* FOOTER */
+    footer { background: #040810; border-top: 1px solid var(--border); padding: 64px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand .logo-main { font-family: var(--font-display); font-weight: 900; font-size: 1.2rem; color:#FFFFFF; margin-bottom: 6px; }
+    .footer-brand .logo-sub { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color:#00EEFF; margin-bottom: 18px; display: block; }
+    .footer-brand p { font-size: 0.9rem; color:#FFFFFF; line-height: 1.7; margin-bottom: 14px; }
+    .footer-tagline { font-style: italic; color:#FFFFFF!important; font-size: 0.88rem !important; }
+    .footer-col h5 { font-family: var(--font-display); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color:#FFFFFF; margin-bottom: 16px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul a { font-size: 0.88rem; color:#FFFFFF; transition: color 0.2s; }
+    .footer-col ul a:hover { color:#00EEFF; }
+    .footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-bottom p { font-size: 0.82rem; color:#FFFFFF; }
+    .footer-cert { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cert-badge { padding: 4px 12px; border: 1px solid var(--border); border-radius: 100px; font-size: 0.72rem; color:#FFFFFF; font-weight: 600; letter-spacing: 0.06em; }
+    /* BREADCRUMB */
+    .breadcrumb { padding: 90px 0 0; }
+    .breadcrumb-inner { max-width: var(--max-width); margin: 0 auto; padding: 14px 32px; display: flex; align-items: center; gap: 8px; }
+    .breadcrumb-inner a, .breadcrumb-inner span { font-size: 0.78rem; color:#FFFFFF; letter-spacing: 0.06em; }
+    .breadcrumb-inner a:hover { color:#00EEFF; }
+    .breadcrumb-sep { color:#FFFFFF; }
+    .breadcrumb-inner .current { color:#00EEFF; }
+    /* SECTION HEADER */
+    .section-header { margin-bottom: 56px; }
+    .section-header .label { margin-bottom: 14px; }
+    .section-header h2 { margin-bottom: 14px; }
+    .section-header p { max-width: 640px; font-size: 1.06rem; color:#FFFFFF; line-height: 1.75; }
+    .section-header.center { text-align: center; }
+    .section-header.center p { margin: 0 auto; }
+    /* RESPONSIVE */
+    @media (max-width: 960px) {
+      :root { --section-pad:72px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0; background: rgba(6,12,24,0.97); padding: 24px 32px 32px; gap: 20px; border-bottom: 1px solid var(--border); backdrop-filter: blur(12px); }
+    }
+    @media (max-width: 600px) {
+      :root { --section-pad:56px; }
+      .container { padding: 0 20px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+      .breadcrumb-inner { padding: 14px 20px; }
+    }
+
+
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
+    .page-hero { position:relative; padding:130px 0 56px; overflow:hidden; border-bottom:1px solid var(--border); }
+    .page-hero-bg { position:absolute;inset:0; background:radial-gradient(ellipse 60% 60% at 80% 50%,rgba(0,80,140,0.22) 0%,transparent 60%),radial-gradient(ellipse 40% 40% at 10% 60%,rgba(0,160,180,0.1) 0%,transparent 55%),linear-gradient(175deg,#030810 0%,#060C18 100%); }
+    .infra-grid { position:absolute;inset:0;pointer-events:none; background-image:linear-gradient(rgba(0,200,212,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,0.04) 1px,transparent 1px); background-size:56px 56px; mask-image:radial-gradient(ellipse 70% 80% at 80% 50%,black 20%,transparent 78%); }
+    .page-hero-content { position:relative;z-index:2; }
+    .page-hero h1 { margin-bottom:16px; }
+    .hero-desc { font-size:1.08rem;color:#FFFFFF;max-width:600px;line-height:1.8;margin-bottom:28px; }
+    .units-toggle { display:inline-flex;border:1px solid var(--border-aqua);border-radius:var(--radius-sm);overflow:hidden; }
+    .units-toggle button { background:transparent;border:none;color:#FFFFFF;font-family:var(--font-display);font-weight:700;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;padding:9px 22px;cursor:pointer;transition:all 0.2s; }
+    .units-toggle button.active { background:#00616B;color:#FFFFFF; }
+    .calc-section { padding:64px 0 80px; }
+    .calc-grid { display:grid;grid-template-columns:1fr 1fr;gap:22px; }
+    .calc-card { background:var(--navy-light);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:border-color 0.3s,box-shadow 0.3s; animation:fadeUpCard 0.45s ease both; }
+    .calc-card:hover { border-color:var(--border-aqua);box-shadow:0 8px 36px rgba(0,200,212,0.1); }
+    .calc-card.full { grid-column:1/-1; }
+    .calc-card:nth-child(1){animation-delay:0.05s} .calc-card:nth-child(2){animation-delay:0.12s}
+    .calc-card:nth-child(3){animation-delay:0.19s} .calc-card:nth-child(4){animation-delay:0.26s}
+    .calc-card:nth-child(5){animation-delay:0.33s}
+    @keyframes fadeUpCard { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+    .calc-header { padding:22px 28px 18px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:16px; }
+    .calc-icon { width:42px;height:42px;border-radius:var(--radius-sm);background:rgba(0,200,212,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px; }
+    .calc-icon svg { width:22px;height:22px;stroke:var(--aqua);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round; }
+    .calc-title { font-family:var(--font-display);font-weight:900;font-size:1.02rem;color:#FFFFFF;letter-spacing:0.02em;line-height:1.2;margin-bottom:4px; }
+    .calc-formula { font-family:'DM Mono',monospace;font-size:0.72rem;color:#00EEFF;opacity:0.85; }
+    .calc-body { padding:22px 28px 28px; }
+    .field { margin-bottom:16px; }
+    .field-label { font-family:var(--font-display);font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#FFFFFF;margin-bottom:7px;display:flex;justify-content:space-between;align-items:center; }
+    .unit-badge { font-family:'DM Mono',monospace;font-size:0.65rem;color:#00EEFF;background:rgba(0,200,212,0.1);padding:2px 7px;border-radius:3px;letter-spacing:0.04em; }
+    .field-input { display:flex;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-sm);overflow:hidden;transition:border-color 0.2s; }
+    .field-input:focus-within { border-color:var(--aqua);background:rgba(0,200,212,0.04); }
+    .field-input input[type="number"] { flex:1;background:transparent;border:none;outline:none;color:#FFFFFF;font-family:'DM Mono',monospace;font-size:1rem;font-weight:500;padding:11px 14px;width:0;-moz-appearance:textfield; }
+    .field-input input[type="number"]::-webkit-outer-spin-button,.field-input input[type="number"]::-webkit-inner-spin-button{-webkit-appearance:none;}
+    .field-input .unit-label { font-family:var(--font-display);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;color:#FFFFFF;padding:0 14px;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.06);align-self:stretch;display:flex;align-items:center; }
+    .field-hint { font-size:0.72rem;color:#FFFFFF;margin-top:5px; }
+    .field-range { margin-top:7px;display:flex;align-items:center;gap:10px; }
+    .field-range input[type="range"] { flex:1;height:3px;-webkit-appearance:none;appearance:none;background:rgba(0,200,212,0.18);border-radius:2px;outline:none;cursor:pointer; }
+    .field-range input[type="range"]::-webkit-slider-thumb { -webkit-appearance:none;width:15px;height:15px;border-radius:50%;background:var(--aqua);cursor:pointer;border:2px solid var(--navy-light);box-shadow:0 0 0 3px rgba(0,200,212,0.3);transition:box-shadow 0.2s; }
+    .field-range input[type="range"]::-webkit-slider-thumb:hover { box-shadow:0 0 0 5px rgba(0,200,212,0.3); }
+    .range-cap { font-family:'DM Mono',monospace;font-size:0.62rem;color:#FFFFFF;opacity:0.7;white-space:nowrap; }
+    select.field-select { width:100%;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-sm);color:#FFFFFF;font-family:'DM Mono',monospace;font-size:0.85rem;padding:11px 14px;outline:none;cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2300C8D4' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;transition:border-color 0.2s; }
+    select.field-select:focus { border-color:var(--aqua); }
+    .calc-divider { height:1px;background:rgba(0,200,212,0.1);margin:20px 0; }
+    .result-box { background:rgba(0,200,212,0.06);border:1px solid rgba(0,200,212,0.28);border-radius:var(--radius-md);padding:18px 20px;position:relative;overflow:hidden; }
+    .result-box::before { content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--aqua);border-radius:3px 0 0 3px; }
+    .result-label { font-family:var(--font-display);font-weight:700;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:#00EEFF;margin-bottom:6px; }
+    .result-value { font-family:'DM Mono',monospace;font-size:1.85rem;font-weight:500;color:#FFFFFF;line-height:1.1;letter-spacing:-0.02em; }
+    .result-unit { font-family:var(--font-display);font-size:0.88rem;font-weight:700;color:#00EEFF;margin-left:6px; }
+    .result-alt { font-family:'DM Mono',monospace;font-size:0.78rem;color:#FFFFFF;margin-top:5px; }
+    .result-note { font-size:0.78rem;color:#FFFFFF;margin-top:5px;line-height:1.6; }
+    .result-multi { display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px; }
+    .formula-toggle { background:none;border:none;color:#FFFFFF;font-family:var(--font-display);font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;padding:12px 0 0;display:flex;align-items:center;gap:6px;transition:color 0.2s; }
+    .formula-toggle:hover { color:#00EEFF; }
+    .formula-toggle svg { width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;transition:transform 0.2s; }
+    .formula-panel { display:none;margin-top:12px;background:rgba(0,0,0,0.3);border-radius:var(--radius-sm);padding:14px 16px;font-family:'DM Mono',monospace;font-size:0.78rem;color:#FFFFFF;line-height:1.9;border-left:2px solid rgba(0,200,212,0.2); }
+    .formula-panel.open { display:block; }
+    .formula-panel .var { color:#00EEFF; }
+    .formula-panel .eq  { color:#FFFFFF; }
+    .tip { display:inline-block;width:15px;height:15px;border-radius:50%;background:rgba(0,200,212,0.12);color:#00EEFF;font-family:var(--font-display);font-size:0.6rem;font-weight:700;text-align:center;line-height:15px;cursor:help;position:relative;margin-left:4px;vertical-align:middle; }
+    .tip:hover::after { content:attr(data-tip);position:absolute;left:50%;bottom:calc(100% + 6px);transform:translateX(-50%);background:var(--navy-light);color:#FFFFFF;font-family:var(--font-body);font-size:0.72rem;font-weight:300;white-space:nowrap;padding:5px 10px;border-radius:var(--radius-sm);border:1px solid var(--border);z-index:99;pointer-events:none; }
+    @media (max-width:768px) { .calc-grid{grid-template-columns:1fr} .calc-card.full{grid-column:1} .result-multi{grid-template-columns:1fr} }
+
+  
+    .single-calc-wrap{max-width:980px;margin:0 auto}.calc-card.fullpage{width:100%}
+    .input-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .input-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .engineering-note{margin-top:20px;padding:16px 18px;border:1px solid var(--border);border-radius:var(--radius-md);background:rgba(255,255,255,.02);font-size:.84rem;color:#FFFFFF}
+    .engineering-note strong{color:#00EEFF}
+    .status-good{color:#FFFFFF}.status-warn{color:#FFFFFF}.status-bad{color:#FFFFFF}
+    .result-multi.two{grid-template-columns:repeat(2,1fr)}
+    @media(max-width:768px){.input-grid,.input-grid.three{grid-template-columns:1fr}.result-multi.two{grid-template-columns:1fr}}
+
+
+    /* WaterQuest launch text treatment: white copy with aqua engineering highlights. */
+    :root {
+      --aqua: #18c7d8 !important;
+      --silver: #FFFFFF !important;
+      --silver-light: #FFFFFF !important;
+      --white: #FFFFFF !important;
+      --body-text: #FFFFFF !important;
+      --muted: #FFFFFF !important;
+      --text-muted: #FFFFFF !important;
+      --light-text: #FFFFFF !important;
+      --secondary-text: #FFFFFF !important;
+    }
+    body, p, li, td, th, label, .text-muted, .field-label, .field-hint, .range-cap, .result-alt, .result-note, .formula-panel, .engineering-note, .footer-brand p, .footer-col a, .footer-bottom p, .cert-badge { color:#FFFFFF!important; }
+    .label, .text-aqua, h1 span, h2 span, h3 span, h4, .calc-formula, .unit-badge, .result-label, .result-unit, .formula-panel .var, .footer-brand .logo-sub, .nav-logo .logo-sub, .nav-links a:hover, .nav-links a.active { color:#00EEFF!important; }
+    .btn-primary, .nav-cta, .units-toggle button.active { background:#00616B!important; color:#00EEFF!important; }
+    .btn-outline { color:#00EEFF!important; border-color: rgba(24,199,216,0.42) !important; }
+    .breadcrumb { padding-top: 90px; }
+
+</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/engineering-calculators/energy-savings-calculator.html#primary","name":"Energy Use Comparison Calculator","headline":"Energy Use Comparison Calculator","description":"See where a change in power demand could affect your electricity bill. Compare two operating scenarios using your hours, energy rates and demand charges, with each assumption visible for review.","url":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/engineering-calculators/energy-savings-calculator/","inLanguage":"en-CA","applicationCategory":"EngineeringApplication","operatingSystem":"Web browser","isPartOf":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"},"publisher":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"},"about":[{"@type":"Thing","name":"Water hydraulics"},{"@type":"Thing","name":"Water as a hydraulic medium"},{"@type":"Thing","name":"Oil-free hydraulic systems"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/"},{"@type":"ListItem","position":2,"name":"Knowledge Hub","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"},{"@type":"ListItem","position":3,"name":"Engineering Calculators","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/engineering-calculators/"},{"@type":"ListItem","position":4,"name":"Energy Use Comparison Calculator","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/engineering-calculators/energy-savings-calculator.html"}]}</script> <link href="/assets/calculator-collection/wq-global.css?v=20261013-verdana" rel="stylesheet"/>
+
+<link href="/assets/calculator-collection/site-header-footer.css?v=20261011-white-aqua" rel="stylesheet"/>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/calculators-v2/styles.css?v=20261015-print-brand" rel="stylesheet"/><link rel="stylesheet" href="/assets/wq-brand-standards.css?v=20261015-brand"/><script type="module" src="/assets/wq-speed-insights.js" id="wq-speed-insights"></script>
+</head><body class="wq-audited wq-consistent"><nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img class="wq-brand-mark" src="/assets/waterquest-logo-square.png" alt="" width="54" height="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><div aria-hidden="true" id="global-bubbles" style="position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden"></div>
+<main class="wqc" data-calculator="energy-savings" id="calculator-app"><nav aria-label="Breadcrumb" class="wqc-breadcrumb"><a href="/knowledge-hub/">Knowledge Hub</a> / <a href="/knowledge-hub/engineering-calculators/">All calculators</a></nav><p class="wqc-kicker">Energy &amp; performance</p><h1>Energy Use Comparison Calculator</h1><p class="wqc-intro">See where a change in power demand could affect your electricity bill. Compare two operating scenarios using your hours, energy rates and demand charges, with each assumption visible for review.</p><div aria-label="Measurement units" class="wqc-toolbar" role="group"><button aria-pressed="true" id="btn-metric" type="button">SI metric</button><button aria-pressed="false" id="btn-imperial" type="button">US customary</button><div class="wqc-currency"><label for="currency">Currency</label><select id="currency"><option>CAD</option><option>USD</option></select></div><a href="#results">Jump to results</a><a href="#reference-title">Reference data ↓</a></div><p class="wqc-unit-note" id="unit-note">SI units. Pressure is shown in bar; 10 bar = 1 MPa.</p><p class="wqc-help">Currency selection labels your figures; it does not apply an exchange rate. Keep all costs in the same currency and price year.</p><div class="wqc-layout"><section aria-labelledby="inputs-title" class="wqc-panel"><h2 id="inputs-title">Your inputs</h2><p class="wqc-help">Example values are loaded. Replace them with your project data; all fields are required.</p><form id="calc-form" novalidate=""><div class="wqc-form-grid"><div class="wqc-field"><label for="base">Existing electrical input power</label><div class="wqc-input-wrap"><input aria-describedby="base-unit base-hint base-error" id="base" inputmode="decimal" name="base" required="" step="any" type="number" value="75"/><span class="wqc-input-unit" id="base-unit">kW</span></div><p class="wqc-help" id="base-hint">At the reference duty; not motor nameplate shaft power.</p><p class="wqc-error-text" id="base-error"></p></div><div class="wqc-field"><label for="new">Proposed electrical input power</label><div class="wqc-input-wrap"><input aria-describedby="new-unit new-hint new-error" id="new" inputmode="decimal" name="new" required="" step="any" type="number" value="52"/><span class="wqc-input-unit" id="new-unit">kW</span></div><p class="wqc-help" id="new-hint">At the same reference duty and output.</p><p class="wqc-error-text" id="new-error"></p></div><div class="wqc-field"><label for="hours">Annual operating hours</label><div class="wqc-input-wrap"><input aria-describedby="hours-unit hours-hint hours-error" id="hours" inputmode="decimal" name="hours" required="" step="any" type="number" value="5000"/><span class="wqc-input-unit" id="hours-unit">h/yr</span></div><p class="wqc-help" id="hours-hint">Maximum 8,760 hours for a 365-day year.</p><p class="wqc-error-text" id="hours-error"></p></div><div class="wqc-field"><label for="load">Average load factor</label><div class="wqc-input-wrap"><input aria-describedby="load-unit load-hint load-error" id="load" inputmode="decimal" name="load" required="" step="any" type="number" value="75"/><span class="wqc-input-unit" id="load-unit">%</span></div><p class="wqc-help" id="load-hint">Use 100% if input powers are already measured operating averages.</p><p class="wqc-error-text" id="load-error"></p></div><div class="wqc-field"><label for="rate">Electricity energy tariff</label><div class="wqc-input-wrap"><input aria-describedby="rate-unit rate-hint rate-error" id="rate" inputmode="decimal" name="rate" required="" step="any" type="number" value="0.12"/><span class="wqc-input-unit" id="rate-unit">CAD/kWh</span></div><p class="wqc-help" id="rate-hint">Example assumption. Replace with a dated quote, measured cost or documented estimate.</p><p class="wqc-error-text" id="rate-error"></p></div><div class="wqc-field"><label for="peak">Billed peak demand reduction</label><div class="wqc-input-wrap"><input aria-describedby="peak-unit peak-hint peak-error" id="peak" inputmode="decimal" name="peak" required="" step="any" type="number" value="0"/><span class="wqc-input-unit" id="peak-unit">kW</span></div><p class="wqc-help" id="peak-hint">Enter a documented coincident peak reduction; zero if demand savings are unconfirmed.</p><p class="wqc-error-text" id="peak-error"></p></div><div class="wqc-field"><label for="demand">Monthly demand tariff</label><div class="wqc-input-wrap"><input aria-describedby="demand-unit demand-hint demand-error" id="demand" inputmode="decimal" name="demand" required="" step="any" type="number" value="12"/><span class="wqc-input-unit" id="demand-unit">CAD/kW-month</span></div><p class="wqc-help" id="demand-hint">Example assumption. Replace with a dated quote, measured cost or documented estimate.</p><p class="wqc-error-text" id="demand-error"></p></div><div class="wqc-field"><label for="months">Demand-charge months</label><div class="wqc-input-wrap"><input aria-describedby="months-unit months-hint months-error" id="months" inputmode="decimal" name="months" required="" step="1" type="number" value="12"/><span class="wqc-input-unit" id="months-unit">months/yr</span></div><p class="wqc-help" id="months-hint">Months in which the entered demand reduction affects billing.</p><p class="wqc-error-text" id="months-error"></p></div><div class="wqc-field"><label for="escalation">Annual tariff escalation</label><div class="wqc-input-wrap"><input aria-describedby="escalation-unit escalation-hint escalation-error" id="escalation" inputmode="decimal" name="escalation" required="" step="any" type="number" value="0"/><span class="wqc-input-unit" id="escalation-unit">%</span></div><p class="wqc-help" id="escalation-hint">Scenario assumption applied after year 1 to both tariffs.</p><p class="wqc-error-text" id="escalation-error"></p></div><div class="wqc-field"><label for="life">Study period</label><div class="wqc-input-wrap"><input aria-describedby="life-unit life-hint life-error" id="life" inputmode="decimal" name="life" required="" step="1" type="number" value="10"/><span class="wqc-input-unit" id="life-unit">years</span></div><p class="wqc-help" id="life-hint">Whole years; annual values are assumed constant unless stated.</p><p class="wqc-error-text" id="life-error"></p></div></div><div class="wqc-actions"><button type="submit">Calculate</button><button id="reset-example" type="button">Load example</button><button id="clear-inputs" type="button">Clear inputs</button></div></form></section><section aria-labelledby="results-title" class="wqc-panel wqc-results" id="results" tabindex="-1"><h2 id="results-title">Results</h2><p class="wqc-status" id="result-status" role="status">Loading calculator…</p><div class="wqc-errors" hidden="" id="input-errors" role="alert"></div><dl class="wqc-result-grid" id="result-grid"></dl><div aria-live="polite" class="wqc-warnings" id="calc-warnings"></div><div class="wqc-result-notes" id="calc-notes"></div><p class="wqc-footnote">Use this preliminary result to compare options. Check the inputs, calculation assumptions and selected component ratings before turning it into an equipment specification.</p><div class="wqc-actions"><button id="save-pdf" type="button">Save PDF</button><button id="print-results" type="button">Print report</button></div><p aria-live="polite" class="wqc-help" id="export-status" role="status"></p><noscript><p>Enable JavaScript to calculate. Equations, reference data and the worked example are available below.</p></noscript></section></div><section aria-labelledby="reference-title" class="wqc-reference"><h2 id="reference-title">Reference data &amp; calculation basis</h2><details open=""><summary>Equations, assumptions and limits</summary><p class="wqc-formula">E_saved = (P_old − P_new) × hours × load factor; saving = E_saved × tariff + peak reduction × demand tariff × months</p><p>An energy reduction does not automatically reduce billed peak demand. Currency selection labels your inputs; it does not convert exchange rates.</p><p>Equations without conversion factors use coherent SI units: metres, square metres, cubic metres per second, pascals, newtons and watts. For hydraulic power pQ/600, use bar and L/min to obtain kW. Displacement formulas explicitly use cm³/rev and rpm. Percentages are divided by 100 before use as factors. The calculation keeps full numerical precision; results display up to five significant digits. Displayed digits do not establish measurement or model accuracy.</p></details><details><summary>Worked example — the loaded starting values</summary><p>This worked example shows how the method is used. Its reference results stay fixed when you change the inputs above; use your own operating data for equipment or project decisions.</p><div class="wqc-example-grid"><div class="wqc-table-wrap"><table><caption>Example inputs (SI; CAD for costs)</caption><tbody><tr><th scope="row">Existing electrical input power</th><td>75 kW</td></tr><tr><th scope="row">Proposed electrical input power</th><td>52 kW</td></tr><tr><th scope="row">Annual operating hours</th><td>5,000 h/yr</td></tr><tr><th scope="row">Average load factor</th><td>75 %</td></tr><tr><th scope="row">Electricity energy tariff</th><td>0.12 CAD/kWh</td></tr><tr><th scope="row">Billed peak demand reduction</th><td>0 kW</td></tr><tr><th scope="row">Monthly demand tariff</th><td>12 CAD/kW-month</td></tr><tr><th scope="row">Demand-charge months</th><td>12 months/yr</td></tr><tr><th scope="row">Annual tariff escalation</th><td>0 %</td></tr><tr><th scope="row">Study period</th><td>10 years</td></tr></tbody></table></div><div class="wqc-table-wrap"><table><caption>Example results</caption><tbody><tr><th scope="row">Annual electricity reduction</th><td>86,250 kWh/yr</td></tr><tr><th scope="row">Annual energy-charge saving</th><td>10,350 CAD/yr</td></tr><tr><th scope="row">Annual demand-charge saving</th><td>0 CAD/yr</td></tr><tr><th scope="row">First-year total saving</th><td>10,350 CAD/yr</td></tr><tr><th scope="row">Undiscounted study-period saving</th><td>103,500 CAD</td></tr><tr><th scope="row">Average operating power reduction</th><td>17.25 kW</td></tr></tbody></table></div></div></details><details><summary>Unit conversion reference</summary><div class="wqc-table-wrap"><table><caption>Conversion reference. US gallons and mechanical horsepower are used throughout.</caption><thead><tr><th>Quantity</th><th>Relationship</th></tr></thead><tbody><tr><td>Pressure</td><td>1 MPa = 10 bar; 1 bar ≈ 14.50377377 psi</td></tr><tr><td>Length</td><td>1 inch = 25.4 mm; 1 foot = 0.3048 m</td></tr><tr><td>Volume</td><td>1 US gallon = 3.785411784 L</td></tr><tr><td>Power</td><td>1 mechanical hp ≈ 0.745699872 kW</td></tr><tr><td>Roughness</td><td>1 µin = 0.0254 µm</td></tr><tr><td>Standard gravity</td><td>g = 9.80665 m/s²</td></tr></tbody></table></div><p>Metric/US switching converts physical quantities without changing the scenario. Currency is a separate label; no exchange-rate conversion occurs.</p></details><details><summary>Sources and provenance</summary><ul class="wqc-ref-links"><li><a href="https://nvlpubs.nist.gov/nistpubs/hb/2022/NIST.HB.135e2022.pdf">NIST Handbook 135: present value and lifecycle costing</a></li><li><a href="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors">NIST: SI unit conversion factors</a></li></ul><p>Formula and source review: 6 October 2026. Reference sources explain the methods; they do not certify this calculator, a selected component or your design. Example costs, efficiencies and operating values require your own evidence.</p></details></section><a class="wqc-back" href="/knowledge-hub/engineering-calculators/">← Back to all 20 calculators</a></main><script src="/assets/calculators-v2/ui.js?v=20261015-print-brand" type="module"></script><aside class="wq-pressure-note" id="calculator-operating-limit"><p><strong>WaterQuest operating limit: 160 bar, including peaks.</strong> Calculators may evaluate other pressures for engineering comparison. A calculated result is not a product rating; confirm the selected components and use any lower applicable limit.</p></aside><footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/wqs-stainless/">WQS Stainless</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li></ul></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>316 SS / PEEK · Oil-Free · Canadian Support</p></div></div></footer><script defer="" src="/assets/wq-nav-dropdowns.js?v=20261015-brand"></script><script defer src="/assets/newsletter-popup.js?v=20261016"></script></body></html>

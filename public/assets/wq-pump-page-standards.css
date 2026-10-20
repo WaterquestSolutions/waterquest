@@ -1,0 +1,421 @@
+/* WaterQuest pump page standardisation.
+   Late-loaded shared rules for P1, P3, P6, P15, P30, P60, P180, and pump overview pages. */
+:root {
+  --wq-pump-aqua: var(--aqua, var(--wq-aqua, #00EEFF));
+  --wq-pump-white: var(--white, var(--wq-white, #fff));
+  --wq-pump-navy: var(--navy, var(--wq-navy, #0E284A));
+  --wq-pump-mid: var(--navy-mid, var(--wq-navy-mid, #0D1F3C));
+  --wq-pump-border: rgba(0, 200, 212, 0.24);
+  --pump-light: var(--wq-pump-aqua) !important;
+  --pump-blue: var(--wq-pump-aqua) !important;
+  --border-pump: rgba(0, 200, 212, 0.34) !important;
+}
+
+body:is(.wq-pump-page) {
+  --pump-light: var(--wq-pump-aqua) !important;
+  --pump-blue: var(--wq-pump-aqua) !important;
+  --border-pump: rgba(0, 200, 212, 0.34) !important;
+}
+
+body:is(.wq-pump-page) nav {
+  background: rgba(10, 22, 40, 0.96) !important;
+  border-bottom: 1px solid var(--wq-pump-border) !important;
+}
+
+body:is(.wq-pump-page) :is(.nav-logo, .wq-nav-logo) {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  gap: 3px !important;
+  text-decoration: none !important;
+}
+
+body:is(.wq-pump-page) :is(.nav-logo-text, .logo-main, .wq-logo-main) {
+  display: block !important;
+  color:#FFFFFF!important;
+  font-size: clamp(1.12rem, 0.98rem + 0.28vw, 1.28rem) !important;
+  font-weight: 950 !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.01em !important;
+  text-transform: none !important;
+  white-space: nowrap !important;
+}
+
+body:is(.wq-pump-page) .nav-logo-text span {
+  color:#00EEFF!important;
+}
+
+body:is(.wq-pump-page) :is(.logo-sub, .wq-logo-sub) {
+  display: block !important;
+  color:#00EEFF!important;
+  font-size: clamp(0.58rem, 0.52rem + 0.12vw, 0.68rem) !important;
+  font-weight: 850 !important;
+  letter-spacing: 0.16em !important;
+  line-height: 1.1 !important;
+  text-transform: uppercase !important;
+}
+
+body:is(.wq-pump-page) .nav-logo-mark {
+  display: none !important;
+}
+
+body:is(.wq-pump-page) :is(.spec-label, .spec-cell-label, .hs-lbl) {
+  color:#00EEFF!important;
+  font-size: clamp(0.84rem, 0.76rem + 0.28vw, 1.02rem) !important;
+  font-weight: 950 !important;
+  letter-spacing: 0.16em !important;
+}
+
+body:is(.wq-pump-page) :is(.spec-unit, .spec-cell-unit, .pfc-flow, .stat-unit, .pump-card-meta, .hero-stat span, .hero-stat small) {
+  color:#FFFFFF!important;
+  font-size: clamp(1rem, 0.92rem + 0.28vw, 1.18rem) !important;
+  font-weight: 900 !important;
+  line-height: 1.55 !important;
+}
+
+body:is(.wq-pump-page) :is(.spec-value, .spec-cell-val, .hs-num, .pfc-model) {
+  color:#00EEFF!important;
+  font-weight: 950 !important;
+}
+
+body:is(.wq-pump-page) :is(.feature-card h3, .use-case-card h3, .app-card h3, .benefit-card h3, .material-card h3, .product-card h3, .config-card h3, .pump-card h3, .faq-q h3) {
+  color:#00EEFF!important;
+  font-size: clamp(1.16rem, 1.04rem + 0.34vw, 1.42rem) !important;
+  font-weight: 950 !important;
+  line-height: 1.24 !important;
+}
+
+body:is(.wq-pump-page) :is(.label, .section-label, .drawing-section-header .label, .section-header .label, .text-pump) {
+  color:#00EEFF!important;
+}
+
+body:is(.wq-pump-page) :is(.section-body, .section-header p, .feature-card p, .use-case-card p, .app-card p, .benefit-card p, .material-card p, .product-card p, .config-card p, .hpu-callout, .hpu-callout p, .hpu-callout li, .hero-desc, .hero-description) {
+  color:#FFFFFF!important;
+  font-size: 16px !important;
+  font-weight: 850 !important;
+  line-height: 1.74 !important;
+}
+
+body:is(.wq-pump-page) :is(.design-item h3, .pack-step h4) {
+  color:#00EEFF!important;
+  font-size: clamp(1.22rem, 1.08rem + 0.38vw, 1.48rem) !important;
+  font-weight: 950 !important;
+}
+
+body:is(.wq-pump-page) :is(.design-item p, .pack-step p, .config-card-body, .config-card-body li, .config-rule) {
+  color:#FFFFFF!important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  line-height: 1.72 !important;
+}
+
+body:is(.wq-pump-page) .config-card-head p {
+  color:#FFFFFF!important;
+  font-size: 16px !important;
+  font-weight: 850 !important;
+  line-height: 1.62 !important;
+}
+
+body:is(.wq-pump-page) .config-dims {
+  color:#FFFFFF!important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  line-height: 1.72 !important;
+}
+
+body:is(.wq-pump-page) .config-dims strong {
+  color:#00EEFF!important;
+  font-size: clamp(0.92rem, 0.86rem + 0.22vw, 1.06rem) !important;
+  font-weight: 950 !important;
+}
+
+body:is(.wq-pump-page) .hpu-callout {
+  border-color: var(--wq-pump-aqua) !important;
+}
+
+body:is(.wq-pump-page) .hpu-callout h3 {
+  color:#00EEFF!important;
+  font-size: clamp(1.45rem, 1.22rem + 0.68vw, 1.88rem) !important;
+  font-weight: 950 !important;
+}
+
+body:is(.wq-pump-page) .hpu-grid .hpu-callout:first-child,
+body:is(.wq-pump-page) .hpu-grid .hpu-callout:first-child :is(p, li) {
+  font-size: clamp(0.96rem, 0.9rem + 0.2vw, 1.08rem) !important;
+  line-height: 1.66 !important;
+}
+
+body:is(.wq-pump-page) .hpu-grid .hpu-callout table,
+body:is(.wq-pump-page) .hpu-grid .hpu-callout table :is(th, td),
+body:is(.wq-pump-page) .hpu-callout :is(.pack-table, .pack-table th, .pack-table td) {
+  color:#FFFFFF!important;
+  font-size: clamp(1.04rem, 0.96rem + 0.28vw, 1.22rem) !important;
+  font-weight: 900 !important;
+  line-height: 1.55 !important;
+}
+
+body:is(.wq-pump-page) :is(.hpu-section a[href*="hpu"], .hpu-grid a[href*="hpu"], a[href*="water-hydraulics-hpu"]) {
+  color:#00EEFF!important;
+  font-size: 16px !important;
+  font-weight: 950 !important;
+  text-decoration-color: var(--wq-pump-aqua) !important;
+}
+
+body:is(.wq-pump-page) :is(.config-table, .spec-table) {
+  font-size: clamp(1.04rem, 0.96rem + 0.28vw, 1.22rem) !important;
+}
+
+body:is(.wq-pump-page) :is(.config-table th, .config-table td, .spec-table th, .spec-table td, .spec-table td:first-child, .spec-table td:last-child) {
+  color:#FFFFFF!important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  line-height: 1.62 !important;
+}
+
+body:is(.wq-pump-page) :is(.config-table th, .spec-table th, .spec-table thead th) {
+  color:#00EEFF!important;
+  font-weight: 950 !important;
+}
+
+body:is(.wq-pump-page) #specs .spec-table tbody td:first-child,
+body:is(.wq-pump-page) .spec-table tbody td:first-child {
+  color:#00EEFF!important;
+  font-weight: 950 !important;
+}
+
+body:is(.wq-pump-page) :is(.option-chip, .spec-pill, .tag-pill, .pfc-tag) {
+  color:#00EEFF!important;
+  font-size: clamp(0.88rem, 0.82rem + 0.18vw, 1rem) !important;
+  font-weight: 950 !important;
+}
+
+body:is(.wq-pump-page) .cert-pill {
+  color:#00EEFF!important;
+  font-size: clamp(0.9rem, 0.84rem + 0.2vw, 1.06rem) !important;
+  font-weight: 950 !important;
+}
+
+body:is(.wq-pump-page) .order-code-visual,
+body:is(.wq-pump-page) .order-code-visual :is(h3, p, div, span) {
+  color:#FFFFFF!important;
+  font-size: clamp(1.08rem, 0.98rem + 0.34vw, 1.28rem) !important;
+  font-weight: 900 !important;
+  line-height: 1.68 !important;
+}
+
+body:is(.wq-pump-page) .order-code-visual :is(.code-display, .code-part, .code-label, strong) {
+  color:#00EEFF!important;
+  font-weight: 950 !important;
+}
+
+body:is(.wq-pump-page) .order-code-visual .code-display {
+  font-size: clamp(2.2rem, 1.7rem + 1.5vw, 3.1rem) !important;
+}
+
+body:is(.wq-pump-page) :is(#order .callout p, #order .reveal p, .order-inner > .reveal p, .note-card p, .engineering-note p) {
+  color:#FFFFFF!important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  line-height: 1.72 !important;
+}
+
+body:is(.wq-pump-page) :is(.pump-family-card, .family-card, .pump-card) :is(div, span, p) {
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  line-height: 1.5 !important;
+}
+
+body:is(.wq-pump-page) .apps-grid .app-card:nth-child(4) p {
+  font-size: 16px !important;
+  line-height: 1.62 !important;
+}
+
+body:is(.wq-pump-page.wq-pump-overview) .apps-grid .app-card:nth-child(4) p {
+  font-size: 16px !important;
+  line-height: 1.74 !important;
+}
+
+body:is(.wq-pump-page) .config-rules .config-rule {
+  font-size: 16px !important;
+  line-height: 1.66 !important;
+}
+
+body:is(.wq-pump-page) .design-item p {
+  font-size: 16px !important;
+  line-height: 1.66 !important;
+}
+
+body:is(.wq-pump-page) .spec-table tbody td:not(:first-child) {
+  color:#FFFFFF!important;
+  font-weight: 500 !important;
+}
+
+body:is(.wq-pump-page) .order-code-visual .cr-desc,
+body:is(.wq-pump-page) .pack-step .step-body p,
+body:is(.wq-pump-page) .apps-grid .app-card p {
+  font-weight: 500 !important;
+}
+
+  html body:is(.wq-pump-page) :is(
+    p:not(.label),
+    li,
+    td,
+    th,
+    dd,
+    dt,
+    blockquote,
+    figcaption,
+    label,
+    small,
+    summary,
+    address,
+    .section-body,
+  .hero-desc,
+  .hero-description,
+  .config-rule,
+  .config-card-body,
+  .config-card-body li,
+  .config-dims,
+  .design-item p,
+  .pack-step p,
+  .step-body p,
+  .app-card p,
+  .fluid-card p,
+  .feature-card p,
+  .use-case-card p,
+  .benefit-card p,
+  .material-card p,
+  .product-card p,
+  .hpu-callout p,
+  .hpu-callout li,
+  .cr-desc,
+  .ut-desc,
+  .code-breakdown,
+  .faq-a p
+) {
+  font-size: 16px !important;
+}
+
+html body.wq-pump-page p:not(.label),
+html body.wq-pump-page li,
+html body.wq-pump-page td,
+html body.wq-pump-page th,
+html body.wq-pump-page dd,
+html body.wq-pump-page dt,
+html body.wq-pump-page blockquote,
+html body.wq-pump-page figcaption,
+html body.wq-pump-page label,
+html body.wq-pump-page small,
+html body.wq-pump-page summary,
+html body.wq-pump-page address {
+  font-size: 16px !important;
+}
+
+body:is(.wq-pump-page) #product-cta :is(.cta-inner, .cta-inner h2 span, .cta-inner .text-pump) {
+  color:#00EEFF!important;
+}
+
+body:is(.wq-pump-page) #product-cta p:not(.label) {
+  color:#FFFFFF!important;
+  font-size: 16px !important;
+  font-weight: 850 !important;
+  line-height: 1.72 !important;
+}
+
+body:is(.wq-pump-page) #product-cta :is(.cta-cert-row, .cta-cert-row span, .cta-cert, .cert-badge) {
+  font-size: clamp(0.96rem, 0.9rem + 0.22vw, 1.12rem) !important;
+  font-weight: 950 !important;
+}
+
+body:is(.wq-pump-page) .cta-banner p {
+  color:#FFFFFF!important;
+  font-size: clamp(1.22rem, 1.05rem + 0.52vw, 1.55rem) !important;
+  font-weight: 950 !important;
+  line-height: 1.55 !important;
+}
+
+body:is(.wq-pump-page) footer.pump-standard-footer,
+body:is(.wq-pump-page) footer:not(.wq-site-footer) {
+  display: block !important;
+  background: var(--wq-pump-navy) !important;
+  border-top: 1px solid var(--wq-pump-border) !important;
+  padding: 70px 0 30px !important;
+  color:#FFFFFF!important;
+}
+
+body:is(.wq-pump-page) footer .footer-grid {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr 1fr 1fr !important;
+  gap: 42px !important;
+  align-items: start !important;
+}
+
+body:is(.wq-pump-page) footer :is(.footer-brand p, .footer-links a, .footer-col a, .footer-bottom, .footer-copy) {
+  color:#FFFFFF!important;
+  font-size: clamp(0.95rem, 0.9rem + 0.16vw, 1.06rem) !important;
+  font-weight: 750 !important;
+  line-height: 1.7 !important;
+}
+
+body:is(.wq-pump-page) footer :is(.footer-slogan, .logo-sub, .footer-col h5, .footer-col h4) {
+  color:#00EEFF!important;
+  font-weight: 950 !important;
+}
+
+body:is(.wq-pump-page) footer ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body:is(.wq-pump-page) footer a {
+  text-decoration: none !important;
+}
+
+body:is(.wq-pump-page) footer .footer-bottom {
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: 24px !important;
+  margin-top: 34px !important;
+  padding-top: 22px !important;
+  border-top: 1px solid rgba(255,255,255,0.12) !important;
+}
+
+@media (max-width: 880px) {
+  body:is(.wq-pump-page) footer .footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  body:is(.wq-pump-page) footer .footer-bottom {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 620px) {
+  body:is(.wq-pump-page) footer .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Final body-copy baseline keeps later component rules from enlarging copy. */
+html body.wq-pump-page p:not(.label),
+html body.wq-pump-page li,
+html body.wq-pump-page td,
+html body.wq-pump-page th,
+html body.wq-pump-page dd,
+html body.wq-pump-page dt,
+html body.wq-pump-page blockquote,
+html body.wq-pump-page figcaption,
+html body.wq-pump-page label,
+html body.wq-pump-page small,
+html body.wq-pump-page summary,
+html body.wq-pump-page address {
+  font-size: 16px !important;
+}
+
+html body.wq-pump-page.wq-pump-overview p:not(.label),
+html body.wq-pump-page.wq-pump-overview li,
+html body.wq-pump-page.wq-pump-overview td,
+html body.wq-pump-page.wq-pump-overview th {
+  font-size: 16px !important;
+}

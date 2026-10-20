@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">WaterGate maintenance and inspection drawing</title>
+  <desc id="desc">Engineering maintenance drawing identifying filters, differential pressure, gauges, isolation valves, cylinder seals, rod condition, tube supports, drain points, water sampling, and functional test items.</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0C1A36"/><stop offset="1" stop-color="#050A18"/></linearGradient><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0l10 5-10 5z" fill="#20B8C8"/></marker></defs>
+  <rect width="1200" height="780" rx="18" fill="url(#bg)"/>
+  <g opacity=".2" stroke="#20B8C8" stroke-width="1">
+    <path d="M40 100h1120M40 160h1120M40 220h1120M40 280h1120M40 340h1120M40 400h1120M40 460h1120M40 520h1120M40 580h1120M40 640h1120"/>
+    <path d="M100 50v640M160 50v640M220 50v640M280 50v640M340 50v640M400 50v640M460 50v640M520 50v640M580 50v640M640 50v640M700 50v640M760 50v640M820 50v640M880 50v640M940 50v640M1000 50v640M1060 50v640M1120 50v640"/>
+  </g>
+  <text x="42" y="52" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="24" font-weight="800">WaterGate Maintenance and Inspection Map</text>
+  <text x="42" y="80" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="14">Oil-free hydraulic maintenance focuses on water quality, filtration, seals, surface condition, controls, and full-stroke verification.</text>
+
+  <g transform="translate(78 128)" stroke="#20B8C8" stroke-width="3" fill="none">
+    <rect x="0" y="70" width="310" height="372" rx="10" fill="#081020"/>
+    <rect x="62" y="124" width="186" height="252" fill="#122449" stroke="#AFC0D0"/>
+    <rect x="128" y="22" width="56" height="104" rx="8" fill="#0898A8"/>
+    <line x1="156" y1="0" x2="156" y2="22" stroke="#20B8C8" stroke-width="7"/>
+    <line x1="156" y1="126" x2="156" y2="376" stroke="#20B8C8" stroke-width="7"/>
+  </g>
+
+  <g transform="translate(554 128)" stroke="#20B8C8" stroke-width="3" fill="none">
+    <rect x="0" y="0" width="430" height="244" rx="12" fill="#081020"/>
+    <polygon points="46,96 86,56 126,96 86,136"/>
+    <path d="M64 116l44-44M72 124l44-44" stroke="#00D4B4"/>
+    <circle cx="188" cy="96" r="30"/>
+    <path d="M188 96l18-16"/>
+    <rect x="250" y="62" width="78" height="68" rx="6" stroke="#00D4B4"/>
+    <text x="86" y="178" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" font-weight="800" text-anchor="middle">F-101</text>
+    <text x="188" y="178" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" font-weight="800" text-anchor="middle">PI-101</text>
+    <text x="289" y="178" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" font-weight="800" text-anchor="middle">PT-101</text>
+  </g>
+
+  <g fill="none" stroke="#20B8C8" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M388 266h166"/>
+    <path d="M388 410h216v-108"/>
+  </g>
+  <g stroke="#F0A080" stroke-width="3" fill="none" stroke-dasharray="8 7">
+    <rect x="184" y="142" width="100" height="82" rx="7"/>
+    <rect x="148" y="500" width="156" height="44" rx="7"/>
+    <rect x="618" y="188" width="282" height="100" rx="7"/>
+    <rect x="650" y="426" width="258" height="98" rx="7"/>
+  </g>
+
+  <g transform="translate(624 416)" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif">
+    <rect width="344" height="150" rx="10" fill="#081020" stroke="#20B8C8" stroke-width="2"/>
+    <text x="24" y="34" fill="#FFFFFF" font-size="16" font-weight="800">Maintenance sequence</text>
+    <text x="24" y="66" fill="#FFFFFF" font-size="13">1. Isolate and depressurize</text>
+    <text x="24" y="90" fill="#FFFFFF" font-size="13">2. Inspect filter differential pressure</text>
+    <text x="24" y="114" fill="#FFFFFF" font-size="13">3. Inspect rod, seals, tube supports, drains</text>
+    <text x="24" y="138" fill="#FFFFFF" font-size="13">4. Run full-stroke functional test and record data</text>
+  </g>
+
+  <g font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" fill="#EEF4FA">
+    <text x="74" y="616" fill="#FFFFFF">Field checks: filter element, pressure gauge, pressure transmitter, relief valve, isolation valves, tube clamps, seal weepage, rod scoring, water sample, position feedback.</text>
+    <text x="74" y="642" fill="#FFFFFF">Cold-weather projects add heat trace, insulation, conditioned enclosure, drain-down, or antifreeze-free water management by design review.</text>
+  </g>
+</svg>

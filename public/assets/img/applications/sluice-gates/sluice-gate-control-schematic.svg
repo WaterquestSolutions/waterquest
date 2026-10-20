@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">WaterGate water hydraulic circuit schematic</title>
+  <desc id="desc">ISO 1219 style hydraulic circuit for a sluice gate package with reservoir, pump, electric motor, suction strainer, pressure filter, relief valve, pressure gauge, pressure transmitter, 4/3 directional valve, double acting cylinder, pilot lines, drain lines, and tagged ports.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0C1A36"/><stop offset="1" stop-color="#050A18"/></linearGradient>
+    <marker id="arrowAqua" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0l10 5-10 5z" fill="#20B8C8"/></marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0l10 5-10 5z" fill="#00D4B4"/></marker>
+  </defs>
+  <rect width="1200" height="780" rx="18" fill="url(#bg)"/>
+  <g opacity=".2" stroke="#20B8C8" stroke-width="1">
+    <path d="M40 100h1120M40 160h1120M40 220h1120M40 280h1120M40 340h1120M40 400h1120M40 460h1120M40 520h1120M40 580h1120M40 640h1120"/>
+    <path d="M100 50v640M160 50v640M220 50v640M280 50v640M340 50v640M400 50v640M460 50v640M520 50v640M580 50v640M640 50v640M700 50v640M760 50v640M820 50v640M880 50v640M940 50v640M1000 50v640M1060 50v640M1120 50v640"/>
+  </g>
+
+  <text x="42" y="52" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="24" font-weight="800">WaterGate Sluice Gate Hydraulic Circuit - ISO 1219 Style Functional Schematic</text>
+  <text x="42" y="80" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="14">Solid cyan lines: pressure/working/return. Dashed green lines: electrical, pilot, drain, and instrument signals.</text>
+
+  <!-- Reservoir / tank -->
+  <g transform="translate(76 526)" stroke="#20B8C8" stroke-width="3" fill="none">
+    <path d="M0 0v96h238V0"/>
+    <path d="M18 30h202M18 54h202M18 78h202" stroke="#0B5C73" stroke-width="2"/>
+    <text x="119" y="126" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="15" font-weight="800" text-anchor="middle">TK-101 CLEAN WATER RESERVOIR</text>
+  </g>
+
+  <!-- Suction strainer -->
+  <g transform="translate(156 438)" stroke="#20B8C8" stroke-width="3" fill="none">
+    <polygon points="0,36 36,0 72,36 36,72"/>
+    <path d="M19 53l34-34M25 59l34-34"/>
+    <text x="36" y="100" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="12" text-anchor="middle">STR-101</text>
+  </g>
+
+  <!-- Electric motor and pump -->
+  <g transform="translate(294 374)" stroke="#20B8C8" stroke-width="3" fill="none">
+    <circle cx="36" cy="36" r="34"/>
+    <text x="36" y="43" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="20" font-weight="800" text-anchor="middle">M</text>
+    <line x1="70" y1="36" x2="108" y2="36"/>
+    <circle cx="146" cy="36" r="34"/>
+    <path d="M132 24l34 12-34 12z" fill="#20B8C8" stroke="none"/>
+    <path d="M124 58l44-44" stroke="#00D4B4" stroke-width="2"/>
+    <text x="91" y="94" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="14" font-weight="800" text-anchor="middle">MTR-101 / P-101</text>
+    <text x="91" y="114" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="12" text-anchor="middle">variable water hydraulic pump</text>
+  </g>
+
+  <!-- Pressure filter -->
+  <g transform="translate(520 374)" stroke="#20B8C8" stroke-width="3" fill="none">
+    <polygon points="0,36 36,0 72,36 36,72"/>
+    <path d="M18 36h36M36 18v36" stroke="#00D4B4"/>
+    <text x="36" y="100" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="14" font-weight="800" text-anchor="middle">F-101</text>
+    <text x="36" y="118" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="12" text-anchor="middle">10 µm target</text>
+  </g>
+
+  <!-- Relief valve -->
+  <g transform="translate(520 480)" stroke="#F0A080" stroke-width="3" fill="none">
+    <path d="M0 0h92"/>
+    <path d="M34 -24v48"/>
+    <path d="M34 -24l34 24-34 24"/>
+    <path d="M72 -22l16 8-16 8 16 8-16 8 16 8"/>
+    <text x="46" y="54" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" font-weight="800" text-anchor="middle">RV-101</text>
+  </g>
+
+  <!-- Gauges / transmitter -->
+  <g transform="translate(650 306)" stroke="#20B8C8" stroke-width="3" fill="none">
+    <circle cx="34" cy="34" r="28"/>
+    <path d="M34 34l16-14"/>
+    <text x="34" y="76" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" font-weight="800" text-anchor="middle">PI-101</text>
+  </g>
+  <g transform="translate(730 306)" stroke="#00D4B4" stroke-width="3" fill="none">
+    <rect x="0" y="8" width="62" height="52" rx="6"/>
+    <text x="31" y="39" fill="#00EEFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="16" font-weight="800" text-anchor="middle">PT</text>
+    <text x="31" y="76" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" font-weight="800" text-anchor="middle">PT-101</text>
+  </g>
+
+  <!-- Directional control valve 4/3 -->
+  <g transform="translate(764 376)" stroke="#20B8C8" stroke-width="3" fill="none">
+    <rect x="0" y="0" width="216" height="108"/>
+    <line x1="72" y1="0" x2="72" y2="108"/>
+    <line x1="144" y1="0" x2="144" y2="108"/>
+    <path d="M18 24h36M54 24l-12-8M54 24l-12 8"/>
+    <path d="M18 84h36M18 84l12-8M18 84l12 8"/>
+    <path d="M90 22v64M126 22v64" stroke="#AFC0D0"/>
+    <path d="M162 24h36M162 24l12-8M162 24l12 8"/>
+    <path d="M198 84h-36M198 84l-12-8M198 84l-12 8"/>
+    <text x="108" y="134" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="14" font-weight="800" text-anchor="middle">DV-101 4/3 DCV - spring centred</text>
+    <text x="26" y="-10" fill="#00EEFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" font-weight="800">A</text>
+    <text x="188" y="-10" fill="#00EEFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" font-weight="800">B</text>
+    <text x="96" y="126" fill="#00EEFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" font-weight="800">P</text>
+    <text x="126" y="126" fill="#00EEFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" font-weight="800">T</text>
+    <rect x="-38" y="30" width="30" height="48" rx="4" stroke="#00D4B4"/>
+    <rect x="224" y="30" width="30" height="48" rx="4" stroke="#00D4B4"/>
+    <text x="-23" y="94" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="11" text-anchor="middle">SOL-A</text>
+    <text x="239" y="94" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="11" text-anchor="middle">SOL-B</text>
+  </g>
+
+  <!-- Cylinder -->
+  <g transform="translate(858 132)" stroke="#20B8C8" stroke-width="3" fill="none">
+    <rect x="0" y="42" width="210" height="88"/>
+    <line x1="78" y1="42" x2="78" y2="130"/>
+    <line x1="78" y1="86" x2="244" y2="86"/>
+    <rect x="244" y="68" width="78" height="36"/>
+    <text x="105" y="164" fill="#FFFFFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="14" font-weight="800" text-anchor="middle">CYL-101 DOUBLE ACTING GATE CYLINDER</text>
+    <text x="25" y="32" fill="#00EEFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" font-weight="800">A</text>
+    <text x="190" y="32" fill="#00EEFF" stroke="none" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="13" font-weight="800">B</text>
+  </g>
+
+  <!-- Working lines -->
+  <g stroke="#20B8C8" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowAqua)">
+    <path d="M194 526V510"/>
+    <path d="M192 438v-28h100"/>
+    <path d="M474 410h46"/>
+    <path d="M592 410h172"/>
+    <path d="M872 376V222h14"/>
+    <path d="M944 376V222h104"/>
+    <path d="M872 484v74H194"/>
+    <path d="M980 430h60v128H314"/>
+  </g>
+  <g stroke="#F0A080" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowAqua)">
+    <path d="M612 480v78H314"/>
+  </g>
+  <g stroke="#00D4B4" stroke-width="3" fill="none" stroke-dasharray="10 8" marker-end="url(#arrowGreen)">
+    <path d="M760 340v-52H1034v-68"/>
+    <path d="M748 384H650v-48"/>
+    <path d="M878 486v118H264"/>
+    <path d="M1004 408h86v118H314"/>
+  </g>
+
+  <!-- Port labels -->
+  <g fill="#EEF4FA" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="12" font-weight="800">
+    <text x="624" y="397" fill="#FFFFFF">P</text>
+    <text x="994" y="548" fill="#FFFFFF">T</text>
+    <text x="894" y="352" fill="#FFFFFF">A-LINE</text>
+    <text x="956" y="352" fill="#FFFFFF">B-LINE</text>
+    <text x="662" y="366" fill="#FFFFFF">pressure instruments</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(58 666)" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif">
+    <rect x="0" y="0" width="1084" height="72" rx="8" fill="#081020" stroke="#20B8C8" stroke-width="2"/>
+    <line x1="28" y1="24" x2="104" y2="24" stroke="#20B8C8" stroke-width="5"/>
+    <text x="118" y="29" fill="#FFFFFF" font-size="13">pressure / work / return</text>
+    <line x1="312" y1="24" x2="388" y2="24" stroke="#00D4B4" stroke-width="3" stroke-dasharray="10 8"/>
+    <text x="402" y="29" fill="#FFFFFF" font-size="13">control, drain, instrument signal</text>
+    <text x="690" y="29" fill="#00EEFF" font-size="13" font-weight="800">P</text>
+    <text x="710" y="29" fill="#FFFFFF" font-size="13">pressure</text>
+    <text x="790" y="29" fill="#00EEFF" font-size="13" font-weight="800">T</text>
+    <text x="810" y="29" fill="#FFFFFF" font-size="13">tank/return</text>
+    <text x="930" y="29" fill="#00EEFF" font-size="13" font-weight="800">A/B</text>
+    <text x="966" y="29" fill="#FFFFFF" font-size="13">actuator ports</text>
+    <text x="28" y="56" fill="#FFFFFF" font-size="12">Engineering schematic showing the WaterGate functional architecture, component tags, line types, ports, water quality controls, relief path, and interlocks.</text>
+  </g>
+</svg>

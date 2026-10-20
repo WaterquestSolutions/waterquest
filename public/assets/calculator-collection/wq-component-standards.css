@@ -1,0 +1,590 @@
+/* WaterQuest global component standard.
+   Normalises recurring pill, chip, badge, and compact card patterns across the static site. */
+:root {
+  --wq-standard-aqua: var(--aqua, var(--wq-aqua, #00C8D4));
+  --wq-standard-white: var(--white, #FFFFFF);
+  --pump-light: var(--wq-standard-aqua) !important;
+  --pump-blue: var(--wq-standard-aqua) !important;
+  --hpu: var(--wq-standard-aqua) !important;
+  --hpu-light: var(--wq-standard-aqua) !important;
+  --border-pump: rgba(0, 200, 212, 0.34) !important;
+  --border-hpu: rgba(0, 200, 212, 0.34) !important;
+}
+
+body {
+  --pump-light: var(--wq-standard-aqua) !important;
+  --pump-blue: var(--wq-standard-aqua) !important;
+  --hpu: var(--wq-standard-aqua) !important;
+  --hpu-light: var(--wq-standard-aqua) !important;
+  --force: var(--wq-standard-aqua) !important;
+  --force-glow: #607786 !important;
+  --border-pump: rgba(0, 200, 212, 0.34) !important;
+  --border-hpu: rgba(0, 200, 212, 0.34) !important;
+  --border-force: rgba(0, 200, 212, 0.34) !important;
+}
+
+main :is(
+  .label,
+  .section-label,
+  .eyebrow,
+  .tag,
+  .pill,
+  .trust-pill,
+  .hero-badge,
+  .cert-badge,
+  .cta-cert,
+  .unit-badge,
+  .mat-badge,
+  .card-pump-tag,
+  .component-num,
+  .size-label,
+  .calculator-kicker,
+  .stat-label,
+  .result-label,
+  .formula-panel .var,
+  .feature-box h4,
+  .app-card h4,
+  .feature-card h3,
+  .feat-card h3,
+  .use-case-card h3,
+  .hpu-callout h3,
+  .benefit-card h3,
+  .component-card h3,
+  .product-card h3,
+  .industry-card h3,
+  .industry-card-featured h3,
+  .why-item h4,
+  .why-row h3,
+  .mat-item h4,
+  .cert-name,
+  .material-card h3,
+  .process-card h3,
+  .range-card h3,
+  .reason-card h3,
+  .equip-chip small,
+  .tech-card small,
+  .size-feature h3,
+  .loop-feature h4,
+  .challenge-head,
+  .challenge-head *,
+  .challenge-head h3,
+  .challenge-head > span,
+  .cost-table-head h3,
+  .standard-badge .sname
+) {
+  color:#00C8D4!important;
+}
+
+body :is(.text-pump, .text-hpu, .pump-blue, .hpu-blue, .text-blue, [class*="text-pump"], [class*="text-hpu"], [class*="pump-blue"], [class*="hpu-blue"]) {
+  color:#00C8D4!important;
+}
+
+body :is(.border-pump, [class*="border-pump"]) {
+  border-color: var(--wq-standard-aqua) !important;
+}
+
+body :is(.bg-pump, [class*="bg-pump"]) {
+  background-color: rgba(0, 200, 212, 0.12) !important;
+}
+
+body :is(.text-force, [class*="text-force"], .pressure-data-links h3, .pressure-link, .bore-table thead th.hl, .bore-table td:first-child, .force-spec-table thead th.model-col, .force-spec-table td:first-child) {
+  color:#00C8D4!important;
+}
+
+body :is(.pressure-data-links, .pressure-link, .bore-table-wrap, .force-spec-table-wrap, .force-spec-note) {
+  border-color: rgba(0, 200, 212, 0.34) !important;
+}
+
+body .pressure-link {
+  background: rgba(0, 200, 212, 0.06) !important;
+}
+
+body .pressure-link:hover {
+  background: var(--wq-standard-aqua) !important;
+  color:#FFFFFF!important;
+}
+
+body :is(.bore-bar-wrap, .force-spec-note) {
+  background: rgba(0, 200, 212, 0.06) !important;
+}
+
+body :is(#atomization .label, #atomization .section-header .label) {
+  color:#00C8D4!important;
+}
+
+body #cta .cta-specs {
+  color:#FFFFFF!important;
+  font-size: clamp(1.04rem, 0.98rem + 0.24vw, 1.2rem) !important;
+  font-weight: 750 !important;
+  line-height: 1.68 !important;
+}
+
+body #cta .cta-specs strong {
+  color:#FFFFFF!important;
+  font-size: inherit !important;
+  font-weight: 900 !important;
+}
+
+body main .confidentiality-card p {
+  color:#FFFFFF!important;
+}
+
+body:is(.wq-pump-overview) .fluid-grid .fluid-card p {
+  font-size: clamp(1.02rem, 0.96rem + 0.24vw, 1.16rem) !important;
+  line-height: 1.72 !important;
+}
+
+body :is(.nav-links, .wq-nav-links, .links) {
+  overflow: visible !important;
+}
+
+body .wq-nav-menu-item {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+body .wq-nav-menu-toggle {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+}
+
+body .wq-nav-menu-toggle::after {
+  content: "";
+  display: inline-block;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-0.14rem) rotate(45deg);
+  opacity: 0.85;
+}
+
+body .wq-nav-dropdown {
+  position: absolute !important;
+  top: 100% !important;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(0) !important;
+  z-index: 2500 !important;
+  min-width: 270px !important;
+  max-width: min(90vw, 360px) !important;
+  max-height: min(72vh, 620px) !important;
+  overflow-y: auto !important;
+  padding: 10px !important;
+  border: 1px solid rgba(0, 200, 212, 0.34) !important;
+  border-radius: 8px !important;
+  background: rgba(8, 18, 36, 0.98) !important;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.42) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease !important;
+}
+
+body .wq-nav-menu-item:hover .wq-nav-dropdown,
+body .wq-nav-menu-item:focus-within .wq-nav-dropdown,
+body .wq-nav-menu-item.wq-menu-open .wq-nav-dropdown {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translateX(-50%) translateY(0) !important;
+}
+
+body .wq-nav-dropdown a {
+  display: block !important;
+  padding: 10px 12px !important;
+  border-radius: 6px !important;
+  color:#FFFFFF!important;
+  font-size: 0.78rem !important;
+  font-weight: 850 !important;
+  line-height: 1.28 !important;
+  letter-spacing: 0.055em !important;
+  text-transform: uppercase !important;
+  white-space: normal !important;
+}
+
+body .wq-nav-dropdown a:hover,
+body .wq-nav-dropdown a:focus {
+  color:#00C8D4!important;
+  background: rgba(0, 200, 212, 0.1) !important;
+  outline: none !important;
+}
+
+@media (max-width: 960px) {
+  body .wq-nav-dropdown {
+    display: none !important;
+  }
+}
+
+main :is(.reg-callout h4, .reg-callout-icon) {
+  color:#00C8D4!important;
+}
+
+body :is(.why-item h4, .reg-callout h4, .reg-callout-icon) {
+  color:#00C8D4!important;
+}
+
+body .industry-card-featured h3 {
+  color:#00C8D4!important;
+}
+
+body :is(.mat-item h4, .cert-name) {
+  color:#00C8D4!important;
+}
+
+body :is(.feature-card h3, .feat-card h3, .use-case-card h3, .hpu-callout h3, .why-row h3, .order-inner .section-label, #order .label, #specs .label, #specs h3) {
+  color:#00C8D4!important;
+}
+
+body .hpu-section a[href*="water-hydraulics-hpu"] {
+  color:#00C8D4!important;
+  font-size: clamp(1rem, 0.96rem + 0.22vw, 1.14rem) !important;
+  font-weight: 900 !important;
+}
+
+main :is(
+  .pill,
+  .trust-pill,
+  .hero-badge,
+  .cert-badge,
+  .cta-cert,
+  .unit-badge,
+  .mat-badge,
+  .card-pump-tag
+) {
+  font-size: clamp(0.88rem, 0.84rem + 0.18vw, 1rem) !important;
+  font-weight: 850 !important;
+  line-height: 1.38 !important;
+  letter-spacing: 0.06em !important;
+}
+
+/* Audit repair: keep wide product modules and legacy embeds inside the viewport. */
+html,
+body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+body :is(
+  .container,
+  .hero-content,
+  .product-hero-grid,
+  .hero-grid,
+  .nav-inner,
+  .wq-nav-inner,
+  .footer-inner,
+  .wq-footer-container,
+  main,
+  section
+) {
+  min-width: 0 !important;
+}
+
+body :is(
+  .product-hero-text,
+  .product-hero-visual,
+  .hero-text,
+  .hero-visual,
+  .hero-diagram,
+  .visual-wrap,
+  .panel,
+  .card,
+  .feature-card,
+  .product-card
+) {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+body :is(
+  .spec-table-wrap,
+  .table-wrap,
+  .comparison-wrap,
+  .scroll-table,
+  .drawing-stage,
+  .chart-wrap
+) {
+  max-width: 100% !important;
+  overflow-x: auto !important;
+}
+
+body table {
+  max-width: 100% !important;
+}
+
+@media (max-width: 700px) {
+  body :is(
+    .product-hero-grid,
+    .hero-content,
+    .hero-grid,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .features-grid,
+    .apps-grid,
+    .config-compare,
+    .order-section,
+    .hpu-grid,
+    .drawing-grid,
+    .charts-grid,
+    .three-col,
+    .footer-grid
+  ) {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  body :is(.product-hero-visual, .hero-visual, .hero-diagram) {
+    display: none !important;
+  }
+
+  body :is(.container, .hero-content, .nav-inner, .wq-nav-inner, .footer-inner, .wq-footer-container) {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  body h1 {
+    max-width: 100% !important;
+    font-size: clamp(2.05rem, 12vw, 3.2rem) !important;
+    line-height: 1.03 !important;
+  }
+
+  body :is(.nav-links, .wq-nav-links) {
+    display: none !important;
+  }
+
+  body :is(.nav-inner, .wq-nav-inner) {
+    min-height: 72px !important;
+    height: auto !important;
+    flex-wrap: wrap !important;
+    gap: 14px !important;
+  }
+}
+
+main :is(
+  .equip-chip,
+  .tech-card,
+  .size-feature,
+  .loop-feature,
+  .standard-badge,
+  .stat,
+  .stat-item,
+  .spec-item,
+  .cost-row-item,
+  .challenge-mini,
+  .support-card
+) {
+  font-size: clamp(0.98rem, 0.94rem + 0.22vw, 1.12rem) !important;
+  font-weight: 750 !important;
+}
+
+body :is(.mat-item p, .cert-desc) {
+  color:#FFFFFF!important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  line-height: 1.72 !important;
+}
+
+body :is(.feature-card p, .feat-card p, .use-case-card p, .hpu-callout, .hpu-callout p, .hpu-callout li, #order .order-inner, #order .order-inner p, #order .order-inner td, #specs, #specs td, #specs p, .spec-unit) {
+  color:#FFFFFF!important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  line-height: 1.72 !important;
+}
+
+body main :is(.feat-card p, .benefits-grid .benefit-card p, .why-row p) {
+  color:#FFFFFF!important;
+  font-size: clamp(1rem, 0.96rem + 0.22vw, 1.14rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.72 !important;
+}
+
+body #order .order-inner table,
+body #specs .spec-table {
+  font-size: clamp(1rem, 0.96rem + 0.24vw, 1.16rem) !important;
+}
+
+body :is(.spec-label, .spec-value, .spec-unit) {
+  font-weight: 900 !important;
+}
+
+main .reg-callout,
+main .reg-callout p {
+  color:#FFFFFF!important;
+  font-size: clamp(1.03rem, 0.98rem + 0.24vw, 1.18rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.76 !important;
+}
+
+body .reg-callout,
+body .reg-callout p {
+  color:#FFFFFF!important;
+  font-size: clamp(1.03rem, 0.98rem + 0.24vw, 1.18rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.76 !important;
+}
+
+main :is(
+  .equip-chip strong,
+  .tech-card strong,
+  .stat-number,
+  .spec-item strong,
+  .standard-badge .sname,
+  .cost-row-item,
+  .challenge-mini h4
+) {
+  color:#00C8D4!important;
+  font-weight: 900 !important;
+}
+
+main :is(
+  .equip-chip span,
+  .tech-card span,
+  .size-feature p,
+  .loop-feature p,
+  .standard-badge .sdesc,
+  .stat-label,
+  .spec-item span,
+  .cost-row-item,
+  .challenge-mini p,
+  .support-card p,
+  .support-card li,
+  .benefit-card p,
+  .feature-box p,
+  .app-card p,
+  .component-card p,
+  .product-card p,
+  .industry-card p,
+  .material-card p,
+  .process-card p,
+  .range-card p,
+  .reason-card p
+) {
+  color:#FFFFFF!important;
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.13rem) !important;
+  font-weight: 750 !important;
+  line-height: 1.72 !important;
+}
+
+body:not(.wq-pump-page) main :is(
+  .product-card p,
+  .benefit-card p,
+  .material-card p,
+  .industry-card p,
+  .process-card p
+) {
+  font-size: clamp(0.9rem, 0.86rem + 0.16vw, 1rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.62 !important;
+}
+
+body:not(.wq-pump-page) main .product-card p {
+  font-size: clamp(0.92rem, 0.88rem + 0.16vw, 1.02rem) !important;
+}
+
+body:not(.wq-pump-page) main :is(.benefit-card p, .industry-card p, .process-card p) {
+  font-size: clamp(0.88rem, 0.84rem + 0.14vw, 0.96rem) !important;
+}
+
+body:not(.wq-pump-page) main .process-card p {
+  font-size: clamp(0.82rem, 0.78rem + 0.12vw, 0.9rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.56 !important;
+}
+
+body:not(.wq-pump-page) main .material-card p {
+  font-size: clamp(0.9rem, 0.86rem + 0.14vw, 0.98rem) !important;
+}
+
+body:not(.wq-pump-page) main :is(.feat-grid .feat-card p, .benefits-grid .benefit-card p, .why-list .why-row p) {
+  color:#FFFFFF!important;
+  font-size: clamp(1rem, 0.96rem + 0.22vw, 1.14rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.72 !important;
+}
+
+  html body :is(
+    p:not(.label),
+    li,
+    td,
+    th,
+    dd,
+    dt,
+    blockquote,
+    figcaption,
+    label,
+    small,
+    summary,
+    address,
+    .section-body,
+  .hero-desc,
+  .hero-description,
+  .lead,
+  .description,
+  .card-copy,
+  .support-card p,
+  .support-card li,
+  .confidentiality-card p,
+  .cta-specs,
+  .cta-inner p,
+  .feature-card p,
+  .feat-card p,
+  .use-case-card p,
+  .benefit-card p,
+  .material-card p,
+  .product-card p,
+  .industry-card p,
+  .app-card p,
+  .process-card p,
+  .range-card p,
+  .reason-card p,
+  .fluid-card p,
+  .why-row p,
+  .config-rule,
+  .config-card-body,
+  .config-card-body li,
+  .design-item p,
+  .pack-step p,
+  .hpu-callout p,
+  .hpu-callout li,
+  .cr-desc,
+  .ut-desc
+) {
+  font-size: 16px !important;
+}
+
+html body p:not(.label),
+html body li,
+html body td,
+html body th,
+html body dd,
+html body dt,
+html body blockquote,
+html body figcaption,
+html body label,
+html body small,
+html body summary,
+html body address {
+  font-size: 16px !important;
+}
+
+main :is(.pill, .trust-pill, .hero-badge, .cert-badge, .cta-cert, .unit-badge, .mat-badge, .card-pump-tag) :is(span, strong, small) {
+  color:inherit!important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+}
+
+html body :is(.section-header .label, .label, .benefit-card h3, .why-row h3, .app-card h3) {
+  color:#00C8D4!important;
+}
+
+html body :is(.benefits-grid .benefit-card p, .why-list .why-row p, .cta-cert) {
+  font-size: 16px !important;
+}
+
+html body .why-list .why-row h3 {
+  font-size: 18px !important;
+}

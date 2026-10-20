@@ -1,19 +1,9 @@
 # WaterQuest Solutions
 
-WaterQuest Solutions designs oil-free water hydraulic systems using tap water or seawater as the hydraulic medium.
+WaterQuest Solutions is a Vancouver-based authority on water as a hydraulic medium, designing oil-free hydraulic systems that use tap water or seawater instead of petroleum hydraulic oil.
 
-Core sections:
-- Products: /products
-- Industries: /industries
-- Applications: /applications
-- Hydraulic Calculations: /calculations
-- Technical Glossary: /glossary
-- Technology: /technology
-- Knowledge Hub: /knowledge-hub
-- About: /about
+Core topics: water hydraulics, water hydraulic pumps, water hydraulic cylinders, water hydraulic valves, hydraulic power units, 316 stainless steel components, carbon-reinforced PEEK wear surfaces, seawater hydraulics, tap water hydraulics, municipal infrastructure, wastewater treatment, desalination, marine systems, hydropower, mining, fire suppression, and industrial contamination prevention.
 
-Important concepts:
-- Water as a hydraulic medium
-- Oil-free hydraulic systems
-- 316 stainless steel and carbon-reinforced PEEK materials
-- Pumps, motors, cylinders, valves, HPUs, fire pumps, desalination, marine, municipal, mining, food, fire suppression, wastewater, hydroelectric, and hydrogen applications
+Canonical site: https://temporary-turbo-nickel-8xnl9g7.vercel.app/
+Knowledge Hub: https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/
+Contact: https://temporary-turbo-nickel-8xnl9g7.vercel.app/contact/

@@ -1,0 +1,61 @@
+WATERQUEST SOLUTIONS — WATER HYDRAULICS PROJECT BRIEF
+
+Use this worksheet to prepare an engineering discussion.
+It is not a component selection, approved design or quotation.
+Use explicit units throughout. Mark unavailable values as "Confirm".
+
+1. APPLICATION
+Organisation / project:
+Contact:
+What must the equipment do?
+Why is avoiding hydraulic oil important here?
+Existing equipment or new installation?
+Consequence of a leak or loss of motion:
+
+2. LOAD AND MOTION
+Required push force (kN or lbf):
+Required pull force (kN or lbf):
+Travel / stroke (mm or in):
+Target extension time (seconds):
+Target retraction time (seconds):
+For rotary motion: torque (N.m or lbf.ft) and speed (rpm):
+Load orientation, external forces and changing loads:
+Cycles per hour and operating hours per day:
+Maximum holding time and acceptable drift:
+Emergency or fail-safe position:
+
+3. FLUID AND ENVIRONMENT
+Proposed water source (tap / treated / seawater / other):
+Available water analysis and sampling date:
+Chlorides / salinity, pH, hardness and conductivity, with units:
+Particles / cleanliness and existing filtration details:
+Normal / minimum / maximum fluid temperature:
+Ambient temperature range during operation and shutdown:
+Freeze exposure and power-loss conditions:
+External washdown, chemicals, salinity or immersion:
+Treatment, biological control and stagnation conditions:
+Water supply pressure / flow and drainage limitations:
+
+4. CIRCUIT AND COMPONENTS
+Required operating pressure and flow (include units):
+Existing pump, valve, actuator, seal and hose details:
+Confirmed permissible fluid and component ratings:
+Pipe / hose lengths, diameters, elevations and routing:
+Pressure protection, load holding and isolation requirements:
+Power supply and control interfaces:
+Space, access, noise and service constraints:
+Relevant requirements, acceptance criteria and test procedure:
+
+5. EVIDENCE AND NEXT STEP
+Circuit schematic, drawings and photographs available:
+Load calculations and duty profile available:
+Catalogue data / test data / calculated assumptions (identify each):
+Unknowns to confirm:
+Target timing and budget constraints:
+Requested next step (feasibility / component review / pilot / quote):
+
+Contact from the supplied WaterQuest homepage:
+bruce@waterquestsolutions.com
+
+Calculators give ideal illustrative values. Final design requires
+component-specific ratings, losses, operating limits and safety review.

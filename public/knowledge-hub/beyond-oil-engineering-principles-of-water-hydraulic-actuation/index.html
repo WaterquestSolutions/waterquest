@@ -1,304 +1,274 @@
-<!doctype html>
-<html lang="en-CA">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Beyond Oil: Engineering Principles of Water Hydraulic Actuation | WaterQuest Solutions</title>
-  <meta name="description" content="A technical look at how force transmission works when the fluid is water, not petroleum, and why engineers should stop treating water systems as special..." />
+<!DOCTYPE html>
+
+<html id="waterquest-site" lang="en-CA">
+<head><style id="wqs-experience-layer">@layer wqs-experience;</style><link rel="stylesheet" href="/assets/newsletter-popup.css?v=20261016">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beyond Oil: Engineering Principles of Water Hydraulic Actuation | WaterQuest Solutions</title>
+
 
 <style>
-:root{--navy:#071321;--blue:#0b2138;--panel:#102b45;--panel2:#163954;--aqua:#00c8d4;--aqua2:#30f1df;--green:#20d3a7;--silver:#FFFFFF;--muted:#FFFFFF;--white:#fff;--line:rgba(184,199,212,.18);--aqua-line:rgba(0,200,212,.32);--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--silver);font-family:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif;line-height:1.72}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}.site-header{position:sticky;top:0;z-index:10;background:rgba(7,19,33,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.site-nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:inline-flex;align-items:center;gap:11px;color:var(--white);font-weight:900;line-height:1.08}.brand-mark{width:40px;height:40px}.brand small{display:block;color:var(--aqua);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase}.nav-links{display:flex;align-items:center;gap:24px;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800}.nav-links a{color:var(--silver)}.nav-links a:hover,.nav-links a.active{color:var(--aqua2)}.nav-cta{background:var(--aqua);color:var(--navy)!important;padding:10px 15px;border-radius:6px}.eyebrow{color:var(--aqua);font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.22em;margin-bottom:14px}h1,h2,h3{color:var(--white);line-height:1.1;margin:0}p{margin:0;color:var(--silver)}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 18px;border-radius:6px;border:1px solid var(--aqua-line);color:var(--aqua2);font-size:.8rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.btn.primary{background:var(--aqua);border-color:var(--aqua);color:var(--navy)}.hero{padding:86px 0 54px;background:radial-gradient(ellipse at 70% 20%,rgba(0,200,212,.13),transparent 45%),linear-gradient(160deg,#06101d,var(--navy) 55%,var(--blue));border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:46px;align-items:end}.hero h1{font-size:clamp(2.4rem,5.5vw,5rem);letter-spacing:-.04em}.hero h1 span{color:var(--aqua2)}.hero p{font-size:1.14rem;max-width:720px;color:#FFFFFF;margin-top:22px}.stat-card{border:1px solid var(--aqua-line);background:rgba(16,43,69,.7);border-radius:8px;padding:24px}.stat-card b{display:block;color:var(--aqua2);font-size:2.8rem;line-height:1}.stat-card span{display:block;color:var(--muted);font-size:.76rem;text-transform:uppercase;letter-spacing:.11em;font-weight:800;margin-top:8px}.section{padding:72px 0;border-bottom:1px solid var(--line)}.section.alt{background:var(--blue)}.section-head{display:grid;grid-template-columns:1fr minmax(260px,.55fr);gap:36px;align-items:end;margin-bottom:30px}.section h2{font-size:clamp(1.8rem,3.4vw,3rem);letter-spacing:-.03em}.toolbar{position:sticky;top:72px;z-index:9;background:rgba(7,19,33,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(12px);padding:12px 0}.toolbar-inner{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.search{flex:1;min-width:240px;background:var(--panel);border:1px solid var(--aqua-line);border-radius:6px;padding:12px 13px;color:var(--white);font:inherit}.pill{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:8px 12px;font-size:.73rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;cursor:pointer}.pill.active{border-color:var(--aqua);color:var(--aqua);background:rgba(0,200,212,.08)}.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.category-card,.article-card,.panel{background:linear-gradient(145deg,rgba(16,43,69,.96),rgba(13,34,56,.94));border:1px solid var(--line);border-radius:8px;padding:22px}.category-card:hover,.article-card:hover{border-color:var(--aqua-line)}.category-card b{display:block;color:var(--white);font-size:1rem;margin-bottom:4px}.category-card span{color:var(--aqua);font-weight:900}.article-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.article-card{display:grid;gap:10px}.article-card small{color:var(--aqua);font-weight:900;letter-spacing:.12em;text-transform:uppercase;font-size:.68rem}.article-card h3{font-size:1.05rem;line-height:1.35}.article-card p{color:var(--muted);font-size:.9rem}.article-meta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:.78rem}.breadcrumb{padding:18px 0;background:var(--blue);border-bottom:1px solid var(--line);font-size:.82rem;color:var(--muted)}.article-hero{padding:58px 0 46px;background:linear-gradient(160deg,#06101d,var(--blue));border-bottom:1px solid var(--line)}.article-hero h1{font-size:clamp(2rem,4.6vw,3.6rem);letter-spacing:-.035em;max-width:860px}.article-hero p{font-size:1.12rem;max-width:760px;margin-top:18px;color:#FFFFFF}.article-shell{display:grid;grid-template-columns:minmax(0,820px) 280px;gap:54px;align-items:start;padding:56px 0 78px}.article-body{min-width:0}.article-body h2{font-size:1.55rem;margin:44px 0 15px;padding-top:8px;border-top:1px solid var(--line)}.article-body h2:first-child{margin-top:0;border-top:0}.article-body h3{font-size:1.14rem;margin:28px 0 10px;color:#FFFFFF}.article-body p,.article-body li{font-size:1.01rem;color:var(--silver);line-height:1.85}.article-body p{margin-bottom:18px}.article-body ul,.article-body ol{padding-left:1.35em;margin:12px 0 20px}.article-body li::marker{color:var(--aqua)}.callout,.takeaways,.formula-block{border:1px solid var(--aqua-line);background:rgba(0,200,212,.07);border-radius:8px;padding:20px;margin:26px 0}.callout-label,.formula-label,.takeaways h4{color:var(--aqua);font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.16em;margin-bottom:8px}.comparison-table-wrap{overflow-x:auto;margin:26px 0;border:1px solid var(--aqua-line);border-radius:8px}.comparison-table{width:100%;border-collapse:collapse;min-width:520px}.comparison-table th,.comparison-table td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left}.comparison-table th{color:var(--aqua);font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}.sidebar{position:sticky;top:96px;display:grid;gap:16px}.sidebar .panel h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--silver);margin-bottom:10px}.sidebar a{display:block;color:var(--muted);font-size:.9rem;margin:7px 0}.sidebar a:hover{color:var(--aqua)}footer{background:#04101d;border-top:1px solid var(--line);padding:46px 0}.footer-grid{display:grid;grid-template-columns:1fr auto auto;gap:50px}.footer-grid a{display:block;color:var(--muted);font-size:.9rem;margin:6px 0}footer h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--silver)}@media(max-width:960px){.nav-links{display:none}.hero-grid,.section-head,.article-shell,.footer-grid{grid-template-columns:1fr}.category-grid,.article-list{grid-template-columns:1fr 1fr}.sidebar{position:static}}@media(max-width:640px){.wrap{width:min(100% - 28px,var(--max))}.category-grid,.article-list{grid-template-columns:1fr}.hero{padding-top:58px}.toolbar{top:72px}.article-shell{padding-top:36px}}
-</style><link rel="canonical" href="/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta property="og:title" content="Beyond Oil: Engineering Principles of Water Hydraulic Actuation | WaterQuest Solutions" />
-  <meta property="og:description" content="A technical look at how force transmission works when the fluid is water, not petroleum, and why engineers should stop treating water systems as special..." />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation" />
-  <meta property="og:image" content="/assets/waterquest-hero.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Beyond Oil: Engineering Principles of Water Hydraulic Actuation | WaterQuest Solutions" />
-  <meta name="twitter:description" content="A technical look at how force transmission works when the fluid is water, not petroleum, and why engineers should stop treating water systems as special..." />
-  <meta name="twitter:image" content="/assets/waterquest-hero.png" />
-  <link rel="alternate" hreflang="en-CA" href="/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation" />
-  <link rel="icon" href="/assets/waterquest-mark.svg" type="image/svg+xml" />
-  <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","name":"WaterQuest Solutions","url":"https://waterquestsolutions.com","logo":"/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"Article","@id":"/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation#webpage","url":"/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation","name":"Beyond Oil: Engineering Principles of Water Hydraulic Actuation | WaterQuest Solutions","description":"A technical look at how force transmission works when the fluid is water, not petroleum, and why engineers should stop treating water systems as special...","isPartOf":{"@id":"/#website"},"publisher":{"@id":"/#organization"},"inLanguage":"en-CA","headline":"Build the engineering case for water as a hydraulic medium.","image":"/assets/waterquest-hero.png","author":{"@id":"/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterquestsolutions.com"},{"@type":"ListItem","position":2,"name":"Knowledge Hub","item":"/knowledge-hub"},{"@type":"ListItem","position":3,"name":"Beyond Oil Engineering Principles Of Water Hydraulic Actuation","item":"/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation"}]}]}</script>
-  <style id="wq-global-shell-css">
-    :root{--wq-navy:#0A1628;--wq-navy-mid:#0D2044;--wq-aqua:#00C8D4;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
-    body{padding-top:78px!important;color:var(--wq-text)!important;font-size:16px!important}
-    body a{color:inherit}
-    main h1{font-family:var(--wq-font-display)!important;font-size:clamp(2.8rem,6vw,5.4rem)!important;line-height:1.05!important;font-weight:950!important;letter-spacing:-.035em!important;color:var(--wq-white)!important}
-    main h2{font-family:var(--wq-font-display)!important;font-size:clamp(1.9rem,3.5vw,3.1rem)!important;line-height:1.1!important;font-weight:950!important;letter-spacing:-.028em!important;color:var(--wq-white)!important}
-    main h3{font-family:var(--wq-font-display)!important;font-size:clamp(1.15rem,1.6vw,1.38rem)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;color:var(--wq-white)!important}
-    main h4{font-family:var(--wq-font-display)!important;font-size:1rem!important;line-height:1.25!important;font-weight:900!important;color:var(--wq-white)!important}
-    main p,main li,main td,main th,main .lead,main .section-copy,main .description{color:var(--wq-text)!important;font-size:1rem!important;line-height:1.68!important;font-weight:600!important}
-    main small,main .text-muted,main .muted,main .bc-inner a,main .bc-current,main .hs-lbl,main .pc-spec-label,main .cert-desc,main .phc-num{color:var(--wq-muted)!important}
-    main .eyebrow,main .tag,main .label,main .section-label,main [class*="eyebrow"],main [class*="badge"],main [class*="cat"]{color:var(--wq-aqua)!important}
-    body.wq-section-products main h1,body.wq-section-products main h2,body.wq-section-products main h3,main .product-grid h2,main .product-grid h3,main .product-card h2,main .product-card h3,main .product-hero-card h2,main .phc-body h2,main .pc-body h3,main a[href^="/products"] h2,main a[href^="/products"] h3{color:var(--wq-aqua)!important}
-    main .btn,main .link,main .pc-link,main .card-link,main a[href^="/products"] b{color:var(--wq-aqua)!important}
-    main .btn.primary{color:var(--wq-navy)!important}
-    .wq-reference-rail{position:fixed;right:18px;top:45%;transform:translateY(-50%);z-index:82;display:none;gap:8px;flex-direction:column}
-    body.wq-section-home .wq-reference-rail,body.wq-section-products .wq-reference-rail,body.wq-section-knowledge .wq-reference-rail{display:flex}
-    .wq-reference-rail a{display:block;width:154px;border:1px solid var(--wq-border-aqua);border-radius:8px;background:rgba(6,16,30,.86);backdrop-filter:blur(12px);padding:12px 13px;color:var(--wq-white)!important;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,.25)}
-    .wq-reference-rail small{display:block;color:var(--wq-aqua);font-size:.64rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
-    .wq-reference-rail strong{display:block;color:var(--wq-white);font-size:.88rem;line-height:1.18;font-weight:950}
-    .wq-form-status{margin-top:14px;color:var(--wq-aqua)!important;font-size:.92rem!important;font-weight:850!important}
-    .wq-form-status.is-error{color:#ffb1b1!important}
-    .wq-context-apps{position:relative;z-index:2;background:rgba(13,32,68,.94);border-top:1px solid var(--wq-border);border-bottom:1px solid var(--wq-border);padding:34px 0}
-    .wq-context-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;gap:28px;align-items:start}
-    .wq-context-apps h2{font-family:var(--wq-font-display);font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.14;margin:0;color:var(--wq-white);font-weight:950}
-    .wq-context-apps p{margin:8px 0 0;color:var(--wq-text);font-size:.95rem;line-height:1.6;font-weight:650}
-    .wq-app-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-    .wq-app-links a{border:1px solid var(--wq-border);border-radius:8px;padding:14px 15px;background:rgba(18,41,84,.74);color:var(--wq-white)!important;text-decoration:none;font-weight:850;line-height:1.25}
-    .wq-app-links a:hover{border-color:var(--wq-border-aqua);color:var(--wq-aqua)!important}
-    .wq-conversion-hero{position:relative;z-index:2;overflow:hidden;border-bottom:1px solid var(--wq-border);background:linear-gradient(150deg,rgba(4,12,24,.98),rgba(10,22,40,.96) 46%,rgba(0,200,212,.1));isolation:isolate}
-    .wq-conversion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,.96),rgba(10,22,40,.78) 48%,rgba(10,22,40,.36)),url("/assets/waterquest-hero.png") center right/cover no-repeat;opacity:.62;z-index:-2}
-    .wq-conversion-hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,212,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,212,.08) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,black,transparent 78%);opacity:.58;z-index:-1}
-    .wq-conversion-wrap{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto;min-height:clamp(440px,58svh,680px);padding:72px 0 46px;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:46px;align-items:end}
-    .wq-hero-eyebrow{color:var(--wq-aqua);font-size:.76rem;font-weight:950;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
-    .wq-conversion-hero h1{font-family:var(--wq-font-display);font-size:clamp(2.65rem,5.8vw,5.25rem);line-height:1.04;font-weight:950;letter-spacing:-.035em;color:var(--wq-white);margin:0}
-    .wq-conversion-hero h1 span{color:var(--wq-aqua)}
-    .wq-hero-copy{max-width:720px;color:var(--wq-text);font-size:1.12rem;line-height:1.68;font-weight:650;margin:22px 0 0}
-    .wq-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
-    .wq-hero-cta,.wq-hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 20px;border-radius:6px;font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
-    .wq-hero-cta{background:var(--wq-aqua);border:1px solid var(--wq-aqua);color:var(--wq-navy)!important}
-    .wq-hero-secondary{border:1px solid var(--wq-border-aqua);color:var(--wq-aqua)!important;background:rgba(0,200,212,.06)}
-    .wq-hero-visual{display:block;border:1px solid var(--wq-border-aqua);border-radius:10px;overflow:hidden;background:rgba(6,16,30,.72);backdrop-filter:blur(14px);box-shadow:0 22px 70px rgba(0,0,0,.34);text-decoration:none;color:var(--wq-white)!important}
-    .wq-hero-picture{min-height:230px;background:radial-gradient(circle at 28% 28%,rgba(0,200,212,.35),transparent 34%),linear-gradient(145deg,rgba(0,200,212,.16),rgba(18,41,84,.94)),url("/assets/waterquest-hero.png") center/cover no-repeat}
-    .wq-hero-visual-text{padding:20px}
-    .wq-hero-visual-text small{display:block;color:var(--wq-aqua);font-size:.7rem;font-weight:950;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
-    .wq-hero-visual-text strong{display:block;color:var(--wq-white);font-size:1.18rem;line-height:1.24;font-weight:950}
-    .wq-hero-visual-text span{display:block;color:var(--wq-text);font-size:.95rem;line-height:1.5;font-weight:650;margin-top:8px}
-    #wq-global-bubbles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
-    #wq-global-bubbles .wq-bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,.55),rgba(0,200,212,.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,.2);opacity:0;animation:wq-bubble-rise linear infinite}
-    @keyframes wq-bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:.45}50%{transform:translateY(-50vh) translateX(var(--wq-drift)) scale(.88);opacity:.25}92%{opacity:.08}100%{transform:translateY(-108vh) translateX(calc(var(--wq-drift)*1.4)) scale(.45);opacity:0}}
-    #wq-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.72);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1);transition:background .3s,backdrop-filter .3s,border-color .3s}
-    #wq-nav.wq-scrolled{background:rgba(10,22,40,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--wq-border)}
-    .wq-nav-inner{width:min(1380px,calc(100% - 88px));height:78px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:46px}
-    .wq-nav-logo{display:flex;flex:0 0 326px;min-width:326px;flex-direction:column;align-items:flex-start;justify-content:center;text-decoration:none}
-    .wq-logo-main{display:block;color:var(--wq-white);font-family:var(--wq-font-display);font-size:1.22rem;font-weight:950;letter-spacing:-.01em;line-height:1.12;white-space:nowrap}
-    .wq-logo-sub{display:block;margin-top:7px;color:var(--wq-aqua);font-size:.68rem;font-weight:900;letter-spacing:.135em;line-height:1.35;text-transform:uppercase;white-space:nowrap}
-    .wq-nav-links{display:flex;flex:1 1 auto;align-items:center;justify-content:flex-end;gap:36px;list-style:none;margin:0;padding:0}
-    .wq-nav-links a{color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.88rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
-    .wq-nav-links a:hover,.wq-nav-links a.active{color:var(--wq-aqua)!important}
-    .wq-nav-cta{background:var(--wq-aqua)!important;color:var(--wq-navy)!important;padding:10px 22px;border-radius:6px;font-weight:950!important}
-    .wq-menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--wq-border-aqua);border-radius:6px;background:rgba(0,200,212,.08);color:var(--wq-white);cursor:pointer}
-    .wq-menu-toggle span{display:block;width:18px;height:2px;background:var(--wq-white);border-radius:99px;box-shadow:0 6px 0 var(--wq-white),0 -6px 0 var(--wq-white)}
-    #wq-mobile-menu{display:none;position:fixed;top:78px;left:20px;right:20px;z-index:99;padding:14px;border:1px solid var(--wq-border);border-radius:8px;background:rgba(6,16,30,.97);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.38)}
-    #wq-mobile-menu.open{display:block}
-    #wq-mobile-menu a{display:block;color:var(--wq-white)!important;font-family:var(--wq-font-display);font-size:.92rem;font-weight:850;letter-spacing:.06em;padding:12px 10px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
-    #wq-mobile-menu a:last-child{border-bottom:0}
-    #wq-mobile-menu a.active,#wq-mobile-menu a:hover{color:var(--wq-aqua)!important}
-    #wq-mobile-menu .wq-mobile-cta{margin-top:8px;border:0;border-radius:6px;background:var(--wq-aqua);color:var(--wq-navy)!important;text-align:center}
-    .wq-site-footer{position:relative;z-index:2;background:#06101E;border-top:1px solid var(--wq-border);padding:34px 0 20px;color:var(--wq-white)}
-    .wq-footer-container{width:min(var(--wq-max),calc(100% - 40px));margin:0 auto}
-    .wq-footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:30px;margin-bottom:22px}
-    .wq-footer-brand .wq-logo-main{font-size:1.18rem;margin-bottom:3px}
-    .wq-footer-brand .wq-logo-sub{font-size:.7rem;margin-bottom:12px}
-    .wq-footer-brand p{color:var(--wq-white);font-size:.84rem;font-weight:700;line-height:1.5;max-width:450px;margin:0}
-    .wq-footer-col h5{color:var(--wq-white);font-family:var(--wq-font-display);font-size:.82rem;font-weight:950;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
-    .wq-footer-col ul{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
-    .wq-footer-col a,.wq-footer-col li{color:var(--wq-white)!important;font-size:.92rem;font-weight:750;line-height:1.35;text-decoration:none}
-    .wq-footer-col a:hover,.wq-footer-col a.active{color:var(--wq-aqua)!important}
-    .wq-footer-bottom{border-top:1px solid var(--wq-border);padding-top:14px;color:var(--wq-white);font-size:.86rem;font-weight:750;text-align:center}
-    @media(max-width:1320px){.wq-reference-rail{display:none!important}}
-    @media(max-width:1050px){.wq-nav-inner{width:min(var(--wq-max),calc(100% - 30px));gap:16px}.wq-nav-logo{flex-basis:245px;min-width:245px}.wq-nav-links{gap:12px}.wq-nav-links a{font-size:.74rem}.wq-logo-main{font-size:1.04rem}.wq-logo-sub{font-size:.56rem;letter-spacing:.09em;margin-top:5px}.wq-nav-cta{padding:8px 10px}.wq-footer-grid{grid-template-columns:1fr 1fr}.wq-context-wrap,.wq-conversion-wrap{grid-template-columns:1fr}.wq-app-links{grid-template-columns:1fr 1fr}.wq-conversion-wrap{min-height:auto;padding:58px 0 42px}.wq-hero-visual{max-width:520px}}
-    @media(max-width:760px){.wq-nav-links{display:none}.wq-menu-toggle{display:inline-flex}.wq-nav-inner{height:78px}.wq-footer-grid{grid-template-columns:1fr}.wq-footer-bottom{line-height:1.6}.wq-app-links{grid-template-columns:1fr}.wq-hero-picture{min-height:180px}.wq-conversion-hero h1{font-size:clamp(2.25rem,13vw,3.6rem)}}
-    @media(max-width:420px){.wq-nav-inner{width:min(100% - 30px,var(--wq-max))}.wq-nav-logo{flex-basis:auto;min-width:0}.wq-logo-main{font-size:1rem}.wq-logo-sub{font-size:.5rem;letter-spacing:.06em}}
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
   </style>
-</head>
-<body class="wq-section-knowledge">
-<!-- WQ_GLOBAL_HEADER_START -->
-<div id="wq-global-bubbles" aria-hidden="true"></div>
-<nav id="wq-nav" role="navigation" aria-label="Main navigation">
-  <div class="wq-nav-inner">
-    <a href="/" class="wq-nav-logo" aria-label="WaterQuest Solutions home">
-      <span class="wq-logo-main">WaterQuest Solutions</span>
-      <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
-    </a>
-    <ul class="wq-nav-links" role="list">
-      <li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/" class="active">Knowledge Hub</a></li><li><a href="/about/">About</a></li>
-      <li><a href="/contact/" class="wq-nav-cta">Engineering Review</a></li>
-    </ul>
-    <button class="wq-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="wq-mobile-menu"><span aria-hidden="true"></span></button>
-  </div>
-</nav>
-<div id="wq-mobile-menu">
-  <a href="/products/">Products</a><a href="/industries/">Industries</a><a href="/technology/">Technology</a><a href="/knowledge-hub/" class="active">Knowledge Hub</a><a href="/about/">About</a>
-  <a href="/contact/" class="wq-mobile-cta">Engineering Review</a>
+<meta content="Reliable movement takes more than enough force to start. Learn how pressure, flow, friction, load changes and controls work together to move, hold and stop a mechanism using water hydraulics." name="description"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="Beyond Oil: Engineering Principles of Water Hydraulic Actuation, water hydraulics, water hydraulic systems, oil-free hydraulics, water as a hydraulic medium, tap water hydraulics, seawater hydraulics, WaterQuest Solutions, water hydraulics engineering guide, hydraulic oil alternative, industrial water hydraulics" name="keywords"/>
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation/" rel="canonical"/>
+<meta content="WaterQuest Solutions" property="og:site_name"/>
+<meta content="Beyond Oil: Engineering Principles of Water Hydraulic Actuation" property="og:title"/>
+<meta content="Reliable movement takes more than enough force to start. Learn how pressure, flow, friction, load changes and controls work together to move, hold and stop a mechanism using water hydraulics." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Beyond Oil: Engineering Principles of Water Hydraulic Actuation" name="twitter:title"/>
+<meta content="Reliable movement takes more than enough force to start. Learn how pressure, flow, friction, load changes and controls work together to move, hold and stop a mechanism using water hydraulics." name="twitter:description"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation/#primary","mainEntityOfPage":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation/","name":"Beyond Oil: Engineering Principles of Water Hydraulic Actuation","headline":"Beyond Oil: Engineering Principles of Water Hydraulic Actuation","description":"Reliable movement takes more than enough force to start. Learn how pressure, flow, friction, load changes and controls work together to move, hold and stop a mechanism using water hydraulics.","url":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation/","inLanguage":"en-CA","isPartOf":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"},"publisher":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"},"author":{"@type":"Organization","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization","name":"WaterQuest Solutions"},"about":[{"@type":"Thing","name":"Beyond Oil: Engineering Principles of Water Hydraulic Actuation"}],"articleSection":"Specification & Design","dateModified":"2026-10-19","datePublished":"2026-09-02","wordCount":1639,"timeRequired":"PT9M","citation":["https://openstax.org/books/university-physics-volume-1/pages/14-3-pascals-principle-and-hydraulics","https://www.iapws.org/relguide/LiquidWater.pdf","https://www.iso.org/standard/44781.html"],"hasPart":[{"@type":"WebPageElement","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation/#guide-application","name":"Specify motion as well as force"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/"},{"@type":"ListItem","position":2,"name":"Knowledge Hub","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"},{"@type":"ListItem","position":3,"name":"Beyond Oil: Engineering Principles of Water Hydraulic Actuation","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"/><link rel="stylesheet" href="/assets/wq-brand-standards.css?v=20261015-brand"/><script type="module" src="/assets/wq-speed-insights.js" id="wq-speed-insights"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style></head>
+<body class="wq-audited wq-consistent" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img class="wq-brand-mark" src="/assets/waterquest-logo-square.png" alt="" width="54" height="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero">
+<div class="container">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › Article 52</div>
+<p class="eyebrow">Specification &amp; Design</p>
+<h1 data-editorial="hero">Beyond Oil: Engineering Principles of Water Hydraulic Actuation</h1>
+<p class="ed-question">Turn hydraulic force into the movement your process needs.</p><p class="lead" data-editorial="lead">Reliable movement takes more than enough force to start. Learn how pressure, flow, friction, load changes and controls work together to move, hold and stop a mechanism using water hydraulics.</p>
+<div class="article-meta"><span class="pill">Article 052</span><span class="pill">Specification &amp; Design</span><span class="pill">10 min read</span><span class="pill">Updated 19 October 2026</span></div>
 </div>
-<!-- WQ_GLOBAL_HEADER_END --><!-- WQ_CONVERSION_HERO_START -->
-<section class="wq-conversion-hero" aria-label="Page introduction">
-  <div class="wq-conversion-wrap">
-    <div>
-      <p class="wq-hero-eyebrow">Knowledge Hub</p>
-      <h1>Build the <span>engineering case</span> for water as a hydraulic medium.</h1>
-      <p class="wq-hero-copy">Explore the articles that support WaterQuest's authority position: fundamentals, materials, applications, comparisons, compliance, maintenance, and field adoption.</p>
-      <div class="wq-hero-actions">
-        <a class="wq-hero-cta" href="/technology/">Open Technology References</a>
-        <a class="wq-hero-secondary" href="/glossary/">Use the Glossary</a>
-      </div>
-    </div>
-    <a class="wq-hero-visual" href="/technology/">
-      <div class="wq-hero-picture" aria-hidden="true"></div>
-      <div class="wq-hero-visual-text">
-        <small>Authority path</small>
-        <strong>From question to technical confidence.</strong>
-        <span>Content built for practical decision makers and deep technical research.</span>
-      </div>
-    </a>
-  </div>
 </section>
-<!-- WQ_CONVERSION_HERO_END --><div class="breadcrumb"><div class="wrap"><a href="/">Home</a> / <a href="/knowledge-hub/">Knowledge Hub</a> / Technical Deep Dives</div></div>
-<main>
-  <section class="article-hero">
-    <div class="wrap">
-      <div class="eyebrow">Article 52 · Technical Deep Dives</div>
-      <h1>Beyond Oil: Engineering Principles of Water Hydraulic Actuation</h1>
-      <p>A technical look at how force transmission works when the fluid is water, not petroleum, and why engineers should stop treating water systems as special cases.</p>
-    </div>
-  </section>
-  <div class="wrap article-shell">
-    <article class="article-body"><p>Oil has dominated hydraulic design for generations. As a result, the fundamental engineering conversation has been built around the properties of oil: viscosity, compressibility, thermal behaviour, oxidation, and lubrication film strength. That long-standing familiarity has created an unintended side effect. When engineers think hydraulics, they assume oil first and examine alternatives second.</p>
-<p>But the physics of fluid power do not belong to oil. The equations that govern actuation, pressure, flow, force, and velocity apply no matter what is pushing inside the lines. When water is understood from first principles rather than from assumptions carried over from oil systems, its advantages become obvious.</p>
-<div class="callout"><div class="callout-label">Engineering Principle</div><p>Design around water's properties and the medium delivers performance that conventional systems cannot match. Water is not a substitute for oil. It is a purpose-built medium in its own right.</p></div>
-
-<h2 id="lubrication">1. Lubrication Dynamics</h2>
-<p>Oil-based designs rely on hydrodynamic film thickness to prevent abrasive contact. Water behaves differently: very low viscosity, excellent heat transfer, extremely stable at operating temperatures, and no carbonization, no varnish, no oxidation. With 316 stainless and carbon-reinforced PEEK as the contact surfaces, sliding and rotating elements form reliable fluid films at very small clearances. Water's flow characteristics keep surfaces clean and maintain predictable lubrication at high speed.</p>
-<p>Some engineers still believe water cannot lubricate. The real issue was always the materials, not the fluid.</p>
-
-<h2 id="compressibility">2. Compressibility and Control</h2>
-<p>Water's bulk modulus is higher than petroleum oil, which means stiffer systems with immediate pressure response, improved accuracy in actuator positioning, smoother transitions in proportional control, and less pressure decay under load. Where oil systems rely on accumulators, dampers, and flow-conditioning measures to tame compressibility effects, water systems avoid most of these requirements. Engineers who work with servo or closed-loop systems consistently observe how crisp the control response feels with water as the medium.</p>
-
-<h2 id="temperature">3. Temperature Stability</h2>
-<p>Every engineer has dealt with oil temperature issues: viscosity thinning, cooling demands, extended warm-up periods, seal shrink or swell, varnish formation, and oxidation at elevated heat. Water eliminates all of them. Isothermal behaviour is a natural advantage. Under load, water gains minimal heat, and what heat does appear is absorbed and dissipated efficiently. This keeps pump tolerances tight, valve metering stable, and efficiency consistent across the operating day.</p>
-
-<h2 id="velocity">4. Velocity and Component Loading</h2>
-<p>Water enables higher piston or rotary velocities safely because of less viscous shear at high speed, low drag on rotating components, strong hydrodynamic film formation with the right geometries, and reduced heat rise at high RPM. In marine controls, municipal gates, RO skids, steel processing, and clean manufacturing, this translates into faster cycle times and lower consumed energy for equal output.</p>
-
-<h2 id="cavitation">5. Cavitation Behaviour</h2>
-<p>Cavitation is real in any hydraulic medium, but the narrative that water is "more prone to cavitation" is misleading. Cavitation is driven by inlet restriction, acceleration through orifices, pump misalignment, and poor system layout. Not by the fluid itself. Modern <a href="/products/axial-piston-pumps/">water hydraulic pumps</a> used by WaterQuest Solutions are engineered with optimized inlet geometries, symmetrical swashplate loading, high-flow cylinder ports, and robust water-tolerant materials. If cavitation occurs, it is a design flaw, not a fluid problem.</p>
-
-<h2 id="pressure">6. High-Pressure Actuation</h2>
-<p>Current designs run at 160 bar with full reliability in cylinders, motors, and proportional valves. The actuation force equation has not changed:</p>
-<div class="formula-block"><div class="formula-label">Governing Equation</div><div class="formula-text">F = P x A&nbsp;&nbsp;&nbsp;(Force = Pressure x Area)<br>At 160 bar, a 100 mm bore cylinder delivers over 125 kN on extension.</div></div>
-<p>Engineers who assume oil is required for high-force applications are repeating inherited assumptions. The math does not support them.</p>
-
-<h2 id="valves">7. Valve Dynamics and Flow Control</h2>
-<p>Oil valves are designed around a thicker, slower-moving medium. Water, being fast and clean, allows sharper response, precise metering, low hysteresis, excellent repeatability, and reduced spool contamination. When engineers specify components designed for water, the system behaves with the responsiveness of pneumatics and the force of hydraulics. This is why marine steering, municipal gates, and <a href="/products/water-hydraulic-valves/">industrial valve actuation systems</a> benefit so strongly from water-driven design.</p>
-
-<h2 id="contamination">8. No Cross-Contamination</h2>
-<p>Every oil system carries the risk of oil migrating into the medium being processed, whether that is municipal water, food product, marine ballast, or <a href="/industries/desalination/">desalination feed water</a>. In regulated environments, this risk carries serious liability. Water hydraulics remove cross-contamination from the equation entirely. There is no foreign fluid in the system.</p>
-
-<h2 id="environmental">9. Environmental and Regulatory Advantage</h2>
-<p>In sectors like desalination, marine infrastructure, and municipal water treatment, the regulatory environment demands zero tolerance for hydrocarbon contamination. Water hydraulic systems are inherently compliant. No spill reporting, no hazardous material storage, no cleanup liability, no Fisheries Act exposure in salmon-bearing waterways across British Columbia and the Canadian Pacific coast.</p>
-
-<div class="takeaways">
-<h4>Key Takeaways</h4>
-<ul>
-<li>Water's nine engineering principles deliver performance advantages that oil systems cannot match when the system is designed correctly from the start</li>
-<li>316 stainless on carbon-reinforced PEEK creates reliable hydrodynamic films without oil or additives at any operating speed</li>
-<li>Higher bulk modulus means faster pressure response and crisper actuator positioning than oil can achieve</li>
-<li>Near-isothermal behaviour eliminates thermal drift, varnish, and viscosity variation across every operating shift</li>
-<li>Water at 160 bar is a maintenance event. Oil at 160 bar is an environmental incident with full liability attached.</li>
-</ul>
-</div></article>
-    <aside class="sidebar">
-      <div class="panel">
-        <h3>Diagnostic Offer</h3>
-        <p>Tell us your application, operating pressure, and environment. We will identify whether water hydraulics can replace your current system.</p>
-        <p style="margin-top:14px"><a class="btn primary" href="/contact/">Get System Diagnostic</a></p>
-      </div>
-      <div class="panel">
-        <h3>Related Reading</h3>
-        <a href="/knowledge-hub/why-tap-or-sea-water-belongs-in-your-hydraulic-system/">Article 51: Why Tap or Sea Water Belongs in Your Hydraulic System</a><a href="/knowledge-hub/material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek/">Article 53: Material Compatibility: Why We Use 316 Stainless and Carbon-Reinforced PEEK</a><a href="/knowledge-hub/cavitation-in-water-hydraulics-myths-truths-and-design-solutions/">Article 54: Cavitation in Water Hydraulics: Myths, Truths, and Design Solutions</a><a href="/knowledge-hub/how-water-maintains-hydraulic-efficiency-without-additives/">Article 55: How Water Maintains Hydraulic Efficiency Without Additives</a><a href="/knowledge-hub/160-bar-performance-debunking-the-limitations-of-water-hydraulics/">Article 56: 160 Bar Performance: Debunking the Limitations of Water Hydraulics</a>
-      </div>
-      <div class="panel">
-        <h3>Back to Library</h3>
-        <a href="/knowledge-hub/">Browse all Knowledge Hub articles</a>
-      </div>
-    </aside>
-  </div>
-</main><!-- WQ_REFERENCE_RAIL_START -->
-<aside class="wq-reference-rail" aria-label="Engineering references">
-  <a href="/calculations/"><small>Reference</small><strong>Engineering Calculators</strong></a>
-  <a href="/glossary/"><small>Reference</small><strong>Technical Glossary</strong></a>
-</aside>
-<!-- WQ_REFERENCE_RAIL_END -->
-
-<!-- WQS_ENRICHMENT_START -->
-<style>
-.wqs-enrichment{background:#f5fbf9;border-top:1px solid #d9e8e3;color:#15302c;font-family:Nunito Sans,Arial,sans-serif;padding:56px 6vw}.wqs-enrichment__inner{margin:0 auto;max-width:1120px}.wqs-enrichment__eyebrow{color:#08726f;font-size:12px;font-weight:900;letter-spacing:0;text-transform:uppercase}.wqs-enrichment h2{font-size:clamp(28px,4vw,48px);line-height:1.05;margin:8px 0 16px}.wqs-enrichment p{color:#4b625d;font-size:18px;line-height:1.65;max-width:900px}.wqs-enrichment__grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px}.wqs-enrichment__panel{background:#fff;border:1px solid #d9e8e3;border-radius:8px;padding:22px}.wqs-enrichment__panel h3{font-size:18px;margin:0 0 12px}.wqs-enrichment ul{margin:0;padding-left:20px}.wqs-enrichment li{line-height:1.55;margin:7px 0}.wqs-enrichment__links{display:grid;gap:10px}.wqs-enrichment__links a{background:#fff;border:1px solid #d9e8e3;border-radius:8px;color:#15302c;display:grid;gap:4px;padding:14px;text-decoration:none}.wqs-enrichment__links span{color:#5f746f;font-size:14px;line-height:1.45}@media(max-width:760px){.wqs-enrichment{padding:40px 18px}.wqs-enrichment__grid{grid-template-columns:1fr}}
-</style>
-<section class="wqs-enrichment" aria-label="Complete page details">
-  <div class="wqs-enrichment__inner">
-    <div class="wqs-enrichment__eyebrow">Complete archive details</div>
-    <h2>Beyond Oil: Engineering Principles of Water Hydraulic Actuation</h2>
-    <p>A technical look at how force transmission works when the fluid is water, not petroleum, and why engineers should stop treating water systems as special...</p>
-    <div class="wqs-enrichment__grid">
-      
-      <div class="wqs-enrichment__panel"><h3>Primary page focus</h3><ul><li>Build the engineering case for water as a hydraulic medium.</li><li>Beyond Oil: Engineering Principles of Water Hydraulic Actuation</li></ul></div>
-      <div class="wqs-enrichment__panel"><h3>Full section outline</h3><ul><li>1. Lubrication Dynamics</li><li>2. Compressibility and Control</li><li>3. Temperature Stability</li><li>4. Velocity and Component Loading</li><li>5. Cavitation Behaviour</li><li>6. High-Pressure Actuation</li><li>7. Valve Dynamics and Flow Control</li><li>8. No Cross-Contamination</li><li>9. Environmental and Regulatory Advantage</li></ul></div>
-      <div class="wqs-enrichment__panel"><h3>Detailed topics</h3><ul><li>Diagnostic Offer</li><li>Related Reading</li><li>Back to Library</li></ul></div>
-    </div>
-    <div class="wqs-enrichment__panel" style="margin-top:18px"><h3>Related pages with more detail</h3><div class="wqs-enrichment__links"><a href="/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation"><strong>Beyond Oil: Engineering Principles of Water Hydraulic Actuation</strong><span>A technical look at how force transmission works when the fluid is water, not petroleum, and why engineers should stop treating water systems as special cases.</span></a><a href="/knowledge-hub/engineering-principles-water-hydraulic-actuation"><strong>Engineering Principles of Water Hydraulic Actuation | Force, Pressure, Cylinders | WaterQuest</strong><span>The engineering fundamentals of water hydraulic actuation. Pascal's Law, force calculations, cylinder sizing, speed control, efficiency, material specifications for 316L stainless and PEEK seals.</span></a><a href="/knowledge-hub/choosing-the-right-cylinder-for-water-actuation"><strong>Choosing the Right Cylinder for Water Actuation</strong><span>Purpose-built cylinder engineering for water hydraulic systems. A full technical guide to bore selection, barrel and rod materials, seal system design, cushioning, and integration with water hydraulic control systems.</span></a><a href="/knowledge-hub/drought-ready-water-hydraulic-use-in-desalination-plants"><strong>Drought-Ready: Water Hydraulic Use in Desalination Plants</strong><span>A complete engineering and procurement review of water hydraulic actuation in modern desalination infrastructure. How 316 stainless and PEEK-based systems eliminate oil contamination risk, corrosion failure, and thermal breakdown in continuous high-pressure desalination service.</span></a><a href="/knowledge-hub/fail-safe-performance-in-theme-park-ride-systems"><strong>Fail-Safe Performance in Theme Park Ride Systems</strong><span>A complete engineering analysis of water hydraulic actuation for ride safety, reliability, and environmental protection. How water hydraulics eliminate oil contamination, slip hazards, varnish-related failures, and fire load in public ride environments.</span></a><a href="/knowledge-hub/fire-suppression-evolved-why-water-mist-systems-outperform-traditional-sprinklers"><strong>Fire Suppression Evolved: Why Water Mist Systems Outperform Traditional Sprinklers</strong><span>A technical and procurement review of high-pressure water mist fire suppression systems and the engineering advantages of water hydraulic actuation over oil-driven alternatives.</span></a><a href="/knowledge-hub/from-steel-mills-to-sawmills-industrial-applications-of-pressurized-water"><strong>From Steel Mills to Sawmills: Industrial Applications of Pressurized Water</strong><span>How high-pressure water actuation solves chronic reliability issues in heavy industry. A complete engineering and procurement analysis of water hydraulics in steel mills, sawmills, pulp plants, and material-handling environments across Canada.</span></a><a href="/knowledge-hub/knife-gate-valves-and-water-hydraulics-a-natural-fit"><strong>Knife Gate Valves and Water Hydraulics: A Natural Fit</strong><span>Knife gate valves operate in the same wet, abrasive, corrosive environments where water is already present. Why water hydraulic actuation is the correct engineering choice for knife gate applications across mining, wastewater, and marine sectors.</span></a><a href="/knowledge-hub/water-hydraulics-in-mining-lower-downtime-zero-contamination"><strong>Water Hydraulics in Mining: Lower Downtime, Zero Contamination</strong><span>A full engineering and procurement analysis of water hydraulic actuation in underground and surface mining operations. How 316 stainless and PEEK-based systems eliminate fire risk, contamination liability, and the failure modes that oil creates in mining environments.</span></a><a href="/knowledge-hub/water-driven-power-on-offshore-platforms"><strong>Water-Driven Power on Offshore Platforms</strong><span>A full engineering and procurement analysis of water hydraulic actuation on offshore oil, gas, wind, and tidal energy platforms. How 316 stainless and PEEK-based systems eliminate spill risk, fire load, and corrosion failure in the most demanding marine environments.</span></a></div></div>
-  </div>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><span aria-hidden="true" class="ed-legacy-anchor" id="1-lubrication-dynamics"></span><span aria-hidden="true" class="ed-legacy-anchor" id="2-compressibility-and-control"></span><span aria-hidden="true" class="ed-legacy-anchor" id="3-temperature-stability"></span><span aria-hidden="true" class="ed-legacy-anchor" id="4-velocity-and-component-loading"></span><span aria-hidden="true" class="ed-legacy-anchor" id="6-high-pressure-actuation"></span><span aria-hidden="true" class="ed-legacy-anchor" id="8-no-cross-contamination"></span><span aria-hidden="true" class="ed-legacy-anchor" id="9-environmental-and-regulatory-advantage"></span><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><h2 id="learn-a-cylinder-must-do-more-than-produce-static-force">Design movement your process can depend on</h2><p>A gate that hesitates, a cylinder that overshoots or a load that drifts can interrupt the process even when the actuator has enough force. Water hydraulics brings pressure, flow and control together to manage that movement. Define how the mechanism must start, travel, stop and hold, then select the actuator and circuit to deliver those behaviours.</p><p>Static calculations remain essential. Pressure acting on effective piston area produces force, while opposing pressure and mechanical resistance reduce the useful result. OpenStax explains the foundational pressure-area relationship and its ideal assumptions. <a aria-label="Source 1: OpenStax: Pascal’s principle and hydraulics" class="kh-citation" href="#source-physics">[1]</a> This article builds beyond that starting point. A process valve that only needs end-to-end movement has different control demands from a mechanism that must track intermediate positions smoothly. Establishing the required motion quality prevents the project from purchasing unnecessary complexity or assuming that basic force capability proves precision.</p><h2 id="learn-separate-load-force-from-acceleration-force">Separate load force from acceleration force</h2><p>The actuator must overcome the process load and accelerate the moving mass. In a simplified straight-line example, accelerating a 200 kilogram mass at 0.5 metres (1.64 ft) per second squared requires an additional 100 newtons before friction and other forces are considered. This is an independently calculated teaching example using force equal to mass times acceleration. In some machinery the process load dominates; in other machinery rapid starts and stops make inertia important. The duty needs both effects to be understood.</p><p>A mechanism with links or rotating parts requires the corresponding mechanical analysis. The relationship between cylinder force and useful torque can change through the stroke as the lever arm changes. A cylinder selected only at the most favourable position may struggle elsewhere. Identify the load path and governing positions before tuning the controls. Control settings cannot compensate for an actuator that lacks the required mechanical capability, and increasing pressure is not an acceptable substitute for staying within the supported limits of the equipment and structure.</p><figure aria-labelledby="visual-52" class="kh-diagram"><figcaption class="kh-diagram-title" id="visual-52">A motion command passes through a complete mechanical system</figcaption><ol class="kh-flow"><li><strong>Command and valve</strong><span>Meter the intended flow</span></li><li><strong>Fluid and lines</strong><span>Losses, compliance and transient response</span></li><li><strong>Actuator and linkage</strong><span>Force, friction and geometry</span></li><li><strong>Measured result</strong><span>Position, speed and stopping behaviour</span></li></ol><figcaption>Conceptual control chain. Feedback must represent the function the process needs; this is not a construction schematic.</figcaption></figure><span aria-hidden="true" class="ed-legacy-anchor" id="7-valve-dynamics-and-flow-control"></span><h2 id="learn-understand-the-compliance-between-valve-and-load">Understand the compliance between valve and load</h2><p>Liquid water is slightly compressible. Pipes, hoses, cylinder walls, mounts and the driven structure also deform under pressure or load. Gas trapped in the liquid path can add substantial compliance. The effective stiffness of the installation is therefore a system property, not simply the bulk modulus of pure water. IAPWS provides water-property formulations within stated conditions, but those properties alone do not describe an assembled actuator and its plumbing. <a aria-label="Source 2: IAPWS: liquid water properties" class="kh-citation" href="#source-iapws">[2]</a></p><p>Compliance influences how pressure changes translate into movement. Before the load responds, some supplied volume may compress the fluid or elastically expand the system. Long connecting lines can increase the affected volume and introduce additional dynamic effects. This helps explain why a valve and cylinder that behave well close together on a test bench may respond differently when installed far apart. For demanding positioning duties, line length, hose selection, trapped volumes and structural stiffness deserve design attention before the controls specialist is asked to solve every observed problem through tuning.</p><span aria-hidden="true" class="ed-legacy-anchor" id="5-cavitation-behaviour"></span><h2 id="learn-low-speed-behaviour-reveals-friction-and-valve-limitations">Low-speed behaviour reveals friction and valve limitations</h2><p>Starting friction can differ from friction during steady sliding. At a small motion command, pressure may build while the actuator remains still, followed by movement once resistance is overcome. Seal design, guidance, surface condition and alignment influence this behaviour. The result may be acceptable for a rapid end-to-end stroke but unsuitable for a process requiring smooth creeping movement. The required minimum controllable speed should therefore be specified explicitly rather than inferred from the maximum travel speed.</p><p>Valve behaviour also matters near small openings. Deadband, hysteresis, leakage and the available pressure difference can influence the relationship between command and flow. A component's full-flow capacity does not describe its ability to meter a very small flow consistently. Ask for relevant performance information and test the intended assembly at representative load and temperature. The useful outcome is a defined motion envelope: where the system can move smoothly, where a different control strategy is needed and which behaviours are outside the supported application.</p><h2 id="learn-flow-sets-ideal-speed-but-the-circuit-determines-delivered-flow">Flow sets ideal speed but the circuit determines delivered flow</h2><p>For a cylinder with effective area A, the ideal relationship between flow and speed is Q equals A times velocity. Actual motion also reflects leakage and transient volume changes. The cap-end and rod-end effective areas differ in a conventional single-rod cylinder, so the same supplied flow produces different ideal speeds in the two directions. Return flow can differ from supply flow as well. Valves and lines need to accommodate the actual flows associated with the selected movement.</p><p>This is why a single pump flow number is insufficient for control design. Pressure losses across supply and return paths change with operating conditions, and multiple consumers can affect the available flow. A flow-control arrangement should be selected for the required behaviour as loads vary. For a mechanism whose load can drive motion, controlling the supplied flow alone may not provide the necessary restraint. The load-control and protective functions must be determined through the circuit design, not improvised during commissioning after an unexpected acceleration is observed.</p><h2 id="learn-stopping-requires-an-energy-and-motion-plan">Stopping requires an energy and motion plan</h2><p>A moving mass carries kinetic energy. Stopping it requires that energy to be transferred or dissipated through an appropriate mechanism. Abruptly closing a flow path can create pressure transients, while allowing excessive travel can damage the process or machine. The correct stopping arrangement depends on speed, mass, compliance, valve response and available travel. Cylinder cushioning, controlled deceleration or other measures may contribute, but none should be assumed effective without selection for the actual duty.</p><p>Define the difference between a normal controlled stop and a protective stop. A production command may permit a gradual deceleration, while a fault response may impose different requirements. The safe state is application-specific and may not simply mean closing every valve. A trapped load can remain hazardous, and closing paths can retain pressure. ISO 4413's public scope places hydraulic safety in a system context; the full applicable requirements and project risk assessment determine the necessary measures. <a aria-label="Source 3: ISO 4413: hydraulic fluid power systems" class="kh-citation" href="#source-iso">[3]</a> Motion quality and protective behaviour must be coordinated rather than treated as unrelated packages.</p><h2 id="learn-measure-the-quantity-the-process-actually-needs">Measure the quantity the process actually needs</h2><p>Pressure indicates a force-related condition, but it does not prove that the mechanism reached a position. A valve can receive pressure while the driven gate remains obstructed. A cylinder can move while a loose linkage prevents the intended process movement. Choose feedback that reflects the required function. End switches may be sufficient for a simple completed-stroke indication, while intermediate control may need position measurement with suitable resolution and installation. The measurement boundary should match the acceptance criterion.</p><p>Sensor location and mechanics influence interpretation. Measuring cylinder position may not capture compliance or backlash farther along the linkage. If the process needs the final driven element to be positioned accurately, evaluate whether actuator feedback is adequate. Consider signal quality, loss of signal and the distinction between command and confirmation. A clear feedback architecture makes fault diagnosis more useful because the team can separate an electrical command problem, hydraulic response problem and mechanical transmission problem instead of treating all three as a failure to move.</p><h2 id="learn-tune-the-complete-installation-within-established-limits">Tune the complete installation within established limits</h2><p>Control tuning should begin only after the mechanical arrangement, fluid condition and basic hydraulic functions are confirmed. A controller should not be used to conceal misalignment, unstable supply or an incorrect valve configuration. Establish a representative operating condition and adjust within an approved commissioning process. Test starts, reversals, low-speed motion, stopping and holding. Record the settings and the conditions under which the behaviour was verified so that future changes can be assessed against a known baseline.</p><p>An unloaded workshop test has limited authority over a loaded installation with different plumbing. Repeat relevant checks at the site and across the required operating envelope. Temperature, load direction and simultaneous demands may change response. Avoid choosing settings that perform well at one convenient point while becoming unstable elsewhere. Where the required performance cannot be achieved, identify the limiting mechanism before adding more control complexity. The solution may involve valve sizing, feedback location, line arrangement or mechanical changes rather than a more aggressive controller setting.</p><h2 id="learn-diagnose-drift-and-oscillation-by-following-cause-and-effect">Diagnose drift and oscillation by following cause and effect</h2><p>Position drift during a hold can arise from internal leakage, external leakage, load changes or mechanical movement outside the actuator. Pressure decay is useful evidence but does not identify the path by itself. A systematic investigation compares the commanded state, measured positions and relevant pressures under controlled conditions. Preserve the distinction between a symptom and its cause. Replacing a component because it is accessible may temporarily change the behaviour without resolving the underlying problem.</p><p>Oscillation likewise can involve the interaction of control gain, compliance, friction and delayed response. Examine when it occurs: near reversal, at low speed, under a particular load or after temperature changes. That pattern helps direct the investigation. Use approved test methods and maintain control of stored energy throughout the work. The objective is to explain the behaviour sufficiently well that the corrective action can be verified. Water's physical properties form part of that explanation, but they should not become a catch-all diagnosis for every dynamic issue in a machine.</p><h2 id="learn-specify-motion-quality-as-an-observable-result">Specify motion quality as an observable result</h2><p>A useful enquiry describes more than force and maximum speed. Include required positioning accuracy, repeatability, settling behaviour, minimum speed and holding duration where those features matter. Define the load and environmental conditions under which they apply. Distinguish what the process requires from what would merely be desirable. This allows the supplier to propose an appropriate control architecture and avoids presenting a demanding precision requirement as if it were a routine end-to-end actuator duty.</p><p>Water hydraulic actuation can combine useful fluid-power force density with removal of mineral oil from the selected circuit. Its precision and responsiveness come from the integrated design. WaterQuest's role is strongest when the proposed equipment, feedback and operating envelope are clear enough to test. For engineers and buyers, the persuasive argument is not that a fluid property guarantees excellent motion. It is that a properly selected system can demonstrate the movement, stopping and holding behaviour the application needs while addressing a defined oil-exposure problem.</p><section class="wq-guide-application" id="guide-application" aria-labelledby="guide-application-title"><p class="wq-guide-kicker">From understanding to equipment selection</p><h2 id="guide-application-title">Specify motion as well as force</h2><p>A hatch or gate needs a defined acceleration, travel speed, stopping behaviour and holding state. Size the actuator for load, then check whether the pump and control valve can deliver that movement across the expected pressure range.</p><h3>Calculate the relevant duty</h3><p>Use the <a href="/knowledge-hub/engineering-calculators/power-calculator/">hydraulic power calculator</a> to translate pressure and flow into hydraulic output and estimated electrical input. Use the <a href="/knowledge-hub/engineering-calculators/pressure-drop-calculator/">system pressure-drop calculator</a> to combine component losses, elevation and a design allowance.</p><h3>Connect the calculation to equipment</h3><p>Compare the power-unit arrangement with the actuator duty and control sequence. Send the load, motion and water specification together so the components can be assessed as one circuit.</p><p>Explore <a href="/products/water-hydraulics-hpu/">water hydraulic power units</a> and <a href="/products/water-hydraulic-cylinders/">water hydraulic cylinders</a>.</p><details><summary>Which operating measurements make future troubleshooting easier?</summary><p>Record command, position and pressure together during acceptance. Repeating the same loaded cycle later helps distinguish mechanical binding from hydraulic loss or a feedback fault.</p></details><p class="wq-guide-boundary">Use the calculated duty as an enquiry input; efficiency assumptions are not verified equipment ratings.</p><p><a href="/contact/">Discuss your duty with WaterQuest</a> — bring your calculation inputs, water conditions and required operating sequence.</p></section><section class="kh-sources" id="sources"><h2>Sources and further reading</h2><ol><li id="source-physics"><a href="https://openstax.org/books/university-physics-volume-1/pages/14-3-pascals-principle-and-hydraulics">OpenStax: Pascal’s principle and hydraulics</a><span class="kh-source-kind">Educational reference</span><span class="kh-source-note">Pressure and force relationships; article examples are independently calculated.</span></li><li id="source-iapws"><a href="https://www.iapws.org/relguide/LiquidWater.pdf">IAPWS: liquid water properties</a><span class="kh-source-kind">Scientific reference</span><span class="kh-source-note">Property formulations and their stated temperature and pressure ranges.</span></li><li id="source-iso"><a href="https://www.iso.org/standard/44781.html">ISO 4413: hydraulic fluid power systems</a><span class="kh-source-kind">Standard scope</span><span class="kh-source-note">Public abstract only; this article does not reproduce the standard or establish compliance.</span></li></ol><p class="kh-reviewed">Sources reviewed 7 October 2026. Linked guidance may be updated; use current documentation for a project decision.</p></section><div class="related-block">
+<h3>Continue reading</h3>
+<div class="related-grid">
+<a class="related-card" href="/knowledge-hub/why-tap-or-sea-water-belongs-in-your-hydraulic-system/"><div class="rc-cat">Specification &amp; Design · Article 51</div><h4>Choosing Tap Water or Seawater for a Hydraulic Circuit</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/cavitation-in-water-hydraulics-myths-truths-and-design-solutions/"><div class="rc-cat">Specification &amp; Design · Article 54</div><h4>Cavitation in Water Hydraulics: Myths, Truths, and Design Solutions</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/160-bar-performance-debunking-the-limitations-of-water-hydraulics/"><div class="rc-cat">Specification &amp; Design · Article 56</div><h4>Designing Water Hydraulic Equipment Within 160 Bar</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/isothermal-behaviour-of-water-vs-thermal-expansion-in-oil/"><div class="rc-cat">Specification &amp; Design · Article 60</div><h4>Thermal Behaviour in Water Hydraulic Circuits</h4><div class="rc-read">9 min read</div></a>
+</div>
+</div>
+</article>
+<aside aria-label="Article index" class="toc card"><h3>In this article</h3><a href="#learn-a-cylinder-must-do-more-than-produce-static-force">Design movement your process can depend on</a><a href="#learn-separate-load-force-from-acceleration-force">Separate load force from acceleration force</a><a href="#learn-understand-the-compliance-between-valve-and-load">Understand the compliance between valve and load</a><a href="#learn-low-speed-behaviour-reveals-friction-and-valve-limitations">Low-speed behaviour reveals friction and valve limitations</a><a href="#learn-flow-sets-ideal-speed-but-the-circuit-determines-delivered-flow">Flow sets ideal speed but the circuit determines delivered flow</a><a href="#learn-stopping-requires-an-energy-and-motion-plan">Stopping requires an energy and motion plan</a><a href="#learn-measure-the-quantity-the-process-actually-needs">Measure the quantity the process actually needs</a><a href="#learn-tune-the-complete-installation-within-established-limits">Tune the complete installation within established limits</a><a href="#learn-diagnose-drift-and-oscillation-by-following-cause-and-effect">Diagnose drift and oscillation by following cause and effect</a><a href="#learn-specify-motion-quality-as-an-observable-result">Specify motion quality as an observable result</a><a href="#guide-application">Calculate, select and maintain</a><a href="#sources">Sources and further reading</a><a href="/knowledge-hub/#library">All articles →</a></aside>
+</div>
+<div class="container">
+<div class="pager">
+<a href="/knowledge-hub/why-tap-or-sea-water-belongs-in-your-hydraulic-system/"><span>Previous</span>Choosing Tap Water or Seawater for a Hydraulic Circuit</a>
+<a href="/knowledge-hub/material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek/"><span>Next</span>Material Compatibility: Why We Use 316 Stainless and Carbon-Reinforced PEEK</a>
+</div>
+</div>
 </section>
-<!-- WQS_ENRICHMENT_END -->
-<!-- WQ_GLOBAL_FOOTER_START -->
-<footer class="wq-site-footer" role="contentinfo">
-  <div class="wq-footer-container">
-    <div class="wq-footer-grid">
-      <div class="wq-footer-brand">
-        <span class="wq-logo-main">WaterQuest Solutions</span>
-        <span class="wq-logo-sub">Stop Leaking Oil Into the Future.</span>
-        <p>WaterQuest Solutions designs and supplies complete water hydraulic systems and components that eliminate oil from hydraulic circuits using tap water or seawater as the hydraulic medium.</p>
-      </div>
-      <div class="wq-footer-col">
-        <h5>Knowledge Hub</h5>
-        <ul><li><a href="/knowledge-hub/" class="active">Knowledge Hub</a></li><li><a href="/knowledge-hub/?category=engineering-fundamentals" class="active">Engineering Fundamentals</a></li><li><a href="/knowledge-hub/?category=industry-applications" class="active">Industry Applications</a></li><li><a href="/knowledge-hub/?category=materials-and-compatibility" class="active">Materials and Compatibility</a></li><li><a href="/knowledge-hub/?category=comparison-guides" class="active">Comparison Guides</a></li></ul>
-      </div>
-      <div class="wq-footer-col">
-        <h5>Core Pages</h5>
-        <ul><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/technology/">Technology</a></li><li><a href="/knowledge-hub/" class="active">Knowledge Hub</a></li><li><a href="/about/">About</a></li></ul>
-      </div>
-      <div class="wq-footer-col">
-        <h5>Contact</h5>
-        <ul>
-          <li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li>
-          <li><a href="tel:+16049021902">+1 (604) 902-1902</a></li>
-          <li>558 East Kent Ave S</li>
-          <li>Vancouver, BC V5X 4V6</li>
-          <li>Canada</li>
-        </ul>
-      </div>
-    </div>
-    <div class="wq-footer-bottom">&copy; 2026 WaterQuest Solutions. All rights reserved. Designed in Vancouver, BC, Canada.</div>
-  </div>
-</footer>
-<!-- WQ_GLOBAL_FOOTER_END -->
-<script id="wq-global-shell-js">
-    (function(){
-      var nav=document.getElementById("wq-nav");
-      if(nav){window.addEventListener("scroll",function(){nav.classList.toggle("wq-scrolled",window.scrollY>34)},{passive:true});nav.classList.toggle("wq-scrolled",window.scrollY>34)}
-      var menuButton=document.querySelector(".wq-menu-toggle");
-      var mobileMenu=document.getElementById("wq-mobile-menu");
-      if(menuButton&&mobileMenu){menuButton.addEventListener("click",function(){var isOpen=mobileMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});mobileMenu.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false")})})}
-      var bubbles=document.getElementById("wq-global-bubbles");
-      if(bubbles&&!bubbles.children.length){for(var i=0;i<30;i+=1){var bubble=document.createElement("span");bubble.className="wq-bubble";var size=Math.random()*9+4;var drift=(Math.random()-.5)*120;bubble.style.cssText=["width:"+size+"px","height:"+size+"px","left:"+(Math.random()*100)+"%","bottom:"+(Math.random()*18)+"%","--wq-drift:"+drift+"px","animation-duration:"+(Math.random()*18+12)+"s","animation-delay:"+(Math.random()*18)+"s"].join(";");bubbles.appendChild(bubble)}}
-      function utm(){var out={};try{new URLSearchParams(window.location.search).forEach(function(value,key){if(/^utm_|^(gclid|fbclid|msclkid)$/i.test(key)){out[key]=value}})}catch(_error){}return out}
-      function section(){var match=document.body.className.match(/wq-section-([^\s]+)/);return match?match[1]:"unknown"}
-      function pageContext(){return{url:window.location.href,path:window.location.pathname,title:document.title,referrer:document.referrer,section:section(),utm:utm(),timestamp:new Date().toISOString()}}
-      function postZoho(path,payload){try{var body=JSON.stringify(payload);if(navigator.sendBeacon&&body.length<60000){var blob=new Blob([body],{type:"application/json"});navigator.sendBeacon(path,blob);return}fetch(path,{method:"POST",headers:{"content-type":"application/json"},body:body,keepalive:true}).catch(function(){})}catch(_error){}}
-      function inputName(field,index){return field.name||field.id||field.getAttribute("aria-label")||field.placeholder||("field_"+index)}
-      function collectFields(root){var data={};Array.prototype.slice.call(root.querySelectorAll("input,select,textarea")).forEach(function(field,index){var name=inputName(field,index);if(field.type==="password"||field.type==="hidden"&&name.indexOf("csrf")>-1){return}if(field.type==="checkbox"){data[name]=field.checked;return}if(field.type==="radio"){if(field.checked){data[name]=field.value}return}data[name]=field.value});return data}
-      function statusFor(form){var status=form.querySelector(".wq-form-status");if(!status){status=document.createElement("p");status.className="wq-form-status";status.setAttribute("role","status");form.appendChild(status)}return status}
-      function submitIntake(source,fields,options){var payload={source:source,module:options&&options.module?options.module:"CRM.Leads",formName:options&&options.formName?options.formName:source,ctaText:options&&options.ctaText?options.ctaText:"",page:pageContext(),fields:fields};postZoho("/api/zoho/intake",payload);return payload}
-      document.addEventListener("submit",function(event){var form=event.target;if(!form||form.tagName!=="FORM"||form.dataset.zohoNative==="true"){return}event.preventDefault();var requiredEmpty=Array.prototype.slice.call(form.querySelectorAll("[required]")).some(function(field){return !field.value&&!field.checked});if(requiredEmpty&&form.reportValidity){form.reportValidity();return}var status=statusFor(form);status.className="wq-form-status";status.textContent="Sending your request to WaterQuest engineering...";submitIntake(form.dataset.zohoForm||form.id||"website-form",collectFields(form),{module:form.dataset.zohoModule,formName:form.dataset.zohoForm||form.getAttribute("aria-label")||"Website form"});status.textContent="Received. WaterQuest engineering will review this and follow up.";form.dataset.zohoSubmitted="true"},true);
-      document.addEventListener("click",function(event){var target=event.target.closest("a,button");if(!target){return}var text=(target.innerText||target.getAttribute("aria-label")||target.getAttribute("title")||"").trim().replace(/\s+/g," ");var href=target.href||target.getAttribute("data-href")||"";var important=/engineering|review|quote|contact|calculator|glossary|pilot|product|application|technology|download|learn|open/i.test(text+" "+href);if(important){postZoho("/api/zoho/event",{event:"cta_click",text:text,href:href,page:pageContext()})}},true);
-      var quoteButton=document.getElementById("submitQuote");if(quoteButton){quoteButton.addEventListener("click",function(){var root=quoteButton.closest(".quote-modal,.modal,section,main")||document;submitIntake("product-quote-modal",collectFields(root),{module:"CRM.Leads",formName:"Product quote modal",ctaText:(quoteButton.innerText||"Submit quote").trim()})})}
-    })();
-  </script>
-
-</body>
+<section class="section">
+<div class="container card" style="padding:42px;">
+<p class="eyebrow">Apply the Knowledge</p>
+<h2>Put this knowledge to work.</h2>
+<p class="lead">Send the load through its travel, required movement time and holding needs. We’ll help turn that operating sequence into a water hydraulic design brief.</p>
+<div class="btn-row"><a class="btn primary" href="/contact/">Start Engineering Review →</a><a class="btn" href="/industries/">View Industries →</a></div>
+</div>
+</section>
+</main>
+<script defer="" src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer="" src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/wqs-stainless/">WQS Stainless</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li></ul></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>316 SS / PEEK · Oil-Free · Canadian Support</p></div></div></footer><script defer="" src="/assets/wq-nav-dropdowns.js?v=20261015-brand"></script><script defer="" src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/newsletter-popup.js?v=20261016"></script></body>
 </html>

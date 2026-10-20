@@ -8,7 +8,7 @@
  panel?.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu()});
  window.addEventListener('scroll',()=>$('#wq-nav')?.classList.toggle('wq-scrolled',scrollY>20),{passive:true});
  const select=$('#visual-select'), download=$('#visual-download');
- select?.addEventListener('change',()=>{$$('.v-drawing').forEach(f=>f.hidden=f.id!==select.value);const link=$(`#${select.value} a`);download.href=link.href});
+ select?.addEventListener('change',()=>{$$('.v-drawing').forEach(f=>f.hidden=f.id!==select.value);const link=$(`#${select.value} a`);download.href=link.dataset.pdf;download.download=link.dataset.pdf.split('/').pop();download.type='application/pdf'});
  const dialog=$('#image-viewer');let imageTrigger;
  $$('[data-enlarge]').forEach(link=>link.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey)return;e.preventDefault();imageTrigger=link;$('#viewer-image').src=link.href;$('#viewer-image').alt=link.dataset.title;$('#viewer-title').textContent=link.dataset.title;dialog.showModal()}));
  $('.v-close')?.addEventListener('click',()=>dialog.close());dialog?.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});dialog?.addEventListener('close',()=>imageTrigger?.focus());
