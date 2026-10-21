@@ -1,5 +1,5 @@
 import {industries,fieldDefinitions,validateReview} from '../../public/assets/engineering-review/schema.js';
-const origins=new Set(['https://temporary-turbo-nickel-8xnl9g7.vercel.app','https://waterquestsolutions.com','https://www.waterquestsolutions.com']);
+const origins=new Set(['https://temporary-turbo-nickel-8xnl9g7.vercel.app','https://waterquest-palette-20261016.vercel.app','https://waterquestsolutions.com','https://www.waterquestsolutions.com']);
 export const config={maxDuration:30};
 export function mapReview(fields,reference){
  const description=['Engineering review request', 'Reference: '+reference,...fieldDefinitions(fields.industry).filter(([key])=>fields[key]).map(([key,label])=>label+': '+(key==='industry'?industries[fields.industry].label:fields[key])),'NDA requested: '+(fields.ndaRequested?'Yes':'No'),'Contact consent: Yes','Marketing signup: No'].join('\n');

@@ -1,0 +1,20 @@
+{
+  "pages": 102,
+  "buttons": 408,
+  "desktopErrors": [],
+  "mobileIssues": [],
+  "contextValue": "Enquiry: Specify Your Pump\nSource page: /products/axial-piston-pumps/\nSection: hero\n\nOperating requirements: ",
+  "hover": {
+    "initial": {
+      "bg": "rgb(0, 238, 255)",
+      "colour": "rgb(14, 40, 74)"
+    },
+    "hover": {
+      "bg": "rgb(14, 40, 74)",
+      "colour": "rgb(0, 238, 255)"
+    }
+  },
+  "newsletter": "WaterQuest Solutions branding, opt-in consent, no-sharing wording, dismiss and unsubscribe controls; simulated API success verified.",
+  "live_crm": "Not verified. Automatic approval review blocked creation of a real QA record.",
+  "release": "Prepared locally; no GitHub push or Vercel deployment. Awaiting requested visual review."
+}

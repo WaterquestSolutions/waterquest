@@ -51,7 +51,7 @@ async function readPayload(req) {
 export function createPilotHandler({env=process.env, fetchImpl=globalThis.fetch}={}) {
   return async function handler(req,res) {
     if (req.method !== 'POST') {res.setHeader('Allow','POST');return reply(res,405,{ok:false,error:'method_not_allowed'});}
-    const origins = new Set(['https://temporary-turbo-nickel-8xnl9g7.vercel.app','https://waterquestsolutions.com','https://www.waterquestsolutions.com']);
+    const origins = new Set(['https://temporary-turbo-nickel-8xnl9g7.vercel.app','https://waterquest-palette-20261016.vercel.app','https://waterquestsolutions.com','https://www.waterquestsolutions.com']);
     if (env.VERCEL_URL) origins.add('https://' + env.VERCEL_URL);
     if (!req.headers.origin || !origins.has(req.headers.origin)) return reply(res,403,{ok:false,error:'origin_not_allowed'});
     if (!(req.headers['content-type'] || '').toLowerCase().startsWith('application/json')) return reply(res,415,{ok:false,error:'json_required'});

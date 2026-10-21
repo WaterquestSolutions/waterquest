@@ -1,0 +1,2485 @@
+[
+  {
+    "route": "/",
+    "label": "Homepage",
+    "hero": [
+      "What if hydraulic power didn't come with an oil problem?",
+      "Oil leaks, fluid changes, contamination risks and expensive cleanups have long been accepted as part of hydraulic operation. But what if the same fundamental power of hydraulics could be delivered using water instead? Discover equipment engineered to turn that possibility into practical industrial performance.",
+      "Discover Water Hydraulics",
+      "Tell Us What Needs to Move"
+    ],
+    "cta": [
+      "Tell us what needs to move. We will help define what it takes.",
+      "Bring us a gate, valve, pump drive, filtration sequence or complete process duty. WaterQuest will help identify the hydraulic equipment, system boundaries and optional controls needed to develop a practical quotation.",
+      "Request a system scope review"
+    ],
+    "model": false,
+    "buttons": [
+      "#why-water",
+      "/contact/?source=hero&interest=Tell+Us+What+Needs+to+Move&from=%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+system+scope+review&from=%2F#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "engineering-review"
+    ]
+  },
+  {
+    "route": "/products/",
+    "label": "Products",
+    "hero": [
+      "The right hydraulic equipment should solve problems, not introduce new ones.",
+      "You need force, movement and precise control. You don't need the added complications of hydraulic oil where contamination, handling and maintenance are concerns. From a single replacement component to a complete power system, find equipment engineered to deliver the performance your application demands using water.",
+      "Find Your Equipment",
+      "Get Help Specifying a System"
+    ],
+    "cta": [
+      "Know what your equipment needs to do, but not which components to specify?",
+      "Send us your required pressure, flow, load or operating duty. We can help select suitable water hydraulic pumps, motors, cylinders and valves, or identify the components needed for a complete hydraulic package.",
+      "Request product selection assistance"
+    ],
+    "model": false,
+    "buttons": [
+      "#pumps",
+      "/contact/?source=hero&interest=Get+Help+Specifying+a+System&from=%2Fproducts%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+product+selection+assistance&from=%2Fproducts%2F#engineering-review",
+      "#pumps"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/industries/",
+    "label": "Industries",
+    "hero": [
+      "Different industries. Different challenges. One question worth asking.",
+      "Does your equipment really need hydraulic oil to do its job?\n\nFrom municipal waterworks and marine machinery to manufacturing and renewable energy, hydraulic oil introduces different risks in different environments. See where water-powered equipment can eliminate those risks, what changes in the engineering and where it makes commercial sense.",
+      "Find Your Industry",
+      "Discuss an Application"
+    ],
+    "cta": [
+      "Every industry has its own challenges. Tell us about yours.",
+      "Whether you're operating municipal infrastructure, marine equipment or an industrial process, send us the application and its operating requirements. We can help identify where water hydraulics fits and what equipment would be required.",
+      "Discuss your application"
+    ],
+    "model": false,
+    "buttons": [
+      "#compare-options",
+      "/contact/?source=hero&interest=Discuss+an+Application&from=%2Findustries%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Discuss+your+application&from=%2Findustries%2F#engineering-review",
+      "/products/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/about/",
+    "label": "About Waterquest Solutions",
+    "hero": [
+      "Some of industry's most persistent problems begin with something we've stopped questioning.",
+      "Why accept hydraulic oil contamination as an unavoidable risk when the job is simply to move a gate, turn a shaft or apply force? WaterQuest Solutions exists to challenge that assumption, bringing purpose-built water hydraulic technology and practical equipment selection to industries ready to consider a different approach.",
+      "Why WaterQuest",
+      "Start a Conversation"
+    ],
+    "cta": [
+      "Have an application where hydraulic oil creates more problems than it solves?",
+      "Tell us about your equipment, its operating environment and the problems you're trying to eliminate. WaterQuest can help identify an appropriate water hydraulic approach and the equipment needed to move forward.",
+      "Start a conversation"
+    ],
+    "model": false,
+    "buttons": [
+      "#mission",
+      "/contact/?source=hero&interest=Start+a+Conversation&from=%2Fabout%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Start+a+conversation&from=%2Fabout%2F#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "cta-about"
+    ]
+  },
+  {
+    "route": "/pilot/",
+    "label": "Pilot Projects",
+    "hero": [
+      "Every better way of doing things starts with someone willing to question the old one.",
+      "Perhaps you have a machine that regularly leaks oil, a gate that needs a safer actuation method or a process where water hydraulics could make a measurable difference. The next step isn't a sales promise. It's a serious look at the duty, engineering challenges and evidence needed to determine whether the opportunity is worth pursuing.",
+      "Explore Pilot Opportunities",
+      "Submit an Application"
+    ],
+    "cta": [
+      "Have a promising application for water hydraulics? Let's examine the opportunity.",
+      "Share your project objectives, equipment requirements and current development stage. We can review the proposed application, discuss its technical feasibility and identify a practical next step. Pilot participation is subject to project suitability and available resources.",
+      "Submit a project for review"
+    ],
+    "model": false,
+    "buttons": [
+      "#apply",
+      "#apply",
+      "#apply",
+      "#questions"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/contact/",
+    "label": "Contact",
+    "hero": [
+      "You know what the equipment needs to do. Let's work out the best way to do it.",
+      "You may have a complete specification, a drawing on your desk or simply a recurring equipment problem nobody has properly resolved. Start there. Tell us the operating duty, the constraints and what needs to improve. We'll help identify the next engineering or equipment selection step.",
+      "Tell Us About Your Application",
+      "What Information Should I Send?"
+    ],
+    "cta": [
+      "Have a drawing, specification or equipment problem? Send it our way.",
+      "Whether you need a replacement component, a new hydraulic package or advice on an existing system, tell us what you're working on. We'll help identify the information needed to move towards a suitable equipment selection or quotation.",
+      "Send your enquiry"
+    ],
+    "model": false,
+    "buttons": [
+      "#engineering-review",
+      "#er-message",
+      "#engineering-review",
+      "/products/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/knowledge-hub/",
+    "label": "Knowledge Hub",
+    "hero": [
+      "Water can transmit hydraulic power. So why aren't we using it everywhere?",
+      "It's a good question, and the answer goes far beyond replacing one fluid with another. Explore the engineering of pressure, friction, sealing, corrosion, efficiency and system design. Separate established performance from misconceptions, and learn where water hydraulics offers a practical advantage and where further engineering is required.",
+      "Explore the Engineering",
+      "Find an Answer"
+    ],
+    "cta": [
+      "Found the engineering answer? Let's put it to work.",
+      "If you're researching water hydraulics for an actual application, send us your operating requirements or a drawing. We can help connect the engineering principles to suitable components and a practical system configuration.",
+      "Discuss your equipment requirements"
+    ],
+    "model": false,
+    "buttons": [
+      "#library",
+      "/contact/?source=hero&interest=Find+an+Answer&from=%2Fknowledge-hub%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Discuss+your+equipment+requirements&from=%2Fknowledge-hub%2F#engineering-review",
+      "/knowledge-hub/engineering-calculators/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/wqs-stainless/",
+    "label": "Wqs Stainless",
+    "hero": [
+      "It's a small fitting. Until it's the reason your entire system is down.",
+      "The wrong thread, the wrong material or one overlooked connection can create leaks, premature corrosion and expensive rework. Specify 316 stainless steel fittings and adapters with confidence, using clear connection information and practical selection support to help get the installation right the first time.",
+      "Find the Right Connection",
+      "Request Fitting Assistance"
+    ],
+    "cta": [
+      "Need the right stainless steel connection for the job?",
+      "Send us your thread type, size, connection requirements or an existing fitting reference. We can help identify suitable 316 stainless steel fittings and adapters for your equipment, operating pressure and service environment.",
+      "Request fitting assistance"
+    ],
+    "model": false,
+    "buttons": [
+      "#products",
+      "/contact/?source=hero&interest=Request+Fitting+Assistance&from=%2Fwqs-stainless%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+fitting+assistance&from=%2Fwqs-stainless%2F#engineering-review",
+      "#products"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/products/axial-piston-pumps/",
+    "label": "Axial Piston Pumps",
+    "hero": [
+      "Your pump doesn't get credit for its specifications. It gets judged by what it delivers.",
+      "When flow drops, pressure fluctuates or a pump fails prematurely, the consequences reach far beyond the pump itself. Getting the operating duty right matters. Discover water hydraulic axial piston pumps engineered to deliver pressure and flow without oil in the working circuit, and find the configuration that fits your application.",
+      "Compare Pump Performance",
+      "Specify Your Pump"
+    ],
+    "cta": [
+      "Need hydraulic pressure and flow from water instead of oil?",
+      "Send us your required flow, operating pressure, drive speed and duty cycle. We'll help identify an appropriate axial piston pump and the equipment needed to integrate it into your system.",
+      "Request a pump recommendation"
+    ],
+    "model": false,
+    "buttons": [
+      "#spec-table",
+      "/contact/?source=hero&interest=Specify+Your+Pump&from=%2Fproducts%2Faxial-piston-pumps%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+pump+recommendation&from=%2Fproducts%2Faxial-piston-pumps%2F#engineering-review",
+      "#spec-table"
+    ],
+    "removedCta": [
+      "contact-pump"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-motors/",
+    "label": "Water Hydraulic Motors",
+    "hero": [
+      "When the load needs to turn, torque is what matters. Not what's inside the hydraulic circuit.",
+      "A winch that stalls, a conveyor that loses speed or a drive that can't overcome its starting load isn't doing its job. You need usable torque, dependable rotation and control throughout the operating cycle. See how water hydraulic motors can deliver those outcomes without petroleum-based hydraulic oil.",
+      "Find Your Motor",
+      "Match Motor to Load"
+    ],
+    "cta": [
+      "Have a shaft that needs to turn? Tell us how much torque it needs.",
+      "Provide your required speed, torque, operating pressure or existing motor specifications. We'll help identify a suitable water hydraulic motor and the associated supply and control requirements.",
+      "Request a motor recommendation"
+    ],
+    "model": false,
+    "buttons": [
+      "#selection-0",
+      "/contact/?source=hero&interest=Match+Motor+to+Load&from=%2Fproducts%2Fwater-hydraulic-motors%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+motor+recommendation&from=%2Fproducts%2Fwater-hydraulic-motors%2F#engineering-review",
+      "#selection-0"
+    ],
+    "removedCta": [
+      "contact-motor"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/",
+    "label": "Water Hydraulic Cylinders",
+    "hero": [
+      "The load doesn't care what fluid moves it. But your operation might.",
+      "A gate must open. A mechanism must lift. A machine must hold its position. Behind those simple requirements are force, geometry, pressure and safety considerations. Water hydraulic cylinders give you another way to deliver linear movement where eliminating hydraulic oil from the working circuit matters.",
+      "Explore Cylinder Options",
+      "Calculate Your Requirements"
+    ],
+    "cta": [
+      "Need to push, pull, lift or position a load using water?",
+      "Send us the required force, stroke, operating pressure and mounting arrangement. We can help select a suitable water hydraulic cylinder and identify the valve and power requirements for the application.",
+      "Request cylinder sizing assistance"
+    ],
+    "model": false,
+    "buttons": [
+      "#bore-sizes",
+      "/knowledge-hub/engineering-calculators/cylinder-force-calculator/",
+      "/contact/?source=closing-cta&interest=Request+cylinder+sizing+assistance&from=%2Fproducts%2Fwater-hydraulic-cylinders%2F#engineering-review",
+      "#bore-sizes"
+    ],
+    "removedCta": [
+      "contact-cyl"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/",
+    "label": "Water Hydraulic Valves",
+    "hero": [
+      "Power without control is just another problem waiting to happen.",
+      "The difference between reliable machinery and unpredictable movement often comes down to controlling pressure, direction, flow and load holding. Discover valves engineered for water hydraulic circuits, and select the control functions your equipment actually needs.",
+      "Explore Valve Functions",
+      "Review Your Hydraulic Circuit"
+    ],
+    "cta": [
+      "Need precise control of pressure, flow or movement?",
+      "Tell us what the circuit needs to control and provide any available hydraulic schematic or operating specifications. We'll help identify suitable water hydraulic valves and the control functions required.",
+      "Request valve selection assistance"
+    ],
+    "model": false,
+    "buttons": [
+      "#range",
+      "/contact/?source=hero&interest=Review+Your+Hydraulic+Circuit&from=%2Fproducts%2Fwater-hydraulic-valves%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+valve+selection+assistance&from=%2Fproducts%2Fwater-hydraulic-valves%2F#engineering-review",
+      "#range"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulics-hpu/",
+    "label": "Hydraulic Power Units",
+    "hero": [
+      "Your machine has a job to do. The hydraulic power system shouldn't make it harder.",
+      "Too much pressure wastes energy. Too little flow limits performance. Poor filtration, control or component selection can undermine the entire installation. Start with what the machine needs to accomplish, then build the water hydraulic power package around the duty, not the other way around.",
+      "Explore Power Units",
+      "Define Your System"
+    ],
+    "cta": [
+      "Need water hydraulic power for a machine or complete process?",
+      "Tell us what the equipment needs to operate, the available power supply and the required pressure and flow. We'll help define a hydraulic power unit with appropriate pumps, controls, filtration and connections for engineering review and quotation.",
+      "Request a power unit quotation"
+    ],
+    "model": false,
+    "buttons": [
+      "#pick-a-pack",
+      "/contact/?source=hero&interest=Define+Your+System&from=%2Fproducts%2Fwater-hydraulics-hpu%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+power+unit+quotation&from=%2Fproducts%2Fwater-hydraulics-hpu%2F#engineering-review",
+      "#pick-a-pack"
+    ],
+    "removedCta": [
+      "contact-hpu"
+    ]
+  },
+  {
+    "route": "/products/duplex-seawater-pumps/",
+    "label": "Duplex Seawater Pumps",
+    "hero": [
+      "Seawater is hard on equipment. Replacing pumps shouldn't become routine maintenance.",
+      "Salt, corrosion, seal wear and continuous operating demands leave little room for poor material or pump selection. When pumping seawater is critical to the process, dependable operation begins with the right equipment and a clear understanding of the duty.",
+      "Explore Seawater Pumps",
+      "Review Your Pumping Duty"
+    ],
+    "cta": [
+      "Need reliable pumping in a seawater environment?",
+      "Send us your required capacity, discharge pressure, water conditions and operating schedule. We can help identify a suitable duplex seawater pump configuration and the materials and connections required.",
+      "Request a seawater pump quotation"
+    ],
+    "model": false,
+    "buttons": [
+      "#range",
+      "/contact/?source=hero&interest=Review+Your+Pumping+Duty&from=%2Fproducts%2Fduplex-seawater-pumps%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+seawater+pump+quotation&from=%2Fproducts%2Fduplex-seawater-pumps%2F#engineering-review",
+      "#range"
+    ],
+    "removedCta": [
+      "seawater-cta"
+    ]
+  },
+  {
+    "route": "/products/axial-piston-fire-pumps/",
+    "label": "Axial Piston Fire Pumps",
+    "hero": [
+      "When fire protection is needed, the system must perform. There is no second opportunity.",
+      "Pressure, flow and response aren't optional design details. They're fundamental to the suppression system's intended performance. Discover specialised pumping technology and the engineering considerations behind matching equipment to a defined fire protection duty and applicable standards.",
+      "Explore Pumping Applications",
+      "Discuss Design Requirements"
+    ],
+    "cta": [
+      "Designing a water-powered fire protection or suppression system?",
+      "Share the required flow, pressure, operating sequence and applicable performance requirements. We can help identify a suitable pump configuration for review within your fire protection system design.",
+      "Discuss fire pump requirements"
+    ],
+    "model": false,
+    "buttons": [
+      "#selection-0",
+      "/contact/?source=hero&interest=Discuss+Design+Requirements&from=%2Fproducts%2Faxial-piston-fire-pumps%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Discuss+fire+pump+requirements&from=%2Fproducts%2Faxial-piston-fire-pumps%2F#engineering-review",
+      "#selection-0"
+    ],
+    "removedCta": [
+      "contact-pump"
+    ]
+  },
+  {
+    "route": "/products/power-centre-reverse-osmosis/",
+    "label": "Reverse Osmosis Powercentre",
+    "hero": [
+      "You're paying to pressurise seawater. Why throw away the energy that's still in it?",
+      "Reverse osmosis needs high pressure to separate fresh water from salt. But the concentrated brine leaving the membranes still carries valuable pressure energy. Integrating high-pressure pumping with energy recovery gives desalination operators an opportunity to reduce energy demand, one of the most consequential costs in producing fresh water.",
+      "Understand Energy Recovery",
+      "Size Your PowerCentre"
+    ],
+    "cta": [
+      "Building a desalination plant? Let's define the pressure and energy requirements.",
+      "Send us your proposed production capacity, feedwater conditions and membrane operating requirements. We can help evaluate a suitable PowerCentre configuration for high-pressure pumping and energy recovery.",
+      "Request a PowerCentre review"
+    ],
+    "model": false,
+    "buttons": [
+      "#selection-0",
+      "/contact/?source=hero&interest=Size+Your+PowerCentre&from=%2Fproducts%2Fpower-centre-reverse-osmosis%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+PowerCentre+review&from=%2Fproducts%2Fpower-centre-reverse-osmosis%2F#engineering-review",
+      "#selection-0"
+    ],
+    "removedCta": [
+      "contact-desal"
+    ]
+  },
+  {
+    "route": "/industries/water-hydraulics-for-municipal-infrastructure/",
+    "label": "Municipal Infrastructure",
+    "hero": [
+      "The infrastructure that protects our water shouldn't put that same water at risk.",
+      "Gates that remain idle for months, actuators exposed to the elements and equipment operating directly beside drinking water or waterways all present difficult maintenance decisions. When hydraulic oil is part of the system, every leak brings another concern. See how purpose-built water hydraulics can operate municipal gates and valves without petroleum-based fluid in the working circuit.",
+      "Explore Municipal Solutions",
+      "Review a Gate or Valve"
+    ],
+    "cta": [
+      "Have a gate, valve or municipal asset that needs hydraulic power?",
+      "Send us the equipment duty, dimensions or an existing drawing. We can help identify a suitable water hydraulic actuator, power unit and control arrangement for engineering review and quotation.",
+      "Request a system scope review"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Review+a+Gate+or+Valve&from=%2Findustries%2Fwater-hydraulics-for-municipal-infrastructure%2F&industry=municipal#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+system+scope+review&from=%2Findustries%2Fwater-hydraulics-for-municipal-infrastructure%2F&industry=municipal#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/industries/water-hydraulics-for-hydroelectric-power/",
+    "label": "Hydroelectric Power",
+    "hero": [
+      "Millions of litres of water. One leaking hydraulic actuator. Is the risk worth accepting?",
+      "At hydroelectric facilities, gate actuation must overcome substantial loads, maintain controlled movement and remain dependable through long service intervals. Using water as the hydraulic medium removes the petroleum-based fluid from the actuation circuit, without removing the need for precise force calculations, secure load holding and proper control.",
+      "Explore Gate Actuation",
+      "Discuss Your Hydro Facility"
+    ],
+    "cta": [
+      "Need to move or control a gate at your hydroelectric facility?",
+      "Send us the gate arrangement, operating head, required travel time and available power supply. We'll help define a water hydraulic actuation package suited to the installation and its operating requirements.",
+      "Request a gate actuation review"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Discuss+Your+Hydro+Facility&from=%2Findustries%2Fwater-hydraulics-for-hydroelectric-power%2F&industry=hydro#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+gate+actuation+review&from=%2Findustries%2Fwater-hydraulics-for-hydroelectric-power%2F&industry=hydro#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/industries/water-hydraulics-for-marine-and-coastal-applications/",
+    "label": "Marine And Coastal",
+    "hero": [
+      "A hydraulic leak at sea doesn't stay in the engine room.",
+      "Oil handling, difficult maintenance access and equipment operating above open water make marine hydraulics a challenging responsibility. Winches, haulers, steering systems and deck machinery still need serious power. Discover where water hydraulics can deliver that force and control without carrying petroleum-based hydraulic oil through the working circuit.",
+      "Explore Marine Applications",
+      "Discuss Your Equipment"
+    ],
+    "cta": [
+      "Have marine equipment that needs hydraulic power without the oil?",
+      "Bring us your winch, hauler, steering system, hatch or other deck machinery requirements. We'll help identify suitable water hydraulic equipment, materials and controls for the operating and corrosion conditions.",
+      "Discuss your marine equipment"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Discuss+Your+Equipment&from=%2Findustries%2Fwater-hydraulics-for-marine-and-coastal-applications%2F&industry=marine#engineering-review",
+      "/contact/?source=closing-cta&interest=Discuss+your+marine+equipment&from=%2Findustries%2Fwater-hydraulics-for-marine-and-coastal-applications%2F&industry=marine#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/",
+    "label": "Desalination And Reverse Osmosis",
+    "hero": [
+      "Fresh water is valuable. The energy required to produce it shouldn't make it unaffordable.",
+      "In seawater reverse osmosis, high-pressure pumping is essential, and electricity can represent a major share of operating costs. Recovering pressure energy from the brine stream and matching pumps to the membrane duty can materially change the economics of water production. Build the equipment strategy around the cost of every cubic metre produced.",
+      "Explore Desalination Systems",
+      "Review Your Production Requirements"
+    ],
+    "cta": [
+      "Planning a desalination system? Let's work through the pumping requirements.",
+      "Send us your target water production, feedwater salinity and proposed membrane operating conditions. We can help define the high-pressure pumping and energy recovery equipment needed for your system.",
+      "Request a desalination equipment review"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Review+Your+Production+Requirements&from=%2Findustries%2Fwater-hydraulics-for-desalination-and-reverse-osmosis-systems%2F&industry=desalination#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+desalination+equipment+review&from=%2Findustries%2Fwater-hydraulics-for-desalination-and-reverse-osmosis-systems%2F&industry=desalination#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/industries/water-hydraulic-systems-for-wastewater-treatment-plants/",
+    "label": "Wastewater Treatment",
+    "hero": [
+      "Your treatment plant works to remove contaminants. Why introduce another one?",
+      "From channel gates to valve actuation and pumping equipment, treatment plants depend on mechanical systems operating in wet, corrosive and difficult-to-access locations. Hydraulic oil adds another contamination and maintenance concern. Explore where water-powered equipment can remove that dependency while meeting the required operating duty.",
+      "Explore Wastewater Applications",
+      "Review Your Plant Equipment"
+    ],
+    "cta": [
+      "Have a wastewater process that needs reliable movement or flow control?",
+      "Send us the gate, valve, actuator or process duty and the conditions it operates under. We can help identify suitable water hydraulic components and the supporting equipment for a practical installation.",
+      "Request a wastewater system review"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Review+Your+Plant+Equipment&from=%2Findustries%2Fwater-hydraulic-systems-for-wastewater-treatment-plants%2F&industry=wastewater#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+wastewater+system+review&from=%2Findustries%2Fwater-hydraulic-systems-for-wastewater-treatment-plants%2F&industry=wastewater#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/industries/water-hydraulics-for-mining-operations/",
+    "label": "Mining Operations",
+    "hero": [
+      "An inexpensive hydraulic leak can become a very expensive mining problem.",
+      "Lost production, contaminated water, cleanup obligations and difficult equipment access can turn a small failure into a major operating expense. Mining equipment still needs force, movement and dependable control. Evaluate where water hydraulic technology may help manage oil-related risks without compromising the underlying engineering requirements.",
+      "Explore Mining Applications",
+      "Evaluate an Equipment Duty"
+    ],
+    "cta": [
+      "Need hydraulic power in a demanding mining environment?",
+      "Tell us about the equipment, required force or torque, operating cycle and exposure conditions. We can help assess where water hydraulic components may be suitable and what the installation would require.",
+      "Discuss your mining application"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Evaluate+an+Equipment+Duty&from=%2Findustries%2Fwater-hydraulics-for-mining-operations%2F&industry=mining#engineering-review",
+      "/contact/?source=closing-cta&interest=Discuss+your+mining+application&from=%2Findustries%2Fwater-hydraulics-for-mining-operations%2F&industry=mining#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/industries/water-hydraulics-for-forestry-and-logging-operations/",
+    "label": "Forestry And Logging",
+    "hero": [
+      "When a machine stops in the field, the repair bill is only the beginning.",
+      "Production stops. Crews wait. Access is difficult, and a hydraulic oil leak can complicate the job further. Forestry machinery must withstand shock loads, demanding cycles and harsh environments. Explore where water hydraulic drives and actuators may provide a suitable alternative for selected equipment duties.",
+      "Explore Forestry Applications",
+      "Assess Your Equipment"
+    ],
+    "cta": [
+      "Have forestry equipment that needs dependable hydraulic movement?",
+      "Send us the machine duty, load requirements and operating conditions. We'll help assess whether water hydraulic cylinders, motors or a complete power package could be appropriate for the application.",
+      "Request an equipment review"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Assess+Your+Equipment&from=%2Findustries%2Fwater-hydraulics-for-forestry-and-logging-operations%2F&industry=forestry#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+an+equipment+review&from=%2Findustries%2Fwater-hydraulics-for-forestry-and-logging-operations%2F&industry=forestry#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/industries/water-hydraulics-for-agriculture-and-irrigation-systems/",
+    "label": "Agriculture And Irrigation",
+    "hero": [
+      "The water that grows your crops shouldn't have to share its environment with leaking hydraulic oil.",
+      "Irrigation gates, agricultural machinery and remote water-control equipment need dependable movement, often with limited maintenance access. Explore where water hydraulic actuation can remove petroleum-based fluid from the working circuit while delivering the force needed to manage equipment and water flows.",
+      "Explore Agricultural Solutions",
+      "Discuss Your Application"
+    ],
+    "cta": [
+      "Need to operate a gate, valve or machine around crops and water?",
+      "Tell us what needs to move, how frequently it operates and the water or environmental conditions involved. We can help identify suitable water hydraulic equipment and the controls required.",
+      "Discuss your equipment requirements"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Discuss+Your+Application&from=%2Findustries%2Fwater-hydraulics-for-agriculture-and-irrigation-systems%2F&industry=agriculture#engineering-review",
+      "/contact/?source=closing-cta&interest=Discuss+your+equipment+requirements&from=%2Findustries%2Fwater-hydraulics-for-agriculture-and-irrigation-systems%2F&industry=agriculture#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/industries/water-hydraulics-for-food-and-beverage-manufacturing/",
+    "label": "Food And Beverage Manufacturing",
+    "hero": [
+      "One hydraulic oil leak can put far more than a machine out of service.",
+      "When machinery operates near food or beverage production, contamination can mean interrupted processing, rejected product, cleanup and quality investigations. Water hydraulics offers a different approach to transmitting force, helping eliminate hydraulic oil from selected equipment circuits while leaving hygienic design and applicable compliance requirements firmly in focus.",
+      "Explore Processing Applications",
+      "Review Your Machinery"
+    ],
+    "cta": [
+      "Need hydraulic movement in a washdown or food-processing environment?",
+      "Share the machine duty, hygiene requirements, cleaning conditions and operating cycle. We can help identify water hydraulic components and suitable materials for further engineering and compliance review.",
+      "Request an application review"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Review+Your+Machinery&from=%2Findustries%2Fwater-hydraulics-for-food-and-beverage-manufacturing%2F&industry=food#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+an+application+review&from=%2Findustries%2Fwater-hydraulics-for-food-and-beverage-manufacturing%2F&industry=food#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/industries/water-hydraulic-systems-for-pulp-and-paper-mills/",
+    "label": "Pulp And Paper Mills",
+    "hero": [
+      "The cost of hydraulic equipment isn't the purchase price. It's what happens when production stops.",
+      "Mill equipment faces demanding operating cycles, wet environments and considerable maintenance pressure. Unplanned downtime can quickly outweigh the value of the component that failed. Explore where water hydraulic actuation and drive equipment may help reduce oil-related maintenance concerns while meeting the process duty.",
+      "Explore Mill Applications",
+      "Review an Equipment Duty"
+    ],
+    "cta": [
+      "Have mill equipment that needs precise force or controlled movement?",
+      "Send us your actuator, drive or process requirements and the conditions the equipment works under. We can help select suitable water hydraulic components and define the supporting power and control equipment.",
+      "Discuss your mill equipment"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Review+an+Equipment+Duty&from=%2Findustries%2Fwater-hydraulic-systems-for-pulp-and-paper-mills%2F&industry=pulp#engineering-review",
+      "/contact/?source=closing-cta&interest=Discuss+your+mill+equipment&from=%2Findustries%2Fwater-hydraulic-systems-for-pulp-and-paper-mills%2F&industry=pulp#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/industries/water-hydraulic-systems-for-hydrogen-production/",
+    "label": "Hydrogen Production",
+    "hero": [
+      "You're engineering a cleaner energy process. Have you examined the fluids powering its equipment?",
+      "Hydrogen production demands careful attention to reliability, material compatibility, operating conditions and safety. Supporting hydraulic systems deserve the same scrutiny. Learn where water-powered actuation may be technically appropriate, and how to evaluate its requirements within the wider facility design.",
+      "Examine Hydrogen Applications",
+      "Request an Engineering Review"
+    ],
+    "cta": [
+      "Need hydraulic equipment for a hydrogen production facility?",
+      "Send us the required equipment duty, operating environment and applicable safety requirements. We can help assess suitable water hydraulic actuation and control equipment as part of your facility design.",
+      "Request a technical equipment review"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Request+an+Engineering+Review&from=%2Findustries%2Fwater-hydraulic-systems-for-hydrogen-production%2F&industry=hydrogen#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+technical+equipment+review&from=%2Findustries%2Fwater-hydraulic-systems-for-hydrogen-production%2F&industry=hydrogen#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/industries/water-hydraulics-for-fire-suppression-systems/",
+    "label": "Fire Suppression Systems",
+    "hero": [
+      "The worst time to discover a pumping limitation is when the system is needed.",
+      "Fire suppression performance depends on delivering the specified pressure and flow under the conditions the installation was designed to withstand. Pump selection is only one part of that responsibility. Examine specialised pumping arrangements and the duty, approval and system requirements that must be resolved before equipment can be specified.",
+      "Explore Fire Pumping",
+      "Review System Requirements"
+    ],
+    "cta": [
+      "Have a fire suppression duty that needs a specialised pumping solution?",
+      "Share the required pressure, flow, operating sequence and applicable design standards. We can help identify candidate pumping equipment for evaluation by your fire protection designer.",
+      "Request a fire pump review"
+    ],
+    "model": false,
+    "buttons": [
+      "#water-expansion",
+      "/contact/?source=hero&interest=Review+System+Requirements&from=%2Findustries%2Fwater-hydraulics-for-fire-suppression-systems%2F&industry=fire#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+fire+pump+review&from=%2Findustries%2Fwater-hydraulics-for-fire-suppression-systems%2F&industry=fire#engineering-review",
+      "/products/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/industries/water-hydraulics-for-dust-control-systems/",
+    "label": "Dust Control Systems",
+    "hero": [
+      "You can see the dust. The real cost is often what you can't see.",
+      "Reduced visibility, cleaning, equipment contamination and exposure concerns can affect an entire operation. Effective dust control starts with delivering water at the right pressure and flow, through a system matched to the area and material being managed. Put pumping performance to work where it can make a measurable difference.",
+      "Explore Dust Control",
+      "Define Your Pumping Duty"
+    ],
+    "cta": [
+      "Need consistent water pressure and flow for dust suppression?",
+      "Tell us the spray coverage, required operating pressure, flow demand and duty cycle. We can help identify suitable pumping and flow-control equipment for your dust management system.",
+      "Request a pumping review"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Define+Your+Pumping+Duty&from=%2Findustries%2Fwater-hydraulics-for-dust-control-systems%2F&industry=dust#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+pumping+review&from=%2Findustries%2Fwater-hydraulics-for-dust-control-systems%2F&industry=dust#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/industries/water-hydraulics-for-odor-control-and-ventilation-systems/",
+    "label": "Odour Control And Ventilation",
+    "hero": [
+      "When process control becomes inconsistent, everyone notices the consequences.",
+      "A missed spray cycle, poorly controlled flow or unreliable damper can undermine the process and create complaints beyond the plant boundary. Predictable operation depends on correctly specified pumps, valves and control sequences. Start with the process conditions and identify the equipment functions that need improving.",
+      "Explore Process Control",
+      "Review Your Application"
+    ],
+    "cta": [
+      "Need reliable pumping or actuation for your odour control process?",
+      "Send us the spray, valve or damper operating requirements and available system specifications. We can help identify suitable hydraulic equipment and supporting controls for the application.",
+      "Discuss your process requirements"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Review+Your+Application&from=%2Findustries%2Fwater-hydraulics-for-odor-control-and-ventilation-systems%2F&industry=odour#engineering-review",
+      "/contact/?source=closing-cta&interest=Discuss+your+process+requirements&from=%2Findustries%2Fwater-hydraulics-for-odor-control-and-ventilation-systems%2F&industry=odour#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/industries/water-hydraulics-for-water-parks-and-wave-pools/",
+    "label": "Water Parks And Wave Pools",
+    "hero": [
+      "Visitors come for the excitement. Operators are responsible for everything behind it.",
+      "Wave generation, gates, water movement and mechanical equipment must deliver repeatable performance within carefully engineered safety limits. Discover where water hydraulic actuation can support suitable aquatic applications without bringing petroleum-based hydraulic oil into selected equipment circuits.",
+      "Explore Aquatic Applications",
+      "Discuss Your Equipment"
+    ],
+    "cta": [
+      "Need to move water or operate equipment in an aquatic attraction?",
+      "Tell us about your wave-generation equipment, gate, valve or pumping duty. We can help identify appropriate water hydraulic components and system requirements for engineering review.",
+      "Request an aquatic systems review"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Discuss+Your+Equipment&from=%2Findustries%2Fwater-hydraulics-for-water-parks-and-wave-pools%2F&industry=aquatic#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+an+aquatic+systems+review&from=%2Findustries%2Fwater-hydraulics-for-water-parks-and-wave-pools%2F&industry=aquatic#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/sluice-gates/",
+    "label": "Sluice Gates",
+    "hero": [
+      "A sluice gate can sit motionless for months. When the water rises, failure isn't an option.",
+      "Reliable gate operation isn't simply a question of cylinder force. Water levels, gate friction, mounting geometry, operating speed and safe load holding must all work together. Design a water hydraulic actuation system around the actual gate duty, while removing petroleum-based hydraulic oil from the operating circuit.",
+      "See How Gate Actuation Works",
+      "Review Your Gate"
+    ],
+    "cta": [
+      "Have a sluice gate that needs reliable, controlled movement?",
+      "Send us the gate dimensions, water levels, required travel time and mounting arrangement. We'll help define the actuator, hydraulic power unit and controls needed for a practical gate operating package.",
+      "Request a sluice gate system review"
+    ],
+    "model": false,
+    "buttons": [
+      "#selection-guides",
+      "/contact/?source=hero&interest=Review+Your+Gate&from=%2Fsluice-gates%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+sluice+gate+system+review&from=%2Fsluice-gates%2F#engineering-review",
+      "#selection-guides"
+    ],
+    "removedCta": [
+      "cta-section"
+    ]
+  },
+  {
+    "route": "/wastewater-solutions/",
+    "label": "Wastewater Solutions",
+    "hero": [
+      "Your treatment plant doesn't operate as a collection of separate parts. Why specify it that way?",
+      "A pump affects the process downstream. A valve changes flow. A sensor identifies a problem only if the information reaches someone who can act. WaterQuest helps bring hydraulic equipment, process interfaces, selected monitoring and documentation into a coordinated system scope, so critical decisions aren't left until installation.",
+      "Explore the WaterQuest Platform",
+      "Define Your System"
+    ],
+    "cta": [
+      "Have a wastewater treatment problem that needs more than one piece of equipment?",
+      "Tell us about your treatment process, pumping duties, controls and monitoring requirements. We can help identify a coordinated equipment scope, including the hydraulic components and selected digital functions your installation needs.",
+      "Request a wastewater system scope review"
+    ],
+    "model": false,
+    "buttons": [
+      "#wqr-page-content",
+      "/contact/?source=hero&interest=Define+Your+System&from=%2Fwastewater-solutions%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+wastewater+system+scope+review&from=%2Fwastewater-solutions%2F#engineering-review",
+      "#wqr-page-content"
+    ],
+    "removedCta": [
+      "cta-section"
+    ]
+  },
+  {
+    "route": "/r2-modular-desalination-packages/",
+    "label": "Modular Desalination",
+    "hero": [
+      "Living beside the ocean shouldn't mean struggling to secure a reliable supply of fresh water.",
+      "Coastal communities and remote facilities can face high infrastructure costs, limited space and uncertain water availability. Modular desalination creates an alternative worth evaluating, but long-term success depends on more than membrane capacity. Energy use, pretreatment, water quality and maintenance must be considered from the beginning.",
+      "Explore Modular Desalination",
+      "Discuss Your Water Requirements"
+    ],
+    "cta": [
+      "Need a packaged desalination system for a defined water demand?",
+      "Send us your required daily production, feedwater source, available utilities and site constraints. We can help establish the initial equipment scope for a modular desalination package and identify the information needed for quotation.",
+      "Request a desalination package review"
+    ],
+    "model": false,
+    "buttons": [
+      "#application",
+      "/contact/?source=hero&interest=Discuss+Your+Water+Requirements&from=%2Fr2-modular-desalination-packages%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+desalination+package+review&from=%2Fr2-modular-desalination-packages%2F#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "editorial-next-step",
+      "cta-section"
+    ]
+  },
+  {
+    "route": "/bilge-pump/",
+    "label": "Bilge Pumps",
+    "hero": [
+      "When unwanted water starts collecting aboard, pump performance stops being a minor detail.",
+      "A bilge pumping system must move the required volume against the actual discharge head, with materials and controls suited to the vessel. Selecting a pump on maximum advertised flow alone can leave you short of capacity when operating conditions change. Start with the duty that matters.",
+      "Explore Bilge Pumping",
+      "Specify Your Pump"
+    ],
+    "cta": [
+      "Need a bilge pumping solution for a vessel or marine installation?",
+      "Send us the required pumping capacity, lift, discharge arrangement and available power. We can help identify an appropriate pump and supporting equipment for the installation.",
+      "Request a bilge pump recommendation"
+    ],
+    "model": false,
+    "buttons": [
+      "#overview",
+      "/contact/?source=hero&interest=Specify+Your+Pump&from=%2Fbilge-pump%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+bilge+pump+recommendation&from=%2Fbilge-pump%2F#engineering-review",
+      "/products/"
+    ],
+    "removedCta": [
+      "contact"
+    ]
+  },
+  {
+    "route": "/wastewater-solutions/watercore/",
+    "label": "WaterCore",
+    "hero": [
+      "When your process needs hydraulic power, everything else depends on getting it right.",
+      "Pressure, flow, conditioning and control need to work as a system. Define the hydraulic foundation around the equipment duty and operating requirements.",
+      "Explore WaterCore",
+      "Discuss Your Requirements"
+    ],
+    "cta": [
+      "Need hydraulic power at the centre of your process?",
+      "Tell us what equipment needs to operate and the pressure, flow and control requirements. We can help define a suitable power and equipment package.",
+      "Request a WaterCore scope review"
+    ],
+    "model": false,
+    "buttons": [
+      "#scope",
+      "/contact/?source=hero&interest=Discuss+Your+Requirements&from=%2Fwastewater-solutions%2Fwatercore%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+WaterCore+scope+review&from=%2Fwastewater-solutions%2Fwatercore%2F#engineering-review",
+      "/wastewater-solutions/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/wastewater-solutions/waterlift/",
+    "label": "WaterLift",
+    "hero": [
+      "Water needs to get from here to there. The difficult part is doing it efficiently, every day.",
+      "Lifting and transferring water is about more than maximum pump flow. Match pumping performance to the actual head, changing demand and operating conditions.",
+      "Explore WaterLift",
+      "Discuss Your Requirements"
+    ],
+    "cta": [
+      "Need to lift or transfer water through your process?",
+      "Send us the required flow, lift, operating schedule and site constraints. We'll help identify suitable pumping equipment and supporting controls.",
+      "Request a WaterLift scope review"
+    ],
+    "model": false,
+    "buttons": [
+      "#scope",
+      "/contact/?source=hero&interest=Discuss+Your+Requirements&from=%2Fwastewater-solutions%2Fwaterlift%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+WaterLift+scope+review&from=%2Fwastewater-solutions%2Fwaterlift%2F#engineering-review",
+      "/wastewater-solutions/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/wastewater-solutions/waterfilter/",
+    "label": "WaterFilter",
+    "hero": [
+      "What gets past your filters becomes someone else's problem downstream.",
+      "Inconsistent filtration can affect equipment, process performance and maintenance. Start with the incoming water and the quality your next process stage actually requires.",
+      "Explore WaterFilter",
+      "Discuss Your Requirements"
+    ],
+    "cta": [
+      "Have a filtration duty that needs a defined equipment package?",
+      "Share your water quality, target flow and filtration requirements. We can help establish the initial filtration equipment and control scope.",
+      "Request a WaterFilter scope review"
+    ],
+    "model": false,
+    "buttons": [
+      "#scope",
+      "/contact/?source=hero&interest=Discuss+Your+Requirements&from=%2Fwastewater-solutions%2Fwaterfilter%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+WaterFilter+scope+review&from=%2Fwastewater-solutions%2Fwaterfilter%2F#engineering-review",
+      "/wastewater-solutions/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/wastewater-solutions/waterclarify/",
+    "label": "WaterClarify",
+    "hero": [
+      "When solids aren't being separated effectively, the consequences don't stop at clarification.",
+      "Poor clarification can increase the burden on downstream treatment. Examine the process conditions, equipment interfaces and operating requirements that determine performance.",
+      "Explore WaterClarify",
+      "Discuss Your Requirements"
+    ],
+    "cta": [
+      "Working to improve clarification performance?",
+      "Tell us about your process, treatment objectives and equipment constraints. We can help identify the relevant equipment interfaces and possible system configuration.",
+      "Request a WaterClarify scope review"
+    ],
+    "model": false,
+    "buttons": [
+      "#scope",
+      "/contact/?source=hero&interest=Discuss+Your+Requirements&from=%2Fwastewater-solutions%2Fwaterclarify%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+WaterClarify+scope+review&from=%2Fwastewater-solutions%2Fwaterclarify%2F#engineering-review",
+      "/wastewater-solutions/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/wastewater-solutions/waterbio/",
+    "label": "WaterBio",
+    "hero": [
+      "Biological treatment is a living process. The equipment supporting it can't afford to be unpredictable.",
+      "Biological performance depends on operating conditions that change with the plant. Connect equipment and control requirements to the process conditions that matter.",
+      "Explore WaterBio",
+      "Discuss Your Requirements"
+    ],
+    "cta": [
+      "Need to integrate equipment around a biological treatment process?",
+      "Share the operating requirements and existing plant interfaces. We can help define the equipment and control scope for engineering review.",
+      "Request a WaterBio scope review"
+    ],
+    "model": false,
+    "buttons": [
+      "#scope",
+      "/contact/?source=hero&interest=Discuss+Your+Requirements&from=%2Fwastewater-solutions%2Fwaterbio%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+WaterBio+scope+review&from=%2Fwastewater-solutions%2Fwaterbio%2F#engineering-review",
+      "/wastewater-solutions/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/wastewater-solutions/watersense/",
+    "label": "WaterSense",
+    "hero": [
+      "If a pump starts losing performance today, how soon would you know?",
+      "Pressure, flow and operating information can help reveal changes before they're obvious to the operator. Identify the measurements that make equipment behaviour easier to understand.",
+      "Explore WaterSense",
+      "Discuss Your Requirements"
+    ],
+    "cta": [
+      "Need better visibility into how your equipment operates?",
+      "Tell us what you want to measure, monitor or verify. We'll help identify appropriate instrumentation and monitoring requirements.",
+      "Request a WaterSense scope review"
+    ],
+    "model": false,
+    "buttons": [
+      "#scope",
+      "/contact/?source=hero&interest=Discuss+Your+Requirements&from=%2Fwastewater-solutions%2Fwatersense%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+WaterSense+scope+review&from=%2Fwastewater-solutions%2Fwatersense%2F#engineering-review",
+      "/wastewater-solutions/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/wastewater-solutions/wateriq/",
+    "label": "WaterIQ",
+    "hero": [
+      "Your plant produces data every minute. How much of it helps you make a decision?",
+      "Numbers become valuable when they answer operating questions. Define the trends, performance indicators and reporting needed to turn available information into useful insight.",
+      "Explore WaterIQ",
+      "Discuss Your Requirements"
+    ],
+    "cta": [
+      "Need operating data that supports better decisions?",
+      "Share the equipment and information you currently have. We can help define useful performance indicators, data interfaces and reporting requirements.",
+      "Request a WaterIQ scope review"
+    ],
+    "model": false,
+    "buttons": [
+      "#scope",
+      "/contact/?source=hero&interest=Discuss+Your+Requirements&from=%2Fwastewater-solutions%2Fwateriq%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+WaterIQ+scope+review&from=%2Fwastewater-solutions%2Fwateriq%2F#engineering-review",
+      "/wastewater-solutions/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/wastewater-solutions/watercloud/",
+    "label": "WaterCloud",
+    "hero": [
+      "Why should finding out what happened at the plant depend on being at the plant?",
+      "Selected operating information can be made accessible to the people responsible for equipment performance, subject to appropriate connectivity, security and access requirements.",
+      "Explore WaterCloud",
+      "Discuss Your Requirements"
+    ],
+    "cta": [
+      "Need access to selected plant information beyond the control room?",
+      "Tell us what equipment information should be available and to whom. We can help establish a suitable data-access and reporting scope.",
+      "Request a WaterCloud scope review"
+    ],
+    "model": false,
+    "buttons": [
+      "#scope",
+      "/contact/?source=hero&interest=Discuss+Your+Requirements&from=%2Fwastewater-solutions%2Fwatercloud%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+WaterCloud+scope+review&from=%2Fwastewater-solutions%2Fwatercloud%2F#engineering-review",
+      "/wastewater-solutions/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/wastewater-solutions/watertwin/",
+    "label": "WaterTwin",
+    "hero": [
+      "Before changing your process, wouldn't you rather understand the consequences?",
+      "Explore how suitable models and operating data may help evaluate equipment duties and process scenarios before committing to a change.",
+      "Explore WaterTwin",
+      "Discuss Your Requirements"
+    ],
+    "cta": [
+      "Want to evaluate process changes before making equipment decisions?",
+      "Share your process arrangement, available operating data and the questions you need answered. We can help define an appropriate modelling or simulation scope.",
+      "Request a WaterTwin scope review"
+    ],
+    "model": false,
+    "buttons": [
+      "#scope",
+      "/contact/?source=hero&interest=Discuss+Your+Requirements&from=%2Fwastewater-solutions%2Fwatertwin%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+WaterTwin+scope+review&from=%2Fwastewater-solutions%2Fwatertwin%2F#engineering-review",
+      "/wastewater-solutions/"
+    ],
+    "removedCta": [
+      "editorial-next-step"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-flow-control/",
+    "label": "Flow Control Valve",
+    "hero": [
+      "Flow Control Valve",
+      "Set the flow. Check how the load changes it.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#wqr-product-specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-flow-control%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-flow-control%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-valves/2-2-directional-valve/",
+    "label": "2/2 Directional Valve",
+    "hero": [
+      "2/2 Directional Valve",
+      "Open or isolate a water flow path.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2F2-2-directional-valve%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2F2-2-directional-valve%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-electronic-pressure-control/",
+    "label": "Electronic Pressure Control Valve",
+    "hero": [
+      "Electronic Pressure Control Valve",
+      "A pressure command needs a defined controlled range.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#wqr-product-specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-electronic-pressure-control%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-electronic-pressure-control%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-valves/po-check-valve-dn12/",
+    "label": "DN12 Pilot-Operated Check Valve",
+    "hero": [
+      "DN12 Pilot-Operated Check Valve",
+      "Control reverse-flow release with a pilot signal.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fpo-check-valve-dn12%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fpo-check-valve-dn12%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/2-2-pilot-valves/",
+    "label": "2/2 Pilot Valves",
+    "hero": [
+      "2/2 Pilot Valves",
+      "Control the main flow through a pilot-operated valve.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2F2-2-pilot-valves%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2F2-2-pilot-valves%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/manifolds/",
+    "label": "Valve Manifolds",
+    "hero": [
+      "Valve Manifolds",
+      "Bring valve functions into a coordinated assembly.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fmanifolds%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fmanifolds%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-dn12-po-check/",
+    "label": "DN12 Pilot-Operated Check Valve",
+    "hero": [
+      "DN12 Pilot-Operated Check Valve",
+      "Release the held load only under the intended pilot conditions.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#wqr-product-specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-dn12-po-check%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-dn12-po-check%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-valves/flow-control-valve/",
+    "label": "Flow Control Valves",
+    "hero": [
+      "Flow Control Valves",
+      "Adjust the flow for the movement you need.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fflow-control-valve%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fflow-control-valve%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/electronic-flow-control-valves/",
+    "label": "Electronic Flow Control Valves",
+    "hero": [
+      "Electronic Flow Control Valves",
+      "Adjust flow to control actuator speed.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Felectronic-flow-control-valves%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Felectronic-flow-control-valves%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-check-valves/",
+    "label": "Check Valves",
+    "hero": [
+      "Check Valves",
+      "Permit flow one way. Check what happens in reverse.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#wqr-product-specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-check-valves%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-check-valves%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-valves/check-valves/",
+    "label": "Check Valves",
+    "hero": [
+      "Check Valves",
+      "Permit forward flow. Restrict reverse flow.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fcheck-valves%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fcheck-valves%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/zone-valves/",
+    "label": "Zone Valves",
+    "hero": [
+      "Zone Valves",
+      "Control water distribution by zone.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fzone-valves%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fzone-valves%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/pressure-reducing-valves/",
+    "label": "Pressure Reducing Valves",
+    "hero": [
+      "Pressure Reducing Valves",
+      "Set the pressure for a downstream branch.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fpressure-reducing-valves%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fpressure-reducing-valves%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-hose-burst/",
+    "label": "Hose Burst Valve",
+    "hero": [
+      "Hose Burst Valve",
+      "Define the trip flow before relying on hose-failure response.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#wqr-product-specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-hose-burst%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-hose-burst%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-valves/po-check-valve-dn6/",
+    "label": "DN6 Pilot-Operated Check Valves",
+    "hero": [
+      "DN6 Pilot-Operated Check Valves",
+      "Compact pilot-operated reverse-flow control.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fpo-check-valve-dn6%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fpo-check-valve-dn6%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-actuation-cards/",
+    "label": "Actuation Card and Mounting",
+    "hero": [
+      "Actuation Card and Mounting",
+      "A solenoid needs the correct electrical drive.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#wqr-product-specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-actuation-cards%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-actuation-cards%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-valves/electronic-pressure-control-valve/",
+    "label": "Electronic Pressure Control Valve",
+    "hero": [
+      "Electronic Pressure Control Valve",
+      "Bring pressure regulation into your control sequence.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Felectronic-pressure-control-valve%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Felectronic-pressure-control-valve%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/4-2-3-2-directional-control-valves/",
+    "label": "4/2 & 3/2 Directional Control Valves",
+    "hero": [
+      "4/2 & 3/2 Directional Control Valves",
+      "Direct water to the movement you need.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2F4-2-3-2-directional-control-valves%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2F4-2-3-2-directional-control-valves%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/dc-microstep-drive-with-q-programming-st5-q-nn/",
+    "label": "ST5-Q-NN Microstep Drive",
+    "hero": [
+      "ST5-Q-NN Microstep Drive",
+      "Turn programmed commands into motor movement.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fdc-microstep-drive-with-q-programming-st5-q-nn%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fdc-microstep-drive-with-q-programming-st5-q-nn%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/actuation-cards/",
+    "label": "Solenoid Actuation Cards",
+    "hero": [
+      "Solenoid Actuation Cards",
+      "Match the solenoid drive to your control system.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Factuation-cards%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Factuation-cards%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-electronic-flow-control/",
+    "label": "Electronic Flow Control Valve",
+    "hero": [
+      "Electronic Flow Control Valve",
+      "Control flow to control speed—with feedback where it matters.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#wqr-product-specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-electronic-flow-control%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-electronic-flow-control%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-ordering-code/",
+    "label": "Valve Ordering Guide",
+    "hero": [
+      "Valve Ordering Guide",
+      "Build the ordering code for your valve configuration.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-ordering-code%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-ordering-code%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/relief-valves/",
+    "label": "Relief Valves",
+    "hero": [
+      "Relief Valves",
+      "Limit circuit pressure with the right relieving capacity.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Frelief-valves%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Frelief-valves%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-4-2-3-2-directional/",
+    "label": "4/2 and 3/2 Directional Flow Control Valve",
+    "hero": [
+      "4/2 and 3/2 Directional Flow Control Valve",
+      "Choose the port arrangement from the movement sequence.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#wqr-product-specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-4-2-3-2-directional%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-4-2-3-2-directional%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-2-2-pilot/",
+    "label": "2/2 Pilot Valves",
+    "hero": [
+      "2/2 Pilot Valves",
+      "Pilot control needs the right pressure difference.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#wqr-product-specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-2-2-pilot%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-2-2-pilot%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-valves/4-3-directional-control-valves/",
+    "label": "4/3 Directional Control Valves",
+    "hero": [
+      "4/3 Directional Control Valves",
+      "Control forward, reverse and the centre condition.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2F4-3-directional-control-valves%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2F4-3-directional-control-valves%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-dn16-directional/",
+    "label": "DN16 Directional Valve",
+    "hero": [
+      "DN16 Directional Valve",
+      "DN16 flow capacity must fit the available pressure budget.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#wqr-product-specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-dn16-directional%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-dn16-directional%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-valves/pressure-compensating-flow-control-valve/",
+    "label": "Pressure-Compensated Flow Control Valve",
+    "hero": [
+      "Pressure-Compensated Flow Control Valve",
+      "Regulate flow as the circuit pressure changes.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fpressure-compensating-flow-control-valve%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fpressure-compensating-flow-control-valve%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/valve-4-3-manual/",
+    "label": "4 Position 3 Port Manual Control Valve",
+    "hero": [
+      "4 Position 3 Port Manual Control Valve",
+      "The centre condition matters as much as forward and reverse.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#wqr-product-specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-4-3-manual%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fvalve-4-3-manual%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-valves/hose-burst-valve/",
+    "label": "Hose Burst Valves",
+    "hero": [
+      "Hose Burst Valves",
+      "Add flow-triggered closure to the protection design.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fhose-burst-valve%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fhose-burst-valve%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-valves/dn16-directional-valves/",
+    "label": "DN16 Directional Valves",
+    "hero": [
+      "DN16 Directional Valves",
+      "Route circuit flow with DN16 directional control.",
+      "View Performance & Specifications",
+      "Request a valve Quotation"
+    ],
+    "cta": [
+      "Need this valve to perform a specific control function?",
+      "Send us your pressure, flow, circuit arrangement and required operating sequence. We'll help review the valve selection and identify any additional controls or components needed.",
+      "Request a valve quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+valve+Quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fdn16-directional-valves%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+valve+quotation&from=%2Fproducts%2Fwater-hydraulic-valves%2Fdn16-directional-valves%2F#engineering-review",
+      "/products/water-hydraulic-valves/"
+    ],
+    "removedCta": [
+      "v-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-100x80/",
+    "label": "100 mm (3.94 in) bore × 80 mm (3.15 in) rod: water hydraulic cylinder",
+    "hero": [
+      "100 mm (3.94 in) bore × 80 mm (3.15 in) rod: water hydraulic cylinder",
+      "Match push and pull force to the required movement.",
+      "View Performance & Specifications",
+      "Request a cylinder Quotation"
+    ],
+    "cta": [
+      "Will this cylinder deliver the force and movement you need?",
+      "Send us your load, stroke, operating pressure and mounting dimensions. We can help review the selected cylinder and the components required to operate it.",
+      "Request a cylinder quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#selection-guides",
+      "/contact/?source=hero&interest=Request+a+cylinder+Quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-100x80%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+cylinder+quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-100x80%2F#engineering-review",
+      "/products/water-hydraulic-cylinders/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-80x50/",
+    "label": "80 mm (3.15 in) bore × 50 mm (1.97 in) rod: water hydraulic cylinder",
+    "hero": [
+      "80 mm (3.15 in) bore × 50 mm (1.97 in) rod: water hydraulic cylinder",
+      "Match push and pull force to the required movement.",
+      "View Performance & Specifications",
+      "Request a cylinder Quotation"
+    ],
+    "cta": [
+      "Will this cylinder deliver the force and movement you need?",
+      "Send us your load, stroke, operating pressure and mounting dimensions. We can help review the selected cylinder and the components required to operate it.",
+      "Request a cylinder quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#selection-guides",
+      "/contact/?source=hero&interest=Request+a+cylinder+Quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-80x50%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+cylinder+quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-80x50%2F#engineering-review",
+      "/products/water-hydraulic-cylinders/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-50x30/",
+    "label": "50 mm (1.97 in) bore × 30 mm (1.18 in) rod: water hydraulic cylinder",
+    "hero": [
+      "50 mm (1.97 in) bore × 30 mm (1.18 in) rod: water hydraulic cylinder",
+      "Match push and pull force to the required movement.",
+      "View Performance & Specifications",
+      "Request a cylinder Quotation"
+    ],
+    "cta": [
+      "Will this cylinder deliver the force and movement you need?",
+      "Send us your load, stroke, operating pressure and mounting dimensions. We can help review the selected cylinder and the components required to operate it.",
+      "Request a cylinder quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#selection-guides",
+      "/contact/?source=hero&interest=Request+a+cylinder+Quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-50x30%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+cylinder+quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-50x30%2F#engineering-review",
+      "/products/water-hydraulic-cylinders/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-32x20/",
+    "label": "32 mm (1.26 in) bore × 20 mm (0.787 in) rod: water hydraulic cylinder",
+    "hero": [
+      "32 mm (1.26 in) bore × 20 mm (0.787 in) rod: water hydraulic cylinder",
+      "Match push and pull force to the required movement.",
+      "View Performance & Specifications",
+      "Request a cylinder Quotation"
+    ],
+    "cta": [
+      "Will this cylinder deliver the force and movement you need?",
+      "Send us your load, stroke, operating pressure and mounting dimensions. We can help review the selected cylinder and the components required to operate it.",
+      "Request a cylinder quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#selection-guides",
+      "/contact/?source=hero&interest=Request+a+cylinder+Quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-32x20%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+cylinder+quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-32x20%2F#engineering-review",
+      "/products/water-hydraulic-cylinders/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-40x25/",
+    "label": "40 mm (1.57 in) bore × 25 mm (0.984 in) rod: water hydraulic cylinder",
+    "hero": [
+      "40 mm (1.57 in) bore × 25 mm (0.984 in) rod: water hydraulic cylinder",
+      "Match push and pull force to the required movement.",
+      "View Performance & Specifications",
+      "Request a cylinder Quotation"
+    ],
+    "cta": [
+      "Will this cylinder deliver the force and movement you need?",
+      "Send us your load, stroke, operating pressure and mounting dimensions. We can help review the selected cylinder and the components required to operate it.",
+      "Request a cylinder quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#selection-guides",
+      "/contact/?source=hero&interest=Request+a+cylinder+Quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-40x25%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+cylinder+quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-40x25%2F#engineering-review",
+      "/products/water-hydraulic-cylinders/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-50x25/",
+    "label": "50 mm (1.97 in) bore × 25 mm (0.984 in) rod: water hydraulic cylinder",
+    "hero": [
+      "50 mm (1.97 in) bore × 25 mm (0.984 in) rod: water hydraulic cylinder",
+      "Match push and pull force to the required movement.",
+      "View Performance & Specifications",
+      "Request a cylinder Quotation"
+    ],
+    "cta": [
+      "Will this cylinder deliver the force and movement you need?",
+      "Send us your load, stroke, operating pressure and mounting dimensions. We can help review the selected cylinder and the components required to operate it.",
+      "Request a cylinder quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#selection-guides",
+      "/contact/?source=hero&interest=Request+a+cylinder+Quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-50x25%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+cylinder+quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-50x25%2F#engineering-review",
+      "/products/water-hydraulic-cylinders/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-64x40/",
+    "label": "64 mm (2.52 in) bore × 40 mm (1.57 in) rod: water hydraulic cylinder",
+    "hero": [
+      "64 mm (2.52 in) bore × 40 mm (1.57 in) rod: water hydraulic cylinder",
+      "Match push and pull force to the required movement.",
+      "View Performance & Specifications",
+      "Request a cylinder Quotation"
+    ],
+    "cta": [
+      "Will this cylinder deliver the force and movement you need?",
+      "Send us your load, stroke, operating pressure and mounting dimensions. We can help review the selected cylinder and the components required to operate it.",
+      "Request a cylinder quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#selection-guides",
+      "/contact/?source=hero&interest=Request+a+cylinder+Quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-64x40%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+cylinder+quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-64x40%2F#engineering-review",
+      "/products/water-hydraulic-cylinders/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-100x60/",
+    "label": "100 mm (3.94 in) bore × 60 mm (2.36 in) rod: water hydraulic cylinder",
+    "hero": [
+      "100 mm (3.94 in) bore × 60 mm (2.36 in) rod: water hydraulic cylinder",
+      "Match push and pull force to the required movement.",
+      "View Performance & Specifications",
+      "Request a cylinder Quotation"
+    ],
+    "cta": [
+      "Will this cylinder deliver the force and movement you need?",
+      "Send us your load, stroke, operating pressure and mounting dimensions. We can help review the selected cylinder and the components required to operate it.",
+      "Request a cylinder quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#selection-guides",
+      "/contact/?source=hero&interest=Request+a+cylinder+Quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-100x60%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+cylinder+quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-100x60%2F#engineering-review",
+      "/products/water-hydraulic-cylinders/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-32x16/",
+    "label": "32 mm (1.26 in) bore × 16 mm (0.63 in) rod: water hydraulic cylinder",
+    "hero": [
+      "32 mm (1.26 in) bore × 16 mm (0.63 in) rod: water hydraulic cylinder",
+      "Match push and pull force to the required movement.",
+      "View Performance & Specifications",
+      "Request a cylinder Quotation"
+    ],
+    "cta": [
+      "Will this cylinder deliver the force and movement you need?",
+      "Send us your load, stroke, operating pressure and mounting dimensions. We can help review the selected cylinder and the components required to operate it.",
+      "Request a cylinder quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#selection-guides",
+      "/contact/?source=hero&interest=Request+a+cylinder+Quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-32x16%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+cylinder+quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-32x16%2F#engineering-review",
+      "/products/water-hydraulic-cylinders/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-125x80/",
+    "label": "125 mm (4.92 in) bore × 80 mm (3.15 in) rod: water hydraulic cylinder",
+    "hero": [
+      "125 mm (4.92 in) bore × 80 mm (3.15 in) rod: water hydraulic cylinder",
+      "Match push and pull force to the required movement.",
+      "View Performance & Specifications",
+      "Request a cylinder Quotation"
+    ],
+    "cta": [
+      "Will this cylinder deliver the force and movement you need?",
+      "Send us your load, stroke, operating pressure and mounting dimensions. We can help review the selected cylinder and the components required to operate it.",
+      "Request a cylinder quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#selection-guides",
+      "/contact/?source=hero&interest=Request+a+cylinder+Quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-125x80%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+cylinder+quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-125x80%2F#engineering-review",
+      "/products/water-hydraulic-cylinders/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-cylinders/cylinder-64x30/",
+    "label": "64 mm (2.52 in) bore × 30 mm (1.18 in) rod: water hydraulic cylinder",
+    "hero": [
+      "64 mm (2.52 in) bore × 30 mm (1.18 in) rod: water hydraulic cylinder",
+      "Match push and pull force to the required movement.",
+      "View Performance & Specifications",
+      "Request a cylinder Quotation"
+    ],
+    "cta": [
+      "Will this cylinder deliver the force and movement you need?",
+      "Send us your load, stroke, operating pressure and mounting dimensions. We can help review the selected cylinder and the components required to operate it.",
+      "Request a cylinder quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#selection-guides",
+      "/contact/?source=hero&interest=Request+a+cylinder+Quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-64x30%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+cylinder+quotation&from=%2Fproducts%2Fwater-hydraulic-cylinders%2Fcylinder-64x30%2F#engineering-review",
+      "/products/water-hydraulic-cylinders/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/axial-piston-pumps/p30/",
+    "label": "P30 pump",
+    "hero": [
+      "P30: water hydraulic pumping for your application.",
+      "Match pump flow to the work your system needs.",
+      "View Performance & Specifications",
+      "Request a pump Quotation"
+    ],
+    "cta": [
+      "Considering the P30 pump for your equipment?",
+      "Send us your required operating pressure, flow, drive speed and duty cycle. We'll help confirm whether this model is a suitable starting point and identify any supporting equipment required.",
+      "Request a pump quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specs",
+      "/contact/?source=hero&interest=Request+a+pump+Quotation&from=%2Fproducts%2Faxial-piston-pumps%2Fp30%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+pump+quotation&from=%2Fproducts%2Faxial-piston-pumps%2Fp30%2F#engineering-review",
+      "/products/axial-piston-pumps/"
+    ],
+    "removedCta": [
+      "contact-pump"
+    ]
+  },
+  {
+    "route": "/products/axial-piston-pumps/p180/",
+    "label": "P180 pump",
+    "hero": [
+      "P180: water hydraulic pumping for your application.",
+      "Match pump flow to the work your system needs.",
+      "View Performance & Specifications",
+      "Request a pump Quotation"
+    ],
+    "cta": [
+      "Considering the P180 pump for your equipment?",
+      "Send us your required operating pressure, flow, drive speed and duty cycle. We'll help confirm whether this model is a suitable starting point and identify any supporting equipment required.",
+      "Request a pump quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specs",
+      "/contact/?source=hero&interest=Request+a+pump+Quotation&from=%2Fproducts%2Faxial-piston-pumps%2Fp180%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+pump+quotation&from=%2Fproducts%2Faxial-piston-pumps%2Fp180%2F#engineering-review",
+      "/products/axial-piston-pumps/"
+    ],
+    "removedCta": [
+      "contact-pump"
+    ]
+  },
+  {
+    "route": "/products/axial-piston-pumps/p15/",
+    "label": "P15 pump",
+    "hero": [
+      "P15: water hydraulic pumping for your application.",
+      "Match pump flow to the work your system needs.",
+      "View Performance & Specifications",
+      "Request a pump Quotation"
+    ],
+    "cta": [
+      "Considering the P15 pump for your equipment?",
+      "Send us your required operating pressure, flow, drive speed and duty cycle. We'll help confirm whether this model is a suitable starting point and identify any supporting equipment required.",
+      "Request a pump quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specs",
+      "/contact/?source=hero&interest=Request+a+pump+Quotation&from=%2Fproducts%2Faxial-piston-pumps%2Fp15%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+pump+quotation&from=%2Fproducts%2Faxial-piston-pumps%2Fp15%2F#engineering-review",
+      "/products/axial-piston-pumps/"
+    ],
+    "removedCta": [
+      "contact-pump"
+    ]
+  },
+  {
+    "route": "/products/axial-piston-pumps/p3/",
+    "label": "P3 pump",
+    "hero": [
+      "P3: water hydraulic pumping for your application.",
+      "Match pump flow to the work your system needs.",
+      "View Performance & Specifications",
+      "Request a pump Quotation"
+    ],
+    "cta": [
+      "Considering the P3 pump for your equipment?",
+      "Send us your required operating pressure, flow, drive speed and duty cycle. We'll help confirm whether this model is a suitable starting point and identify any supporting equipment required.",
+      "Request a pump quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specs",
+      "/contact/?source=hero&interest=Request+a+pump+Quotation&from=%2Fproducts%2Faxial-piston-pumps%2Fp3%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+pump+quotation&from=%2Fproducts%2Faxial-piston-pumps%2Fp3%2F#engineering-review",
+      "/products/axial-piston-pumps/"
+    ],
+    "removedCta": [
+      "contact-pump"
+    ]
+  },
+  {
+    "route": "/products/axial-piston-pumps/p6/",
+    "label": "P6 pump",
+    "hero": [
+      "P6: water hydraulic pumping for your application.",
+      "Match pump flow to the work your system needs.",
+      "View Performance & Specifications",
+      "Request a pump Quotation"
+    ],
+    "cta": [
+      "Considering the P6 pump for your equipment?",
+      "Send us your required operating pressure, flow, drive speed and duty cycle. We'll help confirm whether this model is a suitable starting point and identify any supporting equipment required.",
+      "Request a pump quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specs",
+      "/contact/?source=hero&interest=Request+a+pump+Quotation&from=%2Fproducts%2Faxial-piston-pumps%2Fp6%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+pump+quotation&from=%2Fproducts%2Faxial-piston-pumps%2Fp6%2F#engineering-review",
+      "/products/axial-piston-pumps/"
+    ],
+    "removedCta": [
+      "contact-pump"
+    ]
+  },
+  {
+    "route": "/products/axial-piston-pumps/p60/",
+    "label": "P60 pump",
+    "hero": [
+      "P60: water hydraulic pumping for your application.",
+      "Match pump flow to the work your system needs.",
+      "View Performance & Specifications",
+      "Request a pump Quotation"
+    ],
+    "cta": [
+      "Considering the P60 pump for your equipment?",
+      "Send us your required operating pressure, flow, drive speed and duty cycle. We'll help confirm whether this model is a suitable starting point and identify any supporting equipment required.",
+      "Request a pump quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specs",
+      "/contact/?source=hero&interest=Request+a+pump+Quotation&from=%2Fproducts%2Faxial-piston-pumps%2Fp60%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+pump+quotation&from=%2Fproducts%2Faxial-piston-pumps%2Fp60%2F#engineering-review",
+      "/products/axial-piston-pumps/"
+    ],
+    "removedCta": [
+      "contact-pump"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m60-axial-piston-water-hydraulic-motor/",
+    "label": "M60 motor",
+    "hero": [
+      "M60: water hydraulic rotary power",
+      "Match starting torque and speed to the driven load.",
+      "View Performance & Specifications",
+      "Request a motor Quotation"
+    ],
+    "cta": [
+      "Is the M60 motor right for your drive application?",
+      "Share your required speed, torque, operating pressure and available flow. We can help review the motor selection and associated hydraulic supply requirements.",
+      "Request a motor quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#selection-guides",
+      "/contact/?source=hero&interest=Request+a+motor+Quotation&from=%2Fproducts%2Fwater-hydraulic-motors%2Fm60-axial-piston-water-hydraulic-motor%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+motor+quotation&from=%2Fproducts%2Fwater-hydraulic-motors%2Fm60-axial-piston-water-hydraulic-motor%2F#engineering-review",
+      "/products/water-hydraulic-motors/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m3-water-hydraulic-motor/",
+    "label": "M3 motor",
+    "hero": [
+      "M3: water hydraulic rotary power",
+      "Match starting torque and speed to the driven load.",
+      "View Performance & Specifications",
+      "Request a motor Quotation"
+    ],
+    "cta": [
+      "Is the M3 motor right for your drive application?",
+      "Share your required speed, torque, operating pressure and available flow. We can help review the motor selection and associated hydraulic supply requirements.",
+      "Request a motor quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specs",
+      "/contact/?source=hero&interest=Request+a+motor+Quotation&from=%2Fproducts%2Fwater-hydraulic-motors%2Fm3-water-hydraulic-motor%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+motor+quotation&from=%2Fproducts%2Fwater-hydraulic-motors%2Fm3-water-hydraulic-motor%2F#engineering-review",
+      "/products/water-hydraulic-motors/"
+    ],
+    "removedCta": [
+      "product-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m6-water-hydraulic-motor/",
+    "label": "M6 motor",
+    "hero": [
+      "M6: water hydraulic rotary power",
+      "Match starting torque and speed to the driven load.",
+      "View Performance & Specifications",
+      "Request a motor Quotation"
+    ],
+    "cta": [
+      "Is the M6 motor right for your drive application?",
+      "Share your required speed, torque, operating pressure and available flow. We can help review the motor selection and associated hydraulic supply requirements.",
+      "Request a motor quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specs",
+      "/contact/?source=hero&interest=Request+a+motor+Quotation&from=%2Fproducts%2Fwater-hydraulic-motors%2Fm6-water-hydraulic-motor%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+motor+quotation&from=%2Fproducts%2Fwater-hydraulic-motors%2Fm6-water-hydraulic-motor%2F#engineering-review",
+      "/products/water-hydraulic-motors/"
+    ],
+    "removedCta": [
+      "product-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m15-water-hydraulic-motor/",
+    "label": "M15 motor",
+    "hero": [
+      "M15: water hydraulic rotary power",
+      "Match starting torque and speed to the driven load.",
+      "View Performance & Specifications",
+      "Request a motor Quotation"
+    ],
+    "cta": [
+      "Is the M15 motor right for your drive application?",
+      "Share your required speed, torque, operating pressure and available flow. We can help review the motor selection and associated hydraulic supply requirements.",
+      "Request a motor quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#product-cta",
+      "/contact/?source=hero&interest=Request+a+motor+Quotation&from=%2Fproducts%2Fwater-hydraulic-motors%2Fm15-water-hydraulic-motor%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+motor+quotation&from=%2Fproducts%2Fwater-hydraulic-motors%2Fm15-water-hydraulic-motor%2F#engineering-review",
+      "/products/water-hydraulic-motors/"
+    ],
+    "removedCta": [
+      "product-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m30-water-hydraulic-motor/",
+    "label": "M30 motor",
+    "hero": [
+      "M30: water hydraulic rotary power",
+      "Match starting torque and speed to the driven load.",
+      "View Performance & Specifications",
+      "Request a motor Quotation"
+    ],
+    "cta": [
+      "Is the M30 motor right for your drive application?",
+      "Share your required speed, torque, operating pressure and available flow. We can help review the motor selection and associated hydraulic supply requirements.",
+      "Request a motor quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#product-cta",
+      "/contact/?source=hero&interest=Request+a+motor+Quotation&from=%2Fproducts%2Fwater-hydraulic-motors%2Fm30-water-hydraulic-motor%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+motor+quotation&from=%2Fproducts%2Fwater-hydraulic-motors%2Fm30-water-hydraulic-motor%2F#engineering-review",
+      "/products/water-hydraulic-motors/"
+    ],
+    "removedCta": [
+      "product-cta"
+    ]
+  },
+  {
+    "route": "/products/water-hydraulic-motors/m180-axial-piston-water-hydraulic-motor/",
+    "label": "M180 motor",
+    "hero": [
+      "M180: water hydraulic rotary power",
+      "Match starting torque and speed to the driven load.",
+      "View Performance & Specifications",
+      "Request a motor Quotation"
+    ],
+    "cta": [
+      "Is the M180 motor right for your drive application?",
+      "Share your required speed, torque, operating pressure and available flow. We can help review the motor selection and associated hydraulic supply requirements.",
+      "Request a motor quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#selection-guides",
+      "/contact/?source=hero&interest=Request+a+motor+Quotation&from=%2Fproducts%2Fwater-hydraulic-motors%2Fm180-axial-piston-water-hydraulic-motor%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+motor+quotation&from=%2Fproducts%2Fwater-hydraulic-motors%2Fm180-axial-piston-water-hydraulic-motor%2F#engineering-review",
+      "/products/water-hydraulic-motors/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/power-centre-reverse-osmosis/pc250/",
+    "label": "PC250 PowerCentre",
+    "hero": [
+      "PC250: feed pumping and brine energy recovery",
+      "Match PC250 to your RO production duty.",
+      "View Performance & Specifications",
+      "Request a PowerCentre Quotation"
+    ],
+    "cta": [
+      "Considering the PC250 PowerCentre for your RO installation?",
+      "Send us your membrane operating conditions, required feed flow and pressure. We'll help assess the appropriate PowerCentre configuration for the proposed duty.",
+      "Request a PowerCentre quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+PowerCentre+Quotation&from=%2Fproducts%2Fpower-centre-reverse-osmosis%2Fpc250%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+PowerCentre+quotation&from=%2Fproducts%2Fpower-centre-reverse-osmosis%2Fpc250%2F#engineering-review",
+      "/products/power-centre-reverse-osmosis/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/power-centre-reverse-osmosis/pc1000/",
+    "label": "PC1000 PowerCentre",
+    "hero": [
+      "PC1000: feed pumping and brine energy recovery",
+      "Match PC1000 to your RO production duty.",
+      "View Performance & Specifications",
+      "Request a PowerCentre Quotation"
+    ],
+    "cta": [
+      "Considering the PC1000 PowerCentre for your RO installation?",
+      "Send us your membrane operating conditions, required feed flow and pressure. We'll help assess the appropriate PowerCentre configuration for the proposed duty.",
+      "Request a PowerCentre quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+PowerCentre+Quotation&from=%2Fproducts%2Fpower-centre-reverse-osmosis%2Fpc1000%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+PowerCentre+quotation&from=%2Fproducts%2Fpower-centre-reverse-osmosis%2Fpc1000%2F#engineering-review",
+      "/products/power-centre-reverse-osmosis/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/power-centre-reverse-osmosis/pc300/",
+    "label": "PC300 PowerCentre",
+    "hero": [
+      "PC300: feed pumping and brine energy recovery",
+      "Match PC300 to your RO production duty.",
+      "View Performance & Specifications",
+      "Request a PowerCentre Quotation"
+    ],
+    "cta": [
+      "Considering the PC300 PowerCentre for your RO installation?",
+      "Send us your membrane operating conditions, required feed flow and pressure. We'll help assess the appropriate PowerCentre configuration for the proposed duty.",
+      "Request a PowerCentre quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+PowerCentre+Quotation&from=%2Fproducts%2Fpower-centre-reverse-osmosis%2Fpc300%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+PowerCentre+quotation&from=%2Fproducts%2Fpower-centre-reverse-osmosis%2Fpc300%2F#engineering-review",
+      "/products/power-centre-reverse-osmosis/"
+    ],
+    "removedCta": []
+  },
+  {
+    "route": "/products/power-centre-reverse-osmosis/pc500/",
+    "label": "PC500 PowerCentre",
+    "hero": [
+      "PC500: feed pumping and brine energy recovery",
+      "Match PC500 to your RO production duty.",
+      "View Performance & Specifications",
+      "Request a PowerCentre Quotation"
+    ],
+    "cta": [
+      "Considering the PC500 PowerCentre for your RO installation?",
+      "Send us your membrane operating conditions, required feed flow and pressure. We'll help assess the appropriate PowerCentre configuration for the proposed duty.",
+      "Request a PowerCentre quotation"
+    ],
+    "model": true,
+    "buttons": [
+      "#specifications",
+      "/contact/?source=hero&interest=Request+a+PowerCentre+Quotation&from=%2Fproducts%2Fpower-centre-reverse-osmosis%2Fpc500%2F#engineering-review",
+      "/contact/?source=closing-cta&interest=Request+a+PowerCentre+quotation&from=%2Fproducts%2Fpower-centre-reverse-osmosis%2Fpc500%2F#engineering-review",
+      "/products/power-centre-reverse-osmosis/"
+    ],
+    "removedCta": []
+  }
+]

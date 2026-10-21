@@ -21,19 +21,19 @@
   dialog.id = 'wq-newsletter-popup';
   dialog.setAttribute('aria-labelledby', 'wq-newsletter-title');
   dialog.innerHTML = `<button type="button" class="wq-newsletter-close" aria-label="Close newsletter invitation" autofocus>×</button>
-    <p class="wq-newsletter-eyebrow">Stay informed</p>
-    <h2 id="wq-newsletter-title">Get the Inside Edge on <span>Industrial Materials</span></h2>
-    <p>Join engineers, procurement specialists, and facility managers who receive practical insights on material selection, corrosion prevention, system design, and industry applications. No fluff. No spam. Just actionable intelligence delivered to your inbox.</p>
+    <div class="wq-newsletter-brand"><img src="/assets/waterquest-logo-square.png" alt="" width="44" height="44"><span>WaterQuest Solutions</span></div><p class="wq-newsletter-eyebrow">The Fluid Truth · Newsletter</p>
+    <h2 id="wq-newsletter-title">Good engineering.<br><span>Without the oil.</span></h2>
+    <p>Get occasional water hydraulics insights, equipment updates and practical application ideas from WaterQuest Solutions. Clear answers for people who design, specify and operate equipment.</p>
     <form class="wq-popup-form">
       <label for="wq-newsletter-email">Email address</label>
       <input id="wq-newsletter-email" name="email" type="email" autocomplete="email" maxlength="100" required placeholder="Enter your email address">
       <div hidden aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
-      <label class="wq-popup-consent"><input name="consent" type="checkbox" required><span>I agree to receive the WaterQuest Solutions industrial materials newsletter. I can unsubscribe at any time.</span></label>
-      <button type="submit">Subscribe now</button>
+      <label class="wq-popup-consent"><input name="consent" type="checkbox" required><span>I would like to receive the WaterQuest Solutions water hydraulics newsletter. I can unsubscribe at any time.</span></label>
+      <button type="submit">Send me The Fluid Truth</button>
       <p class="wq-popup-status" role="status" aria-live="polite"></p>
     </form>
-    <p class="wq-newsletter-privacy">Your email, consent and signup page are stored in Zoho CRM. To unsubscribe, <a href="mailto:bruce@waterquestsolutions.com?subject=Unsubscribe%20from%20industrial%20materials%20newsletter">email WaterQuest</a>. We use your email for the newsletter you requested.</p>
-    <button type="button" class="wq-newsletter-dismiss">No thanks / already subscribed</button>`;
+    <p class="wq-newsletter-privacy">Fresh thinking. No inbox pollution. We’ll never share your info. <a href="mailto:bruce@waterquestsolutions.com?subject=Unsubscribe%20from%20WaterQuest%20Solutions%20newsletter">Unsubscribe any time</a>.</p>
+    <button type="button" class="wq-newsletter-dismiss">Not today / already subscribed</button>`;
   document.body.appendChild(dialog);
   const form = dialog.querySelector('form');
   const status = dialog.querySelector('.wq-popup-status');
@@ -55,7 +55,7 @@
   form.addEventListener('submit', async event => {
     event.preventDefault();
     if (!form.reportValidity() || submitButton.disabled) return;
-    const fields = {email: form.elements.email.value.trim(), consent: form.elements.consent.checked, website: form.elements.website.value, consentText: form.querySelector('.wq-popup-consent span').textContent, formVersion: 'industrial-materials-20261016'};
+    const fields = {email: form.elements.email.value.trim(), consent: form.elements.consent.checked, website: form.elements.website.value, consentText: form.querySelector('.wq-popup-consent span').textContent, formVersion: 'waterquest-hydraulics-20261021'};
     submitButton.disabled = true;
     form.setAttribute('aria-busy', 'true');
     status.textContent = 'Sending…';
