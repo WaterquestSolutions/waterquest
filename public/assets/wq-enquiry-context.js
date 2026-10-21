@@ -15,12 +15,12 @@
 // Shared section decoration, independent of the enquiry form and page template.
 (function () {
  'use strict';
- document.querySelectorAll('.wqr-hero, .wqr-closing-panel').forEach(function (section, sectionIndex) {
+ document.querySelectorAll('[data-wqr-hero], .wqr-closing-panel').forEach(function (section, sectionIndex) {
   if (section.querySelector(':scope > .wqr-bubbles')) return;
   const layer = document.createElement('div');
   layer.className = 'wqr-bubbles';
   layer.setAttribute('aria-hidden', 'true');
-  const count = section.classList.contains('wqr-hero') ? 22 : 16;
+  const count = section.hasAttribute('data-wqr-hero') ? 22 : 16;
   for (let i = 0; i < count; i++) {
    const bubble = document.createElement('span');
    const seed = i + sectionIndex * 23;

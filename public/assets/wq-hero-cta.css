@@ -50,3 +50,6 @@ html#waterquest-site body.wq-audited.wq-consistent .wqr-closing h2#wqr-closing-t
 .wqr-bubbles>span{position:absolute;border-radius:50%;border:1px solid #00eeff66;background:radial-gradient(circle at 32% 28%,#ffffff66,#00eeff24 38%,#00eeff06 72%);box-shadow:inset -2px -2px 5px #00eeff14;opacity:.5;animation:wqr-bubble-rise linear infinite;pointer-events:none}
 @keyframes wqr-bubble-rise{0%{transform:translate(0,90px) scale(.8);opacity:0}12%{opacity:.55}75%{opacity:.4}100%{transform:translate(var(--wqr-drift),-620px) scale(1.1);opacity:0}}
 @media(prefers-reduced-motion:reduce){.wqr-bubbles>span{animation:none;opacity:.35}}
+
+[data-wqr-hero]{position:relative;isolation:isolate;overflow:hidden}
+[data-wqr-hero]>.wqr-bubbles~*{position:relative;z-index:2}
