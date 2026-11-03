@@ -1,0 +1,5185 @@
+{
+  "deploymentId": "dpl_BGo3rGG7u3EbJ7qo49uA5wzm3upJ",
+  "files": [
+    {
+      "path": ".vercelignore",
+      "sha": "65460a850cda36e9c92edec0e7e04de71e55350e",
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "sha": "9785ece30aa0e8be2c4a06bce5ac7aa65995fcd8",
+      "type": "file"
+    },
+    {
+      "path": "REVIEW-README.txt",
+      "sha": "fd76fd9b7f6e97978b212ccfc82f1868c02fb62f",
+      "type": "file"
+    },
+    {
+      "path": "api/pilot-email.js",
+      "sha": "3b6d9aede7005eb9063b34eea6251b1520a0e9f5",
+      "type": "file"
+    },
+    {
+      "path": "api/product-download.js",
+      "sha": "92786bd73c1c94e39d3666c4dcfa3b83a168e65b",
+      "type": "file"
+    },
+    {
+      "path": "api/zoho/_shared.js",
+      "sha": "b2696b4a094b61472403bd1927f7370589516162",
+      "type": "file"
+    },
+    {
+      "path": "api/zoho/_webforms.js",
+      "sha": "d6f2bba92ae4e9064e9b88e45079e2e702ae9cef",
+      "type": "file"
+    },
+    {
+      "path": "api/zoho/engineering-review.js",
+      "sha": "1105502450b5f89e9aa5a9fb3bc4fcce23569793",
+      "type": "file"
+    },
+    {
+      "path": "api/zoho/event.js",
+      "sha": "6312a513bdbf24d306ebcfbfd47c9ee21e534143",
+      "type": "file"
+    },
+    {
+      "path": "api/zoho/intake.js",
+      "sha": "677fc928fd048dccda6f8662683f4c85654bfe14",
+      "type": "file"
+    },
+    {
+      "path": "lib/_webforms.js",
+      "sha": "d6f2bba92ae4e9064e9b88e45079e2e702ae9cef",
+      "type": "file"
+    },
+    {
+      "path": "lib/intake.js",
+      "sha": "baa58b0fd9502e68f9ed4db579d6dc9c60eef457",
+      "type": "file"
+    },
+    {
+      "path": "lib/product-download-webform.js",
+      "sha": "0190e8fe0462d39456c22b7f0cf60a151cc072c5",
+      "type": "file"
+    },
+    {
+      "path": "coming-soon.html",
+      "sha": "13185e0c11a71c9155c1f9fdef6e300099d6f26b",
+      "type": "file"
+    },
+    {
+      "path": "docs/editorial-release-20261021.json",
+      "sha": "27147a68d1349f63a4ad926f15ef7af525dfd65a",
+      "type": "file"
+    },
+    {
+      "path": "docs/editorial-validation-20261021.json",
+      "sha": "4a9e5c4d8ad6ddab1c6dfad453f62f69c934a2b1",
+      "type": "file"
+    },
+    {
+      "path": "docs/graph-readability-review-20261021.json",
+      "sha": "fd1756da1c5ffa96c535f43a96799ae24724c801",
+      "type": "file"
+    },
+    {
+      "path": "docs/hero-cta-manifest.json",
+      "sha": "a631d2110ff2f15bf0d1e0db668649d83b98cc6e",
+      "type": "file"
+    },
+    {
+      "path": "docs/hero-cta-verification.json",
+      "sha": "b8d81fe4c247a1ecdcdf4816cd8e5fba42a45c8a",
+      "type": "file"
+    },
+    {
+      "path": "docs/industry-photo-sources.json",
+      "sha": "ea24275119f4e2ec60be48c4a0c79eea51810174",
+      "type": "file"
+    },
+    {
+      "path": "docs/product-photo-sources.json",
+      "sha": "ba8ac673f49b6446e88959f837ea877e089ead3e",
+      "type": "file"
+    },
+    {
+      "path": "docs/pump-download-manifest.json",
+      "sha": "004181274fbd3db0e77695428c1cfa7c5c5a2cab",
+      "type": "file"
+    },
+    {
+      "path": "docs/source-recovery.json",
+      "sha": "990a69e8fc7524c5ffbf0718cf75a654a12f7cae",
+      "type": "file"
+    },
+    {
+      "path": "docs/zoho-live-verification.json",
+      "sha": "20b03df2a0d457e56098bbc238a4513c92479608",
+      "type": "file"
+    },
+    {
+      "path": "package-lock.json",
+      "sha": "e0d8c2ca1633928e318f918eaed868ec75c6c075",
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "sha": "fedd9e7635d58400e8936d4a984f827b4b5ced29",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/2-2-directional-valve-dimensions.pdf",
+      "sha": "746768cf3dfbabb402d3796ba1a7b85efa607834",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/2-2-pilot-valves-dn25-dimensions.pdf",
+      "sha": "639636f05faab9b87d33450ff3829d3b513ba9aa",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/2-2-pilot-valves-dn9-dimensions.pdf",
+      "sha": "7a4e79539b9403adb29220e74d8332cf12cbd832",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/2-2-pilot-valves-manifold-assembly.pdf",
+      "sha": "83b27f9fd1b9207ea5f95df35e708b067bd33fd0",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/2-2-pilot-valves-performance.pdf",
+      "sha": "cd2a93f07e231e177e58cee34daad7648932f8cf",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/4-2-3-2-directional-control-valves-3-2-dimensions.pdf",
+      "sha": "be33a5d995be6fc11580143bb3b967ddbef5f0dc",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/4-2-3-2-directional-control-valves-4-2-dimensions.pdf",
+      "sha": "6282dd07afd911969f253f357f271b4dafd88903",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/4-2-3-2-directional-control-valves-cetop-dimensions.pdf",
+      "sha": "d3a022082a40515d9bf7d92a731d9959d9329ea2",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/4-2-3-2-directional-control-valves-performance.pdf",
+      "sha": "c1792cde5092c9f60838c3b8a8e5985720a5a9a0",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/4-3-directional-control-valves-cetop-dimensions.pdf",
+      "sha": "3c0474c7db23d3e6d5f7bc19eb3a22fa30c16175",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/4-3-directional-control-valves-performance.pdf",
+      "sha": "98e1573e4f55292868078d95e028ad0e9facea43",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/4-3-directional-control-valves-standard-dimensions.pdf",
+      "sha": "59cc54947cfd9535c4e487837d6ace02b4de4802",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/actuation-cards-din-mounting.pdf",
+      "sha": "842dd26dcebdc3f92c1e57e5618212b0dc3b0574",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/actuation-cards-wiring.pdf",
+      "sha": "409d5141885f06a2731c3e831f8d5e564416ac0e",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/catalogue.json",
+      "sha": "2384e70f55827df98b2d3eb3e959db71b55453c8",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/check-valves-dimensions.pdf",
+      "sha": "492166e2ed02f9ce587ae2740a0589e051e8339b",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/dc-microstep-drive-with-q-programming-st5-q-nn-dimensions.pdf",
+      "sha": "9c8304d466bed983b0039b50298e08c91510b80f",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/dn16-directional-valves-3-2-closed-dimensions.pdf",
+      "sha": "6c8ad82788508afb4dfa65fd48f0bc63d09a6b46",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/dn16-directional-valves-3-2-open-dimensions.pdf",
+      "sha": "d4eda4658594d2d80aa7679e5246ae474cb74b3f",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/dn16-directional-valves-external-pilot-dimensions.pdf",
+      "sha": "9cb40a99bcf9f09b122f120e2dd0d384c6ac435f",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/dn16-directional-valves-integral-pilot-dimensions.pdf",
+      "sha": "76381bb1973be159c0f02f396dc2851c6eff87e3",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/electronic-flow-control-valves-manifold-dimensions.pdf",
+      "sha": "541c15d949384feb4530f3609d7c2d0006008d62",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/electronic-flow-control-valves-performance.pdf",
+      "sha": "cd2e7f697b2e91f704b3b2d777c8a85155dd49a5",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/electronic-flow-control-valves-standard-dimensions.pdf",
+      "sha": "5f4bc69681158ec397ae3a836dfcbb6ec342ffa7",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/electronic-pressure-control-valve-cyclic-pressure.pdf",
+      "sha": "140aab141cad3818a01c06e1f59792bc704b5ea2",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/electronic-pressure-control-valve-dn12-dimensions.pdf",
+      "sha": "0482e33fced8e078426fb6d690fa34eaf3e1bf83",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/electronic-pressure-control-valve-dn6-manifold-dimensions.pdf",
+      "sha": "79cd85f68711e012ff13e28fd8ab5053535adeb8",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/electronic-pressure-control-valve-dn6-standard-dimensions.pdf",
+      "sha": "1f7f032bbfe99098a9076b6be41415a4b6b115fe",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/electronic-pressure-control-valve-pressure-ramp.pdf",
+      "sha": "cdc4458ffad99972415a5d1c6d3fd6fc5842473f",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/flow-control-valve-dimensions.pdf",
+      "sha": "84cc952643e0fa00e546b0336ae433e0c544c78e",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/flow-control-valve-dn3-adjustment.pdf",
+      "sha": "b41141768b46b171c9f1f8c9da045f0ec9f4d7e4",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/flow-control-valve-dn6-adjustment.pdf",
+      "sha": "9c959d0148a40ec52719f21de7483d35c47e9fb8",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/flow-control-valve-free-flow.pdf",
+      "sha": "a3a03149581639a3b6da5c20865fe8460233dfc4",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/hose-burst-valve-dimensions.pdf",
+      "sha": "336a6ff0fdb5b715cbefe9df98edbaafa9b5f5d8",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/hose-burst-valve-performance.pdf",
+      "sha": "5ddb814606f7f8bcb91cdd30aac6c262fb4a7a38",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/logo.svg",
+      "sha": "5599350fb480866d2e5d9a894699ff8ce0421813",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/manifolds-dimensions.pdf",
+      "sha": "06924eb4d0180733a85751e67e761f5e6835c482",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pc1000-assembly.pdf",
+      "sha": "07e1d383c255c135688f164cb50e68fd0ec405fe",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pc1000-dimensions.pdf",
+      "sha": "800aa7f72f7349d4c4db41ff18f53396390a04c9",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pc250-assembly.pdf",
+      "sha": "793d056b41e89b9ac57739f3f7722129ef404a8f",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pc250-dimensions.pdf",
+      "sha": "c249f9283ed1a8e76b25fda4a8d64ca743cf1391",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pc300-assembly.pdf",
+      "sha": "7ec819d812915ae46a4527a6485107b379ad70a5",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pc300-dimensions.pdf",
+      "sha": "ff88dfa6f8dd6ef24c912fa72ea2b6a2e9e2a49b",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pc500-assembly.pdf",
+      "sha": "4eb96d4d18bba2cc519a4cc4ad7719f6d51b6525",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pc500-dimensions.pdf",
+      "sha": "0cf40770969563de5705c6220623c1a73b2160a2",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/po-check-valve-dn12-dimensions.pdf",
+      "sha": "a468156ab4550d63631661ec26df94617ec5df9c",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/po-check-valve-dn12-performance.pdf",
+      "sha": "1aba1e28c94ea5856e182d9207834edd6cd3b218",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/po-check-valve-dn6-double-check-dimensions.pdf",
+      "sha": "f90dafa6ae8cea9ee8f5dd7d141faafd2ef36f4e",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/po-check-valve-dn6-performance.pdf",
+      "sha": "c483f038092688d2ebaf497d8396e292f6266ac9",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/po-check-valve-dn6-single-check-dimensions.pdf",
+      "sha": "aa1e4a8a56247d74703d2600d1cb29fc70e0834f",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pressure-compensating-flow-control-valve-dn3-dimensions.pdf",
+      "sha": "ff0b85254a9976c64682c3eb348d698316a1d958",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pressure-compensating-flow-control-valve-dn6-dimensions.pdf",
+      "sha": "229d033b1d784cd11fe8e66b392b7fe6442ffe7e",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pressure-compensating-flow-control-valve-performance.pdf",
+      "sha": "f5d30fb4acd336c5a8bd09ae81c933b164f6256f",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pressure-reducing-valves-dimensions.pdf",
+      "sha": "60dfb4ba8c70bc640f24f68b83fb3ec2c87c39f6",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pressure-reducing-valves-performance.pdf",
+      "sha": "7fa189eae7382c2b50bf0e97e85146b651cb7ca8",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-axial-piston-fire-pumps.pdf",
+      "sha": "e3232ff936745a6e545b9e8e1abc7599f5cee0f5",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-axial-piston-pumps-p15.pdf",
+      "sha": "789dceaa4282717c99602d43c66e6a33291f66a3",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-axial-piston-pumps-p180.pdf",
+      "sha": "7cb7e7b67ccba08121710a808a2e3834fb4480be",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-axial-piston-pumps-p3.pdf",
+      "sha": "fa57c51d860de4eb1afdc513e1dd59024c232fe9",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-axial-piston-pumps-p30.pdf",
+      "sha": "0d7e1945e1b7adde1cf9a3eea5298e5cf0489343",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-axial-piston-pumps-p6.pdf",
+      "sha": "20b9024f47d5768e07f59c9912496c23db86d667",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-axial-piston-pumps-p60.pdf",
+      "sha": "5b373c98f50495681d6a552ae4ea12b593a1c81e",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-axial-piston-pumps.pdf",
+      "sha": "9227ee8bedfd36fbe73d2dad77a823d0a6dc8576",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-duplex-seawater-pumps.pdf",
+      "sha": "0ffb113654c62478dee60e7f5719a3ab8246879c",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-p1-pump.pdf",
+      "sha": "4436ca451bd7d1a18d9752f236feb410f76d8b2a",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-power-centre-reverse-osmosis-pc1000.pdf",
+      "sha": "958c6ffa52ba2fd20830428248c6f6c4aba38c46",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-power-centre-reverse-osmosis-pc250.pdf",
+      "sha": "d0f35ce52e5d4e0e9dcff68c98d0d4545d426605",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-power-centre-reverse-osmosis-pc300.pdf",
+      "sha": "82c0bab72c2c2886a2a9d3cc9b119330a66fc9b1",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-power-centre-reverse-osmosis-pc500.pdf",
+      "sha": "d739721bf96b9b8ecfcded5967ff4537b438a378",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-power-centre-reverse-osmosis.pdf",
+      "sha": "677d496b09db293852503c5ed7b85d97aeffb097",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-r2-modular-desalination-packages.pdf",
+      "sha": "292a6f78592df4a09223072d02adca2cacf12f47",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-cylinders-cylinder-100x60.pdf",
+      "sha": "3b4ff4da71e2ae5b080d3b5c5151914fb7444fd8",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-cylinders-cylinder-100x80.pdf",
+      "sha": "a9c19a32ed19a16b9182cd9ee25461dd9a7865fa",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-cylinders-cylinder-125x80.pdf",
+      "sha": "7bb1aba8081caf83a8840bafe3afb40bc47a74a8",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-cylinders-cylinder-32x16.pdf",
+      "sha": "f5ea7fa1a7976d95408fbed76b9a4cf9e26769f7",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-cylinders-cylinder-32x20.pdf",
+      "sha": "1f611431077146779ce0054826299029175a85fa",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-cylinders-cylinder-40x25.pdf",
+      "sha": "51964d36a562d3ce37d7a0bed1579e19c87417bb",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-cylinders-cylinder-50x25.pdf",
+      "sha": "657bc2a676afecfb17c08c7f83369e56044ca4ae",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-cylinders-cylinder-50x30.pdf",
+      "sha": "06e69a8c190474fc1ca502f36830cde15fadb3c2",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-cylinders-cylinder-64x30.pdf",
+      "sha": "bf8045bcd803f734dd945c5a5c4d8b5274007817",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-cylinders-cylinder-64x40.pdf",
+      "sha": "4d4bce55f8ecfdda8cdf48bd13122fed8aca95e3",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-cylinders-cylinder-80x50.pdf",
+      "sha": "f319a6558048d91fc69cf091fbd67a8e18b49ef8",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-cylinders.pdf",
+      "sha": "2d684f3c64e950b0b0c6ba04a25e58cecb344548",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-motors-m15-water-hydraulic-motor.pdf",
+      "sha": "8dd7da15940e9ff94a2cba0e05909cd791d51b03",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-motors-m180-axial-piston-water-hydraulic-motor.pdf",
+      "sha": "065574800fab43901746cfd86a5605803dd5f5ee",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-motors-m3-water-hydraulic-motor.pdf",
+      "sha": "7cf06c0fc03c81e59f79cd1ac2a430f3cae3cc52",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-motors-m30-water-hydraulic-motor.pdf",
+      "sha": "39965f26f9b104d8e57707cfb088d9f36cae2a4b",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-motors-m6-water-hydraulic-motor.pdf",
+      "sha": "68cce03fb33f9869003b2fd624dc48d173f5d06c",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-motors-m60-axial-piston-water-hydraulic-motor.pdf",
+      "sha": "865b6e317a5147422dd096ba7d0044cc3f642442",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-motors.pdf",
+      "sha": "0d745132b3c68ce6f6fd9da109caba94395aa928",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-2-2-directional-valve.pdf",
+      "sha": "cb2ae6a04b8c16d92a48c3a0a4a167896327cb2d",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-2-2-pilot-valves.pdf",
+      "sha": "647dd1d27b9d6c6cd2aed222236c118e99247eea",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-4-2-3-2-directional-control-valves.pdf",
+      "sha": "56919da8961a8c912091fa0e7e4b8dc4d66944ce",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-4-3-directional-control-valves.pdf",
+      "sha": "e603fafd57108313ecb25fcb4e11bb53bae46e33",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-actuation-cards.pdf",
+      "sha": "56c8e7c9175cd8c566bf3cc86bdf17532b9107ff",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-check-valves.pdf",
+      "sha": "527d6ef9d9a222bdc8742e089a4840c6e0f8e71f",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-dc-microstep-drive-with-q-programming-st5-q-nn.pdf",
+      "sha": "3647cefa80e0d10b105ac9f47b34dc62a19ecf94",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-dn16-directional-valves.pdf",
+      "sha": "0fc32c4ce1800406e2d66142e1f538e973eb951c",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-electronic-flow-control-valves.pdf",
+      "sha": "f48a1e909f7198f4d0cbf07b5ae075355ab48996",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-electronic-pressure-control-valve.pdf",
+      "sha": "5c325fb02a1560926f45d5a5d881a64a407d4d4b",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-flow-control-valve.pdf",
+      "sha": "6668bdceeacd5fd2befb4483b3a3e7377a1380c5",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-hose-burst-valve.pdf",
+      "sha": "9818661ac33e4b64a89e330ba24614a7e538f09a",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-manifolds.pdf",
+      "sha": "1992df35bf6341690b490ba89bca7216c415707c",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-po-check-valve-dn12.pdf",
+      "sha": "e2790b6785307fa3b32c47b40b225f2dfa174463",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-po-check-valve-dn6.pdf",
+      "sha": "a691e8510c4fa0999affb6d018db5466b6c8e585",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-pressure-compensating-flow-control-valve.pdf",
+      "sha": "5a9a4c2fe87d128cf835a58c3eb20234c61021c8",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-pressure-reducing-valves.pdf",
+      "sha": "fdae71224b3d1e1efeb5b58dc0c5c0f5d0a8197e",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-relief-valves.pdf",
+      "sha": "cda4e03966f566e2ab808e8e614635c36f70f08e",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-valve-ordering-code.pdf",
+      "sha": "07f1f5126b3c889e2b45ef6434044a10253a7871",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves-zone-valves.pdf",
+      "sha": "b427edb3468fa8577c434d1e0a08102f6d773b90",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulic-valves.pdf",
+      "sha": "6db4d1ac391a802e834a188bc26b09f7fa8a4f4b",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WQS-water-hydraulics-hpu.pdf",
+      "sha": "e48ea3f907e7e55423490c82e418d2bdcab195ba",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/product-literature/WaterQuest-Solutions-Product-Literature.zip",
+      "sha": "ab9dad0258b4af55c17b12d46e52906fb4150c87",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pumps/WQS-pump-p15.pdf",
+      "sha": "789dceaa4282717c99602d43c66e6a33291f66a3",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pumps/WQS-pump-p180.pdf",
+      "sha": "7cb7e7b67ccba08121710a808a2e3834fb4480be",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pumps/WQS-pump-p3.pdf",
+      "sha": "fa57c51d860de4eb1afdc513e1dd59024c232fe9",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pumps/WQS-pump-p30.pdf",
+      "sha": "0d7e1945e1b7adde1cf9a3eea5298e5cf0489343",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pumps/WQS-pump-p6.pdf",
+      "sha": "20b9024f47d5768e07f59c9912496c23db86d667",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pumps/WQS-pump-p60.pdf",
+      "sha": "5b373c98f50495681d6a552ae4ea12b593a1c81e",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pumps/WQS-pump-p1.pdf",
+      "sha": "4436ca451bd7d1a18d9752f236feb410f76d8b2a",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/pumps/WaterQuest-Pump-Data-Sheets.zip",
+      "sha": "3d5eeccb1587a154e8960a24d407863e67376aaf",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/relief-valves-dn12-dimensions.pdf",
+      "sha": "9671823bdba60cb1f112aa0e7ab4646a0deb75bd",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/relief-valves-dn16-dimensions.pdf",
+      "sha": "a49e69e3af81d9d548675381a828474e92ad29aa",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/relief-valves-dn6-dimensions.pdf",
+      "sha": "b50fcd7d580f7454cd5ce436badd604a89a93265",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/relief-valves-performance.pdf",
+      "sha": "2549d7e3db2f45fd2f65e857e7bdd10fceae481b",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/sluice-gate-assembly-details-a1-5.pdf",
+      "sha": "206540728f868f50c533035162ada29b2dab7652",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/sluice-gate-hydraulic-schematic.pdf",
+      "sha": "1ab90897872d4ad080225efb6e76100dea3353cf",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/sluice-gate-main-assembly-a1-4.pdf",
+      "sha": "95af30950560a52014f05d78af2d92b1199a3322",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/zone-valves-performance.pdf",
+      "sha": "16cdd606438f4721a9adf5356c4b1a212210fe84",
+      "type": "file"
+    },
+    {
+      "path": "private-downloads/zone-valves-pilot-assembly.pdf",
+      "sha": "55019bb50cabfcfe78964e59ebd407443c8c212a",
+      "type": "file"
+    },
+    {
+      "path": "public/about/index.html",
+      "sha": "532599b9fd39700de6665a03c485d28b78dff77c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/bilge-valve-drawing.png",
+      "sha": "9f8a486831f1b9c722f16d7d07fc82853607547a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/briefs/pdf.js",
+      "sha": "991ee8e107fc68f3af8d6e9c4cb423ca9b413e4a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculator-collection/site-header-footer.css",
+      "sha": "948cb3b7da59e5efc8831c8c6b8e671749728afa",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculator-collection/site-header-footer.js",
+      "sha": "1d694efe30c6bf59ef6490c155fe48d96f98ab6c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculator-collection/wq-component-standards.css",
+      "sha": "8084027f3efe40203b664293985a00518cfb145b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculator-collection/wq-global.css",
+      "sha": "7bd685ddb3a6133a2bfcda50eee5f5c236f86556",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculator-collection/wq.js",
+      "sha": "4c112940acf80868a89ddbba4443cea6f557cf54",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/wq.js",
+      "sha": "4c112940acf80868a89ddbba4443cea6f557cf54",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/assembly.png",
+      "sha": "4ab43afa97bc1aa95b54165d0d787b544501bb32",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/circuit-reference.png",
+      "sha": "9ed6c35915638051904909dabb86417f49925986",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/dimensions.png",
+      "sha": "db37f72632a6a440ad58ab96c47863a5926a89b8",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/energy-recovery-mobile.svg",
+      "sha": "d6046b8b14279dc763313660802e7dbec62fa0f2",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/energy-recovery.svg",
+      "sha": "1f81b6dfa5f975f7f23366928beaee8e770f1b92",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/flow-day-readable.svg",
+      "sha": "f62d46eeaed94e28730a2b1b5196a8a924158e8e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/flow-day.png",
+      "sha": "5954d4babf8e62578bfc4c1852e17f771a3b1952",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/flow-hour-readable.svg",
+      "sha": "91014fc7494656af4c81842a2813a2909b342fc2",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/flow-hour.png",
+      "sha": "9846b59c18a417613d8b2eeca1897991d758e761",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/input-power-readable.svg",
+      "sha": "a68ef24167f74e6e24de8c2284a580d6f5a5aeed",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/input-power.png",
+      "sha": "31d82ee8494cc0067d0dd37fa35e1feb1c50ce22",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/product.webp",
+      "sha": "1977bdf76a10cd6c9ecf3f172e15bb8db245d091",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/production-day-readable.svg",
+      "sha": "c4306c213334f1c0294e434f6a27bf6158a24f07",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/production-day.png",
+      "sha": "359d11f197dff16dd0ac9cd97f9bd582574d412c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/production-hour-readable.svg",
+      "sha": "66c5febe116b696cdd1a9682de6417470e5fd427",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/production-hour.png",
+      "sha": "9e7e8564a949b472e7dee43998542f18b2861605",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/specific-energy-readable.svg",
+      "sha": "1916bb9efe9caa6688ba41bbd9e4605bfcacdb19",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc1000/specific-energy.png",
+      "sha": "8f1d8c854f4d1011a30734e236cc947ff6bc4a31",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/assembly.png",
+      "sha": "f095ea8cc3df3409da87ace638b728b10197ff6b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/circuit-reference.png",
+      "sha": "c5db6325bf932c93fc26b914d488eedd3fd41404",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/dimensions.png",
+      "sha": "2607f57415738e48ac7ed5e2489d8d2440aada68",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/energy-recovery-mobile.svg",
+      "sha": "bc496747acb468468fa38c4484af771c35bdf72e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/energy-recovery.svg",
+      "sha": "fca7ded8836fe6dc7e37971d6b567ece52138736",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/flow-day-readable.svg",
+      "sha": "fa16f2b7cf4cb300c1c831b4bbb87264bc104b0a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/flow-day.png",
+      "sha": "f0a4c7060e5de3d2d2e888e01fa6d6e4b1700a91",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/flow-hour-readable.svg",
+      "sha": "c2c159047a1487eeddf69199a748e94d3dbeaee9",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/flow-hour.png",
+      "sha": "24b17f2551f3bf8fd467adab3384bb5fbf6148ec",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/input-power-readable.svg",
+      "sha": "edb06f30ab0075f40d846e4f4fd9ba168004d18d",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/input-power.png",
+      "sha": "9f6450ae432d7a42a0d4d986d66ca8628dc9916c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/product.webp",
+      "sha": "11e10ec43adc44db5177d8b1f4a4ecbcc06fb095",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/production-day-readable.svg",
+      "sha": "8b17ef7a693cd0c896843254ec7cf25ab22ac01b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/production-day.png",
+      "sha": "ea29f4792159958a9113cc9fc1fbf5afcd1624f9",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/production-hour-readable.svg",
+      "sha": "2b375aee607dda513c6ea2974ad835d123334282",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/production-hour.png",
+      "sha": "6cd039430ae4e63ab93f278048490a6498c8b32b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/specific-energy-readable.svg",
+      "sha": "d34ab948a8a4f566a6bcaa4771d4715485abc6f2",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc250/specific-energy.png",
+      "sha": "f40a4635c28f7ea810330f92bb8b63b1327e90d0",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/circuit-reference.png",
+      "sha": "c5db6325bf932c93fc26b914d488eedd3fd41404",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/dimensions.png",
+      "sha": "2607f57415738e48ac7ed5e2489d8d2440aada68",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/assembly.png",
+      "sha": "ee8cf705aaf83d2aa437d8acc6990b5bc5a6d89e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/energy-recovery-mobile.svg",
+      "sha": "1bdce7941603a869a4b9ed8bb68440fc4df2db34",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/energy-recovery.svg",
+      "sha": "b02050c649d6ce0dbe6583198f5f0d7f8e786831",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/flow-day-readable.svg",
+      "sha": "36277e68193a0bfbf20cddd57d77f0066755b161",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/flow-day.png",
+      "sha": "8b512e5b5cc332fd28ff18e4482c5d7d0c68098c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/flow-hour-readable.svg",
+      "sha": "dafee2edb4f2f00d0ce34caf050b865a4540eb92",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/flow-hour.png",
+      "sha": "63e4e3f76dc825b2d65809dc1b2def49c0678350",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/input-power-readable.svg",
+      "sha": "b1a1f105041bbbee20e4c8815b130b92890ea779",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/input-power.png",
+      "sha": "e3e23098d0253b5309d09017f06631ec76698112",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/product.webp",
+      "sha": "28e08575a2f05d0809ed3393aa9798d42fdd9139",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/production-day-readable.svg",
+      "sha": "1b926dc1342d8096f75321a19619495c8b364a7f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/production-day.png",
+      "sha": "4df0712dc548da462773fa5874a6a2211b50ddc2",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/production-hour-readable.svg",
+      "sha": "396e8e5689453c9c3694ee119f1a560ae0b3e51f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/production-hour.png",
+      "sha": "69dba37ced80b79c7a5f604335645c982be56e6b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/specific-energy-readable.svg",
+      "sha": "6d95cec3315ac904d4c0383448bff07c008780ab",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc300/specific-energy.png",
+      "sha": "bab6dea9e54c23ea6c538b32c7ad71a727de92b8",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/circuit-reference.png",
+      "sha": "c5db6325bf932c93fc26b914d488eedd3fd41404",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/assembly.png",
+      "sha": "cba819a51f1e7d4ec76e10c1a5ed8237f4882f1f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/dimensions.png",
+      "sha": "e9d8486bf8a9082ff7d123bf6c40765a8ee4aec0",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/energy-recovery-mobile.svg",
+      "sha": "d71c98e6323cf7f5d15ba1908b3f721e61d53388",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/energy-recovery.svg",
+      "sha": "a5cc1c55ddf918be632b45f9537a727bc96ef904",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/flow-day-readable.svg",
+      "sha": "6bb2b806a23e347ea264c734a77270d3c593de1c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/flow-day.png",
+      "sha": "b6670c8e6717a422c76c69a98ec278180997e252",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/flow-hour-readable.svg",
+      "sha": "dcd8284410a0a9b9550dcbc8bc713417d63d1423",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/flow-hour.png",
+      "sha": "1e49405349300815fd149eb8fb3ed5281dab5a97",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/input-power-readable.svg",
+      "sha": "0968bf2930805049032d8f6359e292b7b414dca1",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/input-power.png",
+      "sha": "41e63f538da793261b4d01b1d04f808a4170e20f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/product.webp",
+      "sha": "041f8eb1e8f34648d080cb55e3eb04b062b5cb2d",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/production-day-readable.svg",
+      "sha": "94f1841bfe31ee9d2e8e632e5dd3e1b605de893e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/production-day.png",
+      "sha": "51411d82ac0bfab68bde81dee772d2783485d8f0",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/production-hour-readable.svg",
+      "sha": "e4dfabbe0bcdc7b23f0e4d786dacba25980e74d4",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/production-hour.png",
+      "sha": "f83056d44eaef6dae6fdd1980eb9c29b59514e1f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/specific-energy-readable.svg",
+      "sha": "f1e89ca654cc530c0feb91a4fa97d9323d83e5c0",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pc500/specific-energy.png",
+      "sha": "f9464c7764aa506de47496f1f857fa1c425017d2",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/power-centres.css",
+      "sha": "fcba5330e96d73a01f7e94c39fd09a13c4dd36c7",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/power-centres.js",
+      "sha": "abe89902966a0d594af9da7a82bae086ac136ac9",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pump-template-hero.png",
+      "sha": "7389a25c524302cacbbb4bfebb990e6af8d40fb6",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/pump-template.css",
+      "sha": "761410b5b750f57b47af142bd1d392e1ea5b9f12",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/waterquest-mark.svg",
+      "sha": "42244a07fdb3be780133e8d2b7c9dff5931f023f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/power-centres/wq-global.css",
+      "sha": "e443deca6299dc327c15c271b895f4f366511302",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/brand.js",
+      "sha": "b1c36b903ec4c98b24725546b8412624f4e6b34d",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/definitions.js",
+      "sha": "f99ad706c71c60cac389d03c75072dba384d57dc",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/display.js",
+      "sha": "1a1415fb02795d8c3b076997fbe11760db001172",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/engine.js",
+      "sha": "5f1ac61ad893b153e7269adacf12b387ed7e2134",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/report.js",
+      "sha": "8bf4ef9968d61e2af957e9fc9c9f634ad01471ec",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/styles.css",
+      "sha": "9b7c17804905c7f78c3ebdf9ed64e047d66a840f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/ui.js",
+      "sha": "1b737b2875b1c24261da70d1ddfbe8bb500d0a7f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/vendor/DejaVu-LICENSE",
+      "sha": "2cba132501cc69b943061ac075153ad475c7e72a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/vendor/DejaVuSans.ttf",
+      "sha": "bbf4ffb55ff0245a88e185353c010a4edaca80ea",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/vendor/NOTICE.txt",
+      "sha": "799c8f8aa612359b8ec9c9836db3dd07debfbdab",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/vendor/fontkit-README.md",
+      "sha": "2ddf8e8350eb212a21754c4637475eae205ee44f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/vendor/fontkit-package.json",
+      "sha": "b3c96af8fdd442fa0968a49b9c8d8a848bc32696",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/vendor/fontkit.umd.min.js",
+      "sha": "9f935239477b9b183191b38b099c6967292cadde",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/vendor/pdf-lib-LICENSE.md",
+      "sha": "5fb59d0a562bb91891e87212ffec88e9759059c7",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/vendor/pdf-lib.min.js",
+      "sha": "0fe9d5550429eb0e28f6ae56d672972d2911fb58",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/calculators-v2/waterquest-report-logo.png",
+      "sha": "7a222ec5346ae65b68ccc9e4cf54242fb2008f83",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/droplet-size-guide.png",
+      "sha": "05b074fcb442b3c0c2d03000a5721f7710aa6395",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/editorial/editorial-review.css",
+      "sha": "b9750336bcd6df451ac144375ee6052d7ee0e121",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/editorial/fire/data-centre-fire.webp",
+      "sha": "ba045fe2c75be0698d74855c5a407898f53a7757",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/editorial/fire/data-centre-normal.webp",
+      "sha": "9bfc271b1d80377ca6506562bf82ef6c40289f4f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/editorial/fire/data-centre-suppressed.webp",
+      "sha": "1481e3bb255f335fc9c5aaeecc95d16268edca54",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/editorial/fire/fire-suppression.css",
+      "sha": "cd9beb1b3e27bf324ea14be45045737b084c57cc",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/editorial/hub-editorial-20261021.css",
+      "sha": "418d08b7ac8c27542e3e6d0b3a26797c004b5894",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/editorial/knowledge-research.css",
+      "sha": "aaf2d70a450dac716bedebf62c439390cd0b8995",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/editorial/marine-water-actuation-concept.webp",
+      "sha": "3195c3f4dcd2aca1122a6975a042e3d23b7a1160",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/editorial/mobile-polish.css",
+      "sha": "f2517dd4f62174dc27d2fdc6cb1c86ed38b7bef7",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/editorial/mobile-polish.js",
+      "sha": "b7b008a8fb96ca8ba2c0f2f57cfd811a34f7fbfb",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/editorial/municipal-water-gate-concept.webp",
+      "sha": "51330c278840ec9f314d1dcd843c0a73805c82d3",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/engineering-review/schema.js",
+      "sha": "ee58b7d8caa62e39dbdf3b7911ff4c81e9a22672",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/engineering-review/styles.css",
+      "sha": "4af3ce7a96ffe9f59200cc64e1decae5f9564a3f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/engineering-review/ui.js",
+      "sha": "45e3b0076bfa8c8fcf2c464d1e3448627250da10",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fire-illustration-notes.txt",
+      "sha": "4ccf8a8e2ab31629d37787554e391faf702afa6a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fire-triangle.png",
+      "sha": "ee3b4026d359f335f1e4239899b62bd8344bc106",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/avenir-next-bold.woff2",
+      "sha": "443bd92086ab4840a9f89a887e02b22d0191dca9",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/avenir-next-heavy.woff2",
+      "sha": "c24dd4519b31c6cc1c501b0d41e769374edf812d",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/montserrat-OFL.txt",
+      "sha": "c6e5a0782514a498ac406c73aee2c0fe4170188b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/montserrat-latin-ext.woff2",
+      "sha": "5c3bebb23721b7b4a27a741d83a290b50eccbed4",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/montserrat-latin.woff2",
+      "sha": "ae5da15d6686e876f61d4b94af769f22e65c06d5",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/nunito-reference-1.woff2",
+      "sha": "d802e467f76c8c3684050394f86f8c1297ed9f62",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/nunito-reference-10.woff2",
+      "sha": "3b1ad7f54cc6787e58e2041305185d1ba26c0657",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/nunito-reference-2.woff2",
+      "sha": "13edb1d5bd16e3d45e2076d42d28c9a80de46b9e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/nunito-reference-3.woff2",
+      "sha": "7196dcdd322f74a95cdcdf2eccc2e4597724327c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/nunito-reference-4.woff2",
+      "sha": "45101a529c32a56c0bf287e8adc3e67afcb15c0c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/nunito-reference-5.woff2",
+      "sha": "33966bf24772d4247698dfe3b217d0833dde83ec",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/nunito-reference-6.woff2",
+      "sha": "21fc535b506b0d925982151e9d277cbcd2bcec4c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/nunito-reference-7.woff2",
+      "sha": "a570e4627b4faa194ba9b87ea906ba65cdd4a544",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/nunito-reference-8.woff2",
+      "sha": "dba2ee9cd49d4e88b14b0ce984009ca001a6b26b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/nunito-reference-9.woff2",
+      "sha": "4e8069a31fa21cecd4bf90f33f8c6ea666fd1ceb",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/nunito-reference.css",
+      "sha": "8cbc9ab46ec48c4530ffc6659472f1e1dd5d61c6",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/nunito-sans-500.ttf",
+      "sha": "c63140c256e459657f79bcc2878bd015d6431f26",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/nunito-sans-800.ttf",
+      "sha": "b8a1cd6d75c5324edb5f990fa9beab2e1eb4d653",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/nunito-sans-OFL.txt",
+      "sha": "6213b4946b3fb7c797a6f4a8c37b061572d236fe",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/roboto-OFL.txt",
+      "sha": "8bb4fe6d98df62b3a8d082c438b393d961ca94a6",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/roboto-latin-ext.woff2",
+      "sha": "6a5e89b2f9b47f5a2fb11831479c02b4eebe3089",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/fonts/roboto-latin.woff2",
+      "sha": "41ca6b7e4818eb81531d8006ff7ddd971c640879",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/gateway-p3-source.jpg",
+      "sha": "2079cffd64d031b95bb89f0347f6b96a6d8ee51b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/gateway.css",
+      "sha": "d250f4383d43b06a2bade40f948c27fc7a85a587",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/gateway.js",
+      "sha": "12915ac439868fd13747bc3519d2517f4eeddf8a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/halo/halo-botanical.webp",
+      "sha": "57bee1626cdda2139807876db5fa49df55a414b9",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/halo/halo-brochure-cover.webp",
+      "sha": "e90fa09053ae36be4c0cfad951834097ed96e3a3",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/halo/halo-brochure-page.css",
+      "sha": "05df4939224826419cac26d122bd1aef8aac01b9",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/img/applications/sluice-gates/nafford-sluice-maintenance-access.jpg",
+      "sha": "13175d45c03412f3582e05629c6ee0193b05d397",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/img/applications/sluice-gates/sluice-gate-actuator-layout.svg",
+      "sha": "ee0dfcbc2254a3211b2c9e15b748810768852dda",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/img/applications/sluice-gates/sluice-gate-assembly-details-a1-5.pdf",
+      "sha": "83beb7a693868fdb9e65cd8f03c94b38153365e1",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/img/applications/sluice-gates/sluice-gate-assembly-details-a1-5.png",
+      "sha": "da5c8b942ef293c4f960bd7990963b655e2027c4",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/img/applications/sluice-gates/sluice-gate-control-schematic.svg",
+      "sha": "55575554151f4e1ae4e9929e1a298f23980df572",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/img/applications/sluice-gates/sluice-gate-force-path.svg",
+      "sha": "d4234c1fa382bd5e09a33883cfba33c31aa0c13b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/img/applications/sluice-gates/sluice-gate-hydraulic-schematic.pdf",
+      "sha": "92d5b8b0f5fb7ca7c7a801641cfae78e02b0ca84",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/img/applications/sluice-gates/sluice-gate-hydraulic-schematic.png",
+      "sha": "a3ef318961dafe0d60af9c614369df2599a48d68",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/img/applications/sluice-gates/sluice-gate-main-assembly-a1-4.pdf",
+      "sha": "628a5d3a075b322417369763a7835bd7f5a31c0c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/img/applications/sluice-gates/sluice-gate-main-assembly-a1-4.png",
+      "sha": "ad2ea42ebf4f26c00e93eec7a3466be1a3bd0d42",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/img/applications/sluice-gates/sluice-gate-maintenance-map.svg",
+      "sha": "6579d5997bc1b1ee5b2b6aa0e9a423ed8cc1aed8",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/img/applications/sluice-gates/sluice-gate-project-drawings.svg",
+      "sha": "c4cb09178dfae01e5f55d625cab798da821eab82",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/img/applications/sluice-gates/sluice-gate-workshop-operation.jpg",
+      "sha": "28f4b358111641810c3682bb74f0704d66653e94",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/img/applications/sluice-gates/sluice-gate-workshop-operation.mp4",
+      "sha": "a15f8dae869f38e1b29a9609020a4aef37c7f512",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/agriculture-concept.webp",
+      "sha": "34ce280383c0770620b04d2ebb92458ab75ab281",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/agriculture-system-mobile.svg",
+      "sha": "7098b85833f85fea4a8f70df5e213375e185b207",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/agriculture-system.svg",
+      "sha": "19942887a6b48d43b54878698d80d37901fa638c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/desalination-concept.webp",
+      "sha": "29a4577d7f306b7ba46d36bbadb1514ef25188f0",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/desalination-system-mobile.svg",
+      "sha": "d654127ebc6e25fcd777f6bdccd3d94db36a878e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/desalination-system.svg",
+      "sha": "7c650a6f16da338d85c3e4450a036ba8daab4d5b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/dust-concept.webp",
+      "sha": "e00ce71731ee3cce86a1edd12a4eb0973485c704",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/dust-system-mobile.svg",
+      "sha": "ede1abb419bd3bc12e323ba3eead14dd2052cd12",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/dust-system.svg",
+      "sha": "b79bbf40c91e9723857b86c8475786e9412c2050",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/food-concept.webp",
+      "sha": "32347825cfe4db38da52935520c16f678220dc66",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/food-system-mobile.svg",
+      "sha": "cc815476f3e116723e76ea0ee3c579a84339336e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/food-system.svg",
+      "sha": "c0448b89ca4f502c72e429b91315f0bbb4b17e07",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/forestry-concept.webp",
+      "sha": "b09467c73c293467e7a2db37c957c73ea2294dc2",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/forestry-system-mobile.svg",
+      "sha": "263aaa86a7f27d5e9edb95bc264a93ea95beae72",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/forestry-system.svg",
+      "sha": "0686f4de71245f708c666648d9574c46b8d7e2f7",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/hydro-concept.webp",
+      "sha": "6ab0785ff017616e08359d5ca290cb87356df112",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/hydro-system-mobile.svg",
+      "sha": "93fcc48f0362d79db4477a1bb144263136682a14",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/hydro-system.svg",
+      "sha": "4c4701b80b19b3d403dfa983d8115c3083f9494d",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/hydrogen-concept.webp",
+      "sha": "9c17b0644fcf934e0eecb94b2436b9e6bd45d23d",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/hydrogen-system-mobile.svg",
+      "sha": "5b0c677deca7411fc8b266070d7b105b6b3ef112",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/hydrogen-system.svg",
+      "sha": "ff0f4edf555505a1d9356263bad38a1de9333b1e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/industry-guides.css",
+      "sha": "23b4ecb9827ace71fb27701ac721f87d5996fb48",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/industry-guides.js",
+      "sha": "a54c04be3ceaf6aacf3dbbf9d11d7c488fa759ca",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/marine-concept.webp",
+      "sha": "9a0f399f867a118b71b10f34c63a35e5e5ccbe98",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/marine-system-mobile.svg",
+      "sha": "be1ba355b1daf2715e80a9544654cad64f1305b0",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/marine-system.svg",
+      "sha": "a3cc02d00f79b3ac5a560f04bb3600617dca79d9",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/mining-concept.webp",
+      "sha": "58743c3235d5b44e9becd5df49ef92804cab2186",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/mining-system-mobile.svg",
+      "sha": "af654fd2cd63deb77790912102799984e5029fac",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/mining-system.svg",
+      "sha": "d0211ba52711d6ca9fa99d85c71abbc9a0734c8f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/modular-concept.webp",
+      "sha": "8ef104100d09682c5a944dc5b9f182e439c97d48",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/modular-system-mobile.svg",
+      "sha": "4aea4ad9a9e186e1a77a29d78e31a269a21a2964",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/modular-system.svg",
+      "sha": "6b439b53d0802b1e74ad025f683cd7cf671d1921",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/municipal-concept.webp",
+      "sha": "5f9a0d9ded58668cdeeb66c1bad057ef74261ff2",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/municipal-system-mobile.svg",
+      "sha": "b995d219527c1f7d93f4096bbb399fef5b83c4d1",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/municipal-system.svg",
+      "sha": "0f66fa52e63d0c38295688425dc3b520df92b8e0",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/odour-concept.webp",
+      "sha": "1033e1fc2878f2313ad69b0e9857737916d9beab",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/odour-system-mobile.svg",
+      "sha": "0843adb2b633b5f37895bb8c1971b1ae944cd7a1",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/odour-system.svg",
+      "sha": "cfc89344b29f5dbf7f6425677a17ad86de37704e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/pulp-concept.webp",
+      "sha": "f1a090d5a4b42d2141fa1e6216e64153b143d179",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/pulp-system-mobile.svg",
+      "sha": "d795de20616cdec3ea83ebe476b71b4e2adfce22",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/pulp-system.svg",
+      "sha": "5cfa3b1c22b4ab9ce3b1fe484a237575741183a9",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/wastewater-concept.webp",
+      "sha": "1dd75ffcd28b6ea60a5e81fff404abd1db4b8c25",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/wastewater-system-mobile.svg",
+      "sha": "e650c7fcb5ac51aacfefb82e0a73eb7243ff3db0",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/wastewater-system.svg",
+      "sha": "d7ece657496307ca0c4195b0f48a4a0acbe2d85b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/waterparks-concept.webp",
+      "sha": "dd1be3a0cc6c60062650cc0e8f21d7cdd9d399cb",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/waterparks-system-mobile.svg",
+      "sha": "5d10ae63eb7727f262d0a60de6b560b4ac6316b8",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industries-20261008/waterparks-system.svg",
+      "sha": "c8453f6e1027eaef4de4471c81e4b652c589b97d",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/agriculture.webp",
+      "sha": "fc85c2fb5806b259e3ea8ddaa6fd51b46ca7ecc3",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/datacentre.webp",
+      "sha": "4fafbfe22498fbff35563669c43d546c0b86656b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/desalination.webp",
+      "sha": "9ab4d43bd5e673136048ffbcd5273e9d64b0834e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/dust.webp",
+      "sha": "970adf16e3439d2121c697ba8832a4838b22cf6a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/fire.webp",
+      "sha": "59502f87dca3757962e03b9a120efe4c2dc8d7ab",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/fog-fire-suppression.jpg",
+      "sha": "4e7a4f451c8e6da4837dffeedd15a5eddf00b8ba",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/food.webp",
+      "sha": "a8321fa91482e51968d5a1fece9586daa4affd64",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/forestry.webp",
+      "sha": "57ab0a6926805150113ea2a573373d7c2a24c570",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/hydro.webp",
+      "sha": "bae6ba12787d8ce3acafa52707674d1cc3256fac",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/hydrogen.webp",
+      "sha": "fd6641d0afadecee9a4b996c90729bb40d7cf9fd",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/marine.webp",
+      "sha": "0ee94da3b80e98936bf4a3fe5e178dc147b8fecd",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/mining.webp",
+      "sha": "1749409631735b3dc3529f8f2f5399c6c76b1505",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/modular.webp",
+      "sha": "4b2aeed648810b87c8d95efef02258a419a0da88",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/municipal.webp",
+      "sha": "4bb4cb2c945c6b4e955a99da2d9cc509382cf857",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/odour.webp",
+      "sha": "7be29bfaa5fcdd37b27134dd3fe533c836399297",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/pulp.webp",
+      "sha": "df7f8d201a32d38a0268e5158032dbe8f6151453",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/stainless-production-line.jpg",
+      "sha": "edb89a063b8b64bdd3e6eefabc81dc7bdfd8c4cc",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/wastewater.webp",
+      "sha": "eae2da7e03cdb286b033fe9031a6fd2a1143caf2",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/industry-photos/waterparks.webp",
+      "sha": "6de138dce62c7dc68dbf824ef9b4cbb08c3c1267",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/motors/m180-input-flow.jpeg",
+      "sha": "67954d5d92f704017bf379d3f91f4d50a7a7357f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/motors/m180-output-power.jpeg",
+      "sha": "f98cf8f65cfcba5b176ae2c3df05152751570a17",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/motors/m180-output-torque.jpeg",
+      "sha": "9b666ef40a8c6b9480450a7a5f8867913c15ce33",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/motors/m180-overall-efficiency.jpeg",
+      "sha": "5f812dc232349c82946282f903d4341289194505",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/motors/m180-water-hydraulic-motor.jpeg",
+      "sha": "a235a7231dd7ab32ed90b25f6668a6d7677b784e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/motors/m60-input-flow.jpeg",
+      "sha": "c339668551869bd51fbd959a02f15acbca2682d3",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/motors/m60-output-power.jpeg",
+      "sha": "ff482b9767c90f10534f8c3b4f1edafbb89529df",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/motors/m60-output-torque.jpeg",
+      "sha": "9a0abf702b38ee9e4f057ce7402a3ee5bde67faf",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/motors/m60-overall-efficiency.jpeg",
+      "sha": "a4e026ebf8636254c6b05919d921b3afc0584f00",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/motors/m60-water-hydraulic-motor.jpeg",
+      "sha": "df7a93c2ec05d95b77c1bc014ce3044c54a7c181",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/motors/water-hydraulic-motor-photo.jpeg",
+      "sha": "df7a93c2ec05d95b77c1bc014ce3044c54a7c181",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/newsletter-popup.css",
+      "sha": "4bf81026efcde292e063205651de8f2dd04cad0b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/newsletter-popup.js",
+      "sha": "bb6b21c928d33909edf83bc82a16e3c11ac8f1d7",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/p1-published-curves.jpg",
+      "sha": "eebbd967b24c402c31951812dc935bdb33d39178",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/p15-published-curves.jpg",
+      "sha": "b655887a1b7851ef8ee2e16424f019a811c3a62f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/p180-published-curves.jpg",
+      "sha": "b1401c2ecdb08e7be16cf15ae0c598f30ea6e9e9",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/p3-published-curves.jpg",
+      "sha": "bc02929fcf6e345cd563359414155dfec83fe379",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/p30-published-curves.jpg",
+      "sha": "030f1b2eb5fa4443d113ed5f8b535a9667d4b3b0",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/p6-published-curves.jpg",
+      "sha": "2abe4f0219f2731ad6f31f8204fc57624320cf54",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/p60-published-curves.jpg",
+      "sha": "d175e44eb4918e9eb197d10672865e25a7e2fde6",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/pilot/pilot-model.js",
+      "sha": "843a99e974c76a163eb75dd47d27fc2c74c099f7",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/pilot/pilot.css",
+      "sha": "82c3ce053f96e243387b086f0c91e7359c3f1868",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/pilot/pilot.js",
+      "sha": "727204342120dc7ef127d003cde88fd2f900ac40",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/shared/hero.png",
+      "sha": "7389a25c524302cacbbb4bfebb990e6af8d40fb6",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/shared/waterquest-mark.svg",
+      "sha": "42244a07fdb3be780133e8d2b7c9dff5931f023f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/shared/wq-global.css",
+      "sha": "e443deca6299dc327c15c271b895f4f366511302",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/shared/valves.css",
+      "sha": "f89ccc15bbba333f657ad3185646732bb25b5cf5",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/shared/valves.js",
+      "sha": "dabfb6e7c26c363d8c85cabc2f080289535dd44e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/2-2-directional-valve/dimensions.webp",
+      "sha": "b42f5ce099219b6c610f277fe00fb5aec678fb0a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/2-2-directional-valve/product.webp",
+      "sha": "97e0897c931fa36b7c9b56643a61df38c0c3c6e1",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/2-2-pilot-valves/dn25-dimensions.webp",
+      "sha": "6dd8d9c0b758195d20ac1340c6d7a9fc3786e9e0",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/2-2-pilot-valves/dn9-dimensions.webp",
+      "sha": "1a9840e400c4fe6b8eced99a646c00a711ce9791",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/2-2-pilot-valves/manifold-assembly.webp",
+      "sha": "89e8c6ea2306ff53fe799ddc8e4df032bb6a72d0",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/2-2-pilot-valves/performance.webp",
+      "sha": "9319df0275285fcb122e0347d5db49ec0dbebec3",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/2-2-pilot-valves/product.webp",
+      "sha": "e526014c9140b450c8b3be0a1822a00a2abbf772",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/4-2-3-2-directional-control-valves/3-2-dimensions.webp",
+      "sha": "d161f7885abd0ebbbb47daeb1d04cd43359e0281",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/4-2-3-2-directional-control-valves/4-2-dimensions.webp",
+      "sha": "4bde2cb32444cebd663ea2c5e6ae954b42039f20",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/4-2-3-2-directional-control-valves/cetop-dimensions.webp",
+      "sha": "73ec77b0fa1988ae1e0bb6adbcedb8aadac786a1",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/4-2-3-2-directional-control-valves/performance.webp",
+      "sha": "c9ed7c585a61cfc9629b7089eccdb4d77fe4d19a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/4-2-3-2-directional-control-valves/product.webp",
+      "sha": "56385997c9d129482614d16c2bb1f2734c602749",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/4-3-directional-control-valves/cetop-dimensions.webp",
+      "sha": "3de8a45a877561f9f23b00ab16d9ee4ac2b8cb0b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/4-3-directional-control-valves/performance.webp",
+      "sha": "d09bd9a78e075944e13d186ed36ce7c7a687e49a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/4-3-directional-control-valves/product.webp",
+      "sha": "fc381a80cab207d1600d5b2a706ca9331abbcada",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/4-3-directional-control-valves/standard-dimensions.webp",
+      "sha": "38918be78ca246d3d6d225a183dc6e6c5a74dcbc",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/actuation-cards/din-mounting.webp",
+      "sha": "171299434454085b6a15de589c05fd63b89d5289",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/actuation-cards/product.webp",
+      "sha": "eb279f473328a0fed77c8e277c29c9a9dc69e609",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/actuation-cards/wiring.webp",
+      "sha": "d4f584ccc8949d3df7d3c6905689a7b46ed25691",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/check-valves/dimensions.webp",
+      "sha": "f725a10a6e33b94604ba4468192c5e6b4eea883a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/check-valves/product.webp",
+      "sha": "d6c83828994b87a5d918cc8bf3653f722befbc84",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/dc-microstep-drive-with-q-programming-st5-q-nn/dimensions.webp",
+      "sha": "9716ae777eb80c350239fb9c01e7a048742d3c20",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/dc-microstep-drive-with-q-programming-st5-q-nn/product.webp",
+      "sha": "fe19f92fb6750de3141307e2e397b592eb5fc2fc",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/dn16-directional-valves/3-2-closed-dimensions.webp",
+      "sha": "870ab86cc807d4572760ecda03333a6c77f3da30",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/dn16-directional-valves/3-2-open-dimensions.webp",
+      "sha": "b639d9dce2546cda9dac94b47826eb4accdb746e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/dn16-directional-valves/external-pilot-dimensions.webp",
+      "sha": "a4c37a540c286297835bbb951209cecc8c317f6e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/dn16-directional-valves/integral-pilot-dimensions.webp",
+      "sha": "ca63582af872a4e096074ded2f8acaf77a1ae9d9",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/dn16-directional-valves/product.webp",
+      "sha": "effb16f6ea0d0350f5e237e0558dc4967793ae1b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/electronic-flow-control-valves/manifold-dimensions.webp",
+      "sha": "b2d0db34abe3d0ab99b9f8a53de5b566b23a101b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/electronic-flow-control-valves/performance.webp",
+      "sha": "f44b8246778c388c6cd9b4b5e1b4aee3b0d3a95e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/electronic-flow-control-valves/product.webp",
+      "sha": "db6c03a033de16f7ea88224a3f7021468e5f877c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/electronic-flow-control-valves/standard-dimensions.webp",
+      "sha": "d175726ca45d970ab45c334e82b3e212dba8bdae",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/electronic-pressure-control-valve/cyclic-pressure.webp",
+      "sha": "87ae593aa17e14c6f1694bfa3721889f15b50318",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/electronic-pressure-control-valve/dn12-dimensions.webp",
+      "sha": "f13ffba05e5bf3d2bbb302de23b469a85ee52493",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/electronic-pressure-control-valve/dn6-manifold-dimensions.webp",
+      "sha": "5577406ff06814f5cf36d699746186c85f9243a7",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/electronic-pressure-control-valve/dn6-standard-dimensions.webp",
+      "sha": "8154fed33a4ad27109017170580a8a1191249ccd",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/electronic-pressure-control-valve/pressure-ramp.webp",
+      "sha": "0d20571f715329ade678f500fc3e97ee4dee622c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/electronic-pressure-control-valve/product.webp",
+      "sha": "7340bd8a091a770c3750a1b173bbe5f55aa1eac9",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/flow-control-valve/dimensions.webp",
+      "sha": "172e07d22960b8019e5fe711b4c81b50f6326fc6",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/flow-control-valve/dn3-adjustment.webp",
+      "sha": "15ca59e792485108f7143285d227d59a6801f9c1",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/flow-control-valve/dn6-adjustment.webp",
+      "sha": "cd7300c299b07f89f9e83e4981577d1eee6ae250",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/flow-control-valve/free-flow.webp",
+      "sha": "cf362522918691b190e653dd3c9d5e1cc396cb46",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/flow-control-valve/product.webp",
+      "sha": "ef14b9d47f9a69229b3144afdf5ce62709b12d7d",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/hose-burst-valve/dimensions.webp",
+      "sha": "da995bb8063d89c230d2788935c3cbb95b218568",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/hose-burst-valve/performance.webp",
+      "sha": "4e2a61564262c78515fb1db292d39fe8dfe0b3aa",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/hose-burst-valve/product.webp",
+      "sha": "2a255ef2f4ae0d7750b91f79a4fcb32318b27bbf",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/manifolds/dimensions.webp",
+      "sha": "30d7544449df55807ee96263145eeed3275956a6",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/manifolds/product.webp",
+      "sha": "890938a5f41673adc8ec61db48015a8b49f1c648",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/po-check-valve-dn12/dimensions.webp",
+      "sha": "c06bc5bc3ac54eb2352c892172899387c1e3f3ab",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/po-check-valve-dn12/performance.webp",
+      "sha": "c2064ff457c7dd82219d2a188f26406fb536cf21",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/po-check-valve-dn12/product.webp",
+      "sha": "eaadf4e976287f87e52d36c86f16b3dbfd0b535a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/po-check-valve-dn6/double-check-dimensions.webp",
+      "sha": "12ffe3680ecfcf6300362172a42c8c18a2e530cd",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/po-check-valve-dn6/performance.webp",
+      "sha": "031343f2595f5e289f26e1d3f88688dbc395c18e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/po-check-valve-dn6/product.webp",
+      "sha": "cdde6a404237263770b2ae3c0de1ec3f8a9e1aba",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/po-check-valve-dn6/single-check-dimensions.webp",
+      "sha": "b511ee643ea6fa788a6f1df7719bb9530aca51d3",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/pressure-compensating-flow-control-valve/dn3-dimensions.webp",
+      "sha": "3a92336b35c8c4a21383684f75337b392cf173d3",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/pressure-compensating-flow-control-valve/dn6-dimensions.webp",
+      "sha": "6c5ea4dd7ad7ae13d7d431ccad78f29490ee633c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/pressure-compensating-flow-control-valve/performance.webp",
+      "sha": "aee57c30ff751b0a0bbcf2700a07226c689a34ca",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/pressure-compensating-flow-control-valve/product.webp",
+      "sha": "9e3567cfb56464d553d9413c4936a06dd523a509",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/pressure-reducing-valves/dimensions.webp",
+      "sha": "ecb6a2a88a97bc09ce5be87f085667abcd97826a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/pressure-reducing-valves/performance.webp",
+      "sha": "b163953d9cf163a50e2c0d41b68cfacceea38e75",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/pressure-reducing-valves/product.webp",
+      "sha": "35a74fe778da10f2568d2c67aac4eef6b16bc1a3",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/relief-valves/dn12-dimensions.webp",
+      "sha": "c95317612ce33acda4375465c982ba06fe3007aa",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/relief-valves/dn16-dimensions.webp",
+      "sha": "69effa401af90b12921e0347b129343d3e73d384",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/relief-valves/dn6-dimensions.webp",
+      "sha": "33dbe8835e5d04bea945e890c09cb47aa74b1e9b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/relief-valves/performance.webp",
+      "sha": "ac843ac13d88efb33c433d746802e09438d9a5b6",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/relief-valves/product.webp",
+      "sha": "bf450b9dd4af765425be19e92137622f4a609c78",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/valve-ordering-code/product.svg",
+      "sha": "fffc6feb68b4fb8c7d7b6b66262cf7d7b221ad70",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/zone-valves/performance.webp",
+      "sha": "58be83f09fd0433160aeac0100f55f67049858b2",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/zone-valves/pilot-assembly.webp",
+      "sha": "022e52170e53dc535b49668f827e198b0d4a9e00",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/valves/zone-valves/product.webp",
+      "sha": "95b55aa71cf636f9a7015b4b72cc7aad933fd324",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/waterquest-mark.svg",
+      "sha": "42244a07fdb3be780133e8d2b7c9dff5931f023f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/product-photos/axial-piston-pump-range.jpg",
+      "sha": "6672976959856af4a7428e3add4ba162beb927f1",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/product-photos/large-axial-piston-pump.jpg",
+      "sha": "70da76f9722f3252a2c5a2db7e3767b0b43c17a8",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/product-photos/p1-water-pump.jpg",
+      "sha": "f1fc1016729d8bd5b9ad719a8c88e6468ed73448",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/product-photos/p15-water-pump.jpg",
+      "sha": "8a93b7f388927c58bac57c313f378114474c34e2",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/product-photos/p3-water-pump.jpg",
+      "sha": "832d0a6f9aa33fff7169401e2b587eac500e10b4",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/product-photos/p6-water-pump.jpg",
+      "sha": "f01d96e0e2ba24fe26d4bc18eaa179ed13f02aea",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/product-photos/power-centre-energy-recovery.avif",
+      "sha": "b5c1bad74da561f00c1d454a04adb8949a28668d",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/product-photos/power-centre-motor-assembly.jpg",
+      "sha": "a4c033cc1138eb6c5125804b5a96980aa2f89a3a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/product-photos/water-hydraulic-control-valve.webp",
+      "sha": "b0e7f09d2d6e15f66ae78c23bacbc6db864a6906",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/product-photos/water-hydraulic-cylinder-mountings.jpg",
+      "sha": "dde30e717fdd1a4c3a4948b1d9f39ad3a3b62a93",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/product-photos/water-hydraulic-cylinder-range.avif",
+      "sha": "3c19864d3cd24852d59ba7d8f85154209ae5e22a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/product-photos/water-hydraulic-motor-range.jpg",
+      "sha": "bfaa1467f687b54bac764f29996dc2213eb123c0",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/product-photos/water-hydraulic-power-unit.avif",
+      "sha": "ba603054f0d2b52dc18d7d7cf6fab14eaedd5809",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/pumps/p1-water-hydraulic-pump.jpeg",
+      "sha": "47290b6e9fe73fa37287e8c577f79a55763e20d2",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/pumps/p6-water-hydraulic-pump.png",
+      "sha": "586f3155555d53ae237744137cbfd760e00a7749",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/seawater-graphs/P15-flow-power.svg",
+      "sha": "e49ef68656b84e2b3cefea4a872c36df535f53e6",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/seawater-graphs/P15-torque-efficiency.svg",
+      "sha": "18cfb1dd257a8f454e2de2eed0427ac40d6c4097",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/seawater-graphs/P180-flow-power.svg",
+      "sha": "89d0eb3ceef87070ca384fdbfaa546054ec9c929",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/seawater-graphs/P180-torque-efficiency.svg",
+      "sha": "5f743a18a1bb57a227cf9703715a66381c090e36",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/seawater-graphs/P30-flow-power.svg",
+      "sha": "544dc5efe88be404016beed73a0137a0058abaf7",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/seawater-graphs/P30-torque-efficiency.svg",
+      "sha": "12706df46bc740bb44f2166809f238fe3e5f200a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/seawater-graphs/P300-flow-power.svg",
+      "sha": "a21c3e1ee3f63b4a283287cbff56d3b535c70327",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/seawater-graphs/P300-torque-efficiency.svg",
+      "sha": "330ae55b4fd5374ea0400bc83970ab4123ac9134",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/seawater-graphs/P6-flow-power.svg",
+      "sha": "91a0a1df27f2a34d29334756dda1d9788c686c61",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/seawater-graphs/P6-torque-efficiency.svg",
+      "sha": "d8ac9e77964926b3c5889b8d58af918d7193d5b3",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/seawater-graphs/P60-flow-power.svg",
+      "sha": "75c272f3749d48a1af2f1c632f18610b5980c1a1",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/seawater-graphs/P60-torque-efficiency.svg",
+      "sha": "a2d05e99264e25594f92e241866c7523a6cec896",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/seawater-graphs/P600-flow-power.svg",
+      "sha": "1443ca482326c650bc089c7656132bb927fe7dfd",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/seawater-graphs/P600-torque-efficiency.svg",
+      "sha": "19c5a791b5d78b88c4f034cc53395fb116ff9b7e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/site.css",
+      "sha": "a8e6987ead5cba890ef6d630885b415c1471e7da",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/vendor/vercel-speed-insights/index.mjs",
+      "sha": "31df577fb5905e8d2b5a1af0aacb23c702e7a71e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/vendor/vercel-speed-insights/index.mjs.map",
+      "sha": "d36e50ed7c73969d5802f397b0baaa0116343416",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/water-expansion-photos/boiling-kettle.jpg",
+      "sha": "4b7709d50ae99c8a46977cbe1c39f8e50c667a3d",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/water-expansion-photos/liquid-water.jpg",
+      "sha": "0dfc2d8e1c9fb11c9a0a148d97342acca0b26da3",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/water-expansion-photos/nist-liquid-water.jpg",
+      "sha": "45db8a956027251eb2e537c91cbfb957616e2dd9",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/water-expansion-photos/nozzle-mist.jpg",
+      "sha": "9d43e74474a7d5453a319c732a6d69c0fb975e2b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/water-expansion-photos/research-fire-sequence.jpg",
+      "sha": "412c53f5bf4519f8b6de4380c8e5ba1191225c8f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/water-expansion-photos/research-nozzle-spray.jpg",
+      "sha": "c917c8c5d83b4a29f89d47c8e6bf2a29bf8fd1f7",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/waterquest-hero.png",
+      "sha": "6b330e673b21aeca468bb545384e32744dbde14e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/waterquest-logo-square.png",
+      "sha": "13656ec7cb7ddae4ccd917cd2673ebab7b60ad08",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-audit-repairs.css",
+      "sha": "807051a3445e96c16702fb15b46cb383066dad1a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-brand-standards.css",
+      "sha": "919974d892f65cd91b0d95960751980553e0ea7f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-component-standards.css",
+      "sha": "5e661cbecf6a8a2e59e0da8613fb33a72f49cc9a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-enquiry-context.js",
+      "sha": "d43a258acf311e91a6ae8ec9b3d82c6324b23ee6",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-graph-readability.css",
+      "sha": "dfae221d240afcd5a506441a3f8198a7e0a901eb",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-graph-readability.js",
+      "sha": "fa91d33f56989201635e1a3e6839334f18669fa8",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-hero-cta.css",
+      "sha": "e153600d767b97918e2b768123a4bfd776451b73",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-industry-photos.css",
+      "sha": "24cb6087430948fd443803298e2f4be9706ae25b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-nav-dropdowns.js",
+      "sha": "18d268033aec9b4b9ee924ae430ec56c681cc023",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-product-family-nav.css",
+      "sha": "697d54d36073eddcd274268c5d3f448345e626d7",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-product-model-nav.css",
+      "sha": "447a635d25aa747e396b19fe488fa9fcdcf4a84c",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-product-model-nav.js",
+      "sha": "88d771572eb68a4e3a66d69080f9d5d2cc9e9699",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-product-photos.css",
+      "sha": "f7cb2926c78cd84dc61239a7fb44ef17fd7c0a1b",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-pump-page-standards.css",
+      "sha": "96ea1777675c0d22c677504a86a5c8970a5d621e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-site-corrections.css",
+      "sha": "e003e3c0a8291c277663623e99e6d88909c33c28",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-speed-insights.js",
+      "sha": "8ef6426031c9de0a2cc800efb12288857039c149",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq-zoho-suite.js",
+      "sha": "7ff733815a19842b7666d6a29b225935ab33fa5f",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wq.js",
+      "sha": "c5798562f997785c6ff038ac7ea737c83a925407",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wqs-homepage-seo-versions.css",
+      "sha": "fdd57ab6d27c156ab6afaa5a5ea7432a062b1861",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wqs-nav-dropdowns.js",
+      "sha": "822a6ef03d7547d4153e6bb56cb3f3c6e4b0804a",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wqs-product-template.css",
+      "sha": "21287f594956c022689b9d6f4e2da068cc72d5f9",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wqs-stainless-brand.css",
+      "sha": "d5d2a304d289e723b3a4b75cb2c754875c2e3edb",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wqx-brief-fields.json",
+      "sha": "ad7264b3eb8b29b8fcea01dc5367f7b3cf049aa8",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wqx-brief.js",
+      "sha": "3d75d555d331968a1e2a8e22be77bff1762af6fc",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wqx-site.css",
+      "sha": "ec19a292bda827bdd095f15574d9e08d3069ce18",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/wqx-site.js",
+      "sha": "b8590ea502125b8eeedcec33aa581851cfb63f6e",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/zoho-suite.config.example.js",
+      "sha": "94c00e85132f0f95b7c190c49e7c4401ff0ec664",
+      "type": "file"
+    },
+    {
+      "path": "public/assets/zoho-suite.config.js",
+      "sha": "870c53393ac434f888b19a70f208ed4070830151",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/graphs/P15-flow-power.svg",
+      "sha": "e49ef68656b84e2b3cefea4a872c36df535f53e6",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/graphs/P15-torque-efficiency.svg",
+      "sha": "18cfb1dd257a8f454e2de2eed0427ac40d6c4097",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/graphs/P180-flow-power.svg",
+      "sha": "89d0eb3ceef87070ca384fdbfaa546054ec9c929",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/graphs/P180-torque-efficiency.svg",
+      "sha": "5f743a18a1bb57a227cf9703715a66381c090e36",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/graphs/P30-flow-power.svg",
+      "sha": "544dc5efe88be404016beed73a0137a0058abaf7",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/graphs/P30-torque-efficiency.svg",
+      "sha": "12706df46bc740bb44f2166809f238fe3e5f200a",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/graphs/P300-flow-power.svg",
+      "sha": "a21c3e1ee3f63b4a283287cbff56d3b535c70327",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/graphs/P300-torque-efficiency.svg",
+      "sha": "330ae55b4fd5374ea0400bc83970ab4123ac9134",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/graphs/P6-flow-power.svg",
+      "sha": "91a0a1df27f2a34d29334756dda1d9788c686c61",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/graphs/P6-torque-efficiency.svg",
+      "sha": "d8ac9e77964926b3c5889b8d58af918d7193d5b3",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/graphs/P60-flow-power.svg",
+      "sha": "75c272f3749d48a1af2f1c632f18610b5980c1a1",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/graphs/P60-torque-efficiency.svg",
+      "sha": "a2d05e99264e25594f92e241866c7523a6cec896",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/graphs/P600-flow-power.svg",
+      "sha": "1443ca482326c650bc089c7656132bb927fe7dfd",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/graphs/P600-torque-efficiency.svg",
+      "sha": "19c5a791b5d78b88c4f034cc53395fb116ff9b7e",
+      "type": "file"
+    },
+    {
+      "path": "public/products/duplex-seawater-pumps/index.html",
+      "sha": "9d21c9c2a324e9388c6d37ad5ad0de3ae65310f8",
+      "type": "file"
+    },
+    {
+      "path": "public/products/janus-power-center-reverse-osmosis/index.html",
+      "sha": "7238889c33cb95369d286baa743ddc31582e6c1b",
+      "type": "file"
+    },
+    {
+      "path": "public/products/power-center-reverse-osmosis/index.html",
+      "sha": "7238889c33cb95369d286baa743ddc31582e6c1b",
+      "type": "file"
+    },
+    {
+      "path": "public/products/axial-piston-fire-pumps/index.html",
+      "sha": "b79cdbbf107cf27e949b5272482dbf552dd57684",
+      "type": "file"
+    },
+    {
+      "path": "public/products/axial-piston-pumps/index.html",
+      "sha": "9e01914c9e1d658632daa8f5814c35364a532bf6",
+      "type": "file"
+    },
+    {
+      "path": "public/products/axial-piston-pumps/p1/index.html",
+      "sha": "6ba4d1226f5b4b2b56fd79c56f8dbc446f0ee7a5",
+      "type": "file"
+    },
+    {
+      "path": "public/products/axial-piston-pumps/p15/index.html",
+      "sha": "eb6174a87ca8ca533a1a8a600488e7d1b648d933",
+      "type": "file"
+    },
+    {
+      "path": "public/products/axial-piston-pumps/p180/index.html",
+      "sha": "a3bc38575e163e6a6e4ba023f86685b769ab25f3",
+      "type": "file"
+    },
+    {
+      "path": "public/products/axial-piston-pumps/p3/index.html",
+      "sha": "fb20cecbfe63ea9e9617dd52651872fb7940357a",
+      "type": "file"
+    },
+    {
+      "path": "public/products/axial-piston-pumps/p30/index.html",
+      "sha": "704c5ed54d3aa6e6c2f52349a593c5ceff06759a",
+      "type": "file"
+    },
+    {
+      "path": "public/products/axial-piston-pumps/p6/index.html",
+      "sha": "7357628e48943ad782d25bb713e5e49b21d98c59",
+      "type": "file"
+    },
+    {
+      "path": "public/products/axial-piston-pumps/p60/index.html",
+      "sha": "7f92f8bf123f555d46c3d20791ac4aaaeaf5ecc0",
+      "type": "file"
+    },
+    {
+      "path": "public/products/index.html",
+      "sha": "2b24a0400381f973d4c334fed8a74ed0dbd79cad",
+      "type": "file"
+    },
+    {
+      "path": "public/products/janus-axial-piston-fire-pumps/index.html",
+      "sha": "6ce95f1135a87e39bea9deee556ca7b2c14df9a5",
+      "type": "file"
+    },
+    {
+      "path": "public/products/power-centre-reverse-osmosis/index.html",
+      "sha": "9275258501785c967a2441296eeef1ab4a8144a4",
+      "type": "file"
+    },
+    {
+      "path": "public/products/power-centre-reverse-osmosis/pc1000/index.html",
+      "sha": "e81bec9d21a43658035b09196a513892dd91b92c",
+      "type": "file"
+    },
+    {
+      "path": "public/products/power-centre-reverse-osmosis/pc250/index.html",
+      "sha": "857d7c8ea6b9d5979272c159dc8d6ec2682b8e38",
+      "type": "file"
+    },
+    {
+      "path": "public/products/power-centre-reverse-osmosis/pc300/index.html",
+      "sha": "2504aa9059f310c658d032111b5e94d2ae317b30",
+      "type": "file"
+    },
+    {
+      "path": "public/products/power-centre-reverse-osmosis/pc500/index.html",
+      "sha": "6a18f4ff93ae222a5f2031fefd356e3ee08deb54",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-cylinders/cylinder-100x60/index.html",
+      "sha": "c9ded6a3e4ca648b6127e4c32add2d5914e96588",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-cylinders/cylinder-100x80/index.html",
+      "sha": "22e4d62624b3bbfab44060d9a097a0c00f792422",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-cylinders/cylinder-125x80/index.html",
+      "sha": "27d183a9119a8cc96d0b0a268176e0e7c90fe3ff",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-cylinders/cylinder-32x16/index.html",
+      "sha": "74fbe89ac2a1b311d9417b8815d5a3277bb17327",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-cylinders/cylinder-32x20/index.html",
+      "sha": "f209263d808ced7f6abcdd16d454a23ae8f68df4",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-cylinders/cylinder-40x25/index.html",
+      "sha": "b8422759799dd26091e1f6057fb865ebf44d420c",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-cylinders/cylinder-50x25/index.html",
+      "sha": "596fc1948087c16b001bd3d0b996abfdd3a0165c",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-cylinders/cylinder-50x30/index.html",
+      "sha": "dc882252dd331db82cd1df388a0af395e8d10d5e",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-cylinders/cylinder-64x30/index.html",
+      "sha": "c47689bc84131a3790bf343e5e74957e5c764447",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-cylinders/cylinder-64x40/index.html",
+      "sha": "82fa994b21d09cc3fe247bdf12a4602c1a10e572",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-cylinders/cylinder-80x50/index.html",
+      "sha": "2f810adab7ee453f3cb7c02b6c019d814a7159dc",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-cylinders/index.html",
+      "sha": "d7e3061cf69af4da85e438a5be20b3b1b4e3f1ae",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-motors/index.html",
+      "sha": "a8c6da6591b566674d201e07f8f95cd42dc355d6",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-motors/m15-water-hydraulic-motor/index.html",
+      "sha": "7f03e615815b5ffa2c827411cbaf4783c71621ed",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-motors/m15/index.html",
+      "sha": "b42e0a66f36e3f6ee2d83ca95bf147e86e39880f",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-motors/m180-axial-piston-water-hydraulic-motor/index.html",
+      "sha": "f0d89b9ff8e9d0d79a20625bced4aabc1bd25ff3",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-motors/m180/index.html",
+      "sha": "eafbe3f1daa39573fff8a7648951afde449baa32",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-motors/m3-water-hydraulic-motor/index.html",
+      "sha": "66978ac47ea75c50fb60e66d7555efc216a0c0f4",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-motors/m3/index.html",
+      "sha": "2d2f45bffdeee6a35609efca67cb388deee8ee72",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-motors/m30-water-hydraulic-motor/index.html",
+      "sha": "d84ae9e0450dd9addb05f8ef0a321d90be907955",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-motors/m30/index.html",
+      "sha": "ea5be9103227e93da61a1e4e63ce5e2b11f782b7",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-motors/m6-water-hydraulic-motor/index.html",
+      "sha": "47c4de1e6c9ac2c6f88be4adb6604f850faf0e2d",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-motors/m6/index.html",
+      "sha": "552b36e880f3d6b7988ce8e8876bc85ccd3652cd",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-motors/m60-axial-piston-water-hydraulic-motor/index.html",
+      "sha": "8a109995d55339d1dd2e4e5b6d73e02f2b580c3d",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-motors/m60/index.html",
+      "sha": "144f9b71fd9fc0fcd68ffb29d4d89a84de1daae0",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/2-2-directional-valve/index.html",
+      "sha": "43999b2d237cb2a3c307ff2da9741c2842c8f9df",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/2-2-pilot-valves/index.html",
+      "sha": "be4778e69da5a24abeb9356fa976b314b1740df7",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/4-2-3-2-directional-control-valves/index.html",
+      "sha": "b25f71c1df70d4b29f61015898fe3b4a58b79f1c",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/4-3-directional-control-valves/index.html",
+      "sha": "5217739163e9336067275679858de4d511fb6e8e",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/actuation-cards/index.html",
+      "sha": "9a2c69bc5c1c69965f22f6e14a911c21dc5f0280",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/check-valves/index.html",
+      "sha": "df15b37a5ddc1c58d2d23f2214738d45d8e62498",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/dc-microstep-drive-with-q-programming-st5-q-nn/index.html",
+      "sha": "4005ff32a7204f52f8ef0d5e826628cd06f206ed",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/dn16-directional-valves/index.html",
+      "sha": "9115acd3dea537e8bb62211187229905ae72a997",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/electronic-flow-control-valves/index.html",
+      "sha": "13682dc95dbcc19b9f58fbd2fdc210aee82e43d5",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/electronic-pressure-control-valve/index.html",
+      "sha": "46b57bf9b3c308e271aa0a6bb996387d79b0579b",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/flow-control-valve/index.html",
+      "sha": "05603cf5a5f242acffa037e1563149d3d0ad0b57",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/hose-burst-valve/index.html",
+      "sha": "9dcb8f8844054ba8a30680de3f2db0995f7601ce",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/index.html",
+      "sha": "c1d960fa65341fd7ea2a6a1c1e489c7aedb5979e",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/manifolds/index.html",
+      "sha": "c34f6fd10a2a73fa1e321a5be1dbbd4e54e8f649",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/po-check-valve-dn12/index.html",
+      "sha": "ac1b53a98cb01e9827ab32333d3bd12c3eaa0b13",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/po-check-valve-dn6/index.html",
+      "sha": "0e324242961ac77fb643e30ac9a09bfa97a88517",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/pressure-compensating-flow-control-valve/index.html",
+      "sha": "b06815e840554d8e2d0add6c7de85c6d0e41e13b",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/pressure-reducing-valves/index.html",
+      "sha": "27c386659a9bb3428e92cdaa89021926c79ac82d",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/relief-valves/index.html",
+      "sha": "7880c1424b9acfef2f7d199190a782577715d268",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/valve-2-2-pilot/index.html",
+      "sha": "6120f8d8da02d87987fd186cab52aeb18fe65048",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/valve-4-2-3-2-directional/index.html",
+      "sha": "3e83b79159f1b3a028c1a671c4c0a82f8709b0b8",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/valve-4-3-manual/index.html",
+      "sha": "d6484ac47c4e8e26674c00005cffe051de245cd1",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/valve-actuation-cards/index.html",
+      "sha": "f512e0e878831aca5b4b8c8e15432b2b14e31aff",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/valve-check-valves/index.html",
+      "sha": "bf6a8fb9c16df4420b2bd9cc89685804371179fe",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/valve-dn12-po-check/index.html",
+      "sha": "2a31b1a8c7fcbad45a1652cf70f09f9911453b66",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/valve-dn16-directional/index.html",
+      "sha": "f82026be3fc440639b40c9cc48459f95b939b5aa",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/valve-electronic-flow-control/index.html",
+      "sha": "af74d9492226ab2d7c217e38fe4152bd825ee6c5",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/valve-electronic-pressure-control/index.html",
+      "sha": "4142ef8d1d50216dccd742b92a3f407f943e8d54",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/valve-flow-control/index.html",
+      "sha": "b00fa73a3d26103e8c3c85bf0f534cbc688dd416",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/valve-hose-burst/index.html",
+      "sha": "07d56e2d03a643816cb35741a0098faa87cc1b05",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/valve-ordering-code/index.html",
+      "sha": "35197593d4b78948756a7ec32a238cd3ffc92422",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulic-valves/zone-valves/index.html",
+      "sha": "ac287a5260c8acdb0512a758810c8d06d5a2bca7",
+      "type": "file"
+    },
+    {
+      "path": "public/products/water-hydraulics-hpu/index.html",
+      "sha": "977020c50b35019e0d64859fded3a02756e3b79b",
+      "type": "file"
+    },
+    {
+      "path": "public/brochures/halo-odour-control.pdf",
+      "sha": "81a0412e2a9ad983db3b8ee7ecc6e6774d2014fe",
+      "type": "file"
+    },
+    {
+      "path": "public/contact/index.html",
+      "sha": "7f3b263b78158da0f0c4562b6729c0d53cb2323b",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/product-literature/index.html",
+      "sha": "429115c8c77dec44e63d2cd6edeb10d495afdadc",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/templates/acceptance-handover.txt",
+      "sha": "2cca1aa9a7a61dd1fa0f794f787ecac659681a5d",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/templates/asset-register.csv",
+      "sha": "5cc539411ae81508d17922c0984e4b5c36da4ff4",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/templates/bid-comparison.txt",
+      "sha": "42fd4af0c5c8b73ef67c0598e0a0d9f14ecc1890",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/templates/equipment-specification.txt",
+      "sha": "ceb9cf41814e4b3076bde46d96a073584fc552a8",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/templates/ownership-ledger.txt",
+      "sha": "abc0e495b73e1ac3e5b765e5ec3a714c5f4e3b8c",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/templates/pilot-charter.txt",
+      "sha": "6048f562da169640833c8eba4b93065b72abf50c",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/10-questions-engineers-ask-about-water-hydraulics.txt",
+      "sha": "b7c4c47a2f63ce84cfa42cdff9f2cf8e0fbf075c",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/a-fair-test-of-water-vs-oil-hpus-in-desalination.txt",
+      "sha": "2f3a56b3a69b401b5ca7834a62c286e24b023fe9",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/accumulator-worksheet.csv",
+      "sha": "b1e2d4451b5e0078d2caf6e3c2ff8b893eac5f20",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/air-systems-vs-water-hydraulic-systems-which-delivers-better-results.txt",
+      "sha": "0a6cd9735c23503d7173660ab4e987a21ae928be",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/aligning-with-esg-how-water-hydraulics-support-sustainability-targets.txt",
+      "sha": "771e18bc35657f68e5b9b52db2712ba7523ca663",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/are-your-components-certified-for-marine-or-food-use.txt",
+      "sha": "705a4dbfa4f335520d0b68aeebe18fca7df7ce9e",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/avoiding-oil-contaminated-waterways-legal-and-financial-risks.txt",
+      "sha": "fec4c84ae4e8be3d356d73ecdf83f76a6ef37429",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/beyond-oil-engineering-principles-of-water-hydraulic-actuation.txt",
+      "sha": "e4645655b4a3737c31703bb0d2599060e7450d1d",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/breaking-down-the-roi-investing-in-water-hydraulics.txt",
+      "sha": "6a5b1e8fea89206355db2bece083fa1d1927beaa",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/can-i-retrofit-my-existing-system-to-use-water.txt",
+      "sha": "804f7c889f61c0513239c0dcf08c9f859f26c3e7",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/can-water-freeze-in-hydraulic-systems-engineering-around-temperature.txt",
+      "sha": "70ad19ea26c4ce2e349e22afeccd4ce253083e00",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/can-water-handle-heavy-loads-like-oil.txt",
+      "sha": "c248f7388f0c7006deb3b681ea905bf7a208ce67",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/carbon-reinforced-peek-in-hydraulic-equipment.txt",
+      "sha": "349a225da6e9209fbb8d5870ff160a65845a8a3f",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/cavitation-in-water-hydraulics-myths-truths-and-design-solutions.txt",
+      "sha": "c2a37b888e6d7c43210b0409bbc5c18bfb65d346",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/choosing-the-right-cylinder-for-water-actuation.txt",
+      "sha": "8c9251ad301f6b97f8866562586c320ac0c1faac",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/component-spotlight-armak-air-motors-and-water-hydraulic-integration.txt",
+      "sha": "bc1f46d90f4a35a62370d7aa80bd9e3557422cfa",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/converting-a-citys-hydraulics-one-asset-class-at-a-time.txt",
+      "sha": "f754cfb3c68f3482956bfb2185909bbb9e401640",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/cylinder-worksheet.csv",
+      "sha": "cfcd7dd2e8bff5f2c5eece0f94dbf90eeb3f5802",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/desalination-plant-hydraulic-systems.txt",
+      "sha": "bf124dd2bdb20c41eab5878fdf4b4f5b2e3c461f",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/designing-a-water-hydraulic-power-unit.txt",
+      "sha": "6572f78464d93a1fa81a2f6ff427cb2bbb015e03",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/designing-control-valves-for-water-hydraulics.txt",
+      "sha": "0a702e324fff943ee1cc6a95a8d27000c639bb78",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/designing-for-pressure-closed-loop-water-hydraulic-circuitry.txt",
+      "sha": "221b83da9e225727235be9c51708b3d31c95cf35",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/designing-hydraulic-circuits-using-water-as-the-medium.txt",
+      "sha": "e455f9f47e7ed74a6804e557e99162a3df2349fb",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/diagnosing-pressure-drop-in-water-driven-cylinders.txt",
+      "sha": "a33107d0df45de402e50db0a6c895088f44893bb",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/do-i-need-filters-or-additives-for-tap-water.txt",
+      "sha": "45b51d18d43a4d71da1cbb8d2d52fcc1253a0b84",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/does-your-water-circuit-need-an-accumulator-name-the-job-first.txt",
+      "sha": "c5994c0212dc0d0c78d3603d403dcd39a16a2004",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/drought-ready-water-hydraulic-use-in-desalination-plants.txt",
+      "sha": "329000b7a3a883f195ec33a8ca537c16590cc7fd",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/duplex-stainless-at-sea-stronger-and-more-pit-resistant.txt",
+      "sha": "a579174565e6cbb9c2499066378860aca0ceefc8",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/dust-suppression-systems-using-water-hydraulics.txt",
+      "sha": "f66788cd7579b35dbd486a82df1f50d14f773722",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/economics-worksheet.csv",
+      "sha": "4bdf89cecb96e9f8e9f9c49182d0f6ddc6460a61",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/efficiency-of-water-hydraulic-pumps-compared-to-oil-pumps.txt",
+      "sha": "87400b2625b9dd5c380d409cee22f97d886088ef",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/electric-actuators-vs-hydraulic-actuators-the-real-engineering-trade-offs.txt",
+      "sha": "fb73cd8e46700a5d4b8988eb3f3873f06282236b",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/energy-consumption-of-water-hydraulic-systems.txt",
+      "sha": "9196a6c13eb95cd2a4b698df06c69d6e0a22c36e",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/energy-worksheet.csv",
+      "sha": "4f262b4c874eafad22f0ee6fa715ff9499f47261",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/engineering-principles-of-water-hydraulic-actuation.txt",
+      "sha": "99d7fc0081b8c883f8d06a35b96875fe4629d7e2",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/engineering-seal-systems-for-water-hydraulics.txt",
+      "sha": "86301a5bfd970ac2154014c6ea7c250fc0d2ac4d",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/environment-worksheet.csv",
+      "sha": "38ef22e5e960a8e919872390f9887ab7a115aff9",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/environmental-compliance-and-hydraulic-systems.txt",
+      "sha": "f93a02173dc5eb8e68772531b44faab517a9ed7a",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/environmental-regulations-affecting-hydraulic-systems.txt",
+      "sha": "92cd731845384b738e71ba33d8798240f4e3c184",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/environmental-risks-of-hydraulic-oil-in-water-infrastructure.txt",
+      "sha": "3efb3bdc421e2254e050a8a66e36b3445530d1d1",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/fail-closed-fail-open-or-hold-engineering-safe-states-in-water-hydraulics.txt",
+      "sha": "fd716f50aeaaecfe33b00b2f51863bae4f29b830",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/filtration-worksheet.csv",
+      "sha": "9f2d0609c348b5ea4c81f46689ef103bbf73889d",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/fire-pump-station-renewal-start-with-the-protection-design.txt",
+      "sha": "65c30ad63615994167e7b7ffd69eb045e27ca04d",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/fire-worksheet.csv",
+      "sha": "fc9a91af7ea720b765312d3950da1290504b76e1",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/five-reasons-your-next-valve-should-be-water-actuated.txt",
+      "sha": "b4b9550cd908ea0a9c16c91e78639d10b62744b4",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/fluid-properties-of-water-vs-hydraulic-oil.txt",
+      "sha": "fbc881d87656210ec91644d3805bf7f7b04ce903",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/fluid-worksheet.csv",
+      "sha": "d2175668644676c39740e55efac16e7f39d6678b",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/flushing-and-start-up-tips-for-first-time-water-users.txt",
+      "sha": "b410147fad2b229fbdb20aeaa17ea23a91051cba",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/from-steel-mills-to-sawmills-industrial-applications-of-pressurized-water.txt",
+      "sha": "3d8b996f76fb5dbd0412fbc081935f076200da1f",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/funding-water-driven-innovation-a-guide-to-clean-tech-grants.txt",
+      "sha": "e7c8793ea3d882cce7697b41739ed52b784a368c",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/funding-water-hydraulics-r-and-d-or-routine-adoption.txt",
+      "sha": "d1884c718820d43b17af9b383c2f28cbb4c55e1a",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/gate-worksheet.csv",
+      "sha": "43bb4ece1aedfebe3359fd39e6ef7ebd7555d7ed",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/going-oil-free-which-maintenance-tasks-go-stay-and-get-added.txt",
+      "sha": "131b4cbce6afdff6f7e838a78dad8f0e4de56f29",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/half-a-litre-a-minute-of-leakage-costs-83-watts-all-day.txt",
+      "sha": "974b70705d24bbe85e64c96f0fe5c5ede9082d21",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/high-flow-or-high-precision-matching-pumps-to-application.txt",
+      "sha": "adab74946d02dde833d1223391b71423819321c4",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/how-engineers-can-specify-oil-free-hydraulic-systems.txt",
+      "sha": "b8667bd68b30e63b5745076ad4fef20c3a76d0db",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/how-force-is-generated-in-water-hydraulic-cylinders.txt",
+      "sha": "f0465f1e0bcca3f109e30254cceb78c5c97e51e2",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/how-hydraulic-fluids-behave-thermal-expansion-viscosity-and-stability.txt",
+      "sha": "6ca2f14047df501414b73f5425b9702cb520be64",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/how-much-are-your-hydraulics-costing-you.txt",
+      "sha": "5cb5eca49aedf235b4a5c09511ba138a89c9f2ab",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/how-oil-contamination-affects-wastewater-treatment-plants.txt",
+      "sha": "cc32ae280bdf2479ef2c0187c80bc0f9d7a8f419",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/how-to-convert-an-oil-hydraulic-system-to-water-hydraulics.txt",
+      "sha": "ac6c9e97f3a662117e865a34b8912c103f041d3e",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/how-to-winterize-your-water-hydraulic-system.txt",
+      "sha": "526e2efc270c30db612bf5006286e7289233e411",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/how-water-hydraulics-handle-lubrication-material-pairs-and-clearances.txt",
+      "sha": "887e06161709f52f6886f6b4e9f3a9f19dbc017b",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/how-water-hydraulics-work-compared-to-oil-hydraulics.txt",
+      "sha": "07546c6a5f485b01771ca23f5e22de61dc56c232",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/hpu-worksheet.csv",
+      "sha": "57772d7e642638cff42878c08786cd3a1ac64066",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/hydraulic-gate-actuators-for-municipal-infrastructure.txt",
+      "sha": "90ad5384dbe38043ca79e8f9d7af19a74c27d0db",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/hydraulic-power-transmission-using-water.txt",
+      "sha": "8cf911dc3eff52a652a0691e6747cbb1ed9abda4",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/hydrogen-propulsion-water-hydraulic-deck-gear-a-clean-fishing-vessel-concept.txt",
+      "sha": "f2cb72db26138ecf1e7aff06df92438e10e6fcbc",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/hydropower-infrastructure-using-water-hydraulic-actuation.txt",
+      "sha": "5177b7c7686e66b2a78424efd8d3f228dae9f409",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/industrial-worksheet.csv",
+      "sha": "b35e2c456c9b6e989acf76f7303dc6b0547aba9c",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/installing-water-hydraulics-aboard.txt",
+      "sha": "ed6b11b45fb034a81328a088138e17a74e6167df",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/investigating-corrosion-in-a-running-water-circuit.txt",
+      "sha": "6b7b17de5c5d3c4e4f4e0fb0bb5b66f383db8e6b",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/is-water-more-expensive-long-term.txt",
+      "sha": "9e5fbca50ffe6e05d04c03aca8e4205a3164435a",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/is-water-too-thin-to-work-in-high-pressure-applications.txt",
+      "sha": "184573b3abdc14056d7eb61addf1a07531fd688c",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/judging-a-water-hpu-by-what-it-does-between-movements.txt",
+      "sha": "5516681051031461b313d9ad713cb18e5f9acdfb",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/knife-gate-valves-and-water-hydraulics-a-natural-fit.txt",
+      "sha": "174a5f9c1ef17d9e448f7c3d4a9c72cf36668181",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/lifecycle-cost-breakdown-oil-vs-water.txt",
+      "sha": "f5e9ae2e582e179bc6ff213795bc110a1c355f4c",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/lifting-and-hauling-without-oil-forestry-applications-using-water.txt",
+      "sha": "c03ad6cfe05528b5465920ed639d288f047810c5",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/maintenance-worksheet.csv",
+      "sha": "997a1aafd3142faec8380dd9f4c9b4e6427e20ad",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/managing-seal-life-in-water-hydraulic-environments.txt",
+      "sha": "c3b25881ef8ef90b2d1bd2af1e8b6d9d539af745",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/marine-worksheet.csv",
+      "sha": "8ee17e2a400bfd8f00f5d8cbc49d832717e9111c",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek.txt",
+      "sha": "fb01847c341836debce4f6d0013319f1d06fe891",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/material-pairing-for-water-hydraulic-tribology.txt",
+      "sha": "4e2a9c41c328815aa92daa4b441067f0add16fda",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/materials-worksheet.csv",
+      "sha": "abfde4d78508210c3115a9a88d82e74a75b7be43",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/mining-availability-is-built-at-the-skid-layout.txt",
+      "sha": "9840751e3d0571061721313ccb496fa182f47044",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/mining-equipment-using-water-hydraulic-systems.txt",
+      "sha": "ba4258108ca5f965b26c5477727add29c6d420db",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/motor-worksheet.csv",
+      "sha": "0be2beb4a2168ab497962f49053d8d3137adaee8",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/moving-from-oil-to-water-audit-every-wetted-part-first.txt",
+      "sha": "871501e729bdbe265cb37d7ba9c8739bc2301ac3",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/municipal-infrastructure-without-the-oil-hazards.txt",
+      "sha": "c11a1b8b7225a79af570a603b0aae415c2b37810",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/oil-free-operation-a-design-fact-that-supports-your-environmental-goals.txt",
+      "sha": "b46b4c2a3b550f82c174021d64b59cd3264eaeba",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/oil-free-you-can-prove-count-the-litres-you-removed.txt",
+      "sha": "26d62a0dd78090aad471edcd2b2ad32fd7849a56",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/oil-hydraulics-vs-water-hydraulics-the-complete-engineering-comparison.txt",
+      "sha": "6c80360ddce343207439637c3890b39184b695bf",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/oil-out-of-the-overhead-actuator-cutting-a-food-contamination-route.txt",
+      "sha": "a5b16f9a6199ee1ef3ec06de1fdf5fae9427ea5b",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/oil-vs-water-hydraulics-a-complete-system-comparison.txt",
+      "sha": "9d4d5b7477154d6a3e2226c2136f4d6f228e5a48",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/piloting-water-hydraulics-on-a-ride-bench-representative-rig-full-validation.txt",
+      "sha": "e82beb7131c16c8be0228da86418c5fd49dc4b9e",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/planning-a-water-hpu-outage-scope-parts-energy-control-and-sign-off.txt",
+      "sha": "ca67f830e6f7ff102eda6a19c3c1f0730405ac8b",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/pressure-limits-of-water-hydraulic-equipment.txt",
+      "sha": "564fe8ddd5ece45170abf9dbc56a764238b193c8",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/pressure-worksheet.csv",
+      "sha": "629919e18785c9591826ae3104e17692f99919b9",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/preventing-corrosion-in-water-hydraulic-systems.txt",
+      "sha": "2e4f25de3fc65f7e21b09a520e05d536af7786ac",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/pump-worksheet.csv",
+      "sha": "77b11b3dab8e2f1269dc427fc54a6e0b104a1db2",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/retrofit-worksheet.csv",
+      "sha": "5b75c30ff024b4458ec65e07e4fe776ad05c2e6f",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load.txt",
+      "sha": "4445c92dbf91aec6c24ccb487077441b02af219f",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/ro-worksheet.csv",
+      "sha": "f31a58f7f45a35f5c15fe4220049f42ca725ed47",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/safety-worksheet.csv",
+      "sha": "5489345ad0673f955335e214eeae88d1654e265c",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/scale-slime-or-debris-identify-the-deposit-before-you-treat-it.txt",
+      "sha": "1973e64f3c2b847da243e49527340377fd061543",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/seal-and-hose-life-expectations-with-tap-water.txt",
+      "sha": "220e6f3f0427db4cab3c5685ff37ed625e27b73e",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/seals-worksheet.csv",
+      "sha": "ab01aa32986eaba404cff4dc380690f36a0226da",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/seawater-worksheet.csv",
+      "sha": "cf8ca2cbb05ef18a0ddf624d7768bd3b59e94fb3",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/selecting-pumps-for-water-hydraulic-systems.txt",
+      "sha": "054b472a42901be3ad74b1722466bd886a176dfd",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/sequence-and-fault-table.csv",
+      "sha": "3cc29b757de5209e0ea91cd1e49b3f4b74045f42",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/should-you-specify-water-in-your-next-tender.txt",
+      "sha": "4c8f02c3388e5171569e8edccc1e67671a891103",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/sizing-a-water-control-valve-from-its-pressure-drop-curve.txt",
+      "sha": "0c8e9d29afd40b1416bb99beca57cf2e3494500e",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/sizing-cylinders-for-water-hydraulic-applications.txt",
+      "sha": "680d44e4958110abcad6e86ac5c6a55b2d1979cb",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/smart-monitoring-options-for-water-hpus.txt",
+      "sha": "7942c94ce1e64209a7b98636b73f958e501dffe6",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/spec-writing-guide-for-water-hydraulic-equipment.txt",
+      "sha": "d0de31af86e02205a34b4347ce50a9594614613d",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/specification-worksheet.csv",
+      "sha": "07040f4ea40d300b4294e556bccd05cb9e88b800",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/spray-worksheet.csv",
+      "sha": "c82cdf8f450ab7951673bcfc0b5e6d1d181786dd",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/stainless-for-water-hydraulics-matching-the-grade-to-the-exposure.txt",
+      "sha": "49aa8c7bdb394e827072acbe210a8b7a0084e94a",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/stainless-or-brass-at-sea-specify-the-alloy-and-the-joint.txt",
+      "sha": "8f2d6b4184e04bd2ebf1dab73075f3bbde9e7bd9",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/suction-worksheet.csv",
+      "sha": "d12c9fdf860b20b1d5802ccde2b57caf3475272d",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/system-worksheet.csv",
+      "sha": "863154e6ffb10d8acd812c09b48705fc09c5691d",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/tap-water-or-seawater-choose-clean-freshwater-inside.txt",
+      "sha": "ac3056079089b61f0d912657b50e21f3f78a0f70",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/the-clean-technology-itc-and-water-hydraulics-check-before-you-count.txt",
+      "sha": "615a170a24dd070db13f80e6b69fbb519e06d34b",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/the-future-of-oil-free-hydraulic-systems.txt",
+      "sha": "ac32d94021055daf6a27ced850d3f6d728cd8183",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/the-physics-behind-water-hydraulic-pressure-systems.txt",
+      "sha": "23ba2bc965ca784a803beb52f53d79e2a60116b7",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/thermal-performance-of-water-vs-hydraulic-oil.txt",
+      "sha": "bc8e7dfb4f5fd1790f1271215c146d8d8c1428d7",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/thermal-worksheet.csv",
+      "sha": "cb0500340661d7a04b9f0af2ccc773f353f6a85f",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/understanding-valve-selection-in-water-hydraulic-systems.txt",
+      "sha": "f7dd4191375a42304c3b2085cf0885e52b1abbd8",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/valve-worksheet.csv",
+      "sha": "31416172a7d3a2b9b8675a1d5f626a017ab63a2a",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/wastewater-worksheet.csv",
+      "sha": "94ba019dbf8ab35ed74f6028cfe6b30cd5c4a11f",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/water-actuators-on-severe-service-valves-proving-the-performance.txt",
+      "sha": "d9b667907b6e7fc52616e92a0c72b068b1e5e6be",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/water-driven-power-on-offshore-platforms.txt",
+      "sha": "7faf014660a87a9b0997865162309767860923af",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/water-hydraulic-filtration-requirements.txt",
+      "sha": "8bcb352dfeb91848791fc2c67220fe4cbf653649",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/water-hydraulic-system-maintenance.txt",
+      "sha": "5bb1624bd8a7b246fc5c491eee51c661c7a0601d",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/water-hydraulic-systems-for-marine-vessels.txt",
+      "sha": "2b17e56a09d8463653fa6c85e03eb221bb065c36",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/water-hydraulics-by-the-sea-built-for-the-coastal-environment.txt",
+      "sha": "6a54b3b5a4cd9b84f7312f926c72f722b0d0f758",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/water-hydraulics-for-flood-control-infrastructure.txt",
+      "sha": "9673314867d834962c657560ffe6f25a87989ca2",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/water-hydraulics-for-government-infrastructure-projects.txt",
+      "sha": "0271add838077b15aee69c4d41a53b53ad668565",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/water-hydraulics-in-wastewater-treatment-plants.txt",
+      "sha": "603c2fc1cd5e1e369533f29ff6ea6743b1f6696e",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/water-mist-or-sprinklers-in-the-data-centre-start-with-the-fire.txt",
+      "sha": "8c5fd44332c5ea5d6f371b72f55dfc8429205861",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/water-powered-rides-oil-free-actuation-and-validated-fault-response.txt",
+      "sha": "683073dcc1caffc6fab4e7a802c6e498d94d6d27",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/water-stores-more-heat-design-the-whole-cooling-balance.txt",
+      "sha": "e1be888e0876f0b95ab6bc67e87540f4c534c3ba",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/what-are-water-hydraulic-systems.txt",
+      "sha": "7fc1963225f0acabfa67950401303c61c97bfb77",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/what-does-no-additives-actually-mean.txt",
+      "sha": "39867f5ee817a1893cf0e1407a4ffc12e05c6819",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/what-happens-in-a-fire-will-the-water-system-shut-down.txt",
+      "sha": "1b6c7da7cef176c69b3e7aa251ad2fbe44e2e65a",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/what-if-the-water-freezes.txt",
+      "sha": "7366b1e027816888cad530d91f5843ed3dab0ea7",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/what-maintenance-looks-like-in-a-water-hydraulic-system.txt",
+      "sha": "d33721d1b36fec8a5e4d53db38091d5334a9252e",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/what-removing-oil-does-for-the-environment.txt",
+      "sha": "6c14fc46dadfda8fe297734ad758185f18c3671f",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/when-does-water-pay-off-find-the-break-even-saving.txt",
+      "sha": "eed1853145d97071919e43a66ff7707b1a3500a2",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/where-is-the-conscience-of-the-municipal-engineer.txt",
+      "sha": "b3e6109d1f4a15cb78c3e1936ed21f0eb4018520",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/which-oil-circuit-should-go-first-a-screening-guide.txt",
+      "sha": "8a49284ca61a29a316a4f71d67b2820190738ac8",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/why-doesn-t-everyone-use-this-already.txt",
+      "sha": "63d717a46a8a07f3914366e95a9d2ae5ddf383b0",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/why-municipal-procurement-needs-to-rethink-oil.txt",
+      "sha": "2d3f017b567bbd1d97f3e5de29eb4304138c7620",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/why-water-can-replace-hydraulic-oil-in-industrial-systems.txt",
+      "sha": "4b17065d8282e4ebbfbe804ca2c61f7a10f0d7ce",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/why-water-hydraulics-belong-in-sustainable-industry.txt",
+      "sha": "4f4837fd8e9996579ecff7115e1274bdf3f7ba32",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/why-water-hydraulics-may-replace-oil-in-industrial-infrastructure.txt",
+      "sha": "2abb3e3678502f448c77803de8a64d380274c622",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/will-water-rust-my-system-the-engineering-answer.txt",
+      "sha": "060a64fe8c2cd604c4c6e5e0541efdb1176004ee",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/winter-worksheet.csv",
+      "sha": "cd7c656d229706090276442c2936588f62ab3c53",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/working-within-160-bar-get-the-force-from-area.txt",
+      "sha": "a7b1ff5ec30db9998019fcf8bed0869371c6879d",
+      "type": "file"
+    },
+    {
+      "path": "public/downloads/worksheets/your-first-water-hydraulic-project-baseline-trial-then-repeat.txt",
+      "sha": "b8c05c27762146c2bff316584e90643df27d7d95",
+      "type": "file"
+    },
+    {
+      "path": "public/f1-desal-power-center/index.html",
+      "sha": "7238889c33cb95369d286baa743ddc31582e6c1b",
+      "type": "file"
+    },
+    {
+      "path": "public/index.html",
+      "sha": "70e7580c5a7aa8e46533e08c4d25600b2771f36d",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/index.html",
+      "sha": "f0a6478dba5061ebe2afa0a73fff87ce76d6f829",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulic-systems-for-hydrogen-production/index.html",
+      "sha": "901ee9148b9c909b4a4ea61a1aeeb1ecd4e00044",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulic-systems-for-pulp-and-paper-mills/index.html",
+      "sha": "5649163efe1a5ac18bbb31c95bc2f214abd08294",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulic-systems-for-wastewater-treatment-plants/index.html",
+      "sha": "fe67cef465e4ee9a59f6589f2ee07676734c7dce",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-agriculture-and-irrigation-systems/index.html",
+      "sha": "e2a66e86d1934ce8e23fa83594921fc785eef4e3",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/index.html",
+      "sha": "c5a8b0e943812f25c32aacbee4af9302fe9c5614",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/modular-desalination-packages/index.html",
+      "sha": "cb038906851578f708c371f0bd7fd4abd4dd8302",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-dust-control-systems/index.html",
+      "sha": "357b16e9e40dba2181fe7d53a59f4bede7e0a105",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-fire-suppression-systems/data-centre-use-case/index.html",
+      "sha": "22ed5adde964a3334380838322da755e31a3529f",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-fire-suppression-systems/index.html",
+      "sha": "1b2bb2acbcdc0b06a3bee78e0c099552d8ea6f27",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-food-and-beverage-manufacturing/index.html",
+      "sha": "0ec36ab649f66f1ab28db964e44ef03e225c2d58",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-forestry-and-logging-operations/index.html",
+      "sha": "733fa1c6eaf4ee1e4990771497f5f3dcf31e0ad3",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-hydroelectric-power/index.html",
+      "sha": "d0440548f07c080c79a2860feb4e4e9e81bb8701",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-marine-and-coastal-applications/bilge-pump/index.html",
+      "sha": "7dd53706775c68838c5ca50cce37c0a190954f12",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-marine-and-coastal-applications/index.html",
+      "sha": "622a3169afbf623564273b7fd69a5f70abe35eb3",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-mining-operations/index.html",
+      "sha": "47a1131fcfeae7179fbf71e14ea384de974827ad",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-municipal-infrastructure/index.html",
+      "sha": "665d4d25cef208edf16336b30d6e6032ad3a1259",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-odor-control-and-ventilation-systems/halo-plant-based-odour-control/index.html",
+      "sha": "b377786d4af6b8261614fd33698fdcec23deed2c",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-odor-control-and-ventilation-systems/index.html",
+      "sha": "003511492987e288ab246805be58b0a0fc1b417c",
+      "type": "file"
+    },
+    {
+      "path": "public/industries/water-hydraulics-for-water-parks-and-wave-pools/index.html",
+      "sha": "7d79af4366862378cf4143af9458f8f29ff14eae",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/10-questions-engineers-ask-about-water-hydraulics/index.html",
+      "sha": "3ec2110b66e9bdbb2e411867367073838907ac58",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/a-fair-test-of-water-vs-oil-hpus-in-desalination/index.html",
+      "sha": "aee4320e247863635cf868b09330060328752663",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results/index.html",
+      "sha": "ba075d676160da80493162e3482a3237a974cc6f",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/aligning-with-esg-how-water-hydraulics-support-sustainability-targets/index.html",
+      "sha": "726cb922ddc2bcf4bd81bf45b72da34b43f56d0e",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/are-your-components-certified-for-marine-or-food-use/index.html",
+      "sha": "7833c96522f2cf691af28cbc0f2a8fced3402111",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/avoiding-oil-contaminated-waterways-legal-and-financial-risks/index.html",
+      "sha": "c9a804988b2948016651048e871282d2e6d97f70",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation/index.html",
+      "sha": "d8b65aeff430bc3f7dea6cd41e78f40b82db5231",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/breaking-down-the-roi-investing-in-water-hydraulics/index.html",
+      "sha": "057cf3442e090a36438a9c6f2b51235c6d9f9837",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/can-i-retrofit-my-existing-system-to-use-water/index.html",
+      "sha": "79aa55f1ab5e877d65459b687e313f4dc2d73ef2",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/can-water-freeze-in-hydraulic-systems-engineering-around-temperature/index.html",
+      "sha": "fd00af42f0411f392ce8abf0e17361f45f7089bf",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/can-water-handle-heavy-loads-like-oil/index.html",
+      "sha": "a6be58f237ac900c148607f684fab849b57246f0",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/carbon-reinforced-peek-in-hydraulic-equipment/index.html",
+      "sha": "a1cc4b349c8788099a55f3737b4679d9bacef1a5",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/cavitation-in-water-hydraulics-myths-truths-and-design-solutions/index.html",
+      "sha": "3c2016a643e43dfc4581c7f07c21baf6cba5f7c5",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/choosing-the-right-cylinder-for-water-actuation/index.html",
+      "sha": "49cd12123e334381d35a8d14f6b69f84ae3b3f6b",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/component-spotlight-armak-air-motors-and-water-hydraulic-integration/index.html",
+      "sha": "ce138086a7a6b3f168abbb408d7f49e0850f2e3c",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/converting-a-citys-hydraulics-one-asset-class-at-a-time/index.html",
+      "sha": "4e278dc905a9cf95f35444cbb620fd0ab9b76aaa",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/desalination-plant-hydraulic-systems/index.html",
+      "sha": "0259ae8c91d324382289a483907c239d5add8d17",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/designing-a-water-hydraulic-power-unit/index.html",
+      "sha": "2d0d375456093f93a7608cf9b2906d5dadfb1f83",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/designing-control-valves-for-water-hydraulics/index.html",
+      "sha": "6b3c4aab1c8e5bcf8e0cdc75dbc87959b27f2ad8",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/designing-for-pressure-closed-loop-water-hydraulic-circuitry/index.html",
+      "sha": "fa029b8dac8c70914ac2d10242c67915687b06a4",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/designing-hydraulic-circuits-using-water-as-the-medium/index.html",
+      "sha": "f64a8f92b213384faea65d2934abc8ba9eb83e07",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/diagnosing-pressure-drop-in-water-driven-cylinders/index.html",
+      "sha": "0eff5c9ee11a440d539b57dbe7590994a6dd1bb4",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/do-i-need-filters-or-additives-for-tap-water/index.html",
+      "sha": "943a908c123dc5e2e0a7074208843bd7867844f1",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/does-your-water-circuit-need-an-accumulator-name-the-job-first/index.html",
+      "sha": "cedadb78b15b3e6052e2d82f39e360be203a1e6a",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/drought-ready-water-hydraulic-use-in-desalination-plants/index.html",
+      "sha": "7cfe8172c0dca7040cae24686e71b5aca3bad0e4",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/duplex-stainless-at-sea-stronger-and-more-pit-resistant/index.html",
+      "sha": "ee7f2abe2e1d487a38556543f6767e4fb9498ca3",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/dust-suppression-systems-using-water-hydraulics/index.html",
+      "sha": "fa5891c4d84393298c6b6c78ea796b8ab5b6a891",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/efficiency-of-water-hydraulic-pumps-compared-to-oil-pumps/index.html",
+      "sha": "8802141f5c619097f593a1677f6815b01eb275da",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/electric-actuators-vs-hydraulic-actuators-the-real-engineering-trade-offs/index.html",
+      "sha": "0d9f66407617c821fbb8b9a2d72a1785dfcee032",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/energy-consumption-of-water-hydraulic-systems/index.html",
+      "sha": "5bde2b45c8186663c8d9179017541007e6fc69ed",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/accumulator-calculator/index.html",
+      "sha": "01408c2c43c04699fd80478de9b042e7a4f35c36",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/carbon-savings-calculator/index.html",
+      "sha": "e8df8414104489153f2c8035f4ca017f9af3e119",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/cylinder-force-calculator/index.html",
+      "sha": "0974a3ab0dfa25255e1f082ded57a3035a386cba",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/energy-savings-calculator/index.html",
+      "sha": "dbe4ef9287ed985aed709bd22c6b68ae0a053c45",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/flow-rate-calculator/index.html",
+      "sha": "d1c0bac01f2fbed8fed138b9aad0f5faf1abe194",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/hydraulic-efficiency-calculator/index.html",
+      "sha": "050917a672f9c6d1dfa267f71978c1c0f5833b05",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/index.html",
+      "sha": "ed891543ae5a9a0c672fdc5344ebc3e9801ae5b5",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/index.html",
+      "sha": "6dbd1a8c8d397e3ccab6fd8430da09cc428183b2",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/manifest.json",
+      "sha": "0f2c47b6c5d9e2deb10c4d41f56f1b6053dfddd2",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/motor-speed-calculator/index.html",
+      "sha": "8a48d4c19bbf89e1c048d24540e42c695b7adf01",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/index.html",
+      "sha": "65018f1a6a1a89e0448dce76ec3a26b5abc39cd8",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/orifice-calculator/index.html",
+      "sha": "3cb0260e5bd279c9e508974094d86678ba01db21",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/pipe-velocity-calculator/index.html",
+      "sha": "9e5a381fb50f5d68db9c6a17281e71a43aef899d",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/power-calculator/index.html",
+      "sha": "a47b8b07c348ee4c0038733d67d17bcfdc7f721b",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/pressure-drop-calculator/index.html",
+      "sha": "71100281879b9a7dabef4be782c6e0ce62d50de3",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/pressure-loss-calculator/index.html",
+      "sha": "8b5b92798913d1125614a23171d8f940aacf2e2f",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/pump-sizing-calculator/index.html",
+      "sha": "1e1f2223daf075facded630aec8f62936fa99e7e",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/reynolds-number-calculator/index.html",
+      "sha": "b4f906b086fd61028ef6619fcaa1c5bcd2f38141",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/roi-calculator/index.html",
+      "sha": "0eba76a3a7f9910289cc8965805dfd893462155a",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/seal-compression-calculator/index.html",
+      "sha": "207c06a42bf3e58ad7c88af310738ba018c17d9c",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/surface-finish-calculator/index.html",
+      "sha": "9afc755b66bd256e9f695bca1299eec410f7e04e",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-calculators/water-hammer-calculator/index.html",
+      "sha": "af6eaa331bbd07bddaa2b0de86b8506194a51f5f",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-principles-of-water-hydraulic-actuation/index.html",
+      "sha": "d6fb93b9fec058763e3929f5afa3acf64f51794c",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/engineering-seal-systems-for-water-hydraulics/index.html",
+      "sha": "4393210262f6127eb4161f91e7bbfb08ea881699",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/environmental-compliance-and-hydraulic-systems/index.html",
+      "sha": "ad9a256ed60da7d9320b488b48aadf2d930cb410",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/environmental-regulations-affecting-hydraulic-systems/index.html",
+      "sha": "4d23e0dccb681eeb3cc8980a023fa48e3f29de80",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/environmental-risks-of-hydraulic-oil-in-water-infrastructure/index.html",
+      "sha": "d0d8f34644a901b0bde8755cdbee71589fcd6311",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/fail-closed-fail-open-or-hold-engineering-safe-states-in-water-hydraulics/index.html",
+      "sha": "8c274b4491b49e89769ad9a3c92adf2efc2173c8",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/fire-pump-station-renewal-start-with-the-protection-design/index.html",
+      "sha": "902217603795381ab755b3284cf589d1e046bde3",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/five-reasons-your-next-valve-should-be-water-actuated/index.html",
+      "sha": "41ee17e664552148e0743b8f75bce4ef0b6f0bf4",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/fluid-properties-of-water-vs-hydraulic-oil/index.html",
+      "sha": "f9c0fc1af251683ce95422660aada27b98a68665",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/flushing-and-start-up-tips-for-first-time-water-users/index.html",
+      "sha": "88ec8fc079de9049ef35d3d38fdf12f8e5f21eec",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/from-steel-mills-to-sawmills-industrial-applications-of-pressurized-water/index.html",
+      "sha": "7506db0d09b71434955bee676023fc907c82134f",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/funding-water-driven-innovation-a-guide-to-clean-tech-grants/index.html",
+      "sha": "3377f0d612728c9e918db636d8dce78ffcb986c0",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/funding-water-hydraulics-r-and-d-or-routine-adoption/index.html",
+      "sha": "3d72257cb5320c571f910de7cc981f6279da3228",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/glossary/316l-stainless-steel/index.html",
+      "sha": "6905e2aecab39aa005a483dc60bf2a0a71c207f7",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/glossary/axial-piston-pump/index.html",
+      "sha": "14004741e2d4bbf95b9671c1fd4168eb3754ba25",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/glossary/back-pressure/index.html",
+      "sha": "df6dfd6ad20d836be1be82ff1019b01c10fe46a4",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/glossary/fluid-power/index.html",
+      "sha": "cf23ef456152c6de92805fecbb1355c5143a4578",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/glossary/glossary copy/index.html",
+      "sha": "243c34aff6d83e11b755fea1c7133dbfcd449535",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/glossary/hydraulic-actuator/index.html",
+      "sha": "adb8d44f1c2b3193e554304c5640c56c9078c916",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/glossary/hydraulic-power/index.html",
+      "sha": "ce9529b507a1ae7e86a9fb4d8052237468941ed5",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/glossary/hydraulic-pressure/index.html",
+      "sha": "ea145f4f8f9f7b70a7806859b91c1aa2824d65ec",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/glossary/index.html",
+      "sha": "1ed2b36a4952c38988ddb232e485528622b7b11b",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/glossary/peek-polyether-ether-ketone/index.html",
+      "sha": "4ddb00e6dac34faf7f535b9b21989dcd3fd124f4",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/glossary/volumetric-efficiency/index.html",
+      "sha": "fa8402f8cdc22534c34add736474c3a78fd42f03",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/going-oil-free-which-maintenance-tasks-go-stay-and-get-added/index.html",
+      "sha": "3749eb13dbe6c94eb2c2a0707a969ea11feaf1c1",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/half-a-litre-a-minute-of-leakage-costs-83-watts-all-day/index.html",
+      "sha": "a3eef79594102a1c28fb7e4e86661d717f24de93",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/high-flow-or-high-precision-matching-pumps-to-application/index.html",
+      "sha": "e5fdb857fe2c0d368f93c66dcd9be39a55336230",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/how-engineers-can-specify-oil-free-hydraulic-systems/index.html",
+      "sha": "b7ca99365fb141073df33c57980e45759c89631e",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/how-force-is-generated-in-water-hydraulic-cylinders/index.html",
+      "sha": "b7197495a26a9ebaf1f4fc72e5929abaad36700b",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/how-hydraulic-fluids-behave-thermal-expansion-viscosity-and-stability/index.html",
+      "sha": "521270b3582ad894c4138392a6a0d6b3cc2acc5f",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/how-much-are-your-hydraulics-costing-you/index.html",
+      "sha": "9f0a1ee46cb6a6a99e9bea7f45f0e86c243ba42c",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/how-oil-contamination-affects-wastewater-treatment-plants/index.html",
+      "sha": "58aba6913fff7417b774e93b280297fbad368075",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/how-to-convert-an-oil-hydraulic-system-to-water-hydraulics/index.html",
+      "sha": "e1a3f38411705a653476a80974ee5bdd9cf7a471",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/how-to-winterize-your-water-hydraulic-system/index.html",
+      "sha": "61f63e722812b48fc815be51f5abece50beb1a5f",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/how-water-hydraulics-handle-lubrication-material-pairs-and-clearances/index.html",
+      "sha": "4e411503f2a9f7f96371403c33a0f056fb407b04",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/how-water-hydraulics-work-compared-to-oil-hydraulics/index.html",
+      "sha": "a3a3be744aebc07623d4a410025931ecc88809b7",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/hydraulic-gate-actuators-for-municipal-infrastructure/index.html",
+      "sha": "07f581c3c75bb502711e074a9eb7fe649d445819",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/hydraulic-power-transmission-using-water/index.html",
+      "sha": "6ed6172f6450a7a7f887ec708ac58799abe946e2",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/hydrogen-propulsion-water-hydraulic-deck-gear-a-clean-fishing-vessel-concept/index.html",
+      "sha": "b010037dcf0ee822f07b70fa8d9f19141229b0f8",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/hydropower-infrastructure-using-water-hydraulic-actuation/index.html",
+      "sha": "ca6482102f74b40f007fa427627fb1f33521ba3c",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/index.html",
+      "sha": "e06e46909e01661608fce672b0f337b6a9edc723",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/installing-water-hydraulics-aboard/index.html",
+      "sha": "ade58e8167aa9c63ca0fbc0b127b2b6820512623",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/investigating-corrosion-in-a-running-water-circuit/index.html",
+      "sha": "58aea60cb1a5bab98bcd1ec8bd4cd9fb1da36282",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/is-water-more-expensive-long-term/index.html",
+      "sha": "2f28872ae1770613859c501491b0b7aac47fdf64",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/is-water-too-thin-to-work-in-high-pressure-applications/index.html",
+      "sha": "7fc9d56f3de56017d2ba4c17b79f06259634d99a",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/judging-a-water-hpu-by-what-it-does-between-movements/index.html",
+      "sha": "6c4362b813295107881f4807d97feed8a7d17333",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/knife-gate-valves-and-water-hydraulics-a-natural-fit/index.html",
+      "sha": "287d026473ab597f596ed9656380b7b7bd52b3ae",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/lifecycle-cost-breakdown-oil-vs-water/index.html",
+      "sha": "ecb00330af2d694129a3592b06dc0fe6d186e2e1",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/lifting-and-hauling-without-oil-forestry-applications-using-water/index.html",
+      "sha": "1917844b1ac8958c92b782dded72d6c399eba61c",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/managing-seal-life-in-water-hydraulic-environments/index.html",
+      "sha": "ba65f11ec5265b4f4fd9fd9db1c30118899e6f69",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek/index.html",
+      "sha": "86d333894ca18afd5cb9967cb3347b9e3ab5c710",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/material-pairing-for-water-hydraulic-tribology/index.html",
+      "sha": "e9d4b2d8dc4aa1b8b1bcfdc521ecff0a491e3006",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/mining-availability-is-built-at-the-skid-layout/index.html",
+      "sha": "f3baa14cc86254e5b1ebf8e11f055e4d5bc368d0",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/mining-equipment-using-water-hydraulic-systems/index.html",
+      "sha": "baed147e8c212ae103fa0a0c138dc63146dbd447",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/moving-from-oil-to-water-audit-every-wetted-part-first/index.html",
+      "sha": "d31e5083d56a3ec44e1e85633f8b79d093192cc5",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/municipal-infrastructure-without-the-oil-hazards/index.html",
+      "sha": "a4a920e2d06fe64807cd058407320ea51dbf1943",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/oil-free-operation-a-design-fact-that-supports-your-environmental-goals/index.html",
+      "sha": "5737b0cd84c88d9981ea8cdfbd922f3409524d2f",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/oil-free-you-can-prove-count-the-litres-you-removed/index.html",
+      "sha": "aeada10d332e083e75e49b42968123d32c5fc029",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/oil-hydraulics-vs-water-hydraulics-the-complete-engineering-comparison/index.html",
+      "sha": "036dc150b3edf87f087aafdd9406700986409f3d",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/oil-out-of-the-overhead-actuator-cutting-a-food-contamination-route/index.html",
+      "sha": "c75e67ad16bc91da3ef2a4690b73ec9241abb642",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/oil-vs-water-hydraulics-a-complete-system-comparison/index.html",
+      "sha": "5463d1a14230095dfc1562d871f588abb49c3505",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/piloting-water-hydraulics-on-a-ride-bench-representative-rig-full-validation/index.html",
+      "sha": "abc1fd2b2c28dc986c37bb6e1fb6b67326df7db9",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/planning-a-water-hpu-outage-scope-parts-energy-control-and-sign-off/index.html",
+      "sha": "52090efb96494b5a33e593d628cac6f1d3ebe824",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/pressure-limits-of-water-hydraulic-equipment/index.html",
+      "sha": "db4fd515c3693b9456b38270cf636585a49544ef",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/preventing-corrosion-in-water-hydraulic-systems/index.html",
+      "sha": "abbb7ce532c2ec9aab7171256f6eb972bdf3f477",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load/index.html",
+      "sha": "7f0450324edabf9a333e27e95e8b2178fc4511d0",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/scale-slime-or-debris-identify-the-deposit-before-you-treat-it/index.html",
+      "sha": "cbaf80155bc353dd301fd0cfbee16e1e8b348606",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/seal-and-hose-life-expectations-with-tap-water/index.html",
+      "sha": "63c7b80b732fa63d95a9195bf1fb677726680fa9",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/selecting-pumps-for-water-hydraulic-systems/index.html",
+      "sha": "1dd60d237451b5628d5ce93c12847b5aae0c8db9",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/should-you-specify-water-in-your-next-tender/index.html",
+      "sha": "f4557db2fb1311788f9abe48ec4ab74fd54d529f",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/sizing-a-water-control-valve-from-its-pressure-drop-curve/index.html",
+      "sha": "fea199ca6f5bcd63693e45ccc1b9a922e03a3c00",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/sizing-cylinders-for-water-hydraulic-applications/index.html",
+      "sha": "38cc86aea0533751e85c4ed2224c6d6ab1c134f8",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/smart-monitoring-options-for-water-hpus/index.html",
+      "sha": "c18c0c285d793beb15c8254324753cf0ce04709e",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/spec-writing-guide-for-water-hydraulic-equipment/index.html",
+      "sha": "b0709629f0deab5190b0b581efec3104fec640c7",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/stainless-for-water-hydraulics-matching-the-grade-to-the-exposure/index.html",
+      "sha": "823aaf4011c56d0e204e47097760dba026cd64b6",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/stainless-or-brass-at-sea-specify-the-alloy-and-the-joint/index.html",
+      "sha": "b590e3d2e5013677e29606c7b089faa9d1531946",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/tap-water-or-seawater-choose-clean-freshwater-inside/index.html",
+      "sha": "1eb0ac6feeec16cceef1e9351123fefae16442fc",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/the-clean-technology-itc-and-water-hydraulics-check-before-you-count/index.html",
+      "sha": "6c3c10f003c1e5cc85a0f0f8a22723c1e7459eaa",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/the-future-of-oil-free-hydraulic-systems/index.html",
+      "sha": "4f80e41d941d4a4e83345920cb3f5f36209c3f6b",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/the-physics-behind-water-hydraulic-pressure-systems/index.html",
+      "sha": "843fdc010c6011e7c07a908031f9c8eef7fa03c8",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/thermal-performance-of-water-vs-hydraulic-oil/index.html",
+      "sha": "54b5c6b3ee3bef00f55577a14906cd98d6950bf6",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/understanding-valve-selection-in-water-hydraulic-systems/index.html",
+      "sha": "9bfb25a59f93f040e79be64f98fc60d7db66d337",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/water-actuators-on-severe-service-valves-proving-the-performance/index.html",
+      "sha": "910726ceba1d79b738b39640d55d49631baa3616",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/water-driven-power-on-offshore-platforms/index.html",
+      "sha": "7a0ede6bd6352e709a883f93566678b188bf9143",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/water-hydraulic-filtration-requirements/index.html",
+      "sha": "ad8df8653f21f04453e0a05b61ce7a45cc28bd7d",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/water-hydraulic-system-maintenance/index.html",
+      "sha": "f0877d99bd972e42945f06afbeb842d5b3025220",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/water-hydraulic-systems-for-marine-vessels/index.html",
+      "sha": "18b48637efb9df425b3acb55cf5d8f42d89b87c6",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/water-hydraulics-by-the-sea-built-for-the-coastal-environment/index.html",
+      "sha": "48f09932b29e79ed1a4e911054badb56c4ddb750",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/water-hydraulics-for-flood-control-infrastructure/index.html",
+      "sha": "6615b58909a50ed8afa41c492369b8e491053a80",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/water-hydraulics-for-government-infrastructure-projects/index.html",
+      "sha": "25e8cc7054b99b333d747872942308eae96177aa",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/water-hydraulics-in-wastewater-treatment-plants/index.html",
+      "sha": "0e4ed07fc1471bb71c038d285c33ff1034b9394b",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/water-mist-or-sprinklers-in-the-data-centre-start-with-the-fire/index.html",
+      "sha": "d7ce255d28b6e201ac9fb9b62690509b0d2203dd",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/water-powered-rides-oil-free-actuation-and-validated-fault-response/index.html",
+      "sha": "89ad782cd36e1358a7b2183698338b78af1eaebe",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/water-stores-more-heat-design-the-whole-cooling-balance/index.html",
+      "sha": "e3a1442f967faa41464145674cacfaa5089c9f96",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/what-are-water-hydraulic-systems/index.html",
+      "sha": "54f902d6104da8f48267c1342cb87608a606a525",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/what-does-no-additives-actually-mean/index.html",
+      "sha": "26c6506fb7c271403695948b3516d8fd663af07d",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/what-happens-in-a-fire-will-the-water-system-shut-down/index.html",
+      "sha": "7636a3fc288d59781edb26d2780406904ab8f6ab",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/what-if-the-water-freezes/index.html",
+      "sha": "b1da08cc831cffbfb3fda46b929d3a71f6e46614",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/what-maintenance-looks-like-in-a-water-hydraulic-system/index.html",
+      "sha": "4c1e3aceaf51ded558c13fb13747d662a4d05746",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/what-removing-oil-does-for-the-environment/index.html",
+      "sha": "6f7cd32705b14d20ba3ab83db2442b78ed225523",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/when-does-water-pay-off-find-the-break-even-saving/index.html",
+      "sha": "cce0560f7ef13648442dcb0900c6e051e8612f37",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/where-is-the-conscience-of-the-municipal-engineer/index.html",
+      "sha": "dd215a4ec7e59aaafef8d898d7bb590e57925e9e",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/which-oil-circuit-should-go-first-a-screening-guide/index.html",
+      "sha": "edd16f065ce6b9bf8cb227a6761decfe404d99da",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/why-doesn-t-everyone-use-this-already/index.html",
+      "sha": "93cc3b4991a23f8a883b5ce0cd91f46332dcb961",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/why-municipal-procurement-needs-to-rethink-oil/index.html",
+      "sha": "609dfa96fbe8aa36301dda38471d49b596e742ee",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/why-water-can-replace-hydraulic-oil-in-industrial-systems/index.html",
+      "sha": "73a6b9cdc1e93a7c891e70005ae07dd1d2996a03",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/why-water-hydraulics-belong-in-sustainable-industry/index.html",
+      "sha": "eca971ef11e4088ea06dcbd2b8e4bb6c1cda61f9",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/why-water-hydraulics-may-replace-oil-in-industrial-infrastructure/index.html",
+      "sha": "8404666fa88300136807fbfe3457f0de28573c2a",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/will-water-rust-my-system-the-engineering-answer/index.html",
+      "sha": "b631e51d40339d110b241855ff220ffb526481f7",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/working-within-160-bar-get-the-force-from-area/index.html",
+      "sha": "0ef118a95387c5123bac54451b7b9a4e5da7b785",
+      "type": "file"
+    },
+    {
+      "path": "public/knowledge-hub/your-first-water-hydraulic-project-baseline-trial-then-repeat/index.html",
+      "sha": "e7882c67cc55d6a4538ce155d2b5d8b1abbf31dd",
+      "type": "file"
+    },
+    {
+      "path": "public/llms.txt",
+      "sha": "965095c907f29b090f5d38173b466dcd2ebb2c95",
+      "type": "file"
+    },
+    {
+      "path": "public/pilot/index.html",
+      "sha": "f42681c560daf74d4cd1b5f1f425307587ad7ea1",
+      "type": "file"
+    },
+    {
+      "path": "public/policies/project-references/index.html",
+      "sha": "54223f62444964ed79cd90f6cd711ea514945930",
+      "type": "file"
+    },
+    {
+      "path": "public/policies/service-and-maintenance/index.html",
+      "sha": "2b6e4c5a923bee3e2683829e5124665625f7b270",
+      "type": "file"
+    },
+    {
+      "path": "public/policies/spare-parts-and-support/index.html",
+      "sha": "7acc257b15ce55b71abd7d8f5070f543760667ae",
+      "type": "file"
+    },
+    {
+      "path": "public/policies/warranty/index.html",
+      "sha": "50e6f0a3ddb4ac46a8655c796b9e8509bf6987a4",
+      "type": "file"
+    },
+    {
+      "path": "public/project-brief.pdf",
+      "sha": "ded29da039c79d0387f4722a3082529ec7732f29",
+      "type": "file"
+    },
+    {
+      "path": "public/project-brief.txt",
+      "sha": "8d1d91b4179cd744498c4a48bb204b7940f8684e",
+      "type": "file"
+    },
+    {
+      "path": "public/project-tools/index.html",
+      "sha": "302860f617f0abb38134788bfb4af750aef974ce",
+      "type": "file"
+    },
+    {
+      "path": "public/robots.txt",
+      "sha": "a69d8c186d097b86ce4b04bf1f4e984f1c5b827c",
+      "type": "file"
+    },
+    {
+      "path": "public/site-index/index.html",
+      "sha": "c29705f5b7e6c6c9b7839eb64321325ea1972ff0",
+      "type": "file"
+    },
+    {
+      "path": "public/sitemap.xml",
+      "sha": "5872fe887266ce26bceb9ddf1afb15b478486b8c",
+      "type": "file"
+    },
+    {
+      "path": "public/sluice-gates/index.html",
+      "sha": "d16096380c3e11035039b7ab81dfb29536d3b076",
+      "type": "file"
+    },
+    {
+      "path": "public/specification-resources/index.html",
+      "sha": "3a224ad270b5a6def274ca17775053452ff57744",
+      "type": "file"
+    },
+    {
+      "path": "public/start-here/index.html",
+      "sha": "52bc0b766d4178b71e94e1a548c4a491e927f358",
+      "type": "file"
+    },
+    {
+      "path": "public/support-and-supply/index.html",
+      "sha": "87777817219e4d3bc942d926f8d758ffe9c4b984",
+      "type": "file"
+    },
+    {
+      "path": "public/t-p180-pump/index.html",
+      "sha": "2f5f52684ff8a9b03b8f78aadc19a05374107a4d",
+      "type": "file"
+    },
+    {
+      "path": "public/t-p3-pump-4/index.html",
+      "sha": "da2a87b0594a65a708dd7dc72445cb730b802fd4",
+      "type": "file"
+    },
+    {
+      "path": "public/t-p30-pump/index.html",
+      "sha": "f580268995972aa07782079996f1cd73591757b8",
+      "type": "file"
+    },
+    {
+      "path": "public/t-p60-pump-1/index.html",
+      "sha": "e485ed74ea153268bd855f3d9bf578ec28b7dc3a",
+      "type": "file"
+    },
+    {
+      "path": "public/tcheck-graph-4-p15-pump/index.html",
+      "sha": "fff1c13968ae2c530315a7069ae10f90ce450d4b",
+      "type": "file"
+    },
+    {
+      "path": "public/tier-one-product-pages-f1-cylinder-main-with-pressure-files-files-f1-cylinders-main-page/index.html",
+      "sha": "f1e64ac86a02c8e0c232f71299b3c5746f4d18f0",
+      "type": "file"
+    },
+    {
+      "path": "public/wqs-stainless/index.html",
+      "sha": "9d84b8613a3e0d140c67e47c3c85c711d162a0cf",
+      "type": "file"
+    },
+    {
+      "path": "scripts/build-download-archive.py",
+      "sha": "5c0c1ab2adca3b74b8b068afb44d66274af82f26",
+      "type": "file"
+    },
+    {
+      "path": "scripts/build-seo.py",
+      "sha": "7b1b2c62a7e1fa79d590821592294bbe741b8fd3",
+      "type": "file"
+    },
+    {
+      "path": "scripts/build-site-index.py",
+      "sha": "5c75b59a6e6af4816e14639f42edfa188304e95b",
+      "type": "file"
+    },
+    {
+      "path": "scripts/deployed-baseline.json",
+      "sha": "13ebeb150f23757c34ffe0fb160d4f7aa3257655",
+      "type": "file"
+    },
+    {
+      "path": "scripts/guide-manifest.json",
+      "sha": "f7c5748a956a468624d663b5903cec31e903ab47",
+      "type": "file"
+    },
+    {
+      "path": "scripts/install-salesiq.py",
+      "sha": "45782ce0c31f6b6855d418f1de99951b114e63ba",
+      "type": "file"
+    },
+    {
+      "path": "scripts/preview.mjs",
+      "sha": "e9069f62607a944087aec1d767d87f31f2ab9015",
+      "type": "file"
+    },
+    {
+      "path": "scripts/verify-baseline.mjs",
+      "sha": "a24eccc9f4ee04a8592c36b3b0b49004de3fbf19",
+      "type": "file"
+    },
+    {
+      "path": "scripts/verify-site.mjs",
+      "sha": "3a287fc96248791bf3ec2f823a4db9c8beb638e7",
+      "type": "file"
+    },
+    {
+      "path": "tests/calculators.test.mjs",
+      "sha": "4b6b006bb7740e07ce75bf276269cd8fb9a15d44",
+      "type": "file"
+    },
+    {
+      "path": "tests/editorial-integrity.test.mjs",
+      "sha": "a95ed7c8abeaffb03e39d923442456000f253185",
+      "type": "file"
+    },
+    {
+      "path": "tests/engineering-review.test.mjs",
+      "sha": "63ebc75243ef5363e3e4083cce9e19482638cec5",
+      "type": "file"
+    },
+    {
+      "path": "tests/pump-download.test.mjs",
+      "sha": "0e83bedc5511540bd442a5f97bdc0af87530d87f",
+      "type": "file"
+    },
+    {
+      "path": "tests/selected-units.test.mjs",
+      "sha": "07075a3282e11ad0a564457618da54706c29e614",
+      "type": "file"
+    },
+    {
+      "path": "tests/zoho-event.test.mjs",
+      "sha": "5f288f8492cc87dcb05169609e20404e0fd9c8ea",
+      "type": "file"
+    },
+    {
+      "path": "vercel.json",
+      "sha": "ce4ba1b2d36598857f53b6f42763014dd2576a82",
+      "type": "file"
+    }
+  ]
+}
