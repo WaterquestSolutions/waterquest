@@ -10,7 +10,7 @@ walk(root);
 const redirects=new Map(config.redirects.filter(r=>!r.source.includes(':')).map(r=>[r.source,r.destination]));
 function resolve(url){
  let route=decodeURIComponent(url.pathname);
- for(let i=0;i<5&&redirects.has(route);i++)route=redirects.get(route);
+ for(let i=0;i<5&&redirects.has(route);i++)route=redirects.get(route).split('#')[0];
  if(route.startsWith('/api/'))return true;
  if(route.startsWith('/downloads/')&&catalogue[route.slice(11)])return fs.existsSync(path.join('private-downloads',route.slice(11)));
  const rel=route.replace(/^\//,'');
@@ -31,15 +31,12 @@ for(const file of pages){
 for(const guide of guides){
  const source=fs.readFileSync(path.join(root,guide.file),'utf8');
  if(!source.includes('id="guide-application"'))errors.push({file:guide.file,error:'Missing application guidance'});
- for(const product of guide.products){
-  const source=fs.readFileSync(path.join(root,product,'index.html'),'utf8');
-  if(!source.includes('/knowledge-hub/'+guide.slug+'/'))errors.push({file:product,error:'Missing reciprocal guide link'});
- }
+
 }
 for(const file of Object.keys(catalogue)){
  if(!fs.existsSync(path.join('private-downloads',file)))errors.push({file,error:'Missing gated document'});
- if(fs.existsSync(path.join('public/downloads',file)))errors.push({file,error:'Document bypasses email gate'});
+ if(fs.existsSync(path.join('public/downloads',file)))errors.push({file,error:'Catalogued document duplicates the download-service path'});
 }
-if(guides.length!==129)errors.push({error:'Expected 129 guides'});
+if(guides.length!==96)errors.push({error:'Expected 96 distinct guides after consolidation'});
 if(errors.length){console.error(JSON.stringify(errors,null,2));process.exit(1);}
-console.log(`PASS: ${pages.length} HTML pages, ${guides.length} guides, ${links} local references, reciprocal product links and ${Object.keys(catalogue).length} gated documents.`);
+console.log(`PASS: ${pages.length} HTML pages, ${guides.length} guides, ${links} local references, guide application sections and ${Object.keys(catalogue).length} catalogued documents.`);

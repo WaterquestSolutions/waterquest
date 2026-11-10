@@ -1,0 +1,85 @@
+WATERQUEST SOLUTIONS
+Your Hydraulic Unit's Biggest Energy Bill May Be the Waiting
+PROJECT WORKSHEET — revision 2026-10-27
+Source guide: https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/hydraulic-standby-energy/
+
+Project / asset: ____________________
+Prepared by / date: ____________________
+Revision / decision owner: ____________________
+Question this worksheet must resolve: ____________________
+
+RECORD THE APPLICATION
+
+1. Defined useful output and duty cycle
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+2. Electrical meter boundary and auxiliaries
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+3. Pressure / flow measurement location
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+4. Loaded, standby and fault-state duration
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+5. Instrument calibration and uncertainty
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+6. Baseline and proposed configurations
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+7. Representative test duration and repeats
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+8. Energy per useful output / operating cycle
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+9. Tariff, annual hours and sensitivity
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+10. Acceptance criterion and independent review
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+REVIEW THE TOPIC
+Use these guide sections to check the entries above. Record unresolved items; do not turn an unknown value into an assumed rating.
+- Use power when the process needs it
+- Separate instantaneous power from accumulated energy
+- Use hydraulic power to locate losses
+- Match supply behaviour to intermittent demand
+- Treat holding and stored energy as separate duties
+- Measure a representative range of operation
+- Convert the technical result into a useful cost comparison
+- Test improvements without losing the service requirement
+- Measure the whole operating cycle
+- Turn this guidance into a project decision
+- Sources and further reading
+
+DECISION RECORD
+Candidate configuration: ____________________
+Assumptions and low/base/high sensitivity: ____________________
+Open technical or commercial questions: ____________________
+Required drawing / certificate / test: ____________________
+Responsible reviewer / due date: ____________________
+Accepted deviations and sign-off: ____________________
+
+This blank planning aid is not an approved design, test procedure, equipment rating or purchase commitment. Define project-specific criteria with the responsible engineer and supplier.

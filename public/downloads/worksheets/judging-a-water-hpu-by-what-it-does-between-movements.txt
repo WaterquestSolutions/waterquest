@@ -1,0 +1,86 @@
+WATERQUEST SOLUTIONS
+Judging a Water HPU by What It Does Between Movements
+PROJECT WORKSHEET — revision 2026-10-27
+Source guide: https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/judging-a-water-hpu-by-what-it-does-between-movements/
+
+Project / asset: ____________________
+Prepared by / date: ____________________
+Revision / decision owner: ____________________
+Question this worksheet must resolve: ____________________
+
+RECORD THE APPLICATION
+
+1. Each motion / holding / standby state
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+2. Flow and pressure per active circuit
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+3. Simultaneous demand and duty duration
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+4. Pump, motor and reservoir selection
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+5. Actual voltage, phase and frequency
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+6. Water quality, filtration and temperature
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+7. Valve/manifold and protection functions
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+8. Panel, enclosure, wiring and I/O scope
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+9. Heat rejection and service access
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+10. Package approval and FAT / SAT record
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+REVIEW THE TOPIC
+Use these guide sections to check the entries above. Record unresolved items; do not turn an unknown value into an assumed rating.
+- Choose a power unit that supports the production cycle
+- Convert actuator movements into flow demand
+- Establish pressure where the load uses it
+- Check the inlet and return arrangements as carefully as the outlet
+- Examine what happens between productive movements
+- Review fluid management as an operating system
+- Read the control sequence before judging the control panel
+- Make maintainability visible in the layout
+- Test a matrix of operating states
+- Compare offers through their complete scope and evidence
+- Make the HPU match the production schedule
+- Turn this guidance into a project decision
+
+DECISION RECORD
+Candidate configuration: ____________________
+Assumptions and low/base/high sensitivity: ____________________
+Open technical or commercial questions: ____________________
+Required drawing / certificate / test: ____________________
+Responsible reviewer / due date: ____________________
+Accepted deviations and sign-off: ____________________
+
+This blank planning aid is not an approved design, test procedure, equipment rating or purchase commitment. Define project-specific criteria with the responsible engineer and supplier.

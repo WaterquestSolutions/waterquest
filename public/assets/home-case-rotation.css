@@ -1,0 +1,10 @@
+.wq-case-feature [hidden]{display:none!important}
+.wq-case-slide .wq-sluice-main img{height:430px;width:100%;object-fit:contain}
+.wq-case-more{border-top:1px solid #35536f;padding:22px 32px;box-sizing:border-box;font-weight:700}
+@media(max-width:760px){.wq-case-slide .wq-sluice-main img{height:300px}.wq-case-more{padding:20px 22px}}
+
+.wq-case-intro{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px 40px;align-items:center;margin-top:40px;padding-top:32px;border-top:1px solid #35536f}
+.wq-case-intro h2{margin:0 0 16px}
+.wq-case-intro p{max-width:760px;margin:0}
+.wq-case-intro>.wqr-button{justify-self:start}
+@media(max-width:1000px){.wq-case-intro{grid-template-columns:minmax(0,1fr)}}

@@ -1,0 +1,401 @@
+[
+  {
+    "file": "WQS-axial-piston-fire-pumps.pdf",
+    "document": "WQS-PL-001",
+    "revision": "1.1",
+    "pages": 2,
+    "sha256": "44c8451c5151bc9ff49b318a6a14499071337ae3c90f4f0a96ad4cda556e89de"
+  },
+  {
+    "file": "WQS-axial-piston-pumps-p15.pdf",
+    "document": "WQS-PL-002",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "bd4ad3ab36c8adcc2ea5e8d9e770a1fe36adba24d4dd72af7b455bc88d7971f9"
+  },
+  {
+    "file": "WQS-axial-piston-pumps-p180.pdf",
+    "document": "WQS-PL-003",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "c4a370ef4cc93bb80f2d23ab77abaae42e3d60dea4e2e6e4394ec29696604431"
+  },
+  {
+    "file": "WQS-axial-piston-pumps-p3.pdf",
+    "document": "WQS-PL-004",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "6d935c20fdc1ffa23fdd406474daf24ea972a236e8753dffde12e820146a67e9"
+  },
+  {
+    "file": "WQS-axial-piston-pumps-p30.pdf",
+    "document": "WQS-PL-005",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "3fab68cfa107de46745680fb0eb660f3c1283ceeb07268e7212ad844af1ba968"
+  },
+  {
+    "file": "WQS-axial-piston-pumps-p6.pdf",
+    "document": "WQS-PL-006",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "c7743889a8cf98481693f7d69be0a9891915cc7da68436bd83b07d0899694500"
+  },
+  {
+    "file": "WQS-axial-piston-pumps-p60.pdf",
+    "document": "WQS-PL-007",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "959fcd899ca2ff43bbb7e7578e6c9ed1b9a6ed3122bf2f9a4b83e1f6642ae625"
+  },
+  {
+    "file": "WQS-axial-piston-pumps.pdf",
+    "document": "WQS-PL-008",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "a71da1f60c4a7bfef92a2d28d301be4f4291abda292e3075331cdbd96be42c5c"
+  },
+  {
+    "file": "WQS-duplex-seawater-pumps.pdf",
+    "document": "WQS-PL-009",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "5c0710d2111fe7cfae138718279792d8a179fb21012884aceecd94fd8b17c8fb"
+  },
+  {
+    "file": "WQS-p1-pump.pdf",
+    "document": "WQS-PL-010",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "1053686c7fcf49521640d3bdc68db5da43aaee09ac19a62207aa039de514d3aa"
+  },
+  {
+    "file": "WQS-power-centre-reverse-osmosis-pc1000.pdf",
+    "document": "WQS-PL-011",
+    "revision": "1.1",
+    "pages": 8,
+    "sha256": "feb4f790e1484a2e575e3fce55d7a1b87e0091baaae0599d1dc2b0095568e0cc"
+  },
+  {
+    "file": "WQS-power-centre-reverse-osmosis-pc250.pdf",
+    "document": "WQS-PL-012",
+    "revision": "1.1",
+    "pages": 8,
+    "sha256": "8a783e6ff251f3ec97e8769d148b950385b4467f94059179c535dcbf09668f1e"
+  },
+  {
+    "file": "WQS-power-centre-reverse-osmosis-pc300.pdf",
+    "document": "WQS-PL-013",
+    "revision": "1.1",
+    "pages": 8,
+    "sha256": "89e7681260292147293aa4d5d2e71b69d480ec46d57da4e40a07f9c51d877f21"
+  },
+  {
+    "file": "WQS-power-centre-reverse-osmosis-pc500.pdf",
+    "document": "WQS-PL-014",
+    "revision": "1.1",
+    "pages": 8,
+    "sha256": "a99bac4aeb2ba0ef11835e6cf4ca6e2574b77951c3dbbd64f92c32837c8fd54e"
+  },
+  {
+    "file": "WQS-power-centre-reverse-osmosis.pdf",
+    "document": "WQS-PL-015",
+    "revision": "2.0",
+    "pages": 6,
+    "sha256": "33e438ce4ba280479613732f27a9e66e3ccf38e747990134ac0c476220d9aac9"
+  },
+  {
+    "file": "WQS-r2-modular-desalination-packages.pdf",
+    "document": "WQS-PL-016",
+    "revision": "2.0",
+    "pages": 8,
+    "sha256": "6c39fc24b540a359abe02d288e4d95e5c61c3adb17bb2996270099ea7b0f2c43"
+  },
+  {
+    "file": "WQS-water-hydraulic-cylinders-cylinder-100x60.pdf",
+    "document": "WQS-PL-017",
+    "revision": "1.1",
+    "pages": 2,
+    "sha256": "3a7cdaef20ce3a4e7410dd462344ec13ca091e1a2bfd82962dd705e35c693aab"
+  },
+  {
+    "file": "WQS-water-hydraulic-cylinders-cylinder-100x80.pdf",
+    "document": "WQS-PL-018",
+    "revision": "1.1",
+    "pages": 2,
+    "sha256": "7fe877de72fe0da2fc00a93ab4e7c451ed1d8c3dcfde3c24f39b1ff88f01af7c"
+  },
+  {
+    "file": "WQS-water-hydraulic-cylinders-cylinder-125x80.pdf",
+    "document": "WQS-PL-019",
+    "revision": "1.1",
+    "pages": 2,
+    "sha256": "1654c3310f9fbdfdf710b251a6f380880f2b9b5760049d7404c0240f902595d3"
+  },
+  {
+    "file": "WQS-water-hydraulic-cylinders-cylinder-32x16.pdf",
+    "document": "WQS-PL-020",
+    "revision": "1.1",
+    "pages": 2,
+    "sha256": "87af2f9fc006c24893d067e29aef6df5ddb89d78b563e755b308500a4f6b3caa"
+  },
+  {
+    "file": "WQS-water-hydraulic-cylinders-cylinder-32x20.pdf",
+    "document": "WQS-PL-021",
+    "revision": "1.1",
+    "pages": 2,
+    "sha256": "73385b947b0384867273a1ffc5ed3884f3c5daf11ca554ce97199c2de7b51c67"
+  },
+  {
+    "file": "WQS-water-hydraulic-cylinders-cylinder-40x25.pdf",
+    "document": "WQS-PL-022",
+    "revision": "1.1",
+    "pages": 2,
+    "sha256": "57f6bf12d619c0911401c85d5a985b147baba8778c44f6fb18538b0b93c173c8"
+  },
+  {
+    "file": "WQS-water-hydraulic-cylinders-cylinder-50x25.pdf",
+    "document": "WQS-PL-023",
+    "revision": "1.1",
+    "pages": 2,
+    "sha256": "a57d99c4ebca308c927122a12ee4fec6941add5861369a19ffe73227adc136ac"
+  },
+  {
+    "file": "WQS-water-hydraulic-cylinders-cylinder-50x30.pdf",
+    "document": "WQS-PL-024",
+    "revision": "1.1",
+    "pages": 2,
+    "sha256": "98faa5463b17a4d74c2e613fef3592e0a39cfa1f5627c3c23cf53764596baecf"
+  },
+  {
+    "file": "WQS-water-hydraulic-cylinders-cylinder-64x30.pdf",
+    "document": "WQS-PL-025",
+    "revision": "1.1",
+    "pages": 2,
+    "sha256": "62dec2526dd4236fc15d4187589ca0736c26fde940fbdf48d931c8b8e74429bc"
+  },
+  {
+    "file": "WQS-water-hydraulic-cylinders-cylinder-64x40.pdf",
+    "document": "WQS-PL-026",
+    "revision": "1.1",
+    "pages": 2,
+    "sha256": "8a9a5983e2e489050cd8c13d0cf2214f02fcd865694b67fc9faf606c4e84bb3a"
+  },
+  {
+    "file": "WQS-water-hydraulic-cylinders-cylinder-80x50.pdf",
+    "document": "WQS-PL-027",
+    "revision": "1.1",
+    "pages": 2,
+    "sha256": "047ab24da1d0593a337b00097b4cac74c0415579d363f871f7f29255bfee07c6"
+  },
+  {
+    "file": "WQS-water-hydraulic-cylinders.pdf",
+    "document": "WQS-PL-028",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "3592aa68731cf5b9adf4bdc6403fe2e4fcd5c97a197d914f922c109cf55b4466"
+  },
+  {
+    "file": "WQS-water-hydraulic-motors-m15-water-hydraulic-motor.pdf",
+    "document": "WQS-PL-029",
+    "revision": "1.1",
+    "pages": 4,
+    "sha256": "83e3c58f8b99e3763cc1d6201e8f5e438036383a63bb99f5f7d8fdce0f146377"
+  },
+  {
+    "file": "WQS-water-hydraulic-motors-m180-axial-piston-water-hydraulic-motor.pdf",
+    "document": "WQS-PL-030",
+    "revision": "1.1",
+    "pages": 4,
+    "sha256": "47ba75fc7b852278f8a04b74c04bca3b6edadbcdf176bfbb5356bf5006b937bd"
+  },
+  {
+    "file": "WQS-water-hydraulic-motors-m3-water-hydraulic-motor.pdf",
+    "document": "WQS-PL-031",
+    "revision": "1.1",
+    "pages": 5,
+    "sha256": "ad577d371c8fb2c114d4a08bc983c9968c1f7c2b012a77745a772d01d763c059"
+  },
+  {
+    "file": "WQS-water-hydraulic-motors-m30-water-hydraulic-motor.pdf",
+    "document": "WQS-PL-032",
+    "revision": "1.1",
+    "pages": 4,
+    "sha256": "862bb61f9eaba4d26e9469ac912b0e6525416e43c58c7e2cac69028182968ba1"
+  },
+  {
+    "file": "WQS-water-hydraulic-motors-m6-water-hydraulic-motor.pdf",
+    "document": "WQS-PL-033",
+    "revision": "1.1",
+    "pages": 5,
+    "sha256": "52c4978bcdca9abe621be4d51f42fc0be13d3c47531523b7325389217ded4c0f"
+  },
+  {
+    "file": "WQS-water-hydraulic-motors-m60-axial-piston-water-hydraulic-motor.pdf",
+    "document": "WQS-PL-034",
+    "revision": "1.1",
+    "pages": 4,
+    "sha256": "a09ffcba433f45b5321e8a54f5dc816e40429b022cc2acb997bc23c46236d67b"
+  },
+  {
+    "file": "WQS-water-hydraulic-motors.pdf",
+    "document": "WQS-PL-035",
+    "revision": "1.1",
+    "pages": 4,
+    "sha256": "5a0c222d0556ef1939c589bbe981d434f3998690c7060cfdf25a66dc94eeb732"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-2-2-directional-valve.pdf",
+    "document": "WQS-PL-036",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "7c489319a8ca55a695de83f683ec36e4972dbf9e3a3138e5e34d5e291626226b"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-2-2-pilot-valves.pdf",
+    "document": "WQS-PL-037",
+    "revision": "1.1",
+    "pages": 5,
+    "sha256": "6e02b24df5cd2ef7b49473c32d505c5a671348371da283c196eb8142b5d70c03"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-4-2-3-2-directional-control-valves.pdf",
+    "document": "WQS-PL-038",
+    "revision": "1.1",
+    "pages": 4,
+    "sha256": "7a349a5963892eade51125d4ab130d32d8edc64cf841f8b707471160e0e80700"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-4-3-directional-control-valves.pdf",
+    "document": "WQS-PL-039",
+    "revision": "1.1",
+    "pages": 4,
+    "sha256": "a5264822992855eb1df1079e81137b771bc5e2d82516b6d7a472ff01ddb6ec0f"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-actuation-cards.pdf",
+    "document": "WQS-PL-040",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "1a988590bdb1710a0b6c7f1fabfd962953dbb5579560c76c9aa86ea6a6b98b3a"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-check-valves.pdf",
+    "document": "WQS-PL-041",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "3edbd4e500177c0f596776e2897a484ee387f588220fe9a2a978ed58219ee1d6"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-dc-microstep-drive-with-q-programming-st5-q-nn.pdf",
+    "document": "WQS-PL-042",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "b06b264bdae659cc26a0e805033b6ad766b030ec02f9b629c0861fe2ed9501b5"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-dn16-directional-valves.pdf",
+    "document": "WQS-PL-043",
+    "revision": "1.1",
+    "pages": 4,
+    "sha256": "43830d6d06a5672850b2a3262509d44d3d74156a045d8c27d0115e261c4d58b3"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-electronic-flow-control-valves.pdf",
+    "document": "WQS-PL-044",
+    "revision": "1.1",
+    "pages": 4,
+    "sha256": "98e8894f11b1de1d47c246b9e67eee63bb3aaa5c8e4d533e715a49bc7fee7cbc"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-electronic-pressure-control-valve.pdf",
+    "document": "WQS-PL-045",
+    "revision": "1.1",
+    "pages": 5,
+    "sha256": "eb54f0f2ece05c7aa19038db5d2f850868c4cfca3988a38d8e46dd77f239e029"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-flow-control-valve.pdf",
+    "document": "WQS-PL-046",
+    "revision": "1.1",
+    "pages": 4,
+    "sha256": "5fc2bf134f7f5b425c0a5897288c0d62ef3ad6a3a53bcefbddd63ebb28474c15"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-hose-burst-valve.pdf",
+    "document": "WQS-PL-047",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "6409b0abb508f42b34b71376da9589390e3ec193d6c4707e9d7107b05a12b953"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-manifolds.pdf",
+    "document": "WQS-PL-048",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "437e1e8667cbeb0320b4172891dca45c455ef39709f401090dc2d8181ddaea5b"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-po-check-valve-dn12.pdf",
+    "document": "WQS-PL-049",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "8ee0a6d1eef40fdf5c3905504c8e9cb39d1addda84dbd233026f36ac29deb0d8"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-po-check-valve-dn6.pdf",
+    "document": "WQS-PL-050",
+    "revision": "1.1",
+    "pages": 4,
+    "sha256": "ea779cf36b4196e339337928293ec087e421ffb73978659e732552be1b2721b8"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-pressure-compensating-flow-control-valve.pdf",
+    "document": "WQS-PL-051",
+    "revision": "1.1",
+    "pages": 4,
+    "sha256": "fd17ddfddc9ff09a0f0200368251f0ab6de5e3f55cdbf790434d1de50b9c4066"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-pressure-reducing-valves.pdf",
+    "document": "WQS-PL-052",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "f980a767dd47153847f743622555f18e96a1b503062e4d71fe2c0f75172aacc8"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-relief-valves.pdf",
+    "document": "WQS-PL-053",
+    "revision": "1.1",
+    "pages": 4,
+    "sha256": "24fe330a024ab938dcaade9cb9531833a6c6bc379d20115c09a8ca113caa6281"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-valve-ordering-code.pdf",
+    "document": "WQS-PL-054",
+    "revision": "1.1",
+    "pages": 4,
+    "sha256": "dda6ed1c69d9f58272ea7a540d6d4380239579431071d3006354784e9446da0d"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves-zone-valves.pdf",
+    "document": "WQS-PL-055",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "08b6aa6773d53befa05ec865a4298d674b9a45d207f35b07cbc352ae536a0a7d"
+  },
+  {
+    "file": "WQS-water-hydraulic-valves.pdf",
+    "document": "WQS-PL-056",
+    "revision": "1.1",
+    "pages": 7,
+    "sha256": "400d1aa02b4647c9bf5f16b986a5cceaadbf8770816e161f72e489f030c079f0"
+  },
+  {
+    "file": "WQS-water-hydraulics-hpu.pdf",
+    "document": "WQS-PL-057",
+    "revision": "1.1",
+    "pages": 3,
+    "sha256": "eedeb521b7f79e7a2fa00468ce28c2ce74ba36ebeb9b39bc0b52df88acd2e49d"
+  }
+]

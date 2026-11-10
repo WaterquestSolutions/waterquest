@@ -1,0 +1,62 @@
+{
+  "date": "20 October 2026",
+  "production_changed": false,
+  "engineering_review": {
+    "status": "blocked",
+    "http": 503,
+    "reason": "ZOHO_CLIENT_ID, ZOHO_CLIENT_SECRET and ZOHO_REFRESH_TOKEN are not configured in the Vercel project."
+  },
+  "pilot": {
+    "status": "blocked",
+    "http": 503,
+    "reason": "RESEND_API_KEY and PILOT_EMAIL_FROM are not configured. The current pilot form sends email and does not create a Zoho record."
+  },
+  "quote": {
+    "status": "crm_verified",
+    "record_id": "5069220000007424001",
+    "reference": "WQ-f92b57b3-4dce-4366-8d46-cff0435089e8"
+  },
+  "newsletter": {
+    "status": "crm_verified",
+    "record_id": "5069220000007425001",
+    "reference": "WQ-694ffe7e-7479-4775-bd0c-f58c2dad9b2e",
+    "marketing_consent": true,
+    "unsubscribe": "Email request to Bruce; no automatic unsubscribe endpoint exists."
+  },
+  "pdf": {
+    "status": "download_and_crm_verified",
+    "record_id": "5069220000007426001",
+    "reference": "WQ-06b19003-a150-4204-bb75-31991a901051"
+  },
+  "zip": {
+    "status": 200,
+    "record_id": "5069220000007427001",
+    "type": "application/zip",
+    "reference": "WQ-7d882cd9-6221-4bfb-9d94-c2860666f42c",
+    "bytes": 26136679,
+    "files": 57,
+    "pdfs": 57,
+    "corrupt_entry": null
+  },
+  "download_gates": {
+    "checked": 120,
+    "passed": 120
+  },
+  "legacy_quote_modals": {
+    "checked": 11,
+    "status": "Browser UI success with simulated API responses; live shared backend persistence independently verified."
+  },
+  "flow": {
+    "status": "not_configured",
+    "live_response": "202 with configured:false, skipped:missing_flow_webhook",
+    "prepared_fix": "Now returns 503 when missing and 502 if upstream fails; success only after upstream acceptance."
+  },
+  "salesiq": {
+    "installation": "288 static HTML pages and download-gate template",
+    "status": "Real Zoho loader, widget assets and visitor channel returned HTTP 200; launcher rendered with no JavaScript errors.",
+    "deployed": false
+  },
+  "pagesense": "Not configured",
+  "marketing_automation": "Not configured",
+  "legacy_mapping": "Source page and contact consent appear in Description. Dedicated WQ_Source_Page and WQ_Contact_Consent fields remain unset/false in the legacy webform path. Marketing consent is correctly true for newsletter and false for quotations."
+}

@@ -1,0 +1,86 @@
+WATERQUEST SOLUTIONS
+Stainless Plus PEEK: Why the Pair Works
+PROJECT WORKSHEET — revision 2026-10-27
+Source guide: https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek/
+
+Project / asset: ____________________
+Prepared by / date: ____________________
+Revision / decision owner: ____________________
+Question this worksheet must resolve: ____________________
+
+RECORD THE APPLICATION
+
+1. Component and wetted surface
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+2. Exact alloy / polymer / seal designation
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+3. Water chemistry, chloride and pH
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+4. Minimum / maximum temperature
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+5. Internal flow and stagnant exposure
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+6. External atmosphere and washdown
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+7. Crevice, joint and dissimilar-metal details
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+8. Cleaning chemical and concentration
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+9. Material certificate / supplier acceptance
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+10. Inspection and replacement criterion
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+REVIEW THE TOPIC
+Use these guide sections to check the entries above. Record unresolved items; do not turn an unknown value into an assumed rating.
+- Pair structural strength with surfaces designed for water
+- Understand the structural role of stainless steel
+- Treat 316 as a candidate with a defined envelope
+- PEEK is a family of grades and formulations
+- Separate fluid pressure from contact stress
+- Evaluate the pair rather than the polymer alone
+- Allow for temperature and time-dependent behaviour
+- Manufacturing turns a material selection into a component
+- Ask for evidence at the level of the claim
+- Preserve the material decision throughout ownership
+- Specify chemistry and contact together
+- Turn this guidance into a project decision
+
+DECISION RECORD
+Candidate configuration: ____________________
+Assumptions and low/base/high sensitivity: ____________________
+Open technical or commercial questions: ____________________
+Required drawing / certificate / test: ____________________
+Responsible reviewer / due date: ____________________
+Accepted deviations and sign-off: ____________________
+
+This blank planning aid is not an approved design, test procedure, equipment rating or purchase commitment. Define project-specific criteria with the responsible engineer and supplier.

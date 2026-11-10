@@ -1,0 +1,41 @@
+WaterQuest Solutions — Lifecycle ownership ledger
+Working template; complete and approve for the specific project.
+
+1. Comparable service and analysis period
+Response / evidence / owner: ____________________
+
+2. Currency / base date / discount rate / inflation convention
+Response / evidence / owner: ____________________
+
+3. Capital, installation, controls, approval and training costs
+Response / evidence / owner: ____________________
+
+4. Operating hours and useful duty
+Response / evidence / owner: ____________________
+
+5. Measured energy input and energy price
+Response / evidence / owner: ____________________
+
+6. Water, treatment, filters and consumables
+Response / evidence / owner: ____________________
+
+7. Planned maintenance labour and material
+Response / evidence / owner: ____________________
+
+8. Downtime and service access assumptions
+Response / evidence / owner: ____________________
+
+9. Residual value and replacement timing
+Response / evidence / owner: ____________________
+
+10. Confirmed assistance; keep loans separate
+Response / evidence / owner: ____________________
+
+11. Incident scenarios separate from expected recurring cost
+Response / evidence / owner: ____________________
+
+12. Each input: source, date, confidence, low/base/high
+Response / evidence / owner: ____________________
+
+13. Payback, NPV or total cost method and decision threshold
+Response / evidence / owner: ____________________

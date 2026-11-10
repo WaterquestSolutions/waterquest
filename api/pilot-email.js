@@ -8,7 +8,7 @@ const applicants = new Set(['Business / technology developer','Municipality / pu
 const stages = new Set(['Exploring feasibility','Planning a pilot','Ready for a site trial','Expanding a tested system']);
 const timelines = new Set(['Not yet decided','Within 3 months','3–6 months','6–12 months','More than 12 months']);
 const fieldsSpec = {name:100,company:160,email:254,phone:40,province:5,applicant:70,application:240,stage:40,timeline:30,message:4000};
-const labels = {name:'Name',company:'Organisation',email:'Reply email',phone:'Phone',province:'Province / territory',applicant:'Applicant / host',application:'Application and site',stage:'Project stage',timeline:'Target timing',message:'Pilot brief'};
+const labels = {name:'Name',company:'Organization',email:'Reply email',phone:'Phone',province:'Province / territory',applicant:'Applicant / host',application:'Application and site',stage:'Project stage',timeline:'Target timing',message:'Pilot brief'};
 
 export function preparePilot(payload) {
   if (!payload || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(payload.requestId || '')) throw new Error('invalid_submission');
@@ -51,7 +51,7 @@ async function readPayload(req) {
 export function createPilotHandler({env=process.env, fetchImpl=globalThis.fetch}={}) {
   return async function handler(req,res) {
     if (req.method !== 'POST') {res.setHeader('Allow','POST');return reply(res,405,{ok:false,error:'method_not_allowed'});}
-    const origins = new Set(['https://temporary-turbo-nickel-8xnl9g7.vercel.app','https://waterquestsolutions.com','https://www.waterquestsolutions.com']);
+    const origins = new Set(['https://temporary-turbo-nickel-8xnl9g7.vercel.app','https://waterquest-palette-20261016.vercel.app','https://waterquestsolutions.com','https://www.waterquestsolutions.com']);
     if (env.VERCEL_URL) origins.add('https://' + env.VERCEL_URL);
     if (!req.headers.origin || !origins.has(req.headers.origin)) return reply(res,403,{ok:false,error:'origin_not_allowed'});
     if (!(req.headers['content-type'] || '').toLowerCase().startsWith('application/json')) return reply(res,415,{ok:false,error:'json_required'});

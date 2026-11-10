@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html id="waterquest-site" lang="en-CA">
+<head>
+<style>@layer wq-responsive-priority;</style>
+<link rel="stylesheet" href="/assets/site-responsive-fit.css?v=20261109">
+<script defer src="/assets/site-responsive-fit.js?v=20261109"></script><style id="wqs-experience-layer">@layer wqs-experience;</style><link href="/assets/newsletter-popup.css?v=20261021" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Cylinder Losing Pressure? Measure at the Actuator, Under Load | WaterQuest Solutions</title>
+<style>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<meta content="Inlet supply, restrictions, internal bypass and binding produce similar symptoms. Compare both chamber pressures, both directions and the command signal." name="description">
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="Cylinder Losing Pressure? Measure at the Actuator, Under Load, water hydraulics, WaterQuest Solutions" name="keywords">
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/cylinder-force-with-backpressure/" rel="canonical">
+<meta content="WaterQuest Solutions" property="og:site_name">
+<meta content="Cylinder Losing Pressure? Measure at the Actuator, Under Load | WaterQuest Solutions" property="og:title">
+<meta content="Inlet supply, restrictions, internal bypass and binding produce similar symptoms. Compare both chamber pressures, both directions and the command signal." property="og:description">
+<meta content="article" property="og:type">
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/cylinder-force-with-backpressure/" property="og:url">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Cylinder Losing Pressure? Measure at the Actuator, Under Load | WaterQuest Solutions" name="twitter:title">
+<meta content="Inlet supply, restrictions, internal bypass and binding produce similar symptoms. Compare both chamber pressures, both directions and the command signal." name="twitter:description">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/cylinder-force-with-backpressure/#primary", "mainEntityOfPage": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/cylinder-force-with-backpressure/", "name": "Cylinder Losing Pressure? Measure at the Actuator, Under Load", "headline": "Cylinder Losing Pressure? Measure at the Actuator, Under Load", "description": "Inlet supply, restrictions, internal bypass and binding produce similar symptoms. Compare both chamber pressures, both directions and the command signal.", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/cylinder-force-with-backpressure/", "inLanguage": "en-CA", "isPartOf": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"}, "publisher": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"}, "author": {"@type": "Organization", "name": "WaterQuest Solutions", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/about/"}, "about": [{"@type": "Thing", "name": "Cylinder Losing Pressure? Measure at the Actuator, Under Load"}], "articleSection": "Water Hydraulic Systems", "dateModified": "2026-10-27", "datePublished": "2026-09-02", "wordCount": 2133, "timeRequired": "PT11M", "citation": ["https://openstax.org/books/university-physics-volume-1/pages/14-3-pascals-principle-and-hydraulics", "https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/", "https://www.parker.com/content/dam/Parker-com/Literature/Hydraulic-Filter-Division-Europe/fdhb289uk.pdf", "https://www.ccohs.ca/oshanswers/hsprograms/hazardous_energy.html"], "hasPart": [{"@type": "WebPageElement", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/cylinder-force-with-backpressure/#guide-application", "name": "Locate the loss before changing the cylinder"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"}, {"@type": "ListItem", "position": 3, "name": "Cylinder Losing Pressure? Measure at the Actuator, Under Load", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/cylinder-force-with-backpressure/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-brand-standards.css?v=20261106-aqua-links" rel="stylesheet"><script id="wq-speed-insights" src="/assets/wq-speed-insights.js" type="module"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style><link href="/assets/editorial/hub-editorial-20261021.css" rel="stylesheet"><link href="/assets/wqx-site.css?v=20261027-review2" rel="stylesheet"><link href="/assets/critique-refinements.css?v=20261027-preview3" rel="stylesheet"><meta content="WaterQuest Solutions" name="author"><link rel="stylesheet" href="/assets/launch-readability.css"><link rel="stylesheet" href="/assets/knowledge-covers/cover-series.css"><link rel="stylesheet" href="/assets/site-navigation-cleanup.css?v=20261108"></head>
+<body class="wq-audited wq-consistent wqx-article" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img alt="" class="wq-brand-mark" height="54" src="/assets/waterquest-logo-square.png" width="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/start-here/">New to water hydraulics?</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero wq-covered-hero">
+<div class="container"><div class="wq-covered-copy">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › </div>
+<p class="eyebrow">Water Hydraulic Systems</p>
+<h1 data-editorial="hero">Cylinder Losing Pressure? Measure at the Actuator, Under Load</h1>
+<p class="lead" data-editorial="lead">Inlet supply, restrictions, internal bypass and binding produce similar symptoms. Compare both chamber pressures, both directions and the command signal.</p>
+<div class="article-meta"><span class="pill"></span><span class="pill">Water Hydraulic Systems</span><span class="pill">7 min read</span></div>
+</div><figure class="wq-article-cover"><img src="/assets/knowledge-covers/cylinder.jpg" alt="Cylinder and load lever with measurement tools and a piston section. Editorial concept illustration." width="1536" height="1024" decoding="async"><figcaption>WaterQuest Knowledge Hub · Concept illustration</figcaption></figure></div></section><section class="wqx-section" id="quick-answer"><div class="wqx-wrap"><p><a download="" href="/downloads/worksheets/diagnosing-pressure-drop-in-water-driven-cylinders.txt">Download the worksheet for this guide (editable text)</a> · <a download="" href="/downloads/worksheets/cylinder-worksheet.csv">Open the cylinder requirement register (CSV)</a></p></div></section>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><p class="wq-article-byline">Written by WaterQuest Solutions · Updated <time datetime="2026-11-02">2 November 2026</time> · <a href="/about/">About the distributor</a></p><span aria-hidden="true" class="ed-legacy-anchor" id="check-for-entrapped-air"></span><span aria-hidden="true" class="ed-legacy-anchor" id="check-for-mechanical-load-changes-first"></span><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><span aria-hidden="true" class="ed-legacy-anchor" id="inspect-return-side-behaviour"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><h2 id="learn-describe-the-symptom-before-naming-the-fault">Turn a pressure symptom into a focused check</h2><section class="wq-editorial-detail"><h2 id="guide-section-2">A pressure reading becomes a force balance</h2><p>For an illustrative 80/40 mm (3.15/1.57 in) cylinder, 100 bar (1,450 psi) at the cap end and 8 bar (116 psi) at the rod end give about 47.3 kN (10,630 lbf) net extension force before friction. Pump pressure alone would suggest 50.3 kN (11,300 lbf). </p></section><p>A water-driven cylinder that moves slowly is not necessarily suffering from low pressure. Speed depends principally on delivered flow and effective area, while force depends on the pressure balance and geometry. </p><p>This article offers diagnostic reasoning rather than a procedure for opening, blocking or adjusting a live circuit. The site's authorized methods and competent personnel must govern investigation. </p><h2 id="learn-confirm-what-the-instruments-are-showing">Confirm what the instruments are showing</h2><p>Check the identity, range and location of the pressure measurement. </p><p>Compare readings only when they represent the same state. </p><p>If an instrument reading is inconsistent with the machine's other observations, the measurement itself deserves assessment through an appropriate method. Do not assume every sensor is correct because its display is precise. Equally, do not dismiss an unexpected value merely because the machine appears to operate. </p><figure aria-label="Pressure symptom interpretation" class="kh-diagram"><figcaption class="kh-diagram-title">Locate the change before naming the fault</figcaption><ol class="kh-flow"><li><strong>Supply condition</strong><span>What reaches the pump during demand?</span></li><li><strong>Active flow path</strong><span>Where do pressure differences occur during motion?</span></li><li><strong>Actuator balance</strong><span>What pressures oppose each other at the cylinder?</span></li><li><strong>Mechanism and command</strong><span>Has load, position or control state changed?</span></li></ol><figcaption>Diagnostic reasoning map, not a live-circuit test procedure. Similar symptoms can have different causes.</figcaption></figure><h2 id="learn-separate-pressure-loss-from-insufficient-force">Separate pressure loss from insufficient force</h2><p>During flow, pressure differences can occur across lines, fittings and control elements. The relevant difference depends on the path and operating condition. </p><p>At the cylinder, both chamber pressures contribute to the force balance. The underlying relationship is pressure acting on effective area.  An unexpectedly high opposing pressure can reduce useful force even when the supply-side reading appears normal. This is one reason that one gauge does not explain every actuator problem.</p><p>The mechanical requirement also matters. If the mechanism's resistance has increased, the same hydraulic condition may no longer produce the expected movement. </p><h2 id="learn-examine-whether-the-pump-is-receiving-suitable-supply">Examine whether the pump is receiving suitable supply</h2><p>A pump cannot deliver its supported performance if its inlet or other required connection conditions are not maintained. The Water Hydraulics Company's pump information identifies configuration-dependent supply requirements that should be checked against the installed system. </p><p>The useful observation is the condition relevant to the pump during the problematic duty. An upstream static pressure or a full-looking reservoir does not necessarily establish adequate supply during demand. </p><p>Note whether the symptom appears only at high flow, after a long run or after a service change. </p><span aria-hidden="true" class="ed-legacy-anchor" id="check-for-flow-restrictions-upstream"></span><span aria-hidden="true" class="ed-legacy-anchor" id="verify-valve-position-and-flow-control-behaviour"></span><h2 id="learn-consider-restrictions-in-the-active-flow-path">Consider restrictions in the active flow path</h2><p>A changed filter condition, partially unavailable path or altered control element can affect the flow reaching the actuator. </p><p>Filter differential pressure should be interpreted at a comparable flow and fluid condition. Parker's filtration guidance explains why filter selection and condition belong in hydraulic performance assessment.  A changed reading can inform the investigation, but it does not by itself prove that the element is the only cause of the machine's symptom.</p><p>Review recent work and configuration changes. </p><span aria-hidden="true" class="ed-legacy-anchor" id="check-for-internal-bypass-in-the-cylinder"></span><span aria-hidden="true" class="ed-legacy-anchor" id="inspect-external-leakage-points"></span><h2 id="learn-distinguish-external-leakage-from-internal-bypass">Distinguish external leakage from internal bypass</h2><p>Visible leakage indicates that fluid is leaving its intended containment boundary. Internal bypass can reduce useful delivery or affect holding while leaving the exterior dry. </p><p>An internal path may be within a cylinder, valve or another component. A pressure decline during holding does not uniquely identify the cylinder seal because the complete circuit and external load influence the observation. The responsible diagnostic method must distinguish those possibilities without unsafe improvised blocking or isolation.</p><p>Track make-up demand where it is meaningful to the architecture, and record whether the symptom appears in one direction or both. They do not replace equipment-specific testing, but they help ensure that the next test is selected to answer a question rather than simply to confirm a preferred guess.</p><span aria-hidden="true" class="ed-legacy-anchor" id="compare-to-baseline-commissioning-values"></span><h2 id="learn-compare-extension-and-retraction-intelligently">Compare extension and retraction intelligently</h2><p>A single-rod cylinder has different effective areas and displaced volumes on its two sides. It can therefore have different ideal forces and speeds in extension and retraction even when the supply arrangement is unchanged. </p><p>Compare actual behaviour with the intended design. </p><p>The load may also change through the stroke. A mechanism that binds near one end or passes through a poor leverage position can create a local pressure increase and slow movement. </p><h2 id="learn-use-temperature-and-time-as-diagnostic-context">Use temperature and time as diagnostic context</h2><p>A symptom that develops as the equipment warms can suggest a different set of questions from one present immediately after start-up. </p><p>Record temperature at a relevant location and compare under similar duty. </p><p>Time also helps distinguish a transient from a sustained condition. A brief pressure dip during a command transition differs from a persistent inability to complete movement. </p><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><h2 id="learn-review-command-and-feedback-before-replacing-hardware">Review command and feedback before replacing hardware</h2><p>Hydraulic performance depends on what the controls ask the equipment to do. A changed command, valve signal or sequence can produce a different pressure and movement pattern without a mechanical failure in the cylinder. </p><p>Feedback can also be misleading if a sensor, connection or interpretation has changed. A controller may respond to an apparent position or pressure condition that does not represent the mechanism correctly. </p><p>This is particularly relevant after software changes or electrical service. Recording the chronology prevents a hydraulic symptom from being investigated in isolation when it began immediately after a control modification. </p><span aria-hidden="true" class="ed-legacy-anchor" id="how-water-behaves-inside-a-cylinder"></span><h2 id="learn-turn-the-observations-into-a-focused-investigation">Turn the observations into a focused investigation</h2><p>A useful fault report states the commanded function, affected direction, position, pressure locations, temperature and timing of the symptom. </p><p>Keep the machine within its authorized operating and service arrangements during the investigation. Stored pressure and mechanical loads can remain after the motor stops; CCOHS provides the general hazardous-energy context.  Do not search for leaks by exposing skin to a suspected high-pressure release or open a connection as an informal diagnostic method.</p><p>WaterQuest can assist most effectively when the symptom is described as evidence rather than as a presumed failed part. </p><p>After repair, repeat the relevant functional observation under an appropriate comparable condition. Record whether the original symptom has been resolved and whether any other behaviour changed. </p><p>Consider a hypothetical cylinder that slows only in the final part of extension. </p><p>If evidence remains inconclusive, preserve that uncertainty. The accepted equipment and mechanical limits remain constraints during diagnosis, and a symptom should not be masked by a change that creates a different unsupported condition.</p><section id="guide-application" class="wq-guide-application"><p><strong>Have a duty in mind?</strong> <a href="/contact/#engineering-review">Request an engineering review →</a> · <a href="/project-tools/">Build a brief →</a></p></section><div class="related-block"><h3>Continue reading</h3><div class="related-grid"><a class="related-card" href="/knowledge-hub/maintaining-a-water-hydraulic-system/"><div class="rc-cat">Water Hydraulic Systems · </div><h4>Maintaining a Water HPU: Simple Routines, Useful Trends</h4><div class="rc-read">9 min read</div></a><a class="related-card" href="/knowledge-hub/planning-a-water-hpu-outage-scope-parts-energy-control-and-sign-off/"><div class="rc-cat">Water Hydraulic Systems · </div><h4>Planning a Water HPU Outage: Scope, Parts, Energy Control and Sign-Off</h4><div class="rc-read">9 min read</div></a><a class="related-card" href="/knowledge-hub/water-hydraulic-first-start-up/"><div class="rc-cat">Water Hydraulic Systems · </div><h4>First Start-Up on Water: Flush, Vent and Pressurize in Stages</h4><div class="rc-read">9 min read</div></a></div></div>
+</article>
+</div>
+<div class="container">
+</div>
+</section>
+</main>
+<script defer src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div></footer><script defer src="/assets/wq-nav-dropdowns.js?v=20261108-no-capability"></script><script defer src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/wqx-site.js?v=20261027-review2"></script><script defer src="/assets/site-navigation-cleanup.js?v=20261108"></script><script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq9426f675e698dc79d0fe4c2ecca071e3668f732067735a92f72e9aed6636787e" defer></script></body>
+</html>

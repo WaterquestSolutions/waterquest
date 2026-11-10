@@ -1,0 +1,86 @@
+WATERQUEST SOLUTIONS
+Funding Water Hydraulics: R&D or Routine Adoption?
+PROJECT WORKSHEET — revision 2026-10-27
+Source guide: https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/research-uncertainty-and-routine-installation/
+
+Project / asset: ____________________
+Prepared by / date: ____________________
+Revision / decision owner: ____________________
+Question this worksheet must resolve: ____________________
+
+RECORD THE APPLICATION
+
+1. Equivalent useful duty and comparison period
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+2. Supply and installation inclusions
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+3. Purchase price and currency / date
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+4. Energy consumption and tariff
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+5. Water, treatment and consumables
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+6. Service labour and planned outage
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+7. Unplanned downtime assumption and source
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+8. Discount rate and residual value
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+9. Low / base / high assumptions
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+10. Break-even result and decision owner
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+REVIEW THE TOPIC
+Use these guide sections to check the entries above. Record unresolved items; do not turn an unknown value into an assumed rating.
+- Separate deployment from development work
+- Routine adoption can be valuable without being research
+- Identify a technological uncertainty precisely
+- Frame a testable hypothesis
+- Separate experimental work from routine verification
+- Design records around the investigation
+- Keep development and deployment costs distinguishable
+- Understand the role of NRC IRAP
+- Municipal deployment has a different logic
+- Property-based tax credits require separate screening
+- Let the experiment inform a real decision
+- Build the funding case around honest technical work
+
+DECISION RECORD
+Candidate configuration: ____________________
+Assumptions and low/base/high sensitivity: ____________________
+Open technical or commercial questions: ____________________
+Required drawing / certificate / test: ____________________
+Responsible reviewer / due date: ____________________
+Accepted deviations and sign-off: ____________________
+
+This blank planning aid is not an approved design, test procedure, equipment rating or purchase commitment. Define project-specific criteria with the responsible engineer and supplier.

@@ -58,7 +58,7 @@ export function calculate(id,x){
   const ae=Math.PI*x.bore**2/4,ar=Math.PI*(x.bore**2-x.rod**2)/4,e=pct(x.eff);
   const fe=(x.pressure*ae-x.back*ar)*e/10000,fr=(x.pressure*ar-x.back*ae)*e/10000,required=x.load*x.sf;
   add('Net extension force',fe,'kN');add('Net retraction force',fr,'kN');add('Required factored force',required,'kN');add('Extension load margin',required?fe/required:'Not applicable','×');add('Pressure needed: extension',(required*10000/e+x.back*ar)/ae,'bar');add('Pressure needed: retraction',(required*10000/e+x.back*ae)/ar,'bar');
-  notes.push(`Piston area ${ae.toPrecision(5)} mm²; annular area ${ar.toPrecision(5)} mm². Efficiency is applied to the net pressure force. Buckling, side load and breakaway friction are excluded.`);if(fe<0||fr<0)warnings.push('Backpressure overcomes the driving force in at least one direction.');pressureWarn(x.pressure);break;
+  notes.push(`Piston area ${ae.toPrecision(3)} mm²; annular area ${ar.toPrecision(3)} mm². Efficiency is applied to the net pressure force. Buckling, side load and breakaway friction are excluded.`);if(fe<0||fr<0)warnings.push('Backpressure overcomes the driving force in at least one direction.');pressureWarn(x.pressure);break;
  }
  case 'pump-sizing':{
   const ev=pct(x.ve),em=pct(x.me),D=1000*x.flow/(x.speed*ev),power=hydraulic(x.flow,x.pressure)/(ev*em),torque=power*60000/(2*Math.PI*x.speed);

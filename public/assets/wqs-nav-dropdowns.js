@@ -8,8 +8,7 @@
     ["Water Hydraulics HPUs", "/products/water-hydraulics-hpu/"],
     ["Fire Suppression Pumps", "/products/axial-piston-fire-pumps/"],
     ["Power Centre", "/products/power-centre-reverse-osmosis/"],
-    ["Modular Desalination Packages", "/r2-modular-desalination-packages/"],
-    ["WQS Stainless", "/wqs-stainless/"]
+    ["WQS Stainless", "/products/#connection-hardware"]
   ];
 
   const industries = [

@@ -1,0 +1,86 @@
+WATERQUEST SOLUTIONS
+Dust Suppression: Wet the Source or Catch the Cloud?
+PROJECT WORKSHEET — revision 2026-10-27
+Source guide: https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/dust-suppression-source-wetting-and-airborne-capture/
+
+Project / asset: ____________________
+Prepared by / date: ____________________
+Revision / decision owner: ____________________
+Question this worksheet must resolve: ____________________
+
+RECORD THE APPLICATION
+
+1. Application objective and useful coverage
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+2. Nozzle type, count and distribution
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+3. Required pressure at each nozzle
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+4. Flow per nozzle and concurrent demand
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+5. Pipe and fitting pressure losses
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+6. Water quality and filtration
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+7. Pump duty and inlet conditions
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+8. Controls, interlocks and duty cycle
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+9. Drift, drainage and exposure constraints
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+10. Measured coverage and acceptance
+   Value / units / operating state: ____________________
+   Source / revision / owner: ____________________
+   Acceptance criterion / evidence: ____________________
+
+REVIEW THE TOPIC
+Use these guide sections to check the entries above. Record unresolved items; do not turn an unknown value into an assumed rating.
+- Put the spray where it can do useful work
+- Distinguish preventing dust from capturing airborne dust
+- Match droplets, momentum and airflow to the application
+- Design the pressure supply at the nozzle boundary
+- Use zoning to follow material movement
+- Address water quality at the scale that matters
+- Manage the consequences of wetting
+- Verify performance under representative conditions
+- Make inspection and safe servicing practical
+- Match the spray to the dust source
+- Turn this guidance into a project decision
+- Sources and further reading
+
+DECISION RECORD
+Candidate configuration: ____________________
+Assumptions and low/base/high sensitivity: ____________________
+Open technical or commercial questions: ____________________
+Required drawing / certificate / test: ____________________
+Responsible reviewer / due date: ____________________
+Accepted deviations and sign-off: ____________________
+
+This blank planning aid is not an approved design, test procedure, equipment rating or purchase commitment. Define project-specific criteria with the responsible engineer and supplier.

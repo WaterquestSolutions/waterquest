@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html id="waterquest-site" lang="en-CA"><head>
+<style>@layer wq-responsive-priority;</style>
+<link rel="stylesheet" href="/assets/site-responsive-fit.css?v=20261109">
+<script defer src="/assets/site-responsive-fit.js?v=20261109"></script><style id="wqs-experience-layer">@layer wqs-experience;</style><link href="/assets/newsletter-popup.css?v=20261021" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>P1 Axial Piston Pump | WaterQuest Solutions</title>
+<meta content="Compact displacement options, a transparent flow calculation and the evidence needed to confirm the pressure rating, interfaces and supply." name="description">
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/axial-piston-pumps/p1/" rel="canonical">
+<style>
+    :root {
+      --navy:         #0E284A;
+      --navy-mid:     #0D2044;
+      --navy-light:   #122954;
+      --aqua:         #00EEFF;
+      --aqua-dim:     #00A3AD;
+      --aqua-glow:    #778FA8;
+      --silver:       #A8B8CC;
+      --silver-light: #D4E0EC;
+      --white:        #FFFFFF;
+      --body-text:    #C8D8E8;
+      --muted:        #ffffff;
+      --border:       rgba(168,184,204,0.18);
+      --border-aqua:  rgba(0,200,212,0.3);
+      --success:      #18D6E6;
+      --warning:      #F5B742;
+
+      --font-display: 'Avenir', 'Avenir Next', 'Nunito Sans', sans-serif;
+      --font-body:    'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --shadow-card: 0 4px 32px rgba(0,0,0,0.35);
+      --shadow-glow: 0 0 40px rgba(0,200,212,0.2);
+      --max-width: 1240px;
+      --section-pad: 96px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      background: var(--navy);
+      color:#FFFFFF;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color:inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ul { list-style: none; }
+
+    .label {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color:#00EEFF;
+    }
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-weight: 900;
+      line-height: 1.15;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.45rem, 5.2vw, 4.9rem); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(1.9rem, 3.5vw, 3.05rem); letter-spacing: -0.02em; }
+    h3 { font-size: clamp(1.15rem, 2vw, 1.45rem); }
+    h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color:#00EEFF; }
+    p { color:#FFFFFF; font-size: 1.02rem; }
+    .text-aqua { color:#00EEFF; }
+    .text-muted { color:#FFFFFF; }
+    .text-silver { color:#FFFFFF; }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
+    .section { padding: var(--section-pad) 0; position: relative; }
+    .section-alt { background: var(--navy-mid); }
+    .section-dark { background: var(--navy); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 0 28px;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.86rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+    .btn-primary { background:#00616B; color:#FFFFFF; }
+    .btn-primary:hover { background:#00616B; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,200,212,0.4); }
+    .btn-outline { background: transparent; color:#FFFFFF; border: 1.5px solid rgba(255,255,255,0.35); }
+    .btn-outline:hover { border-color: var(--aqua); color:#00EEFF; transform: translateY(-2px); }
+    .btn-aqua-outline { background: transparent; color:#00EEFF; border: 1.5px solid var(--border-aqua); }
+    .btn-aqua-outline:hover { background:#00616B; border-color: var(--aqua); }
+
+    #nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(10,22,40,0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 4px 40px rgba(0,0,0,0.35);
+      transition: all 0.3s ease;
+    }
+    #nav.scrolled {
+      background: rgba(10,22,40,0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 4px 40px rgba(0,0,0,0.5);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 32px;
+      gap: 22px;
+    }
+    .nav-logo { display: flex; flex-direction: column; }
+    .nav-logo .logo-main {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.18rem;
+      letter-spacing: 0.04em;
+      color:#FFFFFF;
+      text-transform: uppercase;
+    }
+    .nav-logo .logo-sub {
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      color:#00EEFF;
+      text-transform: uppercase;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex: 1 1 auto;
+      flex-wrap: wrap;
+      gap: 14px 18px;
+    }
+    .nav-links a {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color:#FFFFFF;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#FFFFFF!important;
+      padding: 9px 20px;
+      border-radius: var(--radius-sm);
+    }
+    .nav-cta:hover { background:#00616B!important; color:#FFFFFF!important; }
+
+    .bubble-layer {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .bubble {
+      position: absolute;
+      bottom: -80px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, rgba(255,255,255,0.65), rgba(0,200,212,0.25) 38%, rgba(0,200,212,0.04) 72%);
+      border: 1px solid rgba(0,200,212,0.22);
+      opacity: 0;
+      animation: bubble-rise linear infinite;
+    }
+    @keyframes bubble-rise {
+      0% { transform: translateY(0) translateX(0) scale(0.7); opacity: 0; }
+      12% { opacity: 0.42; }
+      65% { opacity: 0.2; }
+      100% { transform: translateY(-116vh) translateX(var(--drift)) scale(1.08); opacity: 0; }
+    }
+
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 72px;
+      background:
+        radial-gradient(ellipse 80% 60% at 68% 40%, rgba(0,140,180,0.22) 0%, transparent 66%),
+        radial-gradient(ellipse 60% 80% at 20% 82%, rgba(0,200,212,0.08) 0%, transparent 62%),
+        linear-gradient(160deg, #060F1E 0%, #0E284A 40%, #0D2044 100%);
+    }
+    .hero-grid-bg {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,200,212,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,200,212,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 76% 72% at 52% 48%, black 28%, transparent 82%);
+      pointer-events: none;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 82px 32px;
+      display: grid;
+      grid-template-columns: 1fr 0.88fr;
+      gap: 62px;
+      align-items: center;
+    }
+    .hero-text .label { margin-bottom: 18px; }
+    .hero-text h1 { margin-bottom: 24px; }
+    .hero-text h1 span { color:#00EEFF; }
+    .hero-text p {
+      font-size: 1.14rem;
+      color:#FFFFFF;
+      max-width: 610px;
+      margin-bottom: 36px;
+      line-height: 1.75;
+    }
+    .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 34px;
+    }
+    .trust-pill {
+      border: 1px solid var(--border-aqua);
+      background: rgba(0,200,212,0.07);
+      border-radius: 100px;
+      padding: 7px 14px;
+      color:#00EEFF;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .system-card {
+      background: rgba(18,41,84,0.86);
+      border: 1px solid var(--border-aqua);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-card);
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .system-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 70% at 50% 20%, rgba(0,200,212,0.11), transparent 68%);
+      pointer-events: none;
+    }
+    .system-card > * { position: relative; z-index: 1; }
+    .system-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding-bottom: 18px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .system-head strong {
+      color:#FFFFFF;
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color:#FFFFFF;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .status::before {
+      content: '';
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 0 6px rgba(34,211,165,0.12);
+    }
+    .circuit {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    .circuit-node {
+      min-height: 132px;
+      background: rgba(10,22,40,0.72);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .circuit-node:hover { border-color: var(--border-aqua); transform: translateY(-3px); }
+    .circuit-node small {
+      display: block;
+      color:#00EEFF;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .circuit-node strong {
+      display: block;
+      color:#FFFFFF;
+      font-size: 1.02rem;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .circuit-node p { color:#FFFFFF; font-size: 0.86rem; line-height: 1.55; }
+    .system-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .metric {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 10px;
+      text-align: center;
+      background: rgba(0,200,212,0.05);
+    }
+    .metric b {
+      display: block;
+      color:#00EEFF;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+    .metric span {
+      color:#FFFFFF;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .stats-strip {
+      background: var(--navy-mid);
+      border-top: 1px solid var(--border-aqua);
+      border-bottom: 1px solid var(--border-aqua);
+      padding: 34px 0;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+    .stat-item {
+      text-align: center;
+      padding: 16px 24px;
+      position: relative;
+    }
+    .stat-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 20%;
+      bottom: 20%;
+      width: 1px;
+      background: var(--border);
+    }
+    .stat-number {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 2.55rem;
+      color:#00EEFF;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+    .stat-label {
+      font-size: 0.76rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color:#FFFFFF;
+    }
+
+    .section-header { margin-bottom: 56px; }
+    .section-header .label { margin-bottom: 14px; }
+    .section-header h2 { margin-bottom: 16px; }
+    .section-header p:not(.label) {
+      font-size: 1.08rem;
+      color:#FFFFFF;
+      max-width: 680px;
+    }
+    .section-header.center { text-align: center; }
+    .section-header.center p:not(.label) { margin: 0 auto; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .question-stack {
+      display: grid;
+      gap: 34px;
+    }
+    .question-stack .section-header p { max-width: 900px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+
+    .future-block {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 54px;
+      position: relative;
+      overflow: hidden;
+    }
+    .future-block::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 340px;
+      height: 340px;
+      background: radial-gradient(circle, rgba(0,200,212,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .future-block > * { position: relative; z-index: 1; }
+    .future-question {
+      font-family: var(--font-display);
+      font-weight: 900;
+      color:#FFFFFF;
+      font-size: clamp(1.6rem, 3.4vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      margin-bottom: 22px;
+    }
+    .future-copy p {
+      color:#FFFFFF;
+      margin-bottom: 16px;
+      font-size: 1.03rem;
+    }
+    .future-copy strong { color:#FFFFFF; }
+    .cost-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .cost-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 16px;
+      background: rgba(0,200,212,0.06);
+      border: 1px solid var(--border-aqua);
+      border-radius: var(--radius-sm);
+      color:#FFFFFF;
+      font-size: 0.94rem;
+    }
+    .cost-list li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--aqua);
+      margin-top: 9px;
+      flex-shrink: 0;
+    }
+
+    .path-card,
+    .product-card,
+    .industry-card,
+    .article-card,
+    .benefit-card,
+    .process-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      transition: all 0.28s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .path-card:hover,
+    .product-card:hover,
+    .industry-card:hover,
+    .article-card:hover,
+    .benefit-card:hover,
+    .process-card:hover {
+      border-color: var(--border-aqua);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card);
+    }
+    .path-card { padding: 30px; min-height: 265px; display: flex; flex-direction: column; justify-content: space-between; }
+    .path-card::before,
+    .product-card::before,
+    .article-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--aqua);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.28s ease;
+    }
+    .path-card:hover::before,
+    .product-card:hover::before,
+    .article-card:hover::before { transform: scaleX(1); }
+    .path-card h3 { margin: 18px 0 12px; }
+    .path-card p { color:#FFFFFF; font-size: 0.94rem; line-height: 1.65; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 22px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color:#00EEFF;
+      transition: gap 0.2s;
+    }
+    .card-link:hover { gap: 10px; }
+
+    .product-card { padding: 30px 26px; min-height: 230px; }
+    .product-visual {
+      width: 100%;
+      height: 132px;
+      border-radius: var(--radius-sm);
+      background:
+        radial-gradient(ellipse 70% 80% at 50% 30%, rgba(0,200,212,0.16), transparent 70%),
+        rgba(10,22,40,0.58);
+      border: 1px solid var(--border-aqua);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+    .product-visual::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,200,212,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,200,212,0.05) 1px, transparent 1px);
+      background-size: 28px 28px;
+      opacity: 0.7;
+    }
+    .product-visual svg {
+      position: relative;
+      z-index: 1;
+      width: 86%;
+      height: 92px;
+      filter: drop-shadow(0 8px 18px rgba(0,0,0,0.32));
+    }
+    .product-card h3 { font-size: 1.08rem; margin-bottom: 10px; }
+    .product-card p { font-size: 1.02rem; color:#FFFFFF; line-height: 1.68; }
+
+    .materials-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .material-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 42px 36px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.28s ease;
+    }
+    .material-card:hover {
+      border-color: var(--border-aqua);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card);
+    }
+    .material-card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--aqua);
+    }
+    .material-card::after {
+      content: '';
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle, rgba(0,200,212,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .material-card > * { position: relative; z-index: 1; }
+    .material-card h3 { margin: 12px 0 14px; }
+    .material-card p { color:#FFFFFF; font-size: 0.96rem; line-height: 1.72; }
+    .material-card .label { color:#00EEFF; }
+    .material-specs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 22px;
+    }
+    .material-spec {
+      background: var(--aqua-glow);
+      border: 1px solid var(--border-aqua);
+      color:#00EEFF;
+      border-radius: 100px;
+      padding: 5px 13px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .benefit-card { padding: 30px; }
+    .benefit-num {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.45rem;
+      color:#00EEFF;
+      opacity: 1;
+      line-height: 1;
+      margin-bottom: 18px;
+    }
+    .benefit-card h3 { font-size: 1.08rem; margin-bottom: 10px; }
+    .benefit-card p { color:#FFFFFF; font-size: 0.92rem; }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+    .compare-panel {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .compare-panel h3 {
+      padding: 24px 28px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      font-size: 1.16rem;
+    }
+    .compare-panel h3 span {
+      color:#00EEFF;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .compare-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      padding: 16px 28px;
+      border-bottom: 1px solid var(--border);
+      color:#FFFFFF;
+      font-size: 0.94rem;
+    }
+    .compare-row:last-child { border-bottom: none; }
+    .compare-row b { color:#FFFFFF; }
+    .compare-panel:first-child {
+      border-color: rgba(255,80,80,0.42);
+    }
+    .compare-panel:first-child h3 span,
+    .compare-panel:first-child .compare-row b {
+      color:#FFFFFF;
+    }
+    .compare-panel:first-child .compare-row span,
+    .compare-panel:nth-child(2) .compare-row span {
+      color:#FFFFFF;
+    }
+    .compare-panel:first-child .compare-row {
+      border-bottom-color: rgba(255,90,90,0.22);
+    }
+    .compare-panel:nth-child(2) h3 span,
+    .compare-panel:nth-child(2) .compare-row b {
+      color:#00EEFF;
+    }
+
+    .industry-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .industry-card {
+      padding: 26px 24px;
+      min-height: 176px;
+    }
+    .industry-card .index {
+      display: block;
+      color:#00EEFF;
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .industry-card h3 { font-size: 1.08rem; margin-bottom: 8px; }
+    .industry-card p { color:#FFFFFF; font-size: 0.95rem; line-height: 1.62; }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr 0.9fr;
+      gap: 18px;
+    }
+    .article-card {
+      padding: 28px;
+      min-height: 245px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .article-card.featured {
+      min-height: 508px;
+      background:
+        radial-gradient(ellipse 90% 60% at 65% 10%, rgba(0,200,212,0.13), transparent 70%),
+        var(--navy-light);
+    }
+    .article-card h3 { margin: 18px 0 12px; }
+    .article-card.featured h3 { font-size: clamp(1.5rem, 2.6vw, 2.25rem); }
+    .article-card p { color:#FFFFFF; font-size: 1.03rem; line-height: 1.7; }
+    .article-card.featured p { font-size: 1.08rem; }
+    .article-card .label {
+      color:#00EEFF;
+      font-size: 0.72rem;
+      line-height: 1.7;
+    }
+    #knowledge > .container > .section-header .label,
+    #faq-heading ~ p,
+    section[aria-labelledby="faq-heading"] .section-header .label,
+    #engineering-review .section-header .label {
+      color:#00EEFF;
+    }
+
+    .faq-list { display: flex; flex-direction: column; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 23px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      gap: 18px;
+    }
+    .faq-q h3 {
+      font-size: 1.28rem;
+      color:#FFFFFF;
+      font-family: var(--font-display);
+      font-weight: 700;
+    }
+    .faq-arrow {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid var(--border-aqua);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .faq-arrow svg { stroke: var(--aqua); }
+    .faq-item.open .faq-arrow {
+      background: var(--aqua-glow);
+      transform: rotate(180deg);
+    }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .faq-item.open .faq-a { max-height: 320px; }
+    .faq-a p {
+      padding: 0 0 24px;
+      font-size: 0.96rem;
+      color:#FFFFFF;
+      line-height: 1.75;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .process-card {
+      min-height: 230px;
+      padding: 28px 24px;
+    }
+    .process-card .step {
+      display: block;
+      color:#00EEFF;
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 32px;
+      opacity: 1;
+    }
+    .process-card h3 { font-size: 1.34rem; margin-bottom: 10px; }
+    .process-card p { color:#FFFFFF; font-size: 0.96rem; line-height: 1.62; }
+
+    .cta-section {
+      background: linear-gradient(135deg, #0D2044 0%, #0E284A 100%);
+      border-top: 1px solid var(--border-aqua);
+      border-bottom: 1px solid var(--border-aqua);
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(0,200,212,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .cta-inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 36px;
+      align-items: center;
+    }
+    .cta-inner h2 { margin-bottom: 18px; }
+    .cta-inner p {
+      color:#FFFFFF;
+      max-width: 720px;
+      font-size: 1.08rem;
+    }
+    .cta-inner .label { color:#00EEFF; }
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-width: 270px;
+    }
+
+    footer {
+      background: #06101E;
+      border-top: 1px solid var(--border);
+      padding: 64px 0 32px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-brand .logo-main {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.3rem;
+      color:#FFFFFF;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+    .footer-brand .logo-sub {
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      color:#00EEFF;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .footer-brand p { font-size: 0.98rem; color:#FFFFFF; line-height: 1.75; max-width: 340px; }
+    .footer-col h5 {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color:#00EEFF;
+      margin-bottom: 20px;
+    }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a {
+      font-size: 1.02rem;
+      color:#FFFFFF;
+      transition: color 0.2s;
+    }
+    .footer-col ul li a:hover { color:#00EEFF; }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-bottom p { font-size: 0.9rem; color:#FFFFFF; }
+    .cert-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cert-badge {
+      background: var(--aqua-glow);
+      border: 1px solid var(--border-aqua);
+      border-radius: var(--radius-sm);
+      padding: 4px 12px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color:#00EEFF;
+    }
+
+    @media (max-width: 900px) {
+      #hero { padding-top: 126px; }
+      .nav-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+      .nav-logo .logo-main { font-size: 1.1rem; }
+      .nav-logo .logo-sub { font-size: 0.58rem; }
+      .nav-links {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 10px 14px;
+      }
+      .nav-links a {
+        font-size: 0.68rem;
+        letter-spacing: 0.08em;
+      }
+      .nav-cta { padding: 7px 14px; }
+      .hero-content { grid-template-columns: 1fr; }
+      .system-card { max-width: 700px; }
+      .grid-4, .process-grid { grid-template-columns: repeat(2, 1fr); }
+      .article-grid { grid-template-columns: 1fr 1fr; }
+      .article-card.featured { grid-column: 1 / -1; min-height: 320px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 760px) {
+      :root { --section-pad: 66px; }
+      .container, .hero-content, .nav-inner { padding-left: 24px; padding-right: 24px; }
+      #hero { padding-top: 146px; }
+      .hero-content { padding-top: 58px; padding-bottom: 58px; gap: 36px; }
+      .hero-text p { font-size: 1.02rem; }
+      .hero-ctas, .cta-buttons { width: 100%; }
+      .btn { width: 100%; white-space: normal; text-align: center; }
+      .circuit, .system-metrics, .stats-grid, .grid-2, .grid-3, .grid-4, .materials-grid, .comparison-grid, .industry-grid, .article-grid, .process-grid, .cta-inner, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .stat-item:not(:last-child)::after { display: none; }
+      .stat-item { border-bottom: 1px solid var(--border); }
+      .future-block { padding: 34px 24px; }
+      .article-card.featured { min-height: 320px; }
+      .cta-buttons { min-width: 0; }
+      .footer-bottom { align-items: flex-start; flex-direction: column; }
+    }
+  
+
+    /* WQS SITE-WIDE NO GREY TEXT RULE */
+    :root {
+      --body-text: #FFFFFF !important;
+      --muted: #ffffff !important;
+      --silver: #FFFFFF !important;
+      --silver-light: #FFFFFF !important;
+      --text-muted: #ffffff !important;
+      --light-text: #FFFFFF !important;
+      --secondary-text: #ffffff !important;
+      --copy: #FFFFFF !important;
+      --soft: #FFFFFF !important;
+      --subtle: #FFFFFF !important;
+      --wheat: #FFFFFF !important;
+      --gray: #ffffff !important;
+      --grey: #ffffff !important;
+    }
+
+</style>
+<link href="/assets/wqs-product-template.css?v=20261011-white-aqua" rel="stylesheet">
+<link href="/assets/gateway.css?v=20261011-white-aqua" rel="stylesheet">
+<script defer src="/assets/gateway.js?v=20261011-white-aqua"></script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-brand-standards.css?v=20261106-aqua-links" rel="stylesheet"><script id="wq-speed-insights" src="/assets/wq-speed-insights.js" type="module"></script>
+<style id="wq-home-comparison-alignment">
+/* Keep corresponding content aligned across the two comparison panels. */
+@media (min-width: 651px) {
+  #waterquest-main #why-water .wqg-comparison {
+    grid-template-rows: repeat(5, auto);
+    row-gap: 0;
+  }
+  #waterquest-main #why-water .wqg-comparison > article {
+    display: grid;
+    grid-row: span 5;
+    grid-template-rows: subgrid;
+    min-width: 0;
+  }
+  #waterquest-main #why-water .wqg-comparison > article > ul {
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+  }
+  #waterquest-main #why-water .wqg-comparison > article > ul > li {
+    margin: 0 0 17px;
+  }
+  #waterquest-main #why-water .wqg-comparison > article > ul > li:last-child {
+    margin-bottom: 0;
+  }
+}
+</style>
+<style id="homepage-copy-preview">#hero h1 span{color:#00C2D7!important}</style><style id="homepage-tightened-preview">
+#waterquest-main #knowledge .wqg-resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+#waterquest-main #engineering-tools{scroll-margin-top:240px}
+@media(max-width:650px){#waterquest-main #knowledge .wqg-resource-grid{grid-template-columns:1fr}}
+</style><link href="/assets/wq-hero-cta.css?v=20261021" rel="stylesheet"><meta content="vQ1vUHE_9ijCayH87FStOPcCNgg-_bdrR6cajqP-1ME" name="google-site-verification">
+<link href="/assets/wqx-site.css?v=20261027-review2" rel="stylesheet"><link href="/assets/wq-product-photos.css" rel="stylesheet">
+<link href="/assets/critique-refinements.css?v=20261027-preview3" rel="stylesheet"><link rel="stylesheet" href="/assets/launch-readability.css"><link rel="stylesheet" href="/assets/site-diagrams.css?v=20261106"><link rel="stylesheet" href="/assets/family-literature/family-literature.css"/>
+<link rel="stylesheet" href="/assets/site-navigation-cleanup.css?v=20261108"></head><body class="wq-audited wq-consistent wqx-page"><nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img alt="" class="wq-brand-mark" height="54" src="/assets/waterquest-logo-square.png" width="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/start-here/">New to water hydraulics?</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><section class="wqx-section" id="model-at-a-glance"><div class="wqx-wrap"><h2>P1 at a glance</h2><p>P1 is part of the Janus axial-piston water-pump range from The Water Hydraulics Company.</p><p>Use the model table and dimensional drawings below to compare the displacement, inlet arrangement and drive interface.</p><p><a href="/contact/?interest=P1+pump+selection#engineering-review">Send your required flow, pressure and speed for selection →</a></p></div></section><button type="button" class="wqx-skip wq-skip-control" data-skip-target="main-content">Skip to content</button><main id="main-content"><section class="wqx-section wq-product-summary" id="product-summary"><div class="wqx-wrap"><h1>P1 Axial Piston Pump</h1><p><strong>What it does:</strong> Supplies pressurized water to power cylinders, motors and hydraulic controls.</p><p><strong>Where it’s used:</strong> Gate actuation, process machinery and marine deck equipment.</p><p><strong>Why water:</strong> Remove hydraulic oil from the working circuit with components designed for water.</p></div></section>
+<section class="wql-feature" id="family-literature" aria-labelledby="wql-title">
+ <div class="wql-wrap"><div class="wql-copy">
+ <p class="wql-eyebrow">Explore the possibilities · Product literature</p>
+ <h2 id="wql-title">Small pump. A different way to power movement.</h2>
+ <p class="wql-spotlight">In focus: P1 water hydraulic pump</p>
+ <p class="wql-blurb">Start a compact water circuit with the P1. Its small displacement options suit low-flow actuation and packaged power units, using water as the working fluid rather than hydraulic oil.</p>
+ <div class="wql-fact"><strong>1.2 cm³/rev</strong><span>0.0732 in³/rev · one of two P1 displacement options</span></div>
+ <p class="wql-note">Also available at 0.8 cm³/rev (0.0488 in³/rev). Select delivered flow at the working pressure, then match speed, drive power and inlet supply.</p>
+ <div class="wql-actions"><a class="wql-download" href="/brochures/pumps/WQS-pump-p1.pdf" target="_blank" rel="noopener">View the brochure <span aria-hidden="true">↗</span></a><span class="wql-file">PDF · 3 pages · 676 KB</span></div>
+ 
+ </div><div class="wql-visual"><figure class="wql-product-photo"><img src="/assets/product-photos/p1-water-pump.jpg" alt="P1 water hydraulic pump" loading="lazy" decoding="async"/></figure>
+ <a class="wql-document" href="/brochures/pumps/WQS-pump-p1.pdf" target="_blank" rel="noopener" aria-label="Open P1 water hydraulic pump product family brochure (PDF)"><img src="/assets/family-literature/pump-p1.webp" width="506" height="716" alt="" loading="lazy"/><span>Your next selection starts here.<small>View the specifications and options <b aria-hidden="true">↗</b></small></span></a>
+ </div></div></section>
+<section class="wqx-section"><div class="wqx-wrap"><h2>Calculate the flow you are asking for</h2><div aria-label="Displacement table" class="wqx-table" role="region" tabindex="0" data-wq-table-container="true"><table data-wq-table-columns="3" role="table"><thead><tr role="row"><th scope="col" role="columnheader">Displacement</th><th scope="col" role="columnheader">At 1,500 rpm: theoretical flow</th><th scope="col" role="columnheader">Basis</th></tr></thead><tbody><tr role="row"><th scope="row" data-wq-column-label="Displacement" role="rowheader">0.8 cm³/rev (0.0488 in³/rev)</th><td data-wq-column-label="At 1,500 rpm: theoretical flow" role="cell">1.20 L/min (0.317 US gpm)</td><td data-wq-column-label="Basis" role="cell">0.8 × 1,500 ÷ 1,000; before leakage.</td></tr><tr role="row"><th scope="row" data-wq-column-label="Displacement" role="rowheader">1.2 cm³/rev (0.0732 in³/rev)</th><td data-wq-column-label="At 1,500 rpm: theoretical flow" role="cell">1.80 L/min (0.476 US gpm)</td><td data-wq-column-label="Basis" role="cell">1.2 × 1,500 ÷ 1,000; before leakage.</td></tr></tbody></table></div><p>These are calculations, not measured delivery or an approval of the selected operating point. Confirm delivered flow, drive speed, inlet margin and water temperature using the approved curve.</p></div></section><section class="wqx-section wql-model-sheet" id="product-datasheet" aria-labelledby="pump-sheet-title"><div class="wqx-wrap wql-sheet-wrap"><a href="/brochures/pumps/WQS-pump-p1.pdf" target="_blank" rel="noopener" aria-label="View P1 data sheet (PDF)"><img src="/assets/family-literature/pump-p1.webp" width="506" height="716" alt="P1 data sheet cover" loading="lazy"/></a><div><p class="wql-sheet-label">Product literature · P1</p><h2 id="pump-sheet-title">Get to know the P1.</h2><p>Explore the published ratings, performance curves, dimensions and connections in one model-specific data sheet.</p><a class="wql-sheet-button" href="/brochures/pumps/WQS-pump-p1.pdf" target="_blank" rel="noopener">Download P1 data sheet (PDF) ↗</a><p class="wql-sheet-meta">3 pages · 0.66 MB</p></div></div></section><section class="wqx-section" id="product-quote"><div class="wqx-wrap"><a class="wqx-button" href="/contact/">Request a quotation</a></div></section><details class="wq-selection-panel" id="selection-notes"><summary>Selection notes</summary><div class="wqx-wrap"><p>Confirm the selected configuration’s fluid, temperature, inlet conditions, installation requirements and applicable approval documents. The current equipment documents and quotation establish the supplied scope.</p><figure id="diagram-09" class="wq-site-diagram" aria-labelledby="diagram-09-caption"><div role="region" tabindex="0" class="wq-diagram-scroll" aria-label="Unboosted and boosted pump inlets — scrollable diagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="100%" role="img" aria-labelledby="diagram-09-t diagram-09-d" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif" class="wq-diagram-svg">
+<title id="diagram-09-t">Unboosted or boosted pump inlet</title><desc id="diagram-09-d">Typical unboosted and boosted family arrangements. The selected model determines its port arrangement, speed, inlet pressure and supply flow; this is not a P1 configuration drawing.</desc>
+<defs><marker id="diagram-09-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#00EEFF"></path></marker>
+<marker id="diagram-09-arm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9FB3C8"></path></marker></defs>
+<rect x="10" y="10" width="580" height="420" rx="12" fill="#0D2044" stroke="rgba(0,200,212,0.35)" stroke-width="1.2"></rect><text x="34" y="46" font-size="20" fill="#FFFFFF" font-weight="700" text-anchor="start" font-family="Montserrat, Avenir, 'Nunito Sans', 'Segoe UI', sans-serif">2-port unboosted</text><text x="34" y="70" font-size="14" fill="#00EEFF" font-weight="600" text-anchor="start" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">Typical PC / PA</text><rect x="610" y="10" width="580" height="420" rx="12" fill="#0D2044" stroke="rgba(0,200,212,0.35)" stroke-width="1.2"></rect><text x="634" y="46" font-size="20" fill="#FFFFFF" font-weight="700" text-anchor="start" font-family="Montserrat, Avenir, 'Nunito Sans', 'Segoe UI', sans-serif">3-port boosted</text><text x="634" y="70" font-size="14" fill="#00EEFF" font-weight="600" text-anchor="start" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">Typical PB</text><rect x="50" y="100" width="150" height="110" rx="6" fill="#00EEFF" fill-opacity="0.12" stroke="#9FB3C8"></rect><line x1="50" y1="128" x2="200" y2="128" stroke="#00EEFF" stroke-dasharray="6 4"></line><text x="125" y="160" font-size="14" fill="#FFFFFF" font-weight="700" text-anchor="middle" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">Tank</text><text x="125" y="180" font-size="12.5" fill="#9FB3C8" font-weight="400" text-anchor="middle" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">above pump</text><rect x="260" y="250" width="120" height="70" rx="10" fill="#122954" stroke="#00EEFF" stroke-width="2"></rect><text x="320" y="291" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="middle" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">Pump</text><path d="M125,210 L125,285 L256,285" fill="none" stroke="#00EEFF" stroke-width="2.2" marker-end="url(#diagram-09-ar)"></path><text x="134" y="250" font-size="12.5" fill="#9FB3C8" font-weight="400" text-anchor="start" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">T  (inlet)</text><line x1="380" y1="285" x2="480" y2="285" stroke="#00EEFF" stroke-width="2.2" marker-end="url(#diagram-09-ar)"></line><text x="390" y="275" font-size="12.5" fill="#9FB3C8" font-weight="400" text-anchor="start" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">P  outlet</text><text x="34" y="350" font-size="13.5" fill="#FFFFFF" font-weight="400" text-anchor="start" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">Positive inlet head at all times; the pump cannot lift water</text><text x="34" y="370" font-size="13.5" fill="#FFFFFF" font-weight="400" text-anchor="start" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">Speed and inlet limits depend on the selected model</text><text x="34" y="390" font-size="13.5" fill="#FFFFFF" font-weight="400" text-anchor="start" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">Size inlet supply for the selected pump and duty</text><text x="34" y="410" font-size="13.5" fill="#FFFFFF" font-weight="400" text-anchor="start" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">Use: tank-fed power units, low-pressure mains</text><rect x="650" y="110" width="140" height="70" rx="10" fill="#122954" stroke="#9FB3C8"></rect><text x="720" y="142" font-size="14" fill="#FFFFFF" font-weight="700" text-anchor="middle" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">Boost supply</text><text x="720" y="162" font-size="12.5" fill="#9FB3C8" font-weight="400" text-anchor="middle" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">or elevated feed</text><rect x="860" y="250" width="120" height="70" rx="10" fill="#122954" stroke="#00EEFF" stroke-width="2"></rect><text x="920" y="291" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="middle" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">Pump</text><path d="M720,180 L720,270 L856,270" fill="none" stroke="#00EEFF" stroke-width="2.2" marker-end="url(#diagram-09-ar)"></path><text x="730" y="230" font-size="12.5" fill="#9FB3C8" font-weight="400" text-anchor="start" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">Inlet (boosted)</text><line x1="980" y1="270" x2="1080" y2="270" stroke="#00EEFF" stroke-width="2.2" marker-end="url(#diagram-09-ar)"></line><text x="990" y="260" font-size="12.5" fill="#9FB3C8" font-weight="400" text-anchor="start" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">P  outlet</text><path d="M920,320 L920,335 L1080,335" fill="none" stroke="#9FB3C8" stroke-width="1.6" marker-end="url(#diagram-09-arm)" stroke-dasharray="5 4"></path><text x="990" y="328" font-size="12.5" fill="#9FB3C8" font-weight="400" text-anchor="start" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">Case drain</text><text x="634" y="370" font-size="13.5" fill="#FFFFFF" font-weight="400" text-anchor="start" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">Separate feed, outlet and drain ports</text><text x="634" y="390" font-size="13.5" fill="#FFFFFF" font-weight="400" text-anchor="start" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">Confirm inlet pressure, speed and flow for the duty</text><text x="634" y="410" font-size="13.5" fill="#FFFFFF" font-weight="400" text-anchor="start" font-family="'Nunito Sans', 'Segoe UI', system-ui, sans-serif">P180: boosted only; minimum 2.5 bar (36.3 psi) inlet</text>
+</svg></div><figcaption id="diagram-09-caption"><strong>Unboosted and boosted pump inlets</strong><span>Family comparison only. The P1 requires its own confirmed port arrangement, inlet conditions and duty rating; the PC/PA/PB limits shown elsewhere do not establish a P1 configuration.</span><a href="/assets/diagrams/2026-11/09-pump-inlet-options.svg" target="_blank" rel="noopener">Open full-size diagram ↗</a></figcaption><details class="wq-diagram-text"><summary>Read the diagram as text</summary><p>Typical unboosted and boosted family arrangements. The selected model determines its port arrangement, speed, inlet pressure and supply flow; this is not a P1 configuration drawing.</p><p>2-port unboosted · Typical PC / PA · 3-port boosted · Typical PB · Tank · above pump · Pump · T  (inlet) · P  outlet · Positive inlet head at all times; the pump cannot lift water · Speed and inlet limits depend on the selected model · Size inlet supply for the selected pump and duty · Use: tank-fed power units, low-pressure mains · Boost supply · or elevated feed · Pump · Inlet (boosted) · P  outlet · Case drain · Separate feed, outlet and drain ports · Confirm inlet pressure, speed and flow for the duty · P180: boosted only; minimum 2.5 bar (36.3 psi) inlet</p></details></figure><section class="wqx-section"><div class="wqx-wrap"><h2>P1 at a glance</h2><div class="wqx-grid"><div class="wqx-card"><h3>What it is</h3><p>A Janus axial-piston pump designed for a compact water-hydraulic duty. It is not an external gear pump.</p></div><div class="wqx-card"><h3>Displacement</h3><p>Manufacturer-listed options: 0.8 and 1.2 cm³/rev (0.0488 and 0.0732 in³/rev). Displacement and shaft speed define theoretical flow before leakage.</p></div><div class="wqx-card"><h3>Selection status</h3><p>Choose the exact rotation, seal, fluid and duty with the manufacturer’s configuration record. Published pressure information is inconsistent; do not use a blanket 160 bar rating.</p></div></div></div></section><section class="wqx-section" id="specs"><div class="wqx-wrap"><h2>A pressure limit must belong to the exact order</h2><p>Use the manufacturer-issued configuration record to establish the P1 continuous pressure, speed and temperature limits. The quotation must identify the applicable rating and duty-point curve.</p><p><a href="https://www.waterhydraulics.co.uk/p1-axial-piston-pump/">Read the manufacturer’s P1 source</a></p></div></section><section class="wqx-section"><div class="wqx-wrap"><h2>Complete the selection</h2><div aria-label="Requirement table" class="wqx-table" role="region" tabindex="0" data-wq-table-container="true"><table data-wq-table-columns="2" role="table"><thead><tr role="row"><th scope="col" role="columnheader">Requirement</th><th scope="col" role="columnheader">Information to confirm</th></tr></thead><tbody><tr role="row"><th scope="row" role="rowheader">Operating envelope</th><td data-wq-column-label="Information to confirm" role="cell">Continuous/peak pressure, delivered-flow curve, speed, duty cycle and temperature.</td></tr><tr role="row"><th scope="row" role="rowheader">Water and inlet</th><td data-wq-column-label="Information to confirm" role="cell">Fluid chemistry, approved materials/seals, filtration and minimum positive inlet pressure at flow. Seawater compatibility is configuration-specific.</td></tr><tr role="row"><th scope="row" role="rowheader">Mechanical interface</th><td data-wq-column-label="Information to confirm" role="cell">Current dimensioned drawing, exact ports, shaft, rotation, mounting and coupling/alignment requirements.</td></tr><tr role="row"><th scope="row" role="rowheader">Electrical/package interface</th><td data-wq-column-label="Information to confirm" role="cell">If supplied as an HPU: voltage, phase, frequency, enclosure, controls and approval responsibility.</td></tr><tr role="row"><th scope="row" role="rowheader">Procurement evidence</th><td data-wq-column-label="Information to confirm" role="cell">Manufacturer/order code, materials and applicable approvals, inspection/testing, delivery, warranty and service/spares terms.</td></tr></tbody></table></div></div></section><section class="wqx-section"><div class="wqx-wrap"><h2>Prepare a P1 enquiry</h2><p>Send the required useful flow, pressure, water conditions, drive and space limits. Identify unresolved requirements rather than assuming a standard interface or commercial term.</p><div class="wqx-actions"><a class="wqx-button" href="/project-tools/?family=pump&amp;project=P1%20pump%20selection">Prepare the pump brief</a><a class="wqx-button wqx-secondary" href="/contact/?interest=P1%20configuration%20review#engineering-review">Discuss the P1 configuration</a></div><p><a href="/products/axial-piston-pumps/">Compare the pump family</a> · <a href="/support-and-supply/">Agree supply and support</a></p></div></section><section class="wqx-section" id="selection-guides"><div class="wqx-wrap"><h2>Engineering guidance for the selection</h2><ul></ul></div></section><section class="wqx-section" id="selection-checklist"><div class="wqx-wrap"><h2>Selection and enquiry checklist</h2><div aria-label="Define table" class="wqx-table" role="region" tabindex="0" data-wq-table-container="true"><table data-wq-table-columns="2" role="table"><thead><tr role="row"><th scope="col" role="columnheader">Define</th><th scope="col" role="columnheader">Include in the project brief</th></tr></thead><tbody><tr role="row"><th scope="row" role="rowheader">Required delivered flow and units</th><td data-wq-column-label="Include in the project brief" role="cell">Include minimum, normal and peak flow; distinguish delivered flow from displacement × speed.</td></tr><tr role="row"><th scope="row" role="rowheader">Pressure and duty</th><td data-wq-column-label="Include in the project brief" role="cell">Give normal/peak pressure, hours per day, start/stop frequency and standby state.</td></tr><tr role="row"><th scope="row" role="rowheader">Water and inlet conditions</th><td data-wq-column-label="Include in the project brief" role="cell">Specify chemistry, temperature range, inlet pressure at flow, filtration and shutdown/freeze conditions.</td></tr><tr role="row"><th scope="row" role="rowheader">Drive and interfaces</th><td data-wq-column-label="Include in the project brief" role="cell">Speed, rotation, motor supply/frequency, coupling, port standard, footprint and drawing requirements.</td></tr></tbody></table></div><div class="wqx-actions"><a class="wqx-button" href="/project-tools/?family=pump&amp;project=P1+axial-piston+water+pump%3A+select+the+exact+configuration&amp;source=%2Fproducts%2Faxial-piston-pumps%2Fp1%2F">Prepare this enquiry</a><a class="wqx-button wqx-secondary" href="/specification-resources/">Get the specification templates</a></div></div></section><p>Discuss hazardous-area or seawater requirements for the exact configuration; documentation availability must be confirmed with the manufacturer.</p></div></details><section class="wqx-section" id="published-performance"><div class="wqx-wrap"><h2>Published curves and configuration drawings</h2><p>Manufacturer curves support selection at your pressure and speed. Confirm the configuration and duty point before ordering.</p><a href="/brochures/pumps/WQS-pump-p1.pdf">Open the full P1 reference sheet (PDF), including dimensions and selection notes</a><p><img alt="P1 published flow, power, torque and efficiency reference curves; open the linked PDF for full-size axes and legends" loading="lazy" src="/assets/p1-published-curves.jpg" style="display:block;width:100%;max-width:850px;height:auto;margin:24px auto;background:white"></p></div></section><section class="wqx-section"><div class="wqx-wrap"><p>Building a power unit around the P1? <a href="/products/water-hydraulics-hpu/">See Hydraulic Power Units →</a></p></div></section><section class="wqx-section"><div class="wqx-wrap"><figure class="wqp-product-photo"><img alt="P1 axial piston water pump" decoding="async" fetchpriority="high" height="746" loading="eager" src="/assets/product-photos/p1-water-pump.jpg" width="1000"><figcaption>P1 pump product photo. Confirm the selected shaft and port configuration. </figcaption></figure></div></section></main><footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div></footer><script defer src="/assets/wq-nav-dropdowns.js?v=20261108-no-capability"></script><script defer src="/assets/wq-enquiry-context.js?v=20261021"></script><script defer src="/assets/wqx-site.js?v=20261027-review2"></script><script defer src="/assets/launch-readability.js"></script><script defer src="/assets/site-navigation-cleanup.js?v=20261108"></script><script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq9426f675e698dc79d0fe4c2ecca071e3668f732067735a92f72e9aed6636787e" defer></script></body></html>

@@ -1,0 +1,12 @@
+/* Real industry photography; technical diagrams retain their original styling. */
+.wqi-context{padding:28px max(20px,calc((100% - 1120px)/2)) 48px;background:#0b1c35}
+.wqi-photo{margin:0;overflow:hidden;border:1px solid #34516d;border-radius:16px;background:#0a172b;min-width:0}
+.wqi-photo>img{display:block;width:100%;height:auto;max-height:440px;object-fit:contain;background:#071222}
+.wqi-photo figcaption{padding:16px 20px;color:#e9f1fa;font-size:16px;line-height:1.6;text-align:left}
+.wqi-photo figcaption small{display:block;margin-top:8px;color:#b5c8de;font-size:12px;line-height:1.6}
+.wqi-photo a,.wqi-credits a{color:#00eeff;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.wqi-credits{max-width:1120px;margin:24px auto;padding:24px;color:#c8d8e9;line-height:1.65}
+.wqi-credits summary{cursor:pointer;color:#00eeff;font-weight:700}
+.wqi-credits li{margin:12px 0;font-size:14px}
+.fire-story-grid .wqi-photo>img{height:320px;object-fit:contain}
+@media(max-width:600px){.wqi-context{padding:20px 16px 32px}.wqi-photo figcaption{padding:14px;font-size:14px}.wqi-photo>img{max-height:340px}.fire-story-grid .wqi-photo>img{height:auto;max-height:320px}}

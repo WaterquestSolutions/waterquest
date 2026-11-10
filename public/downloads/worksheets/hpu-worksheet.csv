@@ -1,0 +1,11 @@
+Item,Required value / condition,Units,Source and revision,Responsible person,Acceptance criterion,Verification record,Status
+Each motion / holding / standby state,,,,,,,Open
+Flow and pressure per active circuit,,,,,,,Open
+Simultaneous demand and duty duration,,,,,,,Open
+"Pump, motor and reservoir selection",,,,,,,Open
+"Actual voltage, phase and frequency",,,,,,,Open
+"Water quality, filtration and temperature",,,,,,,Open
+Valve/manifold and protection functions,,,,,,,Open
+"Panel, enclosure, wiring and I/O scope",,,,,,,Open
+Heat rejection and service access,,,,,,,Open
+Package approval and FAT / SAT record,,,,,,,Open

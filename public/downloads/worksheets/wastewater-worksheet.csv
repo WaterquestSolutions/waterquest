@@ -1,0 +1,11 @@
+Item,Required value / condition,Units,Source and revision,Responsible person,Acceptance criterion,Verification record,Status
+Process function and hydraulic scope,,,,,,,Open
+Gate / valve / actuator asset list,,,,,,,Open
+Command sequence and interlocks,,,,,,,Open
+"Required inputs, outputs and protocols",,,,,,,Open
+Position / pressure / condition feedback,,,,,,,Open
+"Timeout, alarm and safe response",,,,,,,Open
+Control / process / IT responsibility,,,,,,,Open
+"Utilities, environment and service access",,,,,,,Open
+FAT / SAT acceptance and records,,,,,,,Open
+"Training, spares and handover scope",,,,,,,Open

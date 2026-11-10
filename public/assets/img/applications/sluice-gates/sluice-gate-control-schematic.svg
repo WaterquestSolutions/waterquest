@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
-  <title id="title">WaterGate water hydraulic circuit schematic</title>
+  <title id="title">WaterQuest sluice-gate water hydraulic circuit schematic</title>
   <desc id="desc">ISO 1219 style hydraulic circuit for a sluice gate package with reservoir, pump, electric motor, suction strainer, pressure filter, relief valve, pressure gauge, pressure transmitter, 4/3 directional valve, double acting cylinder, pilot lines, drain lines, and tagged ports.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0C1A36"/><stop offset="1" stop-color="#050A18"/></linearGradient>
@@ -12,7 +12,7 @@
     <path d="M100 50v640M160 50v640M220 50v640M280 50v640M340 50v640M400 50v640M460 50v640M520 50v640M580 50v640M640 50v640M700 50v640M760 50v640M820 50v640M880 50v640M940 50v640M1000 50v640M1060 50v640M1120 50v640"/>
   </g>
 
-  <text x="42" y="52" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="24" font-weight="800">WaterGate Sluice Gate Hydraulic Circuit - ISO 1219 Style Functional Schematic</text>
+  <text x="42" y="52" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="24" font-weight="800">WaterQuest sluice-gate Sluice Gate Hydraulic Circuit - ISO 1219 Style Functional Schematic</text>
   <text x="42" y="80" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="14">Solid cyan lines: pressure/working/return. Dashed green lines: electrical, pilot, drain, and instrument signals.</text>
 
   <!-- Reservoir / tank -->
@@ -145,6 +145,6 @@
     <text x="810" y="29" fill="#FFFFFF" font-size="13">tank/return</text>
     <text x="930" y="29" fill="#00EEFF" font-size="13" font-weight="800">A/B</text>
     <text x="966" y="29" fill="#FFFFFF" font-size="13">actuator ports</text>
-    <text x="28" y="56" fill="#FFFFFF" font-size="12">Engineering schematic showing the WaterGate functional architecture, component tags, line types, ports, water quality controls, relief path, and interlocks.</text>
+    <text x="28" y="56" fill="#FFFFFF" font-size="12">Engineering schematic showing the WaterQuest sluice-gate functional architecture, component tags, line types, ports, water quality controls, relief path, and interlocks.</text>
   </g>
 </svg>

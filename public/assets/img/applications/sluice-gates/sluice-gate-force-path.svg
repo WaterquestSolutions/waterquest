@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
-  <title id="title">WaterGate sluice gate sizing and force calculation diagram</title>
+  <title id="title">WaterQuest sluice-gate sluice gate sizing and force calculation diagram</title>
   <desc id="desc">Engineering sizing diagram showing upstream head, downstream level, hydrostatic force, seal friction, guide friction, actuator lift force, stroke, opening time, and data required for WaterQuest sizing.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0C1A36"/><stop offset="1" stop-color="#050A18"/></linearGradient>
@@ -11,7 +11,7 @@
     <path d="M40 100h1120M40 160h1120M40 220h1120M40 280h1120M40 340h1120M40 400h1120M40 460h1120M40 520h1120M40 580h1120M40 640h1120"/>
     <path d="M100 50v640M160 50v640M220 50v640M280 50v640M340 50v640M400 50v640M460 50v640M520 50v640M580 50v640M640 50v640M700 50v640M760 50v640M820 50v640M880 50v640M940 50v640M1000 50v640M1060 50v640M1120 50v640"/>
   </g>
-  <text x="42" y="52" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="24" font-weight="800">WaterGate Gate Sizing Inputs and Force Path</text>
+  <text x="42" y="52" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="24" font-weight="800">WaterQuest sluice-gate Gate Sizing Inputs and Force Path</text>
   <text x="42" y="80" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="14">Sizing begins with civil load, head differential, friction, stroke, and required movement time before actuator selection.</text>
 
   <!-- Gate section -->

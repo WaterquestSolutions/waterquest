@@ -1,0 +1,340 @@
+{
+  "sources": [
+    {
+      "key": "water-hydraulic-cylinder-range",
+      "src": "/assets/product-photos/water-hydraulic-cylinder-range.avif",
+      "alt": "Stainless steel water hydraulic cylinders with different lengths and end mountings",
+      "caption": "Cylinder range shown. Bore, rod, stroke and mountings vary by configuration.",
+      "source": "https://www.waterhydraulics.co.uk/cylinders-2/",
+      "width": 1200,
+      "height": 880,
+      "original": "cylenders-banner.avif"
+    },
+    {
+      "key": "water-hydraulic-cylinder-mountings",
+      "src": "/assets/product-photos/water-hydraulic-cylinder-mountings.jpg",
+      "alt": "Water hydraulic cylinder rod ends and flange mountings",
+      "caption": "Representative cylinder range photo; not a dimensional reference for this bore and rod combination.",
+      "source": "https://www.waterhydraulics.co.uk/cylinders-2/",
+      "width": 1600,
+      "height": 1326,
+      "original": "P1340208-1600x1326.jpg"
+    },
+    {
+      "key": "water-hydraulic-power-unit",
+      "src": "/assets/product-photos/water-hydraulic-power-unit.avif",
+      "alt": "Assembled water hydraulic power unit with stainless reservoir, pumps, motors and valve manifold",
+      "caption": "Example assembled power unit. Equipment and layout depend on the agreed package.",
+      "source": "https://www.waterhydraulics.co.uk/powerpack/",
+      "width": 1000,
+      "height": 1161,
+      "original": "powerpacks-banner.avif"
+    },
+    {
+      "key": "axial-piston-pump-range",
+      "src": "/assets/product-photos/axial-piston-pump-range.jpg",
+      "alt": "Axial piston water pumps in several body sizes",
+      "caption": "Axial piston pump range. Select the exact model and configuration for the required duty.",
+      "source": "https://www.waterhydraulics.co.uk/pumps/",
+      "width": 1000,
+      "height": 480,
+      "original": "Pumps-banner-e1729004597727.jpg"
+    },
+    {
+      "key": "p1-water-pump",
+      "src": "/assets/product-photos/p1-water-pump.jpg",
+      "alt": "P1 axial piston water pump",
+      "caption": "P1 pump product photo. Confirm the selected shaft and port configuration.",
+      "source": "https://www.waterhydraulics.co.uk/p1-axial-piston-pump/",
+      "width": 1000,
+      "height": 746,
+      "original": "P1-PC100-12WMS-1.jpg"
+    },
+    {
+      "key": "p3-water-pump",
+      "src": "/assets/product-photos/p3-water-pump.jpg",
+      "alt": "P3 axial piston water pump",
+      "caption": "P3 pump product photo.",
+      "source": "https://www.waterhydraulics.co.uk/pumps/",
+      "width": 1000,
+      "height": 746,
+      "original": "P3-1-1.jpg"
+    },
+    {
+      "key": "p6-water-pump",
+      "src": "/assets/product-photos/p6-water-pump.jpg",
+      "alt": "P6 axial piston water pump",
+      "caption": "P6 pump product photo shown in the manufacturer\u2019s pump range.",
+      "source": "https://www.waterhydraulics.co.uk/pumps/",
+      "width": 1000,
+      "height": 746,
+      "original": "M6-Motor-1.jpg"
+    },
+    {
+      "key": "p15-water-pump",
+      "src": "/assets/product-photos/p15-water-pump.jpg",
+      "alt": "P15 axial piston water pump",
+      "caption": "P15 pump product photo.",
+      "source": "https://www.waterhydraulics.co.uk/fire-pumps/",
+      "width": 1000,
+      "height": 746,
+      "original": "P15-Pump-1.jpg"
+    },
+    {
+      "key": "large-axial-piston-pump",
+      "src": "/assets/product-photos/large-axial-piston-pump.jpg",
+      "alt": "Tie-rod axial piston water pump from the manufacturer\u2019s larger pump range",
+      "caption": "Representative pump range photo. Body, shaft and ports vary with the selected model.",
+      "source": "https://www.waterhydraulics.co.uk/pumps/",
+      "width": 1024,
+      "height": 758,
+      "original": "PB160-80SMS-1024x758.jpg"
+    },
+    {
+      "key": "water-hydraulic-motor-range",
+      "src": "/assets/product-photos/water-hydraulic-motor-range.jpg",
+      "alt": "Axial piston water hydraulic motor with tie-rod housing",
+      "caption": "Representative motor range photo. Shaft, ports and body size depend on the selected model.",
+      "source": "https://www.waterhydraulics.co.uk/motors/",
+      "width": 1024,
+      "height": 770,
+      "original": "mot-1-1024x770.jpg"
+    },
+    {
+      "key": "power-centre-energy-recovery",
+      "src": "/assets/product-photos/power-centre-energy-recovery.avif",
+      "alt": "Power Centre high-pressure pump and energy recovery assembly",
+      "caption": "Power Centre range photo. Connections and dimensions depend on the selected configuration.",
+      "source": "https://www.waterhydraulics.co.uk/janus-power-centre/",
+      "width": 1200,
+      "height": 939,
+      "original": "poweCentreMain.avif"
+    },
+    {
+      "key": "power-centre-motor-assembly",
+      "src": "/assets/product-photos/power-centre-motor-assembly.jpg",
+      "alt": "Power Centre assembly coupled to an electric motor on a mounting frame",
+      "caption": "Representative Power Centre assembly; the motor and configuration shown are not specific to this model.",
+      "source": "https://www.waterhydraulics.co.uk/janus-power-centre/",
+      "width": 1064,
+      "height": 1064,
+      "original": "SqPowerCentre.jpg"
+    },
+    {
+      "key": "water-hydraulic-control-valve",
+      "src": "/assets/product-photos/water-hydraulic-control-valve.webp",
+      "alt": "Water hydraulic control valve with capped connections",
+      "caption": "Example from the water hydraulic valve range.",
+      "source": "https://www.waterhydraulics.co.uk/products/valves/",
+      "width": 400,
+      "height": 301,
+      "original": "val.webp"
+    },
+    {
+      "key": "large-axial-piston-pump",
+      "src": "/assets/product-photos/large-axial-piston-pump.jpg",
+      "alt": "Axial piston pump shown in the manufacturer\u2019s desalination pump range",
+      "caption": "Desalination pump range photo. Confirm duplex materials and the selected seawater configuration.",
+      "source": "https://www.waterhydraulics.co.uk/desalination-pumps/",
+      "width": 1024,
+      "height": 758,
+      "original": "PB160-80SMS-1024x758.jpg"
+    },
+    {
+      "key": "p15-water-pump",
+      "src": "/assets/product-photos/p15-water-pump.jpg",
+      "alt": "P15 axial piston water pump",
+      "caption": "P15 product photo from the fire-pump range. Final selection depends on the approved system design.",
+      "source": "https://www.waterhydraulics.co.uk/fire-pumps/",
+      "width": 1000,
+      "height": 746,
+      "original": "P15-Pump-1.jpg"
+    },
+    {
+      "key": "p3-water-pump",
+      "src": "/assets/product-photos/p3-water-pump.jpg",
+      "alt": "M3 water hydraulic motor",
+      "caption": "M3 product photo shown in the manufacturer\u2019s motor range.",
+      "source": "https://www.waterhydraulics.co.uk/motors/",
+      "width": 1000,
+      "height": 746,
+      "original": "P3-1-1.jpg"
+    },
+    {
+      "key": "p6-water-pump",
+      "src": "/assets/product-photos/p6-water-pump.jpg",
+      "alt": "M6 water hydraulic motor",
+      "caption": "M6 product photo shown in the manufacturer\u2019s motor range.",
+      "source": "https://www.waterhydraulics.co.uk/motors/",
+      "width": 1000,
+      "height": 746,
+      "original": "M6-Motor-1.jpg"
+    },
+    {
+      "key": "p15-water-pump",
+      "src": "/assets/product-photos/p15-water-pump.jpg",
+      "alt": "M15 water hydraulic motor",
+      "caption": "M15 product photo shown in the manufacturer\u2019s motor range.",
+      "source": "https://www.waterhydraulics.co.uk/motors/",
+      "width": 1000,
+      "height": 746,
+      "original": "P15-Pump-1.jpg"
+    }
+  ],
+  "placements": {
+    "products/axial-piston-pumps/index.html": [
+      "Added pumps photo to hero"
+    ],
+    "products/water-hydraulic-motors/index.html": [
+      "Added motors photo to hero"
+    ],
+    "products/water-hydraulic-cylinders/index.html": [
+      "Added cylinders photo to hero"
+    ],
+    "products/water-hydraulics-hpu/index.html": [
+      "Added hpu photo to hero"
+    ],
+    "products/water-hydraulic-valves/index.html": [
+      "Added valves photo to hero"
+    ],
+    "products/power-centre-reverse-osmosis/index.html": [
+      "Added pc photo to hero"
+    ],
+    "products/duplex-seawater-pumps/index.html": [
+      "Added seawater photo to hero"
+    ],
+    "products/axial-piston-fire-pumps/index.html": [
+      "Added fire photo to hero"
+    ],
+    "index.html": [
+      "Added pumps photo to hero",
+      "Added five homepage category photos"
+    ],
+    "products/axial-piston-pumps/p1/index.html": [
+      "Added p1 photo to hero"
+    ],
+    "products/water-hydraulic-cylinders/cylinder-40x25/index.html": [
+      "Added cylinder-detail photo to hero"
+    ],
+    "products/water-hydraulic-cylinders/cylinder-64x40/index.html": [
+      "Added cylinder-detail photo to hero"
+    ],
+    "products/water-hydraulic-cylinders/cylinder-80x50/index.html": [
+      "Added cylinder-detail photo to hero"
+    ],
+    "products/water-hydraulic-cylinders/cylinder-50x25/index.html": [
+      "Added cylinder-detail photo to hero"
+    ],
+    "products/water-hydraulic-cylinders/cylinder-64x30/index.html": [
+      "Added cylinder-detail photo to hero"
+    ],
+    "products/water-hydraulic-cylinders/cylinder-32x20/index.html": [
+      "Added cylinder-detail photo to hero"
+    ],
+    "products/water-hydraulic-cylinders/cylinder-50x30/index.html": [
+      "Added cylinder-detail photo to hero"
+    ],
+    "products/water-hydraulic-cylinders/cylinder-32x16/index.html": [
+      "Added cylinder-detail photo to hero"
+    ],
+    "products/water-hydraulic-cylinders/cylinder-100x60/index.html": [
+      "Added cylinder-detail photo to hero"
+    ],
+    "products/water-hydraulic-cylinders/cylinder-100x80/index.html": [
+      "Added cylinder-detail photo to hero"
+    ],
+    "products/water-hydraulic-cylinders/cylinder-125x80/index.html": [
+      "Added cylinder-detail photo to hero"
+    ],
+    "products/axial-piston-pumps/p3/index.html": [
+      "Updated p3 hero photo and identification"
+    ],
+    "products/axial-piston-pumps/p6/index.html": [
+      "Updated p6 hero photo and identification"
+    ],
+    "products/axial-piston-pumps/p15/index.html": [
+      "Updated p15 hero photo and identification"
+    ],
+    "products/axial-piston-pumps/p30/index.html": [
+      "Updated p30 hero photo and identification"
+    ],
+    "products/axial-piston-pumps/p60/index.html": [
+      "Updated p60 hero photo and identification"
+    ],
+    "products/axial-piston-pumps/p180/index.html": [
+      "Updated p180 hero photo and identification"
+    ],
+    "products/water-hydraulic-motors/m3-water-hydraulic-motor/index.html": [
+      "Updated motor hero photo; kept technical drawings"
+    ],
+    "products/water-hydraulic-motors/m6-water-hydraulic-motor/index.html": [
+      "Updated motor hero photo; kept technical drawings"
+    ],
+    "products/water-hydraulic-motors/m15-water-hydraulic-motor/index.html": [
+      "Updated motor hero photo; kept technical drawings"
+    ],
+    "products/water-hydraulic-motors/m30-water-hydraulic-motor/index.html": [
+      "Updated motor hero photo; kept technical drawings"
+    ],
+    "products/water-hydraulic-motors/m60-axial-piston-water-hydraulic-motor/index.html": [
+      "Updated motor hero photo; kept technical drawings"
+    ],
+    "products/water-hydraulic-motors/m180-axial-piston-water-hydraulic-motor/index.html": [
+      "Updated motor hero photo; kept technical drawings"
+    ],
+    "products/power-centre-reverse-osmosis/pc250/index.html": [
+      "Replaced recreated Power Centre illustration with manufacturer assembly photo"
+    ],
+    "products/power-centre-reverse-osmosis/pc300/index.html": [
+      "Replaced recreated Power Centre illustration with manufacturer assembly photo"
+    ],
+    "products/power-centre-reverse-osmosis/pc500/index.html": [
+      "Replaced recreated Power Centre illustration with manufacturer assembly photo"
+    ],
+    "products/power-centre-reverse-osmosis/pc1000/index.html": [
+      "Replaced recreated Power Centre illustration with manufacturer assembly photo"
+    ],
+    "products/index.html": [
+      "Added photos to all seven equipment cards"
+    ],
+    "industries/water-hydraulics-for-marine-and-coastal-applications/index.html": [
+      "Added 3 related-equipment photographs"
+    ],
+    "industries/water-hydraulics-for-dust-control-systems/index.html": [
+      "Added 2 related-equipment photographs"
+    ],
+    "industries/water-hydraulics-for-municipal-infrastructure/index.html": [
+      "Added 3 related-equipment photographs"
+    ],
+    "industries/water-hydraulics-for-water-parks-and-wave-pools/index.html": [
+      "Added 3 related-equipment photographs"
+    ],
+    "industries/water-hydraulics-for-hydroelectric-power/index.html": [
+      "Added 3 related-equipment photographs"
+    ],
+    "industries/water-hydraulic-systems-for-hydrogen-production/index.html": [
+      "Added 2 related-equipment photographs"
+    ],
+    "industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/index.html": [
+      "Added 3 related-equipment photographs"
+    ],
+    "industries/water-hydraulics-for-mining-operations/index.html": [
+      "Added 2 related-equipment photographs"
+    ],
+    "industries/water-hydraulics-for-agriculture-and-irrigation-systems/index.html": [
+      "Added 3 related-equipment photographs"
+    ],
+    "industries/water-hydraulics-for-odor-control-and-ventilation-systems/index.html": [
+      "Added 2 related-equipment photographs"
+    ],
+    "industries/water-hydraulic-systems-for-pulp-and-paper-mills/index.html": [
+      "Added 3 related-equipment photographs"
+    ],
+    "industries/water-hydraulics-for-forestry-and-logging-operations/index.html": [
+      "Added 3 related-equipment photographs"
+    ],
+    "industries/water-hydraulics-for-food-and-beverage-manufacturing/index.html": [
+      "Added 3 related-equipment photographs"
+    ]
+  }
+}

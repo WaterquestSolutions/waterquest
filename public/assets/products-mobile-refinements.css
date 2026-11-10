@@ -1,0 +1,32 @@
+/* Products overview: readable details at every screen width. */
+#selection-checklist .products-enquiry-list{margin:22px 0;border:1px solid #52718b;border-radius:12px;overflow:hidden;background:#0c2035}
+#selection-checklist .products-enquiry-list>div{display:grid;grid-template-columns:minmax(180px,.8fr) minmax(0,2.7fr);gap:24px;padding:20px 22px;border-bottom:1px solid #36536c}
+#selection-checklist .products-enquiry-list>div:last-child{border-bottom:0}
+#selection-checklist .products-enquiry-list dt{color:#00eeff;font-weight:800}
+#selection-checklist .products-enquiry-list dd{margin:0;color:#fff}
+#selection-checklist .products-enquiry-list :is(dt,dd){min-width:0;font-size:16px;line-height:1.65;overflow-wrap:anywhere}
+html#waterquest-site body #materials-engineering{padding:48px 32px}
+html#waterquest-site body #materials-engineering .materials-inner{width:100%;max-width:1160px;margin:0 auto}
+html#waterquest-site body #materials-engineering .section-header{max-width:960px;margin:0 auto 24px}
+html#waterquest-site body #materials-engineering .section-label{justify-content:center}
+html#waterquest-site body #materials-engineering .materials-copy{max-width:960px;margin:0 auto}
+html#waterquest-site body #materials-engineering .materials-copy p{margin:0 0 18px;font-size:16px;line-height:1.65}
+html#waterquest-site body #materials-engineering .materials-copy p:last-child{margin-bottom:0}
+html#waterquest-site body #pumps .phc-cutaway-label{position:relative!important;container-type:inline-size;background:#fff;border-radius:8px}
+html#waterquest-site body #pumps .phc-cutaway-label>span{position:absolute!important;left:70%!important;top:38%!important;right:auto!important;bottom:auto!important;width:27%!important;max-width:27%!important;margin:0!important;padding:0!important;font-size:clamp(13px,5.2cqw,22px)!important;line-height:1.2!important;text-align:left!important;color:#102749!important}
+@media(max-width:780px){
+#selection-checklist .products-enquiry-list>div{grid-template-columns:1fr;gap:7px;padding:18px}
+#selection-checklist .wqx-actions{align-items:stretch}
+#selection-checklist .wqx-actions a{min-width:0;white-space:normal;overflow-wrap:anywhere;box-sizing:border-box}
+html#waterquest-site body #materials-engineering{padding:32px 20px}
+html#waterquest-site body #materials-engineering .section-header{margin:0 0 18px;text-align:left}
+html#waterquest-site body #materials-engineering .section-label{justify-content:flex-start}
+html#waterquest-site body #materials-engineering h2{font-size:clamp(25px,5vw,32px);line-height:1.22;margin:0}
+html#waterquest-site body #materials-engineering .materials-copy p{margin-bottom:16px}
+}
+@media(max-width:700px){
+html#waterquest-site body .product-grid{grid-template-columns:minmax(0,1fr)!important}
+html#waterquest-site body .pc-spec{display:grid;grid-template-columns:1fr;gap:5px;align-items:start}
+html#waterquest-site body .pc-spec-value{text-align:left;overflow-wrap:anywhere}
+html#waterquest-site body .pc-link{white-space:normal;overflow-wrap:anywhere}
+}

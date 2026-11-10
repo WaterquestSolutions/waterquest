@@ -1,5 +1,6 @@
 (() => {
   const menus = {
+    about: [["About WaterQuest", "/about/"], ["Case studies", "/case-studies/"]],
     products: [
       ["All Products", "/products/"],
       ["Axial Piston Pumps", "/products/axial-piston-pumps/"],
@@ -7,6 +8,7 @@
       ["Water Hydraulic HPUs", "/products/water-hydraulics-hpu/"],
       ["Water Hydraulic Cylinders", "/products/water-hydraulic-cylinders/"],
       ["Water Hydraulic Motors", "/products/water-hydraulic-motors/"],
+      ["Armak Air Motors", "/products/armak-air-motors/"],
       ["Water Hydraulic Valves", "/products/water-hydraulic-valves/"],
       ["Fire Pumps", "/products/axial-piston-fire-pumps/"],
       ["Desalination Power Centre", "/products/power-centre-reverse-osmosis/"]
@@ -58,6 +60,7 @@
     header.className = "wq-site-header";
     header.setAttribute("aria-label", "Main navigation");
     const items = [
+      ["New to water hydraulics?", "/start-here/"],
       ["Products", "/products/"],
       ["Industries", "/industries/"],
       ["Knowledge Hub", "/knowledge-hub/"],
@@ -85,7 +88,7 @@
     }
     footer.className = "wq-site-footer";
     footer.setAttribute("role", "contentinfo");
-    footer.innerHTML = '<div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/wqs-stainless/">WQS Stainless</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li></ul></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>316 SS / PEEK · Oil-Free · Canadian Support</p></div></div>';
+    footer.innerHTML = '<div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div>';
   }
 
   function findNavContainers() {
@@ -160,6 +163,7 @@
         const label = normaliseLabel(anchor.textContent || "");
         if (label === "products") enhanceAnchor(anchor, "products");
         if (label === "industries") enhanceAnchor(anchor, "industries");
+        if (label === "about") enhanceAnchor(anchor, "about");
       }
     }
   }

@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html id="waterquest-site" lang="en-CA"><head>
+<style>@layer wq-responsive-priority;</style>
+<link rel="stylesheet" href="/assets/site-responsive-fit.css?v=20261109">
+<script defer src="/assets/site-responsive-fit.js?v=20261109"></script><style id="wqs-experience-layer">@layer wqs-experience;</style><link href="/assets/newsletter-popup.css?v=20261021" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>What is water hydraulics? | WaterQuest Solutions</title>
+<meta content="Understand the principle, identify a useful application and choose the next engineering or purchasing step." name="description">
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/start-here/" rel="canonical">
+<style>
+    :root {
+      --navy:         #0E284A;
+      --navy-mid:     #0D2044;
+      --navy-light:   #122954;
+      --aqua:         #00EEFF;
+      --aqua-dim:     #00A3AD;
+      --aqua-glow:    #778FA8;
+      --silver:       #A8B8CC;
+      --silver-light: #D4E0EC;
+      --white:        #FFFFFF;
+      --body-text:    #C8D8E8;
+      --muted:        #ffffff;
+      --border:       rgba(168,184,204,0.18);
+      --border-aqua:  rgba(0,200,212,0.3);
+      --success:      #18D6E6;
+      --warning:      #F5B742;
+
+      --font-display: 'Avenir', 'Avenir Next', 'Nunito Sans', sans-serif;
+      --font-body:    'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --shadow-card: 0 4px 32px rgba(0,0,0,0.35);
+      --shadow-glow: 0 0 40px rgba(0,200,212,0.2);
+      --max-width: 1240px;
+      --section-pad: 96px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      background: var(--navy);
+      color:#FFFFFF;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color:inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ul { list-style: none; }
+
+    .label {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color:#00EEFF;
+    }
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-weight: 900;
+      line-height: 1.15;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.45rem, 5.2vw, 4.9rem); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(1.9rem, 3.5vw, 3.05rem); letter-spacing: -0.02em; }
+    h3 { font-size: clamp(1.15rem, 2vw, 1.45rem); }
+    h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color:#00EEFF; }
+    p { color:#FFFFFF; font-size: 1.02rem; }
+    .text-aqua { color:#00EEFF; }
+    .text-muted { color:#FFFFFF; }
+    .text-silver { color:#FFFFFF; }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
+    .section { padding: var(--section-pad) 0; position: relative; }
+    .section-alt { background: var(--navy-mid); }
+    .section-dark { background: var(--navy); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 0 28px;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.86rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+    .btn-primary { background:#00616B; color:#FFFFFF; }
+    .btn-primary:hover { background:#00616B; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,200,212,0.4); }
+    .btn-outline { background: transparent; color:#FFFFFF; border: 1.5px solid rgba(255,255,255,0.35); }
+    .btn-outline:hover { border-color: var(--aqua); color:#00EEFF; transform: translateY(-2px); }
+    .btn-aqua-outline { background: transparent; color:#00EEFF; border: 1.5px solid var(--border-aqua); }
+    .btn-aqua-outline:hover { background:#00616B; border-color: var(--aqua); }
+
+    #nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(10,22,40,0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 4px 40px rgba(0,0,0,0.35);
+      transition: all 0.3s ease;
+    }
+    #nav.scrolled {
+      background: rgba(10,22,40,0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 4px 40px rgba(0,0,0,0.5);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 32px;
+      gap: 22px;
+    }
+    .nav-logo { display: flex; flex-direction: column; }
+    .nav-logo .logo-main {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.18rem;
+      letter-spacing: 0.04em;
+      color:#FFFFFF;
+      text-transform: uppercase;
+    }
+    .nav-logo .logo-sub {
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      color:#00EEFF;
+      text-transform: uppercase;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex: 1 1 auto;
+      flex-wrap: wrap;
+      gap: 14px 18px;
+    }
+    .nav-links a {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color:#FFFFFF;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#FFFFFF!important;
+      padding: 9px 20px;
+      border-radius: var(--radius-sm);
+    }
+    .nav-cta:hover { background:#00616B!important; color:#FFFFFF!important; }
+
+    .bubble-layer {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .bubble {
+      position: absolute;
+      bottom: -80px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, rgba(255,255,255,0.65), rgba(0,200,212,0.25) 38%, rgba(0,200,212,0.04) 72%);
+      border: 1px solid rgba(0,200,212,0.22);
+      opacity: 0;
+      animation: bubble-rise linear infinite;
+    }
+    @keyframes bubble-rise {
+      0% { transform: translateY(0) translateX(0) scale(0.7); opacity: 0; }
+      12% { opacity: 0.42; }
+      65% { opacity: 0.2; }
+      100% { transform: translateY(-116vh) translateX(var(--drift)) scale(1.08); opacity: 0; }
+    }
+
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 72px;
+      background:
+        radial-gradient(ellipse 80% 60% at 68% 40%, rgba(0,140,180,0.22) 0%, transparent 66%),
+        radial-gradient(ellipse 60% 80% at 20% 82%, rgba(0,200,212,0.08) 0%, transparent 62%),
+        linear-gradient(160deg, #060F1E 0%, #0E284A 40%, #0D2044 100%);
+    }
+    .hero-grid-bg {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,200,212,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,200,212,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 76% 72% at 52% 48%, black 28%, transparent 82%);
+      pointer-events: none;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 82px 32px;
+      display: grid;
+      grid-template-columns: 1fr 0.88fr;
+      gap: 62px;
+      align-items: center;
+    }
+    .hero-text .label { margin-bottom: 18px; }
+    .hero-text h1 { margin-bottom: 24px; }
+    .hero-text h1 span { color:#00EEFF; }
+    .hero-text p {
+      font-size: 1.14rem;
+      color:#FFFFFF;
+      max-width: 610px;
+      margin-bottom: 36px;
+      line-height: 1.75;
+    }
+    .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 34px;
+    }
+    .trust-pill {
+      border: 1px solid var(--border-aqua);
+      background: rgba(0,200,212,0.07);
+      border-radius: 100px;
+      padding: 7px 14px;
+      color:#00EEFF;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .system-card {
+      background: rgba(18,41,84,0.86);
+      border: 1px solid var(--border-aqua);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-card);
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .system-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 70% at 50% 20%, rgba(0,200,212,0.11), transparent 68%);
+      pointer-events: none;
+    }
+    .system-card > * { position: relative; z-index: 1; }
+    .system-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding-bottom: 18px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .system-head strong {
+      color:#FFFFFF;
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color:#FFFFFF;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .status::before {
+      content: '';
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 0 6px rgba(34,211,165,0.12);
+    }
+    .circuit {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    .circuit-node {
+      min-height: 132px;
+      background: rgba(10,22,40,0.72);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .circuit-node:hover { border-color: var(--border-aqua); transform: translateY(-3px); }
+    .circuit-node small {
+      display: block;
+      color:#00EEFF;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .circuit-node strong {
+      display: block;
+      color:#FFFFFF;
+      font-size: 1.02rem;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .circuit-node p { color:#FFFFFF; font-size: 0.86rem; line-height: 1.55; }
+    .system-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .metric {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 10px;
+      text-align: center;
+      background: rgba(0,200,212,0.05);
+    }
+    .metric b {
+      display: block;
+      color:#00EEFF;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+    .metric span {
+      color:#FFFFFF;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .stats-strip {
+      background: var(--navy-mid);
+      border-top: 1px solid var(--border-aqua);
+      border-bottom: 1px solid var(--border-aqua);
+      padding: 34px 0;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+    .stat-item {
+      text-align: center;
+      padding: 16px 24px;
+      position: relative;
+    }
+    .stat-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 20%;
+      bottom: 20%;
+      width: 1px;
+      background: var(--border);
+    }
+    .stat-number {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 2.55rem;
+      color:#00EEFF;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+    .stat-label {
+      font-size: 0.76rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color:#FFFFFF;
+    }
+
+    .section-header { margin-bottom: 56px; }
+    .section-header .label { margin-bottom: 14px; }
+    .section-header h2 { margin-bottom: 16px; }
+    .section-header p:not(.label) {
+      font-size: 1.08rem;
+      color:#FFFFFF;
+      max-width: 680px;
+    }
+    .section-header.center { text-align: center; }
+    .section-header.center p:not(.label) { margin: 0 auto; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .question-stack {
+      display: grid;
+      gap: 34px;
+    }
+    .question-stack .section-header p { max-width: 900px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+
+    .future-block {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 54px;
+      position: relative;
+      overflow: hidden;
+    }
+    .future-block::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 340px;
+      height: 340px;
+      background: radial-gradient(circle, rgba(0,200,212,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .future-block > * { position: relative; z-index: 1; }
+    .future-question {
+      font-family: var(--font-display);
+      font-weight: 900;
+      color:#FFFFFF;
+      font-size: clamp(1.6rem, 3.4vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      margin-bottom: 22px;
+    }
+    .future-copy p {
+      color:#FFFFFF;
+      margin-bottom: 16px;
+      font-size: 1.03rem;
+    }
+    .future-copy strong { color:#FFFFFF; }
+    .cost-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .cost-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 16px;
+      background: rgba(0,200,212,0.06);
+      border: 1px solid var(--border-aqua);
+      border-radius: var(--radius-sm);
+      color:#FFFFFF;
+      font-size: 0.94rem;
+    }
+    .cost-list li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--aqua);
+      margin-top: 9px;
+      flex-shrink: 0;
+    }
+
+    .path-card,
+    .product-card,
+    .industry-card,
+    .article-card,
+    .benefit-card,
+    .process-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      transition: all 0.28s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .path-card:hover,
+    .product-card:hover,
+    .industry-card:hover,
+    .article-card:hover,
+    .benefit-card:hover,
+    .process-card:hover {
+      border-color: var(--border-aqua);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card);
+    }
+    .path-card { padding: 30px; min-height: 265px; display: flex; flex-direction: column; justify-content: space-between; }
+    .path-card::before,
+    .product-card::before,
+    .article-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--aqua);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.28s ease;
+    }
+    .path-card:hover::before,
+    .product-card:hover::before,
+    .article-card:hover::before { transform: scaleX(1); }
+    .path-card h3 { margin: 18px 0 12px; }
+    .path-card p { color:#FFFFFF; font-size: 0.94rem; line-height: 1.65; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 22px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color:#00EEFF;
+      transition: gap 0.2s;
+    }
+    .card-link:hover { gap: 10px; }
+
+    .product-card { padding: 30px 26px; min-height: 230px; }
+    .product-visual {
+      width: 100%;
+      height: 132px;
+      border-radius: var(--radius-sm);
+      background:
+        radial-gradient(ellipse 70% 80% at 50% 30%, rgba(0,200,212,0.16), transparent 70%),
+        rgba(10,22,40,0.58);
+      border: 1px solid var(--border-aqua);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+    .product-visual::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,200,212,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,200,212,0.05) 1px, transparent 1px);
+      background-size: 28px 28px;
+      opacity: 0.7;
+    }
+    .product-visual svg {
+      position: relative;
+      z-index: 1;
+      width: 86%;
+      height: 92px;
+      filter: drop-shadow(0 8px 18px rgba(0,0,0,0.32));
+    }
+    .product-card h3 { font-size: 1.08rem; margin-bottom: 10px; }
+    .product-card p { font-size: 1.02rem; color:#FFFFFF; line-height: 1.68; }
+
+    .materials-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .material-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 42px 36px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.28s ease;
+    }
+    .material-card:hover {
+      border-color: var(--border-aqua);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card);
+    }
+    .material-card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--aqua);
+    }
+    .material-card::after {
+      content: '';
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle, rgba(0,200,212,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .material-card > * { position: relative; z-index: 1; }
+    .material-card h3 { margin: 12px 0 14px; }
+    .material-card p { color:#FFFFFF; font-size: 0.96rem; line-height: 1.72; }
+    .material-card .label { color:#00EEFF; }
+    .material-specs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 22px;
+    }
+    .material-spec {
+      background: var(--aqua-glow);
+      border: 1px solid var(--border-aqua);
+      color:#00EEFF;
+      border-radius: 100px;
+      padding: 5px 13px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .benefit-card { padding: 30px; }
+    .benefit-num {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.45rem;
+      color:#00EEFF;
+      opacity: 1;
+      line-height: 1;
+      margin-bottom: 18px;
+    }
+    .benefit-card h3 { font-size: 1.08rem; margin-bottom: 10px; }
+    .benefit-card p { color:#FFFFFF; font-size: 0.92rem; }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+    .compare-panel {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .compare-panel h3 {
+      padding: 24px 28px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      font-size: 1.16rem;
+    }
+    .compare-panel h3 span {
+      color:#00EEFF;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .compare-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      padding: 16px 28px;
+      border-bottom: 1px solid var(--border);
+      color:#FFFFFF;
+      font-size: 0.94rem;
+    }
+    .compare-row:last-child { border-bottom: none; }
+    .compare-row b { color:#FFFFFF; }
+    .compare-panel:first-child {
+      border-color: rgba(255,80,80,0.42);
+    }
+    .compare-panel:first-child h3 span,
+    .compare-panel:first-child .compare-row b {
+      color:#FFFFFF;
+    }
+    .compare-panel:first-child .compare-row span,
+    .compare-panel:nth-child(2) .compare-row span {
+      color:#FFFFFF;
+    }
+    .compare-panel:first-child .compare-row {
+      border-bottom-color: rgba(255,90,90,0.22);
+    }
+    .compare-panel:nth-child(2) h3 span,
+    .compare-panel:nth-child(2) .compare-row b {
+      color:#00EEFF;
+    }
+
+    .industry-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .industry-card {
+      padding: 26px 24px;
+      min-height: 176px;
+    }
+    .industry-card .index {
+      display: block;
+      color:#00EEFF;
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .industry-card h3 { font-size: 1.08rem; margin-bottom: 8px; }
+    .industry-card p { color:#FFFFFF; font-size: 0.95rem; line-height: 1.62; }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr 0.9fr;
+      gap: 18px;
+    }
+    .article-card {
+      padding: 28px;
+      min-height: 245px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .article-card.featured {
+      min-height: 508px;
+      background:
+        radial-gradient(ellipse 90% 60% at 65% 10%, rgba(0,200,212,0.13), transparent 70%),
+        var(--navy-light);
+    }
+    .article-card h3 { margin: 18px 0 12px; }
+    .article-card.featured h3 { font-size: clamp(1.5rem, 2.6vw, 2.25rem); }
+    .article-card p { color:#FFFFFF; font-size: 1.03rem; line-height: 1.7; }
+    .article-card.featured p { font-size: 1.08rem; }
+    .article-card .label {
+      color:#00EEFF;
+      font-size: 0.72rem;
+      line-height: 1.7;
+    }
+    #knowledge > .container > .section-header .label,
+    #faq-heading ~ p,
+    section[aria-labelledby="faq-heading"] .section-header .label,
+    #engineering-review .section-header .label {
+      color:#00EEFF;
+    }
+
+    .faq-list { display: flex; flex-direction: column; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 23px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      gap: 18px;
+    }
+    .faq-q h3 {
+      font-size: 1.28rem;
+      color:#FFFFFF;
+      font-family: var(--font-display);
+      font-weight: 700;
+    }
+    .faq-arrow {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid var(--border-aqua);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .faq-arrow svg { stroke: var(--aqua); }
+    .faq-item.open .faq-arrow {
+      background: var(--aqua-glow);
+      transform: rotate(180deg);
+    }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .faq-item.open .faq-a { max-height: 320px; }
+    .faq-a p {
+      padding: 0 0 24px;
+      font-size: 0.96rem;
+      color:#FFFFFF;
+      line-height: 1.75;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .process-card {
+      min-height: 230px;
+      padding: 28px 24px;
+    }
+    .process-card .step {
+      display: block;
+      color:#00EEFF;
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 32px;
+      opacity: 1;
+    }
+    .process-card h3 { font-size: 1.34rem; margin-bottom: 10px; }
+    .process-card p { color:#FFFFFF; font-size: 0.96rem; line-height: 1.62; }
+
+    .cta-section {
+      background: linear-gradient(135deg, #0D2044 0%, #0E284A 100%);
+      border-top: 1px solid var(--border-aqua);
+      border-bottom: 1px solid var(--border-aqua);
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(0,200,212,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .cta-inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 36px;
+      align-items: center;
+    }
+    .cta-inner h2 { margin-bottom: 18px; }
+    .cta-inner p {
+      color:#FFFFFF;
+      max-width: 720px;
+      font-size: 1.08rem;
+    }
+    .cta-inner .label { color:#00EEFF; }
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-width: 270px;
+    }
+
+    footer {
+      background: #06101E;
+      border-top: 1px solid var(--border);
+      padding: 64px 0 32px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-brand .logo-main {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.3rem;
+      color:#FFFFFF;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+    .footer-brand .logo-sub {
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      color:#00EEFF;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .footer-brand p { font-size: 0.98rem; color:#FFFFFF; line-height: 1.75; max-width: 340px; }
+    .footer-col h5 {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color:#00EEFF;
+      margin-bottom: 20px;
+    }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a {
+      font-size: 1.02rem;
+      color:#FFFFFF;
+      transition: color 0.2s;
+    }
+    .footer-col ul li a:hover { color:#00EEFF; }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-bottom p { font-size: 0.9rem; color:#FFFFFF; }
+    .cert-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cert-badge {
+      background: var(--aqua-glow);
+      border: 1px solid var(--border-aqua);
+      border-radius: var(--radius-sm);
+      padding: 4px 12px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color:#00EEFF;
+    }
+
+    @media (max-width: 900px) {
+      #hero { padding-top: 126px; }
+      .nav-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+      .nav-logo .logo-main { font-size: 1.1rem; }
+      .nav-logo .logo-sub { font-size: 0.58rem; }
+      .nav-links {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 10px 14px;
+      }
+      .nav-links a {
+        font-size: 0.68rem;
+        letter-spacing: 0.08em;
+      }
+      .nav-cta { padding: 7px 14px; }
+      .hero-content { grid-template-columns: 1fr; }
+      .system-card { max-width: 700px; }
+      .grid-4, .process-grid { grid-template-columns: repeat(2, 1fr); }
+      .article-grid { grid-template-columns: 1fr 1fr; }
+      .article-card.featured { grid-column: 1 / -1; min-height: 320px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 760px) {
+      :root { --section-pad: 66px; }
+      .container, .hero-content, .nav-inner { padding-left: 24px; padding-right: 24px; }
+      #hero { padding-top: 146px; }
+      .hero-content { padding-top: 58px; padding-bottom: 58px; gap: 36px; }
+      .hero-text p { font-size: 1.02rem; }
+      .hero-ctas, .cta-buttons { width: 100%; }
+      .btn { width: 100%; white-space: normal; text-align: center; }
+      .circuit, .system-metrics, .stats-grid, .grid-2, .grid-3, .grid-4, .materials-grid, .comparison-grid, .industry-grid, .article-grid, .process-grid, .cta-inner, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .stat-item:not(:last-child)::after { display: none; }
+      .stat-item { border-bottom: 1px solid var(--border); }
+      .future-block { padding: 34px 24px; }
+      .article-card.featured { min-height: 320px; }
+      .cta-buttons { min-width: 0; }
+      .footer-bottom { align-items: flex-start; flex-direction: column; }
+    }
+  
+
+    /* WQS SITE-WIDE NO GREY TEXT RULE */
+    :root {
+      --body-text: #FFFFFF !important;
+      --muted: #ffffff !important;
+      --silver: #FFFFFF !important;
+      --silver-light: #FFFFFF !important;
+      --text-muted: #ffffff !important;
+      --light-text: #FFFFFF !important;
+      --secondary-text: #ffffff !important;
+      --copy: #FFFFFF !important;
+      --soft: #FFFFFF !important;
+      --subtle: #FFFFFF !important;
+      --wheat: #FFFFFF !important;
+      --gray: #ffffff !important;
+      --grey: #ffffff !important;
+    }
+
+</style>
+<link href="/assets/wqs-product-template.css?v=20261011-white-aqua" rel="stylesheet">
+<link href="/assets/gateway.css?v=20261011-white-aqua" rel="stylesheet">
+<script defer src="/assets/gateway.js?v=20261011-white-aqua"></script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-brand-standards.css?v=20261106-aqua-links" rel="stylesheet"><script id="wq-speed-insights" src="/assets/wq-speed-insights.js" type="module"></script>
+<style id="wq-home-comparison-alignment">
+/* Keep corresponding content aligned across the two comparison panels. */
+@media (min-width: 651px) {
+  #waterquest-main #why-water .wqg-comparison {
+    grid-template-rows: repeat(5, auto);
+    row-gap: 0;
+  }
+  #waterquest-main #why-water .wqg-comparison > article {
+    display: grid;
+    grid-row: span 5;
+    grid-template-rows: subgrid;
+    min-width: 0;
+  }
+  #waterquest-main #why-water .wqg-comparison > article > ul {
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+  }
+  #waterquest-main #why-water .wqg-comparison > article > ul > li {
+    margin: 0 0 17px;
+  }
+  #waterquest-main #why-water .wqg-comparison > article > ul > li:last-child {
+    margin-bottom: 0;
+  }
+}
+</style>
+<style id="homepage-copy-preview">#hero h1 span{color:#00C2D7!important}</style><style id="homepage-tightened-preview">
+#waterquest-main #knowledge .wqg-resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+#waterquest-main #engineering-tools{scroll-margin-top:240px}
+@media(max-width:650px){#waterquest-main #knowledge .wqg-resource-grid{grid-template-columns:1fr}}
+</style><link href="/assets/wq-hero-cta.css?v=20261021" rel="stylesheet"><meta content="vQ1vUHE_9ijCayH87FStOPcCNgg-_bdrR6cajqP-1ME" name="google-site-verification">
+<link href="/assets/wqx-site.css?v=20261027-review2" rel="stylesheet"><link href="/assets/critique-refinements.css?v=20261027-preview3" rel="stylesheet"><style id="wqs-start-here-diagram">
+#main-content .wqs-circuit-figure{margin:0}
+#main-content .wqs-circuit-image{display:block;width:100%;height:auto;background:#FFFFFF;border-radius:12px}
+#main-content .wqs-circuit-figure a{display:block;border-radius:12px}
+#main-content .wqs-circuit-figure a:focus-visible{outline:3px solid #00EEFF;outline-offset:5px}
+#main-content .wqs-circuit-figure figcaption{margin-top:16px;line-height:1.6;color:#FFFFFF}
+#main-content .wqs-water-benefits{padding-left:24px;line-height:1.7}
+#main-content .wqs-water-benefits li{margin-bottom:16px}
+#main-content .wqs-water-benefits strong{color:#00EEFF!important}
+#main-content .wqx-page-header .wqs-clean-water-statement{display:block;margin:20px 0 14px;color:#00EEFF!important;font-size:clamp(28px,3vw,42px)!important;line-height:1.2!important;font-weight:800}
+</style><style id="wq-start-materials-layout">#wqs-stainless{background:#081827}#wqs-stainless .wq-stainless-intro{display:grid;grid-template-columns:220px minmax(0,1fr);gap:42px;align-items:center;margin-bottom:40px}#wqs-stainless .wq-stainless-mark{width:100%;height:auto;border-radius:8px}#wqs-stainless .wq-stainless-intro h2{font-size:clamp(28px,3.2vw,42px)!important;line-height:1.15!important;margin:10px 0 20px!important}#wqs-stainless .wq-stainless-intro p{font-size:18px;line-height:1.6}#wqs-stainless .wq-stainless-families{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}#wqs-stainless .wq-stainless-family{overflow:hidden;border:1px solid #31506b;border-radius:14px;background:#10243b;min-width:0}#wqs-stainless .wq-stainless-family>img{display:block;width:100%;height:190px;object-fit:contain;background:#fff;padding:12px;box-sizing:border-box}#wqs-stainless .wq-stainless-family>div{padding:22px}#wqs-stainless .wq-stainless-family h3{font-size:22px!important;line-height:1.2!important;margin:0 0 14px!important}#wqs-stainless .wq-stainless-family h3 a{color:#00eeff;text-decoration:none}#wqs-stainless .wq-stainless-family p{font-size:16px!important;line-height:1.5!important;margin:0!important}#wqs-stainless .wq-stainless-next{margin-top:36px;display:flex;align-items:center;gap:32px}#wqs-stainless .wq-stainless-next p{flex:1;font-size:17px;line-height:1.6}#wqs-stainless .wq-stainless-next a{flex:1;font-size:17px}
+#materials-engineering .wq-material-editorial{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.25fr);gap:54px}#materials-engineering h2{font-size:clamp(29px,3.3vw,42px)!important;line-height:1.15!important}#materials-engineering .wq-material-story p{font-size:18px!important;line-height:1.75!important;margin:0 0 24px!important}#materials-engineering .wq-material-story a{color:#00eeff}#materials-engineering .wq-single-source{border-left:3px solid #00eeff;padding:22px;background:#0b243b;border-radius:0 12px 12px 0}
+@media(max-width:900px){#materials-engineering .wq-material-editorial{grid-template-columns:minmax(0,.8fr) minmax(0,1.25fr);gap:28px}#wqs-stainless .wq-stainless-intro{grid-template-columns:160px minmax(0,1fr);gap:28px}#wqs-stainless .wq-stainless-families{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){#materials-engineering .wq-material-editorial{grid-template-columns:1fr;gap:24px}#wqs-stainless .wq-stainless-intro{grid-template-columns:1fr}#wqs-stainless .wq-stainless-mark{width:170px}#wqs-stainless .wq-stainless-families{grid-template-columns:1fr}#wqs-stainless .wq-stainless-next{display:block}#wqs-stainless .wq-stainless-next a{margin-top:20px}#materials-engineering .wq-material-story p{font-size:17px!important}}</style><link rel="stylesheet" href="/assets/site-navigation-cleanup.css?v=20261108"></head><body class="wq-audited wq-consistent wqx-page"><nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img alt="" class="wq-brand-mark" height="54" src="/assets/waterquest-logo-square.png" width="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/start-here/">New to water hydraulics?</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><button type="button" class="wqx-skip wq-skip-control" data-skip-target="main-content">Skip to content</button><main id="main-content">
+<header class="wqx-page-header"><div class="wqx-wrap">
+<p class="wqx-eyebrow">WaterQuest · Water hydraulics explained</p>
+<h1>What is water hydraulics?</h1>
+<p>Hydraulic systems use a liquid under pressure to move heavy things: lifting gates, pressing parts, powering tools. Most use oil. <strong class="wqs-clean-water-statement">Water hydraulics does the same job with clean water.</strong></p>
+<p>A pump pressurizes the water, a valve directs it, and a cylinder turns that pressure into powerful, controlled motion. It works on the same principle as a car jack: a small push becomes a big force.</p>
+</div></header>
+<section class="wqx-section" aria-label="How a water hydraulic circuit works"><div class="wqx-wrap">
+<figure class="wqs-circuit-figure" id="working-circuit">
+<a href="/assets/water-hydraulics-circuit-laymen.png" target="_blank" rel="noopener" aria-label="View the water hydraulic circuit diagram at full size">
+<img class="wqs-circuit-image" src="/assets/water-hydraulics-circuit-laymen.png" width="2720" height="1760" alt="Clean, filtered water flows from a tank to a pump, through a control valve and into a cylinder that lifts a heavy load. Used water returns to the tank along the dashed line." decoding="async">
+</a>
+<figcaption>Select the diagram to view it at full size. Conceptual recirculating circuit, not an installation drawing. Inlet protection, pressure relief, load holding, filtration, cooling and safe-state arrangements must be designed for the selected equipment and duty.</figcaption>
+</figure>
+</div></section>
+<section class="wqx-section"><div class="wqx-wrap"><h2>Why choose water?</h2>
+<ul class="wqs-water-benefits">
+<li><strong>Remove hydraulic oil from this leak path.</strong> A water circuit removes its hydraulic-oil inventory. A water leak still needs attention: pressure, flooding, water chemistry and the receiving environment matter.</li>
+<li><strong>A non-flammable working fluid.</strong> Water does not add a hydraulic-oil fuel load. Electrical equipment, surrounding materials and the application still need their own fire assessment.</li>
+<li><strong>Reduce one contamination source.</strong> Removing hydraulic oil can help sensitive processes. Water quality, hygienic design and slip or leakage hazards still need control.</li>
+<li><strong>Less oil handling.</strong> There is no hydraulic oil to buy, test, store or dispose of in the converted circuit. Compare energy, water treatment, service and installed cost for the complete duty.</li>
+<li><strong>Precise and powerful.</strong> Water’s stiffness can support responsive movement. Precision and temperature depend on the complete controls, components, duty and cooling arrangement.</li>
+<li><strong>Remove a defined oil-release source.</strong> Water hydraulics can remove hydraulic oil from equipment near waterways. Assess energy, water use and discharge conditions alongside that benefit.</li>
+</ul></div></section>
+<section id="materials-engineering" class="wqx-section" aria-labelledby="materials-engineering-heading"><div class="wqx-wrap"><div class="wq-material-editorial"><header><p class="label">Materials Engineering</p><h2 id="materials-engineering-heading">Oil and water play by different rules. <span class="text-aqua">Good engineering respects the difference.</span></h2></header><div class="wq-material-story">
+<p>Oil and water can both transmit hydraulic power, but a system designed for oil cannot simply be expected to run reliably on water. Water demands a different approach to lubrication, wear and, especially, material compatibility.</p>
+<p>The concern goes beyond ordinary rust. When dissimilar metals—such as carbon steel and stainless steel—are electrically connected and exposed to water containing dissolved salts or minerals, they can behave like a small battery. The water carries ions between them, allowing an electrochemical reaction that accelerates corrosion of the more active metal. This is galvanic corrosion. A small carbon steel fitting connected to a much larger stainless steel assembly can be particularly vulnerable, concentrating the damage in that single component.</p>
+<p>That is why material selection must extend through the entire water circuit. A carefully engineered pump is only part of the solution: the valves, fittings and connections must also be compatible with the water and with one another. Our approach centres on 316 stainless steel and carbon-reinforced PEEK, with materials selected for their role and operating conditions.</p>
+<p>That principle is why we created WQS Stainless: to supply the 316 stainless steel components that help carry sound engineering through every part of a water hydraulic system. Because reliable water hydraulics begins with designing for water from the start.</p>
+<p class="wq-single-source">Our WQS Stainless division makes it possible to offer complete turnkey water hydraulic systems from a single source. From the hydraulic equipment to the stainless steel fittings and connections, you benefit from a coordinated package, consistent material selection and one point of contact for the complete system.</p>
+</div></div></div></section><section id="wqs-stainless" class="section" aria-labelledby="wqs-stainless-heading"><div class="container"><div class="wq-stainless-intro"><img class="wq-stainless-mark" src="/assets/about/wqs-stainless-logo.png" width="900" height="653" alt="WQS Stainless" loading="lazy" decoding="async"><div><p class="label">A WaterQuest Solutions division</p><h2 id="wqs-stainless-heading">Carry the material choice<br><span class="text-aqua">through every connection.</span></h2><p>Explore stainless connection and control families for the complete circuit—from the hydraulic equipment to the tubing, hoses, valves and test points.</p></div></div><div class="wq-stainless-families"><article class="wq-stainless-family"><img src="/assets/about/wqs-adapters.png" alt="BSPP swivel adapter" width="350" height="350" loading="lazy" decoding="async"><div><h3><a href="/contact/?interest=WQS%20Stainless%20%E2%80%94%20Adapters#engineering-review">Adapters <span aria-hidden="true">↗</span></a></h3><p>Connect thread types, sizes and sealing methods.</p></div></article><article class="wq-stainless-family"><img src="/assets/about/wqs-pipe-fittings.png" alt="Equal tee pipe fitting" width="350" height="350" loading="lazy" decoding="async"><div><h3><a href="/contact/?interest=WQS%20Stainless%20%E2%80%94%20Pipe%20fittings#engineering-review">Pipe fittings <span aria-hidden="true">↗</span></a></h3><p>Build threaded pipe runs with tees, elbows and couplings.</p></div></article><article class="wq-stainless-family"><img src="/assets/about/wqs-hose-fittings.png" alt="Stainless hose ferrule" width="350" height="350" loading="lazy" decoding="async"><div><h3><a href="/contact/?interest=WQS%20Stainless%20%E2%80%94%20Hose%20fittings#engineering-review">Hose fittings <span aria-hidden="true">↗</span></a></h3><p>Connect flexible hose assemblies to the equipment.</p></div></article><article class="wq-stainless-family"><img src="/assets/about/wqs-compression.png" alt="Straight bulkhead compression coupling" width="350" height="350" loading="lazy" decoding="async"><div><h3><a href="/contact/?interest=WQS%20Stainless%20%E2%80%94%20Twin-ferrule%20compression#engineering-review">Twin-ferrule compression <span aria-hidden="true">↗</span></a></h3><p>Connect stainless tubing for instrumentation and control.</p></div></article><article class="wq-stainless-family"><img src="/assets/about/wqs-welding.png" alt="Welding neck flange" width="350" height="350" loading="lazy" decoding="async"><div><h3><a href="/contact/?interest=WQS%20Stainless%20%E2%80%94%20Welding%20fittings#engineering-review">Welding fittings <span aria-hidden="true">↗</span></a></h3><p>Join permanent assemblies with weldable fittings and flanges.</p></div></article><article class="wq-stainless-family"><img src="/assets/about/wqs-industrial.png" alt="DIN 11851 male connection" width="350" height="350" loading="lazy" decoding="async"><div><h3><a href="/contact/?interest=WQS%20Stainless%20%E2%80%94%20Industrial%20fittings#engineering-review">Industrial fittings <span aria-hidden="true">↗</span></a></h3><p>Connect process, sanitary and washdown equipment.</p></div></article><article class="wq-stainless-family"><img src="/assets/about/wqs-control.png" alt="Unidirectional flow control valve" width="350" height="350" loading="lazy" decoding="async"><div><h3><a href="/contact/?interest=WQS%20Stainless%20%E2%80%94%20Control%20components#engineering-review">Control components <span aria-hidden="true">↗</span></a></h3><p>Manage flow and pressure with valves and related hardware.</p></div></article><article class="wq-stainless-family"><img src="/assets/about/wqs-measurement.png" alt="Pressure gauge" width="350" height="350" loading="lazy" decoding="async"><div><h3><a href="/contact/?interest=WQS%20Stainless%20%E2%80%94%20Pressure%20%26%20measurement#engineering-review">Pressure & measurement <span aria-hidden="true">↗</span></a></h3><p>Connect gauges, test points and measurement accessories.</p></div></article><article class="wq-stainless-family"><img src="/assets/about/wqs-accessories.png" alt="Two-way stainless ball valve" width="350" height="350" loading="lazy" decoding="async"><div><h3><a href="/contact/?interest=WQS%20Stainless%20%E2%80%94%20System%20accessories#engineering-review">System accessories <span aria-hidden="true">↗</span></a></h3><p>Complete the assembly with valves, couplings and accessories.</p></div></article></div><div class="wq-stainless-next"><p>Bring us the thread standard, size, pressure, temperature and water conditions. We’ll help define the components for your package.</p><a class="wqr-button wqr-primary" href="/contact/?interest=WQS%20Stainless%20components#engineering-review">Discuss your stainless component package <span aria-hidden="true">↗</span></a></div></div></section>
+<section class="wqx-section"><div class="wqx-wrap"><h2>Where it’s used</h2>
+<p>Dams and water-control gates, mines, food and beverage plants, fire-suppression systems, offshore and marine equipment, and anywhere keeping oil out matters.</p>
+</div></section>
+<section class="wqx-section"><div class="wqx-wrap"><h2>Built to last</h2>
+<p>Modern water hydraulic components use stainless steel, ceramics and advanced plastics, made to handle water for the long haul.</p>
+</div></section>
+<section class="wqx-section"><div class="wqx-wrap"><h2>Choose your next question</h2><div class="wqx-grid"><div class="wqx-card"><h3>I want the basics</h3><p><a href="/knowledge-hub/10-questions-engineers-ask-about-water-hydraulics/">Ten engineering questions answered</a> and <a href="/knowledge-hub/glossary/">the glossary</a>.</p></div><div class="wqx-card"><h3>I have equipment to select</h3><p><a href="/products/">Compare component families</a> and <a href="/project-tools/">prepare a duty brief</a>.</p></div><div class="wqx-card"><h3>I need to justify a project</h3><p><a href="/specification-resources/">Use the bid, lifecycle and pilot templates</a> and <a href="/support-and-supply/">define the supply responsibilities</a>.</p></div></div></div></section></main><footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div></footer><script defer src="/assets/wq-nav-dropdowns.js?v=20261108-no-capability"></script><script defer src="/assets/wq-enquiry-context.js?v=20261021"></script><script defer src="/assets/wqx-site.js?v=20261027-review2"></script><script defer src="/assets/site-navigation-cleanup.js?v=20261108"></script><script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq9426f675e698dc79d0fe4c2ecca071e3668f732067735a92f72e9aed6636787e" defer></script></body></html>

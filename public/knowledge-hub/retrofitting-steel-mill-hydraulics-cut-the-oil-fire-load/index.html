@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html id="waterquest-site" lang="en-CA">
+<head>
+<style>@layer wq-responsive-priority;</style>
+<link rel="stylesheet" href="/assets/site-responsive-fit.css?v=20261109">
+<script defer src="/assets/site-responsive-fit.js?v=20261109"></script><style id="wqs-experience-layer">@layer wqs-experience;</style><link href="/assets/newsletter-popup.css?v=20261021" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Retrofitting Steel-Mill Hydraulics: Cut the Oil Fire Load | WaterQuest Solutions</title>
+<style>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<meta content="Water removes hydraulic oil as a fire load but must be kept away from molten metal. Map hazards by location, then convert one bounded circuit." name="description">
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="Retrofitting Steel-Mill Hydraulics: Cut the Oil Fire Load, water hydraulics, WaterQuest Solutions" name="keywords">
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load/" rel="canonical">
+<meta content="WaterQuest Solutions" property="og:site_name">
+<meta content="Retrofitting Steel-Mill Hydraulics: Cut the Oil Fire Load | WaterQuest Solutions" property="og:title">
+<meta content="Water removes hydraulic oil as a fire load but must be kept away from molten metal. Map hazards by location, then convert one bounded circuit." property="og:description">
+<meta content="article" property="og:type">
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load/" property="og:url">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Retrofitting Steel-Mill Hydraulics: Cut the Oil Fire Load | WaterQuest Solutions" name="twitter:title">
+<meta content="Water removes hydraulic oil as a fire load but must be kept away from molten metal. Map hazards by location, then convert one bounded circuit." name="twitter:description">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load/#primary", "mainEntityOfPage": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load/", "name": "Retrofitting Steel-Mill Hydraulics: Cut the Oil Fire Load", "headline": "Retrofitting Steel-Mill Hydraulics: Cut the Oil Fire Load", "description": "Water removes hydraulic oil as a fire load but must be kept away from molten metal. Map hazards by location, then convert one bounded circuit.", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load/", "inLanguage": "en-CA", "isPartOf": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"}, "publisher": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"}, "author": {"@type": "Organization", "name": "WaterQuest Solutions", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/about/"}, "about": [{"@type": "Thing", "name": "Retrofitting Steel-Mill Hydraulics: Cut the Oil Fire Load"}], "articleSection": "Testing & Adoption", "dateModified": "2026-10-27", "datePublished": "2026-09-02", "wordCount": 1957, "timeRequired": "PT10M", "citation": ["https://www.hse.gov.uk/moltenmetals/safety-topics.htm", "https://www.ccohs.ca/oshanswers/hsprograms/hazardous_energy.html", "https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/", "https://www.iso.org/standard/44781.html", "https://www.energy.gov/sites/default/files/2014/05/f16/pump.pdf"], "hasPart": [{"@type": "WebPageElement", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load/#guide-application", "name": "Build the steel-mill retrofit around the outage"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"}, {"@type": "ListItem", "position": 3, "name": "Retrofitting Steel-Mill Hydraulics: Cut the Oil Fire Load", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-brand-standards.css?v=20261106-aqua-links" rel="stylesheet"><script id="wq-speed-insights" src="/assets/wq-speed-insights.js" type="module"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style><link href="/assets/editorial/hub-editorial-20261021.css" rel="stylesheet"><link href="/assets/wqx-site.css?v=20261027-review2" rel="stylesheet"><link href="/assets/critique-refinements.css?v=20261027-preview3" rel="stylesheet"><meta content="WaterQuest Solutions" name="author"><link rel="stylesheet" href="/assets/launch-readability.css"><link rel="stylesheet" href="/assets/knowledge-covers/cover-series.css"><link rel="stylesheet" href="/assets/site-navigation-cleanup.css?v=20261108"></head>
+<body class="wq-audited wq-consistent wqx-article" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img alt="" class="wq-brand-mark" height="54" src="/assets/waterquest-logo-square.png" width="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/start-here/">New to water hydraulics?</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero wq-covered-hero">
+<div class="container"><div class="wq-covered-copy">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › </div>
+<p class="eyebrow">Testing &amp; Adoption</p>
+<h1 data-editorial="hero">Retrofitting Steel-Mill Hydraulics: Cut the Oil Fire Load</h1>
+<p class="lead" data-editorial="lead">Water removes hydraulic oil as a fire load but must be kept away from molten metal. Map hazards by location, then convert one bounded circuit.</p>
+<div class="article-meta"><span class="pill"></span><span class="pill">Testing &amp; Adoption</span><span class="pill">6 min read</span></div>
+</div><figure class="wq-article-cover"><img src="/assets/knowledge-covers/testing.jpg" alt="Instrumented hydraulic test bench and recorded performance traces. Editorial concept illustration." width="1536" height="1024" decoding="async"><figcaption>WaterQuest Knowledge Hub · Concept illustration</figcaption></figure></div></section><section class="wqx-section" id="quick-answer"><div class="wqx-wrap"><p><a download="" href="/downloads/worksheets/retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load.txt">Download the worksheet for this guide (editable text)</a> · <a download="" href="/downloads/worksheets/retrofit-worksheet.csv">Open the retrofit requirement register (CSV)</a></p></div></section>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><p class="wq-article-byline">Written by WaterQuest Solutions · Updated <time datetime="2026-11-02">2 November 2026</time> · <a href="/about/">About the distributor</a></p><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><span aria-hidden="true" class="ed-legacy-anchor" id="fire-risk-elimination"></span><span aria-hidden="true" class="ed-legacy-anchor" id="identifying-retrofit-drivers"></span><span aria-hidden="true" class="ed-legacy-anchor" id="performance-equivalence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><span aria-hidden="true" class="ed-legacy-anchor" id="retrofit-implementation-strategy"></span><span aria-hidden="true" class="ed-legacy-anchor" id="the-legacy-oil-based-architecture"></span><span aria-hidden="true" class="ed-legacy-anchor" id="the-modern-retrofit-concept"></span><span aria-hidden="true" class="ed-legacy-anchor" id="learn-treat-the-retrofit-as-an-engineering-proposal"></span><span aria-hidden="true" class="ed-legacy-anchor" id="material-discipline-in-a-steel-mill-environment"></span><h2 id="learn-map-the-process-hazards-before-selecting-a-fluid">Map the process hazards before selecting a fluid</h2><p>A proposed water circuit must therefore be assessed by location and credible release route. The responsible process and safety specialists need to identify where water can and cannot be introduced, including indirect routes through drainage, scrap or adjacent equipment. </p><figure aria-labelledby="visual-101" class="kh-diagram kh-illustration"><figcaption class="kh-diagram-title" id="visual-101">A steel-mill retrofit must pass the process screen first</figcaption><ol class="kh-process-path"><li><span class="kh-process-index">1</span><div><strong>Hazard location</strong><span>Assess oil exposure and the separate consequences of water near the process.</span></div></li><li><span class="kh-process-index">2</span><div><strong>Measured duty</strong><span>Record useful motion, loads, states and existing mechanical condition.</span></div></li><li><span class="kh-process-index">3</span><div><strong>Supported conversion</strong><span>Confirm every retained and replaced component for the new medium.</span></div></li><li><span class="kh-process-index">4</span><div><strong>Controlled integration</strong><span>Plan outage, verification, recovery and limits on wider application.</span></div></li></ol><figcaption>Hypothetical engineering concept; no completed installation or third-party participation is implied.</figcaption></figure><h2 id="learn-select-a-bounded-candidate-circuit">Select a bounded candidate circuit</h2><p>A steel mill can contain many hydraulic functions with different histories and operating conditions. A defined auxiliary circuit is often easier to assess than a broad conversion of all machinery. </p><p>Choose a candidate for a reason. </p><h2 id="learn-measure-the-existing-duty-under-representative-conditions">Measure the existing duty under representative conditions</h2><p>The installed equipment provides useful information about pressure, flow, movement time and load sequence, but measurements must be interpreted in context. </p><p>Include starting, reversing, holding and unusual but required states. Continuous and intermittent demands should be distinguished. </p><h2 id="learn-inspect-the-mechanism-not-only-the-power-unit">Inspect the mechanism, not only the power unit</h2><p>A hydraulic retrofit can fail to deliver its intended improvement if the driven mechanism remains misaligned, binding or structurally unsuitable. </p><p>The design should establish which mechanical repairs or changes belong in the project. These costs must be included in both the scope and the comparison with alternatives. A new water actuator should not be credited with correcting a worn linkage unless the linkage is actually repaired. </p><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><h2 id="learn-review-compatibility-item-by-item">Review compatibility item by item</h2><p>An oil-service circuit cannot be assumed reusable with water merely because its pressure ratings appear sufficient. The Water Hydraulics Company's dedicated pump information illustrates that configuration and installation conditions matter.  A retrofit schedule should identify supported reuse, required replacement and unresolved items.</p><p>The review should also consider contamination remaining from previous service and the condition of retained lines. Cleaning or flushing requirements must come from the responsible equipment assessment rather than an improvised procedure. </p><h2 id="learn-heat-exposure-affects-more-than-bulk-fluid-temperature">Heat exposure affects more than bulk-fluid temperature</h2><p>A reservoir temperature may not represent the exposure of tubing, seals or actuators near a hot process. </p><p>Protection measures must be assessed for both effectiveness and maintainability. A shield or relocated line can change access, inspection and the route of a release. A general temperature capability from a product page is not a site-specific thermal design.</p><h2 id="learn-design-fault-response-around-the-process">Design fault response around the process</h2><p>A failed movement can have consequences for material handling, equipment protection and access. The correct response must come from the process assessment rather than the default behaviour of a convenient valve.</p><p>Stored and residual energy remain relevant after the pump stops. CCOHS guidance provides the broader hazardous-energy context.  The retrofit must preserve or improve the authorized isolation and recovery arrangements. </p><h2 id="learn-plan-the-outage-as-a-controlled-transition">Plan the outage as a controlled transition</h2><p>A retrofit usually requires a period in which the old system is removed and the new arrangement is installed and checked. </p><p>The team should also decide what happens if a critical acceptance condition is not met. A recovery or rollback option may be appropriate where technically feasible, but it must be engineered rather than assumed. </p><h2 id="learn-test-the-questions-that-matter-before-site-integration">Test the questions that matter before site integration</h2><p>Factory or off-line testing can resolve component and circuit questions before the mill depends on the equipment. </p><p>Where an uncertainty concerns a safety-related response or a high-consequence condition, the responsible specialists must determine the appropriate verification method. Testing should not create an uncontrolled process hazard merely to obtain realism. The public scope of ISO 4413 provides hydraulic-system context, but it does not replace the complete machinery and process requirements.  Evidence should be tied to the selected configuration and retained with the final operating records. </p><span aria-hidden="true" class="ed-legacy-anchor" id="downsizing-and-energy-optimization"></span><h2 id="learn-compare-energy-and-service-on-the-same-basis">Compare energy and service on the same basis</h2><p>Use the measured duty to compare complete package consumption, including relevant auxiliaries and standby states. System-level pumping guidance supports this approach.  A reduction caused by improved controls should be identified as such, while the removal of oil should be valued through the exposure and handling tasks it changes. </p><p>Maintenance comparisons should identify actual tasks, access and replacement logistics. Do not assign a universal savings percentage or assume that water eliminates all maintenance. </p><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><h2 id="learn-expand-only-where-the-evidence-transfers">Expand only where the evidence transfers</h2><p>After a successful bounded installation, review the results before proposing wider deployment. A result from a cool auxiliary mechanism does not establish suitability near molten metal, just as a low-cycle demonstration does not prove continuous-duty life.</p><p>WaterQuest's credible role is to help the owner identify applications where supported water hydraulics can deliver the required work and remove a worthwhile oil exposure. That method can produce a sound adoption decision without inventing a completed customer case or claiming that one working medium resolves every hazard in a complex industrial facility.</p><aside class="wq-reading-path"><strong>Where it fits</strong><p>This is a retrofit planning example, not a named customer installation. Keep water away from molten metal and assess hazards at the selected location.</p></aside><section id="guide-application" class="wq-guide-application"><p><strong>Have a duty in mind?</strong> <a href="/contact/#engineering-review">Request an engineering review →</a> · <a href="/project-tools/">Build a brief →</a></p></section><div class="related-block"><h3>Continue reading</h3><div class="related-grid"><a class="related-card" href="/knowledge-hub/water-hydraulics-in-steel-mills-and-sawmills/"><div class="rc-cat">Industry Applications · </div><h4>Steel Mill to Sawmill: Where Water Hydraulics Excel</h4><div class="rc-read">9 min read</div></a><a class="related-card" href="/knowledge-hub/a-fair-test-of-water-vs-oil-hpus-in-desalination/"><div class="rc-cat">Testing &amp; Adoption · </div><h4>A Fair Test of Water vs Oil HPUs in Desalination</h4><div class="rc-read">9 min read</div></a><a class="related-card" href="/knowledge-hub/water-hydraulics-return-on-investment/"><div class="rc-cat">Economics &amp; Funding · </div><h4>Payback, NPV, ROI: Three Ways to Show Water's Return</h4><div class="rc-read">8 min read</div></a></div></div>
+</article>
+</div>
+<div class="container">
+</div>
+</section>
+</main>
+<script defer src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div></footer><script defer src="/assets/wq-nav-dropdowns.js?v=20261108-no-capability"></script><script defer src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/wqx-site.js?v=20261027-review2"></script><script defer src="/assets/site-navigation-cleanup.js?v=20261108"></script><script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq9426f675e698dc79d0fe4c2ecca071e3668f732067735a92f72e9aed6636787e" defer></script></body>
+</html>

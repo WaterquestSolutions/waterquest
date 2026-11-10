@@ -1,0 +1,1079 @@
+{
+  "articles": [
+    {
+      "number": 1,
+      "title": "Water Hydraulics 101: Full Hydraulic Force, Without the Oil",
+      "old_slug": "what-are-water-hydraulic-systems",
+      "slug": "what-are-water-hydraulic-systems",
+      "added_detail_sections": 0,
+      "words": 1890
+    },
+    {
+      "number": 2,
+      "title": "Oil vs Water Hydraulics: Same Force, Different Operating Advantages",
+      "old_slug": "how-water-hydraulics-work-compared-to-oil-hydraulics",
+      "slug": "how-water-hydraulics-work-compared-to-oil-hydraulics",
+      "added_detail_sections": 1,
+      "words": 2243
+    },
+    {
+      "number": 3,
+      "title": "Sizing a Water Cylinder: Start at the Load Pin",
+      "old_slug": "engineering-principles-of-water-hydraulic-actuation",
+      "slug": "engineering-principles-of-water-hydraulic-actuation",
+      "added_detail_sections": 0,
+      "words": 2094
+    },
+    {
+      "number": 4,
+      "title": "Why Water Can Do Oil's Job \u2014 Once the Equipment Is Built for It",
+      "old_slug": "why-water-can-replace-hydraulic-oil-in-industrial-systems",
+      "slug": "why-water-can-replace-hydraulic-oil-in-industrial-systems",
+      "added_detail_sections": 0,
+      "words": 2057
+    },
+    {
+      "number": 5,
+      "title": "Pressure, Flow, Power: The Three Equations Behind Every Water Circuit",
+      "old_slug": "the-physics-behind-water-hydraulic-pressure-systems",
+      "slug": "the-physics-behind-water-hydraulic-pressure-systems",
+      "added_detail_sections": 0,
+      "words": 2093
+    },
+    {
+      "number": 6,
+      "title": "Where Cylinder Force Comes From \u2014 Calculating the Net Figure",
+      "old_slug": "how-force-is-generated-in-water-hydraulic-cylinders",
+      "slug": "how-force-is-generated-in-water-hydraulic-cylinders",
+      "added_detail_sections": 0,
+      "words": 2077
+    },
+    {
+      "number": 7,
+      "title": "Draw the Sequence First: Laying Out a Water Hydraulic Circuit",
+      "old_slug": "designing-hydraulic-circuits-using-water-as-the-medium",
+      "slug": "designing-hydraulic-circuits-using-water-as-the-medium",
+      "added_detail_sections": 1,
+      "words": 2162
+    },
+    {
+      "number": 8,
+      "title": "Water vs Oil, Property by Property: Where Water Has the Edge",
+      "old_slug": "fluid-properties-of-water-vs-hydraulic-oil",
+      "slug": "fluid-properties-of-water-vs-hydraulic-oil",
+      "added_detail_sections": 1,
+      "words": 2230
+    },
+    {
+      "number": 9,
+      "title": "Stainless for Water Hydraulics: Matching the Grade to the Exposure",
+      "old_slug": "why-316-stainless-steel-is-essential-for-water-hydraulic-systems",
+      "slug": "stainless-for-water-hydraulics-matching-the-grade-to-the-exposure",
+      "added_detail_sections": 1,
+      "words": 2135
+    },
+    {
+      "number": 10,
+      "title": "Carbon-Filled PEEK: Engineering Sliding Parts for Water",
+      "old_slug": "carbon-reinforced-peek-in-hydraulic-equipment",
+      "slug": "carbon-reinforced-peek-in-hydraulic-equipment",
+      "added_detail_sections": 1,
+      "words": 2115
+    },
+    {
+      "number": 11,
+      "title": "Corrosion Control in Water Circuits: Design It Out From the Start",
+      "old_slug": "preventing-corrosion-in-water-hydraulic-systems",
+      "slug": "preventing-corrosion-in-water-hydraulic-systems",
+      "added_detail_sections": 0,
+      "words": 2178
+    },
+    {
+      "number": 12,
+      "title": "Engineered Material Pairs Are What Make Water Hydraulics Work",
+      "old_slug": "material-pairing-for-water-hydraulic-tribology",
+      "slug": "material-pairing-for-water-hydraulic-tribology",
+      "added_detail_sections": 1,
+      "words": 2034
+    },
+    {
+      "number": 13,
+      "title": "Moving From Oil to Water? Audit Every Wetted Part First",
+      "old_slug": "why-traditional-hydraulic-materials-fail-in-water-systems",
+      "slug": "moving-from-oil-to-water-audit-every-wetted-part-first",
+      "added_detail_sections": 0,
+      "words": 2007
+    },
+    {
+      "number": 14,
+      "title": "Seals Built for Water: Matching Profile, Groove and Duty",
+      "old_slug": "engineering-seal-systems-for-water-hydraulics",
+      "slug": "engineering-seal-systems-for-water-hydraulics",
+      "added_detail_sections": 1,
+      "words": 2116
+    },
+    {
+      "number": 15,
+      "title": "Pump Efficiency: Quote the Right Number, Measured in the Right Place",
+      "old_slug": "efficiency-of-water-hydraulic-pumps-compared-to-oil-pumps",
+      "slug": "efficiency-of-water-hydraulic-pumps-compared-to-oil-pumps",
+      "added_detail_sections": 0,
+      "words": 2054
+    },
+    {
+      "number": 16,
+      "title": "Your Hydraulic Unit's Biggest Energy Bill May Be the Waiting",
+      "old_slug": "energy-consumption-of-water-hydraulic-systems",
+      "slug": "energy-consumption-of-water-hydraulic-systems",
+      "added_detail_sections": 0,
+      "words": 1944
+    },
+    {
+      "number": 17,
+      "title": "Following the Kilowatts: From Motor to Moving Load",
+      "old_slug": "hydraulic-power-transmission-using-water",
+      "slug": "hydraulic-power-transmission-using-water",
+      "added_detail_sections": 0,
+      "words": 1967
+    },
+    {
+      "number": 18,
+      "title": "Designing Confidently Within 160 Bar \u2014 Including the Spikes",
+      "old_slug": "pressure-limits-of-water-hydraulic-equipment",
+      "slug": "pressure-limits-of-water-hydraulic-equipment",
+      "added_detail_sections": 0,
+      "words": 1937
+    },
+    {
+      "number": 19,
+      "title": "Water Absorbs About Twice the Heat of Oil per Kilogram",
+      "old_slug": "thermal-performance-of-water-vs-hydraulic-oil",
+      "slug": "thermal-performance-of-water-vs-hydraulic-oil",
+      "added_detail_sections": 1,
+      "words": 2112
+    },
+    {
+      "number": 20,
+      "title": "Taking the Oil Out of the Headworks",
+      "old_slug": "water-hydraulics-in-wastewater-treatment-plants",
+      "slug": "water-hydraulics-in-wastewater-treatment-plants",
+      "added_detail_sections": 1,
+      "words": 2100
+    },
+    {
+      "number": 21,
+      "title": "Water Hydraulics Afloat: Clean Freshwater Power for Deck Machinery",
+      "old_slug": "water-hydraulic-systems-for-marine-vessels",
+      "slug": "water-hydraulic-systems-for-marine-vessels",
+      "added_detail_sections": 0,
+      "words": 2128
+    },
+    {
+      "number": 22,
+      "title": "Water Hydraulics Underground: Removing Oil From Selected Mining Circuits",
+      "old_slug": "mining-equipment-using-water-hydraulic-systems",
+      "slug": "mining-equipment-using-water-hydraulic-systems",
+      "added_detail_sections": 1,
+      "words": 2122
+    },
+    {
+      "number": 23,
+      "title": "Flood Gates Wait for Years, Then Must Work Once",
+      "old_slug": "water-hydraulics-for-flood-control-infrastructure",
+      "slug": "water-hydraulics-for-flood-control-infrastructure",
+      "added_detail_sections": 1,
+      "words": 2155
+    },
+    {
+      "number": 24,
+      "title": "Desalination: Three Different Jobs for Pressurised Water",
+      "old_slug": "desalination-plant-hydraulic-systems",
+      "slug": "desalination-plant-hydraulic-systems",
+      "added_detail_sections": 0,
+      "words": 2103
+    },
+    {
+      "number": 25,
+      "title": "Water Actuation at the Dam: No Oil Above the River",
+      "old_slug": "hydropower-infrastructure-using-water-hydraulic-actuation",
+      "slug": "hydropower-infrastructure-using-water-hydraulic-actuation",
+      "added_detail_sections": 1,
+      "words": 2143
+    },
+    {
+      "number": 26,
+      "title": "Dust Suppression: Wet the Source or Catch the Cloud?",
+      "old_slug": "dust-suppression-systems-using-water-hydraulics",
+      "slug": "dust-suppression-systems-using-water-hydraulics",
+      "added_detail_sections": 0,
+      "words": 2056
+    },
+    {
+      "number": 27,
+      "title": "Same Gate, Double the Force: Why Linkage Angle Matters",
+      "old_slug": "hydraulic-gate-actuators-for-municipal-infrastructure",
+      "slug": "hydraulic-gate-actuators-for-municipal-infrastructure",
+      "added_detail_sections": 0,
+      "words": 2030
+    },
+    {
+      "number": 28,
+      "title": "\"Oil-Free\" You Can Prove: Count the Litres You Removed",
+      "old_slug": "how-water-hydraulics-eliminate-hydraulic-oil-spills",
+      "slug": "oil-free-you-can-prove-count-the-litres-you-removed",
+      "added_detail_sections": 0,
+      "words": 2015
+    },
+    {
+      "number": 29,
+      "title": "Oil Leak Risk Depends on Where It Can Go",
+      "old_slug": "environmental-risks-of-hydraulic-oil-in-water-infrastructure",
+      "slug": "environmental-risks-of-hydraulic-oil-in-water-infrastructure",
+      "added_detail_sections": 0,
+      "words": 2056
+    },
+    {
+      "number": 30,
+      "title": "Which Oil Circuit Should Go First? A Screening Guide",
+      "old_slug": "industrial-equipment-that-should-never-use-oil-hydraulics",
+      "slug": "which-oil-circuit-should-go-first-a-screening-guide",
+      "added_detail_sections": 1,
+      "words": 2078
+    },
+    {
+      "number": 31,
+      "title": "Two Litres of Oil in the Headworks: Following the Release",
+      "old_slug": "how-oil-contamination-affects-wastewater-treatment-plants",
+      "slug": "how-oil-contamination-affects-wastewater-treatment-plants",
+      "added_detail_sections": 0,
+      "words": 2076
+    },
+    {
+      "number": 32,
+      "title": "Turning Environmental Obligations Into Design Advantages",
+      "old_slug": "environmental-compliance-and-hydraulic-systems",
+      "slug": "environmental-compliance-and-hydraulic-systems",
+      "added_detail_sections": 1,
+      "words": 2055
+    },
+    {
+      "number": 33,
+      "title": "Writing an Oil-Free Hydraulic Spec Bidders Can Actually Price",
+      "old_slug": "how-engineers-can-specify-oil-free-hydraulic-systems",
+      "slug": "how-engineers-can-specify-oil-free-hydraulic-systems",
+      "added_detail_sections": 1,
+      "words": 2085
+    },
+    {
+      "number": 34,
+      "title": "Oil or Water? A Side-by-Side for the Same Job",
+      "old_slug": "oil-hydraulics-vs-water-hydraulics-the-complete-engineering-comparison",
+      "slug": "oil-hydraulics-vs-water-hydraulics-the-complete-engineering-comparison",
+      "added_detail_sections": 1,
+      "words": 2166
+    },
+    {
+      "number": 35,
+      "title": "Air or Water? Comparing Force at 6 and 80 Bar",
+      "old_slug": "air-systems-vs-water-hydraulic-systems-which-delivers-better-results",
+      "slug": "air-systems-vs-water-hydraulic-systems-which-delivers-better-results",
+      "added_detail_sections": 0,
+      "words": 1949
+    },
+    {
+      "number": 36,
+      "title": "Electric or Water Hydraulic? Compare the Whole Duty",
+      "old_slug": "electric-actuators-vs-hydraulic-actuators-the-real-engineering-trade-offs",
+      "slug": "electric-actuators-vs-hydraulic-actuators-the-real-engineering-trade-offs",
+      "added_detail_sections": 0,
+      "words": 1940
+    },
+    {
+      "number": 37,
+      "title": "Converting Oil Hydraulics to Water: A Planned Upgrade, Not a Refill",
+      "old_slug": "how-to-convert-an-oil-hydraulic-system-to-water-hydraulics",
+      "slug": "how-to-convert-an-oil-hydraulic-system-to-water-hydraulics",
+      "added_detail_sections": 1,
+      "words": 2009
+    },
+    {
+      "number": 38,
+      "title": "Designing a Water HPU Around the Duty Cycle",
+      "old_slug": "designing-a-water-hydraulic-power-unit",
+      "slug": "designing-a-water-hydraulic-power-unit",
+      "added_detail_sections": 1,
+      "words": 1950
+    },
+    {
+      "number": 39,
+      "title": "Choosing a Water Pump: Fit the Envelope, Not the Peak",
+      "old_slug": "selecting-pumps-for-water-hydraulic-systems",
+      "slug": "selecting-pumps-for-water-hydraulic-systems",
+      "added_detail_sections": 0,
+      "words": 1980
+    },
+    {
+      "number": 40,
+      "title": "The Cylinder That Pushes 47 kN but Pulls Only 34",
+      "old_slug": "sizing-cylinders-for-water-hydraulic-applications",
+      "slug": "sizing-cylinders-for-water-hydraulic-applications",
+      "added_detail_sections": 0,
+      "words": 1984
+    },
+    {
+      "number": 41,
+      "title": "What Each Valve in a Water Circuit Is Actually For",
+      "old_slug": "designing-control-valves-for-water-hydraulics",
+      "slug": "designing-control-valves-for-water-hydraulics",
+      "added_detail_sections": 0,
+      "words": 1992
+    },
+    {
+      "number": 42,
+      "title": "Specifying Filtration for Water Hydraulics: Beyond \"10 Micron\"",
+      "old_slug": "water-hydraulic-filtration-requirements",
+      "slug": "water-hydraulic-filtration-requirements",
+      "added_detail_sections": 1,
+      "words": 2036
+    },
+    {
+      "number": 43,
+      "title": "Maintaining a Water Hydraulic System: No Oil Changes, Smarter Checks",
+      "old_slug": "water-hydraulic-system-maintenance",
+      "slug": "water-hydraulic-system-maintenance",
+      "added_detail_sections": 1,
+      "words": 2084
+    },
+    {
+      "number": 44,
+      "title": "Converting a City's Hydraulics, One Asset Class at a Time",
+      "old_slug": "why-municipal-infrastructure-should-eliminate-hydraulic-oil",
+      "slug": "converting-a-citys-hydraulics-one-asset-class-at-a-time",
+      "added_detail_sections": 0,
+      "words": 1997
+    },
+    {
+      "number": 45,
+      "title": "Water Hydraulics for Public Assets: Built Around the Service",
+      "old_slug": "water-hydraulics-for-government-infrastructure-projects",
+      "slug": "water-hydraulics-for-government-infrastructure-projects",
+      "added_detail_sections": 0,
+      "words": 1911
+    },
+    {
+      "number": 46,
+      "title": "Mapping the Rules Around a Hydraulic Retrofit",
+      "old_slug": "environmental-regulations-affecting-hydraulic-systems",
+      "slug": "environmental-regulations-affecting-hydraulic-systems",
+      "added_detail_sections": 1,
+      "words": 1992
+    },
+    {
+      "number": 47,
+      "title": "A Water Hydraulic Spec That Survives a Change of Team",
+      "old_slug": "spec-writing-guide-for-water-hydraulic-equipment",
+      "slug": "spec-writing-guide-for-water-hydraulic-equipment",
+      "added_detail_sections": 1,
+      "words": 2037
+    },
+    {
+      "number": 48,
+      "title": "How Water Hydraulics Becomes Ordinary Infrastructure",
+      "old_slug": "the-future-of-oil-free-hydraulic-systems",
+      "slug": "the-future-of-oil-free-hydraulic-systems",
+      "added_detail_sections": 0,
+      "words": 1958
+    },
+    {
+      "number": 49,
+      "title": "Where Water Can Replace Oil First",
+      "old_slug": "why-water-hydraulics-may-replace-oil-in-industrial-infrastructure",
+      "slug": "why-water-hydraulics-may-replace-oil-in-industrial-infrastructure",
+      "added_detail_sections": 0,
+      "words": 1938
+    },
+    {
+      "number": 50,
+      "title": "Your First Water Hydraulic Project: Baseline, Trial, Then Repeat",
+      "old_slug": "why-water-hydraulics-will-replace-oil-in-industrial-infrastructure",
+      "slug": "your-first-water-hydraulic-project-baseline-trial-then-repeat",
+      "added_detail_sections": 0,
+      "words": 1931
+    },
+    {
+      "number": 51,
+      "title": "Tap Water or Seawater? Choose Clean Freshwater Inside",
+      "old_slug": "why-tap-or-sea-water-belongs-in-your-hydraulic-system",
+      "slug": "tap-water-or-seawater-choose-clean-freshwater-inside",
+      "added_detail_sections": 0,
+      "words": 2026
+    },
+    {
+      "number": 52,
+      "title": "Smooth, Stiff and Precise: Motion Quality in Water Actuators",
+      "old_slug": "beyond-oil-engineering-principles-of-water-hydraulic-actuation",
+      "slug": "beyond-oil-engineering-principles-of-water-hydraulic-actuation",
+      "added_detail_sections": 0,
+      "words": 2028
+    },
+    {
+      "number": 53,
+      "title": "Stainless Plus PEEK: Why the Pair Works",
+      "old_slug": "material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek",
+      "slug": "material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek",
+      "added_detail_sections": 0,
+      "words": 2033
+    },
+    {
+      "number": 54,
+      "title": "Cavitation in Water Pumps: Protect the Inlet Margin",
+      "old_slug": "cavitation-in-water-hydraulics-myths-truths-and-design-solutions",
+      "slug": "cavitation-in-water-hydraulics-myths-truths-and-design-solutions",
+      "added_detail_sections": 1,
+      "words": 2105
+    },
+    {
+      "number": 55,
+      "title": "Half a Litre a Minute of Leakage Costs 83 Watts \u2014 All Day",
+      "old_slug": "how-water-maintains-hydraulic-efficiency-without-additives",
+      "slug": "half-a-litre-a-minute-of-leakage-costs-83-watts-all-day",
+      "added_detail_sections": 0,
+      "words": 1999
+    },
+    {
+      "number": 56,
+      "title": "Working Within 160 Bar: Get the Force From Area",
+      "old_slug": "160-bar-performance-debunking-the-limitations-of-water-hydraulics",
+      "slug": "working-within-160-bar-get-the-force-from-area",
+      "added_detail_sections": 0,
+      "words": 2025
+    },
+    {
+      "number": 57,
+      "title": "Water Freezes \u2014 Here's How Good Design Keeps You Running",
+      "old_slug": "what-if-the-water-freezes",
+      "slug": "what-if-the-water-freezes",
+      "added_detail_sections": 1,
+      "words": 2047
+    },
+    {
+      "number": 58,
+      "title": "Does Your Water Circuit Need an Accumulator? Name the Job First",
+      "old_slug": "why-accumulators-are-rarely-needed-in-water-systems",
+      "slug": "does-your-water-circuit-need-an-accumulator-name-the-job-first",
+      "added_detail_sections": 0,
+      "words": 1994
+    },
+    {
+      "number": 59,
+      "title": "Long Seal Life in Water: Get the Rod, Guide and Water Right",
+      "old_slug": "managing-seal-life-in-water-hydraulic-environments",
+      "slug": "managing-seal-life-in-water-hydraulic-environments",
+      "added_detail_sections": 0,
+      "words": 2001
+    },
+    {
+      "number": 60,
+      "title": "Water Stores More Heat: Design the Whole Cooling Balance",
+      "old_slug": "isothermal-behaviour-of-water-vs-thermal-expansion-in-oil",
+      "slug": "water-stores-more-heat-design-the-whole-cooling-balance",
+      "added_detail_sections": 1,
+      "words": 2115
+    },
+    {
+      "number": 61,
+      "title": "Judging a Water HPU by What It Does Between Movements",
+      "old_slug": "how-our-water-hpus-are-changing-the-industrial-landscape",
+      "slug": "judging-a-water-hpu-by-what-it-does-between-movements",
+      "added_detail_sections": 0,
+      "words": 2018
+    },
+    {
+      "number": 62,
+      "title": "Knife Gate Valves and Water Cylinders: A Natural Fit",
+      "old_slug": "knife-gate-valves-and-water-hydraulics-a-natural-fit",
+      "slug": "knife-gate-valves-and-water-hydraulics-a-natural-fit",
+      "added_detail_sections": 0,
+      "words": 1989
+    },
+    {
+      "number": 63,
+      "title": "One Cylinder, Two Forces: Sizing Water Actuators for Push and Pull",
+      "old_slug": "choosing-the-right-cylinder-for-water-actuation",
+      "slug": "choosing-the-right-cylinder-for-water-actuation",
+      "added_detail_sections": 0,
+      "words": 2063
+    },
+    {
+      "number": 64,
+      "title": "Reading a Water Hydraulic Valve: Four Questions Before Size",
+      "old_slug": "understanding-valve-selection-in-water-hydraulic-systems",
+      "slug": "understanding-valve-selection-in-water-hydraulic-systems",
+      "added_detail_sections": 0,
+      "words": 1986
+    },
+    {
+      "number": 65,
+      "title": "Water Actuators on Severe-Service Valves: Proving the Performance",
+      "old_slug": "our-dss-partnership-putting-water-to-the-test-on-severe-service-valves",
+      "slug": "water-actuators-on-severe-service-valves-proving-the-performance",
+      "added_detail_sections": 0,
+      "words": 2002
+    },
+    {
+      "number": 66,
+      "title": "Stainless or Brass at Sea? Specify the Alloy and the Joint",
+      "old_slug": "why-our-316-stainless-fittings-outperform-brass-in-marine-settings",
+      "slug": "stainless-or-brass-at-sea-specify-the-alloy-and-the-joint",
+      "added_detail_sections": 1,
+      "words": 2031
+    },
+    {
+      "number": 67,
+      "title": "Duplex Stainless at Sea: Stronger and More Pit-Resistant",
+      "old_slug": "the-hidden-weakness-of-duplex-in-saltwater-why-we-stick-with-316",
+      "slug": "duplex-stainless-at-sea-stronger-and-more-pit-resistant",
+      "added_detail_sections": 1,
+      "words": 1951
+    },
+    {
+      "number": 68,
+      "title": "Big Pump, Fine Control: Precision Lives in the Valve",
+      "old_slug": "high-flow-or-high-precision-matching-pumps-to-application",
+      "slug": "high-flow-or-high-precision-matching-pumps-to-application",
+      "added_detail_sections": 0,
+      "words": 2038
+    },
+    {
+      "number": 69,
+      "title": "Sizing a Water Control Valve From Its Pressure-Drop Curve",
+      "old_slug": "what-makes-our-control-valves-unique-in-a-water-system",
+      "slug": "sizing-a-water-control-valve-from-its-pressure-drop-curve",
+      "added_detail_sections": 0,
+      "words": 2000
+    },
+    {
+      "number": 70,
+      "title": "Driving a Water Pump With an Air Motor",
+      "old_slug": "component-spotlight-armak-air-motors-and-water-hydraulic-integration",
+      "slug": "component-spotlight-armak-air-motors-and-water-hydraulic-integration",
+      "added_detail_sections": 0,
+      "words": 2037
+    },
+    {
+      "number": 71,
+      "title": "Water Hydraulics by the Sea: Built for the Coastal Environment",
+      "old_slug": "water-hydraulics-on-the-coast-marine-applications-that-work",
+      "slug": "water-hydraulics-by-the-sea-built-for-the-coastal-environment",
+      "added_detail_sections": 0,
+      "words": 1974
+    },
+    {
+      "number": 72,
+      "title": "Steel Mill to Sawmill: Where Water Hydraulics Excel",
+      "old_slug": "from-steel-mills-to-sawmills-industrial-applications-of-pressurized-water",
+      "slug": "from-steel-mills-to-sawmills-industrial-applications-of-pressurized-water",
+      "added_detail_sections": 1,
+      "words": 2030
+    },
+    {
+      "number": 73,
+      "title": "Mining Availability Is Built at the Skid Layout",
+      "old_slug": "water-hydraulics-in-mining-lower-downtime-zero-contamination",
+      "slug": "mining-availability-is-built-at-the-skid-layout",
+      "added_detail_sections": 0,
+      "words": 1997
+    },
+    {
+      "number": 74,
+      "title": "Water Mist or Sprinklers in the Data Centre? Start With the Fire",
+      "old_slug": "fire-suppression-evolved-why-water-mist-systems-outperform-traditional-sprinklers",
+      "slug": "water-mist-or-sprinklers-in-the-data-centre-start-with-the-fire",
+      "added_detail_sections": 1,
+      "words": 2077
+    },
+    {
+      "number": 75,
+      "title": "Desalination for Drought: Four Numbers That Don't Mean the Same Thing",
+      "old_slug": "drought-ready-water-hydraulic-use-in-desalination-plants",
+      "slug": "drought-ready-water-hydraulic-use-in-desalination-plants",
+      "added_detail_sections": 0,
+      "words": 2077
+    },
+    {
+      "number": 76,
+      "title": "Hydrogen Propulsion, Water-Hydraulic Deck Gear: A Clean Fishing Vessel Concept",
+      "old_slug": "fishing-without-fossil-fuels-the-musqueam-hydrogen-vessel-project",
+      "slug": "hydrogen-propulsion-water-hydraulic-deck-gear-a-clean-fishing-vessel-concept",
+      "added_detail_sections": 0,
+      "words": 1933
+    },
+    {
+      "number": 77,
+      "title": "Water Hydraulics Offshore: Start With One Auxiliary Circuit",
+      "old_slug": "water-driven-power-on-offshore-platforms",
+      "slug": "water-driven-power-on-offshore-platforms",
+      "added_detail_sections": 1,
+      "words": 2120
+    },
+    {
+      "number": 78,
+      "title": "Water Hydraulics in the Woods: No Oil on the Forest Floor",
+      "old_slug": "lifting-and-hauling-without-oil-forestry-applications-using-water",
+      "slug": "lifting-and-hauling-without-oil-forestry-applications-using-water",
+      "added_detail_sections": 0,
+      "words": 2031
+    },
+    {
+      "number": 79,
+      "title": "Water-Powered Rides: Oil-Free Actuation and Validated Fault Response",
+      "old_slug": "fail-safe-performance-in-theme-park-ride-systems",
+      "slug": "water-powered-rides-oil-free-actuation-and-validated-fault-response",
+      "added_detail_sections": 2,
+      "words": 2176
+    },
+    {
+      "number": 80,
+      "title": "Renewing Municipal Gates: Keep the Service, Lose the Oil",
+      "old_slug": "municipal-infrastructure-without-the-oil-hazards",
+      "slug": "municipal-infrastructure-without-the-oil-hazards",
+      "added_detail_sections": 0,
+      "words": 2058
+    },
+    {
+      "number": 81,
+      "title": "Comparing Oil and Water Bids: Same Job, Same Scope, Same Evidence",
+      "old_slug": "oil-vs-water-hydraulics-a-complete-system-comparison",
+      "slug": "oil-vs-water-hydraulics-a-complete-system-comparison",
+      "added_detail_sections": 0,
+      "words": 2063
+    },
+    {
+      "number": 82,
+      "title": "Five Reasons Your Next Valve Should Be Water Actuated",
+      "old_slug": "five-reasons-your-next-valve-should-be-water-actuated",
+      "slug": "five-reasons-your-next-valve-should-be-water-actuated",
+      "added_detail_sections": 0,
+      "words": 2060
+    },
+    {
+      "number": 83,
+      "title": "Expansion, Viscosity, Compressibility, Heat: How Water Compares",
+      "old_slug": "how-hydraulic-fluids-behave-thermal-expansion-viscosity-and-stability",
+      "slug": "how-hydraulic-fluids-behave-thermal-expansion-viscosity-and-stability",
+      "added_detail_sections": 1,
+      "words": 2263
+    },
+    {
+      "number": 84,
+      "title": "Ten Questions Engineers Ask About Water Hydraulics \u2014 Answered",
+      "old_slug": "10-questions-engineers-ask-about-water-hydraulics",
+      "slug": "10-questions-engineers-ask-about-water-hydraulics",
+      "added_detail_sections": 0,
+      "words": 2183
+    },
+    {
+      "number": 85,
+      "title": "What Removing Oil Does for the Environment",
+      "old_slug": "no-oil-no-spill-environmental-advantages-explained",
+      "slug": "what-removing-oil-does-for-the-environment",
+      "added_detail_sections": 0,
+      "words": 2013
+    },
+    {
+      "number": 86,
+      "title": "Oil Out of the Overhead Actuator: Cutting a Food-Contamination Route",
+      "old_slug": "how-water-systems-eliminate-cross-contamination-risk",
+      "slug": "oil-out-of-the-overhead-actuator-cutting-a-food-contamination-route",
+      "added_detail_sections": 1,
+      "words": 2000
+    },
+    {
+      "number": 87,
+      "title": "Building an Oil-vs-Water Lifecycle Ledger You Can Defend",
+      "old_slug": "lifecycle-cost-breakdown-oil-vs-water",
+      "slug": "lifecycle-cost-breakdown-oil-vs-water",
+      "added_detail_sections": 1,
+      "words": 2142
+    },
+    {
+      "number": 88,
+      "title": "No Additives: What a Tap-Water Hydraulic Circuit Actually Needs",
+      "old_slug": "what-does-no-additives-actually-mean",
+      "slug": "what-does-no-additives-actually-mean",
+      "added_detail_sections": 0,
+      "words": 2021
+    },
+    {
+      "number": 89,
+      "title": "Investigating Corrosion in a Running Water Circuit",
+      "old_slug": "preventing-corrosion-without-coatings-or-chemicals",
+      "slug": "investigating-corrosion-in-a-running-water-circuit",
+      "added_detail_sections": 0,
+      "words": 2020
+    },
+    {
+      "number": 90,
+      "title": "Water Circuits in Cold Weather: Protect Every Operating State",
+      "old_slug": "can-water-freeze-in-hydraulic-systems-engineering-around-temperature",
+      "slug": "can-water-freeze-in-hydraulic-systems-engineering-around-temperature",
+      "added_detail_sections": 1,
+      "words": 2093
+    },
+    {
+      "number": 91,
+      "title": "Payback, NPV, ROI: Three Ways to Show Water's Return",
+      "old_slug": "breaking-down-the-roi-investing-in-water-hydraulics",
+      "slug": "breaking-down-the-roi-investing-in-water-hydraulics",
+      "added_detail_sections": 0,
+      "words": 2013
+    },
+    {
+      "number": 92,
+      "title": "Clean-Tech Funding for Water Hydraulics: Screen Applicant, Activity, Timing",
+      "old_slug": "funding-water-driven-innovation-a-guide-to-clean-tech-grants",
+      "slug": "funding-water-driven-innovation-a-guide-to-clean-tech-grants",
+      "added_detail_sections": 0,
+      "words": 2095
+    },
+    {
+      "number": 93,
+      "title": "Water Hydraulics and ESG: Report Litres of Oil Removed",
+      "old_slug": "aligning-with-esg-how-water-hydraulics-support-sustainability-targets",
+      "slug": "aligning-with-esg-how-water-hydraulics-support-sustainability-targets",
+      "added_detail_sections": 1,
+      "words": 2008
+    },
+    {
+      "number": 94,
+      "title": "The Clean Technology ITC and Water Hydraulics: Check Before You Count",
+      "old_slug": "how-the-2025-clean-technology-investment-tax-credit-applies-to-your-project",
+      "slug": "the-clean-technology-itc-and-water-hydraulics-check-before-you-count",
+      "added_detail_sections": 1,
+      "words": 1941
+    },
+    {
+      "number": 95,
+      "title": "Oil-Free Operation: A Design Fact That Supports Your Environmental Goals",
+      "old_slug": "oil-free-operation-and-compliance-with-federal-clean-energy-goals",
+      "slug": "oil-free-operation-a-design-fact-that-supports-your-environmental-goals",
+      "added_detail_sections": 0,
+      "words": 2031
+    },
+    {
+      "number": 96,
+      "title": "Don't Copy the Old Spec: Rethinking Oil at Municipal Renewal",
+      "old_slug": "why-municipal-procurement-needs-to-rethink-oil",
+      "slug": "why-municipal-procurement-needs-to-rethink-oil",
+      "added_detail_sections": 1,
+      "words": 2099
+    },
+    {
+      "number": 97,
+      "title": "When Does Water Pay Off? Find the Break-Even Saving",
+      "old_slug": "total-cost-of-ownership-where-water-wins-over-time",
+      "slug": "when-does-water-pay-off-find-the-break-even-saving",
+      "added_detail_sections": 0,
+      "words": 2024
+    },
+    {
+      "number": 98,
+      "title": "Writing Water Hydraulics Into a Tender",
+      "old_slug": "should-you-specify-water-in-your-next-tender",
+      "slug": "should-you-specify-water-in-your-next-tender",
+      "added_detail_sections": 1,
+      "words": 2123
+    },
+    {
+      "number": 99,
+      "title": "Oil Near Water: Reporting Duties and Financial Exposure",
+      "old_slug": "avoiding-oil-contaminated-waterways-legal-and-financial-risks",
+      "slug": "avoiding-oil-contaminated-waterways-legal-and-financial-risks",
+      "added_detail_sections": 1,
+      "words": 2116
+    },
+    {
+      "number": 100,
+      "title": "Funding Water Hydraulics: R&D or Routine Adoption?",
+      "old_slug": "how-waterquest-systems-align-with-cleanbc-sif-and-sr-and-ed",
+      "slug": "funding-water-hydraulics-r-and-d-or-routine-adoption",
+      "added_detail_sections": 0,
+      "words": 2053
+    },
+    {
+      "number": 101,
+      "title": "Retrofitting Steel-Mill Hydraulics: Cut the Oil Fire Load",
+      "old_slug": "replacing-oil-systems-in-algoma-steel-a-modern-retrofit",
+      "slug": "retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load",
+      "added_detail_sections": 0,
+      "words": 1928
+    },
+    {
+      "number": 102,
+      "title": "A Fair Test of Water vs Oil HPUs in Desalination",
+      "old_slug": "waterquest-vs-traditional-hpu-test-results-in-desalination",
+      "slug": "a-fair-test-of-water-vs-oil-hpus-in-desalination",
+      "added_detail_sections": 0,
+      "words": 2015
+    },
+    {
+      "number": 103,
+      "title": "Fire-Pump Station Renewal: Start With the Protection Design",
+      "old_slug": "retrofitting-a-fire-pump-station-with-zero-oil",
+      "slug": "fire-pump-station-renewal-start-with-the-protection-design",
+      "added_detail_sections": 1,
+      "words": 2035
+    },
+    {
+      "number": 104,
+      "title": "Piloting Water Hydraulics on a Ride: Bench, Representative Rig, Full Validation",
+      "old_slug": "oil-free-hydraulics-in-amusement-safety-a-pilot-case",
+      "slug": "piloting-water-hydraulics-on-a-ride-bench-representative-rig-full-validation",
+      "added_detail_sections": 1,
+      "words": 2066
+    },
+    {
+      "number": 105,
+      "title": "Installing Water Hydraulics Aboard",
+      "old_slug": "clean-operation-on-coastlines-a-marine-deployment-snapshot",
+      "slug": "installing-water-hydraulics-aboard",
+      "added_detail_sections": 0,
+      "words": 2059
+    },
+    {
+      "number": 106,
+      "title": "Will Water Rust My System? Choose Every Wetted Part for the Exposure",
+      "old_slug": "will-water-rust-my-system-the-engineering-answer",
+      "slug": "will-water-rust-my-system-the-engineering-answer",
+      "added_detail_sections": 0,
+      "words": 2013
+    },
+    {
+      "number": 107,
+      "title": "\"Closed Loop\" Means Two Things \u2014 Know Which Before You Design",
+      "old_slug": "designing-for-pressure-closed-loop-water-hydraulic-circuitry",
+      "slug": "designing-for-pressure-closed-loop-water-hydraulic-circuitry",
+      "added_detail_sections": 0,
+      "words": 2037
+    },
+    {
+      "number": 108,
+      "title": "Can Water Lift Heavy Loads? Yes \u2014 The Same Force as Oil",
+      "old_slug": "can-water-handle-heavy-loads-like-oil",
+      "slug": "can-water-handle-heavy-loads-like-oil",
+      "added_detail_sections": 0,
+      "words": 2034
+    },
+    {
+      "number": 109,
+      "title": "Is Water Too Thin for High Pressure? No",
+      "old_slug": "is-water-too-thin-to-work-in-high-pressure-applications",
+      "slug": "is-water-too-thin-to-work-in-high-pressure-applications",
+      "added_detail_sections": 0,
+      "words": 1985
+    },
+    {
+      "number": 110,
+      "title": "Tap Water in Hydraulics: Filter It, Skip the Additives",
+      "old_slug": "do-i-need-filters-or-additives-for-tap-water",
+      "slug": "do-i-need-filters-or-additives-for-tap-water",
+      "added_detail_sections": 1,
+      "words": 2058
+    },
+    {
+      "number": 111,
+      "title": "Why Isn't Water Hydraulics Everywhere Yet?",
+      "old_slug": "why-doesn-t-everyone-use-this-already",
+      "slug": "why-doesn-t-everyone-use-this-already",
+      "added_detail_sections": 0,
+      "words": 1998
+    },
+    {
+      "number": 112,
+      "title": "Is Water Hydraulics More Expensive Over Time? Run the Four Numbers",
+      "old_slug": "is-water-more-expensive-long-term",
+      "slug": "is-water-more-expensive-long-term",
+      "added_detail_sections": 0,
+      "words": 2006
+    },
+    {
+      "number": 113,
+      "title": "Retrofitting to Water: Upgrade the Components, Not Just the Fluid",
+      "old_slug": "can-i-retrofit-my-existing-system-to-use-water",
+      "slug": "can-i-retrofit-my-existing-system-to-use-water",
+      "added_detail_sections": 0,
+      "words": 2014
+    },
+    {
+      "number": 114,
+      "title": "Marine and Food Approvals: What Evidence to Ask For",
+      "old_slug": "are-your-components-certified-for-marine-or-food-use",
+      "slug": "are-your-components-certified-for-marine-or-food-use",
+      "added_detail_sections": 1,
+      "words": 2078
+    },
+    {
+      "number": 115,
+      "title": "What Happens in a Fire? Water Does Not Add an Oil Fuel Load",
+      "old_slug": "what-happens-in-a-fire-will-the-water-system-shut-down",
+      "slug": "what-happens-in-a-fire-will-the-water-system-shut-down",
+      "added_detail_sections": 1,
+      "words": 2111
+    },
+    {
+      "number": 116,
+      "title": "Maintaining a Water HPU: Simple Routines, Useful Trends",
+      "old_slug": "what-maintenance-looks-like-in-a-water-hydraulic-system",
+      "slug": "what-maintenance-looks-like-in-a-water-hydraulic-system",
+      "added_detail_sections": 1,
+      "words": 2148
+    },
+    {
+      "number": 117,
+      "title": "Planning a Water HPU Outage: Scope, Parts, Energy Control and Sign-Off",
+      "old_slug": "servicing-a-water-hydraulic-hpu-on-site-in-under-1-day",
+      "slug": "planning-a-water-hpu-outage-scope-parts-energy-control-and-sign-off",
+      "added_detail_sections": 1,
+      "words": 2128
+    },
+    {
+      "number": 118,
+      "title": "First Start-Up on Water: Flush, Vent and Pressurise in Stages",
+      "old_slug": "flushing-and-start-up-tips-for-first-time-water-users",
+      "slug": "flushing-and-start-up-tips-for-first-time-water-users",
+      "added_detail_sections": 1,
+      "words": 2152
+    },
+    {
+      "number": 119,
+      "title": "Winterising a Water Hydraulic System: Find Every Litre That Can Freeze",
+      "old_slug": "how-to-winterize-your-water-hydraulic-system",
+      "slug": "how-to-winterize-your-water-hydraulic-system",
+      "added_detail_sections": 1,
+      "words": 2127
+    },
+    {
+      "number": 120,
+      "title": "Cylinder Losing Pressure? Measure at the Actuator, Under Load",
+      "old_slug": "diagnosing-pressure-drop-in-water-driven-cylinders",
+      "slug": "diagnosing-pressure-drop-in-water-driven-cylinders",
+      "added_detail_sections": 1,
+      "words": 2128
+    },
+    {
+      "number": 121,
+      "title": "Scale, Slime or Debris? Identify the Deposit Before You Treat It",
+      "old_slug": "preventing-scaling-or-fouling-without-additives",
+      "slug": "scale-slime-or-debris-identify-the-deposit-before-you-treat-it",
+      "added_detail_sections": 1,
+      "words": 2087
+    },
+    {
+      "number": 122,
+      "title": "Long Seal and Hose Life on Water: Counterface, Cycling and Routing",
+      "old_slug": "seal-and-hose-life-expectations-with-tap-water",
+      "slug": "seal-and-hose-life-expectations-with-tap-water",
+      "added_detail_sections": 0,
+      "words": 2124
+    },
+    {
+      "number": 123,
+      "title": "Going Oil-Free: Which Maintenance Tasks Go, Stay and Get Added",
+      "old_slug": "common-maintenance-missteps-with-oil-that-don-t-happen-with-water",
+      "slug": "going-oil-free-which-maintenance-tasks-go-stay-and-get-added",
+      "added_detail_sections": 0,
+      "words": 2127
+    },
+    {
+      "number": 124,
+      "title": "Monitoring a Water HPU: Start With the Decision, Then Pick the Sensor",
+      "old_slug": "smart-monitoring-options-for-water-hpus",
+      "slug": "smart-monitoring-options-for-water-hpus",
+      "added_detail_sections": 1,
+      "words": 2113
+    },
+    {
+      "number": 125,
+      "title": "Fail-Closed, Fail-Open or Hold? Engineering Safe States in Water Hydraulics",
+      "old_slug": "built-in-safety-fail-closed-and-manual-overrides-with-water",
+      "slug": "fail-closed-fail-open-or-hold-engineering-safe-states-in-water-hydraulics",
+      "added_detail_sections": 1,
+      "words": 2041
+    },
+    {
+      "number": 126,
+      "title": "The Hidden Cost of Oil Hydraulics Is Outside the Purchase Order",
+      "old_slug": "how-much-are-your-hydraulics-costing-you",
+      "slug": "how-much-are-your-hydraulics-costing-you",
+      "added_detail_sections": 1,
+      "words": 2149
+    },
+    {
+      "number": 127,
+      "title": "How Water Hydraulics Handle Lubrication: Material Pairs and Clearances",
+      "old_slug": "wave-of-change-how-water-hydraulics-conquered-lubrication-challenges",
+      "slug": "how-water-hydraulics-handle-lubrication-material-pairs-and-clearances",
+      "added_detail_sections": 0,
+      "words": 2042
+    },
+    {
+      "number": 128,
+      "title": "Why Water Hydraulics Belong in Sustainable Industry",
+      "old_slug": "why-water-hydraulics-are-the-future-of-sustainable-industry",
+      "slug": "why-water-hydraulics-belong-in-sustainable-industry",
+      "added_detail_sections": 0,
+      "words": 2040
+    },
+    {
+      "number": 129,
+      "title": "Renewing Municipal Hydraulics? Give Water a Fair Hearing",
+      "old_slug": "where-is-the-conscience-of-the-municipal-engineer",
+      "slug": "where-is-the-conscience-of-the-municipal-engineer",
+      "added_detail_sections": 0,
+      "words": 2063
+    }
+  ],
+  "redirects": {
+    "why-316-stainless-steel-is-essential-for-water-hydraulic-systems": "stainless-for-water-hydraulics-matching-the-grade-to-the-exposure",
+    "why-traditional-hydraulic-materials-fail-in-water-systems": "how-to-convert-an-oil-hydraulic-system-to-water-hydraulics",
+    "how-water-hydraulics-eliminate-hydraulic-oil-spills": "aligning-with-esg-how-water-hydraulics-support-sustainability-targets",
+    "industrial-equipment-that-should-never-use-oil-hydraulics": "which-oil-circuit-should-go-first-a-screening-guide",
+    "why-municipal-infrastructure-should-eliminate-hydraulic-oil": "evaluating-water-hydraulics-for-municipal-renewal",
+    "why-water-hydraulics-will-replace-oil-in-industrial-infrastructure": "your-first-water-hydraulic-project-baseline-trial-then-repeat",
+    "why-tap-or-sea-water-belongs-in-your-hydraulic-system": "tap-water-or-seawater-choose-clean-freshwater-inside",
+    "how-water-maintains-hydraulic-efficiency-without-additives": "half-a-litre-a-minute-of-leakage-costs-83-watts-all-day",
+    "160-bar-performance-debunking-the-limitations-of-water-hydraulics": "working-within-160-bar-get-the-force-from-area",
+    "why-accumulators-are-rarely-needed-in-water-systems": "does-your-water-circuit-need-an-accumulator-name-the-job-first",
+    "isothermal-behaviour-of-water-vs-thermal-expansion-in-oil": "water-stores-more-heat-design-the-whole-cooling-balance",
+    "how-our-water-hpus-are-changing-the-industrial-landscape": "judging-a-water-hpu-by-what-it-does-between-movements",
+    "our-dss-partnership-putting-water-to-the-test-on-severe-service-valves": "water-actuators-on-severe-service-valves-proving-the-performance",
+    "why-our-316-stainless-fittings-outperform-brass-in-marine-settings": "stainless-or-brass-at-sea-specify-the-alloy-and-the-joint",
+    "the-hidden-weakness-of-duplex-in-saltwater-why-we-stick-with-316": "duplex-stainless-at-sea-stronger-and-more-pit-resistant",
+    "what-makes-our-control-valves-unique-in-a-water-system": "sizing-a-water-control-valve-from-its-pressure-drop-curve",
+    "water-hydraulics-on-the-coast-marine-applications-that-work": "water-hydraulics-by-the-sea-built-for-the-coastal-environment",
+    "water-hydraulics-in-mining-lower-downtime-zero-contamination": "mining-availability-is-built-at-the-skid-layout",
+    "fire-suppression-evolved-why-water-mist-systems-outperform-traditional-sprinklers": "water-mist-or-sprinklers-in-the-data-centre-start-with-the-fire",
+    "fishing-without-fossil-fuels-the-musqueam-hydrogen-vessel-project": "hydrogen-propulsion-water-hydraulic-deck-gear-a-clean-fishing-vessel-concept",
+    "fail-safe-performance-in-theme-park-ride-systems": "water-powered-rides-oil-free-actuation-and-validated-fault-response",
+    "no-oil-no-spill-environmental-advantages-explained": "what-removing-oil-does-for-the-environment",
+    "how-water-systems-eliminate-cross-contamination-risk": "oil-out-of-the-overhead-actuator-cutting-a-food-contamination-route",
+    "preventing-corrosion-without-coatings-or-chemicals": "investigating-corrosion-in-a-running-water-circuit",
+    "how-the-2025-clean-technology-investment-tax-credit-applies-to-your-project": "the-clean-technology-itc-and-water-hydraulics-check-before-you-count",
+    "oil-free-operation-and-compliance-with-federal-clean-energy-goals": "aligning-with-esg-how-water-hydraulics-support-sustainability-targets",
+    "total-cost-of-ownership-where-water-wins-over-time": "when-does-water-pay-off-find-the-break-even-saving",
+    "how-waterquest-systems-align-with-cleanbc-sif-and-sr-and-ed": "funding-water-hydraulics-r-and-d-or-routine-adoption",
+    "replacing-oil-systems-in-algoma-steel-a-modern-retrofit": "retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load",
+    "waterquest-vs-traditional-hpu-test-results-in-desalination": "a-fair-test-of-water-vs-oil-hpus-in-desalination",
+    "retrofitting-a-fire-pump-station-with-zero-oil": "fire-pump-station-renewal-start-with-the-protection-design",
+    "oil-free-hydraulics-in-amusement-safety-a-pilot-case": "piloting-water-hydraulics-on-a-ride-bench-representative-rig-full-validation",
+    "clean-operation-on-coastlines-a-marine-deployment-snapshot": "installing-water-hydraulics-aboard",
+    "servicing-a-water-hydraulic-hpu-on-site-in-under-1-day": "planning-a-water-hpu-outage-scope-parts-energy-control-and-sign-off",
+    "preventing-scaling-or-fouling-without-additives": "scale-slime-or-debris-identify-the-deposit-before-you-treat-it",
+    "common-maintenance-missteps-with-oil-that-don-t-happen-with-water": "water-hydraulic-system-maintenance",
+    "built-in-safety-fail-closed-and-manual-overrides-with-water": "fail-closed-fail-open-or-hold-engineering-safe-states-in-water-hydraulics",
+    "wave-of-change-how-water-hydraulics-conquered-lubrication-challenges": "material-pairing-for-water-hydraulic-tribology",
+    "why-water-hydraulics-are-the-future-of-sustainable-industry": "aligning-with-esg-how-water-hydraulics-support-sustainability-targets"
+  },
+  "removed_badges": 129,
+  "citation_paragraphs_joined": 5
+}

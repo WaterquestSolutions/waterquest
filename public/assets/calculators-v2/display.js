@@ -1,5 +1,5 @@
 import {convert,unitLabel,conversions} from './engine.js';
-const fmt=n=>new Intl.NumberFormat('en-CA',{maximumSignificantDigits:5}).format(n);
+const fmt=n=>new Intl.NumberFormat('en-CA',{maximumSignificantDigits:3}).format(n);
 const escape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const units=Object.keys(conversions).sort((a,b)=>b.length-a.length).map(escape).join('|');
 const measurement=new RegExp(`(-?\\d[\\d,]*(?:\\.\\d+)?(?:e[+-]?\\d+)?)\\s*(${units})(?![\\w/²³])`,'g');

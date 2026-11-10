@@ -1,0 +1,10 @@
+State / step,Command / trigger,Valve / output state,Expected movement / action,Feedback / permissive,Timeout,Fault / safe response,Acceptance evidence
+Ready,,,,,,,
+Start,,,,,,,
+Move / operate,,,,,,,
+Hold / dwell,,,,,,,
+Return / stop,,,,,,,
+Loss of power,,,,,,,
+Loss of pressure,,,,,,,
+Feedback failure,,,,,,,
+Manual recovery,,,,,,,

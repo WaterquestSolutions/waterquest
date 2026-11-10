@@ -1,0 +1,38 @@
+WaterQuest Solutions — Pilot charter
+Working template; complete and approve for the specific project.
+
+1. Purpose and bounded circuit
+Response / evidence / owner: ____________________
+
+2. Current baseline and equivalent useful output
+Response / evidence / owner: ____________________
+
+3. Engineering and procurement question to resolve
+Response / evidence / owner: ____________________
+
+4. Success metric, measurement method, limit and evidence owner
+Response / evidence / owner: ____________________
+
+5. Stages: bench, representative rig, site, review
+Response / evidence / owner: ____________________
+
+6. Fault states and safe stopping criteria
+Response / evidence / owner: ____________________
+
+7. Equipment, integration, labour and instrumentation scope
+Response / evidence / owner: ____________________
+
+8. Host, supplier, integrator and operator responsibilities
+Response / evidence / owner: ____________________
+
+9. Budget, cash flow and confirmed funding only
+Response / evidence / owner: ____________________
+
+10. Required approvals and purchase/start restrictions
+Response / evidence / owner: ____________________
+
+11. Data ownership, access, retention and permitted publication
+Response / evidence / owner: ____________________
+
+12. Stop/extend/adopt decision and sign-off
+Response / evidence / owner: ____________________

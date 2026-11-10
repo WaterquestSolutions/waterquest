@@ -1,0 +1,11 @@
+Item,Required value / condition,Units,Source and revision,Responsible person,Acceptance criterion,Verification record,Status
+Application objective and useful coverage,,,,,,,Open
+"Nozzle type, count and distribution",,,,,,,Open
+Required pressure at each nozzle,,,,,,,Open
+Flow per nozzle and concurrent demand,,,,,,,Open
+Pipe and fitting pressure losses,,,,,,,Open
+Water quality and filtration,,,,,,,Open
+Pump duty and inlet conditions,,,,,,,Open
+"Controls, interlocks and duty cycle",,,,,,,Open
+"Drift, drainage and exposure constraints",,,,,,,Open
+Measured coverage and acceptance,,,,,,,Open

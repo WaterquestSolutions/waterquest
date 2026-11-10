@@ -2,7 +2,7 @@ WaterQuest fire-suppression illustrations
 Created 26 September 2026 using the built-in image-generation tool.
 
 Assets: fire-triangle.png; droplet-size-guide.png
-The diagram bands match the existing page and are illustrative, not standardised approval classes.
+The diagram bands match the existing page and are illustrative, not standardized approval classes.
 
 References:
 https://www.osha.gov/etools/evacuation-plans-procedures/emergency-standards/portable-extinguishers/about

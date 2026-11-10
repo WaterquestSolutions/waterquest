@@ -1480,61 +1480,6 @@
     "sha256": "8de6b75ea9c75b9dc1369ca1c43ec2658cbba7e8fd26ec7446cdbafcb833b9e1"
   },
   {
-    "route": "/wastewater-solutions/",
-    "file": "wastewater-solutions/index.html",
-    "sha256": "49419d5797572d9560b0c86c2cb78d5f71e4497329b47f9b99d163a8ce0923d5"
-  },
-  {
-    "route": "/wastewater-solutions/waterbio/",
-    "file": "wastewater-solutions/waterbio/index.html",
-    "sha256": "ec6a2dd5e8156b1ad3fb43628eb09651dc744eca0bfc5ae692814b16b33a4a8c"
-  },
-  {
-    "route": "/wastewater-solutions/waterclarify/",
-    "file": "wastewater-solutions/waterclarify/index.html",
-    "sha256": "02b5adf571e20145e77dd231ef65d6e957f7dc2f18a05c0817346a810d6e485e"
-  },
-  {
-    "route": "/wastewater-solutions/watercloud/",
-    "file": "wastewater-solutions/watercloud/index.html",
-    "sha256": "e065363ab300f889d25e48b46b8a0c91cdb2dca49fbdc30380de282eb4591e72"
-  },
-  {
-    "route": "/wastewater-solutions/watercore/",
-    "file": "wastewater-solutions/watercore/index.html",
-    "sha256": "b7ec196e48417af39966bbe81fb655a154717781e48494e5ca0685ad2e67f239"
-  },
-  {
-    "route": "/wastewater-solutions/waterfilter/",
-    "file": "wastewater-solutions/waterfilter/index.html",
-    "sha256": "4e2566d7cca1d62243103dcc9b53cadaae61255ab60e9da6fabde5f5ba8046e0"
-  },
-  {
-    "route": "/wastewater-solutions/watergate/",
-    "file": "sluice-gates/index.html",
-    "sha256": "cd401c7441a6ad894a7b0be95d3d286b34820a8079e8913cdaa848e6e59d8e3f"
-  },
-  {
-    "route": "/wastewater-solutions/wateriq/",
-    "file": "wastewater-solutions/wateriq/index.html",
-    "sha256": "c862a1f82aa0951441c689028b7d2b31c1bd401eb651608aa728c0fa2291fc8b"
-  },
-  {
-    "route": "/wastewater-solutions/waterlift/",
-    "file": "wastewater-solutions/waterlift/index.html",
-    "sha256": "4fdb07dde56d98d3eddc03506299ece3d2cc1cfbcef9eb2a9c0c5416d7d2fedc"
-  },
-  {
-    "route": "/wastewater-solutions/watersense/",
-    "file": "wastewater-solutions/watersense/index.html",
-    "sha256": "e3600ab57e6de8e3fde07c9b2454630c93082c9e920aaf2ce6be5cbc40b4e0eb"
-  },
-  {
-    "route": "/wastewater-solutions/watertwin/",
-    "file": "wastewater-solutions/watertwin/index.html",
-    "sha256": "59f1b5a48f1d87b24983ead885343296350ca596967300f7a3d7150ba144c9f6"
-  },
-  {
     "route": "/wqs-stainless/",
     "file": "wqs-stainless/index.html",
     "sha256": "f2a97c794569082968ef082607386de311c17ca8ac0d46bdbaf4fb6f03517c10"

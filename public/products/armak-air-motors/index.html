@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html id="waterquest-site" lang="en-CA">
+<head>
+<style>@layer wq-responsive-priority;</style>
+<link rel="stylesheet" href="/assets/site-responsive-fit.css?v=20261109">
+<script defer src="/assets/site-responsive-fit.js?v=20261109"></script><style id="wqs-experience-layer">@layer wqs-experience;</style><link href="/assets/newsletter-popup.css?v=20261021" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+
+
+
+
+
+
+
+
+<style>
+    :root {
+      --navy:       #0E284A;
+      --navy-mid:   #0D2044;
+      --navy-light: #122954;
+      --aqua:       #00EEFF;
+      --aqua-dim:   rgba(0,200,212,0.12);
+      --aqua-glow:  #778FA8;
+      --silver:     #A8B8CC;
+      --silver-lt:  #D4E0EC;
+      --white:      #FFFFFF;
+      --body:       #C8D8E8;
+      --muted:      #ffffff;
+      --border:     rgba(168,184,204,0.15);
+      --border-aqua:rgba(0,200,212,0.25);
+      --fw:         1200px;
+      --font-d:     'Avenir','Avenir Next','Nunito Sans',sans-serif;
+      --font-b:     'Nunito Sans','Segoe UI',system-ui,sans-serif;
+      --mono:       'Nunito Sans','Segoe UI',sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-b); background: var(--navy); color:#FFFFFF; line-height: 1.7; overflow-x: hidden; }
+    a { color:#00EEFF; text-decoration: none; transition: color 0.2s; }
+    a:hover { color:#00EEFF; }
+
+    /* NAV */
+    #nav { position: fixed; top:0; left:0; right:0; z-index:100; transition: background 0.3s; }
+    #nav.scrolled { background: rgba(10,22,40,0.96); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width:var(--fw); margin:0 auto; padding:0 32px; display:flex; align-items:center; justify-content:space-between; height:68px; }
+    .nav-logo .logo-main { font-family:var(--font-d); font-weight:900; font-size:1.05rem; color:#FFFFFF; }
+    .nav-logo .logo-sub  { font-size:0.6rem; letter-spacing:0.18em; text-transform:uppercase; color:#00EEFF; display:block; }
+    .nav-links { display:flex; gap:28px; align-items:center; list-style:none; }
+    .nav-links a { font-family:var(--font-d); font-size:0.78rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:#FFFFFF; }
+    .nav-links a:hover, .nav-links a.active { color:#00EEFF; }
+    .nav-cta { background:#00616B!important; color:#FFFFFF!important; padding:8px 20px; border-radius:4px; }
+
+    /* BREADCRUMB */
+    .breadcrumb-bar { padding-top:68px; background:var(--navy-mid); border-bottom:1px solid var(--border); }
+    .bc-inner { max-width:var(--fw); margin:0 auto; padding:13px 32px; display:flex; gap:8px; align-items:center; }
+    .bc-inner a { font-size:0.78rem; color:#FFFFFF; }
+    .bc-inner a:hover { color:#00EEFF; }
+    .bc-sep { font-size:0.72rem; color:#FFFFFF; opacity:1; }
+    .bc-current { font-size:0.78rem; color:#FFFFFF; }
+
+    /* PAGE HERO */
+    .page-hero {
+      background: linear-gradient(165deg, #050D1A 0%, var(--navy) 45%, #0C1E40 100%);
+      padding: 72px 32px 64px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; left: 50%; transform: translateX(-50%);
+      width: 900px; height: 600px;
+      background: radial-gradient(ellipse, rgba(0,200,212,0.09) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .page-hero-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 2; }
+    .page-hero-eyebrow { font-family:var(--font-d); font-size:0.72rem; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:#00EEFF; margin-bottom:16px; }
+    .page-hero h1 { font-family:var(--font-d); font-weight:900; font-size:clamp(2.2rem,5vw,3.5rem); color:#FFFFFF; line-height:1.15; letter-spacing:-0.025em; margin-bottom:22px; }
+    .page-hero h1 em { font-style:normal; color:#00EEFF; }
+    .page-hero p { font-size:1.1rem; color:#FFFFFF; line-height:1.8; max-width:660px; margin:0 auto 40px; }
+    .hero-stat-row { display:flex; justify-content:center; gap:0; flex-wrap:wrap; border:1px solid var(--border-aqua); border-radius:12px; overflow:hidden; max-width:700px; margin:0 auto; }
+    .hero-stat { flex:1; min-width:120px; padding:18px 16px; border-right:1px solid var(--border-aqua); text-align:center; }
+    .hero-stat:last-child { border-right:none; }
+    .hs-num { font-family:var(--font-d); font-size:1.5rem; font-weight:900; color:#00EEFF; line-height:1; margin-bottom:5px; }
+    .hs-lbl { font-size:0.66rem; font-weight: 900; letter-spacing:0.12em; text-transform:uppercase; color:#FFFFFF; line-height:1.4; }
+
+    /* QUICK NAV */
+    .quick-nav { background: var(--navy-mid); border-bottom: 1px solid var(--border); position: sticky; top: 68px; z-index: 90; }
+    .qn-inner { max-width:var(--fw); margin:0 auto; padding:0 32px; display:flex; gap:0; overflow-x:auto; }
+    .qn-inner::-webkit-scrollbar { display:none; }
+    .qn-item { font-family:var(--font-d); font-size:0.76rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#FFFFFF; padding:16px 18px; white-space:nowrap; border-bottom:2px solid transparent; transition:all 0.2s; }
+    .qn-item:hover { color:#00EEFF; border-bottom-color:var(--aqua); }
+
+    /* SECTION */
+    .section { padding: 80px 32px; }
+    .section-dark { background: var(--navy); }
+    .section-mid  { background: var(--navy-mid); }
+    .section-inner { max-width: var(--fw); margin: 0 auto; }
+    .section-header { margin-bottom:56px; }
+    .section-header.center { text-align:center; }
+    .section-header.center .section-label { justify-content:center; }
+    .section-label { font-family:var(--font-d); font-size:0.84rem; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:#00EEFF; margin-bottom:10px; display:flex; align-items:center; gap:10px; }
+    .section-label::after { content:''; display:block; height:1px; width:40px; background:var(--border-aqua); }
+    .section-header h2 { font-family:var(--font-d); font-weight:900; font-size:clamp(1.6rem,3vw,2.3rem); color:#FFFFFF; letter-spacing:-0.02em; margin-bottom:12px; }
+    .section-header h2 em { font-style:normal; color:#00EEFF; }
+    .section-header p { font-size:1.05rem; color:#FFFFFF; max-width:640px; line-height:1.75; }
+
+    /* PRODUCT HERO CARD (full-width featured) */
+    .product-hero-card {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 0;
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 32px;
+      transition: border-color 0.3s;
+    }
+    .product-hero-card:hover { border-color: var(--border-aqua); }
+    .phc-body { padding: 40px 40px 36px; display: flex; flex-direction: column; }
+    .phc-eyebrow { display:flex; align-items:center; gap:10px; margin-bottom:18px; }
+    .phc-badge { font-family:var(--font-d); font-size:0.68rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; padding:5px 12px; border-radius:100px; border:1px solid var(--border-aqua); color:#00EEFF; background:rgba(0,200,212,0.08); }
+    .phc-num { font-family:var(--font-d); font-size:0.82rem; color:#FFFFFF; }
+    .phc-body h2 { font-family:var(--font-d); font-weight:900; font-size:clamp(1.5rem,2.5vw,2rem); color:#FFFFFF; line-height:1.25; margin-bottom:14px; letter-spacing:-0.02em; }
+    .phc-body h2 em { font-style:normal; color:#00EEFF; }
+    .phc-body p { font-size:1.05rem; font-weight:700; color:#FFFFFF; line-height:1.78; margin-bottom:24px; flex:1; }
+    .spec-chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px; }
+    .spec-chip { color:#00EEFF; background:rgba(0,200,212,0.10); border:1px solid rgba(0,200,212,0.32); padding:8px 12px; border-radius:999px; font-size:0.78rem; font-weight:800; }
+    .phc-links { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+    .btn-view { background:#00616B; color:#FFFFFF; padding:11px 22px; border-radius:5px; font-family:var(--font-d); font-weight:700; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; transition:all 0.2s; display:inline-flex; align-items:center; gap:7px; }
+    .btn-view:hover { background:#00616B; color:#FFFFFF; transform:translateY(-1px); }
+    .btn-view svg { width:14px; height:14px; stroke:currentColor; fill:none; }
+    .btn-spec { background:transparent; border:1.5px solid var(--border-aqua); color:#00EEFF; padding:11px 22px; border-radius:5px; font-family:var(--font-d); font-weight:700; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; transition:all 0.2s; display:inline-flex; align-items:center; gap:7px; }
+    .btn-spec:hover { background:#00616B; color:#00EEFF; }
+    .phc-visual { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; min-height:280px; }
+    .phc-visual::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at center, rgba(0,200,212,0.08) 0%, transparent 70%); }
+    .phc-icon-large { font-size:5rem; position:relative; z-index:2; filter:drop-shadow(0 0 24px rgba(0,200,212,0.3)); }
+    .phc-model-list { position:absolute; bottom:20px; left:20px; right:20px; display:flex; gap:6px; flex-wrap:wrap; justify-content:center; z-index:2; }
+    .model-pill { font-family:var(--font-b); font-size:0.74rem; font-weight:700; color:#00EEFF; background:rgba(0,200,212,0.1); border:1px solid rgba(0,200,212,0.22); padding:4px 10px; border-radius:4px; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; }
+
+    /* PRODUCT GRID (smaller cards) */
+    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .product-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.3s, transform 0.3s;
+      position: relative;
+    }
+    .product-card:hover { border-color: var(--border-aqua); transform: translateY(-3px); }
+    .pc-accent { height: 2px; }
+    .pc-body { padding: 26px 24px 20px; flex:1; }
+    .pc-icon { font-size:1.8rem; margin-bottom:12px; }
+    .pc-cat { font-family:var(--font-d); font-size:0.79rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#00EEFF; margin-bottom:6px; }
+    .pc-body h3 { font-family:var(--font-d); font-weight:900; font-size:1.1rem; color:#FFFFFF; line-height:1.3; margin-bottom:10px; }
+    .pc-body p { font-size:0.94rem; font-weight:700; color:#FFFFFF; line-height:1.72; margin-bottom:16px; }
+    .pc-specs { display:flex; flex-direction:column; gap:6px; margin-bottom:20px; }
+    .pc-spec { display:flex; justify-content:space-between; align-items:center; padding:7px 0; border-bottom:1px solid var(--border); }
+    .pc-spec:last-child { border-bottom:none; }
+    .pc-spec-label { font-size:0.92rem; color:#FFFFFF; }
+    .pc-spec-value { color:#00EEFF; font-weight:900; text-align:right; }
+    .pc-footer { padding:16px 24px 20px; border-top:1px solid var(--border); display:flex; flex-wrap:wrap; gap:12px; }
+    .pc-link { font-family:var(--font-d); font-size:0.8rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#00EEFF; display:inline-flex; align-items:center; gap:7px; transition:gap 0.2s; }
+    .pc-link:hover { gap:12px; color:#00EEFF; }
+    .pc-link svg { width:13px; height:13px; stroke:currentColor; fill:none; }
+
+    /* MATERIALS CALLOUT */
+    .materials-strip {
+      background: linear-gradient(135deg, rgba(0,200,212,0.06) 0%, var(--navy-mid) 100%);
+      border-top: 1px solid var(--border-aqua);
+      border-bottom: 1px solid var(--border-aqua);
+      padding: 52px 32px;
+    }
+    .materials-inner { max-width: var(--fw); margin: 0 auto; }
+        .materials-strip .section-header.center { max-width:none; width:100%; }
+        .materials-strip .section-header.center p { max-width:none; width:100%; color:#FFFFFF; }
+    .materials-grid { display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:0; border:1px solid var(--border-aqua); border-radius:12px; overflow:hidden; margin-top:36px; }
+    .mat-item { padding:26px 24px; border-right:1px solid var(--border-aqua); }
+    .mat-item:last-child { border-right:none; }
+    .mat-icon { font-size:1.4rem; margin-bottom:10px; }
+    .mat-item h4 { font-family:var(--font-d); font-weight:900; font-size:0.95rem; color:#00EEFF; margin-bottom:7px; }
+    .mat-item p { font-size:0.95rem; font-weight:700; color:#FFFFFF; line-height:1.7; }
+    .mat-code { font-family:var(--font-m); color:#00EEFF; font-size:0.86rem; font-weight:800; margin-bottom:14px; padding:8px 12px; border:1px solid rgba(0,200,212,0.35); border-radius:6px; display:inline-block; background:rgba(0,200,212,0.08); }
+
+    /* CERTIFICATIONS */
+    .cert-row { display:flex; justify-content:center; gap:16px; flex-wrap:wrap; margin-top:40px; }
+    .cert-badge { background:var(--navy-light); border:1px solid var(--border); border-radius:8px; padding:14px 20px; text-align:center; min-width:110px; }
+    .cert-name { font-family:var(--font-d); font-size:0.8rem; font-weight:900; color:#00EEFF; margin-bottom:4px; }
+    .cert-desc { font-size:0.75rem; font-weight:900; color:#FFFFFF; letter-spacing:0.06em; text-transform:uppercase; }
+
+    /* STAINLESS BANNER - WQS Stainless: black / red / brushed metal */
+    :root {
+      --wqs-black:      #0E0E0E;
+      --wqs-black-mid:  #1A1A1A;
+      --wqs-black-lt:   #242424;
+      --wqs-red:        #C8201A;
+      --wqs-red-bright: #E02820;
+      --wqs-red-dim:    rgba(200,32,26,0.12);
+      --wqs-red-border: rgba(200,32,26,0.28);
+      --wqs-metal:      #B8C4CC;   /* brushed aluminium highlight */
+      --wqs-metal-mid:  #8090A0;
+      --wqs-metal-dim:  rgba(184,196,204,0.10);
+      --wqs-metal-border: rgba(184,196,204,0.18);
+    }
+    .stainless-banner {
+      background:
+        linear-gradient(160deg, var(--wqs-black) 0%, var(--wqs-black-mid) 55%, #161C24 100%);
+      border-top: 1px solid var(--wqs-red-border);
+      border-bottom: 1px solid var(--wqs-red-border);
+      padding: 56px 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    /* Subtle brushed-metal texture overlay */
+    .stainless-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        92deg,
+        transparent 0px,
+        rgba(184,196,204,0.025) 1px,
+        transparent 2px,
+        transparent 6px
+      );
+      pointer-events: none;
+    }
+    /* Red accent glow in top-left corner */
+    .stainless-banner::after {
+      content: '';
+      position: absolute;
+      top: -80px; left: -80px;
+      width: 420px; height: 420px;
+      background: radial-gradient(ellipse, rgba(200,32,26,0.13) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .stainless-inner { max-width:var(--fw); margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; position:relative; z-index:1; }
+    .sb-text .sb-eyebrow { font-family:var(--font-d); font-size:0.7rem; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:#00EEFF; margin-bottom:12px; }
+    .sb-text h2 { font-family:var(--font-d); font-weight:900; font-size:clamp(1.5rem,2.5vw,2.1rem); color:#FFFFFF; line-height:1.25; letter-spacing:-0.02em; margin-bottom:14px; }
+        .sb-text h2 span:last-child { color:#FFFFFF; }
+    .sb-text h2 span { color:#FFFFFF; }
+    .sb-text p { color:#FFFFFF; line-height:1.75; margin-bottom:24px; font-size:1.05rem; font-weight:600; }
+    .sb-btn { background:var(--wqs-red); color:#FFFFFF; padding:12px 24px; border-radius:5px; font-family:var(--font-d); font-weight:700; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; transition:all 0.2s; display:inline-flex; align-items:center; gap:7px; }
+    .sb-btn:hover { background:var(--wqs-red-bright); color:#FFFFFF; transform:translateY(-1px); box-shadow: 0 6px 20px rgba(200,32,26,0.35); }
+    .sb-btn svg { width:14px; height:14px; stroke:currentColor; fill:none; }
+    .sb-products { display:flex; flex-direction:column; gap:10px; }
+    .sb-prod-item {
+      background: var(--wqs-metal-dim);
+      border: 1px solid var(--wqs-metal-border);
+      border-left: 3px solid var(--wqs-red);
+      border-radius:8px;
+      padding:14px 18px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      transition: background 0.2s, border-left-color 0.2s;
+    }
+    .sb-prod-item:hover {
+      background: rgba(200,32,26,0.07);
+      border-left-color: var(--wqs-red-bright);
+    }
+    .sb-prod-name { color:#FFFFFF; font-weight:900; font-size:1rem; }
+    .sb-prod-std { font-family:var(--font-b); font-size:0.78rem; font-weight:700; color:#00EEFF; }
+
+    /* CTA */
+    .pilot-cta { background: linear-gradient(160deg, var(--navy-light) 0%, #0A1E3C 100%); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:72px 32px; text-align:center; }
+    .pilot-cta-inner { max-width:680px; margin:0 auto; }
+    .pilot-cta h2 { font-family:var(--font-d); font-weight:900; font-size:clamp(1.8rem,3.5vw,2.6rem); color:#FFFFFF; letter-spacing:-0.02em; margin-bottom:16px; }
+    .pilot-cta h2 em { font-style:normal; color:#00EEFF; }
+    .pilot-cta p { font-size:1.16rem; color:#FFFFFF; line-height:1.8; margin-bottom:36px; }
+    .cta-btn-row { display:flex; justify-content:center; gap:16px; flex-wrap:wrap; }
+    .btn-primary { background:#00616B; color:#FFFFFF; padding:14px 32px; border-radius:6px; font-family:var(--font-d); font-weight:700; font-size:0.9rem; letter-spacing:0.06em; text-transform:uppercase; transition:all 0.2s; display:inline-flex; align-items:center; gap:8px; }
+    .btn-primary:hover { background:#00616B; color:#FFFFFF; transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,200,212,0.25); }
+    .btn-outline { background:transparent; border:1.5px solid var(--border-aqua); color:#00EEFF; padding:14px 32px; border-radius:6px; font-family:var(--font-d); font-weight:700; font-size:0.9rem; letter-spacing:0.06em; text-transform:uppercase; transition:all 0.2s; display:inline-flex; align-items:center; gap:8px; }
+    .btn-outline:hover { background:#00616B; color:#00EEFF; transform:translateY(-2px); }
+    .btn svg { width:16px; height:16px; stroke:currentColor; fill:none; }
+
+    /* FOOTER */
+    footer { background:#050B14; border-top:1px solid var(--border); padding:72px 0 30px; }
+    .footer-container { max-width:var(--fw); margin:0 auto; padding:0 32px; }
+    .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:48px; margin-bottom:48px; }
+    .footer-brand .logo-main { display:block; font-family:var(--font-d); font-weight:900; font-size:1.25rem; color:#FFFFFF; margin-bottom:6px; }
+    .footer-brand .logo-sub { display:block; font-size:0.72rem; letter-spacing:0.18em; text-transform:uppercase; color:#00EEFF; margin-bottom:18px; }
+    .footer-brand p { font-size:0.98rem; color:#FFFFFF; line-height:1.7; margin-bottom:14px; font-weight:600; max-width:440px; }
+    .footer-tagline { color:#00EEFF!important; font-style:italic; font-size:1.08rem !important; font-weight:800 !important; }
+    .footer-col h4 { font-family:var(--font-d); font-size:0.78rem; font-weight:900; letter-spacing:0.18em; text-transform:uppercase; color:#FFFFFF; margin-bottom:20px; }
+    .footer-col a, .footer-col span { display:block; color:#FFFFFF; text-decoration:none; margin-bottom:12px; font-size:0.94rem; line-height:1.5; font-weight:600; opacity:1; }
+    .footer-col a:hover, .footer-contact { color:#00EEFF!important; opacity:1; }
+    .footer-bottom { border-top:1px solid var(--border); padding-top:24px; display:flex; justify-content:space-between; align-items:flex-start; gap:24px; flex-wrap:wrap; }
+    .footer-bottom p { color:#FFFFFF; font-size:0.9rem; font-weight:700; margin:0; }
+    .footer-badges { display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
+    .footer-badge { color:#FFFFFF; border:1px solid rgba(255,255,255,0.14); border-radius:999px; padding:7px 14px; font-size:0.78rem; font-weight:800; letter-spacing:0.04em; }
+    @media (max-width:900px) { .footer-grid { grid-template-columns:1fr 1fr; } }
+    @media (max-width:640px) { .footer-container { padding:0 20px; } .footer-grid { grid-template-columns:1fr; gap:28px; } .footer-bottom { flex-direction:column; } .footer-badges { justify-content:flex-start; } }
+
+    /* REVEAL */
+    .reveal { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+
+    /* BUBBLES */
+    .bubble { position:fixed; border-radius:50%; background:radial-gradient(circle at 35% 35%,rgba(0,200,212,0.5),rgba(0,200,212,0.06) 60%,transparent 80%); border:1px solid rgba(0,200,212,0.14); opacity:0; pointer-events:none; z-index:0; animation:bubble-rise linear infinite; }
+    @keyframes bubble-rise { 0%{transform:translateY(0) translateX(0) scale(1);opacity:0} 8%{opacity:0.35} 50%{transform:translateY(-50vh) translateX(var(--drift)) scale(0.88);opacity:0.15} 92%{opacity:0.05} 100%{transform:translateY(-106vh) translateX(calc(var(--drift)*1.4)) scale(0.4);opacity:0} }
+
+    @media (max-width:1024px) {
+      .product-hero-card { grid-template-columns: 1fr; }
+      .phc-visual { min-height: 200px; }
+      .product-grid { grid-template-columns: 1fr 1fr; }
+      .materials-grid { grid-template-columns: 1fr 1fr; }
+      .mat-item:nth-child(2) { border-right:none; }
+      .mat-item:nth-child(1),.mat-item:nth-child(2) { border-bottom:1px solid var(--border-aqua); }
+      .stainless-inner { grid-template-columns: 1fr; gap:36px; }
+    }
+    @media (max-width:700px) {
+      .product-grid { grid-template-columns: 1fr; }
+      .materials-grid { grid-template-columns: 1fr; }
+      .mat-item { border-right:none!important; border-bottom:1px solid var(--border-aqua); }
+      .mat-item:last-child { border-bottom:none; }
+      .hero-stat-row { flex-direction:column; }
+      .hero-stat { border-right:none; border-bottom:1px solid var(--border-aqua); }
+      .hero-stat:last-child { border-bottom:none; }
+      .section { padding:56px 20px; }
+      .page-hero { padding:60px 20px 52px; }
+      .nav-links { display:none; }
+      .qn-inner { padding:0 16px; }
+    }
+  
+    /* Public header alignment: match redesigned homepage */
+    #nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(10,22,40,0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 4px 40px rgba(0,0,0,0.35);
+      transition: all 0.3s ease;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      height: auto;
+      max-width: var(--fw, var(--max-width, 1240px));
+      margin: 0 auto;
+      padding: 0 32px;
+      gap: 22px;
+    }
+    .nav-logo {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      min-width: 260px;
+    }
+    .nav-logo .logo-main {
+      font-family: var(--font-display, var(--font-d, Avenir, sans-serif));
+      font-weight: 900;
+      font-size: 1.18rem;
+      letter-spacing: 0.04em;
+      color:#FFFFFF;
+      text-transform: uppercase;
+    }
+    .nav-logo .logo-sub {
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      color:#00EEFF;
+      text-transform: uppercase;
+    }
+    .nav-links {
+      display: flex !important;
+      align-items: center;
+      justify-content: flex-end;
+      flex: 1 1 auto;
+      flex-wrap: nowrap;
+      gap: 14px 18px;
+      min-width: 0;
+    }
+    .nav-links a {
+      font-family: var(--font-display, var(--font-d, Avenir, sans-serif));
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color:#FFFFFF;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+    .nav-links a:hover,
+    .nav-links a.active { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B!important;
+      color:#FFFFFF!important;
+      padding: 9px 20px;
+      border-radius: var(--radius-sm, 6px);
+    }
+    .nav-cta:hover { background:#00616B!important; color:#FFFFFF!important; }
+    @media (max-width: 900px) {
+      .nav-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+      .nav-logo { min-width: 0; }
+      .nav-logo .logo-main { font-size: 1.1rem; }
+      .nav-logo .logo-sub { font-size: 0.58rem; }
+      .nav-links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px 14px;
+      }
+      .nav-links a { font-size: 0.68rem; letter-spacing: 0.08em; }
+      .nav-cta { padding: 7px 14px; }
+    }
+  
+
+    /* WQS SITE-WIDE NO GREY TEXT RULE */
+    :root {
+      --body-text: #FFFFFF !important;
+      --muted: #ffffff !important;
+      --silver: #FFFFFF !important;
+      --silver-light: #FFFFFF !important;
+      --text-muted: #ffffff !important;
+      --light-text: #FFFFFF !important;
+      --secondary-text: #ffffff !important;
+      --copy: #FFFFFF !important;
+      --soft: #FFFFFF !important;
+      --subtle: #FFFFFF !important;
+      --wheat: #FFFFFF !important;
+      --gray: #ffffff !important;
+      --grey: #ffffff !important;
+    }
+
+</style>
+<link href="/assets/wqs-product-template.css?v=20261011-white-aqua" rel="stylesheet">
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-brand-standards.css?v=20261106-aqua-links" rel="stylesheet"><script id="wq-speed-insights" src="/assets/wq-speed-insights.js" type="module"></script>
+<style id="p30-product-photo-style">.phc-visual-pump{flex-direction:column;padding:28px;gap:24px}html#waterquest-site body .phc-visual-pump .phc-pump-photo{display:block;width:100%;max-width:420px;height:auto;position:relative;z-index:1;border-radius:8px;margin:auto 0}.phc-visual-pump .phc-model-list{position:relative;inset:auto;flex-shrink:0;margin-top:auto}</style><style id="wqs-compact-product-heroes">
+html#waterquest-site body #product-hero{padding-top:24px!important;padding-bottom:24px!important;min-height:0!important;height:auto!important}
+html#waterquest-site body #product-hero .product-hero-grid{padding-top:0!important;min-height:0!important}
+html#waterquest-site body #product-hero .product-hero-ctas{margin-bottom:0!important}
+html#waterquest-site body :is(.v-hero,.pc-hero,.hero,.page-hero,.seawater-hero,.wq-conversion-hero){padding-bottom:24px!important;min-height:0!important}
+html#waterquest-site body :is(#product-hero,.v-hero,.pc-hero,.hero,.page-hero,.seawater-hero,.wq-conversion-hero)+:is(section,.v-section,.pc-section,.section){padding-top:24px!important;margin-top:0!important}
+html#waterquest-site body .wqs-literature{padding-top:12px!important;padding-bottom:12px!important;margin-top:12px!important;margin-bottom:12px!important}
+@media(max-width:700px){html#waterquest-site body #product-hero{padding-top:20px!important;padding-bottom:20px!important}html#waterquest-site body #product-hero .product-hero-grid{row-gap:24px!important}}
+@media(min-width:961px){
+html#waterquest-site body :is(.config-compare,.displ-compare){grid-template-rows:auto auto auto;align-items:stretch;row-gap:0}
+html#waterquest-site body :is(.config-compare>.config-card,.displ-compare>.displ-card){display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:0;min-width:0}
+html#waterquest-site body :is(.config-card-body,.displ-body){display:contents}
+html#waterquest-site body .config-card-body>.config-rules{padding:24px 32px 20px}
+html#waterquest-site body .displ-body>.displ-rules{padding:22px 28px 18px}
+html#waterquest-site body .config-card-body>.config-dims{margin:0 32px 24px}
+html#waterquest-site body .displ-body>.displ-dims{margin:0 28px 22px}
+}
+</style><link href="/assets/wq-hero-cta.css?v=20261021" rel="stylesheet"><link href="/assets/wqx-site.css?v=20261027-review2" rel="stylesheet"><link href="/assets/wq-product-photos.css" rel="stylesheet">
+<link href="/assets/critique-refinements.css?v=20261027-preview3" rel="stylesheet"><title>Armak Air Motors | Geared Piston Specifications | WaterQuest</title><meta name="description" content="Compare Armak geared piston air motors from 1.8 to 16 kW. Review torque, speed, curves, drawings and control options, then request a configured quotation."><link rel="canonical" href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/armak-air-motors/"><link rel="stylesheet" href="/assets/armak/armak.css"><meta property="og:title" content="Armak Air Motors | WaterQuest"><meta property="og:description" content="Controlled rotary power from compressed air. Compare six motor sizes and configure the complete drive."><meta property="og:type" content="website"><link rel="stylesheet" href="/assets/site-navigation-cleanup.css?v=20261108"></head><body class="wq-audited wq-consistent wq-armak"><nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img alt="" class="wq-brand-mark" height="54" src="/assets/waterquest-logo-square.png" width="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/start-here/">New to water hydraulics?</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main id="armak-main"><section class="arm-hero"><div class="arm-wrap"><a class="arm-back" href="/products/">← All products</a><div class="arm-hero-grid"><div><p class="arm-eyebrow">Armak geared piston air motors</p><h1>Put air power<br>to work.</h1><p class="arm-lead">Controlled rotary power. A motor, mounting and control package built around your load.</p><p>Explore six geared-piston motor sizes for starting, turning and controlling a mechanism. Match the shaft duty to the air supply, then select the valves, brake and output interface together.</p><div class="arm-actions"><a class="arm-button arm-outline" href="/contact/?source=armak-air-motors&amp;interest=Armak%20air%20motor%20selection&amp;from=%2Fproducts%2Farmak-air-motors%2F#engineering-review">Request an air motor quotation ↗</a></div></div><figure class="arm-hero-photo"><img src="/assets/armak/motor-range.jpg" alt="Armak geared piston air motors with different output and mounting configurations" width="1431" height="958" fetchpriority="high" decoding="async"><figcaption>Armak geared-piston motor range.</figcaption></figure></div><div class="arm-facts"><div><strong>1.8–16 kW</strong><span>2.41–21.5 hp · published range at 6 bar</span></div><div><strong>6 motor sizes</strong><span>AGP01 through AGP16</span></div><div><strong>Lever or remote</strong><span>Configure the control around the task</span></div></div><p class="arm-fluid-note">Powered by compressed air. These motors require filtered, regulated, lubricated air; they are separate from our water hydraulic motor range.</p></div></section><section class="arm-section" id="specifications"><div class="arm-wrap"><p class="arm-eyebrow">Start with the duty</p><h2>Compare the motor range.</h2><p>Published points at <strong>6 bar (87 psi)</strong>, including the specified control valves and silencers. Values are transcribed from the individual model sheets; starting torque is listed separately.</p><div class="arm-table-wrap" tabindex="0" role="region" aria-label="Armak model comparison" data-wq-table-container="true"><table data-wq-table-columns="7" role="table"><caption>Six motor sizes. Individual model-sheet data, brochure Issue 03.20.</caption><thead><tr role="row"><th scope="col" role="columnheader">Motor / interface variant</th><th scope="col" role="columnheader">Power</th><th scope="col" role="columnheader">Speed at max. power<br>rpm</th><th scope="col" role="columnheader">Running torque</th><th scope="col" role="columnheader">Starting torque</th><th scope="col" role="columnheader">Max. continuous<br>rpm</th><th scope="col" role="columnheader">Mass</th></tr></thead><tbody><tr role="row"><th scope="row" data-wq-column-label="Motor / interface variant" role="rowheader">AGP01<small>AGP110E</small></th><td data-wq-column-label="Power" role="cell">1.8 kW<small>2.41 hp</small></td><td data-wq-column-label="Speed at max. power rpm" role="cell">2,700</td><td data-wq-column-label="Running torque" role="cell">6.6 N·m<small>4.87 lbf·ft</small></td><td data-wq-column-label="Starting torque" role="cell">6.3 N·m<small>4.65 lbf·ft</small></td><td data-wq-column-label="Max. continuous rpm" role="cell">3,000</td><td data-wq-column-label="Mass" role="cell">12 kg<small>26.5 lb</small></td></tr><tr role="row"><th scope="row" data-wq-column-label="Motor / interface variant" role="rowheader">AGP04†<small>AGP210E</small></th><td data-wq-column-label="Power" role="cell">3.5 kW<small>4.69 hp</small></td><td data-wq-column-label="Speed at max. power rpm" role="cell">2,700</td><td data-wq-column-label="Running torque" role="cell">15 N·m<small>11.06 lbf·ft</small></td><td data-wq-column-label="Starting torque" role="cell">13 N·m<small>9.59 lbf·ft</small></td><td data-wq-column-label="Max. continuous rpm" role="cell">2,600</td><td data-wq-column-label="Mass" role="cell">14 kg<small>30.9 lb</small></td></tr><tr role="row"><th scope="row" data-wq-column-label="Motor / interface variant" role="rowheader">AGP06†<small>IEC mounting</small></th><td data-wq-column-label="Power" role="cell">7.3 kW<small>9.79 hp</small></td><td data-wq-column-label="Speed at max. power rpm" role="cell">2,700</td><td data-wq-column-label="Running torque" role="cell">26 N·m<small>19.18 lbf·ft</small></td><td data-wq-column-label="Starting torque" role="cell">20 N·m<small>14.75 lbf·ft</small></td><td data-wq-column-label="Max. continuous rpm" role="cell">2,600</td><td data-wq-column-label="Mass" role="cell">17 kg<small>37.5 lb</small></td></tr><tr role="row"><th scope="row" data-wq-column-label="Motor / interface variant" role="rowheader">AGP07†<small>AGP310A</small></th><td data-wq-column-label="Power" role="cell">8 kW<small>10.73 hp</small></td><td data-wq-column-label="Speed at max. power rpm" role="cell">1,600</td><td data-wq-column-label="Running torque" role="cell">50 N·m<small>36.88 lbf·ft</small></td><td data-wq-column-label="Starting torque" role="cell">55 N·m<small>40.57 lbf·ft</small></td><td data-wq-column-label="Max. continuous rpm" role="cell">1,800</td><td data-wq-column-label="Mass" role="cell">60 kg<small>132.3 lb</small></td></tr><tr role="row"><th scope="row" data-wq-column-label="Motor / interface variant" role="rowheader">AGP10<small>AGP410A</small></th><td data-wq-column-label="Power" role="cell">11 kW<small>14.75 hp</small></td><td data-wq-column-label="Speed at max. power rpm" role="cell">1,000</td><td data-wq-column-label="Running torque" role="cell">105 N·m<small>77.44 lbf·ft</small></td><td data-wq-column-label="Starting torque" role="cell">110 N·m<small>81.13 lbf·ft</small></td><td data-wq-column-label="Max. continuous rpm" role="cell">1,800</td><td data-wq-column-label="Mass" role="cell">75 kg<small>165.3 lb</small></td></tr><tr role="row"><th scope="row" data-wq-column-label="Motor / interface variant" role="rowheader">AGP16<small>AGP510A</small></th><td data-wq-column-label="Power" role="cell">16 kW<small>21.46 hp</small></td><td data-wq-column-label="Speed at max. power rpm" role="cell">1,500</td><td data-wq-column-label="Running torque" role="cell">105 N·m<small>77.44 lbf·ft</small></td><td data-wq-column-label="Starting torque" role="cell">110 N·m<small>81.13 lbf·ft</small></td><td data-wq-column-label="Max. continuous rpm" role="cell">1,800</td><td data-wq-column-label="Mass" role="cell">85 kg<small>187.4 lb</small></td></tr></tbody></table></div><p class="arm-source-note"><strong>† Confirm before selection:</strong> AGP06 is 7.3 kW on its model sheet but 6 kW in the summary. AGP07 starting torque is 55 N·m on its model sheet but 90 N·m in the summary. AGP04 and AGP06 quote maximum power at 2,700 rpm while their continuous limit is 2,600 rpm. AGP04’s listed power, torque and speed also do not reconcile through the shaft-power equation. Request a confirmed continuous-duty operating point.</p></div></section><section class="arm-section" id="literature"><div class="arm-wrap"><p class="arm-eyebrow">Product literature</p><h2>Keep the source beside the specification.</h2><div class="arm-literature"><div><h3>Geared Piston Air Motors</h3><p>43 pages of performance curves, dimensional drawings, control options, accessories and ordering codes. Brochure Issue 03.20; confirm the current configuration with your quotation.</p></div><a class="arm-button" href="/downloads/armak-geared-piston-air-motors-issue-03-20.pdf" target="_blank" rel="noopener">Download Armak brochure (PDF) ↗</a></div></div></section><section class="arm-section" id="configure"><div class="arm-wrap"><p class="arm-eyebrow">One coordinated drive</p><h2>Build the package around the work.</h2><div class="arm-split"><div><h3>From air pressure to shaft torque</h3><p>A power piston transfers torque through a synchronized gear train and a second, non-contacting rotating piston. The modular arrangement connects the motor to its output equipment, control valve and accessories.</p><p>IEC B5 mounting, keyed or internally splined outputs, and replacement interface variants give different routes into an existing mechanism. Check the actual shaft, flange and load dimensions before choosing an interface.</p></div><figure class="arm-photo"><img src="/assets/armak/modular-assembly.jpg" alt="Exploded Armak assembly showing output, motor, control and accessory modules" width="1600" height="1117" loading="lazy" decoding="async"><figcaption>Output → motor → control → accessories. Configuration illustration from the brochure.</figcaption></figure></div><div class="arm-three"><article><img src="/assets/armak/lever-control.jpg" alt="Armak lever-operated control valve" width="359" height="374" loading="lazy" decoding="async"><h3>Control at the machine</h3><p>Lever control provides variable operation at the mechanism. Confirm handle position and the required high-power direction.</p></article><article><img src="/assets/armak/remote-control.jpg" alt="Armak remotely actuated control valve" width="362" height="159" loading="lazy" decoding="async"><h3>Control from a station</h3><p>Remote proportional valves let the control station suit the operator and installation. Match the valve and air paths to the motor.</p></article><article><img src="/assets/armak/brake-assembly.jpg" alt="Armak motor assembled with a brake and control valve" width="940" height="563" loading="lazy" decoding="async"><h3>Manage the load</h3><p>Specify brakes, exhaust control and stopping behaviour together. A back-driving load needs a defined lowering and holding arrangement.</p></article></div></div></section><section class="arm-section" id="model-data"><div class="arm-wrap"><p class="arm-eyebrow">Inspect the evidence</p><h2>Performance curves and mounting drawings.</h2><p>Open a model to inspect its published torque, power and air-consumption curves. Curves are reproduced from the supplied brochure; they are not newly calculated or independently tested results.</p><details class="arm-model" id="agp01"><summary><span>AGP01 <small>AGP110E</small></span><span>1.8 kW · 6.6 N·m at 2,700 rpm</span></summary><div class="arm-model-content"><p>Minimum speed: 150 rpm. Maximum continuous speed: 3,000 rpm. Air connection: G 3/4 (BSPP). <a href="/downloads/armak-geared-piston-air-motors-issue-03-20.pdf#page=5" target="_blank" rel="noopener">Open model sheet, page 5 ↗</a></p><div class="arm-three arm-curves"><figure><a href="/assets/armak/agp01-torque.jpg" target="_blank" rel="noopener" aria-label="Open AGP01 torque curve at full size"><img src="/assets/armak/agp01-torque.jpg" alt="AGP01 torque curves reproduced from brochure page 5" width="1150" height="750" loading="lazy" decoding="async"></a><figcaption>Torque · select to enlarge</figcaption></figure><figure><a href="/assets/armak/agp01-power.jpg" target="_blank" rel="noopener" aria-label="Open AGP01 power curve at full size"><img src="/assets/armak/agp01-power.jpg" alt="AGP01 power curves reproduced from brochure page 5" width="1136" height="743" loading="lazy" decoding="async"></a><figcaption>Power · select to enlarge</figcaption></figure><figure><a href="/assets/armak/agp01-air-consumption.jpg" target="_blank" rel="noopener" aria-label="Open AGP01 air consumption curve at full size"><img src="/assets/armak/agp01-air-consumption.jpg" alt="AGP01 air consumption curves reproduced from brochure page 5" width="1154" height="730" loading="lazy" decoding="async"></a><figcaption>Air consumption · select to enlarge</figcaption></figure></div><details class="arm-drawing"><summary>Mounting and dimensions</summary><a href="/assets/armak/agp01-drawing.jpg" target="_blank" rel="noopener"><img src="/assets/armak/agp01-drawing.jpg" alt="AGP01 dimensioned mounting drawing from brochure page 6" width="1088" height="682" loading="lazy" decoding="async"></a><p><a href="/downloads/armak-geared-piston-air-motors-issue-03-20.pdf#page=6" target="_blank" rel="noopener">See all interface drawings on page 6 ↗</a>. Use the confirmed drawing for the ordered assembly.</p></details></div></details><details class="arm-model" id="agp04"><summary><span>AGP04 <small>AGP210E</small></span><span>3.5 kW · 15 N·m at 2,700 rpm</span></summary><div class="arm-model-content"><p>Minimum speed: 75 rpm. Maximum continuous speed: 2,600 rpm. Air connection: G 3/4 (BSPP). <a href="/downloads/armak-geared-piston-air-motors-issue-03-20.pdf#page=7" target="_blank" rel="noopener">Open model sheet, page 7 ↗</a></p><div class="arm-three arm-curves"><figure><a href="/assets/armak/agp04-torque.jpg" target="_blank" rel="noopener" aria-label="Open AGP04 torque curve at full size"><img src="/assets/armak/agp04-torque.jpg" alt="AGP04 torque curves reproduced from brochure page 7" width="1146" height="749" loading="lazy" decoding="async"></a><figcaption>Torque · select to enlarge</figcaption></figure><figure><a href="/assets/armak/agp04-power.jpg" target="_blank" rel="noopener" aria-label="Open AGP04 power curve at full size"><img src="/assets/armak/agp04-power.jpg" alt="AGP04 power curves reproduced from brochure page 7" width="1139" height="740" loading="lazy" decoding="async"></a><figcaption>Power · select to enlarge</figcaption></figure><figure><a href="/assets/armak/agp04-air-consumption.jpg" target="_blank" rel="noopener" aria-label="Open AGP04 air consumption curve at full size"><img src="/assets/armak/agp04-air-consumption.jpg" alt="AGP04 air consumption curves reproduced from brochure page 7" width="1155" height="758" loading="lazy" decoding="async"></a><figcaption>Air consumption · select to enlarge</figcaption></figure></div><details class="arm-drawing"><summary>Mounting and dimensions</summary><a href="/assets/armak/agp04-drawing.jpg" target="_blank" rel="noopener"><img src="/assets/armak/agp04-drawing.jpg" alt="AGP04 dimensioned mounting drawing from brochure page 8" width="725" height="509" loading="lazy" decoding="async"></a><p><a href="/downloads/armak-geared-piston-air-motors-issue-03-20.pdf#page=8" target="_blank" rel="noopener">See all interface drawings on page 8 ↗</a>. Use the confirmed drawing for the ordered assembly.</p></details></div></details><details class="arm-model" id="agp06"><summary><span>AGP06 <small></small></span><span>7.3 kW · 26 N·m at 2,700 rpm</span></summary><div class="arm-model-content"><p>Minimum speed: 75 rpm. Maximum continuous speed: 2,600 rpm. Air connection: G 3/4 (BSPP). <a href="/downloads/armak-geared-piston-air-motors-issue-03-20.pdf#page=10" target="_blank" rel="noopener">Open model sheet, page 10 ↗</a></p><div class="arm-three arm-curves"><figure><a href="/assets/armak/agp06-torque.jpg" target="_blank" rel="noopener" aria-label="Open AGP06 torque curve at full size"><img src="/assets/armak/agp06-torque.jpg" alt="AGP06 torque curves reproduced from brochure page 10" width="982" height="635" loading="lazy" decoding="async"></a><figcaption>Torque · select to enlarge</figcaption></figure><figure><a href="/assets/armak/agp06-power.jpg" target="_blank" rel="noopener" aria-label="Open AGP06 power curve at full size"><img src="/assets/armak/agp06-power.jpg" alt="AGP06 power curves reproduced from brochure page 10" width="990" height="621" loading="lazy" decoding="async"></a><figcaption>Power · select to enlarge</figcaption></figure><figure><a href="/assets/armak/agp06-air-consumption.jpg" target="_blank" rel="noopener" aria-label="Open AGP06 air consumption curve at full size"><img src="/assets/armak/agp06-air-consumption.jpg" alt="AGP06 air consumption curves reproduced from brochure page 10" width="978" height="603" loading="lazy" decoding="async"></a><figcaption>Air consumption · select to enlarge</figcaption></figure></div><details class="arm-drawing"><summary>Mounting and dimensions</summary><a href="/assets/armak/agp06-drawing.jpg" target="_blank" rel="noopener"><img src="/assets/armak/agp06-drawing.jpg" alt="AGP06 dimensioned mounting drawing from brochure page 11" width="1241" height="851" loading="lazy" decoding="async"></a><p><a href="/downloads/armak-geared-piston-air-motors-issue-03-20.pdf#page=11" target="_blank" rel="noopener">See all interface drawings on page 11 ↗</a>. Use the confirmed drawing for the ordered assembly.</p></details></div></details><details class="arm-model" id="agp07"><summary><span>AGP07 <small>AGP310A</small></span><span>8 kW · 50 N·m at 1,600 rpm</span></summary><div class="arm-model-content"><p>Minimum speed: 75 rpm. Maximum continuous speed: 1,800 rpm. Air connection: G 2 (BSPP). <a href="/downloads/armak-geared-piston-air-motors-issue-03-20.pdf#page=12" target="_blank" rel="noopener">Open model sheet, page 12 ↗</a></p><div class="arm-three arm-curves"><figure><a href="/assets/armak/agp07-torque.jpg" target="_blank" rel="noopener" aria-label="Open AGP07 torque curve at full size"><img src="/assets/armak/agp07-torque.jpg" alt="AGP07 torque curves reproduced from brochure page 12" width="1130" height="736" loading="lazy" decoding="async"></a><figcaption>Torque · select to enlarge</figcaption></figure><figure><a href="/assets/armak/agp07-power.jpg" target="_blank" rel="noopener" aria-label="Open AGP07 power curve at full size"><img src="/assets/armak/agp07-power.jpg" alt="AGP07 power curves reproduced from brochure page 12" width="1123" height="724" loading="lazy" decoding="async"></a><figcaption>Power · select to enlarge</figcaption></figure><figure><a href="/assets/armak/agp07-air-consumption.jpg" target="_blank" rel="noopener" aria-label="Open AGP07 air consumption curve at full size"><img src="/assets/armak/agp07-air-consumption.jpg" alt="AGP07 air consumption curves reproduced from brochure page 12" width="1139" height="745" loading="lazy" decoding="async"></a><figcaption>Air consumption · select to enlarge</figcaption></figure></div><details class="arm-drawing"><summary>Mounting and dimensions</summary><a href="/assets/armak/agp07-drawing.jpg" target="_blank" rel="noopener"><img src="/assets/armak/agp07-drawing.jpg" alt="AGP07 dimensioned mounting drawing from brochure page 13" width="963" height="586" loading="lazy" decoding="async"></a><p><a href="/downloads/armak-geared-piston-air-motors-issue-03-20.pdf#page=13" target="_blank" rel="noopener">See all interface drawings on page 13 ↗</a>. Use the confirmed drawing for the ordered assembly.</p></details></div></details><details class="arm-model" id="agp10"><summary><span>AGP10 <small>AGP410A</small></span><span>11 kW · 105 N·m at 1,000 rpm</span></summary><div class="arm-model-content"><p>Minimum speed: 75 rpm. Maximum continuous speed: 1,800 rpm. Air connection: G 2 (BSPP). <a href="/downloads/armak-geared-piston-air-motors-issue-03-20.pdf#page=15" target="_blank" rel="noopener">Open model sheet, page 15 ↗</a></p><div class="arm-three arm-curves"><figure><a href="/assets/armak/agp10-torque.jpg" target="_blank" rel="noopener" aria-label="Open AGP10 torque curve at full size"><img src="/assets/armak/agp10-torque.jpg" alt="AGP10 torque curves reproduced from brochure page 15" width="1154" height="762" loading="lazy" decoding="async"></a><figcaption>Torque · select to enlarge</figcaption></figure><figure><a href="/assets/armak/agp10-power.jpg" target="_blank" rel="noopener" aria-label="Open AGP10 power curve at full size"><img src="/assets/armak/agp10-power.jpg" alt="AGP10 power curves reproduced from brochure page 15" width="1188" height="776" loading="lazy" decoding="async"></a><figcaption>Power · select to enlarge</figcaption></figure><figure><a href="/assets/armak/agp10-air-consumption.jpg" target="_blank" rel="noopener" aria-label="Open AGP10 air consumption curve at full size"><img src="/assets/armak/agp10-air-consumption.jpg" alt="AGP10 air consumption curves reproduced from brochure page 15" width="1139" height="714" loading="lazy" decoding="async"></a><figcaption>Air consumption · select to enlarge</figcaption></figure></div><details class="arm-drawing"><summary>Mounting and dimensions</summary><a href="/assets/armak/agp10-drawing.jpg" target="_blank" rel="noopener"><img src="/assets/armak/agp10-drawing.jpg" alt="AGP10 dimensioned mounting drawing from brochure page 16" width="994" height="616" loading="lazy" decoding="async"></a><p><a href="/downloads/armak-geared-piston-air-motors-issue-03-20.pdf#page=16" target="_blank" rel="noopener">See all interface drawings on page 16 ↗</a>. Use the confirmed drawing for the ordered assembly.</p></details></div></details><details class="arm-model" id="agp16"><summary><span>AGP16 <small>AGP510A</small></span><span>16 kW · 105 N·m at 1,500 rpm</span></summary><div class="arm-model-content"><p>Minimum speed: 75 rpm. Maximum continuous speed: 1,800 rpm. Air connection: G 2 (BSPP). <a href="/downloads/armak-geared-piston-air-motors-issue-03-20.pdf#page=18" target="_blank" rel="noopener">Open model sheet, page 18 ↗</a></p><div class="arm-three arm-curves"><figure><a href="/assets/armak/agp16-torque.jpg" target="_blank" rel="noopener" aria-label="Open AGP16 torque curve at full size"><img src="/assets/armak/agp16-torque.jpg" alt="AGP16 torque curves reproduced from brochure page 18" width="1145" height="752" loading="lazy" decoding="async"></a><figcaption>Torque · select to enlarge</figcaption></figure><figure><a href="/assets/armak/agp16-power.jpg" target="_blank" rel="noopener" aria-label="Open AGP16 power curve at full size"><img src="/assets/armak/agp16-power.jpg" alt="AGP16 power curves reproduced from brochure page 18" width="1127" height="732" loading="lazy" decoding="async"></a><figcaption>Power · select to enlarge</figcaption></figure><figure><a href="/assets/armak/agp16-air-consumption.jpg" target="_blank" rel="noopener" aria-label="Open AGP16 air consumption curve at full size"><img src="/assets/armak/agp16-air-consumption.jpg" alt="AGP16 air consumption curves reproduced from brochure page 18" width="1130" height="743" loading="lazy" decoding="async"></a><figcaption>Air consumption · select to enlarge</figcaption></figure></div><details class="arm-drawing"><summary>Mounting and dimensions</summary><a href="/assets/armak/agp16-drawing.jpg" target="_blank" rel="noopener"><img src="/assets/armak/agp16-drawing.jpg" alt="AGP16 dimensioned mounting drawing from brochure page 19" width="959" height="645" loading="lazy" decoding="async"></a><p><a href="/downloads/armak-geared-piston-air-motors-issue-03-20.pdf#page=19" target="_blank" rel="noopener">See all interface drawings on page 19 ↗</a>. Use the confirmed drawing for the ordered assembly.</p></details></div></details></div></section><section class="arm-section" id="selection-notes"><div class="arm-wrap"><p class="arm-eyebrow">Define the complete duty</p><h2>Selection notes.</h2><details open><summary>Air supply and operating limits</summary><div><p>Maximum inlet pressure: <strong>8 bar (116 psi)</strong>. Published comparison data above use 6 bar (87 psi) at the motor. Allow for pressure loss through pipework, fittings, the filter/regulator/lubricator, valves and silencers.</p><p>Operating temperature: −10 to +80°C (14 to 176°F). Maximum inlet-air temperature: 65°C (149°F). Model sheets specify oil drip-feed lubrication of 6–10 drops/min for short runs and 3–4 drops/min for continuous operation. Confirm lubricant and service requirements in the current manual.</p></div></details><details><summary>Starting, continuous running and stopping</summary><div><p>Check starting torque separately from running torque. The brochure recommends using 60% of dynamic torque for starting-under-load calculations; agree the starting basis for the actual duty instead of assuming the tabulated starting value covers every condition.</p><p>Allow for gearbox efficiency, stall loading and inertia. Limit off-load speed. For back-driving duties, coordinate the proportional valve, check plate and brake release pressure; the brake is intended as a static holding device in the described arrangement.</p></div></details><details><summary>Direction, interfaces and hazardous areas</summary><div><p>State rotation as viewed on the shaft and identify which direction needs maximum power. Some power-valve arrangements have different performance in reverse. Specify shaft, flange, radial/axial loads, mounting orientation, control position and any gearbox or brake.</p><p>The brochure lists ATEX versions as an option. Request the certificate and operating conditions for the exact ordered assembly, gas/dust group and location; an air motor alone does not establish approval for a complete installation.</p></div></details><details><summary>Source notes and quotation basis</summary><div><p>Specifications and illustrations are from the supplied Armak brochure, marked Issue 03.20. Individual model sheets are on pages 5, 7, 10, 12, 15 and 18. Summary discrepancies are flagged beside the table. Assembly ordering labels are not a substitute for the selected model’s confirmed performance.</p><p>Supply scope, current ratings, lead time, warranty and supporting documents are confirmed with the quoted equipment. <a href="/support-and-supply/">Review supply and support arrangements →</a></p></div></details></div></section><section class="arm-section" id="quotation"><div class="arm-wrap"><p class="arm-eyebrow">Your next step</p><h2>What does your shaft need to do?</h2><div class="arm-split"><div><p>Send starting and running torque, shaft speed, duty cycle, available air pressure and flow, mounting dimensions, and control or brake requirements.</p><p>Replacing a motor? Include its nameplate, photographs and connection drawing so the interface can be checked.</p></div><div class="arm-quote-actions"><a class="arm-button" href="/contact/?source=armak-air-motors&amp;interest=Armak%20air%20motor%20selection&amp;from=%2Fproducts%2Farmak-air-motors%2F#engineering-review">Request Armak motor selection ↗</a><a href="/downloads/armak-geared-piston-air-motors-issue-03-20.pdf">Download the complete brochure</a></div></div></div></section></main><footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div></footer><script defer src="/assets/wq-nav-dropdowns.js?v=20261108-no-capability"></script><script defer src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/wq-enquiry-context.js?v=20261021"></script><script defer src="/assets/wqx-site.js?v=20261027-review2"></script><script>(()=>{function revealModel(){const id=location.hash.slice(1);const item=document.getElementById(id);if(item&&item.classList.contains('arm-model'))item.open=true;}document.querySelectorAll('a[href^="#agp"]').forEach(a=>a.addEventListener('click',()=>{const item=document.querySelector(a.getAttribute('href'));if(item)item.open=true;}));addEventListener('hashchange',revealModel);revealModel();})();</script><script defer src="/assets/site-navigation-cleanup.js?v=20261108"></script><script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq9426f675e698dc79d0fe4c2ecca071e3668f732067735a92f72e9aed6636787e" defer></script></body>
+</html>

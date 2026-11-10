@@ -1,0 +1,55 @@
+/* One headline scale in the established first-priority experience layer. */
+@layer wqs-experience {
+  html body h1 {
+    font-size:clamp(34px,calc(22px + 3.6vw),72px)!important;
+    line-height:1.08!important;
+    letter-spacing:-.035em!important;
+    max-width:100%!important;
+    margin-top:0!important;
+    margin-bottom:24px!important;
+    text-wrap:balance;
+    overflow-wrap:break-word;
+    height:auto!important;
+  }
+  html body h1 :is(span,em,strong,b) {
+    font-size:inherit!important;
+    line-height:inherit!important;
+    letter-spacing:inherit!important;
+  }
+  html body .wqr-hero {
+    display:block!important;
+    padding-top:136px!important;
+    padding-bottom:64px!important;
+    min-height:0!important;
+  }
+  html body .breadcrumb-bar + .wqr-hero {padding-top:64px!important;}
+  html body .wqr-hero > .wqr-wrap {
+    width:min(1360px,100%)!important;
+    padding-inline:clamp(24px,4.5vw,64px)!important;
+  }
+  html body .wqr-hero .wqr-eyebrow {margin-bottom:22px!important;}
+  html body .wqr-hero .wqr-actions {margin-top:28px!important;}
+  html body .wqr-hero > .wqr-waterline {position:absolute!important;}
+  html body :is(.wqx-page-header,.arm-hero,.halo-hero) {
+    padding-top:136px!important;
+    padding-bottom:64px!important;
+    min-height:0!important;
+  }
+  html body .wq-product-summary {
+    padding-top:48px!important;
+    padding-bottom:40px!important;
+  }
+  html body .wq-product-summary > .wqx-wrap {max-width:1232px!important;}
+  /* Armak and article mains already provide fixed-header clearance. */
+  html body .arm-hero {padding-top:48px!important;}
+  html body .wq-covered-hero {padding-top:48px!important;padding-bottom:48px!important;min-height:0!important;}
+  @media(max-width:600px) {
+    html body h1 {line-height:1.12!important;letter-spacing:-.025em!important;}
+    html body :is(.wqr-hero,.wqx-page-header,.arm-hero,.halo-hero) {padding-top:112px!important;padding-bottom:40px!important;}
+    html body .breadcrumb-bar + .wqr-hero {padding-top:36px!important;}
+    html body .wq-product-summary {padding-top:32px!important;padding-bottom:28px!important;}
+    html body :is(.arm-hero,.wq-covered-hero) {padding-top:32px!important;}
+    html body .wqr-hero .wqr-eyebrow {margin-bottom:18px!important;}
+  }
+  @media print {html body h1 {font-size:30pt!important;}}
+}

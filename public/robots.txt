@@ -1,3 +1,8 @@
+# Public content is crawlable by search and AI crawlers.
+# This wildcard includes Googlebot, Bingbot, OAI-SearchBot, GPTBot,
+# ChatGPT-User, ClaudeBot, Claude-SearchBot and PerplexityBot.
 User-agent: *
+Disallow: /api/
 Allow: /
+
 Sitemap: https://temporary-turbo-nickel-8xnl9g7.vercel.app/sitemap.xml

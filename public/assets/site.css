@@ -212,7 +212,7 @@ p, li, td, th { color:#FFFFFF; font-size: 1rem; }
 .bc-inner { max-width: var(--max-width); margin: 0 auto; padding: 13px 32px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .bc-inner a, .bc-current { font-size: .78rem; color:#FFFFFF; }
 .bc-inner a:hover { color:#00EEFF; }
-.bc-sep { font-size: .72rem; color:#FFFFFF; opacity: .45; }
+.bc-sep { font-size: .72rem; color:#FFFFFF; opacity:1; }
 
 .hero { min-height: 78vh; display: flex; align-items: center; position: relative; overflow: hidden; padding: 72px 0; }
 .hero-bg {

@@ -1,0 +1,11 @@
+Item,Required value / condition,Units,Source and revision,Responsible person,Acceptance criterion,Verification record,Status
+Hazard and operating state,,,,,,,Open
+Initiating fault or lost utility,,,,,,,Open
+Required safe state and time,,,,,,,Open
+Stored energy and load-holding need,,,,,,,Open
+Detection / feedback and diagnostic coverage,,,,,,,Open
+Protective function and independence,,,,,,,Open
+Manual recovery and access,,,,,,,Open
+Responsible design and validation roles,,,,,,,Open
+Test condition and measured response,,,,,,,Open
+"Acceptance, exceptions and sign-off",,,,,,,Open

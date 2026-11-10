@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html id="waterquest-site" lang="en-CA">
+<head>
+<style>@layer wq-responsive-priority;</style>
+<link rel="stylesheet" href="/assets/site-responsive-fit.css?v=20261109">
+<script defer src="/assets/site-responsive-fit.js?v=20261109"></script><style id="wqs-experience-layer">@layer wqs-experience;</style><link href="/assets/newsletter-popup.css?v=20261021" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Draw the Sequence First: Laying Out a Water Hydraulic Circuit | WaterQuest Solutions</title>
+<style>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<meta content="Define ready, move, hold and fail states before choosing a valve. Good water circuits start from the same disciplined sequence as the best oil designs." name="description">
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="Draw the Sequence First: Laying Out a Water Hydraulic Circuit, water hydraulics, WaterQuest Solutions" name="keywords">
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/designing-the-water-hydraulic-sequence/" rel="canonical">
+<meta content="WaterQuest Solutions" property="og:site_name">
+<meta content="Draw the Sequence First: Laying Out a Water Hydraulic Circuit | WaterQuest Solutions" property="og:title">
+<meta content="Define ready, move, hold and fail states before choosing a valve. Good water circuits start from the same disciplined sequence as the best oil designs." property="og:description">
+<meta content="article" property="og:type">
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/designing-the-water-hydraulic-sequence/" property="og:url">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Draw the Sequence First: Laying Out a Water Hydraulic Circuit | WaterQuest Solutions" name="twitter:title">
+<meta content="Define ready, move, hold and fail states before choosing a valve. Good water circuits start from the same disciplined sequence as the best oil designs." name="twitter:description">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/designing-the-water-hydraulic-sequence/#primary", "mainEntityOfPage": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/designing-the-water-hydraulic-sequence/", "name": "Draw the Sequence First: Laying Out a Water Hydraulic Circuit", "headline": "Draw the Sequence First: Laying Out a Water Hydraulic Circuit", "description": "Define ready, move, hold and fail states before choosing a valve. Good water circuits start from the same disciplined sequence as the best oil designs.", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/designing-the-water-hydraulic-sequence/", "inLanguage": "en-CA", "isPartOf": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"}, "publisher": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"}, "author": {"@type": "Organization", "name": "WaterQuest Solutions", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/about/"}, "about": [{"@type": "Thing", "name": "Draw the Sequence First: Laying Out a Water Hydraulic Circuit"}], "articleSection": "Specification & Design", "dateModified": "2026-10-27", "datePublished": "2026-09-02", "wordCount": 2176, "timeRequired": "PT11M", "citation": ["https://www.iso.org/standard/44781.html", "https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/", "https://www.waterhydraulics.co.uk/accessories/", "https://www.waterhydraulics.co.uk/products/valves/"], "hasPart": [{"@type": "WebPageElement", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/designing-the-water-hydraulic-sequence/#guide-application", "name": "Design the return path with the supply path"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"}, {"@type": "ListItem", "position": 3, "name": "Draw the Sequence First: Laying Out a Water Hydraulic Circuit", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/designing-the-water-hydraulic-sequence/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-brand-standards.css?v=20261106-aqua-links" rel="stylesheet"><script id="wq-speed-insights" src="/assets/wq-speed-insights.js" type="module"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style><link href="/assets/editorial/hub-editorial-20261021.css" rel="stylesheet"><link href="/assets/wqx-site.css?v=20261027-review2" rel="stylesheet"><link href="/assets/critique-refinements.css?v=20261027-preview3" rel="stylesheet"><meta content="WaterQuest Solutions" name="author"><link rel="stylesheet" href="/assets/launch-readability.css"><link rel="stylesheet" href="/assets/knowledge-covers/cover-series.css"><link rel="stylesheet" href="/assets/site-navigation-cleanup.css?v=20261108"></head>
+<body class="wq-audited wq-consistent wqx-article" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img alt="" class="wq-brand-mark" height="54" src="/assets/waterquest-logo-square.png" width="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/start-here/">New to water hydraulics?</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero wq-covered-hero">
+<div class="container"><div class="wq-covered-copy">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › </div>
+<p class="eyebrow">Specification &amp; Design</p>
+<h1 data-editorial="hero">Draw the Sequence First: Laying Out a Water Hydraulic Circuit</h1>
+<p class="lead" data-editorial="lead">Define ready, move, hold and fail states before choosing a valve. Good water circuits start from the same disciplined sequence as the best oil designs.</p>
+<div class="article-meta"><span class="pill"></span><span class="pill">Specification &amp; Design</span><span class="pill">7 min read</span></div>
+</div><figure class="wq-article-cover"><img src="/assets/knowledge-covers/testing.jpg" alt="Instrumented hydraulic test bench and recorded performance traces. Editorial concept illustration." width="1536" height="1024" decoding="async"><figcaption>WaterQuest Knowledge Hub · Concept illustration</figcaption></figure></div></section><section class="wqx-section" id="quick-answer"><div class="wqx-wrap"><p><a download="" href="/downloads/worksheets/designing-hydraulic-circuits-using-water-as-the-medium.txt">Download the worksheet for this guide (editable text)</a> · <a download="" href="/downloads/worksheets/system-worksheet.csv">Open the system requirement register (CSV)</a></p></div></section>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><p class="wq-article-byline">Written by WaterQuest Solutions · Updated <time datetime="2026-11-02">2 November 2026</time> · <a href="/about/">About the distributor</a></p><span aria-hidden="true" class="ed-legacy-anchor" id="circuit-topology-the-same-choices-apply"></span><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><span aria-hidden="true" class="ed-legacy-anchor" id="filtration-and-water-conditioning"></span><span aria-hidden="true" class="ed-legacy-anchor" id="piping-and-manifold-design"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><span aria-hidden="true" class="ed-legacy-anchor" id="reservoir"></span><span aria-hidden="true" class="ed-legacy-anchor" id="sample-circuit-water-hydraulic-gate-actuator"></span><span aria-hidden="true" class="ed-legacy-anchor" id="the-power-unit-design-requirements-for-water"></span><h2 id="learn-draw-the-required-behaviour-before-drawing-the-circuit">Start with the movement, then build the circuit</h2><section class="wq-editorial-detail"><h2 id="guide-section-2">A simple movement sequence</h2><div aria-label="State / Water path and control / What to confirm" class="wq-table-scroll" role="region" tabindex="0" data-wq-table-container="true"><table data-wq-table-columns="3" role="table"><thead><tr role="row"><th scope="col" role="columnheader">State</th><th scope="col" role="columnheader">Water path and control</th><th scope="col" role="columnheader">What to confirm</th></tr></thead><tbody><tr role="row"><td data-wq-column-label="State" role="cell">Ready</td><td data-wq-column-label="Water path and control" role="cell">Pump unloaded or stopped; load held by the selected holding arrangement.</td><td data-wq-column-label="What to confirm" role="cell">Restart demand, pressure limits and safe energy state.</td></tr><tr role="row"><td data-wq-column-label="State" role="cell">Move</td><td data-wq-column-label="Water path and control" role="cell">Directional valve sends pressure to one chamber; the other returns to tank.</td><td data-wq-column-label="What to confirm" role="cell">Flow sets speed; both chamber pressures set net force.</td></tr><tr role="row"><td data-wq-column-label="State" role="cell">Hold</td><td data-wq-column-label="Water path and control" role="cell">Load-control device maintains the specified position.</td><td data-wq-column-label="What to confirm" role="cell">Allowable drift and leakage; holding is not service isolation.</td></tr><tr role="row"><td data-wq-column-label="State" role="cell">Power loss</td><td data-wq-column-label="Water path and control" role="cell">Stored energy or a mechanical arrangement performs the specified response.</td><td data-wq-column-label="What to confirm" role="cell">Hold, open or close according to the hazard assessment.</td></tr></tbody></table></div></section><p>For a water-hydraulic gate actuator, the states might include available but stationary, opening, holding, closing and isolated for maintenance. A process interruption, a loss of electrical power and an emergency command are not necessarily the same event. </p><p>The resulting state description gives the mechanical, hydraulic and controls teams a shared starting point. </p><h2 id="learn-define-the-source-and-the-receiving-side-of-every-flow-path">Define the source and the receiving side of every flow path</h2><p>The pump requires a supported inlet condition, and the working fluid must have a defined route after it leaves the active component. A return line may lead to a reservoir, a separate drain connection or another approved destination depending on the assembly. These paths cannot be assigned simply from the appearance of the ports. </p><p>The Water Hydraulics Company's P3 information illustrates that water pumps can have configuration-specific inlet and drainage requirements. That matters because a circuit copied from an oil installation may carry assumptions that do not fit the selected water pump. Confirm the actual model and arrangement rather than borrowing a generic inlet rule or reversing a connection to suit convenient pipe routing. </p><p>Consider the limiting supply condition, not only a full reservoir or an unloaded startup. </p><figure aria-labelledby="visual-7" class="kh-diagram kh-illustration"><figcaption class="kh-diagram-title" id="visual-7">Walk through the operating states before selecting components</figcaption><ol class="kh-process-path"><li><span class="kh-process-index">1</span><div><strong>Ready</strong><span>Supply available; the mechanism remains in its required state.</span></div></li><li><span class="kh-process-index">2</span><div><strong>Move</strong><span>Commands and flow paths deliver the specified motion.</span></div></li><li><span class="kh-process-index">3</span><div><strong>Stop and hold</strong><span>The load is managed at the required position.</span></div></li><li><span class="kh-process-index">4</span><div><strong>Interrupt and recover</strong><span>Defined responses cover loss of supply and return to service.</span></div></li></ol><figcaption>A functional review sequence. The correct state after a failure is application-specific; it cannot be inferred from the working medium.</figcaption></figure><span aria-hidden="true" class="ed-legacy-anchor" id="control-valve-selection-and-specification"></span><h2 id="learn-distinguish-pressure-limitation-from-motion-control">Distinguish pressure limitation from motion control</h2><p>A pressure-limiting function addresses a specified pressure condition. Directional control determines the path through which fluid moves. </p><p>This separation avoids a common conceptual shortcut: assuming that one protective valve makes every machine state acceptable. The designer must follow the actual flow and load paths to determine which functions are required at each location.</p><p>Use clear component information when reviewing the proposed arrangement. Manufacturer information on water-service valves provides a starting point, but the selected configuration must be tied to the circuit's required behaviour. The component's water compatibility and its control function are separate questions that both need answers. </p><h2 id="learn-account-for-unequal-cylinder-volumes">Account for unequal cylinder volumes</h2><p>A single-rod double-acting cylinder has different effective areas on its two sides. At a given piston speed, the entering and leaving volume rates are therefore different. </p><p>This becomes particularly important when considering arrangements that connect actuator ports or attempt to reuse displaced fluid. </p><p>A useful design review follows one complete stroke in each direction. State which valve paths are open, what supplies each expanding volume and where each displaced volume goes. </p><h2 id="learn-integrate-stored-energy-only-where-its-function-is-defined">Integrate stored energy only where its function is defined</h2><p>A hydraulic accumulator can serve several possible functions in an appropriately designed circuit, including storing energy or addressing particular pressure and flow conditions. Water as a working medium does not establish that an accumulator is always required or never required. The water-equipment manufacturer's accessories information is a reminder that the decision belongs to the system design. </p><p>If stored energy is included, explain what it is intended to do and how its condition is managed. Maintenance isolation must address the stored energy rather than assuming that stopping the pump makes the circuit safe. </p><p>Avoid adding storage as a general cure for an unexplained transient or movement problem. </p><h2 id="learn-place-fluid-management-within-the-architecture">Place fluid management within the architecture</h2><p>Filtration, sampling, replenishment and temperature management are part of the circuit, not items added after the main components have been selected. A filter that is suitable in one location may create an unsupported condition in another. </p><p>Identify where contamination can enter and which vulnerable components need protection. Equally, a more restrictive element is not automatically an improvement if the installation cannot support its pressure loss or servicing requirements.</p><p>Provide practical access and clear identification. Operators should be able to find the approved element, understand any condition indicator and replace it using the intended isolation procedure. </p><h2 id="learn-instrument-the-boundaries-that-matter">Instrument the boundaries that matter</h2><p>Instrumentation should answer defined operating and diagnostic questions. Pump outlet pressure is useful, but it may not establish pressure at the actuator under flow. </p><p>For an actuator that occasionally stalls, the useful evidence might combine command state, actuator pressures and actual movement. </p><p>Consider instrument access before the skid and pipework are finalized. A measurement point that cannot be reached safely during the relevant operating state may provide little practical value. </p><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><h2 id="learn-review-interfaces-with-the-controls-and-process-equipment">Review interfaces with the controls and process equipment</h2><p>The hydraulic circuit responds to commands and affects the process, so its behaviour cannot be assessed independently of those interfaces. </p><p>Mechanical interfaces also need agreement. The process team should identify changes in resistance, fouling or operating conditions that the hydraulic design must accommodate. </p><p>The safety review should use the applicable machine and hydraulic requirements. ISO 4413's public scope identifies general hydraulic-system safety as a system-level subject, but it does not replace the full requirements or a project-specific assessment. The required functions and supporting evidence must be established for the actual installation. </p><span aria-hidden="true" class="ed-legacy-anchor" id="pump-inlet"></span><h2 id="learn-commission-the-sequence-not-just-the-pump">Commission the sequence, not just the pump</h2><p>Commissioning should demonstrate the agreed operating states and transitions. A quiet pump and a completed unloaded stroke are useful observations, but they do not establish the complete process function.</p><p>Record the conditions of the demonstration and any remaining limitations. If the actual process load cannot be reproduced at a factory test, distinguish what has been proven there from what remains for site acceptance. </p><p>The value of a water-hydraulic circuit is strongest when its operating behaviour is clear and its purpose is specific. </p><section id="guide-application" class="wq-guide-application"><p><strong>Have a duty in mind?</strong> <a href="/contact/#engineering-review">Request an engineering review →</a> · <a href="/project-tools/">Build a brief →</a></p></section><div class="related-block">
+<h3>Continue reading</h3>
+<div class="related-grid">
+<a class="related-card" href="/knowledge-hub/sizing-water-cylinders-for-push-and-pull/"><div class="rc-cat">Start Here · </div><h4>Where Cylinder Force Comes From — Calculating the Net Figure</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/water-and-oil-fluid-properties/"><div class="rc-cat">Performance Comparisons · </div><h4>Water vs Oil, Property by Property: Where Water Has the Edge</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/stainless-for-water-hydraulics-matching-the-grade-to-the-exposure/"><div class="rc-cat">Components &amp; Materials · </div><h4>Stainless for Water Hydraulics: Matching the Grade to the Exposure</h4><div class="rc-read">9 min read</div></a>
+</div>
+</div>
+</article>
+</div>
+<div class="container">
+</div>
+</section>
+</main>
+<script defer src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div></footer><script defer src="/assets/wq-nav-dropdowns.js?v=20261108-no-capability"></script><script defer src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/wqx-site.js?v=20261027-review2"></script><script defer src="/assets/site-navigation-cleanup.js?v=20261108"></script><script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq9426f675e698dc79d0fe4c2ecca071e3668f732067735a92f72e9aed6636787e" defer></script></body>
+</html>

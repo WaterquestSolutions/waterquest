@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html id="waterquest-site" lang="en-CA">
+<head>
+<style>@layer wq-responsive-priority;</style>
+<link rel="stylesheet" href="/assets/site-responsive-fit.css?v=20261109">
+<script defer src="/assets/site-responsive-fit.js?v=20261109"></script><style id="wqs-experience-layer">@layer wqs-experience;</style><link href="/assets/newsletter-popup.css?v=20261021" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Corrosion Control in Water Circuits: Design It Out From the Start | WaterQuest Solutions</title>
+<style>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<meta content="Good materials and layout reduce pitting, crevice and galvanic corrosion risks. Learn how each mechanism develops and what to inspect when a deposit appears." name="description">
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="Corrosion Control in Water Circuits: Design It Out From the Start, water hydraulics, WaterQuest Solutions" name="keywords">
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/corrosion-control-in-water-circuits/" rel="canonical">
+<meta content="WaterQuest Solutions" property="og:site_name">
+<meta content="Corrosion Control in Water Circuits: Design It Out From the Start | WaterQuest Solutions" property="og:title">
+<meta content="Good materials and layout reduce pitting, crevice and galvanic corrosion risks. Learn how each mechanism develops and what to inspect when a deposit appears." property="og:description">
+<meta content="article" property="og:type">
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/corrosion-control-in-water-circuits/" property="og:url">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Corrosion Control in Water Circuits: Design It Out From the Start | WaterQuest Solutions" name="twitter:title">
+<meta content="Good materials and layout reduce pitting, crevice and galvanic corrosion risks. Learn how each mechanism develops and what to inspect when a deposit appears." name="twitter:description">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/corrosion-control-in-water-circuits/#primary", "mainEntityOfPage": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/corrosion-control-in-water-circuits/", "name": "Corrosion Control in Water Circuits: Design It Out From the Start", "headline": "Corrosion Control in Water Circuits: Design It Out From the Start", "description": "Good materials and layout reduce pitting, crevice and galvanic corrosion risks. Learn how each mechanism develops and what to inspect when a deposit appears.", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/corrosion-control-in-water-circuits/", "inLanguage": "en-CA", "isPartOf": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"}, "publisher": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"}, "author": {"@type": "Organization", "name": "WaterQuest Solutions", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/about/"}, "about": [{"@type": "Thing", "name": "Corrosion Control in Water Circuits: Design It Out From the Start"}], "articleSection": "Components & Materials", "dateModified": "2026-10-27", "datePublished": "2026-09-02", "wordCount": 2188, "timeRequired": "PT11M", "citation": ["https://www.outokumpu.com/en/expertise/stainless-basics/corrosion-resistance", "https://www.outokumpu.com/en/products/corrosion-tables", "https://www.outokumpu.com/en/products/stainless-steel-types", "https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/"], "hasPart": [{"@type": "WebPageElement", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/corrosion-control-in-water-circuits/#guide-application", "name": "Trace the corrosion mechanism"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"}, {"@type": "ListItem", "position": 3, "name": "Corrosion Control in Water Circuits: Design It Out From the Start", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/corrosion-control-in-water-circuits/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-brand-standards.css?v=20261106-aqua-links" rel="stylesheet"><script id="wq-speed-insights" src="/assets/wq-speed-insights.js" type="module"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style><link href="/assets/editorial/hub-editorial-20261021.css" rel="stylesheet"><link href="/assets/wqx-site.css?v=20261027-review2" rel="stylesheet"><link href="/assets/critique-refinements.css?v=20261027-preview3" rel="stylesheet"><meta content="WaterQuest Solutions" name="author"><link rel="stylesheet" href="/assets/launch-readability.css"><link rel="stylesheet" href="/assets/knowledge-covers/cover-series.css"><link rel="stylesheet" href="/assets/site-navigation-cleanup.css?v=20261108"></head>
+<body class="wq-audited wq-consistent wqx-article" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img alt="" class="wq-brand-mark" height="54" src="/assets/waterquest-logo-square.png" width="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/start-here/">New to water hydraulics?</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero wq-covered-hero">
+<div class="container"><div class="wq-covered-copy">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › </div>
+<p class="eyebrow">Components &amp; Materials</p>
+<h1 data-editorial="hero">Corrosion Control in Water Circuits: Design It Out From the Start</h1>
+<p class="lead" data-editorial="lead">Good materials and layout reduce pitting, crevice and galvanic corrosion risks. Learn how each mechanism develops and what to inspect when a deposit appears.</p>
+<div class="article-meta"><span class="pill"></span><span class="pill">Components &amp; Materials</span><span class="pill">7 min read</span></div>
+</div><figure class="wq-article-cover"><img src="/assets/knowledge-covers/materials.jpg" alt="Stainless fittings and a polymer bearing beside a piston shaft. Editorial concept illustration." width="1536" height="1024" decoding="async"><figcaption>WaterQuest Knowledge Hub · Concept illustration</figcaption></figure></div></section><section class="wqx-section" id="quick-answer"><div class="wqx-wrap"><p><a download="" href="/downloads/worksheets/preventing-corrosion-in-water-hydraulic-systems.txt">Download the worksheet for this guide (editable text)</a> · <a download="" href="/downloads/worksheets/materials-worksheet.csv">Open the materials requirement register (CSV)</a></p></div></section>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><p class="wq-article-byline">Written by WaterQuest Solutions · Updated <time datetime="2026-11-02">2 November 2026</time> · <a href="/about/">About the distributor</a></p><span aria-hidden="true" class="ed-legacy-anchor" id="1-general-uniform-corrosion"></span><span aria-hidden="true" class="ed-legacy-anchor" id="2-pitting-corrosion"></span><span aria-hidden="true" class="ed-legacy-anchor" id="3-crevice-corrosion"></span><span aria-hidden="true" class="ed-legacy-anchor" id="4-galvanic-corrosion"></span><span aria-hidden="true" class="ed-legacy-anchor" id="5-microbiologically-influenced-corrosion-mic"></span><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><span aria-hidden="true" class="ed-legacy-anchor" id="water-quality-management-the-ongoing-defence"></span><h2 id="learn-start-with-the-corrosion-mechanism-not-the-colour-of-the-stain">Find the cause of corrosion before replacing the part</h2><p>A brown mark may come from deposited contamination, a nearby carbon-steel component or attack of the stainless surface itself. </p><aside aria-label="Related reading" class="wq-reading-path"><strong>This guide: Design prevention</strong><p><a href="/knowledge-hub/investigating-corrosion-in-a-running-water-circuit/">In-service investigation</a> · <a href="/knowledge-hub/corrosion-control-in-water-circuits/">Material compatibility</a></p></aside><p>For water hydraulics, corrosion is both a structural and a functional concern. A pressure boundary must retain its integrity, but a valve can become unreliable long before a wall is perforated. </p><p>The practical starting point is to describe what is deteriorating, where it is happening and when it becomes noticeable. Photograph the component before cleaning it. </p><h2 id="learn-define-the-water-that-will-actually-reach-the-equipment">Define the water that will actually reach the equipment</h2><p>“Runs on water” is not a complete fluid specification. A laboratory result from the supply connection also does not necessarily represent the fluid in an operating reservoir. </p><p>Separate the supply condition from the operating condition. Record the water source, the expected temperature range, how much new water enters the circuit and where samples can be collected. Chloride, pH, conductivity and particle content may all be relevant, but no single generic threshold proves that the complete assembly is suitable. A conductivity reading, for example, indicates ionic conduction; it does not identify which dissolved substances are present.</p><p>Purpose-designed water equipment provides a useful starting point because its manufacturer can define the intended medium and operating envelope. The Water Hydraulics Company's P3 information is an example of product documentation that directs users to consider water quality. It should not be read as approval for an arbitrary seawater, recycled-water or chemical-cleaning duty. Obtain confirmation for the actual fluid and configuration rather than extending a freshwater statement to a different exposure. </p><figure aria-labelledby="corrosion-map-title" class="kh-diagram kh-illustration"><figcaption class="kh-diagram-title" id="corrosion-map-title">Corrosion exposure changes along the circuit</figcaption><div class="kh-circuit-map"><div class="kh-circuit-node"><svg aria-label="Reservoir with a water sampling point" role="img" viewbox="0 0 180 100"><path d="M35 20v60h105V20" fill="none" stroke="#b5dce3" stroke-width="4"></path><path d="M38 50q15-10 30 0t30 0t39 0v27H38Z" fill="#18c7d8" opacity=".4"></path><path d="M115 30V8h35" fill="none" stroke="#18c7d8" stroke-width="4"></path><circle cx="145" cy="8" fill="#fff" r="5"></circle></svg><strong>Supply and reservoir</strong><span>Compare incoming water with the circulating fluid.</span></div><div class="kh-circuit-node"><svg aria-label="Water hydraulic pump and fluid path" role="img" viewbox="0 0 180 100"><path d="M0 50h55m70 0h55" stroke="#18c7d8" stroke-width="5"></path><circle cx="90" cy="50" fill="none" r="35" stroke="#b5dce3" stroke-width="4"></circle><path d="m76 31 29 19-29 19Z" fill="#18c7d8"></path><path d="M90 15V0" stroke="#b5dce3" stroke-width="4"></path></svg><strong>Pump and valves</strong><span>Check hidden wetted materials and small passages.</span></div><div class="kh-circuit-node"><svg aria-label="Pipe with a stagnant instrument branch" role="img" viewbox="0 0 180 100"><path d="M0 65h180M90 65V26" stroke="#18c7d8" stroke-width="7"></path><circle cx="90" cy="17" fill="#183349" r="15" stroke="#b5dce3" stroke-width="3"></circle><path d="m90 17 7-7" stroke="#fff" stroke-width="3"></path><circle cx="90" cy="43" fill="#f0b86d" r="7"></circle></svg><strong>Branches and low points</strong><span>Look for stagnant pockets and retained deposits.</span></div><div class="kh-circuit-node"><svg aria-label="Cylinder with an exposed rod and end connections" role="img" viewbox="0 0 180 100"><path d="M25 25h95v50H25Z" fill="#183349" stroke="#b5dce3" stroke-width="4"></path><path d="M80 28v44m0-22h85" stroke="#18c7d8" stroke-width="8"></path><path d="M40 25V8m65 17V8" stroke="#b5dce3" stroke-width="4"></path><circle cx="126" cy="50" fill="none" r="11" stroke="#f0b86d" stroke-width="3"></circle></svg><strong>Actuator and interfaces</strong><span>Examine external exposure and dissimilar-metal connections.</span></div></div><figcaption>Conceptual inspection map. Protection devices, return lines and controls are omitted. This is not a construction schematic or a statement that every illustrated location will corrode.</figcaption></figure>
+<h2 id="learn-understand-why-a-stainless-surface-can-still-suffer-local-attack">Understand why a stainless surface can still suffer local attack</h2><p>Stainless steel owes much of its corrosion resistance to a thin passive surface film. Its behaviour depends on the alloy and the environment, rather than the word “stainless” alone. Both deserve attention in assemblies containing joints, seals and small stagnant spaces. </p><p>This changes how inspection findings should be interpreted. A broad superficial stain and a small deep defect cannot be ranked by visible area alone. </p><p>Consider a small branch used only for an occasional pressure measurement. During normal operation, the main line receives moving water while the branch may remain stagnant. The main reservoir sample describes the bulk fluid; it cannot fully describe conditions inside that branch. </p><h2 id="learn-select-materials-using-the-complete-service-condition">Select materials using the complete service condition</h2><p>A material schedule should identify actual grades and product forms. “Marine stainless” is a commercial description, not a sufficient acceptance criterion. Neither 316 nor duplex is a universal answer. The selection needs to account for the water chemistry, temperature, joints, fabrication and maintenance conditions that the component will experience. </p><p>A useful purchasing question is what evidence supports the proposed material at the most demanding condition. Laboratory results for clean, properly prepared material do not automatically describe a fabricated assembly with deposits, welds and crevices. </p><p>For a procurement manager, this distinction prevents false equivalence between quotations. Two offers may both say “stainless wetted parts” while differing in small internal components, fabrication controls and documented limits. </p><h2 id="learn-trace-galvanic-connections-across-assembly-boundaries">Trace galvanic connections across assembly boundaries</h2><p>Galvanic corrosion requires an electrochemical relationship between connected materials in an electrolyte. A hydraulic skid cannot be assessed solely by checking that its principal housing is stainless. The relative exposed areas and actual environment influence the severity of the resulting attack; a simple list ranking metals cannot establish the service life of the assembled system.</p><p>The inspection task is to follow interfaces. Identify dissimilar wetted metals, determine whether they are electrically connected and consider which member would be exposed to preferential attack. The response may involve selecting a compatible replacement or providing a properly engineered isolation arrangement. </p><p>Isolation must also respect the component's other functions. A pressure connection has mechanical and sealing duties, and electrical bonding can have a separate safety purpose. An improvised fitting that interrupts one corrosion path while weakening a pressure boundary or defeating required bonding is not an improvement. Resolve the interface as a complete assembly and retain the approved arrangement in the maintenance documentation.</p><h2 id="learn-keep-fabrication-and-repair-from-creating-a-new-exposure">Keep fabrication and repair from creating a new exposure</h2><p>Good material selection can be undermined by contamination, poor surface condition or unsuitable repair practices. </p><p>During a repair, distinguish the cleaning needed to remove loose contamination from treatments intended to alter a metal surface. Do not introduce a cleaner, inhibitor or biocide simply because it is familiar from another water system. Its suitability must include the elastomers, polymers, bearings and downstream destinations involved in this circuit, as well as the metal being cleaned.</p><p>Assembly records need not become an administrative burden. Record the component identity, approved consumables, unusual findings and any deviation from the intended procedure. </p><h2 id="learn-plan-for-shutdowns-as-well-as-operating-hours">Plan for shutdowns as well as operating hours</h2><p>A circuit that operates for a few minutes each month can present a different exposure from one that circulates throughout a production shift. Microbiologically influenced corrosion is a possible mechanism, but visible slime or a positive microbial result alone does not prove that it caused a particular metal defect. </p><p>The preservation plan should state what happens when equipment is left idle, how it is returned to service and who authorizes the transition. Draining a reservoir does not establish that every valve cavity and low point is empty. The equipment manufacturer's instructions and the actual geometry must guide the procedure.</p><p>Maintenance intervals should respond to evidence. A universal monthly or annual interval cannot account for every water source, operating schedule and access condition. </p><span aria-hidden="true" class="ed-legacy-anchor" id="monitoring-programme-what-to-test-and-how-often"></span><h2 id="learn-use-an-inspection-map-to-turn-observations-into-action">Use an inspection map to turn observations into action</h2><p>Imagine a freshwater power unit operating a gate beside a treatment channel. Its reservoir, pump, distribution line and actuator each provide a different inspection opportunity. </p><p>Each observation should lead to a specific next step. New particulate contamination may justify identifying the particle source and checking affected components. </p><p>The commercial benefit of this approach is a more dependable decision. Water hydraulics can remove hydraulic-oil inventory from a sensitive location, but the owner still needs equipment that performs its duty. That is a stronger argument than promising that stainless steel can never corrode.</p><section id="guide-application" class="wq-guide-application"><p><strong>Have a duty in mind?</strong> <a href="/contact/#engineering-review">Request an engineering review →</a> · <a href="/project-tools/">Build a brief →</a></p></section><div class="related-block">
+<h3>Continue reading</h3>
+<div class="related-grid">
+<a class="related-card" href="/knowledge-hub/stainless-for-water-hydraulics-matching-the-grade-to-the-exposure/"><div class="rc-cat">Components &amp; Materials · </div><h4>Stainless for Water Hydraulics: Matching the Grade to the Exposure</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/carbon-filled-peek-for-water-hydraulics/"><div class="rc-cat">Components &amp; Materials · </div><h4>Carbon-Filled PEEK: Engineering Sliding Parts for Water</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/material-pairing-for-water-hydraulic-tribology/"><div class="rc-cat">Components &amp; Materials · </div><h4>Engineered Material Pairs Are What Make Water Hydraulics Work</h4><div class="rc-read">8 min read</div></a>
+</div>
+</div>
+</article>
+</div>
+<div class="container">
+</div>
+</section>
+</main>
+<script defer src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div></footer><script defer src="/assets/wq-nav-dropdowns.js?v=20261108-no-capability"></script><script defer src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/wqx-site.js?v=20261027-review2"></script><script defer src="/assets/site-navigation-cleanup.js?v=20261108"></script><script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq9426f675e698dc79d0fe4c2ecca071e3668f732067735a92f72e9aed6636787e" defer></script></body>
+</html>

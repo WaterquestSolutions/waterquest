@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html id="waterquest-site" lang="en-CA">
+<head>
+<style>@layer wq-responsive-priority;</style>
+<link rel="stylesheet" href="/assets/site-responsive-fit.css?v=20261109">
+<script defer src="/assets/site-responsive-fit.js?v=20261109"></script><style id="wqs-experience-layer">@layer wqs-experience;</style><link href="/assets/newsletter-popup.css?v=20261021" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Tap Water or Seawater? Choose Clean Freshwater Inside | WaterQuest Solutions</title>
+<style>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<meta content="A coastal site does not require seawater inside the actuator. Compare a clean freshwater circuit and external salt exposure as separate design decisions." name="description">
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="Tap Water or Seawater? Choose Clean Freshwater Inside, water hydraulics, WaterQuest Solutions" name="keywords">
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/tap-water-or-seawater-choose-clean-freshwater-inside/" rel="canonical">
+<meta content="WaterQuest Solutions" property="og:site_name">
+<meta content="Tap Water or Seawater? Choose Clean Freshwater Inside | WaterQuest Solutions" property="og:title">
+<meta content="A coastal site does not require seawater inside the actuator. Compare a clean freshwater circuit and external salt exposure as separate design decisions." property="og:description">
+<meta content="article" property="og:type">
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/tap-water-or-seawater-choose-clean-freshwater-inside/" property="og:url">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Tap Water or Seawater? Choose Clean Freshwater Inside | WaterQuest Solutions" name="twitter:title">
+<meta content="A coastal site does not require seawater inside the actuator. Compare a clean freshwater circuit and external salt exposure as separate design decisions." name="twitter:description">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/tap-water-or-seawater-choose-clean-freshwater-inside/#primary", "mainEntityOfPage": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/tap-water-or-seawater-choose-clean-freshwater-inside/", "name": "Tap Water or Seawater? Choose Clean Freshwater Inside", "headline": "Tap Water or Seawater? Choose Clean Freshwater Inside", "description": "A coastal site does not require seawater inside the actuator. Compare a clean freshwater circuit and external salt exposure as separate design decisions.", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/tap-water-or-seawater-choose-clean-freshwater-inside/", "inLanguage": "en-CA", "isPartOf": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"}, "publisher": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"}, "author": {"@type": "Organization", "name": "WaterQuest Solutions", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/about/"}, "about": [{"@type": "Thing", "name": "Tap Water or Seawater? Choose Clean Freshwater Inside"}], "articleSection": "Specification & Design", "dateModified": "2026-10-27", "datePublished": "2026-09-02", "wordCount": 2029, "timeRequired": "PT11M", "citation": ["https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/", "https://www.outokumpu.com/en/expertise/stainless-basics/corrosion-resistance", "https://www.outokumpu.com/en/products/corrosion-tables"], "hasPart": [{"@type": "WebPageElement", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/tap-water-or-seawater-choose-clean-freshwater-inside/#guide-application", "name": "Treat freshwater and seawater as different specifications"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"}, {"@type": "ListItem", "position": 3, "name": "Tap Water or Seawater? Choose Clean Freshwater Inside", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/tap-water-or-seawater-choose-clean-freshwater-inside/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-brand-standards.css?v=20261106-aqua-links" rel="stylesheet"><script id="wq-speed-insights" src="/assets/wq-speed-insights.js" type="module"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style><link href="/assets/editorial/hub-editorial-20261021.css" rel="stylesheet"><link href="/assets/wqx-site.css?v=20261027-review2" rel="stylesheet"><link href="/assets/critique-refinements.css?v=20261027-preview3" rel="stylesheet"><meta content="WaterQuest Solutions" name="author"><link rel="stylesheet" href="/assets/launch-readability.css"><link rel="stylesheet" href="/assets/knowledge-covers/cover-series.css"><link rel="stylesheet" href="/assets/site-navigation-cleanup.css?v=20261108"></head>
+<body class="wq-audited wq-consistent wqx-article" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img alt="" class="wq-brand-mark" height="54" src="/assets/waterquest-logo-square.png" width="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/start-here/">New to water hydraulics?</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero wq-covered-hero">
+<div class="container"><div class="wq-covered-copy">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › </div>
+<p class="eyebrow">Specification &amp; Design</p>
+<h1 data-editorial="hero">Tap Water or Seawater? Choose Clean Freshwater Inside</h1>
+<p class="lead" data-editorial="lead">A coastal site does not require seawater inside the actuator. Compare a clean freshwater circuit and external salt exposure as separate design decisions.</p>
+<div class="article-meta"><span class="pill"></span><span class="pill">Specification &amp; Design</span><span class="pill">6 min read</span></div>
+</div><figure class="wq-article-cover"><img src="/assets/industries-20261008/marine-concept.webp" alt="Marine equipment and coastal water actuation. Editorial concept illustration." width="1536" height="1024" decoding="async"><figcaption>WaterQuest Knowledge Hub · Concept illustration</figcaption></figure></div></section><section class="wqx-section" id="quick-answer"><div class="wqx-wrap"><p><a download="" href="/downloads/worksheets/tap-water-or-seawater-choose-clean-freshwater-inside.txt">Download the worksheet for this guide (editable text)</a> · <a download="" href="/downloads/worksheets/seawater-worksheet.csv">Open the seawater requirement register (CSV)</a></p></div></section>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><p class="wq-article-byline">Written by WaterQuest Solutions · Updated <time datetime="2026-11-02">2 November 2026</time> · <a href="/about/">About the distributor</a></p><span aria-hidden="true" class="ed-legacy-anchor" id="cost-comparison"></span><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><span aria-hidden="true" class="ed-legacy-anchor" id="environmental-and-safety-performance"></span><span aria-hidden="true" class="ed-legacy-anchor" id="fundamental-differences-between-the-two-mediums"></span><span aria-hidden="true" class="ed-legacy-anchor" id="performance-and-efficiency"></span><span aria-hidden="true" class="ed-legacy-anchor" id="reliability-comparison"></span><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><span aria-hidden="true" class="ed-legacy-anchor" id="system-architecture-differences"></span><h2 id="learn-choose-the-fluid-before-choosing-the-component-package">Choose the working water before the components</h2><aside aria-label="Related reading" class="wq-reading-path"><strong>This guide: Freshwater versus seawater</strong><p><a href="/knowledge-hub/water-hydraulics-for-deck-machinery/">Vessel functions</a> · <a href="/knowledge-hub/water-hydraulics-by-the-sea-built-for-the-coastal-environment/">Coastal exposure</a> · <a href="/knowledge-hub/installing-water-hydraulics-aboard/">Installation and voyage logistics</a></p></aside><p>A coastal location does not automatically require seawater inside an actuator circuit. The external environment may expose the equipment to salt spray while a recirculating circuit uses controlled freshwater. Conversely, an installation that pumps seawater as part of a process cannot avoid internal saline exposure merely by protecting its enclosure. </p><h2 id="learn-define-what-the-available-water-actually-contains">Define what the available water actually contains</h2><p>A useful fluid description identifies source, temperature and relevant chemistry, together with particles and treatment chemicals. Provide available analyses and explain when and where samples were taken. </p><p>Physical appearance is not an adequate compatibility test. Clear water can contain dissolved salts or treatment constituents, while cloudy water may contain particles that a suitable treatment stage can remove. Filtration does not necessarily address dissolved chemistry, and a chemistry result does not establish particle cleanliness. </p><figure aria-labelledby="visual-51" class="kh-diagram"><figcaption class="kh-diagram-title" id="visual-51">Internal fluid and external exposure are separate decisions</figcaption><div class="kh-property-map"><div><strong>Inside the circuit</strong><p>Freshwater or seawater; chemistry, temperature, particles and preservation.</p></div><div><strong>Outside the equipment</strong><p>Salt spray, immersion, weather, deposits and access for inspection.</p></div></div><figcaption>A coastal location does not automatically require seawater inside an actuator circuit. Both environments need compatible construction.</figcaption></figure><h2 id="learn-consider-the-complete-seawater-supply-arrangement">Consider the complete seawater supply arrangement</h2><p>Seawater may be abundant at a site, but available volume is only part of the supply question. An intake, screening, treatment, storage or boost arrangement may be needed to deliver the required conditions. The supply must remain suitable during operation and the credible low-supply state. </p><p>The inlet conditions at the selected pump need configuration-specific confirmation. A static gauge reading elsewhere in the supply network does not establish that condition. The Water Hydraulics Company's pump information highlights the importance of fluid and inlet configuration when selecting purpose-designed water equipment.  For a project, request current instructions for the exact model and avoid transferring details from another pump or a general web page into the final design without verification.</p><span aria-hidden="true" class="ed-legacy-anchor" id="material-requirements"></span><h2 id="learn-understand-why-chloride-exposure-changes-material-selection">Understand why chloride exposure changes material selection</h2><p>Stainless steel is a family of alloys, not a guarantee of immunity. Chloride-containing environments can create local corrosion concerns whose severity depends on temperature, geometry, deposits and other conditions. A stainless body label does not establish the suitability of internal springs, plugs, fasteners or mating parts. </p><p>This does not mean seawater service is impossible. It means the material package must be chosen for it. </p><h2 id="learn-compare-recirculating-and-once-through-operation">Compare recirculating and once-through operation</h2><p>A recirculating hydraulic circuit returns its working fluid for reuse. Its water condition can change through contamination, temperature, make-up and service activities. </p><p>For an illustrative once-through duty, a flow of 5 litres per minute (1.32 US gpm) operating for 12 minutes uses 60 litres (15.9 US gal) during that period. That arithmetic says nothing about whether the discharge is acceptable or whether the circuit should be once-through. The useful comparison includes all supporting equipment and the conditions it must maintain. It does not compare raw-fluid prices while ignoring the system around them.</p><h2 id="learn-evaluate-freshwater-as-an-engineered-alternative">Evaluate freshwater as an engineered alternative</h2><p>Controlled freshwater can simplify some internal corrosion questions in a coastal actuator installation, but it still requires a supply and management plan. </p><p>Freshwater is not automatically the same as the component manufacturer's reference fluid. Treatment residuals, hardness, pH or other constituents may require review. This approach avoids replacing one assumption with another: seawater is not inherently unsuitable for all water equipment, and tap water is not inherently suitable for every configuration. </p><h2 id="learn-include-shutdown-flushing-and-preservation">Include shutdown, flushing and preservation</h2><p>Operating conditions change when equipment stops. Water can remain in small cavities, lines and valve passages for long periods. If a seawater circuit will be flushed with another fluid, confirm that the transition and final stored condition are supported by the components. A general instruction to flush thoroughly is incomplete unless the method can reach the relevant volumes and the operator can verify the intended result.</p><p>Do not improvise additives or cleaning chemicals because they appear compatible with the main metal body. Seals, polymers and instruments may have different limits, and residues can alter subsequent operation. The supplier should identify the approved procedure and any return-to-service checks. </p><h2 id="learn-separate-corrosion-data-from-a-service-life-promise">Separate corrosion data from a service-life promise</h2><p>Material reference data can help screen candidates, but it is not a direct prediction of assembled equipment life. Outokumpu's corrosion tables explain that such data must be interpreted in the context of actual service.  Use them to inform questions and selection, then seek configuration-specific support and appropriate verification for the proposed installation.</p><p>The same principle applies to an isolated successful example. A component that has worked in one seawater duty may have had different temperature, maintenance or material options. This gives procurement a way to handle uncertainty without demanding an unsupported universal lifetime guarantee or accepting one at face value.</p><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><h2 id="learn-make-fluid-management-practical-for-the-operator">Make fluid management practical for the operator</h2><p>A selected fluid envelope must be maintainable. Identify which conditions can be monitored on site and which require periodic sampling or supplier review. </p><p>Keep approved fluids, treatments and procedures with the asset documentation. Label fill and drain connections clearly, especially where freshwater and seawater systems coexist. Train staff to recognize that an available water connection is not automatically an approved make-up source. </p><h2 id="learn-choose-the-complete-arrangement-with-the-best-fit">Choose the complete arrangement with the best fit</h2><p>The final comparison should bring together fluid availability, material package, inlet supply, treatment, recirculation, discharge and maintenance. Compare installed and recurring costs on the same duty. The preferred answer may be a freshwater actuator circuit in a saline external environment, or a specifically supported seawater configuration where the process requires it. </p><p>WaterQuest can help turn these inputs into a defined equipment enquiry and a supported circuit boundary. </p><section id="guide-application" class="wq-guide-application"><p><strong>Have a duty in mind?</strong> <a href="/contact/#engineering-review">Request an engineering review →</a> · <a href="/project-tools/">Build a brief →</a></p></section><div class="related-block">
+<h3>Continue reading</h3>
+<div class="related-grid">
+<a class="related-card" href="/knowledge-hub/motion-quality-in-water-actuators/"><div class="rc-cat">Specification &amp; Design · </div><h4>Smooth, Stiff and Precise: Motion Quality in Water Actuators</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/material-pairing-for-water-hydraulic-tribology/"><div class="rc-cat">Components &amp; Materials · </div><h4>Stainless Plus PEEK: Why the Pair Works</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/working-within-160-bar-get-the-force-from-area/"><div class="rc-cat">Specification &amp; Design · </div><h4>Working Within 160 Bar: Get the Force From Area</h4><div class="rc-read">9 min read</div></a>
+</div>
+</div>
+</article>
+</div>
+<div class="container">
+</div>
+</section>
+</main>
+<script defer src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div></footer><script defer src="/assets/wq-nav-dropdowns.js?v=20261108-no-capability"></script><script defer src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/wqx-site.js?v=20261027-review2"></script><script defer src="/assets/site-navigation-cleanup.js?v=20261108"></script><script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq9426f675e698dc79d0fe4c2ecca071e3668f732067735a92f72e9aed6636787e" defer></script></body>
+</html>

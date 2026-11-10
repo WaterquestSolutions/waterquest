@@ -1,0 +1,100 @@
+[
+  {
+    "model": "P1",
+    "file": "pumps/WQS-pump-p1.pdf",
+    "title": "P1 Pump Data Sheet",
+    "type": "pdf",
+    "pages": 3,
+    "page": "/products/axial-piston-pumps/p1/",
+    "category": "pumps",
+    "models": [
+      "P1"
+    ],
+    "revision": "2026-10-27",
+    "sha256": "1053686c7fcf49521640d3bdc68db5da43aaee09ac19a62207aa039de514d3aa"
+  },
+  {
+    "model": "P3",
+    "file": "pumps/WQS-pump-p3.pdf",
+    "title": "P3 Pump Data Sheet",
+    "type": "pdf",
+    "pages": 3,
+    "page": "/products/axial-piston-pumps/p3/",
+    "category": "pumps",
+    "models": [
+      "P3"
+    ],
+    "revision": "2026-10-27",
+    "sha256": "6d935c20fdc1ffa23fdd406474daf24ea972a236e8753dffde12e820146a67e9"
+  },
+  {
+    "model": "P6",
+    "file": "pumps/WQS-pump-p6.pdf",
+    "title": "P6 Pump Data Sheet",
+    "type": "pdf",
+    "pages": 3,
+    "page": "/products/axial-piston-pumps/p6/",
+    "category": "pumps",
+    "models": [
+      "P6"
+    ],
+    "revision": "2026-10-27",
+    "sha256": "c7743889a8cf98481693f7d69be0a9891915cc7da68436bd83b07d0899694500"
+  },
+  {
+    "model": "P15",
+    "file": "pumps/WQS-pump-p15.pdf",
+    "title": "P15 Pump Data Sheet",
+    "type": "pdf",
+    "pages": 3,
+    "page": "/products/axial-piston-pumps/p15/",
+    "category": "pumps",
+    "models": [
+      "P15"
+    ],
+    "revision": "2026-10-27",
+    "sha256": "bd4ad3ab36c8adcc2ea5e8d9e770a1fe36adba24d4dd72af7b455bc88d7971f9"
+  },
+  {
+    "model": "P30",
+    "file": "pumps/WQS-pump-p30.pdf",
+    "title": "P30 Pump Data Sheet",
+    "type": "pdf",
+    "pages": 3,
+    "page": "/products/axial-piston-pumps/p30/",
+    "category": "pumps",
+    "models": [
+      "P30"
+    ],
+    "revision": "2026-10-27",
+    "sha256": "3fab68cfa107de46745680fb0eb660f3c1283ceeb07268e7212ad844af1ba968"
+  },
+  {
+    "model": "P60",
+    "file": "pumps/WQS-pump-p60.pdf",
+    "title": "P60 Pump Data Sheet",
+    "type": "pdf",
+    "pages": 3,
+    "page": "/products/axial-piston-pumps/p60/",
+    "category": "pumps",
+    "models": [
+      "P60"
+    ],
+    "revision": "2026-10-27",
+    "sha256": "959fcd899ca2ff43bbb7e7578e6c9ed1b9a6ed3122bf2f9a4b83e1f6642ae625"
+  },
+  {
+    "model": "P180",
+    "file": "pumps/WQS-pump-p180.pdf",
+    "title": "P180 Pump Data Sheet",
+    "type": "pdf",
+    "pages": 3,
+    "page": "/products/axial-piston-pumps/p180/",
+    "category": "pumps",
+    "models": [
+      "P180"
+    ],
+    "revision": "2026-10-27",
+    "sha256": "c4a370ef4cc93bb80f2d23ab77abaae42e3d60dea4e2e6e4394ec29696604431"
+  }
+]

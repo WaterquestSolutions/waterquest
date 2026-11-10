@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-21",
+  "base_commit": "6192fc2e4c51ff1bb198b0f7370f1942bcd215fc",
+  "article_validation": {
+    "articles": 129,
+    "cards": 133,
+    "errors": []
+  },
+  "layout_checks": {
+    "viewports": [
+      1440,
+      390
+    ],
+    "pages_per_viewport": 11,
+    "horizontal_overflow": 0,
+    "broken_images": 0
+  },
+  "site_validation": {
+    "html_pages": 288,
+    "guides": 129,
+    "local_references": 18199,
+    "gated_documents": 120
+  },
+  "test_results": {
+    "test_suites": 10,
+    "failures": 0,
+    "calculator_checks": 853,
+    "engineering_review_checks": 224
+  },
+  "editorial_scope": {
+    "headlines_and_summaries": 129,
+    "permanent_redirects": 39,
+    "technical_detail_sections": 55,
+    "preserved_articles": 129,
+    "note": "Report suggestions were adapted where they implied universal performance or unverified approval. Overlapping articles were differentiated, not deleted. Readability scores and a new independent audit of every unchanged claim were not claimed."
+  },
+  "live_verification": "pending"
+}

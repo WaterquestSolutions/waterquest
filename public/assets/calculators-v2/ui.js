@@ -1,9 +1,11 @@
+import {matchCylinders} from './cylinder-matches.js';
+import {renderEquipment} from './equipment.js?v=20261109-sales';
 import {definitions,defaults,validate} from './definitions.js';
 import {calculate,convert,unconvert,unitLabel,conversions} from './engine.js';
 import {displayMeasurements,displayHint} from './display.js';
 import {createReport,reportHTML,createPDF} from './report.js?v=20261015-print-brand';
 const root=document.getElementById('calculator-app');
-const format=n=>typeof n==='number'?new Intl.NumberFormat('en-CA',{maximumSignificantDigits:5}).format(Object.is(n,-0)?0:n):n;
+const format=n=>typeof n==='number'?new Intl.NumberFormat('en-CA',{maximumSignificantDigits:3}).format(Object.is(n,-0)?0:n):n;
 const $=id=>document.getElementById(id);
 if(root){
  const id=root.dataset.calculator,definition=definitions[id];
@@ -40,15 +42,18 @@ if(root){
    for(const row of rows){const tr=document.createElement('tr'),th=document.createElement('th'),td=document.createElement('td');th.scope='row';th.textContent=row.label;td.textContent=row.value;tr.append(th,td);body.append(tr);}
    table.querySelector('tbody').replaceWith(body);
   });
-  $('unit-note').textContent=!physical?'Use one currency and a consistent price-year basis for all cash flows.':us?'US customary units. Values have been converted; this is the same physical scenario.':'SI units. Pressure is shown in bar; 10 bar = 1 MPa.';
+  $('unit-note').textContent=!physical?'Use one currency and a consistent price-year basis for all cash flows.':us?'US customary units. Values have been converted; this is the same physical scenario.':(fields.some(f=>f.unit==='bar')?'SI units. Pressure is shown in bar; 10 bar = 1 MPa.':'SI units. See each field for its units.');
  }
  function render(){
+  const equipment=$('equipment-options');if(equipment)equipment.hidden=true;
+  document.getElementById('matching-cylinders')?.remove();
+  document.getElementById('send-calculation')?.remove();
   const errors=Object.fromEntries(Object.entries(validate(id,values)).map(([key,msg])=>[key,displayMeasurements(msg,us).replace(' (SI basis)','')]));
   for(const f of fields){const msg=errors[f.id]||'';$(f.id).setAttribute('aria-invalid',String(Boolean(msg)));$(f.id+'-error').textContent=msg;}
   $('input-errors').replaceChildren();
   if(Object.keys(errors).length){
    $('input-errors').hidden=false;const p=document.createElement('p');p.textContent='Check the highlighted inputs. Results are cleared until the values are valid.';$('input-errors').append(p);
-   const ul=document.createElement('ul');for(const [key,msg] of Object.entries(errors)){const li=document.createElement('li'),a=document.createElement('a');a.href='#'+key;a.textContent=fields.find(f=>f.id===key).label+': '+msg;li.append(a);ul.append(li);}$('input-errors').append(ul);
+   const ul=document.createElement('ul');for(const [key,msg] of Object.entries(errors)){const li=document.createElement('li'),a=document.createElement('button');a.type='button';a.className='wq-field-error-control';a.addEventListener('click',()=>$(key)?.focus());a.textContent=fields.find(f=>f.id===key).label+': '+msg;li.append(a);ul.append(li);}$('input-errors').append(ul);
    $('result-grid').replaceChildren();$('result-status').textContent='Waiting for valid inputs';$('calc-notes').replaceChildren();$('calc-warnings').replaceChildren();return;
   }
   $('input-errors').hidden=true;
@@ -58,6 +63,16 @@ if(root){
   for(const r of result.rows){const cell=document.createElement('div');cell.className='wqc-result';const title=document.createElement('dt');title.textContent=r.label;const value=document.createElement('dd');value.className='wqc-value';
    const numeric=typeof r.value==='number';value.textContent=format(numeric?convert(r.value,r.unit,us):r.value);if(numeric&&r.unit){const unit=document.createElement('span');unit.textContent=' '+label(r.unit);value.append(unit);}cell.append(title,value);
    $('result-grid').append(cell);
+  }
+  const send=document.createElement('a');send.id='send-calculation';send.className='wqc-button';send.textContent='Request equipment for this result';send.href='/contact/?draft=1&source=calculator&interest='+encodeURIComponent('Equipment quotation — '+definition.title)+'#engineering-review';
+  send.addEventListener('click',event=>{try{const r=createReport(id,values,{us,currency,example});sessionStorage.setItem('wq-review-draft',JSON.stringify({message:[definition.title,example?'Illustrative example inputs':'Project inputs',...r.inputs.map(x=>x.label+': '+x.value),'Results',...r.results.map(x=>x.label+': '+x.value),'Equipment to review: '+[...document.querySelectorAll('#equipment-options .wqc-equipment-grid a')].map(a=>a.textContent).join('; '),'Please quote a suitable WaterQuest system and components for this duty, confirming configuration, performance and installation requirements.'].join('\n')}));}catch{$('result-status').textContent='Copy or save your results to include with the quotation enquiry.';}});
+  if(equipment){equipment.hidden=false;renderEquipment(id,values,result,{us,format,convert,label});equipment.append(send);}else $('result-grid').after(send);
+  if(id==='cylinder-force'){
+   const box=document.createElement('section');box.id='matching-cylinders';box.className='wq-match-list';
+   const title=document.createElement('h3');title.textContent='Cylinder candidates for the extension load';box.append(title);
+   const note=document.createElement('p');note.textContent='Candidates are the closest catalogue sizes that meet the factored extension load; your entered rod size may not be a catalogue option. Force screening uses your pressure, backpressure and efficiency. Retraction forces are shown separately. Stroke, buckling, side loads, mounts and load holding still require engineering selection.';box.append(note);
+   const matches=matchCylinders(values);
+   if(matches.length){const list=document.createElement('ul');for(const c of matches){const li=document.createElement('li'),a=document.createElement('a');a.href=c.url;a.textContent=c.bore+' × '+c.rod+' mm — extension '+format(convert(c.extension,'kN',us))+' '+label('kN')+'; retraction '+format(convert(c.retraction,'kN',us))+' '+label('kN');li.append(a);list.append(li);}box.append(list);}else{const p=document.createElement('p');p.textContent=values.pressure>160?'The entered pressure exceeds the listed 160 bar range. No product match is offered.':values.load<=0?'Enter a positive required load to screen the range.':'No listed cylinder meets this factored extension load at the entered conditions.';box.append(p);}send.after(box);
   }
   for(const [target,list] of [['calc-notes',result.notes],['calc-warnings',result.warnings]]){$(target).replaceChildren();for(const text of list){const p=document.createElement('p');p.textContent=displayMeasurements(text,us);$(target).append(p);}}
  }

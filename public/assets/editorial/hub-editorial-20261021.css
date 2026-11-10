@@ -1,0 +1,15 @@
+.wq-editorial-detail{margin:2rem 0;padding:clamp(1rem,3vw,1.75rem);border:1px solid rgba(0,200,212,.4);border-radius:12px;background:rgba(0,200,212,.035)}
+.article-body .wq-editorial-detail h2{font-size:clamp(1.35rem,2.4vw,1.8rem);margin:0 0 1rem;line-height:1.25}
+.article-body .wq-editorial-detail p:last-child{margin-bottom:0}
+.wq-table-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+.article-body .wq-table-scroll table{min-width:580px;margin:1rem 0;border-collapse:collapse}
+.article-body .wq-table-scroll th{font-size:.92rem;letter-spacing:.02em;text-transform:none}
+.article-body .wq-table-scroll td{font-size:.98rem;line-height:1.5;vertical-align:top;font-weight:500}
+.wq-table-scroll:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-reading-path{padding:1rem 1.25rem;margin:1.5rem 0;border-left:3px solid #00c8d4;background:rgba(0,200,212,.06)}
+.article-body .wq-reading-path p{font-size:.98rem;margin:.5rem 0 0}
+.wq-short-answer{border-left:3px solid #00c8d4;padding-left:1rem}
+html#waterquest-site body.wq-audited .article-body .wq-editorial-detail .wq-table-scroll table{min-width:780px}
+html#waterquest-site body.wq-audited .article-body .wq-editorial-detail .wq-table-scroll td{overflow-wrap:normal;word-break:normal;min-width:150px}
+html#waterquest-site body.wq-audited .article-body .wq-editorial-detail .wq-table-scroll td:first-child{min-width:190px}
+@media(max-width:600px){.article-body .wq-editorial-detail{margin-left:-.5rem;margin-right:-.5rem}.article-body .wq-table-scroll td,.article-body .wq-table-scroll th{padding:12px}}

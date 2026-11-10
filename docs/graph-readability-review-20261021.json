@@ -1,0 +1,2236 @@
+{
+  "status": "review_only_not_published",
+  "base_production_commit": "377f9a2cdf1e2941932431eefea4728bafc85118",
+  "review_url": "http://127.0.0.1:8766/review/",
+  "pages": 31,
+  "graph_panels": 120,
+  "interactive": {
+    "charts": 40,
+    "series": 195,
+    "values_unchanged": 1560
+  },
+  "geometry_checks": {
+    "svg_series_preserved": 170,
+    "svg_points_preserved": 731,
+    "original_raster_assets_unchanged": 163,
+    "new_power_centre_marker_views": 24
+  },
+  "browser_checks": [
+    {
+      "page": "p1-pump/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 0,
+      "svg_charts": 4,
+      "failures": []
+    },
+    {
+      "page": "products/duplex-seawater-pumps/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 0,
+      "svg_charts": 14,
+      "failures": []
+    },
+    {
+      "page": "products/power-centre-reverse-osmosis/pc250/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 6,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/power-centre-reverse-osmosis/pc300/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 6,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/power-centre-reverse-osmosis/pc1000/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 6,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/power-centre-reverse-osmosis/pc500/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 6,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/4-2-3-2-directional-control-valves/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/po-check-valve-dn6/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/relief-valves/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/po-check-valve-dn12/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/electronic-pressure-control-valve/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 2,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/2-2-pilot-valves/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/electronic-flow-control-valves/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/hose-burst-valve/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/zone-valves/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/flow-control-valve/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 3,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/4-3-directional-control-valves/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/pressure-compensating-flow-control-valve/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/pressure-reducing-valves/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-motors/m180-axial-piston-water-hydraulic-motor/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 4,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-motors/m3-water-hydraulic-motor/index.html",
+      "width": 1440,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-motors/m60-axial-piston-water-hydraulic-motor/index.html",
+      "width": 1440,
+      "canvases": 0,
+      "source_graphs": 4,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-motors/m15-water-hydraulic-motor/index.html",
+      "width": 1440,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-motors/m30-water-hydraulic-motor/index.html",
+      "width": 1440,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-motors/m6-water-hydraulic-motor/index.html",
+      "width": 1440,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/axial-piston-pumps/p3/index.html",
+      "width": 1440,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/axial-piston-pumps/p60/index.html",
+      "width": 1440,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/axial-piston-pumps/p6/index.html",
+      "width": 1440,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/axial-piston-pumps/p15/index.html",
+      "width": 1440,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/axial-piston-pumps/p30/index.html",
+      "width": 1440,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/axial-piston-pumps/p180/index.html",
+      "width": 1440,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "p1-pump/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 0,
+      "svg_charts": 4,
+      "failures": []
+    },
+    {
+      "page": "products/duplex-seawater-pumps/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 0,
+      "svg_charts": 14,
+      "failures": []
+    },
+    {
+      "page": "products/power-centre-reverse-osmosis/pc250/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 6,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/power-centre-reverse-osmosis/pc300/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 6,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/power-centre-reverse-osmosis/pc1000/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 6,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/power-centre-reverse-osmosis/pc500/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 6,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/4-2-3-2-directional-control-valves/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/po-check-valve-dn6/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/relief-valves/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/po-check-valve-dn12/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/electronic-pressure-control-valve/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 2,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/2-2-pilot-valves/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/electronic-flow-control-valves/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/hose-burst-valve/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/zone-valves/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/flow-control-valve/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 3,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/4-3-directional-control-valves/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/pressure-compensating-flow-control-valve/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-valves/pressure-reducing-valves/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 1,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-motors/m180-axial-piston-water-hydraulic-motor/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 4,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-motors/m3-water-hydraulic-motor/index.html",
+      "width": 390,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-motors/m60-axial-piston-water-hydraulic-motor/index.html",
+      "width": 390,
+      "canvases": 0,
+      "source_graphs": 4,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-motors/m15-water-hydraulic-motor/index.html",
+      "width": 390,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-motors/m30-water-hydraulic-motor/index.html",
+      "width": 390,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/water-hydraulic-motors/m6-water-hydraulic-motor/index.html",
+      "width": 390,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/axial-piston-pumps/p3/index.html",
+      "width": 390,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/axial-piston-pumps/p60/index.html",
+      "width": 390,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/axial-piston-pumps/p6/index.html",
+      "width": 390,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/axial-piston-pumps/p15/index.html",
+      "width": 390,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/axial-piston-pumps/p30/index.html",
+      "width": 390,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    },
+    {
+      "page": "products/axial-piston-pumps/p180/index.html",
+      "width": 390,
+      "canvases": 4,
+      "source_graphs": 0,
+      "svg_charts": 0,
+      "failures": []
+    }
+  ],
+  "coverage": [
+    {
+      "page": "p1-pump/index.html",
+      "graphs": [
+        {
+          "kind": "p1-svg",
+          "plots": 1,
+          "series": 6,
+          "keys": [
+            {
+              "label": "1.2cc (0.0732 in\u00b3) 1750rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 8
+            },
+            {
+              "label": "1.2cc (0.0732 in\u00b3) 1500rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 8
+            },
+            {
+              "label": "1.2cc (0.0732 in\u00b3) 1000rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 5
+            },
+            {
+              "label": "0.8cc (0.0488 in\u00b3) 1750rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 8
+            },
+            {
+              "label": "0.8cc (0.0488 in\u00b3) 1500rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 8
+            },
+            {
+              "label": "0.8cc (0.0488 in\u00b3) 1000rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "3 4",
+              "points": 5
+            }
+          ]
+        },
+        {
+          "kind": "p1-svg",
+          "plots": 1,
+          "series": 2,
+          "keys": [
+            {
+              "label": "1.2cc (0.0732 in\u00b3) 1500rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 8
+            },
+            {
+              "label": "0.8cc (0.0488 in\u00b3) 1500rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 8
+            }
+          ]
+        },
+        {
+          "kind": "p1-svg",
+          "plots": 1,
+          "series": 6,
+          "keys": [
+            {
+              "label": "1.2cc (0.0732 in\u00b3) 1750rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 8
+            },
+            {
+              "label": "1.2cc (0.0732 in\u00b3) 1500rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 8
+            },
+            {
+              "label": "1.2cc (0.0732 in\u00b3) 1000rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 8
+            },
+            {
+              "label": "0.8cc (0.0488 in\u00b3) 1750rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 8
+            },
+            {
+              "label": "0.8cc (0.0488 in\u00b3) 1500rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 8
+            },
+            {
+              "label": "0.8cc (0.0488 in\u00b3) 1000rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "3 4",
+              "points": 8
+            }
+          ]
+        },
+        {
+          "kind": "p1-svg",
+          "plots": 1,
+          "series": 2,
+          "keys": [
+            {
+              "label": "1.2cc (0.0732 in\u00b3) 1500rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 5
+            },
+            {
+              "label": "1.2cc (0.0732 in\u00b3) 1000rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "products/duplex-seawater-pumps/index.html",
+      "graphs": [
+        {
+          "kind": "seawater-svg",
+          "plots": 2,
+          "series": 12,
+          "keys": [
+            {
+              "label": "6 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "6 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "6 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "4.6 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "4.6 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "4.6 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "6 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "6 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "6 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "4.6 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "4.6 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "4.6 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "kind": "seawater-svg",
+          "plots": 2,
+          "series": 5,
+          "keys": [
+            {
+              "label": "6 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "4.6 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "6 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "6 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "6 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "kind": "seawater-svg",
+          "plots": 2,
+          "series": 18,
+          "keys": [
+            {
+              "label": "19 cm\u00b3/rev \u00b7 2,200 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "19 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "19 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "15 cm\u00b3/rev \u00b7 2,200 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "15 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "15 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "12 cm\u00b3/rev \u00b7 2,200 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "12 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "12 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "19 cm\u00b3/rev \u00b7 2,200 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "19 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "19 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "15 cm\u00b3/rev \u00b7 2,200 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "15 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "15 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "12 cm\u00b3/rev \u00b7 2,200 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "12 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "12 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "kind": "seawater-svg",
+          "plots": 2,
+          "series": 6,
+          "keys": [
+            {
+              "label": "19 cm\u00b3/rev \u00b7 2,200 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "15 cm\u00b3/rev \u00b7 2,200 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "12 cm\u00b3/rev \u00b7 2,200 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "19 cm\u00b3/rev \u00b7 2,200 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "19 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "19 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "kind": "seawater-svg",
+          "plots": 2,
+          "series": 18,
+          "keys": [
+            {
+              "label": "35 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "35 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "35 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "30 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "30 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "30 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "23 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "23 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "23 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "35 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "35 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "35 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "30 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "30 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "30 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "23 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "23 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "23 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "kind": "seawater-svg",
+          "plots": 2,
+          "series": 6,
+          "keys": [
+            {
+              "label": "35 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "30 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "23 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "35 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "35 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "35 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "kind": "seawater-svg",
+          "plots": 2,
+          "series": 24,
+          "keys": [
+            {
+              "label": "80 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "80 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "80 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "70 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "70 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "70 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "63 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "63 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "63 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "51 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "diamond",
+              "colour": "#ff8b98",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "51 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "diamond",
+              "colour": "#ff8b98",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "51 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "diamond",
+              "colour": "#ff8b98",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "80 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "80 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "80 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "70 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "70 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "70 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "63 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "63 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "63 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "51 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "diamond",
+              "colour": "#ff8b98",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "51 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "diamond",
+              "colour": "#ff8b98",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "51 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "diamond",
+              "colour": "#ff8b98",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "kind": "seawater-svg",
+          "plots": 2,
+          "series": 7,
+          "keys": [
+            {
+              "label": "80 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "70 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "63 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "51 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "diamond",
+              "colour": "#ff8b98",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "80 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "80 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "80 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "kind": "seawater-svg",
+          "plots": 2,
+          "series": 18,
+          "keys": [
+            {
+              "label": "225 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "225 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "225 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "180 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "180 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "180 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "135 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "135 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "135 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "225 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "225 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "225 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "180 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "180 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "180 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "135 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "135 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "135 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "kind": "seawater-svg",
+          "plots": 2,
+          "series": 6,
+          "keys": [
+            {
+              "label": "225 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "180 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "135 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "225 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "225 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "225 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "kind": "seawater-svg",
+          "plots": 2,
+          "series": 6,
+          "keys": [
+            {
+              "label": "286 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "286 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "286 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "286 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "286 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "286 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "kind": "seawater-svg",
+          "plots": 2,
+          "series": 4,
+          "keys": [
+            {
+              "label": "286 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "286 cm\u00b3/rev \u00b7 2,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "286 cm\u00b3/rev \u00b7 1,500 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "286 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "kind": "seawater-svg",
+          "plots": 2,
+          "series": 18,
+          "keys": [
+            {
+              "label": "625 cm\u00b3/rev \u00b7 1,250 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "625 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "625 cm\u00b3/rev \u00b7 750 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "445 cm\u00b3/rev \u00b7 1,250 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "445 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "445 cm\u00b3/rev \u00b7 750 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "390 cm\u00b3/rev \u00b7 1,250 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "390 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "390 cm\u00b3/rev \u00b7 750 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "625 cm\u00b3/rev \u00b7 1,250 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "625 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "625 cm\u00b3/rev \u00b7 750 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "445 cm\u00b3/rev \u00b7 1,250 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "445 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "445 cm\u00b3/rev \u00b7 750 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "3 4",
+              "points": 4
+            },
+            {
+              "label": "390 cm\u00b3/rev \u00b7 1,250 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "390 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "390 cm\u00b3/rev \u00b7 750 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "kind": "seawater-svg",
+          "plots": 2,
+          "series": 6,
+          "keys": [
+            {
+              "label": "625 cm\u00b3/rev \u00b7 1,250 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "445 cm\u00b3/rev \u00b7 1,250 rpm",
+              "shape": "triangle",
+              "colour": "#ffc66d",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "390 cm\u00b3/rev \u00b7 1,250 rpm",
+              "shape": "circle",
+              "colour": "#c6a6ff",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "625 cm\u00b3/rev \u00b7 1,250 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "",
+              "points": 4
+            },
+            {
+              "label": "625 cm\u00b3/rev \u00b7 1,000 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "12 5",
+              "points": 4
+            },
+            {
+              "label": "625 cm\u00b3/rev \u00b7 750 rpm",
+              "shape": "square",
+              "colour": "#39d9e6",
+              "dash": "3 4",
+              "points": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "products/power-centre-reverse-osmosis/pc250/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 6,
+          "assets": [
+            "/assets/power-centres/pc250/flow-hour.png",
+            "/assets/power-centres/pc250/flow-day.png",
+            "/assets/power-centres/pc250/production-hour.png",
+            "/assets/power-centres/pc250/production-day.png",
+            "/assets/power-centres/pc250/specific-energy.png",
+            "/assets/power-centres/pc250/input-power.png"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/power-centre-reverse-osmosis/pc300/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 6,
+          "assets": [
+            "/assets/power-centres/pc300/flow-hour.png",
+            "/assets/power-centres/pc300/flow-day.png",
+            "/assets/power-centres/pc300/production-hour.png",
+            "/assets/power-centres/pc300/production-day.png",
+            "/assets/power-centres/pc300/specific-energy.png",
+            "/assets/power-centres/pc300/input-power.png"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/power-centre-reverse-osmosis/pc1000/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 6,
+          "assets": [
+            "/assets/power-centres/pc1000/flow-hour.png",
+            "/assets/power-centres/pc1000/flow-day.png",
+            "/assets/power-centres/pc1000/production-hour.png",
+            "/assets/power-centres/pc1000/production-day.png",
+            "/assets/power-centres/pc1000/specific-energy.png",
+            "/assets/power-centres/pc1000/input-power.png"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/power-centre-reverse-osmosis/pc500/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 6,
+          "assets": [
+            "/assets/power-centres/pc500/flow-hour.png",
+            "/assets/power-centres/pc500/flow-day.png",
+            "/assets/power-centres/pc500/production-hour.png",
+            "/assets/power-centres/pc500/production-day.png",
+            "/assets/power-centres/pc500/specific-energy.png",
+            "/assets/power-centres/pc500/input-power.png"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-valves/4-2-3-2-directional-control-valves/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 1,
+          "assets": [
+            "/assets/valves/4-2-3-2-directional-control-valves/performance.webp"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-valves/po-check-valve-dn6/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 1,
+          "assets": [
+            "/assets/valves/po-check-valve-dn6/performance.webp"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-valves/relief-valves/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 1,
+          "assets": [
+            "/assets/valves/relief-valves/performance.webp"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-valves/po-check-valve-dn12/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 1,
+          "assets": [
+            "/assets/valves/po-check-valve-dn12/performance.webp"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-valves/electronic-pressure-control-valve/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 2,
+          "assets": [
+            "/assets/valves/electronic-pressure-control-valve/cyclic-pressure.webp",
+            "/assets/valves/electronic-pressure-control-valve/pressure-ramp.webp"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-valves/2-2-pilot-valves/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 1,
+          "assets": [
+            "/assets/valves/2-2-pilot-valves/performance.webp"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-valves/electronic-flow-control-valves/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 1,
+          "assets": [
+            "/assets/valves/electronic-flow-control-valves/performance.webp"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-valves/hose-burst-valve/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 1,
+          "assets": [
+            "/assets/valves/hose-burst-valve/performance.webp"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-valves/zone-valves/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 1,
+          "assets": [
+            "/assets/valves/zone-valves/performance.webp"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-valves/flow-control-valve/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 3,
+          "assets": [
+            "/assets/valves/flow-control-valve/free-flow.webp",
+            "/assets/valves/flow-control-valve/dn3-adjustment.webp",
+            "/assets/valves/flow-control-valve/dn6-adjustment.webp"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-valves/4-3-directional-control-valves/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 1,
+          "assets": [
+            "/assets/valves/4-3-directional-control-valves/performance.webp"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-valves/pressure-compensating-flow-control-valve/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 1,
+          "assets": [
+            "/assets/valves/pressure-compensating-flow-control-valve/performance.webp"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-valves/pressure-reducing-valves/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 1,
+          "assets": [
+            "/assets/valves/pressure-reducing-valves/performance.webp"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-motors/m180-axial-piston-water-hydraulic-motor/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 4,
+          "assets": [
+            "/assets/motors/m180-output-power.jpeg",
+            "/assets/motors/m180-input-flow.jpeg",
+            "/assets/motors/m180-output-torque.jpeg",
+            "/assets/motors/m180-overall-efficiency.jpeg"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-motors/m3-water-hydraulic-motor/index.html",
+      "graphs": [
+        {
+          "kind": "interactive",
+          "plots": 4,
+          "series": 13,
+          "data": "Existing dataset arrays retained verbatim"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-motors/m60-axial-piston-water-hydraulic-motor/index.html",
+      "graphs": [
+        {
+          "kind": "source-image",
+          "plots": 4,
+          "assets": [
+            "/assets/motors/m60-output-power.jpeg",
+            "/assets/motors/m60-input-flow.jpeg",
+            "/assets/motors/m60-output-torque.jpeg",
+            "/assets/motors/m60-overall-efficiency.jpeg"
+          ],
+          "data": "Original source axes and curves retained"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-motors/m15-water-hydraulic-motor/index.html",
+      "graphs": [
+        {
+          "kind": "interactive",
+          "plots": 4,
+          "series": 24,
+          "data": "Existing dataset arrays retained verbatim"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-motors/m30-water-hydraulic-motor/index.html",
+      "graphs": [
+        {
+          "kind": "interactive",
+          "plots": 4,
+          "series": 24,
+          "data": "Existing dataset arrays retained verbatim"
+        }
+      ]
+    },
+    {
+      "page": "products/water-hydraulic-motors/m6-water-hydraulic-motor/index.html",
+      "graphs": [
+        {
+          "kind": "interactive",
+          "plots": 4,
+          "series": 13,
+          "data": "Existing dataset arrays retained verbatim"
+        }
+      ]
+    },
+    {
+      "page": "products/axial-piston-pumps/p3/index.html",
+      "graphs": [
+        {
+          "kind": "interactive",
+          "plots": 4,
+          "series": 9,
+          "data": "Existing dataset arrays retained verbatim"
+        }
+      ]
+    },
+    {
+      "page": "products/axial-piston-pumps/p60/index.html",
+      "graphs": [
+        {
+          "kind": "interactive",
+          "plots": 4,
+          "series": 24,
+          "data": "Existing dataset arrays retained verbatim"
+        }
+      ]
+    },
+    {
+      "page": "products/axial-piston-pumps/p6/index.html",
+      "graphs": [
+        {
+          "kind": "interactive",
+          "plots": 4,
+          "series": 16,
+          "data": "Existing dataset arrays retained verbatim"
+        }
+      ]
+    },
+    {
+      "page": "products/axial-piston-pumps/p15/index.html",
+      "graphs": [
+        {
+          "kind": "interactive",
+          "plots": 4,
+          "series": 24,
+          "data": "Existing dataset arrays retained verbatim"
+        }
+      ]
+    },
+    {
+      "page": "products/axial-piston-pumps/p30/index.html",
+      "graphs": [
+        {
+          "kind": "interactive",
+          "plots": 4,
+          "series": 24,
+          "data": "Existing dataset arrays retained verbatim"
+        }
+      ]
+    },
+    {
+      "page": "products/axial-piston-pumps/p180/index.html",
+      "graphs": [
+        {
+          "kind": "interactive",
+          "plots": 4,
+          "series": 24,
+          "data": "Existing dataset arrays retained verbatim"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Downloadable source PDFs are unchanged.",
+    "Existing engineering data and claims are retained; this is a graph presentation review, not an independent performance certification.",
+    "Original image-based motor and valve curves are retained with larger views and explanatory keys; Power Centre images have additional series-identification markers."
+  ],
+  "legend_contrast_checked": true
+}

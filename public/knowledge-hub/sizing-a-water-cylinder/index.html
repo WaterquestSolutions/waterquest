@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html id="waterquest-site" lang="en-CA">
+<head>
+<style>@layer wq-responsive-priority;</style>
+<link rel="stylesheet" href="/assets/site-responsive-fit.css?v=20261109">
+<script defer src="/assets/site-responsive-fit.js?v=20261109"></script><style id="wqs-experience-layer">@layer wqs-experience;</style><link href="/assets/newsletter-popup.css?v=20261021" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Sizing a Water Cylinder: Start at the Load Pin | WaterQuest Solutions</title>
+<style>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<meta content="A worked 80 mm example shows how load, linkage geometry and both piston areas set the pressure and flow, using the same arithmetic as any oil design." name="description">
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="Sizing a Water Cylinder: Start at the Load Pin, water hydraulics, WaterQuest Solutions" name="keywords">
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-a-water-cylinder/" rel="canonical">
+<meta content="WaterQuest Solutions" property="og:site_name">
+<meta content="Sizing a Water Cylinder: Start at the Load Pin | WaterQuest Solutions" property="og:title">
+<meta content="A worked 80 mm example shows how load, linkage geometry and both piston areas set the pressure and flow, using the same arithmetic as any oil design." property="og:description">
+<meta content="article" property="og:type">
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-a-water-cylinder/" property="og:url">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Sizing a Water Cylinder: Start at the Load Pin | WaterQuest Solutions" name="twitter:title">
+<meta content="A worked 80 mm example shows how load, linkage geometry and both piston areas set the pressure and flow, using the same arithmetic as any oil design." name="twitter:description">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-a-water-cylinder/#primary", "mainEntityOfPage": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-a-water-cylinder/", "name": "Sizing a Water Cylinder: Start at the Load Pin", "headline": "Sizing a Water Cylinder: Start at the Load Pin", "description": "A worked 80 mm example shows how load, linkage geometry and both piston areas set the pressure and flow, using the same arithmetic as any oil design.", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-a-water-cylinder/", "inLanguage": "en-CA", "isPartOf": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"}, "publisher": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"}, "author": {"@type": "Organization", "name": "WaterQuest Solutions", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/about/"}, "about": [{"@type": "Thing", "name": "Sizing a Water Cylinder: Start at the Load Pin"}], "articleSection": "Specification & Design", "dateModified": "2026-10-27", "datePublished": "2026-09-02", "wordCount": 2107, "timeRequired": "PT11M", "citation": ["https://openstax.org/books/university-physics-volume-1/pages/14-3-pascals-principle-and-hydraulics", "https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/", "https://www.iso.org/standard/44781.html"], "hasPart": [{"@type": "WebPageElement", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-a-water-cylinder/#guide-application", "name": "Connect pressure, flow and useful work"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"}, {"@type": "ListItem", "position": 3, "name": "Sizing a Water Cylinder: Start at the Load Pin", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-a-water-cylinder/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-brand-standards.css?v=20261106-aqua-links" rel="stylesheet"><script id="wq-speed-insights" src="/assets/wq-speed-insights.js" type="module"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style><link href="/assets/editorial/hub-editorial-20261021.css" rel="stylesheet"><link href="/assets/wqx-site.css?v=20261027-review2" rel="stylesheet"><link href="/assets/critique-refinements.css?v=20261027-preview3" rel="stylesheet"><meta content="WaterQuest Solutions" name="author"><link rel="stylesheet" href="/assets/launch-readability.css"><link rel="stylesheet" href="/assets/knowledge-covers/cover-series.css"><link rel="stylesheet" href="/assets/site-navigation-cleanup.css?v=20261108"></head>
+<body class="wq-audited wq-consistent wqx-article" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img alt="" class="wq-brand-mark" height="54" src="/assets/waterquest-logo-square.png" width="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/start-here/">New to water hydraulics?</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero wq-covered-hero"><div class="container"><div class="wq-covered-copy">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › </div>
+<p class="eyebrow">Specification &amp; Design</p>
+<h1 data-editorial="hero">Sizing a Water Cylinder: Start at the Load Pin</h1>
+<p class="lead" data-editorial="lead">A worked 80 mm example shows how load, linkage geometry and both piston areas set the pressure and flow, using the same arithmetic as any oil design.</p>
+<div class="article-meta"><span class="pill"></span><span class="pill">Specification &amp; Design</span><span class="pill">7 min read</span></div>
+</div><figure class="wq-article-cover"><img src="/assets/knowledge-covers/cylinder.jpg" alt="Cylinder and load lever with measurement tools and a piston section. Editorial concept illustration." width="1536" height="1024" decoding="async"><figcaption>WaterQuest Knowledge Hub · Concept illustration</figcaption></figure></div></section><section class="wqx-section" id="quick-answer"><div class="wqx-wrap"><p><a download="" href="/downloads/worksheets/engineering-principles-of-water-hydraulic-actuation.txt">Download the worksheet for this guide (editable text)</a> · <a download="" href="/downloads/worksheets/system-worksheet.csv">Open the system requirement register (CSV)</a></p></div></section>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><p class="wq-article-byline">Written by WaterQuest Solutions · Updated <time datetime="2026-11-02">2 November 2026</time> · <a href="/about/">About the distributor</a></p><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="efficiency-in-water-hydraulic-actuators"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-actuation-system-design"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><span aria-hidden="true" class="ed-legacy-anchor" id="pressure-ratings-in-water-hydraulic-systems"></span><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><span aria-hidden="true" class="ed-legacy-anchor" id="thermal-management"></span><h2 id="learn-start-with-the-motion-the-process-needs">Turn the customer’s movement into engineering inputs</h2><aside aria-label="Related reading" class="wq-reading-path"><strong>This guide: Load and linkage sizing</strong><p><a href="/knowledge-hub/motion-quality-in-water-actuators/">Motion quality</a></p></aside><p>Water hydraulics then provide one way of delivering that motion. Pressure acts on the piston; flow fills the expanding chamber; the control circuit manages the return side and any overrunning load.</p><span aria-hidden="true" class="ed-legacy-anchor" id="cylinder-speed-flow-rate-and-velocity"></span><span aria-hidden="true" class="ed-legacy-anchor" id="pascal-s-law-and-force-generation"></span><h2 id="learn-a-worked-force-and-flow-example">A worked force and flow example</h2><p>Take an illustrative cylinder with an 80 mm (3.15 in) bore and a 40 mm (1.57 in) rod. Its full piston area is 0.00503 m² (0.0541 ft²) and its annular area is 0.00377 m² (0.0406 ft²). With 100 bar (1,450 psi) at the cap end and 5 bar (72.5 psi) at the rod end, ideal extension force is approximately 48.4 kN (10,881 lbf): cap-end pressure times full area, minus rod-end pressure times annular area. Friction has not yet been deducted. </p><p>To extend 500 mm (19.7 in) in ten seconds, piston speed is 0.05 m/s (0.164 ft/s). The ideal cap-end supply flow is about 15.1 L/min (3.99 US gpm). </p><figure aria-labelledby="cylinder-areas-title" class="kh-diagram kh-illustration"><figcaption class="kh-diagram-title" id="cylinder-areas-title">One piston, two effective areas</figcaption><div class="kh-compare-fluid"><div><svg aria-label="Full circular piston area with an 80 millimetre diameter" role="img" viewbox="0 0 180 130"><circle cx="90" cy="60" fill="#18c7d8" opacity=".35" r="44" stroke="#b5dce3" stroke-width="3"></circle><path d="M46 116h88m-88-5v10m88-10v10" stroke="#b5dce3" stroke-width="2"></path></svg><strong>Cap-end area</strong><p>80 mm (3.15 in) bore<br>0.00503 m² (0.0541 ft²)</p></div><div><svg aria-label="Annular piston area excluding a 40 millimetre rod" role="img" viewbox="0 0 180 130"><circle cx="90" cy="60" fill="#18c7d8" opacity=".35" r="44" stroke="#b5dce3" stroke-width="3"></circle><circle cx="90" cy="60" fill="#183349" r="22" stroke="#f0b86d" stroke-width="3"></circle><path d="M68 116h44m-44-5v10m44-10v10" stroke="#f0b86d" stroke-width="2"></path></svg><strong>Rod-end area</strong><p>40 mm (1.57 in) rod excluded<br>0.00377 m² (0.0406 ft²)</p></div></div><div class="kh-shared-boundary"><strong>Ideal extension force ≈ 48.4 kN (10,881 lbf)</strong><span>(100 bar (1,450 psi) × cap area) − (5 bar (72.5 psi) × annular area)</span></div><figcaption>Illustrative dimensions and pressures. Areas use consistent SI units in the calculation; friction and design allowances are excluded. Cross-sections illustrate area only, not component construction.</figcaption></figure>
+<h2 id="learn-turn-ideal-performance-into-controllable-performance">Turn ideal performance into controllable performance</h2><p>Allow for seal friction, valve pressure loss, hose expansion, trapped air and internal leakage. The rod, mounting pins and supporting structure also need mechanical checks; hydraulic capacity does not establish buckling resistance or allowable side load.</p><p>For a descending load, metering inlet flow alone may not control speed. The load can drive the actuator. Appropriate load-control architecture must manage that condition, including stopping and loss of supply.</p><span aria-hidden="true" class="ed-legacy-anchor" id="load-holding-and-counterbalance"></span><h2 id="learn-convert-a-mechanism-load-into-actuator-force">Convert a mechanism load into actuator force</h2><p>The load at a cylinder pin is not necessarily equal to the weight or process force being moved. A linkage changes the relationship through its geometry. </p><p>An illustrative lever requires a turning moment of 4,000 newton metres. If the perpendicular moment arm is 0.20 metres (0.656 ft), the ideal cylinder force is 20,000 newtons. If the geometry reduces that arm to 0.05 metres (0.164 ft) near the closed position, the ideal demand becomes 80,000 newtons for the same moment. Neither number includes friction or a design allowance. </p><p>Evaluate the full motion envelope and the direction of the applied load. Give the hydraulic designer a load-versus-position relationship where available, and identify uncertain portions rather than hiding them inside an unexplained safety factor. </p><h2 id="learn-check-both-directions-and-the-fluid-displaced-on-return">Check both directions and the fluid displaced on return</h2><p>A single-rod cylinder has unequal chamber areas. At equal piston speed, the volume entering one chamber differs from the volume leaving the other. </p><p>Use the illustrative 80 millimetre bore and 40 millimetre rod from the earlier example. The annular area is three quarters of the full piston area. </p><p>The volume balance also matters for servicing and fault investigation. The appropriate fluid-management arrangement follows the actuator geometry and circuit architecture, not a rule that every installation needs the same reservoir size.</p><h2 id="learn-distinguish-breakaway-running-and-stopping-requirements">Distinguish breakaway, running and stopping requirements</h2><p>A stationary mechanism can require a different force to start than it needs while moving. Seal friction, process contact and mechanical constraints can contribute to this difference. A specification containing only a maximum static load leaves these parts of the motion undefined. </p><p>Stopping deserves equal attention. Fluid has inertia, lines can be elastic and the load may continue moving after a command changes. Pressure-limiting equipment must be assessed within that architecture rather than treated as proof that every stopping event is benign.</p><p>An acceptance demonstration should therefore record time histories where the duty warrants them. A slow display that reports an average value cannot establish the size of a short transient.</p><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><h2 id="learn-match-feedback-to-the-control-question">Match feedback to the control question</h2><p>A control system can only act on the information available to it. A limit switch may confirm that the actuator reached an endpoint, but it does not describe position throughout travel. A position sensor can provide a continuous measurement, while a pressure sensor describes a hydraulic condition that must be interpreted in context. Pump pressure alone is not a direct measurement of actuator force when line losses and opposite-chamber pressure are significant.</p><p>Start by specifying the outcome: acceptable position error, movement time, settling behaviour or confirmation of a completed sequence. A proportional valve can be useful in a suitable system, but the label does not guarantee a particular accuracy. </p><p>Consider what the operator should see when the commanded movement does not occur. </p><span aria-hidden="true" class="ed-legacy-anchor" id="cylinder-construction-for-water-service"></span><h2 id="learn-treat-the-cylinder-as-part-of-a-mechanical-assembly">Treat the cylinder as part of a mechanical assembly</h2><p>A cylinder's ability to generate axial force does not make it suitable for arbitrary side loading. Where the actuator pushes a compressive load, the rod and its effective unsupported length need a buckling assessment appropriate to the actual end conditions.</p><p>Installation tolerances belong in the design handover. Do not rely on a flexible hose to compensate for a mechanical mismatch at a rigid cylinder mounting.</p><p>Access should be considered before the structure is finalized. Operators need a practical way to inspect connections, replace supported service parts and secure the mechanism before maintenance. </p><h2 id="learn-decide-which-uncertainties-need-a-calculation-and-which-need-a-test">Decide which uncertainties need a calculation and which need a test</h2><p>Not every unknown is resolved in the same way. Piston area follows geometry and can be calculated directly. The load imposed by an existing mechanism may need measurement because available drawings do not describe its current condition. </p><p>For a retrofit, create a short evidence register linking each requirement to a calculation, a supplier limit, a site measurement or an acceptance demonstration. A successful warm test does not necessarily establish cold-start behaviour, and a no-load stroke does not prove loaded movement. Where a full demonstration cannot be performed before installation, agree how the remaining uncertainty will be managed and who accepts that boundary.</p><p>The purpose is not to demand a test for every familiar engineering relationship. It is to focus effort where uncertainty could change the design or operating outcome. </p><h2 id="learn-test-the-operating-sequence">Test the operating sequence</h2><p>A useful acceptance demonstration includes starting against the load, movement at minimum and maximum demand, stopping between endpoints, holding, and recovery after an interruption. </p><p>The figures above are teaching calculations, not a component selection or certified design. Their value is that they connect a process requirement to measurable hydraulic quantities. </p><section id="guide-application" class="wq-guide-application"><p><strong>Have a duty in mind?</strong> <a href="/contact/#engineering-review">Request an engineering review →</a> · <a href="/project-tools/">Build a brief →</a></p></section><div class="related-block">
+<h3>Continue reading</h3>
+<div class="related-grid">
+<a class="related-card" href="/knowledge-hub/water-hydraulics-101/"><div class="rc-cat">Start Here · </div><h4>Water Hydraulics 101: Full Hydraulic Force, Without the Oil</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/oil-or-water-engineering-comparison/"><div class="rc-cat">Performance Comparisons · </div><h4>Oil vs Water Hydraulics: Same Force, Different Operating Advantages</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/pressure-flow-and-power-equations/"><div class="rc-cat">Start Here · </div><h4>Pressure, Flow, Power: The Three Equations Behind Every Water Circuit</h4><div class="rc-read">9 min read</div></a>
+</div>
+</div>
+</article>
+</div>
+<div class="container">
+</div>
+</section>
+</main>
+<script defer src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div></footer><script defer src="/assets/wq-nav-dropdowns.js?v=20261108-no-capability"></script><script defer src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/wqx-site.js?v=20261027-review2"></script><script defer src="/assets/site-navigation-cleanup.js?v=20261108"></script><script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq9426f675e698dc79d0fe4c2ecca071e3668f732067735a92f72e9aed6636787e" defer></script></body>
+</html>

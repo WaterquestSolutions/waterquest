@@ -50,4 +50,4 @@ html#waterquest-site body.wq-section-applications .btn-ww{background:#00616B;col
 /* Confirmed delivery states retain the site typography. */
 html#waterquest-site body .wq-form-status {flex-basis:100%;white-space:normal;overflow-wrap:anywhere;margin-top:16px;text-align:left;}
 html#waterquest-site body .wq-newsletter-consent input[type=checkbox] {width:18px!important;min-width:18px!important;}
-html#waterquest-site body button:disabled {cursor:wait;opacity:.7;}
+html#waterquest-site body button:disabled {cursor:wait;opacity:1;}

@@ -1,0 +1,38 @@
+WaterQuest Solutions — Acceptance and handover register
+Working template; complete and approve for the specific project.
+
+1. Asset tag / configuration / drawing revision
+Response / evidence / owner: ____________________
+
+2. Test description and operating conditions
+Response / evidence / owner: ____________________
+
+3. Expected result, tolerance and acceptance owner
+Response / evidence / owner: ____________________
+
+4. Normal state and power/pressure/control-loss response
+Response / evidence / owner: ____________________
+
+5. Isolation, stored energy and recovery procedure
+Response / evidence / owner: ____________________
+
+6. Measurement instrument and calibration record
+Response / evidence / owner: ____________________
+
+7. Observed result and deviation closure
+Response / evidence / owner: ____________________
+
+8. As-built drawings, BOM, material/approval records
+Response / evidence / owner: ____________________
+
+9. Operating and maintenance instructions
+Response / evidence / owner: ____________________
+
+10. Spares, service contacts and agreed response arrangements
+Response / evidence / owner: ____________________
+
+11. Controls/software backups, licences and access handover
+Response / evidence / owner: ____________________
+
+12. Training, punch list, acceptance and warranty commencement
+Response / evidence / owner: ____________________

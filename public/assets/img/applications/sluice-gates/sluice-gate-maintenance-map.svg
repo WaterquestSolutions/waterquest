@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
-  <title id="title">WaterGate maintenance and inspection drawing</title>
+  <title id="title">WaterQuest sluice-gate maintenance and inspection drawing</title>
   <desc id="desc">Engineering maintenance drawing identifying filters, differential pressure, gauges, isolation valves, cylinder seals, rod condition, tube supports, drain points, water sampling, and functional test items.</desc>
   <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0C1A36"/><stop offset="1" stop-color="#050A18"/></linearGradient><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0l10 5-10 5z" fill="#20B8C8"/></marker></defs>
   <rect width="1200" height="780" rx="18" fill="url(#bg)"/>
@@ -7,7 +7,7 @@
     <path d="M40 100h1120M40 160h1120M40 220h1120M40 280h1120M40 340h1120M40 400h1120M40 460h1120M40 520h1120M40 580h1120M40 640h1120"/>
     <path d="M100 50v640M160 50v640M220 50v640M280 50v640M340 50v640M400 50v640M460 50v640M520 50v640M580 50v640M640 50v640M700 50v640M760 50v640M820 50v640M880 50v640M940 50v640M1000 50v640M1060 50v640M1120 50v640"/>
   </g>
-  <text x="42" y="52" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="24" font-weight="800">WaterGate Maintenance and Inspection Map</text>
+  <text x="42" y="52" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="24" font-weight="800">WaterQuest sluice-gate Maintenance and Inspection Map</text>
   <text x="42" y="80" fill="#FFFFFF" font-family="Avenir, Avenir Next, Nunito Sans, sans-serif" font-size="14">Oil-free hydraulic maintenance focuses on water quality, filtration, seals, surface condition, controls, and full-stroke verification.</text>
 
   <g transform="translate(78 128)" stroke="#20B8C8" stroke-width="3" fill="none">

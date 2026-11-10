@@ -1,0 +1,7 @@
+/* Action controls retain the familiar keyboard and error-recovery affordances. */
+.wq-skip-control { font:inherit; cursor:pointer; border:0; }
+.wq-field-error-control { padding:0; border:0; background:transparent; color:inherit; font:inherit; text-align:left; text-decoration:underline; cursor:pointer; }
+.wq-field-error-control:focus-visible { outline:2px solid #00EEFF; outline-offset:4px; }
+a[aria-current="page"]:not([href]) { cursor:default; }
+/* Breadcrumbs already reserve header space; do not reserve it a second time. */
+html#waterquest-site body.wq-consistent .breadcrumb-bar + #industry-main { padding-top:0 !important; }

@@ -1,7 +1,7 @@
 [
   {
     "slug": "10-questions-engineers-ask-about-water-hydraulics",
-    "title": "Questions Engineers Ask About Water Hydraulics",
+    "title": "Ten Questions Engineers Ask About Water Hydraulics \u2014 Answered",
     "file": "knowledge-hub/10-questions-engineers-ask-about-water-hydraulics/index.html",
     "before": "7326b405f0e30719fff53f679de46dc158ffcd42dd8af123a78826ab1c2c9488",
     "number": 1,
@@ -16,12 +16,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "92461b348936b55911fa9e63db4b2824e5d5e68517443a0e2954c361bc3a19f5",
-    "added_words": 200
+    "added_words": 200,
+    "current_sha256": "38826b7122174f503f0143223ed9722a577538428b878491970ea0d4b5d22398"
   },
   {
-    "slug": "160-bar-performance-debunking-the-limitations-of-water-hydraulics",
-    "title": "Designing Water Hydraulic Equipment Within 160 Bar",
-    "file": "knowledge-hub/160-bar-performance-debunking-the-limitations-of-water-hydraulics/index.html",
+    "slug": "working-within-160-bar-get-the-force-from-area",
+    "title": "Working Within 160 Bar: Get the Force From Area",
+    "file": "knowledge-hub/working-within-160-bar-get-the-force-from-area/index.html",
     "before": "5ea2c60d461e6ede589b5c398f1ab0a37baafd30fd08a50d99cf004bd1590183",
     "number": 2,
     "family": "cylinder",
@@ -35,12 +36,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "900926152bb2c5922545822644bcb39b04fae254d5cfe3cd3a3f7189e9c7f721",
-    "added_words": 190
+    "added_words": 190,
+    "current_sha256": "38f168934011997fd2fe850cc343baa70dd38436d9e682fb12d37a3ad0757ee0"
   },
   {
-    "slug": "air-systems-vs-water-hydraulic-systems-which-delivers-better-results",
-    "title": "Air or Water Hydraulics: Choosing for the Duty",
-    "file": "knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results/index.html",
+    "slug": "air-or-water-force-comparison",
+    "title": "Air or Water? Comparing Force at 6 and 80 Bar",
+    "file": "knowledge-hub/air-or-water-force-comparison/index.html",
     "before": "d6ba4f2feefc047643ec83ef231784e4f0bf16cda5259206bbcb66d251f08e61",
     "number": 3,
     "family": "system",
@@ -54,12 +56,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "06099c091f1c7792b719f68be2242a2be8b14a450abbd141c38823ebf44d66c9",
-    "added_words": 188
+    "added_words": 188,
+    "current_sha256": "bacdf9832ed7028aaabb99e5cca3a351d1384983382b36ef8f1c4dcae7069726"
   },
   {
-    "slug": "aligning-with-esg-how-water-hydraulics-support-sustainability-targets",
-    "title": "Aligning With ESG: How Water Hydraulics Support Sustainability Targets",
-    "file": "knowledge-hub/aligning-with-esg-how-water-hydraulics-support-sustainability-targets/index.html",
+    "slug": "water-hydraulics-esg-evidence",
+    "title": "Water Hydraulics and ESG: Report Litres of Oil Removed",
+    "file": "knowledge-hub/water-hydraulics-esg-evidence/index.html",
     "before": "d9ddd98274d5bf266ea44ef922026f6085c81ee439f2355ad59b6f9e7cc1a6c1",
     "number": 4,
     "family": "environment",
@@ -72,12 +75,13 @@
       "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/"
     ],
     "after": "1237b1b9a18269b07b695bf68456eef4c67bbc41951baca169247e89a4737692",
-    "added_words": 193
+    "added_words": 193,
+    "current_sha256": "1e40e77cacae1e53f3a11d9c81437c3a5f71742c8861202b173ef0cf31bfd080"
   },
   {
-    "slug": "are-your-components-certified-for-marine-or-food-use",
-    "title": "Are Your Components Certified for Marine or Food Use?",
-    "file": "knowledge-hub/are-your-components-certified-for-marine-or-food-use/index.html",
+    "slug": "component-and-system-approval-evidence",
+    "title": "Marine and Food Approvals: What Evidence to Ask For",
+    "file": "knowledge-hub/component-and-system-approval-evidence/index.html",
     "before": "4e169e514fb45bd735357a7c577e2022a90e61ef15858c24a6a37f497fd423cb",
     "number": 5,
     "family": "specification",
@@ -91,16 +95,17 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "156b95cb0c8f86e769bc6c72d8de329fc0a7e247b4ea1cab484bffd64b65d4bf",
-    "added_words": 200
+    "added_words": 200,
+    "current_sha256": "2106bb1fa59de9181845a35064c011bc850da3abe91cd7e250d4a9c5edda65c5"
   },
   {
-    "slug": "avoiding-oil-contaminated-waterways-legal-and-financial-risks",
-    "title": "Avoiding Oil-Contaminated Waterways: Legal and Financial Risks",
-    "file": "knowledge-hub/avoiding-oil-contaminated-waterways-legal-and-financial-risks/index.html",
+    "slug": "environmental-penalties-and-oil-release-risk",
+    "title": "Oil Near Water: Reporting Duties and Financial Exposure",
+    "file": "knowledge-hub/environmental-penalties-and-oil-release-risk/index.html",
     "before": "8d7f724b36fe72f09f10a1abda600379b382b1eb63c8f32c13fd670fc3e21f1d",
     "number": 6,
     "family": "environment",
-    "heading": "Prioritise the actual release pathway",
+    "heading": "Prioritize the actual release pathway",
     "products": [
       "/products/water-hydraulics-hpu/"
     ],
@@ -109,12 +114,13 @@
       "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/"
     ],
     "after": "c73bbe48e06809155418b32d78757997abcb997a09ae8affbd9ac10945d2aca2",
-    "added_words": 193
+    "added_words": 193,
+    "current_sha256": "a3af14b416402e0a88eb384b0b0cd6d5bde9c68287fa41217bbfb9580b5a7531"
   },
   {
-    "slug": "beyond-oil-engineering-principles-of-water-hydraulic-actuation",
-    "title": "Beyond Oil: Engineering Principles of Water Hydraulic Actuation",
-    "file": "knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation/index.html",
+    "slug": "motion-quality-in-water-actuators",
+    "title": "Smooth, Stiff and Precise: Motion Quality in Water Actuators",
+    "file": "knowledge-hub/motion-quality-in-water-actuators/index.html",
     "before": "4c240bd022672d0b289b68067141104b5289ef68a85e3e5569a4f590dabf5647",
     "number": 7,
     "family": "system",
@@ -128,12 +134,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "bc67db3f4207006366999f522d1b63c4931cd8dfb8052991c308d235f2e2126a",
-    "added_words": 189
+    "added_words": 189,
+    "current_sha256": "43f15489073784045b91c2ae58cadf5030fa7d88f8e4302d23d3f366bd415390"
   },
   {
-    "slug": "breaking-down-the-roi-investing-in-water-hydraulics",
-    "title": "Breaking Down the ROI: Investing in Water Hydraulics",
-    "file": "knowledge-hub/breaking-down-the-roi-investing-in-water-hydraulics/index.html",
+    "slug": "water-hydraulics-return-on-investment",
+    "title": "Payback, NPV, ROI: Three Ways to Show Water's Return",
+    "file": "knowledge-hub/water-hydraulics-return-on-investment/index.html",
     "before": "9d8a9b21e37283d52832f0140508c189874d5bff287d77dfe9e31454f0e43d0d",
     "number": 8,
     "family": "economics",
@@ -146,12 +153,13 @@
       "/knowledge-hub/engineering-calculators/roi-calculator/"
     ],
     "after": "72d740e3a3c642c461dee662615060ccfe7f180dfea47850f3e547f5dd11ec6e",
-    "added_words": 205
+    "added_words": 205,
+    "current_sha256": "8de906d2fdd74c229507b4ebb65207696e4725ee3e957f63ebe1c31e12390350"
   },
   {
-    "slug": "built-in-safety-fail-closed-and-manual-overrides-with-water",
-    "title": "Designing Fail-Closed Functions and Manual Overrides",
-    "file": "knowledge-hub/built-in-safety-fail-closed-and-manual-overrides-with-water/index.html",
+    "slug": "water-hydraulic-failure-states",
+    "title": "Fail-Closed, Fail-Open or Hold? Engineering Safe States in Water Hydraulics",
+    "file": "knowledge-hub/water-hydraulic-failure-states/index.html",
     "before": "d9bab2a342c6a542dd093080aa0f2047f85de941aa1ebef71724468c1d4e0700",
     "number": 9,
     "family": "accumulator",
@@ -165,69 +173,13 @@
       "/knowledge-hub/engineering-calculators/water-hammer-calculator/"
     ],
     "after": "e53fe984e7f37c2947ad7f0ab39d27b46fbce86dff5dd7b2c3bce35f866f2251",
-    "added_words": 204
+    "added_words": 204,
+    "current_sha256": "7908bc54e668fbfe9c247d0b4bbd1f40dc9d15dc7725b45946f646e90997f05e"
   },
   {
-    "slug": "can-i-retrofit-my-existing-system-to-use-water",
-    "title": "Can I Retrofit My Existing System to Use Water?",
-    "file": "knowledge-hub/can-i-retrofit-my-existing-system-to-use-water/index.html",
-    "before": "8964fdcacea3e4315ba3036dd340773352f0ad123fb53f610da9efb904dd17d7",
-    "number": 10,
-    "family": "retrofit",
-    "heading": "Separate reusable machinery from fluid components",
-    "products": [
-      "/products/water-hydraulics-hpu/",
-      "/products/axial-piston-pumps/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/pump-sizing-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "99e6ae4406151ca8baf556c16595496b61116dd901e789ff8c60b25d2f6fe0c9",
-    "added_words": 192
-  },
-  {
-    "slug": "can-water-freeze-in-hydraulic-systems-engineering-around-temperature",
-    "title": "Can Water Freeze in Hydraulic Systems? Engineering Around Temperature",
-    "file": "knowledge-hub/can-water-freeze-in-hydraulic-systems-engineering-around-temperature/index.html",
-    "before": "2322ea4f8191394a2128bebaddca02e146f5aec46e332778ccd9f1c78072b761",
-    "number": 11,
-    "family": "winter",
-    "heading": "Protect the least visible trapped volume",
-    "products": [
-      "/products/water-hydraulics-hpu/",
-      "/products/water-hydraulic-cylinders/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/energy-savings-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "167455ec70843a8441043120c1854d132559668a4a7c53f162b7ba002d9f570e",
-    "added_words": 200
-  },
-  {
-    "slug": "can-water-handle-heavy-loads-like-oil",
-    "title": "Can Water Handle Heavy Loads Like Oil?",
-    "file": "knowledge-hub/can-water-handle-heavy-loads-like-oil/index.html",
-    "before": "dc2545a41a95e658d62c8518033fc7780d0aee0dbcf26a3b88e2d99695c9b15f",
-    "number": 12,
-    "family": "cylinder",
-    "heading": "Check both directions under load",
-    "products": [
-      "/products/water-hydraulic-cylinders/",
-      "/products/water-hydraulic-valves/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/cylinder-force-calculator/",
-      "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
-    ],
-    "after": "8acf1cc472f5920027e2bf42065f327533429757edd477dab0f7aa1f0b7a4b90",
-    "added_words": 188
-  },
-  {
-    "slug": "carbon-reinforced-peek-in-hydraulic-equipment",
-    "title": "Carbon-Reinforced PEEK in Hydraulic Equipment",
-    "file": "knowledge-hub/carbon-reinforced-peek-in-hydraulic-equipment/index.html",
+    "slug": "carbon-filled-peek-for-water-hydraulics",
+    "title": "Carbon-Filled PEEK: Engineering Sliding Parts for Water",
+    "file": "knowledge-hub/carbon-filled-peek-for-water-hydraulics/index.html",
     "before": "99ee42ee2f72a85df2fb5d09035330029758bb01b9381cb035b77b7f41d7f01d",
     "number": 13,
     "family": "materials",
@@ -241,12 +193,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "8eb02dc16efb95e6ef3aa869fdca0f2f5027e918e4ffba6239c8b729b28aeaa5",
-    "added_words": 194
+    "added_words": 194,
+    "current_sha256": "0e3e5623274c2df88cc4a27e3ec366c29d28e6db8de1835dda5d5fdf8fb8201a"
   },
   {
-    "slug": "cavitation-in-water-hydraulics-myths-truths-and-design-solutions",
-    "title": "Cavitation in Water Hydraulics: Myths, Truths, and Design Solutions",
-    "file": "knowledge-hub/cavitation-in-water-hydraulics-myths-truths-and-design-solutions/index.html",
+    "slug": "cavitation-and-water-pump-inlet-margin",
+    "title": "Cavitation in Water Pumps: Protect the Inlet Margin",
+    "file": "knowledge-hub/cavitation-and-water-pump-inlet-margin/index.html",
     "before": "ee45776a171a95d0848ae45957134f6cad28a6ef75b3ceafa4eb7a3e5c8df28f",
     "number": 14,
     "family": "suction",
@@ -259,12 +212,13 @@
       "/knowledge-hub/engineering-calculators/pipe-velocity-calculator/"
     ],
     "after": "c9013b98cf2d2cb550bc3215c44119de33c53f5682fb485ee1319f6d30896f86",
-    "added_words": 194
+    "added_words": 194,
+    "current_sha256": "ac6a114bde25a126858dacd07bc9fa02b222c0018a018e96c9b5acb4d640045f"
   },
   {
-    "slug": "choosing-the-right-cylinder-for-water-actuation",
-    "title": "Choosing the Right Cylinder for Water Actuation",
-    "file": "knowledge-hub/choosing-the-right-cylinder-for-water-actuation/index.html",
+    "slug": "sizing-water-cylinders-for-push-and-pull",
+    "title": "One Cylinder, Two Forces: Sizing Water Actuators for Push and Pull",
+    "file": "knowledge-hub/sizing-water-cylinders-for-push-and-pull/index.html",
     "before": "3d8cb3c2dbd5e06baabc5495a63345714c4af55d6275e15130043d5d380d9eaa",
     "number": 15,
     "family": "cylinder",
@@ -278,12 +232,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "038d46671b6b67d664904b255c01ef0d1809207f11d66a23b5bf4a030550826c",
-    "added_words": 186
+    "added_words": 186,
+    "current_sha256": "8d82cd2e688136303db9c66ed8c6ad706a7142edae6cc8617e7b68d0773b4d8f"
   },
   {
-    "slug": "clean-operation-on-coastlines-a-marine-deployment-snapshot",
-    "title": "Planning a Marine Water Hydraulic Installation",
-    "file": "knowledge-hub/clean-operation-on-coastlines-a-marine-deployment-snapshot/index.html",
+    "slug": "installing-water-hydraulics-aboard",
+    "title": "Installing Water Hydraulics Aboard",
+    "file": "knowledge-hub/installing-water-hydraulics-aboard/index.html",
     "before": "f226b35a27ea184ce60acb647aad891cc76b09d9e7cce1f24846e4a19b634763",
     "number": 16,
     "family": "marine",
@@ -297,31 +252,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "d58fec6583cb4e6b8eee28e87e895836ad96661980cdedb49b3970c1c3c79a20",
-    "added_words": 192
+    "added_words": 192,
+    "current_sha256": "a76c59ddba90d59794d1bbe7b9f3b0a465797537c03b4ddbeb5d4be3a33147c2"
   },
   {
-    "slug": "common-maintenance-missteps-with-oil-that-don-t-happen-with-water",
-    "title": "How Maintenance Changes When Hydraulic Oil Is Removed",
-    "file": "knowledge-hub/common-maintenance-missteps-with-oil-that-don-t-happen-with-water/index.html",
-    "before": "5583f60555a4b22bf33b6afe3d905148ed8b0662160989ff3302922132fcd01d",
-    "number": 17,
-    "family": "maintenance",
-    "heading": "Replace the oil task list with a water task list",
-    "products": [
-      "/products/water-hydraulics-hpu/",
-      "/products/water-hydraulic-valves/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/flow-rate-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "1fd1aca977046edbb7415768377862297fe75dfd2285d8f91f2d52b52494dfdf",
-    "added_words": 192
-  },
-  {
-    "slug": "component-spotlight-armak-air-motors-and-water-hydraulic-integration",
-    "title": "Component Spotlight: Armak Air Motors and Water Hydraulic Integration",
-    "file": "knowledge-hub/component-spotlight-armak-air-motors-and-water-hydraulic-integration/index.html",
+    "slug": "driving-a-water-pump-with-an-air-motor",
+    "title": "Driving a Water Pump With an Air Motor",
+    "file": "knowledge-hub/driving-a-water-pump-with-an-air-motor/index.html",
     "before": "07303582282be94108fdcd7cf88165ef49e2448cd6d8c0140497ad81771e95bf",
     "number": 18,
     "family": "motor",
@@ -335,12 +272,13 @@
       "/knowledge-hub/engineering-calculators/pump-sizing-calculator/"
     ],
     "after": "d552204d1fe232c8c186ae2150613707b8be40d7fb81672df388874301957824",
-    "added_words": 204
+    "added_words": 204,
+    "current_sha256": "b6a3ac25d2639eab39ce57db1f182f33ac57e1025cc31300000f797c503b1b51"
   },
   {
-    "slug": "desalination-plant-hydraulic-systems",
-    "title": "Desalination Plant Hydraulic Systems",
-    "file": "knowledge-hub/desalination-plant-hydraulic-systems/index.html",
+    "slug": "desalination-three-jobs-for-pressurised-water",
+    "title": "Desalination: Three Different Jobs for Pressurized Water",
+    "file": "knowledge-hub/desalination-three-jobs-for-pressurised-water/index.html",
     "before": "6828addfea80e577749e827352239b6d65409203a1dc61fff6b5320798651f9a",
     "number": 19,
     "family": "ro",
@@ -354,12 +292,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "343453319174c369ad245a4263a9bc35d933e88c486dd487d6de3053428c0e8d",
-    "added_words": 205
+    "added_words": 205,
+    "current_sha256": "e7faee15781112aebd4552e8583bd52f84775764f61ef40dc4abb4760bcdcabb"
   },
   {
-    "slug": "designing-a-water-hydraulic-power-unit",
-    "title": "Designing a Water Hydraulic Power Unit",
-    "file": "knowledge-hub/designing-a-water-hydraulic-power-unit/index.html",
+    "slug": "designing-a-water-hpu-around-the-duty-cycle",
+    "title": "Designing a Water HPU Around the Duty Cycle",
+    "file": "knowledge-hub/designing-a-water-hpu-around-the-duty-cycle/index.html",
     "before": "ef2a0c3ba57c1e13dd8d3718f3c814784fa784b5fcd44cbc8fbf79f59e4eb9a3",
     "number": 20,
     "family": "hpu",
@@ -373,31 +312,13 @@
       "/knowledge-hub/engineering-calculators/power-calculator/"
     ],
     "after": "d686c8183b07fa323f904c83a68028cb2deef18babddeaf7c2a88b9216ab834a",
-    "added_words": 192
+    "added_words": 192,
+    "current_sha256": "b67d1409253c6d1638ef6ca75d2150d40908ba6af6b8dcc16cbccb504c8ecba5"
   },
   {
-    "slug": "designing-control-valves-for-water-hydraulics",
-    "title": "Designing Control Valves for Water Hydraulics",
-    "file": "knowledge-hub/designing-control-valves-for-water-hydraulics/index.html",
-    "before": "1e2b67c346765e26ff9910721406b9c6ff767114665920001fdb84568696fe31",
-    "number": 21,
-    "family": "valve",
-    "heading": "Match metering behaviour to the load",
-    "products": [
-      "/products/water-hydraulic-valves/",
-      "/products/water-hydraulic-cylinders/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/pressure-drop-calculator/",
-      "/knowledge-hub/engineering-calculators/water-hammer-calculator/"
-    ],
-    "after": "d9136e5614819baf9e4adc843f91368bd329b95aa3ce062abe36257d9cfffdb4",
-    "added_words": 186
-  },
-  {
-    "slug": "designing-for-pressure-closed-loop-water-hydraulic-circuitry",
-    "title": "Designing for Pressure: Closed-Loop Water Hydraulic Circuitry",
-    "file": "knowledge-hub/designing-for-pressure-closed-loop-water-hydraulic-circuitry/index.html",
+    "slug": "closed-loop-water-hydraulic-circuits",
+    "title": "\"Closed Loop\" Means Two Things \u2014 Know Which Before You Design",
+    "file": "knowledge-hub/closed-loop-water-hydraulic-circuits/index.html",
     "before": "73e058207b0e80e06c6dcb6353ff1068b1dfa25cb9cf3abc12dad72e35869b84",
     "number": 22,
     "family": "system",
@@ -411,12 +332,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "d9ce3e0c31289033ce2bf854a872776ddcbb9a2cfc9c6043468bd9a1a1ddbe03",
-    "added_words": 185
+    "added_words": 185,
+    "current_sha256": "fb6f67b07f8b7b90e3e837c02f9bf77cdaf7d192d64f3438e77bb16a52b1bf42"
   },
   {
-    "slug": "designing-hydraulic-circuits-using-water-as-the-medium",
-    "title": "Designing Hydraulic Circuits Using Water as the Medium",
-    "file": "knowledge-hub/designing-hydraulic-circuits-using-water-as-the-medium/index.html",
+    "slug": "designing-the-water-hydraulic-sequence",
+    "title": "Draw the Sequence First: Laying Out a Water Hydraulic Circuit",
+    "file": "knowledge-hub/designing-the-water-hydraulic-sequence/index.html",
     "before": "671ecc12201920bb13bfcb7e29bd7ccc27c144f4d737b8270ebffe033bf316d6",
     "number": 23,
     "family": "system",
@@ -430,12 +352,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "3f0bffa7061c6e52b6a4d4e786435fce4e28f1a916bd282a3a5ad12039d38054",
-    "added_words": 181
+    "added_words": 181,
+    "current_sha256": "3814f697ce590f2cf2ac8046014a3e5fd25b367f70f3f9fd6276154d4961ad81"
   },
   {
-    "slug": "diagnosing-pressure-drop-in-water-driven-cylinders",
-    "title": "Diagnosing Pressure Drop in Water-Driven Cylinders",
-    "file": "knowledge-hub/diagnosing-pressure-drop-in-water-driven-cylinders/index.html",
+    "slug": "cylinder-force-with-backpressure",
+    "title": "Cylinder Losing Pressure? Measure at the Actuator, Under Load",
+    "file": "knowledge-hub/cylinder-force-with-backpressure/index.html",
     "before": "aa1994e97488159e9fed75b268a1bd0076fde7a5683bb7153f66955225472bba",
     "number": 24,
     "family": "cylinder",
@@ -449,31 +372,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "40774a70f426ea55117b4057872dec4f29b3c9e1e6df06ed71548793ef8c45a9",
-    "added_words": 181
+    "added_words": 181,
+    "current_sha256": "563bde1191db9863e0d245726df063303f2d2814b2c51aadaf99d2b125ccb111"
   },
   {
-    "slug": "do-i-need-filters-or-additives-for-tap-water",
-    "title": "Do I Need Filters or Additives for Tap Water?",
-    "file": "knowledge-hub/do-i-need-filters-or-additives-for-tap-water/index.html",
-    "before": "e6b3f5e8c77251b79c024029b3298ff2d43067e9d86565a50cd15fae333ca44a",
-    "number": 25,
-    "family": "filtration",
-    "heading": "Specify water quality and filtration separately",
-    "products": [
-      "/products/axial-piston-pumps/",
-      "/products/water-hydraulics-hpu/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/pressure-drop-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "2595ed15ab954291b46d61a9e82a84cae33436b5c7fcda91f31bcc15633b4ca4",
-    "added_words": 191
-  },
-  {
-    "slug": "drought-ready-water-hydraulic-use-in-desalination-plants",
-    "title": "Water Pumping for Dependable Desalination",
-    "file": "knowledge-hub/drought-ready-water-hydraulic-use-in-desalination-plants/index.html",
+    "slug": "desalination-recovery-and-energy-metrics",
+    "title": "Desalination for Drought: Four Numbers That Don't Mean the Same Thing",
+    "file": "knowledge-hub/desalination-recovery-and-energy-metrics/index.html",
     "before": "70d2ffe6feb8f85058a0cc5134ea8db22a04fe447f876e05141ff7ade0a73307",
     "number": 26,
     "family": "ro",
@@ -487,12 +392,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "b460e2f7fdcf0e0891ff083ff80052ec2e8bc8bd50517197b3d1d5178a2a2d7b",
-    "added_words": 202
+    "added_words": 202,
+    "current_sha256": "2516258011ac0b7f60bba38785b0177ec0e39c98dbe302263fc843d776b0cd24"
   },
   {
-    "slug": "dust-suppression-systems-using-water-hydraulics",
-    "title": "Dust Suppression Systems Using Water Hydraulics",
-    "file": "knowledge-hub/dust-suppression-systems-using-water-hydraulics/index.html",
+    "slug": "dust-suppression-source-wetting-and-airborne-capture",
+    "title": "Dust Suppression: Wet the Source or Catch the Cloud?",
+    "file": "knowledge-hub/dust-suppression-source-wetting-and-airborne-capture/index.html",
     "before": "9bdeea6aeac34120ddf624bf9ce87fb4154abaec7ed43b2525e355452b18a44c",
     "number": 27,
     "family": "spray",
@@ -505,12 +411,13 @@
       "/knowledge-hub/engineering-calculators/pipe-velocity-calculator/"
     ],
     "after": "2081462db9119ff2d9825504657c2beab7aa75d9b5220424687433868b30d4fe",
-    "added_words": 185
+    "added_words": 185,
+    "current_sha256": "97e1e345a0837608ac6e4a65cff2a118539f59a166fcc95e11adb2bb6a343fe0"
   },
   {
-    "slug": "efficiency-of-water-hydraulic-pumps-compared-to-oil-pumps",
-    "title": "Efficiency of Water Hydraulic Pumps Compared to Oil Pumps",
-    "file": "knowledge-hub/efficiency-of-water-hydraulic-pumps-compared-to-oil-pumps/index.html",
+    "slug": "pump-efficiency-measurement-boundaries",
+    "title": "Pump Efficiency: Quote the Right Number, Measured in the Right Place",
+    "file": "knowledge-hub/pump-efficiency-measurement-boundaries/index.html",
     "before": "5c41e32139f56e486620d58837ab99d03fb57c30a82768ccbbc2c00c06ef5a2a",
     "number": 28,
     "family": "pump",
@@ -524,12 +431,13 @@
       "/knowledge-hub/engineering-calculators/hydraulic-efficiency-calculator/"
     ],
     "after": "1d517c0224936231816a0a1122f0c3d1bcf1f0b5aa9d5a4acdb6efd70b81982f",
-    "added_words": 198
+    "added_words": 198,
+    "current_sha256": "1fb2a6d7d58e2749281a3a12593c597a96ee34491f0ec64278e6d8543f1bba91"
   },
   {
-    "slug": "electric-actuators-vs-hydraulic-actuators-the-real-engineering-trade-offs",
-    "title": "Electric Actuators vs Hydraulic Actuators: The Real Engineering Trade-Offs",
-    "file": "knowledge-hub/electric-actuators-vs-hydraulic-actuators-the-real-engineering-trade-offs/index.html",
+    "slug": "electric-or-water-hydraulic-actuation",
+    "title": "Electric or Water Hydraulic? Compare the Whole Duty",
+    "file": "knowledge-hub/electric-or-water-hydraulic-actuation/index.html",
     "before": "b5ed0135760946b146f8e9a67a232d6ba70d24c7ed2a4562e9b260103b52e921",
     "number": 29,
     "family": "system",
@@ -543,12 +451,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "1e874e0b9f78c089aee8bd001e106a8c96cf5a01b96a03109d3b5e279abb7471",
-    "added_words": 184
+    "added_words": 184,
+    "current_sha256": "3188818cd3cd15e1000aff5534f4f77043092aaf027c53a2b71ffe43aac4e2c4"
   },
   {
-    "slug": "energy-consumption-of-water-hydraulic-systems",
-    "title": "Energy Consumption of Water Hydraulic Systems",
-    "file": "knowledge-hub/energy-consumption-of-water-hydraulic-systems/index.html",
+    "slug": "hydraulic-standby-energy",
+    "title": "Your Hydraulic Unit's Biggest Energy Bill May Be the Waiting",
+    "file": "knowledge-hub/hydraulic-standby-energy/index.html",
     "before": "dbb7b4693ba4e743f4fe9fffe9dc31151cee8997308f95f0fd0c98aca200c668",
     "number": 30,
     "family": "energy",
@@ -562,12 +471,13 @@
       "/knowledge-hub/engineering-calculators/energy-savings-calculator/"
     ],
     "after": "c379e075d8e5686f7b1f694fd048bc8d83e5c9f8c76218d693a446f716a92ba4",
-    "added_words": 182
+    "added_words": 182,
+    "current_sha256": "ea86b391b248a7f569bc9ef7eb3f5d399e0f9c170e252b68abbc7557bf7e686a"
   },
   {
-    "slug": "engineering-principles-of-water-hydraulic-actuation",
-    "title": "Engineering Principles of Water Hydraulic Actuation",
-    "file": "knowledge-hub/engineering-principles-of-water-hydraulic-actuation/index.html",
+    "slug": "sizing-a-water-cylinder",
+    "title": "Sizing a Water Cylinder: Start at the Load Pin",
+    "file": "knowledge-hub/sizing-a-water-cylinder/index.html",
     "before": "283fe2bfbc4769f118b8415a54183231c27f45fa9c3ce9d968f34c5c5df49982",
     "number": 31,
     "family": "system",
@@ -581,12 +491,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "bb4ecd469b1b9bfc32a73770bae33114ad837e1f05c8a50bb03c38a0e6cf3f25",
-    "added_words": 187
+    "added_words": 187,
+    "current_sha256": "4ebd22f1c9b5d098508916a002c719083b46d6c017925340b84237d7f37407b0"
   },
   {
-    "slug": "engineering-seal-systems-for-water-hydraulics",
-    "title": "Engineering Seal Systems for Water Hydraulics",
-    "file": "knowledge-hub/engineering-seal-systems-for-water-hydraulics/index.html",
+    "slug": "seals-built-for-water",
+    "title": "Seals Built for Water: Matching Profile, Groove and Duty",
+    "file": "knowledge-hub/seals-built-for-water/index.html",
     "before": "da795701ea14477e864df2abb82591518a28ddd545a5612ded1788b0f1d507e3",
     "number": 32,
     "family": "seals",
@@ -600,12 +511,13 @@
       "/knowledge-hub/engineering-calculators/surface-finish-calculator/"
     ],
     "after": "d76045508e2d1b676e1e85151ecb25ae7960361f0970f68e268fa3368ca7d1d0",
-    "added_words": 191
+    "added_words": 191,
+    "current_sha256": "aa25230aeb655892adce54e72fedccf2a7b63c77f104faab95a8b301ede525f9"
   },
   {
-    "slug": "environmental-compliance-and-hydraulic-systems",
-    "title": "Environmental Compliance and Hydraulic Systems",
-    "file": "knowledge-hub/environmental-compliance-and-hydraulic-systems/index.html",
+    "slug": "environmental-obligations-in-hydraulic-design",
+    "title": "Turning Environmental Obligations Into Design Advantages",
+    "file": "knowledge-hub/environmental-obligations-in-hydraulic-design/index.html",
     "before": "1b1c9f6f73053ab39fab059634112c3486a2f07149b04d21df4fe411d6d3f227",
     "number": 33,
     "family": "environment",
@@ -618,12 +530,13 @@
       "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/"
     ],
     "after": "a3ff18d8d881167eef8d5d2128a3da7138b7fd636c72d6bab6f6fc7ee7e12b0e",
-    "added_words": 193
+    "added_words": 193,
+    "current_sha256": "2b79bcd944330137e59634e084b24d1bdfb571b0c814ca780cf070d1b0ab31d2"
   },
   {
-    "slug": "environmental-regulations-affecting-hydraulic-systems",
-    "title": "Environmental Regulations Affecting Hydraulic Systems",
-    "file": "knowledge-hub/environmental-regulations-affecting-hydraulic-systems/index.html",
+    "slug": "hydraulic-retrofit-regulatory-map",
+    "title": "Mapping the Rules Around a Hydraulic Retrofit",
+    "file": "knowledge-hub/hydraulic-retrofit-regulatory-map/index.html",
     "before": "f5d1ff86b38b8663c41b497e09bb17de093b67bde8e410501020e2dee2e94a73",
     "number": 34,
     "family": "specification",
@@ -637,12 +550,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "84e7ebb64a4b3c0bf9fc35b88ae9b9aa85d18c77c21eb0e308204bfefd42d22c",
-    "added_words": 190
+    "added_words": 190,
+    "current_sha256": "9d9225fabf8ef78fc40da470352122b140574c64304ce8679573d85d39917e34"
   },
   {
-    "slug": "environmental-risks-of-hydraulic-oil-in-water-infrastructure",
-    "title": "Environmental Risks of Hydraulic Oil in Water Infrastructure",
-    "file": "knowledge-hub/environmental-risks-of-hydraulic-oil-in-water-infrastructure/index.html",
+    "slug": "oil-leak-release-pathways",
+    "title": "Oil Leak Risk Depends on Where It Can Go",
+    "file": "knowledge-hub/oil-leak-release-pathways/index.html",
     "before": "a84bd21e0c8768c1568d9e777a4b685525bf850e6ce932e62d8c3f61369e1461",
     "number": 35,
     "family": "environment",
@@ -655,12 +569,13 @@
       "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/"
     ],
     "after": "c33bb8fac020fe2f0f98e5c4250aef2858e901ca91a08071bfa725159c050ef6",
-    "added_words": 191
+    "added_words": 191,
+    "current_sha256": "a9c6c7febfa1bfa265d6927c68e9bb8dba37c3ff5a7aefd9df1fa2fe1459c14e"
   },
   {
-    "slug": "fail-safe-performance-in-theme-park-ride-systems",
-    "title": "Safety Functions in Water-Actuated Attraction Equipment",
-    "file": "knowledge-hub/fail-safe-performance-in-theme-park-ride-systems/index.html",
+    "slug": "water-powered-rides-oil-free-actuation-and-validated-fault-response",
+    "title": "Water-Powered Rides: Oil-Free Actuation and Validated Fault Response",
+    "file": "knowledge-hub/water-powered-rides-oil-free-actuation-and-validated-fault-response/index.html",
     "before": "e2f6ce5bb1e42a96390a7df95f807558b07d6992d718651fa4fbbe2f0b2843e6",
     "number": 36,
     "family": "safety",
@@ -674,12 +589,13 @@
       "/knowledge-hub/engineering-calculators/accumulator-calculator/"
     ],
     "after": "1e9c4da057a22c312408e66dc5dd2fd6bf9da2e26d6f632281fd4ba1ed3a0efb",
-    "added_words": 195
+    "added_words": 195,
+    "current_sha256": "8422fc07975f4d5963fa391ad7465f8e2ccaca73bb24728c9b3001760fee8675"
   },
   {
-    "slug": "fire-suppression-evolved-why-water-mist-systems-outperform-traditional-sprinklers",
-    "title": "Water Mist and Sprinklers: Select for the Fire Hazard",
-    "file": "knowledge-hub/fire-suppression-evolved-why-water-mist-systems-outperform-traditional-sprinklers/index.html",
+    "slug": "water-mist-or-sprinklers-in-the-data-centre-start-with-the-fire",
+    "title": "Water Mist or Sprinklers in the Data Centre? Start With the Fire",
+    "file": "knowledge-hub/water-mist-or-sprinklers-in-the-data-centre-start-with-the-fire/index.html",
     "before": "7153e4a93a1d297aaad51f708986ba9f7545740ed97c397f652a3f97304fa242",
     "number": 37,
     "family": "fire",
@@ -692,12 +608,13 @@
       "/knowledge-hub/engineering-calculators/pressure-loss-calculator/"
     ],
     "after": "c7037e63122572bdd3a8171b83840f5a0d65f911b6bfc1d6e34c724a1a6e28fe",
-    "added_words": 186
+    "added_words": 186,
+    "current_sha256": "18c90979f2afe58adfdff3e0f2d2eb13f79ecab7fd033e36c12c9b34368eb0a9"
   },
   {
-    "slug": "fishing-without-fossil-fuels-the-musqueam-hydrogen-vessel-project",
-    "title": "The Musqueam Hydrogen Vessel Concept: An Engineering Discussion",
-    "file": "knowledge-hub/fishing-without-fossil-fuels-the-musqueam-hydrogen-vessel-project/index.html",
+    "slug": "hydrogen-propulsion-water-hydraulic-deck-gear-a-clean-fishing-vessel-concept",
+    "title": "Hydrogen Propulsion, Water-Hydraulic Deck Gear: A Clean Fishing Vessel Concept",
+    "file": "knowledge-hub/hydrogen-propulsion-water-hydraulic-deck-gear-a-clean-fishing-vessel-concept/index.html",
     "before": "9910bb5e287d4153621f5a705d01b0e9fc004f2d9c1274f67bd0ec48b55c3b11",
     "number": 38,
     "family": "marine",
@@ -711,11 +628,12 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "15cb1c6298b7cfcc82fca0d439359b4a8b6935e02e7cc0a8723b6911c67105af",
-    "added_words": 193
+    "added_words": 193,
+    "current_sha256": "f393b8210e09fba01e4c62a4730be2729b3e243a4ed9c3eb083e22655fa0bcd6"
   },
   {
     "slug": "five-reasons-your-next-valve-should-be-water-actuated",
-    "title": "Five Reasons to Consider Water-Actuated Valves",
+    "title": "Five Reasons Your Next Valve Should Be Water Actuated",
     "file": "knowledge-hub/five-reasons-your-next-valve-should-be-water-actuated/index.html",
     "before": "92f09d109dbafee86574eacc0b0138210227ff24cc2a6ceecde28946690463f0",
     "number": 39,
@@ -730,12 +648,13 @@
       "/knowledge-hub/engineering-calculators/water-hammer-calculator/"
     ],
     "after": "a59d92cbbf82787f72473080c185d3b32ed5f2014ca1ab375192f2f519a9dce1",
-    "added_words": 183
+    "added_words": 183,
+    "current_sha256": "5331efc8fc3074c962050932dc07725d677d60df1df4bb57575b29f38137b21d"
   },
   {
-    "slug": "fluid-properties-of-water-vs-hydraulic-oil",
-    "title": "Fluid Properties of Water vs Hydraulic Oil",
-    "file": "knowledge-hub/fluid-properties-of-water-vs-hydraulic-oil/index.html",
+    "slug": "water-and-oil-fluid-properties",
+    "title": "Water vs Oil, Property by Property: Where Water Has the Edge",
+    "file": "knowledge-hub/water-and-oil-fluid-properties/index.html",
     "before": "f8350bde1aff791067b30676d44f30c7850482fdf049d72e99233b2e5d21588d",
     "number": 40,
     "family": "fluid",
@@ -749,12 +668,13 @@
       "/knowledge-hub/engineering-calculators/pressure-loss-calculator/"
     ],
     "after": "ce7a13684abd080b60bc704d5f1fbe0ad1aa6cd4ab31eddc54c8d818ad60227e",
-    "added_words": 174
+    "added_words": 174,
+    "current_sha256": "856f93497de42782c48877da57e51d35bb116566c5a7384d30746ee2685e5d08"
   },
   {
-    "slug": "flushing-and-start-up-tips-for-first-time-water-users",
-    "title": "Flushing and Start-Up Tips for First-Time Water Users",
-    "file": "knowledge-hub/flushing-and-start-up-tips-for-first-time-water-users/index.html",
+    "slug": "water-hydraulic-first-start-up",
+    "title": "First Start-Up on Water: Flush, Vent and Pressurize in Stages",
+    "file": "knowledge-hub/water-hydraulic-first-start-up/index.html",
     "before": "e0497ce4a4784297fd8e4027af9e8049fc249a7a2581b9cdb1e62b2c11c1af69",
     "number": 41,
     "family": "maintenance",
@@ -768,12 +688,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "07eec24e2a257f42c3d733c71bd53d3140d27ecbd4a75ff887a58f914eec2461",
-    "added_words": 187
+    "added_words": 187,
+    "current_sha256": "21c8e5961e15dea90c1256f3adfabf2d0847e17b6f08aef62fd7fe587f140171"
   },
   {
-    "slug": "from-steel-mills-to-sawmills-industrial-applications-of-pressurized-water",
-    "title": "From Steel Mills to Sawmills: Industrial Applications of Pressurized Water",
-    "file": "knowledge-hub/from-steel-mills-to-sawmills-industrial-applications-of-pressurized-water/index.html",
+    "slug": "water-hydraulics-in-steel-mills-and-sawmills",
+    "title": "Steel Mill to Sawmill: Where Water Hydraulics Excel",
+    "file": "knowledge-hub/water-hydraulics-in-steel-mills-and-sawmills/index.html",
     "before": "3faa5086d17ea27f5a0162f2139af79e9627b6a445368833db1fe29bf8f00cfa",
     "number": 42,
     "family": "industrial",
@@ -787,12 +708,13 @@
       "/knowledge-hub/engineering-calculators/motor-speed-calculator/"
     ],
     "after": "8cb7334c15f161f95e9be72d4496404ea458bfb5b9de322ecc3bc418a4be379c",
-    "added_words": 188
+    "added_words": 188,
+    "current_sha256": "4e65eb608a75988f9efd167f0400b53101b042baa5e7e0c2b330b4336db9f25a"
   },
   {
-    "slug": "funding-water-driven-innovation-a-guide-to-clean-tech-grants",
-    "title": "Funding Water-Driven Innovation: A Guide to Clean Tech Grants",
-    "file": "knowledge-hub/funding-water-driven-innovation-a-guide-to-clean-tech-grants/index.html",
+    "slug": "funding-a-water-hydraulic-pilot",
+    "title": "Clean-Tech Funding for Water Hydraulics: Screen Applicant, Activity, Timing",
+    "file": "knowledge-hub/funding-a-water-hydraulic-pilot/index.html",
     "before": "e7ef79346b87f08ecbd3a64d097f7bd389d58f1f4b758615d0071dde298f6d5c",
     "number": 43,
     "family": "economics",
@@ -805,11 +727,12 @@
       "/knowledge-hub/engineering-calculators/roi-calculator/"
     ],
     "after": "465e90c1f1f9a9fd48ab0e4bc29128cbeb0c72365d70e40fcf17b4af5b39a6b7",
-    "added_words": 199
+    "added_words": 199,
+    "current_sha256": "1fb24c1361afc2f0ebaa9243a8c4db222e40eb8c4f98ea37e8078cc8dcebbb7f"
   },
   {
     "slug": "high-flow-or-high-precision-matching-pumps-to-application",
-    "title": "High Flow or High Precision? Matching Pumps to Application",
+    "title": "Big Pump, Fine Control: Precision Lives in the Valve",
     "file": "knowledge-hub/high-flow-or-high-precision-matching-pumps-to-application/index.html",
     "before": "5e46bbcfd5429eff313fed4a198841b6784612d3e98691ed31fbb7ac92261ff5",
     "number": 44,
@@ -824,12 +747,13 @@
       "/knowledge-hub/engineering-calculators/hydraulic-efficiency-calculator/"
     ],
     "after": "fe1597db6b02fa1b8cde4eb1968b24f8dc40216fe199e2845d76b00c158e78c2",
-    "added_words": 204
+    "added_words": 204,
+    "current_sha256": "654ad6d9a32a7d1c37db585993ce0e4f4adb5885c4957d6c8648418ccb8b96e1"
   },
   {
-    "slug": "how-engineers-can-specify-oil-free-hydraulic-systems",
-    "title": "How Engineers Can Specify Oil-Free Hydraulic Systems",
-    "file": "knowledge-hub/how-engineers-can-specify-oil-free-hydraulic-systems/index.html",
+    "slug": "writing-an-oil-free-hydraulic-specification",
+    "title": "Writing an Oil-Free Hydraulic Spec Bidders Can Actually Price",
+    "file": "knowledge-hub/writing-an-oil-free-hydraulic-specification/index.html",
     "before": "e6e56151fabe2672db9192fb8aa419a39e44b02a3a4417957f028f1535084a66",
     "number": 45,
     "family": "specification",
@@ -843,68 +767,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "a54b9d6114d2e42b8fa657ea03bccdeb4f21f23b03f634e1bcfd73fcbf58a584",
-    "added_words": 199
+    "added_words": 199,
+    "current_sha256": "3e221ad644153340bda35058bee3fde78575f367a8ecc50598a72c1fdf10b369"
   },
   {
-    "slug": "how-force-is-generated-in-water-hydraulic-cylinders",
-    "title": "How Force Is Generated in Water Hydraulic Cylinders",
-    "file": "knowledge-hub/how-force-is-generated-in-water-hydraulic-cylinders/index.html",
-    "before": "9953374e1164d2f2f531a8e1772e7cbfd33b32fdf87a83063463d96e4b97a4c4",
-    "number": 46,
-    "family": "cylinder",
-    "heading": "Calculate net force at the chambers",
-    "products": [
-      "/products/water-hydraulic-cylinders/",
-      "/products/water-hydraulic-valves/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/cylinder-force-calculator/",
-      "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
-    ],
-    "after": "84efc024c512bcd7dbd8cb10d6b6efa6f6d785108df67e43d7a380a2e9f555dc",
-    "added_words": 184
-  },
-  {
-    "slug": "how-hydraulic-fluids-behave-thermal-expansion-viscosity-and-stability",
-    "title": "How Hydraulic Fluids Behave: Thermal Expansion, Viscosity, and Stability",
-    "file": "knowledge-hub/how-hydraulic-fluids-behave-thermal-expansion-viscosity-and-stability/index.html",
-    "before": "c36ac9162104bd05a00442b8c003e22049ddd8dd8c66b1cb848001e7db8518d1",
-    "number": 47,
-    "family": "fluid",
-    "heading": "Include trapped-fluid heating in the design review",
-    "products": [
-      "/products/axial-piston-pumps/",
-      "/products/water-hydraulic-valves/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/reynolds-number-calculator/",
-      "/knowledge-hub/engineering-calculators/pressure-loss-calculator/"
-    ],
-    "after": "57143a1d3ab5e9e785ec23fc307a31217f09ea6701e95f245fbda0936c8d51fc",
-    "added_words": 176
-  },
-  {
-    "slug": "how-much-are-your-hydraulics-costing-you",
-    "title": "How Much Are Your Hydraulics Costing You? The Hidden Cost of Oil Hydraulics",
-    "file": "knowledge-hub/how-much-are-your-hydraulics-costing-you/index.html",
-    "before": "126c0e201aec80967a519531f93fc1d6f84b195bfdde388363686d48dbb3ed17",
-    "number": 48,
-    "family": "economics",
-    "heading": "Separate predictable service from uncertain events",
-    "products": [
-      "/products/water-hydraulics-hpu/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/",
-      "/knowledge-hub/engineering-calculators/roi-calculator/"
-    ],
-    "after": "6b705be55572b4a135466571ea1f002ace5a1d805b08f7a7a2072e91f4862474",
-    "added_words": 196
-  },
-  {
-    "slug": "how-oil-contamination-affects-wastewater-treatment-plants",
-    "title": "How Oil Contamination Affects Wastewater Treatment Plants",
-    "file": "knowledge-hub/how-oil-contamination-affects-wastewater-treatment-plants/index.html",
+    "slug": "oil-release-in-wastewater-headworks",
+    "title": "Two Litres of Oil in the Headworks: Following the Release",
+    "file": "knowledge-hub/oil-release-in-wastewater-headworks/index.html",
     "before": "829cfd3522c003c71339b0df04d2a2f3d113a99e200b1002f8f7b09cd218aca8",
     "number": 49,
     "family": "wastewater",
@@ -918,12 +787,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "1b465d12c8080b62af58c638e329ae58be0d532303d7fd92bf0ef9d96da14321",
-    "added_words": 180
+    "added_words": 180,
+    "current_sha256": "8a3edd2ca503eedfb6007f3cd0154301e4d1fcadff3a551bd53ee53c56b58941"
   },
   {
-    "slug": "how-our-water-hpus-are-changing-the-industrial-landscape",
-    "title": "Evaluating a Water HPU for an Industrial Duty",
-    "file": "knowledge-hub/how-our-water-hpus-are-changing-the-industrial-landscape/index.html",
+    "slug": "judging-a-water-hpu-by-what-it-does-between-movements",
+    "title": "Judging a Water HPU by What It Does Between Movements",
+    "file": "knowledge-hub/judging-a-water-hpu-by-what-it-does-between-movements/index.html",
     "before": "9a420df473545ad494406a0edffd8859cbca48288303f152fd21716fdc3d2f9b",
     "number": 50,
     "family": "hpu",
@@ -937,12 +807,13 @@
       "/knowledge-hub/engineering-calculators/power-calculator/"
     ],
     "after": "464890240dea8e84cc0b58e47d055ef76d2ee6e1c4ea524121d4bfaa74e5d2a2",
-    "added_words": 192
+    "added_words": 192,
+    "current_sha256": "cc7e2a5fb45926cd87101223430a0f75c89768bcb053bec6b64d103bc12e58ec"
   },
   {
-    "slug": "how-the-2025-clean-technology-investment-tax-credit-applies-to-your-project",
-    "title": "Clean Technology Tax Credits: Check Eligibility Before Counting Savings",
-    "file": "knowledge-hub/how-the-2025-clean-technology-investment-tax-credit-applies-to-your-project/index.html",
+    "slug": "the-clean-technology-itc-and-water-hydraulics-check-before-you-count",
+    "title": "The Clean Technology ITC and Water Hydraulics: Check Before You Count",
+    "file": "knowledge-hub/the-clean-technology-itc-and-water-hydraulics-check-before-you-count/index.html",
     "before": "0b9ac4b62ff11d968b39a02c227629260d8bdcb9f1a0f445d60e96d245662c75",
     "number": 51,
     "family": "economics",
@@ -955,12 +826,13 @@
       "/knowledge-hub/engineering-calculators/roi-calculator/"
     ],
     "after": "a0a127e4f4a34e545c6d805a5e8800a7a4651430b599c38651bc7312e11b3784",
-    "added_words": 194
+    "added_words": 194,
+    "current_sha256": "7279f5ed381b5219b2217f2c85dfac40b30a8f280a2dbab2aeb05dc88a247a9a"
   },
   {
-    "slug": "how-to-convert-an-oil-hydraulic-system-to-water-hydraulics",
-    "title": "How to Convert an Oil Hydraulic System to Water Hydraulics",
-    "file": "knowledge-hub/how-to-convert-an-oil-hydraulic-system-to-water-hydraulics/index.html",
+    "slug": "converting-oil-hydraulics-to-water",
+    "title": "Converting Oil Hydraulics to Water: A Planned Upgrade, Not a Refill",
+    "file": "knowledge-hub/converting-oil-hydraulics-to-water/index.html",
     "before": "21c75f3e077c5ab90e03a340387b2a25ffb922f1564485c94d96d59d39fdb244",
     "number": 52,
     "family": "retrofit",
@@ -974,68 +846,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "1eea2df9839de146e399c5842d61eea098a9a1cba6be774e5c4950de24154474",
-    "added_words": 198
+    "added_words": 198,
+    "current_sha256": "d2e9e415bd62d4ce17b4c1bfa4a4cdf12dd94149c1a26b20d17227581b4323c5"
   },
   {
-    "slug": "how-to-winterize-your-water-hydraulic-system",
-    "title": "Preparing Your Water Hydraulic System for Winter",
-    "file": "knowledge-hub/how-to-winterize-your-water-hydraulic-system/index.html",
-    "before": "b09df8323234eb92317a5c6840a68976df5c9d2074324dc17c2d53196d16a3a1",
-    "number": 53,
-    "family": "winter",
-    "heading": "Turn winterisation into a repeatable procedure",
-    "products": [
-      "/products/water-hydraulics-hpu/",
-      "/products/water-hydraulic-cylinders/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/energy-savings-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "56797d1af239c9992f4516b59ea289c229633cd19fb586fdd1de02877469a1f3",
-    "added_words": 189
-  },
-  {
-    "slug": "how-water-hydraulics-eliminate-hydraulic-oil-spills",
-    "title": "Removing Hydraulic-Oil Spill Sources from Selected Circuits",
-    "file": "knowledge-hub/how-water-hydraulics-eliminate-hydraulic-oil-spills/index.html",
-    "before": "630f05be147578c31567c7cf6c13a41faefab170452fb86de960606d10e29088",
-    "number": 54,
-    "family": "environment",
-    "heading": "Define the oil source removed by the conversion",
-    "products": [
-      "/products/water-hydraulics-hpu/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/",
-      "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/"
-    ],
-    "after": "1ef3a388f452b07c985873a8e17ffc069b1e84ad282aefa73d7cd79d9f64b8cc",
-    "added_words": 187
-  },
-  {
-    "slug": "how-water-hydraulics-work-compared-to-oil-hydraulics",
-    "title": "How Water Hydraulics Work Compared to Oil Hydraulics",
-    "file": "knowledge-hub/how-water-hydraulics-work-compared-to-oil-hydraulics/index.html",
-    "before": "3c04ad0522a00d9c64174598e252a639f10514d739cfeac80eee834c4c4264a0",
-    "number": 55,
-    "family": "system",
-    "heading": "Translate a familiar oil duty into water requirements",
-    "products": [
-      "/products/water-hydraulics-hpu/",
-      "/products/water-hydraulic-cylinders/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/power-calculator/",
-      "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
-    ],
-    "after": "0683ea587541e5e90a2c05746171dd154afcb30c3e312297c2b55c5632191132",
-    "added_words": 185
-  },
-  {
-    "slug": "how-water-maintains-hydraulic-efficiency-without-additives",
-    "title": "Efficiency in Purpose-Designed Water Hydraulic Equipment",
-    "file": "knowledge-hub/how-water-maintains-hydraulic-efficiency-without-additives/index.html",
+    "slug": "half-a-litre-a-minute-of-leakage-costs-83-watts-all-day",
+    "title": "Half a Litre a Minute of Leakage Costs 83 Watts \u2014 All Day",
+    "file": "knowledge-hub/half-a-litre-a-minute-of-leakage-costs-83-watts-all-day/index.html",
     "before": "f73bbb4a6329d218a6648f1d1467d35d66ee2abbc79cd58c27212fd51dadc278",
     "number": 56,
     "family": "pump",
@@ -1049,12 +866,13 @@
       "/knowledge-hub/engineering-calculators/hydraulic-efficiency-calculator/"
     ],
     "after": "feefd013a2ebd31d97502484ca5b5e649ed9317f3a6c8f278e7fc4282a9a36bd",
-    "added_words": 201
+    "added_words": 201,
+    "current_sha256": "2b792930fcc8fefe50c67cd3d2edec2babb72cb23cee52b3d4f25de12d1dcafa"
   },
   {
-    "slug": "how-water-systems-eliminate-cross-contamination-risk",
-    "title": "Reducing Hydraulic-Oil Cross-Contamination Pathways",
-    "file": "knowledge-hub/how-water-systems-eliminate-cross-contamination-risk/index.html",
+    "slug": "oil-out-of-the-overhead-actuator-cutting-a-food-contamination-route",
+    "title": "Oil Out of the Overhead Actuator: Cutting a Food-Contamination Route",
+    "file": "knowledge-hub/oil-out-of-the-overhead-actuator-cutting-a-food-contamination-route/index.html",
     "before": "661e92d09751d9b39dfd95182ef8670363218971c7d940f511a58a7931e80fe1",
     "number": 57,
     "family": "environment",
@@ -1067,12 +885,13 @@
       "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/"
     ],
     "after": "9ac8c65cbc1fd34a5cca80146eb2f4e104a6a2b6695ae4a075612d9eb8f53e39",
-    "added_words": 185
+    "added_words": 185,
+    "current_sha256": "f2d729e5ab4266b58c2083dbb4dccb85eb4fbdc0565678b4dafc791695366095"
   },
   {
-    "slug": "how-waterquest-systems-align-with-cleanbc-sif-and-sr-and-ed",
-    "title": "Funding a Water Hydraulic Project: Programme and R&amp;D Eligibility",
-    "file": "knowledge-hub/how-waterquest-systems-align-with-cleanbc-sif-and-sr-and-ed/index.html",
+    "slug": "research-uncertainty-and-routine-installation",
+    "title": "Funding Water Hydraulics: R&D or Routine Adoption?",
+    "file": "knowledge-hub/research-uncertainty-and-routine-installation/index.html",
     "before": "4e4684009b4e16a4575d2d4b2dc99ad1d68837ae9c22e95a25ebcc19f680dfc9",
     "number": 58,
     "family": "economics",
@@ -1085,12 +904,13 @@
       "/knowledge-hub/engineering-calculators/roi-calculator/"
     ],
     "after": "6caee44e10fa8d32ef31130da31315e33e9e5dd99c38caea64a8bceb5aea1be5",
-    "added_words": 189
+    "added_words": 189,
+    "current_sha256": "acc22e2746ac65f84eb67127da3864a8afe9386a8bc62005993aebae333671b5"
   },
   {
-    "slug": "hydraulic-gate-actuators-for-municipal-infrastructure",
-    "title": "Hydraulic Gate Actuators for Municipal Infrastructure",
-    "file": "knowledge-hub/hydraulic-gate-actuators-for-municipal-infrastructure/index.html",
+    "slug": "gate-actuator-linkage-angle-and-force",
+    "title": "Same Gate, Double the Force: Why Linkage Angle Matters",
+    "file": "knowledge-hub/gate-actuator-linkage-angle-and-force/index.html",
     "before": "aeab219c02b0644f12f3f4d4d2f729f0beada52019dd52c884374f9f47e2a4aa",
     "number": 59,
     "family": "gate",
@@ -1104,12 +924,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "0d10948b750430d6a9ab814820b2ef719cd9a9ae547365c82056a98d253e14a8",
-    "added_words": 178
+    "added_words": 178,
+    "current_sha256": "ad0be06c5521a9afff1d89936e7220ea4e64e642882c4a71d4f56d402e2f2127"
   },
   {
-    "slug": "hydraulic-power-transmission-using-water",
-    "title": "Hydraulic Power Transmission Using Water",
-    "file": "knowledge-hub/hydraulic-power-transmission-using-water/index.html",
+    "slug": "hydraulic-power-from-drive-to-load",
+    "title": "Following the Kilowatts: From Motor to Moving Load",
+    "file": "knowledge-hub/hydraulic-power-from-drive-to-load/index.html",
     "before": "d153345aa17e8ac776979944661001b090e54be1cb2758ada8acb27779e0953c",
     "number": 60,
     "family": "system",
@@ -1123,12 +944,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "0d60a1a7c2a21ef1a1f592fab2e9d2d01cb10268d4c2fca28df369d68024ac1a",
-    "added_words": 189
+    "added_words": 189,
+    "current_sha256": "f1a6322f25e2fa8634724c353b2261825b2ca3c97576295f8f630b174aaf1525"
   },
   {
-    "slug": "hydropower-infrastructure-using-water-hydraulic-actuation",
-    "title": "Hydropower Infrastructure Using Water Hydraulic Actuation",
-    "file": "knowledge-hub/hydropower-infrastructure-using-water-hydraulic-actuation/index.html",
+    "slug": "water-actuation-at-the-dam",
+    "title": "Water Actuation at the Dam: No Oil Above the River",
+    "file": "knowledge-hub/water-actuation-at-the-dam/index.html",
     "before": "77ba991f54048af7c1b45eb2a171326512ab73f442166fe40c949933cbdd715b",
     "number": 61,
     "family": "gate",
@@ -1142,16 +964,17 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "aa4c0f92ae672cafea8187922830959f0669fc72132aaf4b7d510dc4b1e432b1",
-    "added_words": 180
+    "added_words": 180,
+    "current_sha256": "9ad8770e51c3e55c2deb2ad5361db370b296fea3057d7efe4743a5886df67e97"
   },
   {
-    "slug": "industrial-equipment-that-should-never-use-oil-hydraulics",
-    "title": "Where Removing Hydraulic Oil Deserves Priority",
-    "file": "knowledge-hub/industrial-equipment-that-should-never-use-oil-hydraulics/index.html",
+    "slug": "which-oil-circuit-should-go-first-a-screening-guide",
+    "title": "Which Oil Circuit Should Go First? A Screening Guide",
+    "file": "knowledge-hub/which-oil-circuit-should-go-first-a-screening-guide/index.html",
     "before": "7bb1f380bd8387394a10ffa55f678308781f597c74a2f916fc0c2107be49a9c7",
     "number": 62,
     "family": "environment",
-    "heading": "Prioritise exposure rather than applying a blanket rule",
+    "heading": "Prioritize exposure rather than applying a blanket rule",
     "products": [
       "/products/water-hydraulics-hpu/"
     ],
@@ -1160,49 +983,13 @@
       "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/"
     ],
     "after": "3d4c5c71f7c9092c67fc383774a1fc5b5dfc9f3b76f73287fd62a03f81be09d8",
-    "added_words": 184
+    "added_words": 184,
+    "current_sha256": "94d27f332d25286a51fb6003d3b7c146fceb13ba68a0a1b4af92e001c2dfe4f1"
   },
   {
-    "slug": "is-water-more-expensive-long-term",
-    "title": "Is Water More Expensive Long-Term?",
-    "file": "knowledge-hub/is-water-more-expensive-long-term/index.html",
-    "before": "cdbf32481acc934946daa77de97903de780ad7426b750cc1f53936220a24ec1f",
-    "number": 63,
-    "family": "economics",
-    "heading": "Test the cost drivers that can reverse the result",
-    "products": [
-      "/products/water-hydraulics-hpu/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/",
-      "/knowledge-hub/engineering-calculators/roi-calculator/"
-    ],
-    "after": "e5981370cd1f67f337be77b25542e764b72c22b90ba306266d97107cbbf138e7",
-    "added_words": 188
-  },
-  {
-    "slug": "is-water-too-thin-to-work-in-high-pressure-applications",
-    "title": "Is Water Too Thin to Work in High-Pressure Applications?",
-    "file": "knowledge-hub/is-water-too-thin-to-work-in-high-pressure-applications/index.html",
-    "before": "4a267c2f058576b38f455550e88773c56042855ec74c403359b2d1dcf2f12c00",
-    "number": 64,
-    "family": "fluid",
-    "heading": "Treat viscosity as a design input",
-    "products": [
-      "/products/axial-piston-pumps/",
-      "/products/water-hydraulic-valves/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/reynolds-number-calculator/",
-      "/knowledge-hub/engineering-calculators/pressure-loss-calculator/"
-    ],
-    "after": "cca9d932fd58685408d2047ba6eb3bc58386ac86ee54afff1dda15a81ebc5dcc",
-    "added_words": 177
-  },
-  {
-    "slug": "isothermal-behaviour-of-water-vs-thermal-expansion-in-oil",
-    "title": "Thermal Behaviour in Water Hydraulic Circuits",
-    "file": "knowledge-hub/isothermal-behaviour-of-water-vs-thermal-expansion-in-oil/index.html",
+    "slug": "water-stores-more-heat-design-the-whole-cooling-balance",
+    "title": "Water Stores More Heat: Design the Whole Cooling Balance",
+    "file": "knowledge-hub/water-stores-more-heat-design-the-whole-cooling-balance/index.html",
     "before": "0251b5502eef6e3913dc32125a671a79cd8d05ea4bf5d98306fef69b92621cb4",
     "number": 65,
     "family": "thermal",
@@ -1216,12 +1003,13 @@
       "/knowledge-hub/engineering-calculators/energy-savings-calculator/"
     ],
     "after": "5f1f206ef20f0bddb41f1e25740bb18648dabb1f1dbe0d4c6a2ccac18ac1c39c",
-    "added_words": 190
+    "added_words": 190,
+    "current_sha256": "be2cf32cae27f317927d2d610c31c87c78993263fbbe50c64e3353ecdc4885cd"
   },
   {
-    "slug": "knife-gate-valves-and-water-hydraulics-a-natural-fit",
-    "title": "Knife Gate Valves and Water Hydraulics: A Natural Fit",
-    "file": "knowledge-hub/knife-gate-valves-and-water-hydraulics-a-natural-fit/index.html",
+    "slug": "knife-gate-valves-and-water-cylinders",
+    "title": "Knife Gate Valves and Water Cylinders: A Natural Fit",
+    "file": "knowledge-hub/knife-gate-valves-and-water-cylinders/index.html",
     "before": "c3da2a3f133126caa26fa45d6e18e584761eebeef9e1868f93fdc73a8fa66a2d",
     "number": 66,
     "family": "gate",
@@ -1235,12 +1023,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "bbd237311d2099eec0ce8328eeb200d1216fefb3fcfff53a8a7cf30146faa979",
-    "added_words": 184
+    "added_words": 184,
+    "current_sha256": "35e90ec62c4357af88fadbed1b53af8e4d18e2d6e0ecfb133b0a5c4213d12134"
   },
   {
-    "slug": "lifecycle-cost-breakdown-oil-vs-water",
-    "title": "Lifecycle Cost Breakdown: Oil vs Water",
-    "file": "knowledge-hub/lifecycle-cost-breakdown-oil-vs-water/index.html",
+    "slug": "oil-versus-water-lifecycle-cost-ledger",
+    "title": "Building an Oil-vs-Water Lifecycle Ledger You Can Defend",
+    "file": "knowledge-hub/oil-versus-water-lifecycle-cost-ledger/index.html",
     "before": "d01ba2678a73b1b6abc9db853180e85902fa61d5f464ccb0bf648ec5e58ce7b6",
     "number": 67,
     "family": "economics",
@@ -1253,12 +1042,13 @@
       "/knowledge-hub/engineering-calculators/roi-calculator/"
     ],
     "after": "9e27f0da1ceaa2ee125b5905915b7a24b4f5fbe2bf8d82020a4ef831c1d1ee01",
-    "added_words": 196
+    "added_words": 196,
+    "current_sha256": "764aa7ec9ee476d72844d2347984af6fd61ddfe70bffc83f87eda7489ae53cae"
   },
   {
-    "slug": "lifting-and-hauling-without-oil-forestry-applications-using-water",
-    "title": "Lifting and Hauling Without Oil: Forestry Applications Using Water",
-    "file": "knowledge-hub/lifting-and-hauling-without-oil-forestry-applications-using-water/index.html",
+    "slug": "water-hydraulics-in-forestry",
+    "title": "Water Hydraulics in the Woods: No Oil on the Forest Floor",
+    "file": "knowledge-hub/water-hydraulics-in-forestry/index.html",
     "before": "ad18ef3fbab5648c2ada89f4e858c239a1f780baac5a937a2fc45332ed8a8f8c",
     "number": 68,
     "family": "industrial",
@@ -1272,11 +1062,12 @@
       "/knowledge-hub/engineering-calculators/motor-speed-calculator/"
     ],
     "after": "8b8bc94060b6a7a27d3580c4f476b5573b43a385df1378de89683fafec951504",
-    "added_words": 194
+    "added_words": 194,
+    "current_sha256": "90a21c1091c956388d9f893ba7ee07aa75b3f6ccc2dbfc613701d4c383ce2d0c"
   },
   {
     "slug": "managing-seal-life-in-water-hydraulic-environments",
-    "title": "Managing Seal Life in Water Hydraulic Environments",
+    "title": "Long Seal Life in Water: Get the Rod, Guide and Water Right",
     "file": "knowledge-hub/managing-seal-life-in-water-hydraulic-environments/index.html",
     "before": "fc9c4d8003652f12387bb47c446ec4879d2e3d4971c8d8fcf2112c4e2f1dbfc3",
     "number": 69,
@@ -1291,30 +1082,12 @@
       "/knowledge-hub/engineering-calculators/surface-finish-calculator/"
     ],
     "after": "9612d7168f8fed42b7cd2830b6bd97a2c3af69af1c229cdec29bb99e067c61ad",
-    "added_words": 184
-  },
-  {
-    "slug": "material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek",
-    "title": "Material Compatibility: Why We Use 316 Stainless and Carbon-Reinforced PEEK",
-    "file": "knowledge-hub/material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek/index.html",
-    "before": "725e49cbffd034f638655ea811e641023c92a4b6b7a62661bb3a91fe1bc20877",
-    "number": 70,
-    "family": "materials",
-    "heading": "Specify chemistry and contact together",
-    "products": [
-      "/products/axial-piston-pumps/",
-      "/products/water-hydraulic-cylinders/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/surface-finish-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "12c9fdd3754d0a403695d2a7d5c013dcd4066a29a8067b70b5a9f6ca352a8462",
-    "added_words": 189
+    "added_words": 184,
+    "current_sha256": "f6257297581ab3822a143ea57d52fdb75459e741db22562dcdf247683f822d2e"
   },
   {
     "slug": "material-pairing-for-water-hydraulic-tribology",
-    "title": "Material Pairing for Water Hydraulic Tribology",
+    "title": "Engineered Material Pairs Are What Make Water Hydraulics Work",
     "file": "knowledge-hub/material-pairing-for-water-hydraulic-tribology/index.html",
     "before": "85bbf3b33805c13b4289132a9f1dd79a86266b22cd1f30d66e65a039e41cfdab",
     "number": 71,
@@ -1329,12 +1102,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "53072511cb4db69e06b3380c15affcd5f92551a39db6a1e9693cad1a02d9d669",
-    "added_words": 194
+    "added_words": 194,
+    "current_sha256": "edbc18cbbae06e865a9c911ef4251ee3e88ad0a2ca50c2684ca1b125bfda7714"
   },
   {
-    "slug": "mining-equipment-using-water-hydraulic-systems",
-    "title": "Mining Equipment Using Water Hydraulic Systems",
-    "file": "knowledge-hub/mining-equipment-using-water-hydraulic-systems/index.html",
+    "slug": "water-hydraulics-underground",
+    "title": "Water Hydraulics Underground: Removing Oil From Selected Mining Circuits",
+    "file": "knowledge-hub/water-hydraulics-underground/index.html",
     "before": "cfe35b30a1ac5eaaec51abbb6d1039844fcc6a7e7d161f7e9ea8e9af92a1c0f0",
     "number": 72,
     "family": "industrial",
@@ -1348,31 +1122,13 @@
       "/knowledge-hub/engineering-calculators/motor-speed-calculator/"
     ],
     "after": "3fa8e71e33e6881fe09bc3951b4ac30fc014fb826d0cf1bfe524b629d3ab9107",
-    "added_words": 194
+    "added_words": 194,
+    "current_sha256": "6340ddaa3459efb28db3f71ae75f39a6cb19aaa61f3f059b0b87caa069911c10"
   },
   {
-    "slug": "municipal-infrastructure-without-the-oil-hazards",
-    "title": "Reducing Hydraulic-Oil Exposure in Municipal Infrastructure",
-    "file": "knowledge-hub/municipal-infrastructure-without-the-oil-hazards/index.html",
-    "before": "3ae41ff11e509cf20c5cd16448da16e1cf0badd8f314ab99c626a839b8d8b354",
-    "number": 73,
-    "family": "gate",
-    "heading": "Turn the municipal objective into an asset plan",
-    "products": [
-      "/sluice-gates/",
-      "/products/water-hydraulic-cylinders/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/cylinder-force-calculator/",
-      "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
-    ],
-    "after": "689a72078cacd45e171542d81accd9c97637124979386264d93077f72d5f6474",
-    "added_words": 188
-  },
-  {
-    "slug": "no-oil-no-spill-environmental-advantages-explained",
-    "title": "Removing Oil: Environmental Benefits and Remaining Risks",
-    "file": "knowledge-hub/no-oil-no-spill-environmental-advantages-explained/index.html",
+    "slug": "what-removing-oil-does-for-the-environment",
+    "title": "What Removing Oil Does for the Environment",
+    "file": "knowledge-hub/what-removing-oil-does-for-the-environment/index.html",
     "before": "3c6adba71adcd79700a951572f4ddad07cf811dd9afa9b18b7cf1f66c3853fbb",
     "number": 74,
     "family": "environment",
@@ -1385,12 +1141,13 @@
       "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/"
     ],
     "after": "b35c687e398378763df055375d1c35aef2d3fdcb0bc1e8a57f31e6d3ac10ff92",
-    "added_words": 185
+    "added_words": 185,
+    "current_sha256": "37306e490055dd724f020d98db3b77146aaf321ed1fec8710b8f4a8f3bc744bf"
   },
   {
-    "slug": "oil-free-hydraulics-in-amusement-safety-a-pilot-case",
-    "title": "Evaluating a Water Hydraulic Pilot for Attraction Equipment",
-    "file": "knowledge-hub/oil-free-hydraulics-in-amusement-safety-a-pilot-case/index.html",
+    "slug": "piloting-water-hydraulics-on-a-ride-bench-representative-rig-full-validation",
+    "title": "Piloting Water Hydraulics on a Ride: Bench, Representative Rig, Full Validation",
+    "file": "knowledge-hub/piloting-water-hydraulics-on-a-ride-bench-representative-rig-full-validation/index.html",
     "before": "5514c1db0ac760e3e5b83340a8032c8c6411aa262a9a424f7eeed1aba68066ce",
     "number": 75,
     "family": "safety",
@@ -1404,30 +1161,13 @@
       "/knowledge-hub/engineering-calculators/accumulator-calculator/"
     ],
     "after": "75444fc4e806f7f2945a42eea35ce78d1ab050ee509d9fc0d93776ac1ddfb067",
-    "added_words": 184
+    "added_words": 184,
+    "current_sha256": "9c8044bc82beab8b87fa03d28a49cc0ef57694221e7c608fca309a08773b8166"
   },
   {
-    "slug": "oil-free-operation-and-compliance-with-federal-clean-energy-goals",
-    "title": "Oil-Free Operation and Project-Level Environmental Goals",
-    "file": "knowledge-hub/oil-free-operation-and-compliance-with-federal-clean-energy-goals/index.html",
-    "before": "96fa52daa63eac824b826b4108c33b85c38807e49f9dcd5ac9d0380ea6e542b0",
-    "number": 76,
-    "family": "environment",
-    "heading": "Connect environmental goals to measured work",
-    "products": [
-      "/products/water-hydraulics-hpu/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/",
-      "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/"
-    ],
-    "after": "cbbf22e4f0440a4fec226e7b7d18df047f11156f662b2e240a9756c854dacd14",
-    "added_words": 186
-  },
-  {
-    "slug": "oil-hydraulics-vs-water-hydraulics-the-complete-engineering-comparison",
-    "title": "Oil Hydraulics vs Water Hydraulics: The Complete Engineering Comparison",
-    "file": "knowledge-hub/oil-hydraulics-vs-water-hydraulics-the-complete-engineering-comparison/index.html",
+    "slug": "oil-or-water-engineering-comparison",
+    "title": "Oil or Water? A Side-by-Side for the Same Job",
+    "file": "knowledge-hub/oil-or-water-engineering-comparison/index.html",
     "before": "da5d65189bd9a5fcc9262b9370af3b4ad78c7a9f701a3619e85041b31c1db973",
     "number": 77,
     "family": "system",
@@ -1441,12 +1181,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "96902f6689f7bb175749a45785a7d5851317d087fc6120e9123367baddb6de8b",
-    "added_words": 186
+    "added_words": 186,
+    "current_sha256": "83eb3e1aed3eb28e0ce35a54b8dcb6b9a38d6333bf29b1623e68b00840a2e431"
   },
   {
-    "slug": "oil-vs-water-hydraulics-a-complete-system-comparison",
-    "title": "Oil vs Water Hydraulics: A Complete System Comparison",
-    "file": "knowledge-hub/oil-vs-water-hydraulics-a-complete-system-comparison/index.html",
+    "slug": "comparing-oil-and-water-bids",
+    "title": "Comparing Oil and Water Bids: Same Job, Same Scope, Same Evidence",
+    "file": "knowledge-hub/comparing-oil-and-water-bids/index.html",
     "before": "325d3f960a7253e9d4e6a7cb066292f32a39b91761644bae1d7cec8b81e320ef",
     "number": 78,
     "family": "system",
@@ -1460,12 +1201,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "6eff70fe490891b2d29b357207e3e861f9d82bf19df47aed4165c48429e422f0",
-    "added_words": 188
+    "added_words": 188,
+    "current_sha256": "a317e6a566f6ec75bd403baf904e4ea283316548da000e2bc664ccaf1926066a"
   },
   {
-    "slug": "our-dss-partnership-putting-water-to-the-test-on-severe-service-valves",
-    "title": "How to Evaluate Water Actuation on Severe-Service Valves",
-    "file": "knowledge-hub/our-dss-partnership-putting-water-to-the-test-on-severe-service-valves/index.html",
+    "slug": "water-actuators-on-severe-service-valves-proving-the-performance",
+    "title": "Water Actuators on Severe-Service Valves: Proving the Performance",
+    "file": "knowledge-hub/water-actuators-on-severe-service-valves-proving-the-performance/index.html",
     "before": "c5f9ca494675b3dcb23ceb17db8fad212db9a8f01ce445a6526e40a5854f9e3e",
     "number": 79,
     "family": "valve",
@@ -1479,12 +1221,13 @@
       "/knowledge-hub/engineering-calculators/water-hammer-calculator/"
     ],
     "after": "154f980669af09828bcc0a08523c7fe105e9c4f7a4e89613fc07e5758eb17bf3",
-    "added_words": 184
+    "added_words": 184,
+    "current_sha256": "98f828bb962bb8041877a6e19e6ee2f96c0d3cc0071cae722ad57f7c1a9a6ccb"
   },
   {
-    "slug": "pressure-limits-of-water-hydraulic-equipment",
-    "title": "Pressure Limits of Water Hydraulic Equipment",
-    "file": "knowledge-hub/pressure-limits-of-water-hydraulic-equipment/index.html",
+    "slug": "designing-within-160-bar",
+    "title": "Designing Confidently Within 160 Bar \u2014 Including the Spikes",
+    "file": "knowledge-hub/designing-within-160-bar/index.html",
     "before": "d58ac5e5da3705ce037c99197e1cce38fef70c7e3f90db77d7f7bc4a3b7b90a8",
     "number": 80,
     "family": "pressure",
@@ -1498,12 +1241,13 @@
       "/knowledge-hub/engineering-calculators/water-hammer-calculator/"
     ],
     "after": "4e873bd197d6ca6fb1b0fa43f215ab67fd4fa6e67cc803fe9632fc1c98640f74",
-    "added_words": 187
+    "added_words": 187,
+    "current_sha256": "5c241bf09152a998750465ce0952c7e9f7b9427f4f12e1afc4c52db8e1697f45"
   },
   {
-    "slug": "preventing-corrosion-in-water-hydraulic-systems",
-    "title": "Preventing Corrosion in Water Hydraulic Systems",
-    "file": "knowledge-hub/preventing-corrosion-in-water-hydraulic-systems/index.html",
+    "slug": "corrosion-control-in-water-circuits",
+    "title": "Corrosion Control in Water Circuits: Design It Out From the Start",
+    "file": "knowledge-hub/corrosion-control-in-water-circuits/index.html",
     "before": "99be90bedf107948d0e8e2b0a777227cad67b16907910ce50820f9d014e1732c",
     "number": 81,
     "family": "materials",
@@ -1517,12 +1261,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "d3c290ab45865844a25d7b99fd584d25c4f50d58ec76f88afb33f582e41789d9",
-    "added_words": 194
+    "added_words": 194,
+    "current_sha256": "2f796b85442cf60b0b243a5846237de29faeec85053908eb19117c99ae895bb9"
   },
   {
-    "slug": "preventing-corrosion-without-coatings-or-chemicals",
-    "title": "Corrosion Control in Water Hydraulic Circuits",
-    "file": "knowledge-hub/preventing-corrosion-without-coatings-or-chemicals/index.html",
+    "slug": "investigating-corrosion-in-a-running-water-circuit",
+    "title": "Investigating Corrosion in a Running Water Circuit",
+    "file": "knowledge-hub/investigating-corrosion-in-a-running-water-circuit/index.html",
     "before": "f8defa4fd06a17d893f2cd903e48b704975521079d72bb563e25126f7a5519fb",
     "number": 82,
     "family": "materials",
@@ -1536,12 +1281,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "949200e65269a75d93aea4f9e6edd485e045db6e33441d25ae2ebcb896afb3a4",
-    "added_words": 187
+    "added_words": 187,
+    "current_sha256": "4896fbed27d3f4d761d3229b9a2f31a503430401c10404b478c4296ea74b2432"
   },
   {
-    "slug": "preventing-scaling-or-fouling-without-additives",
-    "title": "Managing Scale and Fouling in Water Hydraulic Circuits",
-    "file": "knowledge-hub/preventing-scaling-or-fouling-without-additives/index.html",
+    "slug": "scale-slime-or-debris-identify-the-deposit-before-you-treat-it",
+    "title": "Scale, Slime or Debris? Identify the Deposit Before You Treat It",
+    "file": "knowledge-hub/scale-slime-or-debris-identify-the-deposit-before-you-treat-it/index.html",
     "before": "c1c6549dbe09e77b934eeafe3be75e23940ca91f14be0401144d28315f342e4a",
     "number": 83,
     "family": "filtration",
@@ -1555,12 +1301,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "2b0f043d0004293a39d56496404cc6c85419c7071714b40251afda243ce66e30",
-    "added_words": 185
+    "added_words": 185,
+    "current_sha256": "d815072a789183c7bb4ed5fd5eea9dd969d362282b72cffd467af7ff3ca7bc61"
   },
   {
-    "slug": "replacing-oil-systems-in-algoma-steel-a-modern-retrofit",
-    "title": "Planning a Steel-Mill Hydraulic Retrofit",
-    "file": "knowledge-hub/replacing-oil-systems-in-algoma-steel-a-modern-retrofit/index.html",
+    "slug": "retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load",
+    "title": "Retrofitting Steel-Mill Hydraulics: Cut the Oil Fire Load",
+    "file": "knowledge-hub/retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load/index.html",
     "before": "a1c68633aa2cbc6733462a7a8c1e8910ac3db2d00ba4c517b9860a6c7f417f27",
     "number": 84,
     "family": "retrofit",
@@ -1574,12 +1321,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "b789aefad9907bd129373dddc0d930e602f1504dd365d463c56e9285ac000418",
-    "added_words": 194
+    "added_words": 194,
+    "current_sha256": "514f8f74b814a5a7653917f8d754f0437cb28b48b60262794d48079b7ad6fadc"
   },
   {
-    "slug": "retrofitting-a-fire-pump-station-with-zero-oil",
-    "title": "Planning a Fire-Pump Station Retrofit",
-    "file": "knowledge-hub/retrofitting-a-fire-pump-station-with-zero-oil/index.html",
+    "slug": "fire-protection-pump-approval-boundaries",
+    "title": "Fire-Pump Station Renewal: Start With the Protection Design",
+    "file": "knowledge-hub/fire-protection-pump-approval-boundaries/index.html",
     "before": "571c2690bcadf0a12da6106d9be4e4eff4ef055536edd75d3ff7da394004aa7b",
     "number": 85,
     "family": "fire",
@@ -1592,31 +1340,13 @@
       "/knowledge-hub/engineering-calculators/pressure-loss-calculator/"
     ],
     "after": "aca32285dc79ded17e41f71f8f7a2f7ee3ddfbf0ce2a3b42d2477aef6aa9ed4b",
-    "added_words": 185
+    "added_words": 185,
+    "current_sha256": "7053db5af23ad38547446cb9665fa3ba4a195d5efe607ba57d2793d1d3b64d6a"
   },
   {
-    "slug": "seal-and-hose-life-expectations-with-tap-water",
-    "title": "Seal and Hose Life Expectations with Tap Water",
-    "file": "knowledge-hub/seal-and-hose-life-expectations-with-tap-water/index.html",
-    "before": "66fdfac249ab4905c854581796f1c36eb89daadb5266bcaa98ad18c52b4a0594",
-    "number": 86,
-    "family": "seals",
-    "heading": "Specify the hose assembly as well as the elastomer",
-    "products": [
-      "/products/water-hydraulic-cylinders/",
-      "/products/water-hydraulic-valves/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/seal-compression-calculator/",
-      "/knowledge-hub/engineering-calculators/surface-finish-calculator/"
-    ],
-    "after": "11913d7a0e37dab98630b6ce4e780549c4c1c4122f1e64a29809a644cfcb46c8",
-    "added_words": 187
-  },
-  {
-    "slug": "selecting-pumps-for-water-hydraulic-systems",
-    "title": "Selecting Pumps for Water Hydraulic Systems",
-    "file": "knowledge-hub/selecting-pumps-for-water-hydraulic-systems/index.html",
+    "slug": "choosing-a-water-pump",
+    "title": "Choosing a Water Pump: Fit the Envelope, Not the Peak",
+    "file": "knowledge-hub/choosing-a-water-pump/index.html",
     "before": "59affa7ba239c9842a795a35c3a653633d404a3be4b5686ec6f462ab91058d41",
     "number": 87,
     "family": "pump",
@@ -1630,12 +1360,13 @@
       "/knowledge-hub/engineering-calculators/hydraulic-efficiency-calculator/"
     ],
     "after": "620a307e061aa64c9a2c0fbf55d31f949c5c18d3c30bbf687b7998c3bce029ce",
-    "added_words": 201
+    "added_words": 201,
+    "current_sha256": "5385dc4a1704904d7de2c9bf1fe44ea7272fd05945bb4a01363dbff62d50dbf9"
   },
   {
-    "slug": "servicing-a-water-hydraulic-hpu-on-site-in-under-1-day",
-    "title": "Planning a Water HPU Service Outage",
-    "file": "knowledge-hub/servicing-a-water-hydraulic-hpu-on-site-in-under-1-day/index.html",
+    "slug": "planning-a-water-hpu-outage-scope-parts-energy-control-and-sign-off",
+    "title": "Planning a Water HPU Outage: Scope, Parts, Energy Control and Sign-Off",
+    "file": "knowledge-hub/planning-a-water-hpu-outage-scope-parts-energy-control-and-sign-off/index.html",
     "before": "5629b8d2d9d5f05ea7abab53c7b1b445cc314acf1f9b0161ecbdff7056a0c754",
     "number": 88,
     "family": "maintenance",
@@ -1649,50 +1380,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "0b3734902291c5432ca8310960aa151ebe52bc063b9b7e7be76c1ef67ef2c24e",
-    "added_words": 190
+    "added_words": 190,
+    "current_sha256": "2bd9b22176a41ab991663262d464e0ed88de8e9e0f1e693518bf2b69cf538fe4"
   },
   {
-    "slug": "should-you-specify-water-in-your-next-tender",
-    "title": "Should You Specify Water in Your Next Tender?",
-    "file": "knowledge-hub/should-you-specify-water-in-your-next-tender/index.html",
-    "before": "7f32077815668abfe058fa2af587c56d19f7470fa7e83ef338328017e9d79e52",
-    "number": 89,
-    "family": "specification",
-    "heading": "Ask bidders to demonstrate the required duty",
-    "products": [
-      "/products/water-hydraulics-hpu/",
-      "/products/water-hydraulic-valves/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/power-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "e1aa0f0e5bc53b2faddd36f2746d8108382905bc4b47a5f9cde51160a1a5d34b",
-    "added_words": 194
-  },
-  {
-    "slug": "sizing-cylinders-for-water-hydraulic-applications",
-    "title": "Sizing Cylinders for Water Hydraulic Applications",
-    "file": "knowledge-hub/sizing-cylinders-for-water-hydraulic-applications/index.html",
-    "before": "4cba56ad5c5af1925ab3968c043d8e62f47972dda41f1e3ddfb541bc7aa1a8ea",
-    "number": 90,
-    "family": "cylinder",
-    "heading": "Size flow after choosing effective area",
-    "products": [
-      "/products/water-hydraulic-cylinders/",
-      "/products/water-hydraulic-valves/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/cylinder-force-calculator/",
-      "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
-    ],
-    "after": "b81bd0fd8db3b1a5e0b24da4027a24ee957f1a4b29f85311262a0dbea6c2ddb5",
-    "added_words": 186
-  },
-  {
-    "slug": "smart-monitoring-options-for-water-hpus",
-    "title": "Smart Monitoring Options for Water HPUs",
-    "file": "knowledge-hub/smart-monitoring-options-for-water-hpus/index.html",
+    "slug": "monitoring-a-water-hpu",
+    "title": "Monitoring a Water HPU: Start With the Decision, Then Pick the Sensor",
+    "file": "knowledge-hub/monitoring-a-water-hpu/index.html",
     "before": "3501d4b3465eff9f052a673af406d19ef6f10c7ec666976377916ce65305d3e1",
     "number": 91,
     "family": "hpu",
@@ -1706,50 +1400,13 @@
       "/knowledge-hub/engineering-calculators/power-calculator/"
     ],
     "after": "7c56769b6d6f60cf94c44ba023e06a4f9c965c1ba3d461af67e1d072c45a98cd",
-    "added_words": 190
+    "added_words": 190,
+    "current_sha256": "be952b2873a4af8dac0344417c955882d5b44825e28437d93217bf5a587b0d99"
   },
   {
-    "slug": "spec-writing-guide-for-water-hydraulic-equipment",
-    "title": "Spec Writing Guide for Water Hydraulic Equipment",
-    "file": "knowledge-hub/spec-writing-guide-for-water-hydraulic-equipment/index.html",
-    "before": "0d25ec198723980f791035ba666d028fcffd21d0e8a1a1ebb3bc0434b9b46fa7",
-    "number": 92,
-    "family": "specification",
-    "heading": "Specify evidence at the points of decision",
-    "products": [
-      "/products/water-hydraulics-hpu/",
-      "/products/water-hydraulic-valves/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/power-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "d476004d5baf207a3eb61474580383f849c4d36431fcdfd3e15d7721e408eb75",
-    "added_words": 194
-  },
-  {
-    "slug": "the-future-of-oil-free-hydraulic-systems",
-    "title": "The Future of Oil-Free Hydraulic Systems",
-    "file": "knowledge-hub/the-future-of-oil-free-hydraulic-systems/index.html",
-    "before": "49f2f5039d4eeca490702ea29228b38cfb424cbada464a00daaf6c4b866c5b0a",
-    "number": 93,
-    "family": "system",
-    "heading": "Choose a repeatable first application",
-    "products": [
-      "/products/water-hydraulics-hpu/",
-      "/products/water-hydraulic-cylinders/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/power-calculator/",
-      "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
-    ],
-    "after": "3672beb2c05a1e79dd39df55b8fe6398f161b870ec83440c655de08087c95ef7",
-    "added_words": 181
-  },
-  {
-    "slug": "the-hidden-weakness-of-duplex-in-saltwater-why-we-stick-with-316",
-    "title": "Duplex Stainless Steel: Benefits in Marine and Corrosive Environments",
-    "file": "knowledge-hub/the-hidden-weakness-of-duplex-in-saltwater-why-we-stick-with-316/index.html",
+    "slug": "duplex-stainless-at-sea-stronger-and-more-pit-resistant",
+    "title": "Duplex Stainless at Sea: Stronger and More Pit-Resistant",
+    "file": "knowledge-hub/duplex-stainless-at-sea-stronger-and-more-pit-resistant/index.html",
     "before": "861edc832bfae5c6b66a77fcc9b5320a0c02db8ad94346ab333b13371bd897a1",
     "number": 94,
     "family": "seawater",
@@ -1763,12 +1420,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "cb9ba1fb64f31872277f5e20a75015721f61e0aebe1609459b40b499640c748e",
-    "added_words": 190
+    "added_words": 190,
+    "current_sha256": "9366642e8c51f011901f2e784129a508a78a12679e37f267a823b2c7c5550b27"
   },
   {
-    "slug": "the-physics-behind-water-hydraulic-pressure-systems",
-    "title": "The Physics Behind Water Hydraulic Pressure Systems",
-    "file": "knowledge-hub/the-physics-behind-water-hydraulic-pressure-systems/index.html",
+    "slug": "pressure-flow-and-power-equations",
+    "title": "Pressure, Flow, Power: The Three Equations Behind Every Water Circuit",
+    "file": "knowledge-hub/pressure-flow-and-power-equations/index.html",
     "before": "76eaefe01984d3bbe40c13821ed72166d6db786f5ebbb4193d9c1076189f5565",
     "number": 95,
     "family": "pressure",
@@ -1782,31 +1440,13 @@
       "/knowledge-hub/engineering-calculators/water-hammer-calculator/"
     ],
     "after": "1cc3d7679cc6e67b9b8c59d0ee5ac81f3d6be95a182b57ebb7018750f20987e5",
-    "added_words": 186
+    "added_words": 186,
+    "current_sha256": "1a7ea1d45eea820642a4623a088cea376a82f964417596de2eead7f6cb24f86f"
   },
   {
-    "slug": "thermal-performance-of-water-vs-hydraulic-oil",
-    "title": "Thermal Performance of Water vs Hydraulic Oil",
-    "file": "knowledge-hub/thermal-performance-of-water-vs-hydraulic-oil/index.html",
-    "before": "170266c0b9c0d32b8c07a78aeba334fa4c7876d1ad74e58b64df6208278fc0b9",
-    "number": 96,
-    "family": "thermal",
-    "heading": "Estimate where lost power becomes heat",
-    "products": [
-      "/products/water-hydraulics-hpu/",
-      "/products/axial-piston-pumps/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/power-calculator/",
-      "/knowledge-hub/engineering-calculators/energy-savings-calculator/"
-    ],
-    "after": "72aaf057bce8d2527d13afe94c4043eb6854fcbdcfb7f503744ecf46e92f9f13",
-    "added_words": 185
-  },
-  {
-    "slug": "total-cost-of-ownership-where-water-wins-over-time",
-    "title": "Total Cost of Ownership: Testing the Case for Water",
-    "file": "knowledge-hub/total-cost-of-ownership-where-water-wins-over-time/index.html",
+    "slug": "when-does-water-pay-off-find-the-break-even-saving",
+    "title": "When Does Water Pay Off? Find the Break-Even Saving",
+    "file": "knowledge-hub/when-does-water-pay-off-find-the-break-even-saving/index.html",
     "before": "5853a6b33cada30d86d28150ad405e2781501b4482939d1e76f5c77b7e3b19f4",
     "number": 97,
     "family": "economics",
@@ -1819,12 +1459,13 @@
       "/knowledge-hub/engineering-calculators/roi-calculator/"
     ],
     "after": "394c6bdbdb5dcba4f01b1122b1d198282fd1e4a5432c287b56d291945e5fdb4e",
-    "added_words": 192
+    "added_words": 192,
+    "current_sha256": "eed508a7b87288508f619e544479cb7f6b3aca351abeda08d73470dd67716035"
   },
   {
-    "slug": "understanding-valve-selection-in-water-hydraulic-systems",
-    "title": "Understanding Valve Selection in Water Hydraulic Systems",
-    "file": "knowledge-hub/understanding-valve-selection-in-water-hydraulic-systems/index.html",
+    "slug": "reading-a-water-hydraulic-valve",
+    "title": "Reading a Water Hydraulic Valve: Four Questions Before Size",
+    "file": "knowledge-hub/reading-a-water-hydraulic-valve/index.html",
     "before": "05747909b7f42c00e5f9ccd4bed356e6a064b247f9e4876b378a5c0b4c6d9a3b",
     "number": 98,
     "family": "valve",
@@ -1838,12 +1479,13 @@
       "/knowledge-hub/engineering-calculators/water-hammer-calculator/"
     ],
     "after": "7fd6484e9ed55533566793e2a9bc74bf25b5fe7820ae562ec6ab7a200559ac9d",
-    "added_words": 187
+    "added_words": 187,
+    "current_sha256": "c23832ec5d44b9509fc8d3c4375c2ed8ec7d286c9623e622d10f24e1af2e8686"
   },
   {
-    "slug": "water-driven-power-on-offshore-platforms",
-    "title": "Water-Driven Power on Offshore Platforms",
-    "file": "knowledge-hub/water-driven-power-on-offshore-platforms/index.html",
+    "slug": "water-hydraulics-offshore",
+    "title": "Water Hydraulics Offshore: Start With One Auxiliary Circuit",
+    "file": "knowledge-hub/water-hydraulics-offshore/index.html",
     "before": "37763cfbcf236051ad655395c3a238e20140d5ce6893446feaea6c2df8bc731b",
     "number": 99,
     "family": "marine",
@@ -1857,12 +1499,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "eeef13286198cb06f1ebe3d9f1d95f87ce0ee363397a9f5ea6bf2d9ab3ce6159",
-    "added_words": 190
+    "added_words": 190,
+    "current_sha256": "a05af443ce037cc032135888a865a69efd616050595190178783ce222d431825"
   },
   {
-    "slug": "water-hydraulic-filtration-requirements",
-    "title": "Water Hydraulic Filtration Requirements",
-    "file": "knowledge-hub/water-hydraulic-filtration-requirements/index.html",
+    "slug": "specifying-water-hydraulic-filtration",
+    "title": "Specifying Filtration for Water Hydraulics: Beyond \"10 Micron\"",
+    "file": "knowledge-hub/specifying-water-hydraulic-filtration/index.html",
     "before": "caff45068b9270072b1a654e47f05db24eb153285c7878a14f0c82990b1b4ec9",
     "number": 100,
     "family": "filtration",
@@ -1876,12 +1519,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "336f2be0635685ce4b555835afc93f8c745bce01ea1c50542fafa9072da62ba7",
-    "added_words": 189
+    "added_words": 189,
+    "current_sha256": "b3f4d2c4abedc97aace18f53930cb51785e397548e47428740896970e844db2c"
   },
   {
-    "slug": "water-hydraulic-system-maintenance",
-    "title": "Water Hydraulic System Maintenance",
-    "file": "knowledge-hub/water-hydraulic-system-maintenance/index.html",
+    "slug": "maintaining-a-water-hydraulic-system",
+    "title": "Maintaining a Water Hydraulic System: No Oil Changes, Smarter Checks",
+    "file": "knowledge-hub/maintaining-a-water-hydraulic-system/index.html",
     "before": "a1f7a5d1c2d1805d486bad2f5e136e3f284944a68656cc46d2b1cb7b79f8aa13",
     "number": 101,
     "family": "maintenance",
@@ -1895,12 +1539,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "b34d0a031b3dc95590e704825a51e9d2721fde46e8a3cd12fbb7c0160ad53037",
-    "added_words": 191
+    "added_words": 191,
+    "current_sha256": "748eefe9bb015d17c305ad0524bb7146809dca49d67c7589d4b8a8f3a0412427"
   },
   {
-    "slug": "water-hydraulic-systems-for-marine-vessels",
-    "title": "Water Hydraulic Systems for Marine Vessels",
-    "file": "knowledge-hub/water-hydraulic-systems-for-marine-vessels/index.html",
+    "slug": "water-hydraulics-for-deck-machinery",
+    "title": "Water Hydraulics Afloat: Clean Freshwater Power for Deck Machinery",
+    "file": "knowledge-hub/water-hydraulics-for-deck-machinery/index.html",
     "before": "a00a2a20667f702d62471f4cb7f7e315c49ed1975273dad7ed269dfb227e66af",
     "number": 102,
     "family": "marine",
@@ -1914,12 +1559,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "e5e2514d4a368fe1aba950f0b00fd40529c3d577492e9c833bf542723fe5f1c1",
-    "added_words": 190
+    "added_words": 190,
+    "current_sha256": "93dd9fb77f5707845e8c8fd9d92c054a70cd5825d1d150fd3f38ba4e5a4c9ee1"
   },
   {
-    "slug": "water-hydraulics-for-flood-control-infrastructure",
-    "title": "Water Hydraulics for Flood Control Infrastructure",
-    "file": "knowledge-hub/water-hydraulics-for-flood-control-infrastructure/index.html",
+    "slug": "flood-gate-readiness",
+    "title": "Flood Gates Wait for Years, Then Must Work Once",
+    "file": "knowledge-hub/flood-gate-readiness/index.html",
     "before": "f9537e74b02fc764c938fc56c3597fa71027f5f5e1be7d9873a0b39f1a90e5bf",
     "number": 103,
     "family": "gate",
@@ -1933,31 +1579,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "ee6e360d92d2bd6e1413b68da7c0570892beaa6db2a42d00aff4b9e49a6fac61",
-    "added_words": 183
+    "added_words": 183,
+    "current_sha256": "8d4b96178e831d38d9e7df3ac0d485437b96dfe10fd212d6c6d2842b8483f8c4"
   },
   {
-    "slug": "water-hydraulics-for-government-infrastructure-projects",
-    "title": "Water Hydraulics for Government Infrastructure Projects",
-    "file": "knowledge-hub/water-hydraulics-for-government-infrastructure-projects/index.html",
-    "before": "68748b418564c65ab530b3d35f4e5c560d7739af891ab894aed12d78d4e48d71",
-    "number": 104,
-    "family": "specification",
-    "heading": "Make the public asset's service life explicit",
-    "products": [
-      "/products/water-hydraulics-hpu/",
-      "/products/water-hydraulic-valves/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/power-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "316102ac44f7c06b8eccf48a0b8bd30d4dc589b9d4749c6f65c69095c36a7210",
-    "added_words": 189
-  },
-  {
-    "slug": "water-hydraulics-in-mining-lower-downtime-zero-contamination",
-    "title": "Mining Water Hydraulics: Availability, Service and Oil Exposure",
-    "file": "knowledge-hub/water-hydraulics-in-mining-lower-downtime-zero-contamination/index.html",
+    "slug": "mining-availability-is-built-at-the-skid-layout",
+    "title": "Mining Availability Is Built at the Skid Layout",
+    "file": "knowledge-hub/mining-availability-is-built-at-the-skid-layout/index.html",
     "before": "6bb98cecfdaa604eed117d3caf984857ad3bec67c2b50d4eda76c18889d3c140",
     "number": 105,
     "family": "industrial",
@@ -1971,12 +1599,13 @@
       "/knowledge-hub/engineering-calculators/motor-speed-calculator/"
     ],
     "after": "a8607718aa95030a6a5d66231c1d532c04b6fd5418b6814dbeb27eda7192038d",
-    "added_words": 192
+    "added_words": 192,
+    "current_sha256": "4ae3d960d5ca7d3001d41685cf079d9349f101bf64568cafb830eb4d82dd5ccb"
   },
   {
-    "slug": "water-hydraulics-in-wastewater-treatment-plants",
-    "title": "Water Hydraulics in Wastewater Treatment Plants",
-    "file": "knowledge-hub/water-hydraulics-in-wastewater-treatment-plants/index.html",
+    "slug": "water-hydraulics-in-the-headworks",
+    "title": "Taking the Oil Out of the Headworks",
+    "file": "knowledge-hub/water-hydraulics-in-the-headworks/index.html",
     "before": "5ca7b82d25fce9d718a7e1785effefe71c880bd8df38183781525614669080d4",
     "number": 106,
     "family": "wastewater",
@@ -1990,12 +1619,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "2f7788f9e3907b209a437591856a5a5a54e6503612e710b9ebe8af8da518f2d4",
-    "added_words": 181
+    "added_words": 181,
+    "current_sha256": "53cd1c0fcc806991c3201eb4bce7aab19d4093fb8f68f8c703237dcae2ba1eb9"
   },
   {
-    "slug": "water-hydraulics-on-the-coast-marine-applications-that-work",
-    "title": "Evaluating Coastal Water Hydraulic Applications",
-    "file": "knowledge-hub/water-hydraulics-on-the-coast-marine-applications-that-work/index.html",
+    "slug": "water-hydraulics-by-the-sea-built-for-the-coastal-environment",
+    "title": "Water Hydraulics by the Sea: Built for the Coastal Environment",
+    "file": "knowledge-hub/water-hydraulics-by-the-sea-built-for-the-coastal-environment/index.html",
     "before": "ab325c649b38d0b7bb11036ccadf60b50e16531133e0088f89d19f8884425e9a",
     "number": 107,
     "family": "marine",
@@ -2009,12 +1639,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "1fa3548157db379c8b1ee4846fb73cf3354f0c8014ff86c102d1c179298cb88e",
-    "added_words": 188
+    "added_words": 188,
+    "current_sha256": "87fb2e16aaac8088f995487a3f15625b690860d591a761c81faa0bb92d48f1a5"
   },
   {
-    "slug": "waterquest-vs-traditional-hpu-test-results-in-desalination",
-    "title": "How to Test Water and Oil HPUs for Desalination",
-    "file": "knowledge-hub/waterquest-vs-traditional-hpu-test-results-in-desalination/index.html",
+    "slug": "a-fair-test-of-water-vs-oil-hpus-in-desalination",
+    "title": "A Fair Test of Water vs Oil HPUs in Desalination",
+    "file": "knowledge-hub/a-fair-test-of-water-vs-oil-hpus-in-desalination/index.html",
     "before": "7478117cc0df4382f93aa28b47b85644155f0ec96b8effaa5d3eaae2db88c59a",
     "number": 108,
     "family": "ro",
@@ -2028,31 +1659,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "53199f2c5248e979445fb116181f1a19a4132994fe3536e8218bfc0284f6f998",
-    "added_words": 204
+    "added_words": 204,
+    "current_sha256": "5b396cfec48a2af60785824f97e06688610ee4fca96b11329d1ce903fac553e1"
   },
   {
-    "slug": "wave-of-change-how-water-hydraulics-conquered-lubrication-challenges",
-    "title": "Wave of Change: How Water Hydraulics Address Lubrication Challenges",
-    "file": "knowledge-hub/wave-of-change-how-water-hydraulics-conquered-lubrication-challenges/index.html",
-    "before": "5fc56e27237eccf8aeca084786d2cb463c2cf533e72cbef5a31441d5bf33c725",
-    "number": 109,
-    "family": "materials",
-    "heading": "Turn lubrication challenges into interface requirements",
-    "products": [
-      "/products/axial-piston-pumps/",
-      "/products/water-hydraulic-cylinders/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/surface-finish-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "e97bd7e6700ee879e7cc4ed3203bb06b9d47213940621dc012ef3ae5d3634090",
-    "added_words": 190
-  },
-  {
-    "slug": "what-are-water-hydraulic-systems",
-    "title": "What Are Water Hydraulic Systems?",
-    "file": "knowledge-hub/what-are-water-hydraulic-systems/index.html",
+    "slug": "water-hydraulics-101",
+    "title": "Water Hydraulics 101: Full Hydraulic Force, Without the Oil",
+    "file": "knowledge-hub/water-hydraulics-101/index.html",
     "before": "1fc118b674b2994b2274477e2619f750c6277fad39c174a39b329879fdca0cbd",
     "number": 110,
     "family": "system",
@@ -2066,31 +1679,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "fd7aff03dc81166f25d3b3de1889b2821f93a869a64dd000bea93f8c2cfdb35d",
-    "added_words": 183
+    "added_words": 183,
+    "current_sha256": "44ad723c5d61cf017ebe68b204c9a42962d3125d754cb7013c4b0e8a9c766ee5"
   },
   {
-    "slug": "what-does-no-additives-actually-mean",
-    "title": "What Does \"No Additives\" Actually Mean?",
-    "file": "knowledge-hub/what-does-no-additives-actually-mean/index.html",
-    "before": "55da185e2da7070afd996952252ccecc26c8a3ecef61d96fde8d498bfcd7d46e",
-    "number": 111,
-    "family": "filtration",
-    "heading": "Define which additions are excluded",
-    "products": [
-      "/products/axial-piston-pumps/",
-      "/products/water-hydraulics-hpu/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/pressure-drop-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "7723e129ad9365fab38e18cd150bb5b2df153ddc04b2782030d9cc0f99b37dd9",
-    "added_words": 181
-  },
-  {
-    "slug": "what-happens-in-a-fire-will-the-water-system-shut-down",
-    "title": "What Happens in a Fire? Will the Water System Shut Down?",
-    "file": "knowledge-hub/what-happens-in-a-fire-will-the-water-system-shut-down/index.html",
+    "slug": "water-hydraulics-fire-response",
+    "title": "What Happens in a Fire? Water Does Not Add an Oil Fuel Load",
+    "file": "knowledge-hub/water-hydraulics-fire-response/index.html",
     "before": "f9f71c278d0123af1c3d775ce0c7048692ac69989aab727a324ed1bbae8a3350",
     "number": 112,
     "family": "safety",
@@ -2104,12 +1699,13 @@
       "/knowledge-hub/engineering-calculators/accumulator-calculator/"
     ],
     "after": "d3a9d4cce6da36b2bf9c94fce5616577bc4af0296a7a621d55feaf35ee7c69b4",
-    "added_words": 194
+    "added_words": 194,
+    "current_sha256": "db1d128646a4b48641d358dd0539cf7607bd5d86fdb997c6dfa29ba070ae42d0"
   },
   {
-    "slug": "what-if-the-water-freezes",
-    "title": "What If the Water Freezes?",
-    "file": "knowledge-hub/what-if-the-water-freezes/index.html",
+    "slug": "water-hydraulic-freeze-protection",
+    "title": "Water Freezes \u2014 Here's How Good Design Keeps You Running",
+    "file": "knowledge-hub/water-hydraulic-freeze-protection/index.html",
     "before": "cb65e1d40f2b5511bc8f973f3824d949e9098f17fed42b3bd9f7b44521209dc3",
     "number": 113,
     "family": "winter",
@@ -2123,31 +1719,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "411838172edd3673e80ae8952722f6e47f3d413d69f9a7bf98459c7bb388d8c7",
-    "added_words": 185
+    "added_words": 185,
+    "current_sha256": "4aafb6e6f178f39e42d7217875d8efe4d69d5e12f5d9f92370a09d52992a7df1"
   },
   {
-    "slug": "what-maintenance-looks-like-in-a-water-hydraulic-system",
-    "title": "What Maintenance Looks Like in a Water Hydraulic System",
-    "file": "knowledge-hub/what-maintenance-looks-like-in-a-water-hydraulic-system/index.html",
-    "before": "4bbc3d886a26c794f3956b09e10c7304432c03c963483afb6fd4595ab7ff0cb7",
-    "number": 114,
-    "family": "maintenance",
-    "heading": "Make routine inspection useful to the operator",
-    "products": [
-      "/products/water-hydraulics-hpu/",
-      "/products/water-hydraulic-valves/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/flow-rate-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "5fda333bc5237c8c2fa89bfab61815d4ff38f31a96473e48aaaddfbf6c959708",
-    "added_words": 188
-  },
-  {
-    "slug": "what-makes-our-control-valves-unique-in-a-water-system",
-    "title": "Selecting Control Valves for a Water Hydraulic Circuit",
-    "file": "knowledge-hub/what-makes-our-control-valves-unique-in-a-water-system/index.html",
+    "slug": "sizing-a-water-control-valve-from-its-pressure-drop-curve",
+    "title": "Sizing a Water Control Valve From Its Pressure-Drop Curve",
+    "file": "knowledge-hub/sizing-a-water-control-valve-from-its-pressure-drop-curve/index.html",
     "before": "0e329a77e14d4c06550c3eca3a6418a5008c2795d0c0670c39864f33e1fd5e94",
     "number": 115,
     "family": "valve",
@@ -2161,12 +1739,13 @@
       "/knowledge-hub/engineering-calculators/water-hammer-calculator/"
     ],
     "after": "c544e93faab18e3211fccca610a6b7281d162c39dab3185655234c91cfd68b3e",
-    "added_words": 185
+    "added_words": 185,
+    "current_sha256": "425dcedb0325ba73ee879c8f312fb22538521dc640564d6de6f46bc6848084c8"
   },
   {
-    "slug": "where-is-the-conscience-of-the-municipal-engineer",
-    "title": "Rethinking Hydraulic Oil in Municipal Infrastructure",
-    "file": "knowledge-hub/where-is-the-conscience-of-the-municipal-engineer/index.html",
+    "slug": "comparing-municipal-actuation-options",
+    "title": "Renewing Municipal Hydraulics? Give Water a Fair Hearing",
+    "file": "knowledge-hub/comparing-municipal-actuation-options/index.html",
     "before": "b3e5743ebf2ba2315b393d257db6654c4c26bd03333bbfeb28ab7da7a268ee40",
     "number": 116,
     "family": "gate",
@@ -2180,12 +1759,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "3ed395fb091f98e9bd0e55d2bd24157a0cb9b21cbcfbea494361d350fe7575a6",
-    "added_words": 180
+    "added_words": 180,
+    "current_sha256": "6ea9c8b943ab23241c53111f92b0bdc455d7a70df20ca9fb97da432cbac55ad0"
   },
   {
-    "slug": "why-316-stainless-steel-is-essential-for-water-hydraulic-systems",
-    "title": "Selecting Stainless Steel for Water Hydraulic Systems",
-    "file": "knowledge-hub/why-316-stainless-steel-is-essential-for-water-hydraulic-systems/index.html",
+    "slug": "stainless-for-water-hydraulics-matching-the-grade-to-the-exposure",
+    "title": "Stainless for Water Hydraulics: Matching the Grade to the Exposure",
+    "file": "knowledge-hub/stainless-for-water-hydraulics-matching-the-grade-to-the-exposure/index.html",
     "before": "dc6f491502fc89df06f0cdb117974b01b69bd424f9db71003af8da2ae52dcdd7",
     "number": 117,
     "family": "materials",
@@ -2199,12 +1779,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "7a9b55c60e1ee44e1bf71fb3641d441e18a77b90ae7ad370604c15ce3deef31c",
-    "added_words": 188
+    "added_words": 188,
+    "current_sha256": "4740185374756c4013178d5138828669ced858cfe1b3481c8c73ac460b161787"
   },
   {
-    "slug": "why-accumulators-are-rarely-needed-in-water-systems",
-    "title": "When Water Hydraulic Circuits Need Accumulators",
-    "file": "knowledge-hub/why-accumulators-are-rarely-needed-in-water-systems/index.html",
+    "slug": "does-your-water-circuit-need-an-accumulator",
+    "title": "Does Your Water Circuit Need an Accumulator? Name the Job First",
+    "file": "knowledge-hub/does-your-water-circuit-need-an-accumulator/index.html",
     "before": "5c841ddc83a74a4118f7ff172ae5bd97e6edc3ff6e790d8baa126a7a4f4bd32d",
     "number": 118,
     "family": "accumulator",
@@ -2218,12 +1799,13 @@
       "/knowledge-hub/engineering-calculators/water-hammer-calculator/"
     ],
     "after": "abf20b3b18cf0efd8e781b841195fe4d296f3e3ecae009ed9db65d80a90ea966",
-    "added_words": 192
+    "added_words": 192,
+    "current_sha256": "21fbadc4d2e1618f5aae5bd0486238cf2a5c4590db596fb672728b628163de16"
   },
   {
-    "slug": "why-doesn-t-everyone-use-this-already",
-    "title": "Why Doesn't Everyone Use This Already?",
-    "file": "knowledge-hub/why-doesn-t-everyone-use-this-already/index.html",
+    "slug": "why-water-hydraulics-is-not-everywhere",
+    "title": "Why Isn't Water Hydraulics Everywhere Yet?",
+    "file": "knowledge-hub/why-water-hydraulics-is-not-everywhere/index.html",
     "before": "abc2b76167a38cdcadc00ce23812f8b289c66d896f55486686a56978210d115f",
     "number": 119,
     "family": "retrofit",
@@ -2237,50 +1819,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "561265f45e5c8397089c80052f6c9051a84c0041c6dd1aea1da72048a0d7672d",
-    "added_words": 196
+    "added_words": 196,
+    "current_sha256": "871e375031061e90d7712722ee72bdbdead782a6d65c838638201718ceb544f8"
   },
   {
-    "slug": "why-municipal-infrastructure-should-eliminate-hydraulic-oil",
-    "title": "Evaluating Hydraulic-Oil Removal in Municipal Infrastructure",
-    "file": "knowledge-hub/why-municipal-infrastructure-should-eliminate-hydraulic-oil/index.html",
-    "before": "8aa854492b8ca079197fa1cd7dafbebd3bd5eb31bebe13b2bb26f8aa2cea80bc",
-    "number": 120,
-    "family": "gate",
-    "heading": "Select the municipal circuit where removal matters",
-    "products": [
-      "/sluice-gates/",
-      "/products/water-hydraulic-cylinders/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/cylinder-force-calculator/",
-      "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
-    ],
-    "after": "68ef174f2fe608f0929ba9e9dbef336a9da72a3f2130dc6f9e07f51f01127924",
-    "added_words": 184
-  },
-  {
-    "slug": "why-municipal-procurement-needs-to-rethink-oil",
-    "title": "Why Municipal Procurement Needs to Rethink Oil",
-    "file": "knowledge-hub/why-municipal-procurement-needs-to-rethink-oil/index.html",
-    "before": "54a98174fe06a406b7f829572018f36dd04fad20b61c36ca843eabebc815833a",
-    "number": 121,
-    "family": "specification",
-    "heading": "Compare bids on delivered service",
-    "products": [
-      "/products/water-hydraulics-hpu/",
-      "/products/water-hydraulic-valves/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/power-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "308c798158b502b9d4f5065ce3d376ac810c92afc8a863f625be40feef4605b9",
-    "added_words": 187
-  },
-  {
-    "slug": "why-our-316-stainless-fittings-outperform-brass-in-marine-settings",
-    "title": "Stainless Steel and Brass Fittings: Selecting for Marine Duty",
-    "file": "knowledge-hub/why-our-316-stainless-fittings-outperform-brass-in-marine-settings/index.html",
+    "slug": "stainless-or-brass-at-sea-specify-the-alloy-and-the-joint",
+    "title": "Stainless or Brass at Sea? Specify the Alloy and the Joint",
+    "file": "knowledge-hub/stainless-or-brass-at-sea-specify-the-alloy-and-the-joint/index.html",
     "before": "aa8fb59c226d26792166351fff69aba31d603d8243c75526c65b808cfa10ffe8",
     "number": 122,
     "family": "materials",
@@ -2294,12 +1839,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "f8710f008881cf4b49c12e38c35098ec93e0f063b35400792c4cea043590fcdf",
-    "added_words": 192
+    "added_words": 192,
+    "current_sha256": "61522f8a45b0fb8a8acaa078495c30f1103afa12a7f52301b963b06b1c000038"
   },
   {
-    "slug": "why-tap-or-sea-water-belongs-in-your-hydraulic-system",
-    "title": "Choosing Tap Water or Seawater for a Hydraulic Circuit",
-    "file": "knowledge-hub/why-tap-or-sea-water-belongs-in-your-hydraulic-system/index.html",
+    "slug": "tap-water-or-seawater-choose-clean-freshwater-inside",
+    "title": "Tap Water or Seawater? Choose Clean Freshwater Inside",
+    "file": "knowledge-hub/tap-water-or-seawater-choose-clean-freshwater-inside/index.html",
     "before": "0dcffa5241036dddd257f03b6fe79b81c2286c0c337e5b241da5fb78c58cb037",
     "number": 123,
     "family": "seawater",
@@ -2313,68 +1859,13 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "513b3fade6ce989e439c9a110665cf0d7d9458171c77c5694967616cc7e7c693",
-    "added_words": 192
+    "added_words": 192,
+    "current_sha256": "3e1c534a9cf4fa8cdde066ed512aaaf9c67848d039fd3bdcaa095ed0b8047f86"
   },
   {
-    "slug": "why-traditional-hydraulic-materials-fail-in-water-systems",
-    "title": "Why Oil-Hydraulic Materials Need Review for Water Service",
-    "file": "knowledge-hub/why-traditional-hydraulic-materials-fail-in-water-systems/index.html",
-    "before": "66e5e70e69fb10729dd5a0f9af8169abe73b1d2bbe57ae94c40b526d6fb258d7",
-    "number": 124,
-    "family": "materials",
-    "heading": "Review the interfaces hidden inside oil equipment",
-    "products": [
-      "/products/axial-piston-pumps/",
-      "/products/water-hydraulic-cylinders/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/surface-finish-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "1b38293dd22355defb169b554539154c6aa6fb9eac8de43f1cdabb282e3b7c2c",
-    "added_words": 190
-  },
-  {
-    "slug": "why-water-can-replace-hydraulic-oil-in-industrial-systems",
-    "title": "Why Water Can Replace Hydraulic Oil in Industrial Systems",
-    "file": "knowledge-hub/why-water-can-replace-hydraulic-oil-in-industrial-systems/index.html",
-    "before": "cba1b197a696fa84a1565d412b7fa3667d60842e9add6739717a8a4550bd07e3",
-    "number": 125,
-    "family": "system",
-    "heading": "Preserve the required work while changing the medium",
-    "products": [
-      "/products/water-hydraulics-hpu/",
-      "/products/water-hydraulic-cylinders/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/power-calculator/",
-      "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
-    ],
-    "after": "a5b3bae04cad53db7c75b4ca4553827f98094a9121d6f836ad8159e13e9a3faf",
-    "added_words": 183
-  },
-  {
-    "slug": "why-water-hydraulics-are-the-future-of-sustainable-industry",
-    "title": "Where Water Hydraulics Support More Sustainable Industry",
-    "file": "knowledge-hub/why-water-hydraulics-are-the-future-of-sustainable-industry/index.html",
-    "before": "29581451d91e695c78523956dca09bffa326c6f1ca702554f79effe52dc39517",
-    "number": 126,
-    "family": "environment",
-    "heading": "Tie sustainability to a maintained installation",
-    "products": [
-      "/products/water-hydraulics-hpu/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/",
-      "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/"
-    ],
-    "after": "92d031c76011753caa8924116f116678bc07dc6a5a62cf120d2aa828c3105d69",
-    "added_words": 188
-  },
-  {
-    "slug": "why-water-hydraulics-may-replace-oil-in-industrial-infrastructure",
-    "title": "Why Water Hydraulics May Replace Oil in Industrial Infrastructure",
-    "file": "knowledge-hub/why-water-hydraulics-may-replace-oil-in-industrial-infrastructure/index.html",
+    "slug": "where-water-can-replace-oil-first",
+    "title": "Where Water Can Replace Oil First",
+    "file": "knowledge-hub/where-water-can-replace-oil-first/index.html",
     "before": "541ae9f1744ea78d815d5020afebbdfc7cf662ab2fa28d72d7647fc297a19f9f",
     "number": 127,
     "family": "system",
@@ -2388,12 +1879,13 @@
       "/knowledge-hub/engineering-calculators/pressure-drop-calculator/"
     ],
     "after": "8fae7aecc07ec90e5b74e4b4a705a56e3d8d377ebf494aacf70916ed54c2d3ff",
-    "added_words": 180
+    "added_words": 180,
+    "current_sha256": "610b408ba4d05f92517195d00edcc35925f165f5fb26193e7c4063e7e4f682ce"
   },
   {
-    "slug": "why-water-hydraulics-will-replace-oil-in-industrial-infrastructure",
-    "title": "A Practical Path to Industrial Water Hydraulics",
-    "file": "knowledge-hub/why-water-hydraulics-will-replace-oil-in-industrial-infrastructure/index.html",
+    "slug": "your-first-water-hydraulic-project-baseline-trial-then-repeat",
+    "title": "Your First Water Hydraulic Project: Baseline, Trial, Then Repeat",
+    "file": "knowledge-hub/your-first-water-hydraulic-project-baseline-trial-then-repeat/index.html",
     "before": "ace5cc00a08edb1c693047910067eb93b3aed43f94c3a55b7865c5609efe156b",
     "number": 128,
     "family": "retrofit",
@@ -2407,25 +1899,7 @@
       "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
     ],
     "after": "84c4dbc009649392a0d01dbae994374c6394d201eec7a8ed7df82bea1ca37b46",
-    "added_words": 191
-  },
-  {
-    "slug": "will-water-rust-my-system-the-engineering-answer",
-    "title": "Will Water Rust My System? The Engineering Answer",
-    "file": "knowledge-hub/will-water-rust-my-system-the-engineering-answer/index.html",
-    "before": "6cd3111debd36b62868f50d06b5cb2243d5bcc0b0d1e91a42f8ac5c226bf2a8f",
-    "number": 129,
-    "family": "materials",
-    "heading": "Ask where corrosion could begin",
-    "products": [
-      "/products/axial-piston-pumps/",
-      "/products/water-hydraulic-cylinders/"
-    ],
-    "calculators": [
-      "/knowledge-hub/engineering-calculators/surface-finish-calculator/",
-      "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/"
-    ],
-    "after": "a66cadddd8555ec454a2cd5c1ee110710f25c6f4af8d16dccd24298d61e9c7ac",
-    "added_words": 194
+    "added_words": 191,
+    "current_sha256": "23772d7c9bca65b82fe03d1ff82fa1d510b5b3568059562483307755e7c66aec"
   }
 ]

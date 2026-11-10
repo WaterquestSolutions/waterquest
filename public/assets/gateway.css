@@ -161,7 +161,7 @@
 #waterquest-main .wqg-reference-section{background:var(--navy);padding:22px 0 40px}
 #waterquest-main .wqg-reference-section .wqg-detail{border:0;margin:0}
 #waterquest-main [hidden]{display:none!important}
-#waterquest-main button:disabled{opacity:.6;cursor:not-allowed}
+#waterquest-main button:disabled{opacity:1;cursor:not-allowed}
 .wqg-skip{position:fixed;top:-120px;left:20px;z-index:2000;background:#00616B;color:#FFFFFF;padding:14px 20px;font:800 16px/1.5 'Nunito Sans','Segoe UI',system-ui,sans-serif;border-radius:6px}
 .wqg-skip:focus{top:12px}
 @media(max-width:1050px){#waterquest-main .wqg-hero-grid{gap:35px;grid-template-columns:1.1fr 1fr}#waterquest-main .wqg-hero h1{font-size:58px}#waterquest-main .wqg-split{gap:35px}#waterquest-main .wqg-tool-layout{gap:30px;grid-template-columns:.9fr 1.2fr}#waterquest-main .wqg-start-panel{padding:23px 22px 0}#waterquest-main .wqg-panel-note{padding:18px 22px;margin-inline:-22px}#waterquest-main .wqg-three{gap:25px}#waterquest-main .wqg-application-grid,#waterquest-main .wqg-resource-grid{gap:18px}#waterquest-main .wqg-glossary-grid{grid-template-columns:repeat(2,1fr)}}

@@ -1,0 +1,47 @@
+WaterQuest Solutions — Equipment specification
+Working template; complete and approve for the specific project.
+
+1. Project / asset / revision / date
+Response / evidence / owner: ____________________
+
+2. Required useful duty and service life
+Response / evidence / owner: ____________________
+
+3. Operating states: normal, peak, standby, shutdown, fault
+Response / evidence / owner: ____________________
+
+4. Pressure, flow, force/torque, speed/travel and cycle
+Response / evidence / owner: ____________________
+
+5. Fluid chemistry, temperature, filtration, inlet/backpressure
+Response / evidence / owner: ____________________
+
+6. Mechanical, electrical, controls and civil interfaces
+Response / evidence / owner: ____________________
+
+7. Exact manufacturer, model and configuration
+Response / evidence / owner: ____________________
+
+8. Included supply / excluded work / responsible party
+Response / evidence / owner: ____________________
+
+9. Applicable project approval route and documents required
+Response / evidence / owner: ____________________
+
+10. Dimensioned drawings, curves, materials, I/O and instructions
+Response / evidence / owner: ____________________
+
+11. FAT and SAT: test, method, acceptance limit, witness, record
+Response / evidence / owner: ____________________
+
+12. Delivery schedule and dependencies
+Response / evidence / owner: ____________________
+
+13. Warranty basis, commencement, exclusions and responsible party
+Response / evidence / owner: ____________________
+
+14. Commissioning, training, spare parts and service arrangements
+Response / evidence / owner: ____________________
+
+15. Deviations, unresolved assumptions and approval signatures
+Response / evidence / owner: ____________________

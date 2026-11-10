@@ -1,3 +1,4 @@
+@import url("/assets/wq-hero-scale.css?v=20261107");
 /* Site-wide heading family requested 11 October 2026.
    Keep existing responsive sizes, colours, spacing and body typography.
    Arial Black is a system font; Arial/sans-serif is the fallback where unavailable. */
@@ -16,12 +17,12 @@
  html#waterquest-site body :is(.wq-model-links a[aria-current], .wq-section-back[aria-current], button.active, a.model-pill.active, button.selected, [role="tab"][aria-selected="true"], button[aria-pressed="true"], [role="button"][aria-pressed="true"]),
  html#waterquest-site body :is(button:not(.faq-q):not([class*="faq"]), [role="button"], [role="tab"], input[type="submit"], .btn, .button, .ed-button, .ind-button, .p-button, .pc-button, .v-button, .wqg-button, .wq-section-back, .wq-model-links a, .model-pill, .nav-cta, .wq-hero-cta, .wq-mobile-cta):is(:hover,:focus-visible,:active) {
   background:#00EEFF!important;background-image:none!important;
-  border-color:#00EEFF!important;color:#FFFFFF!important;
+  border-color:#00EEFF!important;color:#08223b!important;
   box-shadow:none!important;opacity:1!important;filter:none!important;
  }
  html#waterquest-site body :is(.btn:not(.btn-outline):not(.btn-ghost):not(.btn-secondary):not(.btn-outline-navy), .primary, .btn-primary, .nav-cta, .wq-mobile-cta, .wq-hero-cta, .wqg-primary, .ed-button, .ind-button, .p-button:not(.p-outline), .pc-button:not(.pc-button-outline), .v-button, input[type="submit"], .wq-site-header .wq-nav-links > li:last-child > a) :is(span,strong,svg),
  html#waterquest-site body :is(.wq-model-links a[aria-current], .wq-section-back[aria-current], button.active, a.model-pill.active, button.selected, [role="tab"][aria-selected="true"], button[aria-pressed="true"], [role="button"][aria-pressed="true"]) :is(span,strong,svg),
- html#waterquest-site body :is(button:not(.faq-q):not([class*="faq"]), [role="button"], [role="tab"], input[type="submit"], .btn, .button, .ed-button, .ind-button, .p-button, .pc-button, .v-button, .wqg-button, .wq-section-back, .wq-model-links a, .model-pill, .nav-cta, .wq-hero-cta, .wq-mobile-cta):is(:hover,:focus-visible,:active) :is(span,strong,svg) {color:#FFFFFF!important;}
+ html#waterquest-site body :is(button:not(.faq-q):not([class*="faq"]), [role="button"], [role="tab"], input[type="submit"], .btn, .button, .ed-button, .ind-button, .p-button, .pc-button, .v-button, .wqg-button, .wq-section-back, .wq-model-links a, .model-pill, .nav-cta, .wq-hero-cta, .wq-mobile-cta):is(:hover,:focus-visible,:active) :is(span,strong,svg) {color:#08223b!important;}
  html#waterquest-site body :is(button:not(.faq-q):not([class*="faq"]), [role="button"], [role="tab"], input[type="submit"], .btn, .button, .ed-button, .ind-button, .p-button, .pc-button, .v-button, .wqg-button, .wq-section-back, .wq-model-links a, .model-pill, .nav-cta, .wq-hero-cta, .wq-mobile-cta):focus-visible {outline:2px solid #00EEFF!important;outline-offset:3px;}
  html#waterquest-site body :is(.faq-q,summary):is(:hover,:focus-visible,:active),
  html#waterquest-site body :is(.faq-q[aria-expanded="true"],.faq-item.open .faq-q,details[open]>summary),
@@ -159,5 +160,23 @@ html#waterquest-site svg :is(text,tspan)[fill="#00EEFF"]{fill:#00EEFF!important;
  html#waterquest-site body #nav .wq-brand-line {
   font-size:8px!important;
   letter-spacing:.08em!important;
+ }
+}
+
+/* Site-wide text links: aqua, including visited links. Filled aqua controls retain navy labels. */
+html body a:link,html body a:visited { color:#00EEFF !important; }
+html body a:hover,html body a:focus-visible { color:#7AF5FF !important; }
+html body a.wqx-button:not(.wqx-secondary),html body a.wqr-primary,
+html body a.btn:not(.btn-outline),html body a.btn-primary,
+html body a.v-button:not(.v-outline),html body a.wq-hero-cta,
+html body a.wq-mobile-cta,html body a[aria-current="page"],
+html body #product-datasheet a { color:#0E284A !important; }
+html body .wq-brand .wq-brand-name { color:#FFFFFF !important; }
+
+/* Filled aqua controls need navy labels in every link state, including child icons. */
+@layer waterquest-button-colour {
+ html#waterquest-site body :is(a.halo-button:not(.halo-button-secondary), .pc-skip, .wql-range-download a, a.wq-filled-control, a.wqc-button),
+ html#waterquest-site body :is(a.halo-button:not(.halo-button-secondary), .pc-skip, .wql-range-download a, a.wq-filled-control, a.wqc-button) :is(span,strong,b,svg) {
+  color:#0E284A!important;
  }
 }

@@ -66,7 +66,7 @@ export async function createBriefPDF(brief, PDFLib, fontkit, fontBytes) {
 }
 
 export function pilotBrief(fields,date=new Date()) {
-  const labels={name:'Your name',company:'Organisation',email:'Email',phone:'Phone',province:'Province or territory',applicant:'Applicant / host type',application:'Application and site',stage:'Project stage',timeline:'Target timing',message:'What a successful pilot should demonstrate',consent:'Consent to respond to this enquiry'};
+  const labels={name:'Your name',company:'Organization',email:'Email',phone:'Phone',province:'Province or territory',applicant:'Applicant / host type',application:'Application and site',stage:'Project stage',timeline:'Target timing',message:'What a successful pilot should demonstrate',consent:'Consent to respond to this enquiry'};
   return {title:'Pilot enquiry - personal copy',kind:'PILOT PROJECT BRIEF',subtitle:'This copy does not confirm submission or email delivery.',intro:[`Saved: ${date.toISOString()}`],sections:[{title:'Your pilot brief',fields:Object.entries(labels).map(([key,label])=>({label,value:fields[key]}))}],notes:['Contact: bruce@waterquestsolutions.com | +1 (604) 902-1902','This brief records the information entered. It is not a quotation, funding application or approved engineering design.']};
 }
 let assetsPromise;

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-
-<html id="waterquest-site" lang="en-CA">
-<head><style id="wqs-experience-layer">@layer wqs-experience;</style><link rel="stylesheet" href="/assets/newsletter-popup.css?v=20261016">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<html data-wq-graph-labels="19cc 1000rpm|19cc 1500rpm|19cc 2000rpm|19cc 2500rpm|19cc 3000rpm|15cc 1000rpm|15cc 1500rpm|15cc 2000rpm|15cc 2500rpm|15cc 3000rpm" id="waterquest-site" lang="en-CA">
+<head>
+<style>@layer wq-responsive-priority;</style>
+<link rel="stylesheet" href="/assets/site-responsive-fit.css?v=20261109">
+<script defer src="/assets/site-responsive-fit.js?v=20261109"></script><style id="wqs-experience-layer">@layer wqs-experience;</style><link href="/assets/newsletter-popup.css?v=20261021" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>M15: water hydraulic rotary power | WaterQuest Solutions</title>
-<meta content="Keep rotary equipment moving with oil out of the motor’s working circuit. Use the M15 curves to compare torque, speed and flow, then send your operating conditions for help matching the motor, supply and controls." name="description"/>
-
-
+<meta content="Keep rotary equipment moving with oil out of the motor’s working circuit. Use the M15 curves to compare torque, speed and flow, then send your operating conditions for help matching the motor, supply and controls." name="description">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="/assets/wq-graph-readability.js"></script>
 <style>
 :root{--navy:#0E284A;--navy-mid:#0D2044;--navy-light:#122954;--aqua:#00EEFF;--aqua-glow:#778FA8;--motor:#D85C00;--motor-light:#FF7420;--silver:#FFFFFF;--silver-light:#FFFFFF;--white:#FFFFFF;--body-text:#FFFFFF;--muted:#ffffff;--border:rgba(168,184,204,0.18);--border-aqua:rgba(0,200,212,0.3);--border-motor:rgba(255,116,32,0.3);--font-display:'Avenir','Avenir Next','Nunito Sans',sans-serif;--font-body:'Nunito Sans','Segoe UI',system-ui,sans-serif;--radius-sm:6px;--radius-md:12px;--radius-lg:20px;--shadow-motor:0 0 40px rgba(255,116,32,0.2);--max-width:1240px;--section-pad:96px;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -38,7 +39,7 @@ p{color:#FFFFFF;font-size:1.02rem;}
 .nav-cta{background:#00616B!important;color:#FFFFFF!important;padding:9px 20px;border-radius:var(--radius-sm);}
 .breadcrumb{padding:0;}.breadcrumb-inner{max-width:var(--max-width);margin:0 auto;padding:16px 32px;display:flex;align-items:center;gap:8px;}
 .breadcrumb-inner a{font-size:0.82rem;color:#FFFFFF;transition:color 0.2s;}.breadcrumb-inner a:hover{color:#00EEFF;}
-.breadcrumb-sep{font-size:0.75rem;color:#FFFFFF;opacity:0.5;}.breadcrumb-current{font-size:0.82rem;color:#FFFFFF;}
+.breadcrumb-sep{font-size:0.75rem;color:#FFFFFF;opacity:1;}.breadcrumb-current{font-size:0.82rem;color:#FFFFFF;}
 .bubble-layer{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1;}
 .bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(0,200,212,0.55),rgba(0,200,212,0.08) 60%,transparent 80%);border:1px solid rgba(0,200,212,0.2);opacity:0;animation:bubble-rise linear infinite;}
 @keyframes bubble-rise{0%{transform:translateY(0) translateX(0) scale(1);opacity:0}8%{opacity:0.5}50%{transform:translateY(-50vh) translateX(var(--drift)) scale(0.88);opacity:0.25}92%{opacity:0.08}100%{transform:translateY(-108vh) translateX(calc(var(--drift)*1.4)) scale(0.45);opacity:0}}
@@ -140,20 +141,20 @@ footer{background:var(--navy-mid);border-top:1px solid var(--border);padding:64p
       --grey: #ffffff !important;
     }
 
-</style><link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/water-hydraulic-motors/m15-water-hydraulic-motor/" rel="canonical"/>
-<meta content="index, follow, max-image-preview:large" name="robots"/>
-<meta content="M15: water hydraulic rotary power" property="og:title"/>
-<meta content="Keep rotary equipment moving with oil out of the motor’s working circuit. Use the M15 curves to compare torque, speed and flow, then send your operating conditions for help matching the motor, supply and controls." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/water-hydraulic-motors/m15-water-hydraulic-motor/" property="og:url"/>
-<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/assets/waterquest-hero.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="M15: water hydraulic rotary power" name="twitter:title"/>
-<meta content="Keep rotary equipment moving with oil out of the motor’s working circuit. Use the M15 curves to compare torque, speed and flow, then send your operating conditions for help matching the motor, supply and controls." name="twitter:description"/>
-<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/assets/waterquest-hero.png" name="twitter:image"/>
-<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/water-hydraulic-motors/m15-water-hydraulic-motor/" hreflang="en-CA" rel="alternate"/>
-<link href="/assets/waterquest-mark.svg" rel="icon" type="image/svg+xml"/>
-<script data-seo="true" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization","name":"WaterQuest Solutions","url":"https://temporary-turbo-nickel-8xnl9g7.vercel.app","logo":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/assets/waterquest-mark.svg","sameAs":["https://www.316stainless.ca"],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"}},{"@type":"Product","@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/water-hydraulic-motors/m15-water-hydraulic-motor#webpage","url":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/water-hydraulic-motors/m15-water-hydraulic-motor","name":"M15: water hydraulic rotary power","description":"Keep rotary equipment moving with oil out of the motor’s working circuit. Use the M15 curves to compare torque, speed and flow, then send your operating conditions for help matching the motor, supply and controls.","isPartOf":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"},"publisher":{"@id":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"},"inLanguage":"en-CA","brand":{"@type":"Brand","name":"WaterQuest Solutions"},"category":"Water hydraulic equipment"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app"},{"@type":"ListItem","position":2,"name":"Products","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/products"},{"@type":"ListItem","position":3,"name":"Water Hydraulic Motors","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/water-hydraulic-motors"},{"@type":"ListItem","position":4,"name":"M15","item":"https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/water-hydraulic-motors/m15-water-hydraulic-motor"}]}]}</script>
+</style><link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/water-hydraulic-motors/m15-water-hydraulic-motor/" rel="canonical">
+<meta content="index, follow, max-image-preview:large" name="robots">
+<meta content="M15: water hydraulic rotary power" property="og:title">
+<meta content="Keep rotary equipment moving with oil out of the motor’s working circuit. Use the M15 curves to compare torque, speed and flow, then send your operating conditions for help matching the motor, supply and controls." property="og:description">
+<meta content="website" property="og:type">
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/water-hydraulic-motors/m15-water-hydraulic-motor/" property="og:url">
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/assets/waterquest-hero.png" property="og:image">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="M15: water hydraulic rotary power" name="twitter:title">
+<meta content="Keep rotary equipment moving with oil out of the motor’s working circuit. Use the M15 curves to compare torque, speed and flow, then send your operating conditions for help matching the motor, supply and controls." name="twitter:description">
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/assets/waterquest-hero.png" name="twitter:image">
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/water-hydraulic-motors/m15-water-hydraulic-motor/" hreflang="en-CA" rel="alternate">
+<link href="/assets/waterquest-mark.svg" rel="icon" type="image/svg+xml">
+<script data-seo="true" type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization", "name": "WaterQuest Solutions", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app", "logo": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/assets/waterquest-mark.svg", "sameAs": ["https://www.316stainless.ca"], "address": {"@type": "PostalAddress", "addressLocality": "Vancouver", "addressRegion": "BC", "addressCountry": "CA"}}, {"@type": "Product", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/water-hydraulic-motors/m15-water-hydraulic-motor#webpage", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/water-hydraulic-motors/m15-water-hydraulic-motor", "name": "M15: water hydraulic rotary power", "description": "Keep rotary equipment moving with oil out of the motor’s working circuit. Use the M15 curves to compare torque, speed and flow, then send your operating conditions for help matching the motor, supply and controls.", "isPartOf": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"}, "publisher": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"}, "inLanguage": "en-CA", "brand": {"@type": "Brand", "name": "WaterQuest Solutions"}, "category": "Water hydraulic equipment"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app"}, {"@type": "ListItem", "position": 2, "name": "Products", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/products"}, {"@type": "ListItem", "position": 3, "name": "Water Hydraulic Motors", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/water-hydraulic-motors"}, {"@type": "ListItem", "position": 4, "name": "M15", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/water-hydraulic-motors/m15-water-hydraulic-motor"}]}]}</script>
 <style id="wq-global-shell-css">
     :root{--wq-navy:#0E284A;--wq-navy-mid:#0D2044;--wq-aqua:#00EEFF;--wq-white:#FFFFFF;--wq-text:#D6E2EC;--wq-muted:#AFC0D0;--wq-border:rgba(255,255,255,.18);--wq-border-aqua:rgba(0,200,212,.3);--wq-max:1240px;--wq-font-display:Avenir,"Avenir Next","Nunito Sans","Segoe UI",system-ui,sans-serif}
     body{padding-top:78px!important;color:#FFFFFF!important;font-size:16px!important}
@@ -290,7 +291,7 @@ footer{background:var(--navy-mid);border-top:1px solid var(--border);padding:64p
       height: 340px !important;
     }
   </style>
-<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/wq-product-model-nav.css?v=20261011-buttons-00c2d7" rel="stylesheet"/><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"/><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"/><link rel="stylesheet" href="/assets/wq-brand-standards.css?v=20261015-brand"/><script type="module" src="/assets/wq-speed-insights.js" id="wq-speed-insights"></script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-product-model-nav.css?v=20261011-buttons-00c2d7" rel="stylesheet"><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-brand-standards.css?v=20261106-aqua-links" rel="stylesheet"><script id="wq-speed-insights" src="/assets/wq-speed-insights.js" type="module"></script>
 <style id="wqs-compact-product-heroes">
 html#waterquest-site body #product-hero{padding-top:24px!important;padding-bottom:24px!important;min-height:0!important;height:auto!important}
 html#waterquest-site body #product-hero .product-hero-grid{padding-top:0!important;min-height:0!important}
@@ -322,15 +323,12 @@ html#waterquest-site body .displ-body>.displ-dims{margin:0 28px 22px}
 .wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
 .wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
 @media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
-</style></head>
+</style><link href="/assets/wq-hero-cta.css?v=20261021" rel="stylesheet"><link href="/assets/wq-graph-readability.css" rel="stylesheet">
+<link href="/assets/wqx-site.css?v=20261027-review2" rel="stylesheet"><link href="/assets/wq-product-photos.css" rel="stylesheet">
+<link href="/assets/critique-refinements.css?v=20261027-preview3" rel="stylesheet"><link rel="stylesheet" href="/assets/launch-readability.css"><link rel="stylesheet" href="/assets/family-literature/family-literature.css"/>
+<link rel="stylesheet" href="/assets/site-navigation-cleanup.css?v=20261108"></head>
 <body class="wq-section-products wq-product-page wq-audited wq-consistent has-product-model-nav" data-editorial-review="2026-10-06" data-mobile-polish="2026-10-06">
-<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img class="wq-brand-mark" src="/assets/waterquest-logo-square.png" alt="" width="54" height="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><nav class="wq-model-nav" aria-label="Motors products" ><div class="wq-model-nav-inner"><a class="wq-section-back" href="/products/"><span aria-hidden="true">←</span> All Products</a><span class="wq-model-label">Motors</span><button aria-label="Scroll products left" class="wq-model-prev" hidden="" type="button">‹</button><div aria-label="Motors model links" class="wq-model-links" role="group" tabindex="0"><a href="/products/water-hydraulic-motors/">Overview</a><a href="/products/water-hydraulic-motors/m3-water-hydraulic-motor/">M3</a><a href="/products/water-hydraulic-motors/m6-water-hydraulic-motor/">M6</a><a aria-current="page" href="/products/water-hydraulic-motors/m15-water-hydraulic-motor/">M15</a><a href="/products/water-hydraulic-motors/m30-water-hydraulic-motor/">M30</a><a href="/products/water-hydraulic-motors/m60-axial-piston-water-hydraulic-motor/">M60</a><a href="/products/water-hydraulic-motors/m180-axial-piston-water-hydraulic-motor/">M180</a></div><button aria-label="Scroll products right" class="wq-model-next" hidden="" type="button">›</button></div></nav><section class="wqs-literature" aria-label="Product literature" style="max-width:1200px;margin:24px auto;padding:20px 24px;background:#0E284A;border-top:2px solid #00EEFF;color:white"><a href="/downloads/product-literature/WQS-water-hydraulic-motors-m15-water-hydraulic-motor.pdf" style="display:inline-flex;align-items:center;gap:8px;background:#00EEFF;color:#0E284A;font-weight:700;padding:13px 22px;border-radius:6px;text-decoration:none">Download product literature (PDF)</a><span style="margin-left:18px;display:inline-block;padding:8px 0">4 pages</span><a href="/downloads/product-literature/" style="margin-left:20px;color:#fff">All product literature</a></section><div aria-hidden="true" class="wq-model-nav-spacer"></div><!-- WQ_GLOBAL_HEADER_START -->
-<div aria-hidden="true" id="wq-global-bubbles"></div>
-<div id="wq-mobile-menu">
-<a class="active" href="/products/">Products</a><a href="/industries/">Industries</a><a href="/technology/">Technology</a><a href="/knowledge-hub/">Knowledge Hub</a><a href="/about/">About</a>
-<a class="wq-mobile-cta" href="/contact/">Engineering Review</a>
-</div>
-<!-- WQ_GLOBAL_HEADER_END --><div aria-hidden="true" class="bubble-layer" id="global-bubbles"></div><div aria-label="Breadcrumb" class="breadcrumb">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img alt="" class="wq-brand-mark" height="54" src="/assets/waterquest-logo-square.png" width="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/start-here/">New to water hydraulics?</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><nav aria-label="Motors products" class="wq-model-nav"><div class="wq-model-nav-inner"><a class="wq-section-back" href="/products/"><span aria-hidden="true">←</span> All Products</a><span class="wq-model-label">Motors</span><button aria-label="Scroll products left" class="wq-model-prev" hidden="" type="button">‹</button><div aria-label="Motors model links" class="wq-model-links" role="group" tabindex="0"><a href="/products/water-hydraulic-motors/">Overview</a><a href="/products/water-hydraulic-motors/m3-water-hydraulic-motor/">M3</a><a href="/products/water-hydraulic-motors/m6-water-hydraulic-motor/">M6</a><a aria-current="page" href="/products/water-hydraulic-motors/m15-water-hydraulic-motor/">M15</a><a href="/products/water-hydraulic-motors/m30-water-hydraulic-motor/">M30</a><a href="/products/water-hydraulic-motors/m60-axial-piston-water-hydraulic-motor/">M60</a><a href="/products/water-hydraulic-motors/m180-axial-piston-water-hydraulic-motor/">M180</a></div><button aria-label="Scroll products right" class="wq-model-next" hidden="" type="button">›</button></div></nav><main id="product-main"><div aria-label="Breadcrumb" class="breadcrumb">
 <div class="breadcrumb-inner">
 <a href="/">Home</a>
 <span class="breadcrumb-sep">›</span>
@@ -341,34 +339,7 @@ html#waterquest-site body .displ-body>.displ-dims{margin:0 28px 22px}
 <span class="breadcrumb-current">M15 Motor</span>
 </div>
 </div>
-<section aria-labelledby="hero-heading" id="product-hero">
-<div aria-hidden="true" class="hero-bg-mesh"></div>
-<div aria-hidden="true" class="bubble-layer" id="hero-bubbles"></div>
-<div class="container">
-<div class="product-hero-grid">
-<div class="product-hero-text">
-<p class="product-family reveal">M Series Water Hydraulic Motor</p>
-<h1 class="reveal" data-editorial="hero" id="hero-heading" style="transition-delay:.04s">M15: water hydraulic rotary power</h1>
-<p class="ed-question">Match starting torque and speed to the driven load.</p><p class="hero-desc reveal" data-editorial="lead" style="transition-delay:.08s">Keep rotary equipment moving with oil out of the motor’s working circuit. Use the M15 curves to compare torque, speed and flow, then send your operating conditions for help matching the motor, supply and controls.</p>
-<div class="product-hero-ctas reveal" style="transition-delay:.12s">
-<a class="btn btn-motor" href="/contact/">Request Technical Data Package</a>
-<a class="btn btn-outline" href="/wqs-stainless/">View Stainless Fittings</a>
-</div>
-
-</div>
-<div class="product-hero-visual reveal-right" style="transition-delay:.12s">
-<div class="motor-img-wrap">
-<img alt="M15 Water Hydraulic Motor" loading="lazy" src="/assets/motors/water-hydraulic-motor-photo.jpeg"/>
-<div class="motor-img-badge">
-<span>Max Torque</span>
-<strong>45 Nm (33.2 lbf·ft) @ 160 bar (2,321 psi)</strong>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<div class="specs-strip">
+<section class="wqx-section wq-product-summary" id="product-summary"><span id="product-cta"></span><div class="wqx-wrap"><h1>M15: water hydraulic rotary power</h1><p><strong>What it does:</strong> Converts pressurized-water flow into rotary torque and speed.</p><p><strong>Where it’s used:</strong> Rotary mechanisms, drives and water-powered gate arrangements.</p><p><strong>Why water:</strong> Remove hydraulic oil from the motor circuit with a purpose-designed water motor.</p></div></section><div class="specs-strip">
 <div class="container">
 <div class="specs-strip-inner">
 <div class="spec-item reveal" style="transition-delay:.02s">
@@ -398,7 +369,42 @@ html#waterquest-site body .displ-body>.displ-dims{margin:0 28px 22px}
 </div>
 </div>
 </div>
-<section aria-labelledby="perf-heading" class="perf-section">
+<section aria-labelledby="dims-heading" class="dimensions-section">
+<div class="container">
+<div class="section-header">
+<p class="label reveal">Technical Specifications</p>
+<h2 class="reveal" id="dims-heading" style="transition-delay:.04s">Dimensions and Mounting</h2>
+<p class="reveal" style="transition-delay:.08s">Check the mounting drawing and shaft connection against your driven equipment. Use the correct port arrangement for the required direction, and support the driven load so it does not impose radial or axial loads on the motor shaft.</p>
+</div>
+<div class="dims-grid">
+<div class="dims-image reveal-left" style="transition-delay:.04s">
+<img alt="M15 motor dimensional drawing showing MB160-15W and MB160-19W variants" loading="lazy" src="/assets/motors/water-hydraulic-motor-photo.jpeg">
+</div>
+<div class="dims-table reveal-right" style="transition-delay:.08s">
+<div aria-label="Scrollable engineering table" class="wq-table-scroll" role="region" tabindex="0" data-wq-table-container="true"><table data-wq-table-columns="2" role="table">
+<thead>
+<tr role="row">
+<th role="columnheader">Parameter</th>
+<th role="columnheader">Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr role="row"><td role="cell">Flange Diameter</td><td data-wq-column-label="Dimension" role="cell">Ø114 mm</td></tr>
+<tr role="row"><td role="cell">Bolt Circle</td><td data-wq-column-label="Dimension" role="cell">106.2 - 106.5 mm (4.19 in)</td></tr>
+<tr role="row"><td role="cell">Mounting Bolts</td><td data-wq-column-label="Dimension" role="cell">4× M8 (KEY 6×6)</td></tr>
+<tr role="row"><td role="cell">Shaft Diameter</td><td data-wq-column-label="Dimension" role="cell">Ø18.97 - 18.99 mm (0.748 in)</td></tr>
+<tr role="row"><td role="cell">Overall Length</td><td data-wq-column-label="Dimension" role="cell">145 mm (5.71 in)</td></tr>
+<tr role="row"><td role="cell">Height</td><td data-wq-column-label="Dimension" role="cell">89 mm (3.5 in)</td></tr>
+<tr role="row"><td role="cell">Pressure Ports</td><td data-wq-column-label="Dimension" role="cell">G3/4 BSPP</td></tr>
+<tr role="row"><td role="cell">Tank Port (MB)</td><td data-wq-column-label="Dimension" role="cell">G1/2 BSPP</td></tr>
+<tr role="row"><td role="cell">Dry Weight</td><td data-wq-column-label="Dimension" role="cell">~8.5 kg (18.7 lb)</td></tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</section>
+<section class="wqx-section wql-model-sheet" id="product-datasheet" aria-labelledby="motor-sheet-title"><div class="wqx-wrap wql-sheet-wrap"><a href="/brochures/motors/WQS-motor-m15.pdf" target="_blank" rel="noopener" aria-label="View M15 data sheet (PDF)"><img src="/assets/family-literature/motor-m15.webp" width="506" height="716" alt="M15 data sheet cover" loading="lazy"/></a><div><p class="wql-sheet-label">Product literature · M15</p><h2 id="motor-sheet-title">Get to know the M15.</h2><p>Explore the published ratings, performance curves, dimensions and connections in one model-specific data sheet.</p><a class="wql-sheet-button" href="/brochures/motors/WQS-motor-m15.pdf" target="_blank" rel="noopener">Download M15 data sheet (PDF) ↗</a><p class="wql-sheet-meta">3 pages · 0.67 MB</p></div></div></section><section class="wqx-section" id="product-quote"><div class="wqx-wrap"><a class="wqx-button" href="/contact/">Request a quotation</a></div></section><details class="wq-selection-panel" id="selection-notes"><summary>Selection notes</summary><div class="wqx-wrap"><p>Confirm the selected configuration’s fluid, temperature, inlet conditions, installation requirements and applicable approval documents. The current equipment documents and quotation establish the supplied scope.</p><section aria-labelledby="selection-guides-title" class="wq-product-guides" id="selection-guides"><p class="wq-guide-kicker">Understand • Calculate • Select</p><h2 id="selection-guides-title">Engineering guidance for your equipment decision</h2><p>Explore equipment selection and maintenance guidance.</p><ul><li><a href="/knowledge-hub/hydraulic-power-from-drive-to-load/">Following the Kilowatts: From Motor to Moving Load</a></li><li><a href="/knowledge-hub/sizing-a-water-cylinder/">Sizing a Water Cylinder: Start at the Load Pin</a></li><li><a href="/knowledge-hub/water-hydraulics-in-steel-mills-and-sawmills/">Steel Mill to Sawmill: Where Water Hydraulics Excel</a></li><li><a href="/knowledge-hub/water-hydraulics-in-forestry/">Water Hydraulics in the Woods: No Oil on the Forest Floor</a></li><li><a href="/knowledge-hub/water-hydraulics-underground/">Water Hydraulics Underground: Removing Oil From Selected Mining Circuits</a></li><li><a href="/knowledge-hub/driving-a-water-pump-with-an-air-motor/">Driving a Water Pump With an Air Motor</a></li></ul><p><a href="/knowledge-hub/engineering-calculators/">Explore the engineering calculators</a> or <a href="/contact/">discuss your application with WaterQuest</a>.</p></section><section class="wqx-section" id="selection-checklist"><div class="wqx-wrap"><h2>Selection and enquiry checklist</h2><div aria-label="Define table" class="wqx-table" role="region" tabindex="0" data-wq-table-container="true"><table data-wq-table-columns="2" role="table"><thead><tr role="row"><th scope="col" role="columnheader">Define</th><th scope="col" role="columnheader">Include in the project brief</th></tr></thead><tbody><tr role="row"><th scope="row" role="rowheader">Torque and speed over time</th><td data-wq-column-label="Include in the project brief" role="cell">Starting, running, reversing and holding duty; minimum/maximum speed and cycles.</td></tr><tr role="row"><th scope="row" role="rowheader">Hydraulic operating point</th><td data-wq-column-label="Include in the project brief" role="cell">Flow, pressure differential, outlet/backpressure, case-drain conditions and water.</td></tr><tr role="row"><th scope="row" role="rowheader">Shaft and mounting</th><td data-wq-column-label="Include in the project brief" role="cell">Coupling, radial/axial loads, alignment, flange, footprint and mechanical restraints.</td></tr><tr role="row"><th scope="row" role="rowheader">Controls and acceptance</th><td data-wq-column-label="Include in the project brief" role="cell">Speed/torque control, safe stop, overspeed protection, thermal limits and test evidence.</td></tr></tbody></table></div><div class="wqx-actions"><a class="wqx-button" href="/project-tools/?family=motor&amp;project=M15%3A+water+hydraulic+rotary+power&amp;source=%2Fproducts%2Fwater-hydraulic-motors%2Fm15-water-hydraulic-motor%2F">Prepare this enquiry</a><a class="wqx-button wqx-secondary" href="/specification-resources/">Get the specification templates</a></div></div></section></div></details><section aria-labelledby="perf-heading" class="perf-section">
 <div class="container">
 <div class="section-header center">
 <p class="label reveal">Engineering Data</p>
@@ -471,42 +477,7 @@ html#waterquest-site body .displ-body>.displ-dims{margin:0 28px 22px}
 <svg viewbox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
 </div>
 <h4>Modular Port Configuration</h4>
-<p>Standard G3/4 BSPP pressure ports with optional tank port (T Port G1/2 BSPP on select models). Compatible with WQS Stainless fittings and standard industrial hydraulic connections.</p>
-</div>
-</div>
-</div>
-</section>
-<section aria-labelledby="dims-heading" class="dimensions-section">
-<div class="container">
-<div class="section-header">
-<p class="label reveal">Technical Specifications</p>
-<h2 class="reveal" id="dims-heading" style="transition-delay:.04s">Dimensions and Mounting</h2>
-<p class="reveal" style="transition-delay:.08s">Check the mounting drawing and shaft connection against your driven equipment. MA identifies anticlockwise rotation, MC clockwise rotation and MB bidirectional operation. Use the correct port arrangement for the required direction, and support the driven load so it does not impose radial or axial loads on the motor shaft.</p>
-</div>
-<div class="dims-grid">
-<div class="dims-image reveal-left" style="transition-delay:.04s">
-<img alt="M15 motor dimensional drawing showing MB160-15W and MB160-19W variants" loading="lazy" src="/assets/motors/water-hydraulic-motor-photo.jpeg"/>
-</div>
-<div class="dims-table reveal-right" style="transition-delay:.08s">
-<div aria-label="Scrollable engineering table" class="wq-table-scroll" role="region" tabindex="0"><table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Dimension</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>Flange Diameter</td><td>Ø114 mm</td></tr>
-<tr><td>Bolt Circle</td><td>106.2 - 106.5 mm (4.19 in)</td></tr>
-<tr><td>Mounting Bolts</td><td>4× M8 (KEY 6×6)</td></tr>
-<tr><td>Shaft Diameter</td><td>Ø18.97 - 18.99 mm (0.748 in)</td></tr>
-<tr><td>Overall Length</td><td>145 mm (5.71 in)</td></tr>
-<tr><td>Height</td><td>89 mm (3.5 in)</td></tr>
-<tr><td>Pressure Ports</td><td>G3/4 BSPP</td></tr>
-<tr><td>Tank Port (MB)</td><td>G1/2 BSPP</td></tr>
-<tr><td>Dry Weight</td><td>~8.5 kg (18.7 lb)</td></tr>
-</tbody>
-</table></div>
+<p>Standard G3/4 BSPP pressure ports with optional tank port (T Port G1/2 BSPP on select models). Compatible with Connection hardware fittings and standard industrial hydraulic connections.</p>
 </div>
 </div>
 </div>
@@ -546,20 +517,22 @@ html#waterquest-site body .displ-body>.displ-dims{margin:0 28px 22px}
 </div>
 </div>
 </section>
-<section aria-labelledby="cta-heading" id="product-cta">
-<div aria-hidden="true" class="bubble-layer" id="cta-bubbles"></div>
-<div class="container">
-<div class="cta-inner">
-<p class="label reveal">Specify Oil-Free Power</p>
-<h2 class="reveal" id="cta-heading" style="transition-delay:.06s">Engineer Your Clean Solution</h2>
-<p class="reveal" style="transition-delay:.12s">Send the starting and running torque, speed range and working-water conditions. We’ll help compare the M15 operating points, installation details and required control functions for your application.</p>
-<div class="cta-btns reveal" style="transition-delay:.2s">
-<a class="btn btn-motor" href="/contact/">Request Technical Data Package</a>
-<a class="btn btn-outline" href="/products/water-hydraulic-motors/">View All Motors</a>
+<section aria-label="Related application pages" class="wq-context-apps">
+<div class="wq-context-wrap">
+<div>
+<h2>Related application pages</h2>
+<p>See how the equipment can fit a real operating need, then explore the application requirements and the next steps for your project.</p>
 </div>
+<div class="wq-app-links"><a href="/sluice-gates/">Gate Actuation</a><a href="/products/water-hydraulic-valves/">Flow Control</a><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine Infrastructure</a></div>
 </div>
+</section>
+</main><div aria-hidden="true" class="wq-model-nav-spacer"></div><!-- WQ_GLOBAL_HEADER_START -->
+<div aria-hidden="true" id="wq-global-bubbles"></div>
+<div id="wq-mobile-menu">
+<a class="active" href="/products/">Products</a><a href="/industries/">Industries</a><a href="/knowledge-hub/">Knowledge Hub</a><a href="/about/">About</a>
+<a class="wq-mobile-cta" href="/contact/">Engineering Review</a>
 </div>
-</section><script>
+<!-- WQ_GLOBAL_HEADER_END --><div aria-hidden="true" class="bubble-layer" id="global-bubbles"></div><script>
 const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40),{passive:true});
 (function(){const c=document.getElementById('global-bubbles');for(let i=0;i<28;i++){const b=document.createElement('div');b.className='bubble';const s=Math.random()*9+3,d=(Math.random()-.5)*80;b.style.cssText='width:'+s+'px;height:'+s+'px;left:'+(Math.random()*100)+'%;bottom:'+(Math.random()*10)+'%;--drift:'+d+'px;animation-duration:'+(Math.random()*18+10)+'s;animation-delay:'+(Math.random()*14)+'s;';c.appendChild(b);}})();
@@ -610,19 +583,10 @@ new Chart(document.getElementById('chartTorque'),{type:'line',data:{labels:pl,da
 </script><!-- WQ_REFERENCE_RAIL_START -->
 <aside aria-label="Engineering references" class="wq-reference-rail">
 <a href="/knowledge-hub/engineering-calculators/"><small>Reference</small><strong>Engineering Calculators</strong></a>
-<a href="/glossary/"><small>Reference</small><strong>Technical Glossary</strong></a>
+<a href="/knowledge-hub/glossary/"><small>Reference</small><strong>Technical Glossary</strong></a>
 </aside>
 <!-- WQ_REFERENCE_RAIL_END -->
 <!-- WQ_CONTEXT_APPS_START -->
-<section aria-label="Related application pages" class="wq-context-apps">
-<div class="wq-context-wrap">
-<div>
-<h2>Related application pages</h2>
-<p>See how the equipment can fit a real operating need, then explore the application requirements and the next steps for your project.</p>
-</div>
-<div class="wq-app-links"><a href="/sluice-gates/">Gate Actuation</a><a href="/products/water-hydraulic-valves/">Flow Control</a><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine Infrastructure</a></div>
-</div>
-</section>
 <!-- WQ_CONTEXT_APPS_END -->
 <!-- WQ_GLOBAL_FOOTER_START -->
 <!-- WQ_GLOBAL_FOOTER_END -->
@@ -648,7 +612,7 @@ new Chart(document.getElementById('chartTorque'),{type:'line',data:{labels:pl,da
 
     })();
   </script>
-<script defer="" src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
-<script defer="" src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
-<section class="wq-product-guides" id="selection-guides" aria-labelledby="selection-guides-title"><p class="wq-guide-kicker">Understand • Calculate • Select</p><h2 id="selection-guides-title">Engineering guidance for your equipment decision</h2><p>Use these guides to define the operating duty, compare the available equipment and plan maintenance before requesting a configuration.</p><ul><li><a href="/knowledge-hub/hydraulic-power-transmission-using-water/">Hydraulic Power Transmission Using Water</a></li><li><a href="/knowledge-hub/engineering-principles-of-water-hydraulic-actuation/">Engineering Principles of Water Hydraulic Actuation</a></li><li><a href="/knowledge-hub/from-steel-mills-to-sawmills-industrial-applications-of-pressurized-water/">From Steel Mills to Sawmills: Industrial Applications of Pressurized Water</a></li><li><a href="/knowledge-hub/lifting-and-hauling-without-oil-forestry-applications-using-water/">Lifting and Hauling Without Oil: Forestry Applications Using Water</a></li><li><a href="/knowledge-hub/mining-equipment-using-water-hydraulic-systems/">Mining Equipment Using Water Hydraulic Systems</a></li><li><a href="/knowledge-hub/component-spotlight-armak-air-motors-and-water-hydraulic-integration/">Component Spotlight: Armak Air Motors and Water Hydraulic Integration</a></li></ul><p><a href="/knowledge-hub/engineering-calculators/">Explore the engineering calculators</a> or <a href="/contact/">discuss your application with WaterQuest</a>.</p></section><footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/wqs-stainless/">WQS Stainless</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li></ul></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>316 SS / PEEK · Oil-Free · Canadian Support</p></div></div></footer><script defer="" src="/assets/wq-nav-dropdowns.js?v=20261015-brand"></script><script defer="" src="/assets/wq-product-model-nav.js?v=20261011-white-aqua"></script><script defer="" src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/newsletter-popup.js?v=20261016"></script></body>
+<script defer src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div></footer><script defer src="/assets/wq-nav-dropdowns.js?v=20261108-no-capability"></script><script defer src="/assets/wq-product-model-nav.js?v=20261011-white-aqua"></script><script defer src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/wq-enquiry-context.js?v=20261021"></script><script defer src="/assets/wqx-site.js?v=20261027-review2"></script><script defer src="/assets/launch-readability.js"></script><script defer src="/assets/site-navigation-cleanup.js?v=20261108"></script><script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq9426f675e698dc79d0fe4c2ecca071e3668f732067735a92f72e9aed6636787e" defer></script></body>
 </html>

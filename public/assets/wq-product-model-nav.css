@@ -4,14 +4,14 @@
 .wq-model-nav-inner{width:min(1320px,calc(100% - 40px));margin:auto;display:flex;align-items:center;gap:10px;padding:9px 0}
 .wq-model-label{flex:none;color:#FFFFFF;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;max-width:100px;line-height:1.3}
 .wq-section-back{flex:0 0 auto;display:flex;align-items:center;justify-content:center;gap:5px;max-width:112px;min-height:36px;padding:7px 10px;border:1px solid #00EEFF;border-radius:5px;background:#122954;color:#FFFFFF!important;text-decoration:none;font-size:12px;font-weight:800;line-height:1.25;text-align:center;white-space:normal}
-.wq-section-back:hover,.wq-section-back[aria-current]{background:#00EEFF;color:#FFFFFF!important}
+.wq-section-back:hover,.wq-section-back[aria-current]{background:#00EEFF;color:#0A1B34!important}
 @media(max-width:600px){.wq-section-back{max-width:84px;font-size:11px;padding:7px;gap:4px}}
 .wq-model-links{display:flex;flex:1;min-width:0;gap:7px;align-items:stretch;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#00EEFF66 transparent;scroll-behavior:smooth}
 .wq-model-links a{flex:0 0 auto;display:flex;align-items:center;justify-content:center;min-height:36px;max-width:180px;padding:7px 11px;border:1px solid #00EEFF47;border-radius:5px;color:#FFFFFF!important;text-decoration:none;font-size:12px;font-weight:800;line-height:1.25;text-align:center;white-space:normal}
-.wq-model-links a:hover,.wq-model-links a[aria-current]{background:#00EEFF;color:#FFFFFF!important;border-color:#00EEFF}
+.wq-model-links a:hover,.wq-model-links a[aria-current]{background:#00EEFF;color:#0A1B34!important;border-color:#00EEFF}
 .wq-model-nav :is(a,button):focus-visible{outline:2px solid #fff;outline-offset:-3px}
 .wq-model-nav button{flex:none;width:30px;min-height:36px;border:1px solid #00EEFF55;border-radius:5px;background:#122954;color:#00EEFF;font-size:24px;line-height:1;cursor:pointer}
-.wq-model-nav button:disabled{opacity:.3;cursor:default}
+.wq-model-nav button:disabled{opacity:1;cursor:default}
 .wq-model-nav [hidden]{display:none!important}
 .wq-model-nav-spacer{height:var(--wq-section-nav-height)}
 body.has-product-model-nav :is(.pc-section-nav,.v-nav){top:calc(var(--wq-section-header-height) + var(--wq-section-nav-height))!important;z-index:2800}

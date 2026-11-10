@@ -2,7 +2,7 @@ import {displayMeasurements,displayHint} from './display.js';
 import {reportLogo} from './brand.js?v=20261015-logo';
 import {definitions, validate, sources} from './definitions.js';
 import {calculate, convert, unitLabel, conversions} from './engine.js';
-const fmt=n=>new Intl.NumberFormat('en-CA',{maximumSignificantDigits:5}).format(Object.is(n,-0)?0:n);
+const fmt=n=>new Intl.NumberFormat('en-CA',{maximumSignificantDigits:3}).format(Object.is(n,-0)?0:n);
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 export function createReport(id,values,{us=false,currency='CAD',example=false,date=new Date()}={}){
  const d=definitions[id];

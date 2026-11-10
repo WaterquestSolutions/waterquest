@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html id="waterquest-site" lang="en-CA">
+<head>
+<style>@layer wq-responsive-priority;</style>
+<link rel="stylesheet" href="/assets/site-responsive-fit.css?v=20261109">
+<script defer src="/assets/site-responsive-fit.js?v=20261109"></script><style id="wqs-experience-layer">@layer wqs-experience;</style><link href="/assets/newsletter-popup.css?v=20261021" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Fire-Pump Station Renewal: Start With the Protection Design | WaterQuest Solutions</title>
+<style>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<meta content="Recover the protection design, check the supply and plan the impairment period. Review fire-pump installation under NFPA 20 and maintenance under NFPA 25." name="description">
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="Fire-Pump Station Renewal: Start With the Protection Design, water hydraulics, WaterQuest Solutions" name="keywords">
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/fire-protection-pump-approval-boundaries/" rel="canonical">
+<meta content="WaterQuest Solutions" property="og:site_name">
+<meta content="Fire-Pump Station Renewal: Start With the Protection Design | WaterQuest Solutions" property="og:title">
+<meta content="Recover the protection design, check the supply and plan the impairment period. Review fire-pump installation under NFPA 20 and maintenance under NFPA 25." property="og:description">
+<meta content="article" property="og:type">
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/fire-protection-pump-approval-boundaries/" property="og:url">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Fire-Pump Station Renewal: Start With the Protection Design | WaterQuest Solutions" name="twitter:title">
+<meta content="Recover the protection design, check the supply and plan the impairment period. Review fire-pump installation under NFPA 20 and maintenance under NFPA 25." name="twitter:description">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/fire-protection-pump-approval-boundaries/#primary", "mainEntityOfPage": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/fire-protection-pump-approval-boundaries/", "name": "Fire-Pump Station Renewal: Start With the Protection Design", "headline": "Fire-Pump Station Renewal: Start With the Protection Design", "description": "Recover the protection design, check the supply and plan the impairment period. Review fire-pump installation under NFPA 20 and maintenance under NFPA 25.", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/fire-protection-pump-approval-boundaries/", "inLanguage": "en-CA", "isPartOf": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"}, "publisher": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"}, "author": {"@type": "Organization", "name": "WaterQuest Solutions", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/about/"}, "about": [{"@type": "Thing", "name": "Fire-Pump Station Renewal: Start With the Protection Design"}], "articleSection": "Testing & Adoption", "dateModified": "2026-10-27", "datePublished": "2026-09-02", "wordCount": 2042, "timeRequired": "PT11M", "citation": ["https://www.marioff.com/en/industries/land/data-centers/", "https://www.marioff.com/en/technology/system-types/pre-action/", "https://www.iso.org/standard/44781.html", "https://www.nfpa.org/for-professionals/codes-and-standards/list-of-codes-and-standards"], "hasPart": [{"@type": "WebPageElement", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/fire-protection-pump-approval-boundaries/#guide-application", "name": "Preserve the required fire-water function through the retrofit"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"}, {"@type": "ListItem", "position": 3, "name": "Fire-Pump Station Renewal: Start With the Protection Design", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/fire-protection-pump-approval-boundaries/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-brand-standards.css?v=20261106-aqua-links" rel="stylesheet"><script id="wq-speed-insights" src="/assets/wq-speed-insights.js" type="module"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style><link href="/assets/editorial/hub-editorial-20261021.css" rel="stylesheet"><link href="/assets/wqx-site.css?v=20261027-review2" rel="stylesheet"><link href="/assets/critique-refinements.css?v=20261027-preview3" rel="stylesheet"><meta content="WaterQuest Solutions" name="author"><link rel="stylesheet" href="/assets/launch-readability.css"><link rel="stylesheet" href="/assets/knowledge-covers/cover-series.css"><link rel="stylesheet" href="/assets/site-navigation-cleanup.css?v=20261108"></head>
+<body class="wq-audited wq-consistent wqx-article" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img alt="" class="wq-brand-mark" height="54" src="/assets/waterquest-logo-square.png" width="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/start-here/">New to water hydraulics?</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero wq-covered-hero">
+<div class="container"><div class="wq-covered-copy">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › </div>
+<p class="eyebrow">Testing &amp; Adoption</p>
+<h1 data-editorial="hero">Fire-Pump Station Renewal: Start With the Protection Design</h1>
+<p class="lead" data-editorial="lead">Recover the protection design, check the supply and plan the impairment period. Review fire-pump installation under NFPA 20 and maintenance under NFPA 25.</p>
+<div class="article-meta"><span class="pill"></span><span class="pill">Testing &amp; Adoption</span><span class="pill">6 min read</span></div>
+</div><figure class="wq-article-cover"><img src="/assets/knowledge-covers/testing.jpg" alt="Instrumented hydraulic test bench and recorded performance traces. Editorial concept illustration." width="1536" height="1024" decoding="async"><figcaption>WaterQuest Knowledge Hub · Concept illustration</figcaption></figure></div></section><section class="wqx-section" id="quick-answer"><div class="wqx-wrap"><p><a download="" href="/downloads/worksheets/fire-pump-station-renewal-start-with-the-protection-design.txt">Download the worksheet for this guide (editable text)</a> · <a download="" href="/downloads/worksheets/fire-worksheet.csv">Open the fire requirement register (CSV)</a></p></div></section>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><p class="wq-article-byline">Written by WaterQuest Solutions · Updated <time datetime="2026-11-02">2 November 2026</time> · <a href="/about/">About the distributor</a></p><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><span aria-hidden="true" class="ed-legacy-anchor" id="material-and-corrosion-discipline"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><span aria-hidden="true" class="ed-legacy-anchor" id="pressure-and-performance-capability"></span><span aria-hidden="true" class="ed-legacy-anchor" id="retrofit-implementation-phasing"></span><span aria-hidden="true" class="ed-legacy-anchor" id="risk-and-consequence-comparison"></span><span aria-hidden="true" class="ed-legacy-anchor" id="the-contradiction-of-oil-in-fire-protection"></span><span aria-hidden="true" class="ed-legacy-anchor" id="the-retrofit-strategy"></span><span aria-hidden="true" class="ed-legacy-anchor" id="thermal-and-standby-stability"></span><h2 id="learn-begin-with-the-protection-objective">Keep fire-water readiness at the centre of the retrofit</h2><section class="wq-editorial-detail"><h2 id="guide-section-2">Use the fire-protection design basis</h2><p>NFPA 750 covers water-mist fire-protection systems; NFPA 13 covers sprinkler installation. NFPA 20 addresses stationary fire pumps and NFPA 25 addresses inspection, testing and maintenance of water-based protection. ISO 4413 covers hydraulic fluid-power safety and is not the governing fire-suppression design standard. </p></section><p>Start by identifying why the retrofit is being considered. </p><p>This article presents a planning framework rather than a report of a completed WaterQuest fire-protection installation. General hydraulic information can support their work, but does not replace the approved protection basis.</p><h2 id="learn-recover-the-existing-design-record">Recover the existing design record</h2><p>The first useful deliverable is an accurate account of what the current station serves. Locate drawings, hydraulic calculations, equipment records, previous acceptance documents and inspection findings. </p><p>Map the protected areas and the demand assumptions associated with them. Record the condition and accessibility of isolation points. </p><p>Missing information should become a named engineering task rather than an invitation to assume equivalence. A replacement unit that matches an old nameplate may still be inappropriate if the hazard, supply or distribution network has changed. </p><figure aria-label="Fire-pump retrofit acceptance chain" class="kh-diagram"><figcaption class="kh-diagram-title">A replacement pump sits inside a protection system</figcaption><ol class="kh-flow"><li><strong>Hazard and demand</strong><span>Protected use, required supply and accepted design basis</span></li><li><strong>System interfaces</strong><span>Detection, activation, distribution and indications</span></li><li><strong>Outage and acceptance</strong><span>Impairment plan, installed checks and responsible handover</span></li></ol><figcaption>Planning relationships only. This is not a suppression schematic or an installation procedure.</figcaption></figure><h2 id="learn-distinguish-conventional-pumping-from-water-mist-conversion">Distinguish conventional pumping from water-mist conversion</h2><p>A like-for-like pump renewal and conversion to a different suppression technology should not be treated as the same scope. A high-pressure pump alone does not create a qualified mist system.</p><p>Manufacturer information can illustrate how a tested system addresses a particular hazard. Those claims apply to the identified manufacturer's system and conditions; they are not transferable to an unrelated pump or a WaterQuest package. </p><p>Where mist is being considered, ask the design team to identify the hazard coverage and installation limitations for the proposed complete configuration. </p><h2 id="learn-examine-the-water-supply-under-the-governing-conditions">Examine the water supply under the governing conditions</h2><p>A station depends on the water available to it, not merely on the pump's catalogue capability. </p><p>Do not equate nominal tank capacity with usable protection volume without examining the installation. Pipe connections, operating levels and the approved demand basis influence what the system can deliver. The responsible designer should also assess the effect of maintenance isolation and other connected demands where they are relevant.</p><p>Water condition belongs in this review because the selected equipment and discharge devices have requirements. </p><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><h2 id="learn-review-activation-and-indications-as-one-sequence">Review activation and indications as one sequence</h2><p>A fire event requires a sequence of detection, permitted activation, water delivery and indication appropriate to the installed system. </p><p>Pre-action terminology deserves particular care. The actual approved configuration determines the conditions required for water admission and discharge.  The retrofit team should retain that distinction in drawings, controls documentation and training.</p><p>A list of components is insufficient to explain the behaviour. Develop a cause-and-effect account that shows relevant inputs and expected responses. </p><h2 id="learn-plan-the-period-of-impaired-protection">Plan the period of impaired protection</h2><p>The installation program must address the time during which existing protection is unavailable or reduced. </p><p>The owner and responsible specialists should establish the impairment arrangements appropriate to the facility and applicable requirements. They must be planned as part of the project rather than improvised when a delivery or commissioning problem occurs.</p><p>Build the schedule around clear readiness decisions. </p><h2 id="learn-treat-space-and-access-as-operational-requirements">Treat space and access as operational requirements</h2><p>A compact replacement can free valuable room, but footprint is only one spatial consideration. The equipment must be installable, inspectable and serviceable. </p><p>Arrange labels and indications so that operators can identify the relevant equipment without ambiguity. Maintenance access should not depend on removing unrelated safety-critical services unless that dependency has been deliberately assessed. </p><p>Coordination between disciplines is especially useful here. Electrical, mechanical, controls and fire-protection teams may each see a workable arrangement within their own scope while the assembled room becomes congested. </p><h2 id="learn-make-the-acceptance-plan-configuration-specific">Make the acceptance plan configuration-specific</h2><p>Acceptance should demonstrate the functions required of the installed system, using the methods and criteria agreed by the responsible parties. A pump running successfully in isolation does not establish delivery through the distribution arrangement or the correct response of associated controls. </p><p>Identify which checks establish equipment identity, hydraulic performance, control behaviour, indications and the condition of the completed installation. </p><p>Avoid using a generic hydraulic standard as a substitute for fire-system acceptance. ISO 4413 provides a broader hydraulic-system safety context, but the fire-protection installation has its own governing requirements.  The project should state the applicable documents and responsibilities clearly enough that neither supplier nor owner assumes another party has resolved an essential approval question.</p><h2 id="learn-explain-water-savings-without-promising-undamaged-equipment">Explain water savings without promising undamaged equipment</h2><p>Potential water reduction is a meaningful benefit where an appropriate mist system provides the required protection with a lower design discharge demand. The comparison must identify the baseline, protected hazard, operating duration and system configuration. A manufacturer's maximum saving is not an automatic prediction for every retrofit.</p><p>Total discharge volume depends on flow and duration as well as the area or devices activated. Zoning and activation design may limit the affected area, but they do not establish that adjacent equipment will remain unharmed. A responsible proposal describes reduced exposure where supported rather than guaranteeing an absolute minimum of damage.</p><p>This distinction matters to executives as much as engineers. Business continuity depends on recovery, inspection and restoration in addition to initial suppression. </p><h2 id="learn-hand-over-an-arrangement-that-remains-ready">Hand over an arrangement that remains ready</h2><p>The handover package should let the owner's team understand what was installed, how readiness is indicated and which maintenance responsibilities continue. Include current drawings, equipment identifiers, approved settings where appropriate, operating information and the relevant acceptance record. </p><p>Assign ownership of periodic inspection, supplier support and changes that could affect the design basis. </p><p>WaterQuest's contribution should be described as a defined equipment and technical-support scope within the complete engineered system. Their value is strongest when linked to the actual hazard, verified interfaces and a maintainable installation. </p><section id="guide-application" class="wq-guide-application"><p><strong>Have a duty in mind?</strong> <a href="/contact/#engineering-review">Request an engineering review →</a> · <a href="/project-tools/">Build a brief →</a></p></section><div class="related-block"><h3>Continue reading</h3><div class="related-grid"><a class="related-card" href="/knowledge-hub/water-mist-or-sprinklers-in-the-data-centre-start-with-the-fire/"><div class="rc-cat">Industry Applications · </div><h4>Water Mist or Sprinklers in the Data Centre? Start With the Fire</h4><div class="rc-read">8 min read</div></a><a class="related-card" href="/knowledge-hub/retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load/"><div class="rc-cat">Testing &amp; Adoption · </div><h4>Retrofitting Steel-Mill Hydraulics: Cut the Oil Fire Load</h4><div class="rc-read">8 min read</div></a><a class="related-card" href="/knowledge-hub/a-fair-test-of-water-vs-oil-hpus-in-desalination/"><div class="rc-cat">Testing &amp; Adoption · </div><h4>A Fair Test of Water vs Oil HPUs in Desalination</h4><div class="rc-read">9 min read</div></a></div></div>
+</article>
+</div>
+<div class="container">
+</div>
+</section>
+</main>
+<script defer src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div></footer><script defer src="/assets/wq-nav-dropdowns.js?v=20261108-no-capability"></script><script defer src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/wqx-site.js?v=20261027-review2"></script><script defer src="/assets/site-navigation-cleanup.js?v=20261108"></script><script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq9426f675e698dc79d0fe4c2ecca071e3668f732067735a92f72e9aed6636787e" defer></script></body>
+</html>

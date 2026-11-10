@@ -1,0 +1,29 @@
+/* Genuine product photographs. Kept separate from technical drawings and diagrams. */
+html#waterquest-site body .wqp-hero-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:clamp(28px,4vw,60px);align-items:center;width:100%;text-align:left}
+html#waterquest-site body .wqp-hero-copy{min-width:0}
+html#waterquest-site body .wqp-hero-grid .wqr-eyebrow{flex-wrap:wrap}
+html#waterquest-site body.wq-audited.wq-consistent .wqr-hero .wqp-hero-grid h1#wqr-headline,html#waterquest-site body .wqp-hero-grid h1{font-size:clamp(30px,3.3vw,46px)!important;line-height:1.15!important;text-wrap:balance;overflow-wrap:break-word}
+html#waterquest-site body .wqp-product-photo{display:block;position:relative;margin:0;padding:0;min-width:0;max-width:100%;background:#fff;border:1px solid #778fa850;border-radius:12px;overflow:hidden;box-shadow:0 18px 50px #030d2026;color:#123051}
+html#waterquest-site body .wqp-product-photo>img{display:block;position:static;width:100%!important;max-width:100%!important;height:clamp(260px,30vw,410px)!important;min-height:0!important;object-fit:contain!important;object-position:center;margin:0!important;padding:22px;opacity:1;transform:none;mix-blend-mode:normal;border:0;border-radius:0;background:#fff;box-sizing:border-box}
+html#waterquest-site body .wqp-product-photo figcaption{display:block;margin:0;padding:15px 20px;background:#f0f5f8;color:#25415e;font:400 13px/1.55 WQRoboto,Roboto,Arial,sans-serif;text-align:left;border-top:1px solid #dbe5ed;text-transform:none;letter-spacing:normal}
+html#waterquest-site body .wqp-product-photo figcaption a{color:#075d91;text-decoration:underline;text-underline-offset:3px;white-space:normal}
+html#waterquest-site body .wqp-card-photo{margin:0 0 22px;box-shadow:none}
+html#waterquest-site body .wqp-card-photo>img{height:220px!important;padding:16px}
+html#waterquest-site body .wqp-card-photo figcaption{font-size:12px;padding:12px 14px}
+html#waterquest-site body .phc-visual>.wqp-card-photo{width:min(100%,420px);position:relative;z-index:2;align-self:center;flex-shrink:0}
+html#waterquest-site body .phc-visual:has(>.wqp-card-photo){flex-direction:column;gap:20px;padding:28px}
+html#waterquest-site body .phc-visual:has(>.wqp-card-photo) .phc-model-list{position:relative;inset:auto;margin-top:auto}
+html#waterquest-site body .wqp-photo-note{display:block!important;position:relative!important;z-index:1;font:400 13px/1.55 WQRoboto,Roboto,Arial,sans-serif!important;letter-spacing:normal!important;text-transform:none!important;color:#25415e!important;background:#f0f5f8!important;padding:12px 16px!important;margin:12px 0 0!important;max-width:100%!important;text-align:left;border-radius:5px}
+html#waterquest-site body .wqp-home-card-image{margin:0 0 24px;background:#fff;border-radius:8px;overflow:hidden}
+html#waterquest-site body .wqp-home-card-image img{display:block;width:100%;height:190px;object-fit:contain;padding:14px;box-sizing:border-box}
+html#waterquest-site body .ind-related:has(.wqp-related-product){display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;align-items:stretch}
+html#waterquest-site body .ind-related>a.wqp-related-product{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;padding:0!important;overflow:hidden;border:1px solid #778fa860;border-radius:10px;min-width:0;text-decoration:none;background:#102d50}
+html#waterquest-site body .wqp-related-product img{display:block;width:100%;height:190px;object-fit:contain;object-position:center;padding:16px;background:#fff;box-sizing:border-box}
+html#waterquest-site body .wqp-related-product span{display:block;padding:17px 18px;color:#00eeff;font-weight:600;line-height:1.5}
+html#waterquest-site body .wqp-related-product:hover,html#waterquest-site body .wqp-related-product:focus-visible{border-color:#00eeff;outline:2px solid #00eeff;outline-offset:3px}
+@media(max-width:850px){html#waterquest-site body .wqp-hero-grid{grid-template-columns:1fr;gap:30px}html#waterquest-site body .wqp-hero-grid>.wqp-product-photo{width:100%;max-width:620px;justify-self:center}html#waterquest-site body .wqp-product-photo>img{height:300px!important}html#waterquest-site body.wq-audited.wq-consistent .wqr-hero .wqp-hero-grid h1#wqr-headline,html#waterquest-site body .wqp-hero-grid h1{font-size:clamp(28px,6.5vw,42px)!important}}
+@media(max-width:480px){html#waterquest-site body .wqp-product-photo>img{height:250px!important;padding:15px}html#waterquest-site body .wqp-card-photo>img{height:210px!important}html#waterquest-site body .ind-related:has(.wqp-related-product){grid-template-columns:1fr}html#waterquest-site body .wqp-product-photo figcaption{padding:12px 15px}}
+/* Keep the new product photograph close to its introduction. */
+html#waterquest-site body>.breadcrumb:has(+.wqr-hero .wqp-hero-grid){padding-top:24px!important}
+html#waterquest-site body .breadcrumb+.wqr-hero:has(.wqp-hero-grid){padding-top:44px!important;padding-bottom:64px!important}
+@media(min-width:851px){html#waterquest-site body .product-card .wqp-card-photo figcaption{min-height:110px}}

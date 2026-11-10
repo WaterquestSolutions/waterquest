@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html id="waterquest-site" lang="en-CA">
+<head>
+<style>@layer wq-responsive-priority;</style>
+<link rel="stylesheet" href="/assets/site-responsive-fit.css?v=20261109">
+<script defer src="/assets/site-responsive-fit.js?v=20261109"></script><style id="wqs-experience-layer">@layer wqs-experience;</style><link href="/assets/newsletter-popup.css?v=20261021" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Stainless or Brass at Sea? Specify the Alloy and the Joint | WaterQuest Solutions</title>
+<meta content="Brasses differ in dezincification resistance, and stainless grades differ in chloride resistance. Specify the alloys, joint geometry and galvanic pairing together." name="description">
+<style>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<link href="/assets/wqs-product-template.css?v=20261011-white-aqua" rel="stylesheet">
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/stainless-or-brass-at-sea-specify-the-alloy-and-the-joint/" rel="canonical">
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "WaterQuest Solutions", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/about/"}, "name": "Stainless or Brass at Sea? Specify the Alloy and the Joint", "headline": "Stainless or Brass at Sea? Specify the Alloy and the Joint", "description": "Brasses differ in dezincification resistance, and stainless grades differ in chloride resistance. Specify the alloys, joint geometry and galvanic pairing together.", "dateModified": "2026-10-27", "wordCount": 2027, "timeRequired": "PT11M", "articleSection": "Components & Materials", "citation": ["https://www.outokumpu.com/en/expertise/stainless-basics/corrosion-resistance", "https://archive.copper.org/applications/marine/seawater/seawater_corrosion1.html", "https://tc.canada.ca/en/marine-transportation/marine-safety/ship-safety-bulletins/coming-force-vessel-construction-equipment-regulations-ssb-no-27-2023"], "about": [{"@type": "Thing", "name": "Stainless or Brass at Sea? Specify the Alloy and the Joint"}], "hasPart": [{"@type": "WebPageElement", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/stainless-or-brass-at-sea-specify-the-alloy-and-the-joint/#guide-application", "name": "Review the complete marine connection"}]}</script><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-brand-standards.css?v=20261106-aqua-links" rel="stylesheet"><script id="wq-speed-insights" src="/assets/wq-speed-insights.js" type="module"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style><link href="/assets/editorial/hub-editorial-20261021.css" rel="stylesheet"><link href="/assets/wqx-site.css?v=20261027-review2" rel="stylesheet"><link href="/assets/critique-refinements.css?v=20261027-preview3" rel="stylesheet"><meta content="WaterQuest Solutions" name="author"><link rel="stylesheet" href="/assets/launch-readability.css"><link rel="stylesheet" href="/assets/knowledge-covers/cover-series.css"><link rel="stylesheet" href="/assets/site-navigation-cleanup.css?v=20261108"></head>
+<body class="wq-audited wq-consistent wqx-article" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img alt="" class="wq-brand-mark" height="54" src="/assets/waterquest-logo-square.png" width="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/start-here/">New to water hydraulics?</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero wq-covered-hero">
+<div class="container"><div class="wq-covered-copy">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › </div>
+<p class="eyebrow">Components &amp; Materials</p>
+<h1 data-editorial="hero">Stainless or Brass at Sea? Specify the Alloy and the Joint</h1>
+<p class="lead" data-editorial="lead">Brasses differ in dezincification resistance, and stainless grades differ in chloride resistance. Specify the alloys, joint geometry and galvanic pairing together.</p>
+<div class="article-meta"><span class="pill"></span><span class="pill">Components &amp; Materials</span><span class="pill">7 min read</span></div>
+</div><figure class="wq-article-cover"><img src="/assets/knowledge-covers/materials.jpg" alt="Stainless fittings and a polymer bearing beside a piston shaft. Editorial concept illustration." width="1536" height="1024" decoding="async"><figcaption>WaterQuest Knowledge Hub · Concept illustration</figcaption></figure></div></section><section class="wqx-section" id="quick-answer"><div class="wqx-wrap"><p><a download="" href="/downloads/worksheets/stainless-or-brass-at-sea-specify-the-alloy-and-the-joint.txt">Download the worksheet for this guide (editable text)</a> · <a download="" href="/downloads/worksheets/materials-worksheet.csv">Open the materials requirement register (CSV)</a></p></div></section>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><p class="wq-article-byline">Written by WaterQuest Solutions · Updated <time datetime="2026-11-02">2 November 2026</time> · <a href="/about/">About the distributor</a></p><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="dezincification-the-hidden-failure-mechanism"></span><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><span aria-hidden="true" class="ed-legacy-anchor" id="galvanic-compatibility-matters"></span><span aria-hidden="true" class="ed-legacy-anchor" id="long-term-cost-perspective"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><span aria-hidden="true" class="ed-legacy-anchor" id="pressure-integrity-and-thread-strength"></span><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><span aria-hidden="true" class="ed-legacy-anchor" id="the-electrochemical-reality-of-saltwater"></span><span aria-hidden="true" class="ed-legacy-anchor" id="vibration-and-fatigue-in-marine-systems"></span><h2 id="learn-a-fitting-is-a-pressure-connection-and-a-corrosion-detail">Make every connection part of the marine design</h2><section class="wq-editorial-detail"><h2 id="guide-section-2">Alloy names matter at a marine joint</h2><p>Examples to discuss with the component supplier include 316L stainless and a dezincification-resistant brass such as CW602N. Neither name alone approves a joint for seawater: check chlorides, stagnant crevices, temperature, pressure, coatings and both metals in electrical contact. A galvanic couple also needs an electrolyte; salt water can complete that circuit.</p></section><p>The choice is not a universal contest in which one material always wins. Different alloys within each family behave differently, and the installation can create conditions that a material label does not describe. Internal seawater, controlled freshwater, external salt spray and intermittent immersion are distinct exposures. This gives the designer a practical basis for selecting the connection and helps procurement avoid substituting visually similar parts that do not share the required construction or supported service.</p><h2 id="learn-identify-the-actual-alloy-and-product-form">Identify the actual alloy and product form</h2><p>A family name can hide important differences. Stainless steels include several metallurgical families and grades. Do not assume that colour or a generic catalogue category establishes the composition. </p><p>The completed fitting also has a manufacturing route and geometry. Threads, wall thickness and sealing features determine the mechanical function. A corrosion-resistant alloy does not by itself establish the fitting's pressure rating. Conversely, a pressure-rated fitting may be unsuitable for the environment. The assembly is governed by its actual components and conditions, not by the highest rating printed on one item in the line.</p><figure aria-labelledby="visual-66" class="kh-diagram"><figcaption class="kh-diagram-title" id="visual-66">A marine fitting selection has four independent checks</figcaption><ol class="kh-flow"><li><strong>Exact alloy</strong><span>Grade, traceability and corrosion mechanisms</span></li><li><strong>Joint</strong><span>Connection standard and sealing materials</span></li><li><strong>Exposure</strong><span>Internal fluid, external salt and dissimilar metals</span></li><li><strong>Loads and access</strong><span>Pressure, vibration, support and inspection</span></li></ol><figcaption>Conceptual selection framework. Neither stainless steel nor brass is a complete material or pressure-connection specification.</figcaption></figure><h2 id="learn-distinguish-salt-spray-from-continuous-seawater-contact">Distinguish salt spray from continuous seawater contact</h2><p>External salt deposits can concentrate as surfaces wet and dry. Water may remain beneath clamps, insulation or deposits, creating local conditions different from a clean exposed surface. Continuous internal seawater presents another environment, including flow, temperature and stagnant periods. </p><p>A coastal water-hydraulic actuator can use a controlled freshwater circuit while its exterior faces marine exposure. That arrangement may simplify some internal selection questions, but the external connections still need assessment. Conversely, protecting the outside of a seawater fitting does not change the fluid inside. </p><span aria-hidden="true" class="ed-legacy-anchor" id="why-316-stainless-performs-differently"></span><h2 id="learn-understand-local-corrosion-in-stainless-connections">Understand local corrosion in stainless connections</h2><p>Stainless steel relies on suitable surface and environmental conditions for its corrosion resistance. Outokumpu's corrosion guidance describes these mechanisms and the importance of service conditions.  For fittings, the practical lesson is to examine the assembled joint rather than select a grade solely from a general reputation for marine suitability.</p><p>Avoid treating 316 as an immunity claim. It may be appropriate in some duties and inadequate in others. The preferred material should be part of a coherent connection arrangement, not a stand-alone answer to every corrosion concern.</p><h2 id="learn-recognise-that-brasses-differ-in-seawater-behaviour">Recognize that brasses differ in seawater behaviour</h2><p>Some brasses are susceptible to dezincification, a corrosion process in which the alloy can lose zinc preferentially and develop a weakened structure. The Copper Development Association's seawater guidance distinguishes behaviour among copper alloys rather than treating all yellow metals as equivalent.  This is a reason to obtain exact material identification and application support, not to assume that every brass fitting is either unsuitable or immune in every marine environment.</p><p>Ask the manufacturer whether the specific fitting is supported for the intended internal fluid and external exposure. A designation associated with improved resistance to one corrosion mechanism still does not establish the complete pressure assembly's suitability. If the material cannot be identified or its service support cannot be established, classify it as unresolved instead of relying on past appearance. </p><h2 id="learn-evaluate-dissimilar-metal-connections-as-a-system">Evaluate dissimilar-metal connections as a system</h2><p>Joining different metals in an electrically connected assembly exposed to a conducting fluid can create galvanic considerations. The effect depends on the materials, their surface conditions, the environment and relative exposed areas. A simple statement that two metals should never touch is too broad, while ignoring the combination is equally unhelpful. </p><p>Potential isolation measures must be engineered for their mechanical, pressure and service functions. An improvised insulating piece should not be inserted into a pressure connection merely to address corrosion in theory. Document any restrictions on replacement materials so that maintenance does not unintentionally remove the feature or introduce a different couple during an otherwise routine component change.</p><h2 id="learn-match-the-connection-standard-and-sealing-method">Match the connection standard and sealing method</h2><p>Thread appearance is not enough to establish compatibility. Different thread forms and sealing methods can look similar while relying on different contact surfaces and assembly requirements. A connection that can be forced together is not necessarily a correct pressure joint. The manufacturer's assembly instructions, including any approved sealant or lubrication requirements, belong to the installation method for that product.</p><p>Keep the sealing material compatible with the water and operating conditions. A suitable metal fitting paired with an unsuitable elastomer or sealant is still an unsuitable assembly. Do not assume that a material used successfully in an oil circuit can be carried into water service without review. </p><h2 id="learn-control-mechanical-loads-beyond-internal-pressure">Control mechanical loads beyond internal pressure</h2><p>Piping weight, vibration, thermal movement and installation misalignment can load a fitting. A connection selected only for internal pressure may be exposed to forces it was not intended to carry. </p><p>Marine installations may experience motion and vibration patterns that differ from a stationary indoor plant. The exact duty and applicable vessel requirements should inform design and inspection. Transport Canada's published framework helps identify the regulatory context, but applicability depends on vessel category and installation.  It is not a certificate for a particular fitting. The project team must establish the relevant requirements and obtain configuration-specific evidence. </p><h2 id="learn-design-inspection-and-replacement-into-the-installation">Design inspection and replacement into the installation</h2><p>A fitting hidden behind equipment or beneath persistent deposits is difficult to inspect and service. Arrange connections so that relevant leakage or surface deterioration can be recognized and the approved maintenance method can be performed. </p><p>Record the installed alloy, connection type and approved replacement identification. Maintainers should not need to choose from a bin of visually similar fittings during an urgent repair. </p><h2 id="learn-choose-from-the-complete-service-conditions">Choose from the complete service conditions</h2><p>A sound fitting enquiry identifies working fluid, external exposure, temperature, pressure, connection standard and mechanical context. It also states inspection access and required documentation. </p><p>WaterQuest can help define the supported connection requirements within a water-hydraulic assembly. The benefit of removing mineral oil is strongest when the replacement circuit is reliable and maintainable, including its smallest pressure joints. </p><section id="guide-application" class="wq-guide-application"><p><strong>Have a duty in mind?</strong> <a href="/contact/#engineering-review">Request an engineering review →</a> · <a href="/project-tools/">Build a brief →</a></p></section><div class="related-block"><h3>Continue reading</h3><div class="related-grid"><a class="related-card" href="/knowledge-hub/duplex-stainless-at-sea-stronger-and-more-pit-resistant/"><div class="rc-cat">Components &amp; Materials · </div><h4>Duplex Stainless at Sea: Stronger and More Pit-Resistant</h4><div class="rc-read">8 min read</div></a><a class="related-card" href="/knowledge-hub/material-pairing-for-water-hydraulic-tribology/"><div class="rc-cat">Components &amp; Materials · </div><h4>Stainless Plus PEEK: Why the Pair Works</h4><div class="rc-read">9 min read</div></a><a class="related-card" href="/knowledge-hub/knife-gate-valves-and-water-cylinders/"><div class="rc-cat">Specification &amp; Design · </div><h4>Knife Gate Valves and Water Cylinders: A Natural Fit</h4><div class="rc-read">9 min read</div></a></div></div>
+</article>
+</div>
+<div class="container">
+</div>
+</section>
+</main>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div></footer><script defer src="/assets/wq-nav-dropdowns.js?v=20261108-no-capability"></script><script defer src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/wqx-site.js?v=20261027-review2"></script><script defer src="/assets/site-navigation-cleanup.js?v=20261108"></script><script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq9426f675e698dc79d0fe4c2ecca071e3668f732067735a92f72e9aed6636787e" defer></script></body>
+</html>

@@ -536,7 +536,8 @@ body .wq-site-header .wq-nav-links {
   display: flex !important;
   align-items: center !important;
   justify-content: flex-end !important;
-  gap: 24px !important;
+  gap: 12px !important;
+  flex-wrap: nowrap !important;
   margin: 0 !important;
   padding: 0 !important;
   list-style: none !important;
@@ -603,7 +604,7 @@ body footer.wq-site-footer a:hover { color:#00EEFF!important; }
 body footer.wq-site-footer .wq-footer-bottom { margin-top: 36px !important; padding-top: 20px !important; border-top: 1px solid rgba(255,255,255,0.14) !important; display: flex !important; justify-content: space-between !important; gap: 20px !important; }
 body footer.wq-site-footer .wq-footer-bottom p { margin: 0 !important; font-size: 0.78rem !important; }
 
-@media (max-width: 980px) {
+@media (max-width: 1200px) {
   body .wq-site-header .wq-nav-toggle { display: block !important; }
   body .wq-site-header .wq-nav-links {
     display: none !important;
@@ -647,3 +648,6 @@ html#waterquest-site body.wq-consistent :is(.mat-item > p,.cr-desc,.ut-desc,.so-
 @media(max-width:560px){
  html#waterquest-site body.wq-consistent :is(.mat-item:has(> .mat-badge),.code-row:has(> .cr-code),.unit-type-row:has(> .ut-code),.step-opt:has(> .so-code),.filter-opt:has(> .fo-code),.spec-row:has(> .sr-label),.spec-row:has(> .spec-label),.pc-spec:has(> .pc-spec-label)){grid-template-columns:minmax(0,1fr);row-gap:6px}
 }
+
+/* Compact Company navigation: five expandable groups, shared on every page. */
+body footer.wq-site-footer .wq-footer-groups details{padding:0!important;margin:0 0 12px!important;border:0!important;border-radius:0!important;background:none!important;box-shadow:none!important}body footer.wq-site-footer .wq-footer-groups summary{cursor:pointer;color:#00eeff!important;font:700 16px/1.4 Lato,Arial,sans-serif!important;padding:5px 0!important;background:none!important;border:0!important;list-style:none;display:flex;justify-content:space-between;gap:12px}body footer.wq-site-footer .wq-footer-groups summary::-webkit-details-marker{display:none}body footer.wq-site-footer .wq-footer-groups summary::after{content:"+";font-size:20px;line-height:1}body footer.wq-site-footer .wq-footer-groups details[open]>summary::after{content:"−"}body footer.wq-site-footer .wq-footer-groups details>ul{margin:12px 0 20px!important;padding:0 0 0 14px!important;border-left:1px solid #365875;list-style:none}body footer.wq-site-footer .wq-footer-groups a{font-size:14px!important;overflow-wrap:anywhere}body footer.wq-site-footer .wq-footer-groups summary:focus-visible{outline:2px solid #00eeff;outline-offset:4px}

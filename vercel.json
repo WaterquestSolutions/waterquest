@@ -8,434 +8,1279 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/credits/",
+      "destination": "/industries/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/where-is-the-conscience-of-the-municipal-engineer/",
+      "destination": "/knowledge-hub/comparing-municipal-actuation-options/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/going-oil-free-which-maintenance-tasks-go-stay-and-get-added/",
+      "destination": "/knowledge-hub/maintaining-a-water-hydraulic-system/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/what-maintenance-looks-like-in-a-water-hydraulic-system/",
+      "destination": "/knowledge-hub/maintaining-a-water-hydraulic-system/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-to-winterize-your-water-hydraulic-system/",
+      "destination": "/knowledge-hub/water-hydraulic-freeze-protection/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/can-water-freeze-in-hydraulic-systems-engineering-around-temperature/",
+      "destination": "/knowledge-hub/water-hydraulic-freeze-protection/",
+      "statusCode": 301
+    },
+    {
+      "source": "/industries/water-hydraulics-for-marine-and-coastal-applications/bilge-pump/",
+      "destination": "/case-studies/bilge-isolation-valve/",
+      "statusCode": 301
+    },
+    {
+      "source": "/p1-pump/",
+      "destination": "/products/axial-piston-pumps/p1/",
+      "statusCode": 301
+    },
+    {
+      "source": "/glossary/",
+      "destination": "/knowledge-hub/glossary/",
+      "statusCode": 301
+    },
+    {
+      "source": "/glossary/hydraulic-pressure/",
+      "destination": "/knowledge-hub/glossary/hydraulic-pressure/",
+      "statusCode": 301
+    },
+    {
+      "source": "/glossary/axial-piston-pump/",
+      "destination": "/knowledge-hub/glossary/axial-piston-pump/",
+      "statusCode": 301
+    },
+    {
+      "source": "/glossary/peek-polyether-ether-ketone/",
+      "destination": "/knowledge-hub/glossary/peek-polyether-ether-ketone/",
+      "statusCode": 301
+    },
+    {
+      "source": "/glossary/hydraulic-actuator/",
+      "destination": "/knowledge-hub/glossary/hydraulic-actuator/",
+      "statusCode": 301
+    },
+    {
+      "source": "/glossary/hydraulic-power/",
+      "destination": "/knowledge-hub/glossary/hydraulic-power/",
+      "statusCode": 301
+    },
+    {
+      "source": "/glossary/volumetric-efficiency/",
+      "destination": "/knowledge-hub/glossary/volumetric-efficiency/",
+      "statusCode": 301
+    },
+    {
+      "source": "/glossary/316l-stainless-steel/",
+      "destination": "/knowledge-hub/glossary/316l-stainless-steel/",
+      "statusCode": 301
+    },
+    {
+      "source": "/glossary/back-pressure/",
+      "destination": "/knowledge-hub/glossary/back-pressure/",
+      "statusCode": 301
+    },
+    {
+      "source": "/glossary/fluid-power/",
+      "destination": "/knowledge-hub/glossary/fluid-power/",
+      "statusCode": 301
+    },
+    {
+      "source": "/glossary/glossary%20copy/",
+      "destination": "/knowledge-hub/glossary/",
+      "statusCode": 301
+    },
+    {
+      "source": "/r2-modular-desalination-packages/",
+      "destination": "/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/#modular-packages",
+      "statusCode": 301
+    },
+    {
+      "source": "/bilge-pump/",
+      "destination": "/case-studies/bilge-isolation-valve/",
+      "statusCode": 301
+    },
+    {
+      "source": "/technology/",
+      "destination": "/knowledge-hub/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/why-water-hydraulics-are-the-future-of-sustainable-industry/",
+      "destination": "/knowledge-hub/water-hydraulics-esg-evidence/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/wave-of-change-how-water-hydraulics-conquered-lubrication-challenges/",
+      "destination": "/knowledge-hub/material-pairing-for-water-hydraulic-tribology/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/built-in-safety-fail-closed-and-manual-overrides-with-water/",
+      "destination": "/knowledge-hub/water-hydraulic-failure-states/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/common-maintenance-missteps-with-oil-that-don-t-happen-with-water/",
+      "destination": "/knowledge-hub/maintaining-a-water-hydraulic-system/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/preventing-scaling-or-fouling-without-additives/",
+      "destination": "/knowledge-hub/scale-slime-or-debris-identify-the-deposit-before-you-treat-it/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/servicing-a-water-hydraulic-hpu-on-site-in-under-1-day/",
+      "destination": "/knowledge-hub/planning-a-water-hpu-outage-scope-parts-energy-control-and-sign-off/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/clean-operation-on-coastlines-a-marine-deployment-snapshot/",
+      "destination": "/knowledge-hub/installing-water-hydraulics-aboard/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/oil-free-hydraulics-in-amusement-safety-a-pilot-case/",
+      "destination": "/knowledge-hub/piloting-water-hydraulics-on-a-ride-bench-representative-rig-full-validation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/retrofitting-a-fire-pump-station-with-zero-oil/",
+      "destination": "/knowledge-hub/fire-protection-pump-approval-boundaries/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/waterquest-vs-traditional-hpu-test-results-in-desalination/",
+      "destination": "/knowledge-hub/a-fair-test-of-water-vs-oil-hpus-in-desalination/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/replacing-oil-systems-in-algoma-steel-a-modern-retrofit/",
+      "destination": "/knowledge-hub/retrofitting-steel-mill-hydraulics-cut-the-oil-fire-load/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-waterquest-systems-align-with-cleanbc-sif-and-sr-and-ed/",
+      "destination": "/knowledge-hub/research-uncertainty-and-routine-installation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/total-cost-of-ownership-where-water-wins-over-time/",
+      "destination": "/knowledge-hub/when-does-water-pay-off-find-the-break-even-saving/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/oil-free-operation-and-compliance-with-federal-clean-energy-goals/",
+      "destination": "/knowledge-hub/water-hydraulics-esg-evidence/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-the-2025-clean-technology-investment-tax-credit-applies-to-your-project/",
+      "destination": "/knowledge-hub/the-clean-technology-itc-and-water-hydraulics-check-before-you-count/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/preventing-corrosion-without-coatings-or-chemicals/",
+      "destination": "/knowledge-hub/investigating-corrosion-in-a-running-water-circuit/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-water-systems-eliminate-cross-contamination-risk/",
+      "destination": "/knowledge-hub/oil-out-of-the-overhead-actuator-cutting-a-food-contamination-route/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/no-oil-no-spill-environmental-advantages-explained/",
+      "destination": "/knowledge-hub/what-removing-oil-does-for-the-environment/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/fail-safe-performance-in-theme-park-ride-systems/",
+      "destination": "/knowledge-hub/water-powered-rides-oil-free-actuation-and-validated-fault-response/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/fishing-without-fossil-fuels-the-musqueam-hydrogen-vessel-project/",
+      "destination": "/knowledge-hub/hydrogen-propulsion-water-hydraulic-deck-gear-a-clean-fishing-vessel-concept/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/fire-suppression-evolved-why-water-mist-systems-outperform-traditional-sprinklers/",
+      "destination": "/knowledge-hub/water-mist-or-sprinklers-in-the-data-centre-start-with-the-fire/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/water-hydraulics-in-mining-lower-downtime-zero-contamination/",
+      "destination": "/knowledge-hub/mining-availability-is-built-at-the-skid-layout/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/water-hydraulics-on-the-coast-marine-applications-that-work/",
+      "destination": "/knowledge-hub/water-hydraulics-by-the-sea-built-for-the-coastal-environment/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/what-makes-our-control-valves-unique-in-a-water-system/",
+      "destination": "/knowledge-hub/sizing-a-water-control-valve-from-its-pressure-drop-curve/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/the-hidden-weakness-of-duplex-in-saltwater-why-we-stick-with-316/",
+      "destination": "/knowledge-hub/duplex-stainless-at-sea-stronger-and-more-pit-resistant/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/why-our-316-stainless-fittings-outperform-brass-in-marine-settings/",
+      "destination": "/knowledge-hub/stainless-or-brass-at-sea-specify-the-alloy-and-the-joint/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/our-dss-partnership-putting-water-to-the-test-on-severe-service-valves/",
+      "destination": "/knowledge-hub/water-actuators-on-severe-service-valves-proving-the-performance/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-our-water-hpus-are-changing-the-industrial-landscape/",
+      "destination": "/knowledge-hub/judging-a-water-hpu-by-what-it-does-between-movements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/isothermal-behaviour-of-water-vs-thermal-expansion-in-oil/",
+      "destination": "/knowledge-hub/water-stores-more-heat-design-the-whole-cooling-balance/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/why-accumulators-are-rarely-needed-in-water-systems/",
+      "destination": "/knowledge-hub/does-your-water-circuit-need-an-accumulator/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/160-bar-performance-debunking-the-limitations-of-water-hydraulics/",
+      "destination": "/knowledge-hub/working-within-160-bar-get-the-force-from-area/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-water-maintains-hydraulic-efficiency-without-additives/",
+      "destination": "/knowledge-hub/half-a-litre-a-minute-of-leakage-costs-83-watts-all-day/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/why-tap-or-sea-water-belongs-in-your-hydraulic-system/",
+      "destination": "/knowledge-hub/tap-water-or-seawater-choose-clean-freshwater-inside/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/why-water-hydraulics-will-replace-oil-in-industrial-infrastructure/",
+      "destination": "/knowledge-hub/your-first-water-hydraulic-project-baseline-trial-then-repeat/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/why-municipal-infrastructure-should-eliminate-hydraulic-oil/",
+      "destination": "/knowledge-hub/comparing-municipal-actuation-options/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/industrial-equipment-that-should-never-use-oil-hydraulics/",
+      "destination": "/knowledge-hub/which-oil-circuit-should-go-first-a-screening-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-water-hydraulics-eliminate-hydraulic-oil-spills/",
+      "destination": "/knowledge-hub/water-hydraulics-esg-evidence/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/why-traditional-hydraulic-materials-fail-in-water-systems/",
+      "destination": "/knowledge-hub/converting-oil-hydraulics-to-water/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/why-316-stainless-steel-is-essential-for-water-hydraulic-systems/",
+      "destination": "/knowledge-hub/stainless-for-water-hydraulics-matching-the-grade-to-the-exposure/",
+      "statusCode": 301
+    },
+    {
       "source": "/knowledge-hub/engineering-calculators/motor-speed-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/motor-speed-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/pipe-velocity-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/pipe-velocity-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/reynolds-number-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/reynolds-number-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/power-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/power-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/pressure-loss-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/pressure-loss-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/accumulator-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/accumulator-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/pump-sizing-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/pump-sizing-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/energy-savings-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/energy-savings-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/carbon-savings-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/carbon-savings-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/pressure-drop-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/pressure-drop-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/seal-compression-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/seal-compression-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/surface-finish-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/surface-finish-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/orifice-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/orifice-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/hydraulic-efficiency-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/hydraulic-efficiency-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/flow-rate-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/flow-rate-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/roi-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/roi-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/cylinder-force-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/cylinder-force-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/oil-spill-cost-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/water-hammer-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/water-hammer-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator.html",
       "destination": "/knowledge-hub/engineering-calculators/life-cycle-cost-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/project-brief.txt",
       "destination": "/project-brief.pdf",
-      "permanent": true
-    },
-    {
-      "source": "/wastewater-solutions/watergate/",
-      "destination": "/sluice-gates/",
-      "permanent": true
-    },
-    {
-      "source": "/wastewater-solutions/watergate/:path*/",
-      "destination": "/sluice-gates/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/calculations/",
       "destination": "/knowledge-hub/engineering-calculators/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/hydraulic-force-calculator/",
       "destination": "/knowledge-hub/engineering-calculators/cylinder-force-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/cylinder-sizing-calculator/",
       "destination": "/knowledge-hub/engineering-calculators/cylinder-force-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/hydraulic-power-calculator/",
       "destination": "/knowledge-hub/engineering-calculators/power-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/pump-flow-calculator/",
       "destination": "/knowledge-hub/engineering-calculators/flow-rate-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/pipe-pressure-drop-calculator/",
       "destination": "/knowledge-hub/engineering-calculators/pressure-drop-calculator/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/knowledge-hub/engineering-calculators/reference/",
       "destination": "/knowledge-hub/engineering-calculators/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/tier-one-product-pages-f1-cylinder-main-with-pressure-files-files-f1-cylinders-main-page/",
       "destination": "/products/water-hydraulic-cylinders/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/janus-power-center-reverse-osmosis/",
       "destination": "/products/power-centre-reverse-osmosis/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/power-center-reverse-osmosis/",
       "destination": "/products/power-centre-reverse-osmosis/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/janus-axial-piston-fire-pumps/",
       "destination": "/products/axial-piston-fire-pumps/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-motors/m6/",
       "destination": "/products/water-hydraulic-motors/m6-water-hydraulic-motor/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-motors/m30/",
       "destination": "/products/water-hydraulic-motors/m30-water-hydraulic-motor/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-motors/m15/",
       "destination": "/products/water-hydraulic-motors/m15-water-hydraulic-motor/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-motors/m60/",
       "destination": "/products/water-hydraulic-motors/m60-axial-piston-water-hydraulic-motor/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-motors/m3/",
       "destination": "/products/water-hydraulic-motors/m3-water-hydraulic-motor/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-motors/m180/",
       "destination": "/products/water-hydraulic-motors/m180-axial-piston-water-hydraulic-motor/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/f1-desal-power-center/",
       "destination": "/products/power-centre-reverse-osmosis/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/t-p3-pump-4/",
       "destination": "/products/axial-piston-pumps/p3/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/t-p30-pump/",
       "destination": "/products/axial-piston-pumps/p30/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/t-p180-pump/",
       "destination": "/products/axial-piston-pumps/p180/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/t-p60-pump-1/",
       "destination": "/products/axial-piston-pumps/p60/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/tcheck-graph-4-p15-pump/",
       "destination": "/products/axial-piston-pumps/p15/",
-      "permanent": true
-    },
-    {
-      "source": "/glossary/glossary%20copy/",
-      "destination": "/glossary/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/assets/seawater-graphs/P6-flow-power.png",
       "destination": "/assets/seawater-graphs/P6-flow-power.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/assets/seawater-graphs/P6-torque-efficiency.png",
       "destination": "/assets/seawater-graphs/P6-torque-efficiency.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/assets/seawater-graphs/P15-flow-power.png",
       "destination": "/assets/seawater-graphs/P15-flow-power.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/assets/seawater-graphs/P15-torque-efficiency.png",
       "destination": "/assets/seawater-graphs/P15-torque-efficiency.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/assets/seawater-graphs/P30-flow-power.png",
       "destination": "/assets/seawater-graphs/P30-flow-power.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/assets/seawater-graphs/P30-torque-efficiency.png",
       "destination": "/assets/seawater-graphs/P30-torque-efficiency.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/assets/seawater-graphs/P60-flow-power.png",
       "destination": "/assets/seawater-graphs/P60-flow-power.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/assets/seawater-graphs/P60-torque-efficiency.png",
       "destination": "/assets/seawater-graphs/P60-torque-efficiency.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/assets/seawater-graphs/P180-flow-power.png",
       "destination": "/assets/seawater-graphs/P180-flow-power.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/assets/seawater-graphs/P180-torque-efficiency.png",
       "destination": "/assets/seawater-graphs/P180-torque-efficiency.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/assets/seawater-graphs/P300-flow-power.png",
       "destination": "/assets/seawater-graphs/P300-flow-power.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/assets/seawater-graphs/P300-torque-efficiency.png",
       "destination": "/assets/seawater-graphs/P300-torque-efficiency.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/assets/seawater-graphs/P600-flow-power.png",
       "destination": "/assets/seawater-graphs/P600-flow-power.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/assets/seawater-graphs/P600-torque-efficiency.png",
       "destination": "/assets/seawater-graphs/P600-torque-efficiency.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/duplex-seawater-pumps/graphs/P6-flow-power.png",
       "destination": "/assets/seawater-graphs/P6-flow-power.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/duplex-seawater-pumps/graphs/P6-torque-efficiency.png",
       "destination": "/assets/seawater-graphs/P6-torque-efficiency.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/duplex-seawater-pumps/graphs/P15-flow-power.png",
       "destination": "/assets/seawater-graphs/P15-flow-power.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/duplex-seawater-pumps/graphs/P15-torque-efficiency.png",
       "destination": "/assets/seawater-graphs/P15-torque-efficiency.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/duplex-seawater-pumps/graphs/P30-flow-power.png",
       "destination": "/assets/seawater-graphs/P30-flow-power.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/duplex-seawater-pumps/graphs/P30-torque-efficiency.png",
       "destination": "/assets/seawater-graphs/P30-torque-efficiency.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/duplex-seawater-pumps/graphs/P60-flow-power.png",
       "destination": "/assets/seawater-graphs/P60-flow-power.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/duplex-seawater-pumps/graphs/P60-torque-efficiency.png",
       "destination": "/assets/seawater-graphs/P60-torque-efficiency.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/duplex-seawater-pumps/graphs/P180-flow-power.png",
       "destination": "/assets/seawater-graphs/P180-flow-power.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/duplex-seawater-pumps/graphs/P180-torque-efficiency.png",
       "destination": "/assets/seawater-graphs/P180-torque-efficiency.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/duplex-seawater-pumps/graphs/P300-flow-power.png",
       "destination": "/assets/seawater-graphs/P300-flow-power.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/duplex-seawater-pumps/graphs/P300-torque-efficiency.png",
       "destination": "/assets/seawater-graphs/P300-torque-efficiency.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/duplex-seawater-pumps/graphs/P600-flow-power.png",
       "destination": "/assets/seawater-graphs/P600-flow-power.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/duplex-seawater-pumps/graphs/P600-torque-efficiency.png",
       "destination": "/assets/seawater-graphs/P600-torque-efficiency.svg",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-valves/valve-dn12-po-check/",
       "destination": "/products/water-hydraulic-valves/po-check-valve-dn12/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-valves/valve-dn16-directional/",
       "destination": "/products/water-hydraulic-valves/dn16-directional-valves/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-valves/valve-4-3-manual/",
       "destination": "/products/water-hydraulic-valves/4-3-directional-control-valves/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-valves/valve-electronic-flow-control/",
       "destination": "/products/water-hydraulic-valves/electronic-flow-control-valves/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-valves/valve-electronic-pressure-control/",
       "destination": "/products/water-hydraulic-valves/electronic-pressure-control-valve/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-valves/valve-hose-burst/",
       "destination": "/products/water-hydraulic-valves/hose-burst-valve/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-valves/valve-4-2-3-2-directional/",
       "destination": "/products/water-hydraulic-valves/4-2-3-2-directional-control-valves/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-valves/valve-2-2-pilot/",
       "destination": "/products/water-hydraulic-valves/2-2-pilot-valves/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-valves/valve-flow-control/",
       "destination": "/products/water-hydraulic-valves/flow-control-valve/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-valves/valve-check-valves/",
       "destination": "/products/water-hydraulic-valves/check-valves/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/products/water-hydraulic-valves/valve-actuation-cards/",
       "destination": "/products/water-hydraulic-valves/actuation-cards/",
-      "permanent": true
+      "statusCode": 301
+    },
+    {
+      "source": "/sluice-gates/municipal-outfall-sluice-gate/",
+      "destination": "/sluice-gates/",
+      "statusCode": 301
+    },
+    {
+      "source": "/sluice-gates/municipal-outfall-sluice-gate/index.html",
+      "destination": "/sluice-gates/",
+      "statusCode": 301
+    },
+    {
+      "source": "/sluice-gates/wastewater-channel-sluice-gate/",
+      "destination": "/sluice-gates/",
+      "statusCode": 301
+    },
+    {
+      "source": "/sluice-gates/wastewater-channel-sluice-gate/index.html",
+      "destination": "/sluice-gates/",
+      "statusCode": 301
+    },
+    {
+      "source": "/sluice-gates/marine-tidal-gate-water-hydraulics/",
+      "destination": "/sluice-gates/",
+      "statusCode": 301
+    },
+    {
+      "source": "/sluice-gates/marine-tidal-gate-water-hydraulics/index.html",
+      "destination": "/sluice-gates/",
+      "statusCode": 301
+    },
+    {
+      "source": "/sluice-gates/sluice-gate-project-examples/",
+      "destination": "/sluice-gates/",
+      "statusCode": 301
+    },
+    {
+      "source": "/sluice-gates/sluice-gate-project-examples/index.html",
+      "destination": "/sluice-gates/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/can-i-retrofit-my-existing-system-to-use-water/",
+      "destination": "/knowledge-hub/converting-oil-hydraulics-to-water/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/moving-from-oil-to-water-audit-every-wetted-part-first/",
+      "destination": "/knowledge-hub/converting-oil-hydraulics-to-water/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-water-hydraulics-work-compared-to-oil-hydraulics/",
+      "destination": "/knowledge-hub/oil-or-water-engineering-comparison/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/why-water-can-replace-hydraulic-oil-in-industrial-systems/",
+      "destination": "/knowledge-hub/water-hydraulics-101/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/the-future-of-oil-free-hydraulic-systems/",
+      "destination": "/knowledge-hub/where-water-can-replace-oil-first/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/is-water-more-expensive-long-term/",
+      "destination": "/knowledge-hub/oil-versus-water-lifecycle-cost-ledger/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-much-are-your-hydraulics-costing-you/",
+      "destination": "/knowledge-hub/oil-versus-water-lifecycle-cost-ledger/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/why-water-hydraulics-belong-in-sustainable-industry/",
+      "destination": "/knowledge-hub/water-hydraulics-esg-evidence/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/oil-free-operation-a-design-fact-that-supports-your-environmental-goals/",
+      "destination": "/knowledge-hub/water-hydraulics-esg-evidence/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/oil-free-you-can-prove-count-the-litres-you-removed/",
+      "destination": "/knowledge-hub/water-hydraulics-esg-evidence/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/municipal-infrastructure-without-the-oil-hazards/",
+      "destination": "/knowledge-hub/comparing-municipal-actuation-options/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/water-hydraulics-for-government-infrastructure-projects/",
+      "destination": "/knowledge-hub/comparing-municipal-actuation-options/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/why-municipal-procurement-needs-to-rethink-oil/",
+      "destination": "/knowledge-hub/comparing-municipal-actuation-options/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/converting-a-citys-hydraulics-one-asset-class-at-a-time/",
+      "destination": "/knowledge-hub/comparing-municipal-actuation-options/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/seal-and-hose-life-expectations-with-tap-water/",
+      "destination": "/knowledge-hub/managing-seal-life-in-water-hydraulic-environments/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/sizing-cylinders-for-water-hydraulic-applications/",
+      "destination": "/knowledge-hub/sizing-water-cylinders-for-push-and-pull/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-force-is-generated-in-water-hydraulic-cylinders/",
+      "destination": "/knowledge-hub/sizing-water-cylinders-for-push-and-pull/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/can-water-handle-heavy-loads-like-oil/",
+      "destination": "/knowledge-hub/working-within-160-bar-get-the-force-from-area/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/thermal-performance-of-water-vs-hydraulic-oil/",
+      "destination": "/knowledge-hub/water-stores-more-heat-design-the-whole-cooling-balance/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-hydraulic-fluids-behave-thermal-expansion-viscosity-and-stability/",
+      "destination": "/knowledge-hub/water-and-oil-fluid-properties/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/is-water-too-thin-to-work-in-high-pressure-applications/",
+      "destination": "/knowledge-hub/water-and-oil-fluid-properties/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/do-i-need-filters-or-additives-for-tap-water/",
+      "destination": "/knowledge-hub/specifying-water-hydraulic-filtration/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/what-does-no-additives-actually-mean/",
+      "destination": "/knowledge-hub/specifying-water-hydraulic-filtration/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/material-compatibility-why-we-use-316-stainless-and-carbon-reinforced-peek/",
+      "destination": "/knowledge-hub/material-pairing-for-water-hydraulic-tribology/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-water-hydraulics-handle-lubrication-material-pairs-and-clearances/",
+      "destination": "/knowledge-hub/material-pairing-for-water-hydraulic-tribology/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/will-water-rust-my-system-the-engineering-answer/",
+      "destination": "/knowledge-hub/corrosion-control-in-water-circuits/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/should-you-specify-water-in-your-next-tender/",
+      "destination": "/knowledge-hub/writing-an-oil-free-hydraulic-specification/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/spec-writing-guide-for-water-hydraulic-equipment/",
+      "destination": "/knowledge-hub/writing-an-oil-free-hydraulic-specification/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/designing-control-valves-for-water-hydraulics/",
+      "destination": "/knowledge-hub/reading-a-water-hydraulic-valve/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wastewater-solutions/waterbio/",
+      "destination": "/wastewater-solutions/#waterbio",
+      "statusCode": 301
+    },
+    {
+      "source": "/wastewater-solutions/waterclarify/",
+      "destination": "/wastewater-solutions/#waterclarify",
+      "statusCode": 301
+    },
+    {
+      "source": "/wastewater-solutions/watercore/",
+      "destination": "/wastewater-solutions/#watercore",
+      "statusCode": 301
+    },
+    {
+      "source": "/wastewater-solutions/waterfilter/",
+      "destination": "/wastewater-solutions/#waterfilter",
+      "statusCode": 301
+    },
+    {
+      "source": "/wastewater-solutions/waterlift/",
+      "destination": "/wastewater-solutions/#waterlift",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/air-systems-vs-water-hydraulic-systems-which-delivers-better-results/",
+      "destination": "/knowledge-hub/air-or-water-force-comparison/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/aligning-with-esg-how-water-hydraulics-support-sustainability-targets/",
+      "destination": "/knowledge-hub/water-hydraulics-esg-evidence/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/are-your-components-certified-for-marine-or-food-use/",
+      "destination": "/knowledge-hub/component-and-system-approval-evidence/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/avoiding-oil-contaminated-waterways-legal-and-financial-risks/",
+      "destination": "/knowledge-hub/environmental-penalties-and-oil-release-risk/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/beyond-oil-engineering-principles-of-water-hydraulic-actuation/",
+      "destination": "/knowledge-hub/motion-quality-in-water-actuators/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/breaking-down-the-roi-investing-in-water-hydraulics/",
+      "destination": "/knowledge-hub/water-hydraulics-return-on-investment/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/carbon-reinforced-peek-in-hydraulic-equipment/",
+      "destination": "/knowledge-hub/carbon-filled-peek-for-water-hydraulics/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/cavitation-in-water-hydraulics-myths-truths-and-design-solutions/",
+      "destination": "/knowledge-hub/cavitation-and-water-pump-inlet-margin/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/choosing-the-right-cylinder-for-water-actuation/",
+      "destination": "/knowledge-hub/sizing-water-cylinders-for-push-and-pull/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/component-spotlight-armak-air-motors-and-water-hydraulic-integration/",
+      "destination": "/knowledge-hub/driving-a-water-pump-with-an-air-motor/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/desalination-plant-hydraulic-systems/",
+      "destination": "/knowledge-hub/desalination-three-jobs-for-pressurised-water/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/designing-a-water-hydraulic-power-unit/",
+      "destination": "/knowledge-hub/designing-a-water-hpu-around-the-duty-cycle/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/designing-for-pressure-closed-loop-water-hydraulic-circuitry/",
+      "destination": "/knowledge-hub/closed-loop-water-hydraulic-circuits/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/designing-hydraulic-circuits-using-water-as-the-medium/",
+      "destination": "/knowledge-hub/designing-the-water-hydraulic-sequence/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/diagnosing-pressure-drop-in-water-driven-cylinders/",
+      "destination": "/knowledge-hub/cylinder-force-with-backpressure/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/does-your-water-circuit-need-an-accumulator-name-the-job-first/",
+      "destination": "/knowledge-hub/does-your-water-circuit-need-an-accumulator/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/drought-ready-water-hydraulic-use-in-desalination-plants/",
+      "destination": "/knowledge-hub/desalination-recovery-and-energy-metrics/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/dust-suppression-systems-using-water-hydraulics/",
+      "destination": "/knowledge-hub/dust-suppression-source-wetting-and-airborne-capture/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/efficiency-of-water-hydraulic-pumps-compared-to-oil-pumps/",
+      "destination": "/knowledge-hub/pump-efficiency-measurement-boundaries/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/electric-actuators-vs-hydraulic-actuators-the-real-engineering-trade-offs/",
+      "destination": "/knowledge-hub/electric-or-water-hydraulic-actuation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/energy-consumption-of-water-hydraulic-systems/",
+      "destination": "/knowledge-hub/hydraulic-standby-energy/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/engineering-principles-of-water-hydraulic-actuation/",
+      "destination": "/knowledge-hub/sizing-a-water-cylinder/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/engineering-seal-systems-for-water-hydraulics/",
+      "destination": "/knowledge-hub/seals-built-for-water/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/environmental-compliance-and-hydraulic-systems/",
+      "destination": "/knowledge-hub/environmental-obligations-in-hydraulic-design/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/environmental-regulations-affecting-hydraulic-systems/",
+      "destination": "/knowledge-hub/hydraulic-retrofit-regulatory-map/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/environmental-risks-of-hydraulic-oil-in-water-infrastructure/",
+      "destination": "/knowledge-hub/oil-leak-release-pathways/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/evaluating-water-hydraulics-for-municipal-renewal/",
+      "destination": "/knowledge-hub/comparing-municipal-actuation-options/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/fail-closed-fail-open-or-hold-engineering-safe-states-in-water-hydraulics/",
+      "destination": "/knowledge-hub/water-hydraulic-failure-states/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/fire-pump-station-renewal-start-with-the-protection-design/",
+      "destination": "/knowledge-hub/fire-protection-pump-approval-boundaries/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/fluid-properties-of-water-vs-hydraulic-oil/",
+      "destination": "/knowledge-hub/water-and-oil-fluid-properties/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/flushing-and-start-up-tips-for-first-time-water-users/",
+      "destination": "/knowledge-hub/water-hydraulic-first-start-up/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/from-steel-mills-to-sawmills-industrial-applications-of-pressurized-water/",
+      "destination": "/knowledge-hub/water-hydraulics-in-steel-mills-and-sawmills/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/funding-water-driven-innovation-a-guide-to-clean-tech-grants/",
+      "destination": "/knowledge-hub/funding-a-water-hydraulic-pilot/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/funding-water-hydraulics-r-and-d-or-routine-adoption/",
+      "destination": "/knowledge-hub/research-uncertainty-and-routine-installation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-engineers-can-specify-oil-free-hydraulic-systems/",
+      "destination": "/knowledge-hub/writing-an-oil-free-hydraulic-specification/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-oil-contamination-affects-wastewater-treatment-plants/",
+      "destination": "/knowledge-hub/oil-release-in-wastewater-headworks/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/how-to-convert-an-oil-hydraulic-system-to-water-hydraulics/",
+      "destination": "/knowledge-hub/converting-oil-hydraulics-to-water/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/hydraulic-gate-actuators-for-municipal-infrastructure/",
+      "destination": "/knowledge-hub/gate-actuator-linkage-angle-and-force/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/hydraulic-power-transmission-using-water/",
+      "destination": "/knowledge-hub/hydraulic-power-from-drive-to-load/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/hydropower-infrastructure-using-water-hydraulic-actuation/",
+      "destination": "/knowledge-hub/water-actuation-at-the-dam/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/knife-gate-valves-and-water-hydraulics-a-natural-fit/",
+      "destination": "/knowledge-hub/knife-gate-valves-and-water-cylinders/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/lifecycle-cost-breakdown-oil-vs-water/",
+      "destination": "/knowledge-hub/oil-versus-water-lifecycle-cost-ledger/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/lifting-and-hauling-without-oil-forestry-applications-using-water/",
+      "destination": "/knowledge-hub/water-hydraulics-in-forestry/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/mining-equipment-using-water-hydraulic-systems/",
+      "destination": "/knowledge-hub/water-hydraulics-underground/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/oil-hydraulics-vs-water-hydraulics-the-complete-engineering-comparison/",
+      "destination": "/knowledge-hub/oil-or-water-engineering-comparison/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/oil-vs-water-hydraulics-a-complete-system-comparison/",
+      "destination": "/knowledge-hub/comparing-oil-and-water-bids/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/pressure-limits-of-water-hydraulic-equipment/",
+      "destination": "/knowledge-hub/designing-within-160-bar/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/preventing-corrosion-in-water-hydraulic-systems/",
+      "destination": "/knowledge-hub/corrosion-control-in-water-circuits/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/selecting-pumps-for-water-hydraulic-systems/",
+      "destination": "/knowledge-hub/choosing-a-water-pump/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/smart-monitoring-options-for-water-hpus/",
+      "destination": "/knowledge-hub/monitoring-a-water-hpu/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/the-physics-behind-water-hydraulic-pressure-systems/",
+      "destination": "/knowledge-hub/pressure-flow-and-power-equations/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/understanding-valve-selection-in-water-hydraulic-systems/",
+      "destination": "/knowledge-hub/reading-a-water-hydraulic-valve/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/water-driven-power-on-offshore-platforms/",
+      "destination": "/knowledge-hub/water-hydraulics-offshore/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/water-hydraulic-filtration-requirements/",
+      "destination": "/knowledge-hub/specifying-water-hydraulic-filtration/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/water-hydraulic-system-maintenance/",
+      "destination": "/knowledge-hub/maintaining-a-water-hydraulic-system/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/water-hydraulic-systems-for-marine-vessels/",
+      "destination": "/knowledge-hub/water-hydraulics-for-deck-machinery/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/water-hydraulics-for-flood-control-infrastructure/",
+      "destination": "/knowledge-hub/flood-gate-readiness/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/water-hydraulics-in-wastewater-treatment-plants/",
+      "destination": "/knowledge-hub/water-hydraulics-in-the-headworks/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/what-are-water-hydraulic-systems/",
+      "destination": "/knowledge-hub/water-hydraulics-101/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/what-happens-in-a-fire-will-the-water-system-shut-down/",
+      "destination": "/knowledge-hub/water-hydraulics-fire-response/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/what-if-the-water-freezes/",
+      "destination": "/knowledge-hub/water-hydraulic-freeze-protection/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/why-doesn-t-everyone-use-this-already/",
+      "destination": "/knowledge-hub/why-water-hydraulics-is-not-everywhere/",
+      "statusCode": 301
+    },
+    {
+      "source": "/knowledge-hub/why-water-hydraulics-may-replace-oil-in-industrial-infrastructure/",
+      "destination": "/knowledge-hub/where-water-can-replace-oil-first/",
+      "statusCode": 301
+    },
+    {
+      "source": "/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/modular-desalination-packages/",
+      "destination": "/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/#modular-packages",
+      "statusCode": 301
+    },
+    {
+      "source": "/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/modular-desalination-packages",
+      "destination": "/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/#modular-packages",
+      "statusCode": 301
+    },
+    {
+      "source": "/r2-modular-desalination-packages",
+      "destination": "/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/#modular-packages",
+      "statusCode": 301
+    },
+    {
+      "source": "/r2-modular-desalination-packages.html",
+      "destination": "/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/#modular-packages",
+      "statusCode": 301
+    },
+    {
+      "source": "/R2-modular-desalination-packages.html",
+      "destination": "/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/#modular-packages",
+      "statusCode": 301
+    },
+    {
+      "source": "/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/modular-desalination-packages/index.html",
+      "destination": "/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/#modular-packages",
+      "statusCode": 301
     }
   ],
   "headers": [

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html id="waterquest-site" lang="en-CA">
+<head>
+<style>@layer wq-responsive-priority;</style>
+<link rel="stylesheet" href="/assets/site-responsive-fit.css?v=20261109">
+<script defer src="/assets/site-responsive-fit.js?v=20261109"></script><style id="wqs-experience-layer">@layer wqs-experience;</style><link href="/assets/newsletter-popup.css?v=20261021" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Dust Suppression: Wet the Source or Catch the Cloud? | WaterQuest Solutions</title>
+<style>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<meta content="Wetting material at a drop point and capturing airborne dust need different nozzle selection and placement. Keep spray-water duty separate from hydraulic actuation." name="description">
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="Dust Suppression: Wet the Source or Catch the Cloud?, water hydraulics, WaterQuest Solutions" name="keywords">
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/dust-suppression-source-wetting-and-airborne-capture/" rel="canonical">
+<meta content="WaterQuest Solutions" property="og:site_name">
+<meta content="Dust Suppression: Wet the Source or Catch the Cloud? | WaterQuest Solutions" property="og:title">
+<meta content="Wetting material at a drop point and capturing airborne dust need different nozzle selection and placement. Keep spray-water duty separate from hydraulic actuation." property="og:description">
+<meta content="article" property="og:type">
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/dust-suppression-source-wetting-and-airborne-capture/" property="og:url">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Dust Suppression: Wet the Source or Catch the Cloud? | WaterQuest Solutions" name="twitter:title">
+<meta content="Wetting material at a drop point and capturing airborne dust need different nozzle selection and placement. Keep spray-water duty separate from hydraulic actuation." name="twitter:description">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/dust-suppression-source-wetting-and-airborne-capture/#primary", "mainEntityOfPage": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/dust-suppression-source-wetting-and-airborne-capture/", "name": "Dust Suppression: Wet the Source or Catch the Cloud?", "headline": "Dust Suppression: Wet the Source or Catch the Cloud?", "description": "Wetting material at a drop point and capturing airborne dust need different nozzle selection and placement. Keep spray-water duty separate from hydraulic actuation.", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/dust-suppression-source-wetting-and-airborne-capture/", "inLanguage": "en-CA", "isPartOf": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"}, "publisher": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"}, "author": {"@type": "Organization", "name": "WaterQuest Solutions", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/about/"}, "about": [{"@type": "Thing", "name": "Dust Suppression: Wet the Source or Catch the Cloud?"}], "articleSection": "Industry Applications", "dateModified": "2026-10-27", "datePublished": "2026-09-02", "wordCount": 2067, "timeRequired": "PT11M", "citation": ["https://www.cdc.gov/niosh/engcontrols/ecd/detail70.html", "https://www.cdc.gov/niosh/engcontrols/ecd/detail79.html", "https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/", "https://www.energy.gov/sites/default/files/2014/05/f16/pump.pdf", "https://www.ccohs.ca/oshanswers/hsprograms/hazardous_energy.html"], "hasPart": [{"@type": "WebPageElement", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/dust-suppression-source-wetting-and-airborne-capture/#guide-application", "name": "Match the spray to the dust source"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"}, {"@type": "ListItem", "position": 3, "name": "Dust Suppression: Wet the Source or Catch the Cloud?", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/dust-suppression-source-wetting-and-airborne-capture/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-brand-standards.css?v=20261106-aqua-links" rel="stylesheet"><script id="wq-speed-insights" src="/assets/wq-speed-insights.js" type="module"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style><link href="/assets/editorial/hub-editorial-20261021.css" rel="stylesheet"><link href="/assets/wqx-site.css?v=20261027-review2" rel="stylesheet"><link href="/assets/critique-refinements.css?v=20261027-preview3" rel="stylesheet"><meta content="WaterQuest Solutions" name="author"><link rel="stylesheet" href="/assets/launch-readability.css"><link rel="stylesheet" href="/assets/knowledge-covers/cover-series.css"><link rel="stylesheet" href="/assets/site-navigation-cleanup.css?v=20261108"></head>
+<body class="wq-audited wq-consistent wqx-article" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img alt="" class="wq-brand-mark" height="54" src="/assets/waterquest-logo-square.png" width="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/start-here/">New to water hydraulics?</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero wq-covered-hero">
+<div class="container"><div class="wq-covered-copy">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › </div>
+<p class="eyebrow">Industry Applications</p>
+<h1 data-editorial="hero">Dust Suppression: Wet the Source or Catch the Cloud?</h1>
+<p class="lead" data-editorial="lead">Wetting material at a drop point and capturing airborne dust need different nozzle selection and placement. Keep spray-water duty separate from hydraulic actuation.</p>
+<div class="article-meta"><span class="pill"></span><span class="pill">Industry Applications</span><span class="pill">7 min read</span></div>
+</div><figure class="wq-article-cover"><img src="/assets/industries-20261008/dust-concept.webp" alt="Industrial dust suppression and water delivery. Editorial concept illustration." width="1536" height="1024" decoding="async"><figcaption>WaterQuest Knowledge Hub · Concept illustration</figcaption></figure></div></section><section class="wqx-section" id="quick-answer"><div class="wqx-wrap"><p><a download="" href="/downloads/worksheets/dust-suppression-systems-using-water-hydraulics.txt">Download the worksheet for this guide (editable text)</a> · <a download="" href="/downloads/worksheets/spray-worksheet.csv">Open the spray requirement register (CSV)</a></p></div></section>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><p class="wq-article-byline">Written by WaterQuest Solutions · Updated <time datetime="2026-11-02">2 November 2026</time> · <a href="/about/">About the distributor</a></p><span aria-hidden="true" class="ed-legacy-anchor" id="conveyor-blast"></span><span aria-hidden="true" class="ed-legacy-anchor" id="crusher-dust"></span><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="droplet-size"></span><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><span aria-hidden="true" class="ed-legacy-anchor" id="how-high-pressure-water-mist-suppresses-dust"></span><span aria-hidden="true" class="ed-legacy-anchor" id="integration-with-equipment-actuation"></span><span aria-hidden="true" class="ed-legacy-anchor" id="mining-and-quarry-suppression-applications"></span><span aria-hidden="true" class="ed-legacy-anchor" id="pump-selection"></span><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><span aria-hidden="true" class="ed-legacy-anchor" id="system-design-principles-for-industrial-dust-suppression"></span><h2 id="learn-start-with-the-dust-control-objective">Put the spray where it can do useful work</h2><p>Water hydraulic equipment may provide a suitable pressure supply for a designed spray arrangement. That supply function is distinct from hydraulic actuation, where water circulates through valves and cylinders to move machinery. </p><p>NIOSH's engineering-control resources describe water sprays in specific mining and material-handling contexts. They are useful for understanding mechanisms and application questions, not a universal design for every Canadian workplace. The responsible exposure-control professionals must establish the applicable requirements and verify the installed system's performance. </p><h2 id="learn-distinguish-preventing-dust-from-capturing-airborne-dust">Distinguish preventing dust from capturing airborne dust</h2><p>Applying water where material is disturbed can help prevent some dust from becoming airborne. Trying to capture particles after they are suspended presents a different task involving contact between droplets, dust and moving air. </p><p>For a transfer point, consider where material falls, impacts and entrains air. A spray aimed at a visible cloud may miss the location where prevention would be more effective. </p><p>The distinction also affects acceptance. A prevention system might be evaluated across material throughput and moisture conditions, while an airborne-capture arrangement needs its interaction with airflow understood. </p><figure aria-labelledby="visual-26" class="kh-diagram kh-illustration"><figcaption class="kh-diagram-title" id="visual-26">Connect the spray to the dust-control task</figcaption><ol class="kh-flow"><li><strong>Source</strong><span>Where material releases dust</span></li><li><strong>Mechanism</strong><span>Prevention, capture or controlled air interaction</span></li><li><strong>Supply</strong><span>Supported nozzle pressure, flow and water quality</span></li><li><strong>Evidence</strong><span>Representative performance and exposure assessment</span></li></ol><div class="kh-shared-boundary"><strong>Example: 12 × 0.4 L/min (12 × 0.106 US gpm) × 300 min = 1,440 L (380 US gal)</strong><span>Water-use arithmetic only; this does not establish a spray design or control effectiveness.</span></div><figcaption>Conceptual selection sequence. A visible mist cloud is not proof of the required dust-exposure reduction.</figcaption></figure><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><h2 id="learn-match-droplets-momentum-and-airflow-to-the-application">Match droplets, momentum and airflow to the application</h2><p>Smaller droplets provide different contact and transport behaviour from larger droplets. No single pressure value establishes effective dust control, and a higher pressure does not automatically improve the complete result.</p><p>NIOSH's continuous-mining guidance identifies spray pattern, placement, flow and pressure as interacting factors and discusses the potential for sprays to entrain air and disturb dust movement.  The practical lesson is to evaluate the spray in its environment. A nozzle that looks effective in an open demonstration may behave differently beside a moving conveyor, in a confined transfer enclosure or near ventilation flow.</p><p>Ask the supplier what data support the proposed nozzle under the intended conditions. </p><span aria-hidden="true" class="ed-legacy-anchor" id="pressure-droplet"></span><span aria-hidden="true" class="ed-legacy-anchor" id="water-supply"></span><h2 id="learn-design-the-pressure-supply-at-the-nozzle-boundary">Design the pressure supply at the nozzle boundary</h2><p>The pump discharge is only the beginning of the distribution network. Lines, filters, valves and fittings create pressure losses before water reaches each nozzle. </p><p>For a hypothetical water-use calculation, twelve nozzles each flowing 0.4 L/min (0.106 US gpm) require 4.8 L/min (1.27 US gpm) together. If they operate for five hours, their total discharge is 1,440 litres (380 US gal). These invented values demonstrate accounting only; they do not select nozzle spacing, establish exposure control or predict the requirements of a particular process. </p><p>A purpose-designed water pump can be assessed against the required flow, pressure, inlet conditions and duty. Manufacturer information such as the Janus P3 example illustrates that these are configuration-specific requirements.  The supply should also be assessed when only some sections operate, rather than assuming that a full-demand selection will automatically behave well at every reduced demand.</p><h2 id="learn-use-zoning-to-follow-material-movement">Use zoning to follow material movement</h2><p>A zoned spray arrangement can operate the relevant devices when and where material is being handled. This may reduce unnecessary discharge, but the controls must preserve the exposure-control objective through starts, stops and irregular flow. </p><p>Review the consequence of failed or misleading signals. The correct response depends on the process and approved control design. </p><p>Zoning also changes hydraulic demand. The pump and controls must accommodate different combinations without placing nozzles outside their supported range. Include minimum-demand operation and transitions in acceptance testing. </p><h2 id="learn-address-water-quality-at-the-scale-that-matters">Address water quality at the scale that matters</h2><p>Small passages can be affected by particles and deposits even when supply water appears clean. </p><p>Dissolved constituents require a different assessment from particles. Deposits can change spray patterns and maintenance needs, while a particle filter does not necessarily resolve dissolved scaling potential. Do not add an unapproved chemical merely because a spray becomes unreliable; first establish the cause and the effect on the complete application.</p><p>Water quality also affects handling and hygiene considerations in some environments. A system that creates airborne droplets needs an application-specific assessment of its supply, retention and maintenance conditions. </p><h2 id="learn-manage-the-consequences-of-wetting">Manage the consequences of wetting</h2><p>Water that leaves the nozzle goes somewhere. It may enter the product, collect on surfaces, reach drainage or remain suspended briefly before settling. </p><p>NIOSH's conveyor guidance discusses dust control in the context of material transfer and associated controls.  For a particular plant, the relevant lesson is to integrate the spray with the transfer arrangement rather than treating water as a stand-alone cure. Enclosures, extraction, material-drop geometry and operating practice may also contribute to the required outcome.</p><p>A balanced trial records both the desired dust-control result and unintended consequences. Operators should report buildup, runoff, altered material handling or recurring nozzle damage. </p><h2 id="learn-verify-performance-under-representative-conditions">Verify performance under representative conditions</h2><p>Choose test conditions that cover the material, throughput, moisture and airflow relevant to normal work. </p><p>Record the hydraulic conditions during the test: active zones, nozzle identity, pressure at relevant points, flow and water condition. </p><p>Energy reporting should use the complete supply boundary and operating schedule. The DOE pumping sourcebook supports assessing the system rather than a single component.  For sprays, water use and effective operating time may be as important to ownership as electrical consumption. Report those quantities separately so a reduction in one does not obscure an increase in another.</p><h2 id="learn-make-inspection-and-safe-servicing-practical">Make inspection and safe servicing practical</h2><p>Nozzles are performance components, not permanent holes that can be ignored after commissioning. Provide safe access and a defined inspection method linked to the selected equipment and site requirements. </p><p>Pressure and moving machinery remain hazards during maintenance. CCOHS hazardous-energy guidance emphasizes identifying and controlling relevant energy sources.  The site's approved isolation and verification arrangements govern the work. Equipment should be laid out so that inspection and replacement do not depend on approaching an operating transfer point or improvising around stored pressure.</p><p>WaterQuest's strongest contribution is a pressure-supply and component arrangement matched to an engineered dust-control task. </p><section id="guide-application" class="wq-guide-application"><p><strong>Have a duty in mind?</strong> <a href="/contact/#engineering-review">Request an engineering review →</a> · <a href="/project-tools/">Build a brief →</a></p></section><div class="related-block">
+<h3>Continue reading</h3>
+<div class="related-grid">
+<a class="related-card" href="/knowledge-hub/water-hydraulics-underground/"><div class="rc-cat">Industry Applications · </div><h4>Water Hydraulics Underground: Removing Oil From Selected Mining Circuits</h4><div class="rc-read">9 min read</div></a>
+<a class="related-card" href="/knowledge-hub/gate-actuator-linkage-angle-and-force/"><div class="rc-cat">Industry Applications · </div><h4>Same Gate, Double the Force: Why Linkage Angle Matters</h4><div class="rc-read">8 min read</div></a>
+<a class="related-card" href="/knowledge-hub/designing-within-160-bar/"><div class="rc-cat">Specification &amp; Design · </div><h4>Designing Confidently Within 160 Bar — Including the Spikes</h4><div class="rc-read">8 min read</div></a>
+</div>
+</div>
+</article>
+</div>
+<div class="container">
+</div>
+</section>
+</main>
+<script defer src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div></footer><script defer src="/assets/wq-nav-dropdowns.js?v=20261108-no-capability"></script><script defer src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/wqx-site.js?v=20261027-review2"></script><script defer src="/assets/site-navigation-cleanup.js?v=20261108"></script><script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq9426f675e698dc79d0fe4c2ecca071e3668f732067735a92f72e9aed6636787e" defer></script></body>
+</html>

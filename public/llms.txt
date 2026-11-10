@@ -1,9 +1,28 @@
 # WaterQuest Solutions
 
-WaterQuest Solutions is a Vancouver-based authority on water as a hydraulic medium, designing oil-free hydraulic systems that use tap water or seawater instead of petroleum hydraulic oil.
+> Water hydraulic components and systems for municipal, industrial and marine applications, with Canadian application support.
 
-Core topics: water hydraulics, water hydraulic pumps, water hydraulic cylinders, water hydraulic valves, hydraulic power units, 316 stainless steel components, carbon-reinforced PEEK wear surfaces, seawater hydraulics, tap water hydraulics, municipal infrastructure, wastewater treatment, desalination, marine systems, hydropower, mining, fire suppression, and industrial contamination prevention.
+Canonical website: https://temporary-turbo-nickel-8xnl9g7.vercel.app/
 
-Canonical site: https://temporary-turbo-nickel-8xnl9g7.vercel.app/
-Knowledge Hub: https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/
-Contact: https://temporary-turbo-nickel-8xnl9g7.vercel.app/contact/
+## Site navigation
+
+- [Site index](https://temporary-turbo-nickel-8xnl9g7.vercel.app/site-index/): Browse the current page hierarchy.
+- [XML sitemap](https://temporary-turbo-nickel-8xnl9g7.vercel.app/sitemap.xml): Canonical, indexable HTML pages.
+- [Products](https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/): Pumps, motors, cylinders, valves and hydraulic power units.
+- [Industries](https://temporary-turbo-nickel-8xnl9g7.vercel.app/industries/): Application-specific engineering information.
+- [Knowledge Hub](https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/): Technical articles and engineering guidance.
+- [Engineering calculators](https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/engineering-calculators/): Interactive tools with explanatory page content.
+- [Glossary](https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/glossary/): Water hydraulics terminology.
+- [Product literature](https://temporary-turbo-nickel-8xnl9g7.vercel.app/downloads/product-literature/): Technical literature directory; individual technical downloads require the existing email request process.
+
+## Halo odour control
+
+- [Halo product page](https://temporary-turbo-nickel-8xnl9g7.vercel.app/industries/water-hydraulics-for-odor-control-and-ventilation-systems/halo-plant-based-odour-control/): Product overview, application engineering and assessment considerations.
+- [Halo brochure](https://temporary-turbo-nickel-8xnl9g7.vercel.app/brochures/halo-odour-control.pdf): Public eight-page product brochure.
+
+## Company
+
+- [About WaterQuest](https://temporary-turbo-nickel-8xnl9g7.vercel.app/about/)
+- [Engineering review](https://temporary-turbo-nickel-8xnl9g7.vercel.app/contact/)
+
+Use the linked product and application pages for model-specific specifications and limitations. Performance and suitability depend on the stated operating conditions and the final application design.

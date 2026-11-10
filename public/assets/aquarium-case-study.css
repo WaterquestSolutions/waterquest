@@ -1,0 +1,19 @@
+/* Aquarium application: responsive media and the current WaterQuest case-study shell. */
+.aq-case .aq-hero{padding-bottom:30px}.aq-case .aq-hero .cs-lead{max-width:880px}
+.aq-case .aq-cover{margin:0 0 32px;border:1px solid var(--cs-line);border-radius:12px;overflow:hidden;background:#0d2044}
+.aq-case .aq-cover img{display:block;width:100%;height:auto}.aq-case .aq-facts{margin-bottom:52px}
+.aq-case .aq-facts small{display:block;font-size:14px;font-weight:400;color:#d4e0ec}
+.aq-case .aq-story{grid-template-columns:repeat(2,minmax(0,1fr));gap:48px}.aq-case .aq-story>div{min-width:0}
+.aq-case .aq-film-layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:38px;align-items:center}
+.aq-case .aq-film figure{margin:0;border:1px solid var(--cs-line);border-radius:10px;overflow:hidden;background:#071322}
+.aq-case .aq-film video{display:block;width:100%;height:auto;aspect-ratio:540/304;max-height:none}
+.aq-case .aq-film p:last-child{margin-bottom:0}.aq-case .aq-video-description{color:#d4e0ec;font-size:16px}
+.aq-case .aq-system .cs-steps{grid-template-columns:repeat(3,minmax(0,1fr))}.aq-case .cs-step{min-width:0;border-top-color:#00eeff}
+.aq-case .cs-step p+p{margin-top:16px}.aq-case .cs-step a{display:inline-block;margin-top:22px;font-weight:800;color:#00eeff;text-decoration:underline;text-underline-offset:5px}
+.aq-case .aq-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:30px;align-items:start}
+.aq-case .aq-gallery figure{min-width:0;border:1px solid var(--cs-line);border-radius:10px;overflow:hidden;background:#122954}
+.aq-case .aq-gallery img{display:block;width:100%;height:auto}.aq-case .aq-gallery a{display:block}
+.aq-case .aq-benefit p{max-width:900px;margin-top:20px}.aq-case .cs-related a{overflow-wrap:anywhere}
+html#waterquest-site body.wq-audited.wq-consistent .aq-case .cs-button{background:#00eeff!important;color:#08223b!important;border-color:#00eeff!important}
+@media(max-width:800px){.aq-case .aq-film-layout,.aq-case .aq-story,.aq-case .aq-system .cs-steps{grid-template-columns:minmax(0,1fr);gap:28px}.aq-case .cs-steps{gap:20px}.aq-case .aq-film-layout{align-items:start}}
+@media(max-width:600px){.aq-case .cs-wrap{padding-left:20px;padding-right:20px}.aq-case .aq-gallery{grid-template-columns:minmax(0,1fr);gap:24px}.aq-case .aq-hero{padding-bottom:24px}.aq-case .cs-facts{grid-template-columns:minmax(0,1fr)}.aq-case .cs-facts>div{padding:16px 0;border-bottom:1px solid var(--cs-line)}.aq-case .cs-facts>div:last-child{border-bottom:0}.aq-case .cs-facts dt{color:#00eeff}.aq-case .cs-callout .cs-wrap{grid-template-columns:minmax(0,1fr)}.aq-case .cs-callout{padding:36px 0}.aq-case .cs-detail-block,.aq-case .cs-media{padding:36px 0}}

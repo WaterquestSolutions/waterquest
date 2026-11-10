@@ -12,10 +12,11 @@ function changeIndustry(){
  activeIndustry=el('industry').value;const sector=industries[activeIndustry];el('application').replaceChildren(new Option(sector?'Choose…':'Choose an industry first',''));el('application').disabled=!sector;document.getElementById('application-help').textContent=sector?'Choose the closest application, or select Other / not sure.':'Choose your industry first.';
  el('sector').hidden=!sector;el('sector-fields').replaceChildren();
  if(sector){for(const label of sector.applications)el('application').add(new Option(label,label));el('sector-title').textContent=sector.label+' context';for(const [key,label,hint] of sector.questions){const id='sector_'+key,wrap=text('div','');wrap.className='er-field';const lab=text('label',label+' (optional)');lab.htmlFor='er-'+id;const input=text('textarea','');input.id='er-'+id;input.name=id;input.maxLength=1000;input.rows=3;input.value=drafts.get(activeIndustry)?.[id]||'';input.setAttribute('aria-describedby',id+'-help '+id+'-error');const help=text('small',hint);help.id=id+'-help';const error=text('small','');error.id=id+'-error';error.className='er-error';wrap.append(lab,input,help,error);el('sector-fields').append(wrap);}}
- el('industry-link').href=sector?.slug?'/industries/'+sector.slug+'/':'/industries/';clearErrors();summary();
+ [...form.querySelectorAll('fieldset')].filter(f=>!f.hidden).forEach((f,i)=>{const n=f.querySelector('legend span');if(n)n.textContent=String(i+1).padStart(2,'0');});
+ if(el('industry-link'))el('industry-link').href=sector?.slug?'/industries/'+sector.slug+'/':'/industries/';clearErrors();summary();
 }
 function clearErrors(){el('errors').hidden=true;el('errors').replaceChildren();for(const n of form.querySelectorAll('.er-error'))n.textContent='';for(const n of form.querySelectorAll('[aria-invalid]'))n.removeAttribute('aria-invalid');}
-function showErrors(errors){clearErrors();el('errors').append(text('strong','Please check these details:'));const list=document.createElement('ul');for(const [key,message]of Object.entries(errors)){const input=el(key);const error=document.getElementById(key+'-error');if(error)error.textContent=message;if(input){input.setAttribute('aria-invalid','true');input.closest('details')?.setAttribute('open','');}const li=document.createElement('li'),link=text('a',message);link.href='#er-'+key;link.addEventListener('click',()=>input?.focus());li.append(link);list.append(li);}el('errors').append(list);el('errors').hidden=false;el('errors').focus();}
+function showErrors(errors){clearErrors();el('errors').append(text('strong','Please check these details:'));const list=document.createElement('ul');for(const [key,message]of Object.entries(errors)){const input=el(key);const error=document.getElementById(key+'-error');if(error)error.textContent=message;if(input){input.setAttribute('aria-invalid','true');input.closest('details')?.setAttribute('open','');}const li=document.createElement('li'),link=text('button',message);link.type='button';link.className='wq-field-error-control';link.addEventListener('click',()=>input?.focus());li.append(link);list.append(li);}el('errors').append(list);el('errors').hidden=false;el('errors').focus();}
 function status(message,type){el('status').textContent=message;el('status').dataset.state=type;el('status').focus();}
 el('industry').addEventListener('change',changeIndustry);
 form.addEventListener('input',()=>{summary();if(!received)el('status').textContent='';});
@@ -40,3 +41,8 @@ const queryIndustry=new URLSearchParams(location.search).get('industry');if(Obje
 changeIndustry();el('submit').disabled=false;el('download').disabled=false;
 el('preview-note').hidden=!['localhost','127.0.0.1'].includes(location.hostname);
 window.addEventListener('beforeunload',event=>{if(!received&&el('message').value){event.preventDefault();event.returnValue='';}});
+
+// Restore a locally prepared enquiry; no data is submitted until the visitor confirms consent and sends.
+try { const draft=JSON.parse(sessionStorage.getItem("wq-review-draft")||"null"); if(draft&&new URLSearchParams(location.search).get("draft")==="1"){ if(draft.message)el("message").value=draft.message;for(const key of ["name","email","company","phone"]){if(draft[key]&&el(key))el(key).value=draft[key];}sessionStorage.removeItem("wq-review-draft");summary();} } catch {}
+
+if(location.pathname.startsWith("/pilot/")&&!el("message").value){el("message").value="Pilot enquiry: please describe the equipment, operating question and proposed measurement below.\n\n";summary();}

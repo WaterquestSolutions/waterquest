@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html id="waterquest-site" lang="en-CA">
+<head>
+<style>@layer wq-responsive-priority;</style>
+<link rel="stylesheet" href="/assets/site-responsive-fit.css?v=20261109">
+<script defer src="/assets/site-responsive-fit.js?v=20261109"></script><style id="wqs-experience-layer">@layer wqs-experience;</style><link href="/assets/newsletter-popup.css?v=20261021" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>One Cylinder, Two Forces: Sizing Water Actuators for Push and Pull | WaterQuest Solutions</title>
+<style>
+    :root {
+      --bg: #050b14;
+      --nav: #071326;
+      --nav2: #0c1f3d;
+      --panel: #10264a;
+      --panel2: #0c1d36;
+      --panel3: #092034;
+      --aqua: #18c7d8;
+      --white: #ffffff;
+      --red: #ff5d64;
+      --line: rgba(24, 199, 216, 0.28);
+      --line-soft: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      --font: "Nunito Sans", Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color:#FFFFFF;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(24,199,216,.12), transparent 32%),
+        radial-gradient(circle at 78% 8%, rgba(23,77,132,.22), transparent 30%),
+        linear-gradient(180deg, #071321 0%, #08182d 42%, #050b14 100%);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(24,199,216,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24,199,216,.055) 1px, transparent 1px);
+      background-size: 76px 76px;
+      opacity: .38;
+    }
+    a { color:inherit; text-decoration: none; }
+    p, li, td, th, span, small, div { color:inherit; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 19, 38, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      width: min(1200px, calc(100% - 64px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; flex-direction: column; line-height: 1; }
+    .brand strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      color:#FFFFFF;
+    }
+    .brand span {
+      margin-top: 7px;
+      color:#00EEFF;
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      color:#FFFFFF;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .nav-links a.active, .nav-links a:hover { color:#00EEFF; }
+    .nav-cta {
+      background:#00616B;
+      color:#00EEFF!important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      min-width: 198px;
+      text-align: center;
+    }
+    .section, .hero { position: relative; padding: 80px 0; }
+    .container { width: min(1200px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow {
+      color:#00EEFF;
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+    h1, h2, h3 {
+      font-family: var(--font);
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      color:#FFFFFF;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; max-width: 940px; line-height: 1.15; }
+    h2 { font-size: clamp(2.15rem, 4vw, 3.35rem); font-weight: 900; }
+    h3 { font-size: 1.2rem; font-weight: 900; line-height: 1.3; }
+    .accent, h1 span, h2 span, h3 span { color:#00EEFF; }
+    .lead { max-width: 780px; color:#FFFFFF; font-size: 1.13rem; line-height: 1.75; font-weight: 700; margin: 22px 0 0; }
+    .muted { color:#FFFFFF; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color:#00EEFF;
+      font-weight: 900;
+      font-size: .9rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: rgba(12,31,61,.72);
+    }
+    .btn.primary { background:#00616B; color:#00EEFF; border-color: var(--aqua); }
+    .card {
+      background: linear-gradient(145deg, rgba(16,38,74,.96), rgba(9,32,52,.96));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      background: #050911;
+      padding: 64px 0 34px;
+      color:#FFFFFF;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1fr; gap: 48px; }
+    .footer-brand p { color:#FFFFFF; font-weight: 700; }
+    .footer-tagline { color:#00EEFF!important; font-style: italic; font-weight: 900 !important; font-size: 20px; }
+    .footer-title { color:#FFFFFF; font-weight: 900; letter-spacing: .22em; font-size: 13px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { color:#FFFFFF; font-weight: 700; }
+    .footer-links a:hover { color:#00EEFF; }
+    .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color:#FFFFFF; font-weight: 800; }
+    
+    .crumbs { color:#FFFFFF; font-weight: 800; font-size: .85rem; margin-bottom: 44px; }
+    .crumbs a { color:#00EEFF; }
+    .article-meta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; color:#FFFFFF; font-weight: 900; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color:#00EEFF; background: rgba(24,199,216,.09); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    .article-shell { display:grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items:start; }
+    .article-card { padding: 42px; }
+    .article-body { color:#FFFFFF; font-weight: 700; }
+    .article-body h2 { color:#00EEFF; font-size: clamp(2rem, 3.3vw, 2.65rem); line-height: 1.12; margin: 38px 0 16px; }
+    .article-body h3 { color:#00EEFF; font-size: 1.3rem; margin: 30px 0 12px; }
+    .article-body p, .article-body li { color:#FFFFFF; font-size: 1.08rem; line-height: 1.75; font-weight: 700; }
+    .article-body a { color:#00EEFF; font-weight: 900; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; overflow:hidden; border-radius:8px; border:1px solid var(--line); }
+    .article-body th, .article-body td { color:#FFFFFF; padding: 16px; border: 1px solid rgba(255,255,255,.12); font-size: 1rem; font-weight: 800; }
+    .article-body th { background: rgba(24,199,216,.14); color:#00EEFF; text-transform: uppercase; letter-spacing:.1em; }
+    .article-body blockquote { border-left: 4px solid var(--aqua); margin: 30px 0; padding: 18px 24px; background: rgba(24,199,216,.08); color:#FFFFFF; font-weight: 900; }
+    .toc { position: sticky; top: 94px; padding: 24px; }
+    .toc h3 { color:#00EEFF; font-size: .82rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 14px; }
+    .toc a { display:block; padding: 9px 0; color:#FFFFFF; border-bottom: 1px solid var(--line-soft); font-size: .94rem; font-weight: 800; }
+    .pager { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .pager a { padding: 22px; border-radius: 8px; border:1px solid var(--line); background: rgba(16,38,74,.72); color:#FFFFFF; font-size: 1rem; font-weight: 900; }
+    .pager span { display:block; color:#00EEFF; font-size: .78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom: 8px; }
+    @media (max-width: 980px) { .article-shell { grid-template-columns: 1fr; } .toc { position: static; } }
+
+    @media (max-width: 980px) {
+      .nav-inner { width: min(100% - 32px, 1200px); min-height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; gap: 16px; flex-wrap: wrap; }
+      .nav-cta { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, 1200px); }
+      .section, .hero { padding: 64px 0; }
+      h1 { font-size: 2.45rem; }
+      h2 { font-size: 2.1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<meta content="A 63/36 mm cylinder gives 31 kN out and 21 kN back at 100 bar. Check both directions, the rod's buckling length and the mounting." name="description">
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="One Cylinder, Two Forces: Sizing Water Actuators for Push and Pull, water hydraulics, WaterQuest Solutions" name="keywords">
+<link href="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-water-cylinders-for-push-and-pull/" rel="canonical">
+<meta content="WaterQuest Solutions" property="og:site_name">
+<meta content="One Cylinder, Two Forces: Sizing Water Actuators for Push and Pull | WaterQuest Solutions" property="og:title">
+<meta content="A 63/36 mm cylinder gives 31 kN out and 21 kN back at 100 bar. Check both directions, the rod's buckling length and the mounting." property="og:description">
+<meta content="article" property="og:type">
+<meta content="https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-water-cylinders-for-push-and-pull/" property="og:url">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="One Cylinder, Two Forces: Sizing Water Actuators for Push and Pull | WaterQuest Solutions" name="twitter:title">
+<meta content="A 63/36 mm cylinder gives 31 kN out and 21 kN back at 100 bar. Check both directions, the rod's buckling length and the mounting." name="twitter:description">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-water-cylinders-for-push-and-pull/#primary", "mainEntityOfPage": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-water-cylinders-for-push-and-pull/", "name": "One Cylinder, Two Forces: Sizing Water Actuators for Push and Pull", "headline": "One Cylinder, Two Forces: Sizing Water Actuators for Push and Pull", "description": "A 63/36 mm cylinder gives 31 kN out and 21 kN back at 100 bar. Check both directions, the rod's buckling length and the mounting.", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-water-cylinders-for-push-and-pull/", "inLanguage": "en-CA", "isPartOf": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#website"}, "publisher": {"@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/#organization"}, "author": {"@type": "Organization", "name": "WaterQuest Solutions", "url": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/about/"}, "about": [{"@type": "Thing", "name": "One Cylinder, Two Forces: Sizing Water Actuators for Push and Pull"}], "articleSection": "Components & Materials", "dateModified": "2026-10-27", "datePublished": "2026-09-02", "wordCount": 2072, "timeRequired": "PT11M", "citation": ["https://openstax.org/books/university-physics-volume-1/pages/14-3-pascals-principle-and-hydraulics", "https://www.iso.org/standard/44781.html", "https://www.parker.com/content/dam/Parker-com/Literature/Accumulator---Cooler-Division---Europe/catalogues/cylinder/HY07-1130UK_3L_Inch_Series_Tie_Rod_70_Bar_Hydraulic_Cylinders.pdf", "https://www.waterhydraulics.co.uk/janus-p3-axial-piston-pump/"], "hasPart": [{"@type": "WebPageElement", "@id": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-water-cylinders-for-push-and-pull/#guide-application", "name": "Select the cylinder and its mounting together"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/"}, {"@type": "ListItem", "position": 3, "name": "One Cylinder, Two Forces: Sizing Water Actuators for Push and Pull", "item": "https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-water-cylinders-for-push-and-pull/"}]}</script>
+<link href="/assets/wq-component-standards.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-audit-repairs.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-site-corrections.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/editorial-review.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/mobile-polish.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/editorial/knowledge-research.css?v=20261011-white-aqua" rel="stylesheet"><link href="/assets/wq-brand-standards.css?v=20261106-aqua-links" rel="stylesheet"><script id="wq-speed-insights" src="/assets/wq-speed-insights.js" type="module"></script>
+<style id="wq-guide-connections-style">
+@layer wqs-experience{#guide-application summary,#selection-guides summary{color:#00c8d4!important}}
+.wq-guide-application,.wq-product-guides{color:#fff;line-height:1.7;overflow-wrap:anywhere}
+.wq-guide-application{margin:2.5rem 0;padding:clamp(18px,3vw,32px);border:1px solid rgba(0,200,212,.36);border-left:4px solid #00c8d4;border-radius:8px;background:#0c1f3d}
+.wq-guide-application h2,.wq-product-guides h2{color:#00c8d4;margin-top:0}.wq-guide-application h3{color:#fff;font-size:1.05rem;margin:1.5rem 0 .6rem}
+.wq-guide-application a,.wq-product-guides a{color:#00c8d4;text-decoration:underline;text-underline-offset:3px}.wq-guide-application a:focus-visible,.wq-product-guides a:focus-visible{outline:2px solid #00c8d4;outline-offset:4px}
+.wq-guide-application .wq-guide-kicker,.wq-product-guides .wq-guide-kicker{color:#00c8d4;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem}
+.wq-guide-application p{margin:.8rem 0}.wq-guide-boundary{font-size:.95rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application details,.wq-product-guides details{margin:1.3rem 0;border-top:1px solid rgba(255,255,255,.16);padding-top:1rem}
+.wq-guide-application summary,.wq-product-guides summary{cursor:pointer;font-weight:800;color:#00c8d4!important;padding:.4rem 0}
+.wq-guide-application summary:hover,.wq-guide-application summary:active,.wq-guide-application summary:focus-visible,.wq-guide-application details[open]>summary,.wq-product-guides summary:hover,.wq-product-guides summary:active,.wq-product-guides summary:focus-visible,.wq-product-guides details[open]>summary{color:#00c8d4!important}
+.wq-product-guides{max-width:1180px;margin:3rem auto;padding:clamp(20px,4vw,42px);background:#0c1f3d;border:1px solid rgba(0,200,212,.36);border-radius:8px;font-family:inherit}
+.wq-product-guides ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.8rem;list-style:none;padding:0;margin:1.3rem 0}.wq-product-guides li{padding:0;margin:0;min-width:0}.wq-product-guides a{display:inline-block}.wq-product-guides h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+@media(max-width:640px){.wq-product-guides{margin:2rem 16px}.wq-product-guides ul{grid-template-columns:1fr}.wq-guide-application{padding:18px}}
+</style><link href="/assets/editorial/hub-editorial-20261021.css" rel="stylesheet"><link href="/assets/wqx-site.css?v=20261027-review2" rel="stylesheet"><link href="/assets/critique-refinements.css?v=20261027-preview3" rel="stylesheet"><meta content="WaterQuest Solutions" name="author"><link rel="stylesheet" href="/assets/launch-readability.css"><link rel="stylesheet" href="/assets/knowledge-covers/cover-series.css"><link rel="stylesheet" href="/assets/site-navigation-cleanup.css?v=20261108"></head>
+<body class="wq-audited wq-consistent wqx-article" data-editorial-review="2026-10-06" data-library-rebuild="2026-10-07" data-mobile-polish="2026-10-06">
+<nav aria-label="Main navigation" class="wq-site-header" id="nav"><div class="wq-header-inner"><a class="wq-brand" href="/"><img alt="" class="wq-brand-mark" height="54" src="/assets/waterquest-logo-square.png" width="54"><span class="wq-brand-nameplate"><span class="wq-brand-name">WaterQuest Solutions</span><span class="wq-brand-line">Stop Leaking Oil Into the Future.</span></span></a><button aria-expanded="false" aria-label="Toggle navigation" class="wq-nav-toggle" type="button"><span></span><span></span><span></span></button><ul class="nav-links wq-nav-links"><li><a href="/start-here/">New to water hydraulics?</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/about/">About</a></li><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li></ul></div></nav><main>
+<section class="hero wq-covered-hero">
+<div class="container"><div class="wq-covered-copy">
+<div class="crumbs"><a href="/">Home</a> › <a href="/knowledge-hub/">Knowledge Hub</a> › </div>
+<p class="eyebrow">Components &amp; Materials</p>
+<h1 data-editorial="hero">One Cylinder, Two Forces: Sizing Water Actuators for Push and Pull</h1>
+<p class="lead" data-editorial="lead">A 63/36 mm cylinder gives 31 kN out and 21 kN back at 100 bar. Check both directions, the rod's buckling length and the mounting.</p>
+<div class="article-meta"><span class="pill"></span><span class="pill">Components &amp; Materials</span><span class="pill">7 min read</span></div>
+</div><figure class="wq-article-cover"><img src="/assets/knowledge-covers/cylinder.jpg" alt="Cylinder and load lever with measurement tools and a piston section. Editorial concept illustration." width="1536" height="1024" decoding="async"><figcaption>WaterQuest Knowledge Hub · Concept illustration</figcaption></figure></div></section><section class="wqx-section" id="quick-answer"><div class="wqx-wrap"><p><a download="" href="/downloads/worksheets/choosing-the-right-cylinder-for-water-actuation.txt">Download the worksheet for this guide (editable text)</a> · <a download="" href="/downloads/worksheets/cylinder-worksheet.csv">Open the cylinder requirement register (CSV)</a></p></div></section>
+<section class="section" id="article">
+<div class="container article-shell">
+<article class="article-card card article-body"><p class="wq-article-byline">Written by WaterQuest Solutions · Updated <time datetime="2026-11-02">2 November 2026</time> · <a href="/about/">About the distributor</a></p><span aria-hidden="true" class="ed-legacy-anchor" id="decision-evidence"></span><span aria-hidden="true" class="ed-legacy-anchor" id="engineering-question"></span><span aria-hidden="true" class="ed-legacy-anchor" id="force-and-bore-calculation"></span><span aria-hidden="true" class="ed-legacy-anchor" id="integration-with-valve-and-control-systems"></span><span aria-hidden="true" class="ed-legacy-anchor" id="practical-application"></span><span aria-hidden="true" class="ed-legacy-anchor" id="review-questions"></span><span aria-hidden="true" class="ed-legacy-anchor" id="seal-system-engineering"></span><span aria-hidden="true" class="ed-legacy-anchor" id="thermal-considerations"></span><h2 id="learn-select-the-cylinder-for-the-mechanism-it-must-move">Match the cylinder to the whole movement</h2><aside aria-label="Related reading" class="wq-reading-path"><strong>This guide: Mounting and selection</strong><p><a href="/knowledge-hub/sizing-water-cylinders-for-push-and-pull/">Net force</a> · </p></aside><p>Water service adds a complete compatibility requirement. The body, rod, seals, guidance and internal materials must support the specified fluid and operating conditions. </p><h2 id="learn-calculate-both-effective-areas">Calculate both effective areas</h2><p>The cap-end effective area of a conventional single-rod cylinder is based on the bore. The rod-end effective area is the bore area minus the rod area. The linked physics reference explains the ideal relationship; actual selection requires the installed conditions and appropriate design allowances. </p><p>An illustrative 63 millimetre bore with a 36 millimetre rod has a cap-end area of about 3,117 square millimetres and a rod-end area of about 2,099 square millimetres. At 100 bar (1,450 psi) with negligible opposing pressure and friction, the ideal forces are approximately 31.2 kilonewtons extending and 21.0 kilonewtons retracting. They show why a statement that a cylinder provides 31 kilonewtons is incomplete unless the direction and pressure conditions are also stated.</p><figure aria-labelledby="visual-63" class="kh-diagram"><figcaption class="kh-diagram-title" id="visual-63">One cylinder has two different effective areas</figcaption><div class="kh-property-map"><div><strong>Cap end: 63 mm (2.48 in) bore</strong><p>About 3,117 mm² (4.83 in²); 31.2 kN (7,014 lbf) ideal force at 100 bar (1,450 psi).</p></div><div><strong>Rod end: 36 mm (1.42 in) rod</strong><p>About 2,099 mm² (3.25 in²); 21.0 kN (4,721 lbf) ideal force at 100 bar (1,450 psi).</p></div><div><strong>300 mm (11.8 in) extension</strong><p>About 0.935 L (0.247 US gal) displacement; 5.61 L/min (1.48 US gpm) for an ideal 10-second stroke.</p></div></div><figcaption>Independent teaching example. Opposing pressure, friction, leakage and structural allowances are excluded; these are not product ratings.</figcaption></figure><h2 id="learn-include-opposing-pressure-and-circuit-losses">Include opposing pressure and circuit losses</h2><p>The return chamber is not necessarily at zero gauge pressure during motion. Valves, hoses, elevation and the return arrangement can create opposing pressure that reduces useful force. </p><p>This matters particularly when a larger cylinder is selected to solve a force problem. Its greater return flow can increase losses in an unchanged return path. </p><span aria-hidden="true" class="ed-legacy-anchor" id="end-of-stroke-cushioning"></span><h2 id="learn-relate-stroke-volume-to-movement-time">Relate stroke volume to movement time</h2><p>Cylinder speed depends on the flow entering the relevant effective area, subject to leakage and transient effects. The volume needed for a stroke follows from area times travel. If movement time is fixed, the pump and valves must support the corresponding flow. </p><p>Using the illustrative 63 millimetre bore and a 300 millimetre stroke, cap-end displacement is about 0.935 litres (0.247 US gal). Completing that ideal extension in 10 seconds requires about 5.61 litres per minute (1.48 US gpm). The circuit must also accommodate the return flow in each direction. These teaching calculations help define the enquiry, but the actual supplier selection must include component behaviour, load and operating conditions.</p><span aria-hidden="true" class="ed-legacy-anchor" id="barrel-and-rod-material"></span><span aria-hidden="true" class="ed-legacy-anchor" id="mounting-and-alignment"></span><h2 id="learn-check-the-rod-and-mounting-mechanically">Check the rod and mounting mechanically</h2><p>A rod under compression may require a buckling assessment based on length, end conditions and loading. A nominal pressure rating does not establish that a long slender rod is suitable for every pushing duty. A cylinder should not be expected to serve as the primary guide for a mechanism unless the design specifically supports that role.</p><p>The mounting loads must be transferred into a suitable structure. Pins, brackets and supports need assessment through the full stroke, including changes in angle and reaction. </p><h2 id="learn-define-the-water-and-external-environment-separately">Define the water and external environment separately</h2><p>The hydraulic fluid may be controlled freshwater while the rod and body face washdown, salt spray or process chemicals. These are separate exposures and may govern different construction choices. A statement that the installation is marine or industrial does not provide enough information to select every material and seal. </p><p>Parker's cylinder catalogue illustrates that fluid service can influence construction and sealing options.  This supports the need for an exact water-service configuration; it does not authorize substitution into an unrelated cylinder. Purpose-designed water equipment likewise uses a defined operating envelope.  Request the complete approved assembly and service instructions. Do not assume that a stainless body proves compatibility of internal components or that an elastomer's general water resistance establishes suitability at the required pressure, speed and temperature.
+</p><h2 id="learn-match-the-sealing-and-guidance-to-motion-quality">Match the sealing and guidance to motion quality</h2><p>A cylinder for occasional end-to-end movement may have different priorities from one required to move slowly and settle at intermediate positions. Friction, leakage and guidance affect that behaviour. Specify the minimum controlled speed, repeatability and holding requirement where they matter. A large maximum-force margin does not guarantee smooth movement. The control valve and feedback arrangement must be considered with the actuator rather than added after the cylinder has been selected solely for static capacity.</p><p>Long standby also deserves attention. The application may require dependable first movement after an extended period with no cycling. A rapid factory cycling demonstration does not establish that condition. </p><h2 id="learn-plan-the-end-of-travel-and-the-stopped-state">Plan the end of travel and the stopped state</h2><p>Reaching the end of the stroke involves more than filling the last available volume. A moving load must decelerate, and the resulting forces must be managed. </p><p>The stopped state also needs a clear requirement. Must the mechanism hold position, move to a defined state after power loss or permit controlled manual recovery? A cylinder by itself does not establish those functions. Valves, mechanical restraints, stored energy and control logic may contribute according to the application. ISO 4413's public scope gives hydraulic-system safety context, while the project risk assessment and full applicable requirements govern the actual design.  Keeping these functions explicit prevents a component purchase from being mistaken for a complete protective arrangement.</p><h2 id="learn-make-feedback-reflect-the-required-function">Make feedback reflect the required function</h2><p>End switches, position sensors and pressure measurements answer different questions. A pressure rise does not prove that a load has moved, and a cylinder position does not always prove the final mechanism's position if a linkage can deflect or disconnect. </p><p>Define the response to a missing or inconsistent signal. The controls should distinguish a command from confirmation and provide useful fault information. </p><h2 id="learn-purchase-a-maintainable-verifiable-assembly">Purchase a maintainable, verifiable assembly</h2><p>A complete enquiry includes load information, stroke, speed, mounting, working fluid, environment, control needs and required fault behaviour. Provide drawings or dimensions that show the actual mechanism. Ask for approved spare parts and current instructions tied to the offered configuration. </p><p>Acceptance should demonstrate the relevant loaded motion, feedback and control behaviour through an agreed plan. Retain final settings and as-installed documentation with the asset. </p><section id="guide-application" class="wq-guide-application"><p><strong>Have a duty in mind?</strong> <a href="/contact/#engineering-review">Request an engineering review →</a> · <a href="/project-tools/">Build a brief →</a></p></section><div class="related-block"><h3>Continue reading</h3><div class="related-grid"><a class="related-card" href="/knowledge-hub/knife-gate-valves-and-water-cylinders/"><div class="rc-cat">Specification &amp; Design · </div><h4>Knife Gate Valves and Water Cylinders: A Natural Fit</h4><div class="rc-read">9 min read</div></a><a class="related-card" href="/knowledge-hub/managing-seal-life-in-water-hydraulic-environments/"><div class="rc-cat">Components &amp; Materials · </div><h4>Long Seal Life in Water: Get the Rod, Guide and Water Right</h4><div class="rc-read">8 min read</div></a><a class="related-card" href="/knowledge-hub/working-within-160-bar-get-the-force-from-area/"><div class="rc-cat">Specification &amp; Design · </div><h4>Working Within 160 Bar: Get the Force From Area</h4><div class="rc-read">9 min read</div></a></div></div>
+</article>
+</div>
+<div class="container">
+</div>
+</section>
+</main>
+<script defer src="/assets/zoho-suite.config.js?v=20261011-white-aqua"></script>
+<script defer src="/assets/wq-zoho-suite.js?v=20261011-white-aqua"></script>
+<footer class="wq-site-footer" role="contentinfo"><div class="wq-footer-inner"><div class="wq-footer-grid"><div class="wq-footer-brand"><strong>WaterQuest Solutions</strong><span>Clean Hydraulics for Sustainable Industry</span><p>Water hydraulic components and systems for municipal, industrial and marine applications. From your first question to a defined equipment enquiry, WaterQuest provides Canadian support to help match the fluid, components and controls to the work.</p></div><div><h2>Products</h2><ul><li><a href="/products/">All Products</a></li><li><a href="/products/axial-piston-pumps/">Axial Piston Pumps</a></li><li><a href="/products/duplex-seawater-pumps/">Duplex Seawater Pumps</a></li><li><a href="/products/water-hydraulics-hpu/">Hydraulic Power Units</a></li><li><a href="/products/water-hydraulic-motors/">Motors</a></li><li><a href="/products/water-hydraulic-cylinders/">Cylinders</a></li><li><a href="/products/water-hydraulic-valves/">Valves</a></li></ul></div><div><h2>Industries</h2><ul><li><a href="/industries/">All Industries</a></li><li><a href="/industries/water-hydraulics-for-municipal-infrastructure/">Municipal Infrastructure</a></li><li><a href="/industries/water-hydraulics-for-marine-and-coastal-applications/">Marine and Coastal</a></li><li><a href="/industries/water-hydraulics-for-fire-suppression-systems/">Fire Suppression</a></li><li><a href="/industries/water-hydraulics-for-desalination-and-reverse-osmosis-systems/">Desalination</a></li></ul></div><div><h2>Company</h2><div class="wq-footer-groups"><details><summary>About WaterQuest</summary><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li></ul></details><details><summary>Knowledge &amp; resources</summary><ul><li><a href="/knowledge-hub/">Knowledge Hub</a></li><li><a href="/start-here/">Start here</a></li><li><a href="/project-tools/">Project brief builder</a></li><li><a href="/specification-resources/">Specification resources</a></li><li><a href="/funding/">Funding routes</a></li></ul></details><details><summary>Projects &amp; equipment</summary><ul><li><a href="/pilot/">Pilot</a></li><li><a href="/contact/">Engineering Review</a></li><li><a href="/products/#connection-hardware">Connection hardware</a></li><li><a href="/site-index/">Search the site</a></li></ul></details><details><summary>Supply &amp; support</summary><ul><li><a href="/support-and-supply/">Support and supply</a></li><li><a href="/policies/warranty/">Warranty</a></li><li><a href="/policies/service-and-maintenance/">Service and maintenance</a></li><li><a href="/policies/spare-parts-and-support/">Spare parts and support</a></li></ul></details><details><summary>Contact &amp; policies</summary><ul><li><a href="tel:+16049021902">Contact Bruce · +1 (604) 902-1902</a></li><li><a href="mailto:bruce@waterquestsolutions.com">bruce@waterquestsolutions.com</a></li><li><a href="/privacy/">Privacy notice</a></li><li><a href="/terms/">Terms and calculation basis</a></li><li><a href="/policies/project-references/">Project references and confidentiality</a></li></ul></details></div></div></div><div class="wq-footer-bottom"><p>© 2026 WaterQuest Solutions. Vancouver, British Columbia, Canada.</p><p>Water hydraulics · Canadian support</p></div></div></footer><script defer src="/assets/wq-nav-dropdowns.js?v=20261108-no-capability"></script><script defer src="/assets/editorial/mobile-polish.js?v=20261011-white-aqua"></script><script defer src="/assets/wqx-site.js?v=20261027-review2"></script><script defer src="/assets/site-navigation-cleanup.js?v=20261108"></script><script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq9426f675e698dc79d0fe4c2ecca071e3668f732067735a92f72e9aed6636787e" defer></script></body>
+</html>

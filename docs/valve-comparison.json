@@ -1,0 +1,202 @@
+[
+  {
+    "name": "2/2 Directional Valve",
+    "url": "/products/water-hydraulic-valves/2-2-directional-valve/",
+    "function": "Directional control",
+    "size": "Feed gallery: 2.5 mm (0.0984 in); Ports: \u00bc\u2033 BSPP",
+    "flow": "Flow range: 0\u201310 L/min (0\u20132.64 US gpm)",
+    "pressure": "Maximum inlet pressure: 160 bar (2,321 psi); Operating pressure: 8\u2013160 bar (116\u20132,321 psi)",
+    "actuation": "Solenoid: 12 or 24 V DC",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-2-2-directional-valve.pdf"
+  },
+  {
+    "name": "2/2 Pilot Valves",
+    "url": "/products/water-hydraulic-valves/2-2-pilot-valves/",
+    "function": "Directional control",
+    "size": "Feed galleries: DN9: 9 mm (0.354 in) / DN25: 20 mm (0.787 in); Ports: DN9: \u215c\u2033 BSPP / DN25: 1\u2033 BSPP",
+    "flow": "DN9 / DN25 flow: 0\u201360 / 0\u2013120 L/min (0\u201315.9 / 0\u201331.7 US gpm)",
+    "pressure": "Maximum inlet pressure: 160 bar (2,321 psi); Operating pressure: 8\u2013160 bar (116\u20132,321 psi)",
+    "actuation": "Solenoid: 12 or 24 V DC",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-2-2-pilot-valves.pdf"
+  },
+  {
+    "name": "4/2 & 3/2 Directional Control Valves",
+    "url": "/products/water-hydraulic-valves/4-2-3-2-directional-control-valves/",
+    "function": "Directional control",
+    "size": "Feed gallery: 6 mm (0.236 in); Ports: \u00bc\u2033 BSPP",
+    "flow": "Flow range: 0\u201330 L/min (0\u20137.93 US gpm)",
+    "pressure": "Maximum inlet pressure: 160 bar (2,321 psi); Operating pressure: 0\u2013160 bar (0\u20132,321 psi)",
+    "actuation": "Solenoid system: 24 V DC",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-4-2-3-2-directional-control-valves.pdf"
+  },
+  {
+    "name": "4/3 Directional Control Valves",
+    "url": "/products/water-hydraulic-valves/4-3-directional-control-valves/",
+    "function": "Directional control",
+    "size": "Feed gallery: 6 mm (0.236 in); Ports: \u00bc\u2033 BSPP",
+    "flow": "Flow range: 0\u201330 L/min (0\u20137.93 US gpm)",
+    "pressure": "Maximum inlet pressure: 160 bar (2,321 psi); Operating pressure: 0\u2013160 bar (0\u20132,321 psi)",
+    "actuation": "Solenoid system: 24 V DC",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-4-3-directional-control-valves.pdf"
+  },
+  {
+    "name": "DN16 Directional Valves",
+    "url": "/products/water-hydraulic-valves/dn16-directional-valves/",
+    "function": "Directional control",
+    "size": "Feed gallery: 18 mm (0.709 in); Main ports: \u00be\u2033 BSPP",
+    "flow": "Flow range: 0\u2013140 L/min (0\u201337 US gpm)",
+    "pressure": "Maximum inlet pressure: 160 bar (2,321 psi); Operating pressure: 0\u2013100 bar (0\u20131,450 psi)",
+    "actuation": "Pilot media: Water, air or oil; Pilot actuation range: 2\u201380 bar (29\u20131,160 psi) by configuration; Return: Spring; detent and pilot-return options",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-dn16-directional-valves.pdf"
+  },
+  {
+    "name": "Check Valves",
+    "url": "/products/water-hydraulic-valves/check-valves/",
+    "function": "Load holding & protection",
+    "size": "Sizes: DN6, DN9, DN12, DN16 and DN25",
+    "flow": "Not stated in the listed data; see product details",
+    "pressure": "Pressure range: 0.1\u2013160 bar (1.45\u20132,321 psi)",
+    "actuation": "Standard cracking pressure: 1 bar (14.5 psi)",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-check-valves.pdf"
+  },
+  {
+    "name": "DN6 Pilot-Operated Check Valves",
+    "url": "/products/water-hydraulic-valves/po-check-valve-dn6/",
+    "function": "Load holding & protection",
+    "size": "Ports: \u00bc\u2033 BSPP",
+    "flow": "Flow range: 0\u201330 L/min (0\u20137.93 US gpm)",
+    "pressure": "Maximum inlet pressure: 160 bar (2,321 psi); Operating pressure: 0\u2013160 bar (0\u20132,321 psi)",
+    "actuation": "Free-flow cracking pressure: 6 bar (87 psi) standard; 1 bar (14.5 psi) on request",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-po-check-valve-dn6.pdf"
+  },
+  {
+    "name": "DN12 Pilot-Operated Check Valve",
+    "url": "/products/water-hydraulic-valves/po-check-valve-dn12/",
+    "function": "Load holding & protection",
+    "size": "Feed gallery: 12 mm (0.472 in); Ports: \u00bd\u2033 BSPP",
+    "flow": "Flow range: 0\u201360 L/min (0\u201315.9 US gpm)",
+    "pressure": "Maximum inlet pressure: 160 bar (2,321 psi); Operating pressure: 0\u2013160 bar (0\u20132,321 psi)",
+    "actuation": "Standard pilot ratio: 2.3:1",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-po-check-valve-dn12.pdf"
+  },
+  {
+    "name": "Hose Burst Valves",
+    "url": "/products/water-hydraulic-valves/hose-burst-valve/",
+    "function": "Load holding & protection",
+    "size": "Ports: \u00bc\u2033 BSPP; Feed galleries: 6 mm (0.236 in)",
+    "flow": "Not stated in the listed data; see product details",
+    "pressure": "Operating pressure: 0.1\u2013160 bar (1.45\u20132,321 psi)",
+    "actuation": "Trip adjustment: Internal spring setting",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-hose-burst-valve.pdf"
+  },
+  {
+    "name": "Flow Control Valves",
+    "url": "/products/water-hydraulic-valves/flow-control-valve/",
+    "function": "Flow control",
+    "size": "Sizes / galleries: DN3: 3 mm (0.118 in) / DN6: 6 mm (0.236 in); Ports: \u00bc\u2033 BSPP",
+    "flow": "Not stated in the listed data; see product details",
+    "pressure": "Operating pressure: 0.1\u2013160 bar (1.45\u20132,321 psi)",
+    "actuation": "Maximum Cv, control direction: DN3: 0.02 / DN6: 0.62; Nominal adjustment travel: 4 turns from fully open to closed",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-flow-control-valve.pdf"
+  },
+  {
+    "name": "Pressure-Compensated Flow Control Valve",
+    "url": "/products/water-hydraulic-valves/pressure-compensating-flow-control-valve/",
+    "function": "Flow control",
+    "size": "Feed galleries: 3 mm (0.118 in) / 6 mm (0.236 in); Ports: \u00bc\u2033 BSPP",
+    "flow": "DN3 / DN6 flow: 0.5\u20135 / 3\u201330 L/min (0.132\u20131.32 / 0.793\u20137.93 US gpm)",
+    "pressure": "Operating pressure: 5\u2013160 bar (72.5\u20132,321 psi)",
+    "actuation": "Adjustment travel: DN3: 5 turns / DN6: 6 turns; Adjustment: Hex-key setting with locking provision",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-pressure-compensating-flow-control-valve.pdf"
+  },
+  {
+    "name": "Electronic Flow Control Valves",
+    "url": "/products/water-hydraulic-valves/electronic-flow-control-valves/",
+    "function": "Electronic control",
+    "size": "Feed galleries: 3 mm (0.118 in) and 6 mm (0.236 in); Ports / mounting: BSPP and manifold",
+    "flow": "Overall flow envelope: 0\u201330 L/min (0\u20137.93 US gpm)",
+    "pressure": "Maximum inlet pressure: 160 bar (2,321 psi); Operating pressure: 0\u2013160 bar (0\u20132,321 psi)",
+    "actuation": "Motor supply: 48 V DC; Control: Open loop or closed loop with appropriate feedback",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-electronic-flow-control-valves.pdf"
+  },
+  {
+    "name": "Electronic Pressure Control Valve",
+    "url": "/products/water-hydraulic-valves/electronic-pressure-control-valve/",
+    "function": "Electronic control",
+    "size": "Feed galleries: 6 mm (0.236 in) / 12 mm (0.472 in); Ports / mounting: BSPP and manifold",
+    "flow": "DN6 rated flow: Confirm selected configuration; DN12 flow: 5\u2013100 L/min (1.32\u201326.4 US gpm)",
+    "pressure": "Maximum inlet pressure: 160 bar (2,321 psi); Operating pressure: 0\u2013160 bar (0\u20132,321 psi)",
+    "actuation": "Motor supply: 48 V DC; Control platform: ST5 programmable drive with suitable feedback",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-electronic-pressure-control-valve.pdf"
+  },
+  {
+    "name": "Pressure Reducing Valves",
+    "url": "/products/water-hydraulic-valves/pressure-reducing-valves/",
+    "function": "Pressure control",
+    "size": "Feed gallery: 6 mm (0.236 in); Ports: \u00bc\u2033 BSPP",
+    "flow": "Maximum flow: 30 L/min (7.93 US gpm)",
+    "pressure": "Maximum inlet pressure: 180 bar (2,611 psi); Outlet setting bands: 10\u201330 / 30\u2013100 / 70\u2013160 bar (145\u2013435 / 435\u20131,450 / 1,015\u20132,321 psi)",
+    "actuation": "Not stated in the listed data; see product details",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-pressure-reducing-valves.pdf"
+  },
+  {
+    "name": "Relief Valves",
+    "url": "/products/water-hydraulic-valves/relief-valves/",
+    "function": "Pressure control",
+    "size": "Not stated in the listed data; see product details",
+    "flow": "DN3 flow: 0\u201310 L/min (0\u20132.64 US gpm); DN6 flow: 0\u201330 L/min (0\u20137.93 US gpm); DN12 flow: Confirm final configuration; DN16 flow: 0\u2013450 L/min (0\u2013119 US gpm)",
+    "pressure": "Maximum inlet pressure: 180 bar (2,611 psi); confirm special pressure configurations; Setting bands: 10\u201330 / 25\u2013100 / 70\u2013160 bar (145\u2013435 / 363\u20131,450 / 1,015\u20132,321 psi); special ranges by review",
+    "actuation": "Not stated in the listed data; see product details",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-relief-valves.pdf"
+  },
+  {
+    "name": "Valve Manifolds",
+    "url": "/products/water-hydraulic-valves/manifolds/",
+    "function": "Manifolds & accessories",
+    "size": "Illustrated inlet / auxiliary ports: \u00bc\u2033 BSPP",
+    "flow": "Maximum flow without integral relief: 30 L/min (7.93 US gpm); Maximum flow with 2M07BXSW: 22 L/min (5.81 US gpm)",
+    "pressure": "Not stated in the listed data; see product details",
+    "actuation": "Actuation formats: Solenoid, pilot or manual",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-manifolds.pdf"
+  },
+  {
+    "name": "Zone Valves",
+    "url": "/products/water-hydraulic-valves/zone-valves/",
+    "function": "Directional control",
+    "size": "Sizes: DN3, DN9 and DN25; Porting: Configured to the application",
+    "flow": "Flow per zone: 0\u201360 L/min (0\u201315.9 US gpm)",
+    "pressure": "Maximum pressure: 160 bar (2,321 psi)",
+    "actuation": "Solenoid supply: 12 or 24 V DC",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-zone-valves.pdf"
+  },
+  {
+    "name": "Solenoid Actuation Cards",
+    "url": "/products/water-hydraulic-valves/actuation-cards/",
+    "function": "Manifolds & accessories",
+    "size": "Control electronics",
+    "flow": "Not applicable: electrical accessory",
+    "pressure": "Not applicable: electrical accessory",
+    "actuation": "Standard power supply: Regulated 24 V DC, 5 A",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-actuation-cards.pdf"
+  },
+  {
+    "name": "ST5-Q-NN Microstep Drive",
+    "url": "/products/water-hydraulic-valves/dc-microstep-drive-with-q-programming-st5-q-nn/",
+    "function": "Electronic control",
+    "size": "Control electronics",
+    "flow": "Not applicable: electrical accessory",
+    "pressure": "Not applicable: electrical accessory",
+    "actuation": "Supply voltage: 24\u201348 V DC",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-dc-microstep-drive-with-q-programming-st5-q-nn.pdf"
+  },
+  {
+    "name": "Valve Ordering Guide",
+    "url": "/products/water-hydraulic-valves/valve-ordering-code/",
+    "function": "Manifolds & accessories",
+    "size": "Port-size letters: A: 3 / B: 6 / C: 9 / D: 12 / E: 16 / F: 25 / G: 38 mm (1.5 in)",
+    "flow": "Not stated in the listed data; see product details",
+    "pressure": "Pressure class: 1: below 30 bar (435 psi) / 2: up to 160 bar (2,321 psi)",
+    "actuation": "Return S: Spring return only",
+    "datasheet": "/downloads/product-literature/WQS-water-hydraulic-valves-valve-ordering-code.pdf"
+  }
+]

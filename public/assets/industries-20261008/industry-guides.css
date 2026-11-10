@@ -116,3 +116,12 @@ html#waterquest-site body.wq-consistent #industry-main .ind-directory-card:hover
 @media(max-width:950px){#industry-main .ind-application-grid,#industry-main .ind-suite{grid-template-columns:repeat(2,minmax(0,1fr))}#industry-main .ind-option-grid{grid-template-columns:1fr}}
 @media(max-width:600px){#industry-main .ind-application-grid,#industry-main .ind-suite{grid-template-columns:1fr}#industry-main .ind-application-grid article,#industry-main .ind-option-grid article{padding:22px}}
 @media(prefers-reduced-motion:reduce){#industry-main .ind-bubbles i{animation:none;bottom:calc(var(--x) / 2);opacity:.4}}
+
+/* Modular brochure feature: keep the copy and real cover inside the industry wrapper. */
+#industry-main #modular-packages .wqm-brochure{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(220px,.75fr);gap:56px;align-items:center}
+#industry-main #modular-packages .wqm-copy{min-width:0}
+#industry-main #modular-packages .wqm-cover{display:block;max-width:320px;width:100%;justify-self:center;border:1px solid #36536c;border-radius:8px;overflow:hidden;box-shadow:0 18px 40px #0005;line-height:0}
+#industry-main #modular-packages .wqm-cover img{display:block;width:100%;height:auto}
+#industry-main #modular-packages .wqm-file-details{color:#c2d4e0;font-size:14px}
+#industry-main #modular-packages .ind-button{gap:14px}
+@media(max-width:760px){#industry-main #modular-packages .wqm-brochure{grid-template-columns:minmax(0,1fr);gap:32px}#industry-main #modular-packages .wqm-cover{max-width:280px}}
