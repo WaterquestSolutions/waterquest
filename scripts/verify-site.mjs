@@ -23,6 +23,7 @@ for(const file of pages){
  for(const m of source.matchAll(/<(?:a|img|script|link)\b[^>]*?\b(?:href|src)\s*=\s*["']([^"']+)["']/gi)){
   const raw=m[1].replaceAll('&amp;','&');
   if(raw.startsWith('#')||raw.startsWith('data:'))continue;
+  if(raw.startsWith('/_vercel/'))continue;
   let url;try{url=new URL(raw,'https://temporary-turbo-nickel-8xnl9g7.vercel.app'+route);}catch{continue;}
   if(!['temporary-turbo-nickel-8xnl9g7.vercel.app','waterquest-palette-20261016.vercel.app'].includes(url.hostname))continue;
   links++;if(!resolve(url))errors.push({file:path.relative(root,file),url:raw});
