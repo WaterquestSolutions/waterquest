@@ -3,7 +3,7 @@
   if (!root) return;
   const cases = [...root.querySelectorAll('.wq-case-slide')];
   if (!cases.length) return;
-  // Select once per page load. The selected case stays fixed while browsing.
-  const selected = Math.floor(Math.random() * cases.length);
-  cases.forEach((item, index) => { item.hidden = index !== selected; });
+  // Lead consistently with the documented Iona installation.
+  const featured = root.querySelector('[data-case="iona-hpu"]') || cases[0];
+  cases.forEach((item) => { item.hidden = item !== featured; });
 })();
