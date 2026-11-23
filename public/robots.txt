@@ -5,4 +5,4 @@ User-agent: *
 Disallow: /api/
 Allow: /
 
-Sitemap: https://temporary-turbo-nickel-8xnl9g7.vercel.app/sitemap.xml
+Sitemap: https://waterquest-palette-20261016.vercel.app/sitemap.xml

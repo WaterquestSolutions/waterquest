@@ -1,7 +1,7 @@
 WATERQUEST SOLUTIONS
 One Cylinder, Two Forces: Sizing Water Actuators for Push and Pull
 PROJECT WORKSHEET — revision 2026-10-27
-Source guide: https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/sizing-water-cylinders-for-push-and-pull/
+Source guide: https://waterquest-palette-20261016.vercel.app/knowledge-hub/sizing-water-cylinders-for-push-and-pull/
 
 Project / asset: ____________________
 Prepared by / date: ____________________

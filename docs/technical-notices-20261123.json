@@ -1,0 +1,58 @@
+[
+  {
+    "file": "public/brochures/valves/WQS-valve-4-2-3-2-directional-control-valves.pdf",
+    "original_sha256": "26d599d7e896a91c0a8633ee661c1b00cd17ae8e927e04d3aadb215c08617af9",
+    "notice_revision": 1,
+    "pages": 6,
+    "bytes": 994335,
+    "original_pages_text_preserved": true
+  },
+  {
+    "file": "public/brochures/valves/WQS-valve-4-3-directional-control-valves.pdf",
+    "original_sha256": "8e687cba103cceece2eb90ccb903f3e76fb585b2f58c8236f9b2eef33ff9a0a3",
+    "notice_revision": 1,
+    "pages": 4,
+    "bytes": 698769,
+    "original_pages_text_preserved": true
+  },
+  {
+    "file": "public/brochures/valves/WQS-valve-po-check-valve-dn6.pdf",
+    "original_sha256": "282389ee89d6700c79c7e30882e6d467041cb95c6463d4041dcfed9e8ed616b3",
+    "notice_revision": 1,
+    "pages": 4,
+    "bytes": 1505063,
+    "original_pages_text_preserved": true
+  },
+  {
+    "file": "public/brochures/power-centres/WQS-PC250.pdf",
+    "original_sha256": "0613156afc6604976230687cf162dae2e6168c869c00343ec56e5017b8175ff4",
+    "notice_revision": 1,
+    "pages": 8,
+    "bytes": 2571741,
+    "original_pages_text_preserved": true
+  },
+  {
+    "file": "public/brochures/power-centres/WQS-PC300.pdf",
+    "original_sha256": "ee1b8845993c1d831426077731e8ea84c888fa20a2e2f105ccbac29f60e8be7f",
+    "notice_revision": 1,
+    "pages": 8,
+    "bytes": 2551758,
+    "original_pages_text_preserved": true
+  },
+  {
+    "file": "public/brochures/power-centres/WQS-PC500.pdf",
+    "original_sha256": "29f909be365d97976484704e63329987a7759bfb7e041b32bd980233776a8e49",
+    "notice_revision": 1,
+    "pages": 8,
+    "bytes": 1667593,
+    "original_pages_text_preserved": true
+  },
+  {
+    "file": "public/brochures/power-centres/WQS-PC1000.pdf",
+    "original_sha256": "3a986e5d05860d585dd23ec1d2ef43f261fe83a86b8a527a229a85a342a2aa50",
+    "notice_revision": 1,
+    "pages": 8,
+    "bytes": 1208437,
+    "original_pages_text_preserved": true
+  }
+]

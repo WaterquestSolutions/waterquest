@@ -66,6 +66,7 @@
       ["Knowledge Hub", "/knowledge-hub/"],
       ["About", "/about/"],
       ["Pilot", "/pilot/"],
+      ["Search", "/site-index/"],
       ["Engineering Review", "/contact/"]
     ];
     const links = items.map(([label, href]) => {

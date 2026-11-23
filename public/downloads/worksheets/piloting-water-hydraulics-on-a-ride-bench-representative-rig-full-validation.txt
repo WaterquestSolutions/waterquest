@@ -1,7 +1,7 @@
 WATERQUEST SOLUTIONS
 Piloting Water Hydraulics on a Ride: Bench, Representative Rig, Full Validation
 PROJECT WORKSHEET — revision 2026-10-27
-Source guide: https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/piloting-water-hydraulics-on-a-ride-bench-representative-rig-full-validation/
+Source guide: https://waterquest-palette-20261016.vercel.app/knowledge-hub/piloting-water-hydraulics-on-a-ride-bench-representative-rig-full-validation/
 
 Project / asset: ____________________
 Prepared by / date: ____________________

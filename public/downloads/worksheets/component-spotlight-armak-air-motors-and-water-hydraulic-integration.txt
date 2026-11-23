@@ -1,7 +1,7 @@
 WATERQUEST SOLUTIONS
 Driving a Water Pump With an Air Motor
 PROJECT WORKSHEET — revision 2026-10-27
-Source guide: https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/driving-a-water-pump-with-an-air-motor/
+Source guide: https://waterquest-palette-20261016.vercel.app/knowledge-hub/driving-a-water-pump-with-an-air-motor/
 
 Project / asset: ____________________
 Prepared by / date: ____________________

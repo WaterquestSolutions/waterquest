@@ -2,27 +2,27 @@
 
 > Water hydraulic components and systems for municipal, industrial and marine applications, with Canadian application support.
 
-Canonical website: https://temporary-turbo-nickel-8xnl9g7.vercel.app/
+Canonical website: https://waterquest-palette-20261016.vercel.app/
 
 ## Site navigation
 
-- [Site index](https://temporary-turbo-nickel-8xnl9g7.vercel.app/site-index/): Browse the current page hierarchy.
-- [XML sitemap](https://temporary-turbo-nickel-8xnl9g7.vercel.app/sitemap.xml): Canonical, indexable HTML pages.
-- [Products](https://temporary-turbo-nickel-8xnl9g7.vercel.app/products/): Pumps, motors, cylinders, valves and hydraulic power units.
-- [Industries](https://temporary-turbo-nickel-8xnl9g7.vercel.app/industries/): Application-specific engineering information.
-- [Knowledge Hub](https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/): Technical articles and engineering guidance.
-- [Engineering calculators](https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/engineering-calculators/): Interactive tools with explanatory page content.
-- [Glossary](https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/glossary/): Water hydraulics terminology.
-- [Product literature](https://temporary-turbo-nickel-8xnl9g7.vercel.app/downloads/product-literature/): Technical literature directory; individual technical downloads require the existing email request process.
+- [Site index](https://waterquest-palette-20261016.vercel.app/site-index/): Browse the current page hierarchy.
+- [XML sitemap](https://waterquest-palette-20261016.vercel.app/sitemap.xml): Canonical, indexable HTML pages.
+- [Products](https://waterquest-palette-20261016.vercel.app/products/): Pumps, motors, cylinders, valves and hydraulic power units.
+- [Industries](https://waterquest-palette-20261016.vercel.app/industries/): Application-specific engineering information.
+- [Knowledge Hub](https://waterquest-palette-20261016.vercel.app/knowledge-hub/): Technical articles and engineering guidance.
+- [Engineering calculators](https://waterquest-palette-20261016.vercel.app/knowledge-hub/engineering-calculators/): Interactive tools with explanatory page content.
+- [Glossary](https://waterquest-palette-20261016.vercel.app/knowledge-hub/glossary/): Water hydraulics terminology.
+- [Product literature](https://waterquest-palette-20261016.vercel.app/downloads/product-literature/): Technical literature directory; individual technical downloads require the existing email request process.
 
 ## Halo odour control
 
-- [Halo product page](https://temporary-turbo-nickel-8xnl9g7.vercel.app/industries/water-hydraulics-for-odor-control-and-ventilation-systems/halo-plant-based-odour-control/): Product overview, application engineering and assessment considerations.
-- [Halo brochure](https://temporary-turbo-nickel-8xnl9g7.vercel.app/brochures/halo-odour-control.pdf): Public eight-page product brochure.
+- [Halo product page](https://waterquest-palette-20261016.vercel.app/industries/water-hydraulics-for-odor-control-and-ventilation-systems/halo-plant-based-odour-control/): Product overview, application engineering and assessment considerations.
+- [Halo brochure](https://waterquest-palette-20261016.vercel.app/brochures/halo-odour-control.pdf): Public eight-page product brochure.
 
 ## Company
 
-- [About WaterQuest](https://temporary-turbo-nickel-8xnl9g7.vercel.app/about/)
-- [Engineering review](https://temporary-turbo-nickel-8xnl9g7.vercel.app/contact/)
+- [About WaterQuest](https://waterquest-palette-20261016.vercel.app/about/)
+- [Engineering review](https://waterquest-palette-20261016.vercel.app/contact/)
 
 Use the linked product and application pages for model-specific specifications and limitations. Performance and suitability depend on the stated operating conditions and the final application design.

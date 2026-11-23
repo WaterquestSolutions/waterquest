@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-23",
+  "production_authorized": false,
+  "baseline_commit": "94e77ee28d5b1fa6dc1b2a68cc7f9d3089edcbf9",
+  "baseline_deployment": "dpl_3HiFcD8UVxgDL2Xtnfhx7VTnuBej",
+  "branch": "codex/engineering-quality-20261123",
+  "scope": [
+    "10 stainless category links repaired",
+    "canonical/sitemap/robots aligned to requested hostname",
+    "three missing primary landmarks added",
+    "in-page anchors preserved",
+    "compact product navigation and small-screen cards",
+    "96 illustrative worked guide records",
+    "57 equipment document records with search",
+    "local draft save/import",
+    "nine case-study evidence records",
+    "seven technical PDF notices retaining original reference pages"
+  ],
+  "verified": {
+    "html_pages": 234,
+    "local_references": 22365,
+    "test_suites_passed": 21,
+    "calculator_checks": 853,
+    "enquiry_handler_checks": 224,
+    "live_enquiry_sent": false
+  },
+  "open_evidence": [
+    "Manufacturer-confirmed Cv/Kv values for three valve products",
+    "Manufacturer-confirmed Power Centre operating envelope and energy curve basis",
+    "Reconciled Armak continuous-duty specifications",
+    "Permissioned measured case-study operating results",
+    "Live enquiry CRM receipt and notification verification"
+  ],
+  "rating_target": 9,
+  "all_pages_at_target_verified": false
+}

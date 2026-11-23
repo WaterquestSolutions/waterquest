@@ -1,0 +1,47 @@
+{
+  "iona-water-hydraulic-power-unit": [
+    "Historical installed-project account",
+    "Iona WWTP sedimentation tank No. 13; 2019 installation account; original/replacement photographs. The reported three-year operating period belongs to the historical account.",
+    "Current runtime, confirmed flow/pressure, energy baseline, maintenance record and owner-approved performance update."
+  ],
+  "iona-compactor": [
+    "Equipment reference",
+    "Compactor cylinders, HPU and hard piping in a stainless cabinet; reference account describes relocation for a larger workload.",
+    "Installation and relocation dates, compaction load/cycle, cylinder/stroke details and dated owner-approved results."
+  ],
+  "dss-severe-service-knife-gate-valves": [
+    "Equipment demonstration",
+    "CGIS demonstration with Kevin Niebergall; DSS valve and water hydraulic actuation shown together.",
+    "Valve size, media/differential pressure, measured breakaway/seating force, cycling, leakage and fault response."
+  ],
+  "water-powered-sluice-gate": [
+    "Workshop build and demonstration",
+    "Gate, frame and cylinder photographs, assembly drawing and workshop movement video.",
+    "Differential-head/load testing, site commissioning, leakage acceptance, endurance and project-specific design approval."
+  ],
+  "bilge-isolation-valve": [
+    "Equipment-supply reference",
+    "DN200 PN6 globe valve; hand-pump opening; spring closing when pressure is released through the designed return path; drawing 748-001.",
+    "Approved supplied drawing, opening/closing duty and timing, leakage, service history and applicable vessel/class evidence."
+  ],
+  "aquarium-acrylic-divers-polishing-tool": [
+    "Tool demonstration",
+    "M6 6.0 cm³/rev motor, submersible bearing housing, P6 6.0 cm³/rev powerpack, diver photographs and 23-second demonstration.",
+    "Actual flow/pressure/speed, approved tool/diver interface and procedure, measured surface finish and polishing acceptance."
+  ],
+  "movable-pool-floor": [
+    "Application reference and demonstration",
+    "Scissor-lift arrangement, water hydraulic cylinder, supplied photographs and 13-second movement video.",
+    "Floor load/travel, synchronization, holding, complete installation protective functions and acceptance/inspection evidence."
+  ],
+  "surf-pool": [
+    "Equipment application reference",
+    "Multiple cylinders, power pack and control valve for levelling and height adjustment. No wave-generation performance is established.",
+    "Support-point loads, travel, coordination accuracy, movement/holding sequence and measured acceptance results."
+  ],
+  "tottenham-hotspur-stadium": [
+    "Manufacturer equipment reference",
+    "The Water Hydraulics Company is attributed for wheel-actuation HPUs and cylinders in the retractable pitch. No WaterQuest stadium contract or installation role is claimed.",
+    "Exact supplied configuration and scope, dated duty information and permissioned performance records."
+  ]
+}
