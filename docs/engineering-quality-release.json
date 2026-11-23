@@ -11,13 +11,12 @@
     "in-page anchors preserved",
     "compact product navigation and small-screen cards",
     "96 illustrative worked guide records",
-    "57 equipment document records with search",
     "local draft save/import",
     "seven technical PDF notices retaining original reference pages"
   ],
   "verified": {
-    "html_pages": 234,
-    "local_references": 22287,
+    "html_pages": 233,
+    "local_references": 21517,
     "calculator_checks": 853,
     "enquiry_handler_checks": 224,
     "live_enquiry_sent": false,
@@ -37,5 +36,10 @@
     "baseline": "94e77ee28d5b1fa6dc1b2a68cc7f9d3089edcbf9",
     "preserved_global_fix": "preferred canonical hostname",
     "excluded_from_review_ui": true
-  }
+  },
+  "removed_at_user_request": [
+    "Specification and procurement resources page",
+    "Searchable equipment/drawing register",
+    "Case-study review content/layout changes"
+  ]
 }

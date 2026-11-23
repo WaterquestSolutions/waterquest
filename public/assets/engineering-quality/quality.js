@@ -1,7 +1,5 @@
 (() => {'use strict';
 // A disclosure stays under the reader's control even after resize.
 for(const menu of document.querySelectorAll('.wq-fit-nav-menu')) {menu.open=false;delete menu.dataset.desktopOpen;}
-const listing=document.querySelector('[data-eq-directory]');
-if(listing){const search=listing.querySelector('input[type=search]'),filter=listing.querySelector('select'),items=[...listing.querySelectorAll('[data-eq-entry]')],status=listing.querySelector('[role=status]');const apply=()=>{let n=0;for(const item of items){const show=(!filter.value||item.dataset.family===filter.value)&&item.textContent.toLowerCase().includes(search.value.trim().toLowerCase());item.hidden=!show;const details=item.querySelector('details');if(details&&search.value.trim())details.open=show;if(show)n++;}status.textContent=n+' matching equipment record'+(n===1?'':'s');};search.addEventListener('input',apply);filter.addEventListener('change',apply);apply();}
 for(const button of document.querySelectorAll('[data-eq-download]'))button.addEventListener('click',()=>{const record=document.getElementById(button.dataset.eqDownload);const url=URL.createObjectURL(new Blob([record.innerText],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='WaterQuest-'+location.pathname.split('/').filter(Boolean).pop()+'-worked-record.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
 })();

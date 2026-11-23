@@ -15,11 +15,11 @@ test('every practical guide has a bounded example and a working next action',()=
  const guides=JSON.parse(fs.readFileSync('scripts/guide-manifest.json','utf8'));
  for(const guide of guides){const source=read(guide.file);assert.equal((source.match(/<!-- EQ:worked-record -->/g)||[]).length,1);assert.match(source,/Illustrative, not a field result/);assert.match(source,/Record the evidence/);assert.match(source,/data-eq-download/);}
 });
-test('engineering evidence registers point to real local equipment and document resources',()=>{
- const data=JSON.parse(read('assets/engineering-quality/document-register.json'));
- assert.equal(data.records.length,57);
- const catalogue=JSON.parse(fs.readFileSync('private-downloads/catalogue.json','utf8'));
- for(const r of data.records){assert.ok(fs.existsSync('public'+r.route+'index.html'));for(const u of r.documents){const pathname=u.split(/[?#]/)[0];assert.ok(fs.existsSync('public'+pathname)||pathname.startsWith('/downloads/')&&catalogue[pathname.slice(11)],u);}}
+test('removed specification resources cannot be reintroduced by the build',()=>{
+ assert.ok(!fs.existsSync('public/specification-resources/index.html'));
+ assert.ok(!fs.existsSync('public/assets/engineering-quality/document-register.json'));
+ const build=fs.readFileSync('scripts/build-engineering-resources.py','utf8');
+ assert.ok(!build.includes('document-register'));
 });
 test('all legacy pages with missing primary landmarks now contain exactly one main',()=>{
  for(const route of ['about','products','industries/water-hydraulics-for-fire-suppression-systems']){const source=read(route+'/index.html');assert.equal((source.match(/<main\b/g)||[]).length,1);assert.equal((source.match(/<\/main>/g)||[]).length,1);}

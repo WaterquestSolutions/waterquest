@@ -8,6 +8,16 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/specification-resources/",
+      "destination": "/project-tools/",
+      "statusCode": 301
+    },
+    {
+      "source": "/specification-resources",
+      "destination": "/project-tools/",
+      "statusCode": 301
+    },
+    {
       "source": "/credits/",
       "destination": "/industries/",
       "statusCode": 301
