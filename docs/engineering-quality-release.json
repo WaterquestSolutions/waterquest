@@ -19,10 +19,10 @@
   "verified": {
     "html_pages": 234,
     "local_references": 22365,
-    "test_suites_passed": 21,
     "calculator_checks": 853,
     "enquiry_handler_checks": 224,
-    "live_enquiry_sent": false
+    "live_enquiry_sent": false,
+    "automated_tests_passed": 21
   },
   "open_evidence": [
     "Manufacturer-confirmed Cv/Kv values for three valve products",
