@@ -13,12 +13,11 @@
     "96 illustrative worked guide records",
     "57 equipment document records with search",
     "local draft save/import",
-    "nine case-study evidence records",
     "seven technical PDF notices retaining original reference pages"
   ],
   "verified": {
     "html_pages": 234,
-    "local_references": 22365,
+    "local_references": 22287,
     "calculator_checks": 853,
     "enquiry_handler_checks": 224,
     "live_enquiry_sent": false,
@@ -32,5 +31,11 @@
     "Live enquiry CRM receipt and notification verification"
   ],
   "rating_target": 9,
-  "all_pages_at_target_verified": false
+  "all_pages_at_target_verified": false,
+  "case_studies": {
+    "status": "Restored to pre-review content and layout at user request",
+    "baseline": "94e77ee28d5b1fa6dc1b2a68cc7f9d3089edcbf9",
+    "preserved_global_fix": "preferred canonical hostname",
+    "excluded_from_review_ui": true
+  }
 }

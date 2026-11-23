@@ -20,3 +20,5 @@ Enquiry unit tests cover 224 checks; this does not verify live CRM delivery.
 
 Do not claim every page has reached 9/10. Manufacturer coefficient/operating
 limits, measured project results and live enquiry receipt still need evidence.
+
+Case-study content/layout restored to the pre-review baseline at the user's request. New engineering UI is excluded from those pages.

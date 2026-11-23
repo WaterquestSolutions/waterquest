@@ -53,6 +53,7 @@ else:anchor='</main>'
 patch(P/'products/index.html','comparison',content,anchor)
 # Make access tools and readable quality styles available without requiring JS content insertion.
 for path in sorted(P.rglob('*.html')):
+ if path.is_relative_to(P/'case-studies'):continue
  s=path.read_text()
  if re.search(r'http-equiv=["\']refresh',s,re.I):continue
  if '/assets/engineering-quality/quality.css' not in s:s=s.replace('</head>','<link rel="stylesheet" href="/assets/engineering-quality/quality.css?v=20261123"></head>')
