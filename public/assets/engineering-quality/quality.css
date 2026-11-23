@@ -23,3 +23,14 @@ html body.has-product-model-nav main,html body.has-industry-nav main{padding-top
 html body.has-product-model-nav .breadcrumb,html body.has-industry-nav .breadcrumb{padding-top:16px!important}
 html body .eq-page-tools{padding-top:10px!important;padding-bottom:10px!important;margin:12px auto!important}
 }
+@layer wq-responsive-priority{
+@media(max-width:780px){
+html body .wq-site-header .wq-header-inner{width:100%!important;max-width:100%!important;padding-left:16px!important;padding-right:16px!important;gap:12px!important;box-sizing:border-box!important}
+html body .wq-site-header .wq-brand{min-width:0!important;gap:8px!important;flex:1 1 auto!important}
+html body .wq-site-header .wq-brand-mark{width:38px!important;height:38px!important;flex:0 0 38px!important}
+html body .wq-site-header .wq-brand-nameplate{min-width:0!important;max-width:100%!important}
+html body .wq-site-header .wq-brand-name{font-size:clamp(15px,4.3vw,20px)!important;line-height:1.2!important;white-space:normal!important}
+html body .wq-site-header .wq-brand-line{font-size:clamp(7px,1.8vw,9px)!important;letter-spacing:.07em!important;white-space:normal!important;line-height:1.4!important}
+html body .wq-site-header .wq-nav-toggle{width:44px!important;min-width:44px!important;flex:0 0 44px!important;margin-left:auto!important}
+}
+}
