@@ -7,7 +7,7 @@ import argparse, json, re
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / 'public'
-ORIGIN = 'https://temporary-turbo-nickel-8xnl9g7.vercel.app'
+ORIGIN = 'https://waterquest-palette-20261016.vercel.app'
 
 class Metadata(HTMLParser):
     def __init__(self):

@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-23",
+  "production_authorized": false,
+  "baseline_commit": "94e77ee28d5b1fa6dc1b2a68cc7f9d3089edcbf9",
+  "baseline_deployment": "dpl_3HiFcD8UVxgDL2Xtnfhx7VTnuBej",
+  "branch": "codex/engineering-quality-20261123",
+  "scope": [
+    "10 stainless category links repaired",
+    "canonical/sitemap/robots aligned to requested hostname",
+    "three missing primary landmarks added",
+    "in-page anchors preserved",
+    "compact product navigation and small-screen cards",
+    "96 illustrative worked guide records",
+    "local draft save/import",
+    "seven technical PDF notices retaining original reference pages"
+  ],
+  "verified": {
+    "html_pages": 233,
+    "local_references": 21517,
+    "calculator_checks": 853,
+    "enquiry_handler_checks": 224,
+    "live_enquiry_sent": false,
+    "automated_tests_passed": 21
+  },
+  "open_evidence": [
+    "Manufacturer-confirmed Cv/Kv values for three valve products",
+    "Manufacturer-confirmed Power Centre operating envelope and energy curve basis",
+    "Reconciled Armak continuous-duty specifications",
+    "Permissioned measured case-study operating results",
+    "Live enquiry CRM receipt and notification verification"
+  ],
+  "rating_target": 9,
+  "all_pages_at_target_verified": false,
+  "case_studies": {
+    "status": "Restored to pre-review content and layout at user request",
+    "baseline": "94e77ee28d5b1fa6dc1b2a68cc7f9d3089edcbf9",
+    "preserved_global_fix": "preferred canonical hostname",
+    "excluded_from_review_ui": true
+  },
+  "removed_at_user_request": [
+    "Specification and procurement resources page",
+    "Searchable equipment/drawing register",
+    "Case-study review content/layout changes"
+  ]
+}

@@ -30,10 +30,7 @@
    const menu=document.createElement('details');menu.className='wq-fit-nav-menu';
    const summary=document.createElement('summary');summary.textContent=inner.closest('.wq-industry-nav')?'Browse industries':'Browse models';menu.append(summary);links.before(menu);menu.append(links);links.removeAttribute('tabindex');
   });
-  document.querySelectorAll('.wq-fit-nav-menu').forEach(menu=>{
-   if(window.innerWidth>780&&!menu.open){menu.open=true;menu.dataset.desktopOpen='true'}
-   if(window.innerWidth<=780&&menu.dataset.desktopOpen){menu.open=false;delete menu.dataset.desktopOpen}
-  });
+
  }
  function fit(){document.querySelectorAll('table').forEach(tableFit);navFit()}
  function start(){fit();new MutationObserver(mutations=>{if(mutations.some(m=>m.target.closest?.('table')||[...m.addedNodes].some(n=>n.nodeType===1&&(n.matches('table,.wq-model-nav')||n.querySelector('table,.wq-model-nav')))))schedule()}).observe(document.body,{childList:true,subtree:true});window.addEventListener('resize',schedule,{passive:true});document.fonts?.ready.then(schedule)}

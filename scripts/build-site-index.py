@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 
 root = Path(__file__).resolve().parents[1]
 public = root / 'public'
-origin = 'https://temporary-turbo-nickel-8xnl9g7.vercel.app'
+origin = 'https://waterquest-palette-20261016.vercel.app'
 link = '<li><a href="/site-index/">Search the site</a></li>'
 runtime = public / 'assets/wq-nav-dropdowns.js'
 runtime_source = runtime.read_text()

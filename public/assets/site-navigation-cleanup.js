@@ -17,9 +17,7 @@
     const path = value => value.replace(/\/index\.html$/, '/').replace(/\/$/, '');
     if (destination.origin !== location.origin || path(destination.pathname) !== path(location.pathname) || destination.search !== location.search) return;
     if (destination.hash) {
-      const item = link.closest('li');
-      if (item && item.querySelectorAll('a').length === 1) item.remove();
-      else link.remove();
+      return;
     } else {
       link.removeAttribute('href');
       link.setAttribute('aria-current', 'page');

@@ -1,7 +1,7 @@
 WATERQUEST SOLUTIONS
 What Each Valve in a Water Circuit Is Actually For
 PROJECT WORKSHEET — revision 2026-10-27
-Source guide: https://temporary-turbo-nickel-8xnl9g7.vercel.app/knowledge-hub/designing-control-valves-for-water-hydraulics/
+Source guide: https://waterquest-palette-20261016.vercel.app/knowledge-hub/designing-control-valves-for-water-hydraulics/
 
 Project / asset: ____________________
 Prepared by / date: ____________________

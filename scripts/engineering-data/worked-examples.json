@@ -1,0 +1,212 @@
+{
+  "system": {
+    "title": "Trace useful power through one circuit",
+    "inputs": "Illustrative duty: 100 bar pressure difference, 60 L/min delivered flow, 80% pump efficiency and 90% motor efficiency.",
+    "check": "Hydraulic power = 100 × 60 / 600 = 10.0 kW. Shaft input = 10 / 0.80 = 12.5 kW. Electrical input = 12.5 / 0.90 = 13.9 kW.",
+    "result": "The useful hydraulic output and electrical input differ by 3.9 kW. Not all motor loss necessarily enters the hydraulic water.",
+    "decision": "Use the same input/output boundary and duty when comparing alternatives. Obtain real efficiencies and include standby and auxiliaries."
+  },
+  "cylinder": {
+    "title": "Check both directions before choosing a bore",
+    "inputs": "Illustrative 100 mm bore / 60 mm rod cylinder; driving pressure 100 bar, opposing pressure 2 bar, force efficiency 92%.",
+    "check": "Piston area = 7,854 mm²; annular area = 5,027 mm². Extension = 0.92 × (10 MPa × piston area − 0.2 MPa × annular area).",
+    "result": "Extension ≈ 71.3 kN; retraction ≈ 44.8 kN. A 50 kN load with a 1.25 allowance needs 62.5 kN: extension passes this arithmetic screen; retraction fails.",
+    "decision": "Do not accept this cylinder for a 62.5 kN bidirectional duty. Stroke, buckling, mounts, speed, friction and holding remain separate checks."
+  },
+  "pump": {
+    "title": "Turn delivered flow into a pump request",
+    "inputs": "Illustrative delivered flow 20 L/min, shaft speed 1,500 rpm, volumetric efficiency 90%, pressure difference 100 bar and overall pump efficiency 80%.",
+    "check": "Required displacement = 20 × 1,000 / (1,500 × 0.90) = 14.8 cm³/rev. Hydraulic power = 100 × 20 / 600.",
+    "result": "Hydraulic output ≈ 3.33 kW; shaft input ≈ 4.17 kW. A displacement number alone does not establish an available model or duty rating.",
+    "decision": "Compare delivered-flow and power curves at the required speed, pressure and water conditions. Confirm positive inlet supply and a current configuration drawing."
+  },
+  "valve": {
+    "title": "Calculate a required coefficient, without assigning a product rating",
+    "inputs": "Illustrative water flow 12 L/min (0.72 m³/h), specific gravity 1 and allowed valve pressure loss 2 bar.",
+    "check": "For non-cavitating incompressible flow: Kv = 0.72 / √2 = 0.509. With US Cv, Cv = Kv / 0.865.",
+    "result": "Required Kv ≈ 0.509 and equivalent US Cv ≈ 0.589 at this simplified point. This is a required coefficient, not a confirmed coefficient for any named valve.",
+    "decision": "Check the actual path and opening, minimum controllable flow, cavitation conditions and manufacturer pressure-drop curve; resolve any Cv/Kv source conflict before selection."
+  },
+  "hpu": {
+    "title": "Size simultaneous demand from the sequence",
+    "inputs": "Illustrative actuator A needs 4 L/min for 8 s; B needs 6 L/min for 5 s. Each acts once per 60 s cycle.",
+    "check": "If sequential, peak flow = 6 L/min. If fully overlapping, peak flow = 10 L/min. Volume per cycle = (4 × 8 + 6 × 5) / 60.",
+    "result": "Volume = 1.03 L/cycle; cycle-average useful flow = 1.03 L/min. Peak flow and annual energy need different calculations.",
+    "decision": "Agree the sequence and overlap before pump selection. Check standby, return flow, inlet supply, reserve duty and heat rejection separately."
+  },
+  "ro": {
+    "title": "Keep feed, permeate, brine and energy boundaries distinct",
+    "inputs": "Illustrative feed 10 m³/h at 40% water recovery and 60 bar pressure rise; illustrative plant electrical input 12 kW.",
+    "check": "Permeate = 10 × 0.40 = 4 m³/h. Brine = 6 m³/h. Feed hydraulic power = 60 × (10,000 / 60) / 600.",
+    "result": "Feed hydraulic power ≈ 16.7 kW; plant specific electricity = 12 / 4 = 3.0 kWh/m³ of permeate. The input example presupposes useful energy recovery and is not a standalone pump efficiency claim.",
+    "decision": "Draw the meter and flow boundaries. Specify salinity, temperature, membrane duty, recovery and auxiliaries; do not combine unrelated maximum capacities or infer a guaranteed model duty."
+  },
+  "suction": {
+    "title": "Build an inlet pressure budget at the flowing condition",
+    "inputs": "Illustrative supply 1.0 bar(g); pump 2 m above supply reference; pipe and loaded-filter losses 0.25 bar; density 1,000 kg/m³.",
+    "check": "Elevation debit = ρgh = 0.196 bar. Pump inlet ≈ 1.0 − 0.196 − 0.25. At atmospheric pressure 1.013 bar, add that value to get absolute pressure.",
+    "result": "Inlet ≈ 0.554 bar(g), or 1.567 bar absolute. A component requiring 2.5 bar(g) boosted inlet would fail this supply screen.",
+    "decision": "Check actual model inlet requirement, case-drain reference, temperature/vapour pressure, transients and available flow. Positive gauge pressure alone is not an NPSH acceptance test."
+  },
+  "gate": {
+    "title": "Find the worst linkage angle",
+    "inputs": "Illustrative resisting gate moment 20 kN·m; actuator lever arm 0.40 m; angle between arm and actuator 30°.",
+    "check": "Cylinder force = moment / (arm × sin(angle)) = 20 / (0.40 × 0.5). Repeat at every position.",
+    "result": "Required cylinder force = 100 kN before additional allowances. A 100 mm bore at 100 bar produces only 78.5 kN ideally and therefore fails even before opposing pressure and friction.",
+    "decision": "Use the governing full-travel load and linkage envelope, then check buckling, pins, frame, hydraulic holding and fault response with the responsible designer."
+  },
+  "marine": {
+    "title": "Separate a ramp moment from cylinder thrust",
+    "inputs": "Illustrative boarding-ramp resisting moment 10 kN·m and perpendicular cylinder lever arm 0.25 m.",
+    "check": "Required cylinder force = 10 / 0.25 = 40 kN before friction, acceleration or reserve allowance. If the lever arm falls to 0.10 m, repeat the calculation.",
+    "result": "The same moment then needs 100 kN. A cylinder that passes at one position may fail near the end of travel.",
+    "decision": "Record vessel motion, live load, corrosion exposure, safe state, class/flag requirements and emergency operation; this calculation does not establish marine approval."
+  },
+  "industrial": {
+    "title": "Translate a production cycle into an endurance request",
+    "inputs": "Illustrative 20 s cycle, one full actuator cycle per machine cycle, 8 operating hours/day and 250 days/year.",
+    "check": "Cycles/hour = 3,600 / 20 = 180. Annual cycles = 180 × 8 × 250.",
+    "result": "360,000 full cycles/year, or 3.6 million cycles over ten years. This is a duty request, not a prediction of component life.",
+    "decision": "Request applicable endurance evidence, seal/service assumptions, load spectrum and permitted maintenance. Define whether strokes, reversals and full cycles are counted separately."
+  },
+  "environment": {
+    "title": "Describe oil removal with a bounded inventory",
+    "inputs": "Illustrative existing reservoir and connected circuit contain 15 L of hydraulic oil. A proposed replacement removes oil from that defined circuit only.",
+    "check": "Record the fluid inventory and the actual release pathway above an open channel. Keep lubricants in bearings, gearboxes and other machines outside the claim.",
+    "result": "The supported inventory statement is 15 L of hydraulic oil removed from the named circuit. It is not 15 L/year avoided, a proven spill prevention total or a carbon saving.",
+    "decision": "Verify the before/after inventory and boundary; separately meter energy and makeup water and identify acceptable leakage/discharge arrangements."
+  },
+  "economics": {
+    "title": "Reconcile simple payback with discounted value",
+    "inputs": "Illustrative incremental installed premium CAD 20,000; constant net saving CAD 5,000/year; five-year horizon; real discount rate 8%; no residual value.",
+    "check": "Simple payback = 20,000 / 5,000 = 4 years. NPV = −20,000 + 5,000 × [1 − (1.08)^−5] / 0.08.",
+    "result": "NPV ≈ −CAD 36 at five years. A four-year simple payback does not mean a large positive five-year discounted return.",
+    "decision": "Use consistent real/nominal prices and incremental scope. Test energy, maintenance, utilization and installed-cost uncertainty; exclude unapproved grants and speculative avoided incidents from the base case."
+  },
+  "energy": {
+    "title": "Measure the waiting state as well as movement",
+    "inputs": "Illustrative annual schedule: 500 h moving at 10 kW, 1,500 h waiting at 3 kW; alternative same useful output with 0.5 kW waiting draw.",
+    "check": "Baseline = 500 × 10 + 1,500 × 3 = 9,500 kWh. Alternative = 500 × 10 + 1,500 × 0.5.",
+    "result": "Alternative = 5,750 kWh; difference = 3,750 kWh/year. No movement-state efficiency improvement has been assumed.",
+    "decision": "Measure whole-package input across identical movements and waiting periods. Include restart demand, auxiliaries and any changed maintenance or water treatment."
+  },
+  "materials": {
+    "title": "Keep a material enquiry separate from acceptance",
+    "inputs": "Illustrative enquiry: recirculating freshwater at 20°C; chloride, pH, conductivity and disinfectant exposure still to be measured; external coastal salt spray.",
+    "check": "Create separate rows for internal water, external exposure, exact alloy/product form, seal compound, fabrication and surface condition.",
+    "result": "The completed decision is “not accepted yet”: neither a 316L label nor a generic corrosion table resolves unknown water chemistry, crevices or fabrication condition.",
+    "decision": "Obtain representative water data, material certificates and configuration-specific supplier compatibility before release; review dissimilar-metal and stagnant-volume conditions."
+  },
+  "seawater": {
+    "title": "Distinguish chloride inside from salt outside",
+    "inputs": "Illustrative coastal actuator: internal treated freshwater, external salt spray and a 30-day lay-up. Seawater supply is an alternative, not a default.",
+    "check": "Compare complete freshwater-loop and seawater-fed arrangements: wetted materials, filters, flushing, drains, stagnation and external protection.",
+    "result": "A salt-spray location does not establish that standard internals can pump seawater. Both architectures require a documented service envelope.",
+    "decision": "Obtain the exact seawater construction and chemistry/temperature limits where seawater is proposed; record shutdown/flushing and crevice/galvanic controls."
+  },
+  "filtration": {
+    "title": "Turn a beta ratio into capture efficiency",
+    "inputs": "Illustrative filter requirement β10 = 75 at the stated test condition; proposed operating flow and loaded-element pressure loss remain project inputs.",
+    "check": "Capture efficiency at 10 µm = (75 − 1) / 75 × 100. Compare with β10 = 5,000 using the same particle-count and test basis.",
+    "result": "β75 ≈ 98.67%; β5,000 = 99.98%. A micron label without its beta/test basis does not define equivalent performance.",
+    "decision": "Confirm the component’s actual filtration requirement and water-compatible test basis. Check clean/dirty loss, bypass, collapse and inlet margin at the full operating flow."
+  },
+  "fluid": {
+    "title": "Keep dynamic and kinematic viscosity distinct",
+    "inputs": "Illustrative fluid density 1,000 kg/m³ and dynamic viscosity 0.001 Pa·s at a stated temperature.",
+    "check": "Kinematic viscosity ν = μ / ρ = 0.000001 m²/s = 1 mm²/s.",
+    "result": "The conversion depends on density. A viscosity value without temperature and whether it is dynamic or kinematic cannot be used reliably in a loss calculation.",
+    "decision": "Use a sourced property correlation within its validity range; include salinity/additives and distinguish fluid compressibility from installed hose/gas compliance."
+  },
+  "thermal": {
+    "title": "Separate heat storage from cooling capacity",
+    "inputs": "Illustrative net heat into water 1.0 kW, water mass 10 kg, specific heat 4.18 kJ/(kg·K), no heat rejection during this short transient.",
+    "check": "dT/dt = 1 kJ/s / (10 × 4.18 kJ/K) = 0.0239 K/s.",
+    "result": "A 1°C increase takes about 41.8 s. Greater heat capacity delays warming; it cannot establish a steady operating temperature.",
+    "decision": "Build the complete generation/rejection balance at maximum ambient temperature and the actual duty cycle, then check the component temperature limits."
+  },
+  "pressure": {
+    "title": "Keep a surge inside the weakest applicable limit",
+    "inputs": "Illustrative initial pressure 120 bar(g), rapid velocity change 2 m/s, wave speed 1,000 m/s and density 1,000 kg/m³.",
+    "check": "Joukowsky Δp = ρaΔv = 2,000,000 Pa = 20 bar. Initial plus amplitude = 140 bar(g).",
+    "result": "A nominal 160-bar component would have 20 bar arithmetic margin, but any 130-bar component fails this screen. Reflections and actual valve motion are not included.",
+    "decision": "Identify the lowest applicable component limit and review network transients, trapped volumes, load-induced pressure and protection response; do not use a simple screening value as proof."
+  },
+  "accumulator": {
+    "title": "Use absolute pressure in a storage calculation",
+    "inputs": "Illustrative isothermal gas, precharge 1 bar(g), minimum 3 bar(g), maximum 7 bar(g), atmosphere 1 bar and required delivery 10 L.",
+    "check": "Absolute pressures are 2, 4 and 8 bar. Vgas = delivery / [(2/4) − (2/8)] = 40 L.",
+    "result": "40 L nominal gas volume before reserve and real-gas, temperature and manufacturer usable-volume corrections.",
+    "decision": "Check minimum end-of-stroke force and the full emergency sequence; obtain water-compatible vessel, separator, precharge and isolation requirements for the selected unit."
+  },
+  "motor": {
+    "title": "Connect torque to a speed and flow",
+    "inputs": "Illustrative motor displacement 25 cm³/rev, delivered inlet flow 25 L/min, volumetric efficiency 90%, pressure difference 100 bar and mechanical efficiency 88%.",
+    "check": "Speed = 1,000 × 25 × 0.90 / 25 = 900 rpm. Torque = 100 × 25 × 0.88 / (20π).",
+    "result": "Running torque ≈ 35.0 N·m; shaft output ≈ 3.30 kW. Starting torque, case drain and minimum stable speed are not established by this steady-state example.",
+    "decision": "Check the actual torque-speed curve, start/stall behaviour, case pressure, shaft loads, coupling and any gearbox/holding function."
+  },
+  "seals": {
+    "title": "Check nominal squeeze without calling it a seal rating",
+    "inputs": "Illustrative unstretched O-ring cross-section 4.0 mm and radial gland depth 3.0 mm; ignore tolerances, stretch, swelling and temperature for this first check.",
+    "check": "Nominal squeeze = (4.0 − 3.0) / 4.0 × 100.",
+    "result": "25% nominal squeeze. This does not establish a suitable compound, allowable pressure, extrusion gap or dynamic sealing performance.",
+    "decision": "Use the chosen profile/compound drawing and worst-case tolerance stack, then verify surface finish, motion, water chemistry, temperature and pressure."
+  },
+  "safety": {
+    "title": "Write a testable safe-state requirement",
+    "inputs": "Illustrative mechanism must stop and hold after supply-power loss; automatic closing has not been accepted as the required safe state.",
+    "check": "Fault matrix rows: loss of power; loss of pressure; broken hose; failed feedback; stuck valve. Record initial load/position, energy sources and expected movement for each.",
+    "result": "“Motor stopped” is not evidence that the load is held or energy is isolated. A command does not prove the final position.",
+    "decision": "Agree acceptance time, allowable drift, observable feedback, test conditions and responsible sign-off; validate the complete protective function, not a single valve label."
+  },
+  "fire": {
+    "title": "Compare total discharge on an equal design basis",
+    "inputs": "Illustrative comparison only: design A needs 100 L/min for 10 min; design B needs 40 L/min for 20 min. Neither represents an approved fire-protection design.",
+    "check": "Volume A = 1,000 L; volume B = 800 L. Reduction = (1,000 − 800) / 1,000.",
+    "result": "20% lower discharge volume in this arithmetic example, despite a 60% lower instantaneous flow. Equivalent protection has not been demonstrated.",
+    "decision": "Compare only hazard-specific accepted designs, including duration, release sequence, water supply, tested nozzle coverage, airflow and recovery requirements."
+  },
+  "spray": {
+    "title": "Budget pressure at the nozzle",
+    "inputs": "Illustrative four equal nozzles, each 2 L/min at its specified 50 bar; line/filter loss 5 bar at the resulting total flow; elevation ignored.",
+    "check": "Total flow = 4 × 2 = 8 L/min. Supply pressure = 50 + 5 = 55 bar. Hydraulic power = 55 × 8 / 600.",
+    "result": "Hydraulic output ≈ 0.733 kW before pump/drive losses. This says nothing about droplet distribution or dust/odour removal efficiency.",
+    "decision": "Use actual nozzle curves, particle/airflow or treatment requirements, coverage and water-quality limits. Verify the treatment result and water use under comparable production conditions."
+  },
+  "winter": {
+    "title": "Define the power-loss state before choosing freeze protection",
+    "inputs": "Illustrative outdoor line is protected by electric heat trace during normal service. Required coldest ambient and outage duration are still project inputs.",
+    "check": "Consider both normal heating and the unpowered state; identify trapped low points, valve cavities, instrument branches and any independent backup.",
+    "result": "“Insulated and heat-traced” does not demonstrate protection during a power failure. An unproved drain-down path is not accepted as a safe empty state.",
+    "decision": "Calculate the cold-soak/outage envelope and demonstrate the chosen backup or drain-down method; obtain manufacturer approval before substituting any antifreeze mixture."
+  },
+  "retrofit": {
+    "title": "Separate mechanical reuse from wetted-part reuse",
+    "inputs": "Illustrative existing gate/frame remain mechanically serviceable; old oil pump, valves, hoses and seals have no written water-service approval.",
+    "check": "Mark each item: mechanical reuse candidate; replace wetted part; compatibility evidence missing; site/integrator responsibility.",
+    "result": "A sound frame does not justify refilling an oil hydraulic circuit with water. The reuse decision remains open until each relevant interface is reviewed.",
+    "decision": "Record exact part/configuration, water compatibility, cleaning/isolation boundary and commissioning tests before approving reuse."
+  },
+  "maintenance": {
+    "title": "Turn a trend into a specific investigation",
+    "inputs": "Illustrative baseline at the same duty: 100 bar, 12 L/min, 25°C. Later observation: 100 bar, 9 L/min, 35°C; instrument calibration and inlet/filter state are unknown.",
+    "check": "Compare measurements at matched speed, load and water condition; measure inlet and both relevant pressures before replacing a component.",
+    "result": "Reduced delivered flow with increased temperature can justify investigation but does not by itself prove pump wear, seal failure or contamination.",
+    "decision": "Confirm instruments and conditions, inspect supply/restrictions and quantify bypass/leakage using the approved isolation procedure; retain before/after readings."
+  },
+  "wastewater": {
+    "title": "Make isolation evidence part of the actuator scope",
+    "inputs": "Illustrative channel gate receives a close command; one limit switch indicates closed, but seating/leakage and upstream hazardous-energy controls are not proved.",
+    "check": "Separate commanded state, measured position, process isolation acceptance and personnel energy-isolation procedures in the test register.",
+    "result": "A closed indication alone does not establish a safe channel-entry condition or the required leakage performance.",
+    "decision": "Agree head/load conditions, position and leakage tests, lockout responsibilities, accessible isolation and operator sign-off with the plant."
+  },
+  "specification": {
+    "title": "Replace a subjective request with an acceptance record",
+    "inputs": "Illustrative initial request: “fast, reliable gate operation”. Proposed review record: 500 mm travel, agreed design load/head and 20 s nominal travel, with tolerance still to be agreed.",
+    "check": "Record normal, maximum and fault states; define the measurement location, instruments, acceptance tolerance, witness and controlling drawing revision.",
+    "result": "The requirement becomes testable only when tolerances, conditions and responsibilities are agreed. A generic catalogue speed cannot close the acceptance record.",
+    "decision": "Complete the requirement and bid-deviation register before purchase; link FAT/SAT evidence and the accepted as-built configuration at handover."
+  }
+}
