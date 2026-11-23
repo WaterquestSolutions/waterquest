@@ -22,4 +22,4 @@ The original base and palette deployment sources were recovered through authenti
 
 This revision is for local/preview review only. The user explicitly instructed that it must not be put into production. Do not merge or promote it without a new explicit production instruction. See `docs/engineering-quality-release.json` for baseline, scope and unresolved evidence.
 
-`python3 scripts/build-engineering-resources.py` generates the worked guide records and equipment document register from the controlled JSON records in `docs/`. Examples are illustrative and must never be presented as field results or product approvals. Seven public literature PDFs include a technical clarification notice before the unchanged original reference pages.
+`python3 scripts/build-engineering-resources.py` generates the worked guide records and equipment document register from the controlled JSON records in `scripts/engineering-data/`. Examples are illustrative and must never be presented as field results or product approvals. Seven public literature PDFs include a technical clarification notice before the unchanged original reference pages.

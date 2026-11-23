@@ -4,9 +4,9 @@ from html.parser import HTMLParser
 import html,json,re,urllib.parse
 ROOT=Path(__file__).resolve().parents[1];P=ROOT/'public'
 H=html.escape
-examples=json.loads((ROOT/'docs/engineering-worked-examples.json').read_text())
+examples=json.loads((ROOT/'scripts/engineering-data/worked-examples.json').read_text())
 guides=json.loads((ROOT/'scripts/guide-manifest.json').read_text())
-focus=json.loads((ROOT/'docs/guide-practical-focus.json').read_text())
+focus=json.loads((ROOT/'scripts/engineering-data/guide-practical-focus.json').read_text())
 def patch(path,key,content,anchor):
  s=path.read_text();start='<!-- EQ:'+key+' -->';end='<!-- /EQ:'+key+' -->';s=re.sub(re.escape(start)+'.*?'+re.escape(end),'',s,flags=re.S)
  i=s.find(anchor)
