@@ -10,7 +10,8 @@ const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=u
 http.createServer(async(req,res)=>{
  try{
   const u=new URL(req.url,'http://localhost');let route=decodeURIComponent(u.pathname);
-  if(route.startsWith('/downloads/')&&/\.(pdf|zip)$/.test(route))return await download(req,res);
+  const staticDownload=path.resolve(root,'.'+route);
+  if(route.startsWith('/downloads/')&&/\.(pdf|zip)$/.test(route)&&!(staticDownload.startsWith(root+path.sep)&&fs.existsSync(staticDownload)&&fs.statSync(staticDownload).isFile()))return await download(req,res);
   if(route.startsWith('/api/')){res.statusCode=503;res.setHeader('Content-Type','application/json');return res.end(JSON.stringify({ok:false,error:'service_not_configured',message:'This local review does not submit enquiries. Use the email draft option.'}));}
   const redirect=config.redirects.find(r=>r.source===route);if(redirect){res.statusCode=redirect.statusCode||308;res.setHeader('Location',redirect.destination);return res.end();}
   let file=path.resolve(root,'.'+route);if(!file.startsWith(root+path.sep)&&file!==root){res.statusCode=403;return res.end();}
